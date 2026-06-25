@@ -9,14 +9,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .kt{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#888;border-bottom:1px solid #1a1a1a;padding-bottom:6px;margin-bottom:10px;font-weight:600}
 .m{display:grid;grid-template-columns:40px 140px 1fr;gap:10px;align-items:baseline;padding:9px 0;border-bottom:1px solid #111}
 .r{font-family:"SF Mono",Menlo,monospace;color:#6b8cce;font-size:12px;font-weight:600}
-.r.x{color:#ef4444}
 .r.op::before{content:"⊕";color:#4ade80;margin-right:2px}
 .n{font-weight:600;color:#fafafa;font-size:14px}
 .n .v{display:block;font-weight:400;color:#666;font-size:11px;margin-top:2px}
-.n .t,.n .tn{display:inline-block;margin-left:6px;padding:1px 6px;font-size:9px;border-radius:3px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;vertical-align:middle}
-.n .t{background:#2a1a1a;color:#ef4444}
-.n .tn{background:#2a2418;color:#fbbf24}
+.n .tn{display:inline-block;margin-left:6px;padding:1px 6px;background:#2a2418;color:#fbbf24;font-size:9px;border-radius:3px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;vertical-align:middle}
 .d{color:#aaa;font-size:13px}
+.b{display:block;color:#fbbf24;font-size:12px;margin-top:3px;font-weight:500}
+.b::before{content:"★ Najlepszy w: "}
 .s{margin-top:36px;padding-top:18px;border-top:1px solid #1a1a1a}
 .so{font-size:12px;color:#777;margin-bottom:6px;line-height:1.5}
 .so .dt{font-family:monospace;color:#4ade80;margin-right:6px}
@@ -25,82 +24,82 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 @media(max-width:540px){.m{grid-template-columns:34px 1fr}.n{grid-column:2}.d{grid-column:2}}
 </style></head><body>
 <div class="c">
-<!-- ⊕=open-source (zielony), #nr=granatowy. Kategoria=.k, model=.m, źródła malejąco w .s -->
+<!-- ⊕=open-source (zielony), #nr=granatowy. .b="Najlepszy w" (żółty). Kategoria=.k, model=.m, źródła malejąco w .s -->
 
 <div class="k"><div class="kt">LLM — duże modele językowe</div>
-<div class="m"><span class="r">#1</span><span class="n">Claude Opus 4.8<span class="v">Anthropic</span></span><span class="d">Lider benchmarków long-horizon, +1% nad GLM-5.2</span></div>
-<div class="m"><span class="r op">#2</span><span class="n">GLM-5.2<span class="v">Z.AI / Zhipu AI</span></span><span class="d">Open-weight MoE 745B (44B active), pokonuje GPT-5.5 w coding, 1/6 kosztu</span></div>
-<div class="m"><span class="r">#3</span><span class="n">MiniMax M3<span class="v">MiniMax</span></span><span class="d">Frontier coding, 1M context, MSA, bije GPT-5.5 i Gemini 3.1 Pro</span></div>
-<div class="m"><span class="r op">#4</span><span class="n">Kimi K2.7 Code<span class="v">Moonshot AI</span></span><span class="d">1T MoE (32B active), 262k context, open-source, coding-first, 12 czerwca 2026</span></div>
-<div class="m"><span class="r">#5</span><span class="n">Gemini 3.5 Pro<span class="v">Google</span></span><span class="d">Frontier model zapowiedziany na I/O 2026, agentic Gemini era</span></div>
-<div class="m"><span class="r">#6</span><span class="n">GPT-5.5<span class="v">OpenAI</span></span><span class="d">Frontier model zamknięty, referencja dla long-horizon coding</span></div>
-<div class="m"><span class="r op">#7</span><span class="n">DeepSeek v4<span class="v">DeepSeek (V4-Pro, V4-Flash)</span></span><span class="d">Open-source flagship, V4-Pro + V4-Flash API, 24 kwietnia 2026</span></div>
-<div class="m"><span class="r op">#8</span><span class="n">Qwen 3.6 Plus<span class="v">Alibaba</span></span><span class="d">Open-weight, real world agents, upgrade z Qwen 3.5 (luty 2026)</span></div>
-<div class="m"><span class="r op">#9</span><span class="n">Gemma 4 12B Unified<span class="v">Google</span></span><span class="d">Open-weight, multimodalny, premiera 3 czerwca 2026 (Gemma 3 retired)</span></div>
-<div class="m"><span class="r">#10</span><span class="n">Claude Opus 4.7<span class="v">Anthropic</span></span><span class="d">Poprzednik Opus 4.8, GA przed 4.8</span></div>
-<div class="m"><span class="r">#11</span><span class="n">Meta AI (Llama 4)<span class="v">Meta</span></span><span class="d">Nowy model Llama-series od Meta</span></div>
+<div class="m"><span class="r">#1</span><span class="n">Claude Opus 4.8<span class="v">Anthropic</span></span><span class="d">Lider benchmarków long-horizon, +1% nad GLM-5.2<span class="b">złożone zadania wieloetapowe, research, coding z dużym kontekstem</span></span></div>
+<div class="m"><span class="r op">#2</span><span class="n">GLM-5.2<span class="v">Z.AI / Zhipu AI</span></span><span class="d">Open-weight MoE 745B (44B active), 1/6 kosztu GPT-5.5<span class="b">long-horizon coding, agentic engineering — open-source z frontier jakości</span></span></div>
+<div class="m"><span class="r">#3</span><span class="n">MiniMax M3<span class="v">MiniMax</span></span><span class="d">Frontier coding, 1M context, MSA<span class="b">bardzo długi kontekst (1M tokenów), coding z dużymi codebasami</span></span></div>
+<div class="m"><span class="r op">#4</span><span class="n">Kimi K2.7 Code<span class="v">Moonshot AI</span></span><span class="d">1T MoE (32B active), 262k context, open-source, coding-first<span class="b">coding-first, agentic — najlepszy open-source do programowania</span></span></div>
+<div class="m"><span class="r">#5</span><span class="n">Gemini 3.5 Pro<span class="v">Google</span></span><span class="d">Frontier model zapowiedziany na I/O 2026, agentic Gemini era<span class="b">agentic workflows, integracja z ekosystemem Google</span></span></div>
+<div class="m"><span class="r">#6</span><span class="n">GPT-5.5<span class="v">OpenAI</span></span><span class="d">Frontier model zamknięty, referencja dla long-horizon coding<span class="b">general-purpose reasoning, referencyjny benchmark dla innych</span></span></div>
+<div class="m"><span class="r op">#7</span><span class="n">DeepSeek v4<span class="v">DeepSeek (V4-Pro, V4-Flash)</span></span><span class="d">Open-source flagship, V4-Pro + V4-Flash API<span class="b">open-source alternatywa dla frontier modeli — dobre stosunek jakości do ceny</span></span></div>
+<div class="m"><span class="r op">#8</span><span class="n">Qwen 3.6 Plus<span class="v">Alibaba</span></span><span class="d">Open-weight, real world agents, upgrade z Qwen 3.5<span class="b">real-world agentic tasks, multimodalne zastosowania</span></span></div>
+<div class="m"><span class="r op">#9</span><span class="n">Gemma 4 12B Unified<span class="v">Google</span></span><span class="d">Open-weight, multimodalny, premiera 3 czerwca 2026<span class="b">lekki model lokalny (12B), multimodalny — do uruchamiania na własnym sprzęcie</span></span></div>
+<div class="m"><span class="r">#10</span><span class="n">Claude Opus 4.7<span class="v">Anthropic</span></span><span class="d">Poprzednik Opus 4.8, GA przed 4.8<span class="b">advanced software engineering, stabilny i sprawdzony</span></span></div>
+<div class="m"><span class="r">#11</span><span class="n">Meta AI (Llama 4)<span class="v">Meta</span></span><span class="d">Nowy model Llama-series od Meta<span class="b">open-weights w przyszłości, ekosystem community</span></span></div>
 </div>
 
 <div class="k"><div class="kt">Image Generation — lokalne/open-weight</div>
-<div class="m"><span class="r op">#1</span><span class="n">Krea 2 <span class="tn">New</span><span class="v">Krea (open-source, RAW + Turbo)</span></span><span class="d">Pierwszy foundation model Krea od zera — tunable creativity, style refs, moodboard, Partner Node w ComfyUI</span></div>
-<div class="m"><span class="r">#2</span><span class="n">Nano Banana Pro<span class="v">Google (Gemini 3)</span></span><span class="d">Top image generator per CNET, 4K output, bazuje na Gemini 3</span></div>
-<div class="m"><span class="r op">#3</span><span class="n">Ideogram 4<span class="v">Ideogram (open-weight, 9.3B)</span></span><span class="d">Top DesignArena open leaderboard, najlepszy do tekstu/logotypów/design, ComfyUI</span></div>
-<div class="m"><span class="r op">#4</span><span class="n">FLUX.2 [dev]<span class="v">Black Forest Labs (open-weight)</span></span><span class="d">Frontier visual intelligence, fotorealizm + image editing, premiera listopad 2025</span></div>
-<div class="m"><span class="r">#5</span><span class="n">Image Gen on Phone<span class="v">Various</span></span><span class="d">Lokalna generacja obrazów na telefonie, mobile-first</span></div>
+<div class="m"><span class="r op">#1</span><span class="n">Krea 2 <span class="tn">New</span><span class="v">Krea (open-source, RAW + Turbo)</span></span><span class="d">Foundation model Krea, RAW + Turbo variants, Partner Node w ComfyUI<span class="b">tunable creativity, style references, moodboard conditioning — design i art</span></span></div>
+<div class="m"><span class="r">#2</span><span class="n">Nano Banana Pro<span class="v">Google (Gemini 3)</span></span><span class="d">Top image generator per CNET, 4K output, bazuje na Gemini 3<span class="b">całkowita kontrolka stylu, edycja obrazów, integracja z Gemini</span></span></div>
+<div class="m"><span class="r op">#3</span><span class="n">Ideogram 4<span class="v">Ideogram (open-weight, 9.3B)</span></span><span class="d">Top DesignArena open leaderboard, ComfyUI<span class="b">renderowanie tekstu w obrazach — logo, poster, design z napisami</span></span></div>
+<div class="m"><span class="r op">#4</span><span class="n">FLUX.2 [dev]<span class="v">Black Forest Labs (open-weight)</span></span><span class="d">Frontier visual intelligence, fotorealizm + image editing<span class="b">fotorealizm, precyzyjna kontrola kolorów i póz, image editing</span></span></div>
+<div class="m"><span class="r">#5</span><span class="n">Image Gen on Phone<span class="v">Various</span></span><span class="d">Lokalna generacja obrazów na telefonie, mobile-first<span class="b">prywatność (offline), mobile-first UX, szybkie iteracje</span></span></div>
 </div>
 
 <div class="k"><div class="kt">Video Generation</div>
-<div class="m"><span class="r op">#1</span><span class="n">Wan 2.5<span class="v">Alibaba (open-source)</span></span><span class="d">Open-source video generation model od Alibaba</span></div>
+<div class="m"><span class="r op">#1</span><span class="n">Wan 2.5<span class="v">Alibaba (open-source)</span></span><span class="d">Open-source video generation model od Alibaba<span class="b">open-source text-to-video, lokalne uruchamianie, custom trening</span></span></div>
 </div>
 
 <div class="k"><div class="kt">World Models — symulacja i rekonstrukcja świata</div>
-<div class="m"><span class="r">#1</span><span class="n">Genie 3<span class="v">Google DeepMind</span></span><span class="d">Pierwszy real-time interaktywny world model, 3D 720p</span></div>
-<div class="m"><span class="r op">#2</span><span class="n">Cosmos 3<span class="v">NVIDIA</span></span><span class="d">Open omni-modal world model, #1 w 7 benchmarkach physical AI</span></div>
-<div class="m"><span class="r op">#3</span><span class="n">World Tracing<span class="v">World Labs + UIUC</span></span><span class="d">Pixel-aligned geometry — rekonstruuje geometrię poza kadrem</span></div>
-<div class="m"><span class="r">#4</span><span class="n">Realtime Video Games AI<span class="v">Various</span></span><span class="d">Real-time AI generation of video game environments</span></div>
+<div class="m"><span class="r">#1</span><span class="n">Genie 3<span class="v">Google DeepMind</span></span><span class="d">Pierwszy real-time interaktywny world model, 3D 720p<span class="b">interaktywne środowiska 3D real-time — gry, symulacje, trening robotów</span></span></div>
+<div class="m"><span class="r op">#2</span><span class="n">Cosmos 3<span class="v">NVIDIA</span></span><span class="d">Open omni-modal world model, #1 w 7 benchmarkach physical AI<span class="b">physical AI, trening robotów, industrial vision — automotive, manufacturing</span></span></div>
+<div class="m"><span class="r op">#3</span><span class="n">World Tracing<span class="v">World Labs + UIUC</span></span><span class="d">Pixel-aligned geometry — rekonstruuje geometrię poza kadrem<span class="b">3D reconstruction z pojedynczego zdjęcia, "widzi" zasłonięte obiekty</span></span></div>
+<div class="m"><span class="r">#4</span><span class="n">Realtime Video Games AI<span class="v">Various</span></span><span class="d">Real-time AI generation of video game environments<span class="b">dynamiczne generowanie środowisk gier w czasie rzeczywistym</span></span></div>
 </div>
 
 <div class="k"><div class="kt">Coding — asystenci kodu</div>
-<div class="m"><span class="r">#1</span><span class="n">Claude Code<span class="v">Anthropic</span></span><span class="d">CLI assistant od Anthropic, leaked wcześniej niż oficjalna premiera</span></div>
+<div class="m"><span class="r">#1</span><span class="n">Claude Code<span class="v">Anthropic</span></span><span class="d">CLI assistant od Anthropic, terminal-first<span class="b">terminal/CLI coding, agentic — autonomiczne modyfikacje repozytoriów</span></span></div>
 </div>
 
 <div class="k"><div class="kt">TTS — synteza mowy</div>
-<div class="m"><span class="r">#1</span><span class="n">Eleven v3<span class="v">ElevenLabs</span></span><span class="d">Audio Tags emocji, 70+ języków, mid-sentence tone shifts, GA marzec 2026</span></div>
-<div class="m"><span class="r">#2</span><span class="n">GPT Voice<span class="v">OpenAI</span></span><span class="d">Nowy voice model od OpenAI, lepsza ekspresja emocji</span></div>
-<div class="m"><span class="r">#3</span><span class="n">Google TTS<span class="v">Google</span></span><span class="d">Nowy TTS od Google, konkurent Eleven v3</span></div>
+<div class="m"><span class="r">#1</span><span class="n">Eleven v3<span class="v">ElevenLabs</span></span><span class="d">Audio Tags emocji, 70+ języków, mid-sentence tone shifts, GA marzec 2026<span class="b">kontrola emocji w czasie rzeczywistym, voice acting, multi-speaker</span></span></div>
+<div class="m"><span class="r">#2</span><span class="n">GPT Voice<span class="v">OpenAI</span></span><span class="d">Nowy voice model od OpenAI<span class="b">naturalna ekspresja emocji, integracja z GPT-5.5</span></span></div>
+<div class="m"><span class="r">#3</span><span class="n">Google TTS<span class="v">Google</span></span><span class="d">Nowy TTS od Google, konkurent Eleven v3<span class="b">multilingual, integracja z ekosystemem Google</span></span></div>
 </div>
 
 <div class="k"><div class="kt">Multimodal — any-to-any generation</div>
-<div class="m"><span class="r">#1</span><span class="n">Gemini Omni<span class="v">Google</span></span><span class="d">Generuje dowolną modalność z dowolnej — start od video, I/O 2026</span></div>
+<div class="m"><span class="r">#1</span><span class="n">Gemini Omni<span class="v">Google</span></span><span class="d">Generuje dowolną modalność z dowolnej — start od video, I/O 2026<span class="b">any-to-any generation — text→video, video→audio, audio→image</span></span></div>
 </div>
 
 <div class="k"><div class="kt">AI Science Agents — agenty naukowe</div>
-<div class="m"><span class="r op">#1</span><span class="n">FutureHouse Platform<span class="v">FutureHouse (non-profit)</span></span><span class="d">Darmowa platforma z 4 agentami AI do odkryć naukowych (biologia)</span></div>
-<div class="m"><span class="r">#2</span><span class="n">AlphaFold 3<span class="v">Google DeepMind</span></span><span class="d">Przewidywanie struktury białek + ligandów, przełom w drug discovery</span></div>
+<div class="m"><span class="r op">#1</span><span class="n">FutureHouse Platform<span class="v">FutureHouse (non-profit)</span></span><span class="d">Darmowa platforma z 4 agentami AI do odkryć naukowych<span class="b">biologia, automatyzacja researchu, literatur review, hypothesis generation</span></span></div>
+<div class="m"><span class="r">#2</span><span class="n">AlphaFold 3<span class="v">Google DeepMind</span></span><span class="d">Przewidywanie struktury białek + ligandów<span class="b">struktura białek, drug discovery — przełom w farmacji</span></span></div>
 </div>
 
 <div class="k"><div class="kt">AI Research — autonomously prowadzi eksperymenty</div>
-<div class="m"><span class="r">#1</span><span class="n">Happy Horse<span class="v">Various</span></span><span class="d">Full AI research — autonomously prowadzi eksperymenty naukowe</span></div>
-<div class="m"><span class="r">#2</span><span class="n">Happy Oyster<span class="v">Various</span></span><span class="d">AI research agent — discovery w biologii morskiej</span></div>
-<div class="m"><span class="r">#3</span><span class="n">HappyHorse<span class="v">Various</span></span><span class="d">AI research agent — predecessor Happy Horse, autonomously discovers</span></div>
+<div class="m"><span class="r">#1</span><span class="n">Happy Horse<span class="v">Various</span></span><span class="d">Full AI research — autonomously prowadzi eksperymenty<span class="b">end-to-end autonomne eksperymenty naukowe, od hipotezy do publikacji</span></span></div>
+<div class="m"><span class="r">#2</span><span class="n">Happy Oyster<span class="v">Various</span></span><span class="d">AI research agent — discovery w biologii morskiej<span class="b">biologia morska, odkrycia nowych związków i gatunków</span></span></div>
+<div class="m"><span class="r">#3</span><span class="n">HappyHorse<span class="v">Various</span></span><span class="d">AI research agent — predecessor Happy Horse<span class="b">wczesna wersja, autonomously discovers — historyczne znaczenie</span></span></div>
 </div>
 
 <div class="k"><div class="kt">Humanoid Robots — roboty humanoidalne</div>
-<div class="m"><span class="r">#1</span><span class="n">Moya<span class="v">DroidUp (Shanghai)</span></span><span class="d">Biomimetyczny humanoid, $173K, realistyczne wyrazy twarzy</span></div>
-<div class="m"><span class="r op">#2</span><span class="n">LeRobot<span class="v">Hugging Face (open-source)</span></span><span class="d">Open-source framework dla robotyki AI, trenuje humanoidy</span></div>
-<div class="m"><span class="r">#3</span><span class="n">Real Gundam<span class="v">Various</span></span><span class="d">Realne roboty typu Gundam, demonstracje chodu i balansu</span></div>
+<div class="m"><span class="r">#1</span><span class="n">Moya<span class="v">DroidUp (Shanghai)</span></span><span class="d">Biomimetyczny humanoid, $173K, realistyczne wyrazy twarzy<span class="b">hyper-realistic facial expressions, towarzyskie interakcje z ludźmi</span></span></div>
+<div class="m"><span class="r op">#2</span><span class="n">LeRobot<span class="v">Hugging Face (open-source)</span></span><span class="d">Open-source framework dla robotyki AI<span class="b">open-source trening robotów, community-driven, replikowalne badania</span></span></div>
+<div class="m"><span class="r">#3</span><span class="n">Real Gundam<span class="v">Various</span></span><span class="d">Realne roboty typu Gundam, demonstracje chodu i balansu<span class="b">large-scale humanoid locomotion, balans, chód dwunożny</span></span></div>
 </div>
 
 <div class="k"><div class="kt">Full Body Avatars — awatary 4D ludzi</div>
-<div class="m"><span class="r op">#1</span><span class="n">Flex4DHuman<span class="v">arXiv 2606.13655</span></span><span class="d">Multi-view video diffusion — 4D człowiek z jednego/sparse wideo</span></div>
+<div class="m"><span class="r op">#1</span><span class="n">Flex4DHuman<span class="v">arXiv 2606.13655</span></span><span class="d">Multi-view video diffusion — 4D człowiek z jednego/sparse wideo<span class="b">4D human reconstruction — AR/VR, wirtualna próbka odzieży, VFX</span></span></div>
 </div>
 
 <div class="k"><div class="kt">Hardware — urządzenia AI-first</div>
-<div class="m"><span class="r">#1</span><span class="n">AI Glasses<span class="v">Google</span></span><span class="d">AI-first smart glasses, integracja z Gemini Omni</span></div>
+<div class="m"><span class="r">#1</span><span class="n">AI Glasses<span class="v">Google</span></span><span class="d">AI-first smart glasses, integracja z Gemini Omni<span class="b">hands-free AI assistance, real-time visual understanding</span></span></div>
 </div>
 
 <div class="k"><div class="kt">AI Wellness / Spa</div>
-<div class="m"><span class="r">#1</span><span class="n">Midjourney Spa<span class="v">Midjourney</span></span><span class="d">Plan 5,000 wellness spa z AI body scannerem, start Union Square SF</span></div>
+<div class="m"><span class="r">#1</span><span class="n">Midjourney Spa<span class="v">Midjourney</span></span><span class="d">Plan 5,000 wellness spa z AI body scannerem, start Union Square SF<span class="b">AI body scanning, personalized wellness, health diagnostics</span></span></div>
 </div>
 
 <div class="s"><div class="kt">Przeanalizowane materiały</div>
