@@ -1,276 +1,225 @@
 <!DOCTYPE html>
-<html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Models</title>
+<html lang="pl" data-theme="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Models</title>
 <base target="_blank">
 <style>
+:root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#888;--hm:#666;--hd:#555;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--tbg:#2a2418;--lh:#4ade80;--ov:rgba(0,0,0,.7);--mb:#1a1a1a}
+[data-theme="light"]{--bg:#f5f5f5;--fg:#1a1a1a;--card:#fff;--bd:#ddd;--bdl:#eee;--hp:#1a1a1a;--hs:#666;--hm:#888;--hd:#aaa;--ac:#16a34a;--rk:#4285f4;--ba:#d97706;--tbg:#fef3c7;--lh:#16a34a;--ov:rgba(0,0,0,.3);--mb:#e5e5e5}
 *{box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;background:#0a0a0a;color:#e5e5e5;margin:0;padding:28px 20px;line-height:1.6;-webkit-font-smoothing:antialiased}
-.c{max-width:900px;margin:0 auto}
-.h{position:sticky;top:0;background:#0a0a0a;z-index:10;padding-bottom:16px;border-bottom:1px solid #2a2a2a;margin-bottom:24px}
-.h h1{font-size:20px;margin:0 0 12px 0;font-weight:600;color:#fafafa;letter-spacing:-.02em}
-.search{width:100%;padding:10px 14px;background:#111;border:1px solid #2a2a2a;border-radius:6px;color:#e5e5e5;font-size:14px;outline:none;transition:border-color .15s}
-.search:focus{border-color:#4ade80}
-.search::placeholder{color:#555}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:0;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
+.c{max-width:900px;margin:0 auto;padding:20px}
+.h{position:sticky;top:0;background:var(--bg);z-index:100;padding:16px 0;border-bottom:1px solid var(--bd);margin-bottom:20px;transition:background .2s}
+.hr{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.h h1{font-size:18px;margin:0;font-weight:600;color:var(--hp);letter-spacing:-.02em}
+.tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--fg);transition:border-color .15s}
+.tgl:hover{border-color:var(--ac)}
+.banner{background:linear-gradient(90deg,var(--tbg),transparent);border-left:3px solid var(--ba);padding:10px 14px;border-radius:4px;margin-bottom:12px;font-size:13px;color:var(--ba);display:none}
+.banner.show{display:flex;justify-content:space-between;align-items:center}
+.banner button{background:var(--ba);color:var(--bg);border:none;padding:4px 12px;border-radius:4px;cursor:pointer;font-size:11px;font-weight:600}
+.search{width:100%;padding:10px 14px;background:var(--card);border:1px solid var(--bd);border-radius:6px;color:var(--fg);font-size:14px;outline:none;transition:border-color .15s}
+.search:focus{border-color:var(--ac)}
+.search::placeholder{color:var(--hd)}
 .chips{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
-.chip{padding:5px 12px;background:#111;border:1px solid #2a2a2a;border-radius:14px;color:#888;font-size:11px;cursor:pointer;transition:all .15s;font-weight:500}
-.chip:hover{border-color:#4ade80;color:#aaa}
-.chip.active{background:#4ade80;color:#0a0a0a;border-color:#4ade80}
-.count{font-size:11px;color:#666;font-family:monospace;margin-top:8px}
+.chip{padding:4px 10px;background:var(--card);border:1px solid var(--bd);border-radius:12px;color:var(--hs);font-size:11px;cursor:pointer;transition:all .15s;font-weight:500}
+.chip:hover{border-color:var(--ac);color:var(--fg)}
+.chip.active{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+.tools{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap;align-items:center}
+.sel{background:var(--card);border:1px solid var(--bd);border-radius:6px;color:var(--fg);font-size:12px;padding:6px 10px;cursor:pointer;outline:none}
+.btn{background:var(--card);border:1px solid var(--bd);border-radius:6px;color:var(--fg);font-size:12px;padding:6px 12px;cursor:pointer;transition:all .15s;font-weight:500}
+.btn:hover{border-color:var(--ac)}
+.btn.ac{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+.btn.cmp{display:none;position:fixed;bottom:20px;right:20px;z-index:90;padding:10px 20px;font-size:13px;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+.btn.cmp.show{display:block}
+.count{font-size:11px;color:var(--hm);font-family:monospace;margin-top:6px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+.st{background:var(--card);border:1px solid var(--bdl);border-radius:6px;padding:10px;text-align:center}
+.st .sv{font-size:22px;font-weight:700;color:var(--hp)}
+.st .sl{font-size:10px;color:var(--hm);margin-top:2px}
+.st .sbar{height:4px;background:var(--bdl);border-radius:2px;margin-top:6px;overflow:hidden}
+.st .sbar .sf{height:100%;background:var(--ac);border-radius:2px}
+.bc{margin-top:10px;display:none}
+.bc.show{display:block}
+.bc .brow{display:flex;align-items:center;gap:8px;margin-bottom:3px;font-size:10px}
+.bc .blabel{width:100px;color:var(--hm);text-align:right;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bc .bbg{flex:1;height:12px;background:var(--bdl);border-radius:3px;overflow:hidden}
+.bc .bfill{height:100%;background:var(--rk);border-radius:3px;transition:width .3s}
+.bc .bval{width:20px;color:var(--hm);font-family:monospace;flex-shrink:0}
 .k{margin-bottom:24px}
-.kt{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#888;border-bottom:1px solid #1a1a1a;padding-bottom:6px;margin-bottom:10px;font-weight:600;display:flex;justify-content:space-between;align-items:center}
-.kt .kc{color:#555;font-size:10px;font-family:monospace}
-.m{display:grid;grid-template-columns:50px 170px 1fr;gap:12px;align-items:baseline;padding:11px 0;border-bottom:1px solid #111}
-.r{font-family:"SF Mono",Menlo,monospace;color:#6b8cce;font-size:12px;font-weight:600}
-.r.op::before{content:"⊕";color:#4ade80;margin-right:2px}
-.n{font-weight:600;color:#fafafa;font-size:14px}
-.n .v{display:block;font-weight:400;color:#666;font-size:11px;margin-top:3px}
-.n .vd{display:inline-block;margin-left:6px;color:#555;font-size:10px;font-family:monospace}
-.n .tn{display:inline-block;margin-left:6px;padding:1px 6px;background:#2a2418;color:#fbbf24;font-size:9px;border-radius:3px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;vertical-align:middle}
-.d{color:#aaa;font-size:13px}
-.b{display:block;color:#fbbf24;font-size:12px;margin-top:4px;font-weight:500}
+.kt{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:1px solid var(--bdl);padding-bottom:6px;margin-bottom:8px;font-weight:600;display:flex;justify-content:space-between;align-items:center}
+.kt .kc{color:var(--hd);font-size:10px;font-family:monospace}
+.m{display:grid;grid-template-columns:50px 170px 1fr 30px;gap:10px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--bdl);transition:background .15s;cursor:pointer;position:relative}
+.m:hover{background:var(--card);border-radius:4px}
+.m.highlight{animation:hl 1s ease-in-out 3}
+.m.new-user{border-left:3px solid var(--ac);padding-left:8px}
+@keyframes hl{0%,100%{background:transparent}50%{background:rgba(74,222,128,.15)}}
+.r{font-family:"SF Mono",Menlo,monospace;color:var(--rk);font-size:12px;font-weight:600}
+.r.op::before{content:"⊕";color:var(--ac);margin-right:2px}
+.n{font-weight:600;color:var(--hp);font-size:14px}
+.n .v{display:block;font-weight:400;color:var(--hm);font-size:11px;margin-top:3px}
+.n .vdot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px;vertical-align:middle}
+.n .vd{display:inline-block;margin-left:6px;color:var(--hd);font-size:10px;font-family:monospace}
+.n .tn{display:inline-block;margin-left:6px;padding:1px 6px;background:var(--tbg);color:var(--ba);font-size:9px;border-radius:3px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;vertical-align:middle}
+.n .tn.pulse{animation:pl 2s infinite}
+@keyframes pl{0%,100%{opacity:1}50%{opacity:.4}}
+.d{color:var(--hm);font-size:13px}
+.b{display:block;color:var(--ba);font-size:12px;margin-top:4px;font-weight:500}
 .b::before{content:"★ Najlepszy w: "}
-.s{margin-top:36px;padding-top:18px;border-top:1px solid #1a1a1a}
-.so{font-size:12px;color:#777;margin-bottom:6px;line-height:1.5}
-.so .dt{font-family:monospace;color:#4ade80;margin-right:6px}
-.so a{color:#aaa;text-decoration:none}
-.so a:hover{color:#4ade80}
-.no-results{color:#666;font-size:13px;text-align:center;padding:40px 20px;font-style:italic}
-@media(max-width:540px){.m{grid-template-columns:38px 1fr}.n{grid-column:2}.d{grid-column:2}}
+.mc{display:flex;align-items:center;justify-content:center}
+.mc input{width:16px;height:16px;cursor:pointer;accent-color:var(--ac)}
+.s{margin-top:36px;padding-top:18px;border-top:1px solid var(--bdl)}
+.so{font-size:12px;color:var(--hm);margin-bottom:6px;line-height:1.5}
+.so .dt{font-family:monospace;color:var(--ac);margin-right:6px}
+.so a{color:var(--hs);text-decoration:none}
+.so a:hover{color:var(--ac)}
+.nr{color:var(--hm);font-size:13px;text-align:center;padding:40px 20px;font-style:italic}
+.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:var(--ov);z-index:200;justify-content:center;align-items:flex-start;padding:40px 20px;overflow-y:auto}
+.modal.show{display:flex}
+.md{background:var(--bg);border:1px solid var(--bd);border-radius:10px;max-width:700px;width:100%;padding:24px;margin-bottom:40px;position:relative}
+.md h2{font-size:18px;margin:0 0 16px 0;color:var(--hp)}
+.md .close{position:absolute;top:12px;right:16px;font-size:24px;cursor:pointer;color:var(--hm);background:none;border:none;line-height:1}
+.md .close:hover{color:var(--hp)}
+.md .mrow{display:grid;grid-template-columns:120px 1fr;gap:8px;padding:8px 0;border-bottom:1px solid var(--bdl);font-size:13px}
+.md .mrow .ml{color:var(--hm);font-weight:600}
+.md .mrow .mv{color:var(--fg)}
+.md .mlink{display:inline-block;margin-top:12px;padding:8px 16px;background:var(--ac);color:var(--bg);border-radius:6px;text-decoration:none;font-size:13px;font-weight:600}
+.md .mlink:hover{opacity:.85}
+.cmp-t{width:100%;border-collapse:collapse;font-size:12px}
+.cmp-t th,.cmp-t td{padding:8px 10px;border:1px solid var(--bdl);text-align:left;vertical-align:top}
+.cmp-t th{background:var(--card);color:var(--hp);font-weight:600}
+.cmp-t .cr{color:var(--hm);font-weight:600;width:100px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ac);color:var(--bg);padding:10px 20px;border-radius:6px;font-size:13px;font-weight:600;z-index:300;opacity:0;transition:opacity .3s;pointer-events:none}
+.toast.show{opacity:1}
+@media(max-width:540px){.m{grid-template-columns:38px 1fr 30px}.n{grid-column:2}.d{grid-column:2}.mc{grid-column:3;grid-row:1}.stats{grid-template-columns:repeat(2,1fr)}}
 </style></head><body>
 <div class="c">
-
 <div class="h">
-<h1>AI Models — aktualny przegląd</h1>
+<div class="hr"><h1>AI Models — aktualny przegląd</h1><button class="tgl" id="themeTgl">🌙</button></div>
+<div class="banner" id="banner"></div>
 <input type="text" class="search" id="search" placeholder="🔍 Szukaj: nazwa, kategoria, opis, use case... (np. 'tekst to speech', 'image', 'coding', 'open source')">
-<div class="chips" id="chips">
-<span class="chip" data-filter="LLM">LLM</span>
-<span class="chip" data-filter="Image Generation">Image Gen</span>
-<span class="chip" data-filter="Video Generation">Video</span>
-<span class="chip" data-filter="World Models">World Models</span>
-<span class="chip" data-filter="Coding">Coding</span>
-<span class="chip" data-filter="TTS">TTS</span>
-<span class="chip" data-filter="Multimodal">Multimodal</span>
-<span class="chip" data-filter="AI Science Agents">Science</span>
-<span class="chip" data-filter="AI Research">Research</span>
-<span class="chip" data-filter="Humanoid Robots">Robots</span>
-<span class="chip" data-filter="Realtime Avatars">Realtime Avatars</span>
-<span class="chip" data-filter="4D Human">4D Human</span>
-<span class="chip" data-filter="Neural Interface">BCI</span>
-<span class="chip" data-filter="Hardware">Hardware</span>
-<span class="chip" data-filter="AI Wellness">Wellness</span>
-<span class="chip" data-filter="oplus">⊕ Open-source</span>
-<span class="chip" data-filter="tn">★ New</span>
+<div class="chips" id="chips"></div>
+<div class="stats" id="stats"></div>
+<div class="bc" id="bc"></div>
+<div class="tools">
+<select class="sel" id="sort"><option value="rank">Sortuj: Ranking</option><option value="newest">Sortuj: Najnowsze</option><option value="name">Sortuj: Nazwa A-Z</option><option value="os">Sortuj: Open-source first</option></select>
+<button class="btn" onclick="exportData('json')">📥 JSON</button>
+<button class="btn" onclick="exportData('csv')">📥 CSV</button>
 </div>
 <div class="count" id="count"></div>
 </div>
-
-<!-- ⊕=open-source (zielony), #nr=granatowy. .vd=data wydania. .b="Najlepszy w" (żółty). -->
-
-<div class="k" data-cat="LLM"><div class="kt">LLM — duże modele językowe <span class="kc" id="kc-LLM"></span></div>
-<div class="m"><span class="r">#1</span><span class="n">GPT 5.6 Sol <span class="tn">New</span><span class="v">OpenAI<span class="vd">2026-06-27</span></span></span><span class="d">Flagship Sol + Terra (lower-cost) + Luna (fastest), 1.5M token context, agentic coding lepszy niż Mythos<span class="b">agentic coding, złożone reasoning, długie konteksty (1.5M tokens)</span></span></div>
-<div class="m"><span class="r">#2</span><span class="n">Claude Mythos 5 <span class="tn">Ban Lifted</span><span class="v">Anthropic<span class="vd">2026-06-27</span></span></span><span class="d">Ban zdjęty 26-27.06, dostępny dla trusted US orgs, konkurent GPT 5.6 w agentic<span class="b">agentic engineering, research, safety-critical reasoning</span></span></div>
-<div class="m"><span class="r">#3</span><span class="n">Claude Opus 4.8<span class="v">Anthropic<span class="vd">2026-05-28</span></span></span><span class="d">Były lider benchmarków long-horizon, +1% nad GLM-5.2<span class="b">złożone zadania wieloetapowe, research, coding z dużym kontekstem</span></span></div>
-<div class="m"><span class="r op">#4</span><span class="n">GLM-5.2<span class="v">Z.AI / Zhipu AI<span class="vd">2026-06-16</span></span></span><span class="d">Open-weight MoE 745B (44B active), 1/6 kosztu GPT-5.5<span class="b">long-horizon coding, agentic engineering — open-source z frontier jakości</span></span></div>
-<div class="m"><span class="r">#5</span><span class="n">MiniMax M3<span class="v">MiniMax<span class="vd">2026-05-31</span></span></span><span class="d">Frontier coding, 1M context, MSA<span class="b">bardzo długi kontekst (1M tokenów), coding z dużymi codebasami</span></span></div>
-<div class="m"><span class="r op">#6</span><span class="n">Kimi K2.7 Code<span class="v">Moonshot AI<span class="vd">2026-06-12</span></span></span><span class="d">1T MoE (32B active), 262k context, open-source, coding-first<span class="b">coding-first, agentic — najlepszy open-source do programowania</span></span></div>
-<div class="m"><span class="r">#7</span><span class="n">Gemini 3.5 Pro<span class="v">Google<span class="vd">2026-06</span></span></span><span class="d">Frontier model zapowiedziany na I/O 2026, agentic Gemini era<span class="b">agentic workflows, integracja z ekosystemem Google</span></span></div>
-<div class="m"><span class="r">#8</span><span class="n">GPT-5.5<span class="v">OpenAI<span class="vd">2026-04-23</span></span></span><span class="d">Frontier model zamknięty, referencja dla long-horizon coding<span class="b">general-purpose reasoning, referencyjny benchmark dla innych</span></span></div>
-<div class="m"><span class="r op">#9</span><span class="n">DeepSeek v4<span class="v">DeepSeek (V4-Pro, V4-Flash)<span class="vd">2026-04-24</span></span></span><span class="d">Open-source flagship, V4-Pro + V4-Flash API<span class="b">open-source alternatywa dla frontier modeli — dobre stosunek jakości do ceny</span></span></div>
-<div class="m"><span class="r op">#10</span><span class="n">Qwen 3.6 Plus<span class="v">Alibaba<span class="vd">2026-05-19</span></span></span><span class="d">Open-weight, real world agents, upgrade z Qwen 3.5<span class="b">real-world agentic tasks, multimodalne zastosowania</span></span></div>
-<div class="m"><span class="r op">#11</span><span class="n">Gemma 4 12B Unified<span class="v">Google<span class="vd">2026-06-03</span></span></span><span class="d">Open-weight, multimodalny, premiera 3 czerwca 2026<span class="b">lekki model lokalny (12B), multimodalny — do uruchamiania na własnym sprzęcie</span></span></div>
-<div class="m"><span class="r">#12</span><span class="n">Claude Opus 4.7<span class="v">Anthropic<span class="vd">2026-04-16</span></span></span><span class="d">Poprzednik Opus 4.8, GA przed 4.8<span class="b">advanced software engineering, stabilny i sprawdzony</span></span></div>
-<div class="m"><span class="r">#13</span><span class="n">Meta AI (Llama 4)<span class="v">Meta<span class="vd">2026-04</span></span></span><span class="d">Nowy model Llama-series od Meta<span class="b">open-weights w przyszłości, ekosystem community</span></span></div>
+<div id="content"></div>
+<div class="s"><div class="kt">Przeanalizowane materiały</div><div id="sources"></div></div>
 </div>
-
-<div class="k" data-cat="Image Generation"><div class="kt">Image Generation — lokalne/open-weight <span class="kc" id="kc-Image Generation"></span></div>
-<div class="m"><span class="r op">#1</span><span class="n">Krea 2 <span class="tn">New</span><span class="v">Krea (open-source, RAW + Turbo)<span class="vd">2026-06-23</span></span></span><span class="d">Foundation model Krea, RAW + Turbo variants, Partner Node w ComfyUI<span class="b">tunable creativity, style references, moodboard conditioning — design i art</span></span></div>
-<div class="m"><span class="r">#2</span><span class="n">Nano Banana Pro<span class="v">Google (Gemini 3)<span class="vd">2026-05-28</span></span></span><span class="d">Top image generator per CNET, 4K output, bazuje na Gemini 3<span class="b">całkowita kontrolka stylu, edycja obrazów, integracja z Gemini</span></span></div>
-<div class="m"><span class="r op">#3</span><span class="n">Ideogram 4<span class="v">Ideogram (open-weight, 9.3B)<span class="vd">2026-06-03</span></span></span><span class="d">Top DesignArena open leaderboard, ComfyUI<span class="b">renderowanie tekstu w obrazach — logo, poster, design z napisami</span></span></div>
-<div class="m"><span class="r op">#4</span><span class="n">FLUX.2 [dev]<span class="v">Black Forest Labs (open-weight)<span class="vd">2025-11</span></span></span><span class="d">Frontier visual intelligence, fotorealizm + image editing<span class="b">fotorealizm, precyzyjna kontrola kolorów i póz, image editing</span></span></div>
-<div class="m"><span class="r">#5</span><span class="n">Image Gen on Phone<span class="v">Various<span class="vd">2026-05</span></span></span><span class="d">Lokalna generacja obrazów na telefonie, mobile-first<span class="b">prywatność (offline), mobile-first UX, szybkie iteracje</span></span></div>
-</div>
-
-<div class="k" data-cat="Video Generation"><div class="kt">Video Generation <span class="kc" id="kc-Video Generation"></span></div>
-<div class="m"><span class="r">#1</span><span class="n">Seedance 2.5 <span class="tn">New</span><span class="v">ByteDance<span class="vd">2026-06-23</span></span></span><span class="d">30-second native clips, 50 multimodal references, joint audio-video generation<span class="b">długie klipy 30s z wieloma referencjami, audio-video joint generation</span></span></div>
-<div class="m"><span class="r op">#2</span><span class="n">Wan 2.5<span class="v">Alibaba (open-source)<span class="vd">2025-09</span></span></span><span class="d">Open-source video generation model od Alibaba<span class="b">open-source text-to-video, lokalne uruchamianie, custom trening</span></span></div>
-</div>
-
-<div class="k" data-cat="World Models"><div class="kt">World Models — symulacja i rekonstrukcja świata <span class="kc" id="kc-World Models"></span></div>
-<div class="m"><span class="r">#1</span><span class="n">Genie 3<span class="v">Google DeepMind<span class="vd">2026-02-03</span></span></span><span class="d">Pierwszy real-time interaktywny world model, 3D 720p<span class="b">interaktywne środowiska 3D real-time — gry, symulacje, trening robotów</span></span></div>
-<div class="m"><span class="r op">#2</span><span class="n">Cosmos 3<span class="v">NVIDIA<span class="vd">2026-05-31</span></span></span><span class="d">Open omni-modal world model, #1 w 7 benchmarkach physical AI<span class="b">physical AI, trening robotów, industrial vision — automotive, manufacturing</span></span></div>
-<div class="m"><span class="r op">#3</span><span class="n">World Tracing<span class="v">World Labs + UIUC<span class="vd">2026-06</span></span></span><span class="d">Pixel-aligned geometry — rekonstruuje geometrię poza kadrem<span class="b">3D reconstruction z pojedynczego zdjęcia, "widzi" zasłonięte obiekty</span></span></div>
-<div class="m"><span class="r">#4</span><span class="n">Realtime Video Games AI<span class="v">Various<span class="vd">2026-04</span></span></span><span class="d">Real-time AI generation of video game environments<span class="b">dynamiczne generowanie środowisk gier w czasie rzeczywistym</span></span></div>
-</div>
-
-<div class="k" data-cat="Coding"><div class="kt">Coding — asystenci kodu <span class="kc" id="kc-Coding"></span></div>
-<div class="m"><span class="r">#1</span><span class="n">Claude Code<span class="v">Anthropic<span class="vd">2026-02</span></span></span><span class="d">CLI assistant od Anthropic, terminal-first<span class="b">terminal/CLI coding, agentic — autonomiczne modyfikacje repozytoriów</span></span></div>
-</div>
-
-<div class="k" data-cat="TTS"><div class="kt">TTS — synteza mowy (text-to-speech) <span class="kc" id="kc-TTS"></span></div>
-<div class="m"><span class="r">#1</span><span class="n">Eleven v3<span class="v">ElevenLabs<span class="vd">2026-03-14</span></span></span><span class="d">Audio Tags emocji, 70+ języków, mid-sentence tone shifts, GA marzec 2026<span class="b">kontrola emocji w czasie rzeczywistym, voice acting, multi-speaker</span></span></div>
-<div class="m"><span class="r">#2</span><span class="n">GPT Voice (GPT-Realtime-2)<span class="v">OpenAI<span class="vd">2026-05-07</span></span></span><span class="d">Nowy voice model od OpenAI, Realtime-2 GA<span class="b">naturalna ekspresja emocji, integracja z GPT-5.5, 128k context</span></span></div>
-<div class="m"><span class="r">#3</span><span class="n">Google TTS (Gemini 3.1 Flash TTS)<span class="v">Google<span class="vd">2026-05</span></span></span><span class="d">Nowy TTS od Google, konkurent Eleven v3<span class="b">multilingual, granular audio tags, integracja z Gemini</span></span></div>
-</div>
-
-<div class="k" data-cat="Multimodal"><div class="kt">Multimodal — any-to-any generation <span class="kc" id="kc-Multimodal"></span></div>
-<div class="m"><span class="r">#1</span><span class="n">Gemini Omni<span class="v">Google<span class="vd">2026-05-20</span></span></span><span class="d">Generuje dowolną modalność z dowolnej — I/O 2026 announcement<span class="b">any-to-any generation — text→video, video→audio, audio→image</span></span></div>
-</div>
-
-<div class="k" data-cat="AI Science Agents"><div class="kt">AI Science Agents — agenty naukowe <span class="kc" id="kc-AI Science Agents"></span></div>
-<div class="m"><span class="r op">#1</span><span class="n">FutureHouse Platform<span class="v">FutureHouse (non-profit)<span class="vd">2026-05</span></span></span><span class="d">Darmowa platforma z 4 agentami AI do odkryć naukowych<span class="b">biologia, automatyzacja researchu, literatur review, hypothesis generation</span></span></div>
-<div class="m"><span class="r">#2</span><span class="n">AlphaFold 3<span class="v">Google DeepMind<span class="vd">2024-05-08</span></span></span><span class="d">Przewidywanie struktury białek + ligandów, kod open-source od Nov 2024<span class="b">struktura białek, drug discovery — przełom w farmacji</span></span></div>
-</div>
-
-<div class="k" data-cat="AI Research"><div class="kt">AI Research — autonomously prowadzi eksperymenty <span class="kc" id="kc-AI Research"></span></div>
-<div class="m"><span class="r">#1</span><span class="n">Happy Horse<span class="v">Alibaba<span class="vd">2026-06</span></span></span><span class="d">Full AI research — autonomously prowadzi eksperymenty, viral breakthrough<span class="b">end-to-end autonomne eksperymenty naukowe, od hipotezy do publikacji</span></span></div>
-<div class="m"><span class="r">#2</span><span class="n">Happy Oyster<span class="v">Alibaba<span class="vd">2026-04</span></span></span><span class="d">AI research agent — 3D game simulation, dynamic interactive environments<span class="b">3D game video generation, dynamiczne środowiska interaktywne</span></span></div>
-<div class="m"><span class="r">#3</span><span class="n">HappyHorse-1.0<span class="v">Alibaba<span class="vd">2026-04-26</span></span></span><span class="d">Video generation model — #1 na Artificial Analysis leaderboard<span class="b">video generation, dynamic environments — predecessor Happy Horse</span></span></div>
-</div>
-
-<div class="k" data-cat="Humanoid Robots"><div class="kt">Humanoid Robots — roboty humanoidalne <span class="kc" id="kc-Humanoid Robots"></span></div>
-<div class="m"><span class="r">#1</span><span class="n">Moya<span class="v">DroidUp (Shanghai)<span class="vd">2026-02-23</span></span></span><span class="d">Biomimetyczny humanoid, $173K, realistyczne wyrazy twarzy<span class="b">hyper-realistic facial expressions, towarzyskie interakcje z ludźmi</span></span></div>
-<div class="m"><span class="r op">#2</span><span class="n">LeRobot<span class="v">Hugging Face (open-source)<span class="vd">2025-01</span></span></span><span class="d">Open-source framework dla robotyki AI, ongoing development<span class="b">open-source trening robotów, community-driven, replikowalne badania</span></span></div>
-<div class="m"><span class="r">#3</span><span class="n">Real Gundam<span class="v">Various<span class="vd">2026-05</span></span></span><span class="d">Realne roboty typu Gundam, demonstracje chodu i balansu<span class="b">large-scale humanoid locomotion, balans, chód dwunożny</span></span></div>
-</div>
-
-<div class="k" data-cat="Realtime Avatars"><div class="kt">Realtime Avatars — awatary konwersacyjne real-time <span class="kc" id="kc-Realtime Avatars"></span></div>
-<div class="m"><span class="r">#1</span><span class="n">Beyond Presence / Genesis <span class="tn">New</span><span class="v">Beyond Presence<span class="vd">2026-06</span></span></span><span class="d">Real-time hyper-realistic AI avatars, Genesis 2.0 we wrześniu 2026<span class="b">real-time konwersacyjne avatary, digital twins, 24/7 multilingual support</span></span></div>
-</div>
-
-<div class="k" data-cat="4D Human"><div class="kt">4D Human Reconstruction — rekonstrukcja człowieka <span class="kc" id="kc-4D Human"></span></div>
-<div class="m"><span class="r op">#1</span><span class="n">Flex4DHuman<span class="v">arXiv 2606.13655<span class="vd">2026-06</span></span></span><span class="d">Multi-view video diffusion — 4D człowiek z jednego/sparse wideo<span class="b">4D human reconstruction — AR/VR, wirtualna próbka odzieży, VFX</span></span></div>
-</div>
-
-<div class="k" data-cat="Neural Interface"><div class="kt">Neural Interface — interfejsy mózg-komputer (BCI) <span class="kc" id="kc-Neural Interface"></span></div>
-<div class="m"><span class="r">#1</span><span class="n">Merge Labs <span class="tn">New</span><span class="v">Merge Labs (OpenAI-backed)<span class="vd">2026-06</span></span></span><span class="d">Ultrasound BCI, nieinwazyjny (bez chirurgii), $250M seed od OpenAI<span class="b">nieinwazyjny brain-computer interface, read + modulate brain activity</span></span></div>
-</div>
-
-<div class="k" data-cat="Hardware"><div class="kt">Hardware — urządzenia AI-first <span class="kc" id="kc-Hardware"></span></div>
-<div class="m"><span class="r">#1</span><span class="n">AI Glasses<span class="v">Google + Gentle Monster, Warby Parker<span class="vd">2026-05-20</span></span></span><span class="d">AI-first smart glasses, integracja z Gemini Omni, launch fall 2026<span class="b">hands-free AI assistance, real-time visual understanding</span></span></div>
-</div>
-
-<div class="k" data-cat="AI Wellness"><div class="kt">AI Wellness / Spa <span class="kc" id="kc-AI Wellness"></span></div>
-<div class="m"><span class="r">#1</span><span class="n">Midjourney Spa<span class="v">Midjourney<span class="vd">2026-06-19</span></span></span><span class="d">Plan 5,000 wellness spa z AI body scannerem, start Union Square SF<span class="b">AI body scanning, personalized wellness, health diagnostics</span></span></div>
-</div>
-
-<div class="s"><div class="kt">Przeanalizowane materiały</div>
-<div class="so"><span class="dt">2026-06-28</span><a href="https://www.youtube.com/watch?v=7c_ieWfAbrw">GPT 5.6, Mythos ban lifted, realtime avatars, Seedance 2.5, brain ultrasound</a></div>
-<div class="so"><span class="dt">2026-06-24</span><a href="https://youtu.be/1U8dJ94QFNc">New top local AI image generator is here! Already uncensored</a></div>
-<div class="so"><span class="dt">2026-06-21</span><a href="https://www.youtube.com/watch?v=kkLlzQqa7MY">New robot waifus, GLM 5.2 craze, AI spas, new world models, new science agents</a></div>
-<div class="so"><span class="dt">2026-06-17</span><a href="https://www.youtube.com/watch?v=6d__WOpZswY">New #1 open-source AI model is here!</a></div>
-<div class="so"><span class="dt">2026-06-14</span><a href="https://www.youtube.com/watch?v=SxiRANj0xLs">RIP Claude Fable, open-source AI unleashed, full body avatars, new Google models, new TTS</a></div>
-<div class="so"><span class="dt">2026-06-11</span><a href="https://www.youtube.com/watch?v=GUEE9OA4keo">Claude Fable 5 is here!</a></div>
-<div class="so"><span class="dt">2026-06-09</span><a href="https://www.youtube.com/watch?v=OA4gchz1Zcs">New BEST local AI image generator is here!</a></div>
-<div class="so"><span class="dt">2026-06-07</span><a href="https://www.youtube.com/watch?v=CzxqQJOswvo">Full body waifus, AI dreams, realtime AI music, open-source Gemini Omni</a></div>
-<div class="so"><span class="dt">2026-06-02</span><a href="https://www.youtube.com/watch?v=DlvhlQOBHBw">The BEST AI for 4K images. Free & fast</a></div>
-<div class="so"><span class="dt">2026-05-31</span><a href="https://www.youtube.com/watch?v=RdqYvdT74i0">Self-improving AI, Opus 4.8, Nvidia bangers, game-ready 3D models, juggling robots</a></div>
-<div class="so"><span class="dt">2026-05-28</span><a href="https://www.youtube.com/watch?v=QvN6Tu6dHYM">The acceleration is here!</a></div>
-<div class="so"><span class="dt">2026-05-24</span><a href="https://www.youtube.com/watch?v=pC6KHflGye0">AI scientist, DNA editors, AI NPCs, new Qwen, open-source robots, new video editors</a></div>
-<div class="so"><span class="dt">2026-05-21</span><a href="https://www.youtube.com/watch?v=J02-39xtlt4">Google strikes back! Gemini Omni, AI glasses, new models</a></div>
-<div class="so"><span class="dt">2026-05-17</span><a href="https://www.youtube.com/watch?v=NnsQj2nDkKA">Real gundams, top 3D generator, open-source world models, ChatGPT updates, new TTS</a></div>
-<div class="so"><span class="dt">2026-05-14</span><a href="https://www.youtube.com/watch?v=s3rNDndvav0">The biggest AI breakthrough in medicine & drug discovery</a></div>
-<div class="so"><span class="dt">2026-05-10</span><a href="https://www.youtube.com/watch?v=quxnhOeRz7I">Self-evolving AI, robot fights, new GPT voice, new local image model, Gemma upgrade</a></div>
-<div class="so"><span class="dt">2026-05-08</span><a href="https://www.youtube.com/watch?v=7r_WJ9xpne0">Robot girlfriends, recursive AI agents, full AI research, Happy Horse</a></div>
-<div class="so"><span class="dt">2026-04-23</span><a href="https://www.youtube.com/watch?v=G8fqduzB5lc">Claude Opus 4.7, Qwen 3.6, Happy Oyster, realtime 3D worlds, new Google TTS</a></div>
-<div class="so"><span class="dt">2026-04-17</span><a href="https://www.youtube.com/watch?v=1_5sSJK2rU0">Claude Mythos, Deepseek v4, HappyHorse, Meta new AI, realtime video games</a></div>
-<div class="so"><span class="dt">2026-04-09</span><a href="https://www.youtube.com/watch?v=o5rGuknRw2A">Google open-source AI, Claude Code leaked, new Wan, new Qwen, image gen on phone</a></div>
-</div>
-
-</div>
-
+<button class="btn cmp" id="cmpBtn" onclick="openCompare()">⚔️ Porównaj (<span id="cmpCount">0</span>)</button>
+<div class="modal" id="modelModal" onclick="if(event.target===this)closeModal('modelModal')"><div class="md" id="modelContent"></div></div>
+<div class="modal" id="cmpModal" onclick="if(event.target===this)closeModal('cmpModal')"><div class="md" id="cmpContent"></div></div>
+<div class="toast" id="toast"></div>
 <script>
-(function(){
-  const search = document.getElementById('search');
-  const chips = document.querySelectorAll('.chip');
-  const count = document.getElementById('count');
-  const categories = document.querySelectorAll('.k');
-  let activeChip = null;
-
-  function normalize(s) {
-    return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  }
-
-  function filter() {
-    const q = normalize(search.value.trim());
-    let total = 0, visible = 0;
-
-    categories.forEach(cat => {
-      const catName = cat.getAttribute('data-cat');
-      const models = cat.querySelectorAll('.m');
-      let catVisible = 0;
-
-      models.forEach(m => {
-        total++;
-        const name = normalize(m.querySelector('.n').textContent);
-        const desc = normalize(m.querySelector('.d').textContent);
-        const rank = normalize(m.querySelector('.r').textContent);
-        const hasOp = m.querySelector('.r.op') !== null;
-        const hasNew = m.querySelector('.tn') !== null;
-        let match = true;
-
-        // Chip filter
-        if (activeChip) {
-          if (activeChip === 'oplus') {
-            match = hasOp;
-          } else if (activeChip === 'tn') {
-            match = hasNew;
-          } else if (activeChip === '4D Human') {
-            match = catName === '4D Human';
-          } else {
-            match = catName.includes(activeChip) || catName === activeChip;
-          }
-        }
-
-        // Text search
-        if (match && q) {
-          match = name.includes(q) || desc.includes(q) || catName.toLowerCase().includes(q) || rank.includes(q);
-        }
-
-        m.style.display = match ? '' : 'none';
-        if (match) { catVisible++; visible++; }
-      });
-
-      // Hide category if no visible models
-      cat.style.display = catVisible > 0 ? '' : 'none';
-      const kc = document.getElementById('kc-' + catName);
-      if (kc) kc.textContent = catVisible > 0 ? '(' + catVisible + ')' : '';
-    });
-
-    // No results message
-    let noResults = document.querySelector('.no-results');
-    if (visible === 0) {
-      if (!noResults) {
-        noResults = document.createElement('div');
-        noResults.className = 'no-results';
-        noResults.textContent = 'Brak wyników dla "' + search.value + '"';
-        document.querySelector('.h').after(noResults);
-      } else {
-        noResults.textContent = 'Brak wyników dla "' + search.value + '"';
-      }
-    } else if (noResults) {
-      noResults.remove();
-    }
-
-    count.textContent = visible + ' z ' + total + ' modeli';
-  }
-
-  search.addEventListener('input', filter);
-
-  chips.forEach(chip => {
-    chip.addEventListener('click', () => {
-      const f = chip.getAttribute('data-filter');
-      if (activeChip === f) {
-        activeChip = null;
-        chip.classList.remove('active');
-      } else {
-        chips.forEach(c => c.classList.remove('active'));
-        chip.classList.add('active');
-        activeChip = f;
-      }
-      filter();
-    });
-  });
-
-  filter();
-})();
-</script>
-</body></html>
+const TODAY='2026-06-28';const NEW_DAYS=14;
+const M=[
+{r:1,n:'GPT 5.6 Sol',v:'OpenAI',d:'2026-06-27',o:0,c:'LLM',desc:'Flagship Sol + Terra (lower-cost) + Luna (fastest), 1.5M token context, agentic coding lepszy niż Mythos',b:'agentic coding, złożone reasoning, długie konteksty (1.5M tokens)',tags:[],url:'https://openai.com/index/previewing-gpt-5-6-sol',yt:'7c_ieWfAbrw'},
+{r:2,n:'Claude Mythos 5',v:'Anthropic',d:'2026-06-27',o:0,c:'LLM',desc:'Ban zdjęty 26-27.06, dostępny dla trusted US orgs, konkurent GPT 5.6 w agentic',b:'agentic engineering, research, safety-critical reasoning',tags:['ban-lifted'],url:'https://www.anthropic.com/news/fable-mythos-access',yt:'7c_ieWfAbrw'},
+{r:3,n:'Claude Opus 4.8',v:'Anthropic',d:'2026-05-28',o:0,c:'LLM',desc:'Były lider benchmarków long-horizon, +1% nad GLM-5.2',b:'złożone zadania wieloetapowe, research, coding z dużym kontekstem',tags:[],url:'https://www.anthropic.com/news/claude-opus-4-8',yt:'RdqYvdT74i0'},
+{r:4,n:'GLM-5.2',v:'Z.AI / Zhipu AI',d:'2026-06-16',o:1,c:'LLM',desc:'Open-weight MoE 745B (44B active), 1/6 kosztu GPT-5.5',b:'long-horizon coding, agentic engineering — open-source z frontier jakości',tags:[],url:'https://z.ai/blog/glm-5.2',yt:'kkLlzQqa7MY'},
+{r:5,n:'MiniMax M3',v:'MiniMax',d:'2026-05-31',o:0,c:'LLM',desc:'Frontier coding, 1M context, MSA',b:'bardzo długi kontekst (1M tokenów), coding z dużymi codebasami',tags:[],url:'https://www.minimax.io/blog/minimax-m3',yt:'SxiRANj0xLs'},
+{r:6,n:'Kimi K2.7 Code',v:'Moonshot AI',d:'2026-06-12',o:1,c:'LLM',desc:'1T MoE (32B active), 262k context, open-source, coding-first',b:'coding-first, agentic — najlepszy open-source do programowania',tags:[],url:'https://www.moonshot.ai',yt:'SxiRANj0xLs'},
+{r:7,n:'Gemini 3.5 Pro',v:'Google',d:'2026-06',o:0,c:'LLM',desc:'Frontier model zapowiedziany na I/O 2026, agentic Gemini era',b:'agentic workflows, integracja z ekosystemem Google',tags:[],url:'https://blog.google/innovation-and-ai/sundar-pichai-io-2026',yt:'J02-39xtlt4'},
+{r:8,n:'GPT-5.5',v:'OpenAI',d:'2026-04-23',o:0,c:'LLM',desc:'Frontier model zamknięty, referencja dla long-horizon coding',b:'general-purpose reasoning, referencyjny benchmark dla innych',tags:[],url:'https://openai.com/index/introducing-gpt-5-5',yt:'QvN6Tu6dHYM'},
+{r:9,n:'DeepSeek v4',v:'DeepSeek',d:'2026-04-24',o:1,c:'LLM',desc:'Open-source flagship, V4-Pro + V4-Flash API',b:'open-source alternatywa dla frontier modeli — dobre stosunek jakości do ceny',tags:[],url:'',yt:'1_5sSJK2rU0'},
+{r:10,n:'Qwen 3.6 Plus',v:'Alibaba',d:'2026-05-19',o:1,c:'LLM',desc:'Open-weight, real world agents, upgrade z Qwen 3.5',b:'real-world agentic tasks, multimodalne zastosowania',tags:[],url:'https://qwenlm.github.io',yt:'G8fqduzB5lc'},
+{r:11,n:'Gemma 4 12B Unified',v:'Google',d:'2026-06-03',o:1,c:'LLM',desc:'Open-weight, multimodalny, premiera 3 czerwca 2026',b:'lekki model lokalny (12B), multimodalny — do uruchamiania na własnym sprzęcie',tags:[],url:'https://ai.google.dev/gemma',yt:'quxnhOeRz7I'},
+{r:12,n:'Claude Opus 4.7',v:'Anthropic',d:'2026-04-16',o:0,c:'LLM',desc:'Poprzednik Opus 4.8, GA przed 4.8',b:'advanced software engineering, stabilny i sprawdzony',tags:[],url:'https://www.anthropic.com/news/claude-opus-4-7',yt:'G8fqduzB5lc'},
+{r:13,n:'Meta AI (Llama 4)',v:'Meta',d:'2026-04',o:0,c:'LLM',desc:'Nowy model Llama-series od Meta',b:'open-weights w przyszłości, ekosystem community',tags:[],url:'https://ai.meta.com/llama',yt:'1_5sSJK2rU0'},
+{r:1,n:'Krea 2',v:'Krea',d:'2026-06-23',o:1,c:'Image Generation',desc:'Foundation model Krea, RAW + Turbo variants, Partner Node w ComfyUI',b:'tunable creativity, style references, moodboard conditioning — design i art',tags:[],url:'https://www.krea.ai/krea-2-open-source',yt:'1U8dJ94QFNc'},
+{r:2,n:'Nano Banana Pro',v:'Google',d:'2026-05-28',o:0,c:'Image Generation',desc:'Top image generator per CNET, 4K output, bazuje na Gemini 3',b:'całkowita kontrola stylu, edycja obrazów, integracja z Gemini',tags:[],url:'',yt:'DlvhlQOBHBw'},
+{r:3,n:'Ideogram 4',v:'Ideogram',d:'2026-06-03',o:1,c:'Image Generation',desc:'Top DesignArena open leaderboard, ComfyUI',b:'renderowanie tekstu w obrazach — logo, poster, design z napisami',tags:[],url:'https://ideogram.ai/news/ideogram-4.0',yt:'OA4gchz1Zcs'},
+{r:4,n:'FLUX.2 [dev]',v:'Black Forest Labs',d:'2025-11',o:1,c:'Image Generation',desc:'Frontier visual intelligence, fotorealizm + image editing',b:'fotorealizm, precyzyjna kontrola kolorów i póz, image editing',tags:[],url:'https://bfl.ai/blog/flux-2',yt:'OA4gchz1Zcs'},
+{r:5,n:'Image Gen on Phone',v:'Various',d:'2026-05',o:0,c:'Image Generation',desc:'Lokalna generacja obrazów na telefonie, mobile-first',b:'prywatność (offline), mobile-first UX, szybkie iteracje',tags:[],url:'',yt:'o5rGuknRw2A'},
+{r:1,n:'Seedance 2.5',v:'ByteDance',d:'2026-06-23',o:0,c:'Video Generation',desc:'30-second native clips, 50 multimodal references, joint audio-video generation',b:'długie klipy 30s z wieloma referencjami, audio-video joint generation',tags:[],url:'https://seed.bytedance.com/en/seedance2_0',yt:'7c_ieWfAbrw'},
+{r:2,n:'Wan 2.5',v:'Alibaba',d:'2025-09',o:1,c:'Video Generation',desc:'Open-source video generation model od Alibaba',b:'open-source text-to-video, lokalne uruchamianie, custom trening',tags:[],url:'',yt:'o5rGuknRw2A'},
+{r:1,n:'Genie 3',v:'Google DeepMind',d:'2026-02-03',o:0,c:'World Models',desc:'Pierwszy real-time interaktywny world model, 3D 720p',b:'interaktywne środowiska 3D real-time — gry, symulacje, trening robotów',tags:[],url:'https://deepmind.google/blog/genie-3',yt:'NnsQj2nDkKA'},
+{r:2,n:'Cosmos 3',v:'NVIDIA',d:'2026-05-31',o:1,c:'World Models',desc:'Open omni-modal world model, #1 w 7 benchmarkach physical AI',b:'physical AI, trening robotów, industrial vision — automotive, manufacturing',tags:[],url:'https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3',yt:'RdqYvdT74i0'},
+{r:3,n:'World Tracing',v:'World Labs + UIUC',d:'2026-06',o:1,c:'World Models',desc:'Pixel-aligned geometry — rekonstruuje geometrię poza kadrem',b:'3D reconstruction z pojedynczego zdjęcia, "widzi" zasłonięte obiekty',tags:[],url:'https://arxiv.org/abs/2606.13652',yt:'kkLlzQqa7MY'},
+{r:4,n:'Realtime Video Games AI',v:'Various',d:'2026-04',o:0,c:'World Models',desc:'Real-time AI generation of video game environments',b:'dynamiczne generowanie środowisk gier w czasie rzeczywistym',tags:[],url:'',yt:'1_5sSJK2rU0'},
+{r:1,n:'Claude Code',v:'Anthropic',d:'2026-02',o:0,c:'Coding',desc:'CLI assistant od Anthropic, terminal-first',b:'terminal/CLI coding, agentic — autonomiczne modyfikacje repozytoriów',tags:[],url:'https://www.anthropic.com/product/claude-code',yt:'o5rGuknRw2A'},
+{r:1,n:'Eleven v3',v:'ElevenLabs',d:'2026-03-14',o:0,c:'TTS',desc:'Audio Tags emocji, 70+ języków, mid-sentence tone shifts, GA marzec 2026',b:'kontrola emocji w czasie rzeczywistym, voice acting, multi-speaker',tags:[],url:'https://elevenlabs.io/v3',yt:'SxiRANj0xLs'},
+{r:2,n:'GPT Voice (GPT-Realtime-2)',v:'OpenAI',d:'2026-05-07',o:0,c:'TTS',desc:'Nowy voice model od OpenAI, Realtime-2 GA',b:'naturalna ekspresja emocji, integracja z GPT-5.5, 128k context',tags:[],url:'',yt:'quxnhOeRz7I'},
+{r:3,n:'Google TTS (Gemini 3.1 Flash TTS)',v:'Google',d:'2026-05',o:0,c:'TTS',desc:'Nowy TTS od Google, konkurent Eleven v3',b:'multilingual, granular audio tags, integracja z Gemini',tags:[],url:'https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts',yt:'G8fqduzB5lc'},
+{r:1,n:'Gemini Omni',v:'Google',d:'2026-05-20',o:0,c:'Multimodal',desc:'Generuje dowolną modalność z dowolnej — I/O 2026 announcement',b:'any-to-any generation — text→video, video→audio, audio→image',tags:[],url:'https://blog.google/innovation-and-ai/sundar-pichai-io-2026',yt:'J02-39xtlt4'},
+{r:1,n:'FutureHouse Platform',v:'FutureHouse',d:'2026-05',o:1,c:'AI Science Agents',desc:'Darmowa platforma z 4 agentami AI do odkryć naukowych',b:'biologia, automatyzacja researchu, literatur review, hypothesis generation',tags:[],url:'https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents',yt:'kkLlzQqa7MY'},
+{r:2,n:'AlphaFold 3',v:'Google DeepMind',d:'2024-05-08',o:0,c:'AI Science Agents',desc:'Przewidywanie struktury białek + ligandów, kod open-source od Nov 2024',b:'struktura białek, drug discovery — przełom w farmacji',tags:[],url:'https://blog.google/innovation-and-ai/products/google-deepmind-isomorphic-alphafold-3-ai-model',yt:'s3rNDndvav0'},
+{r:1,n:'Happy Horse',v:'Alibaba',d:'2026-06',o:0,c:'AI Research',desc:'Full AI research — autonomously prowadzi eksperymenty, viral breakthrough',b:'end-to-end autonomne eksperymenty naukowe, od hipotezy do publikacji',tags:[],url:'',yt:'7r_WJ9xpne0'},
+{r:2,n:'Happy Oyster',v:'Alibaba',d:'2026-04',o:0,c:'AI Research',desc:'AI research agent — 3D game simulation, dynamic interactive environments',b:'3D game video generation, dynamiczne środowiska interaktywne',tags:[],url:'',yt:'G8fqduzB5lc'},
+{r:3,n:'HappyHorse-1.0',v:'Alibaba',d:'2026-04-26',o:0,c:'AI Research',desc:'Video generation model — #1 na Artificial Analysis leaderboard',b:'video generation, dynamic environments — predecessor Happy Horse',tags:[],url:'https://fal.ai/learn/devs/happyhorse-1-0-what-do-we-know-so-far',yt:'1_5sSJK2rU0'},
+{r:1,n:'Moya',v:'DroidUp (Shanghai)',d:'2026-02-23',o:0,c:'Humanoid Robots',desc:'Biomimetyczny humanoid, $173K, realistyczne wyrazy twarzy',b:'hyper-realistic facial expressions, towarzyskie interakcje z ludźmi',tags:[],url:'https://newatlas.com/ai-humanoids/moya-droidup-lifelike-robot',yt:'kkLlzQqa7MY'},
+{r:2,n:'LeRobot',v:'Hugging Face',d:'2025-01',o:1,c:'Humanoid Robots',desc:'Open-source framework dla robotyki AI, ongoing development',b:'open-source trening robotów, community-driven, replikowalne badania',tags:[],url:'https://github.com/huggingface/lerobot',yt:'pC6KHflGye0'},
+{r:3,n:'Real Gundam',v:'Various',d:'2026-05',o:0,c:'Humanoid Robots',desc:'Realne roboty typu Gundam, demonstracje chodu i balansu',b:'large-scale humanoid locomotion, balans, chód dwunożny',tags:[],url:'',yt:'NnsQj2nDkKA'},
+{r:1,n:'Beyond Presence / Genesis',v:'Beyond Presence',d:'2026-06',o:0,c:'Realtime Avatars',desc:'Real-time hyper-realistic AI avatars, Genesis 2.0 we wrześniu 2026',b:'real-time konwersacyjne avatary, digital twins, 24/7 multilingual support',tags:[],url:'https://www.beyondpresence.ai',yt:'7c_ieWfAbrw'},
+{r:1,n:'Flex4DHuman',v:'arXiv 2606.13655',d:'2026-06',o:1,c:'4D Human',desc:'Multi-view video diffusion — 4D człowiek z jednego/sparse wideo',b:'4D human reconstruction — AR/VR, wirtualna próbka odzieży, VFX',tags:[],url:'https://arxiv.org/abs/2606.13655',yt:'SxiRANj0xLs'},
+{r:1,n:'Merge Labs',v:'Merge Labs',d:'2026-06',o:0,c:'Neural Interface',desc:'Ultrasound BCI, nieinwazyjny (bez chirurgii), $250M seed od OpenAI',b:'nieinwazyjny brain-computer interface, read + modulate brain activity',tags:[],url:'https://www.nature.com/articles/d41586-026-00329-x',yt:'7c_ieWfAbrw'},
+{r:1,n:'AI Glasses',v:'Google',d:'2026-05-20',o:0,c:'Hardware',desc:'AI-first smart glasses, integracja z Gemini Omni, launch fall 2026',b:'hands-free AI assistance, real-time visual understanding',tags:[],url:'https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026',yt:'J02-39xtlt4'},
+{r:1,n:'Midjourney Spa',v:'Midjourney',d:'2026-06-19',o:0,c:'AI Wellness',desc:'Plan 5,000 wellness spa z AI body scannerem, start Union Square SF',b:'AI body scanning, personalized wellness, health diagnostics',tags:[],url:'https://sfstandard.com/2026/06/19/midjourney-spa-union-square-body-scanner',yt:'kkLlzQqa7MY'}
+];
+const SOURCES=[
+{d:'2026-06-28',id:'7c_ieWfAbrw',t:'GPT 5.6, Mythos ban lifted, realtime avatars, Seedance 2.5, brain ultrasound'},
+{d:'2026-06-24',id:'1U8dJ94QFNc',t:'New top local AI image generator is here! Already uncensored'},
+{d:'2026-06-21',id:'kkLlzQqa7MY',t:'New robot waifus, GLM 5.2 craze, AI spas, new world models, new science agents'},
+{d:'2026-06-17',id:'6d__WOpZswY',t:'New #1 open-source AI model is here!'},
+{d:'2026-06-14',id:'SxiRANj0xLs',t:'RIP Claude Fable, open-source AI unleashed, full body avatars, new Google models, new TTS'},
+{d:'2026-06-11',id:'GUEE9OA4keo',t:'Claude Fable 5 is here!'},
+{d:'2026-06-09',id:'OA4gchz1Zcs',t:'New BEST local AI image generator is here!'},
+{d:'2026-06-07',id:'CzxqQJOswvo',t:'Full body waifus, AI dreams, realtime AI music, open-source Gemini Omni'},
+{d:'2026-06-02',id:'DlvhlQOBHBw',t:'The BEST AI for 4K images. Free & fast'},
+{d:'2026-05-31',id:'RdqYvdT74i0',t:'Self-improving AI, Opus 4.8, Nvidia bangers, game-ready 3D models, juggling robots'},
+{d:'2026-05-28',id:'QvN6Tu6dHYM',t:'The acceleration is here!'},
+{d:'2026-05-24',id:'pC6KHflGye0',t:'AI scientist, DNA editors, AI NPCs, new Qwen, open-source robots, new video editors'},
+{d:'2026-05-21',id:'J02-39xtlt4',t:'Google strikes back! Gemini Omni, AI glasses, new models'},
+{d:'2026-05-17',id:'NnsQj2nDkKA',t:'Real gundams, top 3D generator, open-source world models, ChatGPT updates, new TTS'},
+{d:'2026-05-14',id:'s3rNDndvav0',t:'The biggest AI breakthrough in medicine & drug discovery'},
+{d:'2026-05-10',id:'quxnhOeRz7I',t:'Self-evolving AI, robot fights, new GPT voice, new local image model, Gemma upgrade'},
+{d:'2026-05-08',id:'7r_WJ9xpne0',t:'Robot girlfriends, recursive AI agents, full AI research, Happy Horse'},
+{d:'2026-04-23',id:'G8fqduzB5lc',t:'Claude Opus 4.7, Qwen 3.6, Happy Oyster, realtime 3D worlds, new Google TTS'},
+{d:'2026-04-17',id:'1_5sSJK2rU0',t:'Claude Mythos, Deepseek v4, HappyHorse, Meta new AI, realtime video games'},
+{d:'2026-04-09',id:'o5rGuknRw2A',t:'Google open-source AI, Claude Code leaked, new Wan, new Qwen, image gen on phone'}
+];
+const CATS=['LLM','Image Generation','Video Generation','World Models','Coding','TTS','Multimodal','AI Science Agents','AI Research','Humanoid Robots','Realtime Avatars','4D Human','Neural Interface','Hardware','AI Wellness'];
+const CAT_LABELS={'LLM':'LLM — duże modele językowe','Image Generation':'Image Generation — lokalne/open-weight','Video Generation':'Video Generation','World Models':'World Models — symulacja świata','Coding':'Coding — asystenci kodu','TTS':'TTS — synteza mowy (text-to-speech)','Multimodal':'Multimodal — any-to-any','AI Science Agents':'AI Science Agents — agenty naukowe','AI Research':'AI Research — autonomne eksperymenty','Humanoid Robots':'Humanoid Robots — roboty humanoidalne','Realtime Avatars':'Realtime Avatars — awatary konwersacyjne','4D Human':'4D Human Reconstruction','Neural Interface':'Neural Interface — interfejsy mózg-komputer (BCI)','Hardware':'Hardware — urządzenia AI-first','AI Wellness':'AI Wellness / Spa'};
+let S={q:'',chip:null,sort:'rank',cmp:[],onlyNew:false,theme:'dark'};
+function vc(v){v=v.toLowerCase();if(v.includes('openai'))return'#10a37f';if(v.includes('google')||v.includes('deepmind'))return'#4285f4';if(v.includes('anthropic'))return'#d97757';if(v.includes('meta'))return'#0866ff';if(v.includes('alibaba'))return'#ff6a00';if(v.includes('nvidia'))return'#76b900';if(v.includes('moonshot'))return'#6b8cce';if(v.includes('minimax'))return'#a855f7';if(v.includes('z.ai')||v.includes('zhipu'))return'#4ade80';if(v.includes('deepseek'))return'#4d6bfe';if(v.includes('bytedance'))return'#ff2c55';if(v.includes('eleven'))return'#e0e0e0';if(v.includes('hugging'))return'#ffd21e';if(v.includes('krea'))return'#ff6b6b';if(v.includes('ideogram'))return'#ff006e';if(v.includes('black forest'))return'#888';if(v.includes('futurehouse'))return'#00ff88';if(v.includes('droidup'))return'#ff6600';if(v.includes('beyond'))return'#00d4ff';if(v.includes('merge'))return'#10a37f';if(v.includes('midjourney'))return'#4285f4';return'#888'}
+function nm(s){return(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
+function slug(s){return s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
+function isNew(d){const t=new Date(TODAY);const m=new Date(d+'-15');if(isNaN(m))return false;const diff=(t-m)/(1000*60*60*24);return diff>=0&&diff<=NEW_DAYS}
+function isBan(s){return s.includes('ban-lifted')}
+function daysAgo(d){const t=new Date(TODED);const m=new Date(d+'-15');if(isNaN(m))return 999;return Math.floor((t-m)/(1000*60*60*24))}
+function lastVisit(){const v=localStorage.getItem('lastVisit');if(v)return new Date(v);const t=new Date(TODAY);t.setDate(t.getDate()-14);return t}
+function checkNew(m){const lv=lastVisit();const md=new Date(m.d+'-15');return md>lv}
+function init(){
+S.theme=localStorage.getItem('theme')||'dark';
+document.documentElement.setAttribute('data-theme',S.theme);
+document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';
+const sl=localStorage.getItem('lastVisit');
+renderChips();renderStats();renderBanner();render();renderSources();
+if(location.hash){setTimeout(()=>highlightModel(location.hash.substring(1)),300)}
+window.addEventListener('beforeunload',()=>localStorage.setItem('lastVisit',new Date().toISOString()));
+document.getElementById('search').addEventListener('input',e=>{S.q=e.target.value;render()});
+document.getElementById('sort').addEventListener('change',e=>{S.sort=e.target.value;render()});
+document.getElementById('themeTgl').addEventListener('click',toggleTheme);
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal('modelModal');closeModal('cmpModal')}});
+}
+function renderChips(){const c=document.getElementById('chips');let h='';CATS.forEach(cat=>{h+=`<span class="chip" data-filter="${cat}">${cat}</span>`});h+=`<span class="chip" data-filter="oplus">⊕ Open-source</span><span class="chip" data-filter="new">★ New</span>`;c.innerHTML=h;c.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{const f=ch.getAttribute('data-filter');if(S.chip===f){S.chip=null;ch.classList.remove('active')}else{c.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));ch.classList.add('active');S.chip=f}if(f==='new'){S.onlyNew=!S.onlyNew;renderBanner()}else{S.onlyNew=false}render()}))}
+function renderStats(){const total=M.length;const os=M.filter(m=>m.o).length;const nw=M.filter(m=>isNew(m.d)).length;const cats=CATS.length;const osPct=Math.round(os/total*100);let h=`<div class="st"><div class="sv">${total}</div><div class="sl">Modeli</div></div>`;h+=`<div class="st"><div class="sv">${os}</div><div class="sl">Open-source (${osPct}%)</div><div class="sbar"><div class="sf" style="width:${osPct}%"></div></div></div>`;h+=`<div class="st"><div class="sv">${nw}</div><div class="sl">Nowe (14 dni)</div></div>`;h+=`<div class="st"><div class="sv">${cats}</div><div class="sl">Kategorii</div></div>`;document.getElementById('stats').innerHTML=h;renderBarChart()}
+function renderBarChart(){const bc=document.getElementById('bc');let max=0;CATS.forEach(c=>{const n=M.filter(m=>m.c===c).length;if(n>max)max=n});let h='';CATS.forEach(c=>{const n=M.filter(m=>m.c===c).length;if(n===0)return;const w=Math.round(n/max*100);h+=`<div class="brow"><span class="blabel">${c}</span><div class="bbg"><div class="bfill" style="width:${w}%"></div></div><span class="bval">${n}</span></div>`});bc.innerHTML=h;if(max>0)bc.classList.add('show')}
+function renderBanner(){const b=document.getElementById('banner');const lv=localStorage.getItem('lastVisit');const nw=M.filter(m=>checkNew(m));if(nw.length>0&&lv){const d=new Date(lv).toLocaleDateString('pl-PL');b.innerHTML=`<span>🆕 ${nw.length} nowych modeli od ${d}</span><button onclick="S.onlyNew=true;render();renderBanner()">Pokaż tylko nowe</button>`;b.classList.add('show')}else if(nw.length>0&&!lv){b.innerHTML=`<span>🆕 ${nw.length} nowych modeli w ostatnich 14 dniach</span><button onclick="S.onlyNew=true;render();renderBanner()">Pokaż tylko nowe</button>`;b.classList.add('show')}else{b.classList.remove('show');S.onlyNew=false}}
+function render(){const content=document.getElementById('content');let vis=0,total=M.length;let filtered=M.filter(m=>{const txt=nm(m.n+' '+m.desc+' '+m.b+' '+m.c+' '+m.v+' '+'#'+m.r);let ok=true;if(S.onlyNew){ok=isNew(m.d)}if(ok&&S.chip){if(S.chip==='oplus'){ok=m.o===1}else if(S.chip==='new'){ok=isNew(m.d)}else{ok=m.c===S.chip}}if(ok&&S.q){ok=txt.includes(nm(S.q))}return ok});filtered.sort((a,b)=>{if(S.sort==='newest'){return new Date(b.d+'-15')-new Date(a.d+'-15')}if(S.sort==='name'){return a.n.localeCompare(b.n)}if(S.sort==='os'){if(a.o!==b.o)return b.o-a.o;return a.r-b.r}return 0});let h='';CATS.forEach(cat=>{const models=filtered.filter(m=>m.c===cat);if(models.length===0)return;models.sort((a,b)=>{if(S.sort==='rank')return a.r-b.r;if(S.sort==='newest')return new Date(b.d+'-15')-new Date(a.d+'-15');if(S.sort==='name')return a.n.localeCompare(b.n);if(S.sort==='os'){if(a.o!==b.o)return b.o-a.o;return a.r-b.r}return 0});h+=`<div class="k" data-cat="${cat}"><div class="kt">${CAT_LABELS[cat]} <span class="kc">(${models.length})</span></div>`;models.forEach(m=>{vis++;const id=slug(m.n);const nw=isNew(m.d);const bl=isBan(m.tags);const u=checkNew(m);const clr=vc(m.v);let tagStr='';if(bl)tagStr+=` <span class="tn">Ban Lifted</span>`;if(nw)tagStr+=` <span class="tn pulse">New</span>`;const cmpChecked=S.cmp.includes(id)?'checked':'';h+=`<div class="m${u?' new-user':''}" id="model-${id}" onclick="openModel('${id}')"><span class="r${m.o?' op':''}">#${m.r}</span><span class="n">${m.n}${tagStr}<span class="v"><span class="vdot" style="background:${clr}"></span>${m.v}<span class="vd">${m.d}</span></span></span><span class="d">${m.desc}<span class="b">${m.b}</span></span><span class="mc"><input type="checkbox" ${cmpChecked} onclick="event.stopPropagation();toggleCompare('${id}')" title="Dodaj do porównania"></span></div>`});h+='</div>'});if(vis===0)h='<div class="nr">Brak wyników dla "'+S.q+'"</div>';content.innerHTML=h;document.getElementById('count').textContent=vis+' z '+total+' modeli';updateCmpBtn()}
+function renderSources(){const s=document.getElementById('sources');let h='';SOURCES.forEach(s=>{h+=`<div class="so"><span class="dt">${s.d}</span><a href="https://www.youtube.com/watch?v=${s.id}">${s.t}</a></div>`});s.innerHTML=h}
+function toggleTheme(){S.theme=S.theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',S.theme);document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';localStorage.setItem('theme',S.theme)}
+function openModel(id){const m=M.find(x=>slug(x.n)===id);if(!m)return;const clr=vc(m.v);const bl=isBan(m.tags);const nw=isNew(m.d);let h=`<button class="close" onclick="closeModal('modelModal')">&times;</button><h2>${m.n}</h2>`;h+=`<div class="mrow"><span class="ml">Vendor</span><span class="mv"><span class="vdot" style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${clr};margin-right:6px"></span>${m.v}</span></div>`;h+=`<div class="mrow"><span class="ml">Data wydania</span><span class="mv">${m.d}</span></div>`;h+=`<div class="mrow"><span class="ml">Kategoria</span><span class="mv">${m.c}</span></div>`;h+=`<div class="mrow"><span class="ml">Rank</span><span class="mv">#${m.r} w kategorii</span></div>`;h+=`<div class="mrow"><span class="ml">Open-source</span><span class="mv">${m.o?'✅ Tak (open-weights/open-source)':'❌ Nie (proprietary)'}</span></div>`;h+=`<div class="mrow"><span class="ml">Opis</span><span class="mv">${m.desc}</span></div>`;h+=`<div class="mrow"><span class="ml">★ Najlepszy w</span><span class="mv">${m.b}</span></div>`;if(bl){h+=`<div class="mrow"><span class="ml">Status</span><span class="mv">⚠️ Ban lifted (27.06.2026) — wraca po 2 tygodniach zawieszenia</span></div>`}if(nw){h+=`<div class="mrow"><span class="ml">Nowość</span><span class="mv">🆕 Model wydany w ostatnich 14 dniach</span></div>`}h+=`<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px">`;if(m.url)h+=`<a href="${m.url}" class="mlink">🔗 Oficjalna strona</a>`;h+=`<a href="https://www.youtube.com/watch?v=${m.yt}" class="mlink">📺 Źródło YouTube</a>`;h+=`<button class="btn" onclick="copyLink('${id}')" style="padding:8px 16px">📋 Kopiuj link</button>`;h+=`</div>`;document.getElementById('modelContent').innerHTML=h;document.getElementById('modelModal').classList.add('show')}
+function toggleCompare(id){const i=S.cmp.indexOf(id);if(i>-1){S.cmp.splice(i,1)}else{if(S.cmp.length>=4){showToast('Max 4 modele do porównania');return}S.cmp.push(id)}render();updateCmpBtn()}
+function updateCmpBtn(){const btn=document.getElementById('cmpBtn');document.getElementById('cmpCount').textContent=S.cmp.length;if(S.cmp.length>=2)btn.classList.add('show');else btn.classList.remove('show')}
+function openCompare(){if(S.cmp.length<2)return;const models=S.cmp.map(id=>M.find(x=>slug(x.n)===id)).filter(Boolean);let h=`<button class="close" onclick="closeModal('cmpModal')">&times;</button><h2>⚔️ Porównanie modeli (${models.length})</h2>`;h+=`<table class="cmp-t"><thead><tr><th class="cr">Cecha</th>`;models.forEach(m=>{h+=`<th>${m.n}</th>`});h+=`</tr></thead><tbody>`;const rows=[['Vendor',m=>`<span class="vdot" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${vc(m.v)};margin-right:4px"></span>${m.v}`],['Data',m=>m.d],['Open-source',m=>m.o?'✅':'❌'],['Kategoria',m=>m.c],['Rank',m=>'#'+m.r],['Opis',m=>m.desc],['★ Najlepszy w',m=>m.b]];rows.forEach(([label,fn])=>{h+=`<tr><td class="cr">${label}</td>`;models.forEach(m=>{h+=`<td>${fn(m)}</td>`});h+=`</tr>`});h+=`</tbody></table>`;h+=`<div style="margin-top:16px;display:flex;gap:8px"><button class="btn" onclick="S.cmp=[];closeModal('cmpModal');render();updateCmpBtn()">Wyczyść</button></div>`;document.getElementById('cmpContent').innerHTML=h;document.getElementById('cmpModal').classList.add('show')}
+function closeModal(id){document.getElementById(id).classList.remove('show')}
+function copyLink(id){const url=location.origin+location.pathname+'#model-'+id;navigator.clipboard.writeText(url).then(()=>showToast('✓ Link skopiowany!'))}
+function highlightModel(id){const el=document.getElementById(id);if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('highlight');setTimeout(()=>el.classList.remove('highlight'),3000)}}
+function exportData(fmt){const filtered=M.filter(m=>{const txt=nm(m.n+' '+m.desc+' '+m.b+' '+m.c+' '+m.v);let ok=true;if(S.onlyNew)ok=isNew(m.d);if(ok&&S.chip){if(S.chip==='oplus')ok=m.o===1;else if(S.chip==='new')ok=isNew(m.d);else ok=m.c===S.chip}if(ok&&S.q)ok=txt.includes(nm(S.q));return ok});if(fmt==='json'){const data=filtered.map(m=>({name:m.name,vendor:m.v,release_date:m.d,open_source:m.o===1,category:m.c,rank:m.r,description:m.desc,best_at:m.b,official_url:m.url,youtube_id:m.yt}));download(JSON.stringify(data,null,2),'ai-models.json','application/json')}else{const headers=['Name','Vendor','Release Date','Open Source','Category','Rank','Description','Best At','Official URL','YouTube ID'];const rows=filtered.map(m=>[m.n,m.v,m.d,m.o?'yes':'no',m.c,m.r,m.desc,m.b,m.url,m.yt]);const csv=[headers.join(','),...rows.map(r=>r.map(c=>`"${String(c).replace(/"/g,'""')}"`).join(','))].join('\n');download(csv,'ai-models.csv','text/csv')}}
+function download(content,filename,mime){const blob=new Blob([content],{type:mime});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=filename;a.click();URL.revokeObjectURL(a.href);showToast('✓ Pobrano '+filename)}
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2000)}
+init();
+</script></body></html>
