@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Radar — Industry Intelligence</title>
+<base target="_blank">
+<style>
+:root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#888;--hm:#666;--hd:#555;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--rd:#ef4444;--bl:#3b82f6;--ov:rgba(0,0,0,.7);--mb:#1a1a1a}
+[data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--rd:#dc2626;--bl:#1d4ed8;--ov:rgba(0,0,0,.5);--mb:#94a3b8}
+*{box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:0;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
+.c{max-width:900px;margin:0 auto;padding:20px}
+.h{position:sticky;top:0;background:var(--bg);z-index:100;padding:16px 0;border-bottom:1px solid var(--bd);margin-bottom:24px;transition:background .2s}
+.hr{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.h h1{font-size:18px;margin:0;font-weight:600;color:var(--hp);letter-spacing:-.02em}
+.h .sub{font-size:12px;color:var(--hm);margin-top:2px}
+.h .nav{display:flex;gap:8px;align-items:center}
+.h a{color:var(--hs);text-decoration:none;font-size:12px;padding:4px 10px;border:1px solid var(--bd);border-radius:6px;transition:all .15s}
+.h a:hover{border-color:var(--ac);color:var(--ac)}
+.tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--fg);transition:border-color .15s}
+.tgl:hover{border-color:var(--ac)}
+.sec{margin-bottom:32px}
+.sec-t{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:12px;font-weight:700;display:flex;align-items:center;gap:8px}
+.sec-t .icon{font-size:18px}
+.card{background:var(--card);border:1px solid var(--bdl);border-radius:8px;padding:14px;margin-bottom:10px;transition:border-color .15s}
+.card:hover{border-color:var(--bd)}
+.card h3{font-size:14px;margin:0 0 6px 0;color:var(--hp);font-weight:600}
+.card p{font-size:13px;color:var(--hm);margin:0 0 4px 0}
+.card .tag{display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-right:4px}
+.tag-green{background:rgba(74,222,128,.15);color:var(--ac)}
+.tag-yellow{background:rgba(251,191,36,.15);color:var(--ba)}
+.tag-red{background:rgba(239,68,68,.15);color:var(--rd)}
+.tag-blue{background:rgba(59,130,246,.15);color:var(--bl)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+.list{list-style:none;padding:0;margin:0}
+.list li{font-size:13px;color:var(--hm);padding:6px 0;border-bottom:1px solid var(--bdl);display:flex;align-items:flex-start;gap:8px}
+.list li:last-child{border-bottom:none}
+.list li .dot{width:8px;height:8px;border-radius:50%;margin-top:6px;flex-shrink:0}
+.dot-green{background:var(--ac)}
+.dot-yellow{background:var(--ba)}
+.dot-red{background:var(--rd)}
+.dot-blue{background:var(--bl)}
+.table{width:100%;border-collapse:collapse;font-size:12px}
+.table th{background:var(--card);color:var(--hp);font-weight:600;padding:8px;text-align:left;border-bottom:2px solid var(--bd)}
+.table td{padding:6px 8px;border-bottom:1px solid var(--bdl);color:var(--hm)}
+.table tr:hover td{background:var(--card)}
+.table .score{font-family:monospace;color:var(--ac);font-weight:600}
+.table .rank{font-family:monospace;color:var(--rk);font-weight:600;text-align:center;width:40px}
+.table .off{color:var(--rd);text-decoration:line-through}
+.code{background:var(--card);border:1px solid var(--bdl);border-radius:6px;padding:12px;font-family:"SF Mono",Menlo,monospace;font-size:12px;color:var(--hm);overflow-x:auto;margin:8px 0}
+.code .kw{color:var(--ac);font-weight:600}
+.code .num{color:var(--ba)}
+.f{margin-top:36px;padding-top:18px;border-top:1px solid var(--bdl);font-size:11px;color:var(--hd);text-align:center}
+.f a{color:var(--hm)}
+.banner{background:linear-gradient(90deg,rgba(59,130,246,.1),transparent);border-left:3px solid var(--bl);padding:10px 14px;border-radius:4px;margin-bottom:20px;font-size:13px;color:var(--hs)}
+.banner strong{color:var(--bl)}
+@media(max-width:540px){.grid{grid-template-columns:1fr}.table{font-size:11px}}
+</style></head><body>
+<div class="c">
+
+<div class="h">
+<div class="hr">
+<h1>📡 AI Radar — Industry Intelligence</h1>
+<div class="nav">
+<a href="ai-models.html">← AI Models</a>
+<button class="tgl" id="themeTgl">🌙</button>
+</div>
+</div>
+<div class="sub">Źródło: Lev Selector Weekly · Aktualizacja: 26.06.2026</div>
+</div>
+
+<div class="banner">
+<strong>📋 O tej stronie:</strong> AI Radar to cotygodniowy intelligence brief oparty na materiałach <a href="https://www.youtube.com/@lev-selector" style="color:var(--bl)">Lev Selector</a> (Ph.D., 40+ lat w software). Podczas gdy <a href="ai-models.html" style="color:var(--bl)">AI Models</a> katalogizuje modele, AI Radar mówi <strong>kto</strong> je robi, <strong>co jest możliwe</strong>, <strong>ile to kosztuje</strong> i <strong>co to znaczy dla Ciebie</strong>.
+</div>
+
+<!-- 1. WHO -->
+<div class="sec">
+<div class="sec-t"><span class="icon">🏢</span> KTO ROBI CIEKAWE RZECZY</div>
+<div class="grid">
+<div class="card">
+<h3>Z.AI (Zhipu AI)</h3>
+<p>Wypuścił GLM 5.2 — open-source MoE 745B, bije frontier modele w coding. 1/6 kosztu GPT-5.5. Zcode (analog Claude Code) wciąż ustępuje Anthropic.</p>
+<span class="tag tag-green">Open-source</span><span class="tag tag-blue">Chiny</span>
+</div>
+<div class="card">
+<h3>ByteDance</h3>
+<p>3 releasy w 1 tygodniu: Seedance 2.5 (4K video), Seed 2.1 (productivity agent), Dance OPD (unified image). Najbardziej aktywna firma tygodnia.</p>
+<span class="tag tag-yellow">3 releasy</span><span class="tag tag-blue">Chiny</span>
+</div>
+<div class="card">
+<h3>Sakana AI</h3>
+<p>Fugu Ultra — orchestration layer (nie base model). Koordynuje wiele modeli przez 1 API. Bije Claude Fable na niektórych benchmarkach. $5/$30 API.</p>
+<span class="tag tag-blue">Japonia</span><span class="tag tag-yellow">Paid</span>
+</div>
+<div class="card">
+<h3>Reflection AI</h3>
+<p>$6.3B deal z SpaceX — Colossus 2 data center, $150M/miesiąc do 2029. Dostęp do NVIDIA GB300. Dołącza do Anthropic, Google, Cursor.</p>
+<span class="tag tag-green">Funded</span><span class="tag tag-blue">USA</span>
+</div>
+<div class="card">
+<h3>Subquadratic</h3>
+<p>Miami startup — 12M token context, 50x szybszy niż FlashAttention, 20x tańszy. SSA architecture. Hosted API.</p>
+<span class="tag tag-green">Startup</span><span class="tag tag-blue">USA</span>
+</div>
+<div class="card">
+<h3>Lev Selector</h3>
+<p>Ph.D., 40+ lat w software. Weekly AI updates co piątek. 6.96K subs, 293 videos. Slides na GitHub (75 PPTX) + Google Drive.</p>
+<span class="tag tag-green">Edukacja</span><span class="tag tag-blue">USA</span>
+</div>
+</div>
+</div>
+
+<!-- 2. WHAT'S POSSIBLE -->
+<div class="sec">
+<div class="sec-t"><span class="icon">⚡</span> CO JEST OBECNIE MOŻLIWE</div>
+<ul class="list">
+<li><span class="dot dot-green"></span> <strong>Uruchomić GLM 5.2 lokalnie</strong> — 1-bit quantized (86% mniejszy), na consumer GPU. Unsloth GGUF versions.</li>
+<li><span class="dot dot-green"></span> <strong>Tłumaczyć w czasie rzeczywistym</strong> — Gemini 3.5 Live Translate, darmowe, API + Google Translate mobile.</li>
+<li><span class="dot dot-green"></span> <strong>Generować 4K wideo 30s</strong> — Seedance 2.5, do 50 referencji, cinematic clips. Premiera lipiec 2026.</li>
+<li><span class="dot dot-green"></span> <strong>Voice cloning z 2B model</strong> — Dot TTS, Apache 2, few-shot, bije leaderboardy.</li>
+<li><span class="dot dot-green"></span> <strong>Mapować mózg bez chirurgii</strong> — Olive, ultrasound, 100x lepsza rozdzielczość niż CT, open-source pipeline.</li>
+<li><span class="dot dot-green"></span> <strong>Mieć humanoida za $4,900</strong> — Unitree R1, 123cm, kung-fu, fikołki, chód po schodach.</li>
+<li><span class="dot dot-yellow"></span> <strong>GPT 5.6 Sol</strong> — ograniczony dostęp, trusted partners only, gov approval customer-by-customer.</li>
+<li><span class="dot dot-yellow"></span> <strong>Claude Mythos 5</strong> — ban lifted 27.06, tylko ~100 trusted US partners.</li>
+<li><span class="dot dot-yellow"></span> <strong>AI Glasses</strong> — Google + Gentle Monster + Warby Parker, launch fall 2026.</li>
+<li><span class="dot dot-red"></span> <strong>Claude Fable 5</strong> — zawieszony przez US gov, brak timeline na powrót.</li>
+<li><span class="dot dot-red"></span> <strong>Jalapeno chip</strong> — ogłoszony (OpenAI + Broadcom), brak dostępu, gigawatt scale planowany.</li>
+<li><span class="dot dot-red"></span> <strong>IBM Nano Stack</strong> — research, 100B tranzystorów na paznokciu, lata od komercjalizacji.</li>
+</ul>
+</div>
+
+<!-- 3. MONEY -->
+<div class="sec">
+<div class="sec-t"><span class="icon">💰</span> PIENIĄDZE — KTO MA, KTO WYDAJE</div>
+<div class="grid">
+<div class="card">
+<h3>Groq — $650M</h3>
+<p>Pivot z chipmakera na inference-focused cloud. 6 miesięcy po tym jak NVIDIA licencjowała technologię i przejęła CEO.</p>
+</div>
+<div class="card">
+<h3>Baseten — $1.5B</h3>
+<p>Infrastructure dla AI inference. Działa na Google Cloud z NVIDIA GPUs. ~60 pracowników, założona 2019, San Francisco.</p>
+</div>
+<div class="card">
+<h3>Reflection AI + SpaceX</h3>
+<p>$150M/miesiąc za Colossus 2 data center. Umowa do 2029. NVIDIA GB300 chips. Obok Anthropic, Google, Cursor.</p>
+</div>
+<div class="card">
+<h3>Merge Labs — $250M</h3>
+<p>Seed round prowadzony przez OpenAI. Ultrasound BCI, nieinwazyjny. Alternatywa dla Neuralink.</p>
+</div>
+</div>
+<div class="card" style="margin-top:10px">
+<h3>📈 Orin Token Price Index — inteligencja jako towar</h3>
+<p>Cena tokenów spadła ~1000x w kilka lat. Od GPT-3 (175B, 2020) do multi-trillion param models (2026). AI może podnieść globalny GDP z dziesiątek bilionów do setek bilionów lub kwadrylionów dolarów.</p>
+<p><strong>GLM 5.2</strong> kosztuje 1/6 GPT-5.5 przy podobnej jakości w coding.</p>
+</div>
+</div>
+
+<!-- 4. RULES -->
+<div class="sec">
+<div class="sec-t"><span class="icon">🏛️</span> REGULACJE I GEOPOLITYKA</div>
+<div class="card">
+<h3>Trump Executive Order</h3>
+<p>Firma musi dać federal government early access (do ~30 dni) do najbardziej zaawansowanych modeli przed publicznym wdrożeniem.</p>
+</div>
+<div class="card">
+<h3>Anthropic Fable 5 + Mythos 5 — ban</h3>
+<p>US gov zakazał dostępu 12.06.2026 (export control). Mythos ban zdjęty 27.06 (trusted partners). Fable nadal offline, brak timeline.</p>
+</div>
+<div class="card">
+<h3>OpenAI GPT 5.6 — staggered release</h3>
+<p>Gov poprosił o opóźnienie. Najpierw trusted partners, customer-by-customer approval. Nie dla broad deployment.</p>
+</div>
+<div class="card">
+<h3>Alibaba — US blacklist</h3>
+<p>Gov orgs nie mogą kontraktować. Od 2027 żadnych usług Alibaba. Powód: kontrola CCP. Jack Ma — $2.8B antitrust fine, IPO suspended, "disappeared". Inwestorzy stracili zaufanie do chińskiego biznesu.</p>
+</div>
+</div>
+
+<!-- 5. HOW -->
+<div class="sec">
+<div class="sec-t"><span class="icon">🏗️</span> ARCHITEKTURY I WZORCE</div>
+<div class="grid">
+<div class="card">
+<h3>Agent Map-Reduce</h3>
+<p>Orchestrator (conductor) rozdaje zadania sub-agents, ci wysyłają wyniki. Jak Hadoop/Spark dla agentów. Znany też jako: LLM MapReduce, Agentic MapReduce, Fan-out/fan-in, Agentic wide search.</p>
+</div>
+<div class="card">
+<h3>3-Layer Agent Architecture</h3>
+<p>1. Core runtime (capability-agnostic, MCP, lazy loading)<br>2. Shared plugins (skills, MCP servers, hooks)<br>3. Per-client config (thin, bez forków)</p>
+</div>
+<div class="card">
+<h3>Agentic OS — 4 poziomy</h3>
+<p>1. Skills & Automation (workflow audit)<br>2. Memory & State (Obsidian, structured map)<br>3. Interface (visual wrapper/dashboard)<br>4. Distribution (packaging dla teams/clients)</p>
+</div>
+<div class="card">
+<h3>Brain in the Middle</h3>
+<p>Klasyczna app: input → custom software → output.<br>Agent app: input → AI agent (skills, MCP) → output. Agent zastępuje całe custom software.</p>
+</div>
+</div>
+<div class="card" style="margin-top:10px">
+<h3>💡 Fable Brain Prompting — 8 instrukcji od Anthropic</h3>
+<div class="code">
+<span class="kw">1. Act, do not overplan</span> — commit to recommendation<br>
+<span class="kw">2. Lead with the outcome</span> — bottom line first<br>
+<span class="kw">3. Ground every claim</span> — audit against evidence<br>
+<span class="kw">4. Stop only at real boundaries</span><br>
+<span class="kw">5. Assess, do not act uninvited</span><br>
+<span class="kw">6. Give the reason</span><br>
+<span class="kw">7. Provide the context</span><br>
+<span class="kw">8. Match effort to the task</span>
+</div>
+<p style="margin-top:8px"><strong>Limit:</strong> To działa dla komunikacji, ale nie tworzy judgment. Model może pewnie podać złą odpowiedź. Nie daje agency (brak tools/internet).</p>
+</div>
+<div class="card">
+<h3>🔧 Harness Engineering — x6 różnica</h3>
+<p>Ten sam model może dać <strong>6x lepsze wyniki</strong> zależnie od harness. Kluczowe: context management, memory as hint, tool validation, feedback loops.</p>
+</div>
+<div class="card">
+<h3>⏰ Custom Scheduling dla Digital Employee</h3>
+<p>Custom "mycron" zamiast system crontab. Browser session persistence, hot-reload (60s), RAND_DELAY (anti-thundering herd), per-minute dedup, isolated per-user logging.</p>
+</div>
+</div>
+
+<!-- 6. BENCHMARKS -->
+<div class="sec">
+<div class="sec-t"><span class="icon">🏆</span> LM ARENA — RANKINGI (25.06.2026)</div>
+<table class="table">
+<thead><tr><th class="rank">#</th><th>Model</th><th class="score">Score</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td class="rank">1</td><td class="off">Claude Fable 5</td><td class="score">1564</td><td><span class="tag tag-red">Offline</span></td></tr>
+<tr><td class="rank">2</td><td>Claude Opus 4.7 thinking</td><td class="score">1554</td><td><span class="tag tag-green">Active</span></td></tr>
+<tr><td class="rank">3</td><td>Claude Opus 4.6 thinking</td><td class="score">1551</td><td><span class="tag tag-green">Active</span></td></tr>
+<tr><td class="rank">4</td><td>Claude Opus 4.7</td><td class="score">1550</td><td><span class="tag tag-green">Active</span></td></tr>
+<tr><td class="rank">5</td><td>Claude Opus 4.6</td><td class="score">1547</td><td><span class="tag tag-green">Active</span></td></tr>
+<tr><td class="rank">6</td><td>Claude Opus 4.8</td><td class="score">1538</td><td><span class="tag tag-green">Active</span></td></tr>
+<tr><td class="rank">7</td><td>Claude Opus 4.8 thinking</td><td class="score">1537</td><td><span class="tag tag-green">Active</span></td></tr>
+<tr><td class="rank">10</td><td>Qwen 3.7 max preview</td><td class="score">1526</td><td><span class="tag tag-green">Open</span></td></tr>
+<tr><td class="rank">12</td><td>GLM 5.1</td><td class="score">1525</td><td><span class="tag tag-green">Open</span></td></tr>
+<tr><td class="rank">13</td><td>GLM 5.2 (max)</td><td class="score">1525</td><td><span class="tag tag-green">Open</span></td></tr>
+<tr><td class="rank">16</td><td>Gemini 3.1 Pro</td><td class="score">1523</td><td><span class="tag tag-green">Active</span></td></tr>
+<tr><td class="rank">17</td><td>GPT 5.4 high</td><td class="score">1521</td><td><span class="tag tag-green">Active</span></td></tr>
+<tr><td class="rank">21</td><td>GPT 5.5 high</td><td class="score">1518</td><td><span class="tag tag-green">Active</span></td></tr>
+<tr><td class="rank">25</td><td>GPT 5.5 instant</td><td class="score">1513</td><td><span class="tag tag-green">Active</span></td></tr>
+</tbody>
+</table>
+<p style="font-size:11px;color:var(--hd);margin-top:8px">Źródło: lmarena.ai · Data: 25.06.2026 · PPT: Lev Selector</p>
+</div>
+
+<!-- 7. LEARN -->
+<div class="sec">
+<div class="sec-t"><span class="icon">🎓</span> ZASOBY EDUKACYJNE</div>
+<div class="card">
+<h3>Lev Selector — GitHub (75 PPTX)</h3>
+<p>Wszystkie materiały edukacyjne darmowe na <a href="https://github.com/lselector/ml_ai_doc" style="color:var(--bl)">github.com/lselector/ml_ai_doc</a></p>
+<ul class="list" style="margin-top:8px">
+<li><span class="dot dot-blue"></span> ML_Attention_Transformers_BERT.pptx</li>
+<li><span class="dot dot-blue"></span> ML_AGI_Artificial_General_Intelligence.pptx</li>
+<li><span class="dot dot-blue"></span> ML_NLP_Natural_Language_Processing.pptx</li>
+<li><span class="dot dot-blue"></span> ML_Reinforcement_Learning.pptx</li>
+<li><span class="dot dot-blue"></span> ML_Recommender_Systems.pptx</li>
+<li><span class="dot dot-blue"></span> ML_MLOps_AIOps.pptx</li>
+<li><span class="dot dot-blue"></span> ML_Time_Series_Forecasting.pptx</li>
+<li><span class="dot dot-blue"></span> ...i 68 innych</li>
+</ul>
+</div>
+<div class="card">
+<h3>Weekly AI Updates — GitHub (seminar/2026)</h3>
+<p>30 plików PPTX z weekly updates 2026: <a href="https://github.com/lselector/seminar/tree/master/2026" style="color:var(--bl)">github.com/lselector/seminar/tree/master/2026</a></p>
+</div>
+</div>
+
+<!-- 8. JOBS -->
+<div class="sec">
+<div class="sec-t"><span class="icon">📊</span> RYNEK PRACY — LAYOFFS</div>
+<table class="table">
+<thead><tr><th>Rok</th><th>Layoffs (US)</th><th>Źródło</th></tr></thead>
+<tbody>
+<tr><td>2026 (do 26.06)</td><td class="score">121,500</td><td>layoffs.fyi</td></tr>
+<tr><td>2025</td><td class="score">124,000</td><td>layoffs.fyi</td></tr>
+<tr><td>2024</td><td class="score">153,000</td><td>layoffs.fyi</td></tr>
+<tr><td>2023</td><td class="score">264,000</td><td>layoffs.fyi</td></tr>
+<tr><td>2022</td><td class="score">165,000</td><td>layoffs.fyi</td></tr>
+</tbody>
+</table>
+<p style="font-size:11px;color:var(--hd);margin-top:8px">Trend: spadek w 2026 vs 2023-2024. Mniej zwolnień w czerwcu vs maj.</p>
+</div>
+
+<div class="f">
+AI Radar · Źródło: <a href="https://www.youtube.com/@lev-selector">Lev Selector</a> · <a href="https://github.com/lselector">GitHub</a><br>
+Aktualizacja: 2026-06-26 · Transkrypt + PowerPoint parsowany · <a href="ai-models.html">← Wróć do AI Models</a>
+</div>
+
+</div>
+<script>
+const t=document.getElementById('themeTgl');
+let theme=localStorage.getItem('radar-theme')||'dark';
+document.documentElement.setAttribute('data-theme',theme);
+t.textContent=theme==='dark'?'🌙':'☀️';
+t.addEventListener('click',()=>{
+theme=theme==='dark'?'light':'dark';
+document.documentElement.setAttribute('data-theme',theme);
+t.textContent=theme==='dark'?'🌙':'☀️';
+localStorage.setItem('radar-theme',theme);
+});
+</script>
+</body></html>
