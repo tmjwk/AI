@@ -1,0 +1,98 @@
+name: Fetch YouTube Audio v3 (advanced cookies + verbose)
+
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: 'YouTube URL'
+        required: true
+        type: string
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install yt-dlp + ffmpeg
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q yt-dlp
+
+      - name: Write cookies file
+        env:
+          YT_COOKIES: ${{ secrets.YT_COOKIES }}
+        run: |
+          printf '%s\n' "$YT_COOKIES" > cookies.txt
+          echo "Cookies file size: $(wc -c < cookies.txt) bytes"
+          echo "Cookies count: $(grep -c 'youtube.com' cookies.txt)"
+          chmod 600 cookies.txt
+
+      - name: Try multiple yt-dlp strategies
+        run: |
+          URL="${{ github.event.inputs.video_url }}"
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+          
+          echo "=== Strategy 1: web client + cookies + UA ==="
+          yt-dlp -f "bestaudio/best" --extract-audio --audio-format mp3 --audio-quality 5 \
+            --cookies cookies.txt \
+            --user-agent "$UA" \
+            --extractor-args "youtube:player_client=web_safari" \
+            --no-playlist \
+            -o "audio.%(ext)s" "$URL" 2>&1 | tail -30
+          
+          if ls audio.* 2>/dev/null; then
+            echo "✓ Strategy 1 succeeded!"
+            ls -lh audio.*
+          else
+            echo "✗ Strategy 1 failed, trying strategy 2..."
+            echo ""
+            echo "=== Strategy 2: web client + cookies + UA + verbose ==="
+            yt-dlp -f "bestaudio/best" --extract-audio --audio-format mp3 --audio-quality 5 \
+              --cookies cookies.txt \
+              --user-agent "$UA" \
+              --extractor-args "youtube:player_client=web" \
+              --no-playlist \
+              --verbose \
+              -o "audio2.%(ext)s" "$URL" 2>&1 | tail -50
+            
+            if ls audio2.* 2>/dev/null; then
+              echo "✓ Strategy 2 succeeded!"
+              mv audio2.* audio.mp3 2>/dev/null
+              ls -lh audio.*
+            else
+              echo "✗ Strategy 2 failed, trying strategy 3..."
+              echo ""
+              echo "=== Strategy 3: default client + cookies + UA + verbose ==="
+              yt-dlp -f "bestaudio/best" --extract-audio --audio-format mp3 --audio-quality 5 \
+                --cookies cookies.txt \
+                --user-agent "$UA" \
+                --no-playlist \
+                --verbose \
+                -o "audio3.%(ext)s" "$URL" 2>&1 | tail -50
+              
+              if ls audio3.* 2>/dev/null; then
+                echo "✓ Strategy 3 succeeded!"
+                mv audio3.* audio.mp3 2>/dev/null
+                ls -lh audio.*
+              else
+                echo "✗ All strategies failed"
+                echo "Cookies content (first 10 lines, redacted):"
+                head -10 cookies.txt | sed 's/\t.*\t/\t[REDACTED]\t/'
+                exit 1
+              fi
+            fi
+          fi
+
+      - name: Upload as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audio
+          path: audio*
+          retention-days: 1
+          if-no-files-found: warn
+
+      - name: Cleanup cookies
+        if: always()
+        run: rm -f cookies.txt
