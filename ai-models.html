@@ -132,6 +132,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <button class="toggle-new" id="toggleNew" onclick="toggleOnlyNew()"><span class="dot"></span> Tylko nowe</button>
 </div>
 </div>
+
+<div class="main">
+<div id="content"></div>
+</div>
+</div>
 <div class="bottom-info" id="bottomInfo">
 <div class="stats" id="stats"></div>
 <div class="bc" id="bc"></div>
@@ -141,11 +146,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <button class="btn" onclick="exportData('csv')">📥 CSV</button>
 </div>
 </div>
-<div class="main">
-<div id="content"></div>
-</div>
-</div>
-<div class="s"><div class="kt">Przeanalizowane materiały (numerowane)</div><div id="sources"></div></div>
+
+<div class="s"><div class="kt">Przeanalizowane materiały</div><div id="sources"></div></div>
 </div>
 <button class="btn cmp" id="cmpBtn" onclick="openCompare()">⚔️ Porównaj (<span id="cmpCount">0</span>)</button>
 <div class="modal" id="modelModal" onclick="if(event.target===this)closeModal('modelModal')"><div class="md" id="modelContent"></div></div>
