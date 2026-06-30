@@ -22,7 +22,9 @@ jobs:
           # Install Deno - required by yt-dlp 2026.06+ for YouTube n-challenge
           curl -fsSL https://deno.land/install.sh | sh
           echo "$HOME/.deno/bin" >> $GITHUB_PATH
+          export PATH="$HOME/.deno/bin:$PATH"
           deno --version
+          yt-dlp --version
 
       - name: Write cookies file
         env:
@@ -35,6 +37,7 @@ jobs:
 
       - name: Download audio
         run: |
+          export PATH="$HOME/.deno/bin:$PATH"
           URL="${{ github.event.inputs.video_url }}"
           UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
           
