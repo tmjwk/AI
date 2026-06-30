@@ -14,15 +14,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Install yt-dlp + ffmpeg
+      - name: Install yt-dlp + ffmpeg + deno
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           pip install -q yt-dlp
+          curl -fsSL https://deno.land/install.sh | sh
+          echo "$HOME/.deno/bin" >> $GITHUB_PATH
       
-      - name: Download audio
+      - name: Download audio with cookies
+        env:
+          YT_COOKIES: ${{ secrets.YT_COOKIES }}
         run: |
-          yt-dlp -f "bestaudio" --extract-audio --audio-format mp3 --audio-quality 5 \
-            -o "audio.%(ext)s" "${{ github.event.inputs.video_url }}"
+          if [ -n "$YT_COOKIES" ]; then
+            echo "$YT_COOKIES" > cookies.txt
+            yt-dlp --cookies cookies.txt               -f "bestaudio" --extract-audio --audio-format mp3 --audio-quality 5               -o "audio.%(ext)s" "${{ github.event.inputs.video_url }}"
+            rm cookies.txt
+          else
+            yt-dlp               -f "bestaudio" --extract-audio --audio-format mp3 --audio-quality 5               -o "audio.%(ext)s" "${{ github.event.inputs.video_url }}"
+          fi
           ls -lh audio.*
       
       - name: Upload as artifact
