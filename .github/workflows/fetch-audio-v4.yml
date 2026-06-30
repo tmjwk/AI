@@ -1,0 +1,68 @@
+name: Fetch YouTube Audio v4 (Deno + cookies)
+
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: 'YouTube URL'
+        required: true
+        type: string
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install yt-dlp + ffmpeg + Deno (JS runtime)
+        run: |
+          set -e
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q yt-dlp
+          # Install Deno - required by yt-dlp 2026.06+ for YouTube n-challenge
+          curl -fsSL https://deno.land/install.sh | sh
+          echo "$HOME/.deno/bin" >> $GITHUB_PATH
+          deno --version
+
+      - name: Write cookies file
+        env:
+          YT_COOKIES: ${{ secrets.YT_COOKIES }}
+        run: |
+          printf '%s\n' "$YT_COOKIES" > cookies.txt
+          echo "Cookies file size: $(wc -c < cookies.txt) bytes"
+          echo "Cookies count: $(grep -c 'youtube.com' cookies.txt)"
+          chmod 600 cookies.txt
+
+      - name: Download audio
+        run: |
+          URL="${{ github.event.inputs.video_url }}"
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+          
+          echo "=== yt-dlp version ==="
+          yt-dlp --version
+          echo ""
+          echo "=== Deno version ==="
+          deno --version
+          echo ""
+          echo "=== Trying download ==="
+          
+          yt-dlp -f "bestaudio/best" --extract-audio --audio-format mp3 --audio-quality 5 \
+            --cookies cookies.txt \
+            --user-agent "$UA" \
+            --no-playlist \
+            -o "audio.%(ext)s" "$URL"
+          
+          ls -lh audio.*
+
+      - name: Upload as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audio
+          path: audio*
+          retention-days: 1
+          if-no-files-found: warn
+
+      - name: Cleanup cookies
+        if: always()
+        run: rm -f cookies.txt
