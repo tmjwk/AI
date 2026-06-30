@@ -47,15 +47,55 @@ jobs:
           echo "=== Deno version ==="
           deno --version
           echo ""
-          echo "=== Trying download ==="
-          
+          echo "=== Strategy 1: web_creator client ==="
           yt-dlp -f "bestaudio/best" --extract-audio --audio-format mp3 --audio-quality 5 \
             --cookies cookies.txt \
             --user-agent "$UA" \
+            --extractor-args "youtube:player_client=web_creator" \
             --no-playlist \
-            -o "audio.%(ext)s" "$URL"
+            -o "audio.%(ext)s" "$URL" 2>&1 | tail -30
           
-          ls -lh audio.*
+          if ls audio.* 2>/dev/null; then
+            echo "✓ Strategy 1 (web_creator) succeeded!"
+            ls -lh audio.*
+          else
+            echo "✗ Strategy 1 failed, trying strategy 2..."
+            echo ""
+            echo "=== Strategy 2: web + verbose ==="
+            yt-dlp -f "bestaudio/best" --extract-audio --audio-format mp3 --audio-quality 5 \
+              --cookies cookies.txt \
+              --user-agent "$UA" \
+              --extractor-args "youtube:player_client=web" \
+              --no-playlist \
+              --verbose \
+              -o "audio2.%(ext)s" "$URL" 2>&1 | tail -40
+            
+            if ls audio2.* 2>/dev/null; then
+              echo "✓ Strategy 2 succeeded!"
+              mv audio2.* audio.mp3
+              ls -lh audio.*
+            else
+              echo "✗ Strategy 2 failed too"
+              echo ""
+              echo "=== Strategy 3: default + sleep + verbose ==="
+              yt-dlp -f "bestaudio/best" --extract-audio --audio-format mp3 --audio-quality 5 \
+                --cookies cookies.txt \
+                --user-agent "$UA" \
+                --no-playlist \
+                --sleep-requests 1 \
+                --verbose \
+                -o "audio3.%(ext)s" "$URL" 2>&1 | tail -40
+              
+              if ls audio3.* 2>/dev/null; then
+                echo "✓ Strategy 3 succeeded!"
+                mv audio3.* audio.mp3
+                ls -lh audio.*
+              else
+                echo "✗ All strategies failed"
+                exit 1
+              fi
+            fi
+          fi
 
       - name: Upload as artifact
         if: always()
