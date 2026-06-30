@@ -1,4 +1,4 @@
-name: Fetch YouTube Audio
+name: Fetch YouTube Audio (fallback - no cookies)
 
 on:
   workflow_dispatch:
@@ -13,53 +13,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Install deps
+
+      - name: Install yt-dlp + ffmpeg
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           pip install -q yt-dlp
-          curl -fsSL https://deno.land/install.sh | sh
-          echo "$HOME/.deno/bin" >> $GITHUB_PATH
-      
-      - name: Download audio (try multiple methods)
-        env:
-          YT_COOKIES: ${{ secrets.YT_COOKIES }}
+
+      - name: Download audio (no cookies)
         run: |
-          URL="${{ github.event.inputs.video_url }}"
-          
-          # Method 1: with cookies if available
-          if [ -n "$YT_COOKIES" ]; then
-            echo "$YT_COOKIES" > cookies.txt
-            echo ">> Method 1: with cookies"
-            yt-dlp --cookies cookies.txt \
-              -f "bestaudio" --extract-audio --audio-format mp3 --audio-quality 5 \
-              -o "audio.%(ext)s" "$URL" && exit 0
-            rm cookies.txt
-          fi
-          
-          # Method 2: web_safari client
-          echo ">> Method 2: web_safari client"
-          yt-dlp --extractor-args "youtube:player_client=web_safari" \
-            -f "bestaudio" --extract-audio --audio-format mp3 --audio-quality 5 \
-            -o "audio.%(ext)s" "$URL" && exit 0
-          
-          # Method 3: ios client
-          echo ">> Method 3: ios client"
-          yt-dlp --extractor-args "youtube:player_client=ios" \
-            -f "bestaudio" --extract-audio --audio-format mp3 --audio-quality 5 \
-            -o "audio.%(ext)s" "$URL" && exit 0
-          
-          # Method 4: default with deno
-          echo ">> Method 4: default with deno"
-          yt-dlp \
-            -f "bestaudio" --extract-audio --audio-format mp3 --audio-quality 5 \
-            -o "audio.%(ext)s" "$URL" && exit 0
-          
-          echo ">> All methods failed"
-          exit 1
-          
+          yt-dlp -f "bestaudio" --extract-audio --audio-format mp3 --audio-quality 5 \
+            -o "audio.%(ext)s" "${{ github.event.inputs.video_url }}"
           ls -lh audio.*
-      
+
       - name: Upload as artifact
         uses: actions/upload-artifact@v4
         with:
