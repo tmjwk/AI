@@ -1,0 +1,53 @@
+name: Fetch YouTube Audio v2 (with cookies)
+
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: 'YouTube URL'
+        required: true
+        type: string
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install yt-dlp + ffmpeg
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q yt-dlp
+
+      - name: Write cookies file
+        env:
+          YT_COOKIES: ${{ secrets.YT_COOKIES }}
+        run: |
+          printf '%s\n' "$YT_COOKIES" > cookies.txt
+          echo "Cookies file size: $(wc -c < cookies.txt) bytes"
+          echo "Cookies lines: $(wc -l < cookies.txt)"
+          echo "First line (header): $(head -1 cookies.txt)"
+
+      - name: Download audio with cookies
+        run: |
+          echo "=== Trying with cookies ==="
+          yt-dlp -f "bestaudio" --extract-audio --audio-format mp3 --audio-quality 5 \
+            --cookies cookies.txt \
+            --no-playlist \
+            --no-warnings \
+            -o "audio.%(ext)s" "${{ github.event.inputs.video_url }}" \
+            || echo "FAILED with cookies"
+          ls -lh audio.* 2>/dev/null || echo "No audio file produced"
+
+      - name: Upload as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audio
+          path: audio.*
+          retention-days: 1
+          if-no-files-found: warn
+
+      - name: Cleanup cookies
+        if: always()
+        run: rm -f cookies.txt
