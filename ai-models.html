@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pl" data-theme="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Models</title>
-<base target="_blank">
 <style>
 :root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--tbg:#2a2418;--lh:#4ade80;--ov:rgba(0,0,0,.7);--mb:#1a1a1a}
 [data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--tbg:#fef3c7;--lh:#15803d;--ov:rgba(0,0,0,.5);--mb:#94a3b8}
@@ -115,11 +114,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .cmp-t .cr{color:var(--hm);font-weight:600;width:100px}
 .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ac);color:var(--bg);padding:10px 20px;border-radius:6px;font-size:13px;font-weight:600;z-index:300;opacity:0;transition:opacity .3s;pointer-events:none}
 .toast.show{opacity:1}
-@media(max-width:540px){.m{grid-template-columns:38px 1fr 30px}.n{grid-column:2}.d{grid-column:2}.mc{grid-column:3;grid-row:1}.stats{grid-template-columns:repeat(2,1fr)}}
+.nav-links{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.nav-btn{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:12px;color:var(--hs);text-decoration:none;font-weight:500;transition:all .15s;white-space:nowrap}
+.nav-btn:hover{border-color:var(--ac);color:var(--fg)}
+@media(max-width:540px){.m{grid-template-columns:38px 1fr 30px}.n{font-size:14px}.d{font-size:13px;grid-column:2}.mc{grid-column:3;grid-row:1}.stats{grid-template-columns:repeat(2,1fr)}.hr{gap:8px}.h h1{font-size:15px}.nav-btn{font-size:11px;padding:4px 8px}.nav-links{gap:4px}}
+@media(max-width:380px){.nav-btn{font-size:10px;padding:3px 6px}}
 </style></head><body>
 <div class="c">
 <div class="h">
-<div class="hr"><h1>AI Models — aktualny przegląd</h1><div style="display:flex;gap:6px;align-items:center"><a href="ai-radar.html" target="_top" style="background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:12px;color:var(--hs);text-decoration:none;font-weight:500;transition:all .15s" onmouseover="this.style.borderColor='var(--ac)'" onmouseout="this.style.borderColor='var(--bd)'">📡 Radar</a><a href="ai-glossary.html" target="_top" style="background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:12px;color:var(--hs);text-decoration:none;font-weight:500;transition:all .15s" onmouseover="this.style.borderColor='var(--ac)'" onmouseout="this.style.borderColor='var(--bd)'">📖 Słownik</a><a href="ai-benchmarks.html" target="_top" style="background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:12px;color:var(--hs);text-decoration:none;font-weight:500;transition:all .15s" onmouseover="this.style.borderColor='var(--ac)'" onmouseout="this.style.borderColor='var(--bd)'">🏆 Benchmarki</a><button class="tgl" id="themeTgl">🌙</button></div></div>
+<div class="hr"><h1>AI Models — aktualny przegląd</h1><div class="nav-links"><a href="ai-radar.html" class="nav-btn">📡 Radar</a><a href="ai-glossary.html" class="nav-btn">📖 Słownik</a><a href="ai-benchmarks.html" class="nav-btn">🏆 Benchmarki</a><button class="tgl" id="themeTgl">🌙</button></div></div>
 <div class="banner" id="banner"></div>
 <input type="text" class="search" id="search" placeholder="🔍 Szukaj: nazwa, kategoria, opis, use case... (np. 'tekst to speech', 'image', 'coding', 'open source')">
 </div>
