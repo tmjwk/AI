@@ -10,48 +10,48 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .h{position:sticky;top:0;background:var(--bg);z-index:100;padding:16px 0;border-bottom:1px solid var(--bd);margin-bottom:24px;transition:background .2s}
 .hr{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
 .h h1{font-size:18px;margin:0;font-weight:600;color:var(--hp);letter-spacing:-.02em}
-.h .sub{font-size:18px;color:var(--hm);margin-top:2px}
+.h .sub{font-size:12px;color:var(--hm);margin-top:2px}
 .h .nav{display:flex;gap:8px;align-items:center}
-font-size:13px;padding:4px 10px;border:1px solid var(--bd);border-radius:6px;transition:all .15s}
+.h a{color:var(--hs);text-decoration:none;font-size:12px;padding:4px 10px;border:1px solid var(--bd);border-radius:6px;transition:all .15s}
 .h a:hover{border-color:var(--ac);color:var(--ac)}
-font-size:14px;color:var(--fg);transition:border-color .15s}
+.tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--fg);transition:border-color .15s}
 .tgl:hover{border-color:var(--ac)}
 .sec{margin-bottom:32px}
-font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:12px;font-weight:700;display:flex;align-items:center;gap:8px}
-font-size:13px}
+.sec-t{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:12px;font-weight:700;display:flex;align-items:center;gap:8px}
+.sec-t .icon{font-size:18px}
 .card{background:var(--card);border:1px solid var(--bdl);border-radius:8px;padding:14px;margin-bottom:10px;transition:border-color .15s}
 .card:hover{border-color:var(--bd)}
-font-size:15px;margin:0 0 6px 0;color:var(--hp);font-weight:600}
-font-size:14px;color:var(--hm);margin:0 0 4px 0}
-.card .tag{display:inline-block;padding:2px 8px;border-radius:10px;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-right:4px}
+.card h3{font-size:14px;margin:0 0 6px 0;color:var(--hp);font-weight:600}
+.card p{font-size:13px;color:var(--hm);margin:0 0 4px 0}
+.card .tag{display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-right:4px}
 .tag-green{background:rgba(74,222,128,.15);color:var(--ac)}
 .tag-yellow{background:rgba(251,191,36,.15);color:var(--ba)}
 .tag-red{background:rgba(239,68,68,.15);color:var(--rd)}
 .tag-blue{background:rgba(59,130,246,.15);color:var(--bl)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
 .list{list-style:none;padding:0;margin:0}
-font-size:14px;color:var(--hm);padding:6px 0;border-bottom:1px solid var(--bdl);display:flex;align-items:flex-start;gap:8px}
+.list li{font-size:13px;color:var(--hm);padding:6px 0;border-bottom:1px solid var(--bdl);display:flex;align-items:flex-start;gap:8px}
 .list li:last-child{border-bottom:none}
 .list li .dot{width:8px;height:8px;border-radius:50%;margin-top:6px;flex-shrink:0}
 .dot-green{background:var(--ac)}
 .dot-yellow{background:var(--ba)}
 .dot-red{background:var(--rd)}
 .dot-blue{background:var(--bl)}
-.table{width:100%;border-collapse:collapse;font-size:18px}
+.table{width:100%;border-collapse:collapse;font-size:12px}
 .table th{background:var(--card);color:var(--hp);font-weight:600;padding:8px;text-align:left;border-bottom:2px solid var(--bd)}
 .table td{padding:6px 8px;border-bottom:1px solid var(--bdl);color:var(--hm)}
 .table tr:hover td{background:var(--card)}
 .table .score{font-family:monospace;color:var(--ac);font-weight:600}
 .table .rank{font-family:monospace;color:var(--rk);font-weight:600;text-align:center;width:40px}
 .table .off{color:var(--rd);text-decoration:line-through}
-.code{background:var(--card);border:1px solid var(--bdl);border-radius:6px;padding:12px;font-family:"SF Mono",Menlo,monospace;font-size:18px;color:var(--hm);overflow-x:auto;margin:8px 0}
+.code{background:var(--card);border:1px solid var(--bdl);border-radius:6px;padding:12px;font-family:"SF Mono",Menlo,monospace;font-size:12px;color:var(--hm);overflow-x:auto;margin:8px 0}
 .code .kw{color:var(--ac);font-weight:600}
 .code .num{color:var(--ba)}
-font-size:11px;color:var(--hd);text-align:center}
+.f{margin-top:36px;padding-top:18px;border-top:1px solid var(--bdl);font-size:11px;color:var(--hd);text-align:center}
 .f a{color:var(--hm)}
-font-size:13px;color:var(--hs)}
+.banner{background:linear-gradient(90deg,rgba(59,130,246,.1),transparent);border-left:3px solid var(--bl);padding:10px 14px;border-radius:4px;margin-bottom:20px;font-size:13px;color:var(--hs)}
 .banner strong{color:var(--bl)}
-@media(max-width:540px){.grid{grid-template-columns:1fr}font-size:12px}}
+@media(max-width:540px){.grid{grid-template-columns:1fr}.table{font-size:11px}}
 </style></head><body>
 <div class="c">
 
@@ -59,9 +59,7 @@ font-size:13px;color:var(--hs)}
 <div class="hr">
 <h1>📡 AI Radar — Industry Intelligence</h1>
 <div class="nav">
-<a href="ai-models.html" target="_top">← Models</a>
-<a href="ai-glossary.html" target="_top">📖 Słownik</a>
-<a href="ai-benchmarks.html" target="_top">🏆 Benchmarki</a>
+<a href="ai-models.html">← AI Models</a>
 <button class="tgl" id="themeTgl">🌙</button>
 </div>
 </div>
@@ -244,7 +242,7 @@ font-size:13px;color:var(--hs)}
 <tr><td class="rank">25</td><td>GPT 5.5 instant</td><td class="score">1513</td><td><span class="tag tag-green">Active</span></td></tr>
 </tbody>
 </table>
-<p style="font-size:14px;color:var(--hd);margin-top:8px">Źródło: lmarena.ai · Data: 25.06.2026 · PPT: Lev Selector</p>
+<p style="font-size:11px;color:var(--hd);margin-top:8px">Źródło: lmarena.ai · Data: 25.06.2026 · PPT: Lev Selector</p>
 </div>
 
 <!-- 7. LEARN -->
@@ -283,12 +281,12 @@ font-size:13px;color:var(--hs)}
 <tr><td>2022</td><td class="score">165,000</td><td>layoffs.fyi</td></tr>
 </tbody>
 </table>
-<p style="font-size:14px;color:var(--hd);margin-top:8px">Trend: spadek w 2026 vs 2023-2024. Mniej zwolnień w czerwcu vs maj.</p>
+<p style="font-size:11px;color:var(--hd);margin-top:8px">Trend: spadek w 2026 vs 2023-2024. Mniej zwolnień w czerwcu vs maj.</p>
 </div>
 
 <div class="f">
 AI Radar · Źródło: <a href="https://www.youtube.com/@lev-selector">Lev Selector</a> · <a href="https://github.com/lselector">GitHub</a><br>
-Aktualizacja: 2026-06-26 · Transkrypt + PowerPoint parsowany · <a href="ai-models.html" target="_top">← Wróć do AI Models</a>
+Aktualizacja: 2026-06-26 · Transkrypt + PowerPoint parsowany · <a href="ai-models.html">← Wróć do AI Models</a>
 </div>
 
 </div>
