@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pl" data-theme="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Pulse — panele dyskusyjne</title>
 <style>
-:root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--bl:#3b82f6;--rd:#ef4444;--ov:rgba(0,0,0,.7)}
-[data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--bl:#1d4ed8;--rd:#dc2626;--ov:rgba(0,0,0,.5)}
+:root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--bl:#3b82f6}
+[data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--bl:#1d4ed8}
 *{box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:0;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
 .c{max-width:clamp(900px,95vw,1400px);margin:0 auto;padding:20px}
@@ -10,161 +10,384 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .hr{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:8px;flex-wrap:wrap}
 .h h1{font-size:18px;margin:0;font-weight:600;color:var(--hp);letter-spacing:-.02em}
 .h .sub{font-size:12px;color:var(--hm);margin-top:2px}
+.h .nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.h a{color:var(--hs);text-decoration:none;font-size:12px;padding:4px 10px;border:1px solid var(--bd);border-radius:6px;transition:all .15s}
 .nav-links{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
 .nav-btn{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:12px;color:var(--hs);text-decoration:none;font-weight:500;transition:all .15s;white-space:nowrap}
 .nav-btn:hover{border-color:var(--ac);color:var(--fg)}
-.tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--fg);transition:border-color .15s}
+.nav-btn.cur{border-color:var(--ac);color:var(--ac);background:rgba(74,222,128,.06)}
+.h a:hover{border-color:var(--ac);color:var(--ac)}
+.tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--fg);transition:border-color .15s;line-height:1}
 .tgl:hover{border-color:var(--ac)}
-.ep-card{background:var(--card);border:1px solid var(--bdl);border-left:4px solid var(--ac);border-radius:8px;padding:18px 20px;margin-bottom:20px}
-.ep-num{font-family:"SF Mono",Menlo,monospace;font-size:13px;color:var(--ac);font-weight:700}
-.ep-title{font-size:17px;font-weight:600;color:var(--hp);margin:4px 0 8px}
-.ep-meta{font-size:12px;color:var(--hm);display:flex;gap:12px;flex-wrap:wrap}
-.ep-meta span{display:flex;align-items:center;gap:3px}
-.ep-yt{display:inline-block;margin-top:8px;padding:4px 12px;background:var(--rd);color:#fff;border-radius:4px;font-size:12px;font-weight:600;text-decoration:none}
-.ep-yt:hover{opacity:.85}
-.people-sec{margin-bottom:20px}
-.people-t{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--hs);font-weight:700;margin-bottom:8px}
-.people-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px}
-.person{background:var(--card);border:1px solid var(--bdl);border-radius:8px;padding:10px 12px;display:flex;align-items:flex-start;gap:8px}
-.person .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;margin-top:5px}
-.person .pn{font-size:13px;font-weight:600;color:var(--hp)}
-.person .pr{font-size:11px;color:var(--hm);margin-top:2px}
-.person.absent{opacity:.5}
-.person.absent .pn{text-decoration:line-through}
-.person-tag{display:inline-block;font-size:9px;padding:1px 6px;border-radius:3px;text-transform:uppercase;letter-spacing:.04em;font-weight:700;margin-left:4px}
-.tag-host{background:rgba(74,222,128,.15);color:var(--ac)}
-.tag-guest{background:rgba(251,191,36,.15);color:var(--ba)}
-.tag-absent{background:rgba(168,168,168,.15);color:var(--hd)}
-.topic{background:var(--card);border:1px solid var(--bdl);border-radius:8px;margin-bottom:12px;overflow:hidden;transition:border-color .15s}
+.banner{background:linear-gradient(90deg,rgba(74,222,128,.08),transparent);border-left:3px solid var(--ac);padding:10px 14px;border-radius:4px;margin-bottom:24px;font-size:13px;color:var(--hs)}
+.banner strong{color:var(--ac)}
+.banner a{color:var(--bl)}
+.sec{margin-bottom:32px}
+.sec-t{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:14px;font-weight:700;display:flex;align-items:center;gap:8px}
+.sec-t .icon{font-size:18px}
+.sec-t .cnt{color:var(--hd);font-size:10px;font-family:monospace;margin-left:auto;font-weight:500;text-transform:none;letter-spacing:0}
+
+/* Episode card */
+.episode{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:18px 20px;margin-bottom:28px;border-left:4px solid var(--ac);transition:border-color .15s}
+.episode .e-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.episode .e-num{font-size:11px;color:var(--ac);font-family:"SF Mono",Menlo,monospace;font-weight:700;background:var(--bg);padding:2px 8px;border-radius:4px;border:1px solid var(--bdl)}
+.episode .e-channel{font-size:11px;color:var(--hm);font-family:monospace}
+.episode .e-title{font-size:18px;font-weight:700;color:var(--hp);line-height:1.4;margin:4px 0 8px}
+.episode .e-meta{font-size:12px;color:var(--hm);display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.episode .e-meta .m-item{display:flex;align-items:center;gap:5px}
+.episode .e-meta .m-item .mv{color:var(--hs);font-weight:600}
+.episode .e-yt{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:var(--bg);border:1px solid var(--bd);border-radius:6px;color:var(--ac);font-size:12px;font-weight:600;text-decoration:none;transition:all .15s}
+.episode .e-yt:hover{border-color:var(--ac);background:var(--card)}
+
+/* Hosts */
+.hosts{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.host{background:var(--card);border:1px solid var(--bdl);border-radius:8px;padding:12px 14px;transition:border-color .15s;position:relative}
+.host:hover{border-color:var(--bd)}
+.host.absent{opacity:.55}
+.host.absent .h-name{text-decoration:line-through}
+.host .h-head{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.host .h-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;box-shadow:0 0 0 2px var(--card)}
+.host .h-name{font-size:14px;font-weight:700;color:var(--hp);line-height:1.3}
+.host .h-role{font-size:11px;color:var(--hm);line-height:1.5;margin-top:2px}
+.host .h-role strong{color:var(--hs);font-weight:600}
+.host .h-absent-tag{font-size:9px;color:var(--hd);text-transform:uppercase;letter-spacing:.05em;font-weight:700;margin-left:auto;padding:1px 6px;border:1px dashed var(--bd);border-radius:3px}
+
+/* Topics */
+.topics{display:flex;flex-direction:column;gap:14px}
+.topic{background:var(--card);border:1px solid var(--bdl);border-radius:10px;padding:18px 20px;transition:border-color .15s}
 .topic:hover{border-color:var(--bd)}
-.topic-h{padding:14px 16px;cursor:pointer;display:flex;align-items:flex-start;gap:10px;user-select:none}
-.topic-num{font-family:"SF Mono",Menlo,monospace;font-size:18px;font-weight:700;color:var(--ac);flex-shrink:0;min-width:28px}
-.topic-info{flex:1;min-width:0}
-.topic-title{font-size:15px;font-weight:600;color:var(--hp);margin-bottom:2px}
-.topic-time{font-family:"SF Mono",Menlo,monospace;font-size:11px;color:var(--hd)}
-.topic-arrow{color:var(--hm);font-size:14px;flex-shrink:0;transition:transform .2s;margin-top:4px}
-.topic.open .topic-arrow{transform:rotate(90deg)}
-.topic-body{display:none;padding:0 16px 14px 54px}
-.topic.open .topic-body{display:block}
-.topic-facts{background:rgba(251,191,36,.06);border-left:3px solid var(--ba);padding:8px 12px;border-radius:0 4px 4px 0;margin-bottom:10px;font-size:13px;color:var(--hm)}
-.topic-facts strong{color:var(--ba);font-size:11px;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:3px}
-.voice-list{list-style:none;padding:0;margin:0 0 10px}
-.voice-item{display:flex;align-items:flex-start;gap:8px;padding:5px 0;font-size:13px;color:var(--hm);line-height:1.5}
-.voice-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:6px}
-.voice-name{font-weight:600;color:var(--hp);flex-shrink:0}
-.voice-tag{font-size:9px;padding:1px 4px;border-radius:2px;font-weight:700;text-transform:uppercase;flex-shrink:0}
-.topic-conclusion{background:rgba(74,222,128,.06);border-left:3px solid var(--ac);padding:8px 12px;border-radius:0 4px 4px 0;font-size:13px;color:var(--hm)}
-.topic-conclusion strong{color:var(--ac);font-size:11px;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:3px}
-.topic-deep{margin-top:10px;padding:10px 12px;background:var(--bg);border:1px dashed var(--bdl);border-radius:4px;font-size:12px;color:var(--hd);line-height:1.6}
-.topic-deep strong{color:var(--hm);font-size:11px;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:4px}
-.f{margin-top:36px;padding-top:18px;border-top:1px solid var(--bdl);font-size:11px;color:var(--hd);text-align:center}
-.f a{color:var(--hm)}
-@media(max-width:540px){.hr{flex-direction:column;align-items:flex-start;gap:8px}.h h1{font-size:16px}.nav-btn{font-size:11px;padding:4px 8px}.nav-links{gap:4px;width:100%}.people-grid{grid-template-columns:1fr}.topic-body{padding:0 12px 12px 12px}.topic-h{padding:12px}}
-</style></head><body>
+.topic .t-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--bdl)}
+.topic .t-num{font-size:11px;font-weight:700;color:var(--ac);font-family:"SF Mono",Menlo,monospace;background:var(--bg);padding:3px 8px;border-radius:4px;border:1px solid var(--bdl);white-space:nowrap}
+.topic .t-title{font-size:15px;font-weight:700;color:var(--hp);flex:1;min-width:0;line-height:1.4}
+.topic .t-time{font-size:11px;color:var(--hm);font-family:"SF Mono",Menlo,monospace;white-space:nowrap;background:var(--bg);padding:3px 8px;border-radius:4px;border:1px solid var(--bdl)}
+.blk{margin-bottom:14px}
+.blk:last-child{margin-bottom:0}
+.blk-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:5px}
+.blk-lbl.fakty{color:var(--ba)}
+.blk-lbl.glosy{color:var(--bl)}
+.blk-lbl.wniosek{color:var(--ac)}
+.fakty-box{background:rgba(251,191,36,.06);border-left:3px solid var(--ba);padding:9px 13px;border-radius:4px;font-size:13px;color:var(--hm);line-height:1.6}
+.wniosek-box{background:rgba(74,222,128,.07);border-left:3px solid var(--ac);padding:11px 15px;border-radius:4px;font-size:13.5px;color:var(--fg);line-height:1.6;font-weight:500}
+.wniosek-box strong{color:var(--ac)}
+.glosy-list{list-style:none;padding:0;margin:0}
+.glosy-list li{display:flex;gap:12px;padding:7px 0;border-bottom:1px solid var(--bdl);font-size:13px;color:var(--hm);line-height:1.55;align-items:flex-start}
+.glosy-list li:last-child{border-bottom:none}
+.glosy-list .g-host{display:flex;align-items:center;gap:6px;flex-shrink:0;min-width:120px;font-weight:700;color:var(--hp);font-size:12px;padding-top:1px}
+.glosy-list .g-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.glosy-list .g-text{flex:1;min-width:0}
+.glosy-list .g-text q{font-style:italic;color:var(--hs);quotes:"\201C" "\201D"}
+.glosy-list .g-text q::before{content:open-quote}
+.glosy-list .g-text q::after{content:close-quote}
+
+.f{margin-top:36px;padding-top:18px;border-top:1px solid var(--bdl);font-size:11px;color:var(--hd);text-align:center;line-height:1.8}
+.f a{color:var(--hm);text-decoration:none;border-bottom:1px dotted var(--bd)}
+.f a:hover{color:var(--ac);border-bottom-color:var(--ac)}
+
+@media(max-width:540px){
+.h h1{font-size:16px}
+.hr{flex-direction:column;align-items:flex-start;gap:8px}
+.nav-btn{font-size:11px;padding:4px 8px}
+.nav-links{gap:4px;width:100%}
+.episode{padding:14px 16px}
+.episode .e-title{font-size:16px}
+.hosts{grid-template-columns:1fr}
+.topic{padding:14px 16px}
+.topic .t-title{font-size:14px}
+.glosy-list li{flex-direction:column;gap:4px}
+.glosy-list .g-host{min-width:0}
+}
+@media(max-width:380px){.nav-btn{font-size:10px;padding:3px 6px}}
+</style></head>
+<body>
 <div class="c">
+
 <div class="h">
-<div class="hr"><h1>💓 AI Pulse — panele dyskusyjne</h1><div class="nav-links"><a href="ai-models.html" class="nav-btn">← Models</a><a href="ai-radar.html" class="nav-btn">📡 Radar</a><a href="ai-glossary.html" class="nav-btn">📖 Słownik</a><a href="ai-benchmarks.html" class="nav-btn">🏆 Benchmarki</a><button class="tgl" id="themeTgl">🌙</button></div></div>
-<div class="sub">Analiza rozmów o AI, geopolityce, ekonomii i przyszłości — pogłębione tematy z głosami uczestników</div>
+<div class="hr">
+<h1>💬 AI Pulse — panele dyskusyjne</h1>
+<div class="nav nav-links">
+<a href="ai-models.html" class="nav-btn">← Models</a>
+<a href="ai-radar.html" class="nav-btn">📡 Radar</a>
+<a href="ai-glossary.html" class="nav-btn">📖 Słownik</a>
+<a href="ai-benchmarks.html" class="nav-btn">🏆 Benchmarki</a>
+<button class="tgl" id="themeTgl">🌙</button>
 </div>
-<div id="content"></div>
+</div>
+<div class="sub">Analiza rozmów o AI, geopolityce, ekonomii i przyszłości</div>
+</div>
+
+<div class="banner">
+<strong>💬 O tej stronie:</strong> Analiza paneli dyskusyjnych o AI — przede wszystkim <strong>Moonshots &amp; Millionaires</strong> z kanału <strong>Peter Diamandis</strong>. Każdy odcinek rozkładamy na fakty, głosy gospodarzy i emergentny wniosek, który wyrasta z dyskusji. Towarzysz <a href="ai-models.html">AI Models</a>, <a href="ai-radar.html">AI Radar</a>, <a href="ai-glossary.html">AI Słownik</a> i <a href="ai-benchmarks.html">AI Benchmarki</a> — inny format, ta sama perspektywa.
+</div>
+
+<!-- EPISODE CARD -->
+<div class="episode">
+<div class="e-top">
+<span class="e-num">#267</span>
+<span class="e-channel">Peter Diamandis · Moonshots &amp; Millionaires</span>
+</div>
+<div class="e-title">US Government Blocks GPT-5.6, Alibaba's AI Theft, and Why OpenAI Is Stalling Their IPO | #267</div>
+<div class="e-meta">
+<span class="m-item">📅 <span class="mv">2026-06-30</span></span>
+<span class="m-item">⏱ <span class="mv">2h17m</span></span>
+<span class="m-item">🎙 <span class="mv">4 gospodarzy</span></span>
+<span class="m-item">📂 <span class="mv">7 tematów</span></span>
+</div>
+<a class="e-yt" href="https://www.youtube.com/watch?v=-H7J_-zr7pA">▶ Oglądaj na YouTube ↗</a>
+</div>
+
+<!-- HOSTS -->
+<div class="sec">
+<div class="sec-t"><span class="icon">🎙</span> Gospodarze — panel <span class="cnt">4 aktywnych · 1 nieobecny</span></div>
+<div class="hosts">
+
+<div class="host">
+<div class="h-head">
+<span class="h-dot" style="background:var(--ac)"></span>
+<span class="h-name">Peter Diamandis</span>
+</div>
+<div class="h-role"><strong>Główny host</strong> · „abundance evangelist” — fundator XPRIZE, Singularity University. Perspektywa wizjonerska i rynkowa.</div>
+</div>
+
+<div class="host">
+<div class="h-head">
+<span class="h-dot" style="background:var(--bl)"></span>
+<span class="h-name">Alex (AWG)</span>
+</div>
+<div class="h-role"><strong>„In-house super genius”</strong> — perspektywa techniczna, deep tech, quantum photonics, orbital compute.</div>
+</div>
+
+<div class="host">
+<div class="h-head">
+<span class="h-dot" style="background:var(--ba)"></span>
+<span class="h-name">Dave Blondon</span>
+</div>
+<div class="h-role"><strong>„Wizard of AI investing”</strong> — perspektywa biznesowa, rynki, wyceny, kapitał ryzyka.</div>
+</div>
+
+<div class="host">
+<div class="h-head">
+<span class="h-dot" style="background:var(--rk)"></span>
+<span class="h-name">Immad Mustach</span>
+</div>
+<div class="h-role"><strong>„AI intellect on emerging intelligence”</strong> — perspektywa aligned AI, safety, emerging capabilities.</div>
+</div>
+
+<div class="host absent">
+<div class="h-head">
+<span class="h-dot" style="background:var(--hd)"></span>
+<span class="h-name">Salem</span>
+<span class="h-absent-tag">nieobecny</span>
+</div>
+<div class="h-role">Regularny host — w odcinku #267 nieobecny.</div>
+</div>
+
+</div>
+</div>
+
+<!-- TOPICS -->
+<div class="sec">
+<div class="sec-t"><span class="icon">📋</span> Tematy — chronologicznie <span class="cnt">7 tematów · 138 min</span></div>
+<div class="topics">
+
+<!-- TOPIC 1 -->
+<div class="topic">
+<div class="t-head">
+<span class="t-num">01</span>
+<span class="t-title">US Government blocks GPT-5.6 i Mythos</span>
+<span class="t-time">00:00 – 35:00</span>
+</div>
+<div class="blk">
+<div class="blk-lbl fakty">📌 Fakty</div>
+<div class="fakty-box">Po raz pierwszy w historii US, egzekutywa nałożyła <strong>national security hold</strong> na modele AI. GPT-5.6 dostępny tylko dla 20 wybranych firm. Mythos 5 po dealu z Trump admin — tylko US citizens z allow list.</div>
+</div>
+<div class="blk">
+<div class="blk-lbl glosy">🗣 Głosy</div>
+<ul class="glosy-list">
+<li><span class="g-host"><span class="g-dot" style="background:var(--ac)"></span>Peter</span><span class="g-text"><q>Government is too late</q> — to wygląda jak protekcjonizm, ale rząd jest spóźniony.</span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--ba)"></span>Dave</span><span class="g-text"><q>Cover stories and excuses</q> — to prawda, ale służy jako pretekst do suppress Chinese AI.</span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--bl)"></span>Alex</span><span class="g-text"><q>Sputnik moment, surprise from within</q> — ale tym razem niespodzianka przyszła od wewnątrz, nie z zewnątrz. <q>We're in the endgame</q> — China ma już escape velocity w recursive self-improvement.</span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--rk)"></span>Immad</span><span class="g-text"><q>Pro competent open intelligence</q> — trzeba budować aligned AI, nie tylko blokować.</span></li>
+</ul>
+</div>
+<div class="blk">
+<div class="blk-lbl wniosek">✨ Wolny wniosek</div>
+<div class="wniosek-box">China osiągnęła <strong>recursive self-improvement escape velocity</strong> — blokowanie modeli w US nie zatrzyma Chińczyków, tylko spowolni zachód.</div>
+</div>
+</div>
+
+<!-- TOPIC 2 -->
+<div class="topic">
+<div class="t-head">
+<span class="t-num">02</span>
+<span class="t-title">OpenAI cofa IPO</span>
+<span class="t-time">42:00 – 53:00</span>
+</div>
+<div class="blk">
+<div class="blk-lbl fakty">📌 Fakty</div>
+<div class="fakty-box">OpenAI leadership pulls back from near-term IPO. SpaceX IPO comparison — Elon „got out quickly” z liquid stock.</div>
+</div>
+<div class="blk">
+<div class="blk-lbl glosy">🗣 Głosy</div>
+<ul class="glosy-list">
+<li><span class="g-host"><span class="g-dot" style="background:var(--ac)"></span>Peter</span><span class="g-text">OpenAI valuation might be crushed by government hold.</span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--ba)"></span>Dave</span><span class="g-text"><q>Different world from being a private company</q> — nagle zdają sobie sprawę, jak to naprawdę wygląda.</span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--bl)"></span>Alex</span><span class="g-text">Elon stracił edge na frontier model, więc jego strategia to <strong>orbital data centers</strong>.</span></li>
+</ul>
+</div>
+<div class="blk">
+<div class="blk-lbl wniosek">✨ Wolny wniosek</div>
+<div class="wniosek-box">Going public w erze regulatory uncertainty = ryzyko. Elon wybrał SpaceX IPO zamiast AI — chce kontrolować <strong>infrastrukturę</strong> (orbital data centers), nie modele.</div>
+</div>
+</div>
+
+<!-- TOPIC 3 -->
+<div class="topic">
+<div class="t-head">
+<span class="t-num">03</span>
+<span class="t-title">Alibaba distillation campaign</span>
+<span class="t-time">79:34 – 90:00</span>
+</div>
+<div class="blk">
+<div class="blk-lbl fakty">📌 Fakty</div>
+<div class="fakty-box">Anthropic accuses China's Alibaba of running massive <strong>distillation campaign</strong> against Claude.</div>
+</div>
+<div class="blk">
+<div class="blk-lbl glosy">🗣 Głosy</div>
+<ul class="glosy-list">
+<li><span class="g-host"><span class="g-dot" style="background:var(--ba)"></span>Dave</span><span class="g-text"><q>This will be the excuse US and Europe use to suppress Chinese AI.</q></span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--bl)"></span>Alex</span><span class="g-text"><q>Anyone shocked by this is out of touch with what China's actually doing.</q></span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--ac)"></span>Peter</span><span class="g-text">Druga cold war path — US vs China AI.</span></li>
+</ul>
+</div>
+<div class="blk">
+<div class="blk-lbl wniosek">✨ Wolny wniosek</div>
+<div class="wniosek-box">Distillation to <strong>wojna asymetryczna</strong> — Chińczycy nie muszą trenować od zera, kopiują reasoning traces z western models. Regulacje export control nie powstrzymają tego.</div>
+</div>
+</div>
+
+<!-- TOPIC 4 -->
+<div class="topic">
+<div class="t-head">
+<span class="t-num">04</span>
+<span class="t-title">Neuralink telepathy</span>
+<span class="t-time">55:23 – 62:00</span>
+</div>
+<div class="blk">
+<div class="blk-lbl fakty">📌 Fakty</div>
+<div class="fakty-box">Elon announces first direct <strong>human-to-human telepathic communications</strong> via Neuralink. Neocortex to cloud by early 2030s.</div>
+</div>
+<div class="blk">
+<div class="blk-lbl glosy">🗣 Głosy</div>
+<ul class="glosy-list">
+<li><span class="g-host"><span class="g-dot" style="background:var(--ac)"></span>Peter</span><span class="g-text"><q>One of biggest achievements in humanity</q> — if it works.</span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--bl)"></span>Alex</span><span class="g-text"><q>If hippocampus is basically an encoder-only transformer embedding space, telepathy is going to be easier than expected.</q></span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--rk)"></span>Immad</span><span class="g-text">Enormous demand for non-invasive BCIs — Elon may steer Neuralink toward less invasive.</span></li>
+</ul>
+</div>
+<div class="blk">
+<div class="blk-lbl wniosek">✨ Wolny wniosek</div>
+<div class="wniosek-box">Telepathy może być łatwiejsza niż się wydaje — jeśli mózg używa <strong>embedding space</strong> podobnego do LLM, komunikacja brain-to-brain to transfer latents, nie słów.</div>
+</div>
+</div>
+
+<!-- TOPIC 5 -->
+<div class="topic">
+<div class="t-head">
+<span class="t-num">05</span>
+<span class="t-title">Quantum computing executive order</span>
+<span class="t-time">90:35 – 103:00</span>
+</div>
+<div class="blk">
+<div class="blk-lbl fakty">📌 Fakty</div>
+<div class="fakty-box">Trump signs executive order to supercharge US quantum computing. $100M each to D-Wave, Rigetti, Inflection. $140M to Sai Quantum.</div>
+</div>
+<div class="blk">
+<div class="blk-lbl glosy">🗣 Głosy</div>
+<ul class="glosy-list">
+<li><span class="g-host"><span class="g-dot" style="background:var(--ac)"></span>Peter</span><span class="g-text">Wants to bring quantum CEOs on stage at Abundance 360.</span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--bl)"></span>Alex</span><span class="g-text"><q>Quantum photonics, not quantum computers</q> — to jest prawdziwy przełom. Założył Quantum.AI. <q>I'd be shocked if by next December we're not talking about photonic compute launch.</q></span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--ba)"></span>Dave</span><span class="g-text"><q>Quantum for science acceleration just hasn't worked that well</q> — protein folding solved by AI, not quantum.</span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--rk)"></span>Immad</span><span class="g-text"><q>Quantum computers are vastly more complicated to build than GPUs</q> — China catching up on GPUs, ale quantum harder.</span></li>
+</ul>
+</div>
+<div class="blk">
+<div class="blk-lbl wniosek">✨ Wolny wniosek</div>
+<div class="wniosek-box">Quantum computing w obecnej formie jest <strong>overhyped</strong>. Prawdziwy przełom to <strong>quantum photonics</strong> — photonic compute at 1/100th mass for same computation. AI odkryje algorytmy kwantowe szybciej niż ludzie.</div>
+</div>
+</div>
+
+<!-- TOPIC 6 -->
+<div class="topic">
+<div class="t-head">
+<span class="t-num">06</span>
+<span class="t-title">Orbital data centers</span>
+<span class="t-time">118:00 – 133:00</span>
+</div>
+<div class="blk">
+<div class="blk-lbl fakty">📌 Fakty</div>
+<div class="fakty-box">Elon flipped the bit 9 months ago — <strong>orbital data centers</strong>. SpaceX constellation jako „Dyson Swarm brand”.</div>
+</div>
+<div class="blk">
+<div class="blk-lbl glosy">🗣 Głosy</div>
+<ul class="glosy-list">
+<li><span class="g-host"><span class="g-dot" style="background:var(--ac)"></span>Peter</span><span class="g-text"><q>Elon's way to become relevant is get into space, get orbital data centers up.</q></span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--bl)"></span>Alex</span><span class="g-text">If photonic takeoff na 1-2 year timeline, orbital may be unnecessary — photonic compute at 1/100th mass.</span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--ba)"></span>Dave</span><span class="g-text">Security concerns — who controls the beam, who's listening behind you.</span></li>
+</ul>
+</div>
+<div class="blk">
+<div class="blk-lbl wniosek">✨ Wolny wniosek</div>
+<div class="wniosek-box">Orbital data centers mogą być <strong>niepotrzebne</strong>, jeśli photonic computing zadziała — 1/100th mass means you don't need to go to space for compute. Ale Elon potrzebuje narracji dla SpaceX.</div>
+</div>
+</div>
+
+<!-- TOPIC 7 -->
+<div class="topic">
+<div class="t-head">
+<span class="t-num">07</span>
+<span class="t-title">Future of humanity — space colonization</span>
+<span class="t-time">125:00 – 138:00</span>
+</div>
+<div class="blk">
+<div class="blk-lbl fakty">📌 Fakty</div>
+<div class="fakty-box">Discussion about ocean colonies, orbital habitats, <strong>heterogeneous vs homogeneous future</strong>.</div>
+</div>
+<div class="blk">
+<div class="blk-lbl glosy">🗣 Głosy</div>
+<ul class="glosy-list">
+<li><span class="g-host"><span class="g-dot" style="background:var(--ac)"></span>Peter</span><span class="g-text"><q>You'll see humans who look substantially the same 100 years from now</q> — heterogeneous future.</span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--bl)"></span>Alex</span><span class="g-text">Gerard K. O'Neill reference — space colonies from the 80s.</span></li>
+<li><span class="g-host"><span class="g-dot" style="background:var(--ba)"></span>Dave</span><span class="g-text">Even with mass unemployment, meaning in life through creating companies.</span></li>
+</ul>
+</div>
+<div class="blk">
+<div class="blk-lbl wniosek">✨ Wolny wniosek</div>
+<div class="wniosek-box">Przyszłość będzie <strong>heterogeniczna</strong> — część ludzi zostanie na Ziemi (prawie niezmieniona), część pójdzie w kosmos. Nie ma jednej ścieżki.</div>
+</div>
+</div>
+
+</div>
+</div>
+
 <div class="f">
-AI Pulse · Część katalogu <a href="ai-models.html">AI Models</a> · <a href="ai-radar.html">AI Radar</a> · <a href="ai-glossary.html">AI Słownik</a> · <a href="ai-benchmarks.html">AI Benchmarki</a><br>
+💬 AI Pulse · Analiza odcinka #267 — Peter Diamandis<br>
+<a href="transcript_-H7J_-zr7pA.txt">📄 Pełny transkrypt</a> · <a href="https://www.youtube.com/watch?v=-H7J_-zr7pA">▶ YouTube</a><br>
+Część katalogu: <a href="ai-models.html">AI Models</a> · <a href="ai-radar.html">AI Radar</a> · <a href="ai-glossary.html">AI Słownik</a> · <a href="ai-benchmarks.html">AI Benchmarki</a><br>
 Aktualizacja: 2026-07-01
 </div>
+
 </div>
 <script>
-const EPISODES=[
-{n:267,title:"US Government Blocks GPT-5.6, Alibaba's AI Theft, and Why OpenAI Is Stalling Their IPO",channel:"Peter Diamandis",date:"2026-06-30",dur:"2h17m",yt:"-H7J_-zr7pA",
-hosts:[
-{n:"Peter Diamandis",r:"główny host, abundance evangelist",c:"var(--ac)"},
-{n:"Alex (AWG)",r:"in-house super genius, perspektywa techniczna",c:"var(--bl)"},
-{n:"Dave Blondon",r:"wizard of AI investing, perspektywa biznesowa",c:"var(--ba)"}
-],
-guests:[
-{n:"Immad Mustach",r:"AI intellect on emerging intelligence",c:"var(--rk)"}
-],
-absent:[{n:"Salem",r:"regularny host, nieobecny (w samolocie)",c:"var(--hd)"}],
-topics:[
-{t:"US Government blocks GPT-5.6 i Mythos",time:"00:00–35:00",
-facts:"Po raz pierwszy w historii US, egzekutywa nałożyła national security hold na modele AI. GPT-5.6 dostępny tylko dla 20 wybranych firm. Mythos 5 po dealu z Trump admin — tylko US citizens z allow list. 12 dni wcześniej Mythos przeszedł red team exercises z US DoD (Project Glass Wing) — włamał się do classified systems w godzinach, nie tygodniach.",
-voices:[
-{h:"Peter",c:"var(--ac)",tag:"host",v:"Government is too late — to wygląda jak protekcjonizm, ale rząd jest spóźniony. Might it be possibly crushing OpenAI and Anthropic's valuation?"},
-{h:"Dave",c:"var(--ba)",tag:"host",v:"Cover stories and excuses — to prawda, ale służy jako pretekst do suppress Chinese AI. The world seems to be on a second cold war type path."},
-{h:"Alex",c:"var(--bl)",tag:"host",v:"Sputnik moment, surprise from within — tym razem niespodzianka przyszła od wewnątrz, nie z zewnątrz. We're in the endgame — China ma już escape velocity w recursive self-improvement."},
-{h:"Immad",c:"var(--rk)",tag:"gość",v:"Pro competent open intelligence — trzeba budować aligned AI, nie tylko blokować. I'm very pro actually competent open intelligence."}
-],
-conclusion:"China osiągnęła recursive self-improvement escape velocity — blokowanie modeli w US nie zatrzyma Chińczyków, tylko spowolni zachód. Regulatory hold to immunoresponse, nie strategia.",
-deep:"Kluczowy szczegół: Mythos 5 może odpowiedzieć na pytanie 'can you help me build yourself?' — Opus 4.8 nie może. To jest linia którą Mythos i GPT-5.6 przekraczają: recursive self-improvement. 4.8 sekundy wystarczyły Mythosowi do odpowiedzi. Jeśli to capability wycieknie do China — 'out of the bag forever'. Andrej Karpathy (Kanadyjczyk) nie może używać Mythos bo nie jest US citizen. GLM 5.2 bije GPT-5.5 na SWE-bench Pro — Chińczycy już nie potrzebują kopiować, mają własny frontier."
-},
-{t:"OpenAI cofa IPO",time:"42:00–53:00",
-facts:"OpenAI leadership pulls back from near-term IPO. SpaceX IPO comparison — Elon 'got out quickly' z liquid stock. OpenAI valuation może być crushed przez government hold.",
-voices:[
-{h:"Peter",c:"var(--ac)",tag:"host",v:"It's just a different world from being a private company. They're suddenly realizing, wow."},
-{h:"Dave",c:"var(--ba)",tag:"host",v:"A lot of wealth to be created on the back of scientific breakthroughs coming. Ale going public w regulatory uncertainty = ryzyko."},
-{h:"Alex",c:"var(--bl)",tag:"host",v:"Elon stracił edge na frontier model — jego strategia to orbital data centers. He lost his edge on the frontier model and so his way to become relevant is get into space."}
-],
-conclusion:"Going public w erze regulatory uncertainty = ryzyko. Elon wybrał SpaceX IPO zamiast AI — chce kontrolować infrastrukturę (orbital data centers), nie modele.",
-deep:"SpaceX stock price sliding from $22 to $153 — Elon pulled rabbits: Anthropic hosting deals + hyperscaler deals. Daario (DeepMind), Sam (OpenAI), Elon — tylko Elon zdecydował się szybko na public. Trillion of cash on the table jeśli by poczekał. Anthropic raise ~$120B, ale bliżej burn rate — będą musieli robić raise albo IPO."
-},
-{t:"Alibaba distillation campaign",time:"79:34–90:00",
-facts:"Anthropic accuses China's Alibaba of running massive distillation campaign against Claude. Distillation = kopiowanie reasoning traces z western models bez trenowania od zera.",
-voices:[
-{h:"Dave",c:"var(--ba)",tag:"host",v:"This will be the excuse that US and Europe and maybe South America use cuz they need to suppress Chinese AI somehow."},
-{h:"Alex",c:"var(--bl)",tag:"host",v:"Anyone who's shocked by this is way out of touch with what China's actually doing."},
-{h:"Peter",c:"var(--ac)",tag:"host",v:"Druga cold war path — US vs China AI. The world seems to be on a path, sort of a second cold war type path."}
-],
-conclusion:"Distillation to wojna asymetryczna — Chińczycy nie muszą trenować od zera, kopiują reasoning traces. Regulacje export control nie powstrzymają tego.",
-deep:"Distillation polega na tym, że model A (Claude) generuje odpowiedzi, a model B (Alibaba) uczy się na tych odpowiedziach. Nie trzeba kraść weights — wystarczy API access. To dlatego Anthropic ogranicza API dla chińskich firm. Ale Chińczycy mogą używać pośredników (VPN, shell companies). 12 wzmianek o distillation w tym odcinku — to główny temat geopolityczny."
-},
-{t:"Neuralink telepathy",time:"55:23–62:00",
-facts:"Elon announces first direct human-to-human telepathic communications via Neuralink. Neocortex to cloud communications by early 2030s.",
-voices:[
-{h:"Peter",c:"var(--ac)",tag:"host",v:"One of biggest achievements in humanity if it works even partially. Neocortex to cloud by early 2030s."},
-{h:"Alex",c:"var(--bl)",tag:"host",v:"If hippocampus is basically an encoder-only transformer embedding space, telepathy is going to be a lot easier than one might suspect. Maybe human telepathy is just latent space transfer."},
-{h:"Immad",c:"var(--rk)",tag:"gość",v:"Enormous demand for non-invasive BCIs — Elon may steer Neuralink toward less invasive. I wouldn't be surprised if this ends up becoming a hugely popular product."}
-],
-conclusion:"Telepathy może być łatwiejsza niż się wydaje — jeśli mózg używa embedding space podobnego do LLM, komunikacja brain-to-brain to transfer latents, nie słów.",
-deep:"Alex's teoria: hippocampus działa jak encoder-only transformer. Jeśli to prawda, telepathy = transfer embeddingów między mózgami. 'You don't need all those words. You have as few words as possible to activate the common latent space.' Immad przewiduje że popyt na non-invasive BCIs zmusi Neuralink do zmiany kierunku. 'When you understand the latent space, this is where you can go into that exploration.'"
-},
-{t:"Quantum computing executive order",time:"90:35–103:00",
-facts:"Trump signs executive order to supercharge US quantum computing. $100M each to D-Wave, Rigetti, Inflection. $140M to Sai Quantum. White House shields quantum research from foreign espionage.",
-voices:[
-{h:"Peter",c:"var(--ac)",tag:"host",v:"Wants to bring quantum CEOs on stage at Abundance 360. Should I bring some of the top video game companies as well?"},
-{h:"Alex",c:"var(--bl)",tag:"host",v:"Quantum photonics, not quantum computers — to jest prawdziwy przełom. Założył Quantum.AI. I'd be shocked if by next December we're not talking about photonic compute launch."},
-{h:"Dave",c:"var(--ba)",tag:"host",v:"Quantum for science acceleration just hasn't worked that well. Protein folding was solved by AI (AlphaFold), not quantum."},
-{h:"Immad",c:"var(--rk)",tag:"gość",v:"Quantum computers are vastly more complicated to build than GPUs. China catching up on GPUs (Huawei 950s) but quantum harder."}
-],
-conclusion:"Quantum computing w obecnej formie jest overhyped. Prawdziwy przełom to quantum photonics — photonic compute at 1/100th mass for same computation. AI odkryje algorytmy kwantowe szybciej niż ludzie.",
-deep:"Alex working 9 months on Quantum.AI — 'highly quantized neural networks' approaching certainty. Photonic compute = 1/100th mass of Nvidia chips for same computation → could be launched on SpaceX instead of heavy GPUs. 'Instead of launching Nvidia chips and the huge power they consume, get the Terrafab started on the photonic compute.' Dave: protein folding problem was solved by AI, not quantum — 'a lot of folks including Peter's common friends who are very aggressively marketing quantum computing.' Immad: quantum sensing 'almost certainly going to work' — unlike quantum computing. Convergence: AI will find quantum algorithms that humans can't — 'AI will find it and that will suddenly pay back all of the sins of money being invested too much in quantum infrastructure.'"
-},
-{t:"Orbital data centers",time:"118:00–133:00",
-facts:"Elon flipped the bit 9 months ago — orbital data centers. SpaceX constellation as 'Dyson Swarm brand'. Star Pipe (SpaceX's next oil pipeline?).",
-voices:[
-{h:"Peter",c:"var(--ac)",tag:"host",v:"Elon's way to become relevant is get into space, get orbital data centers up and running by huge amount of compute."},
-{h:"Alex",c:"var(--bl)",tag:"host",v:"If photonic takeoff on 1-2 year timeline, orbital may be unnecessary — photonic compute at 1/100th mass means you don't need to go to space for compute."},
-{h:"Dave",c:"var(--ba)",tag:"host",v:"Security concerns — who controls the beam, who's listening behind you. Be sure there's no one coming in behind you listening to the same beam."}
-],
-conclusion:"Orbital data centers mogą być niepotrzebne jeśli photonic computing zadziała — 1/100th mass means you don't need to go to space. Ale Elon potrzebuje narracji dla SpaceX.",
-deep:"Elon flipped the bit 9 months ago — nikt nie mówił o orbital data centers zanim on nie zaczął. 'He's got his upload ready to go. You're like cans of canned tuna for the next 20 years.' Alex: if photonics on 1-2 year timeline → orbital compute może być niepotrzebne. Dave: security — 'be sure there's no one coming in behind you listening to the same beam that you're using to communicate with the earth.' Star Pipe = SpaceX's 'next oil' — orbital infrastructure as Dyson Swarm brand."
-},
-{t:"Future of humanity — space colonization",time:"125:00–138:00",
-facts:"Discussion about ocean colonies, orbital habitats, heterogeneous vs homogeneous future. Gerard K. O'Neil reference — space colonies from the 80s.",
-voices:[
-{h:"Peter",c:"var(--ac)",tag:"host",v:"You'll see humans who look substantially the same 100 years from now — heterogeneous future. Not homogeneous."},
-{h:"Alex",c:"var(--bl)",tag:"host",v:"Gerard K. O'Neil reference — space colonies from the 80s. An amazingly brilliant individual who left us too early."},
-{h:"Dave",c:"var(--ba)",tag:"host",v:"Even with mass unemployment, meaning in life through creating companies. To create your next company, to create meaning in your life."}
-],
-conclusion:"Przyszłość będzie heterogeniczna — część ludzi zostanie na Ziemi (prawie niezmieniona), część pójdzie w kosmos. Nie ma jednej ścieżki.",
-deep:"Peter: 'You're going to see humans who look substantially the same as they do right now 100 years in the future. At the same time, a hundred years from now, you'll see some post-humans.' Heterogeneous, not homogeneous. Alex invokes Gerard K. O'Neil — space colony concept from the 70s/80s (The High Frontier). Dave: even if mass unemployment from AI, people will find meaning through entrepreneurship. 'Even if there's mass unemployment, it doesn't materialize. You know, UBI...' Peter's closing: 'It's a blast for us to put this together every week' — metatrends newsletter at dmandis.com/metatrends."
-}
-]
-}
-];
-const COLORS={};
-let S={theme:'dark'};
-function init(){S.theme=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',S.theme);document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';render();document.getElementById('themeTgl').addEventListener('click',toggleTheme)}
-function toggleTheme(){S.theme=S.theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',S.theme);document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';localStorage.setItem('theme',S.theme)}
-function personCard(p,tag){return`<div class="person ${tag==='absent'?'absent':''}"><span class="dot" style="background:${p.c}"></span><div><span class="pn">${p.n}</span><span class="person-tag tag-${tag}">${tag==='host'?'host':tag==='guest'?'gość':'nieobecny'}</span><div class="pr">${p.r}</div></div></div>`}
-function render(){const c=document.getElementById('content');let h='';EPISODES.forEach(ep=>{h+=`<div class="ep-card"><span class="ep-num">#${ep.n}</span><div class="ep-title">${ep.title}</div><div class="ep-meta"><span>📺 ${ep.channel}</span><span>📅 ${ep.date}</span><span>⏱ ${ep.dur}</span><span>👥 ${ep.hosts.length} gospodarzy + ${ep.guests.length} gość</span><span>💬 ${ep.topics.length} tematów</span></div><a class="ep-yt" href="https://www.youtube.com/watch?v=${ep.yt}">▶ Oglądaj na YouTube</a></div>`;h+=`<div class="people-sec"><div class="people-t">🎭 Gospodarze</div><div class="people-grid">${ep.hosts.map(p=>personCard(p,'host')).join('')}</div></div>`;if(ep.guests.length){h+=`<div class="people-sec"><div class="people-t">🎤 Goście</div><div class="people-grid">${ep.guests.map(p=>personCard(p,'guest')).join('')}</div></div>`}if(ep.absent&&ep.absent.length){h+=`<div class="people-sec"><div class="people-t">❌ Nieobecni</div><div class="people-grid">${ep.absent.map(p=>personCard(p,'absent')).join('')}</div></div>`}h+=`<div class="people-sec"><div class="people-t">📋 Tematy (kliknij aby rozwinąć)</div>`;ep.topics.forEach((t,i)=>{h+=`<div class="topic" id="topic-${ep.n}-${i}" onclick="this.classList.toggle('open')"><div class="topic-h"><span class="topic-num">${String(i+1).padStart(2,'0')}</span><div class="topic-info"><div class="topic-title">${t.t}</div><div class="topic-time">${t.time}</div></div><span class="topic-arrow">▶</span></div><div class="topic-body"><div class="topic-facts"><strong>📌 Fakty</strong>${t.facts}</div><ul class="voice-list">${t.voices.map(v=>`<li class="voice-item"><span class="voice-dot" style="background:${v.c}"></span><span class="voice-name">${v.h}</span><span class="voice-tag tag-${v.tag}">${v.tag==='host'?'host':'gość'}</span><span>${v.v}</span></li>`).join('')}</ul><div class="topic-conclusion"><strong>✨ Wolny wniosek</strong>${t.conclusion}</div><div class="topic-deep"><strong>🔍 Pogłębienie</strong>${t.deep}</div></div></div>`});h+=`</div>`});c.innerHTML=h}
-init();
-</script></body></html>
+const t=document.getElementById('themeTgl');
+let theme=localStorage.getItem('theme')||'dark';
+document.documentElement.setAttribute('data-theme',theme);
+t.textContent=theme==='dark'?'🌙':'☀️';
+t.addEventListener('click',()=>{
+theme=theme==='dark'?'light':'dark';
+document.documentElement.setAttribute('data-theme',theme);
+t.textContent=theme==='dark'?'🌙':'☀️';
+localStorage.setItem('theme',theme);
+});
+</script>
+</body></html>
+
