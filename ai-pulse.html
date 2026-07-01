@@ -70,16 +70,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .topic-tgl:hover{border-color:var(--ac);color:var(--ac)}
 .topic .t-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--bdl)}
 .topic .t-num{font-size:11px;font-weight:700;color:var(--ac);font-family:"SF Mono",Menlo,monospace;background:var(--bg);padding:3px 8px;border-radius:4px;border:1px solid var(--bdl);white-space:nowrap}
-.topic-hint{font-size:10px;color:var(--hd);font-family:monospace;cursor:pointer;opacity:.6;transition:opacity .2s;white-space:nowrap}
-.topic:hover .topic-hint{opacity:1}
-.topic-hint[data-lang="en"]::after{content:" → EN"}
-.topic-hint[data-lang="pl"]::after{content:" → PL"}
-.topic-hint[data-lang="en"]::before{content:"🌐 "}
-.topic-hint[data-lang="pl"]::before{content:"🌐 "}
-.topic-hint::before{content:"🌐 "}
-.topic-hint::after{content:" kliknij = PL/EN"}
-.topic.en .topic-hint::after{content:" kliknij = PL/EN"}
+
+.topic:hover 
+
+
+
+
+
+
+.topic.en 
 .topic .t-title{font-size:15px;font-weight:700;color:var(--hp);flex:1;min-width:0;line-height:1.4}
+.topic-hint{font-size:12px;font-weight:700;color:#ff6600;background:rgba(255,102,0,.1);padding:3px 10px;border-radius:4px;border:1px solid #ff6600;cursor:pointer;white-space:nowrap;flex-shrink:0;margin-left:auto;text-transform:uppercase;letter-spacing:.05em}
+.topic-hint[data-lang="pl"]::before{content:"EN"}
+.topic-hint[data-lang="en"]::before{content:"PL"}
 .topic .t-time{font-size:11px;color:var(--hm);font-family:"SF Mono",Menlo,monospace;white-space:nowrap;background:var(--bg);padding:3px 8px;border-radius:4px;border:1px solid var(--bdl)}
 .blk{margin-bottom:14px}
 .blk:last-child{margin-bottom:0}
@@ -215,7 +218,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="topics">
 
 <!-- TOPIC 1 -->
-<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
+<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('">
 <div class="t-head">
 <span class="t-num">01</span>
 <span class="t-title">US Government blocks GPT-5.6 i Mythos</span>
@@ -246,7 +249,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </div>
 
 <!-- TOPIC 2 -->
-<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
+<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('">
 <div class="t-head">
 <span class="t-num">02</span>
 <span class="t-title">OpenAI cofa IPO</span>
@@ -276,7 +279,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </div>
 
 <!-- TOPIC 3 -->
-<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
+<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('">
 <div class="t-head">
 <span class="t-num">03</span>
 <span class="t-title">Alibaba distillation campaign</span>
@@ -306,7 +309,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </div>
 
 <!-- TOPIC 4 -->
-<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
+<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('">
 <div class="t-head">
 <span class="t-num">04</span>
 <span class="t-title">Neuralink telepathy</span>
@@ -336,7 +339,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </div>
 
 <!-- TOPIC 5 -->
-<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
+<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('">
 <div class="t-head">
 <span class="t-num">05</span>
 <span class="t-title">Quantum computing executive order</span>
@@ -367,7 +370,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </div>
 
 <!-- TOPIC 6 -->
-<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
+<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('">
 <div class="t-head">
 <span class="t-num">06</span>
 <span class="t-title">Orbital data centers</span>
@@ -397,7 +400,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </div>
 
 <!-- TOPIC 7 -->
-<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
+<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('">
 <div class="t-head">
 <span class="t-num">07</span>
 <span class="t-title">Future of humanity — space colonization</span>
