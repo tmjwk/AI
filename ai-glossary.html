@@ -16,6 +16,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .nav-links{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
 .nav-btn{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:12px;color:var(--hs);text-decoration:none;font-weight:500;transition:all .15s;white-space:nowrap}
 .nav-btn:hover{border-color:var(--ac);color:var(--fg)}
+.nav-btn.cur{border-color:var(--ba);color:var(--ba);background:rgba(251,191,36,.08);font-weight:700}
 .h a:hover{border-color:var(--ac);color:var(--ac)}
 .tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--fg);transition:border-color .15s}
 .tgl:hover{border-color:var(--ac)}
@@ -31,6 +32,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px;font-size:11px;color:var(--hm)}
 .st{display:flex;align-items:center;gap:4px}
 .st .sv{font-size:14px;font-weight:700;color:var(--hp);font-family:monospace}
+.st{cursor:pointer;transition:all .15s;padding:2px 8px;border-radius:4px}
+.st:hover{background:var(--card);border:1px solid var(--bd)}
+.st.active{background:rgba(74,222,128,.1);border:1px solid var(--ac)}
+.st .sl{font-size:11px;color:var(--hm)}
 .sec{margin-bottom:32px}
 .sec-t{font-size:15.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:12px;font-weight:700;display:flex;align-items:center;gap:8px}
 .sec-t .icon{font-size:18px}
@@ -54,7 +59,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="hr">
 <h1>📖 Słownik AI — Glossary</h1>
 <div class="nav nav-links">
-<a href="ai-models.html" class="nav-btn">← Models</a>
+<a href="ai-models.html" class="nav-btn">← Models</a><a href="ai-glossary.html" class="nav-btn cur">📖 Słownik</a>
 <a href="ai-radar.html" class="nav-btn">📡 Radar</a>
 <a href="ai-benchmarks.html" class="nav-btn">🏆 Benchmarki</a>
 <a href="ai-pulse.html" class="nav-btn">💓 Pulse</a>
@@ -94,7 +99,7 @@ document.getElementById('search').addEventListener('input',e=>{S.q=e.target.valu
 document.getElementById('themeTgl').addEventListener('click',toggleTheme);
 }
 function renderChips(){const c=document.getElementById('chips');let h='<span class="chip active" data-filter="all">Wszystkie</span>';CATS.forEach(cat=>{h+=`<span class="chip" data-filter="${cat}">${ICONS[cat]} ${cat}</span>`});c.innerHTML=h;c.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{const f=ch.getAttribute('data-filter');c.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));ch.classList.add('active');S.chip=f==='all'?null:f;render()}))}
-function renderStats(){const s=document.getElementById('stats');let h=`<div class="st"><span class="sv">${G.length}</span><span>haseł</span></div>`;h+=`<div class="st"><span class="sv">${CATS.length}</span><span>kategorii</span></div>`;CATS.forEach(c=>{const n=G.filter(e=>e.c===c).length;h+=`<div class="st"><span class="sv">${n}</span><span>${ICONS[c]}</span></div>`});s.innerHTML=h}
+function renderStats(){const s=document.getElementById('stats');let h=`<div class="st" data-filter="all"><span class="sv">${G.length}</span><span class="sl">haseł</span></div>`;CATS.forEach(c=>{const n=G.filter(e=>e.c===c).length;h+=`<div class="st" data-filter="${c}"><span class="sv">${n}</span><span class="sl">${ICONS[c]} ${c.split(' ')[0].toLowerCase()}</span></div>`});s.innerHTML=h;s.querySelectorAll('.st').forEach(st=>{st.addEventListener('click',()=>{const f=st.getAttribute('data-filter');s.querySelectorAll('.st').forEach(x=>x.classList.remove('active'));st.classList.add('active');const chips=document.getElementById('chips');chips.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));if(f==='all'){chips.querySelector('[data-filter="all"]').classList.add('active');S.chip=null}else{const tc=chips.querySelector('[data-filter="'+f+'"]');if(tc)tc.classList.add('active');S.chip=f}render()})});s.querySelector('.st').classList.add('active')}
 function render(){const content=document.getElementById('content');let vis=0;let filtered=G.filter(e=>{const txt=nm(e.t+' '+e.en+' '+e.d+' '+e.c);let ok=true;if(S.chip){ok=e.c===S.chip}if(ok&&S.q){ok=txt.includes(nm(S.q))}return ok});if(filtered.length===0){content.innerHTML='<div class="nr">Brak wyników dla "'+S.q+'"</div>';return}let h='';CATS.forEach(cat=>{const items=filtered.filter(e=>e.c===cat);if(items.length===0)return;vis+=items.length;h+=`<div class="sec" data-cat="${cat}"><div class="sec-t"><span class="icon">${ICONS[cat]}</span> ${cat} <span class="cnt">${items.length} ${items.length===1?'hasło':(items.length<5?'hasła':'haseł')}</span></div>`;items.forEach(e=>{h+=`<div class="term"><div class="th"><span class="tn">${e.t}</span>${e.en&&e.en!==e.t?`<span class="ten">${e.en}</span>`:''}<span class="tc">${e.c}</span></div><div class="td">${e.d}</div></div>`});h+='</div>'});content.innerHTML=h}
 function toggleTheme(){S.theme=S.theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',S.theme);document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';localStorage.setItem('theme',S.theme)}
 init();
