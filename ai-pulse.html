@@ -70,6 +70,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .topic-tgl:hover{border-color:var(--ac);color:var(--ac)}
 .topic .t-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--bdl)}
 .topic .t-num{font-size:11px;font-weight:700;color:var(--ac);font-family:"SF Mono",Menlo,monospace;background:var(--bg);padding:3px 8px;border-radius:4px;border:1px solid var(--bdl);white-space:nowrap}
+.topic-hint{font-size:10px;color:var(--hd);font-family:monospace;cursor:pointer;opacity:.6;transition:opacity .2s;white-space:nowrap}
+.topic:hover .topic-hint{opacity:1}
+.topic-hint[data-lang="en"]::after{content:" → EN"}
+.topic-hint[data-lang="pl"]::after{content:" → PL"}
+.topic-hint[data-lang="en"]::before{content:"🌐 "}
+.topic-hint[data-lang="pl"]::before{content:"🌐 "}
+.topic-hint::before{content:"🌐 "}
+.topic-hint::after{content:" kliknij = PL/EN"}
+.topic.en .topic-hint::after{content:" kliknij = PL/EN"}
 .topic .t-title{font-size:15px;font-weight:700;color:var(--hp);flex:1;min-width:0;line-height:1.4}
 .topic .t-time{font-size:11px;color:var(--hm);font-family:"SF Mono",Menlo,monospace;white-space:nowrap;background:var(--bg);padding:3px 8px;border-radius:4px;border:1px solid var(--bdl)}
 .blk{margin-bottom:14px}
@@ -199,7 +208,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 </div>
 </div>
-<div class="topic-tgl-hint" data-tgl>🌐 EN</div>
 
 <!-- TOPICS -->
 <div class="sec">
@@ -207,12 +215,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="topics">
 
 <!-- TOPIC 1 -->
-<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('[data-tgl]');if(h){h.textContent=this.classList.contains('en')?'🌐 PL':'🌐 EN'}">
+<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
 <div class="t-head">
 <span class="t-num">01</span>
 <span class="t-title">US Government blocks GPT-5.6 i Mythos</span>
 <span class="t-time">00:00 – 35:00</span>
-
+<span class="topic-hint" data-lang="pl"></span>
 </div>
 <div class="blk">
 <div class="blk-lbl fakty"><span class="pl">📌 Fakty</span><span class="en">📌 Facts</span></div>
@@ -236,15 +244,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="kontekst-box"><span class="pl"><strong>Mythos 5</strong> może odpowiedzieć na pytanie "can you help me build yourself?" — Opus 4.8 nie może. To jest granica, którą Mythos i GPT-5.6 przekraczają: samodoskonalenie. 4.8 sekundy wystarczyło Mythosowi do odpowiedzi. <strong>Andrej Karpathy</strong> (Kanadyjczyk) nie może używać Mythos, bo nie jest obywatelem USA. <strong>GLM 5.2</strong> bije GPT-5.5 na SWE-bench Pro — Chińczycy już nie potrzebują kopiować, mają własny model graniczny. Mythos przeszedł ćwiczenia red team z US DoD (Project Glass Wing) — włamał się do systemów tajnych w godzinach, nie tygodniach. Senator Mark Warner: „To narzędzie włamało się do prawie wszystkich naszych systemów tajnych, nie w tygodniach, ale w godzinach."</span><span class="en"><strong>Mythos 5</strong> can answer the question "can you help me build yourself?" — Opus 4.8 cannot. This is the boundary that Mythos and GPT-5.6 cross: self-improvement. 4.8 seconds was enough for Mythos to respond. <strong>Andrej Karpathy</strong> (Canadian) cannot use Mythos because he's not a US citizen. <strong>GLM 5.2</strong> beats GPT-5.5 on SWE-bench Pro — the Chinese no longer need to copy, they have their own frontier model. Mythos went through red team exercises with US DoD (Project Glass Wing) — it broke into classified systems in hours, not weeks. Senator Mark Warner: "This tool broke into almost all of our classified systems, not in weeks, but in hours."</span></div>
 </div>
 </div>
-<div class="topic-tgl-hint" data-tgl>🌐 EN</div>
 
 <!-- TOPIC 2 -->
-<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('[data-tgl]');if(h){h.textContent=this.classList.contains('en')?'🌐 PL':'🌐 EN'}">
+<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
 <div class="t-head">
 <span class="t-num">02</span>
 <span class="t-title">OpenAI cofa IPO</span>
 <span class="t-time">42:00 – 53:00</span>
-
+<span class="topic-hint" data-lang="pl"></span>
 </div>
 <div class="blk">
 <div class="blk-lbl fakty"><span class="pl">📌 Fakty</span><span class="en">📌 Facts</span></div>
@@ -267,15 +274,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="kontekst-box"><span class="pl">SpaceX: maksimum $202, spadek do $153. IPO po $135/akcję, otwarłо na $150 — utrzymują wycenę $2 biliony. <strong>Daario</strong> (DeepMind), <strong>Sam</strong> (OpenAI), <strong>Elon</strong> — tylko Elon zdecydował się szybko na giełdę. OpenAI podnieśli $122B, ale blisko tempa wypalania. Anthropic też blisko burn rate — będą musieli zrobić rundę albo IPO. Elon „stracił przewagę na modelach granicznych" — jego strategia to kontrola infrastruktury (orbitalne centra danych), nie modele.</span><span class="en">SpaceX: high of $202, slid to $153. IPO at $135/share, opened at $150 — maintaining $2 trillion valuation. <strong>Daario</strong> (DeepMind), <strong>Sam</strong> (OpenAI), <strong>Elon</strong> — only Elon decided to go public quickly. OpenAI raised $122B, but close to burn rate. Anthropic also close to burn rate — they'll need to do a round or IPO. Elon "lost his edge on frontier models" — his strategy is controlling infrastructure (orbital data centers), not models.</span></div>
 </div>
 </div>
-<div class="topic-tgl-hint" data-tgl>🌐 EN</div>
 
 <!-- TOPIC 3 -->
-<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('[data-tgl]');if(h){h.textContent=this.classList.contains('en')?'🌐 PL':'🌐 EN'}">
+<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
 <div class="t-head">
 <span class="t-num">03</span>
 <span class="t-title">Alibaba distillation campaign</span>
 <span class="t-time">79:34 – 90:00</span>
-
+<span class="topic-hint" data-lang="pl"></span>
 </div>
 <div class="blk">
 <div class="blk-lbl fakty"><span class="pl">📌 Fakty</span><span class="en">📌 Facts</span></div>
@@ -298,15 +304,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="kontekst-box"><span class="pl"><strong>Destylacja</strong> polega na tym, że model A (Claude) generuje odpowiedzi, a model B (Alibaba) uczy się na tych odpowiedziach. Nie trzeba kraść wag — wystarczy dostęp do API. Dlatego Anthropic ogranicza API dla chińskich firm. Ale Chińczycy mogą używać pośredników (VPN, spółki fasadowe). 12 wzmianek o destylacji w tym odcinku — to główny temat geopolityczny.</span><span class="en"><strong>Distillation</strong> means model A (Claude) generates responses, and model B (Alibaba) learns from those responses. You don't need to steal weights — API access is enough. That's why Anthropic restricts API for Chinese companies. But the Chinese can use intermediaries (VPN, shell companies). 12 mentions of distillation in this episode — it's the main geopolitical topic.</span></div>
 </div>
 </div>
-<div class="topic-tgl-hint" data-tgl>🌐 EN</div>
 
 <!-- TOPIC 4 -->
-<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('[data-tgl]');if(h){h.textContent=this.classList.contains('en')?'🌐 PL':'🌐 EN'}">
+<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
 <div class="t-head">
 <span class="t-num">04</span>
 <span class="t-title">Neuralink telepathy</span>
 <span class="t-time">55:23 – 62:00</span>
-
+<span class="topic-hint" data-lang="pl"></span>
 </div>
 <div class="blk">
 <div class="blk-lbl fakty"><span class="pl">📌 Fakty</span><span class="en">📌 Facts</span></div>
@@ -329,15 +334,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="kontekst-box"><span class="pl">Teoria Alexa: <strong>hipokamp</strong> działa jak transformer tylko-kodujący. Jeśli to prawda, telepatia = transfer osadzeń między mózgami. „Nie potrzebujesz wszystkich słów. Używasz jak najmniej słów, aby aktywować wspólną przestrzeń ukrytą." Immad przewiduje, że popyt na nieinwazyjne interfejsy mózg-komputer zmusi Neuralink do zmiany kierunku. Elon planuje komunikację neocortex-chmura na początku lat 30.</span><span class="en">Alex's theory: the <strong>hippocampus</strong> works like an encoder-only transformer. If true, telepathy = embedding transfer between brains. "You don't need all the words. You use as few words as possible to activate a shared latent space." Immad predicts that demand for non-invasive brain-computer interfaces will force Neuralink to change direction. Elon plans neocortex-to-cloud communication by the early 2030s.</span></div>
 </div>
 </div>
-<div class="topic-tgl-hint" data-tgl>🌐 EN</div>
 
 <!-- TOPIC 5 -->
-<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('[data-tgl]');if(h){h.textContent=this.classList.contains('en')?'🌐 PL':'🌐 EN'}">
+<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
 <div class="t-head">
 <span class="t-num">05</span>
 <span class="t-title">Quantum computing executive order</span>
 <span class="t-time">90:35 – 103:00</span>
-
+<span class="topic-hint" data-lang="pl"></span>
 </div>
 <div class="blk">
 <div class="blk-lbl fakty"><span class="pl">📌 Fakty</span><span class="en">📌 Facts</span></div>
@@ -361,15 +365,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="kontekst-box"><span class="pl">Alex pracuje 9 miesięcy nad <strong>Quantum.AI</strong> — „wysoce skwantyzowane sieci neuronowe" zbliżają się do pewności. Obliczenia fotoniczne = 1/100 masy chipów Nvidia dla tej samej mocy → mogłyby być wyniesione na SpaceX zamiast ciężkich GPU. Dave: problem zwijania białek został rozwiązany przez AI (AlphaFold), nie kwanty — „wielu agresywnie promuje komputery kwantowe." Immad: czujniki kwantowe „prawie na pewno zadziałają" — w przeciwieństwie do komputerów kwantowych. Konwergencja: AI znajdzie algorytmy kwantowe, których ludzie nie potrafią.</span><span class="en">Alex has been working on <strong>Quantum.AI</strong> for 9 months — "highly quantized neural networks" are approaching certainty. Photonic compute = 1/100 the mass of Nvidia chips for the same power → could be put on SpaceX instead of heavy GPUs. Dave: protein folding was solved by AI (AlphaFold), not quantum — "many aggressively promote quantum computers." Immad: quantum sensors "almost certainly going to work" — unlike quantum computers. Convergence: AI will find quantum algorithms that humans cannot.</span></div>
 </div>
 </div>
-<div class="topic-tgl-hint" data-tgl>🌐 EN</div>
 
 <!-- TOPIC 6 -->
-<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('[data-tgl]');if(h){h.textContent=this.classList.contains('en')?'🌐 PL':'🌐 EN'}">
+<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
 <div class="t-head">
 <span class="t-num">06</span>
 <span class="t-title">Orbital data centers</span>
 <span class="t-time">118:00 – 133:00</span>
-
+<span class="topic-hint" data-lang="pl"></span>
 </div>
 <div class="blk">
 <div class="blk-lbl fakty"><span class="pl">📌 Fakty</span><span class="en">📌 Facts</span></div>
@@ -392,15 +395,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="kontekst-box"><span class="pl">Elon „zmienił nastawienie" 9 miesięcy temu — nikt nie mówił o orbitalnych centrach danych zanim on nie zaczął. Alex: jeśli fotonika na osi 1-2 lat → orbitalne centra mogą być niepotrzebne. Dave: bezpieczeństwo — „upewnij się, że nikt nie wchodzi za tobą podsłuchując tej samej wiązki." <strong>Star Pipe</strong> = „nowa ropa" SpaceX — infrastruktura orbitalna jako marka Roju Dysona.</span><span class="en">Elon "flipped the bit" 9 months ago — no one was talking about orbital data centers before he started. Alex: if photonics on a 1-2 year timeline → orbital centers may be unnecessary. Dave: security — "be sure there's no one coming in behind you listening to the same beam." <strong>Star Pipe</strong> = SpaceX's "new oil" — orbital infrastructure as a Dyson Swarm brand.</span></div>
 </div>
 </div>
-<div class="topic-tgl-hint" data-tgl>🌐 EN</div>
 
 <!-- TOPIC 7 -->
-<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('[data-tgl]');if(h){h.textContent=this.classList.contains('en')?'🌐 PL':'🌐 EN'}">
+<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
 <div class="t-head">
 <span class="t-num">07</span>
 <span class="t-title">Future of humanity — space colonization</span>
 <span class="t-time">125:00 – 138:00</span>
-
+<span class="topic-hint" data-lang="pl"></span>
 </div>
 <div class="blk">
 <div class="blk-lbl fakty"><span class="pl">📌 Fakty</span><span class="en">📌 Facts</span></div>
