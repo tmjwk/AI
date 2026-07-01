@@ -85,7 +85,7 @@ const ICONS={"Architektury i modele": "🧠", "Trening i optymalizacja": "🏋�
 let S={q:'',chip:null,theme:'dark'};
 function nm(s){return(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
 function init(){
-S.theme=localStorage.getItem('glossary-theme')||'dark';
+S.theme=localStorage.getItem('theme')||'dark';
 document.documentElement.setAttribute('data-theme',S.theme);
 document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';
 renderChips();renderStats();render();
@@ -95,6 +95,6 @@ document.getElementById('themeTgl').addEventListener('click',toggleTheme);
 function renderChips(){const c=document.getElementById('chips');let h='<span class="chip active" data-filter="all">Wszystkie</span>';CATS.forEach(cat=>{h+=`<span class="chip" data-filter="${cat}">${ICONS[cat]} ${cat}</span>`});c.innerHTML=h;c.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{const f=ch.getAttribute('data-filter');c.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));ch.classList.add('active');S.chip=f==='all'?null:f;render()}))}
 function renderStats(){const s=document.getElementById('stats');let h=`<div class="st"><span class="sv">${G.length}</span><span>haseł</span></div>`;h+=`<div class="st"><span class="sv">${CATS.length}</span><span>kategorii</span></div>`;CATS.forEach(c=>{const n=G.filter(e=>e.c===c).length;h+=`<div class="st"><span class="sv">${n}</span><span>${ICONS[c]}</span></div>`});s.innerHTML=h}
 function render(){const content=document.getElementById('content');let vis=0;let filtered=G.filter(e=>{const txt=nm(e.t+' '+e.en+' '+e.d+' '+e.c);let ok=true;if(S.chip){ok=e.c===S.chip}if(ok&&S.q){ok=txt.includes(nm(S.q))}return ok});if(filtered.length===0){content.innerHTML='<div class="nr">Brak wyników dla "'+S.q+'"</div>';return}let h='';CATS.forEach(cat=>{const items=filtered.filter(e=>e.c===cat);if(items.length===0)return;vis+=items.length;h+=`<div class="sec" data-cat="${cat}"><div class="sec-t"><span class="icon">${ICONS[cat]}</span> ${cat} <span class="cnt">${items.length} ${items.length===1?'hasło':(items.length<5?'hasła':'haseł')}</span></div>`;items.forEach(e=>{h+=`<div class="term"><div class="th"><span class="tn">${e.t}</span>${e.en&&e.en!==e.t?`<span class="ten">${e.en}</span>`:''}<span class="tc">${e.c}</span></div><div class="td">${e.d}</div></div>`});h+='</div>'});content.innerHTML=h}
-function toggleTheme(){S.theme=S.theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',S.theme);document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';localStorage.setItem('glossary-theme',S.theme)}
+function toggleTheme(){S.theme=S.theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',S.theme);document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';localStorage.setItem('theme',S.theme)}
 init();
 </script></body></html>
