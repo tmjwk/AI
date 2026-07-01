@@ -298,14 +298,14 @@ Aktualizacja: 2026-06-26 · Transkrypt + PowerPoint parsowany · <a href="ai-mod
 </div>
 <script>
 const t=document.getElementById('themeTgl');
-let theme=localStorage.getItem('radar-theme')||'dark';
+let theme=localStorage.getItem('theme')||'dark';
 document.documentElement.setAttribute('data-theme',theme);
 t.textContent=theme==='dark'?'🌙':'☀️';
 t.addEventListener('click',()=>{
 theme=theme==='dark'?'light':'dark';
 document.documentElement.setAttribute('data-theme',theme);
 t.textContent=theme==='dark'?'🌙':'☀️';
-localStorage.setItem('radar-theme',theme);
+localStorage.setItem('theme',theme);
 });
 </script>
 </body></html>
