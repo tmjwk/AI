@@ -1,6 +1,6 @@
-// AI Glossary data — V4 extracted from ai-glossary.html
+// AI Glossary data — V4 auto-generated from glossary.json
 // Schema: {c: category, t: term (PL), en: english name, d: description (PL)}
-// Auto-generated — nie edytuj ręcznie, zregeneruj z ai-glossary.html
+// NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
 const G = [
   {

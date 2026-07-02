@@ -1,6 +1,6 @@
-// AI Models data — V4 extracted from ai-models.html
-// Schema: see first entry for full structure
-// Auto-generated — nie edytuj ręcznie
+// AI Models data — V4 auto-generated from models.json
+// Schema: {r: rank, n: name, v: vendor, d: date, o: open-source, c: category, desc, b: best_for}
+// NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
 const TODAY = "2026-06-28";
 const NEW_DAYS = 14;

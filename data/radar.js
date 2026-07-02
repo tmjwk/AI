@@ -1,12 +1,6 @@
-// AI Radar data — V4 extracted from ai-radar.html
-// Schema:
-//   SECTIONS: [{
-//     id, num, icon, title, type,
-//     cards: [{ title, desc, tags: [{color, text}], code, list: [{dot_color, html}] }]  // type=cards
-//     items: [{ dot_color, html }]                                                       // type=list
-//     headers: [...], rows: [[cell | {tag: {color, text}}]], note                        // type=table
-//   }]
-// Auto-generated — nie edytuj ręcznie, zregeneruj z ai-radar.html
+// AI Radar data — V4 auto-generated from radar.json
+// Schema: SECTIONS = [{id, num, icon, title, type, cards/items/headers+rows}]
+// NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
 const SECTIONS = [
   {

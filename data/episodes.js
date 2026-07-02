@@ -1,17 +1,6 @@
-// AI Pulse episodes data — V4 extracted from ai-pulse.html
-// Schema:
-//   num: "#268" | channel | title | date | duration | yt (URL)
-//   collapsed: false (always open) | true (zwiń, tylko nagłówek)
-//   hosts_count_pl/en, topics_count_pl/en
-//   hosts: [{ name, dot_color, role_pl, role_en, is_guest, is_absent }]
-//   topics: [{
-//     num, title, time,
-//     fakty_pl, fakty_en,
-//     glosy: [{ host, dot_color, text_pl, text_en }],
-//     wniosek_pl, wniosek_en,
-//     kontekst_pl, kontekst_en
-//   }]
-// Auto-generated — nie edytuj ręcznie, zregeneruj z ai-pulse.html
+// AI Pulse episodes data — V4 auto-generated from episodes.json
+// Schema: {num, channel, title, date, duration, yt, collapsed, hosts[], topics[]}
+// NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
 const EPISODES = [
   {

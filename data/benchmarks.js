@@ -1,6 +1,6 @@
-// AI Benchmarks data — V4 extracted from ai-benchmarks.html
-// Schema: {n: name, fn: full name, c: category, t: description (PL), url, o: organization, y: year, ty: type, tier: 1-3}
-// Auto-generated — nie edytuj ręcznie
+// AI Benchmarks data — V4 auto-generated from benchmarks.json
+// Schema: {n, fn, c, t, url, o, y, ty, tier}
+// NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
 const B = [
   {
