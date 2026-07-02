@@ -77,7 +77,7 @@ const G = [
     "c": "Architektury i modele",
     "t": "Foundation model",
     "en": "Foundation Model",
-    "d_pl": "Foundation model (model fundamentowy) — pojęcie wprowadzone przez Stanford HAI w 2021 r. — model trenowany na szerokim spektrum danych, który można adaptować do wielu zadań downstream (dostrajanie, prompting). Odróżnia się od modeli wąskich, trenowanych pod jedno zadanie. Wszyscy główni gracze (OpenAI, Anthropic, Google) produkują foundation models.",
+    "d_pl": "Foundation model (model fundamentalny) — pojęcie wprowadzone przez Stanford HAI w 2021 r. — model trenowany na szerokim spektrum danych, który można adaptować do wielu zadań downstream (dostrajanie, prompting). Odróżnia się od modeli wąskich, trenowanych pod jedno zadanie. Wszyscy główni gracze (OpenAI, Anthropic, Google) produkują foundation models.",
     "d_en": "A concept introduced by Stanford HAI in 2021 — a model trained on broad data that can be adapted to many downstream tasks (fine-tuning, prompting). Examples: GPT, Claude, Llama. The foundation model paradigm replaced the \"one model per task\" approach. The same model can write code, translate, analyze images, etc."
   },
   {
@@ -273,7 +273,7 @@ const G = [
     "c": "Kontekst i wydajność",
     "t": "Embedding",
     "en": "Embedding",
-    "d_pl": "Embedding (osadzanie/zanurzenie — wektorowa reprezentacja tekstu) — Wektorowa reprezentacja tekstu (lub obrazu) w przestrzeni wielowymiarowej (typowo 768-8192 wymiarów). Podobne semantycznie teksty mają podobne embeddingi. Foundation dla RAG, semantic search, clustering. Modele embeddingowe: OpenAI text-embedding-3, Cohere embed, BGE.",
+    "d_pl": "Embedding (osadzanie/zanurzenie słów) — wektorowa reprezentacja tekstu) — Wektorowa reprezentacja tekstu (lub obrazu) w przestrzeni wielowymiarowej (typowo 768-8192 wymiarów). Podobne semantycznie teksty mają podobne embeddingi. Foundation dla RAG, semantic search, clustering. Modele embeddingowe: OpenAI text-embedding-3, Cohere embed, BGE.",
     "d_en": "A vector representation of text (or image/audio) in a high-dimensional space. Similar meanings are close in this space. Used for search, clustering, classification, and as input to other models. Models: text-embedding-3 (OpenAI), GTE (Alibaba), BGE (BAAI). The foundation of RAG and semantic search."
   },
   {
@@ -616,7 +616,7 @@ const G = [
     "c": "Bezpieczeństwo i regulacje",
     "t": "Hallucination",
     "en": "Hallucination",
-    "d_pl": "Hallucination (halucynacja — zjawisko w AI) — jest fundamentalną cechą autoregresji.",
+    "d_pl": "Hallucination (halucynacja — zjawisko w AI) — zjawisko w AI) — jest fundamentalną cechą autoregresji.",
     "d_en": "When a model generates false information with high confidence. The main problem with LLMs in production. Causes: training on incorrect data, over-generalization, prompt ambiguity. Mitigation: RAG, citations, fact-checking, lower temperature. In 2026, hallucinations are reduced but not eliminated — even frontier models still hallucinate on edge cases."
   },
   {
