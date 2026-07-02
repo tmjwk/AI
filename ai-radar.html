@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pl" data-theme="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Radar — Industry Intelligence</title>
-<script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||"dark")</script>
 <style>
 :root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--rd:#ef4444;--bl:#3b82f6;--ov:rgba(0,0,0,.7);--mb:#1a1a1a}
 [data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--rd:#dc2626;--bl:#1d4ed8;--ov:rgba(0,0,0,.5);--mb:#94a3b8}
@@ -16,17 +15,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .nav-links{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
 .nav-btn{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:12px;color:var(--hs);text-decoration:none;font-weight:500;transition:all .15s;white-space:nowrap}
 .nav-btn:hover{border-color:var(--ac);color:var(--fg)}
-.nav-btn.cur{border-color:var(--ba);color:var(--ba);background:rgba(251,191,36,.08);font-weight:700}
 .h a:hover{border-color:var(--ac);color:var(--ac)}
 .tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--fg);transition:border-color .15s}
 .tgl:hover{border-color:var(--ac)}
 .sec{margin-bottom:32px}
-.sec-t{font-size:15.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:12px;font-weight:700;display:flex;align-items:center;gap:8px}
+.sec-t{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:12px;font-weight:700;display:flex;align-items:center;gap:8px}
 .sec-t .icon{font-size:18px}
 .card{background:var(--card);border:1px solid var(--bdl);border-radius:8px;padding:14px;margin-bottom:10px;transition:border-color .15s}
 .card:hover{border-color:var(--bd)}
 .card h3{font-size:14px;margin:0 0 6px 0;color:var(--hp);font-weight:600}
-.card p{font-size:15.5px;color:var(--hm);margin:0 0 4px 0}
+.card p{font-size:13px;color:var(--hm);margin:0 0 4px 0}
 .card .tag{display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-right:4px}
 .tag-green{background:rgba(74,222,128,.15);color:var(--ac)}
 .tag-yellow{background:rgba(251,191,36,.15);color:var(--ba)}
@@ -34,7 +32,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .tag-blue{background:rgba(59,130,246,.15);color:var(--bl)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
 .list{list-style:none;padding:0;margin:0}
-.list li{font-size:15.5px;color:var(--hm);padding:6px 0;border-bottom:1px solid var(--bdl);display:flex;align-items:flex-start;gap:8px}
+.list li{font-size:13px;color:var(--hm);padding:6px 0;border-bottom:1px solid var(--bdl);display:flex;align-items:flex-start;gap:8px}
 .list li:last-child{border-bottom:none}
 .list li .dot{width:8px;height:8px;border-radius:50%;margin-top:6px;flex-shrink:0}
 .dot-green{background:var(--ac)}
@@ -53,7 +51,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .code .num{color:var(--ba)}
 .f{margin-top:36px;padding-top:18px;border-top:1px solid var(--bdl);font-size:11px;color:var(--hd);text-align:center}
 .f a{color:var(--hm)}
-.banner{background:linear-gradient(90deg,rgba(59,130,246,.1),transparent);border-left:3px solid var(--bl);padding:10px 14px;border-radius:4px;margin-bottom:20px;font-size:15.5px;color:var(--hs)}
+.banner{background:linear-gradient(90deg,rgba(59,130,246,.1),transparent);border-left:3px solid var(--bl);padding:10px 14px;border-radius:4px;margin-bottom:20px;font-size:13px;color:var(--hs)}
 .banner strong{color:var(--bl)}
 @media(max-width:540px){.grid{grid-template-columns:1fr}.table{font-size:11px}.hr{flex-direction:column;align-items:flex-start;gap:8px}.h h1{font-size:16px}.nav-btn{font-size:11px;padding:4px 8px}.nav-links{gap:4px;width:100%}}
 @media(max-width:380px){.nav-btn{font-size:10px;padding:3px 6px}}
@@ -64,11 +62,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="hr">
 <h1>📡 AI Radar — Industry Intelligence</h1>
 <div class="nav nav-links">
-<a href="ai-models.html" class="nav-btn">📊 Models</a>
-<a href="ai-benchmarks.html" class="nav-btn">🏆 Benchmarki</a>
-<a href="ai-radar.html" class="nav-btn cur">📡 Radar</a>
-<a href="ai-pulse.html" class="nav-btn">💓 Pulse</a>
+<a href="ai-models.html" class="nav-btn">← Models</a>
 <a href="ai-glossary.html" class="nav-btn">📖 Słownik</a>
+<a href="ai-benchmarks.html" class="nav-btn">🏆 Benchmarki</a>
 <button class="tgl" id="themeTgl">🌙</button>
 </div>
 </div>
@@ -301,14 +297,14 @@ Aktualizacja: 2026-06-26 · Transkrypt + PowerPoint parsowany · <a href="ai-mod
 </div>
 <script>
 const t=document.getElementById('themeTgl');
-let theme=localStorage.getItem('theme')||'dark';
+let theme=localStorage.getItem('radar-theme')||'dark';
 document.documentElement.setAttribute('data-theme',theme);
 t.textContent=theme==='dark'?'🌙':'☀️';
 t.addEventListener('click',()=>{
 theme=theme==='dark'?'light':'dark';
 document.documentElement.setAttribute('data-theme',theme);
 t.textContent=theme==='dark'?'🌙':'☀️';
-localStorage.setItem('theme',theme);
+localStorage.setItem('radar-theme',theme);
 });
 </script>
 </body></html>
