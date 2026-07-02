@@ -117,7 +117,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 /* Language toggle: PL/EN dual-language spans */
 
-@media(max-width:540px){.episode-old{max-height:50px!important}
+@media(max-width:540px){
 .h h1{font-size:16px}
 .hr{flex-direction:column;align-items:flex-start;gap:8px}
 .nav-btn{font-size:11px;padding:4px 8px}
@@ -132,11 +132,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 }
 @media(max-width:380px){.nav-btn{font-size:10px;padding:3px 6px}}
 
-.episode-old{max-height:60px;overflow:hidden;position:relative;border:1px solid var(--bdl);border-radius:8px;margin-bottom:12px;transition:max-height .3s}
-.episode-old.open{max-height:none}
-.episode-old::after{content:"";position:absolute;bottom:0;left:0;right:0;height:50px;background:linear-gradient(transparent,var(--bg));pointer-events:none}
-.episode-old.open::after{display:none}
-.ep-toggle{position:absolute;top:8px;right:8px;z-index:10;background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:4px 12px;cursor:pointer;font-size:12px;color:var(--hs);font-weight:600}
+.episode-old .sec,.episode-old > .blk,.episode-old > div:not(.episode):not(.ep-toggle):not(.sec){display:none}
+.episode-old.open .sec,.episode-old.open > .blk,.episode-old.open > div:not(.episode):not(.ep-toggle):not(.sec){display:block}
+.episode-old .episode{margin-bottom:0}
+.ep-toggle{display:inline-block;margin-top:10px}
+.ep-toggle{display:inline-block;margin:10px 0 0;background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 16px;cursor:pointer;font-size:13px;color:var(--hs);font-weight:600;transition:all .15s}
+.ep-toggle:hover{border-color:var(--ac);color:var(--ac)}
 .ep-toggle:hover{border-color:var(--ac);color:var(--ac)}
 </style></head>
 <body>
@@ -450,7 +451,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 <!-- EPISODE CARD (old) -->
 <div class="episode-old">
-<button class="ep-toggle">▼ Rozwiń</button>
 <div class="e-top">
 <span class="e-num">#267</span>
 <span class="e-channel">Peter Diamandis · Moonshots &amp; Millionaires</span>
@@ -463,6 +463,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <span class="m-item">📂 <span class="mv"><span class="pl">7 tematów</span><span class="en">7 topics</span></span></span>
 </div>
 <a class="e-yt" href="https://www.youtube.com/watch?v=-H7J_-zr7pA">▶ <span class="pl">Oglądaj na YouTube</span><span class="en">Watch on YouTube</span> ↗</a>
+<button class="ep-toggle">▼ Rozwiń odcinek</button>
 </div>
 
 <!-- HOSTS + GUESTS -->
