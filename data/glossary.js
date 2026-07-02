@@ -133,7 +133,7 @@ const G = [
     "c": "Modalności",
     "t": "Zero-shot TTS",
     "en": "Zero-shot Text-to-Speech",
-    "d_pl": "Voice cloning z minimalnym sample (3-5 sekund) — model klonuje głos bez wcześniejszego treningu na tym konkretnym głosie. WavTTS (ByteDance, bazuje na F5-TTS), Higgs Audio v3 — przykłady zero-shot TTS. Wygodne ale etycznie ryzykowne (deepfakes).",
+    "d_pl": "model klonuje głos bez wcześniejszego treningu na tym konkretnym głosie. WavTTS (ByteDance, bazuje na F5-TTS), Higgs Audio v3 — przykłady zero-shot TTS. Wygodne ale etycznie ryzykowne (deepfakes).",
     "d_en": "Voice cloning from a few seconds of sample audio, without fine-tuning. Models: ElevenLabs, XTTS, Dot TTS. In 2026, zero-shot TTS achieves near-perfect speaker similarity. The technology enables instant voice cloning but raises ethical concerns about deepfakes."
   },
   {
@@ -189,7 +189,7 @@ const G = [
     "c": "Trening i optymalizacja",
     "t": "LoRA",
     "en": "Low-Rank Adaptation",
-    "d_pl": "Technika fine-tuningu, która zamraża oryginalne wagi modelu i trenuje tylko małe macierze niskiego rzędu. Redukuje liczbę trenowanych parametrów z miliardów do milionów — dostrajanie 70B modelu na pojedynczym GPU staje się realny. Standard dla community fine-tunes (Stable Diffusion, Llama). QLoRA łączy LoRA z 4-bit quantization.",
+    "d_pl": "Low-Rank Adaptation (adaptacja niskorzędowa) — dostrajanie 70B modelu na pojedynczym GPU staje się realny. Standard dla community fine-tunes (Stable Diffusion, Llama). QLoRA łączy LoRA z 4-bit quantization.",
     "d_en": "Low-Rank Adaptation — a fine-tuning method that adds small trainable \"adapter\" matrices to the model instead of updating all parameters. Reduces trainable parameters by 100-10000x, enabling fine-tuning on consumer GPUs. The standard for efficient model customization. Used in Stable Diffusion, LLMs, and most open-source models."
   },
   {
@@ -203,7 +203,7 @@ const G = [
     "c": "Trening i optymalizacja",
     "t": "Distillation",
     "en": "Knowledge Distillation",
-    "d_pl": "Trening mniejszego modelu (student) na outputach większego (teacher). Student uczy się na miękkich prawdopodobieństwach z teacher, co przenosi więcej informacji niż same etykiety. Pozwala tworzyć modele 10x mniejsze przy zachowaniu większości jakości. DeepSeek, Qwen, Gemma mają wersje distilled z większych modeli.",
+    "d_pl": "Knowledge Distillation (destylacja wiedzy) — Trening mniejszego modelu (student) na outputach większego (teacher). Student uczy się na miękkich prawdopodobieństwach z teacher, co przenosi więcej informacji niż same etykiety. Pozwala tworzyć modele 10x mniejsze przy zachowaniu większości jakości. DeepSeek, Qwen, Gemma mają wersje distilled z większych modeli.",
     "d_en": "Training a smaller \"student\" model to mimic a larger \"teacher\" model. The student learns from the teacher's outputs, not just from the original data. Reduces model size and inference cost while preserving much of the quality. Used to create efficient models like DistilBERT, and controversially by Chinese labs to copy frontier models."
   },
   {
@@ -259,14 +259,14 @@ const G = [
     "c": "Kontekst i wydajność",
     "t": "Token",
     "en": "Token",
-    "d_pl": "Podstawowa jednostka tekstu przetwarzana przez LLM. W języku angielskim ~1 token = 4 znaki = 0.75 słowa. W polskim tokenizacja jest mniej efektywna (polskie słowa rzadziej w słowniku) — 1 polskie słowo może być 2-3 tokeny. Liczba tokenów determinuje koszt API i czas generacji.",
+    "d_pl": "1 polskie słowo może być 2-3 tokeny. Liczba tokenów determinuje koszt API i czas generacji.",
     "d_en": "The basic unit of text processed by LLMs. Roughly 4 characters or 0.75 words in English. Models are priced per token — input and output tokens have different costs. Tokenization affects performance — code, non-English text, and rare words are tokenized less efficiently. Context windows and pricing are measured in tokens."
   },
   {
     "c": "Kontekst i wydajność",
     "t": "Tokenizer",
     "en": "Tokenizer",
-    "d_pl": "Algorytm dzielący tekst na tokeny. BPE (Byte-Pair Encoding) jest standardem — uczy się najczęstszych ciągów znaków. GPT-4 używa tiktoken, Claude — własny BPE. Jakość tokenizatora wpływa na wydajność: słaby tokenizator dla polskiego = droższy wnioskowanie i gorsza jakość.",
+    "d_pl": "uczy się najczęstszych ciągów znaków. GPT-4 używa tiktoken, Claude — własny BPE. Jakość tokenizatora wpływa na wydajność: słaby tokenizator dla polskiego = droższy wnioskowanie i gorsza jakość.",
     "d_en": "A component that splits text into tokens (the units a model processes). Quality affects model performance — a good tokenizer handles multiple languages, code, and rare words efficiently. Popular: BPE (Byte Pair Encoding), SentencePiece, Tiktoken (OpenAI). Tokenization is often overlooked but crucial for multilingual and code models."
   },
   {
@@ -280,7 +280,7 @@ const G = [
     "c": "Kontekst i wydajność",
     "t": "Vector database",
     "en": "Vector Database",
-    "d_pl": "Baza danych zoptymalizowana pod przechowywanie i wyszukiwanie wektorów (embeddingów) po podobieństwie (cosine similarity, L2). Pinecone, Weaviate, Qdrant, Milvus, ChromaDB. Kluczowy komponent RAG — pozwala znaleźć najbliższe dokumenty do zapytania w ms.",
+    "d_pl": "pozwala znaleźć najbliższe dokumenty do zapytania w ms.",
     "d_en": "A database optimized for storing and searching vector embeddings. Enables fast \"find similar\" queries at scale. Products: Pinecone, Weaviate, Chroma, pgvector. The backbone of RAG systems. In 2026, traditional databases (PostgreSQL with pgvector) often replace specialized vector DBs for moderate scale."
   },
   {
@@ -336,7 +336,7 @@ const G = [
     "c": "Agentic i narzędzia",
     "t": "Tool use / Function calling",
     "en": "Tool Use / Function Calling",
-    "d_pl": "Zdolność modelu do wywoływania zewnętrznych funkcji/API w trakcie generowania odpowiedzi. Model otrzymuje definicje narzędzi (JSON schema), decyduje kiedy wywołać, z jakimi argumentami. Standard OpenAI function calling, Anthropic tool use. Foundation dla agentów — bez tego LLM jest \"zamknięty w swojej głowie\".",
+    "d_pl": "bez tego LLM jest \"zamknięty w swojej głowie\".",
     "d_en": "The ability of LLMs to call external functions/tools — search the web, run code, query databases. The foundation of AI agents. Pioneered by Toolformer, now standard in all frontier models. Transforms LLMs from text generators into general-purpose problem solvers."
   },
   {
@@ -385,7 +385,7 @@ const G = [
     "c": "Agentic i narzędzia",
     "t": "Agentic coding",
     "en": "Agentic Coding",
-    "d_pl": "Paradygmat, w którym AI nie tylko pisze kod, ale autonomicznie: czyta repozytorium, modyfikuje pliki, uruchamia testy, iteruje. Claude Code, Cursor, Aider, Codex (OpenAI). Główne wyzwanie: długie horyzonty (setki kroków), utrzymanie kontekstu. Open-source: Ornith 1.0, GLM-5.2 — biją proprietary agentowy benchmarks.",
+    "d_pl": "biją proprietary agentowy benchmarks.",
     "d_en": "AI that writes, tests, and iterates on code autonomously. Tools: Cursor, Devin, Claude Code, GitHub Copilot. In 2026, frontier models complete 30-70% of SWE-bench tasks (real GitHub bugs). Agentic coding is transforming software development — developers become reviewers, not writers."
   },
   {
@@ -441,14 +441,14 @@ const G = [
     "c": "Modalności",
     "t": "Video generation",
     "en": "Video Generation",
-    "d_pl": "Generowanie wideo z opisu lub referencji. Seedance 2.5 (ByteDance) — 30s natywnych klipów z joint audio-video. Wyzwania: spójność temporalna (PermaVid rozwiązuje przez persistent memory), długość klipu, jakość. Open-source: Wan 2.5, LTX, Scale-2. Trend: video editing + generation w jednym modelu.",
+    "d_pl": "30s natywnych klipów z joint audio-video. Wyzwania: spójność temporalna (PermaVid rozwiązuje przez persistent memory), długość klipu, jakość. Open-source: Wan 2.5, LTX, Scale-2. Trend: video editing + generation w jednym modelu.",
     "d_en": "Creating videos from text or images. Models: Sora 2 (OpenAI), Veo 3 (Google), Kling 2, Seedance 2.5. In 2026, frontier models generate 4K 30-second clips with cinematic quality. The fastest-evolving AI modality."
   },
   {
     "c": "Modalności",
     "t": "3D generation",
     "en": "3D Generation",
-    "d_pl": "Generowanie modeli 3D z opisu, obrazu lub point cloud. Arbor (Stability AI) — constraint meshes (określaj gdzie geometria ma być). Mesh Flow (Meta) — 18x szybszy niż poprzednicy. World Tracing — pixel-aligned geometry. Wyjścia: GLB, OBJ, Blender add-on. Use case: gry, VFX, AR/VR, projektowanie.",
+    "d_pl": "constraint meshes (określaj gdzie geometria ma być). Mesh Flow (Meta) — 18x szybszy niż poprzednicy. World Tracing — pixel-aligned geometry. Wyjścia: GLB, OBJ, Blender add-on. Use case: gry, VFX, AR/VR, projektowanie.",
     "d_en": "Creating 3D models from text or images. Models: TripoSR, Meshy, Rodin. In 2026, frontier models generate game-ready 3D assets in seconds. Used in games, VFX, AR/VR. Less mature than image/video but advancing rapidly."
   },
   {
@@ -483,7 +483,7 @@ const G = [
     "c": "Modalności",
     "t": "Vision-language model (VLM)",
     "en": "Vision-Language Model (VLM)",
-    "d_pl": "Patrz: VLM w sekcji Architektury. Model rozumiejący obraz + język. Perception DM (ByteDance) — VLM z diffusion, captionuje wiele regionów obrazu bez spadku wydajności. Kluczowy dla computer use, robotics, dokumentów (OCR + rozumienie).",
+    "d_pl": "VLM z diffusion, captionuje wiele regionów obrazu bez spadku wydajności. Kluczowy dla computer use, robotics, dokumentów (OCR + rozumienie).",
     "d_en": "A model combining image understanding with language. Can describe images, answer questions about them, generate image-based text. Examples: GPT-5 Vision, Claude Vision, Gemini. The foundation for AI assistants that can \"see.\""
   },
   {
@@ -497,21 +497,21 @@ const G = [
     "c": "Infrastruktura",
     "t": "Training vs inference",
     "en": "Training vs Inference Compute",
-    "d_pl": "Trening to jednorazowy koszt (miliony dolarów GPU-hours dla frontier modeli). wnioskowanie to koszt ciągły — każde zapytanie zużywa FLOPy. Trend 2026: wnioskowanie compute rośnie szybciej niż training compute — agenty wykonują setki kroków per zapytanie. Reflection AI płaci $150M/miesiąc za wnioskowanie infra do 2029 r.",
+    "d_pl": "każde zapytanie zużywa FLOPy. Trend 2026: wnioskowanie compute rośnie szybciej niż training compute — agenty wykonują setki kroków per zapytanie. Reflection AI płaci $150M/miesiąc za wnioskowanie infra do 2029 r.",
     "d_en": "The two phases of ML: training (learning from data) and inference (using the trained model). Training is expensive (frontier models: $100M+), inference is ongoing (millions per month for popular models). The economics of training vs inference drive most AI business decisions."
   },
   {
     "c": "Infrastruktura",
     "t": "GPU",
     "en": "Graphics Processing Unit (GPU)",
-    "d_pl": "Procesor graficzny, dominujący sprzęt do AI. NVIDIA H100, H200, B200, GB300 to standardy. Trening frontier modeli wymaga tysięcy GPU połączonych przez NVLink/InfiniBand. W 2026 r. Alternatywy: TPU v6 (Google), Trainium (AWS), Jalapeno (OpenAI + Broadcom). GPU shortage był głównym bottleneck 2024-2025.",
+    "d_pl": "Graphics Processing Unit (procesor graficzny) — Procesor graficzny, dominujący sprzęt do AI. NVIDIA H100, H200, B200, GB300 to standardy. Trening frontier modeli wymaga tysięcy GPU połączonych przez NVLink/InfiniBand. W 2026 r. Alternatywy: TPU v6 (Google), Trainium (AWS), Jalapeno (OpenAI + Broadcom). GPU shortage był głównym bottleneck 2024-2025.",
     "d_en": "Graphics Processing Unit — the workhorse of AI training and inference. NVIDIA dominates (H100, B200, GB300). In 2026, frontier models train on tens of thousands of GPUs. GPU shortage (2023-2024) drove massive investment in alternatives: TPUs, custom ASICs, and even optical computing. GPU access is a key geopolitical issue."
   },
   {
     "c": "Infrastruktura",
     "t": "TPU",
     "en": "Tensor Processing Unit (TPU)",
-    "d_pl": "Specjalistyczny accelerator AI od Google. TPU v6 (2026) — konkurent NVIDIA B200. Zoptymalizowany pod matrix multiplication (podstawowa operacja w transformerach). Google używa TPU do trenowania Gemini. TPU nie są dostępne w sprzedaży detalicznej — tylko przez Google Cloud.",
+    "d_pl": "Tensor Processing Unit (jednostka przetwarzania tensorów) — konkurent NVIDIA B200. Zoptymalizowany pod matrix multiplication (podstawowa operacja w transformerach). Google używa TPU do trenowania Gemini. TPU nie są dostępne w sprzedaży detalicznej — tylko przez Google Cloud.",
     "d_en": "Tensor Processing Unit — Google's custom AI chip. TPU v5/v6 used for Gemini training and inference. Less flexible than GPUs but more efficient for matrix operations. Available via Google Cloud. The main alternative to NVIDIA GPUs, but adoption outside Google is limited."
   },
   {
@@ -539,42 +539,42 @@ const G = [
     "c": "Infrastruktura",
     "t": "Open-source vs proprietary",
     "en": "Open-Source vs Proprietary Models",
-    "d_pl": "Proprietary (GPT, Claude, Gemini): najlepsza jakość, łatwe API, brak kontroli nad danymi. Open-source (Llama, GLM, DeepSeek, Qwen, Kimi): pełna kontrola, tańszy wnioskowanie, dostrajanie. Trend 2026: open-source nadrabia dystans — GLM-5.2, Ornith 1.0 biją proprietary w programowanie. W większości przypadków przedsiębiorstwa używają obu (proprietary do trudnych zadań, OS do rutyny).",
+    "d_pl": "GLM-5.2, Ornith 1.0 biją proprietary w programowanie. W większości przypadków przedsiębiorstwa używają obu (proprietary do trudnych zadań, OS do rutyny).",
     "d_en": "The two models of AI development. Open-source (Llama, Qwen, GLM) publishes weights, allowing local deployment and modification. Proprietary (GPT, Claude, Gemini) is API-only. Open-source is catching up — GLM-5.2 in 2026 matches GPT-5.5 in coding at 1/6 the cost."
   },
   {
     "c": "Infrastruktura",
     "t": "Open-weights",
     "en": "Open-Weights",
-    "d_pl": "Model, którego wagi są publicznie dostępne, ale kod treningowy i dane nie. Llama, GLM, Qwen są \"open-weights\", nie pełnym open-source. Tańsze w wnioskowanie, ale brak reproducibility. Pełny open-source (I1, LeRobot) udostępnia też training code + data — służy nauce, nie produkcji.",
+    "d_pl": "służy nauce, nie produkcji.",
     "d_en": "Models whose trained weights are published (but not necessarily training data or code). Llama, Qwen, GLM are open-weights. Distinct from truly open-source (which includes data and code). Open-weights enable local deployment, fine-tuning, and audit, but not full reproduction."
   },
   {
     "c": "Infrastruktura",
     "t": "vLLM",
     "en": "vLLM",
-    "d_pl": "Open-source wnioskowanie engine dla LLM-ów (UC Berkeley, 2023). Kluczowa innowacja: PagedAttention — zarządza KV cache jak OS pamięcią wirtualną. 5-10x wyższy throughput niż HuggingFace transformers. Standard dla serwowania open-source LLM-ów. Konkurenci: TensorRT-LLM (NVIDIA), SGLang, llama.cpp (edge).",
+    "d_pl": "vLLM (silnik wnioskowania LLM) — zarządza KV cache jak OS pamięcią wirtualną. 5-10x wyższy throughput niż HuggingFace transformers. Standard dla serwowania open-source LLM-ów. Konkurenci: TensorRT-LLM (NVIDIA), SGLang, llama.cpp (edge).",
     "d_en": "An open-source inference engine for LLMs. Key innovation: PagedAttention for efficient KV cache management. 3-10x higher throughput than naive inference. The standard for self-hosted LLM serving. Developed by UC Berkeley. Used by most companies serving open-source models."
   },
   {
     "c": "Infrastruktura",
     "t": "Speculative decoding",
     "en": "Speculative Decoding",
-    "d_pl": "Technika przyspieszająca wnioskowanie: mały model (draft) generuje K tokenów, duży model (target) weryfikuje je równolegle. Jeśli target się zgadza — oszczędność 2-3x. Kluczowe: draft musi być szybki i \"zgodny\" z target. Standard w serwerach frontier modeli 2026 r.",
+    "d_pl": "oszczędność 2-3x. Kluczowe: draft musi być szybki i \"zgodny\" z target. Standard w serwerach frontier modeli 2026 r.",
     "d_en": "An inference optimization where a small \"draft\" model quickly generates candidate tokens, and the large model verifies them in parallel. If the draft is correct, tokens are accepted at the speed of the small model. 2-3x speedup for LLMs. Used by Claude, GPT, Gemini. Key for reducing inference cost without quality loss."
   },
   {
     "c": "Bezpieczeństwo i regulacje",
     "t": "Alignment",
     "en": "Alignment",
-    "d_pl": "Proces uczynienia modelu zgodnego z ludzkimi wartościami i intencjami. RLHF, constitutional AI, red teaming to metody alignment. Anthropic (Claude) kładzie największy nacisk na alignment. Wyzywanie 2026: alignment agentów long-horizon (wieloetapowe) — model może wykonać setki kroków przed wykryciem niepożądanego zachowania.",
+    "d_pl": "AI Alignment (zgodność sztucznej inteligencji) — model może wykonać setki kroków przed wykryciem niepożądanego zachowania.",
     "d_en": "The process of ensuring AI models behave in accordance with human values and intentions. Techniques: RLHF, Constitutional AI, red-teaming. Alignment is seen as crucial for AI safety — a misaligned superintelligence could be catastrophic. The alignment problem becomes harder as models become more capable. Major focus of Anthropic, OpenAI, and safety researchers."
   },
   {
     "c": "Bezpieczeństwo i regulacje",
     "t": "Red teaming",
     "en": "Red Teaming",
-    "d_pl": "Atakowanie modelu przez dedykowany zespół (lub automatycznych agentów) przed release, by znaleźć podatności. Prompt injection, jailbreak, leakage danych treningowych. OpenAI, Anthropic, Google mają dedykowane red teamy. W 2026 r. AI-vs-AI red teaming staje się standardem — modele atakują modele w skali niemożliwej dla ludzi.",
+    "d_pl": "modele atakują modele w skali niemożliwej dla ludzi.",
     "d_en": "Testing AI models for vulnerabilities by attempting to make them misbehave. Red teams try to elicit harmful outputs, jailbreaks, bias, etc. Standard practice at frontier labs. The AI safety field grew out of red-teaming. In 2026, automated red-teaming (AI testing AI) scales beyond what human teams can achieve."
   },
   {
@@ -595,7 +595,7 @@ const G = [
     "c": "Bezpieczeństwo i regulacje",
     "t": "Export control",
     "en": "Export Control",
-    "d_pl": "Regulacje rządu US ograniczające eksport modeli AI do niektórych krajów. Claude Fable 5 (czerwiec 2026) — zawieszony po 3 dniach przez US export control ban. Claude Mythos 5 — ban zdjęty 27.06.2026, ale dostępny tylko dla ~100 zaufanych partnerów US. Klasyfikacja: modele >10^26 FLOPs training compute wymagają licencji eksportowej.",
+    "d_pl": "zawieszony po 3 dniach przez US export control ban. Claude Mythos 5 — ban zdjęty 27.06.2026, ale dostępny tylko dla ~100 zaufanych partnerów US. Klasyfikacja: modele >10^26 FLOPs training compute wymagają licencji eksportowej.",
     "d_en": "Government restrictions on exporting AI technology (models, chips) to certain countries. The US restricts chip exports to China and frontier model exports. Intended to slow adversaries' AI progress. Effectiveness is debated — China develops domestic alternatives (Huawei Ascend). A major geopolitical issue in 2024-2026."
   },
   {
@@ -616,7 +616,7 @@ const G = [
     "c": "Bezpieczeństwo i regulacje",
     "t": "Hallucination",
     "en": "Hallucination",
-    "d_pl": "Zjawisko, w którym model generuje fałszywe informacje z pewnością siebie. LLM-y halucynują z powodu treningu na statystycznych wzorcach, nie faktach. RAG redukuje (ale nie eliminuje) halucynacje. Mierzone przez: fact-checking benchmarks, FActScore. Nie rozwiązano do 2026 r. — jest fundamentalną cechą autoregresji.",
+    "d_pl": "Hallucination (halucynacja — zjawisko w AI) — jest fundamentalną cechą autoregresji.",
     "d_en": "When a model generates false information with high confidence. The main problem with LLMs in production. Causes: training on incorrect data, over-generalization, prompt ambiguity. Mitigation: RAG, citations, fact-checking, lower temperature. In 2026, hallucinations are reduced but not eliminated — even frontier models still hallucinate on edge cases."
   },
   {
@@ -630,7 +630,7 @@ const G = [
     "c": "Bezpieczeństwo i regulacje",
     "t": "UE AI Act",
     "en": "EU AI Act",
-    "d_pl": "Regulacja UE (przyjęta 2024, w pełni obowiązuje od 2026) klasyfikująca systemy AI według ryzyka: niedopuszczalne (social scoring), wysokie (HR, kredyty, medycyna — rygorystyczne wymagania), ograniczone (chatboty — transparency), minimalne. Pierwsza kompleksowa regulacja AI na świecie. Modele general-purpose (GPAI) mają dodatkowe obowiązki.",
+    "d_pl": "rygorystyczne wymagania), ograniczone (chatboty — transparency), minimalne. Pierwsza kompleksowa regulacja AI na świecie. Modele general-purpose (GPAI) mają dodatkowe obowiązki.",
     "d_en": "European Union AI Act — the first comprehensive AI regulation (passed 2024). Risk-based approach: minimal risk (no rules), limited risk (transparency), high risk (strict requirements), unacceptable risk (banned). The UE AI Act sets the global standard for AI regulation, similar to GDPR for privacy."
   },
   {
@@ -651,7 +651,7 @@ const G = [
     "c": "Ewaluacja",
     "t": "Leaderboard",
     "en": "Leaderboard",
-    "d_pl": "Ranking modeli według wyników benchmarków. LM Arena (lmarena.ai) — główny ranking LLM-ów, oparty na ELO z human pairwise comparison. Open LLM Leaderboard (HuggingFace) — open-source modele. Artificial Analysis — image/video leaderboard. Problem: rankingi mogą być gamingowane (modely trenowane pod LM Arena style).",
+    "d_pl": "główny ranking LLM-ów, oparty na ELO z human pairwise comparison. Open LLM Leaderboard (HuggingFace) — open-source modele. Artificial Analysis — image/video leaderboard. Problem: rankingi mogą być gamingowane (modely trenowane pod LM Arena style).",
     "d_en": "A ranked list of models by benchmark scores. Examples: LM Arena (crowd-sourced), Open LLM Leaderboard (HuggingFace). Leaderboards drive competition but can be gamed. LM Arena (ELO from pairwise comparisons) is the most trusted LLM leaderboard. Specialized leaderboards exist for coding, math, vision, and agents."
   },
   {
@@ -665,7 +665,7 @@ const G = [
     "c": "Ewaluacja",
     "t": "Human eval",
     "en": "Human Evaluation",
-    "d_pl": "Ocena jakości modelu przez ludzi. Najpopularniejszy format: pairwise comparison (annotator wybiera lepszą z dwóch odpowiedzi). Chatbot Arena (LM Arena) — crowd-sourced human eval, miliony głosów. Kosztowne, ale często bardziej wiarygodne niż automated benchmarks. Wady: annotatorzy mogą preferować dłuższe/lepiej sformatowane odpowiedzi.",
+    "d_pl": "crowd-sourced human eval, miliony głosów. Kosztowne, ale często bardziej wiarygodne niż automated benchmarks. Wady: annotatorzy mogą preferować dłuższe/lepiej sformatowane odpowiedzi.",
     "d_en": "Evaluating AI by having humans rate outputs. The gold standard, but expensive and slow. LM Arena scales human eval via crowdsourcing. For specialized domains (medical, legal), expert human eval remains necessary. AI evaluation (using AI to evaluate AI) is increasingly viable for general tasks."
   },
   {
