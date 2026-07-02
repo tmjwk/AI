@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pl" data-theme="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Benchmarki — katalog</title>
-<script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||"dark")</script>
 <style>
 :root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--bl:#3b82f6;--t3:#fbbf24;--t2:#d0d0d0;--t1:#b0b0b0;--ov:rgba(0,0,0,.7)}
 [data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--bl:#1d4ed8;--t3:#92400e;--t2:#475569;--t1:#94a3b8;--ov:rgba(0,0,0,.5)}
@@ -16,11 +15,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .nav-links{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
 .nav-btn{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:12px;color:var(--hs);text-decoration:none;font-weight:500;transition:all .15s;white-space:nowrap}
 .nav-btn:hover{border-color:var(--ac);color:var(--fg)}
-.nav-btn.cur{border-color:var(--ba);color:var(--ba);background:rgba(251,191,36,.08);font-weight:700}
 .h a:hover{border-color:var(--ac);color:var(--ac)}
 .tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--fg);transition:border-color .15s}
 .tgl:hover{border-color:var(--ac)}
-.banner{background:linear-gradient(90deg,rgba(251,191,36,.08),transparent);border-left:3px solid var(--ba);padding:10px 14px;border-radius:4px;margin-bottom:16px;font-size:15.5px;color:var(--hs)}
+.banner{background:linear-gradient(90deg,rgba(251,191,36,.08),transparent);border-left:3px solid var(--ba);padding:10px 14px;border-radius:4px;margin-bottom:16px;font-size:13px;color:var(--hs)}
 .banner strong{color:var(--ba)}
 .banner .tiers{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:11px;color:var(--hm)}
 .banner .tiers .t3{color:var(--t3);font-weight:700}
@@ -37,7 +35,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .st{display:flex;align-items:center;gap:4px}
 .st .sv{font-size:14px;font-weight:700;color:var(--hp);font-family:monospace}
 .sec{margin-bottom:32px}
-.sec-t{font-size:15.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:12px;font-weight:700;display:flex;align-items:center;gap:8px}
+.sec-t{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:12px;font-weight:700;display:flex;align-items:center;gap:8px}
 .sec-t .icon{font-size:18px}
 .sec-t .cnt{color:var(--hd);font-size:10px;font-family:monospace;margin-left:auto}
 .bench{background:var(--card);border:1px solid var(--bdl);border-radius:8px;padding:14px 16px;margin-bottom:10px;transition:border-color .15s;display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:start}
@@ -55,13 +53,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .bench .bn{font-size:15px;font-weight:700;color:var(--hp);font-family:"SF Mono",Menlo,monospace}
 .bench .bfn{font-size:11px;color:var(--hm);font-style:italic}
 .bench .bt{display:inline-block;padding:1px 6px;font-size:9px;border-radius:3px;background:var(--bg);color:var(--hm);border:1px solid var(--bdl);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
-.bench .bd{font-size:15.5px;color:var(--hm);line-height:1.5;margin-bottom:6px}
+.bench .bd{font-size:13px;color:var(--hm);line-height:1.5;margin-bottom:6px}
 .bench .meta{font-size:10px;color:var(--hd);font-family:monospace;display:flex;gap:8px;flex-wrap:wrap}
 .bench .meta span{color:var(--hm)}
 .bench .link{display:flex;align-items:center;justify-content:flex-end;flex-shrink:0}
 .bench .link a{display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:var(--bg);border:1px solid var(--bd);border-radius:6px;color:var(--ac);font-size:12px;font-weight:600;text-decoration:none;transition:all .15s}
 .bench .link a:hover{border-color:var(--ac);background:var(--card)}
-.nr{color:var(--hm);font-size:15.5px;text-align:center;padding:40px 20px;font-style:italic}
+.nr{color:var(--hm);font-size:13px;text-align:center;padding:40px 20px;font-style:italic}
 .f{margin-top:36px;padding-top:18px;border-top:1px solid var(--bdl);font-size:11px;color:var(--hd);text-align:center}
 .f a{color:var(--hm)}
 @media(max-width:540px){.bench{grid-template-columns:auto 1fr}.bench .link{grid-column:1/-1;justify-content:flex-start}.h h1{font-size:16px}.hr{flex-direction:column;align-items:flex-start;gap:8px}.nav-btn{font-size:11px;padding:4px 8px}.nav-links{gap:4px;width:100%}}
@@ -73,10 +71,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="hr">
 <h1>🏆 AI Benchmarki — katalog</h1>
 <div class="nav nav-links">
-<a href="ai-models.html" class="nav-btn">📊 Models</a>
-<a href="ai-benchmarks.html" class="nav-btn cur">🏆 Benchmarki</a>
+<a href="ai-models.html" class="nav-btn">← Models</a>
 <a href="ai-radar.html" class="nav-btn">📡 Radar</a>
-<a href="ai-pulse.html" class="nav-btn">💓 Pulse</a>
 <a href="ai-glossary.html" class="nav-btn">📖 Słownik</a>
 <button class="tgl" id="themeTgl">🌙</button>
 </div>
@@ -113,7 +109,7 @@ const TIER_STARS={"3": "★★★", "2": "★", "1": "·"};
 let S={q:'',chip:null,theme:'dark'};
 function nm(s){return(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
 function init(){
-S.theme=localStorage.getItem('theme')||'dark';
+S.theme=localStorage.getItem('benchmarks-theme')||'dark';
 document.documentElement.setAttribute('data-theme',S.theme);
 document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';
 renderChips();renderStats();render();
@@ -123,6 +119,6 @@ document.getElementById('themeTgl').addEventListener('click',toggleTheme);
 function renderChips(){const c=document.getElementById('chips');let h='<span class="chip active" data-filter="all">Wszystkie</span>';CATS.forEach(cat=>{const n=B.filter(b=>b.c===cat).length;h+=`<span class="chip" data-filter="${cat}">${ICONS[cat]} ${cat} (${n})</span>`});c.innerHTML=h;c.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{const f=ch.getAttribute('data-filter');c.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));ch.classList.add('active');S.chip=f==='all'?null:f;render()}))}
 function renderStats(){const s=document.getElementById('stats');let h=`<div class="st"><span class="sv">${B.length}</span><span>benchmarków</span></div>`;const t3=B.filter(b=>b.tier===3).length;const t2=B.filter(b=>b.tier===2).length;const t1=B.filter(b=>b.tier===1).length;h+=`<div class="st"><span class="sv" style="color:var(--t3)">★★★</span><span>${t3} kluczowe</span></div>`;h+=`<div class="st"><span class="sv" style="color:var(--t2)">★</span><span>${t2} ważne</span></div>`;h+=`<div class="st"><span class="sv" style="color:var(--t1)">·</span><span>${t1} pozostałe</span></div>`;s.innerHTML=h}
 function render(){const content=document.getElementById('content');let filtered=B.filter(b=>{const txt=nm(b.n+' '+b.fn+' '+b.t+' '+b.c+' '+b.o);let ok=true;if(S.chip){ok=b.c===S.chip}if(ok&&S.q){ok=txt.includes(nm(S.q))}return ok});if(filtered.length===0){content.innerHTML='<div class="nr">Brak wyników dla "'+S.q+'"</div>';return}let h='';CATS.forEach(cat=>{let items=filtered.filter(b=>b.c===cat);if(items.length===0)return;items.sort((a,b)=>b.tier-a.tier);h+=`<div class="sec" data-cat="${cat}"><div class="sec-t"><span class="icon">${ICONS[cat]}</span> ${cat} <span class="cnt">${items.length} ${items.length===1?'benchmark':(items.length<5?'benchmarki':'benchmarków')}</span></div>`;items.forEach(b=>{const tl=TYPE_LABELS[b.ty]||b.ty;const stars=TIER_STARS[b.tier];h+=`<div class="bench tier-${b.tier}"><div class="tier-col"><span class="stars">${stars}</span></div><div class="main"><div class="th"><span class="bn">${b.n}</span><span class="bfn">${b.fn}</span><span class="bt">${tl}</span></div><div class="bd">${b.t}</div><div class="meta"><span>🏢 ${b.o}</span><span>📅 ${b.y}</span></div></div><div class="link"><a href="${b.url}" target="_blank" rel="noopener">↗ Otwórz</a></div></div>`});h+='</div>'});content.innerHTML=h}
-function toggleTheme(){S.theme=S.theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',S.theme);document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';localStorage.setItem('theme',S.theme)}
+function toggleTheme(){S.theme=S.theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',S.theme);document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';localStorage.setItem('benchmarks-theme',S.theme)}
 init();
 </script></body></html>
