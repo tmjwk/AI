@@ -12,7 +12,7 @@ const B = [
     "y": 2020,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "57 przedmiotów akademickich (historia, prawo, medycyna, matematyka, etc.). Standard LLM knowledge od 2020. Frontier modele >90%.",
+    "t_pl": "57 przedmiotów akademickich (historia, prawo, medycyna, matematyka, etc.). Standard LLM knowledge od 2020. frontier modele >90%.",
     "t_en": "57 academic subjects (history, law, medicine, math, etc.). The standard LLM knowledge benchmark since 2020. Frontier models score >90%. Despite contamination concerns, MMLU remains widely reported. Created by UC Berkeley."
   },
   {
@@ -36,7 +36,7 @@ const B = [
     "y": 2019,
     "ty": "arena",
     "tier": 3,
-    "t_pl": "Visual reasoning — siatki z wzorcami geometrycznymi, model musi uogólnić regułę. Francois Chollet. Frontier modele ~30%, ludzie 100%.",
+    "t_pl": "Visual wnioskowanie — siatki z wzorcami geometrycznymi, model musi uogólnić regułę. Francois Chollet. frontier modele ~30%, ludzie 100%.",
     "t_en": "Visual reasoning — grids with geometric patterns, the model must infer the rule. Created by François Chollet. Frontier models score ~30%, humans 100%. The $1M ARC Prize drives progress. A key test for AGI-style reasoning."
   },
   {
@@ -48,7 +48,7 @@ const B = [
     "y": 2024,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "Trudniejsza wersja MMLU — 10-opcji zamiast 4, bardziej requiring reasoning. Zastępuje oryginał w nowszych ewaluacjach.",
+    "t_pl": "Trudniejsza wersja MMLU — 10-opcji zamiast 4, bardziej requiring wnioskowanie. Zastępuje oryginał w nowszych ewaluacjach.",
     "t_en": "A harder version of MMLU — 10 options instead of 4, more reasoning required. Replaces the original in newer evaluations. Created by TIGERA. More contamination-resistant than MMLU."
   },
   {
@@ -72,7 +72,7 @@ const B = [
     "y": 2025,
     "ty": "arena",
     "tier": 2,
-    "t_pl": "Wersja 2 — 100x trudniejsza niż oryginał. Frontier LLM-y <10%. Część $1M ARC Prize.",
+    "t_pl": "Wersja 2 — 100x trudniejsza niż oryginał. frontier LLM-y <10%. Część $1M ARC Prize.",
     "t_en": "Version 2 — 100x harder than the original. Frontier LLMs score <10%. Part of the $1M ARC Prize. Created by Opus in 2025. A key test for AGI-style abstract reasoning."
   },
   {
@@ -132,7 +132,7 @@ const B = [
     "y": 2021,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "8.5k słownych zadań matematycznych szkolnych. Frontier modele >95%. Pierwszy sanity check math.",
+    "t_pl": "8.5k słownych zadań matematycznych szkolnych. frontier modele >95%. Pierwszy sanity check math.",
     "t_en": "8.5K grade-school math word problems. Frontier models score >95%. The first sanity check for math capability. Created by OpenAI. Replaced by MATH and AIME for frontier models."
   },
   {
@@ -144,7 +144,7 @@ const B = [
     "y": 2024,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "Matematyka research-level od profesjonalnych matematyków. Frontier modele <2%. Epoch AI.",
+    "t_pl": "Matematyka research-level od profesjonalnych matematyków. frontier modele <2%. Epoch AI.",
     "t_en": "Research-level math from professional mathematicians. Frontier models score <2%. Created by Epoch AI. The hardest math benchmark — far beyond GSM8K or MATH. Shows AI is far from replacing mathematicians."
   },
   {
@@ -168,7 +168,7 @@ const B = [
     "y": 2024,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "15 problemów z amerykańskiego konkursu AIME. Testuje math olimpiad. Używany przez OpenAI do ewaluacji reasoning models (o1, o3).",
+    "t_pl": "15 problemów z amerykańskiego konkursu AIME. Testuje math olimpiad. Używany przez OpenAI do ewaluacji modele rozumujące (o1, o3).",
     "t_en": "American Invitational Mathematics Examination — 15 problems from the US math olympiad. Tests competition math. Used by OpenAI to evaluate reasoning models. Frontier reasoning models score 80%+ in 2026."
   },
   {
@@ -192,7 +192,7 @@ const B = [
     "y": 2023,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "Prawdziwe bug reports z 12 GitHub repo (Django, scikit-learn, etc.) — model musi naprawić poprzez modyfikację kodu + testy. Najlepszy miernik agentic coding.",
+    "t_pl": "Prawdziwe bug reports z 12 GitHub repo (Django, scikit-learn, etc.) — model musi naprawić poprzez modyfikację kodu + testy. Najlepszy miernik programowanie agentowe.",
     "t_en": "Real bug reports from 12 GitHub repos (Django, scikit-learn, etc.) — the model must fix them via code changes + tests. The best measure of agentic coding. Created by Princeton. Frontier models: GPT-5 71%."
   },
   {
@@ -216,7 +216,7 @@ const B = [
     "y": 2025,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "Wersja Pro SWE-bench — trudniejsze agentic coding zadania, mierzy long-horizon workflows. MiniMax M3 bije GPT-5.5 (czerwiec 2026).",
+    "t_pl": "Wersja Pro SWE-bench — trudniejsze programowanie agentowe zadania, mierzy long-horizon (wieloetapowe) workflows. MiniMax M3 bije GPT-5.5 (czerwiec 2026).",
     "t_en": "A harder version of SWE-bench with more complex agentic coding tasks, measuring long-horizon workflows. MiniMax M3 beats GPT-5.5 on SWE-bench Pro (June 2026). Created by Princeton in 2025."
   },
   {
@@ -264,7 +264,7 @@ const B = [
     "y": 2024,
     "ty": "leaderboard",
     "tier": 2,
-    "t_pl": "Real-world coding benchmark — edycja istniejących repozytoriów przez Aider. Pass@1 z prawdziwymi git diff-ami.",
+    "t_pl": "Real-world programowanie benchmark — edycja istniejących repozytoriów przez Aider. Pass@1 z prawdziwymi git diff-ami.",
     "t_en": "Real-world coding benchmark — editing existing repositories via Aider. Pass@1 with real git diffs. Tests practical coding ability. Highly respected by developers. Frontier models compete for the top spot."
   },
   {
@@ -300,7 +300,7 @@ const B = [
     "y": 2023,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "Real-world assistant questions wymagające multi-step reasoning, tool use (web search, calc), ~10-30 kroków per pytanie. Meta + HuggingFace.",
+    "t_pl": "Real-world assistant questions wymagające multi-step wnioskowanie, tool use (web search, calc), ~10-30 kroków per pytanie. Meta + HuggingFace.",
     "t_en": "General AI Assistants — real-world questions requiring multi-step reasoning and tool use (web search, calculator), 10-30 steps per question. Created by Meta + HuggingFace. A key benchmark for agents."
   },
   {
@@ -408,7 +408,7 @@ const B = [
     "y": 2023,
     "ty": "zbiór zadań",
     "tier": 1,
-    "t_pl": "Matematyczne problemy w kontekście obrazów (geometria, wykresy). Multimodal math reasoning.",
+    "t_pl": "Matematyczne problemy w kontekście obrazów (geometria, wykresy). wielomodalny math wnioskowanie.",
     "t_en": "Math problems with images (geometry, charts). Multimodal math reasoning. Created by Allen AI. A key benchmark for multimodal math. Frontier models score 70%+."
   },
   {
@@ -564,7 +564,7 @@ const B = [
     "y": 2022,
     "ty": "środowisko",
     "tier": 2,
-    "t_pl": "Benchmark robotów z long-horizon taskami (5 tasków per sekwencja). Franka Panda robot.",
+    "t_pl": "Benchmark robotów z long-horizon (wieloetapowe) taskami (5 tasków per sekwencja). Franka Panda robot.",
     "t_en": "Compositional Anchor Language — a robot benchmark with long-horizon tasks (5 tasks per sequence). Franka Panda robot. Created by ETH Zürich. A standard robotics benchmark."
   },
   {
@@ -600,7 +600,7 @@ const B = [
     "y": 2020,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "USMLE pytania medyczne — standard medical LLM. Frontier modele >85%.",
+    "t_pl": "USMLE pytania medyczne — standard medical LLM. frontier modele >85%.",
     "t_en": "USMLE medical questions — the standard medical LLM benchmark. Frontier models score >85%. Created by Dartmouth. A key benchmark for medical AI applications."
   },
   {
@@ -624,7 +624,7 @@ const B = [
     "y": 2024,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "Scientific coding benchmark — 338 problemów z 16 dziedzin nauki (bio, chemia, fizyka, etc.). Testuje rozumienie naukowe + coding.",
+    "t_pl": "Scientific programowanie benchmark — 338 problemów z 16 dziedzin nauki (bio, chemia, fizyka, etc.). Testuje rozumienie naukowe + programowanie.",
     "t_en": "A scientific coding benchmark — 338 problems from 16 science domains (bio, chemistry, physics, etc.). Tests scientific understanding + coding. Created by UIUC."
   },
   {
@@ -708,7 +708,7 @@ const B = [
     "y": 2024,
     "ty": "zbiór zadań",
     "tier": 1,
-    "t_pl": "Simple yes/no pytania — niektóre łatwe, niektóre z pułapkami. Mierzy base capabilities, nie robust reasoning.",
+    "t_pl": "Simple yes/no pytania — niektóre łatwe, niektóre z pułapkami. Mierzy base możliwości, nie robust wnioskowanie.",
     "t_en": "Simple yes/no questions — some easy, some with traps. Measures base capabilities, not robust reasoning. Created by independent researchers. A simple test that reveals model limitations."
   },
   {
@@ -756,7 +756,7 @@ const B = [
     "y": 2025,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "3,000 pytań od 1,000+ ekspertów z 100+ dziedzin. Najtrudniejszy Q&A benchmark 2025. Frontier <10%.",
+    "t_pl": "3,000 pytań od 1,000+ ekspertów z 100+ dziedzin. Najtrudniejszy Q&A benchmark 2025. frontier <10%.",
     "t_en": "3,000 questions from 1,000+ experts across 100+ fields. The hardest Q&A benchmark 2025. Frontier models score <10%. Created by CAIS. Shows the gap between AI and human expertise."
   },
   {

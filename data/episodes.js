@@ -51,7 +51,7 @@ const EPISODES = [
       {
         "name": "Philip Johnson",
         "dot_color": "var(--ba)",
-        "role_pl": "gość",
+        "role_pl": "Gość",
         "role_en": "guest",
         "is_guest": true,
         "is_absent": false
@@ -186,7 +186,7 @@ const EPISODES = [
         "num": "05",
         "title": "Fable 5 wraca + Anthropic",
         "time": "63:59 – 74:00",
-        "fakty_pl": "Fable 5 offline 15 dni (US government pull). Może wrócić „within days\". Sonnet 5 jako „filler\" — mediocre capability, high price. Regulatory risk now first-order variable for investors.",
+        "fakty_pl": "Fable 5 offline 15 dni (US government pull). Może wrócić „within days\". Sonnet 5 jako „filler\" — mediocre możliwości, high price. Regulatory risk now first-order variable for investors.",
         "fakty_en": "Fable 5 offline for 15 days (US government pull). May return \"within days\". Sonnet 5 as a \"filler\" — mediocre capability, high price. Regulatory risk now a first-order variable for investors.",
         "glosy": [
           {
@@ -323,7 +323,7 @@ const EPISODES = [
       {
         "name": "Immad Mustach",
         "dot_color": "var(--ba)",
-        "role_pl": "gość",
+        "role_pl": "Gość",
         "role_en": "guest",
         "is_guest": true,
         "is_absent": false
@@ -331,7 +331,7 @@ const EPISODES = [
       {
         "name": "Salim Ismail",
         "dot_color": "var(--hp)",
-        "role_pl": "nieobecny",
+        "role_pl": "Nieobecny",
         "role_en": "absent",
         "is_guest": false,
         "is_absent": true
@@ -432,7 +432,7 @@ const EPISODES = [
             "text_en": "Anyone who's shocked by this is way out of touch with what China's actually doing."
           }
         ],
-        "wniosek_pl": "Distillation to <strong>wojna asymetryczna</strong> — Chińczycy nie muszą trenować od zera, kopiują reasoning traces z western models. Regulacje export control nie powstrzymają tego.",
+        "wniosek_pl": "Distillation to <strong>wojna asymetryczna</strong> — Chińczycy nie muszą trenować od zera, kopiują wnioskowanie traces z western models. Regulacje export control nie powstrzymają tego.",
         "wniosek_en": "Distillation is <strong>asymmetric warfare</strong> — the Chinese don't have to train from scratch, they copy reasoning traces from western models. Export control regulations won't stop this.",
         "kontekst_pl": "<strong>Destylacja</strong> polega na tym, że model A (Claude) generuje odpowiedzi, a model B (Alibaba) uczy się na tych odpowiedziach. Nie trzeba kraść wag — wystarczy dostęp do API. Dlatego Anthropic ogranicza API dla chińskich firm. Ale Chińczycy mogą używać pośredników (VPN, spółki fasadowe). 12 wzmianek o destylacji w tym odcinku — to główny temat geopolityczny.",
         "kontekst_en": "<strong>Distillation</strong> means model A (Claude) generates responses, and model B (Alibaba) learns from those responses. You don't need to steal weights — API access is enough. That's why Anthropic restricts API for Chinese companies. But the Chinese can use intermediaries (VPN, shell companies). 12 mentions of distillation in this episode — it's the main geopolitical topic."
@@ -552,7 +552,7 @@ const EPISODES = [
           {
             "host": "Alex",
             "dot_color": "var(--hp)",
-            "text_pl": "Gerard K. O'Neil — koncepcja kolonii kosmicznych z lat 70/80 (The High Frontier). <strong>Błyskotliwy człowiek, który odszedł zbyt wcześnie.</strong>",
+            "text_pl": "Gerard K. O'Neil — koncepcja kolonii kosmicznych z lat 70/80 (The High frontier). <strong>Błyskotliwy człowiek, który odszedł zbyt wcześnie.</strong>",
             "text_en": "Gerard K. O'Neil — brilliant individual who left us too early."
           },
           {
@@ -564,7 +564,7 @@ const EPISODES = [
         ],
         "wniosek_pl": "Przyszłość będzie <strong>heterogeniczna</strong> — część ludzi zostanie na Ziemi (prawie niezmieniona), część pójdzie w kosmos. Nie ma jednej ścieżki.",
         "wniosek_en": "The future will be <strong>heterogeneous</strong> — some humans will stay on Earth (nearly unchanged), some will go to space. There is no single path.",
-        "kontekst_pl": "Peter: „Zobaczysz ludzi, którzy wyglądają niemal tak samo za 100 lat. Jednocześnie zobaczysz postludzi.\" Heterogeniczna, nie jednorodna. Alex powołuje się na <strong>Gerarda K. O'Neila</strong> — koncepcję kolonii kosmicznych z lat 70/80 (The High Frontier). Dave: nawet przy masowym bezrobociu od AI, ludzie znajdą sens przez przedsiębiorczość. Zakończenie Petera: newsletter metatrends na dmandis.com/metatrends.",
+        "kontekst_pl": "Peter: „Zobaczysz ludzi, którzy wyglądają niemal tak samo za 100 lat. Jednocześnie zobaczysz postludzi.\" Heterogeniczna, nie jednorodna. Alex powołuje się na <strong>Gerarda K. O'Neila</strong> — koncepcję kolonii kosmicznych z lat 70/80 (The High frontier). Dave: nawet przy masowym bezrobociu od AI, ludzie znajdą sens przez przedsiębiorczość. Zakończenie Petera: newsletter metatrends na dmandis.com/metatrends.",
         "kontekst_en": "Peter: \"You're going to see humans who look substantially the same 100 years from now. At the same time you'll see post-humans.\" Heterogeneous, not homogeneous. Alex references <strong>Gerard K. O'Neil</strong> — the space colony concept from the 70s/80s (The High Frontier). Dave: even with mass unemployment from AI, people will find meaning through entrepreneurship. Peter's closing: metatrends newsletter at dmandis.com/metatrends."
       }
     ]

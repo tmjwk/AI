@@ -21,7 +21,7 @@ const G = [
     "c": "Architektury i modele",
     "t": "MoE",
     "en": "Mixture of Experts",
-    "d_pl": "Architektura, w której tylko część parametrów modelu jest aktywna dla pojedynczego tokenu. Router decyduje, których \"ekspertów\" (sub-sieci) użyć. Np. GLM-5.2 ma 745B parametrów total, ale tylko 44B aktywnych — dzięki temu jest 6x tańszy w inference niż gęsty model o tej samej pojemności. MoE jest standardem dla frontier modeli od 2024 r.",
+    "d_pl": "Architektura, w której tylko część parametrów modelu jest aktywna dla pojedynczego tokenu. Router decyduje, których \"ekspertów\" (sub-sieci) użyć. Np. GLM-5.2 ma 745B parametrów total, ale tylko 44B aktywnych — dzięki temu jest 6x tańszy w wnioskowanie niż gęsty model o tej samej pojemności. MoE jest standardem dla frontier modeli od 2024 r.",
     "d_en": "An architecture where only a fraction of the model's parameters is active for a single token. A router decides which \"experts\" (sub-networks) to use. E.g., GLM-5.2 has 745B total parameters but only 44B active — making it 6x cheaper in inference than a dense model of the same capacity. MoE is the standard for frontier models since 2024."
   },
   {
@@ -77,14 +77,14 @@ const G = [
     "c": "Architektury i modele",
     "t": "Foundation model",
     "en": "Foundation Model",
-    "d_pl": "Pojęcie wprowadzone przez Stanford HAI w 2021 r. — model trenowany na szerokim spektrum danych, który można adaptować do wielu zadań downstream (fine-tuning, prompting). Odróżnia się od modeli wąskich, trenowanych pod jedno zadanie. Wszyscy główni gracze (OpenAI, Anthropic, Google) produkują foundation models.",
+    "d_pl": "Pojęcie wprowadzone przez Stanford HAI w 2021 r. — model trenowany na szerokim spektrum danych, który można adaptować do wielu zadań downstream (dostrajanie, prompting). Odróżnia się od modeli wąskich, trenowanych pod jedno zadanie. Wszyscy główni gracze (OpenAI, Anthropic, Google) produkują foundation models.",
     "d_en": "A concept introduced by Stanford HAI in 2021 — a model trained on broad data that can be adapted to many downstream tasks (fine-tuning, prompting). Examples: GPT, Claude, Llama. The foundation model paradigm replaced the \"one model per task\" approach. The same model can write code, translate, analyze images, etc."
   },
   {
     "c": "Architektury i modele",
     "t": "State Space Model (SSM)",
     "en": "State Space Model",
-    "d_pl": "Architektura alternatywna dla transformera, inspirowana klasycznymi modelami stanu z teorii sterowania. Mamba, S4 to znane warianty. Zaleta: liniowa złożoność obliczeniowa względem długości sekwencji (transformer jest kwadratowy). Subquadratic Inc. używa SSA architecture dla 12M token context z 50x mniejszym kosztem niż FlashAttention.",
+    "d_pl": "Architektura alternatywna dla transformera, inspirowana klasycznymi modelami stanu z teorii sterowania. Mamba, S4 to znane warianty. Zaleta: liniowa złożoność obliczeniowa względem długości sekwencji (transformer jest kwadratowy). Subquadratic Inc. używa SSA architecture dla 12M token kontekst z 50x mniejszym kosztem niż FlashAttention.",
     "d_en": "An architecture alternative to transformers, inspired by classical state space models from control theory. Mamba is the most popular SSM. Advantages: linear complexity in sequence length (vs quadratic for transformers), efficient for long contexts. Disadvantage: worse at certain reasoning tasks. SSMs are gaining popularity since 2024."
   },
   {
@@ -98,14 +98,14 @@ const G = [
     "c": "Architektury i modele",
     "t": "Mamba-Transformer (hybrid)",
     "en": "Hybrid Mamba-Transformer",
-    "d_pl": "Architektura hybrydowa łącząca SSM (Mamba) z transformerem — Mamba dla długich sekwencji (liniowa złożoność), transformer dla precyzyjnego attention. Nemotron 3 Ultra (NVIDIA, 550B MoE) używa tej architektury dla 1M token context z 5x szybszą inferencją.",
+    "d_pl": "Architektura hybrydowa łącząca SSM (Mamba) z transformerem — Mamba dla długich sekwencji (liniowa złożoność), transformer dla precyzyjnego attention. Nemotron 3 Ultra (NVIDIA, 550B MoE) używa tej architektury dla 1M token kontekst z 5x szybszą inferencją.",
     "d_en": "A hybrid architecture combining SSM (Mamba) with a transformer — Mamba for long sequences (efficiency), transformer for reasoning (quality). Examples: Jamba 2, Falcon-3 Mamba. The hybrid approach aims to combine the best of both worlds — long context and reasoning capability."
   },
   {
     "c": "Architektury i modele",
     "t": "Sparse Attention",
     "en": "Sparse Attention",
-    "d_pl": "Wariant attention gdzie każdy token patrzy tylko na podzbiór innych tokenów, nie na wszystkie. Redukuje złożoność z O(n²) do O(n·log n) lub O(n). MiniMax M3 używa własnego sparse attention dla 1M token context bez drastycznego wzrostu kosztów. Kluczowe dla long-context modeli.",
+    "d_pl": "Wariant attention gdzie każdy token patrzy tylko na podzbiór innych tokenów, nie na wszystkie. Redukuje złożoność z O(n²) do O(n·log n) lub O(n). MiniMax M3 używa własnego sparse attention dla 1M token kontekst bez drastycznego wzrostu kosztów. Kluczowe dla long-kontekst modeli.",
     "d_en": "A variant of attention where each token looks only at a subset of other tokens, not all. Reduces complexity from O(n²) to O(n log n) or O(n). Used in Longformer, BigBird, FlashAttention. Key for long-context models (1M+ tokens). Without sparse attention, long context would be prohibitively expensive."
   },
   {
@@ -154,7 +154,7 @@ const G = [
     "c": "Trening i optymalizacja",
     "t": "Multi-token prediction",
     "en": "Multi-token Prediction",
-    "d_pl": "Technika treningu gdzie model przewiduje wiele tokenów jednocześnie (nie jeden po drugim). Przyspiesza inference i poprawia planning. Nemotron 3 Ultra używa multi-token prediction dla 5x faster inference.",
+    "d_pl": "Technika treningu gdzie model przewiduje wiele tokenów jednocześnie (nie jeden po drugim). Przyspiesza wnioskowanie i poprawia planning. Nemotron 3 Ultra używa multi-token prediction dla 5x faster wnioskowanie.",
     "d_en": "A training technique where the model predicts multiple future tokens simultaneously, not just the next one. Improves training efficiency and enables faster inference. Used by Meta for Llama 4, and by other frontier labs. A key innovation for scaling model capability without proportional compute increase."
   },
   {
@@ -168,14 +168,14 @@ const G = [
     "c": "Trening i optymalizacja",
     "t": "Pre-training",
     "en": "Pre-training",
-    "d_pl": "Pierwszy etap treningu modelu — uczenie na ogromnym korpusie tekstu/obrazów bez nadzoru (self-supervised). Cel: model uczy się gramatyki, faktów, wzorców. Kosztowny — trening frontier modeli to dziesiątki milionów dolarów GPU. Po pre-trainingu model jest \"surowy\" — dopiero fine-tuning czyni go użytecznym asystentem.",
+    "d_pl": "Pierwszy etap treningu modelu — uczenie na ogromnym korpusie tekstu/obrazów bez nadzoru (self-supervised). Cel: model uczy się gramatyki, faktów, wzorców. Kosztowny — trening frontier modeli to dziesiątki milionów dolarów GPU. Po pre-trainingu model jest \"surowy\" — dopiero dostrajanie czyni go użytecznym asystentem.",
     "d_en": "The initial training phase where a model learns from massive data. Produces a \"base model\" with general capabilities. Pre-training is the most expensive phase — frontier models cost $100M+ in compute. After pre-training, models are aligned (RLHF, DPO) and fine-tuned for specific tasks."
   },
   {
     "c": "Trening i optymalizacja",
     "t": "Fine-tuning",
     "en": "Fine-tuning",
-    "d_pl": "Dostrojenie wstępnie wytrenowanego modelu na węższym, zadaniowym zbiorze danych. SFT (Supervised Fine-Tuning) to najprostsza forma — model uczy się z przykładów pytanie-odpowiedź. LoRA i quantization + LoRA (QLoRA) pozwalają fine-tunować duże modele na pojedynczym GPU. Fine-tuning zmienia styl, nie podstawową wiedzę.",
+    "d_pl": "Dostrojenie wstępnie wytrenowanego modelu na węższym, zadaniowym zbiorze danych. SFT (Supervised dostrajanie) to najprostsza forma — model uczy się z przykładów pytanie-odpowiedź. LoRA i quantization + LoRA (QLoRA) pozwalają fine-tunować duże modele na pojedynczym GPU. dostrajanie zmienia styl, nie podstawową wiedzę.",
     "d_en": "Adapting a pre-trained model to a specific task by further training on task-specific data. Cheaper than training from scratch. Methods: full fine-tuning (all parameters), LoRA (only adapter matrices), QLoRA (LoRA + quantization). The standard way to customize models for specific applications."
   },
   {
@@ -189,14 +189,14 @@ const G = [
     "c": "Trening i optymalizacja",
     "t": "LoRA",
     "en": "Low-Rank Adaptation",
-    "d_pl": "Technika fine-tuningu, która zamraża oryginalne wagi modelu i trenuje tylko małe macierze niskiego rzędu. Redukuje liczbę trenowanych parametrów z miliardów do milionów — fine-tuning 70B modelu na pojedynczym GPU staje się realny. Standard dla community fine-tunes (Stable Diffusion, Llama). QLoRA łączy LoRA z 4-bit quantization.",
+    "d_pl": "Technika fine-tuningu, która zamraża oryginalne wagi modelu i trenuje tylko małe macierze niskiego rzędu. Redukuje liczbę trenowanych parametrów z miliardów do milionów — dostrajanie 70B modelu na pojedynczym GPU staje się realny. Standard dla community fine-tunes (Stable Diffusion, Llama). QLoRA łączy LoRA z 4-bit quantization.",
     "d_en": "Low-Rank Adaptation — a fine-tuning method that adds small trainable \"adapter\" matrices to the model instead of updating all parameters. Reduces trainable parameters by 100-10000x, enabling fine-tuning on consumer GPUs. The standard for efficient model customization. Used in Stable Diffusion, LLMs, and most open-source models."
   },
   {
     "c": "Trening i optymalizacja",
     "t": "Quantization",
     "en": "Quantization",
-    "d_pl": "Redukcja precyzji wag modelu — z 32-bit float do 16-bit, 8-bit, 4-bit lub nawet 1-bit. Mniejszy rozmiar, mniejsze zużycie VRAM, szybszy inference, minimalna utrata jakości. 1-bit quantization GLM-5.2 (Unsloth GGUF) pozwala uruchomić model na consumer GPU. Standardowe narzędzia: bitsandbytes, llama.cpp, GGUF format.",
+    "d_pl": "Redukcja precyzji wag modelu — z 32-bit float do 16-bit, 8-bit, 4-bit lub nawet 1-bit. Mniejszy rozmiar, mniejsze zużycie VRAM, szybszy wnioskowanie, minimalna utrata jakości. 1-bit quantization GLM-5.2 (Unsloth GGUF) pozwala uruchomić model na consumer GPU. Standardowe narzędzia: bitsandbytes, llama.cpp, GGUF format.",
     "d_en": "Reducing the precision of model weights (e.g., from 16-bit to 4-bit). Reduces memory by 4x and speeds up inference, with minimal quality loss. Formats: INT8, FP8, NF4, GPTQ, AWQ. Quantization is essential for running large models on consumer hardware. In 2026, 1-bit quantization (86% smaller) is becoming popular."
   },
   {
@@ -245,7 +245,7 @@ const G = [
     "c": "Trening i optymalizacja",
     "t": "SFT",
     "en": "Supervised Fine-Tuning",
-    "d_pl": "Fine-tuning z nadzorem — trenowanie modelu na parach (input, oczekiwany output). Najprostsza forma fine-tuningu, zazwyczaj pierwszy krok po pre-trainingu. Szkolenie Claude, GPT, Gemini zawsze zaczyna się od SFT, po którym następuje RLHF/DPO.",
+    "d_pl": "Dostrajanie z nadzorem — trenowanie modelu na parach (input, oczekiwany output). Najprostsza forma fine-tuningu, zazwyczaj pierwszy krok po pre-trainingu. Szkolenie Claude, GPT, Gemini zawsze zaczyna się od SFT, po którym następuje RLHF/DPO.",
     "d_en": "Supervised Fine-Tuning — training a model on labeled examples (instruction-response pairs). The standard way to specialize a model for a task. SFT is simpler than RLHF but less effective for alignment. Most production models use both SFT and RLHF/DPO."
   },
   {
@@ -266,7 +266,7 @@ const G = [
     "c": "Kontekst i wydajność",
     "t": "Tokenizer",
     "en": "Tokenizer",
-    "d_pl": "Algorytm dzielący tekst na tokeny. BPE (Byte-Pair Encoding) jest standardem — uczy się najczęstszych ciągów znaków. GPT-4 używa tiktoken, Claude — własny BPE. Jakość tokenizatora wpływa na wydajność: słaby tokenizator dla polskiego = droższy inference i gorsza jakość.",
+    "d_pl": "Algorytm dzielący tekst na tokeny. BPE (Byte-Pair Encoding) jest standardem — uczy się najczęstszych ciągów znaków. GPT-4 używa tiktoken, Claude — własny BPE. Jakość tokenizatora wpływa na wydajność: słaby tokenizator dla polskiego = droższy wnioskowanie i gorsza jakość.",
     "d_en": "A component that splits text into tokens (the units a model processes). Quality affects model performance — a good tokenizer handles multiple languages, code, and rare words efficiently. Popular: BPE (Byte Pair Encoding), SentencePiece, Tiktoken (OpenAI). Tokenization is often overlooked but crucial for multilingual and code models."
   },
   {
@@ -294,14 +294,14 @@ const G = [
     "c": "Kontekst i wydajność",
     "t": "KV cache",
     "en": "KV Cache (Key-Value Cache)",
-    "d_pl": "Pamięć podręczna kluczy i wartości z poprzednich tokenów. Pozwala uniknąć przeliczania attention dla już wygenerowanych tokenów — dramatycznie przyspiesza inference. Zużywa jednak VRAM — dla 100k tokenów context może to być dziesiątki GB. vLLM, TensorRT-LLM zarządzają KV cache efektywnie przez paging.",
+    "d_pl": "Pamięć podręczna kluczy i wartości z poprzednich tokenów. Pozwala uniknąć przeliczania attention dla już wygenerowanych tokenów — dramatycznie przyspiesza wnioskowanie. Zużywa jednak VRAM — dla 100k tokenów kontekst może to być dziesiątki GB. vLLM, TensorRT-LLM zarządzają KV cache efektywnie przez paging.",
     "d_en": "Key-Value Cache — storing intermediate computations from previous tokens. Essential for efficient autoregressive generation. Without KV cache, generating token N would require reprocessing all N-1 tokens. KV cache size grows linearly with context length — a key constraint for long-context models."
   },
   {
     "c": "Kontekst i wydajność",
     "t": "Long context",
     "en": "Long Context",
-    "d_pl": "Zdolność modelu do pracy z bardzo długimi sekwencjami (100k-2M tokenów). Wyzwania: degradacja jakości w środku sekwencji (\"lost in the middle\"), wysoki koszt uwagi. Rozwiązania: RoPE scaling, sliding window attention, sparse attention, RingAttention. Long-horizon coding i analiza dużych dokumentów to główne use casy.",
+    "d_pl": "Zdolność modelu do pracy z bardzo długimi sekwencjami (100k-2M tokenów). Wyzwania: degradacja jakości w środku sekwencji (\"lost in the middle\"), wysoki koszt uwagi. Rozwiązania: RoPE scaling, sliding window attention, sparse attention, RingAttention. Long-horizon programowanie i analiza dużych dokumentów to główne use casy.",
     "d_en": "Models capable of processing very long inputs (100K-2M tokens). Enables analyzing entire codebases, books, legal documents in one query. Frontier models in 2026: GPT-5 (1.5M), Gemini 3 (2M), Claude (1M). Challenge: \"lost in the middle\" — models often ignore information in the middle of long contexts. Solved by RAG or better attention mechanisms."
   },
   {
@@ -329,7 +329,7 @@ const G = [
     "c": "Agentic i narzędzia",
     "t": "AI Agent",
     "en": "AI Agent",
-    "d_pl": "System oparty na LLM, który autonomicznie wykonuje zadania wieloetapowe: planuje, używa narzędzi, obserwuje wyniki, iteruje. W odróżnieniu od chatbota, agent ma dostęp do środowiska (API, browser, filesystem). Claude Code, Cursor, Devin to agenty coding. \"Agentic engineering\" to dominujący trend 2026 r.",
+    "d_pl": "System oparty na LLM, który autonomicznie wykonuje zadania wieloetapowe: planuje, używa narzędzi, obserwuje wyniki, iteruje. W odróżnieniu od chatbota, agent ma dostęp do środowiska (API, browser, filesystem). Claude Code, Cursor, Devin to agenty programowanie. \"inżynieria agentowa\" to dominujący trend 2026 r.",
     "d_en": "An AI system that autonomously pursues goals by breaking them into steps, using tools, and iterating. Unlike a chatbot, an agent plans, acts, observes, and adapts. Examples: Claude Computer Use, Devin, AutoGPT. The key AI trend of 2025-2026."
   },
   {
@@ -350,28 +350,28 @@ const G = [
     "c": "Agentic i narzędzia",
     "t": "RAG",
     "en": "Retrieval-Augmented Generation",
-    "d_pl": "Technika, w której model przed odpowiedzią wyszukuje relevantne dokumenty z bazy wektorowej i używa ich jako kontekstu. Rozwiązuje problem halucynacji i braku aktualnej wiedzy. Tańsze niż fine-tuning dla aktualizacji wiedzy. Wyzywania: chunking, retrieval quality, re-ranking. Standard dla enterprise LLM deployments.",
+    "d_pl": "Technika, w której model przed odpowiedzią wyszukuje relevantne dokumenty z bazy wektorowej i używa ich jako kontekstu. Rozwiązuje problem halucynacji i braku aktualnej wiedzy. Tańsze niż dostrajanie dla aktualizacji wiedzy. Wyzywania: chunking, retrieval quality, re-ranking. Standard dla enterprise LLM deployments.",
     "d_en": "Retrieval-Augmented Generation — a technique where the model retrieves relevant documents from a database before generating a response. Solves the \"knowledge cutoff\" problem and reduces hallucinations. The standard for enterprise AI applications. Alternatives: long context (put everything in the prompt), fine-tuning (bake knowledge into weights)."
   },
   {
     "c": "Agentic i narzędzia",
     "t": "Harness",
     "en": "Harness",
-    "d_pl": "Software otaczający LLM, zarządzające kontekstem, narzędziami, pętlami feedback. Ten sam model w różnych harnessach może dawać 6x różne wyniki (Lev Selector). Kluczowe komponenty: context management, memory as hint, tool validation, feedback loops. Claude Code to harness nad Claude; Cursor to harness nad wieloma modelami.",
+    "d_pl": "Software otaczający LLM, zarządzające kontekstem, narzędziami, pętlami feedback. Ten sam model w różnych harnessach może dawać 6x różne wyniki (Lev Selector). Kluczowe komponenty: kontekst management, memory as hint, tool validation, feedback loops. Claude Code to otoczka nad Claude; Cursor to otoczka nad wieloma modelami.",
     "d_en": "The infrastructure surrounding an LLM — context management, tool integration, memory, retrieval. The same model can give 6x different results depending on the harness. Key components: system prompt, tool definitions, context window management. Harness engineering is a key skill for production AI."
   },
   {
     "c": "Agentic i narzędzia",
     "t": "Scaffolding",
     "en": "Scaffolding",
-    "d_pl": "Struktura wspomagająca model w wykonywaniu zadań — planowanie, dekompozycja, weryfikacja. Ornith 1.0 \"generuje własne harnesses/scaffolds\" — model uczy się projektować workflow do rozwiązywania zadań. Wczesne scaffoldy: ReAct, Tree of Thoughts. Współczesne: pełne agentic frameworks (LangGraph, AutoGen).",
+    "d_pl": "Struktura wspomagająca model w wykonywaniu zadań — planowanie, dekompozycja, weryfikacja. Ornith 1.0 \"generuje własne harnesses/scaffolds\" — model uczy się projektować workflow do rozwiązywania zadań. Wczesne scaffoldy: ReAct, Tree of Thoughts. Współczesne: pełne agentowy frameworks (LangGraph, AutoGen).",
     "d_en": "Code and prompts that structure an LLM's behavior for a specific task. Like construction scaffolding — temporary structure that guides the model. Examples: system prompts, few-shot examples, tool definitions. Good scaffolding can make a weaker model outperform a stronger one with poor scaffolding."
   },
   {
     "c": "Agentic i narzędzia",
     "t": "Chain-of-thought",
     "en": "Chain-of-Thought (CoT)",
-    "d_pl": "Technika promptingowa, w której model jest proszony o rozważenie problemu krok po kroku (\"let's think step by step\"). Dramatycznie poprawia wyniki w zadaniach matematycznych i logicznych. Reasoning models (OpenAI o1, Claude Opus 4.8 thinking) robią CoT wewnętrznie, z ukrytym \"reasoning token stream\".",
+    "d_pl": "Technika promptingowa, w której model jest proszony o rozważenie problemu krok po kroku (\"let's think step by step\"). Dramatycznie poprawia wyniki w zadaniach matematycznych i logicznych. modele rozumujące (OpenAI o1, Claude Opus 4.8 thinking) robią CoT wewnętrznie, z ukrytym \"wnioskowanie token stream\".",
     "d_en": "A prompting technique where the model reasons step-by-step before answering. Dramatically improves performance on math, logic, and multi-step problems. Used by reasoning models (o1, o3, DeepSeek R1) which generate CoT internally. The key technique for improving LLM reasoning."
   },
   {
@@ -385,7 +385,7 @@ const G = [
     "c": "Agentic i narzędzia",
     "t": "Agentic coding",
     "en": "Agentic Coding",
-    "d_pl": "Paradygmat, w którym AI nie tylko pisze kod, ale autonomicznie: czyta repozytorium, modyfikuje pliki, uruchamia testy, iteruje. Claude Code, Cursor, Aider, Codex (OpenAI). Główne wyzwanie: długie horyzonty (setki kroków), utrzymanie kontekstu. Open-source: Ornith 1.0, GLM-5.2 — biją proprietary w agentic benchmarks.",
+    "d_pl": "Paradygmat, w którym AI nie tylko pisze kod, ale autonomicznie: czyta repozytorium, modyfikuje pliki, uruchamia testy, iteruje. Claude Code, Cursor, Aider, Codex (OpenAI). Główne wyzwanie: długie horyzonty (setki kroków), utrzymanie kontekstu. Open-source: Ornith 1.0, GLM-5.2 — biją proprietary agentowy benchmarks.",
     "d_en": "AI that writes, tests, and iterates on code autonomously. Tools: Cursor, Devin, Claude Code, GitHub Copilot. In 2026, frontier models complete 30-70% of SWE-bench tasks (real GitHub bugs). Agentic coding is transforming software development — developers become reviewers, not writers."
   },
   {
@@ -406,21 +406,21 @@ const G = [
     "c": "Agentic i narzędzia",
     "t": "Long-horizon tasks",
     "en": "Long-Horizon Tasks",
-    "d_pl": "Zadania wieloetapowe wymagające utrzymania celu przez setki/kilka tysięcy kroków. Np. \"napraw bug w tym repozytorium\" — wymaga zrozumienia, planowania, modyfikacji, testów. Główna metryka frontier modeli w 2026 r. SWE-bench, Agents Last Exam to benchmarki long-horizon.",
+    "d_pl": "Zadania wieloetapowe wymagające utrzymania celu przez setki/kilka tysięcy kroków. Np. \"napraw bug w tym repozytorium\" — wymaga zrozumienia, planowania, modyfikacji, testów. Główna metryka frontier modeli w 2026 r. SWE-bench, Agents Last Exam to benchmarki long-horizon (wieloetapowe).",
     "d_en": "Tasks that require many steps (hours to days) to complete. The frontier of agent capability. Examples: building a feature end-to-end, conducting research. Frontier agents in 2026 can work on 30-60 minute tasks reliably; multi-hour tasks remain challenging. Long-horizon is the key benchmark for AGI-style capability."
   },
   {
     "c": "Modalności",
     "t": "Multimodal",
     "en": "Multimodal",
-    "d_pl": "Patrz: Multimodal model w sekcji Architektury. Multimodalność to zdolność modelu do pracy z więcej niż jedną modalnością danych (tekst, obraz, audio, wideo, 3D). Gemini 3.5 Pro, GPT-5.6 Sol, Claude Opus 4.8 są multimodalne. Trend 2026: any-to-any generation (Gemini Omni).",
+    "d_pl": "Patrz: wielomodalny model w sekcji Architektury. Multimodalność to zdolność modelu do pracy z więcej niż jedną modalnością danych (tekst, obraz, audio, wideo, 3D). Gemini 3.5 Pro, GPT-5.6 Sol, Claude Opus 4.8 są multimodalne. Trend 2026: any-to-any generation (Gemini Omni).",
     "d_en": "Handling multiple modalities — text, image, audio, video. Frontier models in 2026 are natively multimodal (Gemini 3, GPT-5). Multimodality enables richer interaction — you can show, not just tell. The standard for frontier AI since 2025."
   },
   {
     "c": "Modalności",
     "t": "TTS",
     "en": "Text-to-Speech (TTS)",
-    "d_pl": "Synteza mowy — zamiana tekstu na mowę. Eleven v3, GPT Voice, Gemini 3.1 Flash TTS to frontier modele 2026. Audio Tags pozwalają kontrolować emocje, tempo, akcent w czasie rzeczywistym. Voice cloning (Dot TTS) — klonuje głos z kilku sekund sample. Standard: 70+ języków, real-time inference.",
+    "d_pl": "Synteza mowy — zamiana tekstu na mowę. Eleven v3, GPT Voice, Gemini 3.1 Flash TTS to frontier modele 2026. Audio Tags pozwalają kontrolować emocje, tempo, akcent w czasie rzeczywistym. Voice cloning (Dot TTS) — klonuje głos z kilku sekund sample. Standard: 70+ języków, real-time wnioskowanie.",
     "d_en": "Text-to-Speech — converting text to spoken audio. Frontier: ElevenLabs, OpenAI Voice. In 2026, indistinguishable from human speech. Enables voice interfaces, audiobooks, accessibility. Voice cloning (from a few seconds of sample) is now standard."
   },
   {
@@ -490,14 +490,14 @@ const G = [
     "c": "Infrastruktura",
     "t": "Inference",
     "en": "Inference",
-    "d_pl": "Faza używania modelu po treningu — generowanie odpowiedzi na zapytanie. Koszt inference dominuje w operacyjnych kosztach frontier modeli (10-100x droższy niż trening na lifespan modelu). Optymalizacje: quantization, KV cache, batching (vLLM), speculative decoding. Edge inference (telefon, laptop) wymaga 4-bit quantization + pruning.",
+    "d_pl": "Faza używania modelu po treningu — generowanie odpowiedzi na zapytanie. Koszt wnioskowanie dominuje w operacyjnych kosztach frontier modeli (10-100x droższy niż trening na lifespan modelu). Optymalizacje: quantization, KV cache, batching (vLLM), speculative decoding. Edge wnioskowanie (telefon, laptop) wymaga 4-bit quantization + pruning.",
     "d_en": "The process of running a trained model to generate predictions. Distinct from training. Inference cost is the main expense for AI companies — frontier models cost millions per month in compute. Optimization techniques: quantization, KV cache, batching, speculative decoding. Inference economics drive most architectural decisions."
   },
   {
     "c": "Infrastruktura",
     "t": "Training vs inference",
     "en": "Training vs Inference Compute",
-    "d_pl": "Trening to jednorazowy koszt (miliony dolarów GPU-hours dla frontier modeli). Inference to koszt ciągły — każde zapytanie zużywa FLOPy. Trend 2026: inference compute rośnie szybciej niż training compute — agenty wykonują setki kroków per zapytanie. Reflection AI płaci $150M/miesiąc za inference infra do 2029 r.",
+    "d_pl": "Trening to jednorazowy koszt (miliony dolarów GPU-hours dla frontier modeli). wnioskowanie to koszt ciągły — każde zapytanie zużywa FLOPy. Trend 2026: wnioskowanie compute rośnie szybciej niż training compute — agenty wykonują setki kroków per zapytanie. Reflection AI płaci $150M/miesiąc za wnioskowanie infra do 2029 r.",
     "d_en": "The two phases of ML: training (learning from data) and inference (using the trained model). Training is expensive (frontier models: $100M+), inference is ongoing (millions per month for popular models). The economics of training vs inference drive most AI business decisions."
   },
   {
@@ -525,49 +525,49 @@ const G = [
     "c": "Infrastruktura",
     "t": "Latency",
     "en": "Latency",
-    "d_pl": "Czas odpowiedzi modelu na zapytanie. Mierzona jako Time-to-First-Token (TTFT) i Time-to-Last-Token (TLT). Dla chatbotów akceptowalne: <1s TTFT, stream tokenów co 50ms. Dla real-time avatars (One Streamer): <200ms end-to-end. Edge inference redukuje latencję o 50-100ms vs chmura.",
+    "d_pl": "Czas odpowiedzi modelu na zapytanie. Mierzona jako Time-to-First-Token (TTFT) i Time-to-Last-Token (TLT). Dla chatbotów akceptowalne: <1s TTFT, stream tokenów co 50ms. Dla real-time avatars (One Streamer): <200ms end-to-end. Edge wnioskowanie redukuje latencję o 50-100ms vs chmura.",
     "d_en": "The time from request to first response. Critical for real-time applications (voice, video, agents). Frontier model latency: 0.5-2 seconds for first token. Edge models can be <100ms. Latency optimization (KV cache, distillation, quantization) is a key engineering focus."
   },
   {
     "c": "Infrastruktura",
     "t": "Throughput",
     "en": "Throughput",
-    "d_pl": "Liczba tokenów generowanych przez model na sekundę. Wzrost throughput = niższy koszt per token. vLLM z PagedAttention osiąga 5-10x wyższy throughput niż naive inference. Batch size, KV cache efficiency, model parallelism to główne dźwignie. Frontier API: 100-500 tokens/s dla pojedynczego zapytania.",
+    "d_pl": "Liczba tokenów generowanych przez model na sekundę. Wzrost throughput = niższy koszt per token. vLLM z PagedAttention osiąga 5-10x wyższy throughput niż naive wnioskowanie. Batch size, KV cache efficiency, model parallelism to główne dźwignie. frontier API: 100-500 tokens/s dla pojedynczego zapytania.",
     "d_en": "The number of requests a model can handle per second. Distinct from latency. High throughput = low cost per request. Optimized via batching, KV cache, speculative decoding. Throughput is the key metric for inference providers serving many users."
   },
   {
     "c": "Infrastruktura",
     "t": "Open-source vs proprietary",
     "en": "Open-Source vs Proprietary Models",
-    "d_pl": "Proprietary (GPT, Claude, Gemini): najlepsza jakość, łatwe API, brak kontroli nad danymi. Open-source (Llama, GLM, DeepSeek, Qwen, Kimi): pełna kontrola, tańszy inference, fine-tuning. Trend 2026: open-source nadrabia dystans — GLM-5.2, Ornith 1.0 biją proprietary w coding. W większości przypadków przedsiębiorstwa używają obu (proprietary do trudnych zadań, OS do rutyny).",
+    "d_pl": "Proprietary (GPT, Claude, Gemini): najlepsza jakość, łatwe API, brak kontroli nad danymi. Open-source (Llama, GLM, DeepSeek, Qwen, Kimi): pełna kontrola, tańszy wnioskowanie, dostrajanie. Trend 2026: open-source nadrabia dystans — GLM-5.2, Ornith 1.0 biją proprietary w programowanie. W większości przypadków przedsiębiorstwa używają obu (proprietary do trudnych zadań, OS do rutyny).",
     "d_en": "The two models of AI development. Open-source (Llama, Qwen, GLM) publishes weights, allowing local deployment and modification. Proprietary (GPT, Claude, Gemini) is API-only. Open-source is catching up — GLM-5.2 in 2026 matches GPT-5.5 in coding at 1/6 the cost."
   },
   {
     "c": "Infrastruktura",
     "t": "Open-weights",
     "en": "Open-Weights",
-    "d_pl": "Model, którego wagi są publicznie dostępne, ale kod treningowy i dane nie. Llama, GLM, Qwen są \"open-weights\", nie pełnym open-source. Tańsze w inference, ale brak reproducibility. Pełny open-source (I1, LeRobot) udostępnia też training code + data — służy nauce, nie produkcji.",
+    "d_pl": "Model, którego wagi są publicznie dostępne, ale kod treningowy i dane nie. Llama, GLM, Qwen są \"open-weights\", nie pełnym open-source. Tańsze w wnioskowanie, ale brak reproducibility. Pełny open-source (I1, LeRobot) udostępnia też training code + data — służy nauce, nie produkcji.",
     "d_en": "Models whose trained weights are published (but not necessarily training data or code). Llama, Qwen, GLM are open-weights. Distinct from truly open-source (which includes data and code). Open-weights enable local deployment, fine-tuning, and audit, but not full reproduction."
   },
   {
     "c": "Infrastruktura",
     "t": "vLLM",
     "en": "vLLM",
-    "d_pl": "Open-source inference engine dla LLM-ów (UC Berkeley, 2023). Kluczowa innowacja: PagedAttention — zarządza KV cache jak OS pamięcią wirtualną. 5-10x wyższy throughput niż HuggingFace transformers. Standard dla serwowania open-source LLM-ów. Konkurenci: TensorRT-LLM (NVIDIA), SGLang, llama.cpp (edge).",
+    "d_pl": "Open-source wnioskowanie engine dla LLM-ów (UC Berkeley, 2023). Kluczowa innowacja: PagedAttention — zarządza KV cache jak OS pamięcią wirtualną. 5-10x wyższy throughput niż HuggingFace transformers. Standard dla serwowania open-source LLM-ów. Konkurenci: TensorRT-LLM (NVIDIA), SGLang, llama.cpp (edge).",
     "d_en": "An open-source inference engine for LLMs. Key innovation: PagedAttention for efficient KV cache management. 3-10x higher throughput than naive inference. The standard for self-hosted LLM serving. Developed by UC Berkeley. Used by most companies serving open-source models."
   },
   {
     "c": "Infrastruktura",
     "t": "Speculative decoding",
     "en": "Speculative Decoding",
-    "d_pl": "Technika przyspieszająca inference: mały model (draft) generuje K tokenów, duży model (target) weryfikuje je równolegle. Jeśli target się zgadza — oszczędność 2-3x. Kluczowe: draft musi być szybki i \"zgodny\" z target. Standard w serwerach frontier modeli 2026 r.",
+    "d_pl": "Technika przyspieszająca wnioskowanie: mały model (draft) generuje K tokenów, duży model (target) weryfikuje je równolegle. Jeśli target się zgadza — oszczędność 2-3x. Kluczowe: draft musi być szybki i \"zgodny\" z target. Standard w serwerach frontier modeli 2026 r.",
     "d_en": "An inference optimization where a small \"draft\" model quickly generates candidate tokens, and the large model verifies them in parallel. If the draft is correct, tokens are accepted at the speed of the small model. 2-3x speedup for LLMs. Used by Claude, GPT, Gemini. Key for reducing inference cost without quality loss."
   },
   {
     "c": "Bezpieczeństwo i regulacje",
     "t": "Alignment",
     "en": "Alignment",
-    "d_pl": "Proces uczynienia modelu zgodnego z ludzkimi wartościami i intencjami. RLHF, constitutional AI, red teaming to metody alignment. Anthropic (Claude) kładzie największy nacisk na alignment. Wyzywanie 2026: alignment agentów long-horizon — model może wykonać setki kroków przed wykryciem niepożądanego zachowania.",
+    "d_pl": "Proces uczynienia modelu zgodnego z ludzkimi wartościami i intencjami. RLHF, constitutional AI, red teaming to metody alignment. Anthropic (Claude) kładzie największy nacisk na alignment. Wyzywanie 2026: alignment agentów long-horizon (wieloetapowe) — model może wykonać setki kroków przed wykryciem niepożądanego zachowania.",
     "d_en": "The process of ensuring AI models behave in accordance with human values and intentions. Techniques: RLHF, Constitutional AI, red-teaming. Alignment is seen as crucial for AI safety — a misaligned superintelligence could be catastrophic. The alignment problem becomes harder as models become more capable. Major focus of Anthropic, OpenAI, and safety researchers."
   },
   {
@@ -686,35 +686,35 @@ const G = [
     "c": "Ewaluacja",
     "t": "Pass@k",
     "en": "Pass@k",
-    "d_pl": "Metryka dla coding benchmarks — prawdopodobieństwo, że przynajmniej jedna z k próbek wygenerowanych przez model poprawnie rozwiązuje zadanie. Pass@1 = jedna próba (rzeczywisty use case), Pass@10 = 10 prób (gdy możesz wygenerować wiele i wybrać). Często raportowane HumanEval pass@1 i pass@10.",
+    "d_pl": "Metryka dla programowanie benchmarks — prawdopodobieństwo, że przynajmniej jedna z k próbek wygenerowanych przez model poprawnie rozwiązuje zadanie. Pass@1 = jedna próba (rzeczywisty use case), Pass@10 = 10 prób (gdy możesz wygenerować wiele i wybrać). Często raportowane HumanEval pass@1 i pass@10.",
     "d_en": "A coding benchmark metric — the probability that at least one of k generated solutions is correct. Pass@1 (one attempt) is the standard. Pass@10 is more lenient. Pass@k measures both capability and consistency. Frontier models in 2026 achieve 80%+ Pass@1 on HumanEval."
   },
   {
     "c": "Ewaluacja",
     "t": "MMLU",
     "en": "Massive Multitask Language Understanding (MMLU)",
-    "d_pl": "Benchmark z 57 przedmiotami akademickimi (historia, prawo, medycyna, matematyka, etc.). Standard od 2020 r. Frontier modele >90% (claude opus 4.8 ~92%). Problem: contamination — wiele pytań wyciekło do treningu modeli. Nowsze wersje: MMLU-Pro (trudniejsze), GPQA (graduate-level).",
+    "d_pl": "Benchmark z 57 przedmiotami akademickimi (historia, prawo, medycyna, matematyka, etc.). Standard od 2020 r. frontier modele >90% (claude opus 4.8 ~92%). Problem: contamination — wiele pytań wyciekło do treningu modeli. Nowsze wersje: MMLU-Pro (trudniejsze), GPQA (graduate-level).",
     "d_en": "Massive Multitask Language Understanding — 57 academic subjects (history, law, medicine, math, etc.). The standard LLM knowledge benchmark since 2020. Frontier models score >90%. MMLU-Pro (harder, 10 options) replaces it in newer evaluations. Despite contamination concerns, MMLU remains a widely reported metric."
   },
   {
     "c": "Ewaluacja",
     "t": "SWE-bench",
     "en": "SWE-bench",
-    "d_pl": "Benchmark real-world software engineering — model dostaje prawdziwy bug z GitHub repozytorium i musi naprawić go poprzez modyfikację kodu + testy. Najlepszy miernik agentic coding capability. Claude Opus 4.8, GLM-5.2 na szczycie. SWE-bench Verified — ręcznie zweryfikowany subset, bardziej wiarygodny.",
+    "d_pl": "Benchmark real-world software engineering — model dostaje prawdziwy bug z GitHub repozytorium i musi naprawić go poprzez modyfikację kodu + testy. Najlepszy miernik programowanie agentowe możliwości. Claude Opus 4.8, GLM-5.2 na szczycie. SWE-bench Verified — ręcznie zweryfikowany subset, bardziej wiarygodny.",
     "d_en": "A benchmark for coding agents — real bug reports from GitHub repos (Django, scikit-learn, etc.). The model must produce a patch that fixes the bug and passes tests. The best measure of agentic coding capability. Frontier models in 2026: GPT-5 71%, Claude 68% on SWE-bench Verified. SWE-bench Pro adds harder tasks."
   },
   {
     "c": "Ewaluacja",
     "t": "Agents Last Exam",
     "en": "Agents Last Exam",
-    "d_pl": "Benchmark dla AI agents — 55 sub-industries, multi-step real professional work. Premiera czerwiec 2026. Testuje nie tylko jakość odpowiedzi, ale zdolność agenta do planowania, używania narzędzi, iteracji. Bardziej realistic niż SWE-bench (który jest tylko coding).",
+    "d_pl": "Benchmark dla AI agents — 55 sub-industries, multi-step real professional work. Premiera czerwiec 2026. Testuje nie tylko jakość odpowiedzi, ale zdolność agenta do planowania, używania narzędzi, iteracji. Bardziej realistic niż SWE-bench (który jest tylko programowanie).",
     "d_en": "55 sub-industries, multi-step real professional work. Premiered June 2026. The most realistic test of agents. Frontier agents score <20%."
   },
   {
     "c": "Ewaluacja",
     "t": "Reasoning eval",
     "en": "Reasoning Evaluation",
-    "d_pl": "Benchmarki testujące rozumowanie, nie wiedzę: GSM8K (matematyka szkolna), MATH (matematyka competition), ARC (abstrakcyjne rozumowanie). Reasoning models (o1, Claude thinking) znacząco tu wyprzedzają standardowe LLM-y. W 2026 r. nowe benchmarki: ARC-AGI v2 (100x trudniejszy niż oryginał).",
+    "d_pl": "Benchmarki testujące rozumowanie, nie wiedzę: GSM8K (matematyka szkolna), MATH (matematyka competition), ARC (abstrakcyjne rozumowanie). modele rozumujące (o1, Claude thinking) znacząco tu wyprzedzają standardowe LLM-y. W 2026 r. nowe benchmarki: ARC-AGI v2 (100x trudniejszy niż oryginał).",
     "d_en": "Benchmarks measuring reasoning capability: GPQA (science), MATH (math), ARC-AGI (abstraction), Humanity's Last Exam (expert knowledge). Reasoning evals are where frontier models show the biggest gaps. Reasoning models (o1, o3, R1) are specifically optimized for these benchmarks."
   }
 ];

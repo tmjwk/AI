@@ -25,7 +25,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "Wypuścił GLM 5.2 — open-source MoE 745B, bije frontier modele w coding. 1/6 kosztu GPT-5.5. Zcode (analog Claude Code) wciąż ustępuje Anthropic.",
+        "desc_pl": "Wypuścił GLM 5.2 — open-source MoE 745B, bije frontier modele w programowanie. 1/6 kosztu GPT-5.5. Zcode (analog Claude Code) wciąż ustępuje Anthropic.",
         "desc_en": "Released GLM 5.2 — open-source MoE 745B, beats frontier models in coding. 1/6 the cost of GPT-5.5. Zcode (Claude Code analog) still lags Anthropic."
       },
       {
@@ -97,7 +97,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "Miami startup — 12M token context, 50x szybszy niż FlashAttention, 20x tańszy. SSA architecture. Hosted API.",
+        "desc_pl": "Miami startup — 12M token kontekst, 50x szybszy niż FlashAttention, 20x tańszy. SSA architecture. Hosted API.",
         "desc_en": "Miami startup — 12M token context, 50x faster than FlashAttention, 20x cheaper. SSA architecture. Hosted API."
       },
       {
@@ -159,12 +159,12 @@ const SECTIONS = [
       },
       {
         "dot_color": "yellow",
-        "html_pl": "<strong>GPT 5.6 Sol</strong> — ograniczony dostęp, trusted partners only, gov approval customer-by-customer.",
+        "html_pl": "<strong>GPT 5.6 Sol</strong> — ograniczony dostęp, zaufani partnerzy only, gov approval customer-by-customer.",
         "html_en": "<strong>GPT 5.6 Sol</strong> — restricted access, trusted partners only, gov approval customer-by-customer."
       },
       {
         "dot_color": "yellow",
-        "html_pl": "<strong>Claude Mythos 5</strong> — ban lifted 27.06, tylko ~100 trusted US partners.",
+        "html_pl": "<strong>Claude Mythos 5</strong> — ban lifted 27.06, tylko ~100 zaufani partnerzy US.",
         "html_en": "<strong>Claude Mythos 5</strong> — ban lifted 06.27, only ~100 trusted US partners."
       },
       {
@@ -202,7 +202,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "Pivot z chipmakera na inference-focused cloud. 6 miesięcy po tym jak NVIDIA licencjowała technologię i przejęła CEO.",
+        "desc_pl": "Pivot z chipmakera na wnioskowanie-focused cloud. 6 miesięcy po tym jak NVIDIA licencjowała technologię i przejęła CEO.",
         "desc_en": "Pivot from chipmaker to inference-focused cloud. 6 months after NVIDIA licensed the technology and poached the CEO."
       },
       {
@@ -211,7 +211,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "Infrastructure dla AI inference. Działa na Google Cloud z NVIDIA GPUs. ~60 pracowników, założona 2019, San Francisco.",
+        "desc_pl": "Infrastructure dla AI wnioskowanie. Działa na Google Cloud z NVIDIA GPUs. ~60 pracowników, założona 2019, San Francisco.",
         "desc_en": "Infrastructure for AI inference. Runs on Google Cloud with NVIDIA GPUs. ~60 employees, founded 2019, San Francisco."
       },
       {
@@ -238,7 +238,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": true,
-        "desc_pl": "Cena tokenów spadła ~1000x w kilka lat. Od GPT-3 (175B, 2020) do multi-trillion param models (2026). AI może podnieść globalny GDP z dziesiątek bilionów do setek bilionów lub kwadrylionów dolarów.<br><br><strong>GLM 5.2</strong> kosztuje 1/6 GPT-5.5 przy podobnej jakości w coding.",
+        "desc_pl": "Cena tokenów spadła ~1000x w kilka lat. Od GPT-3 (175B, 2020) do multi-trillion param models (2026). AI może podnieść globalny GDP z dziesiątek bilionów do setek bilionów lub kwadrylionów dolarów.<br><br><strong>GLM 5.2</strong> kosztuje 1/6 GPT-5.5 przy podobnej jakości w programowanie.",
         "desc_en": "Token prices dropped ~1000x in a few years. From GPT-3 (175B, 2020) to multi-trillion param models (2026). AI could raise global GDP from tens of trillions to hundreds of trillions or quadrillions of dollars. <strong>GLM 5.2</strong> costs 1/6 of GPT-5.5 at similar coding quality."
       }
     ]
@@ -265,7 +265,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "US gov zakazał dostępu 12.06.2026 (export control). Mythos ban zdjęty 27.06 (trusted partners). Fable nadal offline, brak timeline.",
+        "desc_pl": "US gov zakazał dostępu 12.06.2026 (export control). Mythos ban zdjęty 27.06 (zaufani partnerzy). Fable nadal offline, brak timeline.",
         "desc_en": "US gov banned access 06.12.2026 (export control). Mythos ban lifted 06.27 (trusted partners). Fable still offline, no timeline."
       },
       {
@@ -274,7 +274,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "Gov poprosił o opóźnienie. Najpierw trusted partners, customer-by-customer approval. Nie dla broad deployment.",
+        "desc_pl": "Gov poprosił o opóźnienie. Najpierw zaufani partnerzy, customer-by-customer approval. Nie dla broad wdrożenie.",
         "desc_en": "Gov requested delay. First trusted partners, customer-by-customer approval. Not for broad deployment."
       },
       {
@@ -301,7 +301,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "Orchestrator (conductor) rozdaje zadania sub-agents, ci wysyłają wyniki. Jak Hadoop/Spark dla agentów. Znany też jako: LLM MapReduce, Agentic MapReduce, Fan-out/fan-in, Agentic wide search.",
+        "desc_pl": "Orchestrator (conductor) rozdaje zadania sub-agents, ci wysyłają wyniki. Jak Hadoop/Spark dla agentów. Znany też jako: LLM MapReduce, agentowy MapReduce, Fan-out/fan-in, agentowy wide search.",
         "desc_en": "Orchestrator (conductor) distributes tasks to sub-agents, who send results back. Like Hadoop/Spark for agents. Also known as: LLM MapReduce, Agentic MapReduce, Fan-out/fan-in, Agentic wide search."
       },
       {
@@ -310,7 +310,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "1. Core runtime (capability-agnostic, MCP, lazy loading)<br>2. Shared plugins (skills, MCP servers, hooks)<br>3. Per-client config (thin, bez forków)",
+        "desc_pl": "1. Core runtime (możliwości-agnostic, MCP, lazy loading)<br>2. Shared plugins (skills, MCP servers, hooks)<br>3. Per-client config (thin, bez forków)",
         "desc_en": "1. Core runtime (capability-agnostic, MCP, lazy loading)<br>2. Shared plugins (skills, MCP servers, hooks)<br>3. Per-client config (thin, no forks)"
       },
       {
@@ -346,7 +346,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "Ten sam model może dać <strong>6x lepsze wyniki</strong> zależnie od harness. Kluczowe: context management, memory as hint, tool validation, feedback loops.",
+        "desc_pl": "Ten sam model może dać <strong>6x lepsze wyniki</strong> zależnie od otoczka. Kluczowe: kontekst management, memory as hint, tool validation, feedback loops.",
         "desc_en": "The same model can give <strong>6x better results</strong> depending on the harness. Key: context management, memory as hint, tool validation, feedback loops."
       },
       {
