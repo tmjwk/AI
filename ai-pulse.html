@@ -117,7 +117,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 /* Language toggle: PL/EN dual-language spans */
 
-@media(max-width:540px){
+@media(max-width:540px){.episode-old{max-height:50px!important}
 .h h1{font-size:16px}
 .hr{flex-direction:column;align-items:flex-start;gap:8px}
 .nav-btn{font-size:11px;padding:4px 8px}
@@ -132,7 +132,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 }
 @media(max-width:380px){.nav-btn{font-size:10px;padding:3px 6px}}
 
-.episode-old{max-height:100px;overflow:hidden;position:relative;border:1px solid var(--bdl);border-radius:8px;margin-bottom:12px;transition:max-height .3s}
+.episode-old{max-height:60px;overflow:hidden;position:relative;border:1px solid var(--bdl);border-radius:8px;margin-bottom:12px;transition:max-height .3s}
 .episode-old.open{max-height:none}
 .episode-old::after{content:"";position:absolute;bottom:0;left:0;right:0;height:50px;background:linear-gradient(transparent,var(--bg));pointer-events:none}
 .episode-old.open::after{display:none}
