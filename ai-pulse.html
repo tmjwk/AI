@@ -153,10 +153,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </div>
 
 
-<!-- V4: episodes rendered by JS from data/episodes.js -->
+<!-- V4 Etap 2: episodes lazy loading — index.js (nagłówki) + recent.js (pełne 5 najnowszych) -->
 <div id="episodes"></div>
 
-<script src="data/episodes.js"></script>
+<script src="data/episodes/index.js"></script>
+<script src="data/episodes/recent.js"></script>
 <script>
 const t=document.getElementById('themeTgl');
 let theme=localStorage.getItem('theme')||'dark';
@@ -169,8 +170,15 @@ t.textContent=theme==='dark'?'🌙':'☀️';
 localStorage.setItem('theme',theme);
 });
 
-// V4: Episode renderer — generuje HTML z danych EPISODES
+// V4 Etap 2: Episode renderer z lazy loading
+// - index.js ma nagłówki WSZYSTKICH (do renderowania zwiniętych)
+// - recent.js ma pełne dane 5 najnowszych
+// - archive/batch-*.js ładowane na żądanie (gdy user klika Rozwiń)
+
 function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+// Cache załadowanych batchy (żeby nie fetchować 2x)
+const _loadedBatches = {};
 
 function renderHost(h){
   const guestTag = h.is_guest ? `<span class="h-absent-tag" style="border-color:var(--ba);color:var(--ba)"><span class="pl">gość</span><span class="en">guest</span></span>` : '';
@@ -217,29 +225,10 @@ function renderTopic(tp){
 </div>`;
 }
 
-function renderEpisode(ep){
-  const epClass = ep.collapsed ? 'episode ep-old' : 'episode';
-  const toggleBtn = ep.collapsed ? `<button class="ep-toggle-btn">▼ Rozwiń</button>` : '';
+function renderEpisodeBody(ep){
   const hostsHtml = ep.hosts.map(renderHost).join('');
   const topicsHtml = ep.topics.map(renderTopic).join('');
-
-  const header = `<div class="${epClass}">
-<div class="e-top">
-<span class="e-num">${esc(ep.num)}</span>
-<span class="e-channel">${esc(ep.channel)}</span>
-</div>
-<div class="e-title">${esc(ep.title)}</div>
-<div class="e-meta">
-<span class="m-item">📅 <span class="mv">${esc(ep.date)}</span></span>
-<span class="m-item">⏱ <span class="mv">${esc(ep.duration)}</span></span>
-<span class="m-item">🎙 <span class="mv"><span class="pl">${esc(ep.hosts_count_pl)}</span><span class="en">${esc(ep.hosts_count_en)}</span></span></span>
-<span class="m-item">📂 <span class="mv"><span class="pl">${esc(ep.topics_count_pl)}</span><span class="en">${esc(ep.topics_count_en)}</span></span></span>
-</div>
-<a class="e-yt" href="${esc(ep.yt)}">▶ <span class="pl">Oglądaj na YouTube</span><span class="en">Watch on YouTube</span> ↗</a>
-${toggleBtn}
-</div>`;
-
-  const body = `<div class="ep-collapse">
+  return `<div class="ep-collapse">
 <div class="sec">
 <div class="sec-t"><span class="icon">🎙</span><span class="pl">Gospodarze i goście</span><span class="en">Hosts and guests</span><span class="cnt"><span class="pl">${esc(ep.hosts_count_pl)}</span><span class="en">${esc(ep.hosts_count_en)}</span></span></div>
 <div class="hosts">${hostsHtml}</div>
@@ -249,25 +238,147 @@ ${toggleBtn}
 <div class="topics">${topicsHtml}</div>
 </div>
 </div>`;
+}
 
-  return header + body;
+function renderEpisodeHeader(ep){
+  const epClass = ep.collapsed ? 'episode ep-old' : 'episode';
+  const toggleBtn = ep.collapsed ? `<button class="ep-toggle-btn" data-num="${esc(ep.num)}" data-batch="${esc(ep.batch||'recent')}">▼ Rozwiń</button>` : '';
+  return `<div class="${epClass}" data-num="${esc(ep.num)}" data-batch="${esc(ep.batch||'recent')}">
+<div class="e-top">
+<span class="e-num">${esc(ep.num)}</span>
+<span class="e-channel">${esc(ep.channel)}</span>
+</div>
+<div class="e-title">${esc(ep.title)}</div>
+<div class="e-meta">
+<span class="m-item">📅 <span class="mv">${esc(ep.date)}</span></span>
+<span class="m-item">⏱ <span class="mv">${esc(ep.duration)}</span></span>
+<span class="m-item">🎙 <span class="mv"><span class="pl">${esc(ep.hosts_count_pl||'')}</span><span class="en">${esc(ep.hosts_count_en||'')}</span></span></span>
+<span class="m-item">📂 <span class="mv"><span class="pl">${esc(ep.topics_count_pl||'')}</span><span class="en">${esc(ep.topics_count_en||'')}</span></span></span>
+</div>
+<a class="e-yt" href="${esc(ep.yt)}">▶ <span class="pl">Oglądaj na YouTube</span><span class="en">Watch on YouTube</span> ↗</a>
+${toggleBtn}
+</div>`;
+}
+
+function renderEpisodeFull(ep){
+  // Pełny epizod (nagłówek + body) — dla najnowszego (collapsed:false)
+  return renderEpisodeHeader(ep) + renderEpisodeBody(ep);
 }
 
 function renderAll(){
   const container = document.getElementById('episodes');
-  if (!container || typeof EPISODES === 'undefined') {
-    console.error('Brak #episodes lub EPISODES');
-    return;
-  }
-  container.innerHTML = EPISODES.map(renderEpisode).join('');
+  if (!container) { console.error('Brak #episodes'); return; }
+  if (typeof EPISODES_INDEX === 'undefined') { console.error('Brak EPISODES_INDEX'); return; }
 
-  // Attach toggle handlers for collapsed episodes
+  // Mapa: num → pełny epizod (z recent.js, jeśli załadowane)
+  const recentMap = {};
+  if (typeof RECENT_EPISODES !== 'undefined') {
+    RECENT_EPISODES.forEach(ep => { recentMap[ep.num] = ep; });
+  }
+
+  // Renderuj wszystkie epizody z index.js
+  let html = '';
+  for (const headerEp of EPISODES_INDEX.episodes) {
+    const fullEp = recentMap[headerEp.num];
+    if (fullEp) {
+      // Mamy pełne dane (z recent.js) — renderuj wszystko
+      html += renderEpisodeFull(fullEp);
+    } else {
+      // Tylko nagłówek (z index.js) — body będzie lazy loaded
+      html += renderEpisodeHeader(headerEp);
+    }
+  }
+  container.innerHTML = html;
+
+  // Attach toggle handlers
+  attachToggleHandlers();
+}
+
+function attachToggleHandlers(){
   document.querySelectorAll('.ep-toggle-btn').forEach(btn=>{
-    btn.addEventListener('click',function(){
-      var ep=this.closest('.ep-old');
-      if(ep){ep.classList.toggle('open');this.textContent=ep.classList.contains('open')?'▲ Zwiń':'▼ Rozwiń'}
+    btn.addEventListener('click', async function(){
+      var epDiv = this.closest('.ep-old');
+      if(!epDiv) return;
+
+      var isOpen = epDiv.classList.contains('open');
+      if(isOpen){
+        // Zwiń
+        epDiv.classList.remove('open');
+        this.textContent = '▼ Rozwiń';
+        return;
+      }
+
+      // Rozwiń — sprawdź czy body już istnieje
+      var body = epDiv.nextElementSibling;
+      if(body && body.classList.contains('ep-collapse')){
+        // Body już załadowane — pokaż
+        epDiv.classList.add('open');
+        this.textContent = '▲ Zwiń';
+        return;
+      }
+
+      // Body nie istnieje — lazy load
+      var batch = this.dataset.batch;
+      var num = this.dataset.num;
+
+      // Pokaż loading
+      this.textContent = '⏳ Ładowanie...';
+      this.disabled = true;
+
+      try {
+        var fullEp = await fetchEpisode(num, batch);
+        if(!fullEp){
+          throw new Error('Nie znaleziono epizodu ' + num + ' w batchu ' + batch);
+        }
+
+        // Wstaw body PO nagłówku
+        var bodyDiv = document.createElement('div');
+        bodyDiv.className = 'ep-collapse';
+        bodyDiv.innerHTML = renderEpisodeBody(fullEp);
+        epDiv.parentNode.insertBefore(bodyDiv, epDiv.nextSibling);
+
+        epDiv.classList.add('open');
+        this.textContent = '▲ Zwiń';
+      } catch(e){
+        console.error('Lazy load error:', e);
+        this.textContent = '✗ Błąd';
+        setTimeout(()=>{ this.textContent = '▼ Rozwiń'; this.disabled = false; }, 2000);
+        return;
+      }
+
+      this.disabled = false;
     });
   });
+}
+
+async function fetchEpisode(num, batch){
+  // Jeśli batch === 'recent', dane powinny być już w recent.js
+  if(batch === 'recent'){
+    if(typeof RECENT_EPISODES !== 'undefined'){
+      return RECENT_EPISODES.find(e => e.num === num);
+    }
+    return null;
+  }
+
+  // Lazy load z archive/batch-*.js
+  if(_loadedBatches[batch]){
+    // Już załadowane — znajdź w cache
+    return _loadedBatches[batch].find(e => e.num === num);
+  }
+
+  // Fetch pliku
+  var url = 'data/episodes/archive/' + batch + '.js';
+  var resp = await fetch(url);
+  if(!resp.ok){
+    throw new Error('HTTP ' + resp.status + ' dla ' + url);
+  }
+  var text = await resp.text();
+
+  // Eval w scope — wyciągnij ARCHIVE_EPISODES
+  var fn = new Function(text + '; return ARCHIVE_EPISODES;');
+  _loadedBatches[batch] = fn();
+
+  return _loadedBatches[batch].find(e => e.num === num);
 }
 
 // Render po załadowaniu DOM
@@ -281,6 +392,6 @@ if (document.readyState === 'loading') {
 </div>
 
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-02 20:45:44 UTC</span> · <span id="deploy-hash">vb03cc091</span>
+Deploy: <span id="deploy-ts">2026-07-02 20:51:07 UTC</span> · <span id="deploy-hash">v344d9b78</span>
 </footer>
 </body></html>
