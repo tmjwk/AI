@@ -1,5 +1,5 @@
-// AI Benchmarks data — V4 auto-generated from benchmarks.json
-// Schema: {n, fn, c, t, url, o, y, ty, tier}
+// AI Benchmarks data — V4 auto-generated from benchmarks.json (Nurt 2: bilingual)
+// Schema: {n, fn, c, t_pl, t_en, url, o, y, ty, tier}
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
 const B = [
@@ -7,760 +7,829 @@ const B = [
     "n": "MMLU",
     "fn": "Massive Multitask Language Understanding",
     "c": "Wiedza i rozumowanie",
-    "t": "57 przedmiotów akademickich (historia, prawo, medycyna, matematyka, etc.). Standard LLM knowledge od 2020. Frontier modele >90%.",
     "url": "https://paperswithcode.com/dataset/mmlu",
     "o": "UC Berkeley",
     "y": 2020,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "57 przedmiotów akademickich (historia, prawo, medycyna, matematyka, etc.). Standard LLM knowledge od 2020. Frontier modele >90%.",
+    "t_en": ""
   },
   {
     "n": "GPQA",
     "fn": "Google-Proof Q&A",
     "c": "Wiedza i rozumowanie",
-    "t": "Pytania graduate-level z biologii, chemii, fizyki — tak trudne że Google nie pomaga. Mierzy ekspertyzę ekspertów.",
     "url": "https://github.com/idavidrein/gpqa",
     "o": "NYU",
     "y": 2023,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "Pytania graduate-level z biologii, chemii, fizyki — tak trudne że Google nie pomaga. Mierzy ekspertyzę ekspertów.",
+    "t_en": ""
   },
   {
     "n": "ARC-AGI",
     "fn": "Abstraction and Reasoning Corpus for AGI",
     "c": "Wiedza i rozumowanie",
-    "t": "Visual reasoning — siatki z wzorcami geometrycznymi, model musi uogólnić regułę. Francois Chollet. Frontier modele ~30%, ludzie 100%.",
     "url": "https://arcprize.org/",
     "o": "Opus / Francois Chollet",
     "y": 2019,
     "ty": "arena",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "Visual reasoning — siatki z wzorcami geometrycznymi, model musi uogólnić regułę. Francois Chollet. Frontier modele ~30%, ludzie 100%.",
+    "t_en": ""
   },
   {
     "n": "MMLU-Pro",
     "fn": "MMLU-Pro",
     "c": "Wiedza i rozumowanie",
-    "t": "Trudniejsza wersja MMLU — 10-opcji zamiast 4, bardziej requiring reasoning. Zastępuje oryginał w nowszych ewaluacjach.",
     "url": "https://paperswithcode.com/dataset/mmlu-pro",
     "o": "TIGERA",
     "y": 2024,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Trudniejsza wersja MMLU — 10-opcji zamiast 4, bardziej requiring reasoning. Zastępuje oryginał w nowszych ewaluacjach.",
+    "t_en": ""
   },
   {
     "n": "ARC",
     "fn": "AI2 Reasoning Challenge",
     "c": "Wiedza i rozumowanie",
-    "t": "Pytania naukowe szkolne wymagające logiki, nie tylko faktów. Easy + Challenge split. Standard od 2018.",
     "url": "https://allenai.org/data/arc",
     "o": "Allen AI",
     "y": 2018,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Pytania naukowe szkolne wymagające logiki, nie tylko faktów. Easy + Challenge split. Standard od 2018.",
+    "t_en": ""
   },
   {
     "n": "ARC-AGI v2",
     "fn": "ARC-AGI v2",
     "c": "Wiedza i rozumowanie",
-    "t": "Wersja 2 — 100x trudniejsza niż oryginał. Frontier LLM-y <10%. Część $1M ARC Prize.",
     "url": "https://arcprize.org/arc",
     "o": "Opus",
     "y": 2025,
     "ty": "arena",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Wersja 2 — 100x trudniejsza niż oryginał. Frontier LLM-y <10%. Część $1M ARC Prize.",
+    "t_en": ""
   },
   {
     "n": "BIG-Bench",
     "fn": "Beyond the Imitation Game",
     "c": "Wiedza i rozumowanie",
-    "t": "200+ zadań z 444 autorów. BBH (Hard) subset to najtrudniejsze 23 zadania. Google, OpenAI.",
     "url": "https://github.com/google/BIG-bench",
     "o": "Google",
     "y": 2022,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "200+ zadań z 444 autorów. BBH (Hard) subset to najtrudniejsze 23 zadania. Google, OpenAI.",
+    "t_en": ""
   },
   {
     "n": "TruthfulQA",
     "fn": "TruthfulQA",
     "c": "Wiedza i rozumowanie",
-    "t": "Mierzy czy model unika rozpowszechniania mitów (\"Czy ptaki są prawdziwe?\"). Kluczowy benchmark halucynacji.",
     "url": "https://github.com/sylinrl/TruthfulQA",
     "o": "Stanford",
     "y": 2021,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Mierzy czy model unika rozpowszechniania mitów (\"Czy ptaki są prawdziwe?\"). Kluczowy benchmark halucynacji.",
+    "t_en": ""
   },
   {
     "n": "HellaSwag",
     "fn": "HellaSwag",
     "c": "Wiedza i rozumowanie",
-    "t": "Wypełnianie scenariuszy — wybierz sensowną kontynuację. Adversarial, trudny dla modeli. Standard commonsense.",
     "url": "https://github.com/rowanz/hellaswag",
     "o": "Allen AI",
     "y": 2019,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Wypełnianie scenariuszy — wybierz sensowną kontynuację. Adversarial, trudny dla modeli. Standard commonsense.",
+    "t_en": ""
   },
   {
     "n": "WinoGrande",
     "fn": "WinoGrande",
     "c": "Wiedza i rozumowanie",
-    "t": "Coreference resolution z rasowymi/stereotypowymi pułpkami. Adversarial Winograd Schema.",
     "url": "https://winogrande.allenai.org/",
     "o": "Allen AI",
     "y": 2021,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Coreference resolution z rasowymi/stereotypowymi pułpkami. Adversarial Winograd Schema.",
+    "t_en": ""
   },
   {
     "n": "GSM8K",
     "fn": "Grade School Math 8K",
     "c": "Matematyka",
-    "t": "8.5k słownych zadań matematycznych szkolnych. Frontier modele >95%. Pierwszy sanity check math.",
     "url": "https://github.com/openai/grade-school-math",
     "o": "OpenAI",
     "y": 2021,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "8.5k słownych zadań matematycznych szkolnych. Frontier modele >95%. Pierwszy sanity check math.",
+    "t_en": ""
   },
   {
     "n": "FrontierMath",
     "fn": "FrontierMath",
     "c": "Matematyka",
-    "t": "Matematyka research-level od profesjonalnych matematyków. Frontier modele <2%. Epoch AI.",
     "url": "https://epoch.ai/frontiermath",
     "o": "Epoch AI",
     "y": 2024,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "Matematyka research-level od profesjonalnych matematyków. Frontier modele <2%. Epoch AI.",
+    "t_en": ""
   },
   {
     "n": "MATH",
     "fn": "MATH Dataset",
     "c": "Matematyka",
-    "t": "12.5k problemów z amerykańskich konkursów matematycznych (AMC, AIME). Trudniejsze niż GSM8K, wymaga LaTeX.",
     "url": "https://github.com/hendrycks/math",
     "o": "UC Berkeley",
     "y": 2021,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "12.5k problemów z amerykańskich konkursów matematycznych (AMC, AIME). Trudniejsze niż GSM8K, wymaga LaTeX.",
+    "t_en": ""
   },
   {
     "n": "AIME",
     "fn": "American Invitational Mathematics Examination",
     "c": "Matematyka",
-    "t": "15 problemów z amerykańskiego konkursu AIME. Testuje math olimpiad. Używany przez OpenAI do ewaluacji reasoning models (o1, o3).",
     "url": "https://github.com/openai/simple-evals",
     "o": "MAA",
     "y": 2024,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "15 problemów z amerykańskiego konkursu AIME. Testuje math olimpiad. Używany przez OpenAI do ewaluacji reasoning models (o1, o3).",
+    "t_en": ""
   },
   {
     "n": "HumanEval",
     "fn": "HumanEval",
     "c": "Coding",
-    "t": "164 zadania programistyczne (Python) z funkcją + testami. Pass@1 standard kodowania. OpenAI Codex paper.",
     "url": "https://github.com/openai/human-eval",
     "o": "OpenAI",
     "y": 2021,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "164 zadania programistyczne (Python) z funkcją + testami. Pass@1 standard kodowania. OpenAI Codex paper.",
+    "t_en": ""
   },
   {
     "n": "SWE-bench",
     "fn": "SWE-bench",
     "c": "Coding",
-    "t": "Prawdziwe bug reports z 12 GitHub repo (Django, scikit-learn, etc.) — model musi naprawić poprzez modyfikację kodu + testy. Najlepszy miernik agentic coding.",
     "url": "https://www.swebench.com/",
     "o": "Princeton",
     "y": 2023,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "Prawdziwe bug reports z 12 GitHub repo (Django, scikit-learn, etc.) — model musi naprawić poprzez modyfikację kodu + testy. Najlepszy miernik agentic coding.",
+    "t_en": ""
   },
   {
     "n": "SWE-bench Verified",
     "fn": "SWE-bench Verified",
     "c": "Coding",
-    "t": "Ręcznie zweryfikowany subset SWE-bench — mniej zadań, ale wiarygodny. Standard frontier modeli 2026.",
     "url": "https://openai.com/index/introducing-swe-bench-verified/",
     "o": "OpenAI + Princeton",
     "y": 2024,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "Ręcznie zweryfikowany subset SWE-bench — mniej zadań, ale wiarygodny. Standard frontier modeli 2026.",
+    "t_en": ""
   },
   {
     "n": "SWE-bench Pro",
     "fn": "SWE-bench Pro",
     "c": "Coding",
-    "t": "Wersja Pro SWE-bench — trudniejsze agentic coding zadania, mierzy long-horizon workflows. MiniMax M3 bije GPT-5.5 (czerwiec 2026).",
     "url": "https://www.swebench.com/",
     "o": "Princeton",
     "y": 2025,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Wersja Pro SWE-bench — trudniejsze agentic coding zadania, mierzy long-horizon workflows. MiniMax M3 bije GPT-5.5 (czerwiec 2026).",
+    "t_en": ""
   },
   {
     "n": "HumanEval+",
     "fn": "HumanEval+",
     "c": "Coding",
-    "t": "Wersja z 80x większą liczbą testów per zadanie — eliminuje false positives. EvalPlus.",
     "url": "https://github.com/evalplus/evalplus",
     "o": "EvalPlus",
     "y": 2023,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Wersja z 80x większą liczbą testów per zadanie — eliminuje false positives. EvalPlus.",
+    "t_en": ""
   },
   {
     "n": "MBPP",
     "fn": "Mostly Basic Python Problems",
     "c": "Coding",
-    "t": "974 zadań Python basic-level. Drugi po HumanEval sanity check.",
     "url": "https://github.com/google-research/google-research/tree/master/mbpp",
     "o": "Google",
     "y": 2021,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "974 zadań Python basic-level. Drugi po HumanEval sanity check.",
+    "t_en": ""
   },
   {
     "n": "LiveCodeBench",
     "fn": "LiveCodeBench",
     "c": "Coding",
-    "t": "Ciągle aktualizowane zadania z LeetCode, Codeforces, AtCoder. Eliminuje contamination — nowe zadania po dacie cut-off modelu.",
     "url": "https://livecodebench.github.io/",
     "o": "UC Berkeley",
     "y": 2024,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Ciągle aktualizowane zadania z LeetCode, Codeforces, AtCoder. Eliminuje contamination — nowe zadania po dacie cut-off modelu.",
+    "t_en": ""
   },
   {
     "n": "Aider LLM Leaderboard",
     "fn": "Aider LLM Leaderboard",
     "c": "Coding",
-    "t": "Real-world coding benchmark — edycja istniejących repozytoriów przez Aider. Pass@1 z prawdziwymi git diff-ami.",
     "url": "https://aider.chat/docs/leaderboards/",
     "o": "Aider",
     "y": 2024,
     "ty": "leaderboard",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Real-world coding benchmark — edycja istniejących repozytoriów przez Aider. Pass@1 z prawdziwymi git diff-ami.",
+    "t_en": ""
   },
   {
     "n": "CodeContests",
     "fn": "CodeContests",
     "c": "Coding",
-    "t": "Programistyczne konkursy — algorytmiczne problemy z testami. DeepMind AlphaCode.",
     "url": "https://github.com/google-deepmind/code_contests",
     "o": "DeepMind",
     "y": 2022,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Programistyczne konkursy — algorytmiczne problemy z testami. DeepMind AlphaCode.",
+    "t_en": ""
   },
   {
     "n": "Agents Last Exam",
     "fn": "Agents Last Exam",
     "c": "Agentic",
-    "t": "55 sub-industries, multi-step real professional work. Premiera czerwiec 2026. Najbardziej realistic test agentów.",
     "url": "https://github.com/agentslastexam/agents-last-exam",
     "o": "Independent",
     "y": 2026,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "55 sub-industries, multi-step real professional work. Premiera czerwiec 2026. Najbardziej realistic test agentów.",
+    "t_en": ""
   },
   {
     "n": "GAIA",
     "fn": "General AI Assistants",
     "c": "Agentic",
-    "t": "Real-world assistant questions wymagające multi-step reasoning, tool use (web search, calc), ~10-30 kroków per pytanie. Meta + HuggingFace.",
     "url": "https://huggingface.co/spaces/gaia-benchmark/leaderboard",
     "o": "Meta + HF",
     "y": 2023,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "Real-world assistant questions wymagające multi-step reasoning, tool use (web search, calc), ~10-30 kroków per pytanie. Meta + HuggingFace.",
+    "t_en": ""
   },
   {
     "n": "WebArena",
     "fn": "WebArena",
     "c": "Agentic",
-    "t": "Realistyczne środowisko webowe (forum, wiki, sklep) — agent musi wykonać taski w przeglądarce. Web agent benchmark.",
     "url": "https://webarena.dev/",
     "o": "CMU",
     "y": 2023,
     "ty": "środowisko",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Realistyczne środowisko webowe (forum, wiki, sklep) — agent musi wykonać taski w przeglądarce. Web agent benchmark.",
+    "t_en": ""
   },
   {
     "n": "OSWorld",
     "fn": "OSWorld",
     "c": "Agentic",
-    "t": "Real computer use — agent steruje pełnym OS (Ubuntu/Windows/Mac), wykonuje złożone taski (Excel, Photoshop, web).",
     "url": "https://os-world.github.io/",
     "o": "HKU",
     "y": 2024,
     "ty": "środowisko",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Real computer use — agent steruje pełnym OS (Ubuntu/Windows/Mac), wykonuje złożone taski (Excel, Photoshop, web).",
+    "t_en": ""
   },
   {
     "n": "VisualWebArena",
     "fn": "VisualWebArena",
     "c": "Agentic",
-    "t": "Wersja WebArena z obrazami — agent musi rozumieć UI wizualnie. Testuje multimodalne agenty.",
     "url": "https://jykoh.com/vwa",
     "o": "CMU",
     "y": 2024,
     "ty": "środowisko",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Wersja WebArena z obrazami — agent musi rozumieć UI wizualnie. Testuje multimodalne agenty.",
+    "t_en": ""
   },
   {
     "n": "AgentBench",
     "fn": "AgentBench",
     "c": "Agentic",
-    "t": "8 środowisk (OS, DB, web, KG, etc.) — kompleksowy test agentów. Tsinghua.",
     "url": "https://github.com/THUDM/AgentBench",
     "o": "Tsinghua",
     "y": 2023,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "8 środowisk (OS, DB, web, KG, etc.) — kompleksowy test agentów. Tsinghua.",
+    "t_en": ""
   },
   {
     "n": "MMMU",
     "fn": "Massive Multi-discipline Multimodal Understanding",
     "c": "Multimodal",
-    "t": "11.5k zadań z 30 przedmiotów (art, business, science, health, engineering) — obrazy + tekst. Standard VLM.",
     "url": "https://mmmu-benchmark.github.io/",
     "o": "MMMU Team",
     "y": 2023,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "11.5k zadań z 30 przedmiotów (art, business, science, health, engineering) — obrazy + tekst. Standard VLM.",
+    "t_en": ""
   },
   {
     "n": "MMMU-Pro",
     "fn": "MMMU-Pro",
     "c": "Multimodal",
-    "t": "Trudniejsza wersja MMMU — wymaga głębszego rozumowania obrazów.",
     "url": "https://mmmu-benchmark.github.io/",
     "o": "MMMU Team",
     "y": 2024,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Trudniejsza wersja MMMU — wymaga głębszego rozumowania obrazów.",
+    "t_en": ""
   },
   {
     "n": "DocVQA",
     "fn": "Document Visual Question Answering",
     "c": "Multimodal",
-    "t": "Pytania o dokumenty (faktury, formularze) — testuje OCR + rozumienie. Standard document AI.",
     "url": "https://www.docvqa.org/",
     "o": "UPV",
     "y": 2020,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Pytania o dokumenty (faktury, formularze) — testuje OCR + rozumienie. Standard document AI.",
+    "t_en": ""
   },
   {
     "n": "ChartQA",
     "fn": "ChartQA",
     "c": "Multimodal",
-    "t": "Pytania o wykresy i infografiki. Testuje rozumienie wizualnej reprezentacji danych.",
     "url": "https://github.com/vis-nlp/ChartQA",
     "o": "UNC",
     "y": 2022,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Pytania o wykresy i infografiki. Testuje rozumienie wizualnej reprezentacji danych.",
+    "t_en": ""
   },
   {
     "n": "MathVista",
     "fn": "MathVista",
     "c": "Multimodal",
-    "t": "Matematyczne problemy w kontekście obrazów (geometria, wykresy). Multimodal math reasoning.",
     "url": "https://mathvista.github.io/",
     "o": "AI2",
     "y": 2023,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Matematyczne problemy w kontekście obrazów (geometria, wykresy). Multimodal math reasoning.",
+    "t_en": ""
   },
   {
     "n": "OCRBench",
     "fn": "OCRBench",
     "c": "Multimodal",
-    "t": "OCR benchmark — rozpoznawanie tekstu w obrazach (handwriting, scene text, document).",
     "url": "https://github.com/Yuliang-Liu/MultimodalOCR",
     "o": "MBZUAI",
     "y": 2023,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "OCR benchmark — rozpoznawanie tekstu w obrazach (handwriting, scene text, document).",
+    "t_en": ""
   },
   {
     "n": "AI2D",
     "fn": "AI2 Diagrams",
     "c": "Multimodal",
-    "t": "Pytania o diagramy naukowe szkolne. Testuje rozumienie diagramów.",
     "url": "https://allenai.org/data/diagrams",
     "o": "Allen AI",
     "y": 2016,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Pytania o diagramy naukowe szkolne. Testuje rozumienie diagramów.",
+    "t_en": ""
   },
   {
     "n": "GenEval",
     "fn": "GenEval",
     "c": "Generowanie obrazów",
-    "t": "Kompozycyjna ewaluacja T2I — model musi poprawnie wygenerować kombinację obiektów/kolorów/relacji. Standard 2024+.",
     "url": "https://github.com/djghosh13/geneval",
     "o": "Stanford",
     "y": 2024,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "Kompozycyjna ewaluacja T2I — model musi poprawnie wygenerować kombinację obiektów/kolorów/relacji. Standard 2024+.",
+    "t_en": ""
   },
   {
     "n": "HEIM",
     "fn": "Holistic Evaluation of Text-to-Image Models",
     "c": "Generowanie obrazów",
-    "t": "Holistic ewaluacja — 12 aspektów (alignment, aesthetic, fairness, toxicity, etc.). Stanford HELM team.",
     "url": "https://github.com/stanford-crfm/helm",
     "o": "Stanford",
     "y": 2023,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Holistic ewaluacja — 12 aspektów (alignment, aesthetic, fairness, toxicity, etc.). Stanford HELM team.",
+    "t_en": ""
   },
   {
     "n": "DPG-Bench",
     "fn": "Direct Preference Guidance Benchmark",
     "c": "Generowanie obrazów",
-    "t": "Dense prompt — bardzo szczegółowy prompt z 100+ wymogami. Mierzy prompt-following.",
     "url": "https://github.com/TencentARC/PhotoMaker",
     "o": "Tencent",
     "y": 2024,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Dense prompt — bardzo szczegółowy prompt z 100+ wymogami. Mierzy prompt-following.",
+    "t_en": ""
   },
   {
     "n": "T2I-CompBench",
     "fn": "Text-to-Image Composition Benchmark",
     "c": "Generowanie obrazów",
-    "t": "Benchmark kompozycyjności T2I — color, shape, texture binding. Starszy niż GenEval, wciąż używany.",
     "url": "https://github.com/Karine-Huang/T2I-CompBench",
     "o": "USTC",
     "y": 2023,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Benchmark kompozycyjności T2I — color, shape, texture binding. Starszy niż GenEval, wciąż używany.",
+    "t_en": ""
   },
   {
     "n": "VBench",
     "fn": "VBench",
     "c": "Generowanie wideo",
-    "t": "16 wymiarów ewaluacji wideo (subject consistency, motion smoothness, spatial quality, etc.). Standard T2V.",
     "url": "https://vchitect.github.io/VBench-project/",
     "o": "CUHK",
     "y": 2024,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "16 wymiarów ewaluacji wideo (subject consistency, motion smoothness, spatial quality, etc.). Standard T2V.",
+    "t_en": ""
   },
   {
     "n": "EvalCrafter",
     "fn": "EvalCrafter",
     "c": "Generowanie wideo",
-    "t": "Open-domain T2V benchmark — 869 promptów, multiple metrics (CLIP score, temporal consistency, etc.).",
     "url": "https://evalcrafter.github.io/",
     "o": "Shanghai AI Lab",
     "y": 2023,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Open-domain T2V benchmark — 869 promptów, multiple metrics (CLIP score, temporal consistency, etc.).",
+    "t_en": ""
   },
   {
     "n": "T2V-CompBench",
     "fn": "T2V-CompBench",
     "c": "Generowanie wideo",
-    "t": "Kompozycyjna ewaluacja T2V — analog T2I-CompBench dla wideo. Testuje spójność obiektów w czasie.",
     "url": "https://github.com/Karine-Huang/T2V-CompBench",
     "o": "USTC",
     "y": 2024,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Kompozycyjna ewaluacja T2V — analog T2I-CompBench dla wideo. Testuje spójność obiektów w czasie.",
+    "t_en": ""
   },
   {
     "n": "Objaverse",
     "fn": "Objaverse",
     "c": "3D",
-    "t": "800k+ obiektów 3D — dataset i benchmark. Podstawa ewaluacji modeli 3D.",
     "url": "https://objaverse.allenai.org/",
     "o": "Allen AI",
     "y": 2022,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "800k+ obiektów 3D — dataset i benchmark. Podstawa ewaluacji modeli 3D.",
+    "t_en": ""
   },
   {
     "n": "GSO",
     "fn": "Google Scanned Objects",
     "c": "3D",
-    "t": "Skany 3D obiektów domowych. Używane do ewaluacji rekonstrukcji 3D.",
     "url": "https://app.gazebosim.com/Google/fuel/collections/Scanned%20Objects%20by%20Google%20Research",
     "o": "Google",
     "y": 2020,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Skany 3D obiektów domowych. Używane do ewaluacji rekonstrukcji 3D.",
+    "t_en": ""
   },
   {
     "n": "RT-X",
     "fn": "Open X-Embodiment",
     "c": "Robotyka",
-    "t": "Dataset 1M+ epizodów z 22 robotów. Open-X standard treningu robotów. Google DeepMind + 21 instytucji.",
     "url": "https://robotics-transformer-x.github.io/",
     "o": "Open X-Embodiment Collaboration",
     "y": 2023,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "Dataset 1M+ epizodów z 22 robotów. Open-X standard treningu robotów. Google DeepMind + 21 instytucji.",
+    "t_en": ""
   },
   {
     "n": "CALVIN",
     "fn": "Compositional Anchor Language",
     "c": "Robotyka",
-    "t": "Benchmark robotów z long-horizon taskami (5 tasków per sekwencja). Franka Panda robot.",
     "url": "https://calvinrobot.github.io/",
     "o": "ETH Zürich",
     "y": 2022,
     "ty": "środowisko",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Benchmark robotów z long-horizon taskami (5 tasków per sekwencja). Franka Panda robot.",
+    "t_en": ""
   },
   {
     "n": "LIBERO",
     "fn": "Lifelong Learning Benchmark for Robotics",
     "c": "Robotyka",
-    "t": "Benchmark lifelong learning dla robotów — 5 task suites z rosnącą trudnością.",
     "url": "https://lifelong-robot-learning.github.io/",
     "o": "MIT",
     "y": 2023,
     "ty": "środowisko",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Benchmark lifelong learning dla robotów — 5 task suites z rosnącą trudnością.",
+    "t_en": ""
   },
   {
     "n": "RoboCasa",
     "fn": "RoboCasa",
     "c": "Robotyka",
-    "t": "100k+ epizodów w środowiskach domowych (kuchnia, łazienka). 65 tasków. Test generalizacji robotów.",
     "url": "https://robocasa.ai/",
     "o": "UT Austin",
     "y": 2024,
     "ty": "środowisko",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "100k+ epizodów w środowiskach domowych (kuchnia, łazienka). 65 tasków. Test generalizacji robotów.",
+    "t_en": ""
   },
   {
     "n": "MedQA",
     "fn": "MedQA",
     "c": "Nauki ścisłe",
-    "t": "USMLE pytania medyczne — standard medical LLM. Frontier modele >85%.",
     "url": "https://github.com/jind11/MedQA",
     "o": "Dartmouth",
     "y": 2020,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "USMLE pytania medyczne — standard medical LLM. Frontier modele >85%.",
+    "t_en": ""
   },
   {
     "n": "PubMedQA",
     "fn": "PubMedQA",
     "c": "Nauki ścisłe",
-    "t": "Pytania o abstrakty z PubMed z tak/nie/maybe. Scientific reading comprehension.",
     "url": "https://github.com/pubmedqa/pubmedqa",
     "o": "CMU",
     "y": 2019,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Pytania o abstrakty z PubMed z tak/nie/maybe. Scientific reading comprehension.",
+    "t_en": ""
   },
   {
     "n": "SciCode",
     "fn": "SciCode",
     "c": "Nauki ścisłe",
-    "t": "Scientific coding benchmark — 338 problemów z 16 dziedzin nauki (bio, chemia, fizyka, etc.). Testuje rozumienie naukowe + coding.",
     "url": "https://scicode-bench.github.io/",
     "o": "UIUC",
     "y": 2024,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Scientific coding benchmark — 338 problemów z 16 dziedzin nauki (bio, chemia, fizyka, etc.). Testuje rozumienie naukowe + coding.",
+    "t_en": ""
   },
   {
     "n": "MedMCQA",
     "fn": "MedMCQA",
     "c": "Nauki ścisłe",
-    "t": "194k pytań medycznych z indyjskich egzaminów entrance. Większy niż MedQA, multilingual.",
     "url": "https://github.com/MedMCQA/MedMCQA",
     "o": "IIIT Delhi",
     "y": 2021,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "194k pytań medycznych z indyjskich egzaminów entrance. Większy niż MedQA, multilingual.",
+    "t_en": ""
   },
   {
     "n": "CORE-Bench",
     "fn": "CORE-Bench",
     "c": "Nauki ścisłe",
-    "t": "Computational reproducibility — model musi odtworzyć wyniki naukowe z kodu. Mierzy zdolność do research automation.",
     "url": "https://github.com/scottgigante-immunai/core-bench",
     "o": "Independent",
     "y": 2024,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Computational reproducibility — model musi odtworzyć wyniki naukowe z kodu. Mierzy zdolność do research automation.",
+    "t_en": ""
   },
   {
     "n": "HarmBench",
     "fn": "HarmBench",
     "c": "Bezpieczeństwo",
-    "t": "Standardized benchmark red-teaming — mierzy skuteczność ataków i obron. Standard safety eval 2024+.",
     "url": "https://www.harmbench.org/",
     "o": "Center for AI Safety",
     "y": 2024,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "Standardized benchmark red-teaming — mierzy skuteczność ataków i obron. Standard safety eval 2024+.",
+    "t_en": ""
   },
   {
     "n": "AdvBench",
     "fn": "AdvBench",
     "c": "Bezpieczeństwo",
-    "t": "520 adversarial prompts — jailbreaków i szkodliwych zapytań. Klasyk ewaluacji safety.",
     "url": "https://github.com/llm-attacks/llm-attacks",
     "o": "UW",
     "y": 2023,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "520 adversarial prompts — jailbreaków i szkodliwych zapytań. Klasyk ewaluacji safety.",
+    "t_en": ""
   },
   {
     "n": "JailbreakBench",
     "fn": "JailbreakBench",
     "c": "Bezpieczeństwo",
-    "t": "Open benchmark red-teaming — leaderboard jailbreaków i obron. Standard 2024+.",
     "url": "https://jailbreakbench.github.io/",
     "o": "UW",
     "y": 2024,
     "ty": "leaderboard",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Open benchmark red-teaming — leaderboard jailbreaków i obron. Standard 2024+.",
+    "t_en": ""
   },
   {
     "n": "BBQ",
     "fn": "Bias Benchmark for QA",
     "c": "Bezpieczeństwo",
-    "t": "Mierzy stereotypy demograficzne (rasa, płeć, wiek, religia, etc.). Standard bias eval.",
     "url": "https://github.com/nyu-mll/BBQ",
     "o": "NYU",
     "y": 2022,
     "ty": "zbiór zadań",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Mierzy stereotypy demograficzne (rasa, płeć, wiek, religia, etc.). Standard bias eval.",
+    "t_en": ""
   },
   {
     "n": "SimpleBench",
     "fn": "SimpleBench",
     "c": "Bezpieczeństwo",
-    "t": "Simple yes/no pytania — niektóre łatwe, niektóre z pułapkami. Mierzy base capabilities, nie robust reasoning.",
     "url": "https://simple-bench.com/",
     "o": "Independent",
     "y": 2024,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Simple yes/no pytania — niektóre łatwe, niektóre z pułapkami. Mierzy base capabilities, nie robust reasoning.",
+    "t_en": ""
   },
   {
     "n": "ToxiGen",
     "fn": "ToxiGen",
     "c": "Bezpieczeństwo",
-    "t": "274k toksycznych i neutralnych wypowiedzi o grupach demograficznych. Detekcja hate speech.",
     "url": "https://github.com/microsoft/ToxiGen",
     "o": "Microsoft",
     "y": 2022,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "274k toksycznych i neutralnych wypowiedzi o grupach demograficznych. Detekcja hate speech.",
+    "t_en": ""
   },
   {
     "n": "LM Arena",
     "fn": "LMSYS Chatbot Arena",
     "c": "Areny i leaderboardy",
-    "t": "Crowd-sourced pairwise comparison LLM-ów — user wybiera lepszą z 2 odpowiedzi. ELO rating. Główny ranking LLM 2024-2026.",
     "url": "https://lmarena.ai/",
     "o": "LMSYS (UC Berkeley)",
     "y": 2023,
     "ty": "arena",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "Crowd-sourced pairwise comparison LLM-ów — user wybiera lepszą z 2 odpowiedzi. ELO rating. Główny ranking LLM 2024-2026.",
+    "t_en": ""
   },
   {
     "n": "Open LLM Leaderboard",
     "fn": "HuggingFace Open LLM Leaderboard",
     "c": "Areny i leaderboardy",
-    "t": "Ranking open-source LLM-ów — MMLU, ARC, HellaSwag, TruthfulQA, GSM8K, Winogrande. Standard OS LLM od 2023.",
     "url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
     "o": "HuggingFace",
     "y": 2023,
     "ty": "leaderboard",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "Ranking open-source LLM-ów — MMLU, ARC, HellaSwag, TruthfulQA, GSM8K, Winogrande. Standard OS LLM od 2023.",
+    "t_en": ""
   },
   {
     "n": "Humanity's Last Exam",
     "fn": "Humanity's Last Exam (HLE)",
     "c": "Areny i leaderboardy",
-    "t": "3,000 pytań od 1,000+ ekspertów z 100+ dziedzin. Najtrudniejszy Q&A benchmark 2025. Frontier <10%.",
     "url": "https://lastexam.ai/",
     "o": "Center for AI Safety",
     "y": 2025,
     "ty": "zbiór zadań",
-    "tier": 3
+    "tier": 3,
+    "t_pl": "3,000 pytań od 1,000+ ekspertów z 100+ dziedzin. Najtrudniejszy Q&A benchmark 2025. Frontier <10%.",
+    "t_en": ""
   },
   {
     "n": "Open LLM Leaderboard v2",
     "fn": "Open LLM Leaderboard v2",
     "c": "Areny i leaderboardy",
-    "t": "Wersja 2 — trudniejsze benchmarki (MMLU-Pro, GPQA, MATH, etc.) eliminujące contamination. 2024+.",
     "url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
     "o": "HuggingFace",
     "y": 2024,
     "ty": "leaderboard",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Wersja 2 — trudniejsze benchmarki (MMLU-Pro, GPQA, MATH, etc.) eliminujące contamination. 2024+.",
+    "t_en": ""
   },
   {
     "n": "Artificial Analysis",
     "fn": "Artificial Analysis",
     "c": "Areny i leaderboardy",
-    "t": "Independent benchmark image/video modeli — leaderboard generowania wideo i obrazów.",
     "url": "https://artificialanalysis.ai/",
     "o": "Artificial Analysis",
     "y": 2024,
     "ty": "leaderboard",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Independent benchmark image/video modeli — leaderboard generowania wideo i obrazów.",
+    "t_en": ""
   },
   {
     "n": "DesignArena",
     "fn": "DesignArena",
     "c": "Areny i leaderboardy",
-    "t": "Open leaderboard image generatorów — design, logo, poster. Ideogram 4 #1 w 2026.",
     "url": "https://artificialanalysis.ai/text-to-image/arena",
     "o": "Artificial Analysis",
     "y": 2024,
     "ty": "leaderboard",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Open leaderboard image generatorów — design, logo, poster. Ideogram 4 #1 w 2026.",
+    "t_en": ""
   },
   {
     "n": "SEAL Leaderboards",
     "fn": "SEAL Leaderboards",
     "c": "Areny i leaderboardy",
-    "t": "Scale AI leaderboards — private eval z własnymi benchmarkami. Mniej gamingu niż publiczne.",
     "url": "https://scale.com/leaderboard",
     "o": "Scale AI",
     "y": 2024,
     "ty": "leaderboard",
-    "tier": 2
+    "tier": 2,
+    "t_pl": "Scale AI leaderboards — private eval z własnymi benchmarkami. Mniej gamingu niż publiczne.",
+    "t_en": ""
   },
   {
     "n": "Artificial Analysis Video",
     "fn": "Artificial Analysis Video Leaderboard",
     "c": "Areny i leaderboardy",
-    "t": "Ranking video generatorów — HappyHorse 1.0 #1 w 2026.",
     "url": "https://artificialanalysis.ai/text-to-video/arena",
     "o": "Artificial Analysis",
     "y": 2025,
     "ty": "leaderboard",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Ranking video generatorów — HappyHorse 1.0 #1 w 2026.",
+    "t_en": ""
   },
   {
     "n": "VIBE Bench",
     "fn": "VIBE Bench",
     "c": "Areny i leaderboardy",
-    "t": "Visual instruction following benchmark — VLM rozumie instrukcje o obrazach. NVIDIA.",
     "url": "https://github.com/NVIDIA/VIBE",
     "o": "NVIDIA",
     "y": 2024,
     "ty": "zbiór zadań",
-    "tier": 1
+    "tier": 1,
+    "t_pl": "Visual instruction following benchmark — VLM rozumie instrukcje o obrazach. NVIDIA.",
+    "t_en": ""
   }
 ];
 

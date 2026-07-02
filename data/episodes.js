@@ -1,4 +1,4 @@
-// AI Pulse episodes data — V4 auto-generated from episodes.json
+// AI Pulse episodes data — V4 auto-generated from episodes.json (już bilingual)
 // Schema: {num, channel, title, date, duration, yt, collapsed, hosts[], topics[]}
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
