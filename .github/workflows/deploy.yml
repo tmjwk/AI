@@ -10,13 +10,19 @@ permissions:
   pages: write
   id-token: write
 
+# KLUCZOWA NAPRAWA: cancel-in-progress: true
+# Gdy przychodzi nowy commit, stare runs są anulowane — tylko najnowszy się wykonuje.
+# Eliminuje "stuck deployments" (kolejkowanie się wielu runs dla tego samego środowiska pages).
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
