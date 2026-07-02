@@ -14,35 +14,35 @@ const G = [
     "c": "Architektury i modele",
     "t": "Transformer",
     "en": "Transformer",
-    "d_pl": "Architektura sieci neuronowej wprowadzona w 2017 r. w artykule \"Attention is All You Need\". Opiera się na mechanizmie self-attention — model waży znaczenie każdego tokenu w sekwencji względem wszystkich innych tokenów. Dziś to fundament niemal wszystkich LLM-ów (GPT, Claude, Gemini, Llama). Wyparła RNN i LSTM dzięki możliwości równoległego treningu.",
+    "d_pl": "Transformer (architektura transformera) — architektura sieci neuronowej wprowadzona w 2017 r. w artykule \"Attention is All You Need\". Opiera się na mechanizmie self-attention — model waży znaczenie każdego tokenu w sekwencji względem wszystkich innych tokenów. Dziś to fundament niemal wszystkich LLM-ów (GPT, Claude, Gemini, Llama). Wyparła RNN i LSTM dzięki możliwości równoległego treningu.",
     "d_en": "A neural network architecture introduced in 2017 in the paper \"Attention is All You Need\". Based on the self-attention mechanism — the model weighs the importance of each token in a sequence relative to all other tokens. Today it's the foundation of almost all LLMs (GPT, Claude, Gemini, Llama). It replaced RNN and LSTM thanks to parallel training capability."
   },
   {
     "c": "Architektury i modele",
     "t": "MoE",
     "en": "Mixture of Experts",
-    "d_pl": "Architektura, w której tylko część parametrów modelu jest aktywna dla pojedynczego tokenu. Router decyduje, których \"ekspertów\" (sub-sieci) użyć. Np. GLM-5.2 ma 745B parametrów total, ale tylko 44B aktywnych — dzięki temu jest 6x tańszy w wnioskowanie niż gęsty model o tej samej pojemności. MoE jest standardem dla frontier modeli od 2024 r.",
+    "d_pl": "Mixture of Experts (mieszanka ekspertów) — architektura, w której tylko część parametrów modelu jest aktywna dla pojedynczego tokenu. Router decyduje, których \"ekspertów\" (sub-sieci) użyć. Np. GLM-5.2 ma 745B parametrów total, ale tylko 44B aktywnych — dzięki temu jest 6x tańszy w wnioskowanie niż gęsty model o tej samej pojemności. MoE jest standardem dla frontier modeli od 2024 r.",
     "d_en": "An architecture where only a fraction of the model's parameters is active for a single token. A router decides which \"experts\" (sub-networks) to use. E.g., GLM-5.2 has 745B total parameters but only 44B active — making it 6x cheaper in inference than a dense model of the same capacity. MoE is the standard for frontier models since 2024."
   },
   {
     "c": "Architektury i modele",
     "t": "Diffusion model",
     "en": "Diffusion Model",
-    "d_pl": "Model generatywny, który uczy się odwracać proces dodawania szumu do danych. W inferencji startuje od czystego szumu i iteracyjnie go \"odszumia\" aż uzyska obraz/wideo/dźwięk. Podstawa Stable Diffusion, DALL-E, Midjourney, FLUX. W 2026 r. zaczęto stosować diffusion także do generowania tekstu (Diffusion Gemma od Google — 4x szybsza niż autoregresja).",
+    "d_pl": "Diffusion model (model dyfuzyjny) — model generatywny, który uczy się odwracać proces dodawania szumu do danych. W inferencji startuje od czystego szumu i iteracyjnie go \"odszumia\" aż uzyska obraz/wideo/dźwięk. Podstawa Stable Diffusion, DALL-E, Midjourney, FLUX. W 2026 r. zaczęto stosować diffusion także do generowania tekstu (Diffusion Gemma od Google — 4x szybsza niż autoregresja).",
     "d_en": "A generative model that learns to reverse the process of adding noise to data. In inference it starts from pure noise and iteratively \"denoises\" it until it obtains an image/video/audio. The basis of Stable Diffusion, DALL-E, Midjourney, FLUX. In 2026, diffusion started being applied to text generation as well (Diffusion Gemma from Google — 4x faster than autoregression)."
   },
   {
     "c": "Architektury i modele",
     "t": "VAE",
     "en": "Variational Autoencoder",
-    "d_pl": "Model generatywny uczący się kompresować dane do reprezentacji ukrytej (latent space) i odtwarzać je z powrotem. Często używany jako komponent w modelach dyfuzyjnych — VAE kompresuje obraz do latent space, a diffusion model generuje w tym latent space. Stabilniejszy i szybszy niż czysty pixel-space diffusion.",
+    "d_pl": "Variational Autoencoder (wariacyjny autokoder) — model generatywny uczący się kompresować dane do reprezentacji ukrytej (latent space) i odtwarzać je z powrotem. Często używany jako komponent w modelach dyfuzyjnych — VAE kompresuje obraz do latent space, a diffusion model generuje w tym latent space. Stabilniejszy i szybszy niż czysty pixel-space diffusion.",
     "d_en": "A generative model that learns to compress data into a latent representation (latent space) and reconstruct it back. Often used as a component in diffusion models — VAE compresses the image to latent space, and the diffusion model generates in that space. Less popular than GANs for direct generation, but more stable in training."
   },
   {
     "c": "Architektury i modele",
     "t": "GAN",
     "en": "Generative Adversarial Network",
-    "d_pl": "Architektura z dwiema sieciami: generatorem (tworzy dane) i dyskryminatorem (ocenia, czy dane są prawdziwe). Trenują się wspólnie w grze o sumie zerowej. W latach 2017-2021 dominował w generowaniu obrazów (StyleGAN), dziś wyparty przez modele dyfuzyjne, ale wraca w aplikacjach wymagających niskiej latencji (real-time).",
+    "d_pl": "Generative Adversarial Network (generatywna sieć adversarialna) — architektura z dwiema sieciami: generatorem (tworzy dane) i dyskryminatorem (ocenia, czy dane są prawdziwe). Trenują się wspólnie w grze o sumie zerowej. W latach 2017-2021 dominował w generowaniu obrazów (StyleGAN), dziś wyparty przez modele dyfuzyjne, ale wraca w aplikacjach wymagających niskiej latencji (real-time).",
     "d_en": "An architecture with two networks: a generator (creates data) and a discriminator (evaluates it). They train adversarially — the generator tries to fool the discriminator, the discriminator tries to detect fakes. Used for image generation (StyleGAN), deepfakes, voice cloning. In 2026 it was largely displaced by diffusion models, but still used for real-time generation."
   },
   {
@@ -56,14 +56,14 @@ const G = [
     "c": "Architektury i modele",
     "t": "RNN / LSTM",
     "en": "Recurrent Neural Network / Long Short-Term Memory",
-    "d_pl": "Architektury sekwencyjne, które przetwarzają dane element po elemencie i utrzymują ukryty stan. LSTM (1997) rozwiązał problem vanishing gradient w RNN. Standard dla NLP do 2017 r. Wyparte przez transformery ze względu na niemożność równoległego treningu i słabą pamięć długoterminową.",
+    "d_pl": "Recurrent Neural Network (rekurencyjna sieć neuronowa) / Long Short-Term Memory (pamięć długotrwała krótkotrwała) — architektury sekwencyjne, które przetwarzają dane element po elemencie i utrzymują ukryty stan. LSTM (1997) rozwiązał problem vanishing gradient w RNN. Standard dla NLP do 2017 r. Wyparte przez transformery ze względu na niemożność równoległego treningu i słabą pamięć długoterminową.",
     "d_en": "Sequential architectures that process data element by element and maintain hidden state. RNNs suffer from vanishing gradient — LSTMs solve this with gating mechanisms. Before transformers (2017), they were the standard for NLP and time series. Today they're rarely used in favor of transformers and SSMs, but remain relevant for embedded and real-time applications."
   },
   {
     "c": "Architektury i modele",
     "t": "World Model",
     "en": "World Model",
-    "d_pl": "Model, który uczy się symulować dynamikę środowiska — przewiduje, jak świat zmienia się w odpowiedzi na akcje. Genie 3 (Google DeepMind), Cosmos 3 (NVIDIA), DreamX World to przykłady. Krytyczne dla robotyki, gier i treningu agentów w symulacji. Wymaga modelowania nie tylko wyglądu, ale też fizyki i przyczynowości.",
+    "d_pl": "World Model (model świata) — model, który uczy się symulować dynamikę środowiska — przewiduje, jak świat zmienia się w odpowiedzi na akcje. Genie 3 (Google DeepMind), Cosmos 3 (NVIDIA), DreamX World to przykłady. Krytyczne dla robotyki, gier i treningu agentów w symulacji. Wymaga modelowania nie tylko wyglądu, ale też fizyki i przyczynowości.",
     "d_en": "A model that learns to simulate environment dynamics — predicts how the world will change under different actions. Used in robotics, autonomous driving, game agents. Key for model-based reinforcement learning. In 2026, frontier world models (Sora, Genie 3) can generate interactive 3D environments from text."
   },
   {
@@ -77,7 +77,7 @@ const G = [
     "c": "Architektury i modele",
     "t": "Foundation model",
     "en": "Foundation Model",
-    "d_pl": "Pojęcie wprowadzone przez Stanford HAI w 2021 r. — model trenowany na szerokim spektrum danych, który można adaptować do wielu zadań downstream (dostrajanie, prompting). Odróżnia się od modeli wąskich, trenowanych pod jedno zadanie. Wszyscy główni gracze (OpenAI, Anthropic, Google) produkują foundation models.",
+    "d_pl": "Foundation model (model fundamentowy) — pojęcie wprowadzone przez Stanford HAI w 2021 r. — model trenowany na szerokim spektrum danych, który można adaptować do wielu zadań downstream (dostrajanie, prompting). Odróżnia się od modeli wąskich, trenowanych pod jedno zadanie. Wszyscy główni gracze (OpenAI, Anthropic, Google) produkują foundation models.",
     "d_en": "A concept introduced by Stanford HAI in 2021 — a model trained on broad data that can be adapted to many downstream tasks (fine-tuning, prompting). Examples: GPT, Claude, Llama. The foundation model paradigm replaced the \"one model per task\" approach. The same model can write code, translate, analyze images, etc."
   },
   {
@@ -91,42 +91,42 @@ const G = [
     "c": "Architektury i modele",
     "t": "Vision-Language Model (VLM)",
     "en": "Vision-Language Model",
-    "d_pl": "Model łączący rozumienie obrazu z językiem — potrafi opisywać obrazy, odpowiadać na pytania o ich treści, rozumieć wykresy i UI. Perception DM od ByteDance to przykład VLM z diffusion. Kluczowy komponent agentów pracujących z interfejsami graficznymi (computer use).",
+    "d_pl": "Vision-Language Model (model wizyjno-językowy) — model łączący rozumienie obrazu z językiem — potrafi opisywać obrazy, odpowiadać na pytania o ich treści, rozumieć wykresy i UI. Perception DM od ByteDance to przykład VLM z diffusion. Kluczowy komponent agentów pracujących z interfejsami graficznymi (computer use).",
     "d_en": "A model combining image understanding with language — can describe images, answer questions about them, generate image-based text. Examples: GPT-5 Vision, Claude Vision, Gemini. VLMs are the foundation for AI assistants that can \"see\". Key benchmarks: MMMU, DocVQA, ChartQA."
   },
   {
     "c": "Architektury i modele",
     "t": "Mamba-Transformer (hybrid)",
     "en": "Hybrid Mamba-Transformer",
-    "d_pl": "Architektura hybrydowa łącząca SSM (Mamba) z transformerem — Mamba dla długich sekwencji (liniowa złożoność), transformer dla precyzyjnego attention. Nemotron 3 Ultra (NVIDIA, 550B MoE) używa tej architektury dla 1M token kontekst z 5x szybszą inferencją.",
+    "d_pl": "Mamba-Transformer (hybrydowy Mamba-Transformer) — architektura hybrydowa łącząca SSM (Mamba) z transformerem — Mamba dla długich sekwencji (liniowa złożoność), transformer dla precyzyjnego attention. Nemotron 3 Ultra (NVIDIA, 550B MoE) używa tej architektury dla 1M token kontekst z 5x szybszą inferencją.",
     "d_en": "A hybrid architecture combining SSM (Mamba) with a transformer — Mamba for long sequences (efficiency), transformer for reasoning (quality). Examples: Jamba 2, Falcon-3 Mamba. The hybrid approach aims to combine the best of both worlds — long context and reasoning capability."
   },
   {
     "c": "Architektury i modele",
     "t": "Sparse Attention",
     "en": "Sparse Attention",
-    "d_pl": "Wariant attention gdzie każdy token patrzy tylko na podzbiór innych tokenów, nie na wszystkie. Redukuje złożoność z O(n²) do O(n·log n) lub O(n). MiniMax M3 używa własnego sparse attention dla 1M token kontekst bez drastycznego wzrostu kosztów. Kluczowe dla long-kontekst modeli.",
+    "d_pl": "Sparse Attention (rzadka uwaga) — wariant attention gdzie każdy token patrzy tylko na podzbiór innych tokenów, nie na wszystkie. Redukuje złożoność z O(n²) do O(n·log n) lub O(n). MiniMax M3 używa własnego sparse attention dla 1M token kontekst bez drastycznego wzrostu kosztów. Kluczowe dla long-kontekst modeli.",
     "d_en": "A variant of attention where each token looks only at a subset of other tokens, not all. Reduces complexity from O(n²) to O(n log n) or O(n). Used in Longformer, BigBird, FlashAttention. Key for long-context models (1M+ tokens). Without sparse attention, long context would be prohibitively expensive."
   },
   {
     "c": "Architektury i modele",
     "t": "Gaussian Splatting",
     "en": "Gaussian Splatting",
-    "d_pl": "Technika reprezentacji scen 3D jako zestawu 3D Gaussians (kropli) z kolorami i nieprzezroczystością. Alternatywa dla meshów i point clouds — lepsza dla photorealistic rendering. Deja View (NVIDIA) i PaGeR używają Gaussian Splatting do rekonstrukcji scen 3D ze zdjęć.",
+    "d_pl": "Gaussian Splatting (rozplatanie gaussowskie) — technika reprezentacji scen 3D jako zestawu 3D Gaussians (kropli) z kolorami i nieprzezroczystością. Alternatywa dla meshów i point clouds — lepsza dla photorealistic rendering. Deja View (NVIDIA) i PaGeR używają Gaussian Splatting do rekonstrukcji scen 3D ze zdjęć.",
     "d_en": "A technique for representing 3D scenes as a set of 3D Gaussians (droplets) with colors and normals. Allows real-time rendering of photorealistic 3D scenes from a few photos. An alternative to NeRF — faster rendering and easier editing. Used in VFX, AR/VR, game asset generation."
   },
   {
     "c": "Modalności",
     "t": "MIDI",
     "en": "Musical Instrument Digital Interface",
-    "d_pl": "Standardowy protokół komunikacji między instrumentami muzycznymi i komputerami. Magenta Realtime 2 (Google) przyjmuje MIDI jako input — model reaguje na nuty z klawiatury MIDI w czasie rzeczywistym (200ms latency). Przełom dla AI jako instrumentu muzycznego.",
+    "d_pl": "Musical Instrument Digital Interface (cyfrowy interfejs instrumentów muzycznych) — standardowy protokół komunikacji między instrumentami muzycznymi i komputerami. Magenta Realtime 2 (Google) przyjmuje MIDI jako input — model reaguje na nuty z klawiatury MIDI w czasie rzeczywistym (200ms latency). Przełom dla AI jako instrumentu muzycznego.",
     "d_en": "Musical Instrument Digital Interface — a protocol for communicating musical information between devices and software. In AI, MIDI is used as a representation for music generation models (Magenta, MusicTransformer). Lower-level than audio, but easier to generate and edit. AI MIDI generation enables interactive music tools."
   },
   {
     "c": "Modalności",
     "t": "DAW",
     "en": "Digital Audio Workstation",
-    "d_pl": "Oprogramowanie do produkcji muzyki (Ableton, Logic, FL Studio, Reaper). Magenta Realtime 2 działa jako wtyczka DAW — AI staje się częścią profesjonalnego workflow muzyków, nie standalone app.",
+    "d_pl": "Digital Audio Workstation (cyfrowa stacja robocza audio) — oprogramowanie do produkcji muzyki (Ableton, Logic, FL Studio, Reaper). Magenta Realtime 2 działa jako wtyczka DAW — AI staje się częścią profesjonalnego workflow muzyków, nie standalone app.",
     "d_en": "Digital Audio Workstation — software for recording, editing, and producing audio. Examples: Ableton Live, Logic Pro, FL Studio. AI plugins for DAWs (iZotope, Landr) use ML for mastering, noise reduction, and stem separation. AI-native DAWs (Soundraw, Boomy) generate music directly. The line between AI tools and DAWs is blurring."
   },
   {
@@ -140,14 +140,14 @@ const G = [
     "c": "Trening i optymalizacja",
     "t": "NVFP4",
     "en": "NVIDIA FP4 Quantization",
-    "d_pl": "Format kwantyzacji 4-bitowej opracowany przez NVIDIA — redukuje rozmiar modelu 8x względem FP32 z minimalną utratą jakości. Nemotron 3 Ultra używa NVFP4 dla 5x szybszej inferencji. Standard dla NVIDIA Blackwell GPU (RTX Spark, B200).",
+    "d_pl": "NVIDIA FP4 Quantization (kwantyzacja 4-bitowa NVIDIA) — format kwantyzacji 4-bitowej opracowany przez NVIDIA — redukuje rozmiar modelu 8x względem FP32 z minimalną utratą jakości. Nemotron 3 Ultra używa NVFP4 dla 5x szybszej inferencji. Standard dla NVIDIA Blackwell GPU (RTX Spark, B200).",
     "d_en": "NVIDIA's 4-bit floating point format for AI inference. Reduces memory by 4x compared to FP16 with minimal quality loss. Used in NVIDIA Blackwell GPUs. NVFP4 enables running huge models on smaller GPUs. Part of the broader trend toward low-precision AI compute."
   },
   {
     "c": "Trening i optymalizacja",
     "t": "FP8",
     "en": "8-bit Floating Point",
-    "d_pl": "Format 8-bitowy zamiast 32-bitowego — 4x mniejszy rozmiar, 2-4x szybsza inferencja. NAVA (Baidu) ma wersję FP8 = 7GB (zamiast 12GB oryginalnie). Standard dla nowych modeli AI 2025-2026.",
+    "d_pl": "8-bit Floating Point (8-bitowy format zmiennoprzecinkowy) — format 8-bitowy zamiast 32-bitowego — 4x mniejszy rozmiar, 2-4x szybsza inferencja. NAVA (Baidu) ma wersję FP8 = 7GB (zamiast 12GB oryginalnie). Standard dla nowych modeli AI 2025-2026.",
     "d_en": "8-bit floating point format for AI training and inference. Adopted by NVIDIA, AMD, and Google. Reduces memory and increases speed vs FP16. The standard for efficient AI compute in 2026. FP8 training is now reliable for most models, with FP4 emerging for inference."
   },
   {
@@ -182,7 +182,7 @@ const G = [
     "c": "Trening i optymalizacja",
     "t": "RLHF",
     "en": "Reinforcement Learning from Human Feedback",
-    "d_pl": "Technika, w której model jest trenowany nagradzaniem na podstawie preferencji ludzkich. Annotatorzy porównują odpowiedzi modelu, trenerzy trenują model nagrody, a model docelowy jest optymalizowany (PPO) by maksymalizować tę nagrodę. Kluczowa technika, która uczyniła ChatGPT użytecznym. Współcześnie często zastępowana przez prostsze DPO.",
+    "d_pl": "Reinforcement Learning from Human Feedback (uczenie ze wzmocnieniem z ludzkim feedbackiem) — technika, w której model jest trenowany nagradzaniem na podstawie preferencji ludzkich. Annotatorzy porównują odpowiedzi modelu, trenerzy trenują model nagrody, a model docelowy jest optymalizowany (PPO) by maksymalizować tę nagrodę. Kluczowa technika, która uczyniła ChatGPT użytecznym. Współcześnie często zastępowana przez prostsze DPO.",
     "d_en": "Reinforcement Learning from Human Feedback — a method of aligning models with human preferences. Humans evaluate model responses, and a reward model is trained on these evaluations. The main model is then optimized via RL (PPO) to maximize the reward. Used by OpenAI, Anthropic, Google since 2022. The standard for aligning LLMs."
   },
   {
@@ -210,7 +210,7 @@ const G = [
     "c": "Trening i optymalizacja",
     "t": "DPO",
     "en": "Direct Preference Optimization",
-    "d_pl": "Prostsza alternatywa dla RLHF — omija model nagrody i PPO, optymalizuje model bezpośrednio na parach preferencji. Mniej niestabilny, łatwiejszy w implementacji, tańszy. Stał się standardem dla community fine-tunów od 2024 r. (Zephyr, OpenHermes).",
+    "d_pl": "Direct Preference Optimization (bezpośrednia optymalizacja preferencji) — prostsza alternatywa dla RLHF — omija model nagrody i PPO, optymalizuje model bezpośrednio na parach preferencji. Mniej niestabilny, łatwiejszy w implementacji, tańszy. Stał się standardem dla community fine-tunów od 2024 r. (Zephyr, OpenHermes).",
     "d_en": "Direct Preference Optimization — a simpler alternative to RLHF. Instead of training a reward model and then RL, DPO directly optimizes the model on preference pairs. Simpler, more stable, and faster than RLHF. Used by Llama 3, Zephyr, many open-source models. Since 2024 it's the dominant alignment method."
   },
   {
@@ -308,7 +308,7 @@ const G = [
     "c": "Kontekst i wydajność",
     "t": "RoPE",
     "en": "Rotary Position Embedding",
-    "d_pl": "Sposób kodowania pozycji tokenów w transformerze. Obraca pary wymiarów w embedding space w zależności od pozycji. Zaleta: ekstrapolacja — model wytrenowany na 4k tokenów może być używany z 32k (z NTK scaling). Standard w Llama, Qwen, Mistral.",
+    "d_pl": "Rotary Position Embedding (obrotowe osadzanie pozycji) — sposób kodowania pozycji tokenów w transformerze. Obraca pary wymiarów w embedding space w zależności od pozycji. Zaleta: ekstrapolacja — model wytrenowany na 4k tokenów może być używany z 32k (z NTK scaling). Standard w Llama, Qwen, Mistral.",
     "d_en": "Rotary Position Embedding — a method for encoding token positions in transformers. Enables relative position encoding and extrapolation to longer contexts. Used by Llama, Qwen, and most modern LLMs. RoPE's key advantage: better length extrapolation than absolute position embeddings."
   },
   {
@@ -343,14 +343,14 @@ const G = [
     "c": "Agentic i narzędzia",
     "t": "MCP",
     "en": "Model Context Protocol",
-    "d_pl": "Otwarty standard Anthropic (open-source od listopada 2024) pozwalający łączyć LLM-y z zewnętrznymi źródłami danych i narzędziami. Analogia: USB-C dla aplikacji AI. MCP server wystawia narzędzia, MCP client (np. Claude Desktop) je konsumuje. Pozwala uniknąć vendor lock-in — raz napisany MCP server działa z każdym klientem MCP.",
+    "d_pl": "Model Context Protocol (protokół kontekstu modelu) — otwarty standard Anthropic (open-source od listopada 2024) pozwalający łączyć LLM-y z zewnętrznymi źródłami danych i narzędziami. Analogia: USB-C dla aplikacji AI. MCP server wystawia narzędzia, MCP client (np. Claude Desktop) je konsumuje. Pozwala uniknąć vendor lock-in — raz napisany MCP server działa z każdym klientem MCP.",
     "d_en": "Model Context Protocol — an open standard from Anthropic for connecting AI models to external tools and data sources. Standardizes how models access databases, APIs, files. Adopted by Claude, Cursor, Zed, and others. The \"USB-C for AI\" — one protocol instead of custom integrations for each tool."
   },
   {
     "c": "Agentic i narzędzia",
     "t": "RAG",
     "en": "Retrieval-Augmented Generation",
-    "d_pl": "Technika, w której model przed odpowiedzią wyszukuje relevantne dokumenty z bazy wektorowej i używa ich jako kontekstu. Rozwiązuje problem halucynacji i braku aktualnej wiedzy. Tańsze niż dostrajanie dla aktualizacji wiedzy. Wyzywania: chunking, retrieval quality, re-ranking. Standard dla enterprise LLM deployments.",
+    "d_pl": "Retrieval-Augmented Generation (generowanie wspomagane wyszukiwaniem) — technika, w której model przed odpowiedzią wyszukuje relevantne dokumenty z bazy wektorowej i używa ich jako kontekstu. Rozwiązuje problem halucynacji i braku aktualnej wiedzy. Tańsze niż dostrajanie dla aktualizacji wiedzy. Wyzywania: chunking, retrieval quality, re-ranking. Standard dla enterprise LLM deployments.",
     "d_en": "Retrieval-Augmented Generation — a technique where the model retrieves relevant documents from a database before generating a response. Solves the \"knowledge cutoff\" problem and reduces hallucinations. The standard for enterprise AI applications. Alternatives: long context (put everything in the prompt), fine-tuning (bake knowledge into weights)."
   },
   {
@@ -427,7 +427,7 @@ const G = [
     "c": "Modalności",
     "t": "ASR",
     "en": "Automatic Speech Recognition (ASR)",
-    "d_pl": "Rozpoznawanie mowy — zamiana mowy na tekst (speech-to-text). Whisper (OpenAI) to dominujący open-source. Współczesne modele są streamingowe, multilingual, obsługują noisy environments. ASR jest komponentem voice agents (Gemini Live, ChatGPT Voice).",
+    "d_pl": "Automatic Speech Recognition (automatyczne rozpoznawanie mowy) — rozpoznawanie mowy — zamiana mowy na tekst (speech-to-text). Whisper (OpenAI) to dominujący open-source. Współczesne modele są streamingowe, multilingual, obsługują noisy environments. ASR jest komponentem voice agents (Gemini Live, ChatGPT Voice).",
     "d_en": "Automatic Speech Recognition — converting speech to text. Also called STT (Speech-to-Text). Frontier: Whisper (OpenAI), Gemini STT. In 2026, real-time ASR with 95%+ accuracy is standard. Enables voice interfaces, transcription, subtitles."
   },
   {
@@ -658,7 +658,7 @@ const G = [
     "c": "Ewaluacja",
     "t": "SOTA",
     "en": "State of the Art (SOTA)",
-    "d_pl": "Najlepszy wynik na danym benchmarku w danym czasie. \"Nowy SOTA\" = model przebił poprzedni rekord. SOTA jest moving target — frontier modeli biją się nawzajem co kilka tygodni. W 2026 r. na LM Arena top modele są w obrębie 1-2% od siebie (Claude Opus 4.8, GLM-5.2, GPT-5.5).",
+    "d_pl": "State of the Art (najlepszy stan techniki) — najlepszy wynik na danym benchmarku w danym czasie. \"Nowy SOTA\" = model przebił poprzedni rekord. SOTA jest moving target — frontier modeli biją się nawzajem co kilka tygodni. W 2026 r. na LM Arena top modele są w obrębie 1-2% od siebie (Claude Opus 4.8, GLM-5.2, GPT-5.5).",
     "d_en": "State of the Art — the best-performing model on a given benchmark. SOTA is constantly being pushed. In 2026, SOTA on LM Arena is Claude Fable 5 (ELO 1564, but banned). SOTA on SWE-bench Verified is GPT-5 (71%). The SOTA label is a key marketing claim for frontier labs."
   },
   {
@@ -693,21 +693,21 @@ const G = [
     "c": "Ewaluacja",
     "t": "MMLU",
     "en": "Massive Multitask Language Understanding (MMLU)",
-    "d_pl": "Benchmark z 57 przedmiotami akademickimi (historia, prawo, medycyna, matematyka, etc.). Standard od 2020 r. frontier modele >90% (claude opus 4.8 ~92%). Problem: contamination — wiele pytań wyciekło do treningu modeli. Nowsze wersje: MMLU-Pro (trudniejsze), GPQA (graduate-level).",
+    "d_pl": "Massive Multitask Language Understanding (wielozadaniowe rozumienie języka) — z 57 przedmiotami akademickimi (historia, prawo, medycyna, matematyka, etc.). Standard od 2020 r. frontier modele >90% (claude opus 4.8 ~92%). Problem: contamination — wiele pytań wyciekło do treningu modeli. Nowsze wersje: MMLU-Pro (trudniejsze), GPQA (graduate-level).",
     "d_en": "Massive Multitask Language Understanding — 57 academic subjects (history, law, medicine, math, etc.). The standard LLM knowledge benchmark since 2020. Frontier models score >90%. MMLU-Pro (harder, 10 options) replaces it in newer evaluations. Despite contamination concerns, MMLU remains a widely reported metric."
   },
   {
     "c": "Ewaluacja",
     "t": "SWE-bench",
     "en": "SWE-bench",
-    "d_pl": "Benchmark real-world software engineering — model dostaje prawdziwy bug z GitHub repozytorium i musi naprawić go poprzez modyfikację kodu + testy. Najlepszy miernik programowanie agentowe możliwości. Claude Opus 4.8, GLM-5.2 na szczycie. SWE-bench Verified — ręcznie zweryfikowany subset, bardziej wiarygodny.",
+    "d_pl": "SWE-bench (benchmark inżynierii oprogramowania) — real-world software engineering — model dostaje prawdziwy bug z GitHub repozytorium i musi naprawić go poprzez modyfikację kodu + testy. Najlepszy miernik programowanie agentowe możliwości. Claude Opus 4.8, GLM-5.2 na szczycie. SWE-bench Verified — ręcznie zweryfikowany subset, bardziej wiarygodny.",
     "d_en": "A benchmark for coding agents — real bug reports from GitHub repos (Django, scikit-learn, etc.). The model must produce a patch that fixes the bug and passes tests. The best measure of agentic coding capability. Frontier models in 2026: GPT-5 71%, Claude 68% on SWE-bench Verified. SWE-bench Pro adds harder tasks."
   },
   {
     "c": "Ewaluacja",
     "t": "Agents Last Exam",
     "en": "Agents Last Exam",
-    "d_pl": "Benchmark dla AI agents — 55 sub-industries, multi-step real professional work. Premiera czerwiec 2026. Testuje nie tylko jakość odpowiedzi, ale zdolność agenta do planowania, używania narzędzi, iteracji. Bardziej realistic niż SWE-bench (który jest tylko programowanie).",
+    "d_pl": "Agents Last Exam (ostatni egzamin agentów) — dla AI agents — 55 sub-industries, multi-step real professional work. Premiera czerwiec 2026. Testuje nie tylko jakość odpowiedzi, ale zdolność agenta do planowania, używania narzędzi, iteracji. Bardziej realistic niż SWE-bench (który jest tylko programowanie).",
     "d_en": "55 sub-industries, multi-step real professional work. Premiered June 2026. The most realistic test of agents. Frontier agents score <20%."
   },
   {
