@@ -26,7 +26,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "Wypuścił GLM 5.2 — open-source MoE 745B, bije frontier modele w coding. 1/6 kosztu GPT-5.5. Zcode (analog Claude Code) wciąż ustępuje Anthropic.",
-        "desc_en": ""
+        "desc_en": "Released GLM 5.2 — open-source MoE 745B, beats frontier models in coding. 1/6 the cost of GPT-5.5. Zcode (Claude Code analog) still lags Anthropic."
       },
       {
         "title": "ByteDance",
@@ -44,7 +44,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "3 releasy w 1 tygodniu: Seedance 2.5 (4K video), Seed 2.1 (productivity agent), Dance OPD (unified image). Najbardziej aktywna firma tygodnia.",
-        "desc_en": ""
+        "desc_en": "3 releases in 1 week: Seedance 2.5 (4K video), Seed 2.1 (productivity agent), Dance OPD (unified image). Most active company of the week."
       },
       {
         "title": "Sakana AI",
@@ -62,7 +62,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "Fugu Ultra — orchestration layer (nie base model). Koordynuje wiele modeli przez 1 API. Bije Claude Fable na niektórych benchmarkach. $5/$30 API.",
-        "desc_en": ""
+        "desc_en": "Fugu Ultra — orchestration layer (not base model). Coordinates multiple models via 1 API. Beats Claude Fable on some benchmarks. $5/$30 API."
       },
       {
         "title": "Reflection AI",
@@ -80,7 +80,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "$6.3B deal z SpaceX — Colossus 2 data center, $150M/miesiąc do 2029. Dostęp do NVIDIA GB300. Dołącza do Anthropic, Google, Cursor.",
-        "desc_en": ""
+        "desc_en": "$6.3B deal with SpaceX — Colossus 2 data center, $150M/month until 2029. Access to NVIDIA GB300. Joins Anthropic, Google, Cursor."
       },
       {
         "title": "Subquadratic",
@@ -98,7 +98,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "Miami startup — 12M token context, 50x szybszy niż FlashAttention, 20x tańszy. SSA architecture. Hosted API.",
-        "desc_en": ""
+        "desc_en": "Miami startup — 12M token context, 50x faster than FlashAttention, 20x cheaper. SSA architecture. Hosted API."
       },
       {
         "title": "Lev Selector",
@@ -116,7 +116,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "Ph.D., 40+ lat w software. Weekly AI updates co piątek. 6.96K subs, 293 videos. Slides na GitHub (75 PPTX) + Google Drive.",
-        "desc_en": ""
+        "desc_en": "Ph.D., 40+ years in software. Weekly AI updates every Friday. 6.96K subs, 293 videos. Slides on GitHub (75 PPTX) + Google Drive."
       }
     ]
   },
@@ -130,62 +130,62 @@ const SECTIONS = [
       {
         "dot_color": "green",
         "html_pl": "<strong>Uruchomić GLM 5.2 lokalnie</strong> — 1-bit quantized (86% mniejszy), na consumer GPU. Unsloth GGUF versions.",
-        "html_en": ""
+        "html_en": "<strong>Run GLM 5.2 locally</strong> — 1-bit quantized (86% smaller), on consumer GPU. Unsloth GGUF versions."
       },
       {
         "dot_color": "green",
         "html_pl": "<strong>Tłumaczyć w czasie rzeczywistym</strong> — Gemini 3.5 Live Translate, darmowe, API + Google Translate mobile.",
-        "html_en": ""
+        "html_en": "<strong>Real-time translation</strong> — Gemini 3.5 Live Translate, free, API + Google Translate mobile."
       },
       {
         "dot_color": "green",
         "html_pl": "<strong>Generować 4K wideo 30s</strong> — Seedance 2.5, do 50 referencji, cinematic clips. Premiera lipiec 2026.",
-        "html_en": ""
+        "html_en": "<strong>Generate 4K 30s video</strong> — Seedance 2.5, up to 50 references, cinematic clips. Premiere July 2026."
       },
       {
         "dot_color": "green",
         "html_pl": "<strong>Voice cloning z 2B model</strong> — Dot TTS, Apache 2, few-shot, bije leaderboardy.",
-        "html_en": ""
+        "html_en": "<strong>Voice cloning with 2B model</strong> — Dot TTS, Apache 2, few-shot, beats leaderboards."
       },
       {
         "dot_color": "green",
         "html_pl": "<strong>Mapować mózg bez chirurgii</strong> — Olive, ultrasound, 100x lepsza rozdzielczość niż CT, open-source pipeline.",
-        "html_en": ""
+        "html_en": "<strong>Map the brain without surgery</strong> — Olive, ultrasound, 100x better resolution than CT, open-source pipeline."
       },
       {
         "dot_color": "green",
         "html_pl": "<strong>Mieć humanoida za $4,900</strong> — Unitree R1, 123cm, kung-fu, fikołki, chód po schodach.",
-        "html_en": ""
+        "html_en": "<strong>Have a humanoid for $4,900</strong> — Unitree R1, 123cm, kung-fu, flips, stair walking."
       },
       {
         "dot_color": "yellow",
         "html_pl": "<strong>GPT 5.6 Sol</strong> — ograniczony dostęp, trusted partners only, gov approval customer-by-customer.",
-        "html_en": ""
+        "html_en": "<strong>GPT 5.6 Sol</strong> — restricted access, trusted partners only, gov approval customer-by-customer."
       },
       {
         "dot_color": "yellow",
         "html_pl": "<strong>Claude Mythos 5</strong> — ban lifted 27.06, tylko ~100 trusted US partners.",
-        "html_en": ""
+        "html_en": "<strong>Claude Mythos 5</strong> — ban lifted 06.27, only ~100 trusted US partners."
       },
       {
         "dot_color": "yellow",
         "html_pl": "<strong>AI Glasses</strong> — Google + Gentle Monster + Warby Parker, launch fall 2026.",
-        "html_en": ""
+        "html_en": "<strong>AI Glasses</strong> — Google + Gentle Monster + Warby Parker, launch fall 2026."
       },
       {
         "dot_color": "red",
         "html_pl": "<strong>Claude Fable 5</strong> — zawieszony przez US gov, brak timeline na powrót.",
-        "html_en": ""
+        "html_en": "<strong>Claude Fable 5</strong> — suspended by US gov, no timeline for return."
       },
       {
         "dot_color": "red",
         "html_pl": "<strong>Jalapeno chip</strong> — ogłoszony (OpenAI + Broadcom), brak dostępu, gigawatt scale planowany.",
-        "html_en": ""
+        "html_en": "<strong>Jalapeno chip</strong> — announced (OpenAI + Broadcom), no access, gigawatt scale planned."
       },
       {
         "dot_color": "red",
         "html_pl": "<strong>IBM Nano Stack</strong> — research, 100B tranzystorów na paznokciu, lata od komercjalizacji.",
-        "html_en": ""
+        "html_en": "<strong>IBM Nano Stack</strong> — research, 100B transistors on a fingernail, years from commercialization."
       }
     ]
   },
@@ -203,7 +203,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "Pivot z chipmakera na inference-focused cloud. 6 miesięcy po tym jak NVIDIA licencjowała technologię i przejęła CEO.",
-        "desc_en": ""
+        "desc_en": "Pivot from chipmaker to inference-focused cloud. 6 months after NVIDIA licensed the technology and poached the CEO."
       },
       {
         "title": "Baseten — $1.5B",
@@ -212,7 +212,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "Infrastructure dla AI inference. Działa na Google Cloud z NVIDIA GPUs. ~60 pracowników, założona 2019, San Francisco.",
-        "desc_en": ""
+        "desc_en": "Infrastructure for AI inference. Runs on Google Cloud with NVIDIA GPUs. ~60 employees, founded 2019, San Francisco."
       },
       {
         "title": "Reflection AI + SpaceX",
@@ -221,7 +221,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "$150M/miesiąc za Colossus 2 data center. Umowa do 2029. NVIDIA GB300 chips. Obok Anthropic, Google, Cursor.",
-        "desc_en": ""
+        "desc_en": "$150M/month for Colossus 2 data center. Contract until 2029. NVIDIA GB300 chips. Alongside Anthropic, Google, Cursor."
       },
       {
         "title": "Merge Labs — $250M",
@@ -230,7 +230,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "Seed round prowadzony przez OpenAI. Ultrasound BCI, nieinwazyjny. Alternatywa dla Neuralink.",
-        "desc_en": ""
+        "desc_en": "Seed round led by OpenAI. Ultrasound BCI, non-invasive. Alternative to Neuralink."
       },
       {
         "title": "📈 Orin Token Price Index — inteligencja jako towar",
@@ -239,7 +239,7 @@ const SECTIONS = [
         "list": [],
         "full_width": true,
         "desc_pl": "Cena tokenów spadła ~1000x w kilka lat. Od GPT-3 (175B, 2020) do multi-trillion param models (2026). AI może podnieść globalny GDP z dziesiątek bilionów do setek bilionów lub kwadrylionów dolarów.<br><br><strong>GLM 5.2</strong> kosztuje 1/6 GPT-5.5 przy podobnej jakości w coding.",
-        "desc_en": ""
+        "desc_en": "Token prices dropped ~1000x in a few years. From GPT-3 (175B, 2020) to multi-trillion param models (2026). AI could raise global GDP from tens of trillions to hundreds of trillions or quadrillions of dollars. <strong>GLM 5.2</strong> costs 1/6 of GPT-5.5 at similar coding quality."
       }
     ]
   },
@@ -257,7 +257,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "Firma musi dać federal government early access (do ~30 dni) do najbardziej zaawansowanych modeli przed publicznym wdrożeniem.",
-        "desc_en": ""
+        "desc_en": "Companies must give federal government early access (up to ~30 days) to most advanced models before public deployment."
       },
       {
         "title": "Anthropic Fable 5 + Mythos 5 — ban",
@@ -266,7 +266,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "US gov zakazał dostępu 12.06.2026 (export control). Mythos ban zdjęty 27.06 (trusted partners). Fable nadal offline, brak timeline.",
-        "desc_en": ""
+        "desc_en": "US gov banned access 06.12.2026 (export control). Mythos ban lifted 06.27 (trusted partners). Fable still offline, no timeline."
       },
       {
         "title": "OpenAI GPT 5.6 — staggered release",
@@ -275,7 +275,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "Gov poprosił o opóźnienie. Najpierw trusted partners, customer-by-customer approval. Nie dla broad deployment.",
-        "desc_en": ""
+        "desc_en": "Gov requested delay. First trusted partners, customer-by-customer approval. Not for broad deployment."
       },
       {
         "title": "Alibaba — US blacklist",
@@ -284,7 +284,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "Gov orgs nie mogą kontraktować. Od 2027 żadnych usług Alibaba. Powód: kontrola CCP. Jack Ma — $2.8B antitrust fine, IPO suspended, \"disappeared\". Inwestorzy stracili zaufanie do chińskiego biznesu.",
-        "desc_en": ""
+        "desc_en": "Gov orgs cannot contract. From 2027 no Alibaba services. Reason: CCP control. Jack Ma — $2.8B antitrust fine, IPO suspended, \"disappeared\". Investors lost trust in Chinese business."
       }
     ]
   },
@@ -302,7 +302,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "Orchestrator (conductor) rozdaje zadania sub-agents, ci wysyłają wyniki. Jak Hadoop/Spark dla agentów. Znany też jako: LLM MapReduce, Agentic MapReduce, Fan-out/fan-in, Agentic wide search.",
-        "desc_en": ""
+        "desc_en": "Orchestrator (conductor) distributes tasks to sub-agents, who send results back. Like Hadoop/Spark for agents. Also known as: LLM MapReduce, Agentic MapReduce, Fan-out/fan-in, Agentic wide search."
       },
       {
         "title": "3-Layer Agent Architecture",
@@ -311,7 +311,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "1. Core runtime (capability-agnostic, MCP, lazy loading)<br>2. Shared plugins (skills, MCP servers, hooks)<br>3. Per-client config (thin, bez forków)",
-        "desc_en": ""
+        "desc_en": "1. Core runtime (capability-agnostic, MCP, lazy loading)<br>2. Shared plugins (skills, MCP servers, hooks)<br>3. Per-client config (thin, no forks)"
       },
       {
         "title": "Agentic OS — 4 poziomy",
@@ -320,7 +320,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "1. Skills & Automation (workflow audit)<br>2. Memory & State (Obsidian, structured map)<br>3. Interface (visual wrapper/dashboard)<br>4. Distribution (packaging dla teams/clients)",
-        "desc_en": ""
+        "desc_en": "1. Skills & Automation (workflow audit)<br>2. Memory & State (Obsidian, structured map)<br>3. Interface (visual wrapper/dashboard)<br>4. Distribution (packaging for teams/clients)"
       },
       {
         "title": "Brain in the Middle",
@@ -329,7 +329,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "Klasyczna app: input → custom software → output.<br>Agent app: input → AI agent (skills, MCP) → output. Agent zastępuje całe custom software.",
-        "desc_en": ""
+        "desc_en": "Classic app: input → custom software → output.<br>Agent app: input → AI agent (skills, MCP) → output. Agent replaces entire custom software."
       },
       {
         "title": "💡 Fable Brain Prompting — 8 instrukcji od Anthropic",
@@ -347,7 +347,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "Ten sam model może dać <strong>6x lepsze wyniki</strong> zależnie od harness. Kluczowe: context management, memory as hint, tool validation, feedback loops.",
-        "desc_en": ""
+        "desc_en": "The same model can give <strong>6x better results</strong> depending on the harness. Key: context management, memory as hint, tool validation, feedback loops."
       },
       {
         "title": "⏰ Custom Scheduling dla Digital Employee",
@@ -356,7 +356,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "Custom \"mycron\" zamiast system crontab. Browser session persistence, hot-reload (60s), RAND_DELAY (anti-thundering herd), per-minute dedup, isolated per-user logging.",
-        "desc_en": ""
+        "desc_en": "Custom \"mycron\" instead of system crontab. Browser session persistence, hot-reload (60s), RAND_DELAY (anti-thundering herd), per-minute dedup, isolated per-user logging."
       }
     ]
   },
@@ -577,7 +577,7 @@ const SECTIONS = [
         ],
         "full_width": false,
         "desc_pl": "Wszystkie materiały edukacyjne darmowe na <a href=\"https://github.com/lselector/ml_ai_doc\" style=\"color:var(--bl)\">github.com/lselector/ml_ai_doc</a>",
-        "desc_en": ""
+        "desc_en": "All educational materials free on <a href=\"https://github.com/lselector/ml_ai_doc\" style=\"color:var(--bl)\">github.com/lselector/ml_ai_doc</a>"
       },
       {
         "title": "Weekly AI Updates — GitHub (seminar/2026)",
@@ -586,7 +586,7 @@ const SECTIONS = [
         "list": [],
         "full_width": false,
         "desc_pl": "30 plików PPTX z weekly updates 2026: <a href=\"https://github.com/lselector/seminar/tree/master/2026\" style=\"color:var(--bl)\">github.com/lselector/seminar/tree/master/2026</a>",
-        "desc_en": ""
+        "desc_en": "30 PPTX files with weekly updates 2026: <a href=\"https://github.com/lselector/seminar/tree/master/2026\" style=\"color:var(--bl)\">github.com/lselector/seminar/tree/master/2026</a>"
       }
     ]
   },

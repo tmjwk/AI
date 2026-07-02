@@ -19,9 +19,9 @@ const M = [
     "url": "https://openai.com/index/previewing-gpt-5-6-sol",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Flagship Sol + Terra (lower-cost) + Luna (fastest), 1.5M token context, DOSTĘP OGRANICZONY po prośbie rządu",
-    "desc_en": "",
+    "desc_en": "Flagship Sol + Terra (lower-cost) + Luna (fastest), 1.5M token context, RESTRICTED ACCESS per government request",
     "b_pl": "agentic coding, złożone reasoning, długie konteksty (1.5M tokens)",
-    "b_en": ""
+    "b_en": "agentic coding, complex reasoning, long contexts (1.5M tokens)"
   },
   {
     "r": 2,
@@ -36,9 +36,9 @@ const M = [
     "url": "https://www.anthropic.com/news/fable-mythos-access",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Ban zdjęty 26-27.06, dostępny dla trusted US orgs, konkurent GPT 5.6 w agentic",
-    "desc_en": "",
+    "desc_en": "Ban lifted 26-27.06, available to trusted US orgs, competitor to GPT 5.6 in agentic",
     "b_pl": "agentic engineering, research, safety-critical reasoning",
-    "b_en": ""
+    "b_en": "agentic engineering, research, safety-critical reasoning"
   },
   {
     "r": 3,
@@ -51,9 +51,9 @@ const M = [
     "url": "https://www.anthropic.com/news/claude-opus-4-8",
     "yt": "RdqYvdT74i0",
     "desc_pl": "Były lider benchmarków long-horizon, +1% nad GLM-5.2",
-    "desc_en": "",
+    "desc_en": "Former long-horizon benchmark leader, +1% over GLM-5.2",
     "b_pl": "złożone zadania wieloetapowe, research, coding z dużym kontekstem",
-    "b_en": ""
+    "b_en": "complex multi-step tasks, research, coding with large context"
   },
   {
     "r": 4,
@@ -66,9 +66,9 @@ const M = [
     "url": "https://z.ai/blog/glm-5.2",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Open-weight MoE 745B (44B active), 1/6 kosztu GPT-5.5",
-    "desc_en": "",
+    "desc_en": "Open-weight MoE 745B (44B active), 1/6 the cost of GPT-5.5",
     "b_pl": "long-horizon coding, agentic engineering — open-source z frontier jakości",
-    "b_en": ""
+    "b_en": "long-horizon coding, agentic engineering — open-source with frontier quality"
   },
   {
     "r": 5,
@@ -81,9 +81,9 @@ const M = [
     "url": "https://www.minimax.io/blog/minimax-m3",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Frontier coding, 1M context, MSA",
-    "desc_en": "",
+    "desc_en": "Frontier coding, 1M context, MSA",
     "b_pl": "bardzo długi kontekst (1M tokenów), coding z dużymi codebasami",
-    "b_en": ""
+    "b_en": "very long context (1M tokens), coding with large codebases"
   },
   {
     "r": 6,
@@ -96,9 +96,9 @@ const M = [
     "url": "https://www.moonshot.ai",
     "yt": "SxiRANj0xLs",
     "desc_pl": "1T MoE (32B active), 262k context, open-source, coding-first",
-    "desc_en": "",
+    "desc_en": "1T MoE (32B active), 262k context, open-source, coding-first",
     "b_pl": "coding-first, agentic — najlepszy open-source do programowania",
-    "b_en": ""
+    "b_en": "coding-first, agentic — best open-source for programming"
   },
   {
     "r": 7,
@@ -111,9 +111,9 @@ const M = [
     "url": "https://openai.com/index/introducing-gpt-5-5",
     "yt": "QvN6Tu6dHYM",
     "desc_pl": "Frontier model zamknięty, referencja dla long-horizon coding",
-    "desc_en": "",
+    "desc_en": "Closed frontier model, reference for long-horizon coding",
     "b_pl": "general-purpose reasoning, referencyjny benchmark dla innych",
-    "b_en": ""
+    "b_en": "general-purpose reasoning, reference benchmark for others"
   },
   {
     "r": 8,
@@ -126,9 +126,9 @@ const M = [
     "url": "",
     "yt": "1_5sSJK2rU0",
     "desc_pl": "Open-source flagship, V4-Pro + V4-Flash API",
-    "desc_en": "",
+    "desc_en": "Open-source flagship, V4-Pro + V4-Flash API",
     "b_pl": "open-source alternatywa dla frontier modeli — dobre stosunek jakości do ceny",
-    "b_en": ""
+    "b_en": "open-source alternative to frontier models — good quality-to-price ratio"
   },
   {
     "r": 9,
@@ -141,9 +141,9 @@ const M = [
     "url": "https://qwenlm.github.io",
     "yt": "G8fqduzB5lc",
     "desc_pl": "Open-weight, real world agents, upgrade z Qwen 3.5",
-    "desc_en": "",
+    "desc_en": "Open-weight, real world agents, upgrade from Qwen 3.5",
     "b_pl": "real-world agentic tasks, multimodalne zastosowania",
-    "b_en": ""
+    "b_en": "real-world agentic tasks, multimodal applications"
   },
   {
     "r": 10,
@@ -156,9 +156,9 @@ const M = [
     "url": "https://ai.google.dev/gemma",
     "yt": "quxnhOeRz7I",
     "desc_pl": "Open-weight, multimodalny, premiera 3 czerwca 2026",
-    "desc_en": "",
+    "desc_en": "Open-weight, multimodal, premiered June 3 2026",
     "b_pl": "lekki model lokalny (12B), multimodalny — do uruchamiania na własnym sprzęcie",
-    "b_en": ""
+    "b_en": "lightweight local model (12B), multimodal — for running on your own hardware"
   },
   {
     "r": 11,
@@ -171,9 +171,9 @@ const M = [
     "url": "https://www.anthropic.com/news/claude-opus-4-7",
     "yt": "G8fqduzB5lc",
     "desc_pl": "Poprzednik Opus 4.8, GA przed 4.8",
-    "desc_en": "",
+    "desc_en": "Predecessor to Opus 4.8, GA before 4.8",
     "b_pl": "advanced software engineering, stabilny i sprawdzony",
-    "b_en": ""
+    "b_en": "advanced software engineering, stable and proven"
   },
   {
     "r": 18,
@@ -186,9 +186,9 @@ const M = [
     "url": "https://ai.meta.com/llama",
     "yt": "1_5sSJK2rU0",
     "desc_pl": "Nowy model Llama-series od Meta",
-    "desc_en": "",
+    "desc_en": "New Llama-series model from Meta",
     "b_pl": "open-weights w przyszłości, ekosystem community",
-    "b_en": ""
+    "b_en": "open-weights in the future, community ecosystem"
   },
   {
     "r": 1,
@@ -201,9 +201,9 @@ const M = [
     "url": "https://www.krea.ai/krea-2-open-source",
     "yt": "1U8dJ94QFNc",
     "desc_pl": "Foundation model Krea, RAW + Turbo variants, Partner Node w ComfyUI",
-    "desc_en": "",
+    "desc_en": "Krea foundation model, RAW + Turbo variants, Partner Node in ComfyUI",
     "b_pl": "tunable creativity, style references, moodboard conditioning — design i art",
-    "b_en": ""
+    "b_en": "tunable creativity, style references, moodboard conditioning — design and art"
   },
   {
     "r": 2,
@@ -216,9 +216,9 @@ const M = [
     "url": "",
     "yt": "DlvhlQOBHBw",
     "desc_pl": "Top image generator per CNET, 4K output, bazuje na Gemini 3",
-    "desc_en": "",
+    "desc_en": "Top image generator per CNET, 4K output, based on Gemini 3",
     "b_pl": "całkowita kontrola stylu, edycja obrazów, integracja z Gemini",
-    "b_en": ""
+    "b_en": "complete style control, image editing, Gemini integration"
   },
   {
     "r": 3,
@@ -231,9 +231,9 @@ const M = [
     "url": "https://ideogram.ai/news/ideogram-4.0",
     "yt": "OA4gchz1Zcs",
     "desc_pl": "Top DesignArena open leaderboard, ComfyUI",
-    "desc_en": "",
+    "desc_en": "Top DesignArena open leaderboard, ComfyUI",
     "b_pl": "renderowanie tekstu w obrazach — logo, poster, design z napisami",
-    "b_en": ""
+    "b_en": "text rendering in images — logos, posters, design with text"
   },
   {
     "r": 4,
@@ -246,9 +246,9 @@ const M = [
     "url": "https://bfl.ai/blog/flux-2",
     "yt": "OA4gchz1Zcs",
     "desc_pl": "Frontier visual intelligence, fotorealizm + image editing",
-    "desc_en": "",
+    "desc_en": "Frontier visual intelligence, photorealism + image editing",
     "b_pl": "fotorealizm, precyzyjna kontrola kolorów i póz, image editing",
-    "b_en": ""
+    "b_en": "photorealism, precise color and pose control, image editing"
   },
   {
     "r": 5,
@@ -261,9 +261,9 @@ const M = [
     "url": "",
     "yt": "o5rGuknRw2A",
     "desc_pl": "Lokalna generacja obrazów na telefonie, mobile-first",
-    "desc_en": "",
+    "desc_en": "Local image generation on phone, mobile-first",
     "b_pl": "prywatność (offline), mobile-first UX, szybkie iteracje",
-    "b_en": ""
+    "b_en": "privacy (offline), mobile-first UX, fast iterations"
   },
   {
     "r": 1,
@@ -276,9 +276,9 @@ const M = [
     "url": "https://seed.bytedance.com/en/seedance2_0",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "30-second native clips, 50 multimodal references, joint audio-video generation",
-    "desc_en": "",
+    "desc_en": "30-second native clips, 50 multimodal references, joint audio-video generation",
     "b_pl": "długie klipy 30s z wieloma referencjami, audio-video joint generation",
-    "b_en": ""
+    "b_en": "long 30s clips with multiple references, audio-video joint generation"
   },
   {
     "r": 2,
@@ -291,9 +291,9 @@ const M = [
     "url": "",
     "yt": "o5rGuknRw2A",
     "desc_pl": "Open-source video generation model od Alibaba",
-    "desc_en": "",
+    "desc_en": "Open-source video generation model from Alibaba",
     "b_pl": "open-source text-to-video, lokalne uruchamianie, custom trening",
-    "b_en": ""
+    "b_en": "open-source text-to-video, local running, custom training"
   },
   {
     "r": 1,
@@ -306,9 +306,9 @@ const M = [
     "url": "https://deepmind.google/blog/genie-3",
     "yt": "NnsQj2nDkKA",
     "desc_pl": "Pierwszy real-time interaktywny world model, 3D 720p",
-    "desc_en": "",
+    "desc_en": "First real-time interactive world model, 3D 720p",
     "b_pl": "interaktywne środowiska 3D real-time — gry, symulacje, trening robotów",
-    "b_en": ""
+    "b_en": "interactive 3D environments real-time — games, simulations, robot training"
   },
   {
     "r": 2,
@@ -321,9 +321,9 @@ const M = [
     "url": "https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3",
     "yt": "RdqYvdT74i0",
     "desc_pl": "Open omni-modal world model, #1 w 7 benchmarkach physical AI",
-    "desc_en": "",
+    "desc_en": "Open omni-modal world model, #1 in 7 physical AI benchmarks",
     "b_pl": "physical AI, trening robotów, industrial vision — automotive, manufacturing",
-    "b_en": ""
+    "b_en": "physical AI, robot training, industrial vision — automotive, manufacturing"
   },
   {
     "r": 3,
@@ -336,9 +336,9 @@ const M = [
     "url": "https://arxiv.org/abs/2606.13652",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Pixel-aligned geometry — rekonstruuje geometrię poza kadrem",
-    "desc_en": "",
+    "desc_en": "Single image/video → layered 3D model — multiple layers of hidden depth, 6.2GB",
     "b_pl": "3D reconstruction z pojedynczego zdjęcia, \"widzi\" zasłonięte obiekty",
-    "b_en": ""
+    "b_en": "layered 3D reconstruction — pixel-aligned geometry, hidden depth layers"
   },
   {
     "r": 4,
@@ -351,9 +351,9 @@ const M = [
     "url": "",
     "yt": "1_5sSJK2rU0",
     "desc_pl": "Real-time AI generation of video game environments",
-    "desc_en": "",
+    "desc_en": "Real-time AI generation of video game environments",
     "b_pl": "dynamiczne generowanie środowisk gier w czasie rzeczywistym",
-    "b_en": ""
+    "b_en": "dynamic real-time game environment generation"
   },
   {
     "r": 1,
@@ -366,9 +366,9 @@ const M = [
     "url": "https://www.anthropic.com/product/claude-code",
     "yt": "o5rGuknRw2A",
     "desc_pl": "CLI assistant od Anthropic, terminal-first",
-    "desc_en": "",
+    "desc_en": "CLI assistant from Anthropic, terminal-first",
     "b_pl": "terminal/CLI coding, agentic — autonomiczne modyfikacje repozytoriów",
-    "b_en": ""
+    "b_en": "terminal/CLI coding, agentic — autonomous repository modifications"
   },
   {
     "r": 1,
@@ -381,9 +381,9 @@ const M = [
     "url": "https://elevenlabs.io/v3",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Audio Tags emocji, 70+ języków, mid-sentence tone shifts, GA marzec 2026",
-    "desc_en": "",
+    "desc_en": "Audio emotion tags, 70+ languages, mid-sentence tone shifts, GA March 2026",
     "b_pl": "kontrola emocji w czasie rzeczywistym, voice acting, multi-speaker",
-    "b_en": ""
+    "b_en": "real-time emotion control, voice acting, multi-speaker"
   },
   {
     "r": 2,
@@ -396,9 +396,9 @@ const M = [
     "url": "",
     "yt": "quxnhOeRz7I",
     "desc_pl": "Nowy voice model od OpenAI, Realtime-2 GA",
-    "desc_en": "",
+    "desc_en": "New voice model from OpenAI, Realtime-2 GA",
     "b_pl": "naturalna ekspresja emocji, integracja z GPT-5.5, 128k context",
-    "b_en": ""
+    "b_en": "natural emotion expression, GPT-5.5 integration, 128k context"
   },
   {
     "r": 3,
@@ -411,9 +411,9 @@ const M = [
     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts",
     "yt": "G8fqduzB5lc",
     "desc_pl": "Nowy TTS od Google, konkurent Eleven v3",
-    "desc_en": "",
+    "desc_en": "New TTS from Google, competitor to Eleven v3",
     "b_pl": "multilingual, granular audio tags, integracja z Gemini",
-    "b_en": ""
+    "b_en": "multilingual, granular audio tags, Gemini integration"
   },
   {
     "r": 1,
@@ -426,9 +426,9 @@ const M = [
     "url": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026",
     "yt": "J02-39xtlt4",
     "desc_pl": "Generuje dowolną modalność z dowolnej — I/O 2026 announcement",
-    "desc_en": "",
+    "desc_en": "Generates any modality from any — I/O 2026 announcement",
     "b_pl": "any-to-any generation — text→video, video→audio, audio→image",
-    "b_en": ""
+    "b_en": "any-to-any generation — text→video, video→audio, audio→image"
   },
   {
     "r": 1,
@@ -441,9 +441,9 @@ const M = [
     "url": "https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Darmowa platforma z 4 agentami AI do odkryć naukowych",
-    "desc_en": "",
+    "desc_en": "Free platform with 4 AI agents for scientific discovery",
     "b_pl": "biologia, automatyzacja researchu, literatur review, hypothesis generation",
-    "b_en": ""
+    "b_en": "biology, research automation, literature review, hypothesis generation"
   },
   {
     "r": 2,
@@ -456,9 +456,9 @@ const M = [
     "url": "https://blog.google/innovation-and-ai/products/google-deepmind-isomorphic-alphafold-3-ai-model",
     "yt": "s3rNDndvav0",
     "desc_pl": "Przewidywanie struktury białek + ligandów, kod open-source od Nov 2024",
-    "desc_en": "",
+    "desc_en": "Protein + ligand structure prediction, open-source code since Nov 2024",
     "b_pl": "struktura białek, drug discovery — przełom w farmacji",
-    "b_en": ""
+    "b_en": "protein structure, drug discovery — breakthrough in pharma"
   },
   {
     "r": 1,
@@ -471,9 +471,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Latest video model upgrade — najmocniejszy model wideo na rynku według AI Search",
-    "desc_en": "",
+    "desc_en": "Latest video model upgrade — strongest video model on the market per AI Search",
     "b_pl": "video generation — najwyższa jakość na rynku, upgrade z 1.0",
-    "b_en": ""
+    "b_en": "video generation — highest market quality, upgrade from 1.0"
   },
   {
     "r": 2,
@@ -486,9 +486,9 @@ const M = [
     "url": "",
     "yt": "G8fqduzB5lc",
     "desc_pl": "AI research agent — 3D game simulation, dynamic interactive environments",
-    "desc_en": "",
+    "desc_en": "AI research agent — 3D game simulation, dynamic interactive environments",
     "b_pl": "3D game video generation, dynamiczne środowiska interaktywne",
-    "b_en": ""
+    "b_en": "3D game video generation, dynamic interactive environments"
   },
   {
     "r": 3,
@@ -501,9 +501,9 @@ const M = [
     "url": "https://fal.ai/learn/devs/happyhorse-1-0-what-do-we-know-so-far",
     "yt": "1_5sSJK2rU0",
     "desc_pl": "Video generation model — #1 na Artificial Analysis leaderboard",
-    "desc_en": "",
+    "desc_en": "Video generation model — #1 on Artificial Analysis leaderboard",
     "b_pl": "video generation, dynamic environments — predecessor Happy Horse",
-    "b_en": ""
+    "b_en": "video generation, dynamic environments — Happy Horse predecessor"
   },
   {
     "r": 1,
@@ -516,9 +516,9 @@ const M = [
     "url": "https://newatlas.com/ai-humanoids/moya-droidup-lifelike-robot",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Biomimetyczny humanoid, $173K, realistyczne wyrazy twarzy",
-    "desc_en": "",
+    "desc_en": "Biomimetic humanoid, $173K, realistic facial expressions",
     "b_pl": "hyper-realistic facial expressions, towarzyskie interakcje z ludźmi",
-    "b_en": ""
+    "b_en": "hyper-realistic facial expressions, social interactions with humans"
   },
   {
     "r": 2,
@@ -531,9 +531,9 @@ const M = [
     "url": "https://github.com/huggingface/lerobot",
     "yt": "pC6KHflGye0",
     "desc_pl": "Open-source framework dla robotyki AI, ongoing development",
-    "desc_en": "",
+    "desc_en": "Open-source framework for AI robotics, ongoing development",
     "b_pl": "open-source trening robotów, community-driven, replikowalne badania",
-    "b_en": ""
+    "b_en": "open-source robot training, community-driven, reproducible research"
   },
   {
     "r": 3,
@@ -546,9 +546,9 @@ const M = [
     "url": "",
     "yt": "NnsQj2nDkKA",
     "desc_pl": "Realne roboty typu Gundam, demonstracje chodu i balansu",
-    "desc_en": "",
+    "desc_en": "Real Gundam-type robots, walking and balance demonstrations",
     "b_pl": "large-scale humanoid locomotion, balans, chód dwunożny",
-    "b_en": ""
+    "b_en": "large-scale humanoid locomotion, balance, bipedal walking"
   },
   {
     "r": 1,
@@ -561,9 +561,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Single transformer model interleaving text, audio, video — 25fps, 200ms latency, duplex communication",
-    "desc_en": "",
+    "desc_en": "Single transformer model interleaving text, audio, video — 25fps, 200ms latency, duplex communication",
     "b_pl": "real-time konwersacyjne avatary 25fps — streaming z 200ms latencją, duplex communication",
-    "b_en": ""
+    "b_en": "real-time conversational avatars 25fps — streaming with 200ms latency, duplex communication"
   },
   {
     "r": 1,
@@ -576,9 +576,9 @@ const M = [
     "url": "https://arxiv.org/abs/2606.13655",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Multi-view video diffusion — 4D człowiek z jednego/sparse wideo",
-    "desc_en": "",
+    "desc_en": "Multi-view video diffusion — 4D human from single/sparse video",
     "b_pl": "4D human reconstruction — AR/VR, wirtualna próbka odzieży, VFX",
-    "b_en": ""
+    "b_en": "4D human reconstruction — AR/VR, virtual try-on, VFX"
   },
   {
     "r": 1,
@@ -591,9 +591,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Ultrasound brain imaging — 3D mapa przepływu krwi z mikro-bąbelkami, 100x lepsza rozdzielczość niż CT",
-    "desc_en": "",
+    "desc_en": "Ultrasound brain imaging — 3D blood flow map with microbubbles, 100x better resolution than CT",
     "b_pl": "nieinwazyjne obrazowanie mózgu przez ultrasound — 3D mapa naczyń krwionośnych, 100x lepsza niż CT",
-    "b_en": ""
+    "b_en": "non-invasive brain imaging via ultrasound — 3D blood vessel map, 100x better than CT"
   },
   {
     "r": 1,
@@ -606,9 +606,9 @@ const M = [
     "url": "https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026",
     "yt": "J02-39xtlt4",
     "desc_pl": "AI-first smart glasses, integracja z Gemini Omni, launch fall 2026",
-    "desc_en": "",
+    "desc_en": "AI-first smart glasses, Gemini Omni integration, launch fall 2026",
     "b_pl": "hands-free AI assistance, real-time visual understanding",
-    "b_en": ""
+    "b_en": "hands-free AI assistance, real-time visual understanding"
   },
   {
     "r": 1,
@@ -621,9 +621,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Video generator z reference images — outperforma inne modele w zachowaniu spójności, bazuje na Wan 2.2, 35GB",
-    "desc_en": "",
+    "desc_en": "Video generator with reference images — outperforms other models in consistency, based on Wan 2.2, 35GB",
     "b_pl": "video generation z reference images — spójność postaci i obiektów między scenami",
-    "b_en": ""
+    "b_en": "video generation with reference images — character and object consistency across scenes"
   },
   {
     "r": 13,
@@ -636,9 +636,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Open-source agentic coding MoE — 397B params (największy), generuje własne harnesses/scaffolds, bije GLM i DeepSeek V4",
-    "desc_en": "",
+    "desc_en": "Open-source agentic coding MoE — 397B params (largest), generates own harnesses/scaffolds, beats GLM and DeepSeek V4",
     "b_pl": "agentic coding — self-scaffolding, model uczy się projektować workflow do rozwiązywania zadań",
-    "b_en": ""
+    "b_en": "agentic coding — self-scaffolding, model learns to design workflows for tasks"
   },
   {
     "r": 1,
@@ -651,9 +651,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "3D generator z constraint meshes — określaj gdzie geometria ma być, gdzie puste miejsce, gdzie kontakt. 600MB + Trellis 2",
-    "desc_en": "",
+    "desc_en": "3D generator with constraint meshes — specify where geometry should be, empty space, contact. 600MB + Trellis 2",
     "b_pl": "3D generation z spatial constraints — precyzyjna kontrola geometrii, Blender add-on",
-    "b_en": ""
+    "b_en": "3D generation with spatial constraints — precise geometry control, Blender add-on"
   },
   {
     "r": 1,
@@ -668,9 +668,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Pierwszy procesor AI OpenAI — zaprojektowany z Broadcom, uruchamia ChatGPT i Codex szybciej/efektywniej",
-    "desc_en": "",
+    "desc_en": "First OpenAI AI processor — designed with Broadcom, runs ChatGPT and Codex faster/more efficiently",
     "b_pl": "AI inference chip — dedykowany sprzęt dla modeli OpenAI, gigawatt scale deployment",
-    "b_en": ""
+    "b_en": "AI inference chip — dedicated hardware for OpenAI models, gigawatt scale deployment"
   },
   {
     "r": 1,
@@ -683,9 +683,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Subnanometer chip — 100 miliardów tranzystorów na powierzchni paznokcia, 2x gęstość 2nm chipu z 2021",
-    "desc_en": "",
+    "desc_en": "Subnanometer chip — 100 billion transistors on a fingernail, 2x density of 2021 2nm chip",
     "b_pl": "chip architecture — pionowe układanie tranzystorów, 2x gęstość poprzedniej generacji",
-    "b_en": ""
+    "b_en": "chip architecture — vertical transistor stacking, 2x density over previous generation"
   },
   {
     "r": 1,
@@ -698,9 +698,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Unified image model — text-to-image + image editing + style transfer w jednym modelu, eliminuje konflikty szkolenia",
-    "desc_en": "",
+    "desc_en": "Unified image model — text-to-image + image editing + style transfer in one model, eliminates training conflicts",
     "b_pl": "unified image generation + editing — jeden model zamiast wielu specjalistów",
-    "b_en": ""
+    "b_en": "unified image generation + editing — one model instead of many specialists"
   },
   {
     "r": 1,
@@ -713,9 +713,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Nowa architektura — coupled oscillators zamiast diffusion, synchronizacja tysięcy oscylatorów",
-    "desc_en": "",
+    "desc_en": "New architecture — coupled oscillators instead of diffusion, synchronizing thousands of oscillators",
     "b_pl": "non-diffusion image generation — coupled oscillators architecture, alternatywa dla diffusion",
-    "b_en": ""
+    "b_en": "non-diffusion image generation — coupled oscillators architecture, alternative to diffusion"
   },
   {
     "r": 1,
@@ -728,9 +728,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "500 godzin danych teleoperation z robota Uni31 w domach — kamera głowy + nadgarstka + dane ruchu",
-    "desc_en": "",
+    "desc_en": "500 hours of teleoperation data from Uni31 robot in homes — head + wrist cameras + motion data",
     "b_pl": "humanoid training dataset — real-home teleoperation, 500h danych dla treningu robotów",
-    "b_en": ""
+    "b_en": "humanoid training dataset — real-home teleoperation, 500h of robot training data"
   },
   {
     "r": 2,
@@ -743,9 +743,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Najtańszy humanoid — $4,900, 123cm, 26 DOF, biega, robi fikołki, kung-fu, chodzi na rękach",
-    "desc_en": "",
+    "desc_en": "Cheapest humanoid — $4,900, 123cm, 26 DOF, runs, does flips, kung-fu, walks on hands",
     "b_pl": "affordable humanoid robot — $4,900, akrobacje, kung-fu, najtańsza opcja na rynku",
-    "b_en": ""
+    "b_en": "affordable humanoid robot — $4,900, acrobatics, kung-fu, cheapest market option"
   },
   {
     "r": 14,
@@ -758,9 +758,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Productivity agent (nie chatbot) — Pro version lepszy od Gemini w analizie wideo, multimodalny",
-    "desc_en": "",
+    "desc_en": "Productivity agent (not chatbot) — Pro version better than Gemini at video analysis, multimodal",
     "b_pl": "productivity agent — analiza wideo i motion, lepszy od Gemini w multimodalnych zadaniach",
-    "b_en": ""
+    "b_en": "productivity agent — video and motion analysis, better than Gemini at multimodal tasks"
   },
   {
     "r": 1,
@@ -773,9 +773,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Single video → 4D scene — z zwykłego klipu wideo tworzy 4D scenę, kod coming soon",
-    "desc_en": "",
+    "desc_en": "Single video → 4D scene — creates 4D scene from ordinary video clip, code coming soon",
     "b_pl": "4D reconstruction z single video — konwersja zwykłego wideo w interaktywną 4D scenę",
-    "b_en": ""
+    "b_en": "4D reconstruction from single video — converting ordinary video into interactive 4D scene"
   },
   {
     "r": 1,
@@ -788,9 +788,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Vision language model z diffusion — captionuje wiele regionów obrazu bez spadku wydajności",
-    "desc_en": "",
+    "desc_en": "Vision language model with diffusion — captions multiple image regions without performance drop",
     "b_pl": "vision language model — wydajne captioning wielu regionów, diffusion architecture",
-    "b_en": ""
+    "b_en": "vision language model — efficient multi-region captioning, diffusion architecture"
   },
   {
     "r": 1,
@@ -803,9 +803,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Agentic framework do autonomnego tworzenia danych treningowych — AI tworzy, weryfikuje, uczy się z błędów",
-    "desc_en": "",
+    "desc_en": "Agentic framework for autonomous training data creation — AI creates, verifies, learns from mistakes",
     "b_pl": "autonomous data creation — AI tworzy i weryfikuje własne dane treningowe, self-improving",
-    "b_en": ""
+    "b_en": "autonomous data creation — AI creates and verifies its own training data, self-improving"
   },
   {
     "r": 15,
@@ -818,9 +818,9 @@ const M = [
     "url": "",
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Orchestrator model (nie base LLM) — router który koordynuje inne modele, twierdzi że bije Claude/GPT",
-    "desc_en": "",
+    "desc_en": "Orchestrator model (not base LLM) — router that coordinates other models, claims to beat Claude/GPT",
     "b_pl": "multi-model orchestration — router koordynujący frontier LLMs przez jedno API",
-    "b_en": ""
+    "b_en": "multi-model orchestration — router coordinating frontier LLMs via one API"
   },
   {
     "r": 5,
@@ -833,9 +833,9 @@ const M = [
     "url": "",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Interactive world model z prompt/reference images — eksploruj, kontroluj, zmieniaj środowisko, trening na Unreal Engine + real-world data",
-    "desc_en": "",
+    "desc_en": "Interactive world model with prompt/reference images — explore, control, modify environment, trained on Unreal Engine + real-world data",
     "b_pl": "interactive world generation — persistent memory, setki klatek, spójność sceny",
-    "b_en": ""
+    "b_en": "interactive world generation — persistent memory, hundreds of frames, scene consistency"
   },
   {
     "r": 3,
@@ -848,9 +848,9 @@ const M = [
     "url": "",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "AI video editor z persistent memory — globalne edycje bez utraty geometrii, spójność w długich wideo",
-    "desc_en": "",
+    "desc_en": "AI video editor with persistent memory — global edits without losing geometry, consistency in long videos",
     "b_pl": "consistent video editing — persistent memory, stabilne edycje w długich klipach",
-    "b_en": ""
+    "b_en": "consistent video editing — persistent memory, stable edits in long clips"
   },
   {
     "r": 4,
@@ -863,9 +863,9 @@ const M = [
     "url": "",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Clone camera motion z reference video na nowy obraz — dolly zoom, bullet time, lens distortion",
-    "desc_en": "",
+    "desc_en": "Clone camera motion from reference video to new image — dolly zoom, bullet time, lens distortion",
     "b_pl": "camera motion cloning — przenoszenie ruchu kamery z ref wideo na nowe obrazy",
-    "b_en": ""
+    "b_en": "camera motion cloning — transferring camera movement from ref video to new images"
   },
   {
     "r": 6,
@@ -878,9 +878,9 @@ const M = [
     "url": "",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Open-source image generator + editor — text-to-image, reference images, editing, permissive license",
-    "desc_en": "",
+    "desc_en": "Open-source image generator + editor — text-to-image, reference images, editing, permissive license",
     "b_pl": "image generation + editing w jednym modelu — permissive license, konkurent Flux/Nano Banana",
-    "b_en": ""
+    "b_en": "image generation + editing in one model — permissive license, Flux/Nano Banana competitor"
   },
   {
     "r": 7,
@@ -893,9 +893,9 @@ const M = [
     "url": "",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Style transfer — aplikuj styl reference image na input image, obsługuje wszystkie kombinacje realistic/artistic",
-    "desc_en": "",
+    "desc_en": "Style transfer — apply reference image style to input image, handles all realistic/artistic combinations",
     "b_pl": "style transfer — konwersja stylów między obrazami, chained style transfers",
-    "b_en": ""
+    "b_en": "style transfer — converting styles between images, chained style transfers"
   },
   {
     "r": 5,
@@ -908,9 +908,9 @@ const M = [
     "url": "",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Training/fine-tuning package dla LTX 2.3 video model — extension, inpainting, outpainting, video-to-video",
-    "desc_en": "",
+    "desc_en": "Training/fine-tuning package for LTX 2.3 video model — extension, inpainting, outpainting, video-to-video",
     "b_pl": "video model fine-tuning — custom characters, VFX, style training dla LTX 2.3",
-    "b_en": ""
+    "b_en": "video model fine-tuning — custom characters, VFX, style training for LTX 2.3"
   },
   {
     "r": 2,
@@ -923,9 +923,9 @@ const M = [
     "url": "",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Nagraj screen task → Codex tworzy automatyzację — learn by demonstration, macOS only (EU excluded)",
-    "desc_en": "",
+    "desc_en": "Record screen task → Codex creates automation — learn by demonstration, macOS only (EU excluded)",
     "b_pl": "AI automation by demonstration — nagrywasz task, AI uczy się go replikować",
-    "b_en": ""
+    "b_en": "AI automation by demonstration — you record a task, AI learns to replicate it"
   },
   {
     "r": 2,
@@ -938,9 +938,9 @@ const M = [
     "url": "",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Unified model dla nauki — proteins, molecules, materials, antibodies, reactions w jednym shared grammar",
-    "desc_en": "",
+    "desc_en": "Unified model for science — proteins, molecules, materials, antibodies, reactions in one shared grammar",
     "b_pl": "multi-domain science model — projektowanie białek, przeciwciał, materiałów w jednym modelu",
-    "b_en": ""
+    "b_en": "multi-domain science model — protein, antibody, material design in one model"
   },
   {
     "r": 2,
@@ -953,9 +953,9 @@ const M = [
     "url": "",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Autonomous AI chemist — proponuje eksperymenty, analizuje wyniki, sugeruje follow-up, poprawi reakcje medyczne",
-    "desc_en": "",
+    "desc_en": "Autonomous AI chemist — proposes experiments, analyzes results, suggests follow-up, improved medical reactions",
     "b_pl": "autonomous chemistry research — AI proponuje i analizuje eksperymenty chemiczne",
-    "b_en": ""
+    "b_en": "autonomous chemistry research — AI proposes and analyzes chemical experiments"
   },
   {
     "r": 4,
@@ -968,9 +968,9 @@ const M = [
     "url": "",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Table tennis robot — grał z profesjonalnym graczem i wygrał, high-speed vision, montowany na rail",
-    "desc_en": "",
+    "desc_en": "Table tennis robot — played against a professional player and won, high-speed vision, rail-mounted",
     "b_pl": "table tennis robot — najelpesz robot do ping-ponga, pokonał profesjonalnego gracza",
-    "b_en": ""
+    "b_en": "table tennis robot — best ping-pong robot, beat a professional player"
   },
   {
     "r": 5,
@@ -983,9 +983,9 @@ const M = [
     "url": "",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Humanoid robot grający w ping-ponga na dwóch nogach — spike pingpong algorithm, 10x faster vision response",
-    "desc_en": "",
+    "desc_en": "Humanoid robot playing ping-pong on two legs — spike pingpong algorithm, 10x faster vision response",
     "b_pl": "bipedal humanoid — ping-pong + manipulacja obiektami, chód po schodach",
-    "b_en": ""
+    "b_en": "bipedal humanoid — ping-pong + object manipulation, stair climbing"
   },
   {
     "r": 4,
@@ -998,9 +998,9 @@ const M = [
     "url": "",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Wearable exoskeleton do treningu robotów — klonuje ruchy człowieka z force feedback, code coming soon",
-    "desc_en": "",
+    "desc_en": "Wearable exoskeleton for robot training — clones human movements with force feedback, code coming soon",
     "b_pl": "robot training exoskeleton — klonowanie ruchów człowieka z force/torque feedback",
-    "b_en": ""
+    "b_en": "robot training exoskeleton — cloning human movements with force/torque feedback"
   },
   {
     "r": 6,
@@ -1013,9 +1013,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Motion transfer AI — przenoś ruch z jednego wideo na drugie, anime + realistic, camera movement capture",
-    "desc_en": "",
+    "desc_en": "Motion transfer AI — transfer movement from one video to another, anime + realistic, camera movement capture",
     "b_pl": "motion transfer — animowanie postaci z reference video, najlepszy open-source",
-    "b_en": ""
+    "b_en": "motion transfer — animating characters from reference video, best open-source"
   },
   {
     "r": 5,
@@ -1028,9 +1028,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Digital twin real-world obiektów — modeluje wygląd + ruch, input: point clouds/depth",
-    "desc_en": "",
+    "desc_en": "Digital twin of real-world objects — models appearance + motion, input: point clouds/depth",
     "b_pl": "actionable world models — digital twins z ruchem obiektów dla robotów",
-    "b_en": ""
+    "b_en": "actionable world models — digital twins with object motion for robots"
   },
   {
     "r": 6,
@@ -1043,9 +1043,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "World model dla robotów — przewiduje co się stanie gdy robot wykona akcję, cross different robot bodies",
-    "desc_en": "",
+    "desc_en": "World model for robots — predicts what happens when robot performs action, cross different robot bodies",
     "b_pl": "robot world model — symulacja akcji robotów cross-body, synthetic training data",
-    "b_en": ""
+    "b_en": "robot world model — cross-body robot action simulation, synthetic training data"
   },
   {
     "r": 1,
@@ -1058,9 +1058,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Real-time translation model — simultaneous (nie turn-by-turn), dostępny przez API + Google Translate mobile",
-    "desc_en": "",
+    "desc_en": "Real-time translation model — simultaneous (not turn-by-turn), available via API + Google Translate mobile",
     "b_pl": "real-time translation — simultaneous tłumaczenie, dostępne przez API i mobile",
-    "b_en": ""
+    "b_en": "real-time translation — simultaneous translation, available via API and mobile"
   },
   {
     "r": 16,
@@ -1073,9 +1073,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Diffusion language model — generuje tekst jak obraz, 4x szybszy niż auto-regressive",
-    "desc_en": "",
+    "desc_en": "Diffusion language model — generates text like images, 4x faster than auto-regressive",
     "b_pl": "diffusion LLM — 4x szybsza generacja tekstu, alternatywa dla auto-regressive",
-    "b_en": ""
+    "b_en": "diffusion LLM — 4x faster text generation, alternative to auto-regressive"
   },
   {
     "r": 7,
@@ -1088,9 +1088,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Video generator z physics control — aplikuj force do sterowania ruchem obiektów w wideo",
-    "desc_en": "",
+    "desc_en": "Video generator with physics control — apply force to control object motion in video",
     "b_pl": "physics-controlled video gen — joystick dla obiektów w wideo",
-    "b_en": ""
+    "b_en": "physics-controlled video gen — joystick for objects in video"
   },
   {
     "r": 1,
@@ -1103,9 +1103,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Benchmark dla AI agents — 55 sub-industries, multi-step real professional work",
-    "desc_en": "",
+    "desc_en": "Benchmark for AI agents — 55 sub-industries, multi-step real professional work",
     "b_pl": "agent benchmark — test real professional workflows, 55 industrii",
-    "b_en": ""
+    "b_en": "agent benchmark — testing real professional workflows, 55 industries"
   },
   {
     "r": 5,
@@ -1118,9 +1118,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Autonomous research z hypothesis tree refinement — living research tree, persistent memory",
-    "desc_en": "",
+    "desc_en": "Autonomous research with hypothesis tree refinement — living research tree, persistent memory",
     "b_pl": "autonomous research agent — hypothesis tree, persistent memory",
-    "b_en": ""
+    "b_en": "autonomous research agent — hypothesis tree, persistent memory"
   },
   {
     "r": 17,
@@ -1133,9 +1133,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Reasoning model z Qwen 3.5 base — decide when to think harder, beats DeepSeek-V4 i GLM-5.1",
-    "desc_en": "",
+    "desc_en": "Reasoning model with Qwen 3.5 base — decide when to think harder, beats DeepSeek-V4 and GLM-5.1",
     "b_pl": "adaptive reasoning — model decyduje kiedy myśleć głębiej",
-    "b_en": ""
+    "b_en": "adaptive reasoning — model decides when to think deeper"
   },
   {
     "r": 4,
@@ -1148,9 +1148,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "2B parameter TTS — voice cloning z few seconds, bije inne modele na leaderboardach",
-    "desc_en": "",
+    "desc_en": "2B parameter TTS — voice cloning from few seconds, beats other models on leaderboards",
     "b_pl": "voice cloning TTS — 2B params, few-shot voice cloning",
-    "b_en": ""
+    "b_en": "voice cloning TTS — 2B params, few-shot voice cloning"
   },
   {
     "r": 4,
@@ -1163,9 +1163,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Single image/video → layered 3D model — multiple layers of hidden depth, 6.2GB",
-    "desc_en": "",
+    "desc_en": "Single image/video → layered 3D model — multiple layers of hidden depth, 6.2GB",
     "b_pl": "layered 3D reconstruction — pixel-aligned geometry, hidden depth layers",
-    "b_en": ""
+    "b_en": "layered 3D reconstruction — pixel-aligned geometry, hidden depth layers"
   },
   {
     "r": 2,
@@ -1178,9 +1178,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "3D human motion z text prompt — trenowany na 2D wideo, bez 3D data needed",
-    "desc_en": "",
+    "desc_en": "3D human motion from text prompt — trained on 2D video, no 3D data needed",
     "b_pl": "text-to-3D motion — generowanie 3D ruchu człowieka z text prompt",
-    "b_en": ""
+    "b_en": "text-to-3D motion — generating 3D human motion from text prompt"
   },
   {
     "r": 3,
@@ -1193,9 +1193,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Multiple images → one clean 3D model — unaligned images, different camera positions",
-    "desc_en": "",
+    "desc_en": "Multiple images → one clean 3D model — unaligned images, different camera positions",
     "b_pl": "multi-image 3D reconstruction — fuse nieuykładnionych zdjęć",
-    "b_en": ""
+    "b_en": "multi-image 3D reconstruction — fusing unaligned photos"
   },
   {
     "r": 1,
@@ -1208,9 +1208,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Single image → 360 panorama 3D world — separates world construction from video rendering",
-    "desc_en": "",
+    "desc_en": "Single image → 360 panorama 3D world — separates world construction from video rendering",
     "b_pl": "360 world from image — panorama → 3D Gaussian model → interactive world",
-    "b_en": ""
+    "b_en": "360 world from image — panorama → 3D Gaussian model → interactive world"
   },
   {
     "r": 8,
@@ -1223,9 +1223,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Fully open-source image model — 3B params, models + training code + data processing",
-    "desc_en": "",
+    "desc_en": "Fully open-source image model — 3B params, models + training code + data processing",
     "b_pl": "fully open-source image model — training code + data, dla nauki",
-    "b_en": ""
+    "b_en": "fully open-source image model — training code + data, for research"
   },
   {
     "r": 7,
@@ -1238,9 +1238,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "First-person world simulator — input human motion 3D + anchor views → egocentric video",
-    "desc_en": "",
+    "desc_en": "First-person world simulator — input human motion 3D + anchor views → egocentric video",
     "b_pl": "egocentric world sim — first-person view z motion + anchor views",
-    "b_en": ""
+    "b_en": "egocentric world sim — first-person view from motion + anchor views"
   },
   {
     "r": 2,
@@ -1253,9 +1253,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Fast 3D mesh generator — prompt/point cloud/image → 3D mesh, 18x faster, latent space",
-    "desc_en": "",
+    "desc_en": "Fast 3D mesh generator — prompt/point cloud/image → 3D mesh, 18x faster, latent space",
     "b_pl": "fast 3D mesh generation — 18x szybszy, prompt/image → 3D mesh",
-    "b_en": ""
+    "b_en": "fast 3D mesh generation — 18x faster, prompt/image → 3D mesh"
   },
   {
     "r": 8,
@@ -1268,9 +1268,9 @@ const M = [
     "url": "",
     "yt": "SxiRANj0xLs",
     "desc_pl": "Long consistent video generator — hierarchical autoencoder, coarse-to-fine rollout",
-    "desc_en": "",
+    "desc_en": "Long consistent video generator — hierarchical autoencoder, coarse-to-fine rollout",
     "b_pl": "long video generation — spójne długie wideo przez hierarchical autoencoder",
-    "b_en": ""
+    "b_en": "long video generation — consistent long video via hierarchical autoencoder"
   },
   {
     "r": 1,
@@ -1283,9 +1283,9 @@ const M = [
     "url": "https://sfstandard.com/2026/06/19/midjourney-spa-union-square-body-scanner",
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Plan 5,000 wellness spa z AI body scannerem, start Union Square SF",
-    "desc_en": "",
+    "desc_en": "Plan 5,000 wellness spa with AI body scanner, starting Union Square SF",
     "b_pl": "AI body scanning, personalized wellness, health diagnostics",
-    "b_en": ""
+    "b_en": "AI body scanning, personalized wellness, health diagnostics"
   },
   {
     "r": 1,
@@ -1298,9 +1298,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Unified video model — edytuje wideo z promptem/obrazem/referencją wideo. Bazuje na Hunyuan 3D 2.2, gałęzie high (84GB) i low",
-    "desc_en": "",
+    "desc_en": "Unified video model — edit video with prompt/image/video reference. Based on Hunyuan 3D 2.2, high (84GB) and low branches",
     "b_pl": "video editing z referencjami — add/remove objects, change scene/weather/style, multi-reference merge",
-    "b_en": ""
+    "b_en": "video editing with references — add/remove objects, change scene/weather/style, multi-reference merge"
   },
   {
     "r": 1,
@@ -1313,9 +1313,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "3D scene reconstruction z multiple images — Gaussian Splatting + camera positions. Tylko 117M params, 468MB",
-    "desc_en": "",
+    "desc_en": "3D scene reconstruction from multiple images — Gaussian Splatting + camera positions. Only 117M params, 468MB",
     "b_pl": "efficient 3D reconstruction — reuse transformer block w pętlach, 10x mniejszy niż Depth Anything V3",
-    "b_en": ""
+    "b_en": "efficient 3D reconstruction — reuses transformer block in loops, 10x smaller than Depth Anything V3"
   },
   {
     "r": 1,
@@ -1328,9 +1328,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Panoramic Geometry Reconstruction — 360° panoramy z single image, depth + normal estimation. Tylko 6GB",
-    "desc_en": "",
+    "desc_en": "Panoramic Geometry Reconstruction — 360° panoramas from single image, depth + normal estimation. Only 6GB",
     "b_pl": "360° panorama reconstruction — adaptacja 3D foundation model do panoram, datasets PanoInfin + ZuriPano",
-    "b_en": ""
+    "b_en": "360° panorama reconstruction — adapting 3D foundation model to panoramas, PanoInfin + ZuriPano datasets"
   },
   {
     "r": 1,
@@ -1343,9 +1343,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Real-time music generator — kontrola MIDI/audio/text, 200ms latency (v1 miała 3s). 2.4B params, działa na MacBooku bez GPU",
-    "desc_en": "",
+    "desc_en": "Real-time music generator — MIDI/audio/text control, 200ms latency (v1 had 3s). 2.4B params, runs on MacBook without GPU",
     "b_pl": "real-time AI music —Playable instrument, DAW plugin, MIDI control, 200ms latency",
-    "b_en": ""
+    "b_en": "real-time AI music — playable instrument, DAW plugin, MIDI control, 200ms latency"
   },
   {
     "r": 1,
@@ -1358,9 +1358,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "ChatGPT memory upgrade — \"dreaming\" syntetyzuje pamięć z przeszłych rozmów w tle, lepszy contextual recall",
-    "desc_en": "",
+    "desc_en": "ChatGPT memory upgrade — \"dreaming\" synthesizes memory from past conversations in background, better contextual recall",
     "b_pl": "memory synthesis — ChatGPT rozumie zmiany kontekstu (np. koniec podróży), better factual recall",
-    "b_en": ""
+    "b_en": "memory synthesis — ChatGPT understands context changes (e.g. trip ending), better factual recall"
   },
   {
     "r": 1,
@@ -1373,9 +1373,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Markerless multi-person motion capture — multi-view video → 3D ruch wielu osób bez mocap suits. Trenowany na MamaSynd (2.5M crops)",
-    "desc_en": "",
+    "desc_en": "Markerless multi-person motion capture — multi-view video → 3D motion of multiple people without mocap suits. Trained on MamaSynd (2.5M crops)",
     "b_pl": "multi-person 3D motion capture — bez markerów, obsługa occlusion, hug/dance/wrestling",
-    "b_en": ""
+    "b_en": "multi-person 3D motion capture — markerless, occlusion handling, hug/dance/wrestling"
   },
   {
     "r": 2,
@@ -1388,9 +1388,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Image gen z layout feature — bounding boxes kontrolują kompozycję, #2 na LM Arena po GPT Image 2, bije Nano Banana 2",
-    "desc_en": "",
+    "desc_en": "Image gen with layout feature — bounding boxes control composition, #2 on LM Arena after GPT Image 2, beats Nano Banana 2",
     "b_pl": "layout-controlled image generation — separacja obiektów, editowanie warstw, poster design",
-    "b_en": ""
+    "b_en": "layout-controlled image generation — object separation, layer editing, poster design"
   },
   {
     "r": 1,
@@ -1403,9 +1403,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Multimodal agent model — vision + language, 11h autonomous coding (English vocab app), bije DeepSeek V4 Pro i GLM-5.1",
-    "desc_en": "",
+    "desc_en": "Multimodal agent model — vision + language, 11h autonomous coding (English vocab app), beats DeepSeek V4 Pro and GLM-5.1",
     "b_pl": "agentic vision-language — long-horizon coding, screen analysis, autonomous app testing",
-    "b_en": ""
+    "b_en": "agentic vision-language — long-horizon coding, screen analysis, autonomous app testing"
   },
   {
     "r": 1,
@@ -1418,9 +1418,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Superchip dla laptopów — Blackwell GPU (6100 cores), 20-core CPU, 128GB unified memory, FP4 petaflop. Fall 2026",
-    "desc_en": "",
+    "desc_en": "Laptop superchip — Blackwell GPU (6100 cores), 20-core CPU, 128GB unified memory, FP4 petaflop. Fall 2026",
     "b_pl": "local AI hardware — 128GB unified memory mieści Qwen 3.7 35B (72GB), lokalne agenty offline",
-    "b_en": ""
+    "b_en": "local AI hardware — 128GB unified memory fits Qwen 3.7 35B (72GB), local offline agents"
   },
   {
     "r": 1,
@@ -1433,9 +1433,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Image → transparent layers — separacja obiektów przez reinforcement learning z VLM jako reward. Tylko paper na razie",
-    "desc_en": "",
+    "desc_en": "Image → transparent layers — object separation via reinforcement learning with VLM as reward. Paper only so far",
     "b_pl": "image layer separation — transparent layers, alpha masks, editowanie warstw",
-    "b_en": ""
+    "b_en": "image layer separation — transparent layers, alpha masks, layer editing"
   },
   {
     "r": 6,
@@ -1448,9 +1448,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Industrial humanoid — all-weather, dust/water resistant, sprint + flip + delicate circuit breaker manipulation",
-    "desc_en": "",
+    "desc_en": "Industrial humanoid — all-weather, dust/water resistant, sprint + flip + delicate circuit breaker manipulation",
     "b_pl": "industrial humanoid robot — extreme environments, precise manipulation + raw power",
-    "b_en": ""
+    "b_en": "industrial humanoid robot — extreme environments, precise manipulation + raw power"
   },
   {
     "r": 7,
@@ -1463,9 +1463,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Emotional humanoid robot couple — full body (nie tylko head/shoulders), super realistic, debiut późny czerwiec 2026",
-    "desc_en": "",
+    "desc_en": "Emotional humanoid robot couple — full body (not just head/shoulders), super realistic, debut late June 2026",
     "b_pl": "realistic full-body humanoid — emotional companion robots, full body nie tylko head",
-    "b_en": ""
+    "b_en": "realistic full-body humanoid — emotional companion robots, full body not just head"
   },
   {
     "r": 1,
@@ -1478,9 +1478,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Quantum chip — AI (Discovery AI) pomogła zbudować, 1000x bardziej niezawodny niż poprzednicy. Skróciło harmonogram o połowę (2029)",
-    "desc_en": "",
+    "desc_en": "Quantum chip — AI (Discovery AI) helped build it, 1000x more reliable than predecessors. Halved the timeline (2029)",
     "b_pl": "quantum computing chip — AI-assisted manufacturing, 1000x reliability improvement",
-    "b_en": ""
+    "b_en": "quantum computing chip — AI-assisted manufacturing, 1000x reliability improvement"
   },
   {
     "r": 1,
@@ -1493,9 +1493,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Zero-shot voice cloning TTS — klonuje głos z 3-4s sample, bazuje na F5-TTS, 10GB checkpoint",
-    "desc_en": "",
+    "desc_en": "Zero-shot voice cloning TTS — clones voice from 3-4s sample, based on F5-TTS, 10GB checkpoint",
     "b_pl": "instant voice cloning — few-shot TTS, bazuje na F5-TTS, fits consumer GPU",
-    "b_en": ""
+    "b_en": "instant voice cloning — few-shot TTS, based on F5-TTS, fits consumer GPU"
   },
   {
     "r": 1,
@@ -1508,9 +1508,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Real-time avatar streaming — prompt + transcript → speaking avatar, 5+ min videos, działa na H100. Tylko paper",
-    "desc_en": "",
+    "desc_en": "Real-time avatar streaming — prompt + transcript → speaking avatar, 5+ min videos, runs on H100. Paper only",
     "b_pl": "real-time avatar streaming — long consistent videos, motion control, single H100",
-    "b_en": ""
+    "b_en": "real-time avatar streaming — long consistent videos, motion control, single H100"
   },
   {
     "r": 1,
@@ -1523,9 +1523,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Real-time generative world model dla autonomous driving — multi-camera driving videos reagujące na akcje pojazdu",
-    "desc_en": "",
+    "desc_en": "Real-time generative world model for autonomous driving — multi-camera driving videos responding to vehicle actions",
     "b_pl": "autonomous driving simulation — multi-camera, extreme weather, editable scenes, synthetic training data",
-    "b_en": ""
+    "b_en": "autonomous driving simulation — multi-camera, extreme weather, editable scenes, synthetic training data"
   },
   {
     "r": 1,
@@ -1538,9 +1538,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "550B MoE (55B active), hybrid Mamba-Transformer, 1M context, 5x faster inference, NVFP4 quantization, 350GB",
-    "desc_en": "",
+    "desc_en": "550B MoE (55B active), hybrid Mamba-Transformer, 1M context, 5x faster inference, NVFP4 quantization, 350GB",
     "b_pl": "agentic LLM — long-horizon workflows, multi-token prediction, 30% niższy cost od konkurencji",
-    "b_en": ""
+    "b_en": "agentic LLM — long-horizon workflows, multi-token prediction, 30% lower cost than competitors"
   },
   {
     "r": 1,
@@ -1553,9 +1553,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "TTS z inline tags — emocje, style, pauzy, sound effects w prompcie. 9.3GB, najlepszy open-source TTS na benchmarkach",
-    "desc_en": "",
+    "desc_en": "TTS with inline tags — emotions, styles, pauses, sound effects in prompt. 9.3GB, best open-source TTS on benchmarks",
     "b_pl": "controllable TTS — inline emotion/style tags, real-time expressive voice, chat-native",
-    "b_en": ""
+    "b_en": "controllable TTS — inline emotion/style tags, real-time expressive voice, chat-native"
   },
   {
     "r": 1,
@@ -1568,9 +1568,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Video + audio generation — joint audio-visual, 6.3B params, 720p dual-channel audio, bije LTX Video 19B. FP8 = 7GB",
-    "desc_en": "",
+    "desc_en": "Video + audio generation — joint audio-visual, 6.3B params, 720p dual-channel audio, beats LTX Video 19B. FP8 = 7GB",
     "b_pl": "video with native audio — joint audio-visual generation, smaller than competitors",
-    "b_en": ""
+    "b_en": "video with native audio — joint audio-visual generation, smaller than competitors"
   },
   {
     "r": 1,
@@ -1583,9 +1583,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Medium thinking model — 1T MoE (35B active), private preview. Ustępuje topowym modelom na rynku",
-    "desc_en": "",
+    "desc_en": "Medium thinking model — 1T MoE (35B active), private preview. Lags top market models",
     "b_pl": "reasoning model — Microsoft AI, MoE architecture, private preview",
-    "b_en": ""
+    "b_en": "reasoning model — Microsoft AI, MoE architecture, private preview"
   },
   {
     "r": 1,
@@ -1598,9 +1598,9 @@ const M = [
     "url": "",
     "yt": "CzxqQJOswvo",
     "desc_pl": "Image generator + editor — #3 na LM Arena po Imagen 3, bije podstawowe modele Google. Closed source, paid",
-    "desc_en": "",
+    "desc_en": "Image generator + editor — #3 on LM Arena after Imagen 3, beats basic Google models. Closed source, paid",
     "b_pl": "image generation + editing — top-tier quality, blind tests favorable",
-    "b_en": ""
+    "b_en": "image generation + editing — top-tier quality, favorable blind tests"
   }
 ];
 

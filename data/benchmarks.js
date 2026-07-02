@@ -13,7 +13,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "57 przedmiotów akademickich (historia, prawo, medycyna, matematyka, etc.). Standard LLM knowledge od 2020. Frontier modele >90%.",
-    "t_en": ""
+    "t_en": "57 academic subjects (history, law, medicine, math, etc.). The standard LLM knowledge benchmark since 2020. Frontier models score >90%. Despite contamination concerns, MMLU remains widely reported. Created by UC Berkeley."
   },
   {
     "n": "GPQA",
@@ -25,7 +25,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "Pytania graduate-level z biologii, chemii, fizyki — tak trudne że Google nie pomaga. Mierzy ekspertyzę ekspertów.",
-    "t_en": ""
+    "t_en": "Graduate-level questions in biology, chemistry, physics — so hard that Google search doesn't help. Measures expert-level reasoning. A key benchmark for frontier models. Created by NYU."
   },
   {
     "n": "ARC-AGI",
@@ -37,7 +37,7 @@ const B = [
     "ty": "arena",
     "tier": 3,
     "t_pl": "Visual reasoning — siatki z wzorcami geometrycznymi, model musi uogólnić regułę. Francois Chollet. Frontier modele ~30%, ludzie 100%.",
-    "t_en": ""
+    "t_en": "Visual reasoning — grids with geometric patterns, the model must infer the rule. Created by François Chollet. Frontier models score ~30%, humans 100%. The $1M ARC Prize drives progress. A key test for AGI-style reasoning."
   },
   {
     "n": "MMLU-Pro",
@@ -49,7 +49,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "Trudniejsza wersja MMLU — 10-opcji zamiast 4, bardziej requiring reasoning. Zastępuje oryginał w nowszych ewaluacjach.",
-    "t_en": ""
+    "t_en": "A harder version of MMLU — 10 options instead of 4, more reasoning required. Replaces the original in newer evaluations. Created by TIGERA. More contamination-resistant than MMLU."
   },
   {
     "n": "ARC",
@@ -61,7 +61,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "Pytania naukowe szkolne wymagające logiki, nie tylko faktów. Easy + Challenge split. Standard od 2018.",
-    "t_en": ""
+    "t_en": "Grade-school science questions requiring logic, not just facts. Easy + Challenge split. The standard since 2018. Created by Allen AI. Frontier models score 95%+ on ARC-Challenge."
   },
   {
     "n": "ARC-AGI v2",
@@ -73,7 +73,7 @@ const B = [
     "ty": "arena",
     "tier": 2,
     "t_pl": "Wersja 2 — 100x trudniejsza niż oryginał. Frontier LLM-y <10%. Część $1M ARC Prize.",
-    "t_en": ""
+    "t_en": "Version 2 — 100x harder than the original. Frontier LLMs score <10%. Part of the $1M ARC Prize. Created by Opus in 2025. A key test for AGI-style abstract reasoning."
   },
   {
     "n": "BIG-Bench",
@@ -85,7 +85,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "200+ zadań z 444 autorów. BBH (Hard) subset to najtrudniejsze 23 zadania. Google, OpenAI.",
-    "t_en": ""
+    "t_en": "Beyond the Imitation Game — 200+ tasks from 444 authors. BBH (Hard) subset is the hardest 23 tasks. Created by Google, OpenAI. A broad capability benchmark still used for frontier evaluation."
   },
   {
     "n": "TruthfulQA",
@@ -97,7 +97,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "Mierzy czy model unika rozpowszechniania mitów (\"Czy ptaki są prawdziwe?\"). Kluczowy benchmark halucynacji.",
-    "t_en": ""
+    "t_en": "Measures whether a model avoids spreading myths (\"Are birds real?\"). A key hallucination benchmark. Frontier models score 80%+ but still fail on adversarial questions. Created by Stanford."
   },
   {
     "n": "HellaSwag",
@@ -109,7 +109,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "Wypełnianie scenariuszy — wybierz sensowną kontynuację. Adversarial, trudny dla modeli. Standard commonsense.",
-    "t_en": ""
+    "t_en": "Scenario completion — choose a sensible continuation. Adversarial, hard for older models. A standard commonsense benchmark. Frontier models score 95%+. Created by Allen AI."
   },
   {
     "n": "WinoGrande",
@@ -121,7 +121,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "Coreference resolution z rasowymi/stereotypowymi pułpkami. Adversarial Winograd Schema.",
-    "t_en": ""
+    "t_en": "Coreference resolution with racial/stereotypical traps. Adversarial Winograd Schema. A standard benchmark for bias and commonsense. Frontier models score 90%+. Created by Allen AI."
   },
   {
     "n": "GSM8K",
@@ -133,7 +133,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "8.5k słownych zadań matematycznych szkolnych. Frontier modele >95%. Pierwszy sanity check math.",
-    "t_en": ""
+    "t_en": "8.5K grade-school math word problems. Frontier models score >95%. The first sanity check for math capability. Created by OpenAI. Replaced by MATH and AIME for frontier models."
   },
   {
     "n": "FrontierMath",
@@ -145,7 +145,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "Matematyka research-level od profesjonalnych matematyków. Frontier modele <2%. Epoch AI.",
-    "t_en": ""
+    "t_en": "Research-level math from professional mathematicians. Frontier models score <2%. Created by Epoch AI. The hardest math benchmark — far beyond GSM8K or MATH. Shows AI is far from replacing mathematicians."
   },
   {
     "n": "MATH",
@@ -157,7 +157,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "12.5k problemów z amerykańskich konkursów matematycznych (AMC, AIME). Trudniejsze niż GSM8K, wymaga LaTeX.",
-    "t_en": ""
+    "t_en": "12.5K problems from US math competitions (AMC, AIME). Harder than GSM8K, requires LaTeX. A standard frontier math benchmark. Frontier reasoning models (o3, R1) score 80%+."
   },
   {
     "n": "AIME",
@@ -169,7 +169,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "15 problemów z amerykańskiego konkursu AIME. Testuje math olimpiad. Używany przez OpenAI do ewaluacji reasoning models (o1, o3).",
-    "t_en": ""
+    "t_en": "American Invitational Mathematics Examination — 15 problems from the US math olympiad. Tests competition math. Used by OpenAI to evaluate reasoning models. Frontier reasoning models score 80%+ in 2026."
   },
   {
     "n": "HumanEval",
@@ -181,7 +181,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "164 zadania programistyczne (Python) z funkcją + testami. Pass@1 standard kodowania. OpenAI Codex paper.",
-    "t_en": ""
+    "t_en": "164 Python programming tasks with function signatures and tests. Pass@1 is the standard coding metric. From OpenAI's Codex paper (2021). The most widely reported coding benchmark. Frontier models score 90%+."
   },
   {
     "n": "SWE-bench",
@@ -193,7 +193,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "Prawdziwe bug reports z 12 GitHub repo (Django, scikit-learn, etc.) — model musi naprawić poprzez modyfikację kodu + testy. Najlepszy miernik agentic coding.",
-    "t_en": ""
+    "t_en": "Real bug reports from 12 GitHub repos (Django, scikit-learn, etc.) — the model must fix them via code changes + tests. The best measure of agentic coding. Created by Princeton. Frontier models: GPT-5 71%."
   },
   {
     "n": "SWE-bench Verified",
@@ -205,7 +205,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "Ręcznie zweryfikowany subset SWE-bench — mniej zadań, ale wiarygodny. Standard frontier modeli 2026.",
-    "t_en": ""
+    "t_en": "A manually verified subset of SWE-bench — fewer tasks, but trustworthy. The standard frontier model coding benchmark in 2026. Eliminates false positives in the original SWE-bench."
   },
   {
     "n": "SWE-bench Pro",
@@ -217,7 +217,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "Wersja Pro SWE-bench — trudniejsze agentic coding zadania, mierzy long-horizon workflows. MiniMax M3 bije GPT-5.5 (czerwiec 2026).",
-    "t_en": ""
+    "t_en": "A harder version of SWE-bench with more complex agentic coding tasks, measuring long-horizon workflows. MiniMax M3 beats GPT-5.5 on SWE-bench Pro (June 2026). Created by Princeton in 2025."
   },
   {
     "n": "HumanEval+",
@@ -229,7 +229,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "Wersja z 80x większą liczbą testów per zadanie — eliminuje false positives. EvalPlus.",
-    "t_en": ""
+    "t_en": "A version with 80x more tests per task — eliminates false positives. Created by EvalPlus. A more rigorous coding benchmark than HumanEval. Frontier models score 85%+ on HumanEval+."
   },
   {
     "n": "MBPP",
@@ -241,7 +241,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "974 zadań Python basic-level. Drugi po HumanEval sanity check.",
-    "t_en": ""
+    "t_en": "Mostly Basic Python Problems — 974 Python basic-level tasks. The second sanity check after HumanEval. Created by Google. Frontier models score 90%+. Less challenging than HumanEval but widely used."
   },
   {
     "n": "LiveCodeBench",
@@ -253,7 +253,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "Ciągle aktualizowane zadania z LeetCode, Codeforces, AtCoder. Eliminuje contamination — nowe zadania po dacie cut-off modelu.",
-    "t_en": ""
+    "t_en": "Continuously updated tasks from LeetCode, Codeforces, AtCoder. Eliminates contamination — new tasks after model cutoff. Created by UC Berkeley. A key benchmark for evaluating models without data contamination."
   },
   {
     "n": "Aider LLM Leaderboard",
@@ -265,7 +265,7 @@ const B = [
     "ty": "leaderboard",
     "tier": 2,
     "t_pl": "Real-world coding benchmark — edycja istniejących repozytoriów przez Aider. Pass@1 z prawdziwymi git diff-ami.",
-    "t_en": ""
+    "t_en": "Real-world coding benchmark — editing existing repositories via Aider. Pass@1 with real git diffs. Tests practical coding ability. Highly respected by developers. Frontier models compete for the top spot."
   },
   {
     "n": "CodeContests",
@@ -277,7 +277,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "Programistyczne konkursy — algorytmiczne problemy z testami. DeepMind AlphaCode.",
-    "t_en": ""
+    "t_en": "Programming contests — algorithmic problems with tests. DeepMind AlphaCode. Created by DeepMind in 2022. A key benchmark for competitive programming AI. Less popular since LiveCodeBench."
   },
   {
     "n": "Agents Last Exam",
@@ -289,7 +289,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "55 sub-industries, multi-step real professional work. Premiera czerwiec 2026. Najbardziej realistic test agentów.",
-    "t_en": ""
+    "t_en": "55 sub-industries, multi-step real professional work. Premiered June 2026. The most realistic test of agents. Frontier agents score <20%. Created by independent researchers."
   },
   {
     "n": "GAIA",
@@ -301,7 +301,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "Real-world assistant questions wymagające multi-step reasoning, tool use (web search, calc), ~10-30 kroków per pytanie. Meta + HuggingFace.",
-    "t_en": ""
+    "t_en": "General AI Assistants — real-world questions requiring multi-step reasoning and tool use (web search, calculator), 10-30 steps per question. Created by Meta + HuggingFace. A key benchmark for agents."
   },
   {
     "n": "WebArena",
@@ -313,7 +313,7 @@ const B = [
     "ty": "środowisko",
     "tier": 2,
     "t_pl": "Realistyczne środowisko webowe (forum, wiki, sklep) — agent musi wykonać taski w przeglądarce. Web agent benchmark.",
-    "t_en": ""
+    "t_en": "A realistic web environment (forum, wiki, shop) — the agent must perform tasks in a browser. A web agent benchmark. Created by CMU. Frontier agents score 40-60% in 2026."
   },
   {
     "n": "OSWorld",
@@ -325,7 +325,7 @@ const B = [
     "ty": "środowisko",
     "tier": 2,
     "t_pl": "Real computer use — agent steruje pełnym OS (Ubuntu/Windows/Mac), wykonuje złożone taski (Excel, Photoshop, web).",
-    "t_en": ""
+    "t_en": "Real computer use — the agent controls a full OS (Ubuntu/Windows/Mac) and performs complex tasks (Excel, Photoshop, web). A key benchmark for computer use agents. Created by HKU. Frontier agents score 30-50%."
   },
   {
     "n": "VisualWebArena",
@@ -337,7 +337,7 @@ const B = [
     "ty": "środowisko",
     "tier": 1,
     "t_pl": "Wersja WebArena z obrazami — agent musi rozumieć UI wizualnie. Testuje multimodalne agenty.",
-    "t_en": ""
+    "t_en": "A version of WebArena with images — the agent must understand UI visually. Tests multimodal agents. Created by CMU. Frontier agents score 20-40%."
   },
   {
     "n": "AgentBench",
@@ -349,7 +349,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "8 środowisk (OS, DB, web, KG, etc.) — kompleksowy test agentów. Tsinghua.",
-    "t_en": ""
+    "t_en": "8 environments (OS, DB, web, KG, etc.) — comprehensive agent testing. Created by Tsinghua. A broad agent benchmark, though less widely used than GAIA or WebArena."
   },
   {
     "n": "MMMU",
@@ -361,7 +361,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "11.5k zadań z 30 przedmiotów (art, business, science, health, engineering) — obrazy + tekst. Standard VLM.",
-    "t_en": ""
+    "t_en": "11.5K questions across 30 subjects (art, business, science, health, engineering) with images. The standard VLM benchmark. Frontier VLMs (GPT-5 Vision, Gemini 3) score 70%+. Created by the MMMU Team."
   },
   {
     "n": "MMMU-Pro",
@@ -373,7 +373,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "Trudniejsza wersja MMMU — wymaga głębszego rozumowania obrazów.",
-    "t_en": ""
+    "t_en": "A harder version of MMMU — requires deeper image reasoning. Created by the MMMU Team in 2024. A more rigorous VLM benchmark. Frontier models score 50-60%."
   },
   {
     "n": "DocVQA",
@@ -385,7 +385,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "Pytania o dokumenty (faktury, formularze) — testuje OCR + rozumienie. Standard document AI.",
-    "t_en": ""
+    "t_en": "Document Visual Question Answering — questions about documents (invoices, forms). Tests OCR + understanding. A standard document AI benchmark. Created by UPV. Frontier models score 90%+."
   },
   {
     "n": "ChartQA",
@@ -397,7 +397,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "Pytania o wykresy i infografiki. Testuje rozumienie wizualnej reprezentacji danych.",
-    "t_en": ""
+    "t_en": "Questions about charts and infographics. Tests understanding of visual data representation. Created by UNC. A standard multimodal benchmark. Frontier models score 80%+."
   },
   {
     "n": "MathVista",
@@ -409,7 +409,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "Matematyczne problemy w kontekście obrazów (geometria, wykresy). Multimodal math reasoning.",
-    "t_en": ""
+    "t_en": "Math problems with images (geometry, charts). Multimodal math reasoning. Created by Allen AI. A key benchmark for multimodal math. Frontier models score 70%+."
   },
   {
     "n": "OCRBench",
@@ -421,7 +421,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "OCR benchmark — rozpoznawanie tekstu w obrazach (handwriting, scene text, document).",
-    "t_en": ""
+    "t_en": "OCR benchmark — recognizing text in images (handwriting, scene text, documents). Created by MBZUAI. A key benchmark for OCR. In 2026, frontier VLMs do OCR natively, reducing the need for specialized models."
   },
   {
     "n": "AI2D",
@@ -433,7 +433,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "Pytania o diagramy naukowe szkolne. Testuje rozumienie diagramów.",
-    "t_en": ""
+    "t_en": "Questions about science diagrams. Tests diagram understanding. Created by Allen AI in 2016. A standard multimodal benchmark for visual reasoning. Frontier models score 90%+."
   },
   {
     "n": "GenEval",
@@ -445,7 +445,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "Kompozycyjna ewaluacja T2I — model musi poprawnie wygenerować kombinację obiektów/kolorów/relacji. Standard 2024+.",
-    "t_en": ""
+    "t_en": "Compositional evaluation for text-to-image — the model must correctly generate combinations of objects, colors, and relations. The standard T2I benchmark since 2024. Frontier models score 70-80%."
   },
   {
     "n": "HEIM",
@@ -457,7 +457,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "Holistic ewaluacja — 12 aspektów (alignment, aesthetic, fairness, toxicity, etc.). Stanford HELM team.",
-    "t_en": ""
+    "t_en": "Holistic Evaluation of Text-to-Image Models — 12 aspects (alignment, aesthetic, fairness, toxicity, etc.). Stanford HELM team. A comprehensive T2I benchmark. Created in 2023."
   },
   {
     "n": "DPG-Bench",
@@ -469,7 +469,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "Dense prompt — bardzo szczegółowy prompt z 100+ wymogami. Mierzy prompt-following.",
-    "t_en": ""
+    "t_en": "Direct Preference Guidance Benchmark — a very detailed prompt with 100+ requirements. Measures prompt-following. Created by Tencent. A key benchmark for T2I prompt adherence."
   },
   {
     "n": "T2I-CompBench",
@@ -481,7 +481,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "Benchmark kompozycyjności T2I — color, shape, texture binding. Starszy niż GenEval, wciąż używany.",
-    "t_en": ""
+    "t_en": "Text-to-Image Composition Benchmark — color, shape, texture binding. Older than GenEval, still used. Created by USTC. A standard T2I compositional benchmark."
   },
   {
     "n": "VBench",
@@ -493,7 +493,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "16 wymiarów ewaluacji wideo (subject consistency, motion smoothness, spatial quality, etc.). Standard T2V.",
-    "t_en": ""
+    "t_en": "16 dimensions of video evaluation (subject consistency, motion smoothness, spatial quality, etc.). The standard T2V benchmark. Created by CUHK. Frontier models (Sora 2, Veo 3) score highest."
   },
   {
     "n": "EvalCrafter",
@@ -505,7 +505,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "Open-domain T2V benchmark — 869 promptów, multiple metrics (CLIP score, temporal consistency, etc.).",
-    "t_en": ""
+    "t_en": "Open-domain T2V benchmark — 869 prompts, multiple metrics (CLIP score, temporal consistency). Created by Shanghai AI Lab. A standard T2V benchmark since 2023."
   },
   {
     "n": "T2V-CompBench",
@@ -517,7 +517,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "Kompozycyjna ewaluacja T2V — analog T2I-CompBench dla wideo. Testuje spójność obiektów w czasie.",
-    "t_en": ""
+    "t_en": "Compositional T2V evaluation — analog of T2I-CompBench for video. Tests object consistency over time. Created by USTC. A key benchmark for video composition."
   },
   {
     "n": "Objaverse",
@@ -529,7 +529,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "800k+ obiektów 3D — dataset i benchmark. Podstawa ewaluacji modeli 3D.",
-    "t_en": ""
+    "t_en": "800K+ 3D objects — a dataset and benchmark. The foundation for 3D AI evaluation. Created by Allen AI. A standard 3D benchmark since 2022."
   },
   {
     "n": "GSO",
@@ -541,7 +541,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "Skany 3D obiektów domowych. Używane do ewaluacji rekonstrukcji 3D.",
-    "t_en": ""
+    "t_en": "Google Scanned Objects — 3D scans of household objects. Used for 3D reconstruction evaluation. Created by Google. A standard 3D benchmark for reconstruction quality."
   },
   {
     "n": "RT-X",
@@ -553,7 +553,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "Dataset 1M+ epizodów z 22 robotów. Open-X standard treningu robotów. Google DeepMind + 21 instytucji.",
-    "t_en": ""
+    "t_en": "Open X-Embodiment — 1M+ episodes from 22 robots. The open standard for robot training. Created by Google DeepMind + 21 institutions. A key benchmark for robotics AI."
   },
   {
     "n": "CALVIN",
@@ -565,7 +565,7 @@ const B = [
     "ty": "środowisko",
     "tier": 2,
     "t_pl": "Benchmark robotów z long-horizon taskami (5 tasków per sekwencja). Franka Panda robot.",
-    "t_en": ""
+    "t_en": "Compositional Anchor Language — a robot benchmark with long-horizon tasks (5 tasks per sequence). Franka Panda robot. Created by ETH Zürich. A standard robotics benchmark."
   },
   {
     "n": "LIBERO",
@@ -577,7 +577,7 @@ const B = [
     "ty": "środowisko",
     "tier": 1,
     "t_pl": "Benchmark lifelong learning dla robotów — 5 task suites z rosnącą trudnością.",
-    "t_en": ""
+    "t_en": "Lifelong Learning Benchmark for Robotics — 5 task suites with increasing difficulty. Created by MIT. A key benchmark for robot learning and adaptation."
   },
   {
     "n": "RoboCasa",
@@ -589,7 +589,7 @@ const B = [
     "ty": "środowisko",
     "tier": 1,
     "t_pl": "100k+ epizodów w środowiskach domowych (kuchnia, łazienka). 65 tasków. Test generalizacji robotów.",
-    "t_en": ""
+    "t_en": "100K+ episodes in home environments (kitchen, bathroom). 65 tasks. Tests robot generalization. Created by UT Austin. A key benchmark for home robotics."
   },
   {
     "n": "MedQA",
@@ -601,7 +601,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "USMLE pytania medyczne — standard medical LLM. Frontier modele >85%.",
-    "t_en": ""
+    "t_en": "USMLE medical questions — the standard medical LLM benchmark. Frontier models score >85%. Created by Dartmouth. A key benchmark for medical AI applications."
   },
   {
     "n": "PubMedQA",
@@ -613,7 +613,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "Pytania o abstrakty z PubMed z tak/nie/maybe. Scientific reading comprehension.",
-    "t_en": ""
+    "t_en": "Questions about PubMed abstracts with yes/no/maybe answers. Scientific reading comprehension. Created by CMU. A standard benchmark for scientific reasoning."
   },
   {
     "n": "SciCode",
@@ -625,7 +625,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "Scientific coding benchmark — 338 problemów z 16 dziedzin nauki (bio, chemia, fizyka, etc.). Testuje rozumienie naukowe + coding.",
-    "t_en": ""
+    "t_en": "A scientific coding benchmark — 338 problems from 16 science domains (bio, chemistry, physics, etc.). Tests scientific understanding + coding. Created by UIUC."
   },
   {
     "n": "MedMCQA",
@@ -637,7 +637,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "194k pytań medycznych z indyjskich egzaminów entrance. Większy niż MedQA, multilingual.",
-    "t_en": ""
+    "t_en": "194K medical questions from Indian entrance exams. Larger than MedQA, multilingual. Created by IIIT Delhi. A standard medical AI benchmark."
   },
   {
     "n": "CORE-Bench",
@@ -649,7 +649,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "Computational reproducibility — model musi odtworzyć wyniki naukowe z kodu. Mierzy zdolność do research automation.",
-    "t_en": ""
+    "t_en": "Computational reproducibility — the model must reproduce scientific results from code. Measures research automation capability. Created by independent researchers in 2024."
   },
   {
     "n": "HarmBench",
@@ -661,7 +661,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "Standardized benchmark red-teaming — mierzy skuteczność ataków i obron. Standard safety eval 2024+.",
-    "t_en": ""
+    "t_en": "A standardized red-teaming benchmark — measures attack and defense effectiveness. The standard safety evaluation since 2024. Created by CAIS. Frontier models are tested for robustness."
   },
   {
     "n": "AdvBench",
@@ -673,7 +673,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "520 adversarial prompts — jailbreaków i szkodliwych zapytań. Klasyk ewaluacji safety.",
-    "t_en": ""
+    "t_en": "520 adversarial prompts — jailbreaks and harmful queries. A classic safety evaluation. Created by UW. A key benchmark for jailbreak robustness."
   },
   {
     "n": "JailbreakBench",
@@ -685,7 +685,7 @@ const B = [
     "ty": "leaderboard",
     "tier": 2,
     "t_pl": "Open benchmark red-teaming — leaderboard jailbreaków i obron. Standard 2024+.",
-    "t_en": ""
+    "t_en": "An open benchmark for red-teaming — a leaderboard of jailbreaks and defenses. The standard jailbreak evaluation since 2024. Created by UW."
   },
   {
     "n": "BBQ",
@@ -697,7 +697,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 2,
     "t_pl": "Mierzy stereotypy demograficzne (rasa, płeć, wiek, religia, etc.). Standard bias eval.",
-    "t_en": ""
+    "t_en": "Bias Benchmark for QA — measures demographic stereotypes (race, gender, age, religion). The standard bias evaluation. Created by NYU. A key benchmark for AI fairness."
   },
   {
     "n": "SimpleBench",
@@ -709,7 +709,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "Simple yes/no pytania — niektóre łatwe, niektóre z pułapkami. Mierzy base capabilities, nie robust reasoning.",
-    "t_en": ""
+    "t_en": "Simple yes/no questions — some easy, some with traps. Measures base capabilities, not robust reasoning. Created by independent researchers. A simple test that reveals model limitations."
   },
   {
     "n": "ToxiGen",
@@ -721,7 +721,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "274k toksycznych i neutralnych wypowiedzi o grupach demograficznych. Detekcja hate speech.",
-    "t_en": ""
+    "t_en": "274K toxic and neutral statements about demographic groups. Used for hate speech detection evaluation. Created by Microsoft. A key benchmark for content moderation AI."
   },
   {
     "n": "LM Arena",
@@ -733,7 +733,7 @@ const B = [
     "ty": "arena",
     "tier": 3,
     "t_pl": "Crowd-sourced pairwise comparison LLM-ów — user wybiera lepszą z 2 odpowiedzi. ELO rating. Główny ranking LLM 2024-2026.",
-    "t_en": ""
+    "t_en": "LMSYS Chatbot Arena — crowd-sourced pairwise comparison of LLMs. Users choose the better of 2 responses. ELO rating. The main LLM ranking 2024-2026. Created by LMSYS (UC Berkeley)."
   },
   {
     "n": "Open LLM Leaderboard",
@@ -745,7 +745,7 @@ const B = [
     "ty": "leaderboard",
     "tier": 3,
     "t_pl": "Ranking open-source LLM-ów — MMLU, ARC, HellaSwag, TruthfulQA, GSM8K, Winogrande. Standard OS LLM od 2023.",
-    "t_en": ""
+    "t_en": "HuggingFace's ranking of open-source LLMs — MMLU, ARC, HellaSwag, TruthfulQA, GSM8K, Winogrande. The standard OS LLM benchmark since 2023."
   },
   {
     "n": "Humanity's Last Exam",
@@ -757,7 +757,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 3,
     "t_pl": "3,000 pytań od 1,000+ ekspertów z 100+ dziedzin. Najtrudniejszy Q&A benchmark 2025. Frontier <10%.",
-    "t_en": ""
+    "t_en": "3,000 questions from 1,000+ experts across 100+ fields. The hardest Q&A benchmark 2025. Frontier models score <10%. Created by CAIS. Shows the gap between AI and human expertise."
   },
   {
     "n": "Open LLM Leaderboard v2",
@@ -769,7 +769,7 @@ const B = [
     "ty": "leaderboard",
     "tier": 2,
     "t_pl": "Wersja 2 — trudniejsze benchmarki (MMLU-Pro, GPQA, MATH, etc.) eliminujące contamination. 2024+.",
-    "t_en": ""
+    "t_en": "Version 2 — harder benchmarks (MMLU-Pro, GPQA, MATH, etc.) eliminating contamination. 2024+. Created by HuggingFace. The standard for open-source model evaluation."
   },
   {
     "n": "Artificial Analysis",
@@ -781,7 +781,7 @@ const B = [
     "ty": "leaderboard",
     "tier": 2,
     "t_pl": "Independent benchmark image/video modeli — leaderboard generowania wideo i obrazów.",
-    "t_en": ""
+    "t_en": "Independent benchmark for image/video models — leaderboards for generation quality. Provides neutral comparisons of frontier generative models. Highly cited in the AI community."
   },
   {
     "n": "DesignArena",
@@ -793,7 +793,7 @@ const B = [
     "ty": "leaderboard",
     "tier": 2,
     "t_pl": "Open leaderboard image generatorów — design, logo, poster. Ideogram 4 #1 w 2026.",
-    "t_en": ""
+    "t_en": "Open leaderboard for image generators — design, logo, poster. Ideogram 4 is #1 in 2026. Specialized for design use cases. A key reference for designers choosing AI tools."
   },
   {
     "n": "SEAL Leaderboards",
@@ -805,7 +805,7 @@ const B = [
     "ty": "leaderboard",
     "tier": 2,
     "t_pl": "Scale AI leaderboards — private eval z własnymi benchmarkami. Mniej gamingu niż publiczne.",
-    "t_en": ""
+    "t_en": "Scale AI leaderboards — private evaluation with proprietary benchmarks. Less gaming than public leaderboards. Increasingly trusted as a neutral source for frontier model comparison."
   },
   {
     "n": "Artificial Analysis Video",
@@ -817,7 +817,7 @@ const B = [
     "ty": "leaderboard",
     "tier": 1,
     "t_pl": "Ranking video generatorów — HappyHorse 1.0 #1 w 2026.",
-    "t_en": ""
+    "t_en": "Ranking of video generators — HappyHorse 1.0 is #1 in 2026. Specialized for video generation quality. A key reference for content creators choosing AI video tools."
   },
   {
     "n": "VIBE Bench",
@@ -829,7 +829,7 @@ const B = [
     "ty": "zbiór zadań",
     "tier": 1,
     "t_pl": "Visual instruction following benchmark — VLM rozumie instrukcje o obrazach. NVIDIA.",
-    "t_en": ""
+    "t_en": "Visual instruction following benchmark — VLMs follow instructions about images. Created by NVIDIA. Tests whether VLMs truly understand visual content."
   }
 ];
 

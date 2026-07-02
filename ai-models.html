@@ -213,4 +213,8 @@ function exportData(fmt){const filtered=M.filter(m=>{const txt=nm(m.n+' '+(m.des
 function download(content,filename,mime){const blob=new Blob([content],{type:mime});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=filename;a.click();URL.revokeObjectURL(a.href);showToast('✓ Pobrano '+filename)}
 function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2000)}
 init();
-</script></body></html>
+</script>
+<footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
+Deploy: <span id="deploy-ts">2026-07-02 22:07:46 UTC</span> · <span id="deploy-hash">vf3cbf125</span>
+</footer>
+</body></html>
