@@ -7,7 +7,7 @@ const G = [
     "c": "Architektury i modele",
     "t": "LLM",
     "en": "Large Language Model",
-    "d_pl": "Duży model językowy — sieć neuronowa trenowana na ogromnych korpusach tekstu, potrafiąca generować, tłumaczyć, streszczać i rozumować w języku naturalnym. LLM-y są podstawą produktów takich jak ChatGPT, Claude czy Gemini. Najważniejsze parametry to liczba parametrów (mierzona w miliardach) i rozmiar okna kontekstowego.",
+    "d_pl": "Large Language Model (duży model językowy) — sieć neuronowa trenowana na ogromnych korpusach tekstu, potrafiąca generować, tłumaczyć, streszczać i rozumować w języku naturalnym. LLM-y są podstawą produktów takich jak ChatGPT, Claude czy Gemini. Najważniejsze parametry to liczba parametrów (mierzona w miliardach) i rozmiar okna kontekstowego.",
     "d_en": "A large language model — a neural network trained on huge text corpora, capable of generating, translating, summarizing and reasoning in natural language. LLMs are the foundation of products like ChatGPT, Claude and Gemini. Key parameters include the number of parameters (measured in billions) and the context window size."
   },
   {
@@ -35,28 +35,28 @@ const G = [
     "c": "Architektury i modele",
     "t": "VAE",
     "en": "Variational Autoencoder",
-    "d_pl": "Variational Autoencoder (wariacyjny autokoder) — model generatywny uczący się kompresować dane do reprezentacji ukrytej (latent space) i odtwarzać je z powrotem. Często używany jako komponent w modelach dyfuzyjnych — VAE kompresuje obraz do latent space, a diffusion model generuje w tym latent space. Stabilniejszy i szybszy niż czysty pixel-space diffusion.",
+    "d_pl": "Variational Autoencoder (autoenkoder wariacyjny) — model generatywny uczący się kompresować dane do reprezentacji ukrytej (latent space) i odtwarzać je z powrotem. Często używany jako komponent w modelach dyfuzyjnych — VAE kompresuje obraz do latent space, a diffusion model generuje w tym latent space. Stabilniejszy i szybszy niż czysty pixel-space diffusion.",
     "d_en": "A generative model that learns to compress data into a latent representation (latent space) and reconstruct it back. Often used as a component in diffusion models — VAE compresses the image to latent space, and the diffusion model generates in that space. Less popular than GANs for direct generation, but more stable in training."
   },
   {
     "c": "Architektury i modele",
     "t": "GAN",
     "en": "Generative Adversarial Network",
-    "d_pl": "Generative Adversarial Network (generatywna sieć adversarialna) — architektura z dwiema sieciami: generatorem (tworzy dane) i dyskryminatorem (ocenia, czy dane są prawdziwe). Trenują się wspólnie w grze o sumie zerowej. W latach 2017-2021 dominował w generowaniu obrazów (StyleGAN), dziś wyparty przez modele dyfuzyjne, ale wraca w aplikacjach wymagających niskiej latencji (real-time).",
+    "d_pl": "Generative Adversarial Network (generatywna sieć przeciwstawna) — architektura z dwiema sieciami: generatorem (tworzy dane) i dyskryminatorem (ocenia, czy dane są prawdziwe). Trenują się wspólnie w grze o sumie zerowej. W latach 2017-2021 dominował w generowaniu obrazów (StyleGAN), dziś wyparty przez modele dyfuzyjne, ale wraca w aplikacjach wymagających niskiej latencji (real-time).",
     "d_en": "An architecture with two networks: a generator (creates data) and a discriminator (evaluates it). They train adversarially — the generator tries to fool the discriminator, the discriminator tries to detect fakes. Used for image generation (StyleGAN), deepfakes, voice cloning. In 2026 it was largely displaced by diffusion models, but still used for real-time generation."
   },
   {
     "c": "Architektury i modele",
     "t": "CNN",
     "en": "Convolutional Neural Network",
-    "d_pl": "Sieć konwolucyjna — klasyczna architektura do przetwarzania obrazów. Używa filtrów przesuwających się po obrazie. Dominowała 2012-2020 (ResNet, EfficientNet). W LLM-ach wyparta przez vision transformers (ViT), ale wciąż używana w aplikacjach edge i mobile ze względu na efektywność.",
+    "d_pl": "Convolutional Neural Network (konwolucyjna sieć neuronowa) — klasyczna architektura do przetwarzania obrazów. Używa filtrów przesuwających się po obrazie. Dominowała 2012-2020 (ResNet, EfficientNet). W LLM-ach wyparta przez vision transformers (ViT), ale wciąż używana w aplikacjach edge i mobile ze względu na efektywność.",
     "d_en": "A convolutional network — a classic architecture for image processing. Uses filters that scan the image and detect features (edges, textures, shapes). The foundation of computer vision 2012-2020 (AlexNet, ResNet, VGG). Today it's used mainly for edge devices and real-time processing, while transformers dominate high-quality vision tasks."
   },
   {
     "c": "Architektury i modele",
     "t": "RNN / LSTM",
     "en": "Recurrent Neural Network / Long Short-Term Memory",
-    "d_pl": "Recurrent Neural Network (rekurencyjna sieć neuronowa) / Long Short-Term Memory (pamięć długotrwała krótkotrwała) — architektury sekwencyjne, które przetwarzają dane element po elemencie i utrzymują ukryty stan. LSTM (1997) rozwiązał problem vanishing gradient w RNN. Standard dla NLP do 2017 r. Wyparte przez transformery ze względu na niemożność równoległego treningu i słabą pamięć długoterminową.",
+    "d_pl": "Recurrent Neural Network (rekurencyjna sieć neuronowa) / Long Short-Term Memory (długa pamięć krótkotrwała) — architektury sekwencyjne, które przetwarzają dane element po elemencie i utrzymują ukryty stan. LSTM (1997) rozwiązał problem vanishing gradient w RNN. Standard dla NLP do 2017 r. Wyparte przez transformery ze względu na niemożność równoległego treningu i słabą pamięć długoterminową.",
     "d_en": "Sequential architectures that process data element by element and maintain hidden state. RNNs suffer from vanishing gradient — LSTMs solve this with gating mechanisms. Before transformers (2017), they were the standard for NLP and time series. Today they're rarely used in favor of transformers and SSMs, but remain relevant for embedded and real-time applications."
   },
   {
@@ -84,7 +84,7 @@ const G = [
     "c": "Architektury i modele",
     "t": "State Space Model (SSM)",
     "en": "State Space Model",
-    "d_pl": "Architektura alternatywna dla transformera, inspirowana klasycznymi modelami stanu z teorii sterowania. Mamba, S4 to znane warianty. Zaleta: liniowa złożoność obliczeniowa względem długości sekwencji (transformer jest kwadratowy). Subquadratic Inc. używa SSA architecture dla 12M token kontekst z 50x mniejszym kosztem niż FlashAttention.",
+    "d_pl": "State Space Model (model przestrzeni stanów) — Architektura alternatywna dla transformera, inspirowana klasycznymi modelami stanu z teorii sterowania. Mamba, S4 to znane warianty. Zaleta: liniowa złożoność obliczeniowa względem długości sekwencji (transformer jest kwadratowy). Subquadratic Inc. używa SSA architecture dla 12M token kontekst z 50x mniejszym kosztem niż FlashAttention.",
     "d_en": "An architecture alternative to transformers, inspired by classical state space models from control theory. Mamba is the most popular SSM. Advantages: linear complexity in sequence length (vs quadratic for transformers), efficient for long contexts. Disadvantage: worse at certain reasoning tasks. SSMs are gaining popularity since 2024."
   },
   {
@@ -105,7 +105,7 @@ const G = [
     "c": "Architektury i modele",
     "t": "Sparse Attention",
     "en": "Sparse Attention",
-    "d_pl": "Sparse Attention (rzadka uwaga) — wariant attention gdzie każdy token patrzy tylko na podzbiór innych tokenów, nie na wszystkie. Redukuje złożoność z O(n²) do O(n·log n) lub O(n). MiniMax M3 używa własnego sparse attention dla 1M token kontekst bez drastycznego wzrostu kosztów. Kluczowe dla long-kontekst modeli.",
+    "d_pl": "Sparse Attention (rzadki mechanizm uwagi) — wariant attention gdzie każdy token patrzy tylko na podzbiór innych tokenów, nie na wszystkie. Redukuje złożoność z O(n²) do O(n·log n) lub O(n). MiniMax M3 używa własnego sparse attention dla 1M token kontekst bez drastycznego wzrostu kosztów. Kluczowe dla long-kontekst modeli.",
     "d_en": "A variant of attention where each token looks only at a subset of other tokens, not all. Reduces complexity from O(n²) to O(n log n) or O(n). Used in Longformer, BigBird, FlashAttention. Key for long-context models (1M+ tokens). Without sparse attention, long context would be prohibitively expensive."
   },
   {
@@ -245,7 +245,7 @@ const G = [
     "c": "Trening i optymalizacja",
     "t": "SFT",
     "en": "Supervised Fine-Tuning",
-    "d_pl": "Dostrajanie z nadzorem — trenowanie modelu na parach (input, oczekiwany output). Najprostsza forma fine-tuningu, zazwyczaj pierwszy krok po pre-trainingu. Szkolenie Claude, GPT, Gemini zawsze zaczyna się od SFT, po którym następuje RLHF/DPO.",
+    "d_pl": "Supervised Fine-Tuning (dostrajanie z nadzorem) — trenowanie modelu na parach (input, oczekiwany output). Najprostsza forma fine-tuningu, zazwyczaj pierwszy krok po pre-trainingu. Szkolenie Claude, GPT, Gemini zawsze zaczyna się od SFT, po którym następuje RLHF/DPO.",
     "d_en": "Supervised Fine-Tuning — training a model on labeled examples (instruction-response pairs). The standard way to specialize a model for a task. SFT is simpler than RLHF but less effective for alignment. Most production models use both SFT and RLHF/DPO."
   },
   {
@@ -273,7 +273,7 @@ const G = [
     "c": "Kontekst i wydajność",
     "t": "Embedding",
     "en": "Embedding",
-    "d_pl": "Wektorowa reprezentacja tekstu (lub obrazu) w przestrzeni wielowymiarowej (typowo 768-8192 wymiarów). Podobne semantycznie teksty mają podobne embeddingi. Foundation dla RAG, semantic search, clustering. Modele embeddingowe: OpenAI text-embedding-3, Cohere embed, BGE.",
+    "d_pl": "Embedding (osadzanie/zanurzenie — wektorowa reprezentacja tekstu) — Wektorowa reprezentacja tekstu (lub obrazu) w przestrzeni wielowymiarowej (typowo 768-8192 wymiarów). Podobne semantycznie teksty mają podobne embeddingi. Foundation dla RAG, semantic search, clustering. Modele embeddingowe: OpenAI text-embedding-3, Cohere embed, BGE.",
     "d_en": "A vector representation of text (or image/audio) in a high-dimensional space. Similar meanings are close in this space. Used for search, clustering, classification, and as input to other models. Models: text-embedding-3 (OpenAI), GTE (Alibaba), BGE (BAAI). The foundation of RAG and semantic search."
   },
   {
@@ -287,14 +287,14 @@ const G = [
     "c": "Kontekst i wydajność",
     "t": "Attention mechanism",
     "en": "Attention Mechanism",
-    "d_pl": "Mechanizm pozwalający modelowi skupić się na istotnych częściach sekwencji. Self-attention: każdy token waży innych tokenów w sekwencji. Multi-head attention: równoległe wiele \"głow\" uczących się różnych relacji. To serce transformera, ale O(n²) złożoność ogranicza długość sekwencji.",
+    "d_pl": "Attention mechanism (mechanizm uwagi) — Mechanizm pozwalający modelowi skupić się na istotnych częściach sekwencji. Self-attention: każdy token waży innych tokenów w sekwencji. Multi-head attention: równoległe wiele \"głow\" uczących się różnych relacji. To serce transformera, ale O(n²) złożoność ogranicza długość sekwencji.",
     "d_en": "The core innovation of transformers — the model weighs the importance of each token relative to others. Self-attention computes relationships within a sequence. Multi-head attention captures different aspects simultaneously. The mechanism that enables transformers to handle long-range dependencies better than RNNs."
   },
   {
     "c": "Kontekst i wydajność",
     "t": "KV cache",
     "en": "KV Cache (Key-Value Cache)",
-    "d_pl": "Pamięć podręczna kluczy i wartości z poprzednich tokenów. Pozwala uniknąć przeliczania attention dla już wygenerowanych tokenów — dramatycznie przyspiesza wnioskowanie. Zużywa jednak VRAM — dla 100k tokenów kontekst może to być dziesiątki GB. vLLM, TensorRT-LLM zarządzają KV cache efektywnie przez paging.",
+    "d_pl": "Key-Value Cache (pamięć podręczna kluczy i wartości) — dramatycznie przyspiesza wnioskowanie. Zużywa jednak VRAM — dla 100k tokenów kontekst może to być dziesiątki GB. vLLM, TensorRT-LLM zarządzają KV cache efektywnie przez paging.",
     "d_en": "Key-Value Cache — storing intermediate computations from previous tokens. Essential for efficient autoregressive generation. Without KV cache, generating token N would require reprocessing all N-1 tokens. KV cache size grows linearly with context length — a key constraint for long-context models."
   },
   {
@@ -413,14 +413,14 @@ const G = [
     "c": "Modalności",
     "t": "Multimodal",
     "en": "Multimodal",
-    "d_pl": "Patrz: wielomodalny model w sekcji Architektury. Multimodalność to zdolność modelu do pracy z więcej niż jedną modalnością danych (tekst, obraz, audio, wideo, 3D). Gemini 3.5 Pro, GPT-5.6 Sol, Claude Opus 4.8 są multimodalne. Trend 2026: any-to-any generation (Gemini Omni).",
+    "d_pl": "Multimodal (wielomodalny) — Patrz: wielomodalny model w sekcji Architektury. Multimodalność to zdolność modelu do pracy z więcej niż jedną modalnością danych (tekst, obraz, audio, wideo, 3D). Gemini 3.5 Pro, GPT-5.6 Sol, Claude Opus 4.8 są multimodalne. Trend 2026: any-to-any generation (Gemini Omni).",
     "d_en": "Handling multiple modalities — text, image, audio, video. Frontier models in 2026 are natively multimodal (Gemini 3, GPT-5). Multimodality enables richer interaction — you can show, not just tell. The standard for frontier AI since 2025."
   },
   {
     "c": "Modalności",
     "t": "TTS",
     "en": "Text-to-Speech (TTS)",
-    "d_pl": "Synteza mowy — zamiana tekstu na mowę. Eleven v3, GPT Voice, Gemini 3.1 Flash TTS to frontier modele 2026. Audio Tags pozwalają kontrolować emocje, tempo, akcent w czasie rzeczywistym. Voice cloning (Dot TTS) — klonuje głos z kilku sekund sample. Standard: 70+ języków, real-time wnioskowanie.",
+    "d_pl": "Text-to-Speech (synteza mowy z tekstu) — zamiana tekstu na mowę. Eleven v3, GPT Voice, Gemini 3.1 Flash TTS to frontier modele 2026. Audio Tags pozwalają kontrolować emocje, tempo, akcent w czasie rzeczywistym. Voice cloning (Dot TTS) — klonuje głos z kilku sekund sample. Standard: 70+ języków, real-time wnioskowanie.",
     "d_en": "Text-to-Speech — converting text to spoken audio. Frontier: ElevenLabs, OpenAI Voice. In 2026, indistinguishable from human speech. Enables voice interfaces, audiobooks, accessibility. Voice cloning (from a few seconds of sample) is now standard."
   },
   {
