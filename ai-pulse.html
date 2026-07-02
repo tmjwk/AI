@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="pl" data-theme="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Pulse — panele dyskusyjne</title>
 <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'dark')
+
+document.querySelectorAll('.episode-old').forEach(e=>{
+  const btn=e.querySelector('.ep-toggle');
+  if(btn){btn.addEventListener('click',()=>{e.classList.toggle('open');btn.textContent=e.classList.contains('open')?'▲ Zwiń':'▼ Rozwiń'})}
+});
 </script>
 <style>
 :root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--bl:#3b82f6}
@@ -126,6 +131,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .glosy-list .g-host{min-width:0}
 }
 @media(max-width:380px){.nav-btn{font-size:10px;padding:3px 6px}}
+
+.episode-old{max-height:80px;overflow:hidden;position:relative;border:1px solid var(--bdl);border-radius:8px;margin-bottom:12px;transition:max-height .3s}
+.episode-old.open{max-height:none}
+.episode-old::after{content:"";position:absolute;bottom:0;left:0;right:0;height:40px;background:linear-gradient(transparent,var(--bg));pointer-events:none}
+.episode-old.open::after{display:none}
+.ep-toggle{position:absolute;top:8px;right:8px;z-index:10;background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:4px 12px;cursor:pointer;font-size:12px;color:var(--hs);font-weight:600}
+.ep-toggle:hover{border-color:var(--ac);color:var(--ac)}
 </style></head>
 <body>
 <div class="c">
@@ -147,7 +159,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 
 <!-- EPISODE CARD -->
-<div class="episode">
+<div class="episode-old">
+<button class="ep-toggle">▼ Rozwiń</button>
 <div class="e-top">
 <span class="e-num">#267</span>
 <span class="e-channel">Peter Diamandis · Moonshots &amp; Millionaires</span>
@@ -195,7 +208,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="h-head">
 <span class="h-dot" style="background:var(--ba)"></span>
 <span class="h-name">Immad Mustach</span>
-<span class="h-absent-tag" style="border-color:var(--ba);color:var(--ba)"><span class="pl">gość</span><span class="en">guest</span></span>
+<span class="h-absent-tag" style="border-color:var(--ba);color:var(--ba)"><span class="pl">Gość</span><span class="en">Guest</span></span>
 </div>
 <div class="h-role"><span class="pl"><strong>„AI intellect on emerging intelligence"</strong> — perspektywa aligned AI, safety, emerging capabilities.</span><span class="en"><strong>„AI intellect on emerging intelligence"</strong> — aligned AI, safety, emerging capabilities perspective.</span></div>
 </div>
@@ -491,7 +504,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="h-head">
 <span class="h-dot" style="background:var(--ba)"></span>
 <span class="h-name">Philip Johnson</span>
-<span class="h-absent-tag" style="border-color:var(--ba);color:var(--ba)"><span class="pl">gość</span><span class="en">guest</span></span>
+<span class="h-absent-tag" style="border-color:var(--ba);color:var(--ba)"><span class="pl">Gość</span><span class="en">Guest</span></span>
 </div>
 <div class="h-role"><span class="pl"><strong>Co-founder and CEO of StarCloud</strong> — buduje centra danych w kosmosie. Pierwszy NVIDIA H100 GPU na orbicie, wytrenował pierwszego LLM w kosmosie (Gemma).</span><span class="en"><strong>Co-founder and CEO of StarCloud</strong> — building space-based data centers. First NVIDIA H100 GPU in orbit, trained first LLM in space (Gemma).</span></div>
 </div>
@@ -735,5 +748,10 @@ localStorage.setItem('theme',theme);
 
 
 
+
+document.querySelectorAll('.episode-old').forEach(e=>{
+  const btn=e.querySelector('.ep-toggle');
+  if(btn){btn.addEventListener('click',()=>{e.classList.toggle('open');btn.textContent=e.classList.contains('open')?'▲ Zwiń':'▼ Rozwiń'})}
+});
 </script>
 </body></html>
