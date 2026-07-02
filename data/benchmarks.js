@@ -12,7 +12,7 @@ const B = [
     "y": 2020,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "57 przedmiotów akademickich (historia, prawo, medycyna, matematyka, etc.). Standard LLM knowledge od 2020. frontier modele >90%.",
+    "t_pl": "57 przedmiotów akademickich (historia, prawo, medycyna, matematyka, etc.). Standardowa wiedza dużych modeli językowych (LLM) z 2020. Modele z czołówki (frontier) >90%.",
     "t_en": "57 academic subjects (history, law, medicine, math, etc.). The standard LLM knowledge benchmark since 2020. Frontier models score >90%. Despite contamination concerns, MMLU remains widely reported. Created by UC Berkeley."
   },
   {
@@ -36,7 +36,7 @@ const B = [
     "y": 2019,
     "ty": "arena",
     "tier": 3,
-    "t_pl": "Visual wnioskowanie — siatki z wzorcami geometrycznymi, model musi uogólnić regułę. Francois Chollet. frontier modele ~30%, ludzie 100%.",
+    "t_pl": "Wizualne wnioskowanie — siatki z wzorcami geometrycznymi, model musi uogólnić regułę. Francois Chollet. Modele na granicy możliwości osiągają ~%, ludzie 100%.",
     "t_en": "Visual reasoning — grids with geometric patterns, the model must infer the rule. Created by François Chollet. Frontier models score ~30%, humans 100%. The $1M ARC Prize drives progress. A key test for AGI-style reasoning."
   },
   {
@@ -72,7 +72,7 @@ const B = [
     "y": 2025,
     "ty": "arena",
     "tier": 2,
-    "t_pl": "Wersja 2 — 100x trudniejsza niż oryginał. frontier LLM-y <10%. Część $1M ARC Prize.",
+    "t_pl": "Wersja 2 — 100x trudniejsza niż oryginał. Frontier LLM-y (najnowocześniejsze duże modele językowe) poniżej 10%. Część nagrody 1 mln dolarów w ARC Prize.",
     "t_en": "Version 2 — 100x harder than the original. Frontier LLMs score <10%. Part of the $1M ARC Prize. Created by Opus in 2025. A key test for AGI-style abstract reasoning."
   },
   {
@@ -132,7 +132,7 @@ const B = [
     "y": 2021,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "8.5k słownych zadań matematycznych szkolnych. frontier modele >95%. Pierwszy sanity check math.",
+    "t_pl": "8.5k szkolnych zadań matematycznych. Modele frontier osiągnęły >95%. Pierwsza kontrola poprawności matematycznej.",
     "t_en": "8.5K grade-school math word problems. Frontier models score >95%. The first sanity check for math capability. Created by OpenAI. Replaced by MATH and AIME for frontier models."
   },
   {
@@ -144,7 +144,7 @@ const B = [
     "y": 2024,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "Matematyka research-level od profesjonalnych matematyków. frontier modele <2%. Epoch AI.",
+    "t_pl": "Badania na poziomie akademickim z zakresu matematyki od profesjonalnych matematyków. Modele frontierowe poniżej 2%. Epoch AI.",
     "t_en": "Research-level math from professional mathematicians. Frontier models score <2%. Created by Epoch AI. The hardest math benchmark — far beyond GSM8K or MATH. Shows AI is far from replacing mathematicians."
   },
   {
@@ -204,7 +204,7 @@ const B = [
     "y": 2024,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "Ręcznie zweryfikowany subset SWE-bench — mniej zadań, ale wiarygodny. Standard frontier modeli 2026.",
+    "t_pl": "Ręcznie zweryfikowany podzbiór SWE-bench — mniej zadań, ale wiarygodny. Standard modeli frontierskich 2026.",
     "t_en": "A manually verified subset of SWE-bench — fewer tasks, but trustworthy. The standard frontier model coding benchmark in 2026. Eliminates false positives in the original SWE-bench."
   },
   {
@@ -600,7 +600,7 @@ const B = [
     "y": 2020,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "USMLE pytania medyczne — standard medical LLM. frontier modele >85%.",
+    "t_pl": "Pytania z USMLE — standardowy model medyczny. Modele z czołówki osiągają >85%.",
     "t_en": "USMLE medical questions — the standard medical LLM benchmark. Frontier models score >85%. Created by Dartmouth. A key benchmark for medical AI applications."
   },
   {

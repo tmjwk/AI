@@ -21,7 +21,7 @@ const G = [
     "c": "Architektury i modele",
     "t": "MoE",
     "en": "Mixture of Experts",
-    "d_pl": "Mixture of Experts (mieszanka ekspertów) — architektura, w której tylko część parametrów modelu jest aktywna dla pojedynczego tokenu. Router decyduje, których \"ekspertów\" (sub-sieci) użyć. Np. GLM-5.2 ma 745B parametrów total, ale tylko 44B aktywnych — dzięki temu jest 6x tańszy w wnioskowanie niż gęsty model o tej samej pojemności. MoE jest standardem dla frontier modeli od 2024 r.",
+    "d_pl": "Mixture of Experts (mieszanka ekspertów) — architektura, w której tylko część parametrów modelu jest aktywna dla pojedynczego tokenu. Router decyduje, których \"ekspertów\" (pod-sieci) użyć. Np. GLM-5.2 ma 745B parametrów łącznie, ale tylko 44B aktywnych — dzięki temu jest 6x tańszy w wnioskowaniu niż gęsty model o tej samej pojemności. MoE jest standardem dla modeli z czołówki od 2024 r.",
     "d_en": "An architecture where only a fraction of the model's parameters is active for a single token. A router decides which \"experts\" (sub-networks) to use. E.g., GLM-5.2 has 745B total parameters but only 44B active — making it 6x cheaper in inference than a dense model of the same capacity. MoE is the standard for frontier models since 2024."
   },
   {
@@ -168,14 +168,14 @@ const G = [
     "c": "Trening i optymalizacja",
     "t": "Pre-training",
     "en": "Pre-training",
-    "d_pl": "Pierwszy etap treningu modelu — uczenie na ogromnym korpusie tekstu/obrazów bez nadzoru (self-supervised). Cel: model uczy się gramatyki, faktów, wzorców. Kosztowny — trening frontier modeli to dziesiątki milionów dolarów GPU. Po pre-trainingu model jest \"surowy\" — dopiero dostrajanie czyni go użytecznym asystentem.",
+    "d_pl": "Pierwszy etap treningu modelu — uczenie na ogromnym zbiorze tekstów/obrazów bez nadzoru (samonadzorowane). Cel: model uczy się gramatyki, faktów, wzorców. Kosztowny — trening modeli z czołówki to dziesiątki milionów dolarów na GPU. Po pre-treningu model jest \"surowy\" — dopiero dostrajanie czyni go użytecznym asystentem.",
     "d_en": "The initial training phase where a model learns from massive data. Produces a \"base model\" with general capabilities. Pre-training is the most expensive phase — frontier models cost $100M+ in compute. After pre-training, models are aligned (RLHF, DPO) and fine-tuned for specific tasks."
   },
   {
     "c": "Trening i optymalizacja",
     "t": "Fine-tuning",
     "en": "Fine-tuning",
-    "d_pl": "Dostrojenie wstępnie wytrenowanego modelu na węższym, zadaniowym zbiorze danych. SFT (Supervised dostrajanie) to najprostsza forma — model uczy się z przykładów pytanie-odpowiedź. LoRA i quantization + LoRA (QLoRA) pozwalają fine-tunować duże modele na pojedynczym GPU. dostrajanie zmienia styl, nie podstawową wiedzę.",
+    "d_pl": "Dostrojenie wstępnie wytrenowanego modelu na węższym, zadaniowym zbiorze danych. SFT (dostrajanie nadzorowane) to najprostsza forma — model uczy się z przykładów pytanie-odpowiedź. LoRA i quantyzacja + LoRA (QLoRA) pozwalają dostrajać duże modele na pojedynczym GPU. Dostrajanie zmienia styl, nie podstawową wiedzę.",
     "d_en": "Adapting a pre-trained model to a specific task by further training on task-specific data. Cheaper than training from scratch. Methods: full fine-tuning (all parameters), LoRA (only adapter matrices), QLoRA (LoRA + quantization). The standard way to customize models for specific applications."
   },
   {
@@ -189,7 +189,7 @@ const G = [
     "c": "Trening i optymalizacja",
     "t": "LoRA",
     "en": "Low-Rank Adaptation",
-    "d_pl": "Low-Rank Adaptation (adaptacja niskorzędowa) — dostrajanie 70B modelu na pojedynczym GPU staje się realny. Standard dla community fine-tunes (Stable Diffusion, Llama). QLoRA łączy LoRA z 4-bit quantization.",
+    "d_pl": "Low-Rank Adaptation (adaptacja niskorzędowa) — dostrajanie 70B modelu na pojedynczym GPU staje się realne. Standard dla społecznościowych dostrajania (Stable Diffusion, Llama). QLoRA łączy LoRA z 4-bitową kwantyzacją.",
     "d_en": "Low-Rank Adaptation — a fine-tuning method that adds small trainable \"adapter\" matrices to the model instead of updating all parameters. Reduces trainable parameters by 100-10000x, enabling fine-tuning on consumer GPUs. The standard for efficient model customization. Used in Stable Diffusion, LLMs, and most open-source models."
   },
   {
@@ -210,7 +210,7 @@ const G = [
     "c": "Trening i optymalizacja",
     "t": "DPO",
     "en": "Direct Preference Optimization",
-    "d_pl": "Direct Preference Optimization (bezpośrednia optymalizacja preferencji) — prostsza alternatywa dla RLHF — omija model nagrody i PPO, optymalizuje model bezpośrednio na parach preferencji. Mniej niestabilny, łatwiejszy w implementacji, tańszy. Stał się standardem dla community fine-tunów od 2024 r. (Zephyr, OpenHermes).",
+    "d_pl": "Direct Preference Optimization (bezpośrednia optymalizacja preferencji) — prostsza alternatywa dla RLHF — pomija model nagrody i PPO, optymalizując model bezpośrednio na parach preferencji. Mniej niestabilny, łatwiejszy w implementacji, tańszy. Stał się standardem dla społeczności dostrajania od 2024 r. (Zephyr, OpenHermes).",
     "d_en": "Direct Preference Optimization — a simpler alternative to RLHF. Instead of training a reward model and then RL, DPO directly optimizes the model on preference pairs. Simpler, more stable, and faster than RLHF. Used by Llama 3, Zephyr, many open-source models. Since 2024 it's the dominant alignment method."
   },
   {
@@ -238,14 +238,14 @@ const G = [
     "c": "Trening i optymalizacja",
     "t": "Catastrophic forgetting",
     "en": "Catastrophic Forgetting",
-    "d_pl": "Zjawisko, w którym model forgetuje wcześniej nauczoną wiedzę po fine-tuningu na nowych danych. Główny problem w continuous learning. Rozwiązania: replay buffer (mieszanie starych i nowych danych), Elastic Weight Consolidation (EWC), freezing warstw.",
+    "d_pl": "Zjawisko, w którym model zapomina wcześniej nauczoną wiedzę po dostrajaniu na nowych danych. Główny problem w ciągłym uczeniu. Rozwiązania: bufor odtwarzania (mieszanie starych i nowych danych), Elastic Weight Consolidation (EWC), zamrażanie warstw.",
     "d_en": "When a model forgets previously learned information after training on new data. The main challenge in continuous learning. Mitigation: rehearsal (mix old and new data), regularization (EWC), modular architectures. A key problem for production ML systems that need to update over time."
   },
   {
     "c": "Trening i optymalizacja",
     "t": "SFT",
     "en": "Supervised Fine-Tuning",
-    "d_pl": "Supervised Fine-Tuning (dostrajanie z nadzorem) — trenowanie modelu na parach (input, oczekiwany output). Najprostsza forma fine-tuningu, zazwyczaj pierwszy krok po pre-trainingu. Szkolenie Claude, GPT, Gemini zawsze zaczyna się od SFT, po którym następuje RLHF/DPO.",
+    "d_pl": "Supervised Fine-Tuning (dostrajanie z nadzorem) — trenowanie modelu na parach (wejście, oczekiwany wynik). Najprostsza forma dostrajania, zazwyczaj pierwszy krok po pre-treningu. Szkolenie modeli takich jak Claude, GPT czy Gemini zawsze zaczyna się od SFT, po którym następuje RLHF/DPO.",
     "d_en": "Supervised Fine-Tuning — training a model on labeled examples (instruction-response pairs). The standard way to specialize a model for a task. SFT is simpler than RLHF but less effective for alignment. Most production models use both SFT and RLHF/DPO."
   },
   {
@@ -315,7 +315,7 @@ const G = [
     "c": "Kontekst i wydajność",
     "t": "FlashAttention",
     "en": "FlashAttention",
-    "d_pl": "Algorytm obliczania attention opracowany przez Tri Dao (2022), redukuje memory accesses z O(n²) do O(n). 2-4x szybszy niż standardowy attention, bez utraty dokładności. Standard we wszystkich frontier modelach od 2023 r. Subquadratic Inc. twierdzi, że ich SSA jest 50x szybsze od FlashAttention.",
+    "d_pl": "Algorytm obliczania uwagi opracowany przez Tri Dao (2022), redukuje liczbę dostępu do pamięci z O(n²) do O(n). Jest 2-4x szybszy niż standardowa uwaga, bez utraty dokładności. Standard we wszystkich modelach z czołówki od 2023 r. Subquadratic Inc. twierdzi, że ich SSA jest 50x szybsza od FlashAttention.",
     "d_en": "An optimized attention implementation that reduces memory reads/writes. FlashAttention v2/v3 provides 2-3x speedup for training and inference. The standard for efficient transformer implementations. Developed by Tri Dao. Now built into PyTorch and most model frameworks."
   },
   {
@@ -343,7 +343,7 @@ const G = [
     "c": "Agentic i narzędzia",
     "t": "MCP",
     "en": "Model Context Protocol",
-    "d_pl": "Model Context Protocol (protokół kontekstu modelu) — otwarty standard Anthropic (open-source od listopada 2024) pozwalający łączyć LLM-y z zewnętrznymi źródłami danych i narzędziami. Analogia: USB-C dla aplikacji AI. MCP server wystawia narzędzia, MCP client (np. Claude Desktop) je konsumuje. Pozwala uniknąć vendor lock-in — raz napisany MCP server działa z każdym klientem MCP.",
+    "d_pl": "Model Context Protocol (protokół kontekstu modelu) — otwarty standard Anthropic (open-source od listopada 2024) pozwalający łączyć duże modele językowe z zewnętrznymi źródłami danych i narzędziami. Analogia: USB-C dla aplikacji AI. MCP serwer udostępnia narzędzia, MCP klient (np. Claude Desktop) z nich korzysta. Pozwala uniknąć vendor lock-in — raz napisany MCP serwer działa z każdym klientem MCP.",
     "d_en": "Model Context Protocol — an open standard from Anthropic for connecting AI models to external tools and data sources. Standardizes how models access databases, APIs, files. Adopted by Claude, Cursor, Zed, and others. The \"USB-C for AI\" — one protocol instead of custom integrations for each tool."
   },
   {
@@ -364,7 +364,7 @@ const G = [
     "c": "Agentic i narzędzia",
     "t": "Scaffolding",
     "en": "Scaffolding",
-    "d_pl": "Struktura wspomagająca model w wykonywaniu zadań — planowanie, dekompozycja, weryfikacja. Ornith 1.0 \"generuje własne harnesses/scaffolds\" — model uczy się projektować workflow do rozwiązywania zadań. Wczesne scaffoldy: ReAct, Tree of Thoughts. Współczesne: pełne agentowy frameworks (LangGraph, AutoGen).",
+    "d_pl": "Struktura wspomagająca model w wykonywaniu zadań — planowanie, dekompozycja, weryfikacja. Ornith 1.0 \"generuje własne otoczki/szkielety\" — model uczy się projektować workflow do rozwiązywania zadań. Wczesne szkielety: ReAct, Tree of Thoughts. Współczesne: pełne agentowe frameworki (LangGraph, AutoGen).",
     "d_en": "Code and prompts that structure an LLM's behavior for a specific task. Like construction scaffolding — temporary structure that guides the model. Examples: system prompts, few-shot examples, tool definitions. Good scaffolding can make a weaker model outperform a stronger one with poor scaffolding."
   },
   {
@@ -406,21 +406,21 @@ const G = [
     "c": "Agentic i narzędzia",
     "t": "Long-horizon tasks",
     "en": "Long-Horizon Tasks",
-    "d_pl": "Zadania wieloetapowe wymagające utrzymania celu przez setki/kilka tysięcy kroków. Np. \"napraw bug w tym repozytorium\" — wymaga zrozumienia, planowania, modyfikacji, testów. Główna metryka frontier modeli w 2026 r. SWE-bench, Agents Last Exam to benchmarki long-horizon (wieloetapowe).",
+    "d_pl": "Zadania wieloetapowe wymagające utrzymania celu przez setki/kilka tysięcy kroków. Np. \"napraw bug w tym repozytorium\" — wymaga zrozumienia, planowania, modyfikacji, testów. Główna metryka modeli frontier w 2026 r. SWE-bench, Agents Last Exam to benchmarki long-horizon (wieloetapowe).",
     "d_en": "Tasks that require many steps (hours to days) to complete. The frontier of agent capability. Examples: building a feature end-to-end, conducting research. Frontier agents in 2026 can work on 30-60 minute tasks reliably; multi-hour tasks remain challenging. Long-horizon is the key benchmark for AGI-style capability."
   },
   {
     "c": "Modalności",
     "t": "Multimodal",
     "en": "Multimodal",
-    "d_pl": "Multimodal (wielomodalny) — Patrz: wielomodalny model w sekcji Architektury. Multimodalność to zdolność modelu do pracy z więcej niż jedną modalnością danych (tekst, obraz, audio, wideo, 3D). Gemini 3.5 Pro, GPT-5.6 Sol, Claude Opus 4.8 są multimodalne. Trend 2026: any-to-any generation (Gemini Omni).",
+    "d_pl": "Multimodal (wielomodalny) — Patrz: wielomodalny model w sekcji Architektury. Multimodalność to zdolność modelu do pracy z więcej niż jedną modalnością danych (tekst, obraz, audio, wideo, 3D). Gemini 3.5 Pro, GPT-5.6 Sol, Claude Opus 4.8 są wielomodalne. Trend 2026: any-to-any generation (Gemini Omni).",
     "d_en": "Handling multiple modalities — text, image, audio, video. Frontier models in 2026 are natively multimodal (Gemini 3, GPT-5). Multimodality enables richer interaction — you can show, not just tell. The standard for frontier AI since 2025."
   },
   {
     "c": "Modalności",
     "t": "TTS",
     "en": "Text-to-Speech (TTS)",
-    "d_pl": "Text-to-Speech (synteza mowy z tekstu) — zamiana tekstu na mowę. Eleven v3, GPT Voice, Gemini 3.1 Flash TTS to frontier modele 2026. Audio Tags pozwalają kontrolować emocje, tempo, akcent w czasie rzeczywistym. Voice cloning (Dot TTS) — klonuje głos z kilku sekund sample. Standard: 70+ języków, real-time wnioskowanie.",
+    "d_pl": "Text-to-Speech (synteza mowy z tekstu) — zamiana tekstu na mowę. Eleven v3, GPT Voice, Gemini 3.1 Flash TTS to modele z czołówki z 2026. Audio Tags pozwalają kontrolować emocje, tempo, akcent w czasie rzeczywistym. Voice cloning (Dot TTS) — klonuje głos z kilku sekund próbki. Standard: 70+ języków, wnioskowanie w czasie rzeczywistym.",
     "d_en": "Text-to-Speech — converting text to spoken audio. Frontier: ElevenLabs, OpenAI Voice. In 2026, indistinguishable from human speech. Enables voice interfaces, audiobooks, accessibility. Voice cloning (from a few seconds of sample) is now standard."
   },
   {
@@ -490,7 +490,7 @@ const G = [
     "c": "Infrastruktura",
     "t": "Inference",
     "en": "Inference",
-    "d_pl": "Faza używania modelu po treningu — generowanie odpowiedzi na zapytanie. Koszt wnioskowanie dominuje w operacyjnych kosztach frontier modeli (10-100x droższy niż trening na lifespan modelu). Optymalizacje: quantization, KV cache, batching (vLLM), speculative decoding. Edge wnioskowanie (telefon, laptop) wymaga 4-bit quantization + pruning.",
+    "d_pl": "Faza korzystania z modelu po treningu — generowanie odpowiedzi na zapytanie. Koszt wnioskowania dominuje w operacyjnych kosztach modeli z czołówki (10-100x droższy niż trening na modelu o długim horyzoncie). Optymalizacje: kwantyzacja, bufor KV, batchowanie (vLLM), dekodowanie spekulatywne. Wnioskowanie na brzegu (telefon, laptop) wymaga 4-bitowej kwantyzacji + przycinania.",
     "d_en": "The process of running a trained model to generate predictions. Distinct from training. Inference cost is the main expense for AI companies — frontier models cost millions per month in compute. Optimization techniques: quantization, KV cache, batching, speculative decoding. Inference economics drive most architectural decisions."
   },
   {
@@ -504,7 +504,7 @@ const G = [
     "c": "Infrastruktura",
     "t": "GPU",
     "en": "Graphics Processing Unit (GPU)",
-    "d_pl": "Graphics Processing Unit (procesor graficzny) — Procesor graficzny, dominujący sprzęt do AI. NVIDIA H100, H200, B200, GB300 to standardy. Trening frontier modeli wymaga tysięcy GPU połączonych przez NVLink/InfiniBand. W 2026 r. Alternatywy: TPU v6 (Google), Trainium (AWS), Jalapeno (OpenAI + Broadcom). GPU shortage był głównym bottleneck 2024-2025.",
+    "d_pl": "Graphics Processing Unit (procesor graficzny) — Procesor graficzny, dominujący sprzęt do AI. NVIDIA H100, H200, B200, GB300 to standardy. Trening modeli z czołówki wymaga tysięcy GPU połączonych przez NVLink/InfiniBand. W 2026 r. Alternatywy: TPU v6 (Google), Trainium (AWS), Jalapeno (OpenAI + Broadcom). Brak GPU był głównym wąskim gardłem w latach 2024-2025.",
     "d_en": "Graphics Processing Unit — the workhorse of AI training and inference. NVIDIA dominates (H100, B200, GB300). In 2026, frontier models train on tens of thousands of GPUs. GPU shortage (2023-2024) drove massive investment in alternatives: TPUs, custom ASICs, and even optical computing. GPU access is a key geopolitical issue."
   },
   {
@@ -532,7 +532,7 @@ const G = [
     "c": "Infrastruktura",
     "t": "Throughput",
     "en": "Throughput",
-    "d_pl": "Liczba tokenów generowanych przez model na sekundę. Wzrost throughput = niższy koszt per token. vLLM z PagedAttention osiąga 5-10x wyższy throughput niż naive wnioskowanie. Batch size, KV cache efficiency, model parallelism to główne dźwignie. frontier API: 100-500 tokens/s dla pojedynczego zapytania.",
+    "d_pl": "Liczba tokenów generowanych przez model na sekundę. Wzrost przepustowości = niższy koszt na token. vLLM z PagedAttention osiąga 5-10x wyższą przepustowość niż proste wnioskowanie. Wielkość batcha, efektywność pamięci KV cache i równoległość modelu to główne lewatywy. API typu frontier: 100-500 tokenów/s dla pojedynczego zapytania.",
     "d_en": "The number of requests a model can handle per second. Distinct from latency. High throughput = low cost per request. Optimized via batching, KV cache, speculative decoding. Throughput is the key metric for inference providers serving many users."
   },
   {
@@ -560,7 +560,7 @@ const G = [
     "c": "Infrastruktura",
     "t": "Speculative decoding",
     "en": "Speculative Decoding",
-    "d_pl": "oszczędność 2-3x. Kluczowe: draft musi być szybki i \"zgodny\" z target. Standard w serwerach frontier modeli 2026 r.",
+    "d_pl": "Oszczędność 2-3x. Kluczowe: szkic musi być szybki i \"zgodny\" z docelowym. Standard w serwerach modeli z czołówki w 2026 r.",
     "d_en": "An inference optimization where a small \"draft\" model quickly generates candidate tokens, and the large model verifies them in parallel. If the draft is correct, tokens are accepted at the speed of the small model. 2-3x speedup for LLMs. Used by Claude, GPT, Gemini. Key for reducing inference cost without quality loss."
   },
   {
@@ -581,7 +581,7 @@ const G = [
     "c": "Bezpieczeństwo i regulacje",
     "t": "Jailbreak",
     "en": "Jailbreak",
-    "d_pl": "Specjalny prompt omijający safety guardrails modelu. Klasyczne techniki: roleplay (\"powiedz mi to jako babcia\"), encoding (base64, l33tsp34k), multi-step (dekompozycja niebezpiecznego zadania). Modele frontier są coraz odporne, ale adaptive attacks wciąż znajdują luki. Automated red teaming bije ręczne w skali.",
+    "d_pl": "Specjalny prompt omijający zabezpieczenia bezpieczeństwa modelu. Klasyczne techniki: odgrywanie ról (\"powiedz mi to jako babcia\"), kodowanie (base64, l33tsp34k), wieloetapowe (dekompozycja niebezpiecznego zadania). Modele z czołówki są coraz bardziej odporne, ale ataki adaptacyjne wciąż znajdują luki. Automatyczne testy bezpieczeństwa przewyższają ręczne pod względem skali.",
     "d_en": "A prompt that bypasses a model's safety measures to elicit restricted content. Examples: \"DAN\" (Do Anything Now), role-playing attacks, encoding tricks. A constant cat-and-mouse game between users and model makers. Jailbreak research helps improve model safety, but also enables misuse. Most jailbreaks are patched within weeks."
   },
   {
@@ -658,7 +658,7 @@ const G = [
     "c": "Ewaluacja",
     "t": "SOTA",
     "en": "State of the Art (SOTA)",
-    "d_pl": "State of the Art (najlepszy stan techniki) — najlepszy wynik na danym benchmarku w danym czasie. \"Nowy SOTA\" = model przebił poprzedni rekord. SOTA jest moving target — frontier modeli biją się nawzajem co kilka tygodni. W 2026 r. na LM Arena top modele są w obrębie 1-2% od siebie (Claude Opus 4.8, GLM-5.2, GPT-5.5).",
+    "d_pl": "State of the Art (najlepszy stan techniki) — najlepszy wynik na danym benchmarku w danym czasie. \"Nowy SOTA\" = model przebił poprzedni rekord. SOTA jest moving target — modele z czołówki biją się nawzajem co kilka tygodni. W 2026 r. na LM Arena top modele są w obrębie 1-2% od siebie (Claude Opus 4.8, GLM-5.2, GPT-5.5).",
     "d_en": "State of the Art — the best-performing model on a given benchmark. SOTA is constantly being pushed. In 2026, SOTA on LM Arena is Claude Fable 5 (ELO 1564, but banned). SOTA on SWE-bench Verified is GPT-5 (71%). The SOTA label is a key marketing claim for frontier labs."
   },
   {
@@ -693,7 +693,7 @@ const G = [
     "c": "Ewaluacja",
     "t": "MMLU",
     "en": "Massive Multitask Language Understanding (MMLU)",
-    "d_pl": "Massive Multitask Language Understanding (wielozadaniowe rozumienie języka) — z 57 przedmiotami akademickimi (historia, prawo, medycyna, matematyka, etc.). Standard od 2020 r. frontier modele >90% (claude opus 4.8 ~92%). Problem: contamination — wiele pytań wyciekło do treningu modeli. Nowsze wersje: MMLU-Pro (trudniejsze), GPQA (graduate-level).",
+    "d_pl": "Massive Multitask Language Understanding (wielozadaniowe rozumienie języka) — test z 57 przedmiotami akademickimi (historia, prawo, medycyna, matematyka, itp.). Standard od 2020 r. dla modeli frontowych (>90% - claude opus 4.8 ~92%). Problem: zanieczyszczenie — wiele pytań wyciekło do treningu modeli. Nowsze wersje: MMLU-Pro (trudniejsze), GPQA (poziom magisterski).",
     "d_en": "Massive Multitask Language Understanding — 57 academic subjects (history, law, medicine, math, etc.). The standard LLM knowledge benchmark since 2020. Frontier models score >90%. MMLU-Pro (harder, 10 options) replaces it in newer evaluations. Despite contamination concerns, MMLU remains a widely reported metric."
   },
   {
