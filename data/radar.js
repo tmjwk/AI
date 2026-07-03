@@ -338,7 +338,7 @@ const SECTIONS = [
         "list": [],
         "full_width": true,
         "desc_pl": "<strong>Limit:</strong> To działa dla komunikacji, ale nie tworzy judgment. Model może pewnie podać złą odpowiedź. Nie daje agency (brak tools/internet).",
-        "desc_en": ""
+        "desc_en": "Fable Brain Prompting — 8 instructions from Anthropic for effective AI communication."
       },
       {
         "title": "🔧 Harness Engineering — x6 różnica",
