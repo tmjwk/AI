@@ -120,8 +120,11 @@ function renderCard(card){
     : '';
   const styleAttr = card.full_width ? ' style="margin-top:10px"' : '';
   const descHtml = (card.desc_pl || card.desc_en) ? `<p>${L(card,'desc_pl','desc_en')}</p>` : '';
+  // Badge NOWE dla kart z ostatnich 14 dni
+  const isNew = card.date && (Date.now() - new Date(card.date).getTime()) < 14 * 24 * 60 * 60 * 1000;
+  const newBadge = isNew ? ` <span style="background:var(--ac);color:#000;padding:1px 6px;border-radius:3px;font-size:9px;font-weight:700;margin-left:6px">NOWE</span>` : '';
   return `<div class="card"${styleAttr}>
-<h3>${card.title}</h3>
+<h3>${card.title}${newBadge}</h3>
 ${descHtml}
 ${codeHtml}
 ${tagsHtml ? `<p style="margin:0">${tagsHtml}</p>` : ''}
@@ -175,6 +178,6 @@ if (document.readyState === 'loading') {
 
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-03 21:30:26 UTC</span> · <span id="deploy-hash">v80214ff2</span>
+Deploy: <span id="deploy-ts">2026-07-03 21:42:16 UTC</span> · <span id="deploy-hash">v15894223</span>
 </footer>
 </body></html>
