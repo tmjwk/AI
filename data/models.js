@@ -307,7 +307,7 @@ const M = [
     "yt": "NnsQj2nDkKA",
     "desc_pl": "Pierwszy real-time interaktywny world model, 3D 720p",
     "desc_en": "First real-time interactive world model, 3D 720p",
-    "b_pl": "Interaktywne środowiska 3D real-time — gry, symulacje, trening robotów",
+    "b_pl": "<strong>Interaktywne środowiska 3D w czasie rzeczywistym — gry, symulacje, trening robotów</strong>",
     "b_en": "interactive 3D environments real-time — games, simulations, robot training"
   },
   {
@@ -320,9 +320,9 @@ const M = [
     "tags": [],
     "url": "https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3",
     "yt": "RdqYvdT74i0",
-    "desc_pl": "Open omni-modal world model, #1 w 7 benchmarkach physical AI",
+    "desc_pl": "Open-source wielomodalny model świata, #1 w 7 benchmarkach fizycznej AI",
     "desc_en": "Open omni-modal world model, #1 in 7 physical AI benchmarks",
-    "b_pl": "Physical AI, trening robotów, industrial vision — automotive, manufacturing",
+    "b_pl": "Physical AI, trening robotów, vision przemysłowe — motoryzacja, produkcja",
     "b_en": "physical AI, robot training, industrial vision — automotive, manufacturing"
   },
   {
@@ -337,7 +337,7 @@ const M = [
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Pixel-aligned geometry — rekonstruuje geometrię poza kadrem",
     "desc_en": "Single image/video → layered 3D model — multiple layers of hidden depth, 6.2GB",
-    "b_pl": "3D reconstruction z pojedynczego zdjęcia, \"widzi\" zasłonięte obiekty",
+    "b_pl": "3D rekonstrukcja z pojedynczego zdjęcia, \"widzi\" zasłonięte obiekty",
     "b_en": "layered 3D reconstruction — pixel-aligned geometry, hidden depth layers"
   },
   {
@@ -350,7 +350,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "1_5sSJK2rU0",
-    "desc_pl": "Real-time AI generation of video game environments",
+    "desc_pl": "Real-time AI generowanie środowisk gier komputerowych",
     "desc_en": "Real-time AI generation of video game environments",
     "b_pl": "Dynamiczne generowanie środowisk gier w czasie rzeczywistym",
     "b_en": "dynamic real-time game environment generation"
@@ -365,9 +365,9 @@ const M = [
     "tags": [],
     "url": "https://www.anthropic.com/product/claude-code",
     "yt": "o5rGuknRw2A",
-    "desc_pl": "CLI assistant od Anthropic, terminal-first",
+    "desc_pl": "Asystent CLI od Anthropic, terminal-first",
     "desc_en": "CLI assistant from Anthropic, terminal-first",
-    "b_pl": "Terminal/CLI programowanie, agentowy — autonomiczne modyfikacje repozytoriów",
+    "b_pl": "Programowanie terminalowe/CLI, agentowe — autonomiczne modyfikacje repozytoriów",
     "b_en": "terminal/CLI coding, agentic — autonomous repository modifications"
   },
   {
@@ -380,9 +380,9 @@ const M = [
     "tags": [],
     "url": "https://elevenlabs.io/v3",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Audio Tags emocji, 70+ języków, mid-sentence tone shifts, GA marzec 2026",
+    "desc_pl": "Audio Tags emocji, 70+ języków, zmiany tonu w trakcie zdania, GA marzec 2026",
     "desc_en": "Audio emotion tags, 70+ languages, mid-sentence tone shifts, GA March 2026",
-    "b_pl": "Kontrola emocji w czasie rzeczywistym, voice acting, multi-speaker",
+    "b_pl": "Kontrola emocji w czasie rzeczywistym, dubbing aktorski, wielu mówców",
     "b_en": "real-time emotion control, voice acting, multi-speaker"
   },
   {
@@ -395,7 +395,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "quxnhOeRz7I",
-    "desc_pl": "Nowy voice model od OpenAI, Realtime-2 GA",
+    "desc_pl": "Nowy model głosowy od OpenAI, Realtime-2 GA",
     "desc_en": "New voice model from OpenAI, Realtime-2 GA",
     "b_pl": "Naturalna ekspresja emocji, integracja z GPT-5.5, 128k kontekst",
     "b_en": "natural emotion expression, GPT-5.5 integration, 128k context"
@@ -412,7 +412,7 @@ const M = [
     "yt": "G8fqduzB5lc",
     "desc_pl": "Nowy TTS od Google, konkurent Eleven v3",
     "desc_en": "New TTS from Google, competitor to Eleven v3",
-    "b_pl": "Multilingual, granular audio tags, integracja z Gemini",
+    "b_pl": "Wielojęzyczne, szczegółowe tagi audio, integracja z Gemini",
     "b_en": "multilingual, granular audio tags, Gemini integration"
   },
   {
@@ -427,7 +427,7 @@ const M = [
     "yt": "J02-39xtlt4",
     "desc_pl": "Generuje dowolną modalność z dowolnej — I/O 2026 announcement",
     "desc_en": "Generates any modality from any — I/O 2026 announcement",
-    "b_pl": "Any-to-any generation — text→video, video→audio, audio→image",
+    "b_pl": "Generacja dowolna na dowolną — tekst→wideo, wideo→dźwięk, dźwięk→obraz",
     "b_en": "any-to-any generation — text→video, video→audio, audio→image"
   },
   {
@@ -442,7 +442,7 @@ const M = [
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Darmowa platforma z 4 agentami AI do odkryć naukowych",
     "desc_en": "Free platform with 4 AI agents for scientific discovery",
-    "b_pl": "Biologia, automatyzacja researchu, literatur review, hypothesis generation",
+    "b_pl": "Biologia, automatyzacja badań, przegląd literatury, generowanie hipotez",
     "b_en": "biology, research automation, literature review, hypothesis generation"
   },
   {
@@ -455,9 +455,9 @@ const M = [
     "tags": [],
     "url": "https://blog.google/innovation-and-ai/products/google-deepmind-isomorphic-alphafold-3-ai-model",
     "yt": "s3rNDndvav0",
-    "desc_pl": "Przewidywanie struktury białek + ligandów, kod open-source od Nov 2024",
+    "desc_pl": "Przewidywanie struktury białek i ligandów, kod open-source od listopada 2024",
     "desc_en": "Protein + ligand structure prediction, open-source code since Nov 2024",
-    "b_pl": "Struktura białek, drug discovery — przełom w farmacji",
+    "b_pl": "Struktura białek — przełom w odkrywaniu leków",
     "b_en": "protein structure, drug discovery — breakthrough in pharma"
   },
   {
@@ -470,7 +470,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "7c_ieWfAbrw",
-    "desc_pl": "Latest video model upgrade — najmocniejszy model wideo na rynku według AI Search",
+    "desc_pl": "Najnowsza aktualizacja modelu wideo — najpotężniejszy model wideo na rynku według AI Search",
     "desc_en": "Latest video model upgrade — strongest video model on the market per AI Search",
     "b_pl": "Video generation — najwyższa jakość na rynku, upgrade z 1.0",
     "b_en": "video generation — highest market quality, upgrade from 1.0"
@@ -485,7 +485,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "G8fqduzB5lc",
-    "desc_pl": "AI research agent — 3D game simulation, dynamic interactive environments",
+    "desc_pl": "AI research agent — 3D symulacja gier, dynamiczne interaktywne środowiska",
     "desc_en": "AI research agent — 3D game simulation, dynamic interactive environments",
     "b_pl": "3D game video generation, dynamiczne środowiska interaktywne",
     "b_en": "3D game video generation, dynamic interactive environments"
@@ -500,9 +500,9 @@ const M = [
     "tags": [],
     "url": "https://fal.ai/learn/devs/happyhorse-1-0-what-do-we-know-so-far",
     "yt": "1_5sSJK2rU0",
-    "desc_pl": "Video generation model — #1 na Artificial Analysis leaderboard",
+    "desc_pl": "Model generujący wideo — #1 na liście rankingowej Artificial Analysis",
     "desc_en": "Video generation model — #1 on Artificial Analysis leaderboard",
-    "b_pl": "Video generation, dynamic environments — predecessor Happy Horse",
+    "b_pl": "Generowanie wideo, dynamiczne środowiska — poprzednik Happy Horse",
     "b_en": "video generation, dynamic environments — Happy Horse predecessor"
   },
   {
@@ -515,9 +515,9 @@ const M = [
     "tags": [],
     "url": "https://newatlas.com/ai-humanoids/moya-droidup-lifelike-robot",
     "yt": "kkLlzQqa7MY",
-    "desc_pl": "Biomimetyczny humanoid, $173K, realistyczne wyrazy twarzy",
+    "desc_pl": "Biomimetyczny humanoid, 173 tys. zł, realistyczne wyrazy twarzy",
     "desc_en": "Biomimetic humanoid, $173K, realistic facial expressions",
-    "b_pl": "Hyper-realistic facial expressions, towarzyskie interakcje z ludźmi",
+    "b_pl": "Hyperrealistyczne wyraz twarzy, interakcje towarzyskie z ludźmi",
     "b_en": "hyper-realistic facial expressions, social interactions with humans"
   },
   {
@@ -530,7 +530,7 @@ const M = [
     "tags": [],
     "url": "https://github.com/huggingface/lerobot",
     "yt": "pC6KHflGye0",
-    "desc_pl": "Open-source framework dla robotyki AI, ongoing development",
+    "desc_pl": "Open-source framework dla robotyki AI, w trakcie rozwoju",
     "desc_en": "Open-source framework for AI robotics, ongoing development",
     "b_pl": "Open-source trening robotów, community-driven, replikowalne badania",
     "b_en": "open-source robot training, community-driven, reproducible research"

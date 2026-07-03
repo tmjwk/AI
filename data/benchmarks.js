@@ -12,7 +12,7 @@ const B = [
     "y": 2020,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "57 przedmiotów akademickich (historia, prawo, medycyna, matematyka, etc.). Standardowa wiedza dużych modeli językowych (LLM) z 2020. Modele z czołówki (frontier) >90%.",
+    "t_pl": "57 przedmiotów akademickich (historia, prawo, medycyna, matematyka, etc.). Standardowa wiedza dużych modeli językowych (LLM) z 2020. Modele z czołówki >90%.",
     "t_en": "57 academic subjects (history, law, medicine, math, etc.). The standard LLM knowledge benchmark since 2020. Frontier models score >90%. Despite contamination concerns, MMLU remains widely reported. Created by UC Berkeley."
   },
   {
@@ -24,7 +24,7 @@ const B = [
     "y": 2023,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "Pytania graduate-level z biologii, chemii, fizyki — tak trudne że Google nie pomaga. Mierzy ekspertyzę ekspertów.",
+    "t_pl": "Pytania na poziomie magisterskim z biologii, chemii, fizyki — tak trudne, że Google nie pomaga. Mierzą wiedzę ekspertów ekspertów.",
     "t_en": "Graduate-level questions in biology, chemistry, physics — so hard that Google search doesn't help. Measures expert-level reasoning. A key benchmark for frontier models. Created by NYU."
   },
   {
@@ -48,7 +48,7 @@ const B = [
     "y": 2024,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "Trudniejsza wersja MMLU — 10-opcji zamiast 4, bardziej requiring wnioskowanie. Zastępuje oryginał w nowszych ewaluacjach.",
+    "t_pl": "Trudniejsza wersja MMLU — 10 opcji zamiast 4, bardziej wymagająca wnioskowania. Zastępuje oryginał w nowszych ewaluacjach.",
     "t_en": "A harder version of MMLU — 10 options instead of 4, more reasoning required. Replaces the original in newer evaluations. Created by TIGERA. More contamination-resistant than MMLU."
   },
   {
@@ -60,7 +60,7 @@ const B = [
     "y": 2018,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "Pytania naukowe szkolne wymagające logiki, nie tylko faktów. Easy + Challenge split. Standard od 2018.",
+    "t_pl": "Pytania naukowe szkolne wymagające logiki, nie tylko faktów. Podział na poziomy łatwy + trudny. Standard od 2018.",
     "t_en": "Grade-school science questions requiring logic, not just facts. Easy + Challenge split. The standard since 2018. Created by Allen AI. Frontier models score 95%+ on ARC-Challenge."
   },
   {
@@ -84,7 +84,7 @@ const B = [
     "y": 2022,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "200+ zadań z 444 autorów. BBH (Hard) subset to najtrudniejsze 23 zadania. Google, OpenAI.",
+    "t_pl": "200+ zadań od 444 autorów. BBH (Hard) - podzbiór najtrudniejszych 23 zadań. Google, OpenAI.",
     "t_en": "Beyond the Imitation Game — 200+ tasks from 444 authors. BBH (Hard) subset is the hardest 23 tasks. Created by Google, OpenAI. A broad capability benchmark still used for frontier evaluation."
   },
   {
@@ -96,7 +96,7 @@ const B = [
     "y": 2021,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "Mierzy czy model unika rozpowszechniania mitów (\"Czy ptaki są prawdziwe?\"). Kluczowy benchmark halucynacji.",
+    "t_pl": "Mierzy, czy model unika rozpowszechniania mitów (\"Czy ptaki są prawdziwe?\"). Kluczowy benchmark halucynacji.",
     "t_en": "Measures whether a model avoids spreading myths (\"Are birds real?\"). A key hallucination benchmark. Frontier models score 80%+ but still fail on adversarial questions. Created by Stanford."
   },
   {
@@ -108,7 +108,7 @@ const B = [
     "y": 2019,
     "ty": "zbiór zadań",
     "tier": 1,
-    "t_pl": "Wypełnianie scenariuszy — wybierz sensowną kontynuację. Adversarial, trudny dla modeli. Standard commonsense.",
+    "t_pl": "Wypełnianie scenariuszy — wybierz sensowną kontynuację. Adwersarialny, trudny dla modeli. Standardowe rozumienie świata.",
     "t_en": "Scenario completion — choose a sensible continuation. Adversarial, hard for older models. A standard commonsense benchmark. Frontier models score 95%+. Created by Allen AI."
   },
   {
@@ -120,7 +120,7 @@ const B = [
     "y": 2021,
     "ty": "zbiór zadań",
     "tier": 1,
-    "t_pl": "Coreference resolution z rasowymi/stereotypowymi pułpkami. Adversarial Winograd Schema.",
+    "t_pl": "Rozwiązywanie coreferencji z rasowymi/stereotypowymi pułapkami. Adwersarialny schemat Winograde'a.",
     "t_en": "Coreference resolution with racial/stereotypical traps. Adversarial Winograd Schema. A standard benchmark for bias and commonsense. Frontier models score 90%+. Created by Allen AI."
   },
   {
@@ -132,7 +132,7 @@ const B = [
     "y": 2021,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "8.5k szkolnych zadań matematycznych. Modele frontier osiągnęły >95%. Pierwsza kontrola poprawności matematycznej.",
+    "t_pl": "8,5 tysiąca szkolnych zadań matematycznych. Modele frontier osiągnęły wynik powyżej 95%. Pierwsza kontrola poprawności matematycznej.",
     "t_en": "8.5K grade-school math word problems. Frontier models score >95%. The first sanity check for math capability. Created by OpenAI. Replaced by MATH and AIME for frontier models."
   },
   {
@@ -156,7 +156,7 @@ const B = [
     "y": 2021,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "12.5k problemów z amerykańskich konkursów matematycznych (AMC, AIME). Trudniejsze niż GSM8K, wymaga LaTeX.",
+    "t_pl": "12,5k problemów z amerykańskich konkursów matematycznych (AMC, AIME). Trudniejsze niż GSM8K, wymaga LaTeX.",
     "t_en": "12.5K problems from US math competitions (AMC, AIME). Harder than GSM8K, requires LaTeX. A standard frontier math benchmark. Frontier reasoning models (o3, R1) score 80%+."
   },
   {
@@ -168,7 +168,7 @@ const B = [
     "y": 2024,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "15 problemów z amerykańskiego konkursu AIME. Testuje math olimpiad. Używany przez OpenAI do ewaluacji modele rozumujące (o1, o3).",
+    "t_pl": "15 problemów z amerykańskiego konkursu AIME. Testuje umiejętności matematyczne olimpijskie. Używany przez OpenAI do ewaluacji modeli rozumujących (o1, o3).",
     "t_en": "American Invitational Mathematics Examination — 15 problems from the US math olympiad. Tests competition math. Used by OpenAI to evaluate reasoning models. Frontier reasoning models score 80%+ in 2026."
   },
   {
@@ -192,7 +192,7 @@ const B = [
     "y": 2023,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "Prawdziwe bug reports z 12 GitHub repo (Django, scikit-learn, etc.) — model musi naprawić poprzez modyfikację kodu + testy. Najlepszy miernik programowanie agentowe.",
+    "t_pl": "Prawdziwe raporty błędów z 12 repozytoriów GitHub (Django, scikit-learn, itp.) — model musi naprawić poprzez modyfikację kodu + testy. Najlepszy miernik programowania agentowego.",
     "t_en": "Real bug reports from 12 GitHub repos (Django, scikit-learn, etc.) — the model must fix them via code changes + tests. The best measure of agentic coding. Created by Princeton. Frontier models: GPT-5 71%."
   },
   {
@@ -204,7 +204,7 @@ const B = [
     "y": 2024,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "Ręcznie zweryfikowany podzbiór SWE-bench — mniej zadań, ale wiarygodny. Standard modeli frontierskich 2026.",
+    "t_pl": "Ręcznie zweryfikowany podzbiór SWE-bench — mniej zadań, ale wiarygodny. Standard modeli frontierowych 2026.",
     "t_en": "A manually verified subset of SWE-bench — fewer tasks, but trustworthy. The standard frontier model coding benchmark in 2026. Eliminates false positives in the original SWE-bench."
   },
   {
@@ -216,7 +216,7 @@ const B = [
     "y": 2025,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "Wersja Pro SWE-bench — trudniejsze programowanie agentowe zadania, mierzy long-horizon (wieloetapowe) workflows. MiniMax M3 bije GPT-5.5 (czerwiec 2026).",
+    "t_pl": "Wersja Pro SWE-bench — trudniejsze agentowe zadania programowania, mierzące długookresowe (wieloetapowe) workflow. MiniMax M3 bije GPT-5.5 (czerwiec 2026).",
     "t_en": "A harder version of SWE-bench with more complex agentic coding tasks, measuring long-horizon workflows. MiniMax M3 beats GPT-5.5 on SWE-bench Pro (June 2026). Created by Princeton in 2025."
   },
   {
@@ -228,7 +228,7 @@ const B = [
     "y": 2023,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "Wersja z 80x większą liczbą testów per zadanie — eliminuje false positives. EvalPlus.",
+    "t_pl": "Wersja z 80-krotnie większą liczbą testów na zadanie — eliminuje fałszywe pozytywy. EvalPlus.",
     "t_en": "A version with 80x more tests per task — eliminates false positives. Created by EvalPlus. A more rigorous coding benchmark than HumanEval. Frontier models score 85%+ on HumanEval+."
   },
   {
@@ -240,7 +240,7 @@ const B = [
     "y": 2021,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "974 zadań Python basic-level. Drugi po HumanEval sanity check.",
+    "t_pl": "974 zadań na poziomie podstawowym Pythona. Drugie po weryfikacji HumanEval.",
     "t_en": "Mostly Basic Python Problems — 974 Python basic-level tasks. The second sanity check after HumanEval. Created by Google. Frontier models score 90%+. Less challenging than HumanEval but widely used."
   },
   {
@@ -252,7 +252,7 @@ const B = [
     "y": 2024,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "Ciągle aktualizowane zadania z LeetCode, Codeforces, AtCoder. Eliminuje contamination — nowe zadania po dacie cut-off modelu.",
+    "t_pl": "Ciągle aktualizowane zadania z LeetCode, Codeforces, AtCoder. Eliminuje zanieczyszczenie — nowe zadania po dacie cut-off modelu.",
     "t_en": "Continuously updated tasks from LeetCode, Codeforces, AtCoder. Eliminates contamination — new tasks after model cutoff. Created by UC Berkeley. A key benchmark for evaluating models without data contamination."
   },
   {
@@ -264,7 +264,7 @@ const B = [
     "y": 2024,
     "ty": "leaderboard",
     "tier": 2,
-    "t_pl": "Real-world programowanie benchmark — edycja istniejących repozytoriów przez Aider. Pass@1 z prawdziwymi git diff-ami.",
+    "t_pl": "Benchmark programowania w rzeczywistych warunkach — edycja istniejących repozytoriów przez Aidera. Pass@1 z prawdziwymi git diff-ami.",
     "t_en": "Real-world coding benchmark — editing existing repositories via Aider. Pass@1 with real git diffs. Tests practical coding ability. Highly respected by developers. Frontier models compete for the top spot."
   },
   {
@@ -276,7 +276,7 @@ const B = [
     "y": 2022,
     "ty": "zbiór zadań",
     "tier": 1,
-    "t_pl": "Programistyczne konkursy — algorytmiczne problemy z testami. DeepMind AlphaCode.",
+    "t_pl": "Konkursy programistyczne — algorytmiczne problemy z testami. DeepMind AlphaCode.",
     "t_en": "Programming contests — algorithmic problems with tests. DeepMind AlphaCode. Created by DeepMind in 2022. A key benchmark for competitive programming AI. Less popular since LiveCodeBench."
   },
   {
