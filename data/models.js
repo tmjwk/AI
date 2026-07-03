@@ -1610,9 +1610,10 @@ const M = [
     "o": 0,
     "c": "LLM",
     "desc_pl": "Tańszy model Anthropic, 1M kontekst, /0 (promocja 2 miesiące), potem /5",
-    "b_pl": "zrównoważony LLM — dobry stosunek jakości do ceny, 1M token kontekst",
+    "b_pl": "zrównoważony LLM — dobry stosunek jakości do ceny, 1M token kontekstu",
     "desc_en": "Cheaper Anthropic model, 1M context, /0 (2-month promo), then /5",
-    "b_en": "balanced LLM — good quality-to-price ratio, 1M token context"
+    "b_en": "balanced LLM — good quality-to-price ratio, 1M token context",
+    "tags": []
   },
   {
     "r": 108,
@@ -1621,10 +1622,11 @@ const M = [
     "d": "2026-07-03",
     "o": 1,
     "c": "Coding",
-    "desc_pl": "Open-source agentic coding MoE (9B, 31B, 35B, 397B), harness training wbita w wagi modelu przez RL, bije modele klasy frontier",
-    "b_pl": "programowanie agentowe — harness training, model uczy się własnych strategii rozwiązywania zadań",
+    "desc_pl": "Open-source agentic programowanie MoE (9B, 31B, 35B, 397B), otoczka treningu wbitych w wagi modelu przez RL, bije modele klasy frontier",
+    "b_pl": "Programowanie agentowe — otoczka treningowa, model uczy się własnych strategii rozwiązywania zadań",
     "desc_en": "Open-source agentic coding MoE (9B, 31B, 35B, 397B), harness trained into model weights via RL, beats frontier models",
-    "b_en": "agentic coding — harness training, model learns its own problem-solving strategies"
+    "b_en": "agentic coding — harness training, model learns its own problem-solving strategies",
+    "tags": []
   },
   {
     "r": 109,
@@ -1633,10 +1635,11 @@ const M = [
     "d": "2026-07-03",
     "o": 1,
     "c": "LLM",
-    "desc_pl": "Fine-tuned Qwen 3.6 27B — styl asystenta, rozumowanie krok po kroku",
-    "b_pl": "asystent z rozumowaniem — mały model z dobrym rozumowaniem",
+    "desc_pl": "(Qwen 3.6 27B) — Dostrajany styl asystenta, wnioskowanie krok po kroku",
+    "b_pl": "Asystent z wnioskowaniem — mały model z dobrym wnioskowaniem",
     "desc_en": "Fine-tuned Qwen 3.6 27B — assistant style, step-by-step reasoning",
-    "b_en": "reasoning assistant — small model with good reasoning"
+    "b_en": "reasoning assistant — small model with good reasoning",
+    "tags": []
   },
   {
     "r": 110,
@@ -1645,10 +1648,11 @@ const M = [
     "d": "2026-07-03",
     "o": 0,
     "c": "AI Research",
-    "desc_pl": "Modele OpenAI fine-tuned dla cyberbezpieczeństwa (bazują na GPT 5.4, GPT 5.5) — odkrywanie luk, malware",
+    "desc_pl": "Modele OpenAI dostrajane dla cyberbezpieczeństwa (bazują na GPT-5.4, GPT-5.5) — odkrywanie luk, malware",
     "b_pl": "cyberbezpieczeństwo — odkrywanie luk, analiza malware",
     "desc_en": "OpenAI models fine-tuned for cybersecurity (based on GPT 5.4, GPT 5.5) — vulnerability discovery, malware",
-    "b_en": "cybersecurity — vulnerability discovery, malware analysis"
+    "b_en": "cybersecurity — vulnerability discovery, malware analysis",
+    "tags": []
   },
   {
     "r": 111,
@@ -1657,10 +1661,11 @@ const M = [
     "d": "2026-07-03",
     "o": 0,
     "c": "AI Science Agents",
-    "desc_pl": "Agent badawczy AI — formuje hipotezy, uruchamia eksperymenty, analizuje wyniki, aktualizuje dashboardy",
+    "desc_pl": "<strong>Agent badawczy AI</strong> — formuje hipotezy, uruchamia eksperymenty, analizuje wyniki, aktualizuje dashboardy<br>",
     "b_pl": "automatyzacja badań naukowych — hipotezy, eksperymenty, rekomendacje",
     "desc_en": "AI research agent — forms hypotheses, triggers experiments, evaluates results, updates dashboards",
-    "b_en": "scientific research automation — hypotheses, experiments, recommendations"
+    "b_en": "scientific research automation — hypotheses, experiments, recommendations",
+    "tags": []
   },
   {
     "r": 112,
@@ -1670,9 +1675,10 @@ const M = [
     "o": 1,
     "c": "AI Research",
     "desc_pl": "Self-hosted AI OS (MIT license), multi-front-end (CLI, browser, Telegram, Slack, Discord, WhatsApp), model-agnostic, MCP, Jarvis voice",
-    "b_pl": "autonomiczny agent OS — zawsze włączony, multi-platform, voice Jarvis",
+    "b_pl": "autonomiczny agent OS — zawsze włączony, multiplatformowy, głosowy Jarvis",
     "desc_en": "Self-hosted AI OS (MIT license), multi-front-end (CLI, browser, Telegram, Slack, Discord, WhatsApp), model-agnostic, MCP, Jarvis voice",
-    "b_en": "autonomous agent OS — always-on, multi-platform, Jarvis voice"
+    "b_en": "autonomous agent OS — always-on, multi-platform, Jarvis voice",
+    "tags": []
   },
   {
     "r": 113,
@@ -1682,9 +1688,10 @@ const M = [
     "o": 0,
     "c": "AI Research",
     "desc_pl": "Agent marketingowy AI dla małych i średnich firm — analizuje stronę, tworzy profil marki, generuje kampanie i posty",
-    "b_pl": "marketing AI — analiza marki, generowanie kampanii i social media",
+    "b_pl": "<strong>Marketing AI — analiza marki, generowanie kampanii i social media</strong>",
     "desc_en": "AI marketing agent for SMBs — analyzes website, builds brand profile, generates campaigns and posts",
-    "b_en": "marketing AI — brand analysis, campaign and social media generation"
+    "b_en": "marketing AI — brand analysis, campaign and social media generation",
+    "tags": []
   },
   {
     "r": 114,
@@ -1696,7 +1703,8 @@ const M = [
     "desc_pl": "Gemini na Mac/Apple — natywna aplikacja Google Gemini dla komputerów Apple",
     "b_pl": "Gemini na Mac — natywna aplikacja AI dla Apple",
     "desc_en": "Gemini on Mac/Apple — native Google Gemini app for Apple computers",
-    "b_en": "Gemini on Mac — native AI app for Apple"
+    "b_en": "Gemini on Mac — native AI app for Apple",
+    "tags": []
   }
 ];
 
