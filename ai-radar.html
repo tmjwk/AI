@@ -133,22 +133,23 @@ ${listHtml}
 }
 
 function renderSection(sec){
-  // Auto-archiwizacja: rozdziel karty na aktywne (≤28 dni) i archiwum (>28 dni)
-  const now = Date.now();
-  const ARCHIVE_DAYS = 28 * 24 * 60 * 60 * 1000;
-  const NEW_DAYS = 7 * 24 * 60 * 60 * 1000;
+  // Auto-archiwizacja: pokaż karty z 4 najnowszych epizodów, reszta → archiwum
+  // Znajdź 4 najnowsze unikalne daty we WSZYSTKICH sekcjach
+  const allDates = new Set();
+  for (const s of SECTIONS) {
+    if (s.type === 'cards') {
+      for (const c of s.cards) {
+        if (c.date) allDates.add(c.date);
+      }
+    }
+  }
+  const recentDates = [...allDates].sort((a,b) => b.localeCompare(a)).slice(0, 4);
+  const isNew = (date) => date && recentDates.includes(date);
 
   let body = '';
   if (sec.type === 'cards') {
-    const active = [];
-    const archived = [];
-    for (const c of sec.cards) {
-      if (c.date && (now - new Date(c.date).getTime()) > ARCHIVE_DAYS) {
-        archived.push(c);
-      } else {
-        active.push(c);
-      }
-    }
+    const active = sec.cards.filter(c => isNew(c.date));
+    const archived = sec.cards.filter(c => !isNew(c.date));
     body = `<div class="grid">${active.map(renderCard).join('')}</div>`;
     if (archived.length > 0) {
       body += `<details style="margin-top:12px"><summary style="cursor:pointer;color:var(--hd);font-size:12px;padding:6px 0">📦 Archiwum (${archived.length} kart)</summary><div class="grid" style="margin-top:8px;opacity:0.6">${archived.map(renderCard).join('')}</div></details>`;
@@ -194,6 +195,6 @@ if (document.readyState === 'loading') {
 
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-03 22:58:34 UTC</span> · <span id="deploy-hash">vbc1fc96d</span>
+Deploy: <span id="deploy-ts">2026-07-03 23:11:26 UTC</span> · <span id="deploy-hash">v32459530</span>
 </footer>
 </body></html>
