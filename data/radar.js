@@ -4,12 +4,307 @@
 
 const SECTIONS = [
   {
+    "id": "week-2026-07-03",
+    "num": 0,
+    "icon": "📅",
+    "title": "TYDZIEŃ: 3 lipca 2026",
+    "type": "cards",
+    "cards": [
+      {
+        "title": "Qwen Agent World (Alibaba)",
+        "desc_pl": "Open-source od Alibaba — buduje wirtualny świat wewnątrz AI do symulacji środowiska agentowego.",
+        "desc_en": "Open-source from Alibaba — builds virtual world inside AI to simulate agentic environment.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Open-source"
+          },
+          {
+            "color": "blue",
+            "text": "Chiny"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Nana Banana v2 Light",
+        "desc_pl": "Nowsza, szybsza i tańsza wersja generatora obrazów Nana Banana.",
+        "desc_en": "Newer, faster and cheaper version of Nana Banana image generator.",
+        "tags": [
+          {
+            "color": "blue",
+            "text": "Image Gen"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Ornith AI",
+        "desc_pl": "Open-source agentowy programowanie MoE (9B-397B), otoczka treningowa wbity w wagi modelu. Bije modele klasy frontier. $100M finansowanie, Santa Clara.",
+        "desc_en": "Open-source agentic coding MoE (9B-397B), harness trained into model weights. Beats frontier models. $100M funding, Santa Clara.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Open-source"
+          },
+          {
+            "color": "blue",
+            "text": "USA"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "CoreWeave AREA",
+        "desc_pl": "Agent badawczy AI — formuje hipotezy, uruchamia eksperymenty, analizuje wyniki. Dla badań naukowych.",
+        "desc_en": "AI research agent — forms hypotheses, triggers experiments, evaluates results. For scientific research.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Funded"
+          },
+          {
+            "color": "blue",
+            "text": "USA"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Anthropic KYC — 25,000 fraudulent accounts",
+        "desc_pl": "25,000 oszustów bombardsowali modele Anthropic, zbierając Q&A pary do treningu chińskich modeli. Anthropic rozważa 'know your customer' — ID wymagane dla darmowych kont. Nie wdrożone jeszcze.",
+        "desc_en": "25,000 fraudsters bombarded Anthropic models, collecting Q&A pairs for training Chinese models. Anthropic considers 'know your customer' — ID required for free accounts. Not implemented yet.",
+        "tags": [
+          {
+            "color": "red",
+            "text": "Bezpieczeństwo"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Two-class AI gap",
+        "desc_pl": "Rząd i duże firmy mają dostęp do najnowszych modeli (GPT 5.6, Mythos 5), reszta otrzymuje modele później lub wcale. Mythos 5 wydany w kwietniu, nadal niepubliczny. Chińczycy odwrotnie — najlepsze modele w open-source.",
+        "desc_en": "Government and big companies have access to latest models (GPT 5.6, Mythos 5), everyone else receives models later or never. Mythos 5 released in April, still not public. Chinese do the opposite — best models in open-source.",
+        "tags": [
+          {
+            "color": "yellow",
+            "text": "Regulacje"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "6 Power Phrases dla Claude Code",
+        "desc_pl": "1. Launch sub agents  2. Write me an implementation spec  3. Interview me about the project  4. Verify before you build  5. Build me a skill  6. Automate this. Najczęstszy błąd: brak kontekstu lub planu.",
+        "desc_en": "1. Launch sub agents  2. Write me an implementation spec  3. Interview me about the project  4. Verify before you build  5. Build me a skill  6. Automate this. Most common mistake: lack of context or plan.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Claude Code"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Google Open Knowledge Format (OKF)",
+        "desc_pl": "OKF — ustrukturyzowany format wiedzy od Google. Platform-agnostic (git, filesystem). Buduj wiki z plików OKF = pamięć dla agenta. Google Knowledge Catalog ingestuje OKF.",
+        "desc_en": "OKF — structured knowledge format from Google. Platform-agnostic (git, filesystem). Build wiki from OKF files = agent memory. Google Knowledge Catalog ingests OKF.",
+        "tags": [
+          {
+            "color": "blue",
+            "text": "Google"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "LangChain umiera — Deep Agents",
+        "desc_pl": "LangChain: over-abstraction (8 poziomów), docs nie matchują kodu, breaking changes. Programiści odchodzą. Ale LangChain Deep Agents (open-source, LangGraph) — agent harness z planowaniem i sub-agentami.",
+        "desc_en": "LangChain: over-abstraction (8 levels), docs don't match code, breaking changes. Developers leaving. But LangChain Deep Agents (open-source, LangGraph) — agent harness with planning and sub-agents.",
+        "tags": [
+          {
+            "color": "yellow",
+            "text": "Trend"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Claude Tag — @claude w Slacku",
+        "desc_pl": "Anthropic Tag — @claude w Slacku, agent jako team member. Czyta Slack, zna kulturę firmy, proaktywny. Zagrożenie: wszystkie firmy zależne od Claude.",
+        "desc_en": "Anthropic Tag — @claude in Slack, agent as team member. Reads Slack, knows company culture, proactive. Risk: all companies dependent on Claude.",
+        "tags": [
+          {
+            "color": "yellow",
+            "text": "Anthropic"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "OpenTag — open-source Claude Tag",
+        "desc_pl": "Open-source alternatywa dla Claude Tag — działa ze Slack, WhatsApp i dowolnym modelem (nie tylko Claude). Własny copilot.",
+        "desc_en": "Open-source alternative to Claude Tag — works with Slack, WhatsApp and any model (not just Claude). Own copilot.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Open-source"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Ponytail — rules dla Claude Code",
+        "desc_pl": "Rules dla Claude Code — 'lazy senior developer mode'. Agent pisze tylko niezbędny kod, unika verbose overengineering. OPUS 4.8: 71% szybciej, 53% mniej linii kodu.",
+        "desc_en": "Rules for Claude Code — 'lazy senior developer mode'. Agent writes only necessary code, avoids verbose overengineering. OPUS 4.8: 71% faster, 53% fewer lines of code.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Claude Code"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Harness Training (Ornith)",
+        "desc_pl": "Otoczka wbijana w wagi modelu przez RLHF. Model uczy się strategii rozwiązywania zadań, nie tylko predykcji tokenu. Wyniki biją modele klasy frontier.",
+        "desc_en": "Harness trained into model weights via RL. Model learns problem-solving strategies, not just token prediction. Results beat frontier models.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Breakthrough"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "DeepPark — speculative decoding",
+        "desc_pl": "Open-source narzędzie DeepSeek — draft model przewiduje bloki tokenów naraz. Do 85% szybciej dla DeepSeek v4, działa z Qwen i Gemma.",
+        "desc_en": "Open-source tool from DeepSeek — draft model predicts a block of tokens at once. Up to 85% faster for DeepSeek v4, works with Qwen and Gemma.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Open-source"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "X (Twitter) MCP Server",
+        "desc_pl": "X wydał serwer MCP (Model Context Protocol) do zapytań o dane z Twittera. Oprogramowanie jest darmowe, ale dostęp do danych jest płatny.",
+        "desc_en": "X released MCP server for querying Twitter data. Software free, but data access paid.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "MCP"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Google Gemini SQL 2",
+        "desc_pl": "Text-to-SQL (Tłumaczenie tekstu na SQL) — tłumaczy język naturalny na wykonywalne, zorientowane na schemat zapytania SQL.",
+        "desc_en": "Text-to-SQL — translates natural language into executable, schema-aware SQL queries.",
+        "tags": [
+          {
+            "color": "blue",
+            "text": "Google"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      }
+    ]
+  },
+  {
     "id": "who",
     "num": 1,
     "icon": "🏢",
     "title": "KTO ROBI CIEKAWE RZECZY",
     "type": "cards",
     "cards": [
+      {
+        "title": "Qwen Agent World (Alibaba)",
+        "desc_pl": "Open-source od Alibaba — buduje wirtualny świat wewnątrz AI do symulacji środowiska agentowego.",
+        "desc_en": "Open-source from Alibaba — builds virtual world inside AI to simulate agentic environment.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Open-source"
+          },
+          {
+            "color": "blue",
+            "text": "Chiny"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Nana Banana v2 Light",
+        "desc_pl": "Nowsza, szybsza i tańsza wersja generatora obrazów Nana Banana.",
+        "desc_en": "Newer, faster and cheaper version of Nana Banana image generator.",
+        "tags": [
+          {
+            "color": "blue",
+            "text": "Image Gen"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
       {
         "title": "Ornith AI",
         "desc_pl": "Open-source agentowy programowanie MoE (9B-397B), otoczka treningowa wbity w wagi modelu. Bije modele klasy frontier. $100M finansowanie, Santa Clara.",
@@ -230,6 +525,12 @@ const SECTIONS = [
         "dot_color": "red",
         "html_pl": "<strong>IBM Nano Stack</strong> — research, 100B tranzystorów na paznokciu, lata od komercjalizacji.",
         "html_en": "<strong>IBM Nano Stack</strong> — research, 100B transistors on a fingernail, years from commercialization."
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "<strong>Mieć całą Wikipedię lokalnie</strong> — 50GB, lokalny model jako librarian, wiedza na wyciągnięcie ręki bez internetu",
+        "html_en": "<strong>Have all Wikipedia locally</strong> — 50GB, local model as librarian, knowledge at your fingertips without internet",
+        "date": "2026-07-03"
       }
     ]
   },
@@ -240,21 +541,6 @@ const SECTIONS = [
     "title": "PIENIĄDZE — KTO MA, KTO WYDAJE",
     "type": "cards",
     "cards": [
-      {
-        "title": "Microsoft layoffs — 5,000",
-        "desc_pl": "Microsoft zwolnił około 5 000 pracowników. Poza tym nic większego na rynku pracy.",
-        "desc_en": "Microsoft laid off ~5,000 employees. Otherwise not much happening in the job market.",
-        "tags": [
-          {
-            "color": "yellow",
-            "text": "Layoffs"
-          }
-        ],
-        "code": "",
-        "list": [],
-        "full_width": false,
-        "date": "2026-07-03"
-      },
       {
         "title": "Groq — $650M",
         "tags": [],
@@ -314,6 +600,21 @@ const SECTIONS = [
     "title": "REGULACJE I GEOPOLITYKA",
     "type": "cards",
     "cards": [
+      {
+        "title": "Anthropic KYC — 25,000 fraudulent accounts",
+        "desc_pl": "25,000 oszustów bombardsowali modele Anthropic, zbierając Q&A pary do treningu chińskich modeli. Anthropic rozważa 'know your customer' — ID wymagane dla darmowych kont. Nie wdrożone jeszcze.",
+        "desc_en": "25,000 fraudsters bombarded Anthropic models, collecting Q&A pairs for training Chinese models. Anthropic considers 'know your customer' — ID required for free accounts. Not implemented yet.",
+        "tags": [
+          {
+            "color": "red",
+            "text": "Bezpieczeństwo"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
       {
         "title": "Two-class AI gap",
         "desc_pl": "Rząd i duże firmy mają dostęp do najnowszych modeli (GPT 5.6, Mythos 5), reszta otrzymuje modele później lub wcale. Mythos 5 wydany w kwietniu, nadal niepubliczny. Chińczycy odwrotnie — najlepsze modele w open-source.",
@@ -378,6 +679,96 @@ const SECTIONS = [
     "title": "ARCHITEKTURY I WZORCE",
     "type": "cards",
     "cards": [
+      {
+        "title": "6 Power Phrases dla Claude Code",
+        "desc_pl": "1. Launch sub agents  2. Write me an implementation spec  3. Interview me about the project  4. Verify before you build  5. Build me a skill  6. Automate this. Najczęstszy błąd: brak kontekstu lub planu.",
+        "desc_en": "1. Launch sub agents  2. Write me an implementation spec  3. Interview me about the project  4. Verify before you build  5. Build me a skill  6. Automate this. Most common mistake: lack of context or plan.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Claude Code"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Google Open Knowledge Format (OKF)",
+        "desc_pl": "OKF — ustrukturyzowany format wiedzy od Google. Platform-agnostic (git, filesystem). Buduj wiki z plików OKF = pamięć dla agenta. Google Knowledge Catalog ingestuje OKF.",
+        "desc_en": "OKF — structured knowledge format from Google. Platform-agnostic (git, filesystem). Build wiki from OKF files = agent memory. Google Knowledge Catalog ingests OKF.",
+        "tags": [
+          {
+            "color": "blue",
+            "text": "Google"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "LangChain umiera — Deep Agents",
+        "desc_pl": "LangChain: over-abstraction (8 poziomów), docs nie matchują kodu, breaking changes. Programiści odchodzą. Ale LangChain Deep Agents (open-source, LangGraph) — agent harness z planowaniem i sub-agentami.",
+        "desc_en": "LangChain: over-abstraction (8 levels), docs don't match code, breaking changes. Developers leaving. But LangChain Deep Agents (open-source, LangGraph) — agent harness with planning and sub-agents.",
+        "tags": [
+          {
+            "color": "yellow",
+            "text": "Trend"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Claude Tag — @claude w Slacku",
+        "desc_pl": "Anthropic Tag — @claude w Slacku, agent jako team member. Czyta Slack, zna kulturę firmy, proaktywny. Zagrożenie: wszystkie firmy zależne od Claude.",
+        "desc_en": "Anthropic Tag — @claude in Slack, agent as team member. Reads Slack, knows company culture, proactive. Risk: all companies dependent on Claude.",
+        "tags": [
+          {
+            "color": "yellow",
+            "text": "Anthropic"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "OpenTag — open-source Claude Tag",
+        "desc_pl": "Open-source alternatywa dla Claude Tag — działa ze Slack, WhatsApp i dowolnym modelem (nie tylko Claude). Własny copilot.",
+        "desc_en": "Open-source alternative to Claude Tag — works with Slack, WhatsApp and any model (not just Claude). Own copilot.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Open-source"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Ponytail — rules dla Claude Code",
+        "desc_pl": "Rules dla Claude Code — 'lazy senior developer mode'. Agent pisze tylko niezbędny kod, unika verbose overengineering. OPUS 4.8: 71% szybciej, 53% mniej linii kodu.",
+        "desc_en": "Rules for Claude Code — 'lazy senior developer mode'. Agent writes only necessary code, avoids verbose overengineering. OPUS 4.8: 71% faster, 53% fewer lines of code.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Claude Code"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
       {
         "title": "Harness Training (Ornith)",
         "desc_pl": "Otoczka wbijana w wagi modelu przez RLHF. Model uczy się strategii rozwiązywania zadań, nie tylko predykcji tokenu. Wyniki biją modele klasy frontier.",
@@ -763,8 +1154,8 @@ const SECTIONS = [
     ],
     "rows": [
       [
-        "2026 (do 26.06)",
-        "121,500",
+        "2026 (do 03.07)",
+        "126,500",
         "layoffs.fyi"
       ],
       [
@@ -788,6 +1179,6 @@ const SECTIONS = [
         "layoffs.fyi"
       ]
     ],
-    "note": "Trend: spadek w 2026 vs 2023-2024. Mniej zwolnień w czerwcu vs maj."
+    "note": "Microsoft zwolnił ~5,000 pracowników (03.07.2026). Trend: spadek w 2026 vs 2023-2024."
   }
 ];
