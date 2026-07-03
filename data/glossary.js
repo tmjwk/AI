@@ -8,21 +8,21 @@ const G = [
     "t": "3D generation",
     "en": "3D Generation",
     "d_pl": "constraint meshes (określaj gdzie geometria ma być). Mesh Flow (Meta) — 18x szybszy niż poprzednicy. World Tracing — pixel-aligned geometry. Wyjścia: GLB, OBJ, Blender add-on. Use case: gry, VFX, AR/VR, projektowanie.",
-    "d_en": "Creating 3D models from text or images. Models: TripoSR, Meshy, Rodin. In 2026, frontier models generate game-ready 3D assets in seconds. Used in games, VFX, AR/VR. Less mature than image/video but advancing rapidly."
+    "d_en": "Creating 3D models from text or images. Models: TripoSR, Meshy, Rodin. In 2026, frontier models will generate game-ready 3D assets in seconds. Used in games, VFX, AR/VR. Less mature than image/video but advancing rapidly."
   },
   {
     "c": "Modalności",
     "t": "4D reconstruction",
     "en": "4D Reconstruction",
     "d_pl": "Rekonstrukcja obiektów 3D w czasie — czyli 3D + ruch. Flex4DHuman — multi-view video diffusion, generuje 4D człowieka z pojedynczego/sparse wideo. Lift 4D — single video → 4D scene. Use cases: AR/VR, wirtualna próbka odzieży, VFX, sport analytics.",
-    "d_en": "Reconstructing 3D scenes over time (4D = 3D + time). Captures motion and deformation. Used in VFX, sports analysis, AR. AI-based 4D reconstruction from video is an active research area. Frontier methods achieve near-cinematic quality from consumer video."
+    "d_en": "Reconstructing 3D scenes over time (4D = 3D + time) captures motion and deformation. It is used in VFX, sports analysis, and AR. AI-based 4D reconstruction from video is an active research area, with frontier methods achieving near-cinematic quality from consumer video."
   },
   {
     "c": "Agentic i narzędzia",
     "t": "Agentic coding",
     "en": "Agentic Coding",
     "d_pl": "biją proprietary agentowy benchmarks.",
-    "d_en": "AI that writes, tests, and iterates on code autonomously. Tools: Cursor, Devin, Claude Code, GitHub Copilot. In 2026, frontier models complete 30-70% of SWE-bench tasks (real GitHub bugs). Agentic coding is transforming software development — developers become reviewers, not writers."
+    "d_en": "AI that writes, tests, and iterates on code autonomously. Tools: Cursor, Devin, Claude Code, GitHub Copilot. In 2026, frontier models will complete 30-70% of SWE-bench tasks (real GitHub bugs). Agentic coding is transforming software development — developers will become reviewers, not writers."
   },
   {
     "c": "Ewaluacja",
@@ -43,14 +43,14 @@ const G = [
     "t": "Alignment",
     "en": "Alignment",
     "d_pl": "AI Alignment (zgodność sztucznej inteligencji) — model może wykonać setki kroków przed wykryciem niepożądanego zachowania.",
-    "d_en": "The process of ensuring AI models behave in accordance with human values and intentions. Techniques: RLHF, Constitutional AI, red-teaming. Alignment is seen as crucial for AI safety — a misaligned superintelligence could be catastrophic. The alignment problem becomes harder as models become more capable. Major focus of Anthropic, OpenAI, and safety researchers."
+    "d_en": "The process of ensuring AI models behave in accordance with human values and intentions. Techniques: Reinforcement Learning from Human Feedback (RLHF), Constitutional AI, red-teaming. Alignment is seen as crucial for AI safety — a misaligned superintelligence could be catastrophic. The alignment problem becomes harder as models become more capable. Major focus of Anthropic, OpenAI, and safety researchers."
   },
   {
     "c": "Modalności",
     "t": "Any-to-any",
     "en": "Any-to-Any Generation",
     "d_pl": "Zdolność modelu do generowania dowolnej modalności z dowolnej innej — tekst→wideo, wideo→audio, audio→obraz, obraz→tekst. Gemini Omni (I/O 2026) jest pierwszym mainstream any-to-any. Wymaga unified latent space lub zaawansowanego routingu między enkoderami.",
-    "d_en": "A model that accepts any input modality and produces any output — text, image, audio, video. The goal of unified AI models. Gemini 3 and GPT-5 are close to any-to-any. The end of separate specialized models for each modality."
+    "d_en": "A model that accepts any input modality and produces any output — text, image, audio, video. This represents the goal of unified AI models. Gemini 3 and GPT-5 are approaching any-to-any capabilities, potentially signaling the end of separate specialized models for each modality."
   },
   {
     "c": "Ewaluacja",
@@ -64,21 +64,21 @@ const G = [
     "t": "ASR",
     "en": "Automatic Speech Recognition (ASR)",
     "d_pl": "Automatic Speech Recognition (automatyczne rozpoznawanie mowy) — rozpoznawanie mowy — zamiana mowy na tekst (speech-to-text). Whisper (OpenAI) to dominujący open-source. Współczesne modele są streamingowe, multilingual, obsługują noisy environments. ASR jest komponentem voice agents (Gemini Live, ChatGPT Voice).",
-    "d_en": "Automatic Speech Recognition — converting speech to text. Also called STT (Speech-to-Text). Frontier: Whisper (OpenAI), Gemini STT. In 2026, real-time ASR with 95%+ accuracy is standard. Enables voice interfaces, transcription, subtitles."
+    "d_en": "Automatic Speech Recognition (ASR) — converting speech to text. Also called STT (Speech-to-Text). Frontier models: Whisper (OpenAI), Gemini STT. By 2026, real-time ASR with 95%+ accuracy will be standard. This enables voice interfaces, transcription, and subtitles."
   },
   {
     "c": "Kontekst i wydajność",
     "t": "Attention mechanism",
     "en": "Attention Mechanism",
     "d_pl": "Attention mechanism (mechanizm uwagi) — Mechanizm pozwalający modelowi skupiać się na istotnych fragmentach sekwencji. Self-attention: każdy token uwzględnia wagę innych tokenów w sekwencji. Multi-head attention: równoległe wiele \"głow\" uczących się różnych relacji. To serce transformera, ale złożoność O(n²) ogranicza długość sekwencji.",
-    "d_en": "The core innovation of transformers — the model weighs the importance of each token relative to others. Self-attention computes relationships within a sequence. Multi-head attention captures different aspects simultaneously. The mechanism that enables transformers to handle long-range dependencies better than RNNs."
+    "d_en": "The core innovation of transformers is their ability to weigh the importance of each token relative to others. Self-attention computes relationships within a sequence, while multi-head attention captures different aspects simultaneously. This mechanism enables transformers to handle long-range dependencies more effectively than RNNs."
   },
   {
     "c": "Ewaluacja",
     "t": "Benchmark",
     "en": "Benchmark",
     "d_pl": "Standardowy zestaw zadań pozwalający porównywać modele. MMLU (57 przedmiotów akademickich), GPQA (graduate-level Q&A), HumanEval (kodowanie), SWE-bench (real-world bug fixes), Agents Last Exam (55 industrii, multi-step). Problem benchmarków: contamination (model widział dane w treningu), overfitting (modele optymalizowane pod konkretny benchmark).",
-    "d_en": "A standardized test for measuring AI model capabilities. Examples: MMLU (knowledge), GSM8K (math), HumanEval (coding). Benchmarks enable comparing models. Problem: contamination (models train on test data) and Goodhart's law (optimizing for benchmarks can reduce real capability). Frontier benchmarks in 2026: GPQA, SWE-bench, Humanity's Last Exam."
+    "d_en": "Standardized tests for measuring AI model capabilities. Examples: MMLU (knowledge), GSM8K (math), HumanEval (coding). Benchmarks enable comparing models. Problems include contamination (models train on test data) and Goodhart's law (optimizing for benchmarks can reduce real capability). Frontier benchmarks in 2026: GPQA, SWE-bench, Humanity's Last Exam."
   },
   {
     "c": "Bezpieczeństwo i regulacje",
@@ -92,91 +92,91 @@ const G = [
     "t": "Catastrophic forgetting",
     "en": "Catastrophic Forgetting",
     "d_pl": "Zjawisko, w którym model zapomina wcześniej nauczoną wiedzę po dostrajaniu na nowych danych. Główny problem w ciągłym uczeniu. Rozwiązania: bufor odtwarzania (mieszanie starych i nowych danych), Elastic Weight Consolidation (EWC), zamrażanie warstw.",
-    "d_en": "When a model forgets previously learned information after training on new data. The main challenge in continuous learning. Mitigation: rehearsal (mix old and new data), regularization (EWC), modular architectures. A key problem for production ML systems that need to update over time."
+    "d_en": "When a model forgets previously learned information after training on new data, this represents the main challenge in continuous learning. Mitigation strategies include rehearsal (mixing old and new data), regularization (such as EWC), and modular architectures. This is a key problem for production ML systems that need to update over time."
   },
   {
     "c": "Agentic i narzędzia",
     "t": "Chain-of-thought",
     "en": "Chain-of-Thought (CoT)",
     "d_pl": "Technika promptingowa, w której model jest proszony o rozważenie problemu krok po kroku (\"let's think step by step\"). Dramatycznie poprawia wyniki w zadaniach matematycznych i logicznych. modele rozumujące (OpenAI o1, Claude Opus 4.8 thinking) robią CoT wewnętrznie, z ukrytym \"wnioskowanie token stream\".",
-    "d_en": "A prompting technique where the model reasons step-by-step before answering. Dramatically improves performance on math, logic, and multi-step problems. Used by reasoning models (o1, o3, DeepSeek R1) which generate CoT internally. The key technique for improving LLM reasoning."
+    "d_en": "A prompting technique where the model reasons step-by-step before answering. This dramatically improves performance on math, logic, and multi-step problems. It is used by reasoning models (o1, o3, DeepSeek R1) which generate Chain-of-Thought (CoT) internally. This is the key technique for improving LLM reasoning."
   },
   {
     "c": "Architektury i modele",
     "t": "CNN",
     "en": "Convolutional Neural Network",
     "d_pl": "Convolutional Neural Network (konwolucyjna sieć neuronowa) — klasyczna architektura do przetwarzania obrazów. Używa filtrów przesuwających się po obrazie. Dominowała w latach 2012-2020 (ResNet, EfficientNet). W dużych modelach językowych (LLM) wyparta przez wizyjne transformatory (ViT), ale wciąż używana w aplikacjach edge i mobile ze względu na efektywność.",
-    "d_en": "A convolutional network — a classic architecture for image processing. Uses filters that scan the image and detect features (edges, textures, shapes). The foundation of computer vision 2012-2020 (AlexNet, ResNet, VGG). Today it's used mainly for edge devices and real-time processing, while transformers dominate high-quality vision tasks."
+    "d_en": "A convolutional network — a classic architecture for image processing. It uses filters that scan images to detect features such as edges, textures, and shapes. This approach formed the foundation of computer vision from 2012 to 2020, with notable architectures including AlexNet, ResNet, and VGG. Today, convolutional networks are primarily used for edge devices and real-time processing, while transformers now dominate high-quality vision tasks."
   },
   {
     "c": "Agentic i narzędzia",
     "t": "Computer use",
     "en": "Computer Use",
     "d_pl": "Zdolność modelu do sterowania komputerem — klikanie, wpisywanie, czytanie ekranu. Claude Computer Use (październik 2024) był pierwszym mainstream release. Wymaga VLM (rozumienia zrzutu ekranu) + tool use (akcji myszy/klawiatury). Kluczowe dla automatyzacji zadań w aplikacjach bez API.",
-    "d_en": "An agent capability where the AI controls a computer — clicks, types, navigates GUI applications. Claude Computer Use (2024) was the first frontier implementation. Enables automating any task a human can do on a computer. Key benchmark: OSWorld. In 2026, computer use agents can complete multi-step workflows in real applications."
+    "d_en": "An agent capability where the AI controls a computer — clicks, types, navigates GUI applications. Claude Computer Use (2024) was the first frontier implementation. It enables automating any task a human can do on a computer. Key benchmark: OSWorld. In 2026, computer use agents will be able to complete multi-step workflows in real applications."
   },
   {
     "c": "Bezpieczeństwo i regulacje",
     "t": "Constitutional AI",
     "en": "Constitutional AI (CAI)",
     "d_pl": "Technika Anthropic — model jest trenowany na zasadach (\"constitution\") i sam ocenia swoje odpowiedzi. Redukuje zależność od ludzkich annotatorów. Claude (wszystkie wersje) jest trenowany z CAI. Zaleta: skalowalność — model ocenia miliony odpowiedzi bez kosztów ludzkich.",
-    "d_en": "Anthropic's alignment method — the model critiques and revises its own outputs based on a set of principles (\"constitution\"). Reduces the need for human feedback. Used to train Claude. The key innovation: AI self-improvement under human-specified principles, rather than direct human evaluation of every output."
+    "d_en": "Anthropic's alignment method — the model critiques and revises its own outputs based on a set of principles (\"constitution\"). This reduces the need for human feedback. It was used to train Claude. The key innovation is AI self-improvement under human-specified principles, rather than direct human evaluation of every output."
   },
   {
     "c": "Kontekst i wydajność",
     "t": "Context window",
     "en": "Context Window",
     "d_pl": "Maksymalna liczba tokenów, którą model może przetworzyć w jednym zapytaniu. GPT-5.6 Sol ma 1,5M tokenów, MiniMax M3 — 1M, Claude Opus 4.8 — 500k. Większe okno = więcej dokumentów w jednym zapytaniu, ale też kwadratowy wzrost kosztów uwagi (chyba że używa rzadkiej uwagi).",
-    "d_en": "The maximum amount of text (measured in tokens) that a model can process in a single query. In 2026, frontier models have 1-2M token windows (GPT-5, Gemini 3, Claude). Larger context enables analyzing long documents, code bases, and conversations. But inference cost grows quadratically with context without optimization (sparse attention, KV cache compression)."
+    "d_en": "The maximum amount of text (measured in tokens) that a model can process in a single query. In 2026, frontier models have 1-2M token windows (GPT-5, Gemini 3, Claude). Larger context enables analyzing long documents, code bases, and conversations. However, inference cost grows quadratically with context without optimization (sparse attention, KV cache compression)."
   },
   {
     "c": "Trening i optymalizacja",
     "t": "Continuous pretraining",
     "en": "Continuous Pretraining",
     "d_pl": "Dalsze trenowanie istniejącego modelu na nowych danych bez resetowania wag. Stosuje się je, gdy model musi poznać nową domenę (np. medycyna, prawo) lub gdy pojawiły się nowe dane (aktualizacje do 2026 r.). Jest tańsze niż trening od zera, ale wiąże się z ryzykiem katastroficznego zapominania.",
-    "d_en": "Continuing pre-training on new data after the initial phase. Enables updating models with new knowledge without full retraining. Used to keep models current. Risk: catastrophic forgetting. Cheaper than retraining from scratch."
+    "d_en": "Continuing pre-training on new data after the initial phase enables models to be updated with new knowledge without requiring full retraining. This approach is used to keep models current with the latest information. A potential risk is catastrophic forgetting, but it is generally more cost-effective than retraining from scratch."
   },
   {
     "c": "Trening i optymalizacja",
     "t": "Curriculum learning",
     "en": "Curriculum Learning",
     "d_pl": "Trening, w którym przykłady są prezentowane w kolejności od prostych do trudnych, podobnie jak w nauczaniu ludzi. Może poprawić jakość i przyspieszyć zbieżność. W praktyce duże modele językowe (LLM) rzadko używają czystego programu nauczania, ale kolejność danych w treningu ma znaczenie (najpierw ogólne, potem specjalistyczne).",
-    "d_en": "Training a model on examples in order of increasing difficulty, like a curriculum. Hypothesis: easier examples first helps the model learn better. Results are mixed — some tasks benefit, others don't. Less popular since the rise of massive pre-training, but still used in specialized domains."
+    "d_en": "Training a model on examples in order of increasing difficulty, similar to a curriculum. The hypothesis is that easier examples first help the model learn better. Results are mixed—some tasks benefit while others do not. This approach has become less popular with the rise of massive pre-training, but it is still used in specialized domains."
   },
   {
     "c": "Modalności",
     "t": "DAW",
     "en": "Digital Audio Workstation",
     "d_pl": "Digital Audio Workstation (cyfrowa stacja robocza audio) — oprogramowanie do produkcji muzyki (Ableton, Logic, FL Studio, Reaper). Magenta Realtime 2 działa jako wtyczka DAW — AI staje się częścią profesjonalnego workflow muzyków, nie samodzielna aplikacja.",
-    "d_en": "Digital Audio Workstation — software for recording, editing, and producing audio. Examples: Ableton Live, Logic Pro, FL Studio. AI plugins for DAWs (iZotope, Landr) use ML for mastering, noise reduction, and stem separation. AI-native DAWs (Soundraw, Boomy) generate music directly. The line between AI tools and DAWs is blurring."
+    "d_en": "Digital Audio Workstation (DAW) — software for recording, editing, and producing audio. Examples include Ableton Live, Logic Pro, and FL Studio. AI plugins for DAWs, such as iZotope and Landr, use machine learning for mastering, noise reduction, and stem separation. AI-native DAWs like Soundraw and Boomy generate music directly. The line between AI tools and DAWs is blurring."
   },
   {
     "c": "Architektury i modele",
     "t": "Diffusion model",
     "en": "Diffusion Model",
     "d_pl": "Diffusion model (model dyfuzyjny) — model generatywny, który uczy się odwracać proces dodawania szumu do danych. W wnioskowaniu startuje od czystego szumu i iteracyjnie go \"odszumia\" aż uzyska obraz/wideo/dźwięk. Podstawa Stable Diffusion, DALL-E, Midjourney, FLUX. W 2026 r. zaczęto stosować diffusion także do generowania tekstu (Diffusion Gemma od Google — 4x szybsza niż autoregresja).",
-    "d_en": "A generative model that learns to reverse the process of adding noise to data. In inference it starts from pure noise and iteratively \"denoises\" it until it obtains an image/video/audio. The basis of Stable Diffusion, DALL-E, Midjourney, FLUX. In 2026, diffusion started being applied to text generation as well (Diffusion Gemma from Google — 4x faster than autoregression)."
+    "d_en": "A generative model that learns to reverse the process of adding noise to data. During inference, it starts from pure noise and iteratively \"denoises\" it until it obtains an image, video, or audio. This approach forms the basis for Stable Diffusion, DALL-E, Midjourney, and FLUX. In 2026, diffusion began being applied to text generation as well (Diffusion Gemma from Google — 4x faster than autoregression)."
   },
   {
     "c": "Trening i optymalizacja",
     "t": "Distillation",
     "en": "Knowledge Distillation",
     "d_pl": "Knowledge Distillation (destylacja wiedzy) — Trening mniejszego modelu (studenta) na outputach większego modelu (nauczyciela). Student uczy się na miękkich prawdopodobieństwach z nauczyciela, co pozwala przenieść więcej informacji niż same etykiety. Metoda ta umożliwia tworzenie modeli 10x mniejszych przy zachowaniu większości jakości. DeepSeek, Qwen i Gemma mają wersje ze zdestylowanych modeli.",
-    "d_en": "Training a smaller \"student\" model to mimic a larger \"teacher\" model. The student learns from the teacher's outputs, not just from the original data. Reduces model size and inference cost while preserving much of the quality. Used to create efficient models like DistilBERT, and controversially by Chinese labs to copy frontier models."
+    "d_en": "Training a smaller \"student\" model to mimic a larger \"teacher\" model. The student learns from the teacher's outputs rather than just from the original data. This approach reduces model size and inference cost while preserving much of the quality. It is used to create efficient models like DistilBERT, and controversially by Chinese labs to copy frontier models."
   },
   {
     "c": "Trening i optymalizacja",
     "t": "DPO",
     "en": "Direct Preference Optimization",
     "d_pl": "Direct Preference Optimization (bezpośrednia optymalizacja preferencji) — prostsza alternatywa dla RLHF — pomija model nagrody i PPO, optymalizując model bezpośrednio na parach preferencji. Mniej niestabilny, łatwiejszy w implementacji, tańszy. Stał się standardem dla społeczności dostrajania od 2024 r. (Zephyr, OpenHermes).",
-    "d_en": "Direct Preference Optimization — a simpler alternative to RLHF. Instead of training a reward model and then RL, DPO directly optimizes the model on preference pairs. Simpler, more stable, and faster than RLHF. Used by Llama 3, Zephyr, many open-source models. Since 2024 it's the dominant alignment method."
+    "d_en": "Direct Preference Optimization (DPO) — a simpler alternative to Reinforcement Learning from Human Feedback (RLHF). Instead of training a reward model and then using reinforcement learning, DPO directly optimizes the model on preference pairs. It is simpler, more stable, and faster than RLHF. Used by Llama 3, Zephyr, and many open-source models. Since 2024, it has become the dominant alignment method."
   },
   {
     "c": "Infrastruktura",
     "t": "Edge deployment",
     "en": "Edge Deployment",
     "d_pl": "Uruchamianie modeli lokalnie — na telefonie, laptopie, IoT, samochodzie. Zalety: prywatność (dane nie opuszczają urządzenia), niska latencja, brak kosztów chmury. Wyzwania: ograniczona pamięć (4-16GB RAM), CPU/GPU mobile. Modele: Gemma 4 12B (mobile), Llama 3.2 1B/3B, Phi-3.5 mini. 4-bit quantization to standard.",
-    "d_en": "Running AI models on local devices (phones, laptops, IoT) instead of cloud. Advantages: privacy, latency, offline. Models: Llama 3 8B, Phi-3, Gemma. Edge AI is growing as models get smaller and hardware gets more powerful. Key for consumer privacy."
+    "d_en": "Running AI models on local devices (phones, laptops, IoT) instead of the cloud. Advantages: privacy, latency, and offline capability. Models include Llama 3 8B, Phi-3, and Gemma. Edge AI is growing as models become smaller and hardware more powerful, making it crucial for consumer privacy."
   },
   {
     "c": "Ewaluacja",
@@ -190,28 +190,28 @@ const G = [
     "t": "Embedding",
     "en": "Embedding",
     "d_pl": "Embedding (osadzanie/zanurzenie słów) — Wektorowa reprezentacja tekstu (lub obrazu) w przestrzeni wielowymiarowej (zwykle 768-8192 wymiarów). Teksty o podobnym znaczeniu mają podobne embeddingi. Stanowią podstawę dla RAG, wyszukiwania semantycznego i grupowania. Przykłady modeli embeddingowych: OpenAI text-embedding-3, Cohere embed, BGE.",
-    "d_en": "A vector representation of text (or image/audio) in a high-dimensional space. Similar meanings are close in this space. Used for search, clustering, classification, and as input to other models. Models: text-embedding-3 (OpenAI), GTE (Alibaba), BGE (BAAI). The foundation of RAG and semantic search."
+    "d_en": "A vector representation of text (or image/audio) in a high-dimensional space where similar meanings are close to each other. Used for search, clustering, classification, and as input to other models. Examples include text-embedding-3 (OpenAI), GTE (Alibaba), and BGE (BAAI). This forms the foundation of RAG and semantic search."
   },
   {
     "c": "Bezpieczeństwo i regulacje",
     "t": "Export control",
     "en": "Export Control",
     "d_pl": "zawieszony po 3 dniach przez US export control ban. Claude Mythos 5 — ban zdjęty 27.06.2026, ale dostępny tylko dla ~100 zaufanych partnerów US. Klasyfikacja: modele >10^26 FLOPs training compute wymagają licencji eksportowej.",
-    "d_en": "Government restrictions on exporting AI technology (models, chips) to certain countries. The US restricts chip exports to China and frontier model exports. Intended to slow adversaries' AI progress. Effectiveness is debated — China develops domestic alternatives (Huawei Ascend). A major geopolitical issue in 2024-2026."
+    "d_en": "Government restrictions on exporting AI technology (models, chips) to certain countries. The US restricts chip exports to China and frontier model exports, intended to slow adversaries' AI progress. The effectiveness of these restrictions is debated, as China develops domestic alternatives like the Huawei Ascend. This has become a major geopolitical issue for 2024-2026."
   },
   {
     "c": "Trening i optymalizacja",
     "t": "Fine-tuning",
     "en": "Fine-tuning",
     "d_pl": "Dostrajanie wstępnie wytrenowanego modelu na węższym, zadaniowym zbiorze danych. SFT (dostrajanie nadzorowane) to najprostsza forma — model uczy się z przykładów pytanie-odpowiedź. LoRA i quantyzacja + LoRA (QLoRA) pozwalają dostrajać duże modele na pojedynczym GPU. Dostrajanie zmienia styl, nie podstawową wiedzę.",
-    "d_en": "Adapting a pre-trained model to a specific task by further training on task-specific data. Cheaper than training from scratch. Methods: full fine-tuning (all parameters), LoRA (only adapter matrices), QLoRA (LoRA + quantization). The standard way to customize models for specific applications."
+    "d_en": "Adapting a pre-trained model to a specific task by further training it on task-specific data. This approach is more cost-effective than training from scratch. Methods include full fine-tuning (updating all parameters), LoRA (Low-Rank Adaptation, which only updates adapter matrices), and QLoRA (LoRA combined with quantization). This is the standard method for customizing models for specific applications."
   },
   {
     "c": "Kontekst i wydajność",
     "t": "FlashAttention",
     "en": "FlashAttention",
     "d_pl": "Algorytm obliczania uwagi opracowany przez Tri Dao (2022), redukuje liczbę dostępu do pamięci z O(n²) do O(n). Jest 2-4x szybszy niż standardowa uwaga, bez utraty dokładności. Standard we wszystkich modelach z czołówki od 2023 r. Subquadratic Inc. twierdzi, że ich SSA jest 50x szybsza od FlashAttention.",
-    "d_en": "An optimized attention implementation that reduces memory reads/writes. FlashAttention v2/v3 provides 2-3x speedup for training and inference. The standard for efficient transformer implementations. Developed by Tri Dao. Now built into PyTorch and most model frameworks."
+    "d_en": "An optimized attention implementation that reduces memory reads/writes. FlashAttention v2/v3 provides 2-3x speedup for training and inference. It has become the standard for efficient transformer implementations and was developed by Tri Dao. It is now built into PyTorch and most model frameworks."
   },
   {
     "c": "Architektury i modele",
