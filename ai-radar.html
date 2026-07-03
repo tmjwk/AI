@@ -133,9 +133,26 @@ ${listHtml}
 }
 
 function renderSection(sec){
+  // Auto-archiwizacja: rozdziel karty na aktywne (≤28 dni) i archiwum (>28 dni)
+  const now = Date.now();
+  const ARCHIVE_DAYS = 28 * 24 * 60 * 60 * 1000;
+  const NEW_DAYS = 7 * 24 * 60 * 60 * 1000;
+
   let body = '';
   if (sec.type === 'cards') {
-    body = `<div class="grid">${sec.cards.map(renderCard).join('')}</div>`;
+    const active = [];
+    const archived = [];
+    for (const c of sec.cards) {
+      if (c.date && (now - new Date(c.date).getTime()) > ARCHIVE_DAYS) {
+        archived.push(c);
+      } else {
+        active.push(c);
+      }
+    }
+    body = `<div class="grid">${active.map(renderCard).join('')}</div>`;
+    if (archived.length > 0) {
+      body += `<details style="margin-top:12px"><summary style="cursor:pointer;color:var(--hd);font-size:12px;padding:6px 0">📦 Archiwum (${archived.length} kart)</summary><div class="grid" style="margin-top:8px;opacity:0.6">${archived.map(renderCard).join('')}</div></details>`;
+    }
   } else if (sec.type === 'list') {
     body = `<ul class="list">${sec.items.map(it=>`<li><span class="dot dot-${it.dot_color}"></span> ${L(it,'html_pl','html_en')}</li>`).join('')}</ul>`;
   } else if (sec.type === 'table') {
@@ -145,7 +162,6 @@ function renderSection(sec){
         if (typeof c === 'object' && c.tag) {
           return `<td>${renderTag(c.tag)}</td>`;
         }
-        // Check if it's a number (score) — apply class
         const isNum = /^\d+$/.test(String(c).trim());
         return `<td${isNum?' class="score"':''}>${esc(String(c))}</td>`;
       }).join('');
@@ -178,6 +194,6 @@ if (document.readyState === 'loading') {
 
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-03 22:43:47 UTC</span> · <span id="deploy-hash">vb0a6e7bc</span>
+Deploy: <span id="deploy-ts">2026-07-03 22:58:34 UTC</span> · <span id="deploy-hash">vbc1fc96d</span>
 </footer>
 </body></html>
