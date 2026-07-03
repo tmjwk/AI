@@ -120,7 +120,7 @@ const SECTIONS = [
       },
       {
         "title": "Ornith AI",
-        "desc_pl": "Open-source agentic coding MoE (9B-397B), harness training wbita w wagi modelu. Bije modele klasy frontier. $100M funding, Santa Clara.",
+        "desc_pl": "Open-source agentowy programowanie MoE (9B-397B), otoczka treningowa wbity w wagi modelu. Bije modele klasy frontier. $100M finansowanie, Santa Clara.",
         "desc_en": "Open-source agentic coding MoE (9B-397B), harness trained into model weights. Beats frontier models. $100M funding, Santa Clara.",
         "tags": [
           {
@@ -279,7 +279,7 @@ const SECTIONS = [
       },
       {
         "title": "Microsoft layoffs — 5,000",
-        "desc_pl": "Microsoft zwolnił ~5,000 pracowników. Poza tym nic dużego na rynku pracy.",
+        "desc_pl": "Microsoft zwolnił około 5 000 pracowników. Poza tym nic większego na rynku pracy.",
         "desc_en": "Microsoft laid off ~5,000 employees. Otherwise not much happening in the job market.",
         "tags": [
           {
@@ -424,7 +424,7 @@ const SECTIONS = [
       },
       {
         "title": "Harness Training (Ornith)",
-        "desc_pl": "Otoczka (harness) wbijana w wagi modelu przez RL. Model uczy się strategii rozwiązywania zadań, nie tylko predykcji tokenu. Wyniki biją modele klasy frontier.",
+        "desc_pl": "Otoczka wbijana w wagi modelu przez RLHF. Model uczy się strategii rozwiązywania zadań, nie tylko predykcji tokenu. Wyniki biją modele klasy frontier.",
         "desc_en": "Harness trained into model weights via RL. Model learns problem-solving strategies, not just token prediction. Results beat frontier models.",
         "tags": [
           {
@@ -438,7 +438,7 @@ const SECTIONS = [
       },
       {
         "title": "DeepPark — speculative decoding",
-        "desc_pl": "Open-source narzędzie DeepSeek — draft model przewiduje blok tokenów naraz. Do 85% szybciej dla DeepSeek v4, działa z Qwen i Gemma.",
+        "desc_pl": "Open-source narzędzie DeepSeek — draft model przewiduje bloki tokenów naraz. Do 85% szybciej dla DeepSeek v4, działa z Qwen i Gemma.",
         "desc_en": "Open-source tool from DeepSeek — draft model predicts a block of tokens at once. Up to 85% faster for DeepSeek v4, works with Qwen and Gemma.",
         "tags": [
           {
@@ -452,7 +452,7 @@ const SECTIONS = [
       },
       {
         "title": "X (Twitter) MCP Server",
-        "desc_pl": "X wydał MCP server do zapytań o dane Twittera. Software darmowy, ale dostęp do danych płatny.",
+        "desc_pl": "X wydał serwer MCP (Model Context Protocol) do zapytań o dane z Twittera. Oprogramowanie jest darmowe, ale dostęp do danych jest płatny.",
         "desc_en": "X released MCP server for querying Twitter data. Software free, but data access paid.",
         "tags": [
           {
@@ -466,7 +466,7 @@ const SECTIONS = [
       },
       {
         "title": "Google Gemini SQL 2",
-        "desc_pl": "Text-to-SQL — tłumaczy język naturalny na wykonywalne, schema-aware zapytania SQL.",
+        "desc_pl": "Text-to-SQL (Tłumaczenie tekstu na SQL) — tłumaczy język naturalny na wykonywalne, zorientowane na schemat zapytania SQL.",
         "desc_en": "Text-to-SQL — translates natural language into executable, schema-aware SQL queries.",
         "tags": [
           {
