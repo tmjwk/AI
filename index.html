@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Search — Hub</title>
+<meta name="description" content="Aktualny przegląd AI: 114 modeli, 69 benchmarków, 108 terminów, panele dyskusyjne i radar branżowy.">
+<meta property="og:title" content="AI Search — Hub">
+<meta property="og:description" content="Aktualny przegląd AI: modele, benchmarki, radar, pulse, słownik.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tmjwk.github.io/AI/">
+<script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))</script>
+<style>
+:root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--bl:#3b82f6}
+[data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--bl:#1d4ed8}
+*{box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:0;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
+.c{max-width:clamp(900px,95vw,1400px);margin:0 auto;padding:20px}
+.h{position:sticky;top:0;background:var(--bg);z-index:100;padding:16px 0;border-bottom:1px solid var(--bd);margin-bottom:24px;transition:background .2s}
+.hr{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:8px;flex-wrap:wrap}
+.h h1{font-size:22px;margin:0;font-weight:700;color:var(--hp);letter-spacing:-.02em}
+.h .sub{font-size:13px;color:var(--hm);margin-top:4px}
+.tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--fg);transition:border-color .15s;line-height:1}
+.tgl:hover{border-color:var(--ac)}
+.search-box{width:100%;padding:14px 18px;background:var(--card);border:1px solid var(--bd);border-radius:8px;color:var(--fg);font-size:16px;outline:none;transition:border-color .15s;margin-bottom:32px}
+.search-box:focus{border-color:var(--ac)}
+.search-box::placeholder{color:var(--hd)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:40px}
+.card-link{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:24px;transition:all .2s;border-left:4px solid var(--ac)}
+.card-link:hover{border-color:var(--ac);transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.3)}
+.card-icon{font-size:32px;margin-bottom:12px}
+.card-title{font-size:18px;font-weight:700;color:var(--hp);margin-bottom:8px}
+.card-stats{font-size:13px;color:var(--hm);line-height:1.8}
+.card-new{display:inline-block;background:var(--ac);color:#000;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:700;margin-top:8px}
+.sec-t{font-size:15px;text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:14px;font-weight:700}
+.update-list{list-style:none;padding:0;margin:0}
+.update-list li{padding:10px 0;border-bottom:1px solid var(--bdl);font-size:14px;color:var(--hm)}
+.update-list li strong{color:var(--hs)}
+.update-date{color:var(--ac);font-family:monospace;font-weight:600;margin-right:8px}
+.f{margin-top:40px;padding-top:18px;border-top:1px solid var(--bdl);font-size:11px;color:var(--hd);text-align:center;line-height:1.8}
+@media(max-width:540px){.h h1{font-size:18px}.grid{grid-template-columns:1fr}}
+</style></head>
+<body>
+<div class="c">
+
+<div class="h">
+<div class="hr">
+<h1>🤖 AI Search — Hub</h1>
+<button class="tgl" id="themeTgl">🌙</button>
+</div>
+<div class="sub">Aktualny przegląd AI · 5 podstron · 301+ rekordów</div>
+</div>
+
+<input type="text" class="search-box" id="globalSearch" placeholder="🔍 Szukaj we wszystkich stronach... (Enter = przejdź do słownika)" onkeydown="if(event.key==='Enter'){location.href='ai-glossary.html?q='+this.value}">
+
+<div class="grid">
+<a href="ai-models.html" class="card-link">
+<div class="card-icon">📊</div>
+<div class="card-title">AI Models</div>
+<div class="card-stats">114 modeli · 16 kategorii<br>Ostatnia aktualizacja: 3 lipca</div>
+<span class="card-new">🆕 8 nowych</span>
+</a>
+
+<a href="ai-benchmarks.html" class="card-link">
+<div class="card-icon">🏆</div>
+<div class="card-title">AI Benchmarki</div>
+<div class="card-stats">69 benchmarków · 12 kategorii<br>Tier ★★★ / ★ / ·</div>
+</a>
+
+<a href="ai-radar.html" class="card-link">
+<div class="card-icon">📡</div>
+<div class="card-title">AI Radar</div>
+<div class="card-stats">8 sekcji · 40 kart<br>Industry intelligence</div>
+<span class="card-new">🆕 16 nowych</span>
+</a>
+
+<a href="ai-pulse.html" class="card-link">
+<div class="card-icon">💓</div>
+<div class="card-title">AI Pulse</div>
+<div class="card-stats">2 epizody · 14 tematów<br>Panele dyskusyjne</div>
+</a>
+
+<a href="ai-glossary.html" class="card-link">
+<div class="card-icon">📖</div>
+<div class="card-title">AI Słownik</div>
+<div class="card-stats">108 terminów · 8 kategorii<br>Posortowane alfabetycznie</div>
+<span class="card-new">🆕 6 nowych</span>
+</a>
+</div>
+
+<div class="sec">
+<div class="sec-t">📅 Najnowsze aktualizacje</div>
+<ul class="update-list">
+<li><span class="update-date">03.07.2026</span> <strong>Lev Selector:</strong> Ornith AI, Harness Training, DeepPark, Claude Sonnet 5, LangChain, X MCP Server, Google OKF, Ponytail</li>
+<li><span class="update-date">01.07.2026</span> <strong>AI Search:</strong> Claude Fable 5 powraca, GPT 5.6 restricted, Claude Sonnet 5 tańszy</li>
+<li><span class="update-date">26.06.2026</span> <strong>Lev Selector:</strong> GLM-5.2, Seedance 2.5, Unitree R1, Olive brain imaging, Reflection AI + SpaceX</li>
+</ul>
+</div>
+
+<div class="f">
+AI Search Hub · <a href="https://github.com/tmjwk/AI" style="color:var(--hm)">GitHub</a><br>
+Deploy: <span id="deploy-ts">2026-07-03 23:25:27 UTC</span> · <span id="deploy-hash">v7774622f</span>
+</div>
+
+</div>
+<script>
+const t=document.getElementById('themeTgl');
+let theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+document.documentElement.setAttribute('data-theme',theme);
+t.textContent=theme==='dark'?'🌙':'☀️';
+t.addEventListener('click',()=>{
+theme=theme==='dark'?'light':'dark';
+document.documentElement.setAttribute('data-theme',theme);
+t.textContent=theme==='dark'?'🌙':'☀️';
+localStorage.setItem('theme',theme);
+});
+</script>
+</body></html>

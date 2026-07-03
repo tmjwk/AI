@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" data-theme="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Benchmarki — katalog</title>
+<html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Benchmarki — katalog</title>
 <style>
 :root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--bl:#3b82f6;--t3:#fbbf24;--t2:#d0d0d0;--t1:#b0b0b0;--ov:rgba(0,0,0,.7)}
 [data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--bl:#1d4ed8;--t3:#92400e;--t2:#475569;--t1:#94a3b8;--ov:rgba(0,0,0,.5)}
@@ -111,7 +111,7 @@ let S={q:'',chip:null,theme:'dark',lang:'pl'};
 function nm(s){return(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
 function L(obj,field_pl,field_en){if(S.lang==='en'&&obj[field_en]&&obj[field_en].trim())return obj[field_en];return obj[field_pl]}
 function init(){
-S.theme=localStorage.getItem('benchmarks-theme')||'dark';
+S.theme=localStorage.getItem('benchmarks-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
 S.lang=localStorage.getItem('lang')||'pl';
 document.documentElement.setAttribute('data-theme',S.theme);
 document.documentElement.setAttribute('data-lang',S.lang);
@@ -129,6 +129,6 @@ function toggleLang(){S.lang=S.lang==='pl'?'en':'pl';document.documentElement.se
 init();
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-03 23:11:26 UTC</span> · <span id="deploy-hash">v0f397822</span>
+Deploy: <span id="deploy-ts">2026-07-03 23:25:27 UTC</span> · <span id="deploy-hash">vfe023fd7</span>
 </footer>
 </body></html>
