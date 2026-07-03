@@ -131,8 +131,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .ep-collapse{display:none}.ep-old{position:relative}
 .ep-old.open+.ep-collapse{display:block}
 /* Nurt 2: globalny PL/EN toggle — ukrywa/pokazuje spany wg data-lang */
+/* ALE nie nadpisuje per-topic toggle (.topic.en) */
 [data-lang="en"] .pl{display:none}
 [data-lang="pl"] .en{display:none}
+/* Per-topic override — wyższa specyficzność */
+.topic.en .pl{display:none !important}
+.topic.en .en{display:inline !important}
+[data-lang="en"] .topic:not(.en) .pl{display:none !important}
+[data-lang="pl"] .topic:not(.en) .en{display:none !important}
 .ep-old .ep-toggle-btn{position:absolute;top:10px;right:10px;z-index:10;background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:4px 12px;cursor:pointer;font-size:12px;color:var(--hs);font-weight:600;transition:all .15s;white-space:nowrap}
 .ep-old .ep-toggle-btn:hover{border-color:var(--ac);color:var(--ac)}
 
@@ -417,6 +423,6 @@ if (document.readyState === 'loading') {
 </div>
 
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-03 22:39:27 UTC</span> · <span id="deploy-hash">v5b6c4272</span>
+Deploy: <span id="deploy-ts">2026-07-03 22:43:47 UTC</span> · <span id="deploy-hash">v0e90f839</span>
 </footer>
 </body></html>
