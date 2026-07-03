@@ -716,6 +716,48 @@ const G = [
     "en": "Zero-shot Text-to-Speech",
     "d_pl": "Model klonuje głos bez wcześniejszego treningu na tym konkretnym głosie. WavTTS (ByteDance, bazuje na F5-TTS), Higgs Audio v3 — przykłady zero-shot TTS. Wygodne, ale etycznie ryzykowne (deepfakes).",
     "d_en": "Voice cloning from a few seconds of sample audio, without fine-tuning. Models: ElevenLabs, XTTS, Dot TTS. In 2026, zero-shot TTS achieves near-perfect speaker similarity. The technology enables instant voice cloning but raises ethical concerns about deepfakes."
+  },
+  {
+    "t": "Harness training",
+    "en": "Harness Training",
+    "c": "Trening i optymalizacja",
+    "d_pl": "Harness training (trening otoczki) — technika treningu gdzie otoczka (harness) jest wbijana w wagi modelu przez reinforcement learning. Model uczy się własnych strategii rozwiązywania zadań, a nie tylko predykcji tokenu. Ornith (9B-397B) używa tej techniki i bije modele klasy frontier.",
+    "d_en": "Harness training — technique where the harness (problem-solving strategy) is trained into model weights via reinforcement learning. The model learns its own problem-solving strategies, not just token prediction. Ornith (9B-397B) uses this technique and beats frontier models."
+  },
+  {
+    "t": "Sycophancy",
+    "en": "Sycophancy",
+    "c": "Bezpieczeństwo i regulacje",
+    "d_pl": "Sycophancy (sycyfancja) — zjawisko gdzie model jest zbyt zgodny z użytkownikiem, co szkodzi głębokiemu rozumowaniu. GPT-5.5 cierpi na ten problem — dla prostych zadań niewidoczne, ale przy deep thinking model zgadza się z błędnymi założeniami. GLM-5.2 i Qwen 3.6 27B nie mają tego problemu.",
+    "d_en": "Sycophancy — phenomenon where the model is too agreeable with the user, which hurts deep reasoning. GPT-5.5 suffers from this — invisible for simple tasks, but during deep thinking the model agrees with incorrect assumptions. GLM-5.2 and Qwen 3.6 27B don't have this problem."
+  },
+  {
+    "t": "Open Knowledge Format (OKF)",
+    "en": "Open Knowledge Format",
+    "c": "Kontekst i wydajność",
+    "d_pl": "Open Knowledge Format (otwarty format wiedzy) — format od Google do wyrażania wiedzy w ustrukturyzowanych plikach. Platform-agnostic (git, object storage, filesystem). Można zbudować wiki i użyć jako pamięć dla agenta. Google Knowledge Catalog ingestuje OKF bundles.",
+    "d_en": "Open Knowledge Format — Google's format for expressing knowledge in structured files. Platform-agnostic (git, object storage, filesystem). Can build a wiki and use as agent memory. Google Knowledge Catalog ingests OKF bundles."
+  },
+  {
+    "t": "Mixture of Agents",
+    "en": "Mixture of Agents",
+    "c": "Agentic i narzędzia",
+    "d_pl": "Mixture of Agents (mieszanka agentów) — technika gdzie kilka modeli pracuje równolegle, a wynik jest konsensusowy. Lepsza dokładność, mniej halucynacji, lepsza jakość. Hermes implementuje tę technologię.",
+    "d_en": "Mixture of Agents — technique where multiple models work in parallel and the result is consensus-based. Better accuracy, fewer hallucinations, better quality. Hermes implements this technology."
+  },
+  {
+    "t": "DeepPark",
+    "en": "DeepPark",
+    "c": "Kontekst i wydajność",
+    "d_pl": "DeepPark (od DeepSeek) — open-source narzędzie przyspieszające wnioskowanie przez speculative decoding. Małe szybkie modele draft przewidują blok tokenów naraz. Do 85% szybciej dla DeepSeek v4, działa też z Qwen i Gemma.",
+    "d_en": "DeepPark (from DeepSeek) — open-source inference acceleration tool using speculative decoding. Small fast draft models predict a block of tokens at once. Up to 85% faster for DeepSeek v4, works with Qwen and Gemma too."
+  },
+  {
+    "t": "Pulumi",
+    "en": "Pulumi",
+    "c": "Infrastruktura",
+    "d_pl": "Pulumi — narzędzie infrastructure-as-code w Python/Go/TypeScript (nie własny język jak Terraform HCL). Szablony dla AWS, agent może generować pliki Pulumi. Łatwiejsze dla programistów Python niż Terraform.",
+    "d_en": "Pulumi — infrastructure-as-code tool in Python/Go/TypeScript (not a custom language like Terraform HCL). Templates for AWS, agent can generate Pulumi files. Easier for Python developers than Terraform."
   }
 ];
 

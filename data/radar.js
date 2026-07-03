@@ -117,6 +117,42 @@ const SECTIONS = [
         "full_width": false,
         "desc_pl": "Ph.D., 40+ lat w software. Weekly AI updates co piątek. 6.96K subs, 293 videos. Slides na GitHub (75 PPTX) + Google Drive.",
         "desc_en": "Ph.D., 40+ years in software. Weekly AI updates every Friday. 6.96K subs, 293 videos. Slides on GitHub (75 PPTX) + Google Drive."
+      },
+      {
+        "title": "Ornith AI",
+        "desc_pl": "Open-source agentic coding MoE (9B-397B), harness training wbita w wagi modelu. Bije modele klasy frontier. $100M funding, Santa Clara.",
+        "desc_en": "Open-source agentic coding MoE (9B-397B), harness trained into model weights. Beats frontier models. $100M funding, Santa Clara.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Open-source"
+          },
+          {
+            "color": "blue",
+            "text": "USA"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false
+      },
+      {
+        "title": "CoreWeave AREA",
+        "desc_pl": "Agent badawczy AI — formuje hipotezy, uruchamia eksperymenty, analizuje wyniki. Dla badań naukowych.",
+        "desc_en": "AI research agent — forms hypotheses, triggers experiments, evaluates results. For scientific research.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Funded"
+          },
+          {
+            "color": "blue",
+            "text": "USA"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false
       }
     ]
   },
@@ -240,6 +276,20 @@ const SECTIONS = [
         "full_width": true,
         "desc_pl": "Cena tokenów spadła ~1000x w kilka lat. Od GPT-3 (175B, 2020) do multi-trillion param models (2026). AI może podnieść globalny GDP z dziesiątek bilionów do setek bilionów lub kwadrylionów dolarów.<br><br><strong>GLM 5.2</strong> kosztuje 1/6 GPT-5.5 przy podobnej jakości w programowanie.",
         "desc_en": "Token prices dropped ~1000x in a few years. From GPT-3 (175B, 2020) to multi-trillion param models (2026). AI could raise global GDP from tens of trillions to hundreds of trillions or quadrillions of dollars. <strong>GLM 5.2</strong> costs 1/6 of GPT-5.5 at similar coding quality."
+      },
+      {
+        "title": "Microsoft layoffs — 5,000",
+        "desc_pl": "Microsoft zwolnił ~5,000 pracowników. Poza tym nic dużego na rynku pracy.",
+        "desc_en": "Microsoft laid off ~5,000 employees. Otherwise not much happening in the job market.",
+        "tags": [
+          {
+            "color": "yellow",
+            "text": "Layoffs"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false
       }
     ]
   },
@@ -285,6 +335,20 @@ const SECTIONS = [
         "full_width": false,
         "desc_pl": "Gov orgs nie mogą kontraktować. Od 2027 żadnych usług Alibaba. Powód: kontrola CCP. Jack Ma — $2.8B antitrust fine, IPO suspended, \"disappeared\". Inwestorzy stracili zaufanie do chińskiego biznesu.",
         "desc_en": "Gov orgs cannot contract. From 2027 no Alibaba services. Reason: CCP control. Jack Ma — $2.8B antitrust fine, IPO suspended, \"disappeared\". Investors lost trust in Chinese business."
+      },
+      {
+        "title": "Two-class AI gap",
+        "desc_pl": "Rząd i duże firmy mają dostęp do najnowszych modeli (GPT 5.6, Mythos 5), reszta otrzymuje modele później lub wcale. Mythos 5 wydany w kwietniu, nadal niepubliczny. Chińczycy odwrotnie — najlepsze modele w open-source.",
+        "desc_en": "Government and big companies have access to latest models (GPT 5.6, Mythos 5), everyone else receives models later or never. Mythos 5 released in April, still not public. Chinese do the opposite — best models in open-source.",
+        "tags": [
+          {
+            "color": "yellow",
+            "text": "Regulacje"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false
       }
     ]
   },
@@ -357,6 +421,62 @@ const SECTIONS = [
         "full_width": false,
         "desc_pl": "Custom \"mycron\" zamiast system crontab. Browser session persistence, hot-reload (60s), RAND_DELAY (anti-thundering herd), per-minute dedup, isolated per-user logging.",
         "desc_en": "Custom \"mycron\" instead of system crontab. Browser session persistence, hot-reload (60s), RAND_DELAY (anti-thundering herd), per-minute dedup, isolated per-user logging."
+      },
+      {
+        "title": "Harness Training (Ornith)",
+        "desc_pl": "Otoczka (harness) wbijana w wagi modelu przez RL. Model uczy się strategii rozwiązywania zadań, nie tylko predykcji tokenu. Wyniki biją modele klasy frontier.",
+        "desc_en": "Harness trained into model weights via RL. Model learns problem-solving strategies, not just token prediction. Results beat frontier models.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Breakthrough"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false
+      },
+      {
+        "title": "DeepPark — speculative decoding",
+        "desc_pl": "Open-source narzędzie DeepSeek — draft model przewiduje blok tokenów naraz. Do 85% szybciej dla DeepSeek v4, działa z Qwen i Gemma.",
+        "desc_en": "Open-source tool from DeepSeek — draft model predicts a block of tokens at once. Up to 85% faster for DeepSeek v4, works with Qwen and Gemma.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Open-source"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false
+      },
+      {
+        "title": "X (Twitter) MCP Server",
+        "desc_pl": "X wydał MCP server do zapytań o dane Twittera. Software darmowy, ale dostęp do danych płatny.",
+        "desc_en": "X released MCP server for querying Twitter data. Software free, but data access paid.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "MCP"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false
+      },
+      {
+        "title": "Google Gemini SQL 2",
+        "desc_pl": "Text-to-SQL — tłumaczy język naturalny na wykonywalne, schema-aware zapytania SQL.",
+        "desc_en": "Text-to-SQL — translates natural language into executable, schema-aware SQL queries.",
+        "tags": [
+          {
+            "color": "blue",
+            "text": "Google"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false
       }
     ]
   },
@@ -364,7 +484,7 @@ const SECTIONS = [
     "id": "benchmarks",
     "num": 6,
     "icon": "🏆",
-    "title": "LM ARENA — RANKINGI (25.06.2026)",
+    "title": "LM ARENA — RANKINGI (01.07.2026)",
     "type": "table",
     "headers": [
       "#",
