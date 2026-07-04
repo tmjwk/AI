@@ -816,8 +816,8 @@ const B = [
     "y": 2025,
     "ty": "leaderboard",
     "tier": 1,
-    "t_pl": "Ranking video generatorów — HappyHorse 1.0 #1 w 2026.",
-    "t_en": "Ranking of video generators — HappyHorse 1.0 is #1 in 2026. Specialized for video generation quality. A key reference for content creators choosing AI video tools."
+    "t_pl": "Ranking video generatorów — Happy Horse 1.0 #1 w 2026.",
+    "t_en": "Ranking of video generators — Happy Horse 1.0 is #1 in 2026. Specialized for video generation quality. A key reference for content creators choosing AI video tools."
   },
   {
     "n": "VIBE Bench",

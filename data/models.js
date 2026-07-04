@@ -326,7 +326,7 @@ const M = [
     "o": 0,
     "c": "AI Research",
     "tags": [],
-    "url": "https://fal.ai/learn/devs/happyhorse-1-0-what-do-we-know-so-far",
+    "url": "https://fal.ai/learn/devs/Happy Horse-1-0-what-do-we-know-so-far",
     "yt": "1_5sSJK2rU0",
     "desc_pl": "Model generujący wideo — #1 na liście rankingowej Artificial Analysis",
     "desc_en": "Video generation model — #1 on Artificial Analysis leaderboard",
@@ -3031,7 +3031,7 @@ const SOURCES = [
     "n": 19,
     "d": "2026-04-17",
     "id": "1_5sSJK2rU0",
-    "t": "Claude Mythos, Deepseek v4, HappyHorse, Meta new AI, realtime video games",
+    "t": "Claude Mythos, Deepseek v4, Happy Horse, Meta new AI, realtime video games",
     "tr": 0
   },
   {
