@@ -669,13 +669,6 @@ const G = [
     "d_en": "Creating videos from text or images. Models: Sora 2 (OpenAI), Veo 3 (Google), Kling 2, Seedance 2.5. In 2026, frontier models generate 4K 30-second clips with cinematic quality. The fastest-evolving AI modality."
   },
   {
-    "c": "Architektury i modele",
-    "t": "Vision-Language Model (VLM)",
-    "en": "Vision-Language Model",
-    "d_pl": "Model łączący rozumienie obrazu z językiem — potrafi opisywać obrazy, odpowiadać na pytania na ich temat, generować tekst na podstawie obrazu. Przykłady: GPT-5 Vision, Claude Vision, Gemini. Modele VLM stanowią podstawę dla asystentów AI, którzy potrafią „widzieć”. Kluczowe benchmarki: MMMU, DocVQA, ChartQA.",
-    "d_en": "A model combining image understanding with language — can describe images, answer questions about them, generate image-based text. Examples: GPT-5 Vision, Claude Vision, Gemini. VLMs are the foundation for AI assistants that can \"see\". Key benchmarks: MMMU, DocVQA, ChartQA."
-  },
-  {
     "c": "Modalności",
     "t": "Vision-language model (VLM)",
     "en": "Vision-Language Model (VLM)",

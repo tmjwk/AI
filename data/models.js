@@ -839,7 +839,7 @@ const M = [
     "b_en": "layout-controlled image generation — object separation, layer editing, poster design"
   },
   {
-    "r": 1,
+    "r": 2,
     "n": "Claude Fable 5",
     "v": "Anthropic",
     "d": "2026-07-01",
@@ -849,10 +849,24 @@ const M = [
     "desc_pl": "Wrócił 1 lipca 2026. Promocja: pierwszy tydzień pełny dostęp (pro/max), po 7 lipca limit 50% kwoty. API 0/0 per M tokens. 1M kontekst. Governance security — odmawia jeśli podejrzewa działalność nielegalną.",
     "b_pl": "Najbardziej zaawansowany model Anthropic — złożone rozumowanie, długie zadania, ale z ograniczeniami bezpieczeństwa",
     "desc_en": "Returned July 1st 2026. Promo: first week full access (pro/max), after July 7 limit 50% quota. API 0/0 per M tokens. 1M context. Governance security — refuses if suspects illegal activity.",
-    "b_en": "most advanced Anthropic model — complex reasoning, long tasks, but with security restrictions"
+    "b_en": "most advanced Anthropic model — complex reasoning, long tasks, but with security restrictions",
+    "scores": {
+      "benchlm_score": 89,
+      "benchlm_rank": 2,
+      "vellum": {
+        "GPQA Diamond": 94.1,
+        "SWE-Bench Verified": 95.0,
+        "AutoBench": 17.4,
+        "OSWorld-Verified": 85.0,
+        "BrowseComp": 88.0,
+        "Terminal-Bench 2.1": 84.3
+      },
+      "composite": 86.5,
+      "confidence": 2
+    }
   },
   {
-    "r": 2,
+    "r": 9,
     "n": "Claude Opus 4.7",
     "v": "Anthropic",
     "d": "2026-04-16",
@@ -864,10 +878,20 @@ const M = [
     "desc_pl": "Poprzednik Opus 4.8, GA przed 4.8",
     "desc_en": "Predecessor to Opus 4.8, GA before 4.8",
     "b_pl": "Advanced software engineering, stabilny i sprawdzony",
-    "b_en": "advanced software engineering, stable and proven"
+    "b_en": "advanced software engineering, stable and proven",
+    "scores": {
+      "benchlm_score": 24,
+      "benchlm_rank": null,
+      "vellum": {
+        "GPQA Diamond": 94.2,
+        "SWE-Bench Verified": 87.6
+      },
+      "composite": 66.6,
+      "confidence": 2
+    }
   },
   {
-    "r": 3,
+    "r": 6,
     "n": "Claude Opus 4.8",
     "v": "Anthropic",
     "d": "2026-05-28",
@@ -879,10 +903,21 @@ const M = [
     "desc_pl": "Dawny lider benchmarków długiego horyzontu (long-horizon), +1% w stosunku do GLM-5.2",
     "desc_en": "Former long-horizon benchmark leader, +1% over GLM-5.2",
     "b_pl": "Złożone, wieloetapowe zadania, badania naukowe, kodowanie z dużym kontekstem",
-    "b_en": "complex multi-step tasks, research, coding with large context"
+    "b_en": "complex multi-step tasks, research, coding with large context",
+    "scores": {
+      "benchlm_score": 85,
+      "benchlm_rank": 8,
+      "vellum": {
+        "SWE-Bench Verified": 88.6,
+        "AutoBench": 15.5,
+        "OSWorld-Verified": 83.4
+      },
+      "composite": 76.6,
+      "confidence": 2
+    }
   },
   {
-    "r": 4,
+    "r": 5,
     "n": "Qwen 3.7 Plus",
     "v": "Alibaba",
     "d": "2026-06-07",
@@ -894,10 +929,16 @@ const M = [
     "desc_pl": "Wielomodalny agent model — vision + language, 11h autonomous programowanie (English vocab app), bije DeepSeek V4 Pro i GLM-5.1",
     "desc_en": "Multimodal agent model — vision + language, 11h autonomous coding (English vocab app), beats DeepSeek V4 Pro and GLM-5.1",
     "b_pl": "Agentyczna wizja-język (agentic vision-language) — kodowanie w długim horyzoncie, analiza ekranu, autonomiczne testowanie aplikacji",
-    "b_en": "agentic vision-language — long-horizon coding, screen analysis, autonomous app testing"
+    "b_en": "agentic vision-language — long-horizon coding, screen analysis, autonomous app testing",
+    "scores": {
+      "benchlm_score": 80,
+      "benchlm_rank": 14,
+      "composite": 80.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 5,
+    "r": 4,
     "n": "GLM-5.2",
     "v": "Z.AI / Zhipu AI",
     "d": "2026-06-16",
@@ -909,10 +950,19 @@ const M = [
     "desc_pl": "Open-weight Mixture of Experts (model z mieszaną ekspertyzą) 745B (44B aktywnych), 1/6 kosztu GPT-5.5",
     "desc_en": "Open-weight MoE 745B (44B active), 1/6 the cost of GPT-5.5",
     "b_pl": "Long-horizon (wieloetapowe) programowanie, inżynieria agentowa — open-source z flagowej jakości",
-    "b_en": "long-horizon coding, agentic engineering — open-source with frontier quality"
+    "b_en": "long-horizon coding, agentic engineering — open-source with frontier quality",
+    "scores": {
+      "benchlm_score": 80,
+      "benchlm_rank": 17,
+      "vellum": {
+        "Terminal-Bench 2.1": 81.0
+      },
+      "composite": 80.4,
+      "confidence": 2
+    }
   },
   {
-    "r": 6,
+    "r": 8,
     "n": "GPT-5.5",
     "v": "OpenAI",
     "d": "2026-04-23",
@@ -924,10 +974,22 @@ const M = [
     "desc_pl": "Zamknięty model graniczny (frontier model), punkt odniesienia dla kodowania w długym horyzoncie",
     "desc_en": "Closed frontier model, reference for long-horizon coding",
     "b_pl": "General-purpose wnioskowanie, referencyjny benchmark dla innych",
-    "b_en": "general-purpose reasoning, reference benchmark for others"
+    "b_en": "general-purpose reasoning, reference benchmark for others",
+    "scores": {
+      "benchlm_score": 78,
+      "benchlm_rank": 21,
+      "vellum": {
+        "AutoBench": 12.9,
+        "OSWorld-Verified": 78.7,
+        "BrowseComp": 84.4,
+        "Terminal-Bench 2.1": 82.7
+      },
+      "composite": 73.0,
+      "confidence": 2
+    }
   },
   {
-    "r": 7,
+    "r": 16,
     "n": "GPT 5.6 Sol",
     "v": "OpenAI",
     "d": "2026-06-27",
@@ -941,10 +1003,16 @@ const M = [
     "desc_pl": "Flagowy Sol + Terra (tańszy) + Luna (najszybszy), 1.5M token kontekst, DOSTĘP OGRANICZONY po prośbie rządu",
     "desc_en": "Flagship Sol + Terra (lower-cost) + Luna (fastest), 1.5M token context, RESTRICTED ACCESS per government request",
     "b_pl": "Agentyczne kodowanie, złożone rozumowanie, długie konteksty (1,5 mln tokenów)",
-    "b_en": "agentic coding, complex reasoning, long contexts (1.5M tokens)"
+    "b_en": "agentic coding, complex reasoning, long contexts (1.5M tokens)",
+    "scores": {
+      "benchlm_score": 0,
+      "benchlm_rank": null,
+      "composite": null,
+      "confidence": 0
+    }
   },
   {
-    "r": 8,
+    "r": 1,
     "n": "Claude Mythos 5",
     "v": "Anthropic",
     "d": "2026-06-27",
@@ -958,10 +1026,20 @@ const M = [
     "desc_pl": "Ban zdjęty 26-27.06, dostępny dla zaufanych organizacji US, konkurent GPT 5.6 w programowaniu agentowym",
     "desc_en": "Ban lifted 26-27.06, available to trusted US orgs, competitor to GPT 5.6 in agentic",
     "b_pl": "Inżynieria agentowa, research, wnioskowanie krytyczne dla bezpieczeństwa",
-    "b_en": "agentic engineering, research, safety-critical reasoning"
+    "b_en": "agentic engineering, research, safety-critical reasoning",
+    "scores": {
+      "benchlm_score": 89,
+      "benchlm_rank": 1,
+      "vellum": {
+        "SWE-Bench Verified": 95.5,
+        "Terminal-Bench 2.1": 88.0
+      },
+      "composite": 90.0,
+      "confidence": 2
+    }
   },
   {
-    "r": 9,
+    "r": 3,
     "n": "Claude Sonnet 5",
     "v": "Anthropic",
     "d": "2026-07-01",
@@ -971,10 +1049,24 @@ const M = [
     "b_pl": "zrównoważony LLM — dobry stosunek jakości do ceny, 1M token kontekstu",
     "desc_en": "Cheaper Anthropic model, 1M context, /0 (2-month promo), then /5",
     "b_en": "balanced LLM — good quality-to-price ratio, 1M token context",
-    "tags": []
+    "tags": [],
+    "scores": {
+      "benchlm_score": 79,
+      "benchlm_rank": null,
+      "vellum": {
+        "GPQA Diamond": 96.2,
+        "SWE-Bench Verified": 85.2,
+        "AutoBench": 13.5,
+        "OSWorld-Verified": 81.2,
+        "BrowseComp": 84.7,
+        "Terminal-Bench 2.1": 80.4
+      },
+      "composite": 81.2,
+      "confidence": 2
+    }
   },
   {
-    "r": 10,
+    "r": 7,
     "n": "MiniMax M3",
     "v": "MiniMax",
     "d": "2026-05-31",
@@ -986,10 +1078,16 @@ const M = [
     "desc_pl": "Frontier programowanie, 1M kontekst, MSA",
     "desc_en": "Frontier coding, 1M context, MSA",
     "b_pl": "Bardzo długi kontekst (1M tokenów), programowanie z dużymi codebasami",
-    "b_en": "very long context (1M tokens), coding with large codebases"
+    "b_en": "very long context (1M tokens), coding with large codebases",
+    "scores": {
+      "benchlm_score": 74,
+      "benchlm_rank": 29,
+      "composite": 74.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 11,
+    "r": 14,
     "n": "Kimi K2.7 Code",
     "v": "Moonshot AI",
     "d": "2026-06-12",
@@ -1001,10 +1099,16 @@ const M = [
     "desc_pl": "1T MoE (32B active), 262k kontekst, open-source, programowanie na pierwszym miejscu",
     "desc_en": "1T MoE (32B active), 262k context, open-source, coding-first",
     "b_pl": "Programowanie na pierwszym miejscu, agentowy — najlepszy open-source do programowania",
-    "b_en": "coding-first, agentic — best open-source for programming"
+    "b_en": "coding-first, agentic — best open-source for programming",
+    "scores": {
+      "benchlm_score": 22,
+      "benchlm_rank": null,
+      "composite": 22.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 12,
+    "r": 13,
     "n": "DeepSeek v4",
     "v": "DeepSeek",
     "d": "2026-04-24",
@@ -1016,10 +1120,16 @@ const M = [
     "desc_pl": "Open-source flagowy, V4-Pro + V4-Flash API",
     "desc_en": "Open-source flagship, V4-Pro + V4-Flash API",
     "b_pl": "Open-source alternatywa dla flagowych modeli — dobry stosunek jakości do ceny",
-    "b_en": "open-source alternative to frontier models — good quality-to-price ratio"
+    "b_en": "open-source alternative to frontier models — good quality-to-price ratio",
+    "scores": {
+      "benchlm_score": 41,
+      "benchlm_rank": 87,
+      "composite": 41.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 13,
+    "r": 11,
     "n": "Qwen 3.6 Plus",
     "v": "Alibaba",
     "d": "2026-05-19",
@@ -1031,10 +1141,16 @@ const M = [
     "desc_pl": "Open-weight, real world agents, upgrade z Qwen 3.5",
     "desc_en": "Open-weight, real world agents, upgrade from Qwen 3.5",
     "b_pl": "Real-world zadania agentowe, multimodalne zastosowania",
-    "b_en": "real-world agentic tasks, multimodal applications"
+    "b_en": "real-world agentic tasks, multimodal applications",
+    "scores": {
+      "benchlm_score": 65,
+      "benchlm_rank": 44,
+      "composite": 65.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 14,
+    "r": 18,
     "n": "Gemma 4 12B Unified",
     "v": "Google",
     "d": "2026-06-03",
@@ -1049,7 +1165,7 @@ const M = [
     "b_en": "lightweight local model (12B), multimodal — for running on your own hardware"
   },
   {
-    "r": 15,
+    "r": 10,
     "n": "Nemotron 3 Ultra",
     "v": "NVIDIA",
     "d": "2026-06-07",
@@ -1061,10 +1177,16 @@ const M = [
     "desc_pl": "550B MoE (55B active), hybrid Mamba-Transformer, 1M kontekst, 5x faster wnioskowanie, NVFP4 quantization, 350GB",
     "desc_en": "550B MoE (55B active), hybrid Mamba-Transformer, 1M context, 5x faster inference, NVFP4 quantization, 350GB",
     "b_pl": "Agentyczny LLM — przepływy pracy w długim horyzoncie, przewidywanie wielotokenowe, o 30% niższy koszt niż u konkurencji",
-    "b_en": "agentic LLM — long-horizon workflows, multi-token prediction, 30% lower cost than competitors"
+    "b_en": "agentic LLM — long-horizon workflows, multi-token prediction, 30% lower cost than competitors",
+    "scores": {
+      "benchlm_score": 66,
+      "benchlm_rank": 42,
+      "composite": 66.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 16,
+    "r": 12,
     "n": "MAI Thinking 1",
     "v": "Microsoft",
     "d": "2026-06-07",
@@ -1076,10 +1198,16 @@ const M = [
     "desc_pl": "Medium thinking model — 1T MoE (35B active), private preview. Ustępuje topowym modelom na rynku",
     "desc_en": "Medium thinking model — 1T MoE (35B active), private preview. Lags top market models",
     "b_pl": "Model rozumujący — Microsoft AI, MoE architecture, private preview",
-    "b_en": "reasoning model — Microsoft AI, MoE architecture, private preview"
+    "b_en": "reasoning model — Microsoft AI, MoE architecture, private preview",
+    "scores": {
+      "benchlm_score": 62,
+      "benchlm_rank": 50,
+      "composite": 62.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 17,
+    "r": 19,
     "n": "GPT Dreaming",
     "v": "OpenAI",
     "d": "2026-06-07",
@@ -1094,7 +1222,7 @@ const M = [
     "b_en": "memory synthesis — ChatGPT understands context changes (e.g. trip ending), better factual recall"
   },
   {
-    "r": 18,
+    "r": 23,
     "n": "Ornith 1.0",
     "v": "Ornith (open-source)",
     "d": "2026-06",
@@ -1109,7 +1237,7 @@ const M = [
     "b_en": "agentic coding — self-scaffolding, model learns to design workflows for tasks"
   },
   {
-    "r": 19,
+    "r": 15,
     "n": "Seed 2.1",
     "v": "ByteDance",
     "d": "2026-06",
@@ -1121,10 +1249,16 @@ const M = [
     "desc_pl": "Productivity agent (nie chatbot) — Pro version lepszy od Gemini w analizie wideo, multimodalny",
     "desc_en": "Productivity agent (not chatbot) — Pro version better than Gemini at video analysis, multimodal",
     "b_pl": "Productivity agent — analiza wideo i motion, lepszy od Gemini w multimodalnych zadaniach",
-    "b_en": "productivity agent — video and motion analysis, better than Gemini at multimodal tasks"
+    "b_en": "productivity agent — video and motion analysis, better than Gemini at multimodal tasks",
+    "scores": {
+      "benchlm_score": 7,
+      "benchlm_rank": null,
+      "composite": 7.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 20,
+    "r": 24,
     "n": "Sakana Fugu",
     "v": "Sakana AI",
     "d": "2026-06",
@@ -1136,10 +1270,16 @@ const M = [
     "desc_pl": "Orchestrator model (nie base LLM) — router który koordynuje inne modele, twierdzi że bije Claude/GPT",
     "desc_en": "Orchestrator model (not base LLM) — router that coordinates other models, claims to beat Claude/GPT",
     "b_pl": "Wielomodelowa orkiestracja — router koordynujący flagowe modele językowe (LLM) przez jedno API",
-    "b_en": "multi-model orchestration — router coordinating frontier LLMs via one API"
+    "b_en": "multi-model orchestration — router coordinating frontier LLMs via one API",
+    "scores": {
+      "benchlm_score": 0,
+      "benchlm_rank": null,
+      "composite": null,
+      "confidence": 0
+    }
   },
   {
-    "r": 21,
+    "r": 20,
     "n": "Diffusion Gemma",
     "v": "Google (open-source, Apache 2)",
     "d": "2026-06-14",
@@ -1169,7 +1309,7 @@ const M = [
     "b_en": "adaptive reasoning — model decides when to think deeper"
   },
   {
-    "r": 23,
+    "r": 17,
     "n": "Meta AI (Llama 4)",
     "v": "Meta",
     "d": "2026-04",
@@ -1184,7 +1324,7 @@ const M = [
     "b_en": "open-weights in the future, community ecosystem"
   },
   {
-    "r": 24,
+    "r": 21,
     "n": "Quabble 3.6 27B",
     "v": "MIAB",
     "d": "2026-07-03",
@@ -1691,7 +1831,7 @@ const M = [
   },
   {
     "r": 9,
-    "n": "World Tracing",
+    "n": "World Tracing (World Models)",
     "v": "World Labs + UIUC",
     "d": "2026-06",
     "o": 1,
