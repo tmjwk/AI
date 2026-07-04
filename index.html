@@ -63,6 +63,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <input type="text" class="search-box" id="globalSearch" placeholder="🔍 Szukaj we wszystkich stronach... (modele, benchmarki, terminy, radar)" autocomplete="off">
 <div class="search-results" id="searchResults"></div>
 </div>
+<div id="dataStatus" style="font-size:11px;color:var(--hd);font-family:monospace;margin:-20px 0 24px;padding:0 4px"></div>
 
 <div class="grid">
 <a href="ai-models.html" class="card-link">
@@ -110,18 +111,23 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 <div class="f">
 AI Search Hub · <a href="https://github.com/tmjwk/AI" style="color:var(--hm)">GitHub</a><br>
-Deploy: <span id="deploy-ts">2026-07-04 00:59:22 UTC</span> · <span id="deploy-hash">v1b855dae</span>
+Deploy: <span id="deploy-ts">2026-07-04 01:14:14 UTC</span> · <span id="deploy-hash">vdb75b57d</span>
 </div>
 
 </div>
 
-<!-- Załaduj wszystkie dane do cross-site search -->
-<script src="data/models.js"></script>
-<script src="data/glossary.js"></script>
-<script src="data/benchmarks.js"></script>
-<script src="data/radar.js"></script>
-<script src="data/episodes/recent.js"></script>
+<!-- Załaduj wszystkie dane do cross-site search (z cache-busting) -->
+<script src="data/models.js?v=20260704a"></script>
+<script src="data/glossary.js?v=20260704a"></script>
+<script src="data/benchmarks.js?v=20260704a"></script>
+<script src="data/radar.js?v=20260704a"></script>
+<script src="data/episodes/recent.js?v=20260704a"></script>
 <script>
+// Debug:status załadowania danych
+window.__dataStatus={M:typeof M!=='undefined'?M.length:0,G:typeof G!=='undefined'?G.length:0,B:typeof B!=='undefined'?B.length:0,SECTIONS:typeof SECTIONS!=='undefined'?SECTIONS.length:0,RECENT_EPISODES:typeof RECENT_EPISODES!=='undefined'?RECENT_EPISODES.length:0};
+console.log('[AI Search] Data loaded:',window.__dataStatus);
+const ds=document.getElementById('dataStatus');
+if(ds){ds.innerHTML='📊 Modele: <strong>'+window.__dataStatus.M+'</strong> · 📖 Słownik: <strong>'+window.__dataStatus.G+'</strong> · 🏆 Benchmarki: <strong>'+window.__dataStatus.B+'</strong> · 📡 Radar: <strong>'+window.__dataStatus.SECTIONS+'</strong> · 💓 Pulse: <strong>'+window.__dataStatus.RECENT_EPISODES+'</strong> — jeśli któryś = 0, plik data/*.js się nie załadował'}
 const t=document.getElementById('themeTgl');
 let theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
 document.documentElement.setAttribute('data-theme',theme);
