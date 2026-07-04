@@ -46,7 +46,7 @@ const SECTIONS = [
       },
       {
         "title": "Ornith AI",
-        "desc_pl": "Otwartoźródłowy, agentyczny model MoE do kodowania (9B-397B), obudowa (harness) wbudowana w wagi modelu. Pokonuje najnowocześniejsze modele komercyjne. 100 milionów dolarów finansowania, Santa Clara.",
+        "desc_pl": "Otwartoźródłowy, agentowy model MoE do kodowania (9B-397B), obudowa (harness) wbudowana w wagi modelu. Pokonuje najnowocześniejsze modele komercyjne. 100 milionów dolarów finansowania, Santa Clara.",
         "desc_en": "Open-source agentic coding MoE (9B-397B), harness trained into model weights. Beats frontier models. $100M funding, Santa Clara.",
         "tags": [
           {

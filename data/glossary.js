@@ -476,7 +476,7 @@ const G = [
     "c": "Agentic i narzędzia",
     "t": "ReAct",
     "en": "ReAct (Reasoning + Acting)",
-    "d_pl": "Rozumowanie + Działanie (Reasoning + Acting) — wzorzec promptowania, w którym model na zmianę myśli (rozumowanie) i podejmuje działania (wywołania narzędzi). Fundament architektur agentycznych. Model zastanawia się, co zrobić, podejmuje działanie, obserwuje wynik i ponownie rozumuje. Używany przez większość frameworków agentycznych (LangChain, AutoGPT).",
+    "d_pl": "Rozumowanie + Działanie (Reasoning + Acting) — wzorzec promptowania, w którym model na zmianę myśli (rozumowanie) i podejmuje działania (wywołania narzędzi). Fundament architektur agentowych. Model zastanawia się, co zrobić, podejmuje działanie, obserwuje wynik i ponownie rozumuje. Używany przez większość frameworków agentowych (LangChain, AutoGPT).",
     "d_en": "Reasoning + Acting — a prompting pattern where the model alternates between thinking (reasoning) and taking actions (tool calls). The foundation of agent architectures. The model reasons about what to do, takes an action, observes the result, and reasons again. Used by most agent frameworks (LangChain, AutoGPT)."
   },
   {
