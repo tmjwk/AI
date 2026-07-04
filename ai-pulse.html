@@ -140,6 +140,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .topic.en span.en{display:inline !important}
 [data-lang="en"] .topic:not(.en) span.pl{display:none !important}
 [data-lang="pl"] .topic:not(.en) span.en{display:none !important}
+/* Episode header title toggle (gdy topic w episode dostanie .en) */
+.episode.en .e-title span.pl{display:none !important}
+.episode.en .e-title span.en{display:inline !important}
+.episode:not(.en) .e-title span.en{display:none !important}
 .ep-old .ep-toggle-btn{position:absolute;top:10px;right:10px;z-index:10;background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:4px 12px;cursor:pointer;font-size:12px;color:var(--hs);font-weight:600;transition:all .15s;white-space:nowrap}
 .ep-old .ep-toggle-btn:hover{border-color:var(--ac);color:var(--ac)}
 
@@ -230,7 +234,7 @@ function renderGlos(g){
 
 function renderTopic(tp){
   const glosyHtml = tp.glosy.map(renderGlos).join('');
-  return `<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
+  return `<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}var col=this.closest('.ep-collapse');if(col){var ep=col.previousElementSibling;if(ep&&ep.classList.contains('episode')){if(this.classList.contains('en')){ep.classList.add('en')}else{var all=col.querySelectorAll('.topic');var anyEn=Array.from(all).some(function(t){return t.classList.contains('en')});if(!anyEn){ep.classList.remove('en')}}}}">
 <div class="t-head">
 <span class="t-num">${esc(tp.num)}</span>
 <span class="t-title"><span class="pl">${esc(tp.title_pl||tp.title)}</span><span class="en">${esc(tp.title_en||tp.title)}</span></span>
@@ -424,6 +428,6 @@ if (document.readyState === 'loading') {
 </div>
 
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-04 04:05:05 UTC</span> · <span id="deploy-hash">v6fb43af0</span>
+Deploy: <span id="deploy-ts">2026-07-04 04:14:05 UTC</span> · <span id="deploy-hash">vb8cdc5a1</span>
 </footer>
 </body></html>
