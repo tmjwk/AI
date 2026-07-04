@@ -113,7 +113,7 @@ Aktualizacja: 2026-07-01
 </div>
 
 </div>
-<script src="data/benchmarks.js?v=20260704204711"></script>
+<script src="data/benchmarks.js?v=20260704205115"></script>
 <script>
 const TYPE_LABELS={"zbiór zadań": "zbiór zadań", "arena": "arena / leaderboard", "leaderboard": "leaderboard", "środowisko": "środowisko agentów"};
 const TIER_STARS={"3": "★★★", "2": "★", "1": "·"};
@@ -137,8 +137,10 @@ function render(){try{const content=document.getElementById('content');let filte
 function toggleTheme(){S.theme=S.theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',S.theme);document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';localStorage.setItem('benchmarks-theme',S.theme)}
 function toggleLang(){S.lang=S.lang==='pl'?'en':'pl';document.documentElement.setAttribute('data-lang',S.lang);const b=document.getElementById('langTgl');if(b)b.textContent=S.lang==='pl'?'EN':'PL';localStorage.setItem('lang',S.lang);render()}
 init();
+
+document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-04 20:47:11 UTC</span> · <span id="deploy-hash">v9b09febb</span>
+Deploy: <span id="deploy-ts">2026-07-04 20:51:15 UTC</span> · <span id="deploy-hash">vc50aff43</span>
 </footer>
 </body></html>

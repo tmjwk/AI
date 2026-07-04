@@ -97,7 +97,7 @@ Aktualizacja: 2026-06-26 · Transkrypt + PowerPoint parsowany · <a href="ai-mod
 </div>
 
 </div>
-<script src="data/radar.js?v=20260704204711"></script>
+<script src="data/radar.js?v=20260704205115"></script>
 <script>
 const t=document.getElementById('themeTgl');
 let theme=localStorage.getItem('radar-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
@@ -205,8 +205,10 @@ if (document.readyState === 'loading') {
   renderAll();
 }
 
+
+document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-04 20:47:11 UTC</span> · <span id="deploy-hash">vf1c2686e</span>
+Deploy: <span id="deploy-ts">2026-07-04 20:51:15 UTC</span> · <span id="deploy-hash">v963ee63c</span>
 </footer>
 </body></html>
