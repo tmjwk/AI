@@ -7,6 +7,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tmjwk.github.io/AI/">
 <script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))</script>
+<script>document.documentElement.setAttribute("data-lang",localStorage.getItem("lang")||"pl")</script>
 <style>
 :root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--bl:#3b82f6}
 [data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--bl:#1d4ed8}
@@ -18,9 +19,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .h h1{font-size:22px;margin:0;font-weight:700;color:var(--hp);letter-spacing:-.02em}
 .h .sub{font-size:13px;color:var(--hm);margin-top:4px}
 .tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--fg);transition:border-color .15s;line-height:1}
-.tgl:hover{border-color:var(--ac)}/* Nav PL/EN labels */
-[data-lang="pl"] .nav-btn .en{display:none !important}
-[data-lang="en"] .nav-btn .pl{display:none !important}
+.tgl:hover{border-color:var(--ac)}
+/* PL/EN toggle */
+[data-lang="pl"] .en{display:none !important}
+[data-lang="en"] .pl{display:none !important}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:40px}
 .card-link{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:24px;transition:all .2s;border-left:4px solid var(--ac)}
 .card-link:hover{border-color:var(--ac);transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.3)}
@@ -42,58 +44,61 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="h">
 <div class="hr">
 <h1>🤖 Hub</h1>
+<div style="display:flex;gap:8px">
+<button class="tgl" id="langTgl">EN</button>
 <button class="tgl" id="themeTgl">🌙</button>
 </div>
-<div class="sub">Aktualny przegląd AI · 5 podstron · 301+ rekordów</div>
+</div>
+<div class="sub"><span class="pl">Aktualny przegląd AI · 5 podstron · 301+ rekordów</span><span class="en">Current AI overview · 5 pages · 301+ records</span></div>
 </div>
 
 <div class="grid">
 <a href="ai-models.html" class="card-link">
 <div class="card-icon">📊</div>
-<div class="card-title">AI Models</div>
-<div class="card-stats">115 modeli · 16 kategorii<br>Ostatnia aktualizacja: 3 lipca</div>
-<span class="card-new">🆕 8 nowych</span>
+<div class="card-title"><span class="pl">Modele AI</span><span class="en">AI Models</span></div>
+<div class="card-stats"><span class="pl">115 modeli · 16 kategorii<br>Ostatnia aktualizacja: 3 lipca</span><span class="en">115 models · 16 categories<br>Last updated: July 3</span></div>
+<span class="card-new">🆕 <span class="pl">8 nowych</span><span class="en">8 new</span></span>
 </a>
 
 <a href="ai-benchmarks.html" class="card-link">
 <div class="card-icon">🏆</div>
-<div class="card-title">AI Benchmarki</div>
-<div class="card-stats">69 benchmarków · 12 kategorii<br>Tier ★★★ / ★ / ·</div>
+<div class="card-title"><span class="pl">Benchmarki AI</span><span class="en">AI Benchmarks</span></div>
+<div class="card-stats"><span class="pl">69 benchmarków · 12 kategorii<br>Tier ★★★ / ★ / ·</span><span class="en">69 benchmarks · 12 categories<br>Tier ★★★ / ★ / ·</span></div>
 </a>
 
 <a href="ai-radar.html" class="card-link">
 <div class="card-icon">📡</div>
-<div class="card-title">AI Radar</div>
-<div class="card-stats">8 sekcji · 40 kart<br>Industry intelligence</div>
-<span class="card-new">🆕 16 nowych</span>
+<div class="card-title"><span class="pl">Radar AI</span><span class="en">AI Radar</span></div>
+<div class="card-stats"><span class="pl">8 sekcji · 40 kart<br>Industry intelligence</span><span class="en">8 sections · 40 cards<br>Industry intelligence</span></div>
+<span class="card-new">🆕 <span class="pl">16 nowych</span><span class="en">16 new</span></span>
 </a>
 
 <a href="ai-pulse.html" class="card-link">
 <div class="card-icon">💓</div>
-<div class="card-title">AI Pulse</div>
-<div class="card-stats">2 epizody · 14 tematów<br>Panele dyskusyjne</div>
+<div class="card-title"><span class="pl">Puls AI</span><span class="en">AI Pulse</span></div>
+<div class="card-stats"><span class="pl">2 epizody · 14 tematów<br>Panele dyskusyjne</span><span class="en">2 episodes · 14 topics<br>Discussion panels</span></div>
 </a>
 
 <a href="ai-glossary.html" class="card-link">
 <div class="card-icon">📖</div>
-<div class="card-title">AI Słownik</div>
-<div class="card-stats">108 terminów · 8 kategorii<br>Posortowane alfabetycznie</div>
-<span class="card-new">🆕 6 nowych</span>
+<div class="card-title"><span class="pl">Słownik AI</span><span class="en">AI Glossary</span></div>
+<div class="card-stats"><span class="pl">108 terminów · 8 kategorii<br>Posortowane alfabetycznie</span><span class="en">108 terms · 8 categories<br>Sorted alphabetically</span></div>
+<span class="card-new">🆕 <span class="pl">6 nowych</span><span class="en">6 new</span></span>
 </a>
 </div>
 
 <div class="sec">
-<div class="sec-t">📅 Najnowsze aktualizacje</div>
+<div class="sec-t"><span class="pl">📅 Najnowsze aktualizacje</span><span class="en">📅 Latest updates</span></div>
 <ul class="update-list">
 <li><span class="update-date">03.07.2026</span> <strong>Lev Selector:</strong> Ornith AI, Harness Training, DeepPark, Claude Sonnet 5, LangChain, X MCP Server, Google OKF, Ponytail</li>
-<li><span class="update-date">01.07.2026</span> <strong>AI Search:</strong> Claude Fable 5 powraca, GPT 5.6 restricted, Claude Sonnet 5 tańszy</li>
+<li><span class="update-date">01.07.2026</span> <strong>AI Search:</strong> <span class="pl">Claude Fable 5 powraca, GPT 5.6 restricted, Claude Sonnet 5 tańszy</span><span class="en">Claude Fable 5 returns, GPT 5.6 restricted, Claude Sonnet 5 cheaper</span></li>
 <li><span class="update-date">26.06.2026</span> <strong>Lev Selector:</strong> GLM-5.2, Seedance 2.5, Unitree R1, Olive brain imaging, Reflection AI + SpaceX</li>
 </ul>
 </div>
 
 <div class="f">
 AI Search Hub · <a href="https://github.com/tmjwk/AI" style="color:var(--hm)">GitHub</a><br>
-Deploy: <span id="deploy-ts">2026-07-04 22:21:00 UTC</span> · <span id="deploy-hash">vecaa5aaf</span>
+Deploy: <span id="deploy-ts">2026-07-04 22:24:25 UTC</span> · <span id="deploy-hash">v4de564ad</span>
 </div>
 
 </div>
@@ -108,6 +113,16 @@ theme=theme==='dark'?'light':'dark';
 document.documentElement.setAttribute('data-theme',theme);
 t.textContent=theme==='dark'?'🌙':'☀️';
 localStorage.setItem('theme',theme);
+});
+const langBtn=document.getElementById('langTgl');
+let lang=localStorage.getItem('lang')||'pl';
+document.documentElement.setAttribute('data-lang',lang);
+langBtn.textContent=lang==='pl'?'EN':'PL';
+langBtn.addEventListener('click',()=>{
+lang=lang==='pl'?'en':'pl';
+document.documentElement.setAttribute('data-lang',lang);
+langBtn.textContent=lang==='pl'?'EN':'PL';
+localStorage.setItem('lang',lang);
 });
 </script>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
