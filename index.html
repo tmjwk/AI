@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AI Search — Hub</title>
-<meta name="description" content="Aktualny przegląd AI: 114 modeli, 69 benchmarków, 108 terminów, panele dyskusyjne i radar branżowy.">
+<meta name="description" content="Aktualny przegląd AI: 115 modeli, 69 benchmarków, 108 terminów, panele dyskusyjne i radar branżowy.">
 <meta property="og:title" content="AI Search — Hub">
 <meta property="og:description" content="Aktualny przegląd AI: modele, benchmarki, radar, pulse, słownik.">
 <meta property="og:type" content="website">
@@ -19,9 +19,20 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .h .sub{font-size:13px;color:var(--hm);margin-top:4px}
 .tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--fg);transition:border-color .15s;line-height:1}
 .tgl:hover{border-color:var(--ac)}
-.search-box{width:100%;padding:14px 18px;background:var(--card);border:1px solid var(--bd);border-radius:8px;color:var(--fg);font-size:16px;outline:none;transition:border-color .15s;margin-bottom:32px}
+.search-wrap{position:relative;margin-bottom:32px}
+.search-box{width:100%;padding:14px 18px;background:var(--card);border:1px solid var(--bd);border-radius:8px;color:var(--fg);font-size:16px;outline:none;transition:border-color .15s}
 .search-box:focus{border-color:var(--ac)}
 .search-box::placeholder{color:var(--hd)}
+.search-results{display:none;position:absolute;top:100%;left:0;right:0;background:var(--card);border:1px solid var(--bd);border-top:none;border-radius:0 0 8px 8px;max-height:400px;overflow-y:auto;z-index:200}
+.search-results.show{display:block}
+.search-result{display:flex;align-items:center;gap:10px;padding:10px 18px;border-bottom:1px solid var(--bdl);cursor:pointer;text-decoration:none;color:var(--fg);transition:background .1s}
+.search-result:hover{background:var(--bg)}
+.search-result:last-child{border-bottom:none}
+.sr-icon{font-size:18px;flex-shrink:0}
+.sr-content{flex:1;min-width:0}
+.sr-title{font-size:14px;font-weight:600;color:var(--hp)}
+.sr-desc{font-size:12px;color:var(--hm);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sr-source{font-size:10px;color:var(--hd);font-family:monospace;flex-shrink:0}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:40px}
 .card-link{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:24px;transition:all .2s;border-left:4px solid var(--ac)}
 .card-link:hover{border-color:var(--ac);transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.3)}
@@ -48,13 +59,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="sub">Aktualny przegląd AI · 5 podstron · 301+ rekordów</div>
 </div>
 
-<input type="text" class="search-box" id="globalSearch" placeholder="🔍 Szukaj we wszystkich stronach... (Enter = przejdź do słownika)" onkeydown="if(event.key==='Enter'){location.href='ai-glossary.html?q='+this.value}">
+<div class="search-wrap">
+<input type="text" class="search-box" id="globalSearch" placeholder="🔍 Szukaj we wszystkich stronach... (modele, benchmarki, terminy, radar)" autocomplete="off">
+<div class="search-results" id="searchResults"></div>
+</div>
 
 <div class="grid">
 <a href="ai-models.html" class="card-link">
 <div class="card-icon">📊</div>
 <div class="card-title">AI Models</div>
-<div class="card-stats">114 modeli · 16 kategorii<br>Ostatnia aktualizacja: 3 lipca</div>
+<div class="card-stats">115 modeli · 16 kategorii<br>Ostatnia aktualizacja: 3 lipca</div>
 <span class="card-new">🆕 8 nowych</span>
 </a>
 
@@ -96,10 +110,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 <div class="f">
 AI Search Hub · <a href="https://github.com/tmjwk/AI" style="color:var(--hm)">GitHub</a><br>
-Deploy: <span id="deploy-ts">2026-07-04 00:29:17 UTC</span> · <span id="deploy-hash">v7774622f</span>
+Deploy: <span id="deploy-ts">2026-07-04 00:35:09 UTC</span> · <span id="deploy-hash">va8c297c8</span>
 </div>
 
 </div>
+
+<!-- Załaduj wszystkie dane do cross-site search -->
+<script src="data/models.js"></script>
+<script src="data/glossary.js"></script>
+<script src="data/benchmarks.js"></script>
+<script src="data/radar.js"></script>
+<script src="data/episodes/recent.js"></script>
 <script>
 const t=document.getElementById('themeTgl');
 let theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
@@ -111,5 +132,99 @@ document.documentElement.setAttribute('data-theme',theme);
 t.textContent=theme==='dark'?'🌙':'☀️';
 localStorage.setItem('theme',theme);
 });
+
+// === CROSS-SITE SEARCH ===
+function nm(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
+
+const searchInput=document.getElementById('globalSearch');
+const searchResults=document.getElementById('searchResults');
+let searchTimer=null;
+
+searchInput.addEventListener('input',function(){
+clearTimeout(searchTimer);
+const q=this.value.trim();
+if(q.length<2){searchResults.classList.remove('show');searchResults.innerHTML='';return}
+searchTimer=setTimeout(()=>doSearch(q),150);
+});
+
+document.addEventListener('click',function(e){
+if(!e.target.closest('.search-wrap')){searchResults.classList.remove('show')}
+});
+
+function doSearch(q){
+const nq=nm(q);
+const results=[];
+
+// 1. Modele
+if(typeof M!=='undefined'){
+M.forEach(m=>{
+const txt=nm(m.n+' '+(m.desc_pl||'')+' '+(m.desc_en||'')+' '+(m.b_pl||'')+' '+(m.b_en||'')+' '+m.v+' '+m.c);
+if(txt.includes(nq)){
+results.push({icon:'📊',title:m.n,desc:(m.desc_pl||m.desc_en||'').slice(0,80),source:'Models',url:'ai-models.html'})
+}
+});
+}
+
+// 2. Słownik
+if(typeof G!=='undefined'){
+G.forEach(e=>{
+const txt=nm(e.t+' '+(e.en||'')+' '+(e.d_pl||'')+' '+(e.d_en||'')+' '+e.c);
+if(txt.includes(nq)){
+results.push({icon:'📖',title:e.t,desc:(e.d_pl||e.d_en||'').slice(0,80),source:'Słownik',url:'ai-glossary.html?q='+encodeURIComponent(q)})
+}
+});
+}
+
+// 3. Benchmarki
+if(typeof B!=='undefined'){
+B.forEach(b=>{
+const txt=nm(b.n+' '+b.fn+' '+(b.t_pl||'')+' '+(b.t_en||'')+' '+b.c+' '+b.o);
+if(txt.includes(nq)){
+results.push({icon:'🏆',title:b.n,desc:(b.t_pl||b.t_en||'').slice(0,80),source:'Benchmarki',url:'ai-benchmarks.html?q='+encodeURIComponent(q)})
+}
+});
+}
+
+// 4. Radar
+if(typeof SECTIONS!=='undefined'){
+SECTIONS.forEach(sec=>{
+if(sec.type==='cards'){
+(sec.cards||[]).forEach(c=>{
+const txt=nm(c.title+' '+(c.desc_pl||'')+' '+(c.desc_en||'')+' '+sec.title);
+if(txt.includes(nq)){
+results.push({icon:'📡',title:c.title,desc:(c.desc_pl||c.desc_en||'').slice(0,80),source:'Radar',url:'ai-radar.html'})
+}
+});
+}
+});
+}
+
+// 5. Pulse (epizody)
+if(typeof RECENT_EPISODES!=='undefined'){
+RECENT_EPISODES.forEach(ep=>{
+const txt=nm(ep.num+' '+ep.title+' '+ep.channel);
+if(txt.includes(nq)){
+results.push({icon:'💓',title:ep.num+' '+ep.title,desc:ep.channel,source:'Pulse',url:'ai-pulse.html'})
+}
+ep.topics.forEach(tp=>{
+const txt2=nm(tp.num+' '+tp.title+' '+(tp.fakty_pl||'')+' '+(tp.wniosek_pl||''));
+if(txt2.includes(nq)){
+results.push({icon:'💓',title:ep.num+' Topic '+tp.num+': '+tp.title,desc:(tp.fakty_pl||'').slice(0,80),source:'Pulse',url:'ai-pulse.html'})
+}
+});
+});
+}
+
+// Render results (max 20)
+const top=results.slice(0,20);
+if(top.length===0){
+searchResults.innerHTML='<div class="search-result" style="cursor:default"><span class="sr-icon">🔍</span><span class="sr-content"><span class="sr-title">Brak wyników</span><span class="sr-desc">Nie znaleziono "'+esc(q)+'"</span></span></div>';
+}else{
+searchResults.innerHTML=top.map(r=>`<a class="search-result" href="${r.url}"><span class="sr-icon">${r.icon}</span><span class="sr-content"><span class="sr-title">${esc(r.title)}</span><span class="sr-desc">${esc(r.desc)}</span></span><span class="sr-source">${r.source}</span></a>`).join('');
+}
+searchResults.classList.add('show');
+}
+
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 </script>
 </body></html>
