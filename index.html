@@ -111,7 +111,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 <div class="f">
 AI Search Hub · <a href="https://github.com/tmjwk/AI" style="color:var(--hm)">GitHub</a><br>
-Deploy: <span id="deploy-ts">2026-07-04 01:29:57 UTC</span> · <span id="deploy-hash">ve4bb18f1</span>
+Deploy: <span id="deploy-ts">2026-07-04 01:35:35 UTC</span> · <span id="deploy-hash">vca101ea6</span>
 </div>
 
 </div>
@@ -5058,22 +5058,23 @@ results.push({_i:idx++,score:s,icon:'💓',title:ep.num+' Topic '+tp.num+': '+tp
 // Sort by score desc, then by insertion order (stable)
 results.sort((a,b)=>b.score-a.score||a._i-b._i);
 
-// Cap per-source: max 5 results from any single source (cross-site diversity)
-// Title matches (score >= 200) are exempt from the cap
-const MAX_PER_SOURCE=5;
+// Cap per-source: max 2 desc-only matches from any single source
+// Title matches (score >= 200) are exempt from the cap (cross-site diversity preserved)
+const MAX_DESC_PER_SOURCE=2;
+const MAX_TOTAL=10;
 const srcCount={};
 const capped=[];
 for(const r of results){
-  if(capped.length>=20) break;
+  if(capped.length>=MAX_TOTAL) break;
   const isTitleMatch=r.score>=200;
   if(!isTitleMatch){
     srcCount[r.source]=(srcCount[r.source]||0)+1;
-    if(srcCount[r.source]>MAX_PER_SOURCE) continue;
+    if(srcCount[r.source]>MAX_DESC_PER_SOURCE) continue;
   }
   capped.push(r);
 }
 
-// Render results (max 20)
+// Render results
 const top=capped;
 if(top.length===0){
 searchResults.innerHTML='<div class="search-result" style="cursor:default"><span class="sr-icon">🔍</span><span class="sr-content"><span class="sr-title">Brak wyników</span><span class="sr-desc">Nie znaleziono "'+esc(q)+'"</span></span></div>';
