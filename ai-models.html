@@ -192,7 +192,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="modal" id="modelModal" onclick="if(event.target===this)closeModal('modelModal')"><div class="md" id="modelContent"></div></div>
 <div class="modal" id="cmpModal" onclick="if(event.target===this)closeModal('cmpModal')"><div class="md" id="cmpContent"></div></div>
 <div class="toast" id="toast"></div>
-<script src="data/models.js"></script>
+<script src="data/models.js?v=20260704202914"></script>
 <script>
 const CAT_LABELS={'LLM':'LLM — duże modele językowe','Image Generation':'Image Generation — lokalne/open-weight','Video Generation':'Video Generation','World Models':'World Models — symulacja świata','Coding':'Coding — asystenci kodu','TTS':'TTS — synteza mowy (text-to-speech)','Multimodal':'Multimodal — any-to-any','AI Science Agents':'AI Science Agents — agenty naukowe','AI Research':'AI Research — autonomne eksperymenty','Humanoid Robots':'Humanoid Robots — roboty humanoidalne','Realtime Avatars':'Realtime Avatars — awatary konwersacyjne','3D Generation':'3D Generation — modelowanie przestrzenne','4D Human':'4D Human Reconstruction','Neural Interface':'Neural Interface — interfejsy mózg-komputer (BCI)','Hardware':'Hardware — urządzenia AI-first','AI Wellness':'AI Wellness / Spa'};
 let S={q:'',chip:null,sort:'rank',cmp:[],onlyNew:false,theme:'dark',lang:'pl'};
@@ -244,6 +244,6 @@ function showToast(msg){const t=document.getElementById('toast');t.textContent=m
 init();
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-04 20:21:48 UTC</span> · <span id="deploy-hash">v0ec79306</span>
+Deploy: <span id="deploy-ts">2026-07-04 20:29:14 UTC</span> · <span id="deploy-hash">v0ec79306</span>
 </footer>
 </body></html>
