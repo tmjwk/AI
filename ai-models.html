@@ -161,7 +161,7 @@ select option{color:var(--fg)}
 
 
 
-<button class="tgl" id="themeTgl">🌙</button>
+<button class="tgl" id="themeTgl">🌙</button><button class="tgl" id="langTglHeader" title="Przełącz język / Switch language">EN</button>
 </div></div>
 <div class="badge-info" id="badgeInfo" onclick="this.style.display='none'"></div>
 <div class="banner" id="banner"></div>
@@ -198,7 +198,7 @@ select option{color:var(--fg)}
 <div class="modal" id="modelModal" onclick="if(event.target===this)closeModal('modelModal')"><div class="md" id="modelContent"></div></div>
 <div class="modal" id="cmpModal" onclick="if(event.target===this)closeModal('cmpModal')"><div class="md" id="cmpContent"></div></div>
 <div class="toast" id="toast"></div>
-<script src="data/models.js?v=20260704233659"></script>
+<script src="data/models.js?v=20260704233909"></script>
 <script>
 const CAT_LABELS={'LLM':'LLM — duże modele językowe','Image Generation':'Image Generation — lokalne/open-weight','Video Generation':'Video Generation','World Models':'World Models — symulacja świata','Coding':'Coding — asystenci kodu','TTS':'TTS — synteza mowy (text-to-speech)','Multimodal':'Multimodal — any-to-any','AI Science Agents':'AI Science Agents — agenty naukowe','AI Research':'AI Research — autonomne eksperymenty','Humanoid Robots':'Humanoid Robots — roboty humanoidalne','Realtime Avatars':'Realtime Avatars — awatary konwersacyjne','3D Generation':'3D Generation — modelowanie przestrzenne','4D Human':'4D Human Reconstruction','Neural Interface':'Neural Interface — interfejsy mózg-komputer (BCI)','Hardware':'Hardware — urządzenia AI-first','AI Wellness':'AI Wellness / Spa'};
 let S={q:'',chip:null,sort:'rank',cmp:[],onlyNew:false,theme:'dark',lang:'pl'};
@@ -225,7 +225,7 @@ if(location.hash){setTimeout(()=>highlightModel(location.hash.substring(1)),300)
 window.addEventListener('beforeunload',()=>localStorage.setItem('lastVisit',new Date().toISOString()));
 document.getElementById('search').addEventListener('input',e=>{S.q=e.target.value;document.getElementById('searchClear').style.display=e.target.value?'block':'none';render()});
 document.getElementById('sort').addEventListener('change',e=>{S.sort=e.target.value;render()});
-document.getElementById('themeTgl').addEventListener('click',toggleTheme);
+document.getElementById('themeTgl').addEventListener('click',toggleTheme);var lh=document.getElementById('langTglHeader');if(lh){lh.textContent=S.lang==='pl'?'EN':'PL';lh.addEventListener('click',toggleLang)}
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal('modelModal');closeModal('cmpModal')}});
 }
 function renderChips(){const c=document.getElementById('chips');let h='';CATS.forEach(cat=>{h+='<span class="chip" data-filter="'+cat+'">'+cat+'</span>'});h+='<span class="chip" data-filter="oplus">⊕ Open-source</span>';c.innerHTML=h;c.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{const f=ch.getAttribute('data-filter');if(S.chip===f){S.chip=null;ch.classList.remove('active')}else{c.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));ch.classList.add('active');S.chip=f}render()}))}
@@ -252,7 +252,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-04 23:36:59 UTC</span> · <span id="deploy-hash">vf8c3f8f5</span>
+Deploy: <span id="deploy-ts">2026-07-04 23:39:09 UTC</span> · <span id="deploy-hash">v6025c71f</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>
