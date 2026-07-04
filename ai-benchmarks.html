@@ -97,14 +97,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="sub">69 benchmarków w 12 kategoriach · Aktualizacja: 2026-07-01</div>
 </div>
 
-<div class="banner">
-<strong>🏆 O katalogu:</strong> Lista najważniejszych benchmarków AI z linkami do leaderboards i papers. Sortowane wg hierarchii ważności wewnątrz każdej kategorii.
-<div class="tiers">
-<span class="t3">★★★ Kluczowe (20) — standard branżowy, cytowany we wszystkich paperach</span>
-<span class="t2">★ Ważne (28) — często używane w ewaluacjach</span>
-<span class="t1">· Pozostałe (21) — specjalistyczne, nowe lub mniej popularne</span>
-</div>
-</div>
+
 
 <input type="text" class="search" id="search" placeholder="🔍 Szukaj benchmarku... (np. 'MMLU', 'coding', 'agentic', 'arena')">
 <div class="chips" id="chips"></div>
@@ -117,7 +110,7 @@ Aktualizacja: 2026-07-01
 </div>
 
 </div>
-<script src="data/benchmarks.js?v=20260704230814"></script>
+<script src="data/benchmarks.js?v=20260704234548"></script>
 <script>
 const TYPE_LABELS={"zbiór zadań": "zbiór zadań", "arena": "arena / leaderboard", "leaderboard": "leaderboard", "środowisko": "środowisko agentów"};
 const TIER_STARS={"3": "★★★", "2": "★", "1": "·"};
@@ -145,7 +138,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-04 23:08:14 UTC</span> · <span id="deploy-hash">v82ace5c1</span>
+Deploy: <span id="deploy-ts">2026-07-04 23:45:48 UTC</span> · <span id="deploy-hash">vfe38dd76</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>
