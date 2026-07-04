@@ -23,9 +23,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .sec-t .icon{font-size:18px}
 .card{background:var(--card);border:1px solid var(--bdl);border-radius:8px;padding:14px;margin-bottom:10px;transition:border-color .15s}
 .card:hover{border-color:var(--bd)}
-.card h3{font-size:14px;margin:0 0 6px 0;color:var(--hp);font-weight:600}
+.card h3{font-size:14px;margin:0 0 6px 0;color:var(--hp);font-weight:600;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
 .card p{font-size:13px;color:var(--hm);margin:0 0 4px 0}
 .card .tag{display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-right:4px}
+/* Per-card PL/EN toggle (like glossary/pulse) */
+.card .pl,.card .en{display:inline}
+.card.en .pl{display:none}
+.card.en .en{display:inline}
+.card:not(.en) .en{display:none}
+.card-lang{font-size:10px;font-weight:700;color:#ff6600;background:rgba(255,102,0,.1);padding:2px 8px;border-radius:4px;border:1px solid #ff6600;cursor:pointer;white-space:nowrap;flex-shrink:0;margin-left:auto;text-transform:uppercase;letter-spacing:.05em}
+.card-lang[data-lang="pl"]::before{content:"EN"}
+.card-lang[data-lang="en"]::before{content:"PL"}
 .tag-green{background:rgba(74,222,128,.15);color:var(--ac)}
 .tag-yellow{background:rgba(251,191,36,.15);color:var(--ba)}
 .tag-red{background:rgba(239,68,68,.15);color:var(--rd)}
@@ -116,15 +124,17 @@ function renderCard(card){
   const tagsHtml = (card.tags||[]).map(renderTag).join('');
   const codeHtml = card.code ? `<div class="code">${card.code}</div>` : '';
   const listHtml = card.list && card.list.length > 0
-    ? `<ul class="list" style="margin-top:8px">${card.list.map(it=>`<li><span class="dot dot-${it.dot_color}"></span> ${L(it,'html_pl','html_en')}</li>`).join('')}</ul>`
+    ? `<ul class="list" style="margin-top:8px">${card.list.map(it=>`<li><span class="dot dot-${it.dot_color}"></span> <span class="pl">${it.html_pl||''}</span><span class="en">${it.html_en||it.html_pl||''}</span></li>`).join('')}</ul>`
     : '';
   const styleAttr = card.full_width ? ' style="margin-top:10px"' : '';
-  const descHtml = (card.desc_pl || card.desc_en) ? `<p>${L(card,'desc_pl','desc_en')}</p>` : '';
+  const descHtml = (card.desc_pl || card.desc_en) ? `<p><span class="pl">${card.desc_pl||''}</span><span class="en">${card.desc_en||card.desc_pl||''}</span></p>` : '';
   // Badge NOWE tylko dla kart z aktualnego tygodnia (7 dni)
   const isNew = card.date && (Date.now() - new Date(card.date).getTime()) < 7 * 24 * 60 * 60 * 1000;
   const newBadge = isNew ? ` <span style="background:var(--ac);color:#000;padding:1px 6px;border-radius:3px;font-size:9px;font-weight:700;margin-left:6px">NOWE</span>` : '';
-  return `<div class="card"${styleAttr}>
-<h3>${card.title}${newBadge}</h3>
+  const langHint = lang==='pl'?'pl':'en';
+  const cardLangClass = lang==='en' ? ' en' : '';
+  return `<div class="card${cardLangClass}"${styleAttr}>
+<h3>${card.title}${newBadge}<span class="card-lang" data-lang="${langHint}" onclick="var c=this.closest('.card');c.classList.toggle('en');this.setAttribute('data-lang',c.classList.contains('en')?'en':'pl')"></span></h3>
 ${descHtml}
 ${codeHtml}
 ${tagsHtml ? `<p style="margin:0">${tagsHtml}</p>` : ''}
@@ -195,6 +205,6 @@ if (document.readyState === 'loading') {
 
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-04 01:52:59 UTC</span> · <span id="deploy-hash">v53c57359</span>
+Deploy: <span id="deploy-ts">2026-07-04 03:43:48 UTC</span> · <span id="deploy-hash">vf7932fe9</span>
 </footer>
 </body></html>

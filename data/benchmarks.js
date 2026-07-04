@@ -72,7 +72,7 @@ const B = [
     "y": 2025,
     "ty": "arena",
     "tier": 2,
-    "t_pl": "Wersja 2 — 100x trudniejsza niż oryginał. Frontier LLM-y (najnowocześniejsze duże modele językowe) poniżej 10%. Część nagrody 1 mln dolarów w ARC Prize.",
+    "t_pl": "Wersja 2 — 100x trudniejsza niż oryginał. Flagowe duże modele językowe poniżej 10%. Część nagrody 1 mln dolarów w ARC Prize.",
     "t_en": "Version 2 — 100x harder than the original. Frontier LLMs score <10%. Part of the $1M ARC Prize. Created by Opus in 2025. A key test for AGI-style abstract reasoning."
   },
   {
@@ -132,7 +132,7 @@ const B = [
     "y": 2021,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "8,5 tysiąca szkolnych zadań matematycznych. Modele frontier osiągnęły wynik powyżej 95%. Pierwsza kontrola poprawności matematycznej.",
+    "t_pl": "8,5 tysiąca szkolnych zadań matematycznych. Modele flagowe osiągnęły wynik powyżej 95%. Pierwsza kontrola poprawności matematycznej.",
     "t_en": "8.5K grade-school math word problems. Frontier models score >95%. The first sanity check for math capability. Created by OpenAI. Replaced by MATH and AIME for frontier models."
   },
   {
@@ -324,7 +324,7 @@ const B = [
     "y": 2024,
     "ty": "środowisko",
     "tier": 2,
-    "t_pl": "Real computer use — agent steruje pełnym OS (Ubuntu/Windows/Mac), wykonuje złożone taski (Excel, Photoshop, web).",
+    "t_pl": "Prawdziwe korzystanie z komputera — agent kontroluje pełny system operacyjny (Ubuntu/Windows/Mac) i wykonuje złożone zadania (Excel, Photoshop, przeglądanie sieci). Kluczowy benchmark dla agentów korzystających z komputera. Stworzony przez HKU. Najnowocześniejsze agenty uzyskują wyniki na poziomie 30-50%.",
     "t_en": "Real computer use — the agent controls a full OS (Ubuntu/Windows/Mac) and performs complex tasks (Excel, Photoshop, web). A key benchmark for computer use agents. Created by HKU. Frontier agents score 30-50%."
   },
   {
@@ -468,7 +468,7 @@ const B = [
     "y": 2024,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "Dense prompt — bardzo szczegółowy prompt z 100+ wymogami. Mierzy prompt-following.",
+    "t_pl": "Dense prompt — bardzo szczegółowy podpowiedź z 100+ wymaganiami. Mierzy zdolność do śledzenia podpowiedzi.",
     "t_en": "Direct Preference Guidance Benchmark — a very detailed prompt with 100+ requirements. Measures prompt-following. Created by Tencent. A key benchmark for T2I prompt adherence."
   },
   {
@@ -564,7 +564,7 @@ const B = [
     "y": 2022,
     "ty": "środowisko",
     "tier": 2,
-    "t_pl": "Benchmark robotów z long-horizon (wieloetapowe) taskami (5 tasków per sekwencja). Franka Panda robot.",
+    "t_pl": "Compositional Anchor Language — benchmark dla robotów z zadaniami o długim horyzoncie (5 zadań na sekwencję). Robot Franka Panda. Stworzony przez ETH Zürich. Standardowy benchmark w robotyce.",
     "t_en": "Compositional Anchor Language — a robot benchmark with long-horizon tasks (5 tasks per sequence). Franka Panda robot. Created by ETH Zürich. A standard robotics benchmark."
   },
   {
@@ -756,7 +756,7 @@ const B = [
     "y": 2025,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "3,000 pytań od 1,000+ ekspertów z 100+ dziedzin. Najtrudniejszy Q&A benchmark 2025. frontier <10%.",
+    "t_pl": "3,000 pytań od 1,000+ ekspertów z 100+ dziedzin. Najtrudniejszy benchmark Q&A 2025. Top 10%.",
     "t_en": "3,000 questions from 1,000+ experts across 100+ fields. The hardest Q&A benchmark 2025. Frontier models score <10%. Created by CAIS. Shows the gap between AI and human expertise."
   },
   {

@@ -61,9 +61,9 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Fast 3D mesh generator — prompt/point cloud/image → 3D mesh, 18x faster, latent space",
+    "desc_pl": "Szybki generator siatek 3D — podpowiedź/chmura punktów/obraz → siatka 3D, 18x szybszy, przestrzeń ukryta",
     "desc_en": "Fast 3D mesh generator — prompt/point cloud/image → 3D mesh, 18x faster, latent space",
-    "b_pl": "Fast 3D mesh generation — 18x szybszy, prompt/image → 3D mesh",
+    "b_pl": "Szybkie generowanie siatek 3D — 18x szybsze, z podpowiedzi/grafiki → siatka 3D",
     "b_en": "fast 3D mesh generation — 18x faster, prompt/image → 3D mesh"
   },
   {
@@ -76,7 +76,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Multiple images → one clean 3D model — unaligned images, different camera positions",
+    "desc_pl": "Wiele obrazów → jeden czysty model 3D — niepozycjonowane obrazy, różne pozycje kamery",
     "desc_en": "Multiple images → one clean 3D model — unaligned images, different camera positions",
     "b_pl": "Multi-image 3D reconstruction — fuse nieuykładnionych zdjęć",
     "b_en": "multi-image 3D reconstruction — fusing unaligned photos"
@@ -91,7 +91,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Single image/video → layered 3D model — multiple layers of hidden depth, 6.2GB",
+    "desc_pl": "Pojedynczy obraz/wideo → warstwowy model 3D — wiele warstw ukrytej głębi, 6,2GB",
     "desc_en": "Single image/video → layered 3D model — multiple layers of hidden depth, 6.2GB",
     "b_pl": "Layered 3D reconstruction — pixel-aligned geometry, hidden depth layers",
     "b_en": "layered 3D reconstruction — pixel-aligned geometry, hidden depth layers"
@@ -121,7 +121,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "7c_ieWfAbrw",
-    "desc_pl": "Single video → 4D scene — z zwykłego klipu wideo tworzy 4D scenę, kod coming soon",
+    "desc_pl": "Pojedyncze wideo → scena 4D — tworzy scenę 4D ze zwykłego klipu wideo, kod pojawi się wkrótce",
     "desc_en": "Single video → 4D scene — creates 4D scene from ordinary video clip, code coming soon",
     "b_pl": "4D reconstruction z single video — konwersja zwykłego wideo w interaktywną 4D scenę",
     "b_en": "4D reconstruction from single video — converting ordinary video into interactive 4D scene"
@@ -151,9 +151,9 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "3D human motion z text prompt — trenowany na 2D wideo, bez 3D data needed",
+    "desc_pl": "Ruchy postaci 3D generowane na podstawie podpowiedzi tekstowej — trenowany na wideo 2D, bez potrzeby posiadania danych 3D",
     "desc_en": "3D human motion from text prompt — trained on 2D video, no 3D data needed",
-    "b_pl": "Text-to-3D motion — generowanie 3D ruchu człowieka z text prompt",
+    "b_pl": "Text-to-3D motion — generowanie 3D ruchu człowieka z podpowiedzi tekstowej",
     "b_en": "text-to-3D motion — generating 3D human motion from text prompt"
   },
   {
@@ -166,7 +166,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "7c_ieWfAbrw",
-    "desc_pl": "Agentowy framework do autonomnego tworzenia danych treningowych — AI tworzy, weryfikuje, uczy się z błędów",
+    "desc_pl": "Framework agentowy do autonomicznego tworzenia danych treningowych — AI tworzy, weryfikuje, uczy się z błędów",
     "desc_en": "Agentic framework for autonomous training data creation — AI creates, verifies, learns from mistakes",
     "b_pl": "Autonomous data creation — AI tworzy i weryfikuje własne dane treningowe, self-improving",
     "b_en": "autonomous data creation — AI creates and verifies its own training data, self-improving"
@@ -251,7 +251,7 @@ const M = [
     "d": "2026-07-03",
     "o": 1,
     "c": "AI Research",
-    "desc_pl": "Self-hosted AI OS (MIT license), multi-front-end (CLI, browser, Telegram, Slack, Discord, WhatsApp), model-agnostic, MCP, Jarvis voice",
+    "desc_pl": "Samodzielnie hostowany system operacyjny AI (licencja MIT), wielofrontowy (CLI, przeglądarka, Telegram, Slack, Discord, WhatsApp), niezależny od modeli, MCP, głos Jarvis.",
     "b_pl": "autonomiczny agent OS — zawsze włączony, multiplatformowy, głosowy Jarvis",
     "desc_en": "Self-hosted AI OS (MIT license), multi-front-end (CLI, browser, Telegram, Slack, Discord, WhatsApp), model-agnostic, MCP, Jarvis voice",
     "b_en": "autonomous agent OS — always-on, multi-platform, Jarvis voice",
@@ -355,7 +355,7 @@ const M = [
     "yt": "kkLlzQqa7MY",
     "desc_pl": "Plan 5,000 wellness spa z AI body scannerem, start Union Square SF",
     "desc_en": "Plan 5,000 wellness spa with AI body scanner, starting Union Square SF",
-    "b_pl": "AI body scanning, personalized wellness, health diagnostics",
+    "b_pl": "<strong>Skanowanie ciała przez AI</strong>, spersonalizowane wellness, diagnostyka zdrowotna",
     "b_en": "AI body scanning, personalized wellness, health diagnostics"
   },
   {
@@ -383,7 +383,7 @@ const M = [
     "tags": [],
     "url": "https://www.anthropic.com/product/claude-code",
     "yt": "o5rGuknRw2A",
-    "desc_pl": "Asystent CLI od Anthropic, terminal-first",
+    "desc_pl": "Asystent CLI od Anthropic, zorientowany na terminal (terminal-first)",
     "desc_en": "CLI assistant from Anthropic, terminal-first",
     "b_pl": "Programowanie terminalowe/CLI, agentowe — autonomiczne modyfikacje repozytoriów",
     "b_en": "terminal/CLI coding, agentic — autonomous repository modifications"
@@ -398,7 +398,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "kkLlzQqa7MY",
-    "desc_pl": "Nagraj screen task → Codex tworzy automatyzację — learn by demonstration, macOS only (EU excluded)",
+    "desc_pl": "Nagraj zadanie na ekranie → Codex tworzy automatyzację — nauka poprzez demonstrację, tylko dla systemu macOS (z wyłączeniem UE)",
     "desc_en": "Record screen task → Codex creates automation — learn by demonstration, macOS only (EU excluded)",
     "b_pl": "AI automation by demonstration — nagrywasz task, AI uczy się go replikować",
     "b_en": "AI automation by demonstration — you record a task, AI learns to replicate it"
@@ -410,7 +410,7 @@ const M = [
     "d": "2026-07-03",
     "o": 1,
     "c": "Coding",
-    "desc_pl": "Open-source agentic programowanie MoE (9B, 31B, 35B, 397B), otoczka treningu wbitych w wagi modelu przez RL, bije modele klasy frontier",
+    "desc_pl": "Open-source agentowe programowanie MoE (9B, 31B, 35B, 397B), otoczka treningu wbitych w wagi modelu przez RL, bije modele klasy flagowej",
     "b_pl": "Programowanie agentowe — otoczka treningowa, model uczy się własnych strategii rozwiązywania zadań",
     "desc_en": "Open-source agentic coding MoE (9B, 31B, 35B, 397B), harness trained into model weights via RL, beats frontier models",
     "b_en": "agentic coding — harness training, model learns its own problem-solving strategies",
@@ -426,7 +426,7 @@ const M = [
     "tags": [],
     "url": "https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026",
     "yt": "J02-39xtlt4",
-    "desc_pl": "AI-first smart glasses, integracja z Gemini Omni, launch fall 2026",
+    "desc_pl": "Inteligentne okulary AI-first, integracja z Gemini Omni, premiera jesienią 2026 roku",
     "desc_en": "AI-first smart glasses, Gemini Omni integration, launch fall 2026",
     "b_pl": "Hands-free AI assistance, real-time visual understanding",
     "b_en": "hands-free AI assistance, real-time visual understanding"
@@ -563,7 +563,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "kkLlzQqa7MY",
-    "desc_pl": "Table tennis robot — grał z profesjonalnym graczem i wygrał, high-speed vision, montowany na rail",
+    "desc_pl": "Robot do tenisa stołowego — zagrał przeciwko zawodowemu graczowi i wygrał, szybka wizja komputerowa, montowany na szynach",
     "desc_en": "Table tennis robot — played against a professional player and won, high-speed vision, rail-mounted",
     "b_pl": "Table tennis robot — najelpesz robot do ping-ponga, pokonał profesjonalnego gracza",
     "b_en": "table tennis robot — best ping-pong robot, beat a professional player"
@@ -593,7 +593,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "CzxqQJOswvo",
-    "desc_pl": "Industrial humanoid — all-weather, dust/water resistant, sprint + flip + delicate circuit breaker manipulation",
+    "desc_pl": "Człowiek przemysłowy — odporny na warunki atmosferyczne, kurz i wodę, sprint + salto + precyzyjna manipulacja wyłącznikiem obwodu",
     "desc_en": "Industrial humanoid — all-weather, dust/water resistant, sprint + flip + delicate circuit breaker manipulation",
     "b_pl": "Industrial humanoid robot — extreme environments, precise manipulation + raw power",
     "b_en": "industrial humanoid robot — extreme environments, precise manipulation + raw power"
@@ -743,7 +743,7 @@ const M = [
     "tags": [],
     "url": "https://ideogram.ai/news/ideogram-4.0",
     "yt": "OA4gchz1Zcs",
-    "desc_pl": "Top DesignArena open leaderboard, ComfyUI",
+    "desc_pl": "Topowy otwarty ranking DesignArena, ComfyUI",
     "desc_en": "Top DesignArena open leaderboard, ComfyUI",
     "b_pl": "Renderowanie tekstu w obrazach — logo, poster, design z napisami",
     "b_en": "text rendering in images — logos, posters, design with text"
@@ -758,7 +758,7 @@ const M = [
     "tags": [],
     "url": "https://bfl.ai/blog/flux-2",
     "yt": "OA4gchz1Zcs",
-    "desc_pl": "Frontier visual intelligence, fotorealizm + image editing",
+    "desc_pl": "Frontowy inteligencja wizualna, fotorealiżm + edycja obrazów",
     "desc_en": "Frontier visual intelligence, photorealism + image editing",
     "b_pl": "Fotorealizm, precyzyjna kontrola kolorów i póz, image editing",
     "b_en": "photorealism, precise color and pose control, image editing"
@@ -773,9 +773,9 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "o5rGuknRw2A",
-    "desc_pl": "Lokalna generacja obrazów na telefonie, mobile-first",
+    "desc_pl": "Lokalne generowanie obrazów na telefonie, zorientowane na urządzenia mobilne (mobile-first)",
     "desc_en": "Local image generation on phone, mobile-first",
-    "b_pl": "Prywatność (offline), mobile-first UX, szybkie iteracje",
+    "b_pl": "Prywatność (offline), UX zorientowany na urządzenia mobilne, szybkie iteracje",
     "b_en": "privacy (offline), mobile-first UX, fast iterations"
   },
   {
@@ -788,7 +788,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "kkLlzQqa7MY",
-    "desc_pl": "Open-source image generator + editor — text-to-image, reference images, editing, permissive license",
+    "desc_pl": "Otwarty generator i edytor obrazów — tekst na obraz, obrazy referencyjne, edycja, licencja permisywna",
     "desc_en": "Open-source image generator + editor — text-to-image, reference images, editing, permissive license",
     "b_pl": "Image generation + editing w jednym modelu — permissive license, konkurent Flux/Nano Banana",
     "b_en": "image generation + editing in one model — permissive license, Flux/Nano Banana competitor"
@@ -818,7 +818,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Fully open-source image model — 3B params, models + training code + data processing",
+    "desc_pl": "W pełni otwarty model obrazu — 3B parametrów, modele + kod treningowy + przetwarzanie danych",
     "desc_en": "Fully open-source image model — 3B params, models + training code + data processing",
     "b_pl": "Fully open-source image model — training code + data, dla nauki",
     "b_en": "fully open-source image model — training code + data, for research"
@@ -847,7 +847,7 @@ const M = [
     "c": "LLM",
     "tags": "[\"ban-lifted\"]",
     "desc_pl": "Wrócił 1 lipca 2026. Promocja: pierwszy tydzień pełny dostęp (pro/max), po 7 lipca limit 50% kwoty. API 0/0 per M tokens. 1M kontekst. Governance security — odmawia jeśli podejrzewa działalność nielegalną.",
-    "b_pl": "najbardziej zaawansowany model Anthropic — złożone reasoning, długie zadania, ale z ograniczeniami bezpieczeństwa",
+    "b_pl": "Najbardziej zaawansowany model Anthropic — złożone rozumowanie, długie zadania, ale z ograniczeniami bezpieczeństwa",
     "desc_en": "Returned July 1st 2026. Promo: first week full access (pro/max), after July 7 limit 50% quota. API 0/0 per M tokens. 1M context. Governance security — refuses if suspects illegal activity.",
     "b_en": "most advanced Anthropic model — complex reasoning, long tasks, but with security restrictions"
   },
@@ -876,9 +876,9 @@ const M = [
     "tags": [],
     "url": "https://www.anthropic.com/news/claude-opus-4-8",
     "yt": "RdqYvdT74i0",
-    "desc_pl": "Były lider benchmarków long-horizon (wieloetapowych), +1% nad GLM-5.2",
+    "desc_pl": "Dawny lider benchmarków długiego horyzontu (long-horizon), +1% w stosunku do GLM-5.2",
     "desc_en": "Former long-horizon benchmark leader, +1% over GLM-5.2",
-    "b_pl": "Złożone zadania wieloetapowe, research, programowanie z dużym kontekstem",
+    "b_pl": "Złożone, wieloetapowe zadania, badania naukowe, kodowanie z dużym kontekstem",
     "b_en": "complex multi-step tasks, research, coding with large context"
   },
   {
@@ -893,7 +893,7 @@ const M = [
     "yt": "CzxqQJOswvo",
     "desc_pl": "Wielomodalny agent model — vision + language, 11h autonomous programowanie (English vocab app), bije DeepSeek V4 Pro i GLM-5.1",
     "desc_en": "Multimodal agent model — vision + language, 11h autonomous coding (English vocab app), beats DeepSeek V4 Pro and GLM-5.1",
-    "b_pl": "Agentowy vision-language — long-horizon (wieloetapowe) programowanie, screen analysis, autonomous app testing",
+    "b_pl": "Agentyczna wizja-język (agentic vision-language) — kodowanie w długim horyzoncie, analiza ekranu, autonomiczne testowanie aplikacji",
     "b_en": "agentic vision-language — long-horizon coding, screen analysis, autonomous app testing"
   },
   {
@@ -906,9 +906,9 @@ const M = [
     "tags": [],
     "url": "https://z.ai/blog/glm-5.2",
     "yt": "kkLlzQqa7MY",
-    "desc_pl": "Open-weight MoE 745B (44B active), 1/6 kosztu GPT-5.5",
+    "desc_pl": "Open-weight Mixture of Experts (model z mieszaną ekspertyzą) 745B (44B aktywnych), 1/6 kosztu GPT-5.5",
     "desc_en": "Open-weight MoE 745B (44B active), 1/6 the cost of GPT-5.5",
-    "b_pl": "Long-horizon (wieloetapowe) programowanie, inżynieria agentowa — open-source z frontier jakości",
+    "b_pl": "Long-horizon (wieloetapowe) programowanie, inżynieria agentowa — open-source z flagowej jakości",
     "b_en": "long-horizon coding, agentic engineering — open-source with frontier quality"
   },
   {
@@ -921,7 +921,7 @@ const M = [
     "tags": [],
     "url": "https://openai.com/index/introducing-gpt-5-5",
     "yt": "QvN6Tu6dHYM",
-    "desc_pl": "Model klasy frontier zamknięty, referencja dla long-horizon (wieloetapowe) programowanie",
+    "desc_pl": "Zamknięty model graniczny (frontier model), punkt odniesienia dla kodowania w długym horyzoncie",
     "desc_en": "Closed frontier model, reference for long-horizon coding",
     "b_pl": "General-purpose wnioskowanie, referencyjny benchmark dla innych",
     "b_en": "general-purpose reasoning, reference benchmark for others"
@@ -940,7 +940,7 @@ const M = [
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Flagowy Sol + Terra (tańszy) + Luna (najszybszy), 1.5M token kontekst, DOSTĘP OGRANICZONY po prośbie rządu",
     "desc_en": "Flagship Sol + Terra (lower-cost) + Luna (fastest), 1.5M token context, RESTRICTED ACCESS per government request",
-    "b_pl": "Programowanie agentowe, złożone wnioskowanie, długie konteksty (1.5M tokens)",
+    "b_pl": "Agentyczne kodowanie, złożone rozumowanie, długie konteksty (1,5 mln tokenów)",
     "b_en": "agentic coding, complex reasoning, long contexts (1.5M tokens)"
   },
   {
@@ -1015,7 +1015,7 @@ const M = [
     "yt": "1_5sSJK2rU0",
     "desc_pl": "Open-source flagowy, V4-Pro + V4-Flash API",
     "desc_en": "Open-source flagship, V4-Pro + V4-Flash API",
-    "b_pl": "Open-source alternatywa dla frontier modeli — dobre stosunek jakości do ceny",
+    "b_pl": "Open-source alternatywa dla flagowych modeli — dobry stosunek jakości do ceny",
     "b_en": "open-source alternative to frontier models — good quality-to-price ratio"
   },
   {
@@ -1043,7 +1043,7 @@ const M = [
     "tags": [],
     "url": "https://ai.google.dev/gemma",
     "yt": "quxnhOeRz7I",
-    "desc_pl": "Open-weight, multimodalny, premiera 3 czerwca 2026",
+    "desc_pl": "Open-weight, wielomodalny, premiera 3 czerwca 2026",
     "desc_en": "Open-weight, multimodal, premiered June 3 2026",
     "b_pl": "Lekki model lokalny (12B), multimodalny — do uruchamiania na własnym sprzęcie",
     "b_en": "lightweight local model (12B), multimodal — for running on your own hardware"
@@ -1060,7 +1060,7 @@ const M = [
     "yt": "CzxqQJOswvo",
     "desc_pl": "550B MoE (55B active), hybrid Mamba-Transformer, 1M kontekst, 5x faster wnioskowanie, NVFP4 quantization, 350GB",
     "desc_en": "550B MoE (55B active), hybrid Mamba-Transformer, 1M context, 5x faster inference, NVFP4 quantization, 350GB",
-    "b_pl": "Agentowy LLM — long-horizon (wieloetapowe) workflows, multi-token prediction, 30% niższy cost od konkurencji",
+    "b_pl": "Agentyczny LLM — przepływy pracy w długim horyzoncie, przewidywanie wielotokenowe, o 30% niższy koszt niż u konkurencji",
     "b_en": "agentic LLM — long-horizon workflows, multi-token prediction, 30% lower cost than competitors"
   },
   {
@@ -1103,7 +1103,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "7c_ieWfAbrw",
-    "desc_pl": "Open-source programowanie agentowe MoE — 397B params (największy), generuje własne harnesses/scaffolds, bije GLM i DeepSeek V4",
+    "desc_pl": "Open-source programowanie agentowy MoE — 397B parametrów (największy), generuje własne otoczki/szkielety, bije GLM i DeepSeek V4",
     "desc_en": "Open-source agentic coding MoE — 397B params (largest), generates own harnesses/scaffolds, beats GLM and DeepSeek V4",
     "b_pl": "Programowanie agentowe — self-szkielet, model uczy się projektować workflow do rozwiązywania zadań",
     "b_en": "agentic coding — self-scaffolding, model learns to design workflows for tasks"
@@ -1135,7 +1135,7 @@ const M = [
     "yt": "7c_ieWfAbrw",
     "desc_pl": "Orchestrator model (nie base LLM) — router który koordynuje inne modele, twierdzi że bije Claude/GPT",
     "desc_en": "Orchestrator model (not base LLM) — router that coordinates other models, claims to beat Claude/GPT",
-    "b_pl": "Multi-model orchestration — router koordynujący frontier LLMs przez jedno API",
+    "b_pl": "Wielomodelowa orkiestracja — router koordynujący flagowe modele językowe (LLM) przez jedno API",
     "b_en": "multi-model orchestration — router coordinating frontier LLMs via one API"
   },
   {
@@ -1294,7 +1294,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "7c_ieWfAbrw",
-    "desc_pl": "Single transformer model interleaving text, audio, video — 25fps, 200ms latency, duplex communication",
+    "desc_pl": "Model transformera łączący w sobie tekst, dźwięk i wideo — 25 kl./s, opóźnienie 200 ms, komunikacja dwukierunkowa.",
     "desc_en": "Single transformer model interleaving text, audio, video — 25fps, 200ms latency, duplex communication",
     "b_pl": "Real-time konwersacyjne avatary 25fps — streaming z 200ms latencją, duplex communication",
     "b_en": "real-time conversational avatars 25fps — streaming with 200ms latency, duplex communication"
@@ -1309,9 +1309,9 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "CzxqQJOswvo",
-    "desc_pl": "Real-time avatar streaming — prompt + transcript → speaking avatar, 5+ min videos, działa na H100. Tylko paper",
+    "desc_pl": "Strumieniowanie awatarów w czasie rzeczywistym — podpowiedź i transkrypcja → mówiący awatar, filmy 5+ minut, działa na H100. Tylko artykuł naukowy.",
     "desc_en": "Real-time avatar streaming — prompt + transcript → speaking avatar, 5+ min videos, runs on H100. Paper only",
-    "b_pl": "Real-time avatar streaming — long consistent videos, motion control, single H100",
+    "b_pl": "Strumieniowanie awatarów w czasie rzeczywistym — długie, spójne wideo, kontrola ruchu, pojedynczy układ H100",
     "b_en": "real-time avatar streaming — long consistent videos, motion control, single H100"
   },
   {
@@ -1356,7 +1356,7 @@ const M = [
     "yt": "CzxqQJOswvo",
     "desc_pl": "Zero-shot voice cloning TTS — klonuje głos z 3-4s sample, bazuje na F5-TTS, 10GB checkpoint",
     "desc_en": "Zero-shot voice cloning TTS — clones voice from 3-4s sample, based on F5-TTS, 10GB checkpoint",
-    "b_pl": "Instant voice cloning — few-shot TTS, bazuje na F5-TTS, fits consumer GPU",
+    "b_pl": "Natychmiastowe klonowanie głosu — kilkustrzałowe (few-shot) TTS, oparte na F5-TTS, mieści się na konsumenckim GPU",
     "b_en": "instant voice cloning — few-shot TTS, based on F5-TTS, fits consumer GPU"
   },
   {
@@ -1399,9 +1399,9 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "2B parameter TTS — voice cloning z few seconds, bije inne modele na leaderboardach",
+    "desc_pl": "Model TTS o wielkości 2B parametrów — klonowanie głosu z kilku sekund, pokonuje inne modele w rankingach",
     "desc_en": "2B parameter TTS — voice cloning from few seconds, beats other models on leaderboards",
-    "b_pl": "Voice cloning TTS — 2B params, few-shot voice cloning",
+    "b_pl": "TTS do klonowania głosu — 2B parametrów, kilkustrzałowe (few-shot) klonowanie głosu",
     "b_en": "voice cloning TTS — 2B params, few-shot voice cloning"
   },
   {
@@ -1414,7 +1414,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "CzxqQJOswvo",
-    "desc_pl": "Unified video model — edytuje wideo z promptem/obrazem/referencją wideo. Bazuje na Hunyuan 3D 2.2, gałęzie high (84GB) i low",
+    "desc_pl": "Zunifikowany model wideo — edycja wideo za pomocą promptu/obrazu/referencyjnego wideo. Oparty na Hunyuan 3D 2.2, wersje o wysokich (84GB) i niskich wymaganiach",
     "desc_en": "Unified video model — edit video with prompt/image/video reference. Based on Hunyuan 3D 2.2, high (84GB) and low branches",
     "b_pl": "Video editing z referencjami — add/remove objects, change scene/weather/style, multi-reference merge",
     "b_en": "video editing with references — add/remove objects, change scene/weather/style, multi-reference merge"
@@ -1564,9 +1564,9 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Long consistent video generator — hierarchical autoencoder, coarse-to-fine rollout",
+    "desc_pl": "Długi generator spójnych w czasie wideo — hierarchiczny autoenkoder, rozwinięcie od ogółu do szczegółów",
     "desc_en": "Long consistent video generator — hierarchical autoencoder, coarse-to-fine rollout",
-    "b_pl": "Long video generation — spójne długie wideo przez hierarchical autoencoder",
+    "b_pl": "Generowanie długich wideo — spójne, długie wideo dzięki hierarchicznemu autoenkoderowi",
     "b_en": "long video generation — consistent long video via hierarchical autoencoder"
   },
   {
@@ -1594,9 +1594,9 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Single image → 360 panorama 3D world — separates world construction from video rendering",
+    "desc_pl": "Pojedynczy obraz → Panorama 360° w świecie 3D — oddziela budowę świata od renderowania wideo.",
     "desc_en": "Single image → 360 panorama 3D world — separates world construction from video rendering",
-    "b_pl": "360 world from image — panorama → 3D Gaussian model → interactive world",
+    "b_pl": "Świat 360° z obrazu — panorama → model 3D Gaussian → interaktywny świat",
     "b_en": "360 world from image — panorama → 3D Gaussian model → interactive world"
   },
   {
@@ -1611,7 +1611,7 @@ const M = [
     "yt": "CzxqQJOswvo",
     "desc_pl": "Real-time generative world model dla autonomous driving — multi-camera driving videos reagujące na akcje pojazdu",
     "desc_en": "Real-time generative world model for autonomous driving — multi-camera driving videos responding to vehicle actions",
-    "b_pl": "Autonomous driving simulation — multi-camera, extreme weather, editable scenes, synthetic training data",
+    "b_pl": "Symulacja autonomicznej jazdy — wiele kamer, ekstremalne warunki pogodowe, edytowalne sceny, syntetyczne dane treningowe",
     "b_en": "autonomous driving simulation — multi-camera, extreme weather, editable scenes, synthetic training data"
   },
   {
@@ -1669,9 +1669,9 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "World model dla robotów — przewiduje co się stanie gdy robot wykona akcję, cross different robot bodies",
+    "desc_pl": "Model świata dla robotów — przewiduje, co się stanie, gdy robot wykona akcję, działa na różnych ciałach robotów",
     "desc_en": "World model for robots — predicts what happens when robot performs action, cross different robot bodies",
-    "b_pl": "Robot world model — symulacja akcji robotów cross-body, synthetic training data",
+    "b_pl": "Model świata robota — symulacja działań robotów o różnych ciałach, syntetyczne dane treningowe",
     "b_en": "robot world model — cross-body robot action simulation, synthetic training data"
   },
   {
@@ -1684,9 +1684,9 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "First-person world simulator — input human motion 3D + anchor views → egocentric video",
+    "desc_pl": "Symulator świata z perspektywy pierwszej osoby — wejście: ruch 3D człowieka + widoki odniesienia → wideo egocentryczne",
     "desc_en": "First-person world simulator — input human motion 3D + anchor views → egocentric video",
-    "b_pl": "Egocentric world sim — first-person view z motion + anchor views",
+    "b_pl": "Egocentryczny symulator świata — widok z pierwszej osoby na podstawie ruchu + widoków kotwiczących (anchor views)",
     "b_en": "egocentric world sim — first-person view from motion + anchor views"
   },
   {
@@ -1714,9 +1714,9 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "kkLlzQqa7MY",
-    "desc_pl": "Interactive world model z prompt/reference images — eksploruj, kontroluj, zmieniaj środowisko, trening na Unreal Engine + real-world data",
+    "desc_pl": "Model świata interaktywny z podpowiedzią/obrazami referencyjnymi — eksploruj, kontroluj, zmieniaj środowisko, trening na Unreal Engine + dane z rzeczywistego świata",
     "desc_en": "Interactive world model with prompt/reference images — explore, control, modify environment, trained on Unreal Engine + real-world data",
-    "b_pl": "Interactive world generation — persistent memory, setki klatek, spójność sceny",
+    "b_pl": "Generowanie świata interaktywnego — pamięć trwała, setki klatek, spójność sceny",
     "b_en": "interactive world generation — persistent memory, hundreds of frames, scene consistency"
   }
 ];

@@ -46,7 +46,7 @@ const SECTIONS = [
       },
       {
         "title": "Ornith AI",
-        "desc_pl": "Open-source agentowy programowanie MoE (9B-397B), otoczka treningowa wbity w wagi modelu. Bije modele klasy frontier. $100M finansowanie, Santa Clara.",
+        "desc_pl": "Otwartoźródłowy, agentyczny model MoE do kodowania (9B-397B), obudowa (harness) wbudowana w wagi modelu. Pokonuje najnowocześniejsze modele komercyjne. 100 milionów dolarów finansowania, Santa Clara.",
         "desc_en": "Open-source agentic coding MoE (9B-397B), harness trained into model weights. Beats frontier models. $100M funding, Santa Clara.",
         "tags": [
           {
@@ -97,7 +97,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "Wypuścił GLM 5.2 — open-source MoE 745B, bije frontier modele w programowanie. 1/6 kosztu GPT-5.5. Zcode (analog Claude Code) wciąż ustępuje Anthropic.",
+        "desc_pl": "Wydano GLM 5.2 — open-sourceowy MoE 745B, który przewyższa flagowe modele w programowaniu. Kosztuje 1/6 ceny GPT-5.5. Zcode (odpowiednik Claude Code) wciąż ustępuje Anthropic.",
         "desc_en": "Released GLM 5.2 — open-source MoE 745B, beats frontier models in coding. 1/6 the cost of GPT-5.5. Zcode (Claude Code analog) still lags Anthropic.",
         "date": "2026-06-26"
       },
@@ -154,7 +154,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "$6.3B deal z SpaceX — Colossus 2 data center, $150M/miesiąc do 2029. Dostęp do NVIDIA GB300. Dołącza do Anthropic, Google, Cursor.",
+        "desc_pl": "6,3 mld dolarów umowa ze SpaceX — centrum danych Colossus 2, 150 mln dolarów miesięcznie do 2029. Dostęp do GPU NVIDIA GB300. Dołącza do Anthropic, Google, Cursor.",
         "desc_en": "$6.3B deal with SpaceX — Colossus 2 data center, $150M/month until 2029. Access to NVIDIA GB300. Joins Anthropic, Google, Cursor.",
         "date": "2026-06-26"
       },
@@ -173,7 +173,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "Miami startup — 12M token kontekst, 50x szybszy niż FlashAttention, 20x tańszy. SSA architecture. Hosted API.",
+        "desc_pl": "Miami startup — 12M token kontekst, 50x szybszy niż FlashAttention, 20x tańszy. Architektura SSA. Hostowane API.",
         "desc_en": "Miami startup — 12M token context, 50x faster than FlashAttention, 20x cheaper. SSA architecture. Hosted API.",
         "date": "2026-06-26"
       },
@@ -192,7 +192,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "Ph.D., 40+ lat w software. Weekly AI updates co piątek. 6.96K subs, 293 videos. Slides na GitHub (75 PPTX) + Google Drive.",
+        "desc_pl": "Ph.D., 40+ lat w oprogramowaniu. Cotygodniowe aktualizacje AI w piątki. 6,96K subskrybentów, 293 filmy. Slides na GitHubie (75 PPTX) + Google Drive.",
         "desc_en": "Ph.D., 40+ years in software. Weekly AI updates every Friday. 6.96K subs, 293 videos. Slides on GitHub (75 PPTX) + Google Drive.",
         "date": "2026-06-26"
       }
@@ -222,12 +222,12 @@ const SECTIONS = [
       },
       {
         "dot_color": "green",
-        "html_pl": "<strong>Voice cloning z 2B model</strong> — Dot TTS, Apache 2, few-shot, bije leaderboardy.",
+        "html_pl": "**Klonowanie głosu za pomocą modelu 2B** — Dot TTS, licencja Apache 2, few-shot, bije rekordy w rankingach.",
         "html_en": "<strong>Voice cloning with 2B model</strong> — Dot TTS, Apache 2, few-shot, beats leaderboards."
       },
       {
         "dot_color": "green",
-        "html_pl": "<strong>Mapować mózg bez chirurgii</strong> — Olive, ultrasound, 100x lepsza rozdzielczość niż CT, open-source pipeline.",
+        "html_pl": "<strong>Mapować mózg bez chirurgii</strong> — Olive, ultrasonografia, 100x lepsza rozdzielczość niż tomografia komputerowa, otwarty potok.",
         "html_en": "<strong>Map the brain without surgery</strong> — Olive, ultrasound, 100x better resolution than CT, open-source pipeline."
       },
       {
@@ -237,7 +237,7 @@ const SECTIONS = [
       },
       {
         "dot_color": "yellow",
-        "html_pl": "<strong>GPT 5.6 Sol</strong> — ograniczony dostęp, zaufani partnerzy only, gov approval customer-by-customer.",
+        "html_pl": "**GPT 5.6 Sol** — ograniczony dostęp, tylko dla zaufanych partnerów, zatwierdzenie rządowe dla każdego klienta indywidualnie.",
         "html_en": "<strong>GPT 5.6 Sol</strong> — restricted access, trusted partners only, gov approval customer-by-customer."
       },
       {
@@ -247,7 +247,7 @@ const SECTIONS = [
       },
       {
         "dot_color": "yellow",
-        "html_pl": "<strong>AI Glasses</strong> — Google + Gentle Monster + Warby Parker, launch fall 2026.",
+        "html_pl": "<strong>Okulary AI</strong> — Google + Gentle Monster + Warby Parker, premiera jesień 2026.",
         "html_en": "<strong>AI Glasses</strong> — Google + Gentle Monster + Warby Parker, launch fall 2026."
       },
       {
@@ -267,7 +267,7 @@ const SECTIONS = [
       },
       {
         "dot_color": "green",
-        "html_pl": "<strong>Mieć całą Wikipedię lokalnie</strong> — 50GB, lokalny model jako librarian, wiedza na wyciągnięcie ręki bez internetu",
+        "html_pl": "<strong>Mieć całą Wikipedię lokalnie</strong> — 50GB, lokalny model jako bibliotekarz, wiedza na wyciągnięcie ręki bez internetu",
         "html_en": "<strong>Have all Wikipedia locally</strong> — 50GB, local model as librarian, knowledge at your fingertips without internet",
         "date": "2026-07-03"
       }
@@ -286,7 +286,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "Pivot z chipmakera na wnioskowanie-focused cloud. 6 miesięcy po tym jak NVIDIA licencjowała technologię i przejęła CEO.",
+        "desc_pl": "Pivot z producenta chipów na chmurę skoncentrowaną na wnioskowaniu. 6 miesięcy po tym, jak NVIDIA licencjonowała technologię i przejęła CEO.",
         "desc_en": "Pivot from chipmaker to inference-focused cloud. 6 months after NVIDIA licensed the technology and poached the CEO.",
         "date": "2026-06-26"
       },
@@ -420,7 +420,7 @@ const SECTIONS = [
     "cards": [
       {
         "title": "6 Power Phrases dla Claude Code",
-        "desc_pl": "1. Launch sub agents  2. Write me an implementation spec  3. Interview me about the project  4. Verify before you build  5. Build me a skill  6. Automate this. Najczęstszy błąd: brak kontekstu lub planu.",
+        "desc_pl": "1. Uruchom podagenty 2. Napisz mi specyfikację wdrożeniową 3. Przeprowadź ze mną wywiad na temat projektu 4. Zweryfikuj, zanim zbudujesz 5. Zbuduj mi umiejętność 6. Zautomatyzuj to. Najczęstszy błąd: brak kontekstu lub planu.",
         "desc_en": "1. Launch sub agents  2. Write me an implementation spec  3. Interview me about the project  4. Verify before you build  5. Build me a skill  6. Automate this. Most common mistake: lack of context or plan.",
         "tags": [
           {
@@ -555,7 +555,7 @@ const SECTIONS = [
       },
       {
         "title": "Google Gemini SQL 2",
-        "desc_pl": "Text-to-SQL (Tłumaczenie tekstu na SQL) — tłumaczy język naturalny na wykonywalne, zorientowane na schemat zapytania SQL.",
+        "desc_pl": "Text-to-SQL — tłumaczy język naturalny na wykonywalne zapytania SQL uwzględniające strukturę bazy danych (schema-aware).",
         "desc_en": "Text-to-SQL — translates natural language into executable, schema-aware SQL queries.",
         "tags": [
           {
@@ -574,7 +574,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "Orchestrator (conductor) rozdaje zadania sub-agents, ci wysyłają wyniki. Jak Hadoop/Spark dla agentów. Znany też jako: LLM MapReduce, agentowy MapReduce, Fan-out/fan-in, agentowy wide search.",
+        "desc_pl": "Orchestrator (dyrygent) rozdziela zadania do podagentów, którzy odsyłają wyniki z powrotem. Coś jak Hadoop/Spark dla agentów. Znane również jako: LLM MapReduce, Agentic MapReduce, Fan-out/fan-in, Agentic wide search.",
         "desc_en": "Orchestrator (conductor) distributes tasks to sub-agents, who send results back. Like Hadoop/Spark for agents. Also known as: LLM MapReduce, Agentic MapReduce, Fan-out/fan-in, Agentic wide search.",
         "date": "2026-06-26"
       },
@@ -594,7 +594,7 @@ const SECTIONS = [
         "code": "",
         "list": [],
         "full_width": false,
-        "desc_pl": "1. Skills & Automation (workflow audit)<br>2. Memory & State (Obsidian, structured map)<br>3. Interface (visual wrapper/dashboard)<br>4. Distribution (packaging dla teams/clients)",
+        "desc_pl": "1. Umiejętności & Automatyzacja (audyt przepływu pracy)<br>2. Pamięć & Stan (Obsidian, strukturalna mapa)<br>3. Interfejs (wizualna otoczka/panel)<br>4. Dystrybucja (pakowanie dla zespołów/klientów)",
         "desc_en": "1. Skills & Automation (workflow audit)<br>2. Memory & State (Obsidian, structured map)<br>3. Interface (visual wrapper/dashboard)<br>4. Distribution (packaging for teams/clients)",
         "date": "2026-06-26"
       },
@@ -614,7 +614,7 @@ const SECTIONS = [
         "code": "<span class=\"kw\">1. Act, do not overplan</span> — commit to recommendation<br>\n<span class=\"kw\">2. Lead with the outcome</span> — bottom line first<br>\n<span class=\"kw\">3. Ground every claim</span> — audit against evidence<br>\n<span class=\"kw\">4. Stop only at real boundaries</span><br>\n<span class=\"kw\">5. Assess, do not act uninvited</span><br>\n<span class=\"kw\">6. Give the reason</span><br>\n<span class=\"kw\">7. Provide the context</span><br>\n<span class=\"kw\">8. Match effort to the task</span>",
         "list": [],
         "full_width": true,
-        "desc_pl": "<strong>Limit:</strong> To działa dla komunikacji, ale nie tworzy judgment. Model może pewnie podać złą odpowiedź. Nie daje agency (brak tools/internet).",
+        "desc_pl": "Fable Brain Prompting — 8 instrukcji od Anthropic dotyczących skutecznej komunikacji z AI.",
         "desc_en": "Fable Brain Prompting — 8 instructions from Anthropic for effective AI communication.",
         "date": "2026-06-26"
       },
