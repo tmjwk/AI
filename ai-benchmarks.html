@@ -80,7 +80,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="hr">
 <h1>🏆 AI Benchmarki — katalog</h1>
 <div class="nav nav-links">
-<a href="index.html" class="nav-btn">🏠 Hub</a><a href="ai-models.html" class="nav-btn">📊 Models</a><a href="ai-benchmarks.html" class="nav-btn cur">🏆 Benchmarki</a><a href="ai-radar.html" class="nav-btn">📡 Radar</a><a href="ai-pulse.html" class="nav-btn">💓 Pulse</a><a href="ai-glossary.html" class="nav-btn">📖 Słownik</a>
+<a href="index.html" class="nav-btn"><span class="pl">🏠 Hub</span><span class="en">🏠 Hub</span></a><a href="ai-models.html" class="nav-btn"><span class="pl">📊 Modele</span><span class="en">📊 Models</span></a><a href="ai-benchmarks.html" class="nav-btn cur"><span class="pl">🏆 Benchmarki</span><span class="en">🏆 Benchmarks</span></a><a href="ai-radar.html" class="nav-btn"><span class="pl">📡 Radar</span><span class="en">📡 Radar</span></a><a href="ai-pulse.html" class="nav-btn"><span class="pl">💓 Puls</span><span class="en">💓 Pulse</span></a><a href="ai-glossary.html" class="nav-btn"><span class="pl">📖 Słownik</span><span class="en">📖 Glossary</span></a>
 
 
 
@@ -113,7 +113,7 @@ Aktualizacja: 2026-07-01
 </div>
 
 </div>
-<script src="data/benchmarks.js?v=20260704221215"></script>
+<script src="data/benchmarks.js?v=20260704221739"></script>
 <script>
 const TYPE_LABELS={"zbiór zadań": "zbiór zadań", "arena": "arena / leaderboard", "leaderboard": "leaderboard", "środowisko": "środowisko agentów"};
 const TIER_STARS={"3": "★★★", "2": "★", "1": "·"};
@@ -141,7 +141,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-04 22:12:15 UTC</span> · <span id="deploy-hash">v80648945</span>
+Deploy: <span id="deploy-ts">2026-07-04 22:17:39 UTC</span> · <span id="deploy-hash">v677f68b0</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>
