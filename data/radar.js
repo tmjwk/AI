@@ -30,9 +30,9 @@ const SECTIONS = [
         "date": "2026-07-03"
       },
       {
-        "title": "Nana Banana v2 Light",
-        "desc_pl": "Nowsza, szybsza i tańsza wersja generatora obrazów Nana Banana.",
-        "desc_en": "Newer, faster and cheaper version of Nana Banana image generator.",
+        "title": "Nano Banana v2 Light",
+        "desc_pl": "Nowsza, szybsza i tańsza wersja generatora obrazów Nano Banana.",
+        "desc_en": "Newer, faster and cheaper version of Nano Banana image generator.",
         "tags": [
           {
             "color": "blue",
