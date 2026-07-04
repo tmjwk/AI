@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Models</title>
+<html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><title>AI Models</title>
 <style>
 :root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--tbg:#2a2418;--lh:#4ade80;--ov:rgba(0,0,0,.7);--mb:#1a1a1a}
 [data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--tbg:#fef3c7;--lh:#15803d;--ov:rgba(0,0,0,.5);--mb:#94a3b8}
@@ -196,7 +196,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="modal" id="modelModal" onclick="if(event.target===this)closeModal('modelModal')"><div class="md" id="modelContent"></div></div>
 <div class="modal" id="cmpModal" onclick="if(event.target===this)closeModal('cmpModal')"><div class="md" id="cmpContent"></div></div>
 <div class="toast" id="toast"></div>
-<script src="data/models.js?v=20260704213638"></script>
+<script src="data/models.js?v=20260704214004"></script>
 <script>
 const CAT_LABELS={'LLM':'LLM — duże modele językowe','Image Generation':'Image Generation — lokalne/open-weight','Video Generation':'Video Generation','World Models':'World Models — symulacja świata','Coding':'Coding — asystenci kodu','TTS':'TTS — synteza mowy (text-to-speech)','Multimodal':'Multimodal — any-to-any','AI Science Agents':'AI Science Agents — agenty naukowe','AI Research':'AI Research — autonomne eksperymenty','Humanoid Robots':'Humanoid Robots — roboty humanoidalne','Realtime Avatars':'Realtime Avatars — awatary konwersacyjne','3D Generation':'3D Generation — modelowanie przestrzenne','4D Human':'4D Human Reconstruction','Neural Interface':'Neural Interface — interfejsy mózg-komputer (BCI)','Hardware':'Hardware — urządzenia AI-first','AI Wellness':'AI Wellness / Spa'};
 let S={q:'',chip:null,sort:'rank',cmp:[],onlyNew:false,theme:'dark',lang:'pl'};
@@ -250,6 +250,6 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-04 21:36:38 UTC</span> · <span id="deploy-hash">v6d7b5b55</span>
+Deploy: <span id="deploy-ts">2026-07-04 21:40:04 UTC</span> · <span id="deploy-hash">vf65859b9</span>
 </footer>
 </body></html>
