@@ -110,7 +110,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 <div class="f">
 AI Search Hub · <a href="https://github.com/tmjwk/AI" style="color:var(--hm)">GitHub</a><br>
-Deploy: <span id="deploy-ts">2026-07-04 00:56:49 UTC</span> · <span id="deploy-hash">va8c297c8</span>
+Deploy: <span id="deploy-ts">2026-07-04 00:59:22 UTC</span> · <span id="deploy-hash">v1b855dae</span>
 </div>
 
 </div>
@@ -154,23 +154,52 @@ if(!e.target.closest('.search-wrap')){searchResults.classList.remove('show')}
 function doSearch(q){
 const nq=nm(q);
 const results=[];
+let idx=0;
+
+// Scoring:
+// 1000 = exact title match (normalized === query)
+//  500 = title starts with query
+//  200 = title contains query
+//   50 = only in description/other fields
+// Bonuses (added to base):
+//  +30 = glossary (definitional priority)
+//  +20 = benchmark
+//  +10 = radar
+//   0 = models, pulse
+// Tiebreak: insertion order (lower idx = higher rank)
+
+function scoreTitle(titleNorm){
+if(titleNorm===nq) return 1000;
+if(titleNorm.startsWith(nq)) return 500;
+if(titleNorm.includes(nq)) return 200;
+return 0;
+}
 
 // 1. Modele
 if(typeof M!=='undefined'){
 M.forEach(m=>{
-const txt=nm(m.n+' '+(m.desc_pl||'')+' '+(m.desc_en||'')+' '+(m.b_pl||'')+' '+(m.b_en||'')+' '+m.v+' '+m.c);
-if(txt.includes(nq)){
-results.push({icon:'📊',title:m.n,desc:(m.desc_pl||m.desc_en||'').slice(0,80),source:'Models',url:'ai-models.html'})
+const tNorm=nm(m.n);
+const titleScore=scoreTitle(tNorm);
+const descTxt=nm((m.desc_pl||'')+' '+(m.desc_en||'')+' '+(m.b_pl||'')+' '+(m.b_en||'')+' '+m.v+' '+m.c);
+const descMatch=descTxt.includes(nq);
+if(titleScore>0||descMatch){
+const s=(titleScore>0?titleScore:50)+0;
+results.push({_i:idx++,score:s,icon:'📊',title:m.n,desc:(m.desc_pl||m.desc_en||'').slice(0,80),source:'Models',url:'ai-models.html'})
 }
 });
 }
 
-// 2. Słownik
+// 2. Słownik (definitional priority)
 if(typeof G!=='undefined'){
 G.forEach(e=>{
-const txt=nm(e.t+' '+(e.en||'')+' '+(e.d_pl||'')+' '+(e.d_en||'')+' '+e.c);
-if(txt.includes(nq)){
-results.push({icon:'📖',title:e.t,desc:(e.d_pl||e.d_en||'').slice(0,80),source:'Słownik',url:'ai-glossary.html?q='+encodeURIComponent(q)})
+const tNorm=nm(e.t);
+const enNorm=nm(e.en||'');
+const titleScore=Math.max(scoreTitle(tNorm),scoreTitle(enNorm));
+const descTxt=nm((e.d_pl||'')+' '+(e.d_en||'')+' '+e.c);
+const descMatch=descTxt.includes(nq);
+if(titleScore>0||descMatch){
+const s=(titleScore>0?titleScore:50)+30;
+results.push({_i:idx++,score:s,icon:'📖',title:e.t,desc:(e.d_pl||e.d_en||'').slice(0,80),source:'Słownik',url:'ai-glossary.html?q='+encodeURIComponent(q)})
 }
 });
 }
@@ -178,9 +207,14 @@ results.push({icon:'📖',title:e.t,desc:(e.d_pl||e.d_en||'').slice(0,80),source
 // 3. Benchmarki
 if(typeof B!=='undefined'){
 B.forEach(b=>{
-const txt=nm(b.n+' '+b.fn+' '+(b.t_pl||'')+' '+(b.t_en||'')+' '+b.c+' '+b.o);
-if(txt.includes(nq)){
-results.push({icon:'🏆',title:b.n,desc:(b.t_pl||b.t_en||'').slice(0,80),source:'Benchmarki',url:'ai-benchmarks.html?q='+encodeURIComponent(q)})
+const tNorm=nm(b.n);
+const fnNorm=nm(b.fn);
+const titleScore=Math.max(scoreTitle(tNorm),scoreTitle(fnNorm));
+const descTxt=nm((b.t_pl||'')+' '+(b.t_en||'')+' '+b.c+' '+b.o);
+const descMatch=descTxt.includes(nq);
+if(titleScore>0||descMatch){
+const s=(titleScore>0?titleScore:50)+20;
+results.push({_i:idx++,score:s,icon:'🏆',title:b.n,desc:(b.t_pl||b.t_en||'').slice(0,80),source:'Benchmarki',url:'ai-benchmarks.html?q='+encodeURIComponent(q)})
 }
 });
 }
@@ -190,9 +224,13 @@ if(typeof SECTIONS!=='undefined'){
 SECTIONS.forEach(sec=>{
 if(sec.type==='cards'){
 (sec.cards||[]).forEach(c=>{
-const txt=nm(c.title+' '+(c.desc_pl||'')+' '+(c.desc_en||'')+' '+sec.title);
-if(txt.includes(nq)){
-results.push({icon:'📡',title:c.title,desc:(c.desc_pl||c.desc_en||'').slice(0,80),source:'Radar',url:'ai-radar.html'})
+const tNorm=nm(c.title);
+const titleScore=scoreTitle(tNorm);
+const descTxt=nm((c.desc_pl||'')+' '+(c.desc_en||'')+' '+sec.title);
+const descMatch=descTxt.includes(nq);
+if(titleScore>0||descMatch){
+const s=(titleScore>0?titleScore:50)+10;
+results.push({_i:idx++,score:s,icon:'📡',title:c.title,desc:(c.desc_pl||c.desc_en||'').slice(0,80),source:'Radar',url:'ai-radar.html'})
 }
 });
 }
@@ -202,18 +240,29 @@ results.push({icon:'📡',title:c.title,desc:(c.desc_pl||c.desc_en||'').slice(0,
 // 5. Pulse (epizody)
 if(typeof RECENT_EPISODES!=='undefined'){
 RECENT_EPISODES.forEach(ep=>{
-const txt=nm(ep.num+' '+ep.title+' '+ep.channel);
-if(txt.includes(nq)){
-results.push({icon:'💓',title:ep.num+' '+ep.title,desc:ep.channel,source:'Pulse',url:'ai-pulse.html'})
+const epTitleNorm=nm(ep.num+' '+ep.title);
+const titleScore=scoreTitle(epTitleNorm);
+const descTxt=nm(ep.channel);
+const descMatch=descTxt.includes(nq);
+if(titleScore>0||descMatch){
+const s=(titleScore>0?titleScore:50)+0;
+results.push({_i:idx++,score:s,icon:'💓',title:ep.num+' '+ep.title,desc:ep.channel,source:'Pulse',url:'ai-pulse.html'})
 }
 ep.topics.forEach(tp=>{
-const txt2=nm(tp.num+' '+tp.title+' '+(tp.fakty_pl||'')+' '+(tp.wniosek_pl||''));
-if(txt2.includes(nq)){
-results.push({icon:'💓',title:ep.num+' Topic '+tp.num+': '+tp.title,desc:(tp.fakty_pl||'').slice(0,80),source:'Pulse',url:'ai-pulse.html'})
+const tNorm=nm(tp.title);
+const titleScore=scoreTitle(tNorm);
+const descTxt=nm(tp.num+' '+(tp.fakty_pl||'')+' '+(tp.wniosek_pl||''));
+const descMatch=descTxt.includes(nq);
+if(titleScore>0||descMatch){
+const s=(titleScore>0?titleScore:50)+0;
+results.push({_i:idx++,score:s,icon:'💓',title:ep.num+' Topic '+tp.num+': '+tp.title,desc:(tp.fakty_pl||'').slice(0,80),source:'Pulse',url:'ai-pulse.html'})
 }
 });
 });
 }
+
+// Sort by score desc, then by insertion order (stable)
+results.sort((a,b)=>b.score-a.score||a._i-b._i);
 
 // Render results (max 20)
 const top=results.slice(0,20);
