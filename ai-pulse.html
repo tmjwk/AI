@@ -233,7 +233,7 @@ function renderTopic(tp){
   return `<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}">
 <div class="t-head">
 <span class="t-num">${esc(tp.num)}</span>
-<span class="t-title">${esc(tp.title)}</span>
+<span class="t-title"><span class="pl">${esc(tp.title_pl||tp.title)}</span><span class="en">${esc(tp.title_en||tp.title)}</span></span>
 <span class="t-time">${esc(tp.time)}</span>
 <span class="topic-hint" data-lang="pl"></span>
 </div>
@@ -280,7 +280,7 @@ function renderEpisodeHeader(ep){
 <span class="e-num">${esc(ep.num)}</span>
 <span class="e-channel">${esc(ep.channel)}</span>
 </div>
-<div class="e-title">${esc(ep.title)}</div>
+<div class="e-title"><span class="pl">${esc(ep.title_pl||ep.title)}</span><span class="en">${esc(ep.title_en||ep.title)}</span></div>
 <div class="e-meta">
 <span class="m-item">📅 <span class="mv">${esc(ep.date)}</span></span>
 <span class="m-item">⏱ <span class="mv">${esc(ep.duration)}</span></span>
@@ -424,6 +424,6 @@ if (document.readyState === 'loading') {
 </div>
 
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-04 03:52:01 UTC</span> · <span id="deploy-hash">v85fcccdd</span>
+Deploy: <span id="deploy-ts">2026-07-04 04:05:05 UTC</span> · <span id="deploy-hash">v6fb43af0</span>
 </footer>
 </body></html>
