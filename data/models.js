@@ -866,7 +866,7 @@ const M = [
     }
   },
   {
-    "r": 9,
+    "r": 10,
     "n": "Claude Opus 4.7",
     "v": "Anthropic",
     "d": "2026-04-16",
@@ -891,7 +891,7 @@ const M = [
     }
   },
   {
-    "r": 6,
+    "r": 7,
     "n": "Claude Opus 4.8",
     "v": "Anthropic",
     "d": "2026-05-28",
@@ -917,7 +917,7 @@ const M = [
     }
   },
   {
-    "r": 5,
+    "r": 6,
     "n": "Qwen 3.7 Plus",
     "v": "Alibaba",
     "d": "2026-06-07",
@@ -938,7 +938,7 @@ const M = [
     }
   },
   {
-    "r": 4,
+    "r": 5,
     "n": "GLM-5.2",
     "v": "Z.AI / Zhipu AI",
     "d": "2026-06-16",
@@ -962,7 +962,7 @@ const M = [
     }
   },
   {
-    "r": 8,
+    "r": 9,
     "n": "GPT-5.5",
     "v": "OpenAI",
     "d": "2026-04-23",
@@ -989,7 +989,7 @@ const M = [
     }
   },
   {
-    "r": 16,
+    "r": 3,
     "n": "GPT 5.6 Sol",
     "v": "OpenAI",
     "d": "2026-06-27",
@@ -1007,8 +1007,8 @@ const M = [
     "scores": {
       "benchlm_score": 0,
       "benchlm_rank": null,
-      "composite": null,
-      "confidence": 0
+      "composite": 50.0,
+      "confidence": 1
     }
   },
   {
@@ -1039,7 +1039,7 @@ const M = [
     }
   },
   {
-    "r": 3,
+    "r": 4,
     "n": "Claude Sonnet 5",
     "v": "Anthropic",
     "d": "2026-07-01",
@@ -1066,7 +1066,7 @@ const M = [
     }
   },
   {
-    "r": 7,
+    "r": 8,
     "n": "MiniMax M3",
     "v": "MiniMax",
     "d": "2026-05-31",
@@ -1087,7 +1087,7 @@ const M = [
     }
   },
   {
-    "r": 14,
+    "r": 16,
     "n": "Kimi K2.7 Code",
     "v": "Moonshot AI",
     "d": "2026-06-12",
@@ -1108,7 +1108,7 @@ const M = [
     }
   },
   {
-    "r": 13,
+    "r": 15,
     "n": "DeepSeek v4",
     "v": "DeepSeek",
     "d": "2026-04-24",
@@ -1129,7 +1129,7 @@ const M = [
     }
   },
   {
-    "r": 11,
+    "r": 12,
     "n": "Qwen 3.6 Plus",
     "v": "Alibaba",
     "d": "2026-05-19",
@@ -1165,7 +1165,7 @@ const M = [
     "b_en": "lightweight local model (12B), multimodal — for running on your own hardware"
   },
   {
-    "r": 10,
+    "r": 11,
     "n": "Nemotron 3 Ultra",
     "v": "NVIDIA",
     "d": "2026-06-07",
@@ -1186,7 +1186,7 @@ const M = [
     }
   },
   {
-    "r": 12,
+    "r": 13,
     "n": "MAI Thinking 1",
     "v": "Microsoft",
     "d": "2026-06-07",
@@ -1207,7 +1207,7 @@ const M = [
     }
   },
   {
-    "r": 19,
+    "r": 21,
     "n": "GPT Dreaming",
     "v": "OpenAI",
     "d": "2026-06-07",
@@ -1222,7 +1222,7 @@ const M = [
     "b_en": "memory synthesis — ChatGPT understands context changes (e.g. trip ending), better factual recall"
   },
   {
-    "r": 23,
+    "r": 24,
     "n": "Ornith 1.0",
     "v": "Ornith (open-source)",
     "d": "2026-06",
@@ -1237,7 +1237,7 @@ const M = [
     "b_en": "agentic coding — self-scaffolding, model learns to design workflows for tasks"
   },
   {
-    "r": 15,
+    "r": 17,
     "n": "Seed 2.1",
     "v": "ByteDance",
     "d": "2026-06",
@@ -1258,7 +1258,7 @@ const M = [
     }
   },
   {
-    "r": 24,
+    "r": 14,
     "n": "Sakana Fugu",
     "v": "Sakana AI",
     "d": "2026-06",
@@ -1274,8 +1274,8 @@ const M = [
     "scores": {
       "benchlm_score": 0,
       "benchlm_rank": null,
-      "composite": null,
-      "confidence": 0
+      "composite": 50.0,
+      "confidence": 1
     }
   },
   {
@@ -1294,7 +1294,7 @@ const M = [
     "b_en": "diffusion LLM — 4x faster text generation, alternative to auto-regressive"
   },
   {
-    "r": 22,
+    "r": 23,
     "n": "Next N2",
     "v": "Next (open-source)",
     "d": "2026-06-14",
@@ -1309,7 +1309,7 @@ const M = [
     "b_en": "adaptive reasoning — model decides when to think deeper"
   },
   {
-    "r": 17,
+    "r": 19,
     "n": "Meta AI (Llama 4)",
     "v": "Meta",
     "d": "2026-04",
@@ -1324,7 +1324,7 @@ const M = [
     "b_en": "open-weights in the future, community ecosystem"
   },
   {
-    "r": 21,
+    "r": 22,
     "n": "Quabble 3.6 27B",
     "v": "MIAB",
     "d": "2026-07-03",
