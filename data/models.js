@@ -320,7 +320,7 @@ const M = [
   },
   {
     "r": 4,
-    "n": "HappyHorse-1.0",
+    "n": "Happy Horse 1.0",
     "v": "Alibaba",
     "d": "2026-04-26",
     "o": 0,
