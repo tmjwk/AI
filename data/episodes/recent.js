@@ -128,7 +128,7 @@ const RECENT_EPISODES = [
         "num": "03",
         "title": "Fuzja jądrowa — Helion",
         "time": "37:14 – 49:55",
-        "fakty_pl": "Helion (Sam Altman backed) cleared Washington state regulatory approvals for Orion Fusion power plant. Expected 400MW plant circa 2032. Fusion „finally here\" — nie 50 lat jak żart.",
+        "fakty_pl": "Helion (wspierany przez Sama Altmana) uzyskał zatwierdzenia regulacyjne stanu Waszyngton dla elektrowni jądrowej fuzji Orion. Spodziewana elektrownia o mocy 400MW około 2032 roku. Fuzja \"wreszcie jest\" - nie za 50 lat jak żart.",
         "fakty_en": "Helion (Sam Altman backed) cleared Washington state regulatory approvals for Orion Fusion power plant. Expected 400MW plant circa 2032. Fusion \"finally here\" — not 50 years away like the joke.",
         "glosy": [
           {
@@ -397,7 +397,7 @@ const RECENT_EPISODES = [
         "num": "02",
         "title": "OpenAI cofa IPO",
         "time": "42:00 – 53:00",
-        "fakty_pl": "OpenAI leadership pulls back from near-term IPO. SpaceX IPO comparison — Elon „got out quickly” z liquid stock.",
+        "fakty_pl": "Kierownictwo OpenAI wycofuje się z bliskiego IPO. Porównanie z IPO SpaceX — Elon \"gra o czas\".",
         "fakty_en": "OpenAI leadership pulls back from near-term IPO. SpaceX IPO comparison — Elon „got out quickly” with liquid stock.",
         "glosy": [
           {
@@ -535,7 +535,7 @@ const RECENT_EPISODES = [
         "num": "06",
         "title": "Orbital data centers",
         "time": "118:00 – 133:00",
-        "fakty_pl": "Elon flipped the bit 9 months ago — <strong>orbital data centers</strong>. SpaceX constellation jako „Dyson Swarm brand”.",
+        "fakty_pl": "Elon \"zmienił zdanie\" 9 miesięcy temu — orbitalne centra danych. Konstelacja SpaceX jako \"marka Sfery Dysona\".",
         "fakty_en": "Elon flipped the bit 9 months ago — <strong>orbital data centers</strong>. SpaceX constellation as a \"Dyson Swarm brand\".",
         "glosy": [
           {

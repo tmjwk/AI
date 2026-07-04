@@ -384,7 +384,7 @@ const B = [
     "y": 2020,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "Pytania o dokumenty (faktury, formularze) — testuje OCR + rozumienie. Standard document AI.",
+    "t_pl": "Pytania o dokumenty (faktury, formularze) — testuje rozpoznawanie tekstu i rozumienie. Standard document AI.",
     "t_en": "Document Visual Question Answering — questions about documents (invoices, forms). Tests OCR + understanding. A standard document AI benchmark. Created by UPV. Frontier models score 90%+."
   },
   {
@@ -420,7 +420,7 @@ const B = [
     "y": 2023,
     "ty": "zbiór zadań",
     "tier": 1,
-    "t_pl": "OCR benchmark — rozpoznawanie tekstu w obrazach (handwriting, scene text, document).",
+    "t_pl": "Test rozpoznawania tekstu w obrazach (pismo odręczne, tekst w scenach, dokumenty).",
     "t_en": "OCR benchmark — recognizing text in images (handwriting, scene text, documents). Created by MBZUAI. A key benchmark for OCR. In 2026, frontier VLMs do OCR natively, reducing the need for specialized models."
   },
   {
@@ -612,7 +612,7 @@ const B = [
     "y": 2019,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "Pytania o abstrakty z PubMed z tak/nie/maybe. Scientific reading comprehension.",
+    "t_pl": "Pytania o abstrakty z PubMed z tak/nie/maybe. Test zrozumienia tekstów naukowych.",
     "t_en": "Questions about PubMed abstracts with yes/no/maybe answers. Scientific reading comprehension. Created by CMU. A standard benchmark for scientific reasoning."
   },
   {
@@ -720,7 +720,7 @@ const B = [
     "y": 2022,
     "ty": "zbiór zadań",
     "tier": 1,
-    "t_pl": "274k toksycznych i neutralnych wypowiedzi o grupach demograficznych. Detekcja hate speech.",
+    "t_pl": "274k toksycznych i neutralnych wypowiedzi o grupach demograficznych. Wykrywanie mowy nienawiści.",
     "t_en": "274K toxic and neutral statements about demographic groups. Used for hate speech detection evaluation. Created by Microsoft. A key benchmark for content moderation AI."
   },
   {
@@ -828,7 +828,7 @@ const B = [
     "y": 2024,
     "ty": "zbiór zadań",
     "tier": 1,
-    "t_pl": "Visual instruction following benchmark — VLM rozumie instrukcje o obrazach. NVIDIA.",
+    "t_pl": "Test podążania za instrukcjami wizualnymi — VLM rozumie instrukcje o obrazach. NVIDIA.",
     "t_en": "Visual instruction following benchmark — VLMs follow instructions about images. Created by NVIDIA. Tests whether VLMs truly understand visual content."
   }
 ];
