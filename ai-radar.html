@@ -63,6 +63,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .banner strong{color:var(--bl)}
 @media(max-width:540px){.grid{grid-template-columns:1fr}.table{font-size:11px}.hr{flex-direction:column;align-items:flex-start;gap:8px}.h h1{font-size:16px}.nav-btn{font-size:11px;padding:4px 8px}.nav-links{gap:4px;width:100%}}
 @media(max-width:380px){.nav-btn{font-size:10px;padding:3px 6px}}
+<script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))</script>
 </style></head><body>
 <div class="c">
 
@@ -96,7 +97,7 @@ Aktualizacja: 2026-06-26 · Transkrypt + PowerPoint parsowany · <a href="ai-mod
 </div>
 
 </div>
-<script src="data/radar.js?v=20260704202914"></script>
+<script src="data/radar.js?v=20260704203525"></script>
 <script>
 const t=document.getElementById('themeTgl');
 let theme=localStorage.getItem('radar-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
@@ -206,6 +207,6 @@ if (document.readyState === 'loading') {
 
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-04 20:29:14 UTC</span> · <span id="deploy-hash">vdb3077de</span>
+Deploy: <span id="deploy-ts">2026-07-04 20:35:25 UTC</span> · <span id="deploy-hash">vb9af0643</span>
 </footer>
 </body></html>

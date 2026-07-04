@@ -72,6 +72,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .f a{color:var(--hm)}
 @media(max-width:540px){.bench{grid-template-columns:auto 1fr}.bench .link{grid-column:1/-1;justify-content:flex-start}.h h1{font-size:16px}.hr{flex-direction:column;align-items:flex-start;gap:8px}.nav-btn{font-size:11px;padding:4px 8px}.nav-links{gap:4px;width:100%}}
 @media(max-width:380px){.nav-btn{font-size:10px;padding:3px 6px}}
+<script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))</script>
 </style></head><body>
 <div class="c">
 
@@ -112,7 +113,7 @@ Aktualizacja: 2026-07-01
 </div>
 
 </div>
-<script src="data/benchmarks.js?v=20260704202914"></script>
+<script src="data/benchmarks.js?v=20260704203525"></script>
 <script>
 const TYPE_LABELS={"zbiór zadań": "zbiór zadań", "arena": "arena / leaderboard", "leaderboard": "leaderboard", "środowisko": "środowisko agentów"};
 const TIER_STARS={"3": "★★★", "2": "★", "1": "·"};
@@ -138,6 +139,6 @@ function toggleLang(){S.lang=S.lang==='pl'?'en':'pl';document.documentElement.se
 init();
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-04 20:29:14 UTC</span> · <span id="deploy-hash">ve60b49c7</span>
+Deploy: <span id="deploy-ts">2026-07-04 20:35:25 UTC</span> · <span id="deploy-hash">vb6c499de</span>
 </footer>
 </body></html>
