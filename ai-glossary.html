@@ -108,6 +108,9 @@ document.documentElement.setAttribute('data-lang',S.lang);
 document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';
 const langBtn=document.getElementById('langTgl');if(langBtn){langBtn.textContent=S.lang==='pl'?'EN':'PL';langBtn.addEventListener('click',toggleLang)}
 renderChips();renderStats();render();attachTermLangToggles();
+// Cross-site search: czytaj ?q= z URL
+const urlQ=new URLSearchParams(location.search).get('q');
+if(urlQ){S.q=urlQ;document.getElementById('search').value=urlQ;render();attachTermLangToggles()}
 document.getElementById('search').addEventListener('input',e=>{S.q=e.target.value;render();attachTermLangToggles()});
 document.getElementById('themeTgl').addEventListener('click',toggleTheme);
 }
@@ -121,6 +124,6 @@ function toggleLang(){S.lang=S.lang==='pl'?'en':'pl';document.documentElement.se
 init();
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-04 00:35:09 UTC</span> · <span id="deploy-hash">v8b935090</span>
+Deploy: <span id="deploy-ts">2026-07-04 00:49:57 UTC</span> · <span id="deploy-hash">v362dfce6</span>
 </footer>
 </body></html>
