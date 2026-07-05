@@ -84,6 +84,21 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .skeleton-line.medium{width:80%}
 .skeleton-line.title{height:16px;width:50%;margin-bottom:12px}
 [data-theme="light"] .skeleton-card::before{background:linear-gradient(90deg,transparent,rgba(0,0,0,0.04),transparent)}
+/* v8.6: Episode styles (skopiowane z pulse AI) */
+.episode{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:18px 20px;margin-bottom:28px;border-left:4px solid var(--ac);transition:border-color .15s}
+.episode .e-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.episode .e-num{font-size:11px;color:var(--ac);font-family:"SF Mono",Menlo,monospace;font-weight:700;background:var(--bg);padding:2px 8px;border-radius:4px;border:1px solid var(--bdl)}
+.episode .e-channel{font-size:11px;color:var(--hm);font-family:monospace}
+.episode .e-title{font-size:18px;font-weight:700;color:var(--hp);line-height:1.4;margin:4px 0 8px}
+.episode .e-meta{font-size:12px;color:var(--hm);display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.episode .e-meta .m-item{display:flex;align-items:center;gap:5px}
+.episode .e-meta .m-item .mv{color:var(--hs);font-weight:600}
+.ep-collapse{display:none}
+.ep-old{position:relative}
+.ep-old.open+.ep-collapse{display:block}
+.ep-old .ep-toggle-btn{position:absolute;top:10px;right:10px;z-index:10;background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:4px 12px;cursor:pointer;font-size:12px;color:var(--hs);font-weight:600;transition:all .15s;white-space:nowrap}
+.ep-old .ep-toggle-btn:hover{border-color:var(--ac);color:var(--ac)}
+@media(max-width:540px){.episode{padding:14px 16px}.episode .e-title{font-size:16px}}
 </style></head><body><script>if(performance.getEntriesByType){var nav=performance.getEntriesByType('navigation')[0];if(nav&&nav.transferSize===0&&!location.search.includes('_r=')){location.replace(location.pathname+(location.search?location.search+'&':'?')+'_r='+Date.now())}}</script>
 <div class="c">
 
@@ -107,7 +122,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 
 <!-- V4: sections rendered by JS from data/radar.js -->
-<div class="chips" id="radarChips"></div><div id="sections"><div class="skeleton-loader"><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div></div></div>
+<div class="chips" id="radarChips"></div><div id="episodes"><div class="skeleton-loader"><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div></div></div>
 
 
 
@@ -161,27 +176,11 @@ ${listHtml}
 }
 
 function renderSection(sec){
-  // Auto-archiwizacja: pokaż karty z 4 najnowszych epizodów, reszta → archiwum
-  // Znajdź 4 najnowsze unikalne daty we WSZYSTKICH sekcjach
-  const allDates = new Set();
-  for (const s of SECTIONS) {
-    if (s.type === 'cards') {
-      for (const c of s.cards) {
-        if (c.date) allDates.add(c.date);
-      }
-    }
-  }
-  const recentDates = [...allDates].sort((a,b) => b.localeCompare(a)).slice(0, 4);
-  const isNew = (date) => date && recentDates.includes(date);
-
+  // v8.6: render section inside episode (no archive logic — episodes handle chronology)
   let body = '';
   if (sec.type === 'cards') {
-    const active = sec.cards.filter(c => isNew(c.date)).sort((a,b) => (b.date||'').localeCompare(a.date||''));
-    const archived = sec.cards.filter(c => !isNew(c.date)).sort((a,b) => (b.date||'').localeCompare(a.date||''));
-    body = `<div class="grid">${active.map(renderCard).join('')}</div>`;
-    if (archived.length > 0) {
-      body += `<details style="margin-top:12px"><summary style="cursor:pointer;color:var(--hd);font-size:12px;padding:6px 0">📦 Archiwum (${archived.length} kart)</summary><div class="grid" style="margin-top:8px;opacity:0.6">${archived.map(renderCard).join('')}</div></details>`;
-    }
+    const sorted = (sec.cards||[]).slice().sort((a,b) => (b.date||'').localeCompare(a.date||''));
+    body = `<div class="grid">${sorted.map(renderCard).join('')}</div>`;
   } else if (sec.type === 'list') {
     body = `<ul class="list">${sec.items.map(it=>`<li><span class="dot dot-${it.dot_color}"></span> ${L(it,'html_pl','html_en')}</li>`).join('')}</ul>`;
   } else if (sec.type === 'table') {
@@ -207,15 +206,68 @@ ${body}
 }
 
 let R_chips=[];
-function renderRadarChips(){const c=document.getElementById('radarChips');if(!c)return;let h='<span class="chip active" data-filter="all"><span class="pl">Wszystkie</span><span class="en">All</span></span>';SECTIONS.forEach(s=>{if(s.type==='cards'){const n=(s.cards||[]).length;h+=`<span class="chip" data-filter="${s.id||s.title}">${s.icon||'📋'} ${s.title} (${n})</span>`}});c.innerHTML=h;c.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{const f=ch.getAttribute('data-filter');if(f==='all'){R_chips=[];c.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));ch.classList.add('active')}else{c.querySelector('[data-filter="all"]').classList.remove('active');const i=R_chips.indexOf(f);if(i>-1){R_chips.splice(i,1);ch.classList.remove('active')}else{R_chips.push(f);ch.classList.add('active')}if(R_chips.length===0){c.querySelector('[data-filter="all"]').classList.add('active')}}renderAll()}))}
+function renderRadarChips(){const c=document.getElementById('radarChips');if(!c)return;let h='';c.innerHTML=h}
+
+// v8.6: Episode renderers (skopiowane z pulse AI, przerobione na sections+cards)
+function renderEpisodeBody(ep){
+  const sectionsHtml = ep.sections.map(renderSection).join('');
+  return `<div class="ep-collapse">
+${sectionsHtml}
+</div>`;
+}
+
+function renderEpisodeHeader(ep){
+  const epClass = ep.collapsed ? 'episode ep-old' : 'episode ep-old open';
+  const toggleBtn = `<button class="ep-toggle-btn" data-ep-id="${esc(ep.id)}">${ep.collapsed ? '▼ Rozwiń' : '▲ Zwiń'}</button>`;
+  const cardsCount = ep.sections.reduce((sum, s) => sum + (s.cards ? s.cards.length : 0), 0);
+  const itemsCount = ep.sections.reduce((sum, s) => sum + (s.items ? s.items.length : 0), 0);
+  return `<div class="${epClass}" data-ep-id="${esc(ep.id)}">
+<div class="e-top">
+<span class="e-num">📡</span>
+<span class="e-channel">Lev Selector</span>
+</div>
+<div class="e-title">${esc(ep.title)}</div>
+<div class="e-meta">
+<span class="m-item">📅 <span class="mv">${esc(ep.date)}</span></span>
+<span class="m-item">📊 <span class="mv">${cardsCount} kart</span></span>
+${itemsCount > 0 ? `<span class="m-item">📋 <span class="mv">${itemsCount} pozycji</span></span>` : ''}
+</div>
+${toggleBtn}
+</div>`;
+}
+
+function renderEpisodeFull(ep){
+  return renderEpisodeHeader(ep) + renderEpisodeBody(ep);
+}
+
+function attachToggleHandlers(){
+  document.querySelectorAll('.ep-toggle-btn').forEach(btn=>{
+    btn.addEventListener('click', function(){
+      var epDiv = this.closest('.ep-old');
+      if(!epDiv) return;
+      var isOpen = epDiv.classList.contains('open');
+      if(isOpen){
+        epDiv.classList.remove('open');
+        this.textContent = '▼ Rozwiń';
+      } else {
+        epDiv.classList.add('open');
+        this.textContent = '▲ Zwiń';
+      }
+    });
+  });
+}
+
 function renderAll(){try{
-  const container = document.getElementById('sections');
-  if (!container || typeof SECTIONS === 'undefined') {
-    console.error('Brak #sections lub SECTIONS');
+  const container = document.getElementById('episodes');
+  if (!container || typeof episodes === 'undefined') {
+    console.error('Brak #episodes lub episodes');
     return;
   }
-  container.innerHTML = SECTIONS.map(renderSection).join('');
-}catch(e){console.error("Render error:",e);document.getElementById("content")?document.getElementById("content").innerHTML='<div class="nr">⚠ Błąd renderowania — odśwież stronę. Szczegóły w konsoli (F12).</div>':null;document.getElementById("episodes")?document.getElementById("episodes").innerHTML='<div class="nr">⚠ Błąd renderowania — odśwież stronę. Szczegóły w konsoli (F12).</div>':null}}
+  // Sortuj epizody po dacie DESC (najnowszy u góry)
+  const sorted = [...episodes].sort((a,b) => (b.date||'').localeCompare(a.date||''));
+  container.innerHTML = sorted.map(renderEpisodeFull).join('');
+  attachToggleHandlers();
+}catch(e){console.error("Render error:",e);var el=document.getElementById("episodes");if(el)el.innerHTML='<div class="nr">⚠ Błąd renderowania — odśwież stronę. Szczegóły w konsoli (F12).</div>'}}
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', function(){renderRadarChips();renderAll()});
@@ -227,7 +279,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.5.7-4-g4d83e19 · Deploy: <span id="deploy-ts">2026-07-05 22:08:38 UTC</span> · <span id="deploy-hash">v2ecb4338</span>
+v8.5.7-4-g4d83e19 · Deploy: <span id="deploy-ts">2026-07-05 22:25:36 UTC</span> · <span id="deploy-hash">v8f8620fa</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>
