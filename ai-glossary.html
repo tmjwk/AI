@@ -57,6 +57,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .term.en .td .pl{display:none}
 .term .td .en{display:none}
 .term.en .td .en{display:inline}
+[data-lang="en"] .term:not(.en) .td .pl{display:inline !important}
+[data-lang="en"] .term:not(.en) .td .en{display:none !important}
+[data-lang="pl"] .term.en .td .en{display:inline !important}
+[data-lang="pl"] .term.en .td .pl{display:none !important}
 .nr{color:var(--hm);font-size:15.5px;text-align:center;padding:40px 20px;font-style:italic}
 .f{margin-top:36px;padding-top:18px;border-top:1px solid var(--bdl);font-size:11px;color:var(--hd);text-align:center}
 .f a{color:var(--hm)}
@@ -97,7 +101,7 @@ Aktualizacja: 2026-07-01
 </div>
 
 </div>
-<script src="data/glossary.js?v=20260705010115"></script>
+<script src="data/glossary.js?v=20260705010411"></script>
 <script>
 let S={q:'',chip:null,theme:'dark',lang:'pl'};
 function nm(s){return(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
@@ -131,7 +135,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-05 01:01:15 UTC</span> · <span id="deploy-hash">vbceacaa2</span>
+Deploy: <span id="deploy-ts">2026-07-05 01:04:11 UTC</span> · <span id="deploy-hash">v01518d21</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>
