@@ -73,6 +73,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .bench:not(.en) .bd .en{display:none}
 [data-lang="en"] .bench:not(.en) .bd .pl{display:inline !important}
 [data-lang="en"] .bench:not(.en) .bd .en{display:none !important}
+[data-lang="pl"] .bench.en .bd .en{display:inline !important}
+[data-lang="pl"] .bench.en .bd .pl{display:none !important}
 .card-lang{font-size:10px;font-weight:700;color:#ff6600;background:rgba(255,102,0,.1);padding:2px 8px;border-radius:4px;border:1px solid #ff6600;cursor:pointer;white-space:nowrap;flex-shrink:0;margin-left:auto;text-transform:uppercase;letter-spacing:.05em}
 .card-lang[data-lang="pl"]::before{content:"EN"}
 .card-lang[data-lang="en"]::before{content:"PL"}
@@ -115,7 +117,7 @@ Aktualizacja: 2026-07-01
 </div>
 
 </div>
-<script src="data/benchmarks.js?v=20260705005022"></script>
+<script src="data/benchmarks.js?v=20260705005336"></script>
 <script>
 const TYPE_LABELS={"zbiór zadań": "zbiór zadań", "arena": "arena / leaderboard", "leaderboard": "leaderboard", "środowisko": "środowisko agentów"};
 const TIER_STARS={"3": "★★★", "2": "★", "1": "·"};
@@ -144,7 +146,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-05 00:50:22 UTC</span> · <span id="deploy-hash">v14fada48</span>
+Deploy: <span id="deploy-ts">2026-07-05 00:53:36 UTC</span> · <span id="deploy-hash">v8eb4eefc</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>
