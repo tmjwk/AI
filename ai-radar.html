@@ -84,6 +84,18 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .skeleton-line.medium{width:80%}
 .skeleton-line.title{height:16px;width:50%;margin-bottom:12px}
 [data-theme="light"] .skeleton-card::before{background:linear-gradient(90deg,transparent,rgba(0,0,0,0.04),transparent)}
+/* v8.6 pulse-style layout (Faza 2) — aktywowany przez ?layout=pulse lub localStorage=radarLayout=pulse */
+.episode{margin-bottom:24px;border:1px solid var(--bdl);border-radius:8px;overflow:hidden}
+.ep-header{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:var(--card);cursor:pointer;user-select:none;border-bottom:1px solid var(--bdl)}
+.ep-header:hover{background:var(--bg)}
+.ep-title{font-size:14px;font-weight:700;color:var(--hp);display:flex;align-items:center;gap:8px}
+.ep-meta{font-size:11px;color:var(--hm);font-family:monospace}
+.ep-toggle{font-size:12px;color:var(--hs);transition:transform .2s}
+.episode.collapsed .ep-toggle{transform:rotate(-90deg)}
+.episode.collapsed .ep-body{display:none}
+.ep-body{padding:14px}
+.ep-archived-toggle{margin-top:12px;padding:8px 12px;background:var(--card);border:1px dashed var(--bd);border-radius:4px;cursor:pointer;font-size:12px;color:var(--hm)}
+.ep-archived-toggle:hover{color:var(--hs)}
 </style></head><body><script>if(performance.getEntriesByType){var nav=performance.getEntriesByType('navigation')[0];if(nav&&nav.transferSize===0&&!location.search.includes('_r=')){location.replace(location.pathname+(location.search?location.search+'&':'?')+'_r='+Date.now())}}</script>
 <div class="c">
 
@@ -206,9 +218,122 @@ ${body}
 </div>`;
 }
 
+// v8.6 Faza 2: Pulse-style renderer — karty pogrupowane po epizodach, zwijane/rozwijane
+function renderEpisodePulse(episode){
+  // Zbierz wszystkie karty z tego epizodu (ze wszystkich sekcji typu 'cards')
+  const episodeCards = [];
+  const episodeLists = [];
+  const episodeTables = [];
+  for (const s of SECTIONS){
+    if (s.type === 'cards'){
+      for (const c of (s.cards||[])){
+        if ((c.episode_id || 'ep-2026-07-03') === episode.id){
+          episodeCards.push({card: c, section: s});
+        }
+      }
+    } else if (s.type === 'list'){
+      for (const it of (s.items||[])){
+        if ((it.episode_id || 'ep-2026-07-03') === episode.id){
+          episodeLists.push({item: it, section: s});
+        }
+      }
+    } else if (s.type === 'table'){
+      // Tabele przypisujemy do pierwszego epizodu (nie mają episode_id per row)
+      if (episode === episodes[0]){
+        episodeTables.push(s);
+      }
+    }
+  }
+
+  // Sortuj karty po dacie DESC (najnowsze u góry wewnątrz epizodu)
+  episodeCards.sort((a,b) => (b.card.date||'').localeCompare(a.card.date||''));
+
+  let body = '';
+  // Sekcje z kartami
+  const sectionsWithCards = {};
+  for (const {card, section} of episodeCards){
+    if (!sectionsWithCards[section.id]) sectionsWithCards[section.id] = {section, cards: []};
+    sectionsWithCards[section.id].cards.push(card);
+  }
+  for (const sid in sectionsWithCards){
+    const {section, cards} = sectionsWithCards[sid];
+    body += `<div class="sec" id="${section.id}-ep-${episode.id}">
+<div class="sec-t"><span class="icon">${section.icon}</span> ${esc(section.title)} <span class="kc">(${cards.length})</span></div>
+<div class="grid">${cards.map(renderCard).join('')}</div>
+</div>`;
+  }
+
+  // Sekcje list
+  if (episodeLists.length > 0){
+    const listSections = {};
+    for (const {item, section} of episodeLists){
+      if (!listSections[section.id]) listSections[section.id] = {section, items: []};
+      listSections[section.id].items.push(item);
+    }
+    for (const sid in listSections){
+      const {section, items} = listSections[sid];
+      body += `<div class="sec" id="${section.id}-ep-${episode.id}">
+<div class="sec-t"><span class="icon">${section.icon}</span> ${esc(section.title)}</div>
+<ul class="list">${items.map(it=>`<li><span class="dot dot-${it.dot_color}"></span> ${L(it,'html_pl','html_en')}</li>`).join('')}</ul>
+</div>`;
+    }
+  }
+
+  // Tabele (tylko w pierwszym epizodzie)
+  for (const table of episodeTables){
+    const headerRow = `<thead><tr>${table.headers.map((h,i)=>`<th${i===0?' class="rank"':''}${i===table.headers.length-1?' class="score"':''}>${esc(h)}</th>`).join('')}</tr></thead>`;
+    const bodyRows = table.rows.map(row => {
+      const cells = row.map(c => {
+        if (typeof c === 'object' && c.tag) return `<td>${renderTag(c.tag)}</td>`;
+        const isNum = /^\d+$/.test(String(c).trim());
+        return `<td${isNum?' class="score"':''}>${esc(String(c))}</td>`;
+      }).join('');
+      return `<tr>${cells}</tr>`;
+    }).join('');
+    body += `<div class="sec" id="${table.id}-ep-${episode.id}">
+<div class="sec-t"><span class="icon">${table.icon}</span> ${esc(table.title)}</div>
+<table class="table">${headerRow}<tbody>${bodyRows}</tbody></table>
+${table.note ? `<p style="font-size:11px;color:var(--hd);margin-top:8px">${table.note}</p>` : ''}
+</div>`;
+  }
+
+  const cardsCount = episodeCards.length;
+  const listsCount = episodeLists.length;
+  const meta = `${cardsCount} ${cardsCount === 1 ? 'karta' : 'kart'}${listsCount > 0 ? ' · ' + listsCount + ' list' : ''}`;
+
+  return `<div class="episode${episode.collapsed ? ' collapsed' : ''}" id="${episode.id}">
+<div class="ep-header" onclick="var ep=this.parentElement;ep.classList.toggle('collapsed')">
+<div class="ep-title"><span class="ep-toggle">▼</span> 📅 ${esc(episode.title)}</div>
+<div class="ep-meta">${meta}</div>
+</div>
+<div class="ep-body">
+${body || '<div class="nr">Brak kart w tym epizodzie</div>'}
+</div>
+</div>`;
+}
+
+function renderAllPulse(){
+  try {
+    const container = document.getElementById('sections');
+    if (!container || typeof SECTIONS === 'undefined' || typeof episodes === 'undefined'){
+      console.error('Brak #sections, SECTIONS lub episodes');
+      return;
+    }
+    // Sortuj epizody po dacie DESC (najnowszy u góry)
+    const sortedEpisodes = [...episodes].sort((a,b) => (b.date||'').localeCompare(a.date||''));
+    container.innerHTML = sortedEpisodes.map(renderEpisodePulse).join('');
+  } catch(e){
+    console.error('Pulse render error:', e);
+    // Fallback do legacy
+    renderAllLegacy();
+  }
+}
+
 let R_chips=[];
 function renderRadarChips(){const c=document.getElementById('radarChips');if(!c)return;let h='<span class="chip active" data-filter="all"><span class="pl">Wszystkie</span><span class="en">All</span></span>';SECTIONS.forEach(s=>{if(s.type==='cards'){const n=(s.cards||[]).length;h+=`<span class="chip" data-filter="${s.id||s.title}">${s.icon||'📋'} ${s.title} (${n})</span>`}});c.innerHTML=h;c.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{const f=ch.getAttribute('data-filter');if(f==='all'){R_chips=[];c.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));ch.classList.add('active')}else{c.querySelector('[data-filter="all"]').classList.remove('active');const i=R_chips.indexOf(f);if(i>-1){R_chips.splice(i,1);ch.classList.remove('active')}else{R_chips.push(f);ch.classList.add('active')}if(R_chips.length===0){c.querySelector('[data-filter="all"]').classList.add('active')}}renderAll()}))}
-function renderAll(){try{
+
+// v8.6 Faza 2: renderAllLegacy — stary renderer (default)
+function renderAllLegacy(){try{
   const container = document.getElementById('sections');
   if (!container || typeof SECTIONS === 'undefined') {
     console.error('Brak #sections lub SECTIONS');
@@ -216,6 +341,29 @@ function renderAll(){try{
   }
   container.innerHTML = SECTIONS.map(renderSection).join('');
 }catch(e){console.error("Render error:",e);document.getElementById("content")?document.getElementById("content").innerHTML='<div class="nr">⚠ Błąd renderowania — odśwież stronę. Szczegóły w konsoli (F12).</div>':null;document.getElementById("episodes")?document.getElementById("episodes").innerHTML='<div class="nr">⚠ Błąd renderowania — odśwież stronę. Szczegóły w konsoli (F12).</div>':null}}
+
+// v8.6 Faza 2: renderAll — dispatcher z feature flag
+// Default: 'legacy'. Aktywacja pulse: ?layout=pulse w URL lub localStorage=radarLayout=pulse
+function getRadarLayout(){
+  // URL param ma priorytet
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlLayout = urlParams.get('layout');
+  if (urlLayout === 'pulse' || urlLayout === 'legacy') return urlLayout;
+  // Potem localStorage
+  const stored = localStorage.getItem('radarLayout');
+  if (stored === 'pulse' || stored === 'legacy') return stored;
+  // Default
+  return 'legacy';
+}
+
+function renderAll(){
+  const layout = getRadarLayout();
+  if (layout === 'pulse'){
+    renderAllPulse();
+  } else {
+    renderAllLegacy();
+  }
+}
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', function(){renderRadarChips();renderAll()});
@@ -227,7 +375,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.5.7-4-g4d83e19 · Deploy: <span id="deploy-ts">2026-07-05 21:34:27 UTC</span> · <span id="deploy-hash">v2ecb4338</span>
+v8.5.7-4-g4d83e19 · Deploy: <span id="deploy-ts">2026-07-05 21:44:00 UTC</span> · <span id="deploy-hash">v5b46026f</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>
