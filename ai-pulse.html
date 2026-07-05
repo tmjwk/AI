@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Pulse — panele dyskusyjne</title>
-<script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))/* v8.6-4-g0920813 */</script>
+<script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))/* v8.6-6-g4c69cbf */</script>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
@@ -188,8 +188,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <!-- V4 Etap 2: episodes lazy loading — index.js (nagłówki) + recent.js (pełne 5 najnowszych) -->
 <div id="episodes"><div class="skeleton-loader"><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div></div></div>
 
-<script src="data/episodes/index.js?v=20260705075436"></script>
-<script src="data/episodes/recent.js?v=20260705075436"></script>
+<script src="data/episodes/index.js?v=20260705075436" onerror="dataLoadFailed()">></script>
+<script src="data/episodes/recent.js?v=20260705075436" onerror="dataLoadFailed()">></script>
 <script>
 const t=document.getElementById('themeTgl');
 let theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
@@ -447,7 +447,7 @@ document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeE
 </div>
 
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.6-4-g0920813 · Deploy: <span id="deploy-ts">2026-07-05 22:55:33 UTC</span> · <span id="deploy-hash">v387ed069</span>
+v8.6-6-g4c69cbf · Deploy: <span id="deploy-ts">2026-07-05 23:04:53 UTC</span> · <span id="deploy-hash">v28467a2e</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>

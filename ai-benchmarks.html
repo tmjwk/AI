@@ -125,7 +125,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 
 </div>
-<script src="data/benchmarks.js?v=20260705075436"></script>
+<script src="data/benchmarks.js?v=20260705075436" onerror="dataLoadFailed()">></script>
 <script>
 const TYPE_LABELS={"zbiór zadań": "zbiór zadań", "arena": "arena / leaderboard", "leaderboard": "leaderboard", "środowisko": "środowisko agentów"};
 const TIER_STARS={"3": "★★★", "2": "★", "1": "·"};
@@ -154,7 +154,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.6-4-g0920813 · Deploy: <span id="deploy-ts">2026-07-05 22:55:33 UTC</span> · <span id="deploy-hash">v7dff0e57</span>
+v8.6-6-g4c69cbf · Deploy: <span id="deploy-ts">2026-07-05 23:04:53 UTC</span> · <span id="deploy-hash">v0c4a2d4c</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>
