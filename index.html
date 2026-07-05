@@ -16,9 +16,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .c{max-width:clamp(900px,95vw,1400px);margin:0 auto;padding:20px}
 .h{position:sticky;top:0;background:var(--bg);z-index:100;padding:16px 0;border-bottom:1px solid var(--bd);margin-bottom:24px;transition:background .2s}
 .hr{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:8px;flex-wrap:wrap}
-.h h1{font-size:22px;margin:0;font-weight:700;color:var(--hp);letter-spacing:-.02em}
-.h .sub{font-size:13px;color:var(--hm);margin-top:4px}
-.tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--fg);transition:border-color .15s;line-height:1}
+.h h1{font-size:var(--fs-xl);margin:0;font-weight:700;color:var(--hp);letter-spacing:-.02em}
+.h .sub{font-size:var(--fs-m);color:var(--hm);margin-top:4px}
+.tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:var(--fs-m);color:var(--fg);transition:border-color .15s;line-height:1}
 .tgl:hover{border-color:var(--ac)}
 /* PL/EN toggle */
 [data-lang="pl"] .en{display:none !important}
@@ -27,16 +27,24 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .card-link{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:24px;transition:all .2s;border-left:4px solid var(--ac)}
 .card-link:hover{border-color:var(--ac);transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.3)}
 .card-icon{font-size:32px;margin-bottom:12px}
-.card-title{font-size:18px;font-weight:700;color:var(--hp);margin-bottom:8px}
-.card-stats{font-size:13px;color:var(--hm);line-height:1.8}
-.card-new{display:inline-block;background:var(--ac);color:#000;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:700;margin-top:8px}
-.sec-t{font-size:15px;text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:14px;font-weight:700}
+.card-title{font-size:var(--fs-xl);font-weight:700;color:var(--hp);margin-bottom:8px}
+.card-stats{font-size:var(--fs-m);color:var(--hm);line-height:1.8}
+.card-new{display:inline-block;background:var(--ac);color:#000;padding:2px 8px;border-radius:4px;font-size:var(--fs-xs);font-weight:700;margin-top:8px}
+.sec-t{font-size:var(--fs-l);text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:14px;font-weight:700}
 .update-list{list-style:none;padding:0;margin:0}
-.update-list li{padding:10px 0;border-bottom:1px solid var(--bdl);font-size:14px;color:var(--hm)}
+.update-list li{padding:10px 0;border-bottom:1px solid var(--bdl);font-size:var(--fs-m);color:var(--hm)}
 .update-list li strong{color:var(--hs)}
 .update-date{color:var(--ac);font-family:monospace;font-weight:600;margin-right:8px}
-.f{margin-top:40px;padding-top:18px;border-top:1px solid var(--bdl);font-size:11px;color:var(--hd);text-align:center;line-height:1.8}
-@media(max-width:540px){.h h1{font-size:18px}.grid{grid-template-columns:1fr}}
+.f{margin-top:40px;padding-top:18px;border-top:1px solid var(--bdl);font-size:var(--fs-s);color:var(--hd);text-align:center;line-height:1.8}
+@media(max-width:540px){.h h1{font-size:var(--fs-xl)}.grid{grid-template-columns:1fr}}
+
+/* v8.6-14-g9bd319e: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
+:root{
+--fs-xs:0.625rem;--fs-s:0.75rem;--fs-m:0.875rem;--fs-l:1rem;--fs-xl:1.25rem;--fs-xxl:5rem
+}
+@media(max-width:540px){
+:root{--fs-s:0.6875rem;--fs-m:0.8125rem;--fs-l:0.9375rem;--fs-xl:1.125rem;--fs-xxl:3.75rem}
+}
 </style></head>
 <body><script>if(performance.getEntriesByType){var nav=performance.getEntriesByType('navigation')[0];if(nav&&nav.transferSize===0&&!location.search.includes('_r=')){location.replace(location.pathname+(location.search?location.search+'&':'?')+'_r='+Date.now())}}</script>
 <div class="c">
@@ -94,12 +102,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <li><span class="update-date">01.07.2026</span> <span class="pl">Claude Fable 5 powraca, GPT 5.6 restricted, Claude Sonnet 5 tańszy</span><span class="en">Claude Fable 5 returns, GPT 5.6 restricted, Claude Sonnet 5 cheaper</span></li>
 <li><span class="update-date">26.06.2026</span> GLM-5.2, Seedance 2.5, Unitree R1, Olive brain imaging, Reflection AI + SpaceX</li>
 </ul>
-<div class="sub" style="margin-top:14px;font-size:11px;color:var(--hd);text-align:center;line-height:1.8"><span class="pl">Aktualny przegląd AI · 5 podstron · 439+ rekordów</span><span class="en">Current AI overview · 5 pages · 439+ records</span></div>
+<div class="sub" style="margin-top:14px;font-size:var(--fs-s);color:var(--hd);text-align:center;line-height:1.8"><span class="pl">Aktualny przegląd AI · 5 podstron · 439+ rekordów</span><span class="en">Current AI overview · 5 pages · 439+ records</span></div>
 </div>
 
 <div class="f">
 
-v8.6-13-gbee6294 · Deploy: <span id="deploy-ts">2026-07-05 23:40:34 UTC</span> · <span id="deploy-hash">v46dc6781</span>
+v8.6-14-g9bd319e · Deploy: <span id="deploy-ts">2026-07-05 23:47:33 UTC</span> · <span id="deploy-hash">vbdbc31e6</span>
 </div>
 
 </div>
