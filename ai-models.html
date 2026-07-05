@@ -49,6 +49,9 @@ select option{color:var(--fg)}
 .chip{padding:4px 10px;background:var(--card);border:1px solid var(--bd);border-radius:12px;color:var(--hs);font-size:11px;cursor:pointer;transition:all .15s;font-weight:500}
 .chip:hover{border-color:var(--ac);color:var(--fg)}
 .chip.active{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+.chip.chip-new{border-color:var(--ba);color:var(--ba);background:rgba(251,191,36,.08)}
+.chip.chip-new.active{background:var(--ba);color:var(--bg);border-color:var(--ba)}
+.chip.chip-new::after{content:' 🆕'}
 .tools{display:flex;flex-direction:column;gap:6px;margin-top:16px}
 .sel{background:var(--card);border:1px solid var(--bd);border-radius:6px;color:var(--fg);font-size:12px;padding:6px 10px;cursor:pointer;outline:none;width:100%}
 .btn{background:var(--card);border:1px solid var(--bd);border-radius:6px;color:var(--fg);font-size:12px;padding:6px 12px;cursor:pointer;transition:all .15s;font-weight:500}
@@ -243,7 +246,7 @@ document.getElementById('sort').addEventListener('change',e=>{S.sort=e.target.va
 document.getElementById('themeTgl').addEventListener('click',toggleTheme);var lh=document.getElementById('langTglHeader');if(lh){lh.textContent=S.lang==='pl'?'EN':'PL';lh.addEventListener('click',toggleLang)}
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal('modelModal');closeModal('cmpModal')}});
 }
-function renderChips(){const c=document.getElementById('chips');let h='';CATS.forEach(cat=>{h+='<span class="chip" data-filter="'+cat+'">'+cat+'</span>'});h+='<span class="chip" data-filter="oplus">⊕ Open-source</span>';c.innerHTML=h;c.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{const f=ch.getAttribute('data-filter');if(S.chip===f){S.chip=null;ch.classList.remove('active')}else{c.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));ch.classList.add('active');S.chip=f}render()}))}
+function renderChips(){const c=document.getElementById('chips');let h='';CATS.forEach(cat=>{const models=M.filter(m=>m.c===cat);const isNewCat=models.length>0&&models.every(m=>isNew(m.d));const newClass=isNewCat?' chip-new':'';h+='<span class="chip'+newClass+'" data-filter="'+cat+'">'+cat+'</span>'});h+='<span class="chip" data-filter="oplus">⊕ Open-source</span>';c.innerHTML=h;c.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{const f=ch.getAttribute('data-filter');if(S.chip===f){S.chip=null;ch.classList.remove('active')}else{c.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));ch.classList.add('active');S.chip=f}render()}))}
 function toggleOnlyNew(){S.onlyNew=!S.onlyNew;document.querySelectorAll('#toggleNew').forEach(btn=>{if(S.onlyNew){btn.classList.add('active');btn.setAttribute('aria-pressed','true')}else{btn.classList.remove('active');btn.setAttribute('aria-pressed','false')}});const bannerBtn=document.querySelector('#banner #toggleNew');if(bannerBtn){bannerBtn.textContent=S.onlyNew?'⚪ Tylko nowe: ON':'🔘 Tylko nowe: OFF'}render()}
 function renderStats(){const total=M.length;const os=M.filter(m=>m.o).length;const nw=M.filter(m=>isNew(m.d)).length;const cats=CATS.length;const osPct=Math.round(os/total*100);let h=`<div class="st"><span class="sv">${total}</span><span class="sl">modeli</span></div>`;h+=`<div class="st"><span class="sv">${os}</span><span class="sl">OS (${osPct}%)</span></div>`;h+=`<div class="st"><span class="sv">${nw}</span><span class="sl">nowe</span></div>`;h+=`<div class="st"><span class="sv">${cats}</span><span class="sl">kategorii</span></div>`;document.getElementById('stats').innerHTML=h;renderBarChart()}
 function renderBarChart(){const bc=document.getElementById('bc');let max=0;CATS.forEach(c=>{const n=M.filter(m=>m.c===c).length;if(n>max)max=n});let h='<div style="font-size:10px;color:var(--hm);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;font-weight:600">Modele per kategoria</div>';CATS.forEach(c=>{const n=M.filter(m=>m.c===c).length;if(n===0)return;const w=Math.round(n/max*100);h+=`<div class="brow"><span class="blabel">${c}</span><div class="bbg"><div class="bfill" style="width:${w}%"></div></div><span class="bval">${n}</span></div>`});bc.innerHTML=h}
@@ -267,7 +270,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.6-10-gd87f8c3 · Deploy: <span id="deploy-ts">2026-07-05 23:21:46 UTC</span> · <span id="deploy-hash">v93ebe903</span>
+v8.6-11-g7f084d7 · Deploy: <span id="deploy-ts">2026-07-05 23:32:02 UTC</span> · <span id="deploy-hash">v60a37a35</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>

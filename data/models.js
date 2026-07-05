@@ -1747,21 +1747,22 @@ const SOURCES = [
   }
 ];
 
+// Auto-generated CATS: wszystkie unikalne kategorie z danych (sortowane)
 const CATS = [
-  "LLM",
-  "Image Generation",
-  "Video Generation",
   "3D Generation",
-  "World Models",
-  "Coding",
-  "TTS",
-  "Multimodal",
-  "AI Science Agents",
-  "AI Research",
-  "Humanoid Robots",
-  "Realtime Avatars",
   "4D Human",
-  "Neural Interface",
+  "AI Research",
+  "AI Science Agents",
+  "AI Wellness",
+  "Coding",
   "Hardware",
-  "AI Wellness"
+  "Humanoid Robots",
+  "Image Generation",
+  "LLM",
+  "Multimodal",
+  "Neural Interface",
+  "Realtime Avatars",
+  "TTS",
+  "Video Generation",
+  "World Models"
 ];
