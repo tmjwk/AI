@@ -23,6 +23,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--fg);transition:border-color .15s}
 .tgl:hover{border-color:var(--ac)}
 .sec{margin-bottom:32px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}.chip{padding:4px 10px;background:var(--card);border:1px solid var(--bd);border-radius:12px;color:var(--hs);font-size:11px;cursor:pointer;transition:all .15s;font-weight:500}.chip:hover{border-color:var(--ac);color:var(--fg)}.chip.active{background:var(--ac);color:var(--bg);border-color:var(--ac)}
 .sec-t{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:12px;font-weight:700;display:flex;align-items:center;gap:8px}
 .sec-t .icon{font-size:18px}
 .card{background:var(--card);border:1px solid var(--bdl);border-radius:8px;padding:14px;margin-bottom:10px;transition:border-color .15s}
@@ -91,12 +92,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 
 <!-- V4: sections rendered by JS from data/radar.js -->
-<div id="sections"></div>
+<div class="chips" id="radarChips"></div><div id="sections"></div>
 
 
 
 </div>
-<script src="data/radar.js?v=20260705013455"></script>
+<script src="data/radar.js?v=20260705014611"></script>
 <script>
 const t=document.getElementById('themeTgl');
 let theme=localStorage.getItem('radar-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
@@ -189,6 +190,8 @@ ${body}
 </div>`;
 }
 
+let R_chips=[];
+function renderRadarChips(){const c=document.getElementById('radarChips');if(!c)return;let h='<span class="chip active" data-filter="all"><span class="pl">Wszystkie</span><span class="en">All</span></span>';SECTIONS.forEach(s=>{if(s.type==='cards'){const n=(s.cards||[]).length;h+=`<span class="chip" data-filter="${s.id||s.title}">${s.icon||'📋'} ${s.title} (${n})</span>`}});c.innerHTML=h;c.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{const f=ch.getAttribute('data-filter');if(f==='all'){R_chips=[];c.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));ch.classList.add('active')}else{c.querySelector('[data-filter="all"]').classList.remove('active');const i=R_chips.indexOf(f);if(i>-1){R_chips.splice(i,1);ch.classList.remove('active')}else{R_chips.push(f);ch.classList.add('active')}if(R_chips.length===0){c.querySelector('[data-filter="all"]').classList.add('active')}}renderAll()}))}
 function renderAll(){try{
   const container = document.getElementById('sections');
   if (!container || typeof SECTIONS === 'undefined') {
@@ -199,16 +202,16 @@ function renderAll(){try{
 }catch(e){console.error("Render error:",e);document.getElementById("content")?document.getElementById("content").innerHTML='<div class="nr">⚠ Błąd renderowania — odśwież stronę. Szczegóły w konsoli (F12).</div>':null;document.getElementById("episodes")?document.getElementById("episodes").innerHTML='<div class="nr">⚠ Błąd renderowania — odśwież stronę. Szczegóły w konsoli (F12).</div>':null}}
 
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', renderAll);
+  document.addEventListener('DOMContentLoaded', function(){renderRadarChips();renderAll()});
 } else {
-  renderAll();
+  renderRadarChips();renderAll();
 }
 
 
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-05 01:34:55 UTC</span> · <span id="deploy-hash">v4aaf5653</span>
+Deploy: <span id="deploy-ts">2026-07-05 01:46:11 UTC</span> · <span id="deploy-hash">v1a49713d</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>

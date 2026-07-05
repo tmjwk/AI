@@ -4,6 +4,267 @@
 
 const SECTIONS = [
   {
+    "id": "week-2026-07-03",
+    "num": 0,
+    "icon": "📅",
+    "title": "TYDZIEŃ: 2026-07-03",
+    "type": "cards",
+    "cards": [
+      {
+        "title": "Qwen Agent World (Alibaba)",
+        "desc_pl": "Open-source od Alibaba — buduje wirtualny świat wewnątrz AI do symulacji środowiska agentowego.",
+        "desc_en": "Open-source from Alibaba — builds virtual world inside AI to simulate agentic environment.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Open-source"
+          },
+          {
+            "color": "blue",
+            "text": "Chiny"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Nano Banana v2 Light",
+        "desc_pl": "Nowsza, szybsza i tańsza wersja generatora obrazów Nano Banana.",
+        "desc_en": "Newer, faster and cheaper version of Nano Banana image generator.",
+        "tags": [
+          {
+            "color": "blue",
+            "text": "Image Gen"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Ornith AI",
+        "desc_pl": "Otwartoźródłowy, agentowy model MoE do kodowania (9B-397B), obudowa (harness) wbudowana w wagi modelu. Pokonuje najnowocześniejsze modele komercyjne. 100 milionów dolarów finansowania, Santa Clara.",
+        "desc_en": "Open-source agentic coding MoE (9B-397B), harness trained into model weights. Beats frontier models. $100M funding, Santa Clara.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Open-source"
+          },
+          {
+            "color": "blue",
+            "text": "USA"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "CoreWeave AREA",
+        "desc_pl": "Agent badawczy AI — formuje hipotezy, uruchamia eksperymenty, analizuje wyniki. Dla badań naukowych.",
+        "desc_en": "AI research agent — forms hypotheses, triggers experiments, evaluates results. For scientific research.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Funded"
+          },
+          {
+            "color": "blue",
+            "text": "USA"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Anthropic KYC — 25,000 fraudulent accounts",
+        "desc_pl": "25,000 oszustów bombardsowali modele Anthropic, zbierając Q&A pary do treningu chińskich modeli. Anthropic rozważa 'know your customer' — ID wymagane dla darmowych kont. Nie wdrożone jeszcze.",
+        "desc_en": "25,000 fraudsters bombarded Anthropic models, collecting Q&A pairs for training Chinese models. Anthropic considers 'know your customer' — ID required for free accounts. Not implemented yet.",
+        "tags": [
+          {
+            "color": "red",
+            "text": "Bezpieczeństwo"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Two-class AI gap",
+        "desc_pl": "Rząd i duże firmy mają dostęp do najnowszych modeli (GPT 5.6, Mythos 5), reszta otrzymuje modele później lub wcale. Mythos 5 wydany w kwietniu, nadal niepubliczny. Chińczycy odwrotnie — najlepsze modele w open-source.",
+        "desc_en": "Government and big companies have access to latest models (GPT 5.6, Mythos 5), everyone else receives models later or never. Mythos 5 released in April, still not public. Chinese do the opposite — best models in open-source.",
+        "tags": [
+          {
+            "color": "yellow",
+            "text": "Regulacje"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "6 Power Phrases dla Claude Code",
+        "desc_pl": "1. Uruchom podagenty 2. Napisz mi specyfikację wdrożeniową 3. Przeprowadź ze mną wywiad na temat projektu 4. Zweryfikuj, zanim zbudujesz 5. Zbuduj mi umiejętność 6. Zautomatyzuj to. Najczęstszy błąd: brak kontekstu lub planu.",
+        "desc_en": "1. Launch sub agents  2. Write me an implementation spec  3. Interview me about the project  4. Verify before you build  5. Build me a skill  6. Automate this. Most common mistake: lack of context or plan.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Claude Code"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Google Open Knowledge Format (OKF)",
+        "desc_pl": "OKF — ustrukturyzowany format wiedzy od Google. Platform-agnostic (git, filesystem). Buduj wiki z plików OKF = pamięć dla agenta. Google Knowledge Catalog ingestuje OKF.",
+        "desc_en": "OKF — structured knowledge format from Google. Platform-agnostic (git, filesystem). Build wiki from OKF files = agent memory. Google Knowledge Catalog ingests OKF.",
+        "tags": [
+          {
+            "color": "blue",
+            "text": "Google"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "LangChain umiera — Deep Agents",
+        "desc_pl": "LangChain: over-abstraction (8 poziomów), docs nie matchują kodu, breaking changes. Programiści odchodzą. Ale LangChain Deep Agents (open-source, LangGraph) — agent harness z planowaniem i sub-agentami.",
+        "desc_en": "LangChain: over-abstraction (8 levels), docs don't match code, breaking changes. Developers leaving. But LangChain Deep Agents (open-source, LangGraph) — agent harness with planning and sub-agents.",
+        "tags": [
+          {
+            "color": "yellow",
+            "text": "Trend"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Claude Tag — @claude w Slacku",
+        "desc_pl": "Anthropic Tag — @claude w Slacku, agent jako team member. Czyta Slack, zna kulturę firmy, proaktywny. Zagrożenie: wszystkie firmy zależne od Claude.",
+        "desc_en": "Anthropic Tag — @claude in Slack, agent as team member. Reads Slack, knows company culture, proactive. Risk: all companies dependent on Claude.",
+        "tags": [
+          {
+            "color": "yellow",
+            "text": "Anthropic"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "OpenTag — open-source Claude Tag",
+        "desc_pl": "Open-source alternatywa dla Claude Tag — działa ze Slack, WhatsApp i dowolnym modelem (nie tylko Claude). Własny copilot.",
+        "desc_en": "Open-source alternative to Claude Tag — works with Slack, WhatsApp and any model (not just Claude). Own copilot.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Open-source"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Ponytail — rules dla Claude Code",
+        "desc_pl": "Rules dla Claude Code — 'lazy senior developer mode'. Agent pisze tylko niezbędny kod, unika verbose overengineering. OPUS 4.8: 71% szybciej, 53% mniej linii kodu.",
+        "desc_en": "Rules for Claude Code — 'lazy senior developer mode'. Agent writes only necessary code, avoids verbose overengineering. OPUS 4.8: 71% faster, 53% fewer lines of code.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Claude Code"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Harness Training (Ornith)",
+        "desc_pl": "Otoczka wbijana w wagi modelu przez RLHF. Model uczy się strategii rozwiązywania zadań, nie tylko predykcji tokenu. Wyniki biją modele klasy frontier.",
+        "desc_en": "Harness trained into model weights via RL. Model learns problem-solving strategies, not just token prediction. Results beat frontier models.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Breakthrough"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "DeepPark — speculative decoding",
+        "desc_pl": "Open-source narzędzie DeepSeek — draft model przewiduje bloki tokenów naraz. Do 85% szybciej dla DeepSeek v4, działa z Qwen i Gemma.",
+        "desc_en": "Open-source tool from DeepSeek — draft model predicts a block of tokens at once. Up to 85% faster for DeepSeek v4, works with Qwen and Gemma.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "Open-source"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "X (Twitter) MCP Server",
+        "desc_pl": "X wydał serwer MCP (Model Context Protocol) do zapytań o dane z Twittera. Oprogramowanie jest darmowe, ale dostęp do danych jest płatny.",
+        "desc_en": "X released MCP server for querying Twitter data. Software free, but data access paid.",
+        "tags": [
+          {
+            "color": "green",
+            "text": "MCP"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Google Gemini SQL 2",
+        "desc_pl": "Text-to-SQL — tłumaczy język naturalny na wykonywalne zapytania SQL uwzględniające strukturę bazy danych (schema-aware).",
+        "desc_en": "Text-to-SQL — translates natural language into executable, schema-aware SQL queries.",
+        "tags": [
+          {
+            "color": "blue",
+            "text": "Google"
+          }
+        ],
+        "code": "",
+        "list": [],
+        "full_width": false,
+        "date": "2026-07-03"
+      }
+    ]
+  },
+  {
     "id": "who",
     "num": 1,
     "icon": "🏢",
@@ -645,170 +906,348 @@ const SECTIONS = [
     "num": 6,
     "icon": "🏆",
     "title": "LM ARENA — RANKINGI (01.07.2026)",
-    "type": "table",
+    "type": "cards",
     "headers": [
       "#",
       "Model",
       "Score",
       "Status"
     ],
-    "rows": [
-      [
-        "1",
-        "Claude Fable 5",
-        "1564",
-        {
-          "tag": {
+    "cards": [
+      {
+        "date": "2026-07-01",
+        "title": "1",
+        "desc_pl": "Model: Claude Fable 5 · Score: 1564 · [Offline]",
+        "desc_en": "Model: Claude Fable 5 · Score: 1564 · [Offline]",
+        "tags": [
+          {
             "color": "red",
             "text": "Offline"
           }
-        }
-      ],
-      [
-        "2",
-        "Claude Opus 4.7 thinking",
-        "1554",
-        {
-          "tag": {
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "title": "2",
+        "desc_pl": "Model: Claude Opus 4.7 thinking · Score: 1554 · [Active]",
+        "desc_en": "Model: Claude Opus 4.7 thinking · Score: 1554 · [Active]",
+        "tags": [
+          {
             "color": "green",
             "text": "Active"
           }
-        }
-      ],
-      [
-        "3",
-        "Claude Opus 4.6 thinking",
-        "1551",
-        {
-          "tag": {
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "title": "3",
+        "desc_pl": "Model: Claude Opus 4.6 thinking · Score: 1551 · [Active]",
+        "desc_en": "Model: Claude Opus 4.6 thinking · Score: 1551 · [Active]",
+        "tags": [
+          {
             "color": "green",
             "text": "Active"
           }
-        }
-      ],
-      [
-        "4",
-        "Claude Opus 4.7",
-        "1550",
-        {
-          "tag": {
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "title": "4",
+        "desc_pl": "Model: Claude Opus 4.7 · Score: 1550 · [Active]",
+        "desc_en": "Model: Claude Opus 4.7 · Score: 1550 · [Active]",
+        "tags": [
+          {
             "color": "green",
             "text": "Active"
           }
-        }
-      ],
-      [
-        "5",
-        "Claude Opus 4.6",
-        "1547",
-        {
-          "tag": {
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "title": "5",
+        "desc_pl": "Model: Claude Opus 4.6 · Score: 1547 · [Active]",
+        "desc_en": "Model: Claude Opus 4.6 · Score: 1547 · [Active]",
+        "tags": [
+          {
             "color": "green",
             "text": "Active"
           }
-        }
-      ],
-      [
-        "6",
-        "Claude Opus 4.8",
-        "1538",
-        {
-          "tag": {
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "title": "6",
+        "desc_pl": "Model: Claude Opus 4.8 · Score: 1538 · [Active]",
+        "desc_en": "Model: Claude Opus 4.8 · Score: 1538 · [Active]",
+        "tags": [
+          {
             "color": "green",
             "text": "Active"
           }
-        }
-      ],
-      [
-        "7",
-        "Claude Opus 4.8 thinking",
-        "1537",
-        {
-          "tag": {
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "title": "7",
+        "desc_pl": "Model: Claude Opus 4.8 thinking · Score: 1537 · [Active]",
+        "desc_en": "Model: Claude Opus 4.8 thinking · Score: 1537 · [Active]",
+        "tags": [
+          {
             "color": "green",
             "text": "Active"
           }
-        }
-      ],
-      [
-        "10",
-        "Qwen 3.7 max preview",
-        "1526",
-        {
-          "tag": {
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "title": "10",
+        "desc_pl": "Model: Qwen 3.7 max preview · Score: 1526 · [Open]",
+        "desc_en": "Model: Qwen 3.7 max preview · Score: 1526 · [Open]",
+        "tags": [
+          {
             "color": "green",
             "text": "Open"
           }
-        }
-      ],
-      [
-        "12",
-        "GLM 5.1",
-        "1525",
-        {
-          "tag": {
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "title": "12",
+        "desc_pl": "Model: GLM 5.1 · Score: 1525 · [Open]",
+        "desc_en": "Model: GLM 5.1 · Score: 1525 · [Open]",
+        "tags": [
+          {
             "color": "green",
             "text": "Open"
           }
-        }
-      ],
-      [
-        "13",
-        "GLM 5.2 (max)",
-        "1525",
-        {
-          "tag": {
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "title": "13",
+        "desc_pl": "Model: GLM 5.2 (max) · Score: 1525 · [Open]",
+        "desc_en": "Model: GLM 5.2 (max) · Score: 1525 · [Open]",
+        "tags": [
+          {
             "color": "green",
             "text": "Open"
           }
-        }
-      ],
-      [
-        "16",
-        "Gemini 3.1 Pro",
-        "1523",
-        {
-          "tag": {
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "title": "16",
+        "desc_pl": "Model: Gemini 3.1 Pro · Score: 1523 · [Active]",
+        "desc_en": "Model: Gemini 3.1 Pro · Score: 1523 · [Active]",
+        "tags": [
+          {
             "color": "green",
             "text": "Active"
           }
-        }
-      ],
-      [
-        "17",
-        "GPT 5.4 high",
-        "1521",
-        {
-          "tag": {
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "title": "17",
+        "desc_pl": "Model: GPT 5.4 high · Score: 1521 · [Active]",
+        "desc_en": "Model: GPT 5.4 high · Score: 1521 · [Active]",
+        "tags": [
+          {
             "color": "green",
             "text": "Active"
           }
-        }
-      ],
-      [
-        "21",
-        "GPT 5.5 high",
-        "1518",
-        {
-          "tag": {
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "title": "21",
+        "desc_pl": "Model: GPT 5.5 high · Score: 1518 · [Active]",
+        "desc_en": "Model: GPT 5.5 high · Score: 1518 · [Active]",
+        "tags": [
+          {
             "color": "green",
             "text": "Active"
           }
-        }
-      ],
-      [
-        "25",
-        "GPT 5.5 instant",
-        "1513",
-        {
-          "tag": {
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "title": "25",
+        "desc_pl": "Model: GPT 5.5 instant · Score: 1513 · [Active]",
+        "desc_en": "Model: GPT 5.5 instant · Score: 1513 · [Active]",
+        "tags": [
+          {
             "color": "green",
             "text": "Active"
           }
-        }
-      ]
+        ]
+      }
     ],
-    "note": "Źródło: lmarena.ai · Data: 25.06.2026 · PPT: Lev Selector"
+    "_was_table": {
+      "headers": [
+        "#",
+        "Model",
+        "Score",
+        "Status"
+      ],
+      "rows": [
+        [
+          "1",
+          "Claude Fable 5",
+          "1564",
+          {
+            "tag": {
+              "color": "red",
+              "text": "Offline"
+            }
+          }
+        ],
+        [
+          "2",
+          "Claude Opus 4.7 thinking",
+          "1554",
+          {
+            "tag": {
+              "color": "green",
+              "text": "Active"
+            }
+          }
+        ],
+        [
+          "3",
+          "Claude Opus 4.6 thinking",
+          "1551",
+          {
+            "tag": {
+              "color": "green",
+              "text": "Active"
+            }
+          }
+        ],
+        [
+          "4",
+          "Claude Opus 4.7",
+          "1550",
+          {
+            "tag": {
+              "color": "green",
+              "text": "Active"
+            }
+          }
+        ],
+        [
+          "5",
+          "Claude Opus 4.6",
+          "1547",
+          {
+            "tag": {
+              "color": "green",
+              "text": "Active"
+            }
+          }
+        ],
+        [
+          "6",
+          "Claude Opus 4.8",
+          "1538",
+          {
+            "tag": {
+              "color": "green",
+              "text": "Active"
+            }
+          }
+        ],
+        [
+          "7",
+          "Claude Opus 4.8 thinking",
+          "1537",
+          {
+            "tag": {
+              "color": "green",
+              "text": "Active"
+            }
+          }
+        ],
+        [
+          "10",
+          "Qwen 3.7 max preview",
+          "1526",
+          {
+            "tag": {
+              "color": "green",
+              "text": "Open"
+            }
+          }
+        ],
+        [
+          "12",
+          "GLM 5.1",
+          "1525",
+          {
+            "tag": {
+              "color": "green",
+              "text": "Open"
+            }
+          }
+        ],
+        [
+          "13",
+          "GLM 5.2 (max)",
+          "1525",
+          {
+            "tag": {
+              "color": "green",
+              "text": "Open"
+            }
+          }
+        ],
+        [
+          "16",
+          "Gemini 3.1 Pro",
+          "1523",
+          {
+            "tag": {
+              "color": "green",
+              "text": "Active"
+            }
+          }
+        ],
+        [
+          "17",
+          "GPT 5.4 high",
+          "1521",
+          {
+            "tag": {
+              "color": "green",
+              "text": "Active"
+            }
+          }
+        ],
+        [
+          "21",
+          "GPT 5.5 high",
+          "1518",
+          {
+            "tag": {
+              "color": "green",
+              "text": "Active"
+            }
+          }
+        ],
+        [
+          "25",
+          "GPT 5.5 instant",
+          "1513",
+          {
+            "tag": {
+              "color": "green",
+              "text": "Active"
+            }
+          }
+        ]
+      ],
+      "note": "Źródło: lmarena.ai · Data: 25.06.2026 · PPT: Lev Selector"
+    }
   },
   {
     "id": "learn",
@@ -885,39 +1324,78 @@ const SECTIONS = [
     "num": 8,
     "icon": "📊",
     "title": "RYNEK PRACY — LAYOFFS",
-    "type": "table",
+    "type": "cards",
     "headers": [
       "Rok",
       "Layoffs (US)",
       "Źródło"
     ],
-    "rows": [
-      [
-        "2026 (do 03.07)",
-        "126,500",
-        "layoffs.fyi"
-      ],
-      [
-        "2025",
-        "124,000",
-        "layoffs.fyi"
-      ],
-      [
-        "2024",
-        "153,000",
-        "layoffs.fyi"
-      ],
-      [
-        "2023",
-        "264,000",
-        "layoffs.fyi"
-      ],
-      [
-        "2022",
-        "165,000",
-        "layoffs.fyi"
-      ]
+    "cards": [
+      {
+        "date": "2026-07-01",
+        "title": "2026 (do 03.07)",
+        "desc_pl": "Layoffs (US): 126,500 · Źródło: layoffs.fyi",
+        "desc_en": "Layoffs (US): 126,500 · Źródło: layoffs.fyi"
+      },
+      {
+        "date": "2026-07-01",
+        "title": "2025",
+        "desc_pl": "Layoffs (US): 124,000 · Źródło: layoffs.fyi",
+        "desc_en": "Layoffs (US): 124,000 · Źródło: layoffs.fyi"
+      },
+      {
+        "date": "2026-07-01",
+        "title": "2024",
+        "desc_pl": "Layoffs (US): 153,000 · Źródło: layoffs.fyi",
+        "desc_en": "Layoffs (US): 153,000 · Źródło: layoffs.fyi"
+      },
+      {
+        "date": "2026-07-01",
+        "title": "2023",
+        "desc_pl": "Layoffs (US): 264,000 · Źródło: layoffs.fyi",
+        "desc_en": "Layoffs (US): 264,000 · Źródło: layoffs.fyi"
+      },
+      {
+        "date": "2026-07-01",
+        "title": "2022",
+        "desc_pl": "Layoffs (US): 165,000 · Źródło: layoffs.fyi",
+        "desc_en": "Layoffs (US): 165,000 · Źródło: layoffs.fyi"
+      }
     ],
-    "note": "Microsoft zwolnił ~5,000 pracowników (03.07.2026). Trend: spadek w 2026 vs 2023-2024."
+    "_was_table": {
+      "headers": [
+        "Rok",
+        "Layoffs (US)",
+        "Źródło"
+      ],
+      "rows": [
+        [
+          "2026 (do 03.07)",
+          "126,500",
+          "layoffs.fyi"
+        ],
+        [
+          "2025",
+          "124,000",
+          "layoffs.fyi"
+        ],
+        [
+          "2024",
+          "153,000",
+          "layoffs.fyi"
+        ],
+        [
+          "2023",
+          "264,000",
+          "layoffs.fyi"
+        ],
+        [
+          "2022",
+          "165,000",
+          "layoffs.fyi"
+        ]
+      ],
+      "note": "Microsoft zwolnił ~5,000 pracowników (03.07.2026). Trend: spadek w 2026 vs 2023-2024."
+    }
   }
 ];
