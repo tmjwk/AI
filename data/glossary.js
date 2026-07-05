@@ -751,6 +751,34 @@ const G = [
     "c": "Infrastruktura",
     "d_pl": "Pulumi — narzędzie infrastructure-as-code w Python/Go/TypeScript (nie własny język jak Terraform HCL). Szablony dla AWS, agent może generować pliki Pulumi. Łatwiejsze dla programistów Python niż Terraform.",
     "d_en": "Pulumi — infrastructure-as-code tool in Python/Go/TypeScript (not a custom language like Terraform HCL). Templates for AWS, agent can generate Pulumi files. Easier for Python developers than Terraform."
+  },
+  {
+    "t": "MEG",
+    "en": "Magnetoencephalography",
+    "c": "Modalności",
+    "d_pl": "Magnetoencephalografia — nieinwazyjny zapis aktywności mózgu przez pola magnetyczne. Brain2qwerty (Meta v2) używa MEG do dekodowania myśli na tekst bez chirurgii. 78% word accuracy w v2.",
+    "d_en": "Magnetoencephalography — non-invasive brain activity recording via magnetic fields. Brain2qwerty (Meta v2) uses MEG to decode thoughts into text without surgery. 78% word accuracy in v2."
+  },
+  {
+    "t": "RDM",
+    "en": "Representation Distribution Matching",
+    "c": "Trening i optymalizacja",
+    "d_pl": "Technika treningu modeli 1-step — uczy AI dopasować rozkład cech wizualnych wysokiego poziomu zamiast memorii pojedynczych zdjęć. Pozwala na generowanie obrazów w 1 kroku zamiast 30-50.",
+    "d_en": "1-step model training technique — teaches AI to match distribution of high-level visual features instead of memorizing individual photos. Enables image generation in 1 step instead of 30-50."
+  },
+  {
+    "t": "Contact Flow",
+    "en": "Contact Flow",
+    "c": "Agentic i narzędzia",
+    "d_pl": "Framework Omnicontact dla humanoid robotów — kompaktowy plan ruchu ciała i punktów kontaktu w czasie. Pozwala łańcuchować skill'e (chodzenie, chwyt, pchanie) w 40-minutowe multi-step taski.",
+    "d_en": "Omnicontact framework for humanoid robots — compact plan of body movement and contact points over time. Enables chaining skills (walking, grasping, pushing) into 40-minute multi-step tasks."
+  },
+  {
+    "t": "ASIC super pod",
+    "en": "ASIC Super Pod",
+    "c": "Infrastruktura",
+    "d_pl": "Klaster wyspecjalizowanych chipów ASIC (alternatywa dla Nvidia GPU). LongCat 2.0 (Meituan) trenowany na ASIC super pods — pierwszy udokumentowany przypadek frontier-scale training bez Nvidia. Zero rollbacków.",
+    "d_en": "Cluster of specialized ASIC chips (alternative to Nvidia GPU). LongCat 2.0 (Meituan) trained on ASIC super pods — first documented frontier-scale training without Nvidia. Zero rollbacks."
   }
 ];
 
