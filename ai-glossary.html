@@ -83,7 +83,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </div>
 
 <div class="banner">
-<strong>📖 O słowniku:</strong> Krótkie, konkretne definicje kluczowych terminów AI po polsku — od architektur (Transformer, MoE, Diffusion) przez agentic (RAG, MCP, harness) po regulacje (UE AI Act, export control). Nazwy własne i terminy techniczne zachowane po angielsku tam, gdzie to standard branżowy.
+
 </div>
 
 <input type="text" class="search" id="search" placeholder="🔍 Szukaj terminu... (np. 'transformer', 'MoE', 'RAG', 'fine-tuning')">
@@ -97,7 +97,7 @@ Aktualizacja: 2026-07-01
 </div>
 
 </div>
-<script src="data/glossary.js?v=20260705005022"></script>
+<script src="data/glossary.js?v=20260705005933"></script>
 <script>
 let S={q:'',chip:null,theme:'dark',lang:'pl'};
 function nm(s){return(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
@@ -131,7 +131,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-05 00:50:22 UTC</span> · <span id="deploy-hash">ved395fb1</span>
+Deploy: <span id="deploy-ts">2026-07-05 00:59:33 UTC</span> · <span id="deploy-hash">v6d7c36ff</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>
