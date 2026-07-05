@@ -844,84 +844,40 @@ const episodes = [
         "num": 8,
         "icon": "📊",
         "title": "RYNEK PRACY — LAYOFFS",
-        "type": "cards",
+        "type": "table",
         "headers": [
           "Rok",
           "Layoffs (US)",
           "Źródło"
         ],
-        "_was_table": {
-          "headers": [
-            "Rok",
-            "Layoffs (US)",
-            "Źródło"
+        "rows": [
+          [
+            "2026 (do 03.07)",
+            "126,500",
+            "layoffs.fyi"
           ],
-          "rows": [
-            [
-              "2026 (do 03.07)",
-              "126,500",
-              "layoffs.fyi"
-            ],
-            [
-              "2025",
-              "124,000",
-              "layoffs.fyi"
-            ],
-            [
-              "2024",
-              "153,000",
-              "layoffs.fyi"
-            ],
-            [
-              "2023",
-              "264,000",
-              "layoffs.fyi"
-            ],
-            [
-              "2022",
-              "165,000",
-              "layoffs.fyi"
-            ]
+          [
+            "2025",
+            "124,000",
+            "layoffs.fyi"
           ],
-          "note": "Microsoft zwolnił ~5,000 pracowników (03.07.2026). Trend: spadek w 2026 vs 2023-2024."
-        },
-        "cards": [
-          {
-            "date": "2026-07-01",
-            "title": "2026 (do 03.07)",
-            "desc_pl": "Layoffs (US): 126,500 · Źródło: layoffs.fyi",
-            "desc_en": "Layoffs (US): 126,500 · Źródło: layoffs.fyi",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "2025",
-            "desc_pl": "Layoffs (US): 124,000 · Źródło: layoffs.fyi",
-            "desc_en": "Layoffs (US): 124,000 · Źródło: layoffs.fyi",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "2024",
-            "desc_pl": "Layoffs (US): 153,000 · Źródło: layoffs.fyi",
-            "desc_en": "Layoffs (US): 153,000 · Źródło: layoffs.fyi",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "2023",
-            "desc_pl": "Layoffs (US): 264,000 · Źródło: layoffs.fyi",
-            "desc_en": "Layoffs (US): 264,000 · Źródło: layoffs.fyi",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "2022",
-            "desc_pl": "Layoffs (US): 165,000 · Źródło: layoffs.fyi",
-            "desc_en": "Layoffs (US): 165,000 · Źródło: layoffs.fyi",
-            "episode_id": "ep-2026-07-03"
-          }
-        ]
+          [
+            "2024",
+            "153,000",
+            "layoffs.fyi"
+          ],
+          [
+            "2023",
+            "264,000",
+            "layoffs.fyi"
+          ],
+          [
+            "2022",
+            "165,000",
+            "layoffs.fyi"
+          ]
+        ],
+        "note": "Źródło: layoffs.fyi · Aktualizacja: 03.07.2026"
       }
     ]
   },
