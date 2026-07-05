@@ -2899,7 +2899,7 @@ const M = [
     ]
   },
   {
-    "r": 100,
+    "r": 25,
     "n": "LongCat 2.0",
     "v": "Meituan (open-source, MIT)",
     "d": "2026-07-05",
@@ -2913,7 +2913,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 101,
+    "r": 26,
     "n": "Agents A1",
     "v": "Agents (open-source)",
     "d": "2026-07-05",
@@ -2926,7 +2926,7 @@ const M = [
     "tags": "[]"
   },
   {
-    "r": 102,
+    "r": 14,
     "n": "Nano Banana 2 Light",
     "v": "Google",
     "d": "2026-07-05",
@@ -2940,7 +2940,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 103,
+    "r": 15,
     "n": "RDM",
     "v": "RDM (open-source)",
     "d": "2026-07-05",
@@ -2954,7 +2954,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 104,
+    "r": 16,
     "n": "MrFlow",
     "v": "MrFlow (open-source)",
     "d": "2026-07-05",
@@ -2968,7 +2968,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 105,
+    "r": 12,
     "n": "LiveEdit",
     "v": "LiveEdit (open-source)",
     "d": "2026-07-05",
@@ -2982,7 +2982,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 106,
+    "r": 13,
     "n": "Gemini Omni Flash",
     "v": "Google",
     "d": "2026-07-05",
@@ -2996,7 +2996,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 107,
+    "r": 7,
     "n": "VidiHand",
     "v": "VidiHand (code coming soon)",
     "d": "2026-07-05",
@@ -3010,7 +3010,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 108,
+    "r": 11,
     "n": "PhysiFormer",
     "v": "PhysiFormer (open-source)",
     "d": "2026-07-05",
@@ -3024,7 +3024,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 109,
+    "r": 12,
     "n": "SimFoundry",
     "v": "SimFoundry (paper only)",
     "d": "2026-07-05",
@@ -3038,7 +3038,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 110,
+    "r": 3,
     "n": "Luna",
     "v": "Meta (paper only)",
     "d": "2026-07-05",
@@ -3052,7 +3052,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 111,
+    "r": 6,
     "n": "MusViT",
     "v": "MusViT (open-source)",
     "d": "2026-07-05",
@@ -3066,7 +3066,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 112,
+    "r": 2,
     "n": "Brain2qwerty v2",
     "v": "Meta (open-source)",
     "d": "2026-07-05",
@@ -3080,7 +3080,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 113,
+    "r": 11,
     "n": "OmniContact",
     "v": "OmniContact (open-source)",
     "d": "2026-07-05",
@@ -3094,7 +3094,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 114,
+    "r": 12,
     "n": "Aspire",
     "v": "NVIDIA (code coming soon)",
     "d": "2026-07-05",
@@ -3108,7 +3108,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 115,
+    "r": 13,
     "n": "CHORD",
     "v": "CHORD (code coming soon)",
     "d": "2026-07-05",
@@ -3122,7 +3122,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 116,
+    "r": 14,
     "n": "UBTech U1",
     "v": "UBTECH",
     "d": "2026-07-05",
@@ -3136,7 +3136,7 @@ const M = [
     "yt": "qtzzN8w2TvU"
   },
   {
-    "r": 117,
+    "r": 5,
     "n": "Comfy MCP",
     "v": "ComfyUI (open-source, beta)",
     "d": "2026-07-05",
