@@ -674,362 +674,170 @@ const episodes = [
         "num": 6,
         "icon": "🏆",
         "title": "LM ARENA — RANKINGI (01.07.2026)",
-        "type": "cards",
+        "type": "table",
         "headers": [
           "#",
           "Model",
           "Score",
           "Status"
         ],
-        "_was_table": {
-          "headers": [
-            "#",
-            "Model",
-            "Score",
-            "Status"
-          ],
-          "rows": [
-            [
-              "1",
-              "Claude Fable 5",
-              "1564",
-              {
-                "tag": {
-                  "color": "red",
-                  "text": "Offline"
-                }
-              }
-            ],
-            [
-              "2",
-              "Claude Opus 4.7 thinking",
-              "1554",
-              {
-                "tag": {
-                  "color": "green",
-                  "text": "Active"
-                }
-              }
-            ],
-            [
-              "3",
-              "Claude Opus 4.6 thinking",
-              "1551",
-              {
-                "tag": {
-                  "color": "green",
-                  "text": "Active"
-                }
-              }
-            ],
-            [
-              "4",
-              "Claude Opus 4.7",
-              "1550",
-              {
-                "tag": {
-                  "color": "green",
-                  "text": "Active"
-                }
-              }
-            ],
-            [
-              "5",
-              "Claude Opus 4.6",
-              "1547",
-              {
-                "tag": {
-                  "color": "green",
-                  "text": "Active"
-                }
-              }
-            ],
-            [
-              "6",
-              "Claude Opus 4.8",
-              "1538",
-              {
-                "tag": {
-                  "color": "green",
-                  "text": "Active"
-                }
-              }
-            ],
-            [
-              "7",
-              "Claude Opus 4.8 thinking",
-              "1537",
-              {
-                "tag": {
-                  "color": "green",
-                  "text": "Active"
-                }
-              }
-            ],
-            [
-              "10",
-              "Qwen 3.7 max preview",
-              "1526",
-              {
-                "tag": {
-                  "color": "green",
-                  "text": "Open"
-                }
-              }
-            ],
-            [
-              "12",
-              "GLM 5.1",
-              "1525",
-              {
-                "tag": {
-                  "color": "green",
-                  "text": "Open"
-                }
-              }
-            ],
-            [
-              "13",
-              "GLM 5.2 (max)",
-              "1525",
-              {
-                "tag": {
-                  "color": "green",
-                  "text": "Open"
-                }
-              }
-            ],
-            [
-              "16",
-              "Gemini 3.1 Pro",
-              "1523",
-              {
-                "tag": {
-                  "color": "green",
-                  "text": "Active"
-                }
-              }
-            ],
-            [
-              "17",
-              "GPT 5.4 high",
-              "1521",
-              {
-                "tag": {
-                  "color": "green",
-                  "text": "Active"
-                }
-              }
-            ],
-            [
-              "21",
-              "GPT 5.5 high",
-              "1518",
-              {
-                "tag": {
-                  "color": "green",
-                  "text": "Active"
-                }
-              }
-            ],
-            [
-              "25",
-              "GPT 5.5 instant",
-              "1513",
-              {
-                "tag": {
-                  "color": "green",
-                  "text": "Active"
-                }
-              }
-            ]
-          ],
-          "note": "Źródło: lmarena.ai · Data: 25.06.2026 · PPT: Lev Selector"
-        },
-        "cards": [
-          {
-            "date": "2026-07-01",
-            "title": "1",
-            "desc_pl": "Model: Claude Fable 5 · Score: 1564 · [Offline]",
-            "desc_en": "Model: Claude Fable 5 · Score: 1564 · [Offline]",
-            "tags": [
-              {
+        "rows": [
+          [
+            1,
+            "Claude Fable 5",
+            1564,
+            {
+              "tag": {
                 "color": "red",
                 "text": "Offline"
               }
-            ],
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "2",
-            "desc_pl": "Model: Claude Opus 4.7 thinking · Score: 1554 · [Active]",
-            "desc_en": "Model: Claude Opus 4.7 thinking · Score: 1554 · [Active]",
-            "tags": [
-              {
+            }
+          ],
+          [
+            2,
+            "Claude Opus 4.7 thinking",
+            1554,
+            {
+              "tag": {
                 "color": "green",
                 "text": "Active"
               }
-            ],
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "3",
-            "desc_pl": "Model: Claude Opus 4.6 thinking · Score: 1551 · [Active]",
-            "desc_en": "Model: Claude Opus 4.6 thinking · Score: 1551 · [Active]",
-            "tags": [
-              {
+            }
+          ],
+          [
+            3,
+            "Claude Opus 4.6 thinking",
+            1551,
+            {
+              "tag": {
                 "color": "green",
                 "text": "Active"
               }
-            ],
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "4",
-            "desc_pl": "Model: Claude Opus 4.7 · Score: 1550 · [Active]",
-            "desc_en": "Model: Claude Opus 4.7 · Score: 1550 · [Active]",
-            "tags": [
-              {
+            }
+          ],
+          [
+            4,
+            "Claude Opus 4.7",
+            1550,
+            {
+              "tag": {
                 "color": "green",
                 "text": "Active"
               }
-            ],
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "5",
-            "desc_pl": "Model: Claude Opus 4.6 · Score: 1547 · [Active]",
-            "desc_en": "Model: Claude Opus 4.6 · Score: 1547 · [Active]",
-            "tags": [
-              {
+            }
+          ],
+          [
+            5,
+            "Claude Opus 4.6",
+            1547,
+            {
+              "tag": {
                 "color": "green",
                 "text": "Active"
               }
-            ],
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "6",
-            "desc_pl": "Model: Claude Opus 4.8 · Score: 1538 · [Active]",
-            "desc_en": "Model: Claude Opus 4.8 · Score: 1538 · [Active]",
-            "tags": [
-              {
+            }
+          ],
+          [
+            6,
+            "Claude Opus 4.8",
+            1538,
+            {
+              "tag": {
                 "color": "green",
                 "text": "Active"
               }
-            ],
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "7",
-            "desc_pl": "Model: Claude Opus 4.8 thinking · Score: 1537 · [Active]",
-            "desc_en": "Model: Claude Opus 4.8 thinking · Score: 1537 · [Active]",
-            "tags": [
-              {
+            }
+          ],
+          [
+            7,
+            "Claude Opus 4.8 thinking",
+            1537,
+            {
+              "tag": {
                 "color": "green",
                 "text": "Active"
               }
-            ],
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "10",
-            "desc_pl": "Model: Qwen 3.7 max preview · Score: 1526 · [Open]",
-            "desc_en": "Model: Qwen 3.7 max preview · Score: 1526 · [Open]",
-            "tags": [
-              {
+            }
+          ],
+          [
+            10,
+            "Qwen 3.7 max preview",
+            1526,
+            {
+              "tag": {
                 "color": "green",
                 "text": "Open"
               }
-            ],
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "12",
-            "desc_pl": "Model: GLM 5.1 · Score: 1525 · [Open]",
-            "desc_en": "Model: GLM 5.1 · Score: 1525 · [Open]",
-            "tags": [
-              {
+            }
+          ],
+          [
+            12,
+            "GLM 5.1",
+            1525,
+            {
+              "tag": {
                 "color": "green",
                 "text": "Open"
               }
-            ],
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "13",
-            "desc_pl": "Model: GLM 5.2 (max) · Score: 1525 · [Open]",
-            "desc_en": "Model: GLM 5.2 (max) · Score: 1525 · [Open]",
-            "tags": [
-              {
+            }
+          ],
+          [
+            13,
+            "GLM 5.2 (max)",
+            1525,
+            {
+              "tag": {
                 "color": "green",
                 "text": "Open"
               }
-            ],
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "16",
-            "desc_pl": "Model: Gemini 3.1 Pro · Score: 1523 · [Active]",
-            "desc_en": "Model: Gemini 3.1 Pro · Score: 1523 · [Active]",
-            "tags": [
-              {
+            }
+          ],
+          [
+            16,
+            "Gemini 3.1 Pro",
+            1523,
+            {
+              "tag": {
                 "color": "green",
                 "text": "Active"
               }
-            ],
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "17",
-            "desc_pl": "Model: GPT 5.4 high · Score: 1521 · [Active]",
-            "desc_en": "Model: GPT 5.4 high · Score: 1521 · [Active]",
-            "tags": [
-              {
+            }
+          ],
+          [
+            17,
+            "GPT 5.4 high",
+            1521,
+            {
+              "tag": {
                 "color": "green",
                 "text": "Active"
               }
-            ],
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "21",
-            "desc_pl": "Model: GPT 5.5 high · Score: 1518 · [Active]",
-            "desc_en": "Model: GPT 5.5 high · Score: 1518 · [Active]",
-            "tags": [
-              {
+            }
+          ],
+          [
+            21,
+            "GPT 5.5 high",
+            1518,
+            {
+              "tag": {
                 "color": "green",
                 "text": "Active"
               }
-            ],
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "date": "2026-07-01",
-            "title": "25",
-            "desc_pl": "Model: GPT 5.5 instant · Score: 1513 · [Active]",
-            "desc_en": "Model: GPT 5.5 instant · Score: 1513 · [Active]",
-            "tags": [
-              {
+            }
+          ],
+          [
+            25,
+            "GPT 5.5 instant",
+            1513,
+            {
+              "tag": {
                 "color": "green",
                 "text": "Active"
               }
-            ],
-            "episode_id": "ep-2026-07-03"
-          }
-        ]
+            }
+          ]
+        ],
+        "note": "Źródło: LM Arena (lmarena.ai) · Data: 01.07.2026"
       },
       {
         "id": "jobs",
