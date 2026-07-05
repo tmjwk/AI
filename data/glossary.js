@@ -719,15 +719,16 @@ const G = [
   }
 ];
 
+// Auto-generated CATS: wszystkie unikalne kategorie z danych (sortowane)
 const CATS = [
-  "Architektury i modele",
-  "Trening i optymalizacja",
-  "Kontekst i wydajność",
   "Agentic i narzędzia",
-  "Modalności",
-  "Infrastruktura",
+  "Architektury i modele",
   "Bezpieczeństwo i regulacje",
-  "Ewaluacja"
+  "Ewaluacja",
+  "Infrastruktura",
+  "Kontekst i wydajność",
+  "Modalności",
+  "Trening i optymalizacja"
 ];
 
 const ICONS = {
