@@ -198,7 +198,7 @@ select option{color:var(--fg)}
 <div class="modal" id="modelModal" onclick="if(event.target===this)closeModal('modelModal')"><div class="md" id="modelContent"></div></div>
 <div class="modal" id="cmpModal" onclick="if(event.target===this)closeModal('cmpModal')"><div class="md" id="cmpContent"></div></div>
 <div class="toast" id="toast"></div>
-<script src="data/models.js?v=20260705064120"></script>
+<script src="data/models.js?v=20260705064632"></script>
 <script>
 const CAT_LABELS={'LLM':'LLM — duże modele językowe','Image Generation':'Image Generation — lokalne/open-weight','Video Generation':'Video Generation','World Models':'World Models — symulacja świata','Coding':'Coding — asystenci kodu','TTS':'TTS — synteza mowy (text-to-speech)','Multimodal':'Multimodal — any-to-any','AI Science Agents':'AI Science Agents — agenty naukowe','AI Research':'AI Research — autonomne eksperymenty','Humanoid Robots':'Humanoid Robots — roboty humanoidalne','Realtime Avatars':'Realtime Avatars — awatary konwersacyjne','3D Generation':'3D Generation — modelowanie przestrzenne','4D Human':'4D Human Reconstruction','Neural Interface':'Neural Interface — interfejsy mózg-komputer (BCI)','Hardware':'Hardware — urządzenia AI-first','AI Wellness':'AI Wellness / Spa'};
 let S={q:'',chip:null,sort:'rank',cmp:[],onlyNew:false,theme:'dark',lang:'pl'};
@@ -252,7 +252,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.5.6-8-gaa234ee · Deploy: <span id="deploy-ts">2026-07-05 06:41:20 UTC</span> · <span id="deploy-hash">v9e02b4da</span>
+v8.5.6-10-gc4df4e2 · Deploy: <span id="deploy-ts">2026-07-05 06:46:32 UTC</span> · <span id="deploy-hash">v2602e9f7</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>
