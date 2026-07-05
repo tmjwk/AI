@@ -72,7 +72,7 @@ const B = [
     "y": 2025,
     "ty": "arena",
     "tier": 2,
-    "t_pl": "Wersja 2 — 100x trudniejsza niż oryginał. Flagowe duże modele językowe poniżej 10%. Część nagrody 1 mln dolarów w ARC Prize.",
+    "t_pl": "Wersja 2 — 100x trudniejsza niż oryginał. Frontier LLM-y (najnowocześniejsze duże modele językowe) poniżej 10%. Część nagrody 1 mln dolarów w ARC Prize.",
     "t_en": "Version 2 — 100x harder than the original. Frontier LLMs score <10%. Part of the $1M ARC Prize. Created by Opus in 2025. A key test for AGI-style abstract reasoning."
   },
   {
@@ -132,7 +132,7 @@ const B = [
     "y": 2021,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "8,5 tysiąca szkolnych zadań matematycznych. Modele flagowe osiągnęły wynik powyżej 95%. Pierwsza kontrola poprawności matematycznej.",
+    "t_pl": "8,5 tysiąca szkolnych zadań matematycznych. Modele frontier osiągnęły wynik powyżej 95%. Pierwsza kontrola poprawności matematycznej.",
     "t_en": "8.5K grade-school math word problems. Frontier models score >95%. The first sanity check for math capability. Created by OpenAI. Replaced by MATH and AIME for frontier models."
   },
   {
@@ -324,7 +324,7 @@ const B = [
     "y": 2024,
     "ty": "środowisko",
     "tier": 2,
-    "t_pl": "Prawdziwe korzystanie z komputera — agent kontroluje pełny system operacyjny (Ubuntu/Windows/Mac) i wykonuje złożone zadania (Excel, Photoshop, przeglądanie sieci). Kluczowy benchmark dla agentów korzystających z komputera. Stworzony przez HKU. Najnowocześniejsze agenty uzyskują wyniki na poziomie 30-50%.",
+    "t_pl": "Real computer use — agent steruje pełnym OS (Ubuntu/Windows/Mac), wykonuje złożone taski (Excel, Photoshop, web).",
     "t_en": "Real computer use — the agent controls a full OS (Ubuntu/Windows/Mac) and performs complex tasks (Excel, Photoshop, web). A key benchmark for computer use agents. Created by HKU. Frontier agents score 30-50%."
   },
   {
@@ -384,7 +384,7 @@ const B = [
     "y": 2020,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "Pytania o dokumenty (faktury, formularze) — testuje rozpoznawanie tekstu i rozumienie. Standard document AI.",
+    "t_pl": "Pytania o dokumenty (faktury, formularze) — testuje OCR + rozumienie. Standard document AI.",
     "t_en": "Document Visual Question Answering — questions about documents (invoices, forms). Tests OCR + understanding. A standard document AI benchmark. Created by UPV. Frontier models score 90%+."
   },
   {
@@ -420,7 +420,7 @@ const B = [
     "y": 2023,
     "ty": "zbiór zadań",
     "tier": 1,
-    "t_pl": "Test rozpoznawania tekstu w obrazach (pismo odręczne, tekst w scenach, dokumenty).",
+    "t_pl": "OCR benchmark — rozpoznawanie tekstu w obrazach (handwriting, scene text, document).",
     "t_en": "OCR benchmark — recognizing text in images (handwriting, scene text, documents). Created by MBZUAI. A key benchmark for OCR. In 2026, frontier VLMs do OCR natively, reducing the need for specialized models."
   },
   {
@@ -468,7 +468,7 @@ const B = [
     "y": 2024,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "Dense prompt — bardzo szczegółowy podpowiedź z 100+ wymaganiami. Mierzy zdolność do śledzenia podpowiedzi.",
+    "t_pl": "Dense prompt — bardzo szczegółowy prompt z 100+ wymogami. Mierzy prompt-following.",
     "t_en": "Direct Preference Guidance Benchmark — a very detailed prompt with 100+ requirements. Measures prompt-following. Created by Tencent. A key benchmark for T2I prompt adherence."
   },
   {
@@ -564,7 +564,7 @@ const B = [
     "y": 2022,
     "ty": "środowisko",
     "tier": 2,
-    "t_pl": "Compositional Anchor Language — benchmark dla robotów z zadaniami o długim horyzoncie (5 zadań na sekwencję). Robot Franka Panda. Stworzony przez ETH Zürich. Standardowy benchmark w robotyce.",
+    "t_pl": "Benchmark robotów z long-horizon (wieloetapowe) taskami (5 tasków per sekwencja). Franka Panda robot.",
     "t_en": "Compositional Anchor Language — a robot benchmark with long-horizon tasks (5 tasks per sequence). Franka Panda robot. Created by ETH Zürich. A standard robotics benchmark."
   },
   {
@@ -612,7 +612,7 @@ const B = [
     "y": 2019,
     "ty": "zbiór zadań",
     "tier": 2,
-    "t_pl": "Pytania o abstrakty z PubMed z tak/nie/maybe. Test zrozumienia tekstów naukowych.",
+    "t_pl": "Pytania o abstrakty z PubMed z tak/nie/maybe. Scientific reading comprehension.",
     "t_en": "Questions about PubMed abstracts with yes/no/maybe answers. Scientific reading comprehension. Created by CMU. A standard benchmark for scientific reasoning."
   },
   {
@@ -720,7 +720,7 @@ const B = [
     "y": 2022,
     "ty": "zbiór zadań",
     "tier": 1,
-    "t_pl": "274k toksycznych i neutralnych wypowiedzi o grupach demograficznych. Wykrywanie mowy nienawiści.",
+    "t_pl": "274k toksycznych i neutralnych wypowiedzi o grupach demograficznych. Detekcja hate speech.",
     "t_en": "274K toxic and neutral statements about demographic groups. Used for hate speech detection evaluation. Created by Microsoft. A key benchmark for content moderation AI."
   },
   {
@@ -756,7 +756,7 @@ const B = [
     "y": 2025,
     "ty": "zbiór zadań",
     "tier": 3,
-    "t_pl": "3,000 pytań od 1,000+ ekspertów z 100+ dziedzin. Najtrudniejszy benchmark Q&A 2025. Top 10%.",
+    "t_pl": "3,000 pytań od 1,000+ ekspertów z 100+ dziedzin. Najtrudniejszy Q&A benchmark 2025. frontier <10%.",
     "t_en": "3,000 questions from 1,000+ experts across 100+ fields. The hardest Q&A benchmark 2025. Frontier models score <10%. Created by CAIS. Shows the gap between AI and human expertise."
   },
   {
@@ -816,8 +816,8 @@ const B = [
     "y": 2025,
     "ty": "leaderboard",
     "tier": 1,
-    "t_pl": "Ranking video generatorów — Happy Horse 1.0 #1 w 2026.",
-    "t_en": "Ranking of video generators — Happy Horse 1.0 is #1 in 2026. Specialized for video generation quality. A key reference for content creators choosing AI video tools."
+    "t_pl": "Ranking video generatorów — HappyHorse 1.0 #1 w 2026.",
+    "t_en": "Ranking of video generators — HappyHorse 1.0 is #1 in 2026. Specialized for video generation quality. A key reference for content creators choosing AI video tools."
   },
   {
     "n": "VIBE Bench",
@@ -828,7 +828,7 @@ const B = [
     "y": 2024,
     "ty": "zbiór zadań",
     "tier": 1,
-    "t_pl": "Test podążania za instrukcjami wizualnymi — VLM rozumie instrukcje o obrazach. NVIDIA.",
+    "t_pl": "Visual instruction following benchmark — VLM rozumie instrukcje o obrazach. NVIDIA.",
     "t_en": "Visual instruction following benchmark — VLMs follow instructions about images. Created by NVIDIA. Tests whether VLMs truly understand visual content."
   }
 ];
@@ -847,21 +847,6 @@ const CATS = [
   "Bezpieczeństwo",
   "Areny i leaderboardy"
 ];
-
-const CATS_EN = {
-  "Wiedza i rozumowanie": "Knowledge & reasoning",
-  "Matematyka": "Math",
-  "Coding": "Coding",
-  "Agentic": "Agentic",
-  "Multimodal": "Multimodal",
-  "Generowanie obrazów": "Image generation",
-  "Generowanie wideo": "Video generation",
-  "3D": "3D",
-  "Robotyka": "Robotics",
-  "Nauki ścisłe": "Sciences",
-  "Bezpieczeństwo": "Safety",
-  "Areny i leaderboardy": "Arenas & leaderboards"
-};
 
 const ICONS = {
   "Wiedza i rozumowanie": "🧠",
