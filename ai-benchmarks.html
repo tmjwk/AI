@@ -40,7 +40,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .chip.active{background:var(--ac);color:var(--bg);border-color:var(--ac)}
 .stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px;font-size:11px;color:var(--hm)}
 .st{display:flex;align-items:center;gap:4px}
-.st .sv{font-size:14px;font-weight:700;color:var(--hp);font-family:monospace}.tier-toggle{cursor:pointer;border:1px solid transparent;border-radius:6px;padding:2px 8px;transition:all .15s}.tier-toggle:hover{border-color:var(--bd)}.tier-toggle.active{border-color:var(--ac);background:rgba(74,222,128,.08)}
+.st .sv{font-size:14px;font-weight:700;color:var(--hp);font-family:monospace}.tier-toggle{cursor:pointer;border:1px solid var(--bd);border-radius:12px;padding:4px 10px;transition:all .15s;font-size:11px;font-weight:500}.tier-toggle:hover{border-color:var(--ac);color:var(--fg)}.tier-toggle.active{background:var(--ac);color:var(--bg);border-color:var(--ac)}
 .sec{margin-bottom:32px}
 .sec-t{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:12px;font-weight:700;display:flex;align-items:center;gap:8px}
 .sec-t .icon{font-size:18px}
@@ -117,7 +117,7 @@ Aktualizacja: 2026-07-01
 </div>
 
 </div>
-<script src="data/benchmarks.js?v=20260705005336"></script>
+<script src="data/benchmarks.js?v=20260705005553"></script>
 <script>
 const TYPE_LABELS={"zbiór zadań": "zbiór zadań", "arena": "arena / leaderboard", "leaderboard": "leaderboard", "środowisko": "środowisko agentów"};
 const TIER_STARS={"3": "★★★", "2": "★", "1": "·"};
@@ -146,7 +146,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-Deploy: <span id="deploy-ts">2026-07-05 00:53:36 UTC</span> · <span id="deploy-hash">v8eb4eefc</span>
+Deploy: <span id="deploy-ts">2026-07-05 00:55:53 UTC</span> · <span id="deploy-hash">v760634a8</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>
