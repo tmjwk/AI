@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><title>AI Radar — Industry Intelligence</title>
-<style>/* Global PL/EN toggle */
-[data-lang="pl"] .en{display:none !important}
-[data-lang="en"] .pl{display:none !important}
+<style>/* Global PL/EN toggle — tylko dla inline spans, NIE dla .card.en */
+[data-lang="pl"] span.en,[data-lang="pl"] .pl-only ~ .en,[data-lang="pl"] .list .en{display:none !important}
+[data-lang="en"] span.pl,[data-lang="en"] .en-only ~ .pl,[data-lang="en"] .list .pl{display:none !important}
 :root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--rd:#ef4444;--bl:#3b82f6;--ov:rgba(0,0,0,.7);--mb:#1a1a1a}
 [data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--rd:#dc2626;--bl:#1d4ed8;--ov:rgba(0,0,0,.5);--mb:#94a3b8}
 *{box-sizing:border-box}
@@ -101,16 +101,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 
 </div>
-<script src="data/radar.js?v=20260705065213"></script>
+<script src="data/radar.js?v=20260705071409"></script>
 <script>
 const t=document.getElementById('themeTgl');
 let theme=localStorage.getItem('radar-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
-let lang=localStorage.getItem('lang')||'pl';
+let lang="pl";
 document.documentElement.setAttribute('data-theme',theme);
 document.documentElement.setAttribute('data-lang',lang);
 t.textContent=theme==='dark'?'🌙':'☀️';
 const langBtn=document.getElementById('langTgl');
-if(langBtn){langBtn.textContent=lang==='pl'?'EN':'PL';langBtn.addEventListener('click',()=>{lang=lang==='pl'?'en':'pl';document.documentElement.setAttribute('data-lang',lang);langBtn.textContent=lang==='pl'?'EN':'PL';localStorage.setItem('lang',lang);renderAll()})}
+if(langBtn){langBtn.textContent=lang==='pl'?'EN':'PL';langBtn.addEventListener('click',()=>{lang=lang==='pl'?'en':'pl';document.documentElement.setAttribute('data-lang',lang);langBtn.textContent=lang==='pl'?'EN':'PL';try{renderAll()}catch(e){console.error('Render error on lang toggle:',e)}})}
 t.addEventListener('click',()=>{
 theme=theme==='dark'?'light':'dark';
 document.documentElement.setAttribute('data-theme',theme);
@@ -216,7 +216,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.5.6-12-g7862718 · Deploy: <span id="deploy-ts">2026-07-05 06:52:13 UTC</span> · <span id="deploy-hash">vc6ba17ab</span>
+v8.5.6-16-gc35342b · Deploy: <span id="deploy-ts">2026-07-05 07:14:09 UTC</span> · <span id="deploy-hash">v6c94791c</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>

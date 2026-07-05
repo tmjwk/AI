@@ -7,7 +7,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tmjwk.github.io/AI/">
 <script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))</script>
-<script>document.documentElement.setAttribute("data-lang",localStorage.getItem("lang")||"pl")</script>
+<script>document.documentElement.setAttribute("data-lang","pl")</script>
 <style>
 :root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--bl:#3b82f6}
 [data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--bl:#1d4ed8}
@@ -99,7 +99,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 <div class="f">
 
-v8.5.6-12-g7862718 · Deploy: <span id="deploy-ts">2026-07-05 06:52:13 UTC</span> · <span id="deploy-hash">v4944e673</span>
+v8.5.6-16-gc35342b · Deploy: <span id="deploy-ts">2026-07-05 07:14:09 UTC</span> · <span id="deploy-hash">v9766ca81</span>
 </div>
 
 </div>
@@ -116,7 +116,7 @@ t.textContent=theme==='dark'?'🌙':'☀️';
 localStorage.setItem('theme',theme);
 });
 const langBtn=document.getElementById('langTgl');
-let lang=localStorage.getItem('lang')||'pl';
+let lang="pl";
 document.documentElement.setAttribute('data-lang',lang);
 langBtn.textContent=lang==='pl'?'EN':'PL';
 langBtn.addEventListener('click',()=>{

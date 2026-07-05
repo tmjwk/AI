@@ -98,7 +98,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 
 </div>
-<script src="data/glossary.js?v=20260705065213"></script>
+<script src="data/glossary.js?v=20260705071409"></script>
 <script>
 let S={q:'',chips:[],theme:'dark',lang:'pl'};
 function nm(s){return(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
@@ -108,7 +108,7 @@ function L(obj,field_pl,field_en){/* bilingual helper — zwraca PL lub EN wg S.
 }
 function init(){
 S.theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
-S.lang=localStorage.getItem('lang')||'pl';
+S.lang="pl";
 document.documentElement.setAttribute('data-theme',S.theme);
 document.documentElement.setAttribute('data-lang',S.lang);
 document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';
@@ -131,7 +131,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.5.6-12-g7862718 · Deploy: <span id="deploy-ts">2026-07-05 06:52:13 UTC</span> · <span id="deploy-hash">v42f25c89</span>
+v8.5.6-16-gc35342b · Deploy: <span id="deploy-ts">2026-07-05 07:14:09 UTC</span> · <span id="deploy-hash">v7c64666d</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>
