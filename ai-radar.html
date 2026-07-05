@@ -112,7 +112,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 
 </div>
-<script src="data/radar.js?v=20260705072737"></script>
+<script src="data/radar.js?v=20260705075121"></script>
 <script>
 const t=document.getElementById('themeTgl');
 let theme=localStorage.getItem('radar-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
@@ -227,7 +227,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:11px;color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.5.7 · Deploy: <span id="deploy-ts">2026-07-05 07:27:37 UTC</span> · <span id="deploy-hash">v5b8952a6</span>
+v8.5.7-4-g4d83e19 · Deploy: <span id="deploy-ts">2026-07-05 07:51:21 UTC</span> · <span id="deploy-hash">vd5832c1b</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>
