@@ -105,7 +105,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.7.1-15-geb92714) — PDF-friendly ====== */
+/* ====== PRINT STYLES (TODO #13, v8.7.1-16-g4d2397e) — PDF-friendly ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -126,9 +126,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
   /* Print-only header — visible only on paper (static text, no inline script) */
   .print-only-header{display:block !important;border-bottom:1px solid #999;padding-bottom:6pt;margin-bottom:12pt;font-size:9pt;color:#666;text-align:right;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
   /* ===== Weekly articles (index.html) ===== */
-  .article{background:#fff !important;border:1px solid #888 !important;border-left:3px solid #000 !important;border-radius:0 !important;padding:14pt 18pt !important;margin-bottom:14pt !important;page-break-inside:avoid}
+  /* NOTE: NO page-break-inside:avoid on .article — long articles (12+ min read) would be pushed to page 2, leaving page 1 blank */
+  .article{background:#fff !important;border:1px solid #888 !important;border-left:3px solid #000 !important;border-radius:0 !important;padding:14pt 18pt !important;margin-bottom:14pt !important;page-break-inside:auto}
   .article.collapsed .art-body{display:block !important}
-  .art-header{cursor:default}
+  .art-header{cursor:default;page-break-after:avoid}
   .art-num{background:#fff !important;border-color:#888 !important;color:#000 !important}
   .art-title{font-size:16pt;color:#000 !important}
   .art-headline{background:#fff !important;border-left:3px solid #444 !important;color:#333 !important;font-style:italic;padding:6pt 10pt}
@@ -142,10 +143,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
   .quote{background:#fff !important;border-left:3px solid #555 !important;color:#222 !important;font-style:italic;page-break-inside:avoid;padding:6pt 10pt;margin:8pt 0}
   .quote .q-author{color:#000 !important}
   .art-sources{color:#666 !important;border-top:1px solid #888 !important;font-size:8.5pt;page-break-inside:avoid}
-  /* Lazy-load article cards — force expanded on print */
-  .article-card{background:#fff !important;border:1px solid #888 !important;border-radius:0 !important;cursor:default;page-break-inside:avoid;padding:10pt 18pt !important}
+  /* Lazy-load article cards — force expanded on print. NO page-break-inside:avoid (long articles would push to next page) */
+  .article-card{background:#fff !important;border:1px solid #888 !important;border-radius:0 !important;cursor:default;page-break-inside:auto;padding:10pt 18pt !important}
   .article-card .art-card-body{display:block !important}
-  .article-card .art-card-title{color:#000 !important;font-size:13pt}
+  .article-card .art-card-title{color:#000 !important;font-size:13pt;page-break-after:avoid}
   /* ===== Cards on other pages ===== */
   .card,.m-card,.g-card,.b-card,.r-card,.bd,.episode,.blk{page-break-inside:avoid;background:#fff !important;border:1px solid #888 !important;border-radius:0 !important}
   /* ===== Tables (LM Arena, layoffs, benchmarks) ===== */
@@ -169,6 +170,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 }
 /* Screen: hide print-only elements */
 .print-only,.print-only-header{display:none}
+
 
 
 </style></head><body>
@@ -360,7 +362,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.7.1-15-geb92714 · Deploy: <span id="deploy-ts">2026-07-06 04:56:16 UTC</span> · <span id="deploy-hash">vd7e74814</span>
+v8.7.1-16-g4d2397e · Deploy: <span id="deploy-ts">2026-07-06 05:01:38 UTC</span> · <span id="deploy-hash">vb567dd75</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
