@@ -126,7 +126,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.8.14) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.8.15) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -254,14 +254,15 @@ if(langBtn){langBtn.textContent=lang==='pl'?'EN':'PL';langBtn.addEventListener('
   document.documentElement.setAttribute('data-lang',lang);
   langBtn.textContent=lang==='pl'?'EN':'PL';
   localStorage.setItem('lang',lang);
-  // Sync all .card classes with master lang (without re-rendering — preserves collapse state)
-  document.querySelectorAll('.card').forEach(c=>{
-    if(lang==='en'){c.classList.add('en')}else{c.classList.remove('en')}
-    var cl=c.querySelector('.card-lang');if(cl)cl.setAttribute('data-lang',lang);
-  });
-  // Sync .episode cards too (renderEpisodeFull has its own langHint)
-  document.querySelectorAll('.episode').forEach(e=>{
-    if(lang==='en'){e.classList.add('en')}else{e.classList.remove('en')}
+  // Zachowaj stan zwijania odcinków przed re-renderem
+  var openEps=[];
+  document.querySelectorAll('.episode.open').forEach(e=>{var id=e.getAttribute('data-ep-id');if(id)openEps.push(id)});
+  // Re-render (aktualizuje langHint na kartach — PL/EN działa poprawnie)
+  try{renderAll()}catch(e){console.error('Render error on lang toggle:',e)}
+  // Przywróć stan zwijania (.ep-old.open + .ep-collapse są siblingami)
+  openEps.forEach(id=>{
+    var el=document.querySelector('.episode[data-ep-id="'+id+'"]');
+    if(el){el.classList.add('open');var b=el.querySelector('.ep-toggle-btn');if(b)b.textContent='▲ Zwiń'}
   });
 })}
 t.addEventListener('click',()=>{
@@ -411,7 +412,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.8.14 · Deploy: <span id="deploy-ts">2026-07-06 20:45:08 UTC</span> · <span id="deploy-hash">vfbddd21d</span><br><a href="https://github.com/lselector/seminar/tree/main/2026" target="_blank" rel="noopener" style="color:var(--hd);text-decoration:none">Weekly AI Updates — GitHub ↗</a>
+v8.8.15 · Deploy: <span id="deploy-ts">2026-07-06 20:58:23 UTC</span> · <span id="deploy-hash">v4e958ba7</span><br><a href="https://github.com/lselector/seminar/tree/main/2026" target="_blank" rel="noopener" style="color:var(--hd);text-decoration:none">Weekly AI Updates — GitHub ↗</a>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
