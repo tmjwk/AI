@@ -1,105 +1,97 @@
 <!DOCTYPE html>
 <html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
-<title>Hub</title>
-<meta name="description" content="Aktualny przegląd AI: 133 modeli, 69 benchmarków, 111 terminów, panele dyskusyjne i radar branżowy.">
-<meta property="og:title" content="Hub">
-<meta property="og:description" content="Aktualny przegląd AI: modele, benchmarki, radar, pulse, słownik.">
+<title>AI Weekly — Hub</title>
+<meta name="description" content="Weekly AI Summary — komprehensywne podsumowanie tygodnia w AI. Modele, radar, cytaty, trendy.">
+<meta property="og:title" content="AI Weekly — Hub">
+<meta property="og:description" content="Weekly AI Summary — komprehensywne podsumowanie tygodnia w AI.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tmjwk.github.io/AI/">
+<meta property="og:site_name" content="AI Hub">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI Weekly — Hub">
+<meta name="twitter:description" content="Weekly AI Summary — komprehensywne podsumowanie tygodnia w AI.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"AI Weekly Hub","url":"https://tmjwk.github.io/AI/","description":"Weekly AI Summary"}</script>
 <script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))</script>
 <script>document.documentElement.setAttribute("data-lang","pl")</script>
 <style>
-:root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--bl:#3b82f6}
-[data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--bl:#1d4ed8}
+:root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--rd:#ef4444;--bl:#3b82f6;--fs-xs:0.625rem;--fs-s:0.75rem;--fs-m:0.875rem;--fs-l:1rem;--fs-xl:1.25rem;--fs-xxl:5rem}
+[data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--rd:#dc2626;--bl:#1d4ed8}
+@media(max-width:540px){:root{--fs-s:0.6875rem;--fs-m:0.8125rem;--fs-l:0.9375rem;--fs-xl:1.125rem;--fs-xxl:3.75rem}}
 *{box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:0;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
-.c{max-width:clamp(900px,95vw,1400px);margin:0 auto;padding:20px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:0;line-height:1.7;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
+.c{max-width:clamp(700px,90vw,900px);margin:0 auto;padding:20px}
 .h{position:sticky;top:0;background:var(--bg);z-index:100;padding:16px 0;border-bottom:1px solid var(--bd);margin-bottom:24px;transition:background .2s}
 .hr{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:8px;flex-wrap:wrap}
 .h h1{font-size:var(--fs-xl);margin:0;font-weight:700;color:var(--hp);letter-spacing:-.02em}
-.h .sub{font-size:var(--fs-m);color:var(--hm);margin-top:4px}
-.tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:var(--fs-m);color:var(--fg);transition:border-color .15s;line-height:1}
-.tgl:hover{border-color:var(--ac)}
-/* PL/EN toggle */
+.h .sub{font-size:var(--fs-s);color:var(--hm);margin-top:4px}
+.h a{color:var(--hs);text-decoration:none;font-size:var(--fs-s);padding:4px 10px;border:1px solid var(--bd);border-radius:6px;transition:all .15s}
+.nav-links{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.nav-btn{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:var(--fs-s);color:var(--hs);text-decoration:none;font-weight:500;transition:all .15s;white-space:nowrap}
+.nav-btn:hover{border-color:var(--ac);color:var(--fg)}.nav-btn.cur{border-color:var(--ac);color:var(--ac);background:rgba(74,222,128,.06);font-weight:700}
+[data-lang="pl"] .nav-btn .en{display:none !important}
+[data-lang="en"] .nav-btn .pl{display:none !important}
 [data-lang="pl"] .en{display:none !important}
 [data-lang="en"] .pl{display:none !important}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:40px}
-.card-link{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:24px;transition:all .2s;border-left:4px solid var(--ac)}
-.card-link:hover{border-color:var(--ac);transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.3)}
-.card-icon{font-size:32px;margin-bottom:12px}
-.card-title{font-size:var(--fs-xl);font-weight:700;color:var(--hp);margin-bottom:8px}
-.card-stats{font-size:var(--fs-m);color:var(--hm);line-height:1.8}
-.card-new{display:inline-block;background:var(--ac);color:#000;padding:2px 8px;border-radius:4px;font-size:var(--fs-xs);font-weight:700;margin-top:8px}
+.tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:var(--fs-m);color:var(--fg);transition:border-color .15s}
+.tgl:hover{border-color:var(--ac)}
+
+/* Article styles */
+.article{background:var(--card);border:1px solid var(--bdl);border-radius:12px;padding:28px 32px;margin-bottom:24px;border-left:4px solid var(--ac)}
+.article.collapsed .art-body{display:none}
+.art-header{cursor:pointer}
+.art-num{font-size:var(--fs-s);color:var(--ac);font-family:"SF Mono",Menlo,monospace;font-weight:700;background:var(--bg);padding:2px 8px;border-radius:4px;border:1px solid var(--bdl);display:inline-block;margin-bottom:8px}
+.art-title{font-size:var(--fs-xl);font-weight:700;color:var(--hp);line-height:1.3;margin:0 0 12px 0}
+.art-headline{font-size:var(--fs-m);color:var(--hm);line-height:1.6;margin:0 0 16px 0;padding:12px 16px;background:var(--bg);border-radius:8px;border-left:3px solid var(--ba)}
+.art-meta{font-size:var(--fs-s);color:var(--hd);display:flex;gap:14px;flex-wrap:wrap;align-items:center;font-family:monospace}
+.art-toggle{float:right;background:var(--bg);border:1px solid var(--bd);border-radius:6px;padding:4px 12px;cursor:pointer;font-size:var(--fs-s);color:var(--hs);font-weight:600}
+.art-toggle:hover{border-color:var(--ac);color:var(--ac)}
+.art-body{margin-top:20px}
+.art-section{margin-bottom:32px}
+.art-section h3{font-size:var(--fs-l);font-weight:700;color:var(--hp);margin:0 0 12px 0;padding-bottom:8px;border-bottom:1px solid var(--bdl)}
+.art-section p{font-size:var(--fs-m);color:var(--fg);margin:0 0 14px 0}
+.art-section p:last-child{margin-bottom:0}
+.quote{background:var(--bg);border-left:3px solid var(--rk);padding:12px 16px;margin:12px 0;border-radius:0 6px 6px 0;font-style:italic;color:var(--hm);font-size:var(--fs-m)}
+.quote .q-author{display:block;font-style:normal;font-weight:600;color:var(--rk);font-size:var(--fs-s);margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em}
+.art-sources{font-size:var(--fs-xs);color:var(--hd);margin-top:20px;padding-top:12px;border-top:1px solid var(--bdl);font-family:monospace}
+
+/* Skeleton */
+.skeleton-loader{padding:12px}
+.skeleton-card{background:var(--card);border:1px solid var(--bdl);border-radius:8px;padding:14px;margin-bottom:10px;overflow:hidden;position:relative}
+.skeleton-card::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.04),transparent);animation:shimmer 1.5s infinite}
+@keyframes shimmer{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.skeleton-line{height:12px;background:var(--bdl);border-radius:4px;margin-bottom:8px}
+.skeleton-line.short{width:60%}
+.skeleton-line.medium{width:80%}
+.skeleton-line.title{height:16px;width:50%;margin-bottom:12px}
+[data-theme="light"] .skeleton-card::before{background:linear-gradient(90deg,transparent,rgba(0,0,0,0.04),transparent)}
+
+/* Update list (bottom) */
 .sec-t{font-size:var(--fs-l);text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:14px;font-weight:700}
 .update-list{list-style:none;padding:0;margin:0}
 .update-list li{padding:10px 0;border-bottom:1px solid var(--bdl);font-size:var(--fs-m);color:var(--hm)}
-.update-list li strong{color:var(--hs)}
 .update-date{color:var(--ac);font-family:monospace;font-weight:600;margin-right:8px}
-.f{margin-top:40px;padding-top:18px;border-top:1px solid var(--bdl);font-size:var(--fs-s);color:var(--hd);text-align:center;line-height:1.8}
-@media(max-width:540px){.h h1{font-size:var(--fs-xl)}.grid{grid-template-columns:1fr}}
 
-/* v8.7-10-ged7e73c: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
-:root{
---fs-xs:0.625rem;--fs-s:0.75rem;--fs-m:0.875rem;--fs-l:1rem;--fs-xl:1.25rem;--fs-xxl:5rem
-}
-@media(max-width:540px){
-:root{--fs-s:0.6875rem;--fs-m:0.8125rem;--fs-l:0.9375rem;--fs-xl:1.125rem;--fs-xxl:3.75rem}
-}
-</style><meta property="og:site_name" content="AI Hub">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hub — AI Models, Radar, Pulse, Słownik, Benchmarki">
-<meta name="twitter:description" content="Aktualny przegląd AI: modele, benchmarki, radar, pulse, słownik. 325+ rekordów, aktualizacje co tydzień.">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "AI Hub", "url": "https://tmjwk.github.io/AI/", "description": "Aktualny przegląd AI: modele, benchmarki, radar, pulse, słownik.", "potentialAction": {"@type": "SearchAction", "target": "https://tmjwk.github.io/AI/ai-models.html?q={search_term_string}", "query-input": "required name=search_term_string"}}</script>
-</head>
-<body><script>if(performance.getEntriesByType){var nav=performance.getEntriesByType('navigation')[0];if(nav&&nav.transferSize===0&&!location.search.includes('_r=')){location.replace(location.pathname+(location.search?location.search+'&':'?')+'_r='+Date.now())}}</script>
+/* Footer */
+.f{margin-top:40px;padding-top:18px;border-top:1px solid var(--bdl);font-size:var(--fs-s);color:var(--hd);text-align:center;line-height:1.8}
+@media(max-width:540px){.h h1{font-size:var(--fs-l)}.article{padding:18px 20px}.art-title{font-size:var(--fs-l)}}
+</style></head><body>
 <div class="c">
 
 <div class="h">
 <div class="hr">
-<h1>🤖 Hub</h1>
-<div style="display:flex;gap:8px">
-<button class="tgl" id="langTgl">EN</button>
+<h1>📰 <span class="pl">AI Weekly</span><span class="en">AI Weekly</span></h1>
+<div class="nav nav-links">
+<a href="index.html" class="nav-btn cur"><span class="pl">🏠 Hub</span><span class="en">🏠 Hub</span></a><a href="ai-models.html" class="nav-btn"><span class="pl">📊 Modele</span><span class="en">📊 Models</span></a><a href="ai-benchmarks.html" class="nav-btn"><span class="pl">🏆 Benchmarki</span><span class="en">🏆 Benchmarks</span></a><a href="ai-radar.html" class="nav-btn"><span class="pl">📡 Radar</span><span class="en">📡 Radar</span></a><a href="ai-pulse.html" class="nav-btn"><span class="pl">💓 Puls</span><span class="en">💓 Pulse</span></a><a href="ai-glossary.html" class="nav-btn"><span class="pl">📖 Słownik</span><span class="en">📖 Glossary</span></a>
+<button class="tgl" id="langTgl" title="Przełącz język / Switch language">EN</button>
 <button class="tgl" id="themeTgl">🌙</button>
 </div>
 </div>
-<div class="sub"></div>
+<div class="sub"><span class="pl">Komprehensywne podsumowanie tygodnia w AI</span><span class="en">Comprehensive weekly AI summary</span></div>
 </div>
 
-<div class="grid">
-<a href="ai-models.html" class="card-link">
-<div class="card-icon">📊</div>
-<div class="card-title"><span class="pl">Modele AI</span><span class="en">AI Models</span></div>
-<div class="card-stats"><span class="pl">133 modele · 16 kategorii<br>Ostatnia aktualizacja: 5 lipca</span><span class="en">133 models · 16 categories<br>Last updated: July 5</span></div>
-<span class="card-new">🆕 <span class="pl">18 nowych</span><span class="en">18 new</span></span>
-</a>
+<div id="articles"><div class="skeleton-loader"><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div></div></div>
 
-<a href="ai-benchmarks.html" class="card-link">
-<div class="card-icon">🏆</div>
-<div class="card-title"><span class="pl">Benchmarki AI</span><span class="en">AI Benchmarks</span></div>
-<div class="card-stats"><span class="pl">69 benchmarków · 12 kategorii<br>Tier ★★★ / ★ / ·</span><span class="en">69 benchmarks · 12 categories<br>Tier ★★★ / ★ / ·</span></div>
-</a>
-
-<a href="ai-radar.html" class="card-link">
-<div class="card-icon">📡</div>
-<div class="card-title"><span class="pl">Radar AI</span><span class="en">AI Radar</span></div>
-<div class="card-stats"><span class="pl">9 sekcji · 112 kart<br>Industry intelligence</span><span class="en">9 sections · 112 cards<br>Industry intelligence</span></div>
-</a>
-
-<a href="ai-pulse.html" class="card-link">
-<div class="card-icon">💓</div>
-<div class="card-title"><span class="pl">Puls AI</span><span class="en">AI Pulse</span></div>
-<div class="card-stats"><span class="pl">2 epizody · 14 tematów<br>Panele dyskusyjne</span><span class="en">2 episodes · 14 topics<br>Discussion panels</span></div>
-</a>
-
-<a href="ai-glossary.html" class="card-link">
-<div class="card-icon">📖</div>
-<div class="card-title"><span class="pl">Słownik AI</span><span class="en">AI Glossary</span></div>
-<div class="card-stats"><span class="pl">111 terminów · 8 kategorii<br>Posortowane alfabetycznie</span><span class="en">111 terms · 8 categories<br>Sorted alphabetically</span></div>
-<span class="card-new">🆕 <span class="pl">4 nowe</span><span class="en">4 new</span></span>
-</a>
-</div>
-
-<div class="sec">
+<div class="sec" style="margin-top:40px">
 <div class="sec-t"><span class="pl">📅 Najnowsze aktualizacje</span><span class="en">📅 Latest updates</span></div>
 <ul class="update-list">
 <li><span class="update-date">05.07.2026</span> LongCat 2.0, Agents A1, Nano Banana 2 Light, RDM, MrFlow, LiveEdit, Gemini Omni Flash, VidiHand, PhysiFormer, SimFoundry, Luna, MusViT, Brain2qwerty v2, OmniContact, Aspire, CHORD, UBTech U1, Comfy MCP + 4 terminy (MEG, RDM, Contact Flow, ASIC super pod)</li>
@@ -110,33 +102,85 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </div>
 
 <div class="f">
-
-v8.7-10-ged7e73c · Deploy: <span id="deploy-ts">2026-07-06 00:46:16 UTC</span> · <span id="deploy-hash">vddbfa1d7</span>
+v8.7-14-g75e3f91 · Deploy: <span id="deploy-ts">2026-07-06 01:23:56 UTC</span> · <span id="deploy-hash">v53d855b6</span>
 </div>
 
 </div>
 
+<script src="data/weekly/weekly.js?v=20260706010000"></script>
 <script>
-const t=document.getElementById('themeTgl');
 let theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
-document.documentElement.setAttribute('data-theme',theme);
-t.textContent=theme==='dark'?'🌙':'☀️';
-t.addEventListener('click',()=>{
-theme=theme==='dark'?'light':'dark';
-document.documentElement.setAttribute('data-theme',theme);
-t.textContent=theme==='dark'?'🌙':'☀️';
-localStorage.setItem('theme',theme);
-});
-const langBtn=document.getElementById('langTgl');
 let lang="pl";
+document.documentElement.setAttribute('data-theme',theme);
 document.documentElement.setAttribute('data-lang',lang);
+const t=document.getElementById('themeTgl');
+t.textContent=theme==='dark'?'🌙':'☀️';
+t.addEventListener('click',()=>{theme=theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',theme);t.textContent=theme==='dark'?'🌙':'☀️';localStorage.setItem('theme',theme)});
+const langBtn=document.getElementById('langTgl');
 langBtn.textContent=lang==='pl'?'EN':'PL';
-langBtn.addEventListener('click',()=>{
-lang=lang==='pl'?'en':'pl';
-document.documentElement.setAttribute('data-lang',lang);
-langBtn.textContent=lang==='pl'?'EN':'PL';
-localStorage.setItem('lang',lang);
-});
+langBtn.addEventListener('click',()=>{lang=lang==='pl'?'en':'pl';document.documentElement.setAttribute('data-lang',lang);langBtn.textContent=lang==='pl'?'EN':'PL';renderAll()});
+
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function L(obj,field_pl,field_en){if(lang==='en'&&obj[field_en]&&obj[field_en].trim())return obj[field_en];return obj[field_pl]}
+
+function renderArticle(art){
+  const isCollapsed = art.collapsed ? ' collapsed' : '';
+  const toggleBtn = `<button class="art-toggle" onclick="var a=this.closest('.article');a.classList.toggle('collapsed');this.textContent=a.classList.contains('collapsed')?'▼ Rozwiń':'▲ Zwiń'">${art.collapsed?'▼ Rozwiń':'▲ Zwiń'}</button>`;
+  
+  let sectionsHtml = '';
+  for (const sec of art.sections) {
+    const body = L(sec,'body_pl','body_en').split('\n\n').map(p=>`<p>${esc(p).replace(/\n/g,'<br>')}</p>`).join('');
+    let quotesHtml = '';
+    if (sec.quotes && sec.quotes.length > 0) {
+      quotesHtml = sec.quotes.map(q => `<div class="quote"><span class="q-author">${esc(q.author)}</span>${esc(L(q,'text_pl','text_en'))}</div>`).join('');
+    }
+    sectionsHtml += `<div class="art-section"><h3>${esc(L(sec,'title_pl','title_en'))}</h3>${body}${quotesHtml}</div>`;
+  }
+  
+  const sourcesHtml = art.sources ? `<div class="art-sources">📖 Sources: ${art.sources.map(esc).join(' · ')}</div>` : '';
+  
+  return `<div class="article${isCollapsed}">
+<div class="art-header" onclick="var a=this.parentElement;if(event.target===this||event.target===this.querySelector('.art-num')||event.target===this.querySelector('.art-title')||event.target===this.querySelector('.art-meta')){a.classList.toggle('collapsed');var b=a.querySelector('.art-toggle');if(b)b.textContent=a.classList.contains('collapsed')?'▼ Rozwiń':'▲ Zwiń'}">
+${toggleBtn}
+<span class="art-num">#${art.num}</span>
+<h2 class="art-title">${esc(L(art,'title_pl','title_en'))}</h2>
+<div class="art-headline">${esc(L(art,'headline_pl','headline_en'))}</div>
+<div class="art-meta">📅 ${esc(art.date)}</div>
+</div>
+<div class="art-body">
+${sectionsHtml}
+${sourcesHtml}
+</div>
+</div>`;
+}
+
+function renderAll(){
+  try {
+    const container = document.getElementById('articles');
+    if (!container || typeof WEEKLY === 'undefined') {
+      console.error('Brak #articles lub WEEKLY');
+      return;
+    }
+    container.innerHTML = WEEKLY.map(renderArticle).join('');
+  } catch(e) {
+    console.error('Render error:', e);
+    var el = document.getElementById('articles');
+    if (el) el.innerHTML = '<div class="nr">⚠ Błąd renderowania — odśwież stronę.</div>';
+  }
+}
+
+function dataLoadFailed(){var c=document.getElementById('articles');if(c)c.innerHTML='<div style="text-align:center;padding:40px;color:var(--hm)">⚠ Nie udało się załadować danych. <button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 16px;border-radius:6px;cursor:pointer">Odśwież</button></div>'}
+setTimeout(function(){if(typeof WEEKLY==='undefined'){dataLoadFailed()}},10000);
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', renderAll);
+} else {
+  renderAll();
+}
+
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
-<script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
+<footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
+v8.7-14-g75e3f91 · Deploy: <span id="deploy-ts2">2026-07-06</span> · <span id="deploy-hash2">v0000000</span>
+</footer>
 </body></html>
