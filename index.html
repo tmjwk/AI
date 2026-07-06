@@ -111,7 +111,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </div>
 
 <div class="f">
-v8.7-18-g5b47257 · Deploy: <span id="deploy-ts">2026-07-06 01:43:13 UTC</span> · <span id="deploy-hash">vd26dc867</span>
+v8.7-19-g4d4204f · Deploy: <span id="deploy-ts">2026-07-06 01:47:44 UTC</span> · <span id="deploy-hash">v1daf3df4</span>
 </div>
 
 </div>
@@ -127,7 +127,7 @@ t.textContent=theme==='dark'?'🌙':'☀️';
 t.addEventListener('click',()=>{theme=theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',theme);t.textContent=theme==='dark'?'🌙':'☀️';localStorage.setItem('theme',theme)});
 const langBtn=document.getElementById('langTgl');
 langBtn.textContent=lang==='pl'?'EN':'PL';
-langBtn.addEventListener('click',()=>{lang=lang==='pl'?'en':'pl';document.documentElement.setAttribute('data-lang',lang);langBtn.textContent=lang==='pl'?'EN':'PL';renderAll()});
+langBtn.addEventListener('click',()=>{lang=lang==='pl'?'en':'pl';document.documentElement.setAttribute('data-lang',lang);langBtn.textContent=lang==='pl'?'EN':'PL';document.querySelectorAll('.article').forEach(a=>{if(lang==='en'){a.classList.add('en');var b=a.querySelector('.art-lang');if(b)b.textContent='PL'}else{a.classList.remove('en');var b=a.querySelector('.art-lang');if(b)b.textContent='EN'}})});
 
 function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 function L(obj,field_pl,field_en){if(lang==='en'&&obj[field_en]&&obj[field_en].trim())return obj[field_en];return obj[field_pl]}
@@ -196,6 +196,6 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.7-18-g5b47257 · Deploy: <span id="deploy-ts2">2026-07-06</span> · <span id="deploy-hash2">v0000000</span>
+v8.7-19-g4d4204f · Deploy: <span id="deploy-ts2">2026-07-06</span> · <span id="deploy-hash2">v0000000</span>
 </footer>
 </body></html>
