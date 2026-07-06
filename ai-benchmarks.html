@@ -96,7 +96,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .skeleton-line.title{height:16px;width:50%;margin-bottom:12px}
 [data-theme="light"] .skeleton-card::before{background:linear-gradient(90deg,transparent,rgba(0,0,0,0.04),transparent)}
 
-/* v8.7.1-18-gf085f2c: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
+/* v8.7.1-19-g98727be: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
 :root{
 --fs-xs:0.625rem;--fs-s:0.75rem;--fs-m:0.875rem;--fs-l:1rem;--fs-xl:1.25rem;--fs-xxl:5rem
 }
@@ -108,7 +108,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.7.1-18-gf085f2c) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.7.1-19-g98727be) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -252,7 +252,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.7.1-18-gf085f2c · Deploy: <span id="deploy-ts">2026-07-06 05:22:41 UTC</span> · <span id="deploy-hash">v018fcd88</span>
+v8.7.1-19-g98727be · Deploy: <span id="deploy-ts">2026-07-06 05:27:04 UTC</span> · <span id="deploy-hash">vdec12ae9</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>

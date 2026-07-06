@@ -105,7 +105,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.7.1-18-gf085f2c) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.7.1-19-g98727be) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -247,7 +247,7 @@ function linkModels(text){
   return result;
 }
 
-// #22: Reading time — words/200 (PL or EN), min 1 minute. Includes headline + section titles + body + quotes + authors.
+// #22: Reading time — words/200, floor (nie zaokrąglaj w górę). User prefers conservative reading time.
 function readingTime(art){
   var field = (lang === 'en') ? 'en' : 'pl';
   var wc = 0;
@@ -261,7 +261,7 @@ function readingTime(art){
       wc += count(q.author);
     });
   });
-  return Math.max(1, Math.round(wc / 200));
+  return Math.max(1, Math.floor(wc / 200));
 }
 
 function renderArticle(art){
@@ -364,7 +364,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.7.1-18-gf085f2c · Deploy: <span id="deploy-ts">2026-07-06 05:22:41 UTC</span> · <span id="deploy-hash">vec691955</span>
+v8.7.1-19-g98727be · Deploy: <span id="deploy-ts">2026-07-06 05:27:04 UTC</span> · <span id="deploy-hash">ve99f7b79</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
