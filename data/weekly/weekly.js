@@ -5,7 +5,7 @@ const WEEKLY = [
   {
     "num": 1,
     "date": "2026-07-05",
-    "collapsed": false,
+    "collapsed": true,
     "title_en": "AI Weekly #1 — China Breaks Nvidia's Grip, Fable Returns Broken, and Your Robot Companion Is Here",
     "title_pl": "AI Tydzień #1 — Chiny łamią monopol Nvidii, Fable wraca okaleczony, a Twój robot-kompan już tu jest",
     "headline_en": "Meituan trained a 1.6T frontier model without a single Nvidia GPU. Anthropic re-released Claude Fable 5 — neutered, castrated, and limited to 50% of your weekly quota. UBTech received 13,000 pre-orders for a humanoid companion robot. The two-class AI divide deepened as governments claimed early access to the most powerful models.",
