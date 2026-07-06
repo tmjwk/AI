@@ -38,9 +38,11 @@ p{font-size:var(--fs-m);color:var(--hm);margin:0 0 24px 0}
 @media(max-width:540px){.code{font-size:var(--fs-xxl)}.links{flex-direction:column}}
 
 /* v8.7.1-20-g4567b40: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
-:root{
---fs-xs:0.625rem;--fs-s:0.75rem;--fs-m:0.875rem;--fs-l:1rem;--fs-xl:1.25rem;--fs-xxl:5rem
-}
+:root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--rd:#ef4444;--bl:#3b82f6;
+/* v8.9.0: Typography — 4 role semantyczne */
+--fs-h1:1.75rem;--fs-h2:1.125rem;--fs-body:1rem;--fs-aux:0.75rem;
+/* Aliasy (backward compat) */
+--fs-xl:var(--fs-h1);--fs-l:var(--fs-h2);--fs-m:var(--fs-body);--fs-s:var(--fs-aux);--fs-xs:0.625rem;--fs-xxl:5rem}
 @media(max-width:540px){
 :root{--fs-s:0.6875rem;--fs-m:0.8125rem;--fs-l:0.9375rem;--fs-xl:1.125rem;--fs-xxl:3.75rem}
 }
@@ -49,7 +51,7 @@ p{font-size:var(--fs-m);color:var(--hm);margin:0 0 24px 0}
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.8.23) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.9.0) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -134,7 +136,7 @@ p{font-size:var(--fs-m);color:var(--hm);margin:0 0 24px 0}
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.8.23 · Deploy: <span id="deploy-ts">2026-07-06 22:22:28 UTC</span> · <span id="deploy-hash">vd0e488eb</span><br>
+v8.9.0 · Deploy: <span id="deploy-ts">2026-07-06 22:26:35 UTC</span> · <span id="deploy-hash">vc7db4f8c</span><br>
 <a href="https://github.com/tmjwk/AI" target="_blank" rel="noopener" style="color:var(--hd);text-decoration:none">AI Hub — GitHub ↗</a>
 </footer>
 </body></html>
