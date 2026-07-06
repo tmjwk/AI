@@ -84,7 +84,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .skeleton-line.medium{width:80%}
 .skeleton-line.title{height:16px;width:50%;margin-bottom:12px}
 [data-theme="light"] .skeleton-card::before{background:linear-gradient(90deg,transparent,rgba(0,0,0,0.04),transparent)}
-/* v8.7-1-ge8d40fa: Episode styles (skopiowane z pulse AI) */
+/* v8.7-2-g5dbb447: Episode styles (skopiowane z pulse AI) */
 .episode{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:18px 20px;margin-bottom:28px;border-left:4px solid var(--ac);transition:border-color .15s}
 .episode .e-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px}
 .episode .e-num{font-size:var(--fs-s);color:var(--ac);font-family:"SF Mono",Menlo,monospace;font-weight:700;background:var(--bg);padding:2px 8px;border-radius:4px;border:1px solid var(--bdl)}
@@ -100,7 +100,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .ep-old .ep-toggle-btn:hover{border-color:var(--ac);color:var(--ac)}
 @media(max-width:540px){.episode{padding:14px 16px}.episode .e-title{font-size:var(--fs-l)}}
 
-/* v8.7-1-ge8d40fa: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
+/* v8.7-2-g5dbb447: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
 :root{
 --fs-xs:0.625rem;--fs-s:0.75rem;--fs-m:0.875rem;--fs-l:1rem;--fs-xl:1.25rem;--fs-xxl:5rem
 }
@@ -112,7 +112,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 <div class="h">
 <div class="hr">
-<h1>📡 <span class="pl">Radar AI</span><span class="en">AI Radar</span></h1>
+<h1>📡 <span class="pl">Radar AI</span><span class="en">AI Radar</span></h1><a href="https://github.com/lselector/seminar/tree/main/2026" target="_blank" rel="noopener" style="font-size:var(--fs-s);color:var(--ac);text-decoration:none;margin-left:8px;white-space:nowrap">Lev GitHub ↗</a>
 <div class="nav nav-links">
 <a href="index.html" class="nav-btn"><span class="pl">🏠 Hub</span><span class="en">🏠 Hub</span></a><a href="ai-models.html" class="nav-btn"><span class="pl">📊 Modele</span><span class="en">📊 Models</span></a><a href="ai-benchmarks.html" class="nav-btn"><span class="pl">🏆 Benchmarki</span><span class="en">🏆 Benchmarks</span></a><a href="ai-radar.html" class="nav-btn cur"><span class="pl">📡 Radar</span><span class="en">📡 Radar</span></a><a href="ai-pulse.html" class="nav-btn"><span class="pl">💓 Puls</span><span class="en">💓 Pulse</span></a><a href="ai-glossary.html" class="nav-btn"><span class="pl">📖 Słownik</span><span class="en">📖 Glossary</span></a>
 
@@ -188,7 +188,7 @@ ${listHtml}
 }
 
 function renderSection(sec){
-  // v8.7-1-ge8d40fa: render section inside episode (no archive logic — episodes handle chronology)
+  // v8.7-2-g5dbb447: render section inside episode (no archive logic — episodes handle chronology)
   let body = '';
   if (sec.type === 'cards') {
     const sorted = (sec.cards||[]).slice().sort((a,b) => (b.date||'').localeCompare(a.date||''));
@@ -220,7 +220,7 @@ ${body}
 let R_chips=[];
 function renderRadarChips(){const c=document.getElementById('radarChips');if(!c)return;let h='';c.innerHTML=h}
 
-// v8.7-1-ge8d40fa: Episode renderers (skopiowane z pulse AI, przerobione na sections+cards)
+// v8.7-2-g5dbb447: Episode renderers (skopiowane z pulse AI, przerobione na sections+cards)
 function renderEpisodeBody(ep){
   const sectionsHtml = ep.sections.map(renderSection).join('');
   return `<div class="ep-collapse">
@@ -275,9 +275,14 @@ function renderAll(){try{
     console.error('Brak #episodes lub episodes');
     return;
   }
-  // Sortuj epizody po dacie DESC (najnowszy u góry)
+  // Renderuj odcinki (sortowane DESC)
   const sorted = [...episodes].sort((a,b) => (b.date||'').localeCompare(a.date||''));
-  container.innerHTML = sorted.map(renderEpisodeFull).join('');
+  let html = sorted.map(renderEpisodeFull).join('');
+  // Renderuj sticky sections (CO JEST MOŻLIWE, LM ARENA) — po odcinkach
+  if (typeof sticky !== 'undefined' && sticky.length > 0) {
+    html += sticky.map(renderSection).join('');
+  }
+  container.innerHTML = html;
   attachToggleHandlers();
 }catch(e){console.error("Render error:",e);var el=document.getElementById("episodes");if(el)el.innerHTML='<div class="nr">⚠ Błąd renderowania — odśwież stronę. Szczegóły w konsoli (F12).</div>'}}
 
@@ -291,7 +296,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.7-1-ge8d40fa · Deploy: <span id="deploy-ts">2026-07-06 00:00:19 UTC</span> · <span id="deploy-hash">vb455dd58</span>
+v8.7-2-g5dbb447 · Deploy: <span id="deploy-ts">2026-07-06 00:08:00 UTC</span> · <span id="deploy-hash">v2dcc1d06</span><br><a href="https://github.com/lselector/seminar/tree/main/2026" target="_blank" rel="noopener" style="color:var(--hd);text-decoration:none">Weekly AI Updates — GitHub ↗</a>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 </body></html>

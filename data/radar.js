@@ -372,94 +372,6 @@ const episodes = [
         ]
       },
       {
-        "id": "possible",
-        "num": 2,
-        "icon": "⚡",
-        "title": "CO JEST OBECNIE MOŻLIWE",
-        "type": "list",
-        "items": [
-          {
-            "dot_color": "green",
-            "html_pl": "<strong>Uruchomić GLM 5.2 lokalnie</strong> — 1-bit quantized (86% mniejszy), na consumer GPU. Unsloth GGUF versions.",
-            "html_en": "<strong>Run GLM 5.2 locally</strong> — 1-bit quantized (86% smaller), on consumer GPU. Unsloth GGUF versions.",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "dot_color": "green",
-            "html_pl": "<strong>Tłumaczyć w czasie rzeczywistym</strong> — Gemini 3.5 Live Translate, darmowe, API + Google Translate mobile.",
-            "html_en": "<strong>Real-time translation</strong> — Gemini 3.5 Live Translate, free, API + Google Translate mobile.",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "dot_color": "green",
-            "html_pl": "<strong>Generować 4K wideo 30s</strong> — Seedance 2.5, do 50 referencji, cinematic clips. Premiera lipiec 2026.",
-            "html_en": "<strong>Generate 4K 30s video</strong> — Seedance 2.5, up to 50 references, cinematic clips. Premiere July 2026.",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "dot_color": "green",
-            "html_pl": "**Klonowanie głosu za pomocą modelu 2B** — Dot TTS, licencja Apache 2, few-shot, bije rekordy w rankingach.",
-            "html_en": "<strong>Voice cloning with 2B model</strong> — Dot TTS, Apache 2, few-shot, beats leaderboards.",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "dot_color": "green",
-            "html_pl": "<strong>Mapować mózg bez chirurgii</strong> — Olive, ultrasonografia, 100x lepsza rozdzielczość niż tomografia komputerowa, otwarty potok.",
-            "html_en": "<strong>Map the brain without surgery</strong> — Olive, ultrasound, 100x better resolution than CT, open-source pipeline.",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "dot_color": "green",
-            "html_pl": "<strong>Mieć humanoida za $4,900</strong> — Unitree R1, 123cm, kung-fu, fikołki, chód po schodach.",
-            "html_en": "<strong>Have a humanoid for $4,900</strong> — Unitree R1, 123cm, kung-fu, flips, stair walking.",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "dot_color": "yellow",
-            "html_pl": "**GPT 5.6 Sol** — ograniczony dostęp, tylko dla zaufanych partnerów, zatwierdzenie rządowe dla każdego klienta indywidualnie.",
-            "html_en": "<strong>GPT 5.6 Sol</strong> — restricted access, trusted partners only, gov approval customer-by-customer.",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "dot_color": "yellow",
-            "html_pl": "<strong>Claude Mythos 5</strong> — ban lifted 27.06, tylko ~100 zaufani partnerzy US.",
-            "html_en": "<strong>Claude Mythos 5</strong> — ban lifted 06.27, only ~100 trusted US partners.",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "dot_color": "yellow",
-            "html_pl": "<strong>Okulary AI</strong> — Google + Gentle Monster + Warby Parker, premiera jesień 2026.",
-            "html_en": "<strong>AI Glasses</strong> — Google + Gentle Monster + Warby Parker, launch fall 2026.",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "dot_color": "red",
-            "html_pl": "<strong>Claude Fable 5</strong> — zawieszony przez US gov, brak timeline na powrót.",
-            "html_en": "<strong>Claude Fable 5</strong> — suspended by US gov, no timeline for return.",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "dot_color": "red",
-            "html_pl": "<strong>Jalapeno chip</strong> — ogłoszony (OpenAI + Broadcom), brak dostępu, gigawatt scale planowany.",
-            "html_en": "<strong>Jalapeno chip</strong> — announced (OpenAI + Broadcom), no access, gigawatt scale planned.",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "dot_color": "red",
-            "html_pl": "<strong>IBM Nano Stack</strong> — research, 100B tranzystorów na paznokciu, lata od komercjalizacji.",
-            "html_en": "<strong>IBM Nano Stack</strong> — research, 100B transistors on a fingernail, years from commercialization.",
-            "episode_id": "ep-2026-07-03"
-          },
-          {
-            "dot_color": "green",
-            "html_pl": "<strong>Mieć całą Wikipedię lokalnie</strong> — 50GB, lokalny model jako bibliotekarz, wiedza na wyciągnięcie ręki bez internetu",
-            "html_en": "<strong>Have all Wikipedia locally</strong> — 50GB, local model as librarian, knowledge at your fingertips without internet",
-            "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
-          }
-        ]
-      },
-      {
         "id": "rules",
         "num": 4,
         "icon": "🏛️",
@@ -668,176 +580,6 @@ const episodes = [
             "episode_id": "ep-2026-07-03"
           }
         ]
-      },
-      {
-        "id": "benchmarks",
-        "num": 6,
-        "icon": "🏆",
-        "title": "LM ARENA — RANKINGI (01.07.2026)",
-        "type": "table",
-        "headers": [
-          "#",
-          "Model",
-          "Score",
-          "Status"
-        ],
-        "rows": [
-          [
-            1,
-            "Claude Fable 5",
-            1564,
-            {
-              "tag": {
-                "color": "red",
-                "text": "Offline"
-              }
-            }
-          ],
-          [
-            2,
-            "Claude Opus 4.7 thinking",
-            1554,
-            {
-              "tag": {
-                "color": "green",
-                "text": "Active"
-              }
-            }
-          ],
-          [
-            3,
-            "Claude Opus 4.6 thinking",
-            1551,
-            {
-              "tag": {
-                "color": "green",
-                "text": "Active"
-              }
-            }
-          ],
-          [
-            4,
-            "Claude Opus 4.7",
-            1550,
-            {
-              "tag": {
-                "color": "green",
-                "text": "Active"
-              }
-            }
-          ],
-          [
-            5,
-            "Claude Opus 4.6",
-            1547,
-            {
-              "tag": {
-                "color": "green",
-                "text": "Active"
-              }
-            }
-          ],
-          [
-            6,
-            "Claude Opus 4.8",
-            1538,
-            {
-              "tag": {
-                "color": "green",
-                "text": "Active"
-              }
-            }
-          ],
-          [
-            7,
-            "Claude Opus 4.8 thinking",
-            1537,
-            {
-              "tag": {
-                "color": "green",
-                "text": "Active"
-              }
-            }
-          ],
-          [
-            10,
-            "Qwen 3.7 max preview",
-            1526,
-            {
-              "tag": {
-                "color": "green",
-                "text": "Open"
-              }
-            }
-          ],
-          [
-            12,
-            "GLM 5.1",
-            1525,
-            {
-              "tag": {
-                "color": "green",
-                "text": "Open"
-              }
-            }
-          ],
-          [
-            13,
-            "GLM 5.2 (max)",
-            1525,
-            {
-              "tag": {
-                "color": "green",
-                "text": "Open"
-              }
-            }
-          ],
-          [
-            16,
-            "Gemini 3.1 Pro",
-            1523,
-            {
-              "tag": {
-                "color": "green",
-                "text": "Active"
-              }
-            }
-          ],
-          [
-            17,
-            "GPT 5.4 high",
-            1521,
-            {
-              "tag": {
-                "color": "green",
-                "text": "Active"
-              }
-            }
-          ],
-          [
-            21,
-            "GPT 5.5 high",
-            1518,
-            {
-              "tag": {
-                "color": "green",
-                "text": "Active"
-              }
-            }
-          ],
-          [
-            25,
-            "GPT 5.5 instant",
-            1513,
-            {
-              "tag": {
-                "color": "green",
-                "text": "Active"
-              }
-            }
-          ]
-        ],
-        "note": "Źródło: LM Arena (lmarena.ai) · Data: 01.07.2026"
       },
       {
         "id": "jobs",
@@ -1660,5 +1402,265 @@ const episodes = [
         ]
       }
     ]
+  }
+];
+const sticky = [
+  {
+    "id": "possible",
+    "num": 2,
+    "icon": "⚡",
+    "title": "CO JEST OBECNIE MOŻLIWE",
+    "type": "list",
+    "items": [
+      {
+        "dot_color": "green",
+        "html_pl": "<strong>Uruchomić GLM 5.2 lokalnie</strong> — 1-bit quantized (86% mniejszy), na consumer GPU. Unsloth GGUF versions.",
+        "html_en": "<strong>Run GLM 5.2 locally</strong> — 1-bit quantized (86% smaller), on consumer GPU. Unsloth GGUF versions.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "<strong>Tłumaczyć w czasie rzeczywistym</strong> — Gemini 3.5 Live Translate, darmowe, API + Google Translate mobile.",
+        "html_en": "<strong>Real-time translation</strong> — Gemini 3.5 Live Translate, free, API + Google Translate mobile.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "<strong>Generować 4K wideo 30s</strong> — Seedance 2.5, do 50 referencji, cinematic clips. Premiera lipiec 2026.",
+        "html_en": "<strong>Generate 4K 30s video</strong> — Seedance 2.5, up to 50 references, cinematic clips. Premiere July 2026.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "**Klonowanie głosu za pomocą modelu 2B** — Dot TTS, licencja Apache 2, few-shot, bije rekordy w rankingach.",
+        "html_en": "<strong>Voice cloning with 2B model</strong> — Dot TTS, Apache 2, few-shot, beats leaderboards.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "<strong>Mapować mózg bez chirurgii</strong> — Olive, ultrasonografia, 100x lepsza rozdzielczość niż tomografia komputerowa, otwarty potok.",
+        "html_en": "<strong>Map the brain without surgery</strong> — Olive, ultrasound, 100x better resolution than CT, open-source pipeline.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "<strong>Mieć humanoida za $4,900</strong> — Unitree R1, 123cm, kung-fu, fikołki, chód po schodach.",
+        "html_en": "<strong>Have a humanoid for $4,900</strong> — Unitree R1, 123cm, kung-fu, flips, stair walking.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "yellow",
+        "html_pl": "**GPT 5.6 Sol** — ograniczony dostęp, tylko dla zaufanych partnerów, zatwierdzenie rządowe dla każdego klienta indywidualnie.",
+        "html_en": "<strong>GPT 5.6 Sol</strong> — restricted access, trusted partners only, gov approval customer-by-customer.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "yellow",
+        "html_pl": "<strong>Claude Mythos 5</strong> — ban lifted 27.06, tylko ~100 zaufani partnerzy US.",
+        "html_en": "<strong>Claude Mythos 5</strong> — ban lifted 06.27, only ~100 trusted US partners.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "yellow",
+        "html_pl": "<strong>Okulary AI</strong> — Google + Gentle Monster + Warby Parker, premiera jesień 2026.",
+        "html_en": "<strong>AI Glasses</strong> — Google + Gentle Monster + Warby Parker, launch fall 2026.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "red",
+        "html_pl": "<strong>Claude Fable 5</strong> — zawieszony przez US gov, brak timeline na powrót.",
+        "html_en": "<strong>Claude Fable 5</strong> — suspended by US gov, no timeline for return.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "red",
+        "html_pl": "<strong>Jalapeno chip</strong> — ogłoszony (OpenAI + Broadcom), brak dostępu, gigawatt scale planowany.",
+        "html_en": "<strong>Jalapeno chip</strong> — announced (OpenAI + Broadcom), no access, gigawatt scale planned.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "red",
+        "html_pl": "<strong>IBM Nano Stack</strong> — research, 100B tranzystorów na paznokciu, lata od komercjalizacji.",
+        "html_en": "<strong>IBM Nano Stack</strong> — research, 100B transistors on a fingernail, years from commercialization.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "<strong>Mieć całą Wikipedię lokalnie</strong> — 50GB, lokalny model jako bibliotekarz, wiedza na wyciągnięcie ręki bez internetu",
+        "html_en": "<strong>Have all Wikipedia locally</strong> — 50GB, local model as librarian, knowledge at your fingertips without internet",
+        "date": "2026-07-03",
+        "episode_id": "ep-2026-07-03"
+      }
+    ]
+  },
+  {
+    "id": "benchmarks",
+    "num": 6,
+    "icon": "🏆",
+    "title": "LM ARENA — RANKINGI (01.07.2026)",
+    "type": "table",
+    "headers": [
+      "#",
+      "Model",
+      "Score",
+      "Status"
+    ],
+    "rows": [
+      [
+        1,
+        "Claude Fable 5",
+        1564,
+        {
+          "tag": {
+            "color": "red",
+            "text": "Offline"
+          }
+        }
+      ],
+      [
+        2,
+        "Claude Opus 4.7 thinking",
+        1554,
+        {
+          "tag": {
+            "color": "green",
+            "text": "Active"
+          }
+        }
+      ],
+      [
+        3,
+        "Claude Opus 4.6 thinking",
+        1551,
+        {
+          "tag": {
+            "color": "green",
+            "text": "Active"
+          }
+        }
+      ],
+      [
+        4,
+        "Claude Opus 4.7",
+        1550,
+        {
+          "tag": {
+            "color": "green",
+            "text": "Active"
+          }
+        }
+      ],
+      [
+        5,
+        "Claude Opus 4.6",
+        1547,
+        {
+          "tag": {
+            "color": "green",
+            "text": "Active"
+          }
+        }
+      ],
+      [
+        6,
+        "Claude Opus 4.8",
+        1538,
+        {
+          "tag": {
+            "color": "green",
+            "text": "Active"
+          }
+        }
+      ],
+      [
+        7,
+        "Claude Opus 4.8 thinking",
+        1537,
+        {
+          "tag": {
+            "color": "green",
+            "text": "Active"
+          }
+        }
+      ],
+      [
+        10,
+        "Qwen 3.7 max preview",
+        1526,
+        {
+          "tag": {
+            "color": "green",
+            "text": "Open"
+          }
+        }
+      ],
+      [
+        12,
+        "GLM 5.1",
+        1525,
+        {
+          "tag": {
+            "color": "green",
+            "text": "Open"
+          }
+        }
+      ],
+      [
+        13,
+        "GLM 5.2 (max)",
+        1525,
+        {
+          "tag": {
+            "color": "green",
+            "text": "Open"
+          }
+        }
+      ],
+      [
+        16,
+        "Gemini 3.1 Pro",
+        1523,
+        {
+          "tag": {
+            "color": "green",
+            "text": "Active"
+          }
+        }
+      ],
+      [
+        17,
+        "GPT 5.4 high",
+        1521,
+        {
+          "tag": {
+            "color": "green",
+            "text": "Active"
+          }
+        }
+      ],
+      [
+        21,
+        "GPT 5.5 high",
+        1518,
+        {
+          "tag": {
+            "color": "green",
+            "text": "Active"
+          }
+        }
+      ],
+      [
+        25,
+        "GPT 5.5 instant",
+        1513,
+        {
+          "tag": {
+            "color": "green",
+            "text": "Active"
+          }
+        }
+      ]
+    ],
+    "note": "Źródło: LM Arena (lmarena.ai) · Data: 01.07.2026"
   }
 ];
