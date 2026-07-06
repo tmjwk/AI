@@ -129,7 +129,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.9.5) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.9.6) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -301,8 +301,8 @@ function readingTime(art){
 
 function renderArticle(art){
   const isCollapsed = art.collapsed ? ' collapsed' : '';
-  const toggleBtn = `<button class="art-toggle" onclick="event.stopPropagation();var a=this.closest('.article');a.classList.toggle('collapsed');setArtToggle(this,a.classList.contains('collapsed'))">${art.collapsed?'<span class="pl">▼ Rozwiń</span><span class="en">▼ Expand</span>':'<span class="pl">▲ Zwiń</span><span class="en">▲ Collapse</span>'}</button>`;
-  const langBtn = `<button class="art-lang" onclick="event.stopPropagation();var a=this.closest('.article');a.classList.toggle('en');this.textContent=a.classList.contains('en')?'PL':'EN'">EN</button>`;
+  const toggleBtn = `<button class="art-toggle" onclick="var a=this.closest('.article');a.classList.toggle('collapsed');setArtToggle(this,a.classList.contains('collapsed'))">${art.collapsed?'<span class="pl">▼ Rozwiń</span><span class="en">▼ Expand</span>':'<span class="pl">▲ Zwiń</span><span class="en">▲ Collapse</span>'}</button>`;
+  const langBtn = `<button class="art-lang" onclick="var a=this.closest('.article');a.classList.toggle('en');this.textContent=a.classList.contains('en')?'PL':'EN'">EN</button>`;
   
   let sectionsHtml = '';
   let tocHtml = '';
@@ -342,7 +342,7 @@ function renderArticle(art){
   const sourcesHtml = art.sources ? `<div class="art-sources">📖 <span class="pl">Źródła</span><span class="en">Sources</span>: ${art.sources.map(esc).join(' · ')}</div>` : '';
   
   return `<div class="article${isCollapsed}">
-<div class="art-header" onclick="var a=this.parentElement;if(event.target===this||event.target===this.querySelector('.art-num')||event.target===this.querySelector('.art-title')||event.target===this.querySelector('.art-meta')||event.target===this.querySelector('.art-headline')){a.classList.toggle('collapsed');var b=a.querySelector('.art-toggle');if(b)setArtToggle(b,a.classList.contains('collapsed'))}">
+<div class="art-header" onclick="if(event.target.tagName==='BUTTON')return;var a=this.parentElement;if(event.target===this||event.target===this.querySelector('.art-num')||event.target===this.querySelector('.art-title')||event.target===this.querySelector('.art-meta')||event.target===this.querySelector('.art-headline')){a.classList.toggle('collapsed');var b=a.querySelector('.art-toggle');if(b)setArtToggle(b,a.classList.contains('collapsed'))}">
 ${toggleBtn}${langBtn}
 <span class="art-num">#${art.num}</span>
 <h2 class="art-title"><span class="pl">${esc(art.title_pl||art.title_en||'')}</span><span class="en">${esc(art.title_en||art.title_pl||'')}</span></h2>
@@ -408,7 +408,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.5 · Deploy: <span id="deploy-ts">2026-07-06 23:27:33 UTC</span> · <span id="deploy-hash">v8698f667</span><br>
+v8.9.6 · Deploy: <span id="deploy-ts">2026-07-06 23:35:20 UTC</span> · <span id="deploy-hash">vb366ca47</span><br>
 <a href="https://github.com/tmjwk/AI" target="_blank" rel="noopener" style="color:var(--hd);text-decoration:none">AI Hub — GitHub ↗</a>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
