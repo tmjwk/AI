@@ -84,7 +84,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .skeleton-line.medium{width:80%}
 .skeleton-line.title{height:16px;width:50%;margin-bottom:12px}
 [data-theme="light"] .skeleton-card::before{background:linear-gradient(90deg,transparent,rgba(0,0,0,0.04),transparent)}
-/* v8.7.1-19-g98727be: Episode styles (skopiowane z pulse AI) */
+/* v8.7.1-20-g4567b40: Episode styles (skopiowane z pulse AI) */
 .episode{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:18px 20px;margin-bottom:28px;border-left:4px solid var(--ac);transition:border-color .15s}
 .episode .e-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px}
 .episode .e-num{font-size:var(--fs-s);color:var(--ac);font-family:"SF Mono",Menlo,monospace;font-weight:700;background:var(--bg);padding:2px 8px;border-radius:4px;border:1px solid var(--bdl)}
@@ -100,7 +100,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .ep-old .ep-toggle-btn:hover{border-color:var(--ac);color:var(--ac)}
 @media(max-width:540px){.episode{padding:14px 16px}.episode .e-title{font-size:var(--fs-l)}}
 
-/* v8.7.1-19-g98727be: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
+/* v8.7.1-20-g4567b40: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
 :root{
 --fs-xs:0.625rem;--fs-s:0.75rem;--fs-m:0.875rem;--fs-l:1rem;--fs-xl:1.25rem;--fs-xxl:5rem
 }
@@ -112,7 +112,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.7.1-19-g98727be) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.7.1-20-g4567b40) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -275,7 +275,7 @@ ${listHtml}
 }
 
 function renderSection(sec){
-  // v8.7.1-19-g98727be: render section inside episode (no archive logic — episodes handle chronology)
+  // v8.7.1-20-g4567b40: render section inside episode (no archive logic — episodes handle chronology)
   let body = '';
   if (sec.type === 'cards') {
     const sorted = (sec.cards||[]).slice().sort((a,b) => (b.date||'').localeCompare(a.date||''));
@@ -307,7 +307,7 @@ ${body}
 let R_chips=[];
 function renderRadarChips(){const c=document.getElementById('radarChips');if(!c)return;let h='';c.innerHTML=h}
 
-// v8.7.1-19-g98727be: Episode renderers (skopiowane z pulse AI, przerobione na sections+cards)
+// v8.7.1-20-g4567b40: Episode renderers (skopiowane z pulse AI, przerobione na sections+cards)
 function renderEpisodeBody(ep){
   const sectionsHtml = ep.sections.map(renderSection).join('');
   return `<div class="ep-collapse">
@@ -383,7 +383,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.7.1-19-g98727be · Deploy: <span id="deploy-ts">2026-07-06 05:27:04 UTC</span> · <span id="deploy-hash">va3fe3b72</span><br><a href="https://github.com/lselector/seminar/tree/main/2026" target="_blank" rel="noopener" style="color:var(--hd);text-decoration:none">Weekly AI Updates — GitHub ↗</a>
+v8.7.1-20-g4567b40 · Deploy: <span id="deploy-ts">2026-07-06 05:31:00 UTC</span> · <span id="deploy-hash">v710ffff0</span><br><a href="https://github.com/lselector/seminar/tree/main/2026" target="_blank" rel="noopener" style="color:var(--hd);text-decoration:none">Weekly AI Updates — GitHub ↗</a>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
