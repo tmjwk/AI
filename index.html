@@ -289,7 +289,16 @@ function renderArticle(art){
     sectionsHtml += `<div class="art-section" id="${secId}"><h3><span class="pl">${esc(sec.title_pl||sec.title_en||'')}</span><span class="en">${esc(sec.title_en||sec.title_pl||'')}</span></h3>${paras}${quotesHtml}</div>`;
     
     if (tocHtml) {
-      tocHtml += `<li><a href="#${secId}"><span class="pl">${esc((sec.title_pl||sec.title_en||'').substring(0,40))}</span><span class="en">${esc((sec.title_en||sec.title_pl||'').substring(0,40))}</span></a></li>`;
+      // Truncate at word boundary (NIE ucinać w połowie wyrazu). Limit 60 znaków + "…" jeśli przekroczone.
+      function trunc(s, n) {
+        s = s || '';
+        if (s.length <= n) return s;
+        var cut = s.substring(0, n);
+        var lastSpace = cut.lastIndexOf(' ');
+        if (lastSpace > 20) cut = cut.substring(0, lastSpace);
+        return cut.replace(/[—\-–,:;\s]+$/, '') + '…';
+      }
+      tocHtml += `<li><a href="#${secId}"><span class="pl">${esc(trunc(sec.title_pl||sec.title_en, 60))}</span><span class="en">${esc(trunc(sec.title_en||sec.title_pl, 60))}</span></a></li>`;
     }
   }
   if (tocHtml) {
@@ -365,7 +374,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.7.1-20-g4567b40 · Deploy: <span id="deploy-ts">2026-07-06 05:31:00 UTC</span> · <span id="deploy-hash">vb8be39e4</span>
+v8.7.1-20-g4567b40 · Deploy: <span id="deploy-ts">2026-07-06 06:29:04 UTC</span> · <span id="deploy-hash">v39132749</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>

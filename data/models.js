@@ -176,7 +176,7 @@ const M = [
     "b_en": "advanced software engineering, stable and proven"
   },
   {
-    "r": 17,
+    "r": 18,
     "n": "Meta AI (Llama 4)",
     "v": "Meta",
     "d": "2026-04",
@@ -230,13 +230,13 @@ const M = [
     "tags": [],
     "url": "https://ideogram.ai/news/ideogram-4.0",
     "yt": "OA4gchz1Zcs",
-    "desc_pl": "Topowy otwarty ranking DesignArena, ComfyUI",
+    "desc_pl": "Top DesignArena open leaderboard, ComfyUI",
     "desc_en": "Top DesignArena open leaderboard, ComfyUI",
     "b_pl": "Renderowanie tekstu w obrazach — logo, poster, design z napisami",
     "b_en": "text rendering in images — logos, posters, design with text"
   },
   {
-    "r": 5,
+    "r": 4,
     "n": "FLUX.2 [dev]",
     "v": "Black Forest Labs",
     "d": "2025-11",
@@ -251,7 +251,7 @@ const M = [
     "b_en": "photorealism, precise color and pose control, image editing"
   },
   {
-    "r": 6,
+    "r": 5,
     "n": "Image Gen on Phone",
     "v": "Various",
     "d": "2026-05",
@@ -326,7 +326,7 @@ const M = [
     "b_en": "physical AI, robot training, industrial vision — automotive, manufacturing"
   },
   {
-    "r": 4,
+    "r": 3,
     "n": "World Tracing",
     "v": "World Labs + UIUC",
     "d": "2026-06",
@@ -341,7 +341,7 @@ const M = [
     "b_en": "layered 3D reconstruction — pixel-aligned geometry, hidden depth layers"
   },
   {
-    "r": 6,
+    "r": 4,
     "n": "Realtime Video Games AI",
     "v": "Various",
     "d": "2026-04",
@@ -560,7 +560,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "7c_ieWfAbrw",
-    "desc_pl": "Pojedynczy model transformer przeplatający tekst, audio, wideo — 25fps, latencja 200ms, komunikacja duplex",
+    "desc_pl": "Single transformer model interleaving text, audio, video — 25fps, 200ms latency, duplex communication",
     "desc_en": "Single transformer model interleaving text, audio, video — 25fps, 200ms latency, duplex communication",
     "b_pl": "Real-time konwersacyjne avatary 25fps — streaming z 200ms latencją, duplex communication",
     "b_en": "real-time conversational avatars 25fps — streaming with 200ms latency, duplex communication"
@@ -626,7 +626,7 @@ const M = [
     "b_en": "video generation with reference images — character and object consistency across scenes"
   },
   {
-    "r": 12,
+    "r": 13,
     "n": "Ornith 1.0",
     "v": "Ornith (open-source)",
     "d": "2026-06",
@@ -733,7 +733,7 @@ const M = [
     "b_en": "humanoid training dataset — real-home teleoperation, 500h of robot training data"
   },
   {
-    "r": 4,
+    "r": 2,
     "n": "Unitree R1",
     "v": "Unitree",
     "d": "2026-06",
@@ -748,7 +748,7 @@ const M = [
     "b_en": "affordable humanoid robot — $4,900, acrobatics, kung-fu, cheapest market option"
   },
   {
-    "r": 13,
+    "r": 14,
     "n": "Seed 2.1",
     "v": "ByteDance",
     "d": "2026-06",
@@ -808,7 +808,7 @@ const M = [
     "b_en": "autonomous data creation — AI creates and verifies its own training data, self-improving"
   },
   {
-    "r": 14,
+    "r": 15,
     "n": "Sakana Fugu",
     "v": "Sakana AI",
     "d": "2026-06",
@@ -823,7 +823,7 @@ const M = [
     "b_en": "multi-model orchestration — router coordinating frontier LLMs via one API"
   },
   {
-    "r": 3,
+    "r": 5,
     "n": "DreamX World",
     "v": "DreamX World (open-source)",
     "d": "2026-06-21",
@@ -868,7 +868,7 @@ const M = [
     "b_en": "camera motion cloning — transferring camera movement from ref video to new images"
   },
   {
-    "r": 7,
+    "r": 6,
     "n": "Boogu Image",
     "v": "Boogu (open-source)",
     "d": "2026-06-21",
@@ -877,13 +877,13 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "kkLlzQqa7MY",
-    "desc_pl": "Open-source generator i edytor obrazów — text-to-image, obrazy referencyjne, edycja, permisywna licencja",
+    "desc_pl": "Open-source image generator + editor — text-to-image, reference images, editing, permissive license",
     "desc_en": "Open-source image generator + editor — text-to-image, reference images, editing, permissive license",
     "b_pl": "Image generation + editing w jednym modelu — permissive license, konkurent Flux/Nano Banana",
     "b_en": "image generation + editing in one model — permissive license, Flux/Nano Banana competitor"
   },
   {
-    "r": 8,
+    "r": 7,
     "n": "TeaStyle V2",
     "v": "TeaStyle (open-source)",
     "d": "2026-06-21",
@@ -928,7 +928,7 @@ const M = [
     "b_en": "AI automation by demonstration — you record a task, AI learns to replicate it"
   },
   {
-    "r": 3,
+    "r": 2,
     "n": "Logos",
     "v": "Alibaba Tongi Lab (open-source)",
     "d": "2026-06-21",
@@ -943,7 +943,7 @@ const M = [
     "b_en": "multi-domain science model — protein, antibody, material design in one model"
   },
   {
-    "r": 4,
+    "r": 2,
     "n": "AI Chemist",
     "v": "OpenAI (Maria system)",
     "d": "2026-06-21",
@@ -958,7 +958,7 @@ const M = [
     "b_en": "autonomous chemistry research — AI proposes and analyzes chemical experiments"
   },
   {
-    "r": 6,
+    "r": 4,
     "n": "Ace",
     "v": "Sony",
     "d": "2026-06-21",
@@ -988,7 +988,7 @@ const M = [
     "b_en": "bipedal humanoid — ping-pong + object manipulation, stair climbing"
   },
   {
-    "r": 8,
+    "r": 4,
     "n": "Universal Manipulation Exoskeleton",
     "v": "Alibaba Ant Group",
     "d": "2026-06-21",
@@ -1033,7 +1033,7 @@ const M = [
     "b_en": "actionable world models — digital twins with object motion for robots"
   },
   {
-    "r": 7,
+    "r": 6,
     "n": "Oscar",
     "v": "Research (open-source)",
     "d": "2026-06-14",
@@ -1063,7 +1063,7 @@ const M = [
     "b_en": "real-time translation — simultaneous translation, available via API and mobile"
   },
   {
-    "r": 15,
+    "r": 16,
     "n": "Diffusion Gemma",
     "v": "Google (open-source, Apache 2)",
     "d": "2026-06-14",
@@ -1123,7 +1123,7 @@ const M = [
     "b_en": "autonomous research agent — hypothesis tree, persistent memory"
   },
   {
-    "r": 16,
+    "r": 17,
     "n": "Next N2",
     "v": "Next (open-source)",
     "d": "2026-06-14",
@@ -1162,7 +1162,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Pojedyncze zdjęcie/wideo → warstwowy model 3D — wiele warstw ukrytej głębi, 6.2GB",
+    "desc_pl": "Single image/video → layered 3D model — multiple layers of hidden depth, 6.2GB",
     "desc_en": "Single image/video → layered 3D model — multiple layers of hidden depth, 6.2GB",
     "b_pl": "Layered 3D reconstruction — pixel-aligned geometry, hidden depth layers",
     "b_en": "layered 3D reconstruction — pixel-aligned geometry, hidden depth layers"
@@ -1192,7 +1192,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Wiele zdjęć → jeden czysty model 3D — zdjęcia nierównomiernie ułożone, różne pozycje kamery",
+    "desc_pl": "Multiple images → one clean 3D model — unaligned images, different camera positions",
     "desc_en": "Multiple images → one clean 3D model — unaligned images, different camera positions",
     "b_pl": "Multi-image 3D reconstruction — fuse nieuykładnionych zdjęć",
     "b_en": "multi-image 3D reconstruction — fusing unaligned photos"
@@ -1207,13 +1207,13 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Pojedyncze zdjęcie → świat 3D panorama 360° — oddziela konstrukcję świata od renderowania wideo",
+    "desc_pl": "Single image → 360 panorama 3D world — separates world construction from video rendering",
     "desc_en": "Single image → 360 panorama 3D world — separates world construction from video rendering",
     "b_pl": "360 world from image — panorama → 3D Gaussian model → interactive world",
     "b_en": "360 world from image — panorama → 3D Gaussian model → interactive world"
   },
   {
-    "r": 9,
+    "r": 8,
     "n": "I1",
     "v": "Princeton (open-source)",
     "d": "2026-06-14",
@@ -1222,13 +1222,13 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "W pełni open-source model obrazowy — 3B parametrów, modele + kod treningowy + przetwarzanie danych",
+    "desc_pl": "Fully open-source image model — 3B params, models + training code + data processing",
     "desc_en": "Fully open-source image model — 3B params, models + training code + data processing",
     "b_pl": "Fully open-source image model — training code + data, dla nauki",
     "b_en": "fully open-source image model — training code + data, for research"
   },
   {
-    "r": 8,
+    "r": 7,
     "n": "Anchor World",
     "v": "Research",
     "d": "2026-06-14",
@@ -1237,7 +1237,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Symulator świata first-person — wejście: ruch 3D człowieka + widoki kotwicy → wideo egocentryczne",
+    "desc_pl": "First-person world simulator — input human motion 3D + anchor views → egocentric video",
     "desc_en": "First-person world simulator — input human motion 3D + anchor views → egocentric video",
     "b_pl": "Egocentric world sim — first-person view z motion + anchor views",
     "b_en": "egocentric world sim — first-person view from motion + anchor views"
@@ -1252,7 +1252,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Szybki generator siatek 3D — prompt/chmura punktów/obraz → siatka 3D, 18x szybszy, przestrzeń ukryta",
+    "desc_pl": "Fast 3D mesh generator — prompt/point cloud/image → 3D mesh, 18x faster, latent space",
     "desc_en": "Fast 3D mesh generator — prompt/point cloud/image → 3D mesh, 18x faster, latent space",
     "b_pl": "Fast 3D mesh generation — 18x szybszy, prompt/image → 3D mesh",
     "b_en": "fast 3D mesh generation — 18x faster, prompt/image → 3D mesh"
@@ -1267,7 +1267,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Generator długich spójnych wideo — hierarchiczny autoenkoder, rollout od ogólnego do szczegółowego",
+    "desc_pl": "Long consistent video generator — hierarchical autoencoder, coarse-to-fine rollout",
     "desc_en": "Long consistent video generator — hierarchical autoencoder, coarse-to-fine rollout",
     "b_pl": "Long video generation — spójne długie wideo przez hierarchical autoencoder",
     "b_en": "long video generation — consistent long video via hierarchical autoencoder"
@@ -1378,7 +1378,7 @@ const M = [
     "b_en": "multi-person 3D motion capture — markerless, occlusion handling, hug/dance/wrestling"
   },
   {
-    "r": 4,
+    "r": 2,
     "n": "Reve 2",
     "v": "Reve AI",
     "d": "2026-06-07",
@@ -1438,7 +1438,7 @@ const M = [
     "b_en": "image layer separation — transparent layers, alpha masks, layer editing"
   },
   {
-    "r": 7,
+    "r": 6,
     "n": "DR2",
     "v": "Deep Robotics",
     "d": "2026-06-07",
@@ -1447,13 +1447,13 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "CzxqQJOswvo",
-    "desc_pl": "Humanoid przemysłowy — odporny na warunki atmosferyczne, pył/wodę, sprint + przewrót + precyzyjna manipulacja bezpiecznikiem",
+    "desc_pl": "Industrial humanoid — all-weather, dust/water resistant, sprint + flip + delicate circuit breaker manipulation",
     "desc_en": "Industrial humanoid — all-weather, dust/water resistant, sprint + flip + delicate circuit breaker manipulation",
     "b_pl": "Industrial humanoid robot — extreme environments, precise manipulation + raw power",
     "b_en": "industrial humanoid robot — extreme environments, precise manipulation + raw power"
   },
   {
-    "r": 9,
+    "r": 7,
     "n": "UBTECH humanoid couple",
     "v": "UBTECH",
     "d": "2026-06-07",
@@ -1747,22 +1747,21 @@ const SOURCES = [
   }
 ];
 
-// Auto-generated CATS: wszystkie unikalne kategorie z danych (sortowane)
 const CATS = [
-  "3D Generation",
-  "4D Human",
-  "AI Research",
-  "AI Science Agents",
-  "AI Wellness",
-  "Coding",
-  "Hardware",
-  "Humanoid Robots",
-  "Image Generation",
   "LLM",
-  "Multimodal",
-  "Neural Interface",
-  "Realtime Avatars",
-  "TTS",
+  "Image Generation",
   "Video Generation",
-  "World Models"
+  "3D Generation",
+  "World Models",
+  "Coding",
+  "TTS",
+  "Multimodal",
+  "AI Science Agents",
+  "AI Research",
+  "Humanoid Robots",
+  "Realtime Avatars",
+  "4D Human",
+  "Neural Interface",
+  "Hardware",
+  "AI Wellness"
 ];
