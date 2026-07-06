@@ -132,6 +132,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 </div>
 
+<script src="data/models.js?v=20260706010000"></script>
 <script src="data/weekly/weekly.js?v=20260706010000"></script>
 <script>
 let theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
@@ -148,6 +149,31 @@ langBtn.addEventListener('click',()=>{lang=lang==='pl'?'en':'pl';document.docume
 function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 function L(obj,field_pl,field_en){if(lang==='en'&&obj[field_en]&&obj[field_en].trim())return obj[field_en];return obj[field_pl]}
 
+// #27: Auto-link nazw modeli do ai-models.html#model-X
+var modelNames = [];
+var modelSlugs = {};
+if (typeof M !== 'undefined') {
+  for (var i = 0; i < M.length; i++) {
+    var n = M[i].n;
+    var sl = n.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+    modelNames.push(n);
+    modelSlugs[n.toLowerCase()] = sl;
+  }
+}
+function linkModels(text){
+  if (!modelNames.length) return text;
+  // Sort by length desc (longest first = avoid partial matches)
+  var sorted = modelNames.slice().sort(function(a,b){return b.length-a.length});
+  var result = text;
+  for (var i = 0; i < sorted.length; i++) {
+    var name = sorted[i];
+    var slug = modelSlugs[name.toLowerCase()];
+    var re = new RegExp('(?<![\\w-])(' + name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')(?![\\w-])','gi');
+    result = result.replace(re, '<a href="ai-models.html#model-'+slug+'" style="color:var(--ac);text-decoration:none;font-weight:600">$1</a>');
+  }
+  return result;
+}
+
 function renderArticle(art){
   const isCollapsed = art.collapsed ? ' collapsed' : '';
   const toggleBtn = `<button class="art-toggle" onclick="var a=this.closest('.article');a.classList.toggle('collapsed');this.textContent=a.classList.contains('collapsed')?'▼ Rozwiń':'▲ Zwiń'">${art.collapsed?'▼ Rozwiń':'▲ Zwiń'}</button>`;
@@ -163,7 +189,7 @@ function renderArticle(art){
     const secId = `sec-${art.num}-${i}`;
     const pls = (sec.body_pl||'').split('\n\n');
     const ens = (sec.body_en||'').split('\n\n');
-    const paras = pls.map((p,j)=>`<p><span class="pl">${esc(p).replace(/\n/g,'<br>')}</span><span class="en">${esc(ens[j]||p).replace(/\n/g,'<br>')}</span></p>`).join('');
+    const paras = pls.map((p,j)=>`<p><span class="pl">${linkModels(esc(p).replace(/\n/g,'<br>'))}</span><span class="en">${linkModels(esc(ens[j]||p).replace(/\n/g,'<br>'))}</span></p>`).join('');
     
     let quotesHtml = '';
     if (sec.quotes && sec.quotes.length > 0) {
@@ -248,7 +274,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.7.1-5-g5ec8d71 · Deploy: <span id="deploy-ts">2026-07-06 03:42:32 UTC</span> · <span id="deploy-hash">vfc4d987f</span>
+v8.7.1-7-g50d3ef5 · Deploy: <span id="deploy-ts">2026-07-06 04:07:07 UTC</span> · <span id="deploy-hash">vfe6f6a8e</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
