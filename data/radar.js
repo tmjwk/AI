@@ -1534,7 +1534,7 @@ const sticky = [
       }
     ],
     "title_pl": "CO JEST OBECNIE MOŻLIWE",
-    "title_en": "CO JEST OBECNIE MOŻLIWE"
+    "title_en": "WHAT IS CURRENTLY POSSIBLE"
   },
   {
     "id": "benchmarks",
@@ -1705,6 +1705,6 @@ const sticky = [
     ],
     "note": "Źródło: LM Arena (lmarena.ai) · Data: 01.07.2026",
     "title_pl": "LM ARENA — RANKINGI (01.07.2026)",
-    "title_en": "LM ARENA — RANKINGI (01.07.2026)"
+    "title_en": "LM ARENA — RANKINGS (07.01.2026)"
   }
 ];
