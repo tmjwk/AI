@@ -190,7 +190,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.8.22) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.8.23) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -407,7 +407,7 @@ function renderEpisodeBody(ep){
 function renderEpisodeHeader(ep){
   // Wszystkie epizody mają przycisk — najnowszy (collapsed:false) = "▲ Zwiń", reszta = "▼ Rozwiń"
   const epClass = ep.collapsed ? 'episode ep-old' : 'episode ep-old open';
-  const toggleBtn = `<button class="ep-toggle-btn" data-num="${esc(ep.num)}" data-batch="${esc(ep.batch||'recent')}">${ep.collapsed ? '▼ Rozwiń' : '▲ Zwiń'}</button>`;
+  const toggleBtn = `<button class="ep-toggle-btn" data-num="${esc(ep.num)}" data-batch="${esc(ep.batch||'recent')}">${ep.collapsed ? '<span class="pl">▼ Rozwiń</span><span class="en">▼ Expand</span>' : '<span class="pl">▲ Zwiń</span><span class="en">▲ Collapse</span>'}</button>`;
   return `<div class="${epClass}" data-num="${esc(ep.num)}" data-batch="${esc(ep.batch||'recent')}">
 <div class="e-top">
 <span class="e-num">${esc(ep.num)}</span>
@@ -457,7 +457,7 @@ function renderAll(){try{
 
   // Attach toggle handlers
   attachToggleHandlers();
-}catch(e){console.error("Render error:",e);document.getElementById("content")?document.getElementById("content").innerHTML='<div class="nr">⚠ Błąd renderowania — odśwież stronę. Szczegóły w konsoli (F12).</div>':null;document.getElementById("episodes")?document.getElementById("episodes").innerHTML='<div class="nr">⚠ Błąd renderowania — odśwież stronę. Szczegóły w konsoli (F12).</div>':null}}
+}catch(e){console.error("Render error:",e);document.getElementById("content")?document.getElementById("content").innerHTML='<div class="nr">⚠ <span class="pl">Błąd renderowania — odśwież stronę. Szczegóły w konsoli (F12).</span><span class="en">Render error — refresh page. Details in console (F12).</span></div>':null;document.getElementById("episodes")?document.getElementById("episodes").innerHTML='<div class="nr">⚠ <span class="pl">Błąd renderowania — odśwież stronę. Szczegóły w konsoli (F12).</span><span class="en">Render error — refresh page. Details in console (F12).</span></div>':null}}
 
 function attachToggleHandlers(){
   document.querySelectorAll('.ep-toggle-btn').forEach(btn=>{
@@ -469,7 +469,7 @@ function attachToggleHandlers(){
       if(isOpen){
         // Zwiń
         epDiv.classList.remove('open');
-        this.textContent = '▼ Rozwiń';
+        this.textContent = '<span class="pl">▼ Rozwiń</span><span class="en">▼ Expand</span>';
         return;
       }
 
@@ -478,7 +478,7 @@ function attachToggleHandlers(){
       if(body && body.classList.contains('ep-collapse')){
         // Body już załadowane — pokaż
         epDiv.classList.add('open');
-        this.textContent = '▲ Zwiń';
+        this.textContent = '<span class="pl">▲ Zwiń</span><span class="en">▲ Collapse</span>';
         return;
       }
 
@@ -487,7 +487,7 @@ function attachToggleHandlers(){
       var num = this.dataset.num;
 
       // Pokaż loading
-      this.textContent = '⏳ Ładowanie...';
+      this.textContent = '<span class="pl">⏳ Ładowanie...</span><span class="en">⏳ Loading...</span>';
       this.disabled = true;
 
       try {
@@ -503,11 +503,11 @@ function attachToggleHandlers(){
         epDiv.parentNode.insertBefore(bodyDiv, epDiv.nextSibling);
 
         epDiv.classList.add('open');
-        this.textContent = '▲ Zwiń';
+        this.textContent = '<span class="pl">▲ Zwiń</span><span class="en">▲ Collapse</span>';
       } catch(e){
         console.error('Lazy load error:', e);
-        this.textContent = '✗ Błąd';
-        setTimeout(()=>{ this.textContent = '▼ Rozwiń'; this.disabled = false; }, 2000);
+        this.textContent = '<span class="pl">✗ Błąd</span><span class="en">✗ Error</span>';
+        setTimeout(()=>{ this.textContent = '<span class="pl">▼ Rozwiń</span><span class="en">▼ Expand</span>'; this.disabled = false; }, 2000);
         return;
       }
 
@@ -559,7 +559,7 @@ document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeE
 </div>
 
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.8.22 · Deploy: <span id="deploy-ts">2026-07-06 22:11:02 UTC</span> · <span id="deploy-hash">v6309b954</span><br>
+v8.8.23 · Deploy: <span id="deploy-ts">2026-07-06 22:20:16 UTC</span> · <span id="deploy-hash">vec48b69f</span><br>
 <a href="https://github.com/tmjwk/AI" target="_blank" rel="noopener" style="color:var(--hd);text-decoration:none">AI Hub — GitHub ↗</a>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
