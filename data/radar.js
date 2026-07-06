@@ -1414,81 +1414,110 @@ const sticky = [
     "items": [
       {
         "dot_color": "green",
-        "html_pl": "<strong>Uruchomić GLM 5.2 lokalnie</strong> — 1-bit quantized (86% mniejszy), na consumer GPU. Unsloth GGUF versions.",
-        "html_en": "<strong>Run GLM 5.2 locally</strong> — 1-bit quantized (86% smaller), on consumer GPU. Unsloth GGUF versions.",
+        "html_pl": "<strong>open-source od alibaba</strong> — buduje wirtualny świat wewnątrz ai do symulacji środowiska agentowego.",
+        "html_en": "<strong>open-source from alibaba</strong> — builds virtual world inside ai to simulate agentic environment.",
         "episode_id": "ep-2026-07-03"
       },
       {
         "dot_color": "green",
-        "html_pl": "<strong>Tłumaczyć w czasie rzeczywistym</strong> — Gemini 3.5 Live Translate, darmowe, API + Google Translate mobile.",
-        "html_en": "<strong>Real-time translation</strong> — Gemini 3.5 Live Translate, free, API + Google Translate mobile.",
+        "html_pl": "otwartoźródłowy, agentowy model moe do kodowania (9b-397b), obudowa (harness) wbudowana w wagi modelu. pokonuje najnowocześniejsze modele komercyjne. ",
+        "html_en": "open-source agentic coding moe (9b-397b), harness trained into model weights. beats frontier models. $100m funding, santa clara.",
         "episode_id": "ep-2026-07-03"
       },
       {
         "dot_color": "green",
-        "html_pl": "<strong>Generować 4K wideo 30s</strong> — Seedance 2.5, do 50 referencji, cinematic clips. Premiera lipiec 2026.",
-        "html_en": "<strong>Generate 4K 30s video</strong> — Seedance 2.5, up to 50 references, cinematic clips. Premiere July 2026.",
+        "html_pl": "<strong>25,000 oszustów bombardsowali modele anthropic, zbierając q&a pary do treningu chińskich modeli</strong> — id wymagane dla darmowych kont. nie wdrożone jeszcze.",
+        "html_en": "<strong>25,000 fraudsters bombarded anthropic models, collecting q&a pairs for training chinese models</strong> — id required for free accounts. not implemented yet.",
         "episode_id": "ep-2026-07-03"
       },
       {
         "dot_color": "green",
-        "html_pl": "**Klonowanie głosu za pomocą modelu 2B** — Dot TTS, licencja Apache 2, few-shot, bije rekordy w rankingach.",
-        "html_en": "<strong>Voice cloning with 2B model</strong> — Dot TTS, Apache 2, few-shot, beats leaderboards.",
+        "html_pl": "<strong>rząd i duże firmy mają dostęp do najnowszych modeli (gpt 5</strong> — najlepsze modele w open-source.",
+        "html_en": "<strong>government and big companies have access to latest models (gpt 5</strong> — best models in open-source.",
         "episode_id": "ep-2026-07-03"
       },
       {
         "dot_color": "green",
-        "html_pl": "<strong>Mapować mózg bez chirurgii</strong> — Olive, ultrasonografia, 100x lepsza rozdzielczość niż tomografia komputerowa, otwarty potok.",
-        "html_en": "<strong>Map the brain without surgery</strong> — Olive, ultrasound, 100x better resolution than CT, open-source pipeline.",
+        "html_pl": "1. uruchom podagenty 2. napisz mi specyfikację wdrożeniową 3. przeprowadź ze mną wywiad na temat projektu 4. zweryfikuj, zanim zbudujesz 5. zbuduj mi ",
+        "html_en": "1. launch sub agents  2. write me an implementation spec  3. interview me about the project  4. verify before you build  5. build me a skill  6. autom",
         "episode_id": "ep-2026-07-03"
       },
       {
         "dot_color": "green",
-        "html_pl": "<strong>Mieć humanoida za $4,900</strong> — Unitree R1, 123cm, kung-fu, fikołki, chód po schodach.",
-        "html_en": "<strong>Have a humanoid for $4,900</strong> — Unitree R1, 123cm, kung-fu, flips, stair walking.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "yellow",
-        "html_pl": "**GPT 5.6 Sol** — ograniczony dostęp, tylko dla zaufanych partnerów, zatwierdzenie rządowe dla każdego klienta indywidualnie.",
-        "html_en": "<strong>GPT 5.6 Sol</strong> — restricted access, trusted partners only, gov approval customer-by-customer.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "yellow",
-        "html_pl": "<strong>Claude Mythos 5</strong> — ban lifted 27.06, tylko ~100 zaufani partnerzy US.",
-        "html_en": "<strong>Claude Mythos 5</strong> — ban lifted 06.27, only ~100 trusted US partners.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "yellow",
-        "html_pl": "<strong>Okulary AI</strong> — Google + Gentle Monster + Warby Parker, premiera jesień 2026.",
-        "html_en": "<strong>AI Glasses</strong> — Google + Gentle Monster + Warby Parker, launch fall 2026.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "red",
-        "html_pl": "<strong>Claude Fable 5</strong> — zawieszony przez US gov, brak timeline na powrót.",
-        "html_en": "<strong>Claude Fable 5</strong> — suspended by US gov, no timeline for return.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "red",
-        "html_pl": "<strong>Jalapeno chip</strong> — ogłoszony (OpenAI + Broadcom), brak dostępu, gigawatt scale planowany.",
-        "html_en": "<strong>Jalapeno chip</strong> — announced (OpenAI + Broadcom), no access, gigawatt scale planned.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "red",
-        "html_pl": "<strong>IBM Nano Stack</strong> — research, 100B tranzystorów na paznokciu, lata od komercjalizacji.",
-        "html_en": "<strong>IBM Nano Stack</strong> — research, 100B transistors on a fingernail, years from commercialization.",
+        "html_pl": "<strong>langchain: over-abstraction (8 poziomów), docs nie matchują kodu, breaking changes</strong> — agent harness z planowaniem i sub-agentami.",
+        "html_en": "<strong>langchain: over-abstraction (8 levels), docs don't match code, breaking changes</strong> — agent harness with planning and sub-agents.",
         "episode_id": "ep-2026-07-03"
       },
       {
         "dot_color": "green",
-        "html_pl": "<strong>Mieć całą Wikipedię lokalnie</strong> — 50GB, lokalny model jako bibliotekarz, wiedza na wyciągnięcie ręki bez internetu",
-        "html_en": "<strong>Have all Wikipedia locally</strong> — 50GB, local model as librarian, knowledge at your fingertips without internet",
-        "date": "2026-07-03",
+        "html_pl": "<strong>open-source alternatywa dla claude tag</strong> — działa ze slack, whatsapp i dowolnym modelem (nie tylko claude). własny copilot.",
+        "html_en": "<strong>open-source alternative to claude tag</strong> — works with slack, whatsapp and any model (not just claude). own copilot.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "<strong>open-source narzędzie deepseek</strong> — draft model przewiduje bloki tokenów naraz. do 85% szybciej dla deepseek v4, działa z qwen i gemma.",
+        "html_en": "<strong>open-source tool from deepseek</strong> — draft model predicts a block of tokens at once. up to 85% faster for deepseek v4, works with qwen and gemma.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "x wydał serwer mcp (model context protocol) do zapytań o dane z twittera. oprogramowanie jest darmowe, ale dostęp do danych jest płatny.",
+        "html_en": "x released mcp server for querying twitter data. software free, but data access paid.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "<strong>open-source od alibaba</strong> — buduje wirtualny świat wewnątrz ai do symulacji środowiska agentowego.",
+        "html_en": "<strong>open-source from alibaba</strong> — builds virtual world inside ai to simulate agentic environment.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "otwartoźródłowy, agentowy model moe do kodowania (9b-397b), obudowa (harness) wbudowana w wagi modelu. pokonuje najnowocześniejsze modele komercyjne. ",
+        "html_en": "open-source agentic coding moe (9b-397b), harness trained into model weights. beats frontier models. $100m funding, santa clara.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "<strong>25,000 oszustów bombardsowali modele anthropic, zbierając q&a pary do treningu chińskich modeli</strong> — id wymagane dla darmowych kont. nie wdrożone jeszcze.",
+        "html_en": "<strong>25,000 fraudsters bombarded anthropic models, collecting q&a pairs for training chinese models</strong> — id required for free accounts. not implemented yet.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "<strong>rząd i duże firmy mają dostęp do najnowszych modeli (gpt 5</strong> — najlepsze modele w open-source.",
+        "html_en": "<strong>government and big companies have access to latest models (gpt 5</strong> — best models in open-source.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "1. uruchom podagenty 2. napisz mi specyfikację wdrożeniową 3. przeprowadź ze mną wywiad na temat projektu 4. zweryfikuj, zanim zbudujesz 5. zbuduj mi ",
+        "html_en": "1. launch sub agents  2. write me an implementation spec  3. interview me about the project  4. verify before you build  5. build me a skill  6. autom",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "<strong>langchain: over-abstraction (8 poziomów), docs nie matchują kodu, breaking changes</strong> — agent harness z planowaniem i sub-agentami.",
+        "html_en": "<strong>langchain: over-abstraction (8 levels), docs don't match code, breaking changes</strong> — agent harness with planning and sub-agents.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "<strong>open-source alternatywa dla claude tag</strong> — działa ze slack, whatsapp i dowolnym modelem (nie tylko claude). własny copilot.",
+        "html_en": "<strong>open-source alternative to claude tag</strong> — works with slack, whatsapp and any model (not just claude). own copilot.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "<strong>open-source narzędzie deepseek</strong> — draft model przewiduje bloki tokenów naraz. do 85% szybciej dla deepseek v4, działa z qwen i gemma.",
+        "html_en": "<strong>open-source tool from deepseek</strong> — draft model predicts a block of tokens at once. up to 85% faster for deepseek v4, works with qwen and gemma.",
+        "episode_id": "ep-2026-07-03"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "x wydał serwer mcp (model context protocol) do zapytań o dane z twittera. oprogramowanie jest darmowe, ale dostęp do danych jest płatny.",
+        "html_en": "x released mcp server for querying twitter data. software free, but data access paid.",
         "episode_id": "ep-2026-07-03"
       }
     ]
