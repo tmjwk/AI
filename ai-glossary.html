@@ -79,13 +79,18 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .skeleton-line.title{height:16px;width:50%;margin-bottom:12px}
 [data-theme="light"] .skeleton-card::before{background:linear-gradient(90deg,transparent,rgba(0,0,0,0.04),transparent)}
 
-/* v8.7.1: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
+/* v8.7.1-2-ge67878d: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
 :root{
 --fs-xs:0.625rem;--fs-s:0.75rem;--fs-m:0.875rem;--fs-l:1rem;--fs-xl:1.25rem;--fs-xxl:5rem
 }
 @media(max-width:540px){
 :root{--fs-s:0.6875rem;--fs-m:0.8125rem;--fs-l:0.9375rem;--fs-xl:1.125rem;--fs-xxl:3.75rem}
 }
+
+/* Back to top */
+.btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
+.btt:hover{opacity:.85}
+.btt.show{display:flex}
 </style><meta name="description" content="Słownik AI: Architektury, Trening, Kontekst, Agentic, Modalności, Infrastruktura, Bezpieczeństwo, Ewaluacja.">
 <meta property="og:title" content="Słownik AI — 102 terminy w 8 kategoriach">
 <meta property="og:description" content="Słownik AI: Architektury, Trening, Kontekst, Agentic, Modalności, Infrastruktura, Bezpieczeństwo, Ewaluacja.">
@@ -160,7 +165,9 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.7.1 · Deploy: <span id="deploy-ts">2026-07-06 02:45:38 UTC</span> · <span id="deploy-hash">va302d2a2</span>
+v8.7.1-2-ge67878d · Deploy: <span id="deploy-ts">2026-07-06 02:57:44 UTC</span> · <span id="deploy-hash">vd28f9fbf</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
+<script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
 </body></html>

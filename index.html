@@ -83,6 +83,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 /* Footer */
 .f{margin-top:40px;padding-top:18px;border-top:1px solid var(--bdl);font-size:var(--fs-s);color:var(--hd);text-align:center;line-height:1.8}
 @media(max-width:540px){.h h1{font-size:var(--fs-l)}.article{padding:18px 20px}.art-title{font-size:var(--fs-l)}}
+
+/* Back to top */
+.btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
+.btt:hover{opacity:.85}
+.btt.show{display:flex}
 </style></head><body>
 <div class="c">
 
@@ -192,6 +197,8 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.7.1 · Deploy: <span id="deploy-ts">2026-07-06 02:45:38 UTC</span> · <span id="deploy-hash">vea02ba8e</span>
+v8.7.1-2-ge67878d · Deploy: <span id="deploy-ts">2026-07-06 02:57:44 UTC</span> · <span id="deploy-hash">v97dc6ede</span>
 </footer>
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
+<script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
 </body></html>
