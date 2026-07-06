@@ -45,6 +45,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .art-meta{font-size:var(--fs-s);color:var(--hd);display:flex;gap:14px;flex-wrap:wrap;align-items:center;font-family:monospace}
 .art-toggle{float:right;background:var(--bg);border:1px solid var(--bd);border-radius:6px;padding:4px 12px;cursor:pointer;font-size:var(--fs-s);color:var(--hs);font-weight:600}
 .art-toggle:hover{border-color:var(--ac);color:var(--ac)}
+.art-lang{float:right;background:var(--bg);border:1px solid var(--bd);border-radius:6px;padding:4px 12px;cursor:pointer;font-size:var(--fs-s);color:var(--hs);font-weight:600;margin-right:6px}
+.art-lang:hover{border-color:var(--ac);color:var(--ac)}
+.article.en .pl{display:none !important}
+.article.en .en{display:inline !important}
+.article:not(.en) .en{display:none !important}
+.article:not(.en) .pl{display:inline !important}
 .art-body{margin-top:20px}
 .art-section{margin-bottom:32px}
 .art-section h3{font-size:var(--fs-l);font-weight:700;color:var(--hp);margin:0 0 12px 0;padding-bottom:8px;border-bottom:1px solid var(--bdl)}
@@ -102,7 +108,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </div>
 
 <div class="f">
-v8.7-15-gec1934a · Deploy: <span id="deploy-ts">2026-07-06 01:26:09 UTC</span> · <span id="deploy-hash">v773a19aa</span>
+v8.7-17-gc4b4cd0 · Deploy: <span id="deploy-ts">2026-07-06 01:38:14 UTC</span> · <span id="deploy-hash">v47cc1a3e</span>
 </div>
 
 </div>
@@ -126,25 +132,31 @@ function L(obj,field_pl,field_en){if(lang==='en'&&obj[field_en]&&obj[field_en].t
 function renderArticle(art){
   const isCollapsed = art.collapsed ? ' collapsed' : '';
   const toggleBtn = `<button class="art-toggle" onclick="var a=this.closest('.article');a.classList.toggle('collapsed');this.textContent=a.classList.contains('collapsed')?'▼ Rozwiń':'▲ Zwiń'">${art.collapsed?'▼ Rozwiń':'▲ Zwiń'}</button>`;
+  const langBtn = `<button class="art-lang" onclick="var a=this.closest('.article');a.classList.toggle('en');this.textContent=a.classList.contains('en')?'PL':'EN'">EN</button>`;
   
   let sectionsHtml = '';
   for (const sec of art.sections) {
-    const body = L(sec,'body_pl','body_en').split('\n\n').map(p=>`<p>${esc(p).replace(/\n/g,'<br>')}</p>`).join('');
+    const bodyPl = (sec.body_pl||'').split('\n\n').map(p=>`<p><span class="pl">${esc(p).replace(/\n/g,'<br>')}</span><span class="en">${esc((sec.body_en||'').split('\n\n')[0]||'').replace(/\n/g,'<br>')}</span></p>`).join('');
+    // Better: split both PL and EN into paragraphs and pair them
+    const pls = (sec.body_pl||'').split('\n\n');
+    const ens = (sec.body_en||'').split('\n\n');
+    const paras = pls.map((p,i)=>`<p><span class="pl">${esc(p).replace(/\n/g,'<br>')}</span><span class="en">${esc(ens[i]||p).replace(/\n/g,'<br>')}</span></p>`).join('');
+    
     let quotesHtml = '';
     if (sec.quotes && sec.quotes.length > 0) {
-      quotesHtml = sec.quotes.map(q => `<div class="quote"><span class="q-author">${esc(q.author)}</span>${esc(L(q,'text_pl','text_en'))}</div>`).join('');
+      quotesHtml = sec.quotes.map(q => `<div class="quote"><span class="q-author">${esc(q.author)}</span><span class="pl">${esc(q.text_pl||q.text_en||'')}</span><span class="en">${esc(q.text_en||q.text_pl||'')}</span></div>`).join('');
     }
-    sectionsHtml += `<div class="art-section"><h3>${esc(L(sec,'title_pl','title_en'))}</h3>${body}${quotesHtml}</div>`;
+    sectionsHtml += `<div class="art-section"><h3><span class="pl">${esc(sec.title_pl||sec.title_en||'')}</span><span class="en">${esc(sec.title_en||sec.title_pl||'')}</span></h3>${paras}${quotesHtml}</div>`;
   }
   
-  const sourcesHtml = art.sources ? `<div class="art-sources">📖 Sources: ${art.sources.map(esc).join(' · ')}</div>` : '';
+  const sourcesHtml = art.sources ? `<div class="art-sources">📖 <span class="pl">Źródła</span><span class="en">Sources</span>: ${art.sources.map(esc).join(' · ')}</div>` : '';
   
   return `<div class="article${isCollapsed}">
-<div class="art-header" onclick="var a=this.parentElement;if(event.target===this||event.target===this.querySelector('.art-num')||event.target===this.querySelector('.art-title')||event.target===this.querySelector('.art-meta')){a.classList.toggle('collapsed');var b=a.querySelector('.art-toggle');if(b)b.textContent=a.classList.contains('collapsed')?'▼ Rozwiń':'▲ Zwiń'}">
-${toggleBtn}
+<div class="art-header" onclick="var a=this.parentElement;if(event.target===this||event.target===this.querySelector('.art-num')||event.target===this.querySelector('.art-title')||event.target===this.querySelector('.art-meta')||event.target===this.querySelector('.art-headline')){a.classList.toggle('collapsed');var b=a.querySelector('.art-toggle');if(b)b.textContent=a.classList.contains('collapsed')?'▼ Rozwiń':'▲ Zwiń'}">
+${toggleBtn}${langBtn}
 <span class="art-num">#${art.num}</span>
-<h2 class="art-title">${esc(L(art,'title_pl','title_en'))}</h2>
-<div class="art-headline">${esc(L(art,'headline_pl','headline_en'))}</div>
+<h2 class="art-title"><span class="pl">${esc(art.title_pl||art.title_en||'')}</span><span class="en">${esc(art.title_en||art.title_pl||'')}</span></h2>
+<div class="art-headline"><span class="pl">${esc(art.headline_pl||art.headline_en||'')}</span><span class="en">${esc(art.headline_en||art.headline_pl||'')}</span></div>
 <div class="art-meta">📅 ${esc(art.date)}</div>
 </div>
 <div class="art-body">
@@ -181,6 +193,6 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.7-15-gec1934a · Deploy: <span id="deploy-ts2">2026-07-06</span> · <span id="deploy-hash2">v0000000</span>
+v8.7-17-gc4b4cd0 · Deploy: <span id="deploy-ts2">2026-07-06</span> · <span id="deploy-hash2">v0000000</span>
 </footer>
 </body></html>
