@@ -1,5 +1,19 @@
 <!DOCTYPE html>
-<html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
+<html lang="pl" data-title-pl="AI Tydzień — Hub" data-title-en="AI Weekly — Hub"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script>
+(function(){
+  var html=document.documentElement;
+  var tpl=html.getAttribute('data-title-pl');
+  var ten=html.getAttribute('data-title-en');
+  if(!tpl||!ten)return;
+  function upd(){var lang=html.getAttribute('data-lang')||'pl';document.title=lang==='en'?ten:tpl}
+  upd();
+  // Hook into lang toggle — observe data-lang attribute changes
+  var obs=new MutationObserver(function(muts){
+    muts.forEach(function(m){if(m.attributeName==='data-lang')upd()});
+  });
+  obs.observe(html,{attributes:true,attributeFilter:['data-lang']});
+})();
+</script><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
 <title>AI Weekly — Hub</title>
 <meta name="description" content="Weekly AI Summary — komprehensywne podsumowanie tygodnia w AI. Modele, radar, cytaty, trendy.">
 <meta property="og:title" content="AI Weekly — Hub">
@@ -110,7 +124,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.8.4) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.8.5) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -379,7 +393,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.8.4 · Deploy: <span id="deploy-ts">2026-07-06 18:29:17 UTC</span> · <span id="deploy-hash">vf680d18c</span>
+v8.8.5 · Deploy: <span id="deploy-ts">2026-07-06 18:39:27 UTC</span> · <span id="deploy-hash">v565fedc1</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
