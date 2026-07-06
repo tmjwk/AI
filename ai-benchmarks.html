@@ -96,7 +96,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .skeleton-line.title{height:16px;width:50%;margin-bottom:12px}
 [data-theme="light"] .skeleton-card::before{background:linear-gradient(90deg,transparent,rgba(0,0,0,0.04),transparent)}
 
-/* v8.7.1-16-g4d2397e: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
+/* v8.7.1-17-gfdf0431: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
 :root{
 --fs-xs:0.625rem;--fs-s:0.75rem;--fs-m:0.875rem;--fs-l:1rem;--fs-xl:1.25rem;--fs-xxl:5rem
 }
@@ -108,71 +108,73 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.7.1-16-g4d2397e) — PDF-friendly ====== */
+/* ====== PRINT STYLES (TODO #13, v8.7.1-17-gfdf0431) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
-  html{font-size:11pt}
-  body{background:#fff !important;color:#000 !important;font-family:Georgia,"Times New Roman",serif;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  /* Page margins (A4 / Letter) */
-  @page{margin:1.5cm 2cm}
-  /* Full width — keep small horizontal padding so content does not touch page edge */
-  .c{max-width:none !important;margin:0 !important;padding:0 0.5cm !important}
+  html{font-size:10pt}
+  body{background:#fff !important;color:#000 !important;font-family:Georgia,"Times New Roman",serif;line-height:1.4;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  /* Page margins — paper-saving (A4 / Letter) */
+  @page{margin:1cm 1.2cm}
+  /* Full width — small horizontal padding so content does not touch page edge */
+  .c{max-width:none !important;margin:0 !important;padding:0 !important}
   /* Hide non-printable UI */
-  .h,.tgl,.btt,footer,.skeleton-loader,.art-toggle,.art-lang,.art-card-toggle,.nav,.nav-links,.banner,.search-box,.filter-bar,.chips,.card-lang{display:none !important}
-  /* Headings */
-  h1{font-size:22pt;color:#000 !important;border-bottom:2px solid #000;padding-bottom:4pt;margin-bottom:12pt;page-break-after:avoid}
+  .h,.tgl,.btt,footer,.skeleton-loader,.art-toggle,.art-lang,.art-card-toggle,.nav,.nav-links,.banner,.search-box,.filter-bar,.chips,.card-lang,.print-only-header{display:none !important}
+  /* Headings — tight, page-break-after:avoid keeps title with body */
+  h1{font-size:18pt;color:#000 !important;border-bottom:1.5px solid #000;padding-bottom:2pt;margin:0 0 8pt 0;page-break-after:avoid}
   h2,h3,h4{color:#000 !important;page-break-after:avoid}
-  /* Links — underline only (no URL after-text, it broke layout) */
+  /* Links — underline only */
   a{color:#000 !important;text-decoration:underline}
   a[href^="#"]:after,a[href^="ai-"]:after,a[href^="index"]:after{content:""}
-  /* Print-only header — visible only on paper (static text, no inline script) */
-  .print-only-header{display:block !important;border-bottom:1px solid #999;padding-bottom:6pt;margin-bottom:12pt;font-size:9pt;color:#666;text-align:right;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
   /* ===== Weekly articles (index.html) ===== */
-  /* NOTE: NO page-break-inside:avoid on .article — long articles (12+ min read) would be pushed to page 2, leaving page 1 blank */
-  .article{background:#fff !important;border:1px solid #888 !important;border-left:3px solid #000 !important;border-radius:0 !important;padding:14pt 18pt !important;margin-bottom:14pt !important;page-break-inside:auto}
+  /* Compact padding, allow breaking across pages, no double-frame with .article-card */
+  .article{background:#fff !important;border:0 !important;border-left:2px solid #000 !important;border-radius:0 !important;padding:6pt 10pt !important;margin:0 0 8pt 0 !important;page-break-inside:auto;page-break-after:auto}
   .article.collapsed .art-body{display:block !important}
-  .art-header{cursor:default;page-break-after:avoid}
-  .art-num{background:#fff !important;border-color:#888 !important;color:#000 !important}
-  .art-title{font-size:16pt;color:#000 !important}
-  .art-headline{background:#fff !important;border-left:3px solid #444 !important;color:#333 !important;font-style:italic;padding:6pt 10pt}
-  .art-meta{color:#666 !important}
-  .art-toc{background:#fff !important;border:1px solid #aaa !important;font-size:9pt;page-break-inside:avoid}
-  .art-toc-title{color:#000 !important}
+  .art-header{cursor:default;page-break-after:avoid;padding:0 !important;margin:0 !important}
+  .art-num{background:#fff !important;border:1px solid #888 !important;color:#000 !important;font-size:8pt;padding:1pt 4pt !important;margin-bottom:3pt !important}
+  .art-title{font-size:13pt !important;color:#000 !important;margin:0 0 4pt 0 !important;line-height:1.25 !important}
+  .art-headline{background:#fff !important;border-left:2px solid #444 !important;color:#333 !important;font-style:italic;padding:4pt 8pt !important;margin:0 0 4pt 0 !important;font-size:9.5pt !important;line-height:1.35 !important}
+  .art-meta{color:#666 !important;font-size:8.5pt !important;margin:0 0 4pt 0 !important;gap:8px !important}
+  .art-toc{background:#fff !important;border:1px solid #aaa !important;font-size:8pt;page-break-inside:auto;padding:4pt 8pt !important;margin-bottom:6pt !important}
+  .art-toc-title{color:#000 !important;margin-bottom:2pt !important;font-size:7.5pt !important}
   .art-toc-list a{color:#000 !important}
-  .art-section{page-break-inside:avoid;margin-bottom:14pt;scroll-margin-top:0}
-  .art-section h3{color:#000 !important;border-bottom:1px solid #888 !important;font-size:12pt;page-break-after:avoid}
-  .art-section p{color:#000 !important;font-size:10.5pt;orphans:3;widows:3}
-  .quote{background:#fff !important;border-left:3px solid #555 !important;color:#222 !important;font-style:italic;page-break-inside:avoid;padding:6pt 10pt;margin:8pt 0}
-  .quote .q-author{color:#000 !important}
-  .art-sources{color:#666 !important;border-top:1px solid #888 !important;font-size:8.5pt;page-break-inside:avoid}
-  /* Lazy-load article cards — force expanded on print. NO page-break-inside:avoid (long articles would push to next page) */
-  .article-card{background:#fff !important;border:1px solid #888 !important;border-radius:0 !important;cursor:default;page-break-inside:auto;padding:10pt 18pt !important}
-  .article-card .art-card-body{display:block !important}
-  .article-card .art-card-title{color:#000 !important;font-size:13pt;page-break-after:avoid}
-  /* ===== Cards on other pages ===== */
-  .card,.m-card,.g-card,.b-card,.r-card,.bd,.episode,.blk{page-break-inside:avoid;background:#fff !important;border:1px solid #888 !important;border-radius:0 !important}
-  /* ===== Tables (LM Arena, layoffs, benchmarks) ===== */
-  table{width:100%;border-collapse:collapse;font-size:9pt;page-break-inside:auto}
+  /* Sections — allow breaking, tight margins */
+  .art-section{page-break-inside:auto;margin-bottom:8pt !important;scroll-margin-top:0}
+  .art-section h3{color:#000 !important;border-bottom:1px solid #888 !important;font-size:11pt;page-break-after:avoid;margin:0 0 4pt 0 !important;padding-bottom:2pt !important}
+  .art-section p{color:#000 !important;font-size:10pt;orphans:2;widows:2;margin:0 0 6pt 0 !important;line-height:1.4 !important}
+  /* Quotes — allow breaking if long, compact padding */
+  .quote{background:#fff !important;border-left:2px solid #555 !important;color:#222 !important;font-style:italic;page-break-inside:auto;padding:4pt 8pt !important;margin:4pt 0 !important;font-size:9.5pt !important}
+  .quote .q-author{color:#000 !important;font-size:8pt !important;margin-bottom:2pt !important}
+  .art-sources{color:#666 !important;border-top:1px solid #888 !important;font-size:8pt;page-break-inside:auto;margin-top:6pt !important;padding-top:3pt !important}
+  /* Lazy-load article cards — STRIP wrapper (avoid double padding/border with inner .article) */
+  .article-card{background:transparent !important;border:0 !important;border-radius:0 !important;cursor:default;page-break-inside:auto;padding:0 !important;margin:0 0 8pt 0 !important}
+  .article-card .art-card-body{display:block !important;padding:0 !important;margin:0 !important}
+  .article-card .art-card-title{color:#000 !important;font-size:13pt;page-break-after:avoid;margin:0 0 4pt 0 !important}
+  .article-card .art-card-meta{color:#666 !important;font-size:8.5pt !important;margin:0 0 4pt 0 !important}
+  /* ===== Cards on other pages — allow breaking, compact ===== */
+  .card,.m-card,.g-card,.b-card,.r-card,.bd,.episode,.blk{page-break-inside:auto;background:#fff !important;border:1px solid #888 !important;border-radius:0 !important;padding:6pt 8pt !important;margin-bottom:6pt !important}
+  /* ===== Tables (LM Arena, layoffs, benchmarks) — compact ===== */
+  table{width:100%;border-collapse:collapse;font-size:8.5pt;page-break-inside:auto}
   thead{display:table-header-group}
   tr{page-break-inside:avoid;page-break-after:auto}
-  th,td{border:1px solid #888;padding:4pt 6pt;text-align:left}
+  th,td{border:1px solid #888;padding:2pt 4pt;text-align:left}
   th{background:#eee !important;color:#000 !important;font-weight:600}
   /* ===== Radar episodes ===== */
-  .episode{margin-bottom:14pt !important}
+  .episode{margin-bottom:8pt !important;page-break-inside:auto}
   .ep-body{display:block !important}
   .ep-toggle{display:none !important}
   /* ===== Pulse episodes ===== */
-  .blk-lbl{font-weight:600;color:#000 !important}
+  .blk-lbl{font-weight:600;color:#000 !important;font-size:9pt !important}
   /* ===== Misc ===== */
-  .sec-t{color:#000 !important;border-bottom:2px solid #000 !important;font-size:13pt;page-break-after:avoid}
-  .update-list li{color:#000 !important;border-bottom:1px solid #aaa !important}
+  .sec-t{color:#000 !important;border-bottom:1.5px solid #000 !important;font-size:11pt;page-break-after:avoid;margin-bottom:4pt !important;padding-bottom:2pt !important}
+  .update-list li{color:#000 !important;border-bottom:1px solid #aaa !important;font-size:9pt !important;padding:3pt 0 !important}
   .update-date{color:#000 !important}
   /* Print-only block — visible only on paper */
   .print-only{display:block !important}
 }
 /* Screen: hide print-only elements */
 .print-only,.print-only-header{display:none}
+
 
 
 
@@ -250,7 +252,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.7.1-16-g4d2397e · Deploy: <span id="deploy-ts">2026-07-06 05:01:38 UTC</span> · <span id="deploy-hash">v224e8725</span>
+v8.7.1-17-gfdf0431 · Deploy: <span id="deploy-ts">2026-07-06 05:07:12 UTC</span> · <span id="deploy-hash">v24de4af6</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
