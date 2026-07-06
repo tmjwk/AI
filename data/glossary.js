@@ -21,7 +21,7 @@ const G = [
     "c": "Agentic i narzędzia",
     "t": "Agentic coding",
     "en": "Agentic Coding",
-    "d_pl": "biją proprietary agentowy benchmarks.",
+    "d_pl": "AI, które pisze, testuje i iteruje kod autonomicznie. Narzędzia: Cursor, Devin, Claude Code, GitHub Copilot. W 2026 roku modele frontier będą rozwiązywać 30-70% zadań SWE-bench (prawdziwe bugi z GitHub). Agentic coding transformuje rozwój oprogramowania — deweloperzy staną się recenzentami, nie programistami.",
     "d_en": "AI that writes, tests, and iterates on code autonomously. Tools: Cursor, Devin, Claude Code, GitHub Copilot. In 2026, frontier models will complete 30-70% of SWE-bench tasks (real GitHub bugs). Agentic coding is transforming software development — developers will become reviewers, not writers."
   },
   {
@@ -434,7 +434,7 @@ const G = [
     "c": "Infrastruktura",
     "t": "Open-weights",
     "en": "Open-Weights",
-    "d_pl": "służy nauce, nie produkcji.",
+    "d_pl": "Modele, których wytrenowane wagi są publicznie dostępne (ale niekoniecznie dane treningowe ani kod). Llama, Qwen, GLM to open-weights. Różne od truly open-source (które zawiera dane i kod). Open-weights umożliwiają lokalne uruchomienie, fine-tuning i audyt, ale nie pełną reprodukcję.",
     "d_en": "Models whose trained weights are published (but not necessarily training data or code). Llama, Qwen, GLM are open-weights. Distinct from truly open-source (which includes data and code). Open-weights enable local deployment, fine-tuning, and audit, but not full reproduction."
   },
   {
@@ -497,7 +497,7 @@ const G = [
     "c": "Bezpieczeństwo i regulacje",
     "t": "Red teaming",
     "en": "Red Teaming",
-    "d_pl": "modele atakują modele w skali niemożliwej dla ludzi.",
+    "d_pl": "Testowanie modeli AI pod kątem luk poprzez próby wymuszenia niepożądanego zachowania. Red teams próbują wywołać szkodliwe odpowiedzi, jailbreaki, bias itd. Standardowa praktyka w frontier labs. Dziedzina AI safety wyrosła z red-teamingu. W 2026 roku zautomatyzowany red-teaming (AI testujące AI) skaluje się poza to, co potrafią zespoły ludzkie.",
     "d_en": "Testing AI models for vulnerabilities by attempting to make them misbehave. Red teams try to elicit harmful outputs, jailbreaks, bias, etc. Standard practice at frontier labs. The AI safety field grew out of red-teaming. In 2026, automated red-teaming (AI testing AI) scales beyond what human teams can achieve."
   },
   {
@@ -609,7 +609,7 @@ const G = [
     "c": "Agentic i narzędzia",
     "t": "Tool use / Function calling",
     "en": "Tool Use / Function Calling",
-    "d_pl": "bez tego LLM jest \"zamknięty w swojej głowie\".",
+    "d_pl": "Zdolność LLM do wywoływania zewnętrznych funkcji/narzędzi — przeszukiwanie web, uruchamianie kodu, odpytywanie baz danych. Fundament agentów AI. Zapoczątkowane przez Toolformer, teraz standard we wszystkich modelach frontier. Transformuje LLM z generatorów tekstu w uniwersalne narzędzia do rozwiązywania problemów.",
     "d_en": "The ability of LLMs to call external functions/tools — search the web, run code, query databases. The foundation of AI agents. Pioneered by Toolformer, now standard in all frontier models. Transforms LLMs from text generators into general-purpose problem solvers."
   },
   {
@@ -658,7 +658,7 @@ const G = [
     "c": "Kontekst i wydajność",
     "t": "Vector database",
     "en": "Vector Database",
-    "d_pl": "pozwala znaleźć najbliższe dokumenty do zapytania w MS.",
+    "d_pl": "Baza danych zoptymalizowana pod przechowywanie i wyszukiwanie wektorowych reprezentacji (embeddings). Umożliwia szybkie zapytania \"znajdź podobne\" w skali. Produkty: Pinecone, Weaviate, Chroma, pgvector. Kręgosłup systemów RAG. W 2026 roku tradycyjne bazy (PostgreSQL z pgvector) często zastępują specjalistyczne bazy wektorowe dla umiarkowanej skali.",
     "d_en": "A database optimized for storing and searching vector embeddings. Enables fast \"find similar\" queries at scale. Products: Pinecone, Weaviate, Chroma, pgvector. The backbone of RAG systems. In 2026, traditional databases (PostgreSQL with pgvector) often replace specialized vector DBs for moderate scale."
   },
   {

@@ -1,5 +1,6 @@
 // AI Radar data — V4 auto-generated from radar.json (Nurt 2: bilingual)
-// Schema: episodes = [{id, date, title, collapsed, sections: [{id, num, icon, title, type, cards/items/headers+rows}]}]
+// Schema: episodes = [{id, date, title, collapsed, sections: [{id, num, icon, title_pl, title_en, type, cards/items/headers+rows}]}]
+//          sticky = [{...sections without episode_id}]
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
 const episodes = [
@@ -13,7 +14,6 @@ const episodes = [
         "id": "week-latest",
         "num": 0,
         "icon": "📅",
-        "title": "TYDZIEŃ: 26.06 – 03.07",
         "type": "cards",
         "cards": [
           {
@@ -284,13 +284,14 @@ const episodes = [
             "date": "2026-07-03",
             "episode_id": "ep-2026-07-03"
           }
-        ]
+        ],
+        "title_pl": "TYDZIEŃ: 26.06 – 03.07",
+        "title_en": "WEEK: 06.26 – 07.03"
       },
       {
         "id": "who",
         "num": 1,
         "icon": "🏢",
-        "title": "KTO ROBI CIEKAWE RZECZY",
         "type": "cards",
         "cards": [
           {
@@ -369,13 +370,14 @@ const episodes = [
             "date": "2026-07-03",
             "episode_id": "ep-2026-07-03"
           }
-        ]
+        ],
+        "title_pl": "KTO ROBI CIEKAWE RZECZY",
+        "title_en": "WHO IS BUILDING INTERESTING THINGS"
       },
       {
         "id": "rules",
         "num": 4,
         "icon": "🏛️",
-        "title": "REGULACJE I GEOPOLITYKA",
         "type": "cards",
         "cards": [
           {
@@ -410,13 +412,14 @@ const episodes = [
             "date": "2026-07-03",
             "episode_id": "ep-2026-07-03"
           }
-        ]
+        ],
+        "title_pl": "REGULACJE I GEOPOLITYKA",
+        "title_en": "REGULATION & GEOPOLITICS"
       },
       {
         "id": "how",
         "num": 5,
         "icon": "🏗️",
-        "title": "ARCHITEKTURY I WZORCE",
         "type": "cards",
         "cards": [
           {
@@ -579,13 +582,14 @@ const episodes = [
             "date": "2026-07-03",
             "episode_id": "ep-2026-07-03"
           }
-        ]
+        ],
+        "title_pl": "ARCHITEKTURY I WZORCE",
+        "title_en": "ARCHITEKTURY I WZORCE"
       },
       {
         "id": "jobs",
         "num": 8,
         "icon": "📊",
-        "title": "RYNEK PRACY — LAYOFFS",
         "type": "table",
         "headers": [
           "Rok",
@@ -619,7 +623,9 @@ const episodes = [
             "layoffs.fyi"
           ]
         ],
-        "note": "Źródło: layoffs.fyi · Aktualizacja: 03.07.2026"
+        "note": "Źródło: layoffs.fyi · Aktualizacja: 03.07.2026",
+        "title_pl": "RYNEK PRACY — LAYOFFS",
+        "title_en": "RYNEK PRACY — LAYOFFS"
       }
     ]
   },
@@ -633,7 +639,6 @@ const episodes = [
         "id": "week-latest",
         "num": 0,
         "icon": "📅",
-        "title": "TYDZIEŃ: 26.06 – 03.07",
         "type": "cards",
         "cards": [
           {
@@ -995,13 +1000,14 @@ const episodes = [
             "date": "2026-06-26",
             "episode_id": "ep-2026-06-26"
           }
-        ]
+        ],
+        "title_pl": "TYDZIEŃ: 26.06 – 03.07",
+        "title_en": "WEEK: 06.26 – 07.03"
       },
       {
         "id": "who",
         "num": 1,
         "icon": "🏢",
-        "title": "KTO ROBI CIEKAWE RZECZY",
         "type": "cards",
         "cards": [
           {
@@ -1124,13 +1130,14 @@ const episodes = [
             "date": "2026-06-26",
             "episode_id": "ep-2026-06-26"
           }
-        ]
+        ],
+        "title_pl": "KTO ROBI CIEKAWE RZECZY",
+        "title_en": "WHO IS BUILDING INTERESTING THINGS"
       },
       {
         "id": "money",
         "num": 3,
         "icon": "💰",
-        "title": "PIENIĄDZE — KTO MA, KTO WYDAJE",
         "type": "cards",
         "cards": [
           {
@@ -1188,13 +1195,14 @@ const episodes = [
             "date": "2026-06-26",
             "episode_id": "ep-2026-06-26"
           }
-        ]
+        ],
+        "title_pl": "PIENIĄDZE — KTO MA, KTO WYDAJE",
+        "title_en": "MONEY — WHO HAS, WHO SPENDS"
       },
       {
         "id": "rules",
         "num": 4,
         "icon": "🏛️",
-        "title": "REGULACJE I GEOPOLITYKA",
         "type": "cards",
         "cards": [
           {
@@ -1241,13 +1249,14 @@ const episodes = [
             "date": "2026-06-26",
             "episode_id": "ep-2026-06-26"
           }
-        ]
+        ],
+        "title_pl": "REGULACJE I GEOPOLITYKA",
+        "title_en": "REGULATION & GEOPOLITICS"
       },
       {
         "id": "how",
         "num": 5,
         "icon": "🏗️",
-        "title": "ARCHITEKTURY I WZORCE",
         "type": "cards",
         "cards": [
           {
@@ -1327,13 +1336,14 @@ const episodes = [
             "date": "2026-06-26",
             "episode_id": "ep-2026-06-26"
           }
-        ]
+        ],
+        "title_pl": "ARCHITEKTURY I WZORCE",
+        "title_en": "ARCHITEKTURY I WZORCE"
       },
       {
         "id": "learn",
         "num": 7,
         "icon": "🎓",
-        "title": "ZASOBY EDUKACYJNE",
         "type": "cards",
         "cards": [
           {
@@ -1399,17 +1409,19 @@ const episodes = [
             "date": "2026-06-26",
             "episode_id": "ep-2026-06-26"
           }
-        ]
+        ],
+        "title_pl": "ZASOBY EDUKACYJNE",
+        "title_en": "ZASOBY EDUKACYJNE"
       }
     ]
   }
 ];
+
 const sticky = [
   {
     "id": "possible",
     "num": 2,
     "icon": "⚡",
-    "title": "CO JEST OBECNIE MOŻLIWE",
     "type": "list",
     "items": [
       {
@@ -1520,13 +1532,14 @@ const sticky = [
         "html_en": "x released mcp server for querying twitter data. software free, but data access paid.",
         "episode_id": "ep-2026-07-03"
       }
-    ]
+    ],
+    "title_pl": "CO JEST OBECNIE MOŻLIWE",
+    "title_en": "CO JEST OBECNIE MOŻLIWE"
   },
   {
     "id": "benchmarks",
     "num": 6,
     "icon": "🏆",
-    "title": "LM ARENA — RANKINGI (01.07.2026)",
     "type": "table",
     "headers": [
       "#",
@@ -1690,6 +1703,8 @@ const sticky = [
         }
       ]
     ],
-    "note": "Źródło: LM Arena (lmarena.ai) · Data: 01.07.2026"
+    "note": "Źródło: LM Arena (lmarena.ai) · Data: 01.07.2026",
+    "title_pl": "LM ARENA — RANKINGI (01.07.2026)",
+    "title_en": "LM ARENA — RANKINGI (01.07.2026)"
   }
 ];
