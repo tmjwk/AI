@@ -230,7 +230,7 @@ const M = [
     "tags": [],
     "url": "https://ideogram.ai/news/ideogram-4.0",
     "yt": "OA4gchz1Zcs",
-    "desc_pl": "Top DesignArena open leaderboard, ComfyUI",
+    "desc_pl": "Topowy otwarty ranking DesignArena, ComfyUI",
     "desc_en": "Top DesignArena open leaderboard, ComfyUI",
     "b_pl": "Renderowanie tekstu w obrazach — logo, poster, design z napisami",
     "b_en": "text rendering in images — logos, posters, design with text"
@@ -560,7 +560,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "7c_ieWfAbrw",
-    "desc_pl": "Single transformer model interleaving text, audio, video — 25fps, 200ms latency, duplex communication",
+    "desc_pl": "Pojedynczy model transformer przeplatający tekst, audio, wideo — 25fps, latencja 200ms, komunikacja duplex",
     "desc_en": "Single transformer model interleaving text, audio, video — 25fps, 200ms latency, duplex communication",
     "b_pl": "Real-time konwersacyjne avatary 25fps — streaming z 200ms latencją, duplex communication",
     "b_en": "real-time conversational avatars 25fps — streaming with 200ms latency, duplex communication"
@@ -877,7 +877,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "kkLlzQqa7MY",
-    "desc_pl": "Open-source image generator + editor — text-to-image, reference images, editing, permissive license",
+    "desc_pl": "Open-source generator i edytor obrazów — text-to-image, obrazy referencyjne, edycja, permisywna licencja",
     "desc_en": "Open-source image generator + editor — text-to-image, reference images, editing, permissive license",
     "b_pl": "Image generation + editing w jednym modelu — permissive license, konkurent Flux/Nano Banana",
     "b_en": "image generation + editing in one model — permissive license, Flux/Nano Banana competitor"
@@ -1162,7 +1162,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Single image/video → layered 3D model — multiple layers of hidden depth, 6.2GB",
+    "desc_pl": "Pojedyncze zdjęcie/wideo → warstwowy model 3D — wiele warstw ukrytej głębi, 6.2GB",
     "desc_en": "Single image/video → layered 3D model — multiple layers of hidden depth, 6.2GB",
     "b_pl": "Layered 3D reconstruction — pixel-aligned geometry, hidden depth layers",
     "b_en": "layered 3D reconstruction — pixel-aligned geometry, hidden depth layers"
@@ -1192,7 +1192,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Multiple images → one clean 3D model — unaligned images, different camera positions",
+    "desc_pl": "Wiele zdjęć → jeden czysty model 3D — zdjęcia nierównomiernie ułożone, różne pozycje kamery",
     "desc_en": "Multiple images → one clean 3D model — unaligned images, different camera positions",
     "b_pl": "Multi-image 3D reconstruction — fuse nieuykładnionych zdjęć",
     "b_en": "multi-image 3D reconstruction — fusing unaligned photos"
@@ -1207,7 +1207,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Single image → 360 panorama 3D world — separates world construction from video rendering",
+    "desc_pl": "Pojedyncze zdjęcie → świat 3D panorama 360° — oddziela konstrukcję świata od renderowania wideo",
     "desc_en": "Single image → 360 panorama 3D world — separates world construction from video rendering",
     "b_pl": "360 world from image — panorama → 3D Gaussian model → interactive world",
     "b_en": "360 world from image — panorama → 3D Gaussian model → interactive world"
@@ -1222,7 +1222,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Fully open-source image model — 3B params, models + training code + data processing",
+    "desc_pl": "W pełni open-source model obrazowy — 3B parametrów, modele + kod treningowy + przetwarzanie danych",
     "desc_en": "Fully open-source image model — 3B params, models + training code + data processing",
     "b_pl": "Fully open-source image model — training code + data, dla nauki",
     "b_en": "fully open-source image model — training code + data, for research"
@@ -1237,7 +1237,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "First-person world simulator — input human motion 3D + anchor views → egocentric video",
+    "desc_pl": "Symulator świata first-person — wejście: ruch 3D człowieka + widoki kotwicy → wideo egocentryczne",
     "desc_en": "First-person world simulator — input human motion 3D + anchor views → egocentric video",
     "b_pl": "Egocentric world sim — first-person view z motion + anchor views",
     "b_en": "egocentric world sim — first-person view from motion + anchor views"
@@ -1252,7 +1252,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Fast 3D mesh generator — prompt/point cloud/image → 3D mesh, 18x faster, latent space",
+    "desc_pl": "Szybki generator siatek 3D — prompt/chmura punktów/obraz → siatka 3D, 18x szybszy, przestrzeń ukryta",
     "desc_en": "Fast 3D mesh generator — prompt/point cloud/image → 3D mesh, 18x faster, latent space",
     "b_pl": "Fast 3D mesh generation — 18x szybszy, prompt/image → 3D mesh",
     "b_en": "fast 3D mesh generation — 18x faster, prompt/image → 3D mesh"
@@ -1267,7 +1267,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "SxiRANj0xLs",
-    "desc_pl": "Long consistent video generator — hierarchical autoencoder, coarse-to-fine rollout",
+    "desc_pl": "Generator długich spójnych wideo — hierarchiczny autoenkoder, rollout od ogólnego do szczegółowego",
     "desc_en": "Long consistent video generator — hierarchical autoencoder, coarse-to-fine rollout",
     "b_pl": "Long video generation — spójne długie wideo przez hierarchical autoencoder",
     "b_en": "long video generation — consistent long video via hierarchical autoencoder"
@@ -1447,7 +1447,7 @@ const M = [
     "tags": [],
     "url": "",
     "yt": "CzxqQJOswvo",
-    "desc_pl": "Industrial humanoid — all-weather, dust/water resistant, sprint + flip + delicate circuit breaker manipulation",
+    "desc_pl": "Humanoid przemysłowy — odporny na warunki atmosferyczne, pył/wodę, sprint + przewrót + precyzyjna manipulacja bezpiecznikiem",
     "desc_en": "Industrial humanoid — all-weather, dust/water resistant, sprint + flip + delicate circuit breaker manipulation",
     "b_pl": "Industrial humanoid robot — extreme environments, precise manipulation + raw power",
     "b_en": "industrial humanoid robot — extreme environments, precise manipulation + raw power"
