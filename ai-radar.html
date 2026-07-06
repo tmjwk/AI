@@ -126,7 +126,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.8.15) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.8.16) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -257,13 +257,12 @@ if(langBtn){langBtn.textContent=lang==='pl'?'EN':'PL';langBtn.addEventListener('
   // Zachowaj stan zwijania odcinków przed re-renderem
   var openEps=[];
   document.querySelectorAll('.episode.open').forEach(e=>{var id=e.getAttribute('data-ep-id');if(id)openEps.push(id)});
+  // Tymczasowo nadpisz ep.collapsed w danych przed renderAll (aby renderAll nie zwijał otwartych)
+  if(typeof episodes!=='undefined'){
+    episodes.forEach(ep=>{ep.collapsed = !openEps.includes(ep.id)});
+  }
   // Re-render (aktualizuje langHint na kartach — PL/EN działa poprawnie)
   try{renderAll()}catch(e){console.error('Render error on lang toggle:',e)}
-  // Przywróć stan zwijania (.ep-old.open + .ep-collapse są siblingami)
-  openEps.forEach(id=>{
-    var el=document.querySelector('.episode[data-ep-id="'+id+'"]');
-    if(el){el.classList.add('open');var b=el.querySelector('.ep-toggle-btn');if(b)b.textContent='▲ Zwiń'}
-  });
 })}
 t.addEventListener('click',()=>{
 theme=theme==='dark'?'light':'dark';
@@ -354,7 +353,7 @@ function renderEpisodeHeader(ep){
 <span class="e-num">📡</span>
 <span class="e-channel">Lev Selector</span>
 </div>
-<div class="e-title">${esc(ep.title)}</div>
+<div class="e-title"><span class="pl">${esc(ep.title_pl||ep.title||'')}</span><span class="en">${esc(ep.title_en||ep.title||'')}</span></div>
 <div class="e-meta">
 <span class="m-item">📅 <span class="mv">${esc(ep.date)}</span></span>
 <span class="m-item">📊 <span class="mv">${cardsCount} kart</span></span>
@@ -412,7 +411,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.8.15 · Deploy: <span id="deploy-ts">2026-07-06 21:00:26 UTC</span> · <span id="deploy-hash">v6d50faf4</span><br><a href="https://github.com/lselector/seminar/tree/main/2026" target="_blank" rel="noopener" style="color:var(--hd);text-decoration:none">Weekly AI Updates — GitHub ↗</a>
+v8.8.16 · Deploy: <span id="deploy-ts">2026-07-06 21:11:53 UTC</span> · <span id="deploy-hash">vd866fd1f</span><br><a href="https://github.com/lselector/seminar/tree/main/2026" target="_blank" rel="noopener" style="color:var(--hd);text-decoration:none">Weekly AI Updates — GitHub ↗</a>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>

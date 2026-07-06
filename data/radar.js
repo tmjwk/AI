@@ -1,5 +1,5 @@
 // AI Radar data — V4 auto-generated from radar.json (Nurt 2: bilingual)
-// Schema: episodes = [{id, date, title, collapsed, sections: [{id, num, icon, title_pl, title_en, type, cards/items/headers+rows}]}]
+// Schema: episodes = [{id, date, title_pl, title_en, collapsed, sections: [...]}]
 //          sticky = [{...sections without episode_id}]
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
@@ -7,7 +7,6 @@ const episodes = [
   {
     "id": "ep-2026-07-03",
     "date": "2026-07-03",
-    "title": "Odcinek 03.07.2026",
     "collapsed": false,
     "sections": [
       {
@@ -627,12 +626,13 @@ const episodes = [
         "title_pl": "RYNEK PRACY — LAYOFFS",
         "title_en": "RYNEK PRACY — LAYOFFS"
       }
-    ]
+    ],
+    "title_pl": "Odcinek 03.07.2026",
+    "title_en": "Episode 07/03/2026"
   },
   {
     "id": "ep-2026-06-26",
     "date": "2026-06-26",
-    "title": "Odcinek 26.06.2026",
     "collapsed": true,
     "sections": [
       {
@@ -1413,7 +1413,9 @@ const episodes = [
         "title_pl": "ZASOBY EDUKACYJNE",
         "title_en": "ZASOBY EDUKACYJNE"
       }
-    ]
+    ],
+    "title_pl": "Odcinek 26.06.2026",
+    "title_en": "Episode 06/26/2026"
   }
 ];
 
