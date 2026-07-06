@@ -730,6 +730,17 @@ const CATS = [
   "Ewaluacja"
 ];
 
+const CATS_EN = {
+  "Architektury i modele": "Architectures & Models",
+  "Trening i optymalizacja": "Training & Optimization",
+  "Kontekst i wydajność": "Context & Performance",
+  "Agentic i narzędzia": "Agentic & Tools",
+  "Modalności": "Modalities",
+  "Infrastruktura": "Infrastructure",
+  "Bezpieczeństwo i regulacje": "Safety & Regulation",
+  "Ewaluacja": "Evaluation"
+};
+
 const ICONS = {
   "Architektury i modele": "🧠",
   "Trening i optymalizacja": "🏋️",

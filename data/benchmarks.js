@@ -848,6 +848,21 @@ const CATS = [
   "Areny i leaderboardy"
 ];
 
+const CATS_EN = {
+  "Wiedza i rozumowanie": "Knowledge & Reasoning",
+  "Matematyka": "Math",
+  "Coding": "Coding",
+  "Agentic": "Agentic",
+  "Multimodal": "Multimodal",
+  "Generowanie obrazów": "Image Generation",
+  "Generowanie wideo": "Video Generation",
+  "3D": "3D",
+  "Robotyka": "Robotics",
+  "Nauki ścisłe": "Hard Sciences",
+  "Bezpieczeństwo": "Safety",
+  "Areny i leaderboardy": "Arenas & Leaderboards"
+};
+
 const ICONS = {
   "Wiedza i rozumowanie": "🧠",
   "Matematyka": "🔢",
