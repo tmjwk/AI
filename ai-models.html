@@ -166,7 +166,7 @@ select option{color:var(--fg)}
 .skeleton-line.title{height:16px;width:50%;margin-bottom:12px}
 [data-theme="light"] .skeleton-card::before{background:linear-gradient(90deg,transparent,rgba(0,0,0,0.04),transparent)}
 
-/* v8.7.1-14-gd0e458b: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
+/* v8.7.1-15-geb92714: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
 :root{
 --fs-xs:0.625rem;--fs-s:0.75rem;--fs-m:0.875rem;--fs-l:1rem;--fs-xl:1.25rem;--fs-xxl:5rem
 }
@@ -178,29 +178,28 @@ select option{color:var(--fg)}
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.7.1-14-gd0e458b) — PDF-friendly ====== */
+/* ====== PRINT STYLES (TODO #13, v8.7.1-15-geb92714) — PDF-friendly ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
   html{font-size:11pt}
-  body{background:#fff !important;color:#000 !important;font-family:"Iowan Old Style",Palatino,"Times New Roman",Georgia,serif;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{background:#fff !important;color:#000 !important;font-family:Georgia,"Times New Roman",serif;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   /* Page margins (A4 / Letter) */
   @page{margin:1.5cm 2cm}
-  /* Full width — no clamp */
-  .c{max-width:none !important;margin:0 !important;padding:0 !important}
+  /* Full width — keep small horizontal padding so content does not touch page edge */
+  .c{max-width:none !important;margin:0 !important;padding:0 0.5cm !important}
   /* Hide non-printable UI */
   .h,.tgl,.btt,footer,.skeleton-loader,.art-toggle,.art-lang,.art-card-toggle,.nav,.nav-links,.banner,.search-box,.filter-bar,.chips,.card-lang{display:none !important}
   /* Headings */
   h1{font-size:22pt;color:#000 !important;border-bottom:2px solid #000;padding-bottom:4pt;margin-bottom:12pt;page-break-after:avoid}
   h2,h3,h4{color:#000 !important;page-break-after:avoid}
-  /* Links — underline + show URL for external only */
+  /* Links — underline only (no URL after-text, it broke layout) */
   a{color:#000 !important;text-decoration:underline}
-  a[href^="http"]:not([href*="tmjwk.github.io"]):after{content:" (" attr(href) ")";font-size:8pt;color:#666;font-family:monospace;word-break:break-all}
   a[href^="#"]:after,a[href^="ai-"]:after,a[href^="index"]:after{content:""}
-  /* Print-only header — visible only on paper */
-  .print-only-header{display:block !important;border-bottom:1px solid #999;padding-bottom:6pt;margin-bottom:12pt;font-size:9pt;color:#666;text-align:right;font-family:-apple-system,sans-serif}
+  /* Print-only header — visible only on paper (static text, no inline script) */
+  .print-only-header{display:block !important;border-bottom:1px solid #999;padding-bottom:6pt;margin-bottom:12pt;font-size:9pt;color:#666;text-align:right;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
   /* ===== Weekly articles (index.html) ===== */
-  .article{background:#fff !important;border:1px solid #888 !important;border-left:3px solid #000 !important;border-radius:0 !important;padding:14pt 0 !important;margin-bottom:14pt !important;page-break-inside:avoid}
+  .article{background:#fff !important;border:1px solid #888 !important;border-left:3px solid #000 !important;border-radius:0 !important;padding:14pt 18pt !important;margin-bottom:14pt !important;page-break-inside:avoid}
   .article.collapsed .art-body{display:block !important}
   .art-header{cursor:default}
   .art-num{background:#fff !important;border-color:#888 !important;color:#000 !important}
@@ -217,7 +216,7 @@ select option{color:var(--fg)}
   .quote .q-author{color:#000 !important}
   .art-sources{color:#666 !important;border-top:1px solid #888 !important;font-size:8.5pt;page-break-inside:avoid}
   /* Lazy-load article cards — force expanded on print */
-  .article-card{background:#fff !important;border:1px solid #888 !important;border-radius:0 !important;cursor:default;page-break-inside:avoid;padding:10pt 0 !important}
+  .article-card{background:#fff !important;border:1px solid #888 !important;border-radius:0 !important;cursor:default;page-break-inside:avoid;padding:10pt 18pt !important}
   .article-card .art-card-body{display:block !important}
   .article-card .art-card-title{color:#000 !important;font-size:13pt}
   /* ===== Cards on other pages ===== */
@@ -238,11 +237,12 @@ select option{color:var(--fg)}
   .sec-t{color:#000 !important;border-bottom:2px solid #000 !important;font-size:13pt;page-break-after:avoid}
   .update-list li{color:#000 !important;border-bottom:1px solid #aaa !important}
   .update-date{color:#000 !important}
-  /* Print-only block (URL/date) — visible only on paper */
+  /* Print-only block — visible only on paper */
   .print-only{display:block !important}
 }
 /* Screen: hide print-only elements */
 .print-only,.print-only-header{display:none}
+
 
 </style><meta name="description" content="Modele AI: LLM, Image Generation, Video, 3D, Coding, TTS, Humanoid Robots. Open-source i proprietary.">
 <meta property="og:title" content="Modele AI — 106 modeli w 16 kategoriach">
@@ -255,7 +255,8 @@ select option{color:var(--fg)}
 <meta name="twitter:description" content="Modele AI: LLM, Image Generation, Video, 3D, Coding, TTS, Humanoid Robots. Open-source i proprietary.">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "AI Models", "url": "https://tmjwk.github.io/AI/ai-models.html", "description": "106 modeli AI w 16 kategoriach: LLM, Image Generation, Video, 3D, Coding, TTS, Humanoid Robots."}</script>
 </head><body>
-<div class="print-only-header">AI Hub · tmjwk.github.io/AI · wydrukowano: <script>document.write(new Date().toLocaleDateString("pl-PL"))</script></div><script>if(performance.getEntriesByType){var nav=performance.getEntriesByType('navigation')[0];if(nav&&nav.transferSize===0&&!location.search.includes('_r=')){location.replace(location.pathname+(location.search?location.search+'&':'?')+'_r='+Date.now())}}</script>
+<div class="print-only-header">AI Hub · tmjwk.github.io/AI</div>
+<script>if(performance.getEntriesByType){var nav=performance.getEntriesByType('navigation')[0];if(nav&&nav.transferSize===0&&!location.search.includes('_r=')){location.replace(location.pathname+(location.search?location.search+'&':'?')+'_r='+Date.now())}}</script>
 <div class="c">
 <div class="h">
 <div class="hr"><h1><span class="pl">Modele AI</span><span class="en">AI Models</span></h1><div class="nav nav-links">
@@ -360,7 +361,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.7.1-14-gd0e458b · Deploy: <span id="deploy-ts">2026-07-06 04:49:00 UTC</span> · <span id="deploy-hash">vdc3a80aa</span>
+v8.7.1-15-geb92714 · Deploy: <span id="deploy-ts">2026-07-06 04:56:16 UTC</span> · <span id="deploy-hash">va21f1bd4</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
