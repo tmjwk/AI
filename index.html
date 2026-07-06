@@ -55,7 +55,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .article:not(.en) .pl{display:inline !important}
 /* Global PL/EN toggle — tylko dla elementów POZA artykułem (nav, sub, updates) */
 .art-body{margin-top:20px}
-.art-section{margin-bottom:32px}
+.art-toc{background:var(--bg);border:1px solid var(--bdl);border-radius:8px;padding:14px 18px;margin-bottom:24px}
+.art-toc-title{font-size:var(--fs-s);text-transform:uppercase;letter-spacing:.1em;color:var(--hd);margin-bottom:8px;font-weight:600}
+.art-toc-list{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:4px 12px}
+.art-toc-list a{font-size:var(--fs-s);color:var(--hs);text-decoration:none;padding:2px 0;transition:color .15s}
+.art-toc-list a:hover{color:var(--ac)}
+.art-section{margin-bottom:32px;scroll-margin-top:80px}
 .art-section h3{font-size:var(--fs-l);font-weight:700;color:var(--hp);margin:0 0 12px 0;padding-bottom:8px;border-bottom:1px solid var(--bdl)}
 .art-section p{font-size:var(--fs-m);color:var(--fg);margin:0 0 14px 0}
 .art-section p:last-child{margin-bottom:0}
@@ -139,18 +144,29 @@ function renderArticle(art){
   const langBtn = `<button class="art-lang" onclick="var a=this.closest('.article');a.classList.toggle('en');this.textContent=a.classList.contains('en')?'PL':'EN'">EN</button>`;
   
   let sectionsHtml = '';
-  for (const sec of art.sections) {
-    const bodyPl = (sec.body_pl||'').split('\n\n').map(p=>`<p><span class="pl">${esc(p).replace(/\n/g,'<br>')}</span><span class="en">${esc((sec.body_en||'').split('\n\n')[0]||'').replace(/\n/g,'<br>')}</span></p>`).join('');
-    // Better: split both PL and EN into paragraphs and pair them
+  let tocHtml = '';
+  if (art.sections.length > 2) {
+    tocHtml = '<div class="art-toc"><div class="art-toc-title">📋 <span class="pl">Spis treści</span><span class="en">Table of contents</span></div><ul class="art-toc-list">';
+  }
+  for (let i = 0; i < art.sections.length; i++) {
+    const sec = art.sections[i];
+    const secId = `sec-${art.num}-${i}`;
     const pls = (sec.body_pl||'').split('\n\n');
     const ens = (sec.body_en||'').split('\n\n');
-    const paras = pls.map((p,i)=>`<p><span class="pl">${esc(p).replace(/\n/g,'<br>')}</span><span class="en">${esc(ens[i]||p).replace(/\n/g,'<br>')}</span></p>`).join('');
+    const paras = pls.map((p,j)=>`<p><span class="pl">${esc(p).replace(/\n/g,'<br>')}</span><span class="en">${esc(ens[j]||p).replace(/\n/g,'<br>')}</span></p>`).join('');
     
     let quotesHtml = '';
     if (sec.quotes && sec.quotes.length > 0) {
       quotesHtml = sec.quotes.map(q => `<div class="quote"><span class="q-author">${esc(q.author)}</span><span class="pl">${esc(q.text_pl||q.text_en||'')}</span><span class="en">${esc(q.text_en||q.text_pl||'')}</span></div>`).join('');
     }
-    sectionsHtml += `<div class="art-section"><h3><span class="pl">${esc(sec.title_pl||sec.title_en||'')}</span><span class="en">${esc(sec.title_en||sec.title_pl||'')}</span></h3>${paras}${quotesHtml}</div>`;
+    sectionsHtml += `<div class="art-section" id="${secId}"><h3><span class="pl">${esc(sec.title_pl||sec.title_en||'')}</span><span class="en">${esc(sec.title_en||sec.title_pl||'')}</span></h3>${paras}${quotesHtml}</div>`;
+    
+    if (tocHtml) {
+      tocHtml += `<li><a href="#${secId}"><span class="pl">${esc((sec.title_pl||sec.title_en||'').substring(0,40))}</span><span class="en">${esc((sec.title_en||sec.title_pl||'').substring(0,40))}</span></a></li>`;
+    }
+  }
+  if (tocHtml) {
+    tocHtml += '</ul></div>';
   }
   
   const sourcesHtml = art.sources ? `<div class="art-sources">📖 <span class="pl">Źródła</span><span class="en">Sources</span>: ${art.sources.map(esc).join(' · ')}</div>` : '';
@@ -164,6 +180,7 @@ ${toggleBtn}${langBtn}
 <div class="art-meta">📅 ${esc(art.date)}</div>
 </div>
 <div class="art-body">
+${tocHtml}
 ${sectionsHtml}
 ${sourcesHtml}
 </div>
@@ -197,7 +214,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.7.1-2-ge67878d · Deploy: <span id="deploy-ts">2026-07-06 02:57:44 UTC</span> · <span id="deploy-hash">v97dc6ede</span>
+v8.7.1-3-gb97cd04 · Deploy: <span id="deploy-ts">2026-07-06 03:26:59 UTC</span> · <span id="deploy-hash">vca6d8588</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
