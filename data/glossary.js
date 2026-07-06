@@ -21,7 +21,7 @@ const G = [
     "c": "Agentic i narzędzia",
     "t": "Agentic coding",
     "en": "Agentic Coding",
-    "d_pl": "AI, które pisze, testuje i iteruje kod autonomicznie. Narzędzia: Cursor, Devin, Claude Code, GitHub Copilot. W 2026 roku modele frontier będą rozwiązywać 30-70% zadań SWE-bench (prawdziwe bugi z GitHub). Agentic coding transformuje rozwój oprogramowania — deweloperzy staną się recenzentami, nie pisarzami.",
+    "d_pl": "AI, które pisze, testuje i iteruje kod autonomicznie. Narzędzia: Cursor, Devin, Claude Code, GitHub Copilot. W 2026 roku modele frontier będą rozwiązywać 30-70% zadań SWE-bench (prawdziwe bugi z GitHub). Agentic coding transformuje rozwój oprogramowania — deweloperzy staną się recenzentami, nie programistami.",
     "d_en": "AI that writes, tests, and iterates on code autonomously. Tools: Cursor, Devin, Claude Code, GitHub Copilot. In 2026, frontier models will complete 30-70% of SWE-bench tasks (real GitHub bugs). Agentic coding is transforming software development — developers will become reviewers, not writers."
   },
   {
