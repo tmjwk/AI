@@ -15,6 +15,9 @@
 })();
 </script><title>AI Conversations — panele dyskusyjne</title>
 <style>
+/* Global PL/EN toggle */
+[data-lang="pl"] .en{display:none !important}
+[data-lang="en"] .pl{display:none !important}
 :root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--bl:#3b82f6}
 [data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--bl:#1d4ed8}
 *{box-sizing:border-box}
@@ -124,7 +127,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.8.21) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.8.22) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -223,7 +226,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </div>
 
 <div class="banner">
-<strong>💬 O tej stronie:</strong> Analiza paneli dyskusyjnych o AI — przede wszystkim <strong>Moonshots &amp; Millionaires</strong> z kanału <strong>Peter Diamandis</strong>. Każdy odcinek rozkładamy na fakty, głosy gospodarzy i emergentny wniosek, który wyrasta z dyskusji. Towarzysz <a href="ai-models.html">AI Models</a>, <a href="ai-radar.html">AI Radar</a>, <a href="ai-glossary.html">AI Słownik</a> i <a href="ai-benchmarks.html">AI Benchmarki</a> — inny format, ta sama perspektywa.
+<span class="pl"><strong>💬 O tej stronie:</strong> Analiza paneli dyskusyjnych o AI — przede wszystkim <strong>Moonshots &amp; Millionaires</strong> z kanału <strong>Peter Diamandis</strong>. Każdy odcinek rozkładamy na fakty, głosy gospodarzy i emergentny wniosek, który wyrasta z dyskusji. Towarzysz <a href="ai-models.html">AI Models</a>, <a href="ai-radar.html">AI Radar</a>, <a href="ai-glossary.html">AI Słownik</a> i <a href="ai-benchmarks.html">AI Benchmarki</a> — inny format, ta sama perspektywa.</span><span class="en"><strong>💬 About this page:</strong> Analysis of AI discussion panels — primarily <strong>Moonshots &amp; Millionaires</strong> from <strong>Peter Diamandis</strong> channel. Each episode is broken down into facts, host voices, and an emergent takeaway from the discussion. Companion to <a href="ai-models.html">AI Models</a>, <a href="ai-radar.html">AI Radar</a>, <a href="ai-glossary.html">AI Glossary</a>, and <a href="ai-benchmarks.html">AI Benchmarks</a> — different format, same perspective.</span>
 </div>
 
 <!-- EPISODE CARD -->
@@ -237,7 +240,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <span class="m-item">📅 <span class="mv">2026-06-30</span></span>
 <span class="m-item">⏱ <span class="mv">2h17m</span></span>
 <span class="m-item">🎙 <span class="mv">4 gospodarzy</span></span>
-<span class="m-item">📂 <span class="mv">7 tematów</span></span>
+<span class="m-item">📂 <span class="mv"><span class="pl">7 tematów</span><span class="en">7 topics</span></span></span>
 </div>
 <a class="e-yt" href="https://www.youtube.com/watch?v=-H7J_-zr7pA">▶ Oglądaj na YouTube ↗</a>
 </div>
@@ -293,7 +296,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 <!-- TOPICS -->
 <div class="sec">
-<div class="sec-t"><span class="icon">📋</span> Tematy — chronologicznie <span class="cnt">7 tematów · 138 min</span></div>
+<div class="sec-t"><span class="icon">📋</span> <span class="pl">Tematy — chronologicznie</span><span class="en">Topics — chronological</span> <span class="cnt"><span class="pl">7 tematów</span><span class="en">7 topics</span> · 138 min</span></div>
 <div class="topics">
 
 <!-- TOPIC 1 -->
@@ -304,11 +307,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <span class="t-time">00:00 – 35:00</span>
 </div>
 <div class="blk">
-<div class="blk-lbl fakty">📌 Fakty</div>
+<div class="blk-lbl fakty"><span class="pl">📌 Fakty</span><span class="en">📌 Facts</span></div>
 <div class="fakty-box">Po raz pierwszy w historii US, egzekutywa nałożyła <strong>national security hold</strong> na modele AI. GPT-5.6 dostępny tylko dla 20 wybranych firm. Mythos 5 po dealu z Trump admin — tylko US citizens z allow list.</div>
 </div>
 <div class="blk">
-<div class="blk-lbl glosy">🗣 Głosy</div>
+<div class="blk-lbl glosy"><span class="pl">🗣 Głosy</span><span class="en">🗣 Voices</span></div>
 <ul class="glosy-list">
 <li><span class="g-host"><span class="g-dot" style="background:var(--ac)"></span>Peter</span><span class="g-text"><q>Government is too late</q> — to wygląda jak protekcjonizm, ale rząd jest spóźniony.</span></li>
 <li><span class="g-host"><span class="g-dot" style="background:var(--ba)"></span>Dave</span><span class="g-text"><q>Cover stories and excuses</q> — to prawda, ale służy jako pretekst do suppress Chinese AI.</span></li>
@@ -317,7 +320,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </ul>
 </div>
 <div class="blk">
-<div class="blk-lbl wniosek">✨ Wolny wniosek</div>
+<div class="blk-lbl wniosek"><span class="pl">✨ Wolny wniosek</span><span class="en">✨ Key takeaway</span></div>
 <div class="wniosek-box">China osiągnęła <strong>recursive self-improvement escape velocity</strong> — blokowanie modeli w US nie zatrzyma Chińczyków, tylko spowolni zachód.</div>
 </div>
 </div>
@@ -330,11 +333,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <span class="t-time">42:00 – 53:00</span>
 </div>
 <div class="blk">
-<div class="blk-lbl fakty">📌 Fakty</div>
+<div class="blk-lbl fakty"><span class="pl">📌 Fakty</span><span class="en">📌 Facts</span></div>
 <div class="fakty-box">OpenAI leadership pulls back from near-term IPO. SpaceX IPO comparison — Elon „got out quickly” z liquid stock.</div>
 </div>
 <div class="blk">
-<div class="blk-lbl glosy">🗣 Głosy</div>
+<div class="blk-lbl glosy"><span class="pl">🗣 Głosy</span><span class="en">🗣 Voices</span></div>
 <ul class="glosy-list">
 <li><span class="g-host"><span class="g-dot" style="background:var(--ac)"></span>Peter</span><span class="g-text">OpenAI valuation might be crushed by government hold.</span></li>
 <li><span class="g-host"><span class="g-dot" style="background:var(--ba)"></span>Dave</span><span class="g-text"><q>Different world from being a private company</q> — nagle zdają sobie sprawę, jak to naprawdę wygląda.</span></li>
@@ -342,7 +345,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </ul>
 </div>
 <div class="blk">
-<div class="blk-lbl wniosek">✨ Wolny wniosek</div>
+<div class="blk-lbl wniosek"><span class="pl">✨ Wolny wniosek</span><span class="en">✨ Key takeaway</span></div>
 <div class="wniosek-box">Going public w erze regulatory uncertainty = ryzyko. Elon wybrał SpaceX IPO zamiast AI — chce kontrolować <strong>infrastrukturę</strong> (orbital data centers), nie modele.</div>
 </div>
 </div>
@@ -355,11 +358,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <span class="t-time">79:34 – 90:00</span>
 </div>
 <div class="blk">
-<div class="blk-lbl fakty">📌 Fakty</div>
+<div class="blk-lbl fakty"><span class="pl">📌 Fakty</span><span class="en">📌 Facts</span></div>
 <div class="fakty-box">Anthropic accuses China's Alibaba of running massive <strong>distillation campaign</strong> against Claude.</div>
 </div>
 <div class="blk">
-<div class="blk-lbl glosy">🗣 Głosy</div>
+<div class="blk-lbl glosy"><span class="pl">🗣 Głosy</span><span class="en">🗣 Voices</span></div>
 <ul class="glosy-list">
 <li><span class="g-host"><span class="g-dot" style="background:var(--ba)"></span>Dave</span><span class="g-text"><q>This will be the excuse US and Europe use to suppress Chinese AI.</q></span></li>
 <li><span class="g-host"><span class="g-dot" style="background:var(--bl)"></span>Alex</span><span class="g-text"><q>Anyone shocked by this is out of touch with what China's actually doing.</q></span></li>
@@ -367,7 +370,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </ul>
 </div>
 <div class="blk">
-<div class="blk-lbl wniosek">✨ Wolny wniosek</div>
+<div class="blk-lbl wniosek"><span class="pl">✨ Wolny wniosek</span><span class="en">✨ Key takeaway</span></div>
 <div class="wniosek-box">Distillation to <strong>wojna asymetryczna</strong> — Chińczycy nie muszą trenować od zera, kopiują reasoning traces z western models. Regulacje export control nie powstrzymają tego.</div>
 </div>
 </div>
@@ -380,11 +383,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <span class="t-time">55:23 – 62:00</span>
 </div>
 <div class="blk">
-<div class="blk-lbl fakty">📌 Fakty</div>
+<div class="blk-lbl fakty"><span class="pl">📌 Fakty</span><span class="en">📌 Facts</span></div>
 <div class="fakty-box">Elon announces first direct <strong>human-to-human telepathic communications</strong> via Neuralink. Neocortex to cloud by early 2030s.</div>
 </div>
 <div class="blk">
-<div class="blk-lbl glosy">🗣 Głosy</div>
+<div class="blk-lbl glosy"><span class="pl">🗣 Głosy</span><span class="en">🗣 Voices</span></div>
 <ul class="glosy-list">
 <li><span class="g-host"><span class="g-dot" style="background:var(--ac)"></span>Peter</span><span class="g-text"><q>One of biggest achievements in humanity</q> — if it works.</span></li>
 <li><span class="g-host"><span class="g-dot" style="background:var(--bl)"></span>Alex</span><span class="g-text"><q>If hippocampus is basically an encoder-only transformer embedding space, telepathy is going to be easier than expected.</q></span></li>
@@ -392,7 +395,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </ul>
 </div>
 <div class="blk">
-<div class="blk-lbl wniosek">✨ Wolny wniosek</div>
+<div class="blk-lbl wniosek"><span class="pl">✨ Wolny wniosek</span><span class="en">✨ Key takeaway</span></div>
 <div class="wniosek-box">Telepathy może być łatwiejsza niż się wydaje — jeśli mózg używa <strong>embedding space</strong> podobnego do LLM, komunikacja brain-to-brain to transfer latents, nie słów.</div>
 </div>
 </div>
@@ -405,11 +408,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <span class="t-time">90:35 – 103:00</span>
 </div>
 <div class="blk">
-<div class="blk-lbl fakty">📌 Fakty</div>
+<div class="blk-lbl fakty"><span class="pl">📌 Fakty</span><span class="en">📌 Facts</span></div>
 <div class="fakty-box">Trump signs executive order to supercharge US quantum computing. $100M each to D-Wave, Rigetti, Inflection. $140M to Sai Quantum.</div>
 </div>
 <div class="blk">
-<div class="blk-lbl glosy">🗣 Głosy</div>
+<div class="blk-lbl glosy"><span class="pl">🗣 Głosy</span><span class="en">🗣 Voices</span></div>
 <ul class="glosy-list">
 <li><span class="g-host"><span class="g-dot" style="background:var(--ac)"></span>Peter</span><span class="g-text">Wants to bring quantum CEOs on stage at Abundance 360.</span></li>
 <li><span class="g-host"><span class="g-dot" style="background:var(--bl)"></span>Alex</span><span class="g-text"><q>Quantum photonics, not quantum computers</q> — to jest prawdziwy przełom. Założył Quantum.AI. <q>I'd be shocked if by next December we're not talking about photonic compute launch.</q></span></li>
@@ -418,7 +421,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </ul>
 </div>
 <div class="blk">
-<div class="blk-lbl wniosek">✨ Wolny wniosek</div>
+<div class="blk-lbl wniosek"><span class="pl">✨ Wolny wniosek</span><span class="en">✨ Key takeaway</span></div>
 <div class="wniosek-box">Quantum computing w obecnej formie jest <strong>overhyped</strong>. Prawdziwy przełom to <strong>quantum photonics</strong> — photonic compute at 1/100th mass for same computation. AI odkryje algorytmy kwantowe szybciej niż ludzie.</div>
 </div>
 </div>
@@ -431,11 +434,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <span class="t-time">118:00 – 133:00</span>
 </div>
 <div class="blk">
-<div class="blk-lbl fakty">📌 Fakty</div>
+<div class="blk-lbl fakty"><span class="pl">📌 Fakty</span><span class="en">📌 Facts</span></div>
 <div class="fakty-box">Elon flipped the bit 9 months ago — <strong>orbital data centers</strong>. SpaceX constellation jako „Dyson Swarm brand”.</div>
 </div>
 <div class="blk">
-<div class="blk-lbl glosy">🗣 Głosy</div>
+<div class="blk-lbl glosy"><span class="pl">🗣 Głosy</span><span class="en">🗣 Voices</span></div>
 <ul class="glosy-list">
 <li><span class="g-host"><span class="g-dot" style="background:var(--ac)"></span>Peter</span><span class="g-text"><q>Elon's way to become relevant is get into space, get orbital data centers up.</q></span></li>
 <li><span class="g-host"><span class="g-dot" style="background:var(--bl)"></span>Alex</span><span class="g-text">If photonic takeoff na 1-2 year timeline, orbital may be unnecessary — photonic compute at 1/100th mass.</span></li>
@@ -443,7 +446,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </ul>
 </div>
 <div class="blk">
-<div class="blk-lbl wniosek">✨ Wolny wniosek</div>
+<div class="blk-lbl wniosek"><span class="pl">✨ Wolny wniosek</span><span class="en">✨ Key takeaway</span></div>
 <div class="wniosek-box">Orbital data centers mogą być <strong>niepotrzebne</strong>, jeśli photonic computing zadziała — 1/100th mass means you don't need to go to space for compute. Ale Elon potrzebuje narracji dla SpaceX.</div>
 </div>
 </div>
@@ -456,11 +459,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <span class="t-time">125:00 – 138:00</span>
 </div>
 <div class="blk">
-<div class="blk-lbl fakty">📌 Fakty</div>
+<div class="blk-lbl fakty"><span class="pl">📌 Fakty</span><span class="en">📌 Facts</span></div>
 <div class="fakty-box">Discussion about ocean colonies, orbital habitats, <strong>heterogeneous vs homogeneous future</strong>.</div>
 </div>
 <div class="blk">
-<div class="blk-lbl glosy">🗣 Głosy</div>
+<div class="blk-lbl glosy"><span class="pl">🗣 Głosy</span><span class="en">🗣 Voices</span></div>
 <ul class="glosy-list">
 <li><span class="g-host"><span class="g-dot" style="background:var(--ac)"></span>Peter</span><span class="g-text"><q>You'll see humans who look substantially the same 100 years from now</q> — heterogeneous future.</span></li>
 <li><span class="g-host"><span class="g-dot" style="background:var(--bl)"></span>Alex</span><span class="g-text">Gerard K. O'Neill reference — space colonies from the 80s.</span></li>
@@ -468,7 +471,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 </ul>
 </div>
 <div class="blk">
-<div class="blk-lbl wniosek">✨ Wolny wniosek</div>
+<div class="blk-lbl wniosek"><span class="pl">✨ Wolny wniosek</span><span class="en">✨ Key takeaway</span></div>
 <div class="wniosek-box">Przyszłość będzie <strong>heterogeniczna</strong> — część ludzi zostanie na Ziemi (prawie niezmieniona), część pójdzie w kosmos. Nie ma jednej ścieżki.</div>
 </div>
 </div>
@@ -498,7 +501,7 @@ localStorage.setItem('theme',theme);
 </script>
 
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.8.21 · Deploy: <span id="deploy-ts">2026-07-06 22:02:23 UTC</span> · <span id="deploy-hash">v999f8f19</span><br>
+v8.8.22 · Deploy: <span id="deploy-ts">2026-07-06 22:11:02 UTC</span> · <span id="deploy-hash">v9a011298</span><br>
 <a href="https://github.com/tmjwk/AI" target="_blank" rel="noopener" style="color:var(--hd);text-decoration:none">AI Hub — GitHub ↗</a>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
