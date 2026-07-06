@@ -128,7 +128,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.9.1) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.9.2) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -290,7 +290,7 @@ function readingTime(art){
 
 function renderArticle(art){
   const isCollapsed = art.collapsed ? ' collapsed' : '';
-  const toggleBtn = `<button class="art-toggle" onclick="var a=this.closest('.article');a.classList.toggle('collapsed');this.innerHTML=a.classList.contains('collapsed')?'<span class="pl">▼ Rozwiń</span><span class="en">▼ Expand</span>':'<span class="pl">▲ Zwiń</span><span class="en">▲ Collapse</span>'">${art.collapsed?'<span class="pl">▼ Rozwiń</span><span class="en">▼ Expand</span>':'<span class="pl">▲ Zwiń</span><span class="en">▲ Collapse</span>'}</button>`;
+  const toggleBtn = `<button class="art-toggle" onclick="var a=this.closest('.article');a.classList.toggle('collapsed');this.innerHTML=a.classList.contains('collapsed')?'<span class=&apos;pl&apos;>▼ Rozwiń</span><span class=&apos;en&apos;>▼ Expand</span>':'<span class=&apos;pl&apos;>▲ Zwiń</span><span class=&apos;en&apos;>▲ Collapse</span>'">${art.collapsed?'<span class="pl">▼ Rozwiń</span><span class="en">▼ Expand</span>':'<span class="pl">▲ Zwiń</span><span class="en">▲ Collapse</span>'}</button>`;
   const langBtn = `<button class="art-lang" onclick="var a=this.closest('.article');a.classList.toggle('en');this.textContent=a.classList.contains('en')?'PL':'EN'">EN</button>`;
   
   let sectionsHtml = '';
@@ -331,7 +331,7 @@ function renderArticle(art){
   const sourcesHtml = art.sources ? `<div class="art-sources">📖 <span class="pl">Źródła</span><span class="en">Sources</span>: ${art.sources.map(esc).join(' · ')}</div>` : '';
   
   return `<div class="article${isCollapsed}">
-<div class="art-header" onclick="var a=this.parentElement;if(event.target===this||event.target===this.querySelector('.art-num')||event.target===this.querySelector('.art-title')||event.target===this.querySelector('.art-meta')||event.target===this.querySelector('.art-headline')){a.classList.toggle('collapsed');var b=a.querySelector('.art-toggle');if(b)b.innerHTML=a.classList.contains('collapsed')?'<span class="pl">▼ Rozwiń</span><span class="en">▼ Expand</span>':'<span class="pl">▲ Zwiń</span><span class="en">▲ Collapse</span>'}">
+<div class="art-header" onclick="var a=this.parentElement;if(event.target===this||event.target===this.querySelector('.art-num')||event.target===this.querySelector('.art-title')||event.target===this.querySelector('.art-meta')||event.target===this.querySelector('.art-headline')){a.classList.toggle('collapsed');var b=a.querySelector('.art-toggle');if(b)b.innerHTML=a.classList.contains('collapsed')?'<span class=&apos;pl&apos;>▼ Rozwiń</span><span class=&apos;en&apos;>▼ Expand</span>':'<span class=&apos;pl&apos;>▲ Zwiń</span><span class=&apos;en&apos;>▲ Collapse</span>'}">
 ${toggleBtn}${langBtn}
 <span class="art-num">#${art.num}</span>
 <h2 class="art-title"><span class="pl">${esc(art.title_pl||art.title_en||'')}</span><span class="en">${esc(art.title_en||art.title_pl||'')}</span></h2>
@@ -347,7 +347,7 @@ ${sourcesHtml}
 }
 
 function renderArticleCard(art){
-  return `<div class="article-card" onclick="this.classList.toggle('expanded');var b=this.querySelector('.art-card-toggle');if(b)b.innerHTML=this.classList.contains('expanded')?'<span class="pl">▲ Zwiń</span><span class="en">▲ Collapse</span>':'<span class="pl">▼ Czytaj</span><span class="en">▼ Read</span>'">
+  return `<div class="article-card" onclick="this.classList.toggle('expanded');var b=this.querySelector('.art-card-toggle');if(b)b.innerHTML=this.classList.contains('expanded')?'<span class=&apos;pl&apos;>▲ Zwiń</span><span class=&apos;en&apos;>▲ Collapse</span>':'<span class=&apos;pl&apos;>▼ Czytaj</span><span class=&apos;en&apos;>▼ Read</span>'">
 <button class="art-card-toggle">▼ Czytaj</button>
 <span class="art-num">#${art.num}</span>
 <h3 class="art-card-title"><span class="pl">${esc(art.title_pl||art.title_en||'')}</span><span class="en">${esc(art.title_en||art.title_pl||'')}</span></h3>
@@ -397,7 +397,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.1 · Deploy: <span id="deploy-ts">2026-07-06 22:49:29 UTC</span> · <span id="deploy-hash">v86e9f58c</span><br>
+v8.9.2 · Deploy: <span id="deploy-ts">2026-07-06 22:55:45 UTC</span> · <span id="deploy-hash">v55fb58cc</span><br>
 <a href="https://github.com/tmjwk/AI" target="_blank" rel="noopener" style="color:var(--hd);text-decoration:none">AI Hub — GitHub ↗</a>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
