@@ -8,7 +8,7 @@ const RECENT_EPISODES = [
     "collapsed": false,
     "channel": "Diamandis Moonshots",
     "title": "Fable 5 Is Back & Govt-Leashed, Altman Offers 5% of OpenAI & AI Grows Conscious | #269",
-    "date": "2026-07-07",
+    "date": "2026-07-08",
     "duration": "105 min",
     "hosts_count_pl": "4 gospodarzy",
     "hosts_count_en": "4 hosts",
