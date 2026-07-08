@@ -10,29 +10,35 @@ const EPISODES = [
     "title": "Fable 5 Is Back & Govt-Leashed, Altman Offers 5% of OpenAI & AI Grows Conscious | #269",
     "date": "2026-07-07",
     "duration": "105 min",
-    "hosts_count_pl": "3 gospodarzy",
-    "hosts_count_en": "3 hosts",
+    "hosts_count_pl": "4 gospodarzy",
+    "hosts_count_en": "4 hosts",
     "topics_count_pl": "9 tematów",
     "topics_count_en": "9 topics",
     "yt": "XCunMF6frio",
     "hosts": [
       {
         "name": "Peter Diamandis",
-        "role_pl": "gospodarz",
-        "role_en": "host",
+        "role_pl": "<strong>Główny host</strong> · „abundance evangelist\" — fundator XPRIZE, Singularity University. Perspektywa wizjonerska i rynkowa.",
+        "role_en": "<strong>Host</strong> · \"abundance evangelist\" — founder of XPRIZE, Singularity University. Visionary and market perspective.",
         "dot_color": "var(--hp)"
       },
       {
-        "name": "Dave London",
-        "role_pl": "inwestor AI",
-        "role_en": "AI investor",
+        "name": "Dr. Alexander Wissner-Gross",
+        "role_pl": "<strong>„In-house ASI\"</strong>. Perspektywa techniczna, deep tech, quantum photonics, orbital compute.",
+        "role_en": "<strong>\"In-house ASI\"</strong>. Technical perspective, deep tech, quantum photonics, orbital compute.",
+        "dot_color": "var(--rk)"
+      },
+      {
+        "name": "Dave Blundin",
+        "role_pl": "<strong>Managing partner of Link Exponential Ventures</strong>. Perspektywa biznesowa, rynki, wyceny, kapitał ryzyka.",
+        "role_en": "<strong>Managing partner of Link Exponential Ventures</strong>. Business perspective, markets, valuations, venture capital.",
         "dot_color": "var(--ac)"
       },
       {
-        "name": "Alex Friedman (AWG)",
-        "role_pl": "global trotter",
-        "role_en": "global trotter",
-        "dot_color": "var(--rk)"
+        "name": "Salim Ismail",
+        "role_pl": "<strong>CEO of OpenExo, global trotter</strong>. Perspektywa eksponencjalna, organizacje wykładnicze.",
+        "role_en": "<strong>CEO of OpenExo, global trotter</strong>. Exponential perspective, exponential organizations.",
+        "dot_color": "var(--ba)"
       }
     ],
     "topics": [
