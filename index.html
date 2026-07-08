@@ -15,7 +15,7 @@
 })();
 </script><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
 <title>AI Weekly — Hub</title>
-<meta name="description" content="Aktualny przegląd AI: 106 modeli, 69 benchmarków, 102 terminów, panele dyskusyjne i radar branżowy.">
+<meta name="description" content="Weekly AI Summary — komprehensywne podsumowanie tygodnia w AI. Modele, radar, cytaty, trendy.">
 <meta property="og:title" content="AI Weekly — Hub">
 <meta property="og:description" content="Weekly AI Summary — komprehensywne podsumowanie tygodnia w AI.">
 <meta property="og:type" content="website">
@@ -129,7 +129,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.9.19) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.9.13) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -219,10 +219,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="sec" style="margin-top:40px">
 <div class="sec-t"><span class="pl">📅 Najnowsze aktualizacje</span><span class="en">📅 Latest updates</span></div>
 <ul class="update-list">
-<li><span class="update-date">08.07.2026</span> Diamandis #269: Fable 5 wraca ograniczony, JSpace świadome myślenie, Altman 5% dla rządu, AI nie niszczy jobs, Palantir×Nvidia, AI projektuje chipy, Japan IP</li>
 <li><span class="update-date">05.07.2026</span> LongCat 2.0, Agents A1, Nano Banana 2 Light, RDM, MrFlow, LiveEdit, Gemini Omni Flash, VidiHand, PhysiFormer, SimFoundry, Luna, MusViT, Brain2qwerty v2, OmniContact, Aspire, CHORD, UBTech U1, Comfy MCP + 4 terminy (MEG, RDM, Contact Flow, ASIC super pod)</li>
 <li><span class="update-date">03.07.2026</span> Ornith AI, Harness Training, DeepPark, Claude Sonnet 5, LangChain, X MCP Server, Google OKF, Ponytail</li>
 <li><span class="update-date">01.07.2026</span> <span class="pl">Claude Fable 5 powraca, GPT 5.6 restricted, Claude Sonnet 5 tańszy</span><span class="en">Claude Fable 5 returns, GPT 5.6 restricted, Claude Sonnet 5 cheaper</span></li>
+<li><span class="update-date">26.06.2026</span> GLM-5.2, Seedance 2.5, Unitree R1, Olive brain imaging, Reflection AI + SpaceX</li>
 </ul>
 </div>
 
@@ -408,7 +408,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.19 · Deploy: <span id="deploy-ts">2026-07-08 21:09:27 UTC</span> · <span id="deploy-hash">v477351fa</span>
+v8.9.13 · Deploy: <span id="deploy-ts">2026-07-08 21:35:58 UTC</span> · <span id="deploy-hash">v208a34fd</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
