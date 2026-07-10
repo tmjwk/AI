@@ -876,8 +876,8 @@ const B = [
     "y": 2026,
     "ty": "metryka",
     "tier": 2,
-    "t_pl": "Wskaźnik halucynacji. GPT 5.6 Soul Max: 89% (halucynuje najczęściej). Claude Fable 5: 55%. GLM 5.2: 28% (najlepszy).",
-    "t_en": "Hallucination rate. GPT 5.6 Soul Max: 89% (most hallucinations). Claude Fable 5: 55%. GLM 5.2: 28% (best)."
+    "t_pl": "Benchmark mierzący halucynacje na specyficznych pytaniach (nie ogólny wskaźnik). GPT 5.6 Soul Max: 89% błędnych odpowiedzi na tym benchmarku. Claude Fable 5: 55%. GLM 5.2: 28% (najlepszy).",
+    "t_en": "Benchmark measuring hallucinations on specific questions (not overall rate). GPT 5.6 Soul Max: 89% wrong answers on this benchmark. Claude Fable 5: 55%. GLM 5.2: 28% (best)."
   },
   {
     "n": "GeneBench",
