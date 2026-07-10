@@ -830,6 +830,66 @@ const B = [
     "tier": 1,
     "t_pl": "Visual instruction following benchmark — VLM rozumie instrukcje o obrazach. NVIDIA.",
     "t_en": "Visual instruction following benchmark — VLMs follow instructions about images. Created by NVIDIA. Tests whether VLMs truly understand visual content."
+  },
+  {
+    "n": "ARC AGI 2",
+    "fn": "Abstraction and Reasoning Corpus v2",
+    "c": "Nauki ścisłe",
+    "url": "https://arcprize.org/arc",
+    "o": "François Chollet",
+    "y": 2025,
+    "ty": "zbiór zadań",
+    "tier": 3,
+    "t_pl": "Wizualne puzzle wymagające uczenia się w locie. GPT 5.6 Soul: 92.5% (emergent learning). Reszta modeli <1%.",
+    "t_en": "Visual puzzles requiring on-the-fly learning. GPT 5.6 Soul: 92.5% (emergent learning). Other models <1%."
+  },
+  {
+    "n": "ARC AGI 3",
+    "fn": "Abstraction and Reasoning Corpus v3",
+    "c": "Nauki ścisłe",
+    "url": "https://arcprize.org/arc",
+    "o": "François Chollet",
+    "y": 2026,
+    "ty": "zbiór zadań",
+    "tier": 2,
+    "t_pl": "Trudniejsza wersja ARC AGI 2. GPT 5.6 Soul Max: ~8%. Reszta frontier modeli <1%.",
+    "t_en": "Harder version of ARC AGI 2. GPT 5.6 Soul Max: ~8%. Rest of frontier models <1%."
+  },
+  {
+    "n": "LiveBench",
+    "fn": "LiveBench by Abacus AI",
+    "c": "Areny i leaderboardy",
+    "url": "https://livebench.ai",
+    "o": "Abacus AI",
+    "y": 2025,
+    "ty": "leaderboard",
+    "tier": 2,
+    "t_pl": "Leaderboard testujący reasoning, agentic coding, matematykę, język. GPT 5.6 Soul Max > Claude Fable 5 (#4).",
+    "t_en": "Leaderboard testing reasoning, agentic coding, math, language. GPT 5.6 Soul Max > Claude Fable 5 (#4)."
+  },
+  {
+    "n": "Omniscience",
+    "fn": "Omniscience Hallucination Rate",
+    "c": "Bezpieczeństwo",
+    "url": "https://artificialanalysis.ai",
+    "o": "Artificial Analysis",
+    "y": 2026,
+    "ty": "metryka",
+    "tier": 2,
+    "t_pl": "Wskaźnik halucynacji. GPT 5.6 Soul Max: 89% (halucynuje najczęściej). Claude Fable 5: 55%. GLM 5.2: 28% (najlepszy).",
+    "t_en": "Hallucination rate. GPT 5.6 Soul Max: 89% (most hallucinations). Claude Fable 5: 55%. GLM 5.2: 28% (best)."
+  },
+  {
+    "n": "GeneBench",
+    "fn": "GeneBench — long-horizon genomics",
+    "c": "Nauki ścisłe",
+    "url": "https://artificialanalysis.ai",
+    "o": "Artificial Analysis",
+    "y": 2026,
+    "ty": "zbiór zadań",
+    "tier": 2,
+    "t_pl": "Długoterminowe zadania genomics. GPT 5.6 Soul znacznie przewyższa Claude Opus 4.8. Claude Fable odmawia odpowiedzi (guardrails).",
+    "t_en": "Long-horizon genomics tasks. GPT 5.6 Soul significantly outperforms Claude Opus 4.8. Claude Fable refuses to answer (guardrails)."
   }
 ];
 

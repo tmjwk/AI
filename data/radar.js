@@ -1,7 +1,5 @@
 // AI Radar data — V4 auto-generated from radar.json (Nurt 2: bilingual)
-// Schema: episodes = [{id, date, title_pl, title_en, collapsed, sections: [...]}]
-//          sticky = [{...sections without episode_id}]
-// NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
+// NIE EDYTUJ RĘCZNIE
 
 const episodes = [
   {
