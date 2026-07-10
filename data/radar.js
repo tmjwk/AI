@@ -1982,7 +1982,7 @@ const sticky = [
     "icon": "🏆",
     "type": "table",
     "headers": [
-      "#",
+      "Rank",
       "Model",
       "Score",
       "Status"
@@ -1994,15 +1994,15 @@ const sticky = [
         1564,
         {
           "tag": {
-            "color": "red",
-            "text": "Offline"
+            "color": "green",
+            "text": "Active"
           }
         }
       ],
       [
         2,
-        "Claude Opus 4.7 thinking",
-        1554,
+        "Claude Opus 4.8 (thinking)",
+        1552,
         {
           "tag": {
             "color": "green",
@@ -2012,8 +2012,8 @@ const sticky = [
       ],
       [
         3,
-        "Claude Opus 4.6 thinking",
-        1551,
+        "Muse Spark (Meta)",
+        1550,
         {
           "tag": {
             "color": "green",
@@ -2045,30 +2045,19 @@ const sticky = [
       ],
       [
         6,
-        "Claude Opus 4.8",
-        1538,
+        "Qwen 3.7 max",
+        1541,
         {
           "tag": {
             "color": "green",
-            "text": "Active"
+            "text": "Open"
           }
         }
       ],
       [
         7,
-        "Claude Opus 4.8 thinking",
-        1537,
-        {
-          "tag": {
-            "color": "green",
-            "text": "Active"
-          }
-        }
-      ],
-      [
-        10,
-        "Qwen 3.7 max preview",
-        1526,
+        "GLM-5.2",
+        1534,
         {
           "tag": {
             "color": "green",
@@ -2077,30 +2066,8 @@ const sticky = [
         }
       ],
       [
-        12,
-        "GLM 5.1",
-        1525,
-        {
-          "tag": {
-            "color": "green",
-            "text": "Open"
-          }
-        }
-      ],
-      [
-        13,
-        "GLM 5.2 (max)",
-        1525,
-        {
-          "tag": {
-            "color": "green",
-            "text": "Open"
-          }
-        }
-      ],
-      [
-        16,
-        "Gemini 3.1 Pro",
+        8,
+        "Gemini",
         1523,
         {
           "tag": {
@@ -2110,19 +2077,8 @@ const sticky = [
         }
       ],
       [
-        17,
-        "GPT 5.4 high",
-        1521,
-        {
-          "tag": {
-            "color": "green",
-            "text": "Active"
-          }
-        }
-      ],
-      [
-        21,
-        "GPT 5.5 high",
+        9,
+        "GPT 5.5",
         1518,
         {
           "tag": {
@@ -2132,19 +2088,19 @@ const sticky = [
         }
       ],
       [
-        25,
-        "GPT 5.5 instant",
-        1513,
+        10,
+        "GPT 5.6",
+        "preliminary",
         {
           "tag": {
-            "color": "green",
-            "text": "Active"
+            "color": "orange",
+            "text": "New"
           }
         }
       ]
     ],
-    "note": "Źródło: LM Arena (lmarena.ai) · Data: 01.07.2026",
-    "title_pl": "LM ARENA — RANKINGI (01.07.2026)",
-    "title_en": "LM ARENA — RANKINGS (07.01.2026)"
+    "note": "Źródło: LM Arena (lmarena.ai) · Data: 10.07.2026",
+    "title_pl": "LM ARENA — RANKINGI (10.07.2026)",
+    "title_en": "LM ARENA — RANKINGS (07.10.2026)"
   }
 ];
