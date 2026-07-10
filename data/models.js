@@ -7,7 +7,7 @@ const NEW_DAYS = 14;
 
 const M = [
   {
-    "r": 1,
+    "r": 2,
     "n": "GPT 5.6 Sol",
     "v": "OpenAI",
     "d": "2026-07-10",
@@ -19,10 +19,16 @@ const M = [
     "desc_pl": "Rodzina 3 modeli: Soul (największy, najmądrzejszy), Terra (średni), Luna (najszybszy). 1.5M token kontekst. Dostępny na ChatGPT, Codex app (desktop), API. #1 na SWE-bench, ARC AGI 2 (92.5%), Agents Last Exam. Tańszy od Claude Fable 5 (ponad 2×). Wada: wysoki wskaźnik halucynacji (89% na Omniscience).",
     "desc_en": "Family of 3 models: Soul (largest, smartest), Terra (medium), Luna (fastest). 1.5M token context. Available on ChatGPT, Codex app (desktop), API. #1 on SWE-bench, ARC AGI 2 (92.5%), Agents Last Exam. Cheaper than Claude Fable 5 (over 2×). Downside: high hallucination rate (89% on Omniscience).",
     "b_pl": "Programowanie agentowe (Codex desktop), długie zadania (godziny pracy), deep research, matematyka, ARC AGI 2/3 (emergent learning). Wada: halucynacje (89% Omniscience).",
-    "b_en": "Agentic coding (Codex desktop), long-horizon tasks (hours of work), deep research, math, ARC AGI 2/3 (emergent learning). Weakness: hallucinations (89% Omniscience)."
+    "b_en": "Agentic coding (Codex desktop), long-horizon tasks (hours of work), deep research, math, ARC AGI 2/3 (emergent learning). Weakness: hallucinations (89% Omniscience).",
+    "scores": {
+      "benchlm_score": 86,
+      "benchlm_rank": null,
+      "composite": 86.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 2,
+    "r": 1,
     "n": "Claude Mythos 5",
     "v": "Anthropic",
     "d": "2026-06-27",
@@ -36,10 +42,20 @@ const M = [
     "desc_pl": "Ban zdjęty 26-27.06, dostępny dla zaufanych organizacji US, konkurent GPT 5.6 w programowaniu agentowym",
     "desc_en": "Ban lifted 26-27.06, available to trusted US orgs, competitor to GPT 5.6 in agentic",
     "b_pl": "Inżynieria agentowa, research, wnioskowanie krytyczne dla bezpieczeństwa",
-    "b_en": "agentic engineering, research, safety-critical reasoning"
+    "b_en": "agentic engineering, research, safety-critical reasoning",
+    "scores": {
+      "benchlm_score": 89,
+      "benchlm_rank": 2,
+      "vellum": {
+        "SWE-Bench Verified": 95.5,
+        "Terminal-Bench 2.1": 88.0
+      },
+      "composite": 90.0,
+      "confidence": 2
+    }
   },
   {
-    "r": 3,
+    "r": 6,
     "n": "Claude Opus 4.8",
     "v": "Anthropic",
     "d": "2026-05-28",
@@ -51,7 +67,18 @@ const M = [
     "desc_pl": "Były lider benchmarków long-horizon (wieloetapowych), +1% nad GLM-5.2",
     "desc_en": "Former long-horizon benchmark leader, +1% over GLM-5.2",
     "b_pl": "Złożone zadania wieloetapowe, research, programowanie z dużym kontekstem",
-    "b_en": "complex multi-step tasks, research, coding with large context"
+    "b_en": "complex multi-step tasks, research, coding with large context",
+    "scores": {
+      "benchlm_score": 85,
+      "benchlm_rank": 5,
+      "vellum": {
+        "SWE-Bench Verified": 88.6,
+        "AutoBench": 15.5,
+        "OSWorld-Verified": 83.4
+      },
+      "composite": 76.6,
+      "confidence": 2
+    }
   },
   {
     "r": 4,
@@ -66,10 +93,19 @@ const M = [
     "desc_pl": "Open-weight MoE 745B (44B active), 1/6 kosztu GPT-5.5",
     "desc_en": "Open-weight MoE 745B (44B active), 1/6 the cost of GPT-5.5",
     "b_pl": "Long-horizon (wieloetapowe) programowanie, inżynieria agentowa — open-source z frontier jakości",
-    "b_en": "long-horizon coding, agentic engineering — open-source with frontier quality"
+    "b_en": "long-horizon coding, agentic engineering — open-source with frontier quality",
+    "scores": {
+      "benchlm_score": 81,
+      "benchlm_rank": 10,
+      "vellum": {
+        "Terminal-Bench 2.1": 81.0
+      },
+      "composite": 81.0,
+      "confidence": 2
+    }
   },
   {
-    "r": 5,
+    "r": 9,
     "n": "MiniMax M3",
     "v": "MiniMax",
     "d": "2026-05-31",
@@ -81,10 +117,16 @@ const M = [
     "desc_pl": "Frontier programowanie, 1M kontekst, MSA",
     "desc_en": "Frontier coding, 1M context, MSA",
     "b_pl": "Bardzo długi kontekst (1M tokenów), programowanie z dużymi codebasami",
-    "b_en": "very long context (1M tokens), coding with large codebases"
+    "b_en": "very long context (1M tokens), coding with large codebases",
+    "scores": {
+      "benchlm_score": 71,
+      "benchlm_rank": 29,
+      "composite": 71.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 6,
+    "r": 14,
     "n": "Kimi K2.7 Code",
     "v": "Moonshot AI",
     "d": "2026-06-12",
@@ -96,10 +138,16 @@ const M = [
     "desc_pl": "1T MoE (32B active), 262k kontekst, open-source, programowanie na pierwszym miejscu",
     "desc_en": "1T MoE (32B active), 262k context, open-source, coding-first",
     "b_pl": "Programowanie na pierwszym miejscu, agentowy — najlepszy open-source do programowania",
-    "b_en": "coding-first, agentic — best open-source for programming"
+    "b_en": "coding-first, agentic — best open-source for programming",
+    "scores": {
+      "benchlm_score": 21,
+      "benchlm_rank": null,
+      "composite": 21.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 7,
+    "r": 8,
     "n": "GPT-5.5",
     "v": "OpenAI",
     "d": "2026-04-23",
@@ -111,10 +159,22 @@ const M = [
     "desc_pl": "Model klasy frontier zamknięty, referencja dla long-horizon (wieloetapowe) programowanie",
     "desc_en": "Closed frontier model, reference for long-horizon coding",
     "b_pl": "General-purpose wnioskowanie, referencyjny benchmark dla innych",
-    "b_en": "general-purpose reasoning, reference benchmark for others"
+    "b_en": "general-purpose reasoning, reference benchmark for others",
+    "scores": {
+      "benchlm_score": 78,
+      "benchlm_rank": 13,
+      "vellum": {
+        "AutoBench": 12.9,
+        "OSWorld-Verified": 78.7,
+        "BrowseComp": 84.4,
+        "Terminal-Bench 2.1": 82.7
+      },
+      "composite": 73.0,
+      "confidence": 2
+    }
   },
   {
-    "r": 8,
+    "r": 13,
     "n": "DeepSeek v4",
     "v": "DeepSeek",
     "d": "2026-04-24",
@@ -126,10 +186,16 @@ const M = [
     "desc_pl": "Open-source flagowy, V4-Pro + V4-Flash API",
     "desc_en": "Open-source flagship, V4-Pro + V4-Flash API",
     "b_pl": "Open-source alternatywa dla frontier modeli — dobre stosunek jakości do ceny",
-    "b_en": "open-source alternative to frontier models — good quality-to-price ratio"
+    "b_en": "open-source alternative to frontier models — good quality-to-price ratio",
+    "scores": {
+      "benchlm_score": 38,
+      "benchlm_rank": 71,
+      "composite": 38.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 9,
+    "r": 10,
     "n": "Qwen 3.6 Plus",
     "v": "Alibaba",
     "d": "2026-05-19",
@@ -141,10 +207,16 @@ const M = [
     "desc_pl": "Open-weight, real world agents, upgrade z Qwen 3.5",
     "desc_en": "Open-weight, real world agents, upgrade from Qwen 3.5",
     "b_pl": "Real-world zadania agentowe, multimodalne zastosowania",
-    "b_en": "real-world agentic tasks, multimodal applications"
+    "b_en": "real-world agentic tasks, multimodal applications",
+    "scores": {
+      "benchlm_score": 64,
+      "benchlm_rank": 34,
+      "composite": 64.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 10,
+    "r": 16,
     "n": "Gemma 4 12B Unified",
     "v": "Google",
     "d": "2026-06-03",
@@ -159,7 +231,7 @@ const M = [
     "b_en": "lightweight local model (12B), multimodal — for running on your own hardware"
   },
   {
-    "r": 11,
+    "r": 3,
     "n": "Claude Opus 4.7",
     "v": "Anthropic",
     "d": "2026-04-16",
@@ -171,7 +243,17 @@ const M = [
     "desc_pl": "Poprzednik Opus 4.8, GA przed 4.8",
     "desc_en": "Predecessor to Opus 4.8, GA before 4.8",
     "b_pl": "Advanced software engineering, stabilny i sprawdzony",
-    "b_en": "advanced software engineering, stable and proven"
+    "b_en": "advanced software engineering, stable and proven",
+    "scores": {
+      "benchlm_score": 69,
+      "benchlm_rank": null,
+      "vellum": {
+        "GPQA Diamond": 94.2,
+        "SWE-Bench Verified": 87.6
+      },
+      "composite": 83.5,
+      "confidence": 2
+    }
   },
   {
     "r": 17,
@@ -189,7 +271,7 @@ const M = [
     "b_en": "open-weights in the future, community ecosystem"
   },
   {
-    "r": 1,
+    "r": 4,
     "n": "Krea 2",
     "v": "Krea",
     "d": "2026-06-23",
@@ -234,7 +316,7 @@ const M = [
     "b_en": "text rendering in images — logos, posters, design with text"
   },
   {
-    "r": 5,
+    "r": 7,
     "n": "FLUX.2 [dev]",
     "v": "Black Forest Labs",
     "d": "2025-11",
@@ -249,7 +331,7 @@ const M = [
     "b_en": "photorealism, precise color and pose control, image editing"
   },
   {
-    "r": 6,
+    "r": 13,
     "n": "Image Gen on Phone",
     "v": "Various",
     "d": "2026-05",
@@ -264,7 +346,7 @@ const M = [
     "b_en": "privacy (offline), mobile-first UX, fast iterations"
   },
   {
-    "r": 1,
+    "r": 2,
     "n": "Seedance 2.5",
     "v": "ByteDance",
     "d": "2026-06-23",
@@ -279,7 +361,7 @@ const M = [
     "b_en": "long 30s clips with multiple references, audio-video joint generation"
   },
   {
-    "r": 2,
+    "r": 1,
     "n": "Wan 2.5",
     "v": "Alibaba",
     "d": "2025-09",
@@ -294,7 +376,7 @@ const M = [
     "b_en": "open-source text-to-video, local running, custom training"
   },
   {
-    "r": 1,
+    "r": 2,
     "n": "Genie 3",
     "v": "Google DeepMind",
     "d": "2026-02-03",
@@ -309,7 +391,7 @@ const M = [
     "b_en": "interactive 3D environments real-time — games, simulations, robot training"
   },
   {
-    "r": 2,
+    "r": 1,
     "n": "Cosmos 3",
     "v": "NVIDIA",
     "d": "2026-05-31",
@@ -339,7 +421,7 @@ const M = [
     "b_en": "layered 3D reconstruction — pixel-aligned geometry, hidden depth layers"
   },
   {
-    "r": 6,
+    "r": 10,
     "n": "Realtime Video Games AI",
     "v": "Various",
     "d": "2026-04",
@@ -354,7 +436,7 @@ const M = [
     "b_en": "dynamic real-time game environment generation"
   },
   {
-    "r": 1,
+    "r": 2,
     "n": "Claude Code",
     "v": "Anthropic",
     "d": "2026-02",
@@ -369,7 +451,7 @@ const M = [
     "b_en": "terminal/CLI coding, agentic — autonomous repository modifications"
   },
   {
-    "r": 1,
+    "r": 4,
     "n": "Eleven v3",
     "v": "ElevenLabs",
     "d": "2026-03-14",
@@ -399,7 +481,7 @@ const M = [
     "b_en": "natural emotion expression, GPT-5.5 integration, 128k context"
   },
   {
-    "r": 3,
+    "r": 1,
     "n": "Google TTS (Gemini 3.1 Flash TTS)",
     "v": "Google",
     "d": "2026-05",
@@ -414,7 +496,7 @@ const M = [
     "b_en": "multilingual, granular audio tags, Gemini integration"
   },
   {
-    "r": 1,
+    "r": 3,
     "n": "Gemini Omni",
     "v": "Google",
     "d": "2026-05-20",
@@ -429,7 +511,7 @@ const M = [
     "b_en": "any-to-any generation — text→video, video→audio, audio→image"
   },
   {
-    "r": 1,
+    "r": 3,
     "n": "FutureHouse Platform",
     "v": "FutureHouse",
     "d": "2026-05",
@@ -444,7 +526,7 @@ const M = [
     "b_en": "biology, research automation, literature review, hypothesis generation"
   },
   {
-    "r": 2,
+    "r": 1,
     "n": "AlphaFold 3",
     "v": "Google DeepMind",
     "d": "2024-05-08",
@@ -459,7 +541,7 @@ const M = [
     "b_en": "protein structure, drug discovery — breakthrough in pharma"
   },
   {
-    "r": 1,
+    "r": 3,
     "n": "Happy Horse 1.1",
     "v": "Alibaba",
     "d": "2026-06",
@@ -474,7 +556,7 @@ const M = [
     "b_en": "video generation — highest market quality, upgrade from 1.0"
   },
   {
-    "r": 2,
+    "r": 5,
     "n": "Happy Oyster",
     "v": "Alibaba",
     "d": "2026-04",
@@ -489,7 +571,7 @@ const M = [
     "b_en": "3D game video generation, dynamic interactive environments"
   },
   {
-    "r": 3,
+    "r": 4,
     "n": "HappyHorse-1.0",
     "v": "Alibaba",
     "d": "2026-04-26",
@@ -504,7 +586,7 @@ const M = [
     "b_en": "video generation, dynamic environments — Happy Horse predecessor"
   },
   {
-    "r": 1,
+    "r": 9,
     "n": "Moya",
     "v": "DroidUp (Shanghai)",
     "d": "2026-02-23",
@@ -519,7 +601,7 @@ const M = [
     "b_en": "hyper-realistic facial expressions, social interactions with humans"
   },
   {
-    "r": 2,
+    "r": 10,
     "n": "LeRobot",
     "v": "Hugging Face",
     "d": "2025-01",
@@ -534,7 +616,7 @@ const M = [
     "b_en": "open-source robot training, community-driven, reproducible research"
   },
   {
-    "r": 3,
+    "r": 8,
     "n": "Real Gundam",
     "v": "Various",
     "d": "2026-05",
@@ -549,7 +631,7 @@ const M = [
     "b_en": "large-scale humanoid locomotion, balance, bipedal walking"
   },
   {
-    "r": 1,
+    "r": 2,
     "n": "One Streamer",
     "v": "One Streamer (research)",
     "d": "2026-06",
@@ -594,7 +676,7 @@ const M = [
     "b_en": "non-invasive brain imaging via ultrasound — 3D blood vessel map, 100x better than CT"
   },
   {
-    "r": 1,
+    "r": 4,
     "n": "AI Glasses",
     "v": "Google",
     "d": "2026-05-20",
@@ -609,7 +691,7 @@ const M = [
     "b_en": "hands-free AI assistance, real-time visual understanding"
   },
   {
-    "r": 1,
+    "r": 5,
     "n": "Domain Shuttle",
     "v": "Domain Shuttle (open-source)",
     "d": "2026-06",
@@ -624,7 +706,7 @@ const M = [
     "b_en": "video generation with reference images — character and object consistency across scenes"
   },
   {
-    "r": 12,
+    "r": 21,
     "n": "Ornith 1.0",
     "v": "Ornith (open-source)",
     "d": "2026-06",
@@ -639,7 +721,7 @@ const M = [
     "b_en": "agentic coding — self-scaffolding, model learns to design workflows for tasks"
   },
   {
-    "r": 1,
+    "r": 4,
     "n": "Arbor",
     "v": "Stability AI (open-source)",
     "d": "2026-06",
@@ -671,7 +753,7 @@ const M = [
     "b_en": "AI inference chip — dedicated hardware for OpenAI models, gigawatt scale deployment"
   },
   {
-    "r": 1,
+    "r": 5,
     "n": "IBM Nano Stack",
     "v": "IBM",
     "d": "2026-06",
@@ -686,7 +768,7 @@ const M = [
     "b_en": "chip architecture — vertical transistor stacking, 2x density over previous generation"
   },
   {
-    "r": 1,
+    "r": 9,
     "n": "Dance OPD",
     "v": "ByteDance (research)",
     "d": "2026-06",
@@ -701,7 +783,7 @@ const M = [
     "b_en": "unified image generation + editing — one model instead of many specialists"
   },
   {
-    "r": 1,
+    "r": 10,
     "n": "Unzero",
     "v": "Unconventional AI (open-source, MIT)",
     "d": "2026-06",
@@ -716,7 +798,7 @@ const M = [
     "b_en": "non-diffusion image generation — coupled oscillators architecture, alternative to diffusion"
   },
   {
-    "r": 1,
+    "r": 2,
     "n": "HIW500",
     "v": "HIW500 (open-source dataset)",
     "d": "2026-06",
@@ -731,7 +813,7 @@ const M = [
     "b_en": "humanoid training dataset — real-home teleoperation, 500h of robot training data"
   },
   {
-    "r": 4,
+    "r": 5,
     "n": "Unitree R1",
     "v": "Unitree",
     "d": "2026-06",
@@ -746,7 +828,7 @@ const M = [
     "b_en": "affordable humanoid robot — $4,900, acrobatics, kung-fu, cheapest market option"
   },
   {
-    "r": 13,
+    "r": 15,
     "n": "Seed 2.1",
     "v": "ByteDance",
     "d": "2026-06",
@@ -758,10 +840,16 @@ const M = [
     "desc_pl": "Productivity agent (nie chatbot) — Pro version lepszy od Gemini w analizie wideo, multimodalny",
     "desc_en": "Productivity agent (not chatbot) — Pro version better than Gemini at video analysis, multimodal",
     "b_pl": "Productivity agent — analiza wideo i motion, lepszy od Gemini w multimodalnych zadaniach",
-    "b_en": "productivity agent — video and motion analysis, better than Gemini at multimodal tasks"
+    "b_en": "productivity agent — video and motion analysis, better than Gemini at multimodal tasks",
+    "scores": {
+      "benchlm_score": 7,
+      "benchlm_rank": null,
+      "composite": 7.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 1,
+    "r": 2,
     "n": "Lift 4D",
     "v": "Lift 4D (research)",
     "d": "2026-06",
@@ -776,7 +864,7 @@ const M = [
     "b_en": "4D reconstruction from single video — converting ordinary video into interactive 4D scene"
   },
   {
-    "r": 1,
+    "r": 4,
     "n": "Perception DM",
     "v": "ByteDance (open-source)",
     "d": "2026-06",
@@ -806,7 +894,7 @@ const M = [
     "b_en": "autonomous data creation — AI creates and verifies its own training data, self-improving"
   },
   {
-    "r": 14,
+    "r": 7,
     "n": "Sakana Fugu",
     "v": "Sakana AI",
     "d": "2026-06",
@@ -818,10 +906,16 @@ const M = [
     "desc_pl": "Orchestrator model (nie base LLM) — router który koordynuje inne modele, twierdzi że bije Claude/GPT",
     "desc_en": "Orchestrator model (not base LLM) — router that coordinates other models, claims to beat Claude/GPT",
     "b_pl": "Multi-model orchestration — router koordynujący frontier LLMs przez jedno API",
-    "b_en": "multi-model orchestration — router coordinating frontier LLMs via one API"
+    "b_en": "multi-model orchestration — router coordinating frontier LLMs via one API",
+    "scores": {
+      "benchlm_score": 75,
+      "benchlm_rank": null,
+      "composite": 75.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 3,
+    "r": 5,
     "n": "DreamX World",
     "v": "DreamX World (open-source)",
     "d": "2026-06-21",
@@ -836,7 +930,7 @@ const M = [
     "b_en": "interactive world generation — persistent memory, hundreds of frames, scene consistency"
   },
   {
-    "r": 3,
+    "r": 6,
     "n": "PermaVid",
     "v": "PermaVid (open-source)",
     "d": "2026-06-21",
@@ -851,7 +945,7 @@ const M = [
     "b_en": "consistent video editing — persistent memory, stable edits in long clips"
   },
   {
-    "r": 4,
+    "r": 7,
     "n": "Omni Director",
     "v": "Clling (research)",
     "d": "2026-06-21",
@@ -866,7 +960,7 @@ const M = [
     "b_en": "camera motion cloning — transferring camera movement from ref video to new images"
   },
   {
-    "r": 7,
+    "r": 11,
     "n": "Boogu Image",
     "v": "Boogu (open-source)",
     "d": "2026-06-21",
@@ -881,7 +975,7 @@ const M = [
     "b_en": "image generation + editing in one model — permissive license, Flux/Nano Banana competitor"
   },
   {
-    "r": 8,
+    "r": 5,
     "n": "TeaStyle V2",
     "v": "TeaStyle (open-source)",
     "d": "2026-06-21",
@@ -896,7 +990,7 @@ const M = [
     "b_en": "style transfer — converting styles between images, chained style transfers"
   },
   {
-    "r": 5,
+    "r": 3,
     "n": "LTX Trainer 2",
     "v": "LTX (open-source)",
     "d": "2026-06-21",
@@ -911,7 +1005,7 @@ const M = [
     "b_en": "video model fine-tuning — custom characters, VFX, style training for LTX 2.3"
   },
   {
-    "r": 2,
+    "r": 1,
     "n": "Record and Replay",
     "v": "OpenAI (Codex)",
     "d": "2026-06-21",
@@ -926,7 +1020,7 @@ const M = [
     "b_en": "AI automation by demonstration — you record a task, AI learns to replicate it"
   },
   {
-    "r": 3,
+    "r": 2,
     "n": "Logos",
     "v": "Alibaba Tongi Lab (open-source)",
     "d": "2026-06-21",
@@ -941,7 +1035,7 @@ const M = [
     "b_en": "multi-domain science model — protein, antibody, material design in one model"
   },
   {
-    "r": 4,
+    "r": 2,
     "n": "AI Chemist",
     "v": "OpenAI (Maria system)",
     "d": "2026-06-21",
@@ -971,7 +1065,7 @@ const M = [
     "b_en": "table tennis robot — best ping-pong robot, beat a professional player"
   },
   {
-    "r": 5,
+    "r": 3,
     "n": "AGibot A3",
     "v": "AGibot",
     "d": "2026-06-21",
@@ -986,7 +1080,7 @@ const M = [
     "b_en": "bipedal humanoid — ping-pong + object manipulation, stair climbing"
   },
   {
-    "r": 8,
+    "r": 1,
     "n": "Universal Manipulation Exoskeleton",
     "v": "Alibaba Ant Group",
     "d": "2026-06-21",
@@ -1001,7 +1095,7 @@ const M = [
     "b_en": "robot training exoskeleton — cloning human movements with force/torque feedback"
   },
   {
-    "r": 6,
+    "r": 4,
     "n": "Scale-2",
     "v": "ZAI (open-source)",
     "d": "2026-06-14",
@@ -1016,7 +1110,7 @@ const M = [
     "b_en": "motion transfer — animating characters from reference video, best open-source"
   },
   {
-    "r": 5,
+    "r": 6,
     "n": "Actionable World Representation",
     "v": "Research (open-source)",
     "d": "2026-06-14",
@@ -1061,7 +1155,7 @@ const M = [
     "b_en": "real-time translation — simultaneous translation, available via API and mobile"
   },
   {
-    "r": 15,
+    "r": 18,
     "n": "Diffusion Gemma",
     "v": "Google (open-source, Apache 2)",
     "d": "2026-06-14",
@@ -1076,7 +1170,7 @@ const M = [
     "b_en": "diffusion LLM — 4x faster text generation, alternative to auto-regressive"
   },
   {
-    "r": 7,
+    "r": 8,
     "n": "Stream Force",
     "v": "Research",
     "d": "2026-06-14",
@@ -1091,7 +1185,7 @@ const M = [
     "b_en": "physics-controlled video gen — joystick for objects in video"
   },
   {
-    "r": 1,
+    "r": 3,
     "n": "Agents Last Exam",
     "v": "Benchmark (open-source)",
     "d": "2026-06-14",
@@ -1106,7 +1200,7 @@ const M = [
     "b_en": "agent benchmark — testing real professional workflows, 55 industries"
   },
   {
-    "r": 5,
+    "r": 6,
     "n": "Arbor (research agent)",
     "v": "Research (open-source)",
     "d": "2026-06-14",
@@ -1121,7 +1215,7 @@ const M = [
     "b_en": "autonomous research agent — hypothesis tree, persistent memory"
   },
   {
-    "r": 16,
+    "r": 20,
     "n": "Next N2",
     "v": "Next (open-source)",
     "d": "2026-06-14",
@@ -1136,7 +1230,7 @@ const M = [
     "b_en": "adaptive reasoning — model decides when to think deeper"
   },
   {
-    "r": 4,
+    "r": 5,
     "n": "Dot TTS",
     "v": "Dot (open-source, Apache 2)",
     "d": "2026-06-14",
@@ -1151,7 +1245,7 @@ const M = [
     "b_en": "voice cloning TTS — 2B params, few-shot voice cloning"
   },
   {
-    "r": 4,
+    "r": 5,
     "n": "World Tracing",
     "v": "Research (open-source)",
     "d": "2026-06-14",
@@ -1166,7 +1260,7 @@ const M = [
     "b_en": "layered 3D reconstruction — pixel-aligned geometry, hidden depth layers"
   },
   {
-    "r": 2,
+    "r": 3,
     "n": "Video MDM",
     "v": "Research (open-source, MIT)",
     "d": "2026-06-14",
@@ -1181,7 +1275,7 @@ const M = [
     "b_en": "text-to-3D motion — generating 3D human motion from text prompt"
   },
   {
-    "r": 3,
+    "r": 6,
     "n": "Surf Flow",
     "v": "Research",
     "d": "2026-06-14",
@@ -1196,7 +1290,7 @@ const M = [
     "b_en": "multi-image 3D reconstruction — fusing unaligned photos"
   },
   {
-    "r": 1,
+    "r": 8,
     "n": "Moverse",
     "v": "Research",
     "d": "2026-06-14",
@@ -1211,7 +1305,7 @@ const M = [
     "b_en": "360 world from image — panorama → 3D Gaussian model → interactive world"
   },
   {
-    "r": 9,
+    "r": 8,
     "n": "I1",
     "v": "Princeton (open-source)",
     "d": "2026-06-14",
@@ -1226,7 +1320,7 @@ const M = [
     "b_en": "fully open-source image model — training code + data, for research"
   },
   {
-    "r": 8,
+    "r": 9,
     "n": "Anchor World",
     "v": "Research",
     "d": "2026-06-14",
@@ -1241,7 +1335,7 @@ const M = [
     "b_en": "egocentric world sim — first-person view from motion + anchor views"
   },
   {
-    "r": 2,
+    "r": 1,
     "n": "Mesh Flow",
     "v": "Meta (open-source)",
     "d": "2026-06-14",
@@ -1256,7 +1350,7 @@ const M = [
     "b_en": "fast 3D mesh generation — 18x faster, prompt/image → 3D mesh"
   },
   {
-    "r": 8,
+    "r": 9,
     "n": "MilliVid",
     "v": "Research",
     "d": "2026-06-14",
@@ -1286,7 +1380,7 @@ const M = [
     "b_en": "AI body scanning, personalized wellness, health diagnostics"
   },
   {
-    "r": 1,
+    "r": 10,
     "n": "Bernini",
     "v": "ByteDance",
     "d": "2026-06-07",
@@ -1301,7 +1395,7 @@ const M = [
     "b_en": "video editing with references — add/remove objects, change scene/weather/style, multi-reference merge"
   },
   {
-    "r": 1,
+    "r": 2,
     "n": "Deja View",
     "v": "NVIDIA",
     "d": "2026-06-07",
@@ -1316,7 +1410,7 @@ const M = [
     "b_en": "efficient 3D reconstruction — reuses transformer block in loops, 10x smaller than Depth Anything V3"
   },
   {
-    "r": 1,
+    "r": 3,
     "n": "PaGeR",
     "v": "Google + Meta",
     "d": "2026-06-07",
@@ -1331,7 +1425,7 @@ const M = [
     "b_en": "360° panorama reconstruction — adapting 3D foundation model to panoramas, PanoInfin + ZuriPano datasets"
   },
   {
-    "r": 1,
+    "r": 2,
     "n": "Magenta Realtime 2",
     "v": "Google",
     "d": "2026-06-07",
@@ -1346,7 +1440,7 @@ const M = [
     "b_en": "real-time AI music — playable instrument, DAW plugin, MIDI control, 200ms latency"
   },
   {
-    "r": 1,
+    "r": 19,
     "n": "GPT Dreaming",
     "v": "OpenAI",
     "d": "2026-06-07",
@@ -1361,7 +1455,7 @@ const M = [
     "b_en": "memory synthesis — ChatGPT understands context changes (e.g. trip ending), better factual recall"
   },
   {
-    "r": 1,
+    "r": 4,
     "n": "Mamma",
     "v": "Research (open-source)",
     "d": "2026-06-07",
@@ -1376,7 +1470,7 @@ const M = [
     "b_en": "multi-person 3D motion capture — markerless, occlusion handling, hug/dance/wrestling"
   },
   {
-    "r": 4,
+    "r": 6,
     "n": "Reve 2",
     "v": "Reve AI",
     "d": "2026-06-07",
@@ -1391,7 +1485,7 @@ const M = [
     "b_en": "layout-controlled image generation — object separation, layer editing, poster design"
   },
   {
-    "r": 1,
+    "r": 5,
     "n": "Qwen 3.7 Plus",
     "v": "Alibaba",
     "d": "2026-06-07",
@@ -1403,10 +1497,16 @@ const M = [
     "desc_pl": "Wielomodalny agent model — vision + language, 11h autonomous programowanie (English vocab app), bije DeepSeek V4 Pro i GLM-5.1",
     "desc_en": "Multimodal agent model — vision + language, 11h autonomous coding (English vocab app), beats DeepSeek V4 Pro and GLM-5.1",
     "b_pl": "Agentowy vision-language — long-horizon (wieloetapowe) programowanie, screen analysis, autonomous app testing",
-    "b_en": "agentic vision-language — long-horizon coding, screen analysis, autonomous app testing"
+    "b_en": "agentic vision-language — long-horizon coding, screen analysis, autonomous app testing",
+    "scores": {
+      "benchlm_score": 78,
+      "benchlm_rank": 15,
+      "composite": 78.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 1,
+    "r": 3,
     "n": "RTX Spark",
     "v": "NVIDIA",
     "d": "2026-06-07",
@@ -1421,7 +1521,7 @@ const M = [
     "b_en": "local AI hardware — 128GB unified memory fits Qwen 3.7 35B (72GB), local offline agents"
   },
   {
-    "r": 1,
+    "r": 12,
     "n": "Stable Layers",
     "v": "Stability AI",
     "d": "2026-06-07",
@@ -1436,7 +1536,7 @@ const M = [
     "b_en": "image layer separation — transparent layers, alpha masks, layer editing"
   },
   {
-    "r": 7,
+    "r": 4,
     "n": "DR2",
     "v": "Deep Robotics",
     "d": "2026-06-07",
@@ -1451,7 +1551,7 @@ const M = [
     "b_en": "industrial humanoid robot — extreme environments, precise manipulation + raw power"
   },
   {
-    "r": 9,
+    "r": 7,
     "n": "UBTECH humanoid couple",
     "v": "UBTECH",
     "d": "2026-06-07",
@@ -1466,7 +1566,7 @@ const M = [
     "b_en": "realistic full-body humanoid — emotional companion robots, full body not just head"
   },
   {
-    "r": 1,
+    "r": 2,
     "n": "Majorana 2",
     "v": "Microsoft",
     "d": "2026-06-07",
@@ -1481,7 +1581,7 @@ const M = [
     "b_en": "quantum computing chip — AI-assisted manufacturing, 1000x reliability improvement"
   },
   {
-    "r": 1,
+    "r": 6,
     "n": "WavTTS",
     "v": "ByteDance",
     "d": "2026-06-07",
@@ -1511,7 +1611,7 @@ const M = [
     "b_en": "real-time avatar streaming — long consistent videos, motion control, single H100"
   },
   {
-    "r": 1,
+    "r": 3,
     "n": "OmniDreams",
     "v": "NVIDIA",
     "d": "2026-06-07",
@@ -1526,7 +1626,7 @@ const M = [
     "b_en": "autonomous driving simulation — multi-camera, extreme weather, editable scenes, synthetic training data"
   },
   {
-    "r": 1,
+    "r": 11,
     "n": "Nemotron 3 Ultra",
     "v": "NVIDIA",
     "d": "2026-06-07",
@@ -1538,10 +1638,16 @@ const M = [
     "desc_pl": "550B MoE (55B active), hybrid Mamba-Transformer, 1M kontekst, 5x faster wnioskowanie, NVFP4 quantization, 350GB",
     "desc_en": "550B MoE (55B active), hybrid Mamba-Transformer, 1M context, 5x faster inference, NVFP4 quantization, 350GB",
     "b_pl": "Agentowy LLM — long-horizon (wieloetapowe) workflows, multi-token prediction, 30% niższy cost od konkurencji",
-    "b_en": "agentic LLM — long-horizon workflows, multi-token prediction, 30% lower cost than competitors"
+    "b_en": "agentic LLM — long-horizon workflows, multi-token prediction, 30% lower cost than competitors",
+    "scores": {
+      "benchlm_score": 63,
+      "benchlm_rank": 39,
+      "composite": 63.0,
+      "confidence": 1
+    }
   },
   {
-    "r": 1,
+    "r": 3,
     "n": "Higgs Audio v3",
     "v": "Higgs Audio",
     "d": "2026-06-07",
@@ -1556,7 +1662,7 @@ const M = [
     "b_en": "controllable TTS — inline emotion/style tags, real-time expressive voice, chat-native"
   },
   {
-    "r": 1,
+    "r": 11,
     "n": "NAVA",
     "v": "Baidu (Ernie team)",
     "d": "2026-06-07",
@@ -1571,7 +1677,7 @@ const M = [
     "b_en": "video with native audio — joint audio-visual generation, smaller than competitors"
   },
   {
-    "r": 1,
+    "r": 12,
     "n": "MAI Thinking 1",
     "v": "Microsoft",
     "d": "2026-06-07",
@@ -1583,7 +1689,13 @@ const M = [
     "desc_pl": "Medium thinking model — 1T MoE (35B active), private preview. Ustępuje topowym modelom na rynku",
     "desc_en": "Medium thinking model — 1T MoE (35B active), private preview. Lags top market models",
     "b_pl": "Model rozumujący — Microsoft AI, MoE architecture, private preview",
-    "b_en": "reasoning model — Microsoft AI, MoE architecture, private preview"
+    "b_en": "reasoning model — Microsoft AI, MoE architecture, private preview",
+    "scores": {
+      "benchlm_score": 61,
+      "benchlm_rank": 42,
+      "composite": 61.0,
+      "confidence": 1
+    }
   },
   {
     "r": 1,
