@@ -2,7 +2,7 @@
 // Schema: {r, n, v, d, o, c, desc_pl, desc_en, b_pl, b_en}
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
-const TODAY = "2026-06-28";
+const TODAY = "2026-07-10";
 const NEW_DAYS = 14;
 
 const M = [
