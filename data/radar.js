@@ -1947,60 +1947,6 @@ const sticky = [
         "html_pl": "x wydał serwer mcp (model context protocol) do zapytań o dane z twittera. oprogramowanie jest darmowe, ale dostęp do danych jest płatny.",
         "html_en": "x released mcp server for querying twitter data. software free, but data access paid.",
         "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "<strong>open-source od alibaba</strong> — buduje wirtualny świat wewnątrz ai do symulacji środowiska agentowego.",
-        "html_en": "<strong>open-source from alibaba</strong> — builds virtual world inside ai to simulate agentic environment.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "otwartoźródłowy, agentowy model moe do kodowania (9b-397b), obudowa (harness) wbudowana w wagi modelu. pokonuje najnowocześniejsze modele komercyjne. ",
-        "html_en": "open-source agentic coding moe (9b-397b), harness trained into model weights. beats frontier models. $100m funding, santa clara.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "<strong>25,000 oszustów bombardsowali modele anthropic, zbierając q&a pary do treningu chińskich modeli</strong> — id wymagane dla darmowych kont. nie wdrożone jeszcze.",
-        "html_en": "<strong>25,000 fraudsters bombarded anthropic models, collecting q&a pairs for training chinese models</strong> — id required for free accounts. not implemented yet.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "<strong>rząd i duże firmy mają dostęp do najnowszych modeli (gpt 5</strong> — najlepsze modele w open-source.",
-        "html_en": "<strong>government and big companies have access to latest models (gpt 5</strong> — best models in open-source.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "1. uruchom podagenty 2. napisz mi specyfikację wdrożeniową 3. przeprowadź ze mną wywiad na temat projektu 4. zweryfikuj, zanim zbudujesz 5. zbuduj mi ",
-        "html_en": "1. launch sub agents  2. write me an implementation spec  3. interview me about the project  4. verify before you build  5. build me a skill  6. autom",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "<strong>langchain: over-abstraction (8 poziomów), docs nie matchują kodu, breaking changes</strong> — agent harness z planowaniem i sub-agentami.",
-        "html_en": "<strong>langchain: over-abstraction (8 levels), docs don't match code, breaking changes</strong> — agent harness with planning and sub-agents.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "<strong>open-source alternatywa dla claude tag</strong> — działa ze slack, whatsapp i dowolnym modelem (nie tylko claude). własny copilot.",
-        "html_en": "<strong>open-source alternative to claude tag</strong> — works with slack, whatsapp and any model (not just claude). own copilot.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "<strong>open-source narzędzie deepseek</strong> — draft model przewiduje bloki tokenów naraz. do 85% szybciej dla deepseek v4, działa z qwen i gemma.",
-        "html_en": "<strong>open-source tool from deepseek</strong> — draft model predicts a block of tokens at once. up to 85% faster for deepseek v4, works with qwen and gemma.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "x wydał serwer mcp (model context protocol) do zapytań o dane z twittera. oprogramowanie jest darmowe, ale dostęp do danych jest płatny.",
-        "html_en": "x released mcp server for querying twitter data. software free, but data access paid.",
-        "episode_id": "ep-2026-07-03"
       }
     ],
     "title_pl": "CO JEST OBECNIE MOŻLIWE",
