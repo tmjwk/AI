@@ -24,7 +24,8 @@ const M = [
       "benchlm_score": 86,
       "benchlm_rank": null,
       "composite": 86.0,
-      "confidence": 1
+      "confidence": 1,
+      "lmstats": 63.1
     }
   },
   {
@@ -51,11 +52,12 @@ const M = [
         "Terminal-Bench 2.1": 88.0
       },
       "composite": 90.0,
-      "confidence": 2
+      "confidence": 2,
+      "lmstats": 63.9
     }
   },
   {
-    "r": 6,
+    "r": 3,
     "n": "Claude Opus 4.8",
     "v": "Anthropic",
     "d": "2026-05-28",
@@ -77,7 +79,8 @@ const M = [
         "OSWorld-Verified": 83.4
       },
       "composite": 76.6,
-      "confidence": 2
+      "confidence": 2,
+      "lmstats": 59.9
     }
   },
   {
@@ -101,11 +104,12 @@ const M = [
         "Terminal-Bench 2.1": 81.0
       },
       "composite": 81.0,
-      "confidence": 2
+      "confidence": 2,
+      "lmstats": 59.0
     }
   },
   {
-    "r": 9,
+    "r": 10,
     "n": "MiniMax M3",
     "v": "MiniMax",
     "d": "2026-05-31",
@@ -122,11 +126,12 @@ const M = [
       "benchlm_score": 71,
       "benchlm_rank": 29,
       "composite": 71.0,
-      "confidence": 1
+      "confidence": 1,
+      "lmstats": 50.0
     }
   },
   {
-    "r": 14,
+    "r": 11,
     "n": "Kimi K2.7 Code",
     "v": "Moonshot AI",
     "d": "2026-06-12",
@@ -143,11 +148,12 @@ const M = [
       "benchlm_score": 21,
       "benchlm_rank": null,
       "composite": 21.0,
-      "confidence": 1
+      "confidence": 1,
+      "lmstats": 45.0
     }
   },
   {
-    "r": 8,
+    "r": 6,
     "n": "GPT-5.5",
     "v": "OpenAI",
     "d": "2026-04-23",
@@ -170,11 +176,12 @@ const M = [
         "Terminal-Bench 2.1": 82.7
       },
       "composite": 73.0,
-      "confidence": 2
+      "confidence": 2,
+      "lmstats": 55.1
     }
   },
   {
-    "r": 13,
+    "r": 14,
     "n": "DeepSeek v4",
     "v": "DeepSeek",
     "d": "2026-04-24",
@@ -191,11 +198,12 @@ const M = [
       "benchlm_score": 38,
       "benchlm_rank": 71,
       "composite": 38.0,
-      "confidence": 1
+      "confidence": 1,
+      "lmstats": 35.0
     }
   },
   {
-    "r": 10,
+    "r": 17,
     "n": "Qwen 3.6 Plus",
     "v": "Alibaba",
     "d": "2026-05-19",
@@ -212,11 +220,12 @@ const M = [
       "benchlm_score": 64,
       "benchlm_rank": 34,
       "composite": 64.0,
-      "confidence": 1
+      "confidence": 1,
+      "lmstats": 22.0
     }
   },
   {
-    "r": 16,
+    "r": 21,
     "n": "Gemma 4 12B Unified",
     "v": "Google",
     "d": "2026-06-03",
@@ -228,10 +237,13 @@ const M = [
     "desc_pl": "Open-weight, multimodalny, premiera 3 czerwca 2026",
     "desc_en": "Open-weight, multimodal, premiered June 3 2026",
     "b_pl": "Lekki model lokalny (12B), multimodalny — do uruchamiania na własnym sprzęcie",
-    "b_en": "lightweight local model (12B), multimodal — for running on your own hardware"
+    "b_en": "lightweight local model (12B), multimodal — for running on your own hardware",
+    "scores": {
+      "lmstats": 5.0
+    }
   },
   {
-    "r": 3,
+    "r": 8,
     "n": "Claude Opus 4.7",
     "v": "Anthropic",
     "d": "2026-04-16",
@@ -252,11 +264,12 @@ const M = [
         "SWE-Bench Verified": 87.6
       },
       "composite": 83.5,
-      "confidence": 2
+      "confidence": 2,
+      "lmstats": 53.2
     }
   },
   {
-    "r": 17,
+    "r": 9,
     "n": "Meta AI (Llama 4)",
     "v": "Meta",
     "d": "2026-04",
@@ -706,7 +719,7 @@ const M = [
     "b_en": "video generation with reference images — character and object consistency across scenes"
   },
   {
-    "r": 21,
+    "r": 19,
     "n": "Ornith 1.0",
     "v": "Ornith (open-source)",
     "d": "2026-06",
@@ -718,7 +731,10 @@ const M = [
     "desc_pl": "Open-source programowanie agentowe MoE — 397B params (największy), generuje własne harnesses/scaffolds, bije GLM i DeepSeek V4",
     "desc_en": "Open-source agentic coding MoE — 397B params (largest), generates own harnesses/scaffolds, beats GLM and DeepSeek V4",
     "b_pl": "Programowanie agentowe — self-szkielet, model uczy się projektować workflow do rozwiązywania zadań",
-    "b_en": "agentic coding — self-scaffolding, model learns to design workflows for tasks"
+    "b_en": "agentic coding — self-scaffolding, model learns to design workflows for tasks",
+    "scores": {
+      "lmstats": 10.0
+    }
   },
   {
     "r": 4,
@@ -828,7 +844,7 @@ const M = [
     "b_en": "affordable humanoid robot — $4,900, acrobatics, kung-fu, cheapest market option"
   },
   {
-    "r": 15,
+    "r": 5,
     "n": "Seed 2.1",
     "v": "ByteDance",
     "d": "2026-06",
@@ -845,7 +861,8 @@ const M = [
       "benchlm_score": 7,
       "benchlm_rank": null,
       "composite": 7.0,
-      "confidence": 1
+      "confidence": 1,
+      "lmstats": 55.8
     }
   },
   {
@@ -894,7 +911,7 @@ const M = [
     "b_en": "autonomous data creation — AI creates and verifies its own training data, self-improving"
   },
   {
-    "r": 7,
+    "r": 16,
     "n": "Sakana Fugu",
     "v": "Sakana AI",
     "d": "2026-06",
@@ -911,7 +928,8 @@ const M = [
       "benchlm_score": 75,
       "benchlm_rank": null,
       "composite": 75.0,
-      "confidence": 1
+      "confidence": 1,
+      "lmstats": 25.0
     }
   },
   {
@@ -1155,7 +1173,7 @@ const M = [
     "b_en": "real-time translation — simultaneous translation, available via API and mobile"
   },
   {
-    "r": 18,
+    "r": 20,
     "n": "Diffusion Gemma",
     "v": "Google (open-source, Apache 2)",
     "d": "2026-06-14",
@@ -1167,7 +1185,10 @@ const M = [
     "desc_pl": "Diffusion language model — generuje tekst jak obraz, 4x szybszy niż auto-regressive",
     "desc_en": "Diffusion language model — generates text like images, 4x faster than auto-regressive",
     "b_pl": "Diffusion LLM — 4x szybsza generacja tekstu, alternatywa dla auto-regressive",
-    "b_en": "diffusion LLM — 4x faster text generation, alternative to auto-regressive"
+    "b_en": "diffusion LLM — 4x faster text generation, alternative to auto-regressive",
+    "scores": {
+      "lmstats": 8.0
+    }
   },
   {
     "r": 8,
@@ -1215,7 +1236,7 @@ const M = [
     "b_en": "autonomous research agent — hypothesis tree, persistent memory"
   },
   {
-    "r": 20,
+    "r": 18,
     "n": "Next N2",
     "v": "Next (open-source)",
     "d": "2026-06-14",
@@ -1227,7 +1248,10 @@ const M = [
     "desc_pl": "Model rozumujący z Qwen 3.5 base — decide when to think harder, beats DeepSeek-V4 i GLM-5.1",
     "desc_en": "Reasoning model with Qwen 3.5 base — decide when to think harder, beats DeepSeek-V4 and GLM-5.1",
     "b_pl": "Adaptive wnioskowanie — model decyduje kiedy myśleć głębiej",
-    "b_en": "adaptive reasoning — model decides when to think deeper"
+    "b_en": "adaptive reasoning — model decides when to think deeper",
+    "scores": {
+      "lmstats": 15.0
+    }
   },
   {
     "r": 5,
@@ -1440,7 +1464,7 @@ const M = [
     "b_en": "real-time AI music — playable instrument, DAW plugin, MIDI control, 200ms latency"
   },
   {
-    "r": 19,
+    "r": 15,
     "n": "GPT Dreaming",
     "v": "OpenAI",
     "d": "2026-06-07",
@@ -1452,7 +1476,10 @@ const M = [
     "desc_pl": "ChatGPT memory upgrade — \"dreaming\" syntetyzuje pamięć z przeszłych rozmów w tle, lepszy contextual recall",
     "desc_en": "ChatGPT memory upgrade — \"dreaming\" synthesizes memory from past conversations in background, better contextual recall",
     "b_pl": "Memory synthesis — ChatGPT rozumie zmiany kontekstu (np. koniec podróży), better factual recall",
-    "b_en": "memory synthesis — ChatGPT understands context changes (e.g. trip ending), better factual recall"
+    "b_en": "memory synthesis — ChatGPT understands context changes (e.g. trip ending), better factual recall",
+    "scores": {
+      "lmstats": 30.0
+    }
   },
   {
     "r": 4,
@@ -1485,7 +1512,7 @@ const M = [
     "b_en": "layout-controlled image generation — object separation, layer editing, poster design"
   },
   {
-    "r": 5,
+    "r": 7,
     "n": "Qwen 3.7 Plus",
     "v": "Alibaba",
     "d": "2026-06-07",
@@ -1502,7 +1529,8 @@ const M = [
       "benchlm_score": 78,
       "benchlm_rank": 15,
       "composite": 78.0,
-      "confidence": 1
+      "confidence": 1,
+      "lmstats": 54.5
     }
   },
   {
@@ -1626,7 +1654,7 @@ const M = [
     "b_en": "autonomous driving simulation — multi-camera, extreme weather, editable scenes, synthetic training data"
   },
   {
-    "r": 11,
+    "r": 12,
     "n": "Nemotron 3 Ultra",
     "v": "NVIDIA",
     "d": "2026-06-07",
@@ -1643,7 +1671,8 @@ const M = [
       "benchlm_score": 63,
       "benchlm_rank": 39,
       "composite": 63.0,
-      "confidence": 1
+      "confidence": 1,
+      "lmstats": 40.0
     }
   },
   {
@@ -1677,7 +1706,7 @@ const M = [
     "b_en": "video with native audio — joint audio-visual generation, smaller than competitors"
   },
   {
-    "r": 12,
+    "r": 13,
     "n": "MAI Thinking 1",
     "v": "Microsoft",
     "d": "2026-06-07",
@@ -1694,7 +1723,8 @@ const M = [
       "benchlm_score": 61,
       "benchlm_rank": 42,
       "composite": 61.0,
-      "confidence": 1
+      "confidence": 1,
+      "lmstats": 38.0
     }
   },
   {
