@@ -419,12 +419,42 @@ const episodes = [
         "title_en": "JOB MARKET — LAYOFFS",
         "type": "table",
         "headers": [
-          "Firma",
+          "Firma/Okres",
           "Liczba",
           "Data",
           "Komentarz"
         ],
         "rows": [
+          [
+            "2026 (do 10.07)",
+            "131,500",
+            "YTD",
+            "layoffs.fyi"
+          ],
+          [
+            "2025",
+            "124,000",
+            "Rok",
+            "layoffs.fyi"
+          ],
+          [
+            "2024",
+            "153,000",
+            "Rok",
+            "layoffs.fyi"
+          ],
+          [
+            "2023",
+            "264,000",
+            "Rok",
+            "layoffs.fyi"
+          ],
+          [
+            "2022",
+            "165,000",
+            "Rok",
+            "layoffs.fyi"
+          ],
           [
             "Microsoft",
             "~5,000",
@@ -435,7 +465,7 @@ const episodes = [
             "OpenAI (Atlas)",
             "N/A",
             "07.2026",
-            "Zamknięcie Atlas browser — redeploy do Chrome extension"
+            "Zamknięcie Atlas browser"
           ]
         ],
         "note": "Źródło: Lev Selector (6x28pfmf0yU) · Data: 10.07.2026"
