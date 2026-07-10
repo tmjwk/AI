@@ -3,6 +3,446 @@
 
 const episodes = [
   {
+    "id": "ep-2026-07-10",
+    "date": "2026-07-10",
+    "title_pl": "Odcinek 10.07.2026",
+    "title_en": "Episode 07/10/2026",
+    "collapsed": false,
+    "sections": [
+      {
+        "id": "week-2026-07-10",
+        "num": 1,
+        "icon": "📅",
+        "title_pl": "TYDZIEŃ: 04.07 – 10.07",
+        "title_en": "WEEK: 07.04 – 07.10",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "GPT 5.6 oficjalnie wydany",
+            "desc_pl": "OpenAI wydał GPT 5.6 — trzy warianty: Soul (flagowy, $5/$30 per M tok), Terra (średni), Luna (najszybszy). Recenzje doskonałe. #1 na SWE-bench, ARC AGI 2 (92.5%). Tańszy od Fable 5 (ponad 2×). Wada: halucynacje 89%.",
+            "desc_en": "OpenAI released GPT 5.6 — three variants: Soul (flagship), Terra, Luna. #1 on SWE-bench, ARC AGI 2 (92.5%). Cheaper than Fable 5. Weakness: 89% hallucination rate.",
+            "tags": [
+              {
+                "color": "green",
+                "text": "OpenAI"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "Grok (xAI) — konkurent Claude",
+            "desc_pl": "xAI wydał Grok — 1.5T parametrów, $2/$6 per M tokens (vs Opus $5/$25, Fable $10/$50). xAI przejęło Cursor — dane coding do treningu. Pierwsze recenzje bardzo dobre.",
+            "desc_en": "xAI released Grok — 1.5T params, $2/$6 per M tokens. xAI acquired Cursor for training data. Early reviews very good.",
+            "tags": [
+              {
+                "color": "blue",
+                "text": "xAI"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "Fable 5 dostępny (promo kończy się 12.07)",
+            "desc_pl": "Anthropic Fable 5 dostępny w ramach Claude Max subscription. Promo kończy się 12 lipca — po tym trzeba płacić za tokeny API. Model bardzo dobry, ale drogi.",
+            "desc_en": "Anthropic Fable 5 available with Claude Max subscription. Promo ends July 12 — after that API token costs apply.",
+            "tags": [
+              {
+                "color": "orange",
+                "text": "Anthropic"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "Muse Spark (Meta) — ulepszony",
+            "desc_pl": "Meta zaktualizowała Muse Spark — lepszy reasoning, coding, video captioning. Na LM Arena coding leaderboard wysoko, obok Claude.",
+            "desc_en": "Meta updated Muse Spark — improved reasoning, coding, video captioning. High on LM Arena coding leaderboard.",
+            "tags": [
+              {
+                "color": "green",
+                "text": "Meta"
+              }
+            ],
+            "date": "2026-07-09"
+          },
+          {
+            "title": "Gemini 3.5 Pro — opóźniony do 17.07",
+            "desc_pl": "Google opóźniło release Gemini 3.5 Pro z czerwca na 17 lipca. Preview dostępny. Flash model (z maja) nadal bardzo dobry i niedrogi.",
+            "desc_en": "Google delayed Gemini 3.5 Pro release to July 17. Preview available. Flash model (from May) still very good and affordable.",
+            "tags": [
+              {
+                "color": "blue",
+                "text": "Google"
+              }
+            ],
+            "date": "2026-07-10"
+          }
+        ]
+      },
+      {
+        "id": "who-2026-07-10",
+        "num": 2,
+        "icon": "🏢",
+        "title_pl": "KTO ROBI CIEKAWE RZECZY",
+        "title_en": "WHO IS BUILDING INTERESTING THINGS",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "DeepSeek DSpark — speculative decoding",
+            "desc_pl": "DeepSeek wydał DSpark — speculative decoding przyspiesza generację o 80%, zwiększa output o 700% bez utraty jakości. Działa nie tylko z DeepSeek ale też z GLM-5.2 — 85% szybciej. Open source.",
+            "desc_en": "DeepSeek released DSpark — speculative decoding accelerates generation by 80%, increases output by 700%. Works with GLM-5.2 too — 85% faster. Open source.",
+            "tags": [
+              {
+                "color": "green",
+                "text": "Open-source"
+              },
+              {
+                "color": "blue",
+                "text": "Chiny"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "HY3 Open MoE LLM — $0.10",
+            "desc_pl": "HY3: mixture of experts, 295B parametrów, 25.21B active per token. 256K context. Fast vs deep configuration. Silny na benchmarkach, koszt wydajny.",
+            "desc_en": "HY3: mixture of experts, 295B params, 25.21B active. 256K context. Strong on benchmarks, cost efficient.",
+            "tags": [
+              {
+                "color": "green",
+                "text": "Open-source"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "DeepSeek V4 Pro vs Fable 5 — koszt Flappy Bird",
+            "desc_pl": "Test: tworzenie gry Flappy Bird. Fable 5: $0.42, GLM-5.2: $0.05, DeepSeek: $0.001. DeepSeek użył mniej tokenów + tańszy. Tworzenie strony coffee shop: Sonnet 5 $11, DeepSeek $0.08.",
+            "desc_en": "Test: creating Flappy Bird game. Fable 5: $0.42, GLM-5.2: $0.05, DeepSeek: $0.001. DeepSeek used fewer tokens + cheaper.",
+            "tags": [
+              {
+                "color": "blue",
+                "text": "Chiny"
+              },
+              {
+                "color": "orange",
+                "text": "Cost"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "Boston Dynamics 5th gen Atlas",
+            "desc_pl": "Hyundai (właściciel BD) uprościł konstrukcję, zmniejszył liczbę części. Przygotowania do masowej produkcji — do 30,000 sztuk rocznie. Fizyczna zwinność + zaawansowane systemy kontroli.",
+            "desc_en": "Hyundai simplified Atlas construction. Preparing for mass production — up to 30,000 units/year. Physical agility + advanced control systems.",
+            "tags": [
+              {
+                "color": "orange",
+                "text": "Robotyka"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "UB humanoid robots — $18,000",
+            "desc_pl": "Chińska firma UB: full-sized humanoid robots do masowej produkcji od $18,000. Lifelike silicon skin, motion joints, emotionally aware AI. Chiny: 140 firm robotycznych, 300+ modeli, 85% globalnych instalacji.",
+            "desc_en": "Chinese UB: full-sized humanoid robots for mass production from $18,000. Lifelike silicon skin, emotionally aware AI. China: 140 robot companies, 300+ models.",
+            "tags": [
+              {
+                "color": "blue",
+                "text": "Chiny"
+              },
+              {
+                "color": "orange",
+                "text": "Robotyka"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "Mojo language → Qualcomm",
+            "desc_pl": "Chris Lattner (twórca LLVM, Swift) — jego firma (Mojo) przejęta przez Qualcomm. Mojo: Python-like syntax + high performance, działa na NVIDIA/AMD/Apple. Zagrożenie dla NVIDIA CUDA monopoly.",
+            "desc_en": "Chris Lattner (LLVM, Swift creator) — Mojo company acquired by Qualcomm. Mojo: Python-like + high performance. Threat to NVIDIA CUDA monopoly.",
+            "tags": [
+              {
+                "color": "green",
+                "text": "Qualcomm"
+              }
+            ],
+            "date": "2026-07-10"
+          }
+        ]
+      },
+      {
+        "id": "arch-2026-07-10",
+        "num": 3,
+        "icon": "⚙️",
+        "title_pl": "ARCHITEKTURY I WZORCE",
+        "title_en": "ARCHITECTURES AND PATTERNS",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "Claude.md self-modifying trick",
+            "desc_pl": "Dodaj instrukcję w claude.md: 'When I correct you, add the lesson as a one-line rule under lessons section'. Claude automatycznie aktualizuje swój plik pamięci. Proste, 1 minuta, bardzo efektywne.",
+            "desc_en": "Add instruction in claude.md: 'When I correct you, add lesson as one-line rule'. Claude auto-updates its memory file. Simple, 1 minute, very effective.",
+            "tags": [
+              {
+                "color": "orange",
+                "text": "Tip"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "Model routing — oszczędność 60-90%",
+            "desc_pl": "Wzorzec: używaj drogiego modelu (Fable) do planowania/architektury, taniego (DeepSeek/Sonnet) do wykonania. Output tokens droższe niż input — oszczędność ogromna. Wszyscy agenci to robią.",
+            "desc_en": "Pattern: use expensive model (Fable) for planning, cheap model (DeepSeek) for execution. Output tokens cost more — huge savings.",
+            "tags": [
+              {
+                "color": "orange",
+                "text": "Cost"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "Karpathy: 3 poziomy AI — web → desktop → org-wide",
+            "desc_pl": "Andrej Karpathy: (1) web chatbot, (2) desktop app (widzi pliki), (3) persistent org-wide AI (Claude tag w Slack — zna cały biznes). Poziom 3 = AI jako multiplayer employee.",
+            "desc_en": "Andrej Karpathy: (1) web chatbot, (2) desktop app, (3) persistent org-wide AI (Claude tag in Slack — knows whole business). Level 3 = AI as multiplayer employee.",
+            "tags": [
+              {
+                "color": "blue",
+                "text": "Agents"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "Google OKF — Open Knowledge Format",
+            "desc_pl": "Google OKF: structured markdown documents z interlinks (jak wiki). AI agent czyta, znajduje, rozumie powiązania. Zastępuje RAG — nie potrzeba vector database. Proste, szybkie, efektywne.",
+            "desc_en": "Google OKF: structured markdown with interlinks (like wiki). AI agent reads, finds, understands connections. Replaces RAG — no vector database needed.",
+            "tags": [
+              {
+                "color": "green",
+                "text": "Google"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "Composio — agenci połączeni z 100+ apps",
+            "desc_pl": "Composio: łączy agentów z GitHub, Slack, Salesforce, Notion, Jira, Gmail. Obsługuje auth, sandbox, logging, dashboards. Open source. Zamienia prototypy w production workflows.",
+            "desc_en": "Composio: connects agents to GitHub, Slack, Salesforce, Notion, Jira, Gmail. Handles auth, sandbox, logging. Open source.",
+            "tags": [
+              {
+                "color": "green",
+                "text": "Open-source"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "Japa = LoRA dla world models",
+            "desc_pl": "Japa adapters — jak LoRA dla LLM, ale dla world models. Specjalizowane add-ons do fine-tuningu foundational world models dla konkretnych domen.",
+            "desc_en": "Japa adapters — like LoRA for LLMs but for world models. Specialized add-ons for fine-tuning foundational world models.",
+            "tags": [
+              {
+                "color": "blue",
+                "text": "Research"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "10 komponentów AI agent harness",
+            "desc_pl": "Instructions, context delivery, context management, tool interfaces (MCP), execution environments (sandbox), durable state, memory, orchestration, skills/procedures, verification & observability.",
+            "desc_en": "Instructions, context delivery, context management, tool interfaces (MCP), execution environments, durable state, memory, orchestration, skills, verification.",
+            "tags": [
+              {
+                "color": "orange",
+                "text": "Architecture"
+              }
+            ],
+            "date": "2026-07-10"
+          }
+        ]
+      },
+      {
+        "id": "regs-2026-07-10",
+        "num": 4,
+        "icon": "⚖️",
+        "title_pl": "REGULACJE I GEOPOLITYKA",
+        "title_en": "REGULATION AND GEOPOLITICS",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "Chiny: 140 firm robotycznych, 300+ modeli",
+            "desc_pl": "Chiny dominują w robotyce humanoid — 140 firm, 300+ modeli robotów. Główni gracze: Unitree, AGbot, UB. 85% globalnych instalacji. Chiny = lider robotyki.",
+            "desc_en": "China dominates humanoid robotics — 140 companies, 300+ robot models. Key players: Unitree, AGbot, UB. 85% of global installations.",
+            "tags": [
+              {
+                "color": "blue",
+                "text": "Chiny"
+              },
+              {
+                "color": "orange",
+                "text": "Robotyka"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "OpenAI zabija Atlas browser",
+            "desc_pl": "OpenAI zamyka Atlas browser po premierze. Przechodzi na Chrome extension + inne technologie. Trend: AI providers tworzą własne browsery, ale konsolidacja.",
+            "desc_en": "OpenAI kills Atlas browser after launch. Moving to Chrome extension + other technologies.",
+            "tags": [
+              {
+                "color": "green",
+                "text": "OpenAI"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "Anthropic Certified Architect exam",
+            "desc_pl": "Anthropic uruchomił certyfikację (jak Microsoft). Claude jako stateless model: Raw API → Agent SDK → Claude Code → MCP. Kursy prep już dostępne.",
+            "desc_en": "Anthropic launched certification (like Microsoft). Claude as stateless model: Raw API → Agent SDK → Claude Code → MCP.",
+            "tags": [
+              {
+                "color": "orange",
+                "text": "Anthropic"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "AI pogłębia lukę kompetencyjną",
+            "desc_pl": "Badanie: utalentowani z AI stają się drastycznie bardziej produktywni. Niesprawni generują fragile code, technical debt, costly failures. AI nagradza silne fundamenty, karze ich brak.",
+            "desc_en": "Study: talented with AI become dramatically more productive. Unskilled generate fragile code, technical debt. AI rewards strong fundamentals.",
+            "tags": [
+              {
+                "color": "orange",
+                "text": "Jobs"
+              }
+            ],
+            "date": "2026-07-10"
+          }
+        ]
+      },
+      {
+        "id": "edu-2026-07-10",
+        "num": 5,
+        "icon": "📚",
+        "title_pl": "ZASOBY EDUKACYJNE",
+        "title_en": "EDUCATIONAL RESOURCES",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "Joe Rogan × Aravind Srinivas (Perplexity)",
+            "desc_pl": "2-godzinny wywiad. Aravind Srinivas — CEO Perplexity. Oryginalne myślenie, energia. Wiele tematów. Wysoko rekomendowane.",
+            "desc_en": "2-hour interview. Aravind Srinivas — CEO Perplexity. Original thinking, energy. Highly recommended.",
+            "tags": [
+              {
+                "color": "blue",
+                "text": "Podcast"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "Sync — DeepSeek V4 Flash lokalnie",
+            "desc_pl": "Sync (twórca llama.cpp) rekomenduje DeepSeek V4 Flash do lokalnego uruchamiania. Bardzo szybki, tani. Połowa zadań coding nie wymaga dużego modelu — 32B/27B wystarczy.",
+            "desc_en": "Sync recommends DeepSeek V4 Flash for local execution. Very fast, cheap. Half of coding tasks don't need large model — 32B/27B suffices.",
+            "tags": [
+              {
+                "color": "green",
+                "text": "Open-source"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "Llama.cpp zoptymalizowany Claude Fable (65% szybciej)",
+            "desc_pl": "Georgi Gerganov (twórca llama.cpp) użył Claude Fable do optymalizacji llama.cpp — 65% szybszy. Llama.cpp używany globalnie — podwójne przyspieszenie ogromne.",
+            "desc_en": "Georgi Gerganov used Claude Fable to optimize llama.cpp — 65% faster. Globally used — doubling speed is huge.",
+            "tags": [
+              {
+                "color": "green",
+                "text": "Open-source"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "Computational archaeology — zwoje z Wezuwiusza",
+            "desc_pl": "2000-letnie zwój węglowe z Wezuwiusza rozszyfrowane: X-ray microCT + virtual unwrapping + deep learning. Od pojedynczych słów do pełnych tekstów.",
+            "desc_en": "2000-year-old carbonized Vesuvius scrolls decoded: X-ray microCT + virtual unwrapping + deep learning. From single words to full texts.",
+            "tags": [
+              {
+                "color": "blue",
+                "text": "AI Science"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "Claude in Chrome — oficjalne rozszerzenie",
+            "desc_pl": "Anthropic wydał Chrome extension. Claude widzi stronę, rozumie strukturę, klika, podąża za linkami. Z Claude Code — buduj/modyfikuj web app + testuj w Chrome.",
+            "desc_en": "Anthropic released Chrome extension. Claude sees page, understands structure, clicks, follows links. With Claude Code — build/modify web app + test in Chrome.",
+            "tags": [
+              {
+                "color": "orange",
+                "text": "Anthropic"
+              }
+            ],
+            "date": "2026-07-10"
+          },
+          {
+            "title": "OpenClaw — Android + iOS",
+            "desc_pl": "OpenClaw (open agent) teraz działa na Android i iOS. Mowa, zdjęcia, kontakty, kalendarz, powiadomienia, stan urządzenia.",
+            "desc_en": "OpenClaw (open agent) now works on Android and iOS. Voice, photos, contacts, calendar, notifications, device state.",
+            "tags": [
+              {
+                "color": "green",
+                "text": "Open-source"
+              }
+            ],
+            "date": "2026-07-10"
+          }
+        ]
+      },
+      {
+        "id": "jobs-2026-07-10",
+        "num": 6,
+        "icon": "💼",
+        "title_pl": "RYNEK PRACY — LAYOFFS",
+        "title_en": "JOB MARKET — LAYOFFS",
+        "type": "table",
+        "headers": [
+          "Firma",
+          "Liczba",
+          "Data",
+          "Komentarz"
+        ],
+        "rows": [
+          [
+            "Microsoft",
+            "~5,000",
+            "06.07.2026",
+            "Kolejna runda zwolnień"
+          ],
+          [
+            "OpenAI (Atlas)",
+            "N/A",
+            "07.2026",
+            "Zamknięcie Atlas browser — redeploy do Chrome extension"
+          ]
+        ],
+        "note": "Źródło: Lev Selector (6x28pfmf0yU) · Data: 10.07.2026"
+      }
+    ]
+  },
+  {
     "id": "ep-2026-07-03",
     "date": "2026-07-03",
     "collapsed": false,
