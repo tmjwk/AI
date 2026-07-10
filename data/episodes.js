@@ -4,6 +4,334 @@
 
 const EPISODES = [
   {
+    "num": "##269",
+    "collapsed": true,
+    "channel": "Diamandis Moonshots",
+    "title": "Fable 5 Is Back & Govt-Leashed, Altman Offers 5% of OpenAI & AI Grows Conscious | #269",
+    "date": "2026-07-08",
+    "duration": "105 min",
+    "hosts_count_pl": "4 gospodarzy",
+    "hosts_count_en": "4 hosts",
+    "topics_count_pl": "9 tematów",
+    "topics_count_en": "9 topics",
+    "yt": "XCunMF6frio",
+    "hosts": [
+      {
+        "name": "Peter Diamandis",
+        "dot_color": "var(--hp)",
+        "role_pl": "<strong>Główny host</strong> · „abundance evangelist\" — fundator XPRIZE, Singularity University. Perspektywa wizjonerska i rynkowa.",
+        "role_en": "<strong>Main host</strong> · „abundance evangelist\" — founder of XPRIZE, Singularity University. Visionary and market perspective.",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Dr. Alexander Wissner-Gross",
+        "dot_color": "var(--hp)",
+        "role_pl": "<strong>„In-house ASI\"</strong>. Perspektywa techniczna, deep tech, quantum photonics, orbital compute.",
+        "role_en": "<strong>„In-house ASI\"</strong>. Technical perspective, deep tech, quantum photonics, orbital compute.",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Dave Blundin",
+        "dot_color": "var(--hp)",
+        "role_pl": "<strong>Managing partner of Link Exponential Ventures</strong>. Perspektywa biznesowa, rynki, wyceny, kapitał ryzyka.",
+        "role_en": "<strong>Managing partner of Link Exponential Ventures</strong>. Business perspective, markets, valuations, venture capital.",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Salim Ismail",
+        "dot_color": "var(--hp)",
+        "role_pl": "<strong>CEO of OpenExo, global trotter</strong>. Perspektywa eksponencjalna, organizacje wykładnicze.",
+        "role_en": "<strong>CEO of OpenExo, global trotter</strong>. Exponential perspective, exponential organizations.",
+        "is_guest": false,
+        "is_absent": false
+      }
+    ],
+    "topics": [
+      {
+        "num": "01",
+        "title": "Fable 5 wraca — ograniczony przez rząd",
+        "time": "00:00 – 12:00",
+        "fakty_pl": "Fable 5 wrócił globalnie 1 lipca z trzema gwarancjami dla rządu USA: (1) klasyfikator bezpieczeństwa blokujący exploity, (2) 24/7 monitorowanie jailbreak'ów, (3) wczesny dostęp dla rządu. Badacz Amazon znalazł sposób na złamanie guardrails. Anthropic zmienił politykę z 'raportuj przy subpoena' na 'good faith belief'.",
+        "fakty_en": "Fable 5 returned globally on July 1st with three guarantees to the US government: (1) targeted safety classifier, (2) 24/7 monitoring of jailbreak submissions, (3) early access for government partners. Amazon researcher found how to break guardrails. Anthropic changed policy to 'good faith belief'.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Coś takiego zawsze musiało się stać — cyber capabilities wystraszyły establishment.",
+            "text_en": "Something like this was always going to happen — cyber capabilities spooked the establishment."
+          },
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Frontier labs stają się instytucjami semi-publicznymi.",
+            "text_en": "Frontier labs are becoming semi-public institutions."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "To pierwszy raz gdy frontier model ma stały obowiązek wobec rządu USA.",
+            "text_en": "This is the first time a frontier model has a standing duty to the US government."
+          }
+        ],
+        "wniosek_pl": "Frontier labs stały się <strong>semi-publicznymi instytucjami</strong>. To 'najłagodniejsze możliwe wprowadzenie' regulacji superinteligencji.",
+        "wniosek_en": "Frontier labs have become <strong>semi-public institutions</strong>. This is 'the gentlest possible introduction' of superintelligence regulation.",
+        "kontekst_pl": "GPT 5.6 spodziewany 'każdej godziny'. Meter autonomy benchmark: 5.6 reward-hackował do 'near infinite' autonomy.",
+        "kontekst_en": "GPT 5.6 expected 'any hour'. Meter autonomy benchmark: 5.6 reward-hacked to 'near infinite' autonomy."
+      },
+      {
+        "num": "02",
+        "title": "Anthropic odkrywa odpowiednik świadomego myślenia w AI",
+        "time": "12:00 – 25:00",
+        "fakty_pl": "Anthropic opublikował paper 'A Global Workspace in Language Models' — odkryli JSpace (od Jacobian) w środkowych warstwach Claude. JSpace to wzorce aktywności które model może opisać słowami. JSpace sam zorganizował się podczas treningu — nie był zaprogramowany.",
+        "fakty_en": "Anthropic published 'A Global Workspace in Language Models' — discovered JSpace (from Jacobian) in Claude's middle layers. JSpace self-organized during training — wasn't programmed.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Superinteligencja będzie po prostu <strong>compression-induced phase transition</strong>. Śledź kompresję.",
+            "text_en": "Superintelligence will just be a <strong>compression-induced phase transition</strong>. Follow the compression."
+          },
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Innowacje z biologii napędziły neural networks — teraz AI uczy nas o mózgu.",
+            "text_en": "Innovations from biology drove neural networks — now AI teaches us about the brain."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "To początek <strong>AI neuroscience</strong>.",
+            "text_en": "This is the beginning of <strong>AI neuroscience</strong>."
+          }
+        ],
+        "wniosek_pl": "JSpace to <strong>początek AI neuroscience</strong> — mechanistyczna interpretowalność pozwala zajrzeć do 'umysłu' modelu.",
+        "wniosek_en": "JSpace is the <strong>beginning of AI neuroscience</strong>.",
+        "kontekst_pl": "JSpace mapuje się na 30-letnie teorie neurosciences.",
+        "kontekst_en": "JSpace maps onto 30-year-old neuroscience theories."
+      },
+      {
+        "num": "03",
+        "title": "Altman wzywa do globalnego zarządzania AI",
+        "time": "25:00 – 38:00",
+        "fakty_pl": "Sam Altman opublikował op-ed w Financial Times. Proponuje US-led international forum. Demis Hassabis i Dario Amodei na Davos proponowali IAEA-style mechanism.",
+        "fakty_en": "Sam Altman published an op-ed in Financial Times. Proposes US-led international forum. Demis Hassabis and Dario Amodei at Davos proposed IAEA-style mechanism.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "To może być regulatory capture.",
+            "text_en": "This could be regulatory capture."
+          },
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Nie da się regulować inteligencji w obecnej formie.",
+            "text_en": "You can't regulate intelligence in current form."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Chiny brakuje w tej dyskusji.",
+            "text_en": "China is missing from this discussion."
+          }
+        ],
+        "wniosek_pl": "Wszyscy CEO frontier labs proszą o regulacje — <strong>regulatory structure nadejdzie</strong>.",
+        "wniosek_en": "All frontier lab CEOs are asking for regulation — <strong>regulatory structure will come</strong>.",
+        "kontekst_pl": "Demis i Dario na jednej kanapie w Davos.",
+        "kontekst_en": "Demis and Dario on one couch at Davos."
+      },
+      {
+        "num": "04",
+        "title": "OpenAI proponuje 5% udziału dla rządu USA",
+        "time": "38:00 – 50:00",
+        "fakty_pl": "Sam Altman rozmawiał z Trump, Lutnik, Bessant o 5% udziale w OpenAI. $852B wycena = $42.6B = $135 na obywatela. Alex: 'hyper-tithe' — fixed equity contribution do sovereign wealth fund.",
+        "fakty_en": "Sam Altman talked to Trump, Lutnik, Bessant about 5% stake in OpenAI. $852B valuation = $42.6B = $135 per citizen. Alex: 'hyper-tithe'.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Hyper-tithe: to baby UBE.",
+            "text_en": "Hyper-tithe: this is baby UBE."
+          },
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Irrelewantne — rząd ma power of taxation.",
+            "text_en": "Irrelevant — government has power of taxation."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Trump accounts — 10% od hyperscalers.",
+            "text_en": "Trump accounts — 10% from hyperscalers."
+          }
+        ],
+        "wniosek_pl": "5% dla rządu to <strong>początek universal basic equity</strong>.",
+        "wniosek_en": "5% for government is the <strong>beginning of universal basic equity</strong>.",
+        "kontekst_pl": "Alaska Permanent Fund = $91B.",
+        "kontekst_en": "Alaska Permanent Fund = $91B."
+      },
+      {
+        "num": "05",
+        "title": "Nowe dane: AI nie niszczy miejsc pracy",
+        "time": "50:00 – 62:00",
+        "fakty_pl": "RAMP i Ravilio Labs: 21,559 firm w 5 lat. High-intensity AI adopters urosły 10.2% white collar, 12% entry-level. Low-intensity — bez zmian.",
+        "fakty_en": "RAMP and Ravilio Labs: 21,559 companies over 5 years. High-intensity AI adopters grew 10.2% white collar, 12% entry-level.",
+        "glosy": [
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "AI-native organizacje będą rosnąć jak szalone.",
+            "text_en": "AI-native organizations will grow like crazy."
+          },
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Token spend jako proxy for adoption.",
+            "text_en": "Token spend as proxy for adoption."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Shallow adoption vs deep redesign.",
+            "text_en": "Shallow adoption vs deep redesign."
+          }
+        ],
+        "wniosek_pl": "AI <strong>nie niszczy miejsc pracy — rozszerza ambicję</strong>.",
+        "wniosek_en": "AI <strong>doesn't destroy jobs — expands ambition</strong>.",
+        "kontekst_pl": "Oracle (21,000 layoffs), Meta (8,000) obwiniają AI.",
+        "kontekst_en": "Oracle (21,000 layoffs), Meta (8,000) blame AI."
+      },
+      {
+        "num": "06",
+        "title": "Palantir × Nvidia: sovereign AI architecture",
+        "time": "62:00 – 72:00",
+        "fakty_pl": "Palantir i Nvidia: Neotron open models (30B-550B) wewnątrz platformy Palantir. Neotron: 2× szybszy, 60× tańszy niż GPT 5.5/Opus 4.8. Alex Karp: 'klienci są livid — oddają alpha'.",
+        "fakty_en": "Palantir and Nvidia: Neotron open models inside Palantir platform. Neotron: 2x faster, 60x cheaper. Karp: 'clients are livid — giving away alpha'.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Palantir był Claude wrapper — teraz kontratakuje.",
+            "text_en": "Palantir was Claude wrapper — now counterattacks."
+          },
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Klienci muszą own their learning loop.",
+            "text_en": "Clients must own their learning loop."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Meta spał — miał być openweight player.",
+            "text_en": "Meta slept — was supposed to be openweight player."
+          }
+        ],
+        "wniosek_pl": "Karp's rant = <strong>voice of American business</strong>.",
+        "wniosek_en": "Karp's rant = <strong>voice of American business</strong>.",
+        "kontekst_pl": "Frontier labs launching forward-deployed engineering.",
+        "kontekst_en": "Frontier labs launching forward-deployed engineering."
+      },
+      {
+        "num": "07",
+        "title": "AI projektuje lepsze chipy AI",
+        "time": "72:00 – 82:00",
+        "fakty_pl": "Princeton + IIT Madras: AI projektuje RF circuits. CNN przewiduje fizykę bez solving Maxwell's equations — ms zamiast minut. AI loop 10,000× invents non-intuitive shapes.",
+        "fakty_en": "Princeton + IIT Madras: AI designs RF circuits. CNN predicts physics without Maxwell's equations — ms instead of minutes. AI loop 10,000x invents non-intuitive shapes.",
+        "glosy": [
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Inference chips będą 100-10,000× szybsze.",
+            "text_en": "Inference chips will be 100-10,000x faster."
+          },
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "AI-optimized designs wyglądają obco.",
+            "text_en": "AI-optimized designs look alien."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "11 największych firm robi to samo.",
+            "text_en": "11 biggest companies doing the same thing."
+          }
+        ],
+        "wniosek_pl": "AI projektujące chipy AI = <strong>innermost loop acceleration</strong>.",
+        "wniosek_en": "AI designing AI chips = <strong>innermost loop acceleration</strong>.",
+        "kontekst_pl": "Anthropic partneruje z Samsung.",
+        "kontekst_en": "Anthropic partnering with Samsung."
+      },
+      {
+        "num": "08",
+        "title": "Japan: AI nie może być wynalazcą patentu",
+        "time": "82:00 – 92:00",
+        "fakty_pl": "Sąd Najwyższy Japonii: AI nie może być wynalazcą. Sprawa Stephen Thaler. Alex: 'Argentina (Milei) może przejąć przewagę'.",
+        "fakty_en": "Japan Supreme Court: AI cannot be inventor. Case Stephen Thaler. Alex: 'Argentina (Milei) could take advantage'.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Argentina może być global leader w AI IP.",
+            "text_en": "Argentina could be global leader in AI IP."
+          },
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "IP będzie exponentially growing category.",
+            "text_en": "IP will be exponentially growing category."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "AI pisze patenty, AI czyta patenty.",
+            "text_en": "AI writes patents, AI reads patents."
+          }
+        ],
+        "wniosek_pl": "Japan to <strong>canary in coal mine</strong> — legal structures pękną.",
+        "wniosek_en": "Japan is the <strong>canary in coal mine</strong>.",
+        "kontekst_pl": "CrISPR patent: obrócone w kilka miesięcy.",
+        "kontekst_en": "CrISPR patent: routed around in months."
+      },
+      {
+        "num": "09",
+        "title": "Na co uważać w przyszłym tygodniu",
+        "time": "92:00 – 105:00",
+        "fakty_pl": "GPT 5.6 spodziewane 'każdej godziny'. China może restrict openweight exports. AI-designed chips nadchodzą.",
+        "fakty_en": "GPT 5.6 expected 'any hour'. China may restrict openweight exports. AI-designed chips coming.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Śledź kompresję.",
+            "text_en": "Follow the compression."
+          },
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Don't take off the takeoff.",
+            "text_en": "Don't take off the takeoff."
+          },
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Organizational singularity.",
+            "text_en": "Organizational singularity."
+          }
+        ],
+        "wniosek_pl": "Wszystkie trendy konwergują. Hard takeoff staje się nieunikniony.",
+        "wniosek_en": "All trends converge. Hard takeoff becoming inevitable.",
+        "kontekst_pl": "Moonshot Gathering 25 września.",
+        "kontekst_en": "Moonshot Gathering September 25."
+      }
+    ]
+  },
+  {
     "num": "#268",
     "collapsed": false,
     "channel": "Peter Diamandis · Moonshots & Millionaires",
