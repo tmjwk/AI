@@ -19,8 +19,8 @@ const episodes = [
         "cards": [
           {
             "title": "GPT 5.6 oficjalnie wydany",
-            "desc_pl": "OpenAI wydał GPT 5.6 — trzy warianty: Soul (flagowy, $5/$30 per M tok), Terra (średni), Luna (najszybszy). Recenzje doskonałe. #1 na SWE-bench, ARC AGI 2 (92.5%). Tańszy od Fable 5 (ponad 2×). Wada: halucynacje 89%.",
-            "desc_en": "OpenAI released GPT 5.6 — three variants: Soul (flagship), Terra, Luna. #1 on SWE-bench, ARC AGI 2 (92.5%). Cheaper than Fable 5. Weakness: 89% hallucination rate.",
+            "desc_pl": "OpenAI wydał GPT 5.6 — trzy warianty: Soul (flagowy, $5/$30 per M tok), Terra (średni), Luna (najszybszy). Recenzje doskonałe. #1 na SWE-bench, ARC AGI 2 (92.5%). Tańszy od Fable 5 (ponad 2×).",
+            "desc_en": "OpenAI released GPT 5.6 — three variants: Soul (flagship), Terra, Luna. Excellent reviews. #1 on SWE-bench, ARC AGI 2 (92.5%). Cheaper than Fable 5 (over 2x).",
             "tags": [
               {
                 "color": "green",
