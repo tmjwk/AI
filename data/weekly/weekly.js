@@ -3,6 +3,167 @@
 
 const WEEKLY = [
   {
+    "num": 2,
+    "date": "2026-07-12",
+    "collapsed": true,
+    "title_pl": "AI Tydzień #2 — GPT 5.6 zrzuca Fable z tronu, Grok 4.5 zabija ceną, a AI projektuje chipy AI",
+    "title_en": "AI Week #2 — GPT 5.6 Dethrones Fable, Grok 4.5 Kills on Price, and AI Designs AI Chips",
+    "headline_pl": "OpenAI wydał GPT 5.6 — tańszy i mądrzejszy od Fable 5. xAI odpowiedziało Grok 4.5 za ułamek ceny. Anthropic odkrył JSpace — mechanizm świadomego myślenia w Claude. Sam Altman zaproponował oddanie 5% OpenAI rządowi USA. DeepSeek DSpark przyspieszył inferencję o 80%. AI z Princeton projektuje chipy RF 10,000× szybciej. Sąd Najwyższy Japonii orzekł że AI nie może być wynalazcą patentu.",
+    "headline_en": "OpenAI released GPT 5.6 — cheaper and smarter than Fable 5. xAI responded with Grok 4.5 at a fraction of the price. Anthropic discovered JSpace — a mechanism of conscious thought in Claude. Sam Altman proposed giving 5% of OpenAI to the US government. DeepSeek DSpark accelerated inference by 80%. Princeton AI designs RF chips 10,000x faster. Japan Supreme Court ruled AI cannot be a patent inventor.",
+    "sections": [
+      {
+        "title_pl": "GPT 5.6 — nowy król benchmarków",
+        "title_en": "GPT 5.6 — the new benchmark king",
+        "body_pl": "OpenAI wydał GPT 5.6 w trzech wariantach: Soul (flagowy, $5/$30 per M tokens), Terra (średni) i Luna (najszybszy). Model od razu zajął #1 na SWE-bench, ARC AGI 2 (92.5%) i Agents Last Exam. Jest tańszy od Claude Fable 5 ponad dwukrotnie, przy minimalnym handholdingu — potrafi pracować godzinami nad jednym zadaniem.\n\nRecenzje AI Search potwierdziły: w teście Flappy Bird koszt GPT 5.6 był ułamek ceny Fable. W deep research (raport o leukemii) — 31 minut pracy, profesjonalne tabele, cytowania, flowcharty. W financial presentation (Q1 2026 Alphabet/Nvidia/Amazon) — 26 minut, kompletna prezentacja z analizą.\n\nSłabości: na benchmarku Omniscience 89% błędnych odpowiedzi (ale to specyficzne pytania, nie ogólny wskaźnik). Nie znalazł żaby w teście wizualnym (Fable 5 jedyny który znalazł). Nie rozpoznał typów nowotworów na skanach MRI.",
+        "body_en": "OpenAI released GPT 5.6 in three variants: Soul (flagship, $5/$30 per M tokens), Terra (medium), and Luna (fastest). It immediately took #1 on SWE-bench, ARC AGI 2 (92.5%), and Agents Last Exam. It's over 2x cheaper than Claude Fable 5 with minimal handholding — can work for hours on a single task.\n\nAI Search review confirmed: Flappy Bird game cost was a fraction of Fable's price. Deep research (leukemia report) — 31 minutes, professional tables, citations, flowcharts. Financial presentation (Q1 2026 Alphabet/Nvidia/Amazon) — 26 minutes, complete presentation with analysis.\n\nWeaknesses: 89% wrong answers on Omniscience benchmark (specific questions, not overall rate). Failed the frog test (Fable 5 is the only one that found it). Failed tumor identification on MRI scans.",
+        "quotes": [
+          {
+            "author": "Lev Selector",
+            "text_pl": "GPT 5.6 — recenzje doskonałe. Soul, Terra i Luna. Tańszy od Fable.",
+            "text_en": "GPT 5.6 — excellent reviews. Soul, Terra and Luna. Cheaper than Fable."
+          },
+          {
+            "author": "AI Search",
+            "text_pl": "GPT 5.6 to jeden z najmądrzejszych modeli jakie możesz używać. Bardziej kosztowo efektywny niż Claude Fable 5.",
+            "text_en": "GPT 5.6 is one of the smartest models you can use. More cost-efficient than Claude Fable 5."
+          }
+        ]
+      },
+      {
+        "title_pl": "Grok 4.5 — xAI zabija ceną",
+        "title_en": "Grok 4.5 — xAI kills on price",
+        "body_pl": "xAI (SpaceX) wydało Grok 4.5 — model 1.5T parametrów trenowany z danymi z Cursor (przejętego przez xAI). $2/$6 per M tokens — ponad 3× tańszy od GPT 5.6, znacznie tańszy od Fable ($10/$50).\n\nNa SWE-bench bije Opus 4.8 ale jest za GPT 5.5 i Fable. 80 tokens/s, używa mniej tokenów na zadanie. 500K context (krótszy niż 1M u konkurencji). Mniej halucynacji niż Fable i GPT 5.6.\n\nLev Selector: \"jeśli nie potrzebujesz AI do ekstremalnie trudnych zadań, Grok 4.5 może być lepszą opcją.\" Dostępny w Grok Build i Cursor.",
+        "body_en": "xAI (SpaceX) released Grok 4.5 — 1.5T parameter model trained with Cursor data (acquired by xAI). $2/$6 per M tokens — over 3x cheaper than GPT 5.6, much cheaper than Fable ($10/$50).\n\nOn SWE-bench beats Opus 4.8 but behind GPT 5.5 and Fable. 80 tokens/s, uses fewer tokens per task. 500K context (shorter than 1M competitors). Fewer hallucinations than Fable and GPT 5.6.\n\nLev Selector: \"if you don't need AI for extremely hard tasks, Grok 4.5 might be the better option.\" Available in Grok Build and Cursor.",
+        "quotes": [
+          {
+            "author": "Lev Selector",
+            "text_pl": "Jeśli nie potrzebujesz AI do ekstremalnie trudnych zadań, Grok 4.5 może być lepszą opcją.",
+            "text_en": "If you don't need AI for extremely hard tasks, Grok 4.5 might be the better option."
+          },
+          {
+            "author": "AI Search",
+            "text_pl": "Grok 4.5 nie jest najlepszy w inteligencji, ale jest bardzo szybki i tani.",
+            "text_en": "Grok 4.5 is not the best in intelligence, but it's very fast and cheap."
+          }
+        ]
+      },
+      {
+        "title_pl": "Anthropic odkrywa JSpace — mechanizm świadomego myślenia",
+        "title_en": "Anthropic discovers JSpace — mechanism of conscious thought",
+        "body_pl": "Anthropic opublikował paper 'A Global Workspace in Language Models' — odkryli JSpace (od Jacobian) w środkowych warstwach Claude. To wzorce aktywności które model może opisać słowami — jak \"myśli\" które nie są wypowiadane.\n\nEksperymenty: Claude potrafi kontrolować JSpace (myśleć o Golden Gate Bridge podczas innego zadania), ale nie perfekcyjnie — nie potrafi nie myśleć o czymś. Wyłączenie JSpace: Claude odpowiada prosto ale nie potrafi reasonować. JSpace sam zorganizował się podczas treningu — nie był zaprogramowany.\n\nAlex Friedman (AWG): \"Superinteligencja będzie po prostu compression-induced phase transition. Śledź kompresję — to prowadzi do końca tęczy.\" Dave Blundin: \"Innowacje z biologii napędziły neural networks — teraz AI uczy nas o mózgu. Kierunek odkryć się odwrócił.\"",
+        "body_en": "Anthropic published 'A Global Workspace in Language Models' — discovered JSpace (from Jacobian) in Claude's middle layers. These are activity patterns the model can describe in words — like \"thoughts\" that aren't spoken.\n\nExperiments: Claude can control JSpace (think about Golden Gate Bridge during another task), but imperfectly — can't not think about something. Disabling JSpace: Claude answers simply but can't reason. JSpace self-organized during training — wasn't programmed.\n\nAlex Friedman (AWG): \"Superintelligence will just be a compression-induced phase transition. Follow the compression — it leads to the end of the rainbow.\" Dave Blundin: \"Innovations from biology drove neural networks — now AI teaches us about the brain. Direction of discovery has reversed.\"",
+        "quotes": [
+          {
+            "author": "Alex Friedman",
+            "text_pl": "Superinteligencja będzie po prostu compression-induced phase transition. Śledź kompresję — to prowadzi do końca tęczy.",
+            "text_en": "Superintelligence will just be a compression-induced phase transition. Follow the compression — it leads to the end of the rainbow."
+          },
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "To początek AI neuroscience. Jeśli rozumiemy wewnętrzne myśli modeli, możemy je kształtować i budować zaufanie.",
+            "text_en": "This is the beginning of AI neuroscience. If we understand models' inner thoughts, we can shape them and build trust."
+          }
+        ]
+      },
+      {
+        "title_pl": "Altman 5% dla rządu + globalne zarządzanie AI",
+        "title_en": "Altman 5% for government + global AI governance",
+        "body_pl": "Sam Altman opublikował op-ed w Financial Times proponując US-led international forum dla zarządzania AI. Rozmawiał z Trump, Lutnik, Bessant i Bernie Sanders o 5% udziale w OpenAI ($42.6B = $135 na obywatela).\n\nAlex Friedman nazwał to \"hyper-tithe\" — fixed equity contribution od singularity companies do sovereign wealth fund. \"To baby UBE.\" Dave Blundin: \"Irrelewantne — rząd ma power of taxation. Social Security był podobną ideą i się nie udało.\"\n\nPeter Diamandis: \"Trump accounts dla dorosłych — 10% od hyperscalers. Trump jest negocjatorem, skończymy na 10%.\" Demis Hassabis i Dario Amodei na Davos proponowali IAEA-style mechanism. Alex: \"Chiny brakuje w tej dyskusji — drugi słoń w pokoju. Bez Chin to się nie uda.\"",
+        "body_en": "Sam Altman published an op-ed in Financial Times proposing a US-led international forum for AI governance. He talked to Trump, Lutnik, Bessant, and Bernie Sanders about 5% stake in OpenAI ($42.6B = $135 per citizen).\n\nAlex Friedman called it \"hyper-tithe\" — fixed equity contribution from singularity companies to sovereign wealth fund. \"This is baby UBE.\" Dave Blundin: \"Irrelevant — government has power of taxation. Social Security was a similar idea and it failed.\"\n\nPeter Diamandis: \"Trump accounts for adults — 10% from hyperscalers. Trump is a negotiator, we'll end up at 10%.\" Demis Hassabis and Dario Amodei at Davos proposed IAEA-style mechanism. Alex: \"China is missing from this discussion — the second elephant in the room. Without China this won't work.\"",
+        "quotes": [
+          {
+            "author": "Alex Friedman",
+            "text_pl": "Hyper-tithe: fixed equity contribution od singularity companies do sovereign wealth fund. To baby UBE.",
+            "text_en": "Hyper-tithe: fixed equity contribution from singularity companies to sovereign wealth fund. This is baby UBE."
+          },
+          {
+            "author": "Dave Blundin",
+            "text_pl": "Irrelewantne — rząd ma power of taxation. Social Security był podobną ideą i się nie udało.",
+            "text_en": "Irrelevant — government has power of taxation. Social Security was a similar idea and it failed."
+          }
+        ]
+      },
+      {
+        "title_pl": "DeepSeek DSpark + model routing — rewolucja kosztów",
+        "title_en": "DeepSeek DSpark + model routing — cost revolution",
+        "body_pl": "DeepSeek wydał DSpark — speculative decoding przyspiesza generację o 80%, zwiększa output o 700% bez utraty jakości. Działa z GLM-5.2 — 85% szybciej. Open source.\n\nTest kosztów tworzenia gry Flappy Bird: Fable 5 = $0.42, GLM-5.2 = $0.05, DeepSeek = $0.001. Strona coffee shop: Sonnet 5 = $11, DeepSeek = $0.08.\n\nModel routing — oszczędność 60-90%: używaj drogiego modelu (Fable) do planowania, taniego (DeepSeek/Sonnet) do wykonania. Output tokens droższe niż input. Wszyscy agenci to robią. Sync (twórca llama.cpp): \"połowa zadań coding nie wymaga dużego modelu — 32B/27B wystarczy.\"\n\nTencent wydał Hy3 — open-source MoE 295B (21B active). Mniejszy niż GLM-5.2/DeepSeek V4 (>1T) ale prawie tak dobry. 256K context. Agentic coding, UI design, vibe coding.",
+        "body_en": "DeepSeek released DSpark — speculative decoding accelerates generation by 80%, increases output by 700% without quality loss. Works with GLM-5.2 — 85% faster. Open source.\n\nCost test for Flappy Bird game: Fable 5 = $0.42, GLM-5.2 = $0.05, DeepSeek = $0.001. Coffee shop website: Sonnet 5 = $11, DeepSeek = $0.08.\n\nModel routing — 60-90% savings: use expensive model (Fable) for planning, cheap model (DeepSeek/Sonnet) for execution. Output tokens cost more than input. Everyone does it. Sync (llama.cpp creator): \"half of coding tasks don't need large model — 32B/27B suffices.\"\n\nTencent released Hy3 — open-source MoE 295B (21B active). Smaller than GLM-5.2/DeepSeek V4 (>1T) but nearly as good. 256K context. Agentic coding, UI design, vibe coding.",
+        "quotes": [
+          {
+            "author": "Lev Selector",
+            "text_pl": "DeepSeek to prawie ulubiony model każdego. Chińskie modele — dlatego tak popularne.",
+            "text_en": "DeepSeek is almost everyone's favorite. Chinese models — that's why so popular."
+          },
+          {
+            "author": "Sync (llama.cpp)",
+            "text_pl": "Połowa zadań coding nie wymaga dużego modelu — 32B lub 27B wystarczy.",
+            "text_en": "Half of coding tasks don't need large model — 32B or 27B suffices."
+          }
+        ]
+      },
+      {
+        "title_pl": "AI projektuje chipy AI + Palantir sovereign AI",
+        "title_en": "AI designs AI chips + Palantir sovereign AI",
+        "body_pl": "Princeton + IIT Madras: AI projektuje RF circuits. CNN przewiduje fizykę (EM fields) bez solving Maxwell's equations — ms zamiast minut. AI loop 10,000× invents non-intuitive shapes — \"wyglądają jak QR codes, nie jak projekty ludzkie.\" Wynik: tygodnie → minuty. Dave Blundin: \"Inference chips będą 100-10,000× szybsze. Hard takeoff nieunikniony.\"\n\nAlex Friedman: \"AI-optimized designs wyglądają organic, noisy, information-dense — jak obcy. Interpretability tax będzie wszędzie.\" Anthropic partneruje z Samsung (jedyne bez własnych chipsów).\n\nPalantir × Nvidia: sovereign AI architecture — Neotron open models wewnątrz platformy Palantir. On-prem dla defense i banks. Alex Karp: \"klienci są livid — płacą za tokens które nie tworzą wartości, oddają alpha.\" Nvidia commoditizes software by selling more GPUs.",
+        "body_en": "Princeton + IIT Madras: AI designs RF circuits. CNN predicts physics (EM fields) without solving Maxwell's equations — ms instead of minutes. AI loop 10,000x invents non-intuitive shapes — \"look like QR codes, not human designs.\" Result: weeks → minutes. Dave Blundin: \"Inference chips will be 100-10,000x faster. Hard takeoff inevitable.\"\n\nAlex Friedman: \"AI-optimized designs look organic, noisy, information-dense — alien. Interpretability tax will be everywhere.\" Anthropic partnering with Samsung (only one without own chips).\n\nPalantir × Nvidia: sovereign AI architecture — Neotron open models inside Palantir platform. On-prem for defense and banks. Alex Karp: \"clients are livid — paying for tokens that create no value, giving away alpha.\" Nvidia commoditizes software by selling more GPUs.",
+        "quotes": [
+          {
+            "author": "Dave Blundin",
+            "text_pl": "Inference chips będą 100-10,000× szybsze. Hard takeoff nieunikniony po wdrożeniu.",
+            "text_en": "Inference chips will be 100-10,000x faster. Hard takeoff inevitable after deployment."
+          },
+          {
+            "author": "Alex Karp (Palantir)",
+            "text_pl": "Klienci są livid — płacą za tokens które nie tworzą wartości, oddają alpha.",
+            "text_en": "Clients are livid — paying for tokens that create no value, giving away alpha."
+          }
+        ]
+      },
+      {
+        "title_pl": "World models eksplozja + robotyka",
+        "title_en": "World models explosion + robotics",
+        "body_pl": "Cztery nowe open-source world models tego tygodnia:\n\nABot World (Apache 2) — 720p@16fps, nieskończony świat (1h+), 24GB, działa na RTX 5090/4090.\nLingBot World 2 — 720p@60fps, akcje i eventy, kontrola obiektów. 86GB.\nMira — multiplayer 4 graczy, 5B diffusion model, 20fps na B200.\nAlaya World — persistent memory, prompt editing w czasie (fireworks, potwory), 720p@24fps.\n\nRobotyka: Boston Dynamics 5th gen Atlas (Hyundai) — do 30,000 sztuk rocznie. UB humanoid robots od $18,000 (lifelike silicon skin). Booster T2 — 75 DOF, open-source ecosystem (gym + train), wall jumps i 360 flips. Unitree G1 wykonał chirurgię (teleoperated, UC San Diego).\n\nChiny: 140 firm robotycznych, 300+ modeli, 85% globalnych instalacji.",
+        "body_en": "Four new open-source world models this week:\n\nABot World (Apache 2) — 720p@16fps, infinite world (1h+), 24GB, runs on RTX 5090/4090.\nLingBot World 2 — 720p@60fps, actions and events, object control. 86GB.\nMira — 4-player multiplayer, 5B diffusion model, 20fps on B200.\nAlaya World — persistent memory, real-time prompt editing (fireworks, monsters), 720p@24fps.\n\nRobotics: Boston Dynamics 5th gen Atlas (Hyundai) — up to 30,000 units/year. UB humanoid robots from $18,000 (lifelike silicon skin). Booster T2 — 75 DOF, open-source ecosystem (gym + train), wall jumps and 360 flips. Unitree G1 performed surgery (teleoperated, UC San Diego).\n\nChina: 140 robot companies, 300+ models, 85% of global installations.",
+        "quotes": [
+          {
+            "author": "Lev Selector",
+            "text_pl": "Chiny: 140 firm robotycznych, 300+ modeli robotów, 85% globalnych instalacji.",
+            "text_en": "China: 140 robot companies, 300+ robot models, 85% of global installations."
+          },
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "11 największych firm w świecie robi dokładnie to samo — designuje chipy AI. Bezprecedensowy moment.",
+            "text_en": "11 biggest companies doing exactly the same thing — designing AI chips. Unprecedented moment."
+          }
+        ]
+      },
+      {
+        "title_pl": "Na co uważać w przyszłym tygodniu",
+        "title_en": "What to watch next week",
+        "body_pl": "Gemini 3.5 Pro — premiera 17 lipca (opóźnione z czerwca). Fable 5 promo kończy się 13 lipca — po tym płatne API. China może restrict openweight exports — podział na dwa bloki superinteligencji. AI-designed chips nadchodzą — 100-10,000× performance. Patent system pod presją AI-generated IP.\n\nMojo language (Chris Lattner) przejęty przez Qualcomm — zagrożenie dla NVIDIA CUDA monopoly. Google OKF zastępuje RAG — structured markdown z interlinks, bez vector database. GPT Live — naturalna konwersacja voice (przerywanie, pauzy, translation, visual responses).\n\nMuse Image i Muse Video (Meta) — agent-style image generation (web search, Marketplace). Reve 2.1 — #2 na leaderboardach (za GPT Image 2).",
+        "body_en": "Gemini 3.5 Pro — release July 17 (delayed from June). Fable 5 promo ends July 13 — paid API after. China may restrict openweight exports — split into two superintelligence blocks. AI-designed chips coming — 100-10,000x performance. Patent system under pressure from AI-generated IP.\n\nMojo language (Chris Lattner) acquired by Qualcomm — threat to NVIDIA CUDA monopoly. Google OKF replaces RAG — structured markdown with interlinks, no vector database. GPT Live — natural voice conversation (interruption, pauses, translation, visual responses).\n\nMuse Image and Muse Video (Meta) — agent-style image generation (web search, Marketplace). Reve 2.1 — #2 on leaderboards (behind GPT Image 2).",
+        "quotes": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Śledź kompresję — to prowadzi do końca tęczy. Superinteligencja = compression-induced phase transition.",
+            "text_en": "Follow the compression — it leads to the end of the rainbow. Superintelligence = compression-induced phase transition."
+          },
+          {
+            "author": "Alex Friedman",
+            "text_pl": "Don't take off the takeoff. To już się dzieje.",
+            "text_en": "Don't take off the takeoff. It's already happening."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      "AI Search (Ti1V7OI2Rro) — 12.07.2026",
+      "AI Search (SettwwX2cCI) — 10.07.2026",
+      "Lev Selector (6x28pfmf0yU) — 10.07.2026",
+      "Diamandis Moonshots #269 (XCunMF6frio) — 08.07.2026"
+    ]
+  },
+  {
     "num": 1,
     "date": "2026-07-05",
     "collapsed": true,
