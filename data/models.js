@@ -24,8 +24,7 @@ const M = [
       "benchlm_score": 86,
       "benchlm_rank": null,
       "composite": 86.0,
-      "confidence": 1,
-      "lmstats": 63.1
+      "confidence": 1
     }
   },
   {
@@ -52,12 +51,11 @@ const M = [
         "Terminal-Bench 2.1": 88.0
       },
       "composite": 90.0,
-      "confidence": 2,
-      "lmstats": 63.9
+      "confidence": 2
     }
   },
   {
-    "r": 3,
+    "r": 8,
     "n": "Claude Opus 4.8",
     "v": "Anthropic",
     "d": "2026-05-28",
@@ -79,12 +77,11 @@ const M = [
         "OSWorld-Verified": 83.4
       },
       "composite": 76.6,
-      "confidence": 2,
-      "lmstats": 59.9
+      "confidence": 2
     }
   },
   {
-    "r": 4,
+    "r": 5,
     "n": "GLM-5.2",
     "v": "Z.AI / Zhipu AI",
     "d": "2026-06-16",
@@ -104,12 +101,11 @@ const M = [
         "Terminal-Bench 2.1": 81.0
       },
       "composite": 81.0,
-      "confidence": 2,
-      "lmstats": 59.0
+      "confidence": 2
     }
   },
   {
-    "r": 10,
+    "r": 11,
     "n": "MiniMax M3",
     "v": "MiniMax",
     "d": "2026-05-31",
@@ -126,12 +122,11 @@ const M = [
       "benchlm_score": 71,
       "benchlm_rank": 29,
       "composite": 71.0,
-      "confidence": 1,
-      "lmstats": 50.0
+      "confidence": 1
     }
   },
   {
-    "r": 11,
+    "r": 16,
     "n": "Kimi K2.7 Code",
     "v": "Moonshot AI",
     "d": "2026-06-12",
@@ -148,12 +143,11 @@ const M = [
       "benchlm_score": 21,
       "benchlm_rank": null,
       "composite": 21.0,
-      "confidence": 1,
-      "lmstats": 45.0
+      "confidence": 1
     }
   },
   {
-    "r": 6,
+    "r": 10,
     "n": "GPT-5.5",
     "v": "OpenAI",
     "d": "2026-04-23",
@@ -176,12 +170,11 @@ const M = [
         "Terminal-Bench 2.1": 82.7
       },
       "composite": 73.0,
-      "confidence": 2,
-      "lmstats": 55.1
+      "confidence": 2
     }
   },
   {
-    "r": 14,
+    "r": 15,
     "n": "DeepSeek v4",
     "v": "DeepSeek",
     "d": "2026-04-24",
@@ -198,12 +191,11 @@ const M = [
       "benchlm_score": 38,
       "benchlm_rank": 71,
       "composite": 38.0,
-      "confidence": 1,
-      "lmstats": 35.0
+      "confidence": 1
     }
   },
   {
-    "r": 17,
+    "r": 12,
     "n": "Qwen 3.6 Plus",
     "v": "Alibaba",
     "d": "2026-05-19",
@@ -220,12 +212,11 @@ const M = [
       "benchlm_score": 64,
       "benchlm_rank": 34,
       "composite": 64.0,
-      "confidence": 1,
-      "lmstats": 22.0
+      "confidence": 1
     }
   },
   {
-    "r": 21,
+    "r": 19,
     "n": "Gemma 4 12B Unified",
     "v": "Google",
     "d": "2026-06-03",
@@ -243,7 +234,7 @@ const M = [
     }
   },
   {
-    "r": 8,
+    "r": 3,
     "n": "Claude Opus 4.7",
     "v": "Anthropic",
     "d": "2026-04-16",
@@ -264,12 +255,11 @@ const M = [
         "SWE-Bench Verified": 87.6
       },
       "composite": 83.5,
-      "confidence": 2,
-      "lmstats": 53.2
+      "confidence": 2
     }
   },
   {
-    "r": 9,
+    "r": 20,
     "n": "Meta AI (Llama 4)",
     "v": "Meta",
     "d": "2026-04",
@@ -284,7 +274,7 @@ const M = [
     "b_en": "open-weights in the future, community ecosystem"
   },
   {
-    "r": 4,
+    "r": 7,
     "n": "Krea 2",
     "v": "Krea",
     "d": "2026-06-23",
@@ -299,7 +289,7 @@ const M = [
     "b_en": "tunable creativity, style references, moodboard conditioning — design and art"
   },
   {
-    "r": 2,
+    "r": 3,
     "n": "Nano Banana Pro",
     "v": "Google",
     "d": "2026-05-28",
@@ -314,7 +304,7 @@ const M = [
     "b_en": "complete style control, image editing, Gemini integration"
   },
   {
-    "r": 3,
+    "r": 5,
     "n": "Ideogram 4",
     "v": "Ideogram",
     "d": "2026-06-03",
@@ -329,7 +319,7 @@ const M = [
     "b_en": "text rendering in images — logos, posters, design with text"
   },
   {
-    "r": 7,
+    "r": 10,
     "n": "FLUX.2 [dev]",
     "v": "Black Forest Labs",
     "d": "2025-11",
@@ -344,7 +334,7 @@ const M = [
     "b_en": "photorealism, precise color and pose control, image editing"
   },
   {
-    "r": 13,
+    "r": 17,
     "n": "Image Gen on Phone",
     "v": "Various",
     "d": "2026-05",
@@ -359,7 +349,7 @@ const M = [
     "b_en": "privacy (offline), mobile-first UX, fast iterations"
   },
   {
-    "r": 2,
+    "r": 3,
     "n": "Seedance 2.5",
     "v": "ByteDance",
     "d": "2026-06-23",
@@ -374,7 +364,7 @@ const M = [
     "b_en": "long 30s clips with multiple references, audio-video joint generation"
   },
   {
-    "r": 1,
+    "r": 2,
     "n": "Wan 2.5",
     "v": "Alibaba",
     "d": "2025-09",
@@ -419,7 +409,7 @@ const M = [
     "b_en": "physical AI, robot training, industrial vision — automotive, manufacturing"
   },
   {
-    "r": 4,
+    "r": 8,
     "n": "World Tracing",
     "v": "World Labs + UIUC",
     "d": "2026-06",
@@ -434,7 +424,7 @@ const M = [
     "b_en": "layered 3D reconstruction — pixel-aligned geometry, hidden depth layers"
   },
   {
-    "r": 10,
+    "r": 14,
     "n": "Realtime Video Games AI",
     "v": "Various",
     "d": "2026-04",
@@ -464,7 +454,7 @@ const M = [
     "b_en": "terminal/CLI coding, agentic — autonomous repository modifications"
   },
   {
-    "r": 4,
+    "r": 5,
     "n": "Eleven v3",
     "v": "ElevenLabs",
     "d": "2026-03-14",
@@ -599,7 +589,7 @@ const M = [
     "b_en": "video generation, dynamic environments — Happy Horse predecessor"
   },
   {
-    "r": 9,
+    "r": 10,
     "n": "Moya",
     "v": "DroidUp (Shanghai)",
     "d": "2026-02-23",
@@ -614,7 +604,7 @@ const M = [
     "b_en": "hyper-realistic facial expressions, social interactions with humans"
   },
   {
-    "r": 10,
+    "r": 11,
     "n": "LeRobot",
     "v": "Hugging Face",
     "d": "2025-01",
@@ -629,7 +619,7 @@ const M = [
     "b_en": "open-source robot training, community-driven, reproducible research"
   },
   {
-    "r": 8,
+    "r": 9,
     "n": "Real Gundam",
     "v": "Various",
     "d": "2026-05",
@@ -644,7 +634,7 @@ const M = [
     "b_en": "large-scale humanoid locomotion, balance, bipedal walking"
   },
   {
-    "r": 2,
+    "r": 3,
     "n": "One Streamer",
     "v": "One Streamer (research)",
     "d": "2026-06",
@@ -704,7 +694,7 @@ const M = [
     "b_en": "hands-free AI assistance, real-time visual understanding"
   },
   {
-    "r": 5,
+    "r": 6,
     "n": "Domain Shuttle",
     "v": "Domain Shuttle (open-source)",
     "d": "2026-06",
@@ -719,7 +709,7 @@ const M = [
     "b_en": "video generation with reference images — character and object consistency across scenes"
   },
   {
-    "r": 19,
+    "r": 24,
     "n": "Ornith 1.0",
     "v": "Ornith (open-source)",
     "d": "2026-06",
@@ -737,7 +727,7 @@ const M = [
     }
   },
   {
-    "r": 4,
+    "r": 5,
     "n": "Arbor",
     "v": "Stability AI (open-source)",
     "d": "2026-06",
@@ -784,7 +774,7 @@ const M = [
     "b_en": "chip architecture — vertical transistor stacking, 2x density over previous generation"
   },
   {
-    "r": 9,
+    "r": 13,
     "n": "Dance OPD",
     "v": "ByteDance (research)",
     "d": "2026-06",
@@ -799,7 +789,7 @@ const M = [
     "b_en": "unified image generation + editing — one model instead of many specialists"
   },
   {
-    "r": 10,
+    "r": 14,
     "n": "Unzero",
     "v": "Unconventional AI (open-source, MIT)",
     "d": "2026-06",
@@ -829,7 +819,7 @@ const M = [
     "b_en": "humanoid training dataset — real-home teleoperation, 500h of robot training data"
   },
   {
-    "r": 5,
+    "r": 6,
     "n": "Unitree R1",
     "v": "Unitree",
     "d": "2026-06",
@@ -844,7 +834,7 @@ const M = [
     "b_en": "affordable humanoid robot — $4,900, acrobatics, kung-fu, cheapest market option"
   },
   {
-    "r": 5,
+    "r": 18,
     "n": "Seed 2.1",
     "v": "ByteDance",
     "d": "2026-06",
@@ -861,8 +851,7 @@ const M = [
       "benchlm_score": 7,
       "benchlm_rank": null,
       "composite": 7.0,
-      "confidence": 1,
-      "lmstats": 55.8
+      "confidence": 1
     }
   },
   {
@@ -881,7 +870,7 @@ const M = [
     "b_en": "4D reconstruction from single video — converting ordinary video into interactive 4D scene"
   },
   {
-    "r": 4,
+    "r": 5,
     "n": "Perception DM",
     "v": "ByteDance (open-source)",
     "d": "2026-06",
@@ -911,7 +900,7 @@ const M = [
     "b_en": "autonomous data creation — AI creates and verifies its own training data, self-improving"
   },
   {
-    "r": 16,
+    "r": 9,
     "n": "Sakana Fugu",
     "v": "Sakana AI",
     "d": "2026-06",
@@ -928,12 +917,11 @@ const M = [
       "benchlm_score": 75,
       "benchlm_rank": null,
       "composite": 75.0,
-      "confidence": 1,
-      "lmstats": 25.0
+      "confidence": 1
     }
   },
   {
-    "r": 5,
+    "r": 9,
     "n": "DreamX World",
     "v": "DreamX World (open-source)",
     "d": "2026-06-21",
@@ -948,7 +936,7 @@ const M = [
     "b_en": "interactive world generation — persistent memory, hundreds of frames, scene consistency"
   },
   {
-    "r": 6,
+    "r": 7,
     "n": "PermaVid",
     "v": "PermaVid (open-source)",
     "d": "2026-06-21",
@@ -963,7 +951,7 @@ const M = [
     "b_en": "consistent video editing — persistent memory, stable edits in long clips"
   },
   {
-    "r": 7,
+    "r": 8,
     "n": "Omni Director",
     "v": "Clling (research)",
     "d": "2026-06-21",
@@ -978,7 +966,7 @@ const M = [
     "b_en": "camera motion cloning — transferring camera movement from ref video to new images"
   },
   {
-    "r": 11,
+    "r": 15,
     "n": "Boogu Image",
     "v": "Boogu (open-source)",
     "d": "2026-06-21",
@@ -993,7 +981,7 @@ const M = [
     "b_en": "image generation + editing in one model — permissive license, Flux/Nano Banana competitor"
   },
   {
-    "r": 5,
+    "r": 8,
     "n": "TeaStyle V2",
     "v": "TeaStyle (open-source)",
     "d": "2026-06-21",
@@ -1008,7 +996,7 @@ const M = [
     "b_en": "style transfer — converting styles between images, chained style transfers"
   },
   {
-    "r": 3,
+    "r": 4,
     "n": "LTX Trainer 2",
     "v": "LTX (open-source)",
     "d": "2026-06-21",
@@ -1068,7 +1056,7 @@ const M = [
     "b_en": "autonomous chemistry research — AI proposes and analyzes chemical experiments"
   },
   {
-    "r": 6,
+    "r": 7,
     "n": "Ace",
     "v": "Sony",
     "d": "2026-06-21",
@@ -1113,7 +1101,7 @@ const M = [
     "b_en": "robot training exoskeleton — cloning human movements with force/torque feedback"
   },
   {
-    "r": 4,
+    "r": 5,
     "n": "Scale-2",
     "v": "ZAI (open-source)",
     "d": "2026-06-14",
@@ -1128,7 +1116,7 @@ const M = [
     "b_en": "motion transfer — animating characters from reference video, best open-source"
   },
   {
-    "r": 6,
+    "r": 10,
     "n": "Actionable World Representation",
     "v": "Research (open-source)",
     "d": "2026-06-14",
@@ -1143,7 +1131,7 @@ const M = [
     "b_en": "actionable world models — digital twins with object motion for robots"
   },
   {
-    "r": 7,
+    "r": 11,
     "n": "Oscar",
     "v": "Research (open-source)",
     "d": "2026-06-14",
@@ -1173,7 +1161,7 @@ const M = [
     "b_en": "real-time translation — simultaneous translation, available via API and mobile"
   },
   {
-    "r": 20,
+    "r": 21,
     "n": "Diffusion Gemma",
     "v": "Google (open-source, Apache 2)",
     "d": "2026-06-14",
@@ -1191,7 +1179,7 @@ const M = [
     }
   },
   {
-    "r": 8,
+    "r": 9,
     "n": "Stream Force",
     "v": "Research",
     "d": "2026-06-14",
@@ -1236,7 +1224,7 @@ const M = [
     "b_en": "autonomous research agent — hypothesis tree, persistent memory"
   },
   {
-    "r": 18,
+    "r": 23,
     "n": "Next N2",
     "v": "Next (open-source)",
     "d": "2026-06-14",
@@ -1254,7 +1242,7 @@ const M = [
     }
   },
   {
-    "r": 5,
+    "r": 6,
     "n": "Dot TTS",
     "v": "Dot (open-source, Apache 2)",
     "d": "2026-06-14",
@@ -1269,7 +1257,7 @@ const M = [
     "b_en": "voice cloning TTS — 2B params, few-shot voice cloning"
   },
   {
-    "r": 5,
+    "r": 6,
     "n": "World Tracing",
     "v": "Research (open-source)",
     "d": "2026-06-14",
@@ -1299,7 +1287,7 @@ const M = [
     "b_en": "text-to-3D motion — generating 3D human motion from text prompt"
   },
   {
-    "r": 6,
+    "r": 7,
     "n": "Surf Flow",
     "v": "Research",
     "d": "2026-06-14",
@@ -1314,7 +1302,7 @@ const M = [
     "b_en": "multi-image 3D reconstruction — fusing unaligned photos"
   },
   {
-    "r": 8,
+    "r": 12,
     "n": "Moverse",
     "v": "Research",
     "d": "2026-06-14",
@@ -1329,7 +1317,7 @@ const M = [
     "b_en": "360 world from image — panorama → 3D Gaussian model → interactive world"
   },
   {
-    "r": 8,
+    "r": 11,
     "n": "I1",
     "v": "Princeton (open-source)",
     "d": "2026-06-14",
@@ -1344,7 +1332,7 @@ const M = [
     "b_en": "fully open-source image model — training code + data, for research"
   },
   {
-    "r": 9,
+    "r": 13,
     "n": "Anchor World",
     "v": "Research",
     "d": "2026-06-14",
@@ -1374,7 +1362,7 @@ const M = [
     "b_en": "fast 3D mesh generation — 18x faster, prompt/image → 3D mesh"
   },
   {
-    "r": 9,
+    "r": 10,
     "n": "MilliVid",
     "v": "Research",
     "d": "2026-06-14",
@@ -1404,7 +1392,7 @@ const M = [
     "b_en": "AI body scanning, personalized wellness, health diagnostics"
   },
   {
-    "r": 10,
+    "r": 11,
     "n": "Bernini",
     "v": "ByteDance",
     "d": "2026-06-07",
@@ -1464,7 +1452,7 @@ const M = [
     "b_en": "real-time AI music — playable instrument, DAW plugin, MIDI control, 200ms latency"
   },
   {
-    "r": 15,
+    "r": 22,
     "n": "GPT Dreaming",
     "v": "OpenAI",
     "d": "2026-06-07",
@@ -1497,7 +1485,7 @@ const M = [
     "b_en": "multi-person 3D motion capture — markerless, occlusion handling, hug/dance/wrestling"
   },
   {
-    "r": 6,
+    "r": 9,
     "n": "Reve 2",
     "v": "Reve AI",
     "d": "2026-06-07",
@@ -1529,8 +1517,7 @@ const M = [
       "benchlm_score": 78,
       "benchlm_rank": 15,
       "composite": 78.0,
-      "confidence": 1,
-      "lmstats": 54.5
+      "confidence": 1
     }
   },
   {
@@ -1549,7 +1536,7 @@ const M = [
     "b_en": "local AI hardware — 128GB unified memory fits Qwen 3.7 35B (72GB), local offline agents"
   },
   {
-    "r": 12,
+    "r": 16,
     "n": "Stable Layers",
     "v": "Stability AI",
     "d": "2026-06-07",
@@ -1564,7 +1551,7 @@ const M = [
     "b_en": "image layer separation — transparent layers, alpha masks, layer editing"
   },
   {
-    "r": 4,
+    "r": 5,
     "n": "DR2",
     "v": "Deep Robotics",
     "d": "2026-06-07",
@@ -1579,7 +1566,7 @@ const M = [
     "b_en": "industrial humanoid robot — extreme environments, precise manipulation + raw power"
   },
   {
-    "r": 7,
+    "r": 8,
     "n": "UBTECH humanoid couple",
     "v": "UBTECH",
     "d": "2026-06-07",
@@ -1609,7 +1596,7 @@ const M = [
     "b_en": "quantum computing chip — AI-assisted manufacturing, 1000x reliability improvement"
   },
   {
-    "r": 6,
+    "r": 7,
     "n": "WavTTS",
     "v": "ByteDance",
     "d": "2026-06-07",
@@ -1654,7 +1641,7 @@ const M = [
     "b_en": "autonomous driving simulation — multi-camera, extreme weather, editable scenes, synthetic training data"
   },
   {
-    "r": 12,
+    "r": 13,
     "n": "Nemotron 3 Ultra",
     "v": "NVIDIA",
     "d": "2026-06-07",
@@ -1671,12 +1658,11 @@ const M = [
       "benchlm_score": 63,
       "benchlm_rank": 39,
       "composite": 63.0,
-      "confidence": 1,
-      "lmstats": 40.0
+      "confidence": 1
     }
   },
   {
-    "r": 3,
+    "r": 4,
     "n": "Higgs Audio v3",
     "v": "Higgs Audio",
     "d": "2026-06-07",
@@ -1691,7 +1677,7 @@ const M = [
     "b_en": "controllable TTS — inline emotion/style tags, real-time expressive voice, chat-native"
   },
   {
-    "r": 11,
+    "r": 12,
     "n": "NAVA",
     "v": "Baidu (Ernie team)",
     "d": "2026-06-07",
@@ -1706,7 +1692,7 @@ const M = [
     "b_en": "video with native audio — joint audio-visual generation, smaller than competitors"
   },
   {
-    "r": 13,
+    "r": 14,
     "n": "MAI Thinking 1",
     "v": "Microsoft",
     "d": "2026-06-07",
@@ -1723,8 +1709,7 @@ const M = [
       "benchlm_score": 61,
       "benchlm_rank": 42,
       "composite": 61.0,
-      "confidence": 1,
-      "lmstats": 38.0
+      "confidence": 1
     }
   },
   {
@@ -1741,6 +1726,262 @@ const M = [
     "desc_en": "Image generator + editor — #3 on LM Arena after Imagen 3, beats basic Google models. Closed source, paid",
     "b_pl": "Image generation + editing — top-tier quality, blind tests favorable",
     "b_en": "image generation + editing — top-tier quality, favorable blind tests"
+  },
+  {
+    "r": 5,
+    "n": "ABot World",
+    "v": "AMap CVLab",
+    "d": "2026-07-12",
+    "o": 1,
+    "c": "World Models",
+    "url": "https://amap-cvlab.github.io/ABot-World/",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Open-source (Apache 2) interaktywny świat — 720p@16fps, latency ~1s. Działa na RTX 5090. Nieskończony świat (ponad godzinę). 24GB — mieści się na 4090.",
+    "desc_en": "Open-source (Apache 2) interactive world — 720p@16fps, ~1s latency. Runs on RTX 5090. Infinite world (1+ hour). 24GB — fits on 4090.",
+    "b_pl": "Nieskończone interaktywne światy w czasie rzeczywistym, komercyjne użycie dozwolone",
+    "b_en": "Infinite interactive worlds in real-time, commercial use allowed"
+  },
+  {
+    "r": 4,
+    "n": "ProxyPose",
+    "v": "Ruihang Zhang",
+    "d": "2026-07-12",
+    "o": 1,
+    "c": "Multimodal",
+    "url": "https://ruihangzhang97.github.io/proxypose/",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Open-source śledzenie 3D pozycji i rotacji obiektów w video 2D. Używa proxy shape + geometrii. Działa z przezroczystymi/odbijającymi obiektami. 30GB (bazuje na Wan 2.1).",
+    "desc_en": "Open-source 3D position and rotation tracking of objects in 2D video. Uses proxy shape + geometry. Works with transparent/reflective objects. 30GB (based on Wan 2.1).",
+    "b_pl": "Śledzenie obiektów w 3D z video 2D, transparentne i odbijające powierzchnie",
+    "b_en": "3D object tracking from 2D video, transparent and reflective surfaces"
+  },
+  {
+    "r": 12,
+    "n": "SeFi image",
+    "v": "JM Liu",
+    "d": "2026-07-12",
+    "o": 1,
+    "c": "Image Generation",
+    "url": "https://jmliu206.github.io/sefi-web/",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Open-source generator obrazów — 3 warianty (1B/3B/5B). Rozdziela layout od tekstury (dual-stream). Mniej niż 10GB. Biję Qwen Image i Z-Image na benchmarkach. Szybszy niż Krea 2 / Ideogram.",
+    "desc_en": "Open-source image generator — 3 variants (1B/3B/5B). Separates layout from texture (dual-stream). Under 10GB. Beats Qwen Image and Z-Image. Faster than Krea 2 / Ideogram.",
+    "b_pl": "Efektywny generator obrazów, dual-stream architecture, tekst i reklamy",
+    "b_en": "Efficient image generator, dual-stream architecture, text and ads"
+  },
+  {
+    "r": 3,
+    "n": "GPT Live",
+    "v": "OpenAI",
+    "d": "2026-07-12",
+    "o": 0,
+    "c": "TTS",
+    "url": "https://openai.com/index/introducing-gpt-live/",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Real-time voice model — naturalna konwersacja (przerywanie, pauzy, potwierdzanie). Deleguje trudne pytania do GPT 5.5 w tle. Live translation. Wizualne odpowiedzi (weather cards, maps). Dostępny dla wszystkich (free=mini, paid=full).",
+    "desc_en": "Real-time voice model — natural conversation (interruption, pauses, acknowledgment). Delegates hard questions to GPT 5.5 in background. Live translation. Visual responses. Available for all (free=mini, paid=full).",
+    "b_pl": "Naturalna konwersacja voice, live translation, wizualne odpowiedzi, korekcja wymowy",
+    "b_en": "Natural voice conversation, live translation, visual responses, pronunciation correction"
+  },
+  {
+    "r": 4,
+    "n": "PixWorld",
+    "v": "SenseGen Gao",
+    "d": "2026-07-12",
+    "o": 1,
+    "c": "3D Generation",
+    "url": "https://sensengao.github.io/PixWorld/",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Open-source generator scen 3D w pixel space (nie latent space). 4-step wersja: scena w 6s@480p — 1000× szybciej niż diffusion. Kod, model i dane zostaną wydane.",
+    "desc_en": "Open-source 3D scene generator in pixel space (not latent space). 4-step version: scene in 6s@480p — 1000x faster than diffusion. Code, model and data to be released.",
+    "b_pl": "Sceny 3D w pixel space, 1000× szybszy niż diffusion",
+    "b_en": "3D scenes in pixel space, 1000x faster than diffusion"
+  },
+  {
+    "r": 2,
+    "n": "Wan Streamer 0.2",
+    "v": "Wan",
+    "d": "2026-07-12",
+    "o": 0,
+    "c": "Realtime Avatars",
+    "url": "https://wan-streamer.com/v0.2/",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Real-time rozmowa z dowolną osobą/postacią. v0.2: 640px, 25fps, ~200ms latency. Może być kot, dziecko, postać fikcyjna. Tylko paper, nie open-source jeszcze.",
+    "desc_en": "Real-time conversation with any person/character. v0.2: 640px, 25fps, ~200ms latency. Can be cat, baby, fictional character. Paper only, not open-source yet.",
+    "b_pl": "Real-time avatar rozmowa, dowolna postać, 25fps",
+    "b_en": "Real-time avatar conversation, any character, 25fps"
+  },
+  {
+    "r": 6,
+    "n": "Mira",
+    "v": "Mira WM",
+    "d": "2026-07-12",
+    "o": 1,
+    "c": "World Models",
+    "url": "https://mira-wm.com/",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Open-source multiplayer world model — 4 graczy w czasie rzeczywistym. 5B parametrów diffusion model. 20fps na B200 GPU. Trenowany na 10,000h gameplay. Nie pre-designed — czysty video generator.",
+    "desc_en": "Open-source multiplayer world model — 4 players in real-time. 5B diffusion model. 20fps on B200 GPU. Trained on 10,000h gameplay. Not pre-designed — pure video generator.",
+    "b_pl": "Multiplayer w real-time z video generator, 4 graczy, 20fps",
+    "b_en": "Multiplayer real-time video generator, 4 players, 20fps"
+  },
+  {
+    "r": 4,
+    "n": "LingBot World 2",
+    "v": "Robbyant",
+    "d": "2026-07-12",
+    "o": 1,
+    "c": "World Models",
+    "url": "https://technology.robbyant.com/lingbot-world-v2",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Open-source interaktywny świat — 720p@60fps. Akcje, efekty, eventy w real-time. Kontrola postaci i obiektów. Fast inference model wydany, reszta na to-do. 86GB total.",
+    "desc_en": "Open-source interactive world — 720p@60fps. Actions, effects, events in real-time. Character and object control. Fast inference model released, rest on to-do. 86GB total.",
+    "b_pl": "720p@60fps interaktywny świat, akcje i eventy, kontrola obiektów",
+    "b_en": "720p@60fps interactive world, actions and events, object control"
+  },
+  {
+    "r": 4,
+    "n": "Grok 4.5",
+    "v": "xAI",
+    "d": "2026-07-12",
+    "o": 0,
+    "c": "LLM",
+    "url": "https://x.ai/news/grok-4-5",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Najmądrzejszy model xAI — agentic coding, reasoning. Trenowany z Cursor (przejęte przez xAI). 500K context (krótszy niż 1M u konkurencji). SWE-bench: bije Opus 4.8, za GPT 5.5 i Fable. 80 tok/s, mniej tokenów na zadanie. $3/$1 per M tok — 3× tańszy od GPT, znacznie tańszy od Fable.",
+    "desc_en": "Smartest xAI model — agentic coding, reasoning. Trained with Cursor. 500K context (shorter than 1M competitors). SWE-bench: beats Opus 4.8, behind GPT 5.5 and Fable. 80 tok/s, fewer tokens per task. $3/$1 per M tok — 3x cheaper than GPT, much cheaper than Fable.",
+    "b_pl": "Agentic coding, reasoning, bardzo efektywny (mniej tokenów), konkurencyjny cenowo",
+    "b_en": "Agentic coding, reasoning, very efficient (fewer tokens), cost-competitive",
+    "scores": {
+      "benchlm_score": 82,
+      "benchlm_rank": null,
+      "composite": 82.0,
+      "confidence": 1
+    }
+  },
+  {
+    "r": 6,
+    "n": "Muse Spark 1.1",
+    "v": "Meta",
+    "d": "2026-07-12",
+    "o": 0,
+    "c": "LLM",
+    "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Meta najlepszy model — multimodal, agentic. Browser capabilities (Instagram messaging), kodowanie (diagnose bugs, code migration), planowanie. Self-reported benchmarks #1, ale niezależne rankingi: poza top 10 (na poziomie GLM-5.2).",
+    "desc_en": "Meta's best model — multimodal, agentic. Browser capabilities (Instagram messaging), coding (diagnose bugs, code migration), planning. Self-reported #1, but independent rankings: outside top 10 (GLM-5.2 level).",
+    "b_pl": "Multimodal agentic, browser automation, code migration, planowanie",
+    "b_en": "Multimodal agentic, browser automation, code migration, planning",
+    "scores": {
+      "benchlm_score": 79,
+      "benchlm_rank": null,
+      "composite": 79.0,
+      "confidence": 1
+    }
+  },
+  {
+    "r": 4,
+    "n": "Booster T2",
+    "v": "Booster Robotics",
+    "d": "2026-07-12",
+    "o": 1,
+    "c": "Humanoid Robots",
+    "url": "",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Open-source humanoid robot — 75 DOF, 10kg dual arm payload, ~1.4m, 2h+ walking. Wall jumps, flips, 360 aerial flips. Open ecosystem: booster gym + booster train (symulacja → real world).",
+    "desc_en": "Open-source humanoid robot — 75 DOF, 10kg dual arm payload, ~1.4m, 2h+ walking. Wall jumps, flips, 360 aerial flips. Open ecosystem: booster gym + booster train.",
+    "b_pl": "Akrobacje (wall jumps, 360 flips), open-source ecosystem (gym + train)",
+    "b_en": "Acrobatics (wall jumps, 360 flips), open-source ecosystem (gym + train)"
+  },
+  {
+    "r": 7,
+    "n": "Alaya World",
+    "v": "Alaya Lab",
+    "d": "2026-07-12",
+    "o": 1,
+    "c": "World Models",
+    "url": "https://alaya-lab.github.io/AlayaWorld/",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Open-source interaktywny świat w real-time — 720p@24fps, 1+ minuta. Persistent memory (spójność scen). Edycja promptami w czasie (fireworks, potwory). Kod i model do wydania.",
+    "desc_en": "Open-source real-time interactive world — 720p@24fps, 1+ minute. Persistent memory (scene consistency). Real-time prompt editing (fireworks, monsters). Code and model to be released.",
+    "b_pl": "Real-time 720p@24fps, persistent memory, prompt editing w czasie",
+    "b_en": "Real-time 720p@24fps, persistent memory, real-time prompt editing"
+  },
+  {
+    "r": 4,
+    "n": "Seedream 5 Pro",
+    "v": "ByteDance",
+    "d": "2026-07-12",
+    "o": 0,
+    "c": "Image Generation",
+    "url": "https://seed.bytedance.com/en/seedream5_0_pro",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "ByteDance image model — generowanie, edycja, referencje. Annotacje rysowane na obrazie. Transparent layers. Multilingual (postery, komiksy w różnych językach). Poziom Nano Banana, blisko GPT Image 2. Dostępny na Dreamina.",
+    "desc_en": "ByteDance image model — generation, editing, references. Drawn annotations. Transparent layers. Multilingual. Nano Banana level, close to GPT Image 2. Available on Dreamina.",
+    "b_pl": "Edycja z annotacjami, transparent layers, multilingual, infographics",
+    "b_en": "Annotation editing, transparent layers, multilingual, infographics"
+  },
+  {
+    "r": 17,
+    "n": "Hy3",
+    "v": "Tencent",
+    "d": "2026-07-12",
+    "o": 1,
+    "c": "LLM",
+    "url": "https://hy.tencent.com/research/hy3",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Open-source MoE — 295B parametrów, 21B active. Mniejszy niż GLM-5.2/DeepSeek V4 (>1T) ale prawie tak dobry. 256K context. Agentic coding, UI design, vibe coding, automatyzacja office. FB8: 300GB.",
+    "desc_en": "Open-source MoE — 295B params, 21B active. Smaller than GLM-5.2/DeepSeek V4 (>1T) but nearly as good. 256K context. Agentic coding, UI design, vibe coding, office automation. FB8: 300GB.",
+    "b_pl": "Agentic coding, UI design, vibe coding — bije powyżej wagi (mniejszy ale mocny)",
+    "b_en": "Agentic coding, UI design, vibe coding — punches above weight (smaller but strong)",
+    "scores": {
+      "benchlm_score": 15,
+      "benchlm_rank": null,
+      "composite": 15.0,
+      "confidence": 1
+    }
+  },
+  {
+    "r": 2,
+    "n": "Muse Image",
+    "v": "Meta",
+    "d": "2026-07-12",
+    "o": 0,
+    "c": "Image Generation",
+    "url": "https://ai.meta.com/blog/introducing-muse-image-muse-video-msl",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Meta image model — działa jak agent (planuje, myśli, szuka przed generowaniem). Web search dla outfitów, Facebook Marketplace dla mebli. Referencje Instagram profili (domyślnie włączone!). Dostępny na Meta AI app.",
+    "desc_en": "Meta image model — works like agent (plans, thinks, searches before generating). Web search for outfits, Facebook Marketplace for furniture. Instagram profile references (on by default!). Available on Meta AI app.",
+    "b_pl": "Agent-style image generation, web search, Marketplace integration, reasoning",
+    "b_en": "Agent-style image generation, web search, Marketplace integration, reasoning"
+  },
+  {
+    "r": 1,
+    "n": "Muse Video",
+    "v": "Meta",
+    "d": "2026-07-12",
+    "o": 0,
+    "c": "Video Generation",
+    "url": "https://ai.meta.com/blog/introducing-muse-image-muse-video-msl",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Meta video model — native sound, złożone koncepcje (Bernoulli's principle), juggling, realistic. Tylko preview demo — brak detali (duration, resolution, pricing). Niedostępny jeszcze.",
+    "desc_en": "Meta video model — native sound, complex concepts (Bernoulli's principle), juggling, realistic. Preview demo only — no details (duration, resolution, pricing). Not available yet.",
+    "b_pl": "Native sound, złożone koncepcje fizyczne, realistic — preview tylko",
+    "b_en": "Native sound, complex physics concepts, realistic — preview only"
+  },
+  {
+    "r": 6,
+    "n": "Reve 2.1",
+    "v": "Reve",
+    "d": "2026-07-12",
+    "o": 0,
+    "c": "Image Generation",
+    "url": "https://blog.reve.com/posts/launching-reve-2.1/",
+    "yt": "Ti1V7OI2Rro",
+    "desc_pl": "Image model — silny visual reasoning, dokładne layouty, text rendering, 4K (16MP). Referencje, bounding box microediting. #2 na leaderboardach (za GPT Image 2). Closed, paid.",
+    "desc_en": "Image model — strong visual reasoning, accurate layouts, text rendering, 4K (16MP). References, bounding box microediting. #2 on leaderboards (behind GPT Image 2). Closed, paid.",
+    "b_pl": "4K output, microediting z bounding box, #2 na leaderboardach",
+    "b_en": "4K output, microediting with bounding box, #2 on leaderboards"
   }
 ];
 
