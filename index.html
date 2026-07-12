@@ -129,7 +129,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.9.39) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.9.40) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -219,7 +219,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="sec" style="margin-top:40px">
 <div class="sec-t"><span class="pl">📅 Najnowsze aktualizacje</span><span class="en">📅 Latest updates</span></div>
 <ul class="update-list">
-<li><span class="update-date">12.07.2026</span> AI Search 12.07: Grok 4.5, Muse Spark 1.1, GPT Live, Hy3 (Tencent), Seedream 5 Pro, Muse Image/Video, Reve 2.1, ABot World, PixWorld, LingBot World 2, Mira, Alaya World, SeFi image, ProxyPose, Wan Streamer 0.2, Booster T2</li>
+<li><span class="update-date">12.07.2026</span> Weekly AI Summary #2 (06.07–12.07): GPT 5.6, Grok 4.5, JSpace, Altman 5%, DSpark, AI chips, world models, robotyka</li>
 <li><span class="update-date">10.07.2026</span> Lev Selector 10.07: GPT 5.6 + Grok (xAI) + DeepSeek DSpark + HY3 MoE + BD Atlas 5gen + UB robots 8K + Mojo→Qualcomm + OKF + Composio</li>
 <li><span class="update-date">08.07.2026</span> Diamandis #269 (Fable 5 wraca ograniczony, JSpace świadome myślenie, Altman 5% dla rządu, AI nie niszczy jobs, Palantir×Nvidia, AI projektuje chipy, Japan IP)</li>
 <li><span class="update-date">05.07.2026</span> LongCat 2.0, Agents A1, Nano Banana 2 Light, RDM, MrFlow, LiveEdit, Gemini Omni Flash, VidiHand, PhysiFormer, SimFoundry, Luna, MusViT, Brain2qwerty v2, OmniContact, Aspire, CHORD, UBTech U1, Comfy MCP + 4 terminy</li>
@@ -408,7 +408,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.39 · Deploy: <span id="deploy-ts">2026-07-12 08:02:04 UTC</span> · <span id="deploy-hash">v611f2a53</span>
+v8.9.40 · Deploy: <span id="deploy-ts">2026-07-12 08:20:30 UTC</span> · <span id="deploy-hash">v2271ba8e</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
