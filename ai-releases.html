@@ -93,7 +93,7 @@ footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);t
 
 </div>
 
-<script src="data/releases.js?v=20260713020000" onerror="dataLoadFailed()"></script>
+<script src="data/releases.js?v=20260713040000" onerror="dataLoadFailed()"></script>
 <script>
 function dataLoadFailed(){var c=document.getElementById('episodes');if(c)c.innerHTML='<div style="text-align:center;padding:40px;color:var(--hm)">⚠ <span class="pl">Nie udało się załadować danych.</span><span class="en">Failed to load data.</span> <button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 16px;border-radius:6px;cursor:pointer"><span class="pl">Odśwież</span><span class="en">Refresh</span></button></div>'}
 setTimeout(function(){if(typeof RELEASES==='undefined'){dataLoadFailed()}},10000);
@@ -114,19 +114,25 @@ function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replac
 
 function renderLinks(links){
   if(!links||!links.length)return '';
-  return '<div class="rel-links">'+links.map(l=>'<a href="'+esc(l.url)+'" class="rel-link" data-type="'+esc(l.type||'')+'" target="_blank" rel="noopener">'+esc(l.label)+'</a>').join('')+'</div>';
+  return '<div class="rel-links">'+links.map(function(l){
+    var label=lang==='en'?(l.label_en||l.label_pl||l.label||''):(l.label_pl||l.label_en||l.label||'');
+    return '<a href="'+esc(l.url)+'" class="rel-link" data-type="'+esc(l.type||'')+'" target="_blank" rel="noopener">'+esc(label)+'</a>';
+  }).join('')+'</div>';
 }
 
 function renderItem(item){
-  var thumb=item.thumbnail?'<img class="rel-thumb" src="'+esc(item.thumbnail)+'" alt="'+esc(item.title)+'" onerror="this.style.display=\'none\'">':'';
+  // Bilingual: title_pl/en, category_pl/en, review_pl/en
+  var title=lang==='en'?(item.title_en||item.title_pl||item.title||''):(item.title_pl||item.title_en||item.title||'');
+  var category=lang==='en'?(item.category_en||item.category_pl||item.category||''):(item.category_pl||item.category_en||item.category||'');
   var review=lang==='en'?(item.review_en||item.review_pl||''):(item.review_pl||item.review_en||'');
+  var thumb=item.thumbnail?'<img class="rel-thumb" src="'+esc(item.thumbnail)+'" alt="'+esc(title)+'" onerror="this.style.display=\'none\'">':'';
   return '<div class="rel-card">'+
     thumb+
     '<div class="rel-body">'+
       '<div class="rel-header">'+
-        '<span class="rel-title">'+esc(item.title)+'</span>'+
+        '<span class="rel-title">'+esc(title)+'</span>'+
         '<span class="rel-vendor">'+esc(item.vendor||'')+'</span>'+
-        '<span class="rel-cat">'+esc(item.category||'')+'</span>'+
+        '<span class="rel-cat">'+esc(category)+'</span>'+
         '<span class="rel-date">'+esc(item.date||'')+'</span>'+
       '</div>'+
       '<div class="rel-review">'+esc(review).replace(/\n/g,'<br>')+'</div>'+
@@ -177,7 +183,7 @@ document.addEventListener('click',function(e){
 if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',renderAll)}else{renderAll()}
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-4-g60f782b · Deploy: <span id="deploy-ts">2026-07-13 01:22:16 UTC</span> · <span id="deploy-hash">v14c59503</span>
+v8.9.50-7-gdc9f523 · Deploy: <span id="deploy-ts">2026-07-13 02:15:00 UTC</span> · <span id="deploy-hash">v5d9bf02f</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
