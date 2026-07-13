@@ -15,7 +15,7 @@ const RELEASES = [
         "vendor": "xAI",
         "category": "LLM",
         "date": "2026-07-12",
-        "thumbnail": "rankings/releases_thumbs/grok-4-5.svg",
+        "thumbnail": "rankings/releases_thumbs/grok-4-5.jpg",
         "review_pl": "Najmądrzejszy model xAI. 1.5T parametrów, trenowany z danymi Cursor (przejęte przez xAI). $2/$6 per M tok — 3× tańszy od GPT 5.6, znacznie tańszy od Fable ($10/$50). SWE-bench: bije Opus 4.8, za GPT 5.5 i Fable. 80 tok/s, mniej tokenów na zadanie. Mniej halucynacji niż Fable i GPT 5.6. Słabość: 500K context (krótszy niż 1M u konkurencji). LiveBench: nawet poniżej Opus 4.7 i Gemini 3.1 Pro. Pozycjonowanie uczciwe — nie najlepszy, ale bardzo efektywny.",
         "review_en": "Smartest xAI model. 1.5T params, trained with Cursor data. $2/$6 per M tok — 3x cheaper than GPT 5.6. SWE-bench beats Opus 4.8, behind GPT 5.5 and Fable. 80 tok/s, fewer tokens per task. Fewer hallucinations. Weakness: 500K context. LiveBench: below Opus 4.7 and Gemini 3.1 Pro. Honest positioning — not best, but very efficient.",
         "links": [
@@ -52,7 +52,7 @@ const RELEASES = [
         "vendor": "Tencent",
         "category": "LLM",
         "date": "2026-07-12",
-        "thumbnail": "rankings/releases_thumbs/hy3.svg",
+        "thumbnail": "rankings/releases_thumbs/hy3.jpg",
         "review_pl": "Open-source MoE 295B (21B active). Mniejszy niż GLM-5.2/DeepSeek V4 (>1T) ale prawie tak dobry. 256K context. Agentic coding, UI design, vibe coding. FB8: 300GB. Biję powyżej wagi — mniejszy model, mniejsze koszty, podobna jakość. Kolejny chiński open-source który demokratyzuje AI.",
         "review_en": "Open-source MoE 295B (21B active). Smaller than GLM-5.2/DeepSeek V4 but nearly as good. 256K context. Agentic coding, UI design. FB8: 300GB. Punches above weight — smaller, cheaper, similar quality.",
         "links": [
@@ -73,7 +73,7 @@ const RELEASES = [
         "vendor": "OpenAI",
         "category": "TTS",
         "date": "2026-07-12",
-        "thumbnail": "rankings/releases_thumbs/gpt-live.svg",
+        "thumbnail": "rankings/releases_thumbs/gpt-live.jpg",
         "review_pl": "Real-time voice model — naturalna konwersacja z przerywaniem, pauzami, potwierdzaniem. Deleguje trudne pytania do GPT 5.5 w tle. Live translation multi-language. Wizualne odpowiedzi (weather, maps, stocks). Dostępne dla WSZYSTKICH (free=mini, paid=full). Rewolucja UX — koniec rozmów z robotem. Słabość: czasem nienaturalne emocje w role-play.",
         "review_en": "Real-time voice — natural conversation with interruption, pauses, acknowledgment. Delegates hard questions to GPT 5.5. Multi-language translation. Visual responses. Available for ALL (free=mini, paid=full). UX revolution — end of talking to a robot.",
         "links": [
@@ -115,7 +115,7 @@ const RELEASES = [
         "vendor": "ByteDance",
         "category": "Image Generation",
         "date": "2026-07-12",
-        "thumbnail": "rankings/releases_thumbs/seedream-5-pro.svg",
+        "thumbnail": "rankings/releases_thumbs/seedream-5-pro.jpg",
         "review_pl": "Image model z edycją, referencjami, transparent layers. Annotacje rysowane na obrazie. Multilingual. Poziom Nano Banana, blisko GPT Image 2. Mocne w infographics i posterach. Słabość: brak na niezależnych leaderboardach.",
         "review_en": "Image model with editing, references, transparent layers. Drawn annotations. Multilingual. Nano Banana level, close to GPT Image 2. Strong in infographics. Weakness: no independent benchmarks.",
         "links": [
@@ -210,7 +210,7 @@ const RELEASES = [
         "vendor": "Mira WM",
         "category": "World Models",
         "date": "2026-07-12",
-        "thumbnail": "rankings/releases_thumbs/mira.svg",
+        "thumbnail": "rankings/releases_thumbs/mira.jpg",
         "review_pl": "Multiplayer 4 graczy w real-time. 5B diffusion model, 20fps na B200. 10,000h gameplay training. Pierwszy multiplayer world model — gaming bez gamedev.",
         "review_en": "4-player multiplayer real-time. 5B diffusion model, 20fps on B200. 10,000h gameplay training. First multiplayer world model — gaming without gamedev.",
         "links": [
@@ -247,7 +247,7 @@ const RELEASES = [
         "vendor": "JM Liu",
         "category": "Image Generation",
         "date": "2026-07-12",
-        "thumbnail": "rankings/releases_thumbs/sefi-image.svg",
+        "thumbnail": "rankings/releases_thumbs/sefi-image.jpg",
         "review_pl": "Open-source 1B-5B, dual-stream (layout oddzielnie od tekstury). Biję Qwen Image i Z-Image. Mniej niż 10GB. Demokratyzacja — mały model bije duże. Szybszy niż Krea 2/Ideogram.",
         "review_en": "Open-source 1B-5B, dual-stream. Beats Qwen Image and Z-Image. Under 10GB. Democratization — small beats big. Faster than Krea 2/Ideogram.",
         "links": [

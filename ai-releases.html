@@ -47,10 +47,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .episode.open .ep-collapse{display:block}
 .episode.open .ep-toggle{content:'▲ Zwiń'}
 
-/* Release card */
-.rel-card{background:var(--bg);border:1px solid var(--bdl);border-radius:8px;padding:16px;margin-bottom:12px;display:grid;grid-template-columns:120px 1fr;gap:16px}
-@media(max-width:540px){.rel-card{grid-template-columns:1fr}}
-.rel-thumb{width:100%;height:80px;object-fit:cover;border-radius:6px;background:var(--card);display:block}
+/* Release card — thumbnail 25% of original (30x20 displayed, 60x40 file for retina) */
+.rel-card{background:var(--bg);border:1px solid var(--bdl);border-radius:8px;padding:12px;margin-bottom:10px;display:grid;grid-template-columns:30px 1fr;gap:10px}
+@media(max-width:540px){.rel-card{grid-template-columns:30px 1fr}}
+.rel-thumb{width:30px;height:20px;object-fit:cover;border-radius:3px;background:var(--card);display:block}
+.rel-thumb:hover{transform:scale(2.5);transform-origin:left center;transition:transform .2s ease;z-index:5;position:relative;box-shadow:0 4px 12px rgba(0,0,0,.4)}
 .rel-body{min-width:0}
 .rel-header{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
 .rel-title{font-size:var(--fs-l);font-weight:700;color:var(--hp)}
@@ -92,7 +93,7 @@ footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);t
 
 </div>
 
-<script src="data/releases.js?v=20260713010000" onerror="dataLoadFailed()"></script>
+<script src="data/releases.js?v=20260713020000" onerror="dataLoadFailed()"></script>
 <script>
 function dataLoadFailed(){var c=document.getElementById('episodes');if(c)c.innerHTML='<div style="text-align:center;padding:40px;color:var(--hm)">⚠ <span class="pl">Nie udało się załadować danych.</span><span class="en">Failed to load data.</span> <button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 16px;border-radius:6px;cursor:pointer"><span class="pl">Odśwież</span><span class="en">Refresh</span></button></div>'}
 setTimeout(function(){if(typeof RELEASES==='undefined'){dataLoadFailed()}},10000);
@@ -136,7 +137,7 @@ function renderItem(item){
 
 function renderEpisode(ep){
   var epClass=ep.collapsed?'episode ep-old':'episode ep-old open';
-  var toggleText=ep.collapsed?'▼ Rozwiń':'▲ Zwiń';
+  var toggleText=ep.collapsed?'<span class="pl">▼ Rozwiń</span><span class="en">▼ Expand</span>':'<span class="pl">▲ Zwiń</span><span class="en">▲ Collapse</span>';
   var itemsHtml=ep.items.map(renderItem).join('');
   var title=lang==='en'?(ep.title_en||ep.title_pl||''):(ep.title_pl||ep.title_en||'');
   return '<div class="'+epClass+'" data-ep-id="'+esc(ep.num)+'">'+
@@ -167,13 +168,16 @@ document.addEventListener('click',function(e){
   if(!ep||!ep.classList.contains('episode'))return;
   ep.classList.toggle('open');
   var btn=top.querySelector('.ep-toggle');
-  if(btn)btn.textContent=ep.classList.contains('open')?'▲ Zwiń':'▼ Rozwiń';
+  if(btn){
+    var isOpen=ep.classList.contains('open');
+    btn.innerHTML=isOpen?'<span class="pl">▲ Zwiń</span><span class="en">▲ Collapse</span>':'<span class="pl">▼ Rozwiń</span><span class="en">▼ Expand</span>';
+  }
 });
 
 if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',renderAll)}else{renderAll()}
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-2-gec3ce1b · Deploy: <span id="deploy-ts">2026-07-13 00:45:29 UTC</span> · <span id="deploy-hash">v0c37cfec</span>
+v8.9.50-3-g7997d46 · Deploy: <span id="deploy-ts">2026-07-13 01:08:17 UTC</span> · <span id="deploy-hash">v14c59503</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
