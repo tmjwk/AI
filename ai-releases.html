@@ -85,6 +85,14 @@ footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);t
 
 /* Print */
 @media print{.h,.tgl,.btt,footer,.ep-toggle{display:none !important}.episode{page-break-inside:auto}.ep-collapse{display:block !important}.rel-card{page-break-inside:auto}}
+
+/* Still loading hint - appears after 60s via animation-delay */
+.loading-hint{opacity:0;text-align:center;padding:20px;color:var(--hm);font-size:var(--fs-s);animation:show-hint 0s 60s forwards}
+.loading-hint button{background:var(--card);border:1px solid var(--bd);color:var(--fg);padding:6px 16px;border-radius:6px;cursor:pointer;margin-top:8px;font-size:var(--fs-s)}
+.loading-hint button:hover{border-color:var(--ac);color:var(--ac)}
+@keyframes show-hint{to{opacity:1}}
+@media print{.loading-hint{display:none}}
+
 </style></head><body>
 <div class="c">
 <div class="h">
@@ -98,14 +106,14 @@ footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);t
 </div>
 </div>
 
-<div id="episodes"><div style="text-align:center;padding:40px;color:var(--hm)">⏳ <span class="pl">Ładowanie...</span><span class="en">Loading...</span></div></div>
+<div id="episodes"><div style="text-align:center;padding:40px;color:var(--hm)">⏳ <span class="pl">Ładowanie...</span><span class="en">Loading...</span></div>
+<div class="loading-hint"><span class="pl">Wciąż ładuje dane? Wolny internet — poczekaj dłużej lub odśwież.</span><span class="en">Still loading? Slow internet — wait longer or refresh.</span><br><button onclick="location.reload()"><span class="pl">Odśwież stronę</span><span class="en">Refresh page</span></button></div></div>
 
 </div>
 
-<script src="data/releases.js?v=20260714030000" onerror="dataLoadFailed()"></script>
+<script src="data/releases.js?v=20260714040000" onerror="dataLoadFailed()"></script>
 <script>
 function dataLoadFailed(){var c=document.getElementById('episodes');if(c)c.innerHTML='<div style="text-align:center;padding:40px;color:var(--hm)">⚠ <span class="pl">Nie udało się załadować danych.</span><span class="en">Failed to load data.</span> <button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 16px;border-radius:6px;cursor:pointer"><span class="pl">Odśwież</span><span class="en">Refresh</span></button></div>'}
-setTimeout(function(){if(typeof RELEASES==='undefined'){dataLoadFailed()}},30000);
 </script>
 <script>
 let theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
@@ -211,7 +219,7 @@ document.addEventListener('click',function(e){
 if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',renderAll)}else{renderAll()}
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-11-g03ddd62 · Deploy: <span id="deploy-ts">2026-07-13 22:59:11 UTC</span> · <span id="deploy-hash">v2ffb089b</span>
+v8.9.50-12-g54173cc · Deploy: <span id="deploy-ts">2026-07-13 23:07:28 UTC</span> · <span id="deploy-hash">v1d7b7d38</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
