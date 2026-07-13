@@ -102,10 +102,10 @@ footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);t
 
 </div>
 
-<script src="data/releases.js?v=20260713060000" onerror="dataLoadFailed()"></script>
+<script src="data/releases.js?v=20260714030000" onerror="dataLoadFailed()"></script>
 <script>
 function dataLoadFailed(){var c=document.getElementById('episodes');if(c)c.innerHTML='<div style="text-align:center;padding:40px;color:var(--hm)">⚠ <span class="pl">Nie udało się załadować danych.</span><span class="en">Failed to load data.</span> <button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 16px;border-radius:6px;cursor:pointer"><span class="pl">Odśwież</span><span class="en">Refresh</span></button></div>'}
-setTimeout(function(){if(typeof RELEASES==='undefined'){dataLoadFailed()}},10000);
+setTimeout(function(){if(typeof RELEASES==='undefined'){dataLoadFailed()}},30000);
 </script>
 <script>
 let theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
@@ -211,7 +211,7 @@ document.addEventListener('click',function(e){
 if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',renderAll)}else{renderAll()}
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-10-g80e3a21 · Deploy: <span id="deploy-ts">2026-07-13 22:40:11 UTC</span> · <span id="deploy-hash">v2dfd31bc</span>
+v8.9.50-11-g03ddd62 · Deploy: <span id="deploy-ts">2026-07-13 22:59:11 UTC</span> · <span id="deploy-hash">v2ffb089b</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
