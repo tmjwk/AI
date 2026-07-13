@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl" data-title-pl="Nowości AI" data-title-en="AI Releases"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><script>
+(function(){
+  var html=document.documentElement;
+  var tpl=html.getAttribute('data-title-pl');
+  var ten=html.getAttribute('data-title-en');
+  if(!tpl||!ten)return;
+  function upd(){var lang=html.getAttribute('data-lang')||'pl';document.title=lang==='en'?ten:tpl}
+  upd();
+  var obs=new MutationObserver(function(muts){
+    muts.forEach(function(m){if(m.attributeName==='data-lang')upd()});
+  });
+  obs.observe(html,{attributes:true,attributeFilter:['data-lang']});
+})();
+</script><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><title>Nowości AI</title>
+<meta name="description" content="Nowości AI — omówienia nowych modeli i narzędzi AI. Modele, benchmarki, demo linki.">
+<script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))</script>
+<script>document.documentElement.setAttribute("data-lang",localStorage.getItem("lang")||"pl")</script>
+<style>
+:root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--rd:#ef4444;--bl:#3b82f6;--fs-xs:0.625rem;--fs-s:0.75rem;--fs-m:0.875rem;--fs-l:1rem;--fs-xl:1.25rem;--fs-xxl:5rem;--fs-h1:1.75rem;--fs-h2:1.125rem;--fs-body:1rem;--fs-aux:0.75rem}
+[data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--rd:#dc2626;--bl:#1d4ed8}
+@media(max-width:540px){:root{--fs-s:0.6875rem;--fs-m:0.8125rem;--fs-l:0.9375rem;--fs-xl:1.125rem;--fs-xxl:3.75rem}}
+*{box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:0;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
+.c{max-width:clamp(900px,95vw,1400px);margin:0 auto;padding:20px}
+.h{position:sticky;top:0;background:var(--bg);z-index:100;padding:16px 0;border-bottom:1px solid var(--bd);margin-bottom:24px;transition:background .2s}
+.hr{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:8px;flex-wrap:wrap}
+.h h1{font-size:var(--fs-xl);margin:0;font-weight:700;color:var(--hp);letter-spacing:-.02em}
+.h .sub{font-size:var(--fs-s);color:var(--hm);margin-top:4px}
+.nav-links{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.nav-btn{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:var(--fs-s);color:var(--hs);text-decoration:none;font-weight:500;transition:all .15s;white-space:nowrap}
+.nav-btn:hover{border-color:var(--ac);color:var(--fg)}.nav-btn.cur{border-color:var(--ac);color:var(--ac);background:rgba(74,222,128,.06);font-weight:700}
+[data-lang="pl"] span.en{display:none !important}
+[data-lang="en"] span.pl{display:none !important}
+.tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:var(--fs-m);color:var(--fg);transition:border-color .15s}
+.tgl:hover{border-color:var(--ac)}
+
+/* Episode */
+.episode{background:var(--card);border:1px solid var(--bdl);border-radius:12px;margin-bottom:16px;overflow:hidden}
+.episode.ep-old{border-left:4px solid var(--ba)}
+.ep-top{padding:16px 20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.ep-num{font-size:var(--fs-s);color:var(--ac);font-family:"SF Mono",Menlo,monospace;font-weight:700}
+.ep-title{font-size:var(--fs-l);font-weight:700;color:var(--hp);flex:1;min-width:200px}
+.ep-meta{font-size:var(--fs-s);color:var(--hd);font-family:monospace;display:flex;gap:10px;flex-wrap:wrap}
+.ep-toggle{background:var(--bg);border:1px solid var(--ba);border-radius:6px;padding:4px 12px;cursor:pointer;font-size:var(--fs-s);color:var(--ba);font-weight:600;white-space:nowrap}
+.ep-collapse{display:none;padding:0 20px 20px}
+.episode.open .ep-collapse{display:block}
+.episode.open .ep-toggle{content:'▲ Zwiń'}
+
+/* Release card */
+.rel-card{background:var(--bg);border:1px solid var(--bdl);border-radius:8px;padding:16px;margin-bottom:12px;display:grid;grid-template-columns:120px 1fr;gap:16px}
+@media(max-width:540px){.rel-card{grid-template-columns:1fr}}
+.rel-thumb{width:100%;height:80px;object-fit:cover;border-radius:6px;background:var(--card)}
+.rel-body{min-width:0}
+.rel-header{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+.rel-title{font-size:var(--fs-l);font-weight:700;color:var(--hp)}
+.rel-vendor{font-size:var(--fs-s);color:var(--ac);font-weight:600}
+.rel-cat{font-size:var(--fs-xs);background:var(--card);padding:2px 8px;border-radius:4px;border:1px solid var(--bdl);color:var(--hm)}
+.rel-date{font-size:var(--fs-xs);color:var(--hd);font-family:monospace;margin-left:auto}
+.rel-review{font-size:var(--fs-m);color:var(--fg);line-height:1.6;margin:8px 0}
+.rel-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.rel-link{font-size:var(--fs-s);padding:4px 10px;border:1px solid var(--bd);border-radius:6px;text-decoration:none;color:var(--hs);transition:all .15s}
+.rel-link:hover{border-color:var(--ac);color:var(--fg)}
+.rel-link[data-type="official"]{border-color:var(--ac);color:var(--ac)}
+.rel-link[data-type="github"]{border-color:var(--bl);color:var(--bl)}
+.rel-link[data-type="huggingface"]{border-color:#ff9d00;color:#ff9d00}
+.rel-link[data-type="paper"]{border-color:var(--rk);color:var(--rk)}
+
+/* Footer */
+footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;border-top:1px solid var(--bd)}
+
+/* BTT */
+.btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.btt.show{display:flex}
+
+/* Print */
+@media print{.h,.tgl,.btt,footer,.ep-toggle{display:none !important}.episode{page-break-inside:auto}.ep-collapse{display:block !important}.rel-card{page-break-inside:auto}}
+</style></head><body>
+<div class="c">
+<div class="h">
+<div class="hr">
+<h1>🆕 <span class="pl">Nowości AI</span><span class="en">AI Releases</span></h1>
+<div class="nav nav-links">
+<a href="index.html" class="nav-btn"><span class="pl">🏠 Hub</span><span class="en">🏠 Hub</span></a><a href="ai-models.html" class="nav-btn"><span class="pl">📊 Modele</span><span class="en">📊 Models</span></a><a href="ai-benchmarks.html" class="nav-btn"><span class="pl">🏆 Benchmarki</span><span class="en">🏆 Benchmarks</span></a><a href="ai-radar.html" class="nav-btn"><span class="pl">📡 Radar</span><span class="en">📡 Radar</span></a><a href="ai-pulse.html" class="nav-btn"><span class="pl">💓 Puls</span><span class="en">💓 Pulse</span></a><a href="ai-releases.html" class="nav-btn cur"><span class="pl">🆕 Nowości</span><span class="en">🆕 Releases</span></a><a href="ai-glossary.html" class="nav-btn"><span class="pl">📖 Słownik</span><span class="en">📖 Glossary</span></a>
+<button class="tgl" id="langTgl" title="Przełącz język / Switch language">EN</button>
+<button class="tgl" id="themeTgl">🌙</button>
+</div>
+</div>
+</div>
+
+<div id="episodes"><div style="text-align:center;padding:40px;color:var(--hm)">⏳ <span class="pl">Ładowanie...</span><span class="en">Loading...</span></div></div>
+
+</div>
+
+<script src="data/releases.js?v=20260712010000" onerror="dataLoadFailed()"></script>
+<script>
+function dataLoadFailed(){var c=document.getElementById('episodes');if(c)c.innerHTML='<div style="text-align:center;padding:40px;color:var(--hm)">⚠ <span class="pl">Nie udało się załadować danych.</span><span class="en">Failed to load data.</span> <button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 16px;border-radius:6px;cursor:pointer"><span class="pl">Odśwież</span><span class="en">Refresh</span></button></div>'}
+setTimeout(function(){if(typeof RELEASES==='undefined'){dataLoadFailed()}},10000);
+</script>
+<script>
+let theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+let lang=localStorage.getItem('lang')||'pl';
+document.documentElement.setAttribute('data-theme',theme);
+document.documentElement.setAttribute('data-lang',lang);
+const t=document.getElementById('themeTgl');
+t.textContent=theme==='dark'?'🌙':'☀️';
+t.addEventListener('click',()=>{theme=theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',theme);t.textContent=theme==='dark'?'🌙':'☀️';localStorage.setItem('theme',theme)});
+const langBtn=document.getElementById('langTgl');
+langBtn.textContent=lang==='pl'?'EN':'PL';
+langBtn.addEventListener('click',()=>{lang=lang==='pl'?'en':'pl';document.documentElement.setAttribute('data-lang',lang);langBtn.textContent=lang==='pl'?'EN':'PL';localStorage.setItem('lang',lang);renderAll()});
+
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+function renderLinks(links){
+  if(!links||!links.length)return '';
+  return '<div class="rel-links">'+links.map(l=>'<a href="'+esc(l.url)+'" class="rel-link" data-type="'+esc(l.type||'')+'" target="_blank" rel="noopener">'+esc(l.label)+'</a>').join('')+'</div>';
+}
+
+function renderItem(item){
+  var thumb=item.thumbnail?'<img class="rel-thumb" src="'+esc(item.thumbnail)+'" alt="'+esc(item.title)+'" onerror="this.style.display=\'none\'">':'';
+  var review=lang==='en'?(item.review_en||item.review_pl||''):(item.review_pl||item.review_en||'');
+  return '<div class="rel-card">'+
+    thumb+
+    '<div class="rel-body">'+
+      '<div class="rel-header">'+
+        '<span class="rel-title">'+esc(item.title)+'</span>'+
+        '<span class="rel-vendor">'+esc(item.vendor||'')+'</span>'+
+        '<span class="rel-cat">'+esc(item.category||'')+'</span>'+
+        '<span class="rel-date">'+esc(item.date||'')+'</span>'+
+      '</div>'+
+      '<div class="rel-review">'+esc(review).replace(/\n/g,'<br>')+'</div>'+
+      renderLinks(item.links)+
+    '</div>'+
+  '</div>';
+}
+
+function renderEpisode(ep){
+  var epClass=ep.collapsed?'episode ep-old':'episode ep-old open';
+  var toggleText=ep.collapsed?'▼ Rozwiń':'▲ Zwiń';
+  var itemsHtml=ep.items.map(renderItem).join('');
+  return '<div class="'+epClass+'" data-ep-id="'+esc(ep.num)+'">'+
+    '<div class="ep-top" onclick="var e=this.parentElement;e.classList.toggle('+"'open'"+');var b=e.querySelector('.ep-toggle');if(b)b.textContent=e.classList.contains('+"'open'"+')?'+"'▲ Zwiń'":"'▼ Rozwiń'"+'">'+
+      '<span class="ep-num">'+esc(ep.num)+'</span>'+
+      '<span class="ep-title">'+(lang==='en'?esc(ep.title_en||ep.title_pl):esc(ep.title_pl||ep.title_en))+'</span>'+
+      '<span class="ep-meta">📅 '+esc(ep.date)+' · 📺 '+(ep.items.length)+' <span class="pl">modeli</span><span class="en">models</span></span>'+
+      '<button class="ep-toggle">'+toggleText+'</button>'+
+    '</div>'+
+    '<div class="ep-collapse">'+itemsHtml+'</div>'+
+  '</div>';
+}
+
+function renderAll(){
+  try{
+    var c=document.getElementById('episodes');
+    if(!c||typeof RELEASES==='undefined'){console.error('Brak #episodes lub RELEASES');return}
+    var sorted=RELEASES.slice().sort(function(a,b){return (b.date||'').localeCompare(a.date||'')});
+    c.innerHTML=sorted.map(renderEpisode).join('');
+  }catch(e){console.error('Render error:',e);var el=document.getElementById('episodes');if(el)el.innerHTML='<div style="padding:40px;text-align:center;color:var(--hm)">⚠ <span class="pl">Błąd renderowania — odśwież stronę.</span><span class="en">Render error — refresh page.</span></div>'}
+}
+
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',renderAll)}else{renderAll()}
+</script>
+<footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
+v8.9.50 · Deploy: <span id="deploy-ts">2026-07-13 00:05:39 UTC</span> · <span id="deploy-hash">v9ed92162</span>
+</footer>
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
+<script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
+</body></html>
