@@ -72,10 +72,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .rel-lang:hover{border-color:var(--ac);color:var(--ac)}
 .rel-card.en .rel-lang{background:var(--ac);color:#000;border-color:var(--ac)}
 
-/* Per-card language visibility (overrides global rules) */
-.rel-card .pl,.rel-card .en{display:inline}
-.rel-card:not(.en) .en{display:none !important}
-.rel-card.en .pl{display:none !important}
+/* Per-card language visibility — when card has .en class, force EN (overrides global [data-lang]) */
+.rel-card.en span.pl{display:none !important}
+.rel-card.en span.en{display:inline !important}
 
 /* Footer */
 footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;border-top:1px solid var(--bd)}
@@ -103,7 +102,7 @@ footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);t
 
 </div>
 
-<script src="data/releases.js?v=20260713050000" onerror="dataLoadFailed()"></script>
+<script src="data/releases.js?v=20260713060000" onerror="dataLoadFailed()"></script>
 <script>
 function dataLoadFailed(){var c=document.getElementById('episodes');if(c)c.innerHTML='<div style="text-align:center;padding:40px;color:var(--hm)">⚠ <span class="pl">Nie udało się załadować danych.</span><span class="en">Failed to load data.</span> <button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 16px;border-radius:6px;cursor:pointer"><span class="pl">Odśwież</span><span class="en">Refresh</span></button></div>'}
 setTimeout(function(){if(typeof RELEASES==='undefined'){dataLoadFailed()}},10000);
@@ -212,7 +211,7 @@ document.addEventListener('click',function(e){
 if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',renderAll)}else{renderAll()}
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-8-g6fb9b36 · Deploy: <span id="deploy-ts">2026-07-13 02:41:38 UTC</span> · <span id="deploy-hash">v9930d602</span>
+v8.9.50-8-g6fb9b36 · Deploy: <span id="deploy-ts">2026-07-13 02:45:16 UTC</span> · <span id="deploy-hash">v2dfd31bc</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
