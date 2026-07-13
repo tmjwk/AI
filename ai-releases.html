@@ -138,10 +138,11 @@ function renderEpisode(ep){
   var epClass=ep.collapsed?'episode ep-old':'episode ep-old open';
   var toggleText=ep.collapsed?'▼ Rozwiń':'▲ Zwiń';
   var itemsHtml=ep.items.map(renderItem).join('');
+  var title=lang==='en'?(ep.title_en||ep.title_pl||''):(ep.title_pl||ep.title_en||'');
   return '<div class="'+epClass+'" data-ep-id="'+esc(ep.num)+'">'+
-    '<div class="ep-top" onclick="var e=this.parentElement;e.classList.toggle('+"'open'"+');var b=e.querySelector('.ep-toggle');if(b)b.textContent=e.classList.contains('+"'open'"+')?'+"'▲ Zwiń'":"'▼ Rozwiń'"+'">'+
+    '<div class="ep-top">'+
       '<span class="ep-num">'+esc(ep.num)+'</span>'+
-      '<span class="ep-title">'+(lang==='en'?esc(ep.title_en||ep.title_pl):esc(ep.title_pl||ep.title_en))+'</span>'+
+      '<span class="ep-title">'+esc(title)+'</span>'+
       '<span class="ep-meta">📅 '+esc(ep.date)+' · 📺 '+(ep.items.length)+' <span class="pl">modeli</span><span class="en">models</span></span>'+
       '<button class="ep-toggle">'+toggleText+'</button>'+
     '</div>'+
@@ -158,10 +159,21 @@ function renderAll(){
   }catch(e){console.error('Render error:',e);var el=document.getElementById('episodes');if(el)el.innerHTML='<div style="padding:40px;text-align:center;color:var(--hm)">⚠ <span class="pl">Błąd renderowania — odśwież stronę.</span><span class="en">Render error — refresh page.</span></div>'}
 }
 
+// Event delegation for episode toggle (NO inline onclick — avoids quote-escaping bugs)
+document.addEventListener('click',function(e){
+  var top=e.target.closest('.ep-top');
+  if(!top)return;
+  var ep=top.parentElement;
+  if(!ep||!ep.classList.contains('episode'))return;
+  ep.classList.toggle('open');
+  var btn=top.querySelector('.ep-toggle');
+  if(btn)btn.textContent=ep.classList.contains('open')?'▲ Zwiń':'▼ Rozwiń';
+});
+
 if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',renderAll)}else{renderAll()}
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50 · Deploy: <span id="deploy-ts">2026-07-13 00:05:39 UTC</span> · <span id="deploy-hash">v9ed92162</span>
+v8.9.50-1-gda40f7d · Deploy: <span id="deploy-ts">2026-07-13 00:17:58 UTC</span> · <span id="deploy-hash">vfe1bb6fd</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
