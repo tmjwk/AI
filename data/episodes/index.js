@@ -1,9 +1,16 @@
-// AI Pulse episodes — V4 Etap 2 lazy loading
-// Generowane z episodes.json przez generate_episodes_lazy.py
-// NIE EDYTUJ RĘCZNIE
-
+// Episodes index — metadata only (auto-generated)
 const EPISODES_INDEX = {
   "episodes": [
+    {
+      "num": "##270",
+      "title": "Grok 4.5 vs GPT-5.6, Apple Sues OpenAI, and China Catches up to Elon | #270",
+      "date": "2026-07-13",
+      "duration": "138 min",
+      "channel": "Diamandis Moonshots",
+      "yt": "CsRx7kFN4bo",
+      "topics_count": 9,
+      "hosts_count": 4
+    },
     {
       "num": "##269",
       "title": "Fable 5 Is Back & Govt-Leashed, Altman Offers 5% of OpenAI & AI Grows Conscious | #269",
@@ -11,8 +18,8 @@ const EPISODES_INDEX = {
       "duration": "105 min",
       "channel": "Diamandis Moonshots",
       "yt": "XCunMF6frio",
-      "collapsed": true,
-      "batch": "recent"
+      "topics_count": 9,
+      "hosts_count": 4
     },
     {
       "num": "#268",
@@ -21,8 +28,8 @@ const EPISODES_INDEX = {
       "duration": "1h50m",
       "channel": "Peter Diamandis · Moonshots & Millionaires",
       "yt": "https://www.youtube.com/watch?v=XjOLz--C_nQ",
-      "collapsed": true,
-      "batch": "recent"
+      "topics_count": 7,
+      "hosts_count": 5
     },
     {
       "num": "#267",
@@ -31,10 +38,8 @@ const EPISODES_INDEX = {
       "duration": "2h17m",
       "channel": "Peter Diamandis · Moonshots & Millionaires",
       "yt": "https://www.youtube.com/watch?v=-H7J_-zr7pA",
-      "collapsed": true,
-      "batch": "recent"
+      "topics_count": 7,
+      "hosts_count": 5
     }
-  ],
-  "recent_count": 5,
-  "archive_batches": []
+  ]
 };
