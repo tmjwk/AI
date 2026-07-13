@@ -6,8 +6,8 @@ const WEEKLY = [
     "num": 28,
     "date": "2026-07-12",
     "collapsed": true,
-    "title_pl": "AI Tydzień #28",
-    "title_en": "AI Week #28",
+    "title_pl": "AI Tydzień #28 | 6-12/07/2026",
+    "title_en": "AI Week #28 | 6-12/07/2026",
     "headline_pl": "OpenAI wydał GPT 5.6 — tańszy i mądrzejszy od Fable 5, #1 na SWE-bench i ARC AGI 2. xAI odpowiedziało Grok 4.5 za ułamek ceny ($2/$6). Anthropic odkrył JSpace — mechanizm świadomego myślenia w Claude, który wyłonił się sam z kompresji. OpenAI wydał GPT Live — naturalną konwersację głosową z przerywaniem i pauzami. AI z Princeton projektuje chipy RF 10,000× szybciej niż człowiek. Unitree G1 — humanoid (nie robot chirurgiczny) — wykonał operację na człowieku. DeepSeek DSpark przyspieszył inferencję o 80% a model routing obniża koszty o 60-90%. China ma 140 firm robotycznych i 85% globalnych instalacji. Sam Altman zaproponował oddanie 5% OpenAI rządowi USA. Google OKF zastępuje RAG. Mojo (Chris Lattner) przejęte przez Qualcomm — zagrożenie dla CUDA monopoly Nvidii.",
     "headline_en": "OpenAI released GPT 5.6 — cheaper and smarter than Fable 5, #1 on SWE-bench and ARC AGI 2. xAI responded with Grok 4.5 at a fraction of the price ($2/$6). Anthropic discovered JSpace — a mechanism of conscious thought in Claude that emerged from compression. OpenAI released GPT Live — natural voice conversation with interruptions and pauses. Princeton AI designs RF chips 10,000x faster than humans. Unitree G1 — a humanoid (not a surgical robot) — performed surgery on a human. DeepSeek DSpark accelerated inference by 80% and model routing cuts costs by 60-90%. China has 140 robot companies and 85% of global installations. Sam Altman proposed giving 5% of OpenAI to the US government. Google OKF replaces RAG. Mojo (Chris Lattner) acquired by Qualcomm — threat to NVIDIA's CUDA monopoly.",
     "sections": [
@@ -249,8 +249,8 @@ const WEEKLY = [
     "num": 27,
     "date": "2026-07-05",
     "collapsed": true,
-    "title_en": "AI Week #27",
-    "title_pl": "AI Tydzień #27",
+    "title_en": "AI Week #27 | 29/06-5/07/2026",
+    "title_pl": "AI Tydzień #27 | 29/06-5/07/2026",
     "headline_en": "Meituan trained a 1.6T frontier model without a single Nvidia GPU. Anthropic re-released Claude Fable 5 — neutered, castrated, and limited to 50% of your weekly quota. UBTech received 13,000 pre-orders for a humanoid companion robot. The two-class AI divide deepened as governments claimed early access to the most powerful models. Lev Selector framed the week's epigraph: \"Competition is the only solution to problems like government involvement and monopoly of Anthropic.\"",
     "headline_pl": "Meituan wytrenował model frontier 1.6T bez ani jednego GPU Nvidia. Anthropic ponownie wydał Claude Fable 5 — okaleczony, wykastrowany i ograniczony do 50% tygodniowego limitu. UBTech otrzymał 13 000 zamówień na robota humanoidalnego-kompana. Podział AI na dwie klasy pogłębił się, gdy rządy przejęły wczesny dostęp do najpotężniejszych modeli. Lev Selector ujął epigraf tygodnia: \"Konkurencja jest jedynym rozwiązaniem problemów jak zaangażowanie rządu i monopol Anthropic.\"",
     "sections": [
