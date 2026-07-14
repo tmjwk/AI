@@ -2,7 +2,7 @@
 const EPISODES_INDEX = {
   "episodes": [
     {
-      "num": "##270",
+      "num": "#270",
       "title": "Grok 4.5 vs GPT-5.6, Apple Sues OpenAI, and China Catches up to Elon | #270",
       "date": "2026-07-13",
       "duration": "138 min",
@@ -12,7 +12,7 @@ const EPISODES_INDEX = {
       "hosts_count": 4
     },
     {
-      "num": "##269",
+      "num": "#269",
       "title": "Fable 5 Is Back & Govt-Leashed, Altman Offers 5% of OpenAI & AI Grows Conscious | #269",
       "date": "2026-07-08",
       "duration": "105 min",

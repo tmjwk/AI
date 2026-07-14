@@ -1,7 +1,7 @@
 // Recent episodes (top 10, newest first) — auto-generated
 const RECENT_EPISODES = [
   {
-    "num": "##270",
+    "num": "#270",
     "collapsed": false,
     "channel": "Diamandis Moonshots",
     "title": "Grok 4.5 vs GPT-5.6, Apple Sues OpenAI, and China Catches up to Elon | #270",
@@ -281,7 +281,7 @@ const RECENT_EPISODES = [
     ]
   },
   {
-    "num": "##269",
+    "num": "#269",
     "collapsed": true,
     "channel": "Diamandis Moonshots",
     "title": "Fable 5 Is Back & Govt-Leashed, Altman Offers 5% of OpenAI & AI Grows Conscious | #269",
