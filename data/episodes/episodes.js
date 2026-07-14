@@ -10,7 +10,7 @@ const ALL_EPISODES = [
     "yt": "CsRx7kFN4bo",
     "hosts_count_pl": "4 gospodarzy",
     "hosts_count_en": "4 hosts",
-    "topics_count_pl": "9 tematow",
+    "topics_count_pl": "9 tematów",
     "topics_count_en": "9 topics",
     "hosts": [
       {
@@ -49,234 +49,234 @@ const ALL_EPISODES = [
     "topics": [
       {
         "num": "01",
-        "title": "Grok 4.5 vs GPT 5.6 - wojna na modele i benchmarki",
-        "time": "00:00 - 12:57",
-        "fakty_pl": "xAI wydal Grok 4.5 - 1.5T parametrow, 500K context, $2/$6 per M tok (3x tanszy od GPT 5.6). OpenAI odpowiedzial GPT 5.6 w trzech wariantach: Soul ($5/$30), Terra i Luna. GPT 5.6 zajmuje #1 na SWE-bench i ARC AGI 2 (92.5%). Grok 4.5 bije Opus 4.8 na SWE-bench ale jest ponizej GPT 5.5 i Fable. LiveBench: Grok 4.5 nawet ponizej Opus 4.7 i Gemini 3.1 Pro. Rynek reaguje zmianami w kapitalizacji - xAI i OpenAI w wyscigu frontier modeli.",
-        "fakty_en": "xAI released Grok 4.5 - 1.5T params, 500K context, $2/$6 per M tok (3x cheaper than GPT 5.6). OpenAI responded with GPT 5.6 in three variants: Soul ($5/$30), Terra, Luna. GPT 5.6 takes #1 on SWE-bench and ARC AGI 2 (92.5%). Grok 4.5 beats Opus 4.8 on SWE-bench but is behind GPT 5.5 and Fable. LiveBench: Grok 4.5 even below Opus 4.7 and Gemini 3.1 Pro. Market reacts with valuation shifts - xAI and OpenAI in frontier model race.",
+        "title": "Cztery amerykańskie laby na frontier — koniec duopoly",
+        "time": "00:00 – 12:57",
+        "fakty_pl": "Tydzień konwergencji: 4 modele w 7 dni — Fable 5 (2.07), Grok 4.5 (8.07), GPT 5.6 (9.07), Muse Spark (9.07). Alex: 'To koniec duopoly — Anthropic i OpenAI już nie są jedynymi na frontier'. Cztery amerykańskie laby na optimal frontier: Anthropic, OpenAI, Meta (Muse Spark), xAI (Grok 4.5). Google wciąż nie na frontier (Gemini 3.5 Pro delayed). Dwa chińskie laby też na frontier: DeepSeek i GLM 5.2 (open weight). GPT 5.6 w 4 wariantach: Soul (high-end), Terra, Luna (low-end), Ultra Mode (4 agenty równolegle). OpenAI otwarcie promuje recursive self-improvement — Soul post-trenuje Luna jako eksperyment.",
+        "fakty_en": "Convergence week: 4 models in 7 days — Fable 5 (Jul 2), Grok 4.5 (Jul 8), GPT 5.6 (Jul 9), Muse Spark (Jul 9). Alex: 'This is the end of duopoly — Anthropic and OpenAI are no longer alone at frontier'. Four American labs at optimal frontier: Anthropic, OpenAI, Meta (Muse Spark), xAI (Grok 4.5). Google still not at frontier (Gemini 3.5 Pro delayed). Two Chinese labs also at frontier: DeepSeek and GLM 5.2 (open weight). GPT 5.6 in 4 variants: Soul (high-end), Terra, Luna (low-end), Ultra Mode (4 agents in parallel). OpenAI openly promotes recursive self-improvement — Soul post-trains Luna as experiment.",
         "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "To koniec duopoly. Mamy cztery amerykańskie laby na frontier — Anthropic, OpenAI, Meta, xAI.",
+            "text_en": "This is the end of duopoly. We have four American labs at frontier — Anthropic, OpenAI, Meta, xAI."
+          },
           {
             "host": "Peter Diamandis",
             "dot_color": "var(--hp)",
-            "text_pl": "To niesamowite jak szybko xAI dogania OpenAI. Grok 4.5 to nie najlepszy model, ale bardzo efektywny.",
-            "text_en": "It's amazing how fast xAI is catching up with OpenAI. Grok 4.5 isn't the best model, but very efficient."
+            "text_pl": "Singularity nie jest tylko vibes — 4 modele w 7 dni. Roboty operują ludzi, SpaceX booster reused 36 razy.",
+            "text_en": "Singularity isn't just vibes — 4 models in 7 days. Robots operate on humans, SpaceX booster reused 36 times."
           },
           {
             "host": "Dave Blundin",
             "dot_color": "var(--hp)",
-            "text_pl": "Cenowo Grok 4.5 jest agresywny - 3x tanszy od GPT 5.6. To zmienia ekonomicke aplikacji AI.",
-            "text_en": "Grok 4.5 is aggressive on price - 3x cheaper than GPT 5.6. This changes the economics of AI apps."
-          },
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "LiveBench pokazuje ze Grok 4.5 nie jest frontier - ale to moze byc celowa strategia xAI.",
-            "text_en": "LiveBench shows Grok 4.5 isn't frontier - but that may be xAI's deliberate strategy."
+            "text_pl": "Każdy na frontier będzie wyprzedany — revenue zacznie się rozpraszać. Fable 5 zwalnia bo za wielu użytkowników.",
+            "text_en": "Everyone at frontier will be sold out — revenue will start to disperse. Fable 5 slows down because too many users."
           }
         ],
-        "wniosek_pl": "Wojna cenowa miedzy xAI i OpenAI <strong>demokratyzuje dostep</strong> do frontier AI. Konsumenci wygrywaja, ale marze labow topnieja.",
-        "wniosek_en": "Price war between xAI and OpenAI <strong>democratizes access</strong> to frontier AI. Consumers win, but lab margins shrink.",
-        "kontekst_pl": "GPT 5.6 byl opozniony przez White House - tylko 20 wybranych firm ma dostep. Grok 4.5 bez takich ograniczen.",
-        "kontekst_en": "GPT 5.6 was delayed by the White House - only 20 selected companies have access. Grok 4.5 without such restrictions."
+        "wniosek_pl": "<strong>Koniec duopoly AI</strong>. Cztery laby amerykańskie + dwa chińskie na frontier. Intelligence staje się too cheap to meter.",
+        "wniosek_en": "<strong>End of AI duopoly</strong>. Four American + two Chinese labs at frontier. Intelligence becomes too cheap to meter.",
+        "kontekst_pl": "Alex Karp (Palantir) rant: 'control your own destiny' — amerykańskie firmy muszą kontrolować własny AI stack.",
+        "kontekst_en": "Alex Karp (Palantir) rant: 'control your own destiny' — American firms must control their own AI stack."
       },
       {
         "num": "02",
-        "title": "OpenAI - shift consumer/enterprise i IPO delay",
-        "time": "20:55 - 25:09",
-        "fakty_pl": "OpenAI opoznia IPO z powodu regulacyjnej niepewnosci - White House kontroluje release frontier modeli. Trzy warianty GPT 5.6 (Soul/Terra/Luna) = strategia consumer/enterprise/speed. GPT 5.6 Soul throttled do 20 wybranych firm. OpenAI planuje AI do fixowania security holes (nie tylko znajdowania). Consumer shift: ChatGPT jako interface dla wszystkich aplikacji AI.",
-        "fakty_en": "OpenAI delays IPO due to regulatory uncertainty - White House controls frontier model releases. Three GPT 5.6 variants (Soul/Terra/Luna) = consumer/enterprise/speed strategy. GPT 5.6 Soul throttled to 20 selected companies. OpenAI plans AI to fix security holes (not just find them). Consumer shift: ChatGPT as interface for all AI apps.",
+        "title": "OpenAI pivot consumer → enterprise",
+        "time": "20:55 – 25:09",
+        "fakty_pl": "OpenAI masowo shiftuje z consumer do enterprise. Dropped Sora, dropped adult mode, focus na ChatGPT Work. ChatGPT native app to 'hot mess' — slavishly kopiuje Claude app z different modes (code mode, co-work mode). Alex: 'cargo cult version of Claude app'. OpenAI miało release super app unify Atlas browser, computer use, codecs — ale nie dostarczyło. Toggle między ChatGPT Work i Codex to 'placebo'. Sam Altman wcześniej mówił że distribution > model weights, ale po pivot consumer→enterprise distribution stał się less valuable (consumers nie mają money). OpenAI ma 1B monthly active users.",
+        "fakty_en": "OpenAI massively shifts from consumer to enterprise. Dropped Sora, dropped adult mode, focus on ChatGPT Work. ChatGPT native app is 'hot mess' — slavishly copies Claude app with different modes (code mode, co-work mode). Alex: 'cargo cult version of Claude app'. OpenAI was supposed to release super app unify Atlas browser, computer use, codecs — but didn't deliver. Toggle between ChatGPT Work and Codex is 'placebo'. Sam Altman previously said distribution > model weights, but after consumer→enterprise pivot distribution became less valuable (consumers don't have money). OpenAI has 1B monthly active users.",
         "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "ChatGPT native app to hot mess — cargo cult version of Claude app. OpenAI slavishly kopiuje Anthropic.",
+            "text_en": "ChatGPT native app is hot mess — cargo cult version of Claude app. OpenAI slavishly copies Anthropic."
+          },
           {
             "host": "Salim Ismail",
             "dot_color": "var(--hp)",
-            "text_pl": "OpenAI staje sie semi-publiczna instytucja. IPO w takim srodowisku jest ryzykowne.",
-            "text_en": "OpenAI is becoming a semi-public institution. IPO in this environment is risky."
-          },
-          {
-            "host": "Dave Blundin",
-            "dot_color": "var(--hp)",
-            "text_pl": "Throttling do 20 firm to 'limited preview'. To nowa normalnosc dla frontier modeli.",
-            "text_en": "Throttling to 20 companies is 'limited preview'. This is the new normal for frontier models."
+            "text_pl": "OpenAI próbuje become Anthropic faster niż Anthropic can become OpenAI.",
+            "text_en": "OpenAI tries to become Anthropic faster than Anthropic can become OpenAI."
           }
         ],
-        "wniosek_pl": "OpenAI shiftuje z 'move fast' do 'move carefully'. IPO delay = realne ryzyko regulacyjne dla wszystkich frontier labow.",
-        "wniosek_en": "OpenAI is shifting from 'move fast' to 'move carefully'. IPO delay = real regulatory risk for all frontier labs.",
-        "kontekst_pl": "W #269 rozmawialismy o Fable 5 ograniczonym przez rzad. Teraz to samo dotyka OpenAI.",
-        "kontekst_en": "In #269 we discussed Fable 5 limited by government. Now the same hits OpenAI."
+        "wniosek_pl": "OpenAI <strong>porzuca consumer plays</strong> na rzecz enterprise. Distribution moat słabnie gdy consumers nie płacą.",
+        "wniosek_en": "OpenAI <strong>abandons consumer plays</strong> for enterprise. Distribution moat weakens when consumers don't pay.",
+        "kontekst_pl": "Anthropic pierwszy zrealizował value of revenue per token maxing — OpenAI develop religion za tym modelem.",
+        "kontekst_en": "Anthropic first realized value of revenue per token maxing — OpenAI developed religion for this model."
       },
       {
         "num": "03",
-        "title": "AI w aplikacjach spolecznych i vertical use cases",
-        "time": "25:09 - 29:06",
-        "fakty_pl": "AI w aplikacjach spolecznych: girlfriend simulators, AI companions, personalizacja na poziomie indywidualnym. Vertical use cases: medycyna (diagnostyka), prawo (analiza umow), edukacja (tutoring). Personalizacja = kluczowa differentiator. AI agents przejmuja powtarzalne zadania. Trend: AI jako companion zamiast tool.",
-        "fakty_en": "AI in social apps: girlfriend simulators, AI companions, individual-level personalization. Vertical use cases: medicine (diagnostics), law (contract analysis), education (tutoring). Personalization = key differentiator. AI agents take over repetitive tasks. Trend: AI as companion instead of tool.",
+        "title": "AI distribution jako moat — Google i 2.3B urządzeń Apple",
+        "time": "12:57 – 20:55",
+        "fakty_pl": "Real moat nie już how smart/cheap modele są — ale distribution. Meta: Muse Spark w WhatsApp, Messenger, Instagram, Facebook. Google: 2.3B aktywnych urządzeń Apple + 1.2T parameter model coming (Gemini 3.5 Pro?). Google 'not being written off' — punch really hard coming. OpenAI: 1B monthly active users. Anthropic: corporate space go-to (not consumer). Bifurcation: average person używa model embedded in application layer, pro users bezpośrednio z frontier labs. Jarvis-type model coming — personalized AI layer per user.",
+        "fakty_en": "Real moat no longer how smart/cheap models are — but distribution. Meta: Muse Spark in WhatsApp, Messenger, Instagram, Facebook. Google: 2.3B active Apple devices + 1.2T parameter model coming (Gemini 3.5 Pro?). Google 'not being written off' — punch really hard coming. OpenAI: 1B monthly active users. Anthropic: corporate space go-to (not consumer). Bifurcation: average person uses model embedded in application layer, pro users directly from frontier labs. Jarvis-type model coming — personalized AI layer per user.",
         "glosy": [
           {
             "host": "Peter Diamandis",
             "dot_color": "var(--hp)",
-            "text_pl": "AI companions to nie fanaberia - to przyszlosc relacji. Miliony ludzi samotnych.",
-            "text_en": "AI companions aren't a fad - it's the future of relationships. Millions of lonely people."
+            "text_pl": "Distribution to nowy moat. Meta ma Muse Spark w 4 apps (WhatsApp, Messenger, Instagram, Facebook).",
+            "text_en": "Distribution is the new moat. Meta has Muse Spark in 4 apps (WhatsApp, Messenger, Instagram, Facebook)."
           },
           {
             "host": "Dr. Alexander Wissner-Gross",
             "dot_color": "var(--hp)",
-            "text_pl": "Vertical AI jest gdzie wartosc jest najwieksza. Generic LLM to commodity.",
-            "text_en": "Vertical AI is where the value is greatest. Generic LLM is a commodity."
+            "text_pl": "Google about to release into 2.3B Apple devices z 1.2T parameter model. Nie write-off.",
+            "text_en": "Google about to release into 2.3B Apple devices with 1.2T parameter model. Not write-off."
           }
         ],
-        "wniosek_pl": "Przyszlosc AI to <strong>vertical companions</strong>, nie horizontal tools. Personalizacja wygrywa z generalizacja.",
-        "wniosek_en": "The future of AI is <strong>vertical companions</strong>, not horizontal tools. Personalization wins over generalization.",
-        "kontekst_pl": "GPT Live (OpenAI real-time voice) wczesniej w tym tygodniu - naturalna konwersacja to enabler dla companions.",
-        "kontekst_en": "GPT Live (OpenAI real-time voice) earlier this week - natural conversation is an enabler for companions."
+        "wniosek_pl": "<strong>Distribution > model weights</strong>. Meta i Google mają największe distribution moats. Frontier labs staną się commodity backend.",
+        "wniosek_en": "<strong>Distribution > model weights</strong>. Meta and Google have largest distribution moats. Frontier labs will become commodity backend.",
+        "kontekst_pl": "Sam Altman wcześniej mówił distribution > weights, ale po pivot enterprise zmienił zdanie.",
+        "kontekst_en": "Sam Altman previously said distribution > weights, but after enterprise pivot changed mind."
       },
       {
         "num": "04",
-        "title": "Apple vs OpenAI - pozew o trade secrets",
-        "time": "29:06 - 37:00",
-        "fakty_pl": "Apple pozywa OpenAI za kradziez trade secrets. Apple twierdzi ze OpenAI uzylo zastrzezonej technologii Apple (prawdopodobnie z integracji ChatGPT na iOS). To pierwszy duzego kalibru pozew miedzy Big Tech a frontier lab. Apple tradycyjnie agresywnie broni IP. OpenAI moze byc zmuszone do ujawnienia training data i metod. Ryzyko dla calej branzy: jesli Apple wygra, frontier labs beda musialy renegotiate wszystkie partnerships.",
-        "fakty_en": "Apple sues OpenAI for trade secrets theft. Apple claims OpenAI used Apple's proprietary technology (likely from iOS ChatGPT integration). This is the first major lawsuit between Big Tech and a frontier lab. Apple traditionally aggressively defends IP. OpenAI may be forced to reveal training data and methods. Risk for the entire industry: if Apple wins, frontier labs will have to renegotiate all partnerships.",
+        "title": "Apple vs OpenAI — pozew o trade secrets dla AI hardware",
+        "time": "29:06 – 37:00",
+        "fakty_pl": "Apple pozywa OpenAI za trade secret theft — accusing OpenAI kradzież trade secrets do budowy upcoming AI hardware. Apple i OpenAI byli partnerami 1.5 roku temu — teraz all-out legal war. Peter: 'Apple trying to slow things down while it catches up'. Apple pracuje nad AI hardware — potrzebuje legal pressure na OpenAI. To pierwszy dużego kalibru pozew między Big Tech a frontier lab o AI IP. Implikacja: jeśli Apple wygra, frontier labs będą musiały renegotiate wszystkie Big Tech partnerships.",
+        "fakty_en": "Apple sues OpenAI for trade secret theft — accusing OpenAI of stealing trade secrets to build upcoming AI hardware. Apple and OpenAI were partners 1.5 year ago — now all-out legal war. Peter: 'Apple trying to slow things down while it catches up'. Apple works on AI hardware — needs legal pressure on OpenAI. This is first major lawsuit between Big Tech and frontier lab over AI IP. Implication: if Apple wins, frontier labs will have to renegotiate all Big Tech partnerships.",
         "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Apple trying to slow things down while it catches up. Pretty aggressive move — you have to be pretty hurt to do it.",
+            "text_en": "Apple trying to slow things down while it catches up. Pretty aggressive move — you have to be pretty hurt to do it."
+          },
           {
             "host": "Dave Blundin",
             "dot_color": "var(--hp)",
-            "text_pl": "To precedens. Jesli Apple wygra, kazdy partnership z Big Tech staje sie ryzykiem.",
-            "text_en": "This is precedent-setting. If Apple wins, every Big Tech partnership becomes a risk."
-          },
-          {
-            "host": "Salim Ismail",
-            "dot_color": "var(--hp)",
-            "text_pl": "Apple zawsze gra defensive. To moze byc proba spowolnienia konkurencji.",
-            "text_en": "Apple always plays defensive. This may be an attempt to slow down competition."
+            "text_pl": "To precedens. Jeśli Apple wygra, każdy Big Tech partnership staje się ryzykiem.",
+            "text_en": "This is precedent. If Apple wins, every Big Tech partnership becomes a risk."
           }
         ],
-        "wniosek_pl": "Lawsuit Apple vs OpenAI <strong>redefiniuje zasady</strong> partnerstw Big Tech x frontier labs. Koniec 'move fast and integrate'.",
-        "wniosek_en": "Apple vs OpenAI lawsuit <strong>redefines the rules</strong> of Big Tech x frontier labs partnerships. End of 'move fast and integrate'.",
-        "kontekst_pl": "Apple integracja ChatGPT na iOS 18.2 - teraz Apple twierdzi ze OpenAI wykorzystalo dostep do Apple tech.",
-        "kontekst_en": "Apple integrated ChatGPT in iOS 18.2 - now Apple claims OpenAI used access to Apple tech."
+        "wniosek_pl": "Lawsuit Apple vs OpenAI <strong>redefiniuje zasady</strong> Big Tech × frontier labs partnerships. Koniec 'move fast and integrate'.",
+        "wniosek_en": "Apple vs OpenAI lawsuit <strong>redefines rules</strong> of Big Tech × frontier labs partnerships. End of 'move fast and integrate'.",
+        "kontekst_pl": "Apple integracja ChatGPT na iOS 18.2 — teraz Apple twierdzi że OpenAI wykorzystało dostęp do Apple tech dla AI hardware.",
+        "kontekst_en": "Apple integrated ChatGPT in iOS 18.2 — now Apple claims OpenAI used access to Apple tech for AI hardware."
       },
       {
         "num": "05",
-        "title": "Space Race - SpaceX i reusability",
-        "time": "15:07 - 20:55",
-        "fakty_pl": "SpaceX kontynuuje reusable rocket testy. Starship przygotowania do kolejnej misji. Reusability = klucz do tanich lotow kosmicznych. Koszt launch spada 100x w dekadzie. SpaceX dominuje globalny launch market (>80% udzialu). Konkurencja (Blue Origin, Rocket Lab) wciaz daleko w tyle.",
-        "fakty_en": "SpaceX continues reusable rocket tests. Starship preparations for next mission. Reusability = key to cheap space flights. Launch cost dropping 100x in a decade. SpaceX dominates global launch market (>80% share). Competition (Blue Origin, Rocket Lab) still far behind.",
+        "title": "SpaceX — booster reused 36 razy, reusability standard",
+        "time": "15:07 – 20:55",
+        "fakty_pl": "Single SpaceX booster reused i reflown 36 razy — reusability staje się standard. Peter: 'Elon casually claims SpaceX będzie warte więcej niż entirety of planet Earth'. SpaceX dominuje globalny launch market. Elon's space vision: multi-planetary species, Mars colonization. Asteroid mining — potencjalnie trillions of dollars (platinum, palladium, rare earths). Regulatory framework dla space mining wciąż nie istnieje. USA i Luxembourg lead in legislation.",
+        "fakty_en": "Single SpaceX booster reused and reflown 36 times — reusability becomes standard. Peter: 'Elon casually claims SpaceX will be worth more than entirety of planet Earth'. SpaceX dominates global launch market. Elon's space vision: multi-planetary species, Mars colonization. Asteroid mining — potentially trillions of dollars (platinum, palladium, rare earths). Regulatory framework for space mining still doesn't exist. USA and Luxembourg lead in legislation.",
         "glosy": [
           {
             "host": "Peter Diamandis",
             "dot_color": "var(--hp)",
-            "text_pl": "SpaceX to wciaz jedyna gra w miescie. Reusability zmienila wszystko.",
-            "text_en": "SpaceX is still the only game in town. Reusability changed everything."
-          },
-          {
-            "host": "Dave Blundin",
-            "dot_color": "var(--hp)",
-            "text_pl": "Investment angle: firmy ktore SpaceX wypiera z launch market moga nie przetrwac.",
-            "text_en": "Investment angle: companies SpaceX displaces from launch market may not survive."
-          }
-        ],
-        "wniosek_pl": "SpaceX ma <strong>quasi-monopol</strong> na launch market. Konkurencja musi znalezc nisze (small sat, deep space).",
-        "wniosek_en": "SpaceX has <strong>quasi-monopoly</strong> on launch market. Competition must find a niche (small sat, deep space).",
-        "kontekst_pl": "XPrize wildfire drones competition w Fairbanks Alaska (wspomniane w #267) - SpaceX to enabler dla climate tech.",
-        "kontekst_en": "XPrize wildfire drones competition in Fairbanks Alaska (mentioned in #267) - SpaceX enables climate tech."
-      },
-      {
-        "num": "06",
-        "title": "Elon Musk's Space Vision i asteroid mining",
-        "time": "37:00 - 45:04",
-        "fakty_pl": "Elon Musk vision: multi-planetary species, Mars kolonizacja do 2030. SpaceX market value rosnie pomimo turbulencji. Asteroid mining - potencjalnie biliony dolarow wartosci (platyna, palladium, rare earths). Technologia do asteroid mining wciaz wczesna. Regulatory framework dla space mining nie istnieje. USA i Luxembourg przoduja w legislation.",
-        "fakty_en": "Elon Musk's vision: multi-planetary species, Mars colonization by 2030. SpaceX market value grows despite turbulence. Asteroid mining - potentially trillions of dollars in value (platinum, palladium, rare earths). Asteroid mining technology still early. Regulatory framework for space mining doesn't exist. USA and Luxembourg lead in legislation.",
-        "glosy": [
-          {
-            "host": "Peter Diamandis",
-            "dot_color": "var(--hp)",
-            "text_pl": "Asteroid mining to gra dugoterminowa. Ale pierwsza firma ktora to ogarnie - wygra everything.",
-            "text_en": "Asteroid mining is a long-term game. But the first company to crack it - wins everything."
+            "text_pl": "SpaceX booster reused 36 razy. Elon casually claims SpaceX warte więcej niż cała planeta Ziemia.",
+            "text_en": "SpaceX booster reused 36 times. Elon casually claims SpaceX worth more than entire planet Earth."
           },
           {
             "host": "Salim Ismail",
             "dot_color": "var(--hp)",
-            "text_pl": "Musk to jedyny entrepreneur ktory realnie buduje multi-planetary capability. To exponential leadership.",
+            "text_pl": "Musk to jedyny entrepreneur który realnie buduje multi-planetary capability. To exponential leadership.",
             "text_en": "Musk is the only entrepreneur actually building multi-planetary capability. This is exponential leadership."
           }
         ],
-        "wniosek_pl": "Space mining to <strong>nastepny trilion-dollar industry</strong>. Kto pierwszy ten najlepszy - ale regulacja jest w tyle.",
-        "wniosek_en": "Space mining is <strong>the next trillion-dollar industry</strong>. First mover wins - but regulation lags.",
-        "kontekst_pl": "W #268 rozmawialismy o stanie AI i robotics. Tu - space jako nastepna granica.",
-        "kontekst_en": "In #268 we discussed AI and robotics state. Here - space as the next frontier."
+        "wniosek_pl": "SpaceX ma <strong>quasi-monopol</strong> na launch market. Reusability 36× = koszt launch spada eksponencjalnie.",
+        "wniosek_en": "SpaceX has <strong>quasi-monopoly</strong> on launch market. Reusability 36× = launch cost drops exponentially.",
+        "kontekst_pl": "SpaceX to enabler dla climate tech (XPrize wildfire drones w Fairbanks Alaska).",
+        "kontekst_en": "SpaceX enables climate tech (XPrize wildfire drones in Fairbanks Alaska)."
       },
       {
-        "num": "07",
-        "title": "China catches up to Elon - space race i reusable rockets",
-        "time": "45:04 - 49:02",
-        "fakty_pl": "China rozwija wlasne reusable rockets (LongMarch 9, Landspace). China tempo: 60+ launchow rocznie (vs 100+ SpaceX). China stawia na parallel development - wiele firm rakietowych (Space Pioneer, iSpace, LandSpace). China ma ambitne plany: lunar base 2030, Mars mission 2033. SpaceX wciaz wygrywa na efficiency i reusability, ale China nadrabia tempem i scale. Bez Nvidia GPU - China trenuje frontier modele (LongCat 2.0 na ASIC).",
-        "fakty_en": "China develops own reusable rockets (LongMarch 9, Landspace). China pace: 60+ launches per year (vs 100+ SpaceX). China bets on parallel development - multiple rocket companies (Space Pioneer, iSpace, LandSpace). China has ambitious plans: lunar base 2030, Mars mission 2033. SpaceX still wins on efficiency and reusability, but China catches up with pace and scale. Without Nvidia GPUs - China trains frontier models (LongCat 2.0 on ASIC).",
+        "num": "06",
+        "title": "China Long March — pierwszy orbital booster landing",
+        "time": "37:00 – 45:04",
+        "fakty_pl": "For the first time China Long March (primary launch vehicle manufacturer) demonstrated landing of orbital booster — propulsive landing jak SpaceX. To milestone — China догоняет SpaceX w reusability tech. Peter: 'we want propulsive landings to be as competitive as possible'. China tempo: 60+ launchów rocznie. China stawia na parallel development — wiele firm rakietowych. SpaceX wciąż wygrywa na efficiency (36× reuse), ale China nadrabia tempem. Bez Nvidia GPU — China trenuje frontier modele (LongCat 2.0 na ASIC).",
+        "fakty_en": "For the first time China Long March (primary launch vehicle manufacturer) demonstrated landing of orbital booster — propulsive landing like SpaceX. This is milestone — China is catching up with SpaceX in reusability tech. Peter: 'we want propulsive landings to be as competitive as possible'. China pace: 60+ launches per year. China bets on parallel development — multiple rocket companies. SpaceX still wins on efficiency (36× reuse), but China catches up with pace. Without Nvidia GPUs — China trains frontier models (LongCat 2.0 on ASIC).",
         "glosy": [
           {
-            "host": "Dave Blundin",
+            "host": "Peter Diamandis",
             "dot_color": "var(--hp)",
-            "text_pl": "Syn wrocil z Chin - mowia ze China 'nigdzie nie dogoni USA'. Ale to krotkowzroczne.",
-            "text_en": "Son returned from China - they say China 'will never catch up'. But that's short-sighted."
+            "text_pl": "For the first time China Long March demonstrated landing of orbital booster. We want propulsive landings competitive.",
+            "text_en": "For the first time China Long March demonstrated landing of orbital booster. We want propulsive landings competitive."
           },
           {
             "host": "Dr. Alexander Wissner-Gross",
             "dot_color": "var(--hp)",
-            "text_pl": "China nie potrzebuje Nvidia. LongCat 2.0 udowodnil ze ASIC wystarczy do frontier.",
+            "text_pl": "China nie potrzebuje Nvidia. LongCat 2.0 udowodnił że ASIC wystarczy do frontier.",
             "text_en": "China doesn't need Nvidia. LongCat 2.0 proved ASIC is enough for frontier."
           }
         ],
-        "wniosek_pl": "China <strong>dogania USA</strong> na dwoch frontach - AI (bez Nvidia) i space (reusable rockets). Dwubiegunowy swiat.",
-        "wniosek_en": "China <strong>is catching up with USA</strong> on two fronts - AI (without Nvidia) and space (reusable rockets). Bipolar world.",
-        "kontekst_pl": "LongCat 2.0 (Meituan) - 1.6T MoE trenowany BEZ Nvidia GPU. W releases mielismy to 05.07.",
-        "kontekst_en": "LongCat 2.0 (Meituan) - 1.6T MoE trained WITHOUT Nvidia GPU. In releases on 05.07."
+        "wniosek_pl": "China <strong>dogania USA</strong> na dwoch frontach — AI (bez Nvidia) i space (propulsive landing). Dwubiegunowy świat.",
+        "wniosek_en": "China <strong>is catching up with USA</strong> on two fronts — AI (without Nvidia) and space (propulsive landing). Bipolar world.",
+        "kontekst_pl": "LongCat 2.0 (Meituan) — 1.6T MoE trenowany BEZ Nvidia GPU. W releases 05.07.",
+        "kontekst_en": "LongCat 2.0 (Meituan) — 1.6T MoE trained WITHOUT Nvidia GPU. In releases 05.07."
       },
       {
-        "num": "08",
-        "title": "Low Earth Orbit i satellite innovation",
-        "time": "47:06 - 50:52",
-        "fakty_pl": "LEO (Low Earth Orbit) market w fazie eksplozji - Starlink, Kuiper (Amazon), OneWeb. Koszt umieszczenia satelity w LEO spadl 100x. Mega-constellations: Starlink >6000 sateliitow, plany do 42000. Satellite innovation: earth observation, IoT connectivity, climate monitoring. Bandwidth z LEO przewyzsza tradycyjne telekomy w obszarach ruralnych. Militarne zastosowania: PNT (Positioning Navigation Timing) alternatywa dla GPS.",
-        "fakty_en": "LEO (Low Earth Orbit) market in explosion phase - Starlink, Kuiper (Amazon), OneWeb. Cost of placing satellite in LEO dropped 100x. Mega-constellations: Starlink >6000 satellites, plans up to 42000. Satellite innovation: earth observation, IoT connectivity, climate monitoring. LEO bandwidth exceeds traditional telcos in rural areas. Military applications: PNT (Positioning Navigation Timing) alternative to GPS.",
+        "num": "07",
+        "title": "LEO satellite innovation i Starlink moat",
+        "time": "47:06 – 50:52",
+        "fakty_pl": "LEO (Low Earth Orbit) market w fazie eksplozji — Starlink, Kuiper (Amazon), OneWeb. Mega-constellations: Starlink >6000 satelitów, plany do 42000. Satellite innovation: earth observation, IoT connectivity, climate monitoring. Bandwidth z LEO przewyższa tradycyjne telekomy w obszarach ruralnych. Militarne zastosowania: PNT (Positioning Navigation Timing) alternatywa dla GPS. SpaceX używa własnych rockets do launch własnych satelitów — vertical integration = cost advantage.",
+        "fakty_en": "LEO (Low Earth Orbit) market in explosion phase — Starlink, Kuiper (Amazon), OneWeb. Mega-constellations: Starlink >6000 satellites, plans up to 42000. Satellite innovation: earth observation, IoT connectivity, climate monitoring. LEO bandwidth exceeds traditional telcos in rural areas. Military applications: PNT (Positioning Navigation Timing) alternative to GPS. SpaceX uses own rockets to launch own satellites — vertical integration = cost advantage.",
         "glosy": [
           {
             "host": "Dave Blundin",
             "dot_color": "var(--hp)",
-            "text_pl": "LEO market jest w fazie eksplozji. Inwestujemy w firmy ktore rewolucjonizuja dostep do danych z niskiej orbity.",
-            "text_en": "LEO market is in an explosion phase. We invest in companies revolutionizing access to low orbit data."
+            "text_pl": "LEO market w fazie eksplozji. Inwestujemy w firmy które revolutionize dostęp do danych z niskiej orbity.",
+            "text_en": "LEO market in explosion phase. We invest in companies revolutionizing access to low orbit data."
           },
           {
             "host": "Salim Ismail",
             "dot_color": "var(--hp)",
             "text_pl": "Starlink to killer app dla exponential organizations. Sama infrastruktura to platforma.",
-            "text_en": "Starlink is the killer app for exponential organizations. The infrastructure itself is a platform."
+            "text_en": "Starlink is killer app for exponential organizations. The infrastructure itself is a platform."
           }
         ],
-        "wniosek_pl": "LEO to <strong>nowa infrastruktura globalnej ekonomii</strong>. Kto kontroluje orbite, kontroluje dane.",
-        "wniosek_en": "LEO is <strong>the new infrastructure of global economy</strong>. Who controls orbit controls data.",
-        "kontekst_pl": "Starlink operacyjny w 100+ krajach. Amazon Kuiper wciaz w testach.",
+        "wniosek_pl": "LEO to <strong>nowa infrastruktura globalnej ekonomii</strong>. SpaceX vertical integration (rockets + satellites) = unbeatable cost advantage.",
+        "wniosek_en": "LEO is <strong>the new infrastructure of global economy</strong>. SpaceX vertical integration (rockets + satellites) = unbeatable cost advantage.",
+        "kontekst_pl": "Starlink operacyjny w 100+ krajach. Amazon Kuiper wciąż w testach.",
         "kontekst_en": "Starlink operational in 100+ countries. Amazon Kuiper still testing."
       },
       {
-        "num": "09",
-        "title": "Robotyka i zaawansowane protezy",
-        "time": "50:52 - 137:00",
-        "fakty_pl": "Robotyka humanoidow: Tesla Optimus, Figure 02, Unitree G1, UBTech U1. Zaawansowane protezy: neurallink brain-computer interface. Booster T2 (75 DOF, open-source) - akrobacje ktorych Optimus nie potrafi. Trend: open-source robotyka vs closed (Tesla/Figure). Roboty operuja ludzi - Unitree G1 wykonal operacje na czlowieku. China ma 140 firm robotycznych i 85% globalnych instalacji.",
-        "fakty_en": "Humanoid robotics: Tesla Optimus, Figure 02, Unitree G1, UBTech U1. Advanced prosthetics: Neuralink brain-computer interface. Booster T2 (75 DOF, open-source) - acrobatics Optimus can't do. Trend: open-source robotics vs closed (Tesla/Figure). Robots operate on humans - Unitree G1 performed surgery on a human. China has 140 robotics companies and 85% of global installations.",
+        "num": "08",
+        "title": "Robotyka — roboty operują ludzi, singularity present",
+        "time": "50:52 – 137:00",
+        "fakty_pl": "Peter: 'we're obviously in the singularity living through it because robots are performing surgery'. Robotyka humanoidów: Tesla Optimus, Figure 02, Unitree G1 (wykonał operację na człowieku), UBTech U1. Booster T2 (75 DOF, open-source) — akrobacie których Optimus nie potrafi. Trend: open-source robotyka vs closed (Tesla/Figure). China ma 140 firm robotycznych i 85% globalnych instalacji. Roboty wchodzą w fazę konsumencką — XPrize wildfire drones pokazał że autonomia to teraźniejszość.",
+        "fakty_en": "Peter: 'we're obviously in the singularity living through it because robots are performing surgery'. Humanoid robotics: Tesla Optimus, Figure 02, Unitree G1 (performed surgery on human), UBTech U1. Booster T2 (75 DOF, open-source) — acrobatics Optimus can't do. Trend: open-source robotics vs closed (Tesla/Figure). China has 140 robotics companies and 85% of global installations. Robotics enters consumer phase — XPrize wildfire drones showed autonomy is present.",
         "glosy": [
           {
             "host": "Peter Diamandis",
             "dot_color": "var(--hp)",
-            "text_pl": "XPrize wildfire drones pokazal ze roboty autonomia to terazniejszosc, nie przyszlosc.",
-            "text_en": "XPrize wildfire drones showed that robot autonomy is present, not future."
+            "text_pl": "We're obviously in the singularity living through it because robots are performing surgery.",
+            "text_en": "We're obviously in the singularity living through it because robots are performing surgery."
           },
           {
             "host": "Dr. Alexander Wissner-Gross",
             "dot_color": "var(--hp)",
-            "text_pl": "Open-source robotyka demokratyzuje - Booster T2 z open-source ecosystem to game changer.",
-            "text_en": "Open-source robotics democratizes - Booster T2 with open-source ecosystem is a game changer."
+            "text_pl": "Open-source robotyka demokratyzuje — Booster T2 z open-source ecosystem to game changer.",
+            "text_en": "Open-source robotics democratizes — Booster T2 with open-source ecosystem is a game changer."
           }
         ],
-        "wniosek_pl": "Robotyka wchodzi w <strong>faze konsumencka</strong>. Open-source vs closed to glowna os konkurencji.",
-        "wniosek_en": "Robotics enters <strong>consumer phase</strong>. Open-source vs closed is the main competitive axis.",
-        "kontekst_pl": "Booster T2, UBTech U1 i Unitree G1 - wszystkie w releases z 05.07 i 12.07.",
-        "kontekst_en": "Booster T2, UBTech U1 and Unitree G1 - all in releases from 05.07 and 12.07."
+        "wniosek_pl": "Robotyka wchodzi w <strong>fazę konsumencką</strong>. Singularity nie jest future — jest present (roboty operują ludzi).",
+        "wniosek_en": "Robotics enters <strong>consumer phase</strong>. Singularity isn't future — it's present (robots operate on humans).",
+        "kontekst_pl": "Booster T2, UBTech U1 i Unitree G1 — wszystkie w releases z 05.07 i 12.07.",
+        "kontekst_en": "Booster T2, UBTech U1 and Unitree G1 — all in releases from 05.07 and 12.07."
+      },
+      {
+        "num": "09",
+        "title": "AI app development i user experience bifurcation",
+        "time": "25:09 – 29:06",
+        "fakty_pl": "Huge bifurcation coming w AI use cases: average person używa model embedded in application layer (WhatsApp, Instagram, Google), pro users bezpośrednio z frontier labs. Jarvis-type model coming — personalized AI layer per user. AI app development: ChatGPT Work vs Codex toggle to 'placebo'. Hand tracking + AI = interfaces becoming more human. AI acquiring tools and hands — convergence episode. Alex: 'intelligence get cheaper, interfaces becoming more human, AI acquiring tools and hands — all happening in one week'.",
+        "fakty_en": "Huge bifurcation coming in AI use cases: average person uses model embedded in application layer (WhatsApp, Instagram, Google), pro users directly from frontier labs. Jarvis-type model coming — personalized AI layer per user. AI app development: ChatGPT Work vs Codex toggle is 'placebo'. Hand tracking + AI = interfaces becoming more human. AI acquiring tools and hands — convergence episode. Alex: 'intelligence get cheaper, interfaces becoming more human, AI acquiring tools and hands — all happening in one week'.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Convergence episode — intelligence cheaper, interfaces more human, AI acquiring tools and hands. Wszystko w jednym tygodniu.",
+            "text_en": "Convergence episode — intelligence cheaper, interfaces more human, AI acquiring tools and hands. All in one week."
+          },
+          {
+            "host": "Salim Ismail",
+            "dot_color": "var(--hp)",
+            "text_pl": "Jarvis-type model coming — personalized AI layer per user. To następny exponential shift.",
+            "text_en": "Jarvis-type model coming — personalized AI layer per user. This is next exponential shift."
+          }
+        ],
+        "wniosek_pl": "<strong>Bifurcation AI</strong>: consumer (embedded in apps) vs pro (direct frontier). Jarvis-type personalized AI to następna granica.",
+        "wniosek_en": "<strong>AI bifurcation</strong>: consumer (embedded in apps) vs pro (direct frontier). Jarvis-type personalized AI is next frontier.",
+        "kontekst_pl": "GPT Live (OpenAI real-time voice) — natural conversation to enabler dla Jarvis.",
+        "kontekst_en": "GPT Live (OpenAI real-time voice) — natural conversation is enabler for Jarvis."
       }
     ]
   },
