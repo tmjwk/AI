@@ -117,13 +117,23 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .month-cell-tooltip-title{font-weight:600;color:var(--hp);margin-bottom:4px}
 .month-cell-tooltip-event{font-size:var(--fs-xs);color:var(--hm);margin-bottom:2px;display:flex;align-items:center;gap:4px}
 
-/* Mobile fallback — force timeline on small screens */
-@media(max-width:768px){
+/* Mobile fallback — force timeline on small phones only (≤480px) */
+/* Tablets (481px+) keep month grid available */
+@media(max-width:480px){
   .view-toggle{display:none}
   .month-grid{display:none !important}
   .month-grid.active{display:none !important}
   .timeline{display:block !important}
   .timeline.active{display:block !important}
+}
+/* On tablets (481-768px) make month grid cells smaller but keep visible */
+@media(max-width:768px) and (min-width:481px){
+  .month-cell{min-height:60px;padding:4px;font-size:10px}
+  .month-cell-day{font-size:11px}
+  .month-dot{width:6px;height:6px}
+  .month-cell-count{font-size:10px}
+  .month-grid-head{font-size:10px}
+  .month-grid-head div{padding:2px}
 }
 
 /* Print */
@@ -196,7 +206,7 @@ footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);t
 
 </div>
 
-<script src="data/calendar.js?v=20260714120000" onerror="dataLoadFailed()"></script>
+<script src="data/calendar.js?v=20260714130000" onerror="dataLoadFailed()"></script>
 <script>
 function dataLoadFailed(){var c=document.getElementById('timeline');if(c)c.innerHTML='<div class="empty">⚠ <span class="pl">Nie udało się załadować danych.</span><span class="en">Failed to load data.</span> <button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 16px;border-radius:6px;cursor:pointer"><span class="pl">Odśwież</span><span class="en">Refresh</span></button></div>'}
 </script>
@@ -494,7 +504,7 @@ function renderMonthGrid() {
 if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', function() { renderAll(); applyView(); }); } else { renderAll(); applyView(); }
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-27-g10ae64b · Deploy: <span id="deploy-ts">2026-07-14 08:39:34 UTC</span> · <span id="deploy-hash">vf8a891ec</span>
+v8.9.50-28-g639f61b · Deploy: <span id="deploy-ts">2026-07-14 08:50:52 UTC</span> · <span id="deploy-hash">v4166ec97</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
