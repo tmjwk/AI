@@ -76,6 +76,59 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .tl-event.en span.pl{display:none !important}
 .tl-event.en span.en{display:inline !important}
 
+/* View toggle (Lista / Miesiąc) */
+.view-toggle{display:flex;gap:4px;margin-left:auto;align-items:center}
+.view-toggle .vtgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:4px 12px;cursor:pointer;font-size:var(--fs-s);color:var(--hs);transition:all .15s;font-weight:500}
+.view-toggle .vtgl:hover{border-color:var(--ac);color:var(--fg)}
+.view-toggle .vtgl.active{background:var(--ac);color:#000;border-color:var(--ac);font-weight:600}
+
+/* Month grid view */
+.month-grid{display:none;margin-top:24px}
+.month-grid.active{display:block}
+.timeline{display:none}
+.timeline.active{display:block}
+.month-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;gap:12px;flex-wrap:wrap}
+.month-title{font-size:var(--fs-xl);font-weight:700;color:var(--hp)}
+.month-nav{display:flex;gap:6px;align-items:center}
+.month-nav button{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 12px;cursor:pointer;font-size:var(--fs-s);color:var(--hs);transition:all .15s}
+.month-nav button:hover{border-color:var(--ac);color:var(--fg)}
+.month-nav .today{background:var(--ac);color:#000;border-color:var(--ac);font-weight:600}
+.month-grid-table{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;background:var(--bdl);padding:4px;border-radius:8px;border:1px solid var(--bdl)}
+.month-grid-head{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:4px;font-size:var(--fs-xs);color:var(--hm);font-weight:600;text-align:center;text-transform:uppercase;letter-spacing:0.5px}
+.month-grid-head div{padding:4px}
+.month-cell{background:var(--bg);border-radius:6px;padding:6px;min-height:80px;font-size:var(--fs-xs);position:relative;cursor:pointer;transition:all .15s;display:flex;flex-direction:column;gap:3px}
+.month-cell:hover{background:var(--card)}
+.month-cell.other-month{opacity:0.3}
+.month-cell.today{box-shadow:inset 0 0 0 2px var(--ac)}
+.month-cell.has-events{background:var(--card)}
+.month-cell.has-events:hover{box-shadow:0 0 0 1px var(--ac)}
+.month-cell-day{font-weight:600;color:var(--hm);font-size:var(--fs-s)}
+.month-cell.today .month-cell-day{color:var(--ac)}
+.month-cell-dots{display:flex;flex-wrap:wrap;gap:2px;margin-top:2px}
+.month-dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.month-dot[data-type="ai_search"]{background:var(--ac)}
+.month-dot[data-type="diamandis"]{background:var(--pr)}
+.month-dot[data-type="lev"]{background:var(--bl)}
+.month-dot[data-type="weekly"]{background:var(--ba)}
+.month-dot[data-type="breaking"]{background:var(--rd)}
+.month-cell-count{font-size:var(--fs-xs);color:var(--hm);font-family:monospace;font-weight:600;margin-top:auto}
+.month-cell-tooltip{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:8px 12px;font-size:var(--fs-s);color:var(--fg);white-space:nowrap;z-index:10;display:none;pointer-events:none;box-shadow:0 2px 8px rgba(0,0,0,.3);max-width:300px;white-space:normal;text-align:left}
+.month-cell:hover .month-cell-tooltip{display:block}
+.month-cell-tooltip-title{font-weight:600;color:var(--hp);margin-bottom:4px}
+.month-cell-tooltip-event{font-size:var(--fs-xs);color:var(--hm);margin-bottom:2px;display:flex;align-items:center;gap:4px}
+
+/* Mobile fallback — force timeline on small screens */
+@media(max-width:768px){
+  .view-toggle{display:none}
+  .month-grid{display:none !important}
+  .month-grid.active{display:none !important}
+  .timeline{display:block !important}
+  .timeline.active{display:block !important}
+}
+
+/* Print */
+@media print{.h,.tgl,.btt,footer,.filters,.view-toggle,.month-nav{display:none !important}.tl-event{page-break-inside:auto}.tl-day-date{position:static !important}.month-cell{min-height:60px}}
+
 /* Loading */
 .loading{display:flex;align-items:center;justify-content:center;padding:60px;color:var(--hm);font-size:var(--fs-m)}
 
@@ -117,15 +170,33 @@ footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);t
 <button class="chip" data-filter="lev">🔵 Lev <span class="cnt" id="cnt-lev">0</span></button>
 <button class="chip" data-filter="diamandis">🟣 Diamandis <span class="cnt" id="cnt-diamandis">0</span></button>
 <button class="chip" data-filter="weekly">🟡 Weekly <span class="cnt" id="cnt-weekly">0</span></button>
+<div class="view-toggle">
+<button class="vtgl active" data-view="list" id="viewList"><span class="pl">📅 Lista</span><span class="en">📅 List</span></button>
+<button class="vtgl" data-view="month" id="viewMonth"><span class="pl">🗓️ Miesiąc</span><span class="en">🗓️ Month</span></button>
+</div>
 </div>
 </div>
 
-<div id="timeline"><div class="loading">⏳ <span class="pl">Ładowanie...</span><span class="en">Loading...</span></div></div>
+<div id="timeline" class="active"><div class="loading">⏳ <span class="pl">Ładowanie...</span><span class="en">Loading...</span></div></div>
+
+<div id="monthGrid" class="month-grid">
+<div class="month-header">
+<div class="month-title" id="monthTitle">—</div>
+<div class="month-nav">
+<button id="prevMonth"><span class="pl">← Poprzedni</span><span class="en">← Previous</span></button>
+<button id="todayMonth" class="today"><span class="pl">Dziś</span><span class="en">Today</span></button>
+<button id="nextMonth"><span class="pl">Następny →</span><span class="en">Next →</span></button>
+</div>
+</div>
+<div class="month-grid-head" id="monthGridHead"></div>
+<div class="month-grid-table" id="monthGridTable"></div>
+</div>
+
 <div class="loading-hint"><span class="pl">Wciąż ładuje dane? Wolny internet — poczekaj dłużej lub odśwież.</span><span class="en">Still loading? Slow internet — wait longer or refresh.</span><br><button onclick="location.reload()"><span class="pl">Odśwież stronę</span><span class="en">Refresh page</span></button></div>
 
 </div>
 
-<script src="data/calendar.js?v=20260714100000" onerror="dataLoadFailed()"></script>
+<script src="data/calendar.js?v=20260714110000" onerror="dataLoadFailed()"></script>
 <script>
 function dataLoadFailed(){var c=document.getElementById('timeline');if(c)c.innerHTML='<div class="empty">⚠ <span class="pl">Nie udało się załadować danych.</span><span class="en">Failed to load data.</span> <button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 16px;border-radius:6px;cursor:pointer"><span class="pl">Odśwież</span><span class="en">Refresh</span></button></div>'}
 </script>
@@ -233,7 +304,7 @@ function renderAll() {
     var html = '<div class="timeline">';
     dates.forEach(function(date) {
       html += '<div class="tl-day">' +
-        '<div class="tl-day-date">📅 ' + esc(formatDate(date, lang)) + '</div>';
+        '<div class="tl-day-date" data-date="' + date + '">📅 ' + esc(formatDate(date, lang)) + '</div>';
       grouped[date].forEach(function(e) {
         html += renderEvent(e);
       });
@@ -263,10 +334,167 @@ document.addEventListener('click', function(e) {
   langBtn.textContent = wasEn ? 'EN' : 'PL';
 });
 
-if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', renderAll); } else { renderAll(); }
+// === VIEW TOGGLE (List / Month) ===
+let currentView = localStorage.getItem('calendarView') || 'list';
+let currentMonth = new Date();
+currentMonth.setDate(1);
+
+function applyView() {
+  var timeline = document.getElementById('timeline');
+  var monthGrid = document.getElementById('monthGrid');
+  var viewList = document.getElementById('viewList');
+  var viewMonth = document.getElementById('viewMonth');
+  if (!timeline || !monthGrid) return;
+  if (currentView === 'month') {
+    timeline.classList.remove('active');
+    monthGrid.classList.add('active');
+    if (viewList) viewList.classList.remove('active');
+    if (viewMonth) viewMonth.classList.add('active');
+    renderMonthGrid();
+  } else {
+    timeline.classList.add('active');
+    monthGrid.classList.remove('active');
+    if (viewList) viewList.classList.add('active');
+    if (viewMonth) viewMonth.classList.remove('active');
+  }
+}
+
+document.querySelectorAll('.vtgl').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    currentView = this.dataset.view;
+    localStorage.setItem('calendarView', currentView);
+    applyView();
+  });
+});
+
+document.getElementById('prevMonth')?.addEventListener('click', function() {
+  currentMonth.setMonth(currentMonth.getMonth() - 1);
+  renderMonthGrid();
+});
+document.getElementById('nextMonth')?.addEventListener('click', function() {
+  currentMonth.setMonth(currentMonth.getMonth() + 1);
+  renderMonthGrid();
+});
+document.getElementById('todayMonth')?.addEventListener('click', function() {
+  currentMonth = new Date();
+  currentMonth.setDate(1);
+  renderMonthGrid();
+});
+
+function renderMonthGrid() {
+  var headEl = document.getElementById('monthGridHead');
+  var tableEl = document.getElementById('monthGridTable');
+  var titleEl = document.getElementById('monthTitle');
+  if (!headEl || !tableEl || !titleEl) return;
+
+  var weekdays_pl = ['Pn', 'Wt', 'Śr', 'Cz', 'Pt', 'So', 'Nd'];
+  var weekdays_en = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  var months_pl = ['styczeń','luty','marzec','kwiecień','maj','czerwiec','lipiec','sierpień','wrzesień','październik','listopad','grudzień'];
+  var months_en = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var weekdays = lang === 'en' ? weekdays_en : weekdays_pl;
+  var months = lang === 'en' ? months_en : months_pl;
+
+  // Header
+  headEl.innerHTML = weekdays.map(function(d) { return '<div>' + d + '</div>'; }).join('');
+  titleEl.textContent = months[currentMonth.getMonth()] + ' ' + currentMonth.getFullYear();
+
+  // Group events by date
+  var filtered = currentFilter === 'all' ? CALENDAR : CALENDAR.filter(function(e) { return e.type === currentFilter; });
+  var eventsByDate = {};
+  filtered.forEach(function(e) {
+    if (!eventsByDate[e.date]) eventsByDate[e.date] = [];
+    eventsByDate[e.date].push(e);
+  });
+
+  // Build grid — Monday-first
+  var year = currentMonth.getFullYear();
+  var month = currentMonth.getMonth();
+  var firstDay = new Date(year, month, 1);
+  var lastDay = new Date(year, month + 1, 0);
+  // ISO: Monday = 0
+  var startOffset = (firstDay.getDay() + 6) % 7;
+  var daysInMonth = lastDay.getDate();
+  var today = new Date();
+  var todayStr = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
+
+  var cells = [];
+  // Previous month days
+  var prevMonth = new Date(year, month, 0);
+  for (var i = startOffset - 1; i >= 0; i--) {
+    var day = prevMonth.getDate() - i;
+    var prevDate = new Date(year, month - 1, day);
+    var dateStr = prevDate.getFullYear() + '-' + String(prevDate.getMonth() + 1).padStart(2, '0') + '-' + String(prevDate.getDate()).padStart(2, '0');
+    cells.push({date: dateStr, day: day, otherMonth: true, events: eventsByDate[dateStr] || []});
+  }
+  // Current month days
+  for (var d = 1; d <= daysInMonth; d++) {
+    var dateStr = year + '-' + String(month + 1).padStart(2, '0') + '-' + String(d).padStart(2, '0');
+    cells.push({date: dateStr, day: d, otherMonth: false, events: eventsByDate[dateStr] || []});
+  }
+  // Next month days to fill 6 weeks (42 cells)
+  while (cells.length < 42) {
+    var lastCell = cells[cells.length - 1];
+    var nextDate = new Date(lastCell.date);
+    nextDate.setDate(nextDate.getDate() + 1);
+    var dateStr = nextDate.getFullYear() + '-' + String(nextDate.getMonth() + 1).padStart(2, '0') + '-' + String(nextDate.getDate()).padStart(2, '0');
+    cells.push({date: dateStr, day: nextDate.getDate(), otherMonth: true, events: eventsByDate[dateStr] || []});
+  }
+
+  // Render cells
+  var html = cells.map(function(cell) {
+    var classes = ['month-cell'];
+    if (cell.otherMonth) classes.push('other-month');
+    if (cell.date === todayStr) classes.push('today');
+    if (cell.events.length > 0) classes.push('has-events');
+
+    var dots = cell.events.map(function(e) {
+      return '<span class="month-dot" data-type="' + esc(e.type) + '"></span>';
+    }).join('');
+    var count = cell.events.length > 3 ? '<div class="month-cell-count">' + cell.events.length + '</div>' : '';
+
+    // Tooltip with event titles
+    var tooltip = '';
+    if (cell.events.length > 0) {
+      var tooltipEvents = cell.events.map(function(e) {
+        var title = lang === 'en' ? (e.title_en || e.title_pl || '') : (e.title_pl || e.title_en || '');
+        return '<div class="month-cell-tooltip-event"><span class="month-dot" data-type="' + esc(e.type) + '"></span>' + esc(title.substring(0, 60)) + (title.length > 60 ? '...' : '') + '</div>';
+      }).join('');
+      tooltip = '<div class="month-cell-tooltip"><div class="month-cell-tooltip-title">' + esc(formatDate(cell.date, lang)) + '</div>' + tooltipEvents + '</div>';
+    }
+
+    return '<div class="' + classes.join(' ') + '" data-date="' + cell.date + '">' +
+      '<div class="month-cell-day">' + cell.day + '</div>' +
+      '<div class="month-cell-dots">' + dots + '</div>' +
+      count +
+      tooltip +
+    '</div>';
+  }).join('');
+
+  tableEl.innerHTML = html;
+
+  // Click on cell with events → switch to list view filtered to that date
+  tableEl.querySelectorAll('.month-cell.has-events').forEach(function(cell) {
+    cell.addEventListener('click', function() {
+      var date = this.dataset.date;
+      // Switch to list view + scroll to that date
+      currentView = 'list';
+      localStorage.setItem('calendarView', 'list');
+      applyView();
+      // Find and scroll to that date in timeline
+      setTimeout(function() {
+        var dayEl = document.querySelector('.tl-day-date[data-date="' + date + '"]');
+        if (dayEl) {
+          dayEl.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+      }, 100);
+    });
+  });
+}
+
+if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', function() { renderAll(); applyView(); }); } else { renderAll(); applyView(); }
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-23-gb5b7a7c · Deploy: <span id="deploy-ts">2026-07-14 07:42:49 UTC</span> · <span id="deploy-hash">v6eddde28</span>
+v8.9.50-24-g8f4e167 · Deploy: <span id="deploy-ts">2026-07-14 08:15:55 UTC</span> · <span id="deploy-hash">v005c95f1</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
