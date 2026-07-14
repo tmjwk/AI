@@ -119,12 +119,23 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 /* Mobile fallback — force timeline on small phones only (≤480px) */
 /* Tablets (481px+) keep month grid available */
+/* BUT: keep view-toggle visible on all screens so user can switch */
 @media(max-width:480px){
-  .view-toggle{display:none}
+  /* view-toggle stays visible — user can choose */
   .month-grid{display:none !important}
-  .month-grid.active{display:none !important}
+  .month-grid.active{display:block !important}
   .timeline{display:block !important}
   .timeline.active{display:block !important}
+  /* Mobile month grid — horizontal scroll, smaller cells */
+  .month-grid-table{grid-template-columns:repeat(7,minmax(40px,1fr));overflow-x:auto}
+  .month-cell{min-height:50px;padding:3px;font-size:9px}
+  .month-cell-day{font-size:10px}
+  .month-dot{width:5px;height:5px}
+  .month-cell-count{font-size:9px}
+  .month-grid-head{font-size:9px}
+  .month-grid-head div{padding:2px}
+  .month-grid-head{grid-template-columns:repeat(7,minmax(40px,1fr))}
+  .view-toggle{margin-left:0;width:100%;justify-content:center}
 }
 /* On tablets (481-768px) make month grid cells smaller but keep visible */
 @media(max-width:768px) and (min-width:481px){
@@ -206,7 +217,7 @@ footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);t
 
 </div>
 
-<script src="data/calendar.js?v=20260714150000" onerror="dataLoadFailed()"></script>
+<script src="data/calendar.js?v=20260714160000" onerror="dataLoadFailed()"></script>
 <script>
 function dataLoadFailed(){var c=document.getElementById('timeline');if(c)c.innerHTML='<div class="empty">⚠ <span class="pl">Nie udało się załadować danych.</span><span class="en">Failed to load data.</span> <button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 16px;border-radius:6px;cursor:pointer"><span class="pl">Odśwież</span><span class="en">Refresh</span></button></div>'}
 </script>
@@ -508,7 +519,7 @@ function renderMonthGrid() {
 if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', function() { renderAll(); applyView(); }); } else { renderAll(); applyView(); }
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-29-g4146c1a · Deploy: <span id="deploy-ts">2026-07-14 09:48:07 UTC</span> · <span id="deploy-hash">v5a8f343a</span>
+v8.9.50-30-ge6843eb · Deploy: <span id="deploy-ts">2026-07-14 11:28:38 UTC</span> · <span id="deploy-hash">v9ad5bef0</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
