@@ -181,7 +181,7 @@ select option{color:var(--fg)}
 [data-theme="light"] .skeleton-card::before{background:linear-gradient(90deg,transparent,rgba(0,0,0,0.04),transparent)}
 
 /* v8.7.1-20-g4567b40: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
-:root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--rd:#ef4444;--bl:#3b82f6;
+[data-theme="dark"]{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--rd:#ef4444;--bl:#3b82f6;
 /* v8.9.0: Typography — 4 role semantyczne */
 --fs-h1:1.75rem;--fs-h2:1.125rem;--fs-body:1rem;--fs-aux:0.75rem;
 /* Aliasy (backward compat) */
@@ -194,7 +194,7 @@ select option{color:var(--fg)}
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.9.50-31-g40341df) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.9.50-32-g97d28d2) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -333,7 +333,7 @@ select option{color:var(--fg)}
 <div class="modal" id="modelModal" onclick="if(event.target===this)closeModal('modelModal')"><div class="md" id="modelContent"></div></div>
 <div class="modal" id="cmpModal" onclick="if(event.target===this)closeModal('cmpModal')"><div class="md" id="cmpContent"></div></div>
 <div class="toast" id="toast"></div>
-<script src="data/models.js?v=20260714140000" onerror="dataLoadFailed()"></script>
+<script src="data/models.js?v=20260714190000" onerror="dataLoadFailed()"></script>
 <script>
 function dataLoadFailed(){var c=document.getElementById('content');if(c)c.innerHTML='<div class="nr" style="text-align:center;padding:40px 20px;color:var(--hm)"><div style="font-size:48px;margin-bottom:16px">⚠</div><h2 style="color:var(--hp);margin-bottom:8px"><span class="pl">Nie udało się załadować danych</span><span class="en">Failed to load data</span></h2><p style="margin-bottom:16px"><span class="pl">Sprawdź połączenie internetowe i odśwież stronę. Jeśli masz wolny internet — poczekaj dłużej lub kliknij Odśwież.</span><span class="en">Check your internet connection and refresh. If you have slow internet — wait longer or click Refresh.</span></p><button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 20px;border-radius:6px;cursor:pointer;font-weight:600"><span class="pl">Odśwież stronę</span><span class="en">Refresh page</span></button></div>';console.error('Failed to load data for ai-models.html');}
 </script>
@@ -390,7 +390,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-31-g40341df · Deploy: <span id="deploy-ts">2026-07-14 11:45:29 UTC</span> · <span id="deploy-hash">vd0ac65cb</span>
+v8.9.50-32-g97d28d2 · Deploy: <span id="deploy-ts">2026-07-14 13:39:38 UTC</span> · <span id="deploy-hash">vbd374510</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
