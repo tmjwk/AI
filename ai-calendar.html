@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pl" data-title-pl="Kalendarz AI" data-title-en="AI Calendar"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><script>
+(function(){
+  var html=document.documentElement;
+  var tpl=html.getAttribute('data-title-pl');
+  var ten=html.getAttribute('data-title-en');
+  if(!tpl||!ten)return;
+  function upd(){var lang=html.getAttribute('data-lang')||'pl';document.title=lang==='en'?ten:tpl}
+  upd();
+  var obs=new MutationObserver(function(muts){
+    muts.forEach(function(m){if(m.attributeName==='data-lang')upd()});
+  });
+  obs.observe(html,{attributes:true,attributeFilter:['data-lang']});
+})();
+</script><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><title>Kalendarz AI</title>
+<meta name="description" content="Kalendarz AI — oś czasu wszystkich wydarzeń AI. Releases, Pulse, Radar, Weekly w jednym widoku.">
+<script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))</script>
+<script>document.documentElement.setAttribute("data-lang",localStorage.getItem("lang")||"pl")</script>
+<style>
+:root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--rd:#ef4444;--bl:#3b82f6;--pr:#a855f7;--fs-xs:0.625rem;--fs-s:0.75rem;--fs-m:0.875rem;--fs-l:1rem;--fs-xl:1.25rem;--fs-xxl:5rem;--fs-h1:1.75rem;--fs-h2:1.125rem;--fs-body:1rem;--fs-aux:0.75rem}
+[data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--rd:#dc2626;--bl:#1d4ed8;--pr:#7e22ce}
+@media(max-width:540px){:root{--fs-s:0.6875rem;--fs-m:0.8125rem;--fs-l:0.9375rem;--fs-xl:1.125rem;--fs-xxl:3.75rem}}
+*{box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:0;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
+.c{max-width:clamp(900px,95vw,1400px);margin:0 auto;padding:20px}
+.h{position:sticky;top:0;background:var(--bg);z-index:100;padding:16px 0;border-bottom:1px solid var(--bd);margin-bottom:24px;transition:background .2s}
+.hr{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:8px;flex-wrap:wrap}
+.h h1{font-size:var(--fs-xl);margin:0;font-weight:700;color:var(--hp);letter-spacing:-.02em}
+.h .sub{font-size:var(--fs-s);color:var(--hm);margin-top:4px}
+.nav-links{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.nav-btn{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:var(--fs-s);color:var(--hs);text-decoration:none;font-weight:500;transition:all .15s;white-space:nowrap}
+.nav-btn:hover{border-color:var(--ac);color:var(--fg)}.nav-btn.cur{border-color:var(--ac);color:var(--ac);background:rgba(74,222,128,.06);font-weight:700}
+[data-lang="pl"] span.en{display:none !important}
+[data-lang="en"] span.pl{display:none !important}
+.tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:var(--fs-m);color:var(--fg);transition:border-color .15s}
+.tgl:hover{border-color:var(--ac)}
+
+/* Filter chips */
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px;align-items:center}
+.filter-label{font-size:var(--fs-s);color:var(--hm);margin-right:4px}
+.chip{background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:4px 12px;cursor:pointer;font-size:var(--fs-s);color:var(--hs);transition:all .15s;font-weight:500}
+.chip:hover{border-color:var(--ac);color:var(--fg)}
+.chip.active{background:var(--ac);color:#000;border-color:var(--ac);font-weight:600}
+.chip .cnt{font-size:var(--fs-xs);opacity:0.7;margin-left:4px}
+
+/* Timeline */
+.timeline{position:relative;padding-left:24px;margin-top:24px}
+.timeline::before{content:'';position:absolute;left:6px;top:0;bottom:0;width:2px;background:var(--bdl)}
+.tl-day{margin-bottom:32px;position:relative}
+.tl-day-date{font-size:var(--fs-l);font-weight:700;color:var(--hp);margin-bottom:8px;padding-left:8px;position:sticky;top:80px;background:var(--bg);z-index:5;padding-top:4px;padding-bottom:4px}
+.tl-event{background:var(--card);border:1px solid var(--bdl);border-radius:8px;padding:12px 16px;margin-bottom:8px;margin-left:8px;position:relative;cursor:pointer;transition:all .15s;text-decoration:none;color:var(--fg);display:block}
+.tl-event:hover{border-color:var(--ac);transform:translateX(2px)}
+.tl-event::before{content:'';position:absolute;left:-22px;top:18px;width:10px;height:10px;border-radius:50%;background:var(--bd);border:2px solid var(--bg)}
+.tl-event[data-type="ai_search"]::before{background:var(--ac)}
+.tl-event[data-type="diamandis"]::before{background:var(--pr)}
+.tl-event[data-type="lev"]::before{background:var(--bl)}
+.tl-event[data-type="weekly"]::before{background:var(--ba)}
+.tl-event[data-type="breaking"]::before{background:var(--rd)}
+.tl-event-header{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:4px}
+.tl-event-type{font-size:var(--fs-xs);padding:2px 8px;border-radius:4px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px}
+.tl-event[data-type="ai_search"] .tl-event-type{background:rgba(74,222,128,.15);color:var(--ac)}
+.tl-event[data-type="diamandis"] .tl-event-type{background:rgba(168,85,247,.15);color:var(--pr)}
+.tl-event[data-type="lev"] .tl-event-type{background:rgba(59,130,246,.15);color:var(--bl)}
+.tl-event[data-type="weekly"] .tl-event-type{background:rgba(251,191,36,.15);color:var(--ba)}
+.tl-event[data-type="breaking"] .tl-event-type{background:rgba(239,68,68,.15);color:var(--rd)}
+.tl-event-title{font-size:var(--fs-l);font-weight:600;color:var(--hp);flex:1;min-width:200px}
+.tl-event-meta{font-size:var(--fs-s);color:var(--hm);font-family:monospace;margin-left:auto}
+.tl-event-num{font-size:var(--fs-xs);color:var(--hd);font-family:monospace}
+
+/* Loading */
+.loading{display:flex;align-items:center;justify-content:center;padding:60px;color:var(--hm);font-size:var(--fs-m)}
+
+/* Empty state */
+.empty{text-align:center;padding:40px;color:var(--hm);font-size:var(--fs-m)}
+
+/* Loading hint (slow internet) */
+.loading-hint{opacity:0;text-align:center;padding:20px;color:var(--hm);font-size:var(--fs-s);animation:show-hint 0s 60s forwards}
+.loading-hint button{background:var(--card);border:1px solid var(--bd);color:var(--fg);padding:6px 16px;border-radius:6px;cursor:pointer;margin-top:8px;font-size:var(--fs-s)}
+.loading-hint button:hover{border-color:var(--ac);color:var(--ac)}
+@keyframes show-hint{to{opacity:1}}
+@media print{.loading-hint{display:none}}
+
+/* Footer */
+footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;border-top:1px solid var(--bd)}
+
+/* BTT */
+.btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.btt.show{display:flex}
+
+/* Print */
+@media print{.h,.tgl,.btt,footer,.filters{display:none !important}.tl-event{page-break-inside:auto}.tl-day-date{position:static !important}}
+</style></head><body>
+<div class="c">
+<div class="h">
+<div class="hr">
+<h1>📅 <span class="pl">Kalendarz AI</span><span class="en">AI Calendar</span></h1>
+<div class="nav nav-links">
+<a href="index.html" class="nav-btn"><span class="pl">🏠 Hub</span><span class="en">🏠 Hub</span></a><a href="ai-models.html" class="nav-btn"><span class="pl">📊 Modele</span><span class="en">📊 Models</span></a><a href="ai-benchmarks.html" class="nav-btn"><span class="pl">🏆 Benchmarki</span><span class="en">🏆 Benchmarks</span></a><a href="ai-radar.html" class="nav-btn"><span class="pl">📡 Radar</span><span class="en">📡 Radar</span></a><a href="ai-pulse.html" class="nav-btn"><span class="pl">💓 Puls</span><span class="en">💓 Pulse</span></a><a href="ai-releases.html" class="nav-btn"><span class="pl">🆕 Nowości</span><span class="en">🆕 Releases</span></a><a href="ai-calendar.html" class="nav-btn cur"><span class="pl">📅 Kalendarz</span><span class="en">📅 Calendar</span></a><a href="ai-glossary.html" class="nav-btn"><span class="pl">📖 Słownik</span><span class="en">📖 Glossary</span></a>
+<button class="tgl" id="langTgl" title="Przełącz język / Switch language">EN</button>
+<button class="tgl" id="themeTgl">🌙</button>
+</div>
+</div>
+<div class="sub"><span class="pl">Oś czasu wszystkich wydarzeń AI — releases, pulse, radar, weekly w jednym widoku.</span><span class="en">Timeline of all AI events — releases, pulse, radar, weekly in one view.</span></div>
+<div class="filters" id="filters">
+<span class="filter-label"><span class="pl">Filtruj:</span><span class="en">Filter:</span></span>
+<button class="chip active" data-filter="all"><span class="pl">Wszystkie</span><span class="en">All</span> <span class="cnt" id="cnt-all">0</span></button>
+<button class="chip" data-filter="ai_search">🟢 AI Search <span class="cnt" id="cnt-ai_search">0</span></button>
+<button class="chip" data-filter="lev">🔵 Lev <span class="cnt" id="cnt-lev">0</span></button>
+<button class="chip" data-filter="diamandis">🟣 Diamandis <span class="cnt" id="cnt-diamandis">0</span></button>
+<button class="chip" data-filter="weekly">🟡 Weekly <span class="cnt" id="cnt-weekly">0</span></button>
+</div>
+</div>
+
+<div id="timeline"><div class="loading">⏳ <span class="pl">Ładowanie...</span><span class="en">Loading...</span></div></div>
+<div class="loading-hint"><span class="pl">Wciąż ładuje dane? Wolny internet — poczekaj dłużej lub odśwież.</span><span class="en">Still loading? Slow internet — wait longer or refresh.</span><br><button onclick="location.reload()"><span class="pl">Odśwież stronę</span><span class="en">Refresh page</span></button></div>
+
+</div>
+
+<script src="data/calendar.js?v=20260714090000" onerror="dataLoadFailed()"></script>
+<script>
+function dataLoadFailed(){var c=document.getElementById('timeline');if(c)c.innerHTML='<div class="empty">⚠ <span class="pl">Nie udało się załadować danych.</span><span class="en">Failed to load data.</span> <button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 16px;border-radius:6px;cursor:pointer"><span class="pl">Odśwież</span><span class="en">Refresh</span></button></div>'}
+</script>
+<script>
+let theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+let lang=localStorage.getItem('lang')||'pl';
+document.documentElement.setAttribute('data-theme',theme);
+document.documentElement.setAttribute('data-lang',lang);
+const t=document.getElementById('themeTgl');
+t.textContent=theme==='dark'?'🌙':'☀️';
+t.addEventListener('click',()=>{theme=theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',theme);t.textContent=theme==='dark'?'🌙':'☀️';localStorage.setItem('theme',theme)});
+const langBtn=document.getElementById('langTgl');
+langBtn.textContent=lang==='pl'?'EN':'PL';
+langBtn.addEventListener('click',()=>{lang=lang==='pl'?'en':'pl';document.documentElement.setAttribute('data-lang',lang);langBtn.textContent=lang==='pl'?'EN':'PL';localStorage.setItem('lang',lang);renderAll()});
+
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+const TYPE_LABELS = {
+  ai_search: {pl: 'AI Search', en: 'AI Search'},
+  diamandis: {pl: 'Diamandis', en: 'Diamandis'},
+  lev: {pl: 'Lev Selector', en: 'Lev Selector'},
+  weekly: {pl: 'Weekly', en: 'Weekly'},
+  breaking: {pl: 'Breaking', en: 'Breaking'},
+};
+
+let currentFilter = 'all';
+
+// Filter chips
+document.querySelectorAll('.chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    currentFilter = chip.dataset.filter;
+    renderAll();
+  });
+});
+
+function formatDate(dateStr, lang) {
+  if (!dateStr) return '';
+  try {
+    const d = new Date(dateStr + 'T00:00:00');
+    const months_pl = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
+    const months_en = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    const weekdays_pl = ['niedziela','poniedziałek','wtorek','środa','czwartek','piątek','sobota'];
+    const weekdays_en = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    const months = lang === 'en' ? months_en : months_pl;
+    const weekdays = lang === 'en' ? weekdays_en : weekdays_pl;
+    return weekdays[d.getDay()] + ', ' + d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
+  } catch(e) {
+    return dateStr;
+  }
+}
+
+function renderEvent(event) {
+  var title = lang === 'en' ? (event.title_en || event.title_pl || '') : (event.title_pl || event.title_en || '');
+  var meta = lang === 'en' ? (event.meta_en || event.meta_pl || '') : (event.meta_pl || event.meta_en || '');
+  var typeLabel = TYPE_LABELS[event.type] ? TYPE_LABELS[event.type][lang] : event.type;
+  return '<a href="' + esc(event.link) + '" class="tl-event" data-type="' + esc(event.type) + '">' +
+    '<div class="tl-event-header">' +
+      '<span class="tl-event-type">' + esc(typeLabel) + '</span>' +
+      '<span class="tl-event-title">' + esc(title) + '</span>' +
+      '<span class="tl-event-meta">' + esc(meta) + '</span>' +
+    '</div>' +
+    (event.num ? '<span class="tl-event-num">' + esc(event.num) + '</span>' : '') +
+  '</a>';
+}
+
+function renderAll() {
+  try {
+    var c = document.getElementById('timeline');
+    if (!c || typeof CALENDAR === 'undefined') { console.error('Brak #timeline lub CALENDAR'); return; }
+    
+    // Filter
+    var filtered = currentFilter === 'all' ? CALENDAR : CALENDAR.filter(function(e) { return e.type === currentFilter; });
+    
+    // Update counts
+    var counts = {all: CALENDAR.length, ai_search: 0, diamandis: 0, lev: 0, weekly: 0, breaking: 0};
+    CALENDAR.forEach(function(e) { if (counts[e.type] !== undefined) counts[e.type]++; });
+    Object.keys(counts).forEach(function(k) {
+      var el = document.getElementById('cnt-' + k);
+      if (el) el.textContent = counts[k];
+    });
+    
+    if (filtered.length === 0) {
+      c.innerHTML = '<div class="empty"><span class="pl">Brak wydarzeń dla tego filtru.</span><span class="en">No events for this filter.</span></div>';
+      return;
+    }
+    
+    // Group by date
+    var grouped = {};
+    filtered.forEach(function(e) {
+      if (!grouped[e.date]) grouped[e.date] = [];
+      grouped[e.date].push(e);
+    });
+    
+    // Sort dates DESC
+    var dates = Object.keys(grouped).sort(function(a, b) { return b.localeCompare(a); });
+    
+    var html = '<div class="timeline">';
+    dates.forEach(function(date) {
+      html += '<div class="tl-day">' +
+        '<div class="tl-day-date">📅 ' + esc(formatDate(date, lang)) + '</div>';
+      grouped[date].forEach(function(e) {
+        html += renderEvent(e);
+      });
+      html += '</div>';
+    });
+    html += '</div>';
+    
+    c.innerHTML = html;
+  } catch(e) {
+    console.error('Render error:', e);
+    var el = document.getElementById('timeline');
+    if (el) el.innerHTML = '<div class="empty">⚠ <span class="pl">Błąd renderowania — odśwież stronę.</span><span class="en">Render error — refresh page.</span></div>';
+  }
+}
+
+if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', renderAll); } else { renderAll(); }
+</script>
+<footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
+v8.9.50-21-gaffa908 · Deploy: <span id="deploy-ts">2026-07-14 01:51:24 UTC</span> · <span id="deploy-hash">vd65712b9</span>
+</footer>
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
+<script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
+</body></html>
