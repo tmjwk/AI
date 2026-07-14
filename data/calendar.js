@@ -2,14 +2,14 @@
 // Schema: CALENDAR = [{date, type, title_pl, title_en, link, meta_pl, meta_en, num}]
 // Types: ai_search, diamandis, lev, weekly, breaking
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-14 01:48:42 UTC
+// Generated: 2026-07-14 07:38:37 UTC
 
 const CALENDAR = [
   {
     "date": "2026-07-13",
     "type": "diamandis",
-    "title_pl": "Grok 4.5 vs GPT-5.6, Apple Sues OpenAI, and China Catches up to Elon | #270",
-    "title_en": "Grok 4.5 vs GPT-5.6, Apple Sues OpenAI, and China Catches up to Elon | #270",
+    "title_pl": "Grok 4.5 vs GPT-5.6, Apple pozywa OpenAI, a Chiny doganiają Elona",
+    "title_en": "Grok 4.5 vs GPT-5.6, Apple Sues OpenAI, and China Catches up to Elon",
     "link": "ai-pulse.html#270",
     "meta_pl": "9 tematów",
     "meta_en": "9 topics",

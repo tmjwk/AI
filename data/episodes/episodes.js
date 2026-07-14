@@ -4,7 +4,7 @@ const ALL_EPISODES = [
     "num": "#270",
     "collapsed": false,
     "channel": "Diamandis Moonshots",
-    "title": "Grok 4.5 vs GPT-5.6, Apple Sues OpenAI, and China Catches up to Elon | #270",
+    "title": "Grok 4.5 vs GPT-5.6, Apple pozywa OpenAI, a Chiny doganiają Elona | #270",
     "date": "2026-07-13",
     "duration": "138 min",
     "yt": "CsRx7kFN4bo",
@@ -76,7 +76,9 @@ const ALL_EPISODES = [
         "wniosek_pl": "<strong>Koniec duopoly AI</strong>. Cztery laby amerykańskie + dwa chińskie na frontier. Intelligence staje się too cheap to meter.",
         "wniosek_en": "<strong>End of AI duopoly</strong>. Four American + two Chinese labs at frontier. Intelligence becomes too cheap to meter.",
         "kontekst_pl": "Alex Karp (Palantir) rant: 'control your own destiny' — amerykańskie firmy muszą kontrolować własny AI stack.",
-        "kontekst_en": "Alex Karp (Palantir) rant: 'control your own destiny' — American firms must control their own AI stack."
+        "kontekst_en": "Alex Karp (Palantir) rant: 'control your own destiny' — American firms must control their own AI stack.",
+        "title_pl": "Cztery amerykańskie laby na frontier — koniec duopoly",
+        "title_en": "Four American labs at frontier — end of duopoly"
       },
       {
         "num": "02",
@@ -101,7 +103,9 @@ const ALL_EPISODES = [
         "wniosek_pl": "OpenAI <strong>porzuca consumer plays</strong> na rzecz enterprise. Distribution moat słabnie gdy consumers nie płacą.",
         "wniosek_en": "OpenAI <strong>abandons consumer plays</strong> for enterprise. Distribution moat weakens when consumers don't pay.",
         "kontekst_pl": "Anthropic pierwszy zrealizował value of revenue per token maxing — OpenAI develop religion za tym modelem.",
-        "kontekst_en": "Anthropic first realized value of revenue per token maxing — OpenAI developed religion for this model."
+        "kontekst_en": "Anthropic first realized value of revenue per token maxing — OpenAI developed religion for this model.",
+        "title_pl": "OpenAI pivot consumer → enterprise",
+        "title_en": "OpenAI pivot consumer → enterprise"
       },
       {
         "num": "03",
@@ -126,7 +130,9 @@ const ALL_EPISODES = [
         "wniosek_pl": "<strong>Distribution > model weights</strong>. Meta i Google mają największe distribution moats. Frontier labs staną się commodity backend.",
         "wniosek_en": "<strong>Distribution > model weights</strong>. Meta and Google have largest distribution moats. Frontier labs will become commodity backend.",
         "kontekst_pl": "Sam Altman wcześniej mówił distribution > weights, ale po pivot enterprise zmienił zdanie.",
-        "kontekst_en": "Sam Altman previously said distribution > weights, but after enterprise pivot changed mind."
+        "kontekst_en": "Sam Altman previously said distribution > weights, but after enterprise pivot changed mind.",
+        "title_pl": "AI distribution jako moat — Google i 2.3B urządzeń Apple",
+        "title_en": "AI distribution as moat — Google and 2.3B Apple devices"
       },
       {
         "num": "04",
@@ -151,7 +157,9 @@ const ALL_EPISODES = [
         "wniosek_pl": "Lawsuit Apple vs OpenAI <strong>redefiniuje zasady</strong> Big Tech × frontier labs partnerships. Koniec 'move fast and integrate'.",
         "wniosek_en": "Apple vs OpenAI lawsuit <strong>redefines rules</strong> of Big Tech × frontier labs partnerships. End of 'move fast and integrate'.",
         "kontekst_pl": "Apple integracja ChatGPT na iOS 18.2 — teraz Apple twierdzi że OpenAI wykorzystało dostęp do Apple tech dla AI hardware.",
-        "kontekst_en": "Apple integrated ChatGPT in iOS 18.2 — now Apple claims OpenAI used access to Apple tech for AI hardware."
+        "kontekst_en": "Apple integrated ChatGPT in iOS 18.2 — now Apple claims OpenAI used access to Apple tech for AI hardware.",
+        "title_pl": "Apple vs OpenAI — pozew o trade secrets dla AI hardware",
+        "title_en": "Apple vs OpenAI — trade secrets lawsuit for AI hardware"
       },
       {
         "num": "05",
@@ -176,7 +184,9 @@ const ALL_EPISODES = [
         "wniosek_pl": "SpaceX ma <strong>quasi-monopol</strong> na launch market. Reusability 36× = koszt launch spada eksponencjalnie.",
         "wniosek_en": "SpaceX has <strong>quasi-monopoly</strong> on launch market. Reusability 36× = launch cost drops exponentially.",
         "kontekst_pl": "SpaceX to enabler dla climate tech (XPrize wildfire drones w Fairbanks Alaska).",
-        "kontekst_en": "SpaceX enables climate tech (XPrize wildfire drones in Fairbanks Alaska)."
+        "kontekst_en": "SpaceX enables climate tech (XPrize wildfire drones in Fairbanks Alaska).",
+        "title_pl": "SpaceX — booster reused 36 razy, reusability standard",
+        "title_en": "SpaceX — booster reused 36 times, reusability standard"
       },
       {
         "num": "06",
@@ -201,7 +211,9 @@ const ALL_EPISODES = [
         "wniosek_pl": "China <strong>dogania USA</strong> na dwoch frontach — AI (bez Nvidia) i space (propulsive landing). Dwubiegunowy świat.",
         "wniosek_en": "China <strong>is catching up with USA</strong> on two fronts — AI (without Nvidia) and space (propulsive landing). Bipolar world.",
         "kontekst_pl": "LongCat 2.0 (Meituan) — 1.6T MoE trenowany BEZ Nvidia GPU. W releases 05.07.",
-        "kontekst_en": "LongCat 2.0 (Meituan) — 1.6T MoE trained WITHOUT Nvidia GPU. In releases 05.07."
+        "kontekst_en": "LongCat 2.0 (Meituan) — 1.6T MoE trained WITHOUT Nvidia GPU. In releases 05.07.",
+        "title_pl": "China Long March — pierwszy orbital booster landing",
+        "title_en": "China Long March — first orbital booster landing"
       },
       {
         "num": "07",
@@ -226,7 +238,9 @@ const ALL_EPISODES = [
         "wniosek_pl": "LEO to <strong>nowa infrastruktura globalnej ekonomii</strong>. SpaceX vertical integration (rockets + satellites) = unbeatable cost advantage.",
         "wniosek_en": "LEO is <strong>the new infrastructure of global economy</strong>. SpaceX vertical integration (rockets + satellites) = unbeatable cost advantage.",
         "kontekst_pl": "Starlink operacyjny w 100+ krajach. Amazon Kuiper wciąż w testach.",
-        "kontekst_en": "Starlink operational in 100+ countries. Amazon Kuiper still testing."
+        "kontekst_en": "Starlink operational in 100+ countries. Amazon Kuiper still testing.",
+        "title_pl": "LEO satellite innovation i Starlink moat",
+        "title_en": "LEO satellite innovation and Starlink moat"
       },
       {
         "num": "08",
@@ -251,7 +265,9 @@ const ALL_EPISODES = [
         "wniosek_pl": "Robotyka wchodzi w <strong>fazę konsumencką</strong>. Singularity nie jest future — jest present (roboty operują ludzi).",
         "wniosek_en": "Robotics enters <strong>consumer phase</strong>. Singularity isn't future — it's present (robots operate on humans).",
         "kontekst_pl": "Booster T2, UBTech U1 i Unitree G1 — wszystkie w releases z 05.07 i 12.07.",
-        "kontekst_en": "Booster T2, UBTech U1 and Unitree G1 — all in releases from 05.07 and 12.07."
+        "kontekst_en": "Booster T2, UBTech U1 and Unitree G1 — all in releases from 05.07 and 12.07.",
+        "title_pl": "Robotyka — roboty operują ludzi, singularity present",
+        "title_en": "Robotics — robots operate on humans, singularity is present"
       },
       {
         "num": "09",
@@ -276,9 +292,13 @@ const ALL_EPISODES = [
         "wniosek_pl": "<strong>Bifurcation AI</strong>: consumer (embedded in apps) vs pro (direct frontier). Jarvis-type personalized AI to następna granica.",
         "wniosek_en": "<strong>AI bifurcation</strong>: consumer (embedded in apps) vs pro (direct frontier). Jarvis-type personalized AI is next frontier.",
         "kontekst_pl": "GPT Live (OpenAI real-time voice) — natural conversation to enabler dla Jarvis.",
-        "kontekst_en": "GPT Live (OpenAI real-time voice) — natural conversation is enabler for Jarvis."
+        "kontekst_en": "GPT Live (OpenAI real-time voice) — natural conversation is enabler for Jarvis.",
+        "title_pl": "AI app development i user experience bifurcation",
+        "title_en": "AI app development and user experience bifurcation"
       }
-    ]
+    ],
+    "title_pl": "Grok 4.5 vs GPT-5.6, Apple pozywa OpenAI, a Chiny doganiają Elona",
+    "title_en": "Grok 4.5 vs GPT-5.6, Apple Sues OpenAI, and China Catches up to Elon"
   },
   {
     "num": "#269",

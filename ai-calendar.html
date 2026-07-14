@@ -67,6 +67,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .tl-event-meta{font-size:var(--fs-s);color:var(--hm);font-family:monospace;margin-left:auto}
 .tl-event-num{font-size:var(--fs-xs);color:var(--hd);font-family:monospace}
 
+/* Per-event language toggle (button.tl-lang) */
+.tl-lang{background:var(--bg);border:1px solid var(--bd);border-radius:4px;padding:2px 8px;cursor:pointer;font-size:var(--fs-xs);color:var(--hm);font-weight:600;font-family:monospace;margin-left:8px;transition:all .15s;flex-shrink:0}
+.tl-lang:hover{border-color:var(--ac);color:var(--ac)}
+.tl-event.en .tl-lang{background:var(--ac);color:#000;border-color:var(--ac)}
+
+/* Per-event language visibility — when event has .en class, force EN (overrides global) */
+.tl-event.en span.pl{display:none !important}
+.tl-event.en span.en{display:inline !important}
+
 /* Loading */
 .loading{display:flex;align-items:center;justify-content:center;padding:60px;color:var(--hm);font-size:var(--fs-m)}
 
@@ -116,7 +125,7 @@ footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);t
 
 </div>
 
-<script src="data/calendar.js?v=20260714090000" onerror="dataLoadFailed()"></script>
+<script src="data/calendar.js?v=20260714100000" onerror="dataLoadFailed()"></script>
 <script>
 function dataLoadFailed(){var c=document.getElementById('timeline');if(c)c.innerHTML='<div class="empty">⚠ <span class="pl">Nie udało się załadować danych.</span><span class="en">Failed to load data.</span> <button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 16px;border-radius:6px;cursor:pointer"><span class="pl">Odśwież</span><span class="en">Refresh</span></button></div>'}
 </script>
@@ -171,14 +180,20 @@ function formatDate(dateStr, lang) {
 }
 
 function renderEvent(event) {
-  var title = lang === 'en' ? (event.title_en || event.title_pl || '') : (event.title_pl || event.title_en || '');
-  var meta = lang === 'en' ? (event.meta_en || event.meta_pl || '') : (event.meta_pl || event.meta_en || '');
-  var typeLabel = TYPE_LABELS[event.type] ? TYPE_LABELS[event.type][lang] : event.type;
+  // Render BOTH PL and EN variants as spans (per-event toggle controls which shows)
+  var titlePl = event.title_pl || event.title_en || event.title || '';
+  var titleEn = event.title_en || event.title_pl || event.title || '';
+  var metaPl = event.meta_pl || event.meta_en || '';
+  var metaEn = event.meta_en || event.meta_pl || '';
+  // Type label — show both PL and EN
+  var typePl = TYPE_LABELS[event.type] ? TYPE_LABELS[event.type].pl : event.type;
+  var typeEn = TYPE_LABELS[event.type] ? TYPE_LABELS[event.type].en : event.type;
   return '<a href="' + esc(event.link) + '" class="tl-event" data-type="' + esc(event.type) + '">' +
     '<div class="tl-event-header">' +
-      '<span class="tl-event-type">' + esc(typeLabel) + '</span>' +
-      '<span class="tl-event-title">' + esc(title) + '</span>' +
-      '<span class="tl-event-meta">' + esc(meta) + '</span>' +
+      '<span class="tl-event-type"><span class="pl">' + esc(typePl) + '</span><span class="en">' + esc(typeEn) + '</span></span>' +
+      '<span class="tl-event-title"><span class="pl">' + esc(titlePl) + '</span><span class="en">' + esc(titleEn) + '</span></span>' +
+      '<span class="tl-event-meta"><span class="pl">' + esc(metaPl) + '</span><span class="en">' + esc(metaEn) + '</span></span>' +
+      '<button class="tl-lang" type="button">EN</button>' +
     '</div>' +
     (event.num ? '<span class="tl-event-num">' + esc(event.num) + '</span>' : '') +
   '</a>';
@@ -234,10 +249,24 @@ function renderAll() {
   }
 }
 
+// Event delegation for per-event language toggle (.tl-lang button)
+// NO inline onclick — avoids quote-escaping bugs (LEKCJE #19)
+document.addEventListener('click', function(e) {
+  var langBtn = e.target.closest('.tl-lang');
+  if (!langBtn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  var card = langBtn.closest('.tl-event');
+  if (!card) return;
+  var wasEn = card.classList.contains('en');
+  card.classList.toggle('en');
+  langBtn.textContent = wasEn ? 'EN' : 'PL';
+});
+
 if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', renderAll); } else { renderAll(); }
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-21-gaffa908 · Deploy: <span id="deploy-ts">2026-07-14 01:51:24 UTC</span> · <span id="deploy-hash">vd65712b9</span>
+v8.9.50-23-gb5b7a7c · Deploy: <span id="deploy-ts">2026-07-14 07:42:49 UTC</span> · <span id="deploy-hash">v6eddde28</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
