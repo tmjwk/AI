@@ -192,15 +192,15 @@ footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);t
 <button class="chip" data-filter="diamandis">🟣 Diamandis <span class="cnt" id="cnt-diamandis">0</span></button>
 <button class="chip" data-filter="weekly">🟡 Weekly <span class="cnt" id="cnt-weekly">0</span></button>
 <div class="view-toggle">
-<button class="vtgl active" data-view="list" id="viewList"><span class="pl">📅 Lista</span><span class="en">📅 List</span></button>
-<button class="vtgl" data-view="month" id="viewMonth"><span class="pl">🗓️ Miesiąc</span><span class="en">🗓️ Month</span></button>
+<button class="vtgl" data-view="list" id="viewList"><span class="pl">📅 Lista</span><span class="en">📅 List</span></button>
+<button class="vtgl active" data-view="month" id="viewMonth"><span class="pl">🗓️ Miesiąc</span><span class="en">🗓️ Month</span></button>
 </div>
 </div>
 </div>
 
-<div id="timeline" class="active"><div class="loading">⏳ <span class="pl">Ładowanie...</span><span class="en">Loading...</span></div></div>
+<div id="timeline"><div class="loading">⏳ <span class="pl">Ładowanie...</span><span class="en">Loading...</span></div></div>
 
-<div id="monthGrid" class="month-grid">
+<div id="monthGrid" class="month-grid active">
 <div class="month-header">
 <div class="month-title" id="monthTitle">—</div>
 <div class="month-nav">
@@ -217,7 +217,7 @@ footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);t
 
 </div>
 
-<script src="data/calendar.js?v=20260714160000" onerror="dataLoadFailed()"></script>
+<script src="data/calendar.js?v=20260714170000" onerror="dataLoadFailed()"></script>
 <script>
 function dataLoadFailed(){var c=document.getElementById('timeline');if(c)c.innerHTML='<div class="empty">⚠ <span class="pl">Nie udało się załadować danych.</span><span class="en">Failed to load data.</span> <button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 16px;border-radius:6px;cursor:pointer"><span class="pl">Odśwież</span><span class="en">Refresh</span></button></div>'}
 </script>
@@ -356,7 +356,8 @@ document.addEventListener('click', function(e) {
 });
 
 // === VIEW TOGGLE (List / Month) ===
-let currentView = localStorage.getItem('calendarView') || 'list';
+// DEFAULT = month (user request: widok miesiąca ma być domyślny)
+let currentView = 'month';
 let currentMonth = new Date();
 currentMonth.setDate(1);
 
@@ -519,7 +520,7 @@ function renderMonthGrid() {
 if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', function() { renderAll(); applyView(); }); } else { renderAll(); applyView(); }
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-30-ge6843eb · Deploy: <span id="deploy-ts">2026-07-14 11:28:38 UTC</span> · <span id="deploy-hash">v9ad5bef0</span>
+v8.9.50-30-ge6843eb · Deploy: <span id="deploy-ts">2026-07-14 11:33:09 UTC</span> · <span id="deploy-hash">va1e175ce</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
