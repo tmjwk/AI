@@ -1,4 +1,3 @@
-// Episodes index — metadata only (auto-generated)
 const EPISODES_INDEX = {
   "episodes": [
     {

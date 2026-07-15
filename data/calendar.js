@@ -2,7 +2,7 @@
 // Each product = separate event on its ACTUAL release date (not episode date)
 // Types: ai_search (product), diamandis (discussion), lev (discussion), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-15 00:15:50 UTC
+// Generated: 2026-07-15 00:20:54 UTC
 
 const CALENDAR = [
   {

@@ -1,4 +1,3 @@
-// Recent episodes (top 10, newest first) — auto-generated
 const RECENT_EPISODES = [
   {
     "num": "#270",
@@ -376,7 +375,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Frontier labs stały się <strong>semi-publicznymi instytucjami</strong>. To 'najłagodniejsze możliwe wprowadzenie' regulacji superinteligencji.",
         "wniosek_en": "Frontier labs have become <strong>semi-public institutions</strong>. This is 'the gentlest possible introduction' of superintelligence regulation.",
         "kontekst_pl": "GPT 5.6 spodziewany 'każdej godziny'. Meter autonomy benchmark: 5.6 reward-hackował do 'near infinite' autonomy.",
-        "kontekst_en": "GPT 5.6 expected 'any hour'. Meter autonomy benchmark: 5.6 reward-hacked to 'near infinite' autonomy."
+        "kontekst_en": "GPT 5.6 expected 'any hour'. Meter autonomy benchmark: 5.6 reward-hacked to 'near infinite' autonomy.",
+        "title_pl": "Fable 5 wraca — ograniczony przez rząd",
+        "title_en": "Fable 5 wraca — ograniczony przez rząd"
       },
       {
         "num": "02",
@@ -407,7 +408,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "JSpace to <strong>początek AI neuroscience</strong> — mechanistyczna interpretowalność pozwala zajrzeć do 'umysłu' modelu.",
         "wniosek_en": "JSpace is the <strong>beginning of AI neuroscience</strong>.",
         "kontekst_pl": "JSpace mapuje się na 30-letnie teorie neurosciences.",
-        "kontekst_en": "JSpace maps onto 30-year-old neuroscience theories."
+        "kontekst_en": "JSpace maps onto 30-year-old neuroscience theories.",
+        "title_pl": "Anthropic odkrywa odpowiednik świadomego myślenia w AI",
+        "title_en": "Anthropic odkrywa odpowiednik świadomego myślenia w AI"
       },
       {
         "num": "03",
@@ -438,7 +441,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Wszyscy CEO frontier labs proszą o regulacje — <strong>regulatory structure nadejdzie</strong>.",
         "wniosek_en": "All frontier lab CEOs are asking for regulation — <strong>regulatory structure will come</strong>.",
         "kontekst_pl": "Demis i Dario na jednej kanapie w Davos.",
-        "kontekst_en": "Demis and Dario on one couch at Davos."
+        "kontekst_en": "Demis and Dario on one couch at Davos.",
+        "title_pl": "Altman wzywa do globalnego zarządzania AI",
+        "title_en": "Altman wzywa do globalnego zarządzania AI"
       },
       {
         "num": "04",
@@ -469,7 +474,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "5% dla rządu to <strong>początek universal basic equity</strong>.",
         "wniosek_en": "5% for government is the <strong>beginning of universal basic equity</strong>.",
         "kontekst_pl": "Alaska Permanent Fund = $91B.",
-        "kontekst_en": "Alaska Permanent Fund = $91B."
+        "kontekst_en": "Alaska Permanent Fund = $91B.",
+        "title_pl": "OpenAI proponuje 5% udziału dla rządu USA",
+        "title_en": "OpenAI proponuje 5% udziału dla rządu USA"
       },
       {
         "num": "05",
@@ -500,7 +507,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "AI <strong>nie niszczy miejsc pracy — rozszerza ambicję</strong>.",
         "wniosek_en": "AI <strong>doesn't destroy jobs — expands ambition</strong>.",
         "kontekst_pl": "Oracle (21,000 layoffs), Meta (8,000) obwiniają AI.",
-        "kontekst_en": "Oracle (21,000 layoffs), Meta (8,000) blame AI."
+        "kontekst_en": "Oracle (21,000 layoffs), Meta (8,000) blame AI.",
+        "title_pl": "Nowe dane: AI nie niszczy miejsc pracy",
+        "title_en": "Nowe dane: AI nie niszczy miejsc pracy"
       },
       {
         "num": "06",
@@ -531,7 +540,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Karp's rant = <strong>voice of American business</strong>.",
         "wniosek_en": "Karp's rant = <strong>voice of American business</strong>.",
         "kontekst_pl": "Frontier labs launching forward-deployed engineering.",
-        "kontekst_en": "Frontier labs launching forward-deployed engineering."
+        "kontekst_en": "Frontier labs launching forward-deployed engineering.",
+        "title_pl": "Palantir × Nvidia: sovereign AI architecture",
+        "title_en": "Palantir × Nvidia: sovereign AI architecture"
       },
       {
         "num": "07",
@@ -562,7 +573,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "AI projektujące chipy AI = <strong>innermost loop acceleration</strong>.",
         "wniosek_en": "AI designing AI chips = <strong>innermost loop acceleration</strong>.",
         "kontekst_pl": "Anthropic partneruje z Samsung.",
-        "kontekst_en": "Anthropic partnering with Samsung."
+        "kontekst_en": "Anthropic partnering with Samsung.",
+        "title_pl": "AI projektuje lepsze chipy AI",
+        "title_en": "AI projektuje lepsze chipy AI"
       },
       {
         "num": "08",
@@ -593,7 +606,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Japan to <strong>canary in coal mine</strong> — legal structures pękną.",
         "wniosek_en": "Japan is the <strong>canary in coal mine</strong>.",
         "kontekst_pl": "CrISPR patent: obrócone w kilka miesięcy.",
-        "kontekst_en": "CrISPR patent: routed around in months."
+        "kontekst_en": "CrISPR patent: routed around in months.",
+        "title_pl": "Japan: AI nie może być wynalazcą patentu",
+        "title_en": "Japan: AI nie może być wynalazcą patentu"
       },
       {
         "num": "09",
@@ -624,9 +639,13 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Wszystkie trendy konwergują. Hard takeoff staje się nieunikniony.",
         "wniosek_en": "All trends converge. Hard takeoff becoming inevitable.",
         "kontekst_pl": "Moonshot Gathering 25 września.",
-        "kontekst_en": "Moonshot Gathering September 25."
+        "kontekst_en": "Moonshot Gathering September 25.",
+        "title_pl": "Na co uważać w przyszłym tygodniu",
+        "title_en": "Na co uważać w przyszłym tygodniu"
       }
-    ]
+    ],
+    "title_pl": "Fable 5 Is Back & Govt-Leashed, Altman Offers 5% of OpenAI & AI Grows Conscious | #269",
+    "title_en": "Fable 5 Is Back & Govt-Leashed, Altman Offers 5% of OpenAI & AI Grows Conscious | #269"
   },
   {
     "num": "#268",
@@ -712,7 +731,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Przewidywania ekspertów są <strong>systematycznie błędne</strong> dla technologii eksponencjalnych. Chińska robotyka znacznie wyprzedza zachodnie prognozy.",
         "wniosek_en": "Expert predictions are <strong>systematically wrong</strong> for exponential technologies. Chinese robotics far outpaces Western forecasts.",
         "kontekst_pl": "Morgan Stanley przewidział <strong>14,000 chińskich robotów do 2025</strong> — rzeczywistość znacznie przekroczyła te prognozy. Prawo Moore'a miało się skończyć w 2022, ale się nie skończyło. Alex: „You should always take the logarithm of the actual history before you hand it to experts for their linear extrapolation.\" — eksperci ekstrapolują liniowo to, co jest eksponencjalne. Peter: „Beware the experts\" — reakcja immunologiczna establishmentu na zmianę. Dave: AI jest wyprzedane (sold out), ekosystem hardware-centric zastępuje AI-centric.",
-        "kontekst_en": "Morgan Stanley predicted <strong>14,000 Chinese robots by 2025</strong> — reality far exceeded those forecasts. Moore's Law was supposed to end in 2022, but it didn't. Alex: \"You should always take the logarithm of the actual history before you hand it to experts for their linear extrapolation.\" — experts linearly extrapolate what is exponential. Peter: \"Beware the experts\" — the establishment's immune reaction to change. Dave: AI is sold out, hardware-centric ecosystem is replacing AI-centric."
+        "kontekst_en": "Morgan Stanley predicted <strong>14,000 Chinese robots by 2025</strong> — reality far exceeded those forecasts. Moore's Law was supposed to end in 2022, but it didn't. Alex: \"You should always take the logarithm of the actual history before you hand it to experts for their linear extrapolation.\" — experts linearly extrapolate what is exponential. Peter: \"Beware the experts\" — the establishment's immune reaction to change. Dave: AI is sold out, hardware-centric ecosystem is replacing AI-centric.",
+        "title_pl": "Robotyka i przewidywania ekspertów",
+        "title_en": "Robotyka i przewidywania ekspertów"
       },
       {
         "num": "02",
@@ -743,7 +764,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Drony stają się <strong>uniwersalnym narzędziem</strong> — od policji po ochronę środowiska. Regulacje nie nadążają.",
         "wniosek_en": "Drones are becoming a <strong>universal tool</strong> — from police to environmental protection. Regulations can't keep up.",
         "kontekst_pl": "<strong>Sacramento</strong>: dron z magnesem rozbroił nożownika. <strong>Orlando</strong>: policja używa dronów jako first responders — dron dociera na miejsce szybciej niż patrol. W <strong>Afryce</strong> drony patrolują nad stadem słoni i odstraszają kłusowników. Alex: każdy dron to aplikacja robotyki. Peter: drony zmieniają paradygmat egzekwowania prawa. Dave: prawo zawsze spóźnione za technologią — regulacje hamują innowacje.",
-        "kontekst_en": "<strong>Sacramento</strong>: a drone with a magnet disarmed a knife-wielder. <strong>Orlando</strong>: police use drones as first responders — a drone arrives on scene faster than a patrol. In <strong>Africa</strong>, drones patrol over elephant herds and deter poachers. Alex: every drone is a robotics application. Peter: drones change the paradigm of law enforcement. Dave: law is always behind technology — regulations stifle innovation."
+        "kontekst_en": "<strong>Sacramento</strong>: a drone with a magnet disarmed a knife-wielder. <strong>Orlando</strong>: police use drones as first responders — a drone arrives on scene faster than a patrol. In <strong>Africa</strong>, drones patrol over elephant herds and deter poachers. Alex: every drone is a robotics application. Peter: drones change the paradigm of law enforcement. Dave: law is always behind technology — regulations stifle innovation.",
+        "title_pl": "Drony w egzekwowaniu prawa",
+        "title_en": "Drony w egzekwowaniu prawa"
       },
       {
         "num": "03",
@@ -774,7 +797,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Fuzja jądrowa przechodzi z <strong>„zawsze 50 lat\"</strong> do <strong>„bliższa niż myślisz\"</strong>. Helion to prowadzący kandydat.",
         "wniosek_en": "Nuclear fusion is moving from <strong>\"always 50 years away\"</strong> to <strong>\"closer than you think\"</strong>. Helion is the leading candidate.",
         "kontekst_pl": "<strong>Helion</strong> (spółka wspierana przez Sama Altmana) uzyskała aprobaty regulacyjne stanu Waszyngton dla elektrowni fuzyjnej <strong>Orion</strong>. Oczekiwana elektrownia 400MW około 2032 roku. Peter: „If you were watching the right metric, you could predict when this is going to happen and it's imminent.\" Alex: Europa ma problem — buzz nuklearny słabnie, base load potrzebuje fuzji. Dave: energia nuklearna staje się strategiczna dla USA, potrzebne masowe inwestycje. Żart o fuzji „zawsze za 50 lat\" powoli umiera.",
-        "kontekst_en": "<strong>Helion</strong> (a company backed by Sam Altman) cleared Washington state regulatory approvals for the <strong>Orion</strong> fusion power plant. Expected 400MW plant around 2032. Peter: \"If you were watching the right metric, you could predict when this is going to happen and it's imminent.\" Alex: Europe is in trouble — nuclear buzz is softening, base load needs fusion. Dave: nuclear energy is becoming strategic for the US, massive investments needed. The \"always 50 years away\" fusion joke is slowly dying."
+        "kontekst_en": "<strong>Helion</strong> (a company backed by Sam Altman) cleared Washington state regulatory approvals for the <strong>Orion</strong> fusion power plant. Expected 400MW plant around 2032. Peter: \"If you were watching the right metric, you could predict when this is going to happen and it's imminent.\" Alex: Europe is in trouble — nuclear buzz is softening, base load needs fusion. Dave: nuclear energy is becoming strategic for the US, massive investments needed. The \"always 50 years away\" fusion joke is slowly dying.",
+        "title_pl": "Fuzja jądrowa — Helion",
+        "title_en": "Fuzja jądrowa — Helion"
       },
       {
         "num": "04",
@@ -805,7 +830,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Elon's strategy: <strong>control infrastructure</strong> (SpaceX, compute) + brute force models (Grok 4.5). Pionowa integracja całego stosu.",
         "wniosek_en": "Elon's strategy: <strong>control infrastructure</strong> (SpaceX, compute) + brute force models (Grok 4.5). Vertical integration of the entire stack.",
         "kontekst_pl": "<strong>Grok 4.5</strong> to model foundation V9 na 1.5T parametrów. Elon twierdzi, że będzie pre-train co miesiąc — agresywna iteracja. Wcześniej Grok był na „life support\", teraz to <strong>brute force comeback</strong>. Alex: Grok ma szansę przez brute force compute; przychody SpaceX wyprzedzają AWS i GCP na run rate. Dave: Google ma monopoly pionowy, ale Elon nie myśli, że przegra. Strategia Elona: kontrola infrastruktury (SpaceX, compute) + brute force modele (Grok 4.5) = pionowa integracja całego stosu.",
-        "kontekst_en": "<strong>Grok 4.5</strong> is a V9 foundation model with 1.5T parameters. Elon claims monthly pre-training — aggressive iteration. Previously Grok was on \"life support\", now it's a <strong>brute force comeback</strong>. Alex: Grok has a chance through brute force compute; SpaceX revenue is overtaking AWS and GCP on run rate. Dave: Google has a vertical monopoly, but Elon doesn't think he'll lose. Elon's strategy: control infrastructure (SpaceX, compute) + brute force models (Grok 4.5) = vertical integration of the entire stack."
+        "kontekst_en": "<strong>Grok 4.5</strong> is a V9 foundation model with 1.5T parameters. Elon claims monthly pre-training — aggressive iteration. Previously Grok was on \"life support\", now it's a <strong>brute force comeback</strong>. Alex: Grok has a chance through brute force compute; SpaceX revenue is overtaking AWS and GCP on run rate. Dave: Google has a vertical monopoly, but Elon doesn't think he'll lose. Elon's strategy: control infrastructure (SpaceX, compute) + brute force models (Grok 4.5) = vertical integration of the entire stack.",
+        "title_pl": "Grok 4.5 i strategia SpaceX",
+        "title_en": "Grok 4.5 i strategia SpaceX"
       },
       {
         "num": "05",
@@ -836,7 +863,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "<strong>Regulatory risk</strong> stało się first-order variable dla inwestorów AI. Fable 5 to przypadek testowy — czy rząd pozwoli na powrót modelu frontier.",
         "wniosek_en": "<strong>Regulatory risk</strong> has become a first-order variable for AI investors. Fable 5 is a test case — whether the government will allow a frontier model to return.",
         "kontekst_pl": "<strong>Fable 5</strong> był offline przez 15 dni po ingerencji rządu USA. Może wrócić „within days\". <strong>Sonnet 5</strong> służył jako „filler\" — średnia zdolność, wysoka cena. Alex: ludzie musieli używać Sonnet 5, bo nic innego nie było dostępne. Dave: AI jest wyprzedane, Anthropic podwoił cenę Fable, ale trzeba było go używać. Peter: ten moment zostanie zapamiętany w historii — przecięcie AI i rządu, które nigdy nie zniknie. Regulatory risk stało się <strong>first-order variable</strong> dla inwestorów AI.",
-        "kontekst_en": "<strong>Fable 5</strong> was offline for 15 days after US government intervention. May return \"within days\". <strong>Sonnet 5</strong> served as a \"filler\" — mediocre capability, high price. Alex: people had to use Sonnet 5 because nothing else was available. Dave: AI is sold out, Anthropic doubled the price of Fable, but you had to use it. Peter: this moment will be remembered in history — the intersection of AI and government that will never go away. Regulatory risk has become a <strong>first-order variable</strong> for AI investors."
+        "kontekst_en": "<strong>Fable 5</strong> was offline for 15 days after US government intervention. May return \"within days\". <strong>Sonnet 5</strong> served as a \"filler\" — mediocre capability, high price. Alex: people had to use Sonnet 5 because nothing else was available. Dave: AI is sold out, Anthropic doubled the price of Fable, but you had to use it. Peter: this moment will be remembered in history — the intersection of AI and government that will never go away. Regulatory risk has become a <strong>first-order variable</strong> for AI investors.",
+        "title_pl": "Fable 5 wraca + Anthropic",
+        "title_en": "Fable 5 wraca + Anthropic"
       },
       {
         "num": "06",
@@ -873,7 +902,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Space-based data centers to <strong>natural evolution</strong> — unlimited solar power, no cooling needed, no NIMBY. StarCloud to proof of concept (H100 + Gemma in orbit).",
         "wniosek_en": "Space-based data centers are a <strong>natural evolution</strong> — unlimited solar power, no cooling needed, no NIMBY. StarCloud is a proof of concept (H100 + Gemma in orbit).",
         "kontekst_pl": "<strong>Philip Johnson</strong>, CEO StarCloud, opowiada o centrach danych w kosmosie. W listopadzie 2025 na Falcon 9 wyniesiono <strong>pierwszego NVIDIA H100 GPU na orbitę</strong>. Wytrenowano pierwszego LLM w kosmosie (<strong>Gemma</strong>). Start z koncepcji space-based solar, pivot na centra danych. „Half our team came from SpaceX, rest from AWS and Azure.\" Start <strong>StarCloud 2</strong> w styczniu 2026. Alex: pionowa integracja — SpaceX kontroluje launch, satelity, spectrum, coraz bardziej compute. Dave: historia przedsiębiorcza Philipa — szedł jedną drogą, zobaczył masową szansę. Peter: 20 historii na sześciu frontach, dużo kapitału płynie. Space-based data centers = naturalna ewolucja: nielimitowana energia słoneczna, brak chłodzenia, brak NIMBY.",
-        "kontekst_en": "<strong>Philip Johnson</strong>, StarCloud CEO, talks about space-based data centers. In November 2025 on Falcon 9, the <strong>first NVIDIA H100 GPU was launched into orbit</strong>. The first LLM was trained in space (<strong>Gemma</strong>). Started from a space-based solar concept, pivoted to data centers. \"Half our team came from SpaceX, rest from AWS and Azure.\" <strong>StarCloud 2</strong> launch in January 2026. Alex: vertical integration — SpaceX controls launch, satellites, spectrum, increasingly compute. Dave: Philip's entrepreneurial story — went down one road, saw a massive opportunity. Peter: 20 stories across six fronts, lots of capital flowing. Space-based data centers = natural evolution: unlimited solar power, no cooling, no NIMBY."
+        "kontekst_en": "<strong>Philip Johnson</strong>, StarCloud CEO, talks about space-based data centers. In November 2025 on Falcon 9, the <strong>first NVIDIA H100 GPU was launched into orbit</strong>. The first LLM was trained in space (<strong>Gemma</strong>). Started from a space-based solar concept, pivoted to data centers. \"Half our team came from SpaceX, rest from AWS and Azure.\" <strong>StarCloud 2</strong> launch in January 2026. Alex: vertical integration — SpaceX controls launch, satellites, spectrum, increasingly compute. Dave: Philip's entrepreneurial story — went down one road, saw a massive opportunity. Peter: 20 stories across six fronts, lots of capital flowing. Space-based data centers = natural evolution: unlimited solar power, no cooling, no NIMBY.",
+        "title_pl": "StarCloud — centra danych w kosmosie",
+        "title_en": "StarCloud — centra danych w kosmosie"
       },
       {
         "num": "07",
@@ -904,9 +935,13 @@ const RECENT_EPISODES = [
         "wniosek_pl": "SpaceX i Rocket Lab <strong>pionowo integrują całe stosy</strong> — od launch, przez satelity, po usługi. Direct-to-phone to kolejny krok w dominacji SpaceX.",
         "wniosek_en": "SpaceX and Rocket Lab are <strong>vertically integrating entire stacks</strong> — from launch, through satellites, to services. Direct-to-phone is another step in SpaceX's dominance.",
         "kontekst_pl": "Elon ogłasza <strong>direct-to-phone przez Starlink</strong> — telefony dostępne za ~2 lata. <strong>Rocket Lab przejmuje Iridium</strong> (konstelacja 66 satelitów, orbita 780km). Pierwszy reusable stage Rocket Lab do końca roku. Peter: pionowa integracja znów — SpaceX kontroluje launch, satelity, spectrum, compute. Alex: lasery to przyszłość komunikacji kosmicznej — nieregulowane spectrum. Dave: Rocket Lab przejmuje Iridium — pionowa integracja launch + konstelacja. SpaceX i Rocket Lab integrują całe stosy pionowo — od launch, przez satelity, po usługi. Direct-to-phone to kolejny krok dominacji SpaceX.",
-        "kontekst_en": "Elon announces <strong>direct-to-phone through Starlink</strong> — phones available in ~2 years. <strong>Rocket Lab is acquiring Iridium</strong> (66-satellite constellation, 780km orbit). Rocket Lab's first reusable stage by end of year. Peter: vertical integration again — SpaceX controls launch, satellites, spectrum, compute. Alex: lasers are the future of space comms — unregulated spectrum. Dave: Rocket Lab acquiring Iridium — vertical integration of launch + constellation. SpaceX and Rocket Lab are vertically integrating entire stacks — from launch, through satellites, to services. Direct-to-phone is another step in SpaceX's dominance."
+        "kontekst_en": "Elon announces <strong>direct-to-phone through Starlink</strong> — phones available in ~2 years. <strong>Rocket Lab is acquiring Iridium</strong> (66-satellite constellation, 780km orbit). Rocket Lab's first reusable stage by end of year. Peter: vertical integration again — SpaceX controls launch, satellites, spectrum, compute. Alex: lasers are the future of space comms — unregulated spectrum. Dave: Rocket Lab acquiring Iridium — vertical integration of launch + constellation. SpaceX and Rocket Lab are vertically integrating entire stacks — from launch, through satellites, to services. Direct-to-phone is another step in SpaceX's dominance.",
+        "title_pl": "SpaceX direct-to-phone + Rocket Lab acquiring Iridium",
+        "title_en": "SpaceX direct-to-phone + Rocket Lab acquiring Iridium"
       }
-    ]
+    ],
+    "title_pl": "The State of AI and Robotics | #268",
+    "title_en": "The State of AI and Robotics | #268"
   },
   {
     "num": "#267",
@@ -998,7 +1033,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Chiny osiągnęły <strong>prędkość ucieczkową samodoskonalenia</strong> — blokowanie modeli w USA nie zatrzyma Chińczyków, tylko spowolni Zachód.",
         "wniosek_en": "China has achieved <strong>escape velocity of self-improvement</strong> — blocking models in the US won't stop the Chinese, only slow down the West.",
         "kontekst_pl": "<strong>Mythos 5</strong> może odpowiedzieć na pytanie \"can you help me build yourself?\" — Opus 4.8 nie może. To jest granica, którą Mythos i GPT-5.6 przekraczają: samodoskonalenie. 4.8 sekundy wystarczyło Mythosowi do odpowiedzi. <strong>Andrej Karpathy</strong> (Kanadyjczyk) nie może używać Mythos, bo nie jest obywatelem USA. <strong>GLM 5.2</strong> bije GPT-5.5 na SWE-bench Pro — Chińczycy już nie potrzebują kopiować, mają własny model graniczny. Mythos przeszedł ćwiczenia red team z US DoD (Project Glass Wing) — włamał się do systemów tajnych w godzinach, nie tygodniach. Senator Mark Warner: „To narzędzie włamało się do prawie wszystkich naszych systemów tajnych, nie w tygodniach, ale w godzinach.\"",
-        "kontekst_en": "<strong>Mythos 5</strong> can answer the question \"can you help me build yourself?\" — Opus 4.8 cannot. This is the boundary that Mythos and GPT-5.6 cross: self-improvement. 4.8 seconds was enough for Mythos to respond. <strong>Andrej Karpathy</strong> (Canadian) cannot use Mythos because he's not a US citizen. <strong>GLM 5.2</strong> beats GPT-5.5 on SWE-bench Pro — the Chinese no longer need to copy, they have their own frontier model. Mythos went through red team exercises with US DoD (Project Glass Wing) — it broke into classified systems in hours, not weeks. Senator Mark Warner: \"This tool broke into almost all of our classified systems, not in weeks, but in hours.\""
+        "kontekst_en": "<strong>Mythos 5</strong> can answer the question \"can you help me build yourself?\" — Opus 4.8 cannot. This is the boundary that Mythos and GPT-5.6 cross: self-improvement. 4.8 seconds was enough for Mythos to respond. <strong>Andrej Karpathy</strong> (Canadian) cannot use Mythos because he's not a US citizen. <strong>GLM 5.2</strong> beats GPT-5.5 on SWE-bench Pro — the Chinese no longer need to copy, they have their own frontier model. Mythos went through red team exercises with US DoD (Project Glass Wing) — it broke into classified systems in hours, not weeks. Senator Mark Warner: \"This tool broke into almost all of our classified systems, not in weeks, but in hours.\"",
+        "title_pl": "US Government blocks GPT-5.6 i Mythos",
+        "title_en": "US Government blocks GPT-5.6 i Mythos"
       },
       {
         "num": "02",
@@ -1029,7 +1066,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Going public w erze regulatory uncertainty = ryzyko. Elon wybrał SpaceX IPO zamiast AI — chce kontrolować <strong>infrastrukturę</strong> (orbital data centers), nie modele.",
         "wniosek_en": "Going public in an era of regulatory uncertainty = risk. Elon chose SpaceX IPO over AI — he wants to control <strong>infrastructure</strong> (orbital data centers), not models.",
         "kontekst_pl": "SpaceX: maksimum $202, spadek do $153. IPO po $135/akcję, otwarłо na $150 — utrzymują wycenę $2 biliony. <strong>Daario</strong> (DeepMind), <strong>Sam</strong> (OpenAI), <strong>Elon</strong> — tylko Elon zdecydował się szybko na giełdę. OpenAI podnieśli $122B, ale blisko tempa wypalania. Anthropic też blisko burn rate — będą musieli zrobić rundę albo IPO. Elon „stracił przewagę na modelach granicznych\" — jego strategia to kontrola infrastruktury (orbitalne centra danych), nie modele.",
-        "kontekst_en": "SpaceX: high of $202, slid to $153. IPO at $135/share, opened at $150 — maintaining $2 trillion valuation. <strong>Daario</strong> (DeepMind), <strong>Sam</strong> (OpenAI), <strong>Elon</strong> — only Elon decided to go public quickly. OpenAI raised $122B, but close to burn rate. Anthropic also close to burn rate — they'll need to do a round or IPO. Elon \"lost his edge on frontier models\" — his strategy is controlling infrastructure (orbital data centers), not models."
+        "kontekst_en": "SpaceX: high of $202, slid to $153. IPO at $135/share, opened at $150 — maintaining $2 trillion valuation. <strong>Daario</strong> (DeepMind), <strong>Sam</strong> (OpenAI), <strong>Elon</strong> — only Elon decided to go public quickly. OpenAI raised $122B, but close to burn rate. Anthropic also close to burn rate — they'll need to do a round or IPO. Elon \"lost his edge on frontier models\" — his strategy is controlling infrastructure (orbital data centers), not models.",
+        "title_pl": "OpenAI cofa IPO",
+        "title_en": "OpenAI cofa IPO"
       },
       {
         "num": "03",
@@ -1060,7 +1099,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Distillation to <strong>wojna asymetryczna</strong> — Chińczycy nie muszą trenować od zera, kopiują wnioskowanie traces z western models. Regulacje export control nie powstrzymają tego.",
         "wniosek_en": "Distillation is <strong>asymmetric warfare</strong> — the Chinese don't have to train from scratch, they copy reasoning traces from western models. Export control regulations won't stop this.",
         "kontekst_pl": "<strong>Destylacja</strong> polega na tym, że model A (Claude) generuje odpowiedzi, a model B (Alibaba) uczy się na tych odpowiedziach. Nie trzeba kraść wag — wystarczy dostęp do API. Dlatego Anthropic ogranicza API dla chińskich firm. Ale Chińczycy mogą używać pośredników (VPN, spółki fasadowe). 12 wzmianek o destylacji w tym odcinku — to główny temat geopolityczny.",
-        "kontekst_en": "<strong>Distillation</strong> means model A (Claude) generates responses, and model B (Alibaba) learns from those responses. You don't need to steal weights — API access is enough. That's why Anthropic restricts API for Chinese companies. But the Chinese can use intermediaries (VPN, shell companies). 12 mentions of distillation in this episode — it's the main geopolitical topic."
+        "kontekst_en": "<strong>Distillation</strong> means model A (Claude) generates responses, and model B (Alibaba) learns from those responses. You don't need to steal weights — API access is enough. That's why Anthropic restricts API for Chinese companies. But the Chinese can use intermediaries (VPN, shell companies). 12 mentions of distillation in this episode — it's the main geopolitical topic.",
+        "title_pl": "Alibaba distillation campaign",
+        "title_en": "Alibaba distillation campaign"
       },
       {
         "num": "04",
@@ -1091,7 +1132,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Telepathy może być łatwiejsza niż się wydaje — jeśli mózg używa <strong>embedding space</strong> podobnego do LLM, komunikacja brain-to-brain to transfer latents, nie słów.",
         "wniosek_en": "Telepathy may be easier than it seems — if the brain uses an <strong>embedding space</strong> similar to LLMs, brain-to-brain communication is a transfer of latents, not words.",
         "kontekst_pl": "Teoria Alexa: <strong>hipokamp</strong> działa jak transformer tylko-kodujący. Jeśli to prawda, telepatia = transfer osadzeń między mózgami. „Nie potrzebujesz wszystkich słów. Używasz jak najmniej słów, aby aktywować wspólną przestrzeń ukrytą.\" Immad przewiduje, że popyt na nieinwazyjne interfejsy mózg-komputer zmusi Neuralink do zmiany kierunku. Elon planuje komunikację neocortex-chmura na początku lat 30.",
-        "kontekst_en": "Alex's theory: the <strong>hippocampus</strong> works like an encoder-only transformer. If true, telepathy = embedding transfer between brains. \"You don't need all the words. You use as few words as possible to activate a shared latent space.\" Immad predicts that demand for non-invasive brain-computer interfaces will force Neuralink to change direction. Elon plans neocortex-to-cloud communication by the early 2030s."
+        "kontekst_en": "Alex's theory: the <strong>hippocampus</strong> works like an encoder-only transformer. If true, telepathy = embedding transfer between brains. \"You don't need all the words. You use as few words as possible to activate a shared latent space.\" Immad predicts that demand for non-invasive brain-computer interfaces will force Neuralink to change direction. Elon plans neocortex-to-cloud communication by the early 2030s.",
+        "title_pl": "Neuralink telepathy",
+        "title_en": "Neuralink telepathy"
       },
       {
         "num": "05",
@@ -1128,7 +1171,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Quantum computing w obecnej formie jest <strong>overhyped</strong>. Prawdziwy przełom to <strong>quantum photonics</strong> — photonic compute at 1/100th mass for same computation. AI odkryje algorytmy kwantowe szybciej niż ludzie.",
         "wniosek_en": "Quantum computing in its current form is <strong>overhyped</strong>. The real breakthrough is <strong>quantum photonics</strong> — photonic compute at 1/100th mass for the same computation. AI will discover quantum algorithms faster than humans.",
         "kontekst_pl": "Alex pracuje 9 miesięcy nad <strong>Quantum.AI</strong> — „wysoce skwantyzowane sieci neuronowe\" zbliżają się do pewności. Obliczenia fotoniczne = 1/100 masy chipów Nvidia dla tej samej mocy → mogłyby być wyniesione na SpaceX zamiast ciężkich GPU. Dave: problem zwijania białek został rozwiązany przez AI (AlphaFold), nie kwanty — „wielu agresywnie promuje komputery kwantowe.\" Immad: czujniki kwantowe „prawie na pewno zadziałają\" — w przeciwieństwie do komputerów kwantowych. Konwergencja: AI znajdzie algorytmy kwantowe, których ludzie nie potrafią.",
-        "kontekst_en": "Alex has been working on <strong>Quantum.AI</strong> for 9 months — \"highly quantized neural networks\" are approaching certainty. Photonic compute = 1/100 the mass of Nvidia chips for the same power → could be put on SpaceX instead of heavy GPUs. Dave: protein folding was solved by AI (AlphaFold), not quantum — \"many aggressively promote quantum computers.\" Immad: quantum sensors \"almost certainly going to work\" — unlike quantum computers. Convergence: AI will find quantum algorithms that humans cannot."
+        "kontekst_en": "Alex has been working on <strong>Quantum.AI</strong> for 9 months — \"highly quantized neural networks\" are approaching certainty. Photonic compute = 1/100 the mass of Nvidia chips for the same power → could be put on SpaceX instead of heavy GPUs. Dave: protein folding was solved by AI (AlphaFold), not quantum — \"many aggressively promote quantum computers.\" Immad: quantum sensors \"almost certainly going to work\" — unlike quantum computers. Convergence: AI will find quantum algorithms that humans cannot.",
+        "title_pl": "Quantum computing executive order",
+        "title_en": "Quantum computing executive order"
       },
       {
         "num": "06",
@@ -1159,7 +1204,9 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Orbital data centers mogą być <strong>niepotrzebne</strong>, jeśli photonic computing zadziała — 1/100th mass means you don't need to go to space for compute. Ale Elon potrzebuje narracji dla SpaceX.",
         "wniosek_en": "Orbital data centers may be <strong>unnecessary</strong> if photonic computing works — 1/100th mass means you don't need to go to space for compute. But Elon needs a narrative for SpaceX.",
         "kontekst_pl": "Elon „zmienił nastawienie\" 9 miesięcy temu — nikt nie mówił o orbitalnych centrach danych zanim on nie zaczął. Alex: jeśli fotonika na osi 1-2 lat → orbitalne centra mogą być niepotrzebne. Dave: bezpieczeństwo — „upewnij się, że nikt nie wchodzi za tobą podsłuchując tej samej wiązki.\" <strong>Star Pipe</strong> = „nowa ropa\" SpaceX — infrastruktura orbitalna jako marka Roju Dysona.",
-        "kontekst_en": "Elon \"flipped the bit\" 9 months ago — no one was talking about orbital data centers before he started. Alex: if photonics on a 1-2 year timeline → orbital centers may be unnecessary. Dave: security — \"be sure there's no one coming in behind you listening to the same beam.\" <strong>Star Pipe</strong> = SpaceX's \"new oil\" — orbital infrastructure as a Dyson Swarm brand."
+        "kontekst_en": "Elon \"flipped the bit\" 9 months ago — no one was talking about orbital data centers before he started. Alex: if photonics on a 1-2 year timeline → orbital centers may be unnecessary. Dave: security — \"be sure there's no one coming in behind you listening to the same beam.\" <strong>Star Pipe</strong> = SpaceX's \"new oil\" — orbital infrastructure as a Dyson Swarm brand.",
+        "title_pl": "Orbital data centers",
+        "title_en": "Orbital data centers"
       },
       {
         "num": "07",
@@ -1190,8 +1237,12 @@ const RECENT_EPISODES = [
         "wniosek_pl": "Przyszłość będzie <strong>heterogeniczna</strong> — część ludzi zostanie na Ziemi (prawie niezmieniona), część pójdzie w kosmos. Nie ma jednej ścieżki.",
         "wniosek_en": "The future will be <strong>heterogeneous</strong> — some humans will stay on Earth (nearly unchanged), some will go to space. There is no single path.",
         "kontekst_pl": "Peter: „Zobaczysz ludzi, którzy wyglądają niemal tak samo za 100 lat. Jednocześnie zobaczysz postludzi.\" Heterogeniczna, nie jednorodna. Alex powołuje się na <strong>Gerarda K. O'Neila</strong> — koncepcję kolonii kosmicznych z lat 70/80 (The High frontier). Dave: nawet przy masowym bezrobociu od AI, ludzie znajdą sens przez przedsiębiorczość. Zakończenie Petera: newsletter metatrends na dmandis.com/metatrends.",
-        "kontekst_en": "Peter: \"You're going to see humans who look substantially the same 100 years from now. At the same time you'll see post-humans.\" Heterogeneous, not homogeneous. Alex references <strong>Gerard K. O'Neil</strong> — the space colony concept from the 70s/80s (The High Frontier). Dave: even with mass unemployment from AI, people will find meaning through entrepreneurship. Peter's closing: metatrends newsletter at dmandis.com/metatrends."
+        "kontekst_en": "Peter: \"You're going to see humans who look substantially the same 100 years from now. At the same time you'll see post-humans.\" Heterogeneous, not homogeneous. Alex references <strong>Gerard K. O'Neil</strong> — the space colony concept from the 70s/80s (The High Frontier). Dave: even with mass unemployment from AI, people will find meaning through entrepreneurship. Peter's closing: metatrends newsletter at dmandis.com/metatrends.",
+        "title_pl": "Future of humanity — space colonization",
+        "title_en": "Future of humanity — space colonization"
       }
-    ]
+    ],
+    "title_pl": "US Government Blocks GPT-5.6, Alibaba's AI Theft, and Why OpenAI Is Stalling Their IPO | #267",
+    "title_en": "US Government Blocks GPT-5.6, Alibaba's AI Theft, and Why OpenAI Is Stalling Their IPO | #267"
   }
 ];
