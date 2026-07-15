@@ -2,7 +2,7 @@
 // Each product = separate event on its ACTUAL release date (not episode date)
 // Types: ai_search (product), diamandis (discussion), lev (discussion), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-15 00:20:54 UTC
+// Generated: 2026-07-15 00:26:41 UTC
 
 const CALENDAR = [
   {
@@ -227,16 +227,6 @@ const CALENDAR = [
   },
   {
     "date": "2026-07-05",
-    "type": "ai_search",
-    "title_pl": "Comfy MCP — ComfyUI",
-    "title_en": "Comfy MCP — ComfyUI",
-    "link": "ai-releases.html#ep-##27-1",
-    "meta_pl": "Coding",
-    "meta_en": "Coding",
-    "num": "##27-1"
-  },
-  {
-    "date": "2026-07-05",
     "type": "weekly",
     "title_pl": "AI Tydzień #27 | 29/06-5/07/2026",
     "title_en": "AI Week #27 | 29/06-5/07/2026",
@@ -323,6 +313,16 @@ const CALENDAR = [
     "link": "ai-releases.html#ep-##27-1",
     "meta_pl": "Image Generation",
     "meta_en": "Image Generation",
+    "num": "##27-1"
+  },
+  {
+    "date": "2026-06-30",
+    "type": "ai_search",
+    "title_pl": "Comfy MCP — ComfyUI",
+    "title_en": "Comfy MCP — ComfyUI",
+    "link": "ai-releases.html#ep-##27-1",
+    "meta_pl": "Coding",
+    "meta_en": "Coding",
     "num": "##27-1"
   },
   {

@@ -577,7 +577,7 @@ const RELEASES = [
       },
       {
         "vendor": "ComfyUI",
-        "date": "2026-07-05",
+        "date": "2026-06-30",
         "thumbnail": "rankings/releases_thumbs/comfy-mcp.jpg",
         "review_pl": "MCP (Model Context Protocol) dla ComfyUI — najpopularniejszej platformy open-source image/video/audio. Pozwala AI agentom kontrolować ComfyUI. Demokratyzuje generowanie — agent może tworzyć workflowy.",
         "review_en": "MCP for ComfyUI — most popular open-source image/video/audio platform. Lets AI agents control ComfyUI. Democratizes generation — agents can create workflows.",
