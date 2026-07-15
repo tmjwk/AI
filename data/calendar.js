@@ -2,9 +2,19 @@
 // Each product = separate event on its ACTUAL release date (not episode date)
 // Types: ai_search (product), diamandis (discussion), lev (discussion), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-15 00:00:56 UTC
+// Generated: 2026-07-15 00:11:06 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-07-13",
+    "type": "ai_search",
+    "title_pl": "Booster T2 — Booster Robotics",
+    "title_en": "Booster T2 — Booster Robotics",
+    "link": "ai-releases.html#ep-##28-2",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##28-2"
+  },
   {
     "date": "2026-07-13",
     "type": "diamandis",
@@ -17,66 +27,16 @@ const CALENDAR = [
   },
   {
     "date": "2026-07-12",
-    "type": "ai_search",
-    "title_pl": "Hy3 — Tencent",
-    "title_en": "Hy3 — Tencent",
-    "link": "ai-releases.html#ep-##28-2",
-    "meta_pl": "LLM",
-    "meta_en": "LLM",
-    "num": "##28-2"
+    "type": "weekly",
+    "title_pl": "AI Tydzień #28 | 6-12/07/2026",
+    "title_en": "AI Week #28 | 6-12/07/2026",
+    "link": "index.html#article-28",
+    "meta_pl": "12 sekcji",
+    "meta_en": "12 sections",
+    "num": "28"
   },
   {
-    "date": "2026-07-12",
-    "type": "ai_search",
-    "title_pl": "GPT Live — OpenAI",
-    "title_en": "GPT Live — OpenAI",
-    "link": "ai-releases.html#ep-##28-2",
-    "meta_pl": "TTS",
-    "meta_en": "TTS",
-    "num": "##28-2"
-  },
-  {
-    "date": "2026-07-12",
-    "type": "ai_search",
-    "title_pl": "ABot World — AMap CVLab",
-    "title_en": "ABot World — AMap CVLab",
-    "link": "ai-releases.html#ep-##28-2",
-    "meta_pl": "World Models",
-    "meta_en": "World Models",
-    "num": "##28-2"
-  },
-  {
-    "date": "2026-07-12",
-    "type": "ai_search",
-    "title_pl": "Seedream 5 Pro — ByteDance",
-    "title_en": "Seedream 5 Pro — ByteDance",
-    "link": "ai-releases.html#ep-##28-2",
-    "meta_pl": "Image Generation",
-    "meta_en": "Image Generation",
-    "num": "##28-2"
-  },
-  {
-    "date": "2026-07-12",
-    "type": "ai_search",
-    "title_pl": "Muse Image — Meta",
-    "title_en": "Muse Image — Meta",
-    "link": "ai-releases.html#ep-##28-2",
-    "meta_pl": "Image Generation",
-    "meta_en": "Image Generation",
-    "num": "##28-2"
-  },
-  {
-    "date": "2026-07-12",
-    "type": "ai_search",
-    "title_pl": "Muse Video — Meta",
-    "title_en": "Muse Video — Meta",
-    "link": "ai-releases.html#ep-##28-2",
-    "meta_pl": "Video Generation",
-    "meta_en": "Video Generation",
-    "num": "##28-2"
-  },
-  {
-    "date": "2026-07-12",
+    "date": "2026-07-10",
     "type": "ai_search",
     "title_pl": "Reve 2.1 — Reve",
     "title_en": "Reve 2.1 — Reve",
@@ -86,17 +46,7 @@ const CALENDAR = [
     "num": "##28-2"
   },
   {
-    "date": "2026-07-12",
-    "type": "ai_search",
-    "title_pl": "LingBot World 2 — Robbyant",
-    "title_en": "LingBot World 2 — Robbyant",
-    "link": "ai-releases.html#ep-##28-2",
-    "meta_pl": "World Models",
-    "meta_en": "World Models",
-    "num": "##28-2"
-  },
-  {
-    "date": "2026-07-12",
+    "date": "2026-07-10",
     "type": "ai_search",
     "title_pl": "Mira — Mira WM",
     "title_en": "Mira — Mira WM",
@@ -106,7 +56,7 @@ const CALENDAR = [
     "num": "##28-2"
   },
   {
-    "date": "2026-07-12",
+    "date": "2026-07-10",
     "type": "ai_search",
     "title_pl": "Alaya World — Alaya Lab",
     "title_en": "Alaya World — Alaya Lab",
@@ -116,17 +66,7 @@ const CALENDAR = [
     "num": "##28-2"
   },
   {
-    "date": "2026-07-12",
-    "type": "ai_search",
-    "title_pl": "SeFi image — JM Liu",
-    "title_en": "SeFi image — JM Liu",
-    "link": "ai-releases.html#ep-##28-2",
-    "meta_pl": "Image Generation",
-    "meta_en": "Image Generation",
-    "num": "##28-2"
-  },
-  {
-    "date": "2026-07-12",
+    "date": "2026-07-10",
     "type": "ai_search",
     "title_pl": "PixWorld — SenseGen Gao",
     "title_en": "PixWorld — SenseGen Gao",
@@ -134,46 +74,6 @@ const CALENDAR = [
     "meta_pl": "3D Generation",
     "meta_en": "3D Generation",
     "num": "##28-2"
-  },
-  {
-    "date": "2026-07-12",
-    "type": "ai_search",
-    "title_pl": "Booster T2 — Booster Robotics",
-    "title_en": "Booster T2 — Booster Robotics",
-    "link": "ai-releases.html#ep-##28-2",
-    "meta_pl": "Humanoid Robots",
-    "meta_en": "Humanoid Robots",
-    "num": "##28-2"
-  },
-  {
-    "date": "2026-07-12",
-    "type": "ai_search",
-    "title_pl": "Wan Streamer 0.2 — Wan",
-    "title_en": "Wan Streamer 0.2 — Wan",
-    "link": "ai-releases.html#ep-##28-2",
-    "meta_pl": "Realtime Avatars",
-    "meta_en": "Realtime Avatars",
-    "num": "##28-2"
-  },
-  {
-    "date": "2026-07-12",
-    "type": "ai_search",
-    "title_pl": "ProxyPose — Ruihang Zhang",
-    "title_en": "ProxyPose — Ruihang Zhang",
-    "link": "ai-releases.html#ep-##28-2",
-    "meta_pl": "Multimodal",
-    "meta_en": "Multimodal",
-    "num": "##28-2"
-  },
-  {
-    "date": "2026-07-12",
-    "type": "weekly",
-    "title_pl": "AI Tydzień #28 | 6-12/07/2026",
-    "title_en": "AI Week #28 | 6-12/07/2026",
-    "link": "index.html#article-28",
-    "meta_pl": "12 sekcji",
-    "meta_en": "12 sections",
-    "num": "28"
   },
   {
     "date": "2026-07-10",
@@ -198,6 +98,26 @@ const CALENDAR = [
   {
     "date": "2026-07-09",
     "type": "ai_search",
+    "title_pl": "ABot World — AMap CVLab",
+    "title_en": "ABot World — AMap CVLab",
+    "link": "ai-releases.html#ep-##28-2",
+    "meta_pl": "World Models",
+    "meta_en": "World Models",
+    "num": "##28-2"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "ai_search",
+    "title_pl": "Seedream 5 Pro — ByteDance",
+    "title_en": "Seedream 5 Pro — ByteDance",
+    "link": "ai-releases.html#ep-##28-2",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##28-2"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "ai_search",
     "title_pl": "GPT 5.6 Soul — OpenAI",
     "title_en": "GPT 5.6 Soul — OpenAI",
     "link": "ai-releases.html#ep-##28-1",
@@ -217,6 +137,16 @@ const CALENDAR = [
   },
   {
     "date": "2026-07-08",
+    "type": "ai_search",
+    "title_pl": "GPT Live — OpenAI",
+    "title_en": "GPT Live — OpenAI",
+    "link": "ai-releases.html#ep-##28-2",
+    "meta_pl": "TTS",
+    "meta_en": "TTS",
+    "num": "##28-2"
+  },
+  {
+    "date": "2026-07-08",
     "type": "diamandis",
     "title_pl": "Podcast #269 — Fable 5 Is Back & Govt-Leashed, Altman Offers 5% of OpenAI & AI Grows Conscious | #269",
     "title_en": "Podcast #269 — Fable 5 Is Back & Govt-Leashed, Altman Offers 5% of OpenAI & AI Grows Conscious | #269",
@@ -226,34 +156,64 @@ const CALENDAR = [
     "num": "#269"
   },
   {
-    "date": "2026-07-05",
+    "date": "2026-07-07",
     "type": "ai_search",
-    "title_pl": "LongCat 2.0 — Meituan",
-    "title_en": "LongCat 2.0 — Meituan",
-    "link": "ai-releases.html#ep-##27-1",
-    "meta_pl": "LLM",
-    "meta_en": "LLM",
-    "num": "##27-1"
+    "title_pl": "Muse Image — Meta",
+    "title_en": "Muse Image — Meta",
+    "link": "ai-releases.html#ep-##28-2",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##28-2"
   },
   {
-    "date": "2026-07-05",
+    "date": "2026-07-07",
     "type": "ai_search",
-    "title_pl": "UBTech U1 — UBTech",
-    "title_en": "UBTech U1 — UBTech",
-    "link": "ai-releases.html#ep-##27-1",
-    "meta_pl": "Humanoid Robots",
-    "meta_en": "Humanoid Robots",
-    "num": "##27-1"
+    "title_pl": "Muse Video — Meta",
+    "title_en": "Muse Video — Meta",
+    "link": "ai-releases.html#ep-##28-2",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##28-2"
   },
   {
-    "date": "2026-07-05",
+    "date": "2026-07-07",
     "type": "ai_search",
-    "title_pl": "MusViT — Open-source",
-    "title_en": "MusViT — Open-source",
-    "link": "ai-releases.html#ep-##27-1",
+    "title_pl": "Wan Streamer 0.2 — Wan",
+    "title_en": "Wan Streamer 0.2 — Wan",
+    "link": "ai-releases.html#ep-##28-2",
+    "meta_pl": "Realtime Avatars",
+    "meta_en": "Realtime Avatars",
+    "num": "##28-2"
+  },
+  {
+    "date": "2026-07-07",
+    "type": "ai_search",
+    "title_pl": "ProxyPose — Ruihang Zhang",
+    "title_en": "ProxyPose — Ruihang Zhang",
+    "link": "ai-releases.html#ep-##28-2",
     "meta_pl": "Multimodal",
     "meta_en": "Multimodal",
-    "num": "##27-1"
+    "num": "##28-2"
+  },
+  {
+    "date": "2026-07-06",
+    "type": "ai_search",
+    "title_pl": "Hy3 — Tencent",
+    "title_en": "Hy3 — Tencent",
+    "link": "ai-releases.html#ep-##28-2",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##28-2"
+  },
+  {
+    "date": "2026-07-05",
+    "type": "ai_search",
+    "title_pl": "SeFi image — JM Liu",
+    "title_en": "SeFi image — JM Liu",
+    "link": "ai-releases.html#ep-##28-2",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##28-2"
   },
   {
     "date": "2026-07-05",
@@ -263,16 +223,6 @@ const CALENDAR = [
     "link": "ai-releases.html#ep-##27-1",
     "meta_pl": "LLM",
     "meta_en": "LLM",
-    "num": "##27-1"
-  },
-  {
-    "date": "2026-07-05",
-    "type": "ai_search",
-    "title_pl": "Nano Banana 2 Light — Google",
-    "title_en": "Nano Banana 2 Light — Google",
-    "link": "ai-releases.html#ep-##27-1",
-    "meta_pl": "Image Generation",
-    "meta_en": "Image Generation",
     "num": "##27-1"
   },
   {
@@ -306,6 +256,16 @@ const CALENDAR = [
     "num": "27"
   },
   {
+    "date": "2026-07-04",
+    "type": "ai_search",
+    "title_pl": "LongCat 2.0 — Meituan",
+    "title_en": "LongCat 2.0 — Meituan",
+    "link": "ai-releases.html#ep-##27-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##27-1"
+  },
+  {
     "date": "2026-07-03",
     "type": "lev",
     "title_pl": "Radar — Odcinek 03.07.2026",
@@ -314,6 +274,16 @@ const CALENDAR = [
     "meta_pl": "8 sekcji radar",
     "meta_en": "8 radar sections",
     "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "ai_search",
+    "title_pl": "LingBot World 2 — Robbyant",
+    "title_en": "LingBot World 2 — Robbyant",
+    "link": "ai-releases.html#ep-##28-2",
+    "meta_pl": "World Models",
+    "meta_en": "World Models",
+    "num": "##28-2"
   },
   {
     "date": "2026-07-02",
@@ -334,6 +304,36 @@ const CALENDAR = [
     "meta_pl": "7 tematów",
     "meta_en": "7 topics",
     "num": "#268"
+  },
+  {
+    "date": "2026-06-30",
+    "type": "ai_search",
+    "title_pl": "UBTech U1 — UBTech",
+    "title_en": "UBTech U1 — UBTech",
+    "link": "ai-releases.html#ep-##27-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##27-1"
+  },
+  {
+    "date": "2026-06-30",
+    "type": "ai_search",
+    "title_pl": "MusViT — Open-source",
+    "title_en": "MusViT — Open-source",
+    "link": "ai-releases.html#ep-##27-1",
+    "meta_pl": "Multimodal",
+    "meta_en": "Multimodal",
+    "num": "##27-1"
+  },
+  {
+    "date": "2026-06-30",
+    "type": "ai_search",
+    "title_pl": "Nano Banana 2 Light — Google",
+    "title_en": "Nano Banana 2 Light — Google",
+    "link": "ai-releases.html#ep-##27-1",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##27-1"
   },
   {
     "date": "2026-06-30",
