@@ -2,7 +2,7 @@
 // Each product = separate event on its ACTUAL release date (not episode date)
 // Types: ai_search (product), diamandis (discussion), lev (discussion), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-15 00:11:06 UTC
+// Generated: 2026-07-15 00:15:50 UTC
 
 const CALENDAR = [
   {
@@ -206,6 +206,16 @@ const CALENDAR = [
     "num": "##28-2"
   },
   {
+    "date": "2026-07-06",
+    "type": "ai_search",
+    "title_pl": "Aspire — NVIDIA",
+    "title_en": "Aspire — NVIDIA",
+    "link": "ai-releases.html#ep-##27-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##27-1"
+  },
+  {
     "date": "2026-07-05",
     "type": "ai_search",
     "title_pl": "SeFi image — JM Liu",
@@ -214,26 +224,6 @@ const CALENDAR = [
     "meta_pl": "Image Generation",
     "meta_en": "Image Generation",
     "num": "##28-2"
-  },
-  {
-    "date": "2026-07-05",
-    "type": "ai_search",
-    "title_pl": "Agents A1 — Open-source",
-    "title_en": "Agents A1 — Open-source",
-    "link": "ai-releases.html#ep-##27-1",
-    "meta_pl": "LLM",
-    "meta_en": "LLM",
-    "num": "##27-1"
-  },
-  {
-    "date": "2026-07-05",
-    "type": "ai_search",
-    "title_pl": "Aspire — NVIDIA",
-    "title_en": "Aspire — NVIDIA",
-    "link": "ai-releases.html#ep-##27-1",
-    "meta_pl": "Humanoid Robots",
-    "meta_en": "Humanoid Robots",
-    "num": "##27-1"
   },
   {
     "date": "2026-07-05",
@@ -344,6 +334,16 @@ const CALENDAR = [
     "meta_pl": "7 tematów",
     "meta_en": "7 topics",
     "num": "#267"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "ai_search",
+    "title_pl": "Agents A1 — Open-source",
+    "title_en": "Agents A1 — Open-source",
+    "link": "ai-releases.html#ep-##27-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##27-1"
   },
   {
     "date": "2026-06-26",

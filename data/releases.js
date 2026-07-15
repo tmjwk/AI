@@ -1,6 +1,4 @@
 // AI Releases — auto-generated from releases.json
-// NIE EDYTUJ RĘCZNIE
-
 const RELEASES = [
   {
     "num": "##28-2",
@@ -522,7 +520,7 @@ const RELEASES = [
       },
       {
         "vendor": "Open-source",
-        "date": "2026-07-05",
+        "date": "2026-06-26",
         "thumbnail": "rankings/releases_thumbs/agents-a1.jpg",
         "review_pl": "35B parametrów — bije Kimi K2.6 i DeepSeek V4 Pro (>1T) na HLE i FrontierScience. Biję nawet GPT 5.5 na niektórych benchmarkach. FP8: 37.7GB, Q4: 21GB. Może być nowym liderem modeli konsumenckich offline.",
         "review_en": "35B params — beats Kimi K2.6 and DeepSeek V4 Pro (>1T) on HLE and FrontierScience. Beats GPT 5.5 on some benchmarks. FP8: 37.7GB, Q4: 21GB. Could be new leader for offline consumer models.",
@@ -560,7 +558,7 @@ const RELEASES = [
       },
       {
         "vendor": "NVIDIA",
-        "date": "2026-07-05",
+        "date": "2026-07-06",
         "thumbnail": "rankings/releases_thumbs/aspire.jpg",
         "review_pl": "Self-improving system dla robotyki — roboty uczą się z nieudanych prób i tworzą reusable skills. Closed loop execution, growing skill library, evolutionary search. Nie jeden policy na zadanie, ale system który się rozwija.",
         "review_en": "Self-improving system for robotics — robots learn from failed attempts and create reusable skills. Closed loop execution, growing skill library, evolutionary search. Not one policy per task, but a system that evolves.",
