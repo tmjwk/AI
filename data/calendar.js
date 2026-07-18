@@ -2,7 +2,7 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-18 05:52:37 UTC
+// Generated: 2026-07-18 06:56:59 UTC
 
 const CALENDAR = [
   {
@@ -40,7 +40,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Kimi K3 — Moonshot AI",
     "title_en": "Kimi K3 — Moonshot AI",
-    "link": "ai-releases.html#ep-##29-1",
+    "link": "ai-releases.html###29-1",
     "meta_pl": "LLM",
     "meta_en": "LLM",
     "num": "##29-1"
@@ -160,7 +160,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Booster T2 — Booster Robotics",
     "title_en": "Booster T2 — Booster Robotics",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "Humanoid Robots",
     "meta_en": "Humanoid Robots",
     "num": "##28-2"
@@ -190,7 +190,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Reve 2.1 — Reve",
     "title_en": "Reve 2.1 — Reve",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "Image Generation",
     "meta_en": "Image Generation",
     "num": "##28-2"
@@ -200,7 +200,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Mira — Mira WM",
     "title_en": "Mira — Mira WM",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "World Models",
     "meta_en": "World Models",
     "num": "##28-2"
@@ -210,7 +210,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Alaya World — Alaya Lab",
     "title_en": "Alaya World — Alaya Lab",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "World Models",
     "meta_en": "World Models",
     "num": "##28-2"
@@ -220,7 +220,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "PixWorld — SenseGen Gao",
     "title_en": "PixWorld — SenseGen Gao",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "3D Generation",
     "meta_en": "3D Generation",
     "num": "##28-2"
@@ -490,7 +490,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Muse Spark 1.1 — Meta",
     "title_en": "Muse Spark 1.1 — Meta",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "LLM",
     "meta_en": "LLM",
     "num": "##28-2"
@@ -500,7 +500,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "ABot World — AMap CVLab",
     "title_en": "ABot World — AMap CVLab",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "World Models",
     "meta_en": "World Models",
     "num": "##28-2"
@@ -510,7 +510,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Seedream 5 Pro — ByteDance",
     "title_en": "Seedream 5 Pro — ByteDance",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "Image Generation",
     "meta_en": "Image Generation",
     "num": "##28-2"
@@ -520,7 +520,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "GPT 5.6 Soul — OpenAI",
     "title_en": "GPT 5.6 Soul — OpenAI",
-    "link": "ai-releases.html#ep-##28-1",
+    "link": "ai-releases.html###28-1",
     "meta_pl": "LLM",
     "meta_en": "LLM",
     "num": "##28-1"
@@ -560,7 +560,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Grok 4.5 — xAI",
     "title_en": "Grok 4.5 — xAI",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "LLM",
     "meta_en": "LLM",
     "num": "##28-2"
@@ -570,7 +570,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "GPT Live — OpenAI",
     "title_en": "GPT Live — OpenAI",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "TTS",
     "meta_en": "TTS",
     "num": "##28-2"
@@ -600,7 +600,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Muse Image — Meta",
     "title_en": "Muse Image — Meta",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "Image Generation",
     "meta_en": "Image Generation",
     "num": "##28-2"
@@ -610,7 +610,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Muse Video — Meta",
     "title_en": "Muse Video — Meta",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "Video Generation",
     "meta_en": "Video Generation",
     "num": "##28-2"
@@ -620,7 +620,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Wan Streamer 0.2 — Wan",
     "title_en": "Wan Streamer 0.2 — Wan",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "Realtime Avatars",
     "meta_en": "Realtime Avatars",
     "num": "##28-2"
@@ -630,7 +630,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "ProxyPose — Ruihang Zhang",
     "title_en": "ProxyPose — Ruihang Zhang",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "Multimodal",
     "meta_en": "Multimodal",
     "num": "##28-2"
@@ -650,7 +650,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Hy3 — Tencent",
     "title_en": "Hy3 — Tencent",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "LLM",
     "meta_en": "LLM",
     "num": "##28-2"
@@ -660,7 +660,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Aspire — NVIDIA",
     "title_en": "Aspire — NVIDIA",
-    "link": "ai-releases.html#ep-##27-1",
+    "link": "ai-releases.html###27-1",
     "meta_pl": "Humanoid Robots",
     "meta_en": "Humanoid Robots",
     "num": "##27-1"
@@ -670,7 +670,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "SeFi image — JM Liu",
     "title_en": "SeFi image — JM Liu",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "Image Generation",
     "meta_en": "Image Generation",
     "num": "##28-2"
@@ -690,7 +690,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "LongCat 2.0 — Meituan",
     "title_en": "LongCat 2.0 — Meituan",
-    "link": "ai-releases.html#ep-##27-1",
+    "link": "ai-releases.html###27-1",
     "meta_pl": "LLM",
     "meta_en": "LLM",
     "num": "##27-1"
@@ -840,7 +840,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "LingBot World 2 — Robbyant",
     "title_en": "LingBot World 2 — Robbyant",
-    "link": "ai-releases.html#ep-##28-2",
+    "link": "ai-releases.html###28-2",
     "meta_pl": "World Models",
     "meta_en": "World Models",
     "num": "##28-2"
@@ -850,7 +850,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Claude Fable 5 (re-release) — Anthropic",
     "title_en": "Claude Fable 5 (re-release) — Anthropic",
-    "link": "ai-releases.html#ep-##27-1",
+    "link": "ai-releases.html###27-1",
     "meta_pl": "LLM",
     "meta_en": "LLM",
     "num": "##27-1"
@@ -880,7 +880,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "UBTech U1 — UBTech",
     "title_en": "UBTech U1 — UBTech",
-    "link": "ai-releases.html#ep-##27-1",
+    "link": "ai-releases.html###27-1",
     "meta_pl": "Humanoid Robots",
     "meta_en": "Humanoid Robots",
     "num": "##27-1"
@@ -890,7 +890,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "MusViT — Open-source",
     "title_en": "MusViT — Open-source",
-    "link": "ai-releases.html#ep-##27-1",
+    "link": "ai-releases.html###27-1",
     "meta_pl": "Multimodal",
     "meta_en": "Multimodal",
     "num": "##27-1"
@@ -900,7 +900,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Nano Banana 2 Light — Google",
     "title_en": "Nano Banana 2 Light — Google",
-    "link": "ai-releases.html#ep-##27-1",
+    "link": "ai-releases.html###27-1",
     "meta_pl": "Image Generation",
     "meta_en": "Image Generation",
     "num": "##27-1"
@@ -910,7 +910,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Comfy MCP — ComfyUI",
     "title_en": "Comfy MCP — ComfyUI",
-    "link": "ai-releases.html#ep-##27-1",
+    "link": "ai-releases.html###27-1",
     "meta_pl": "Coding",
     "meta_en": "Coding",
     "num": "##27-1"
@@ -940,7 +940,7 @@ const CALENDAR = [
     "type": "ai_search",
     "title_pl": "Agents A1 — Open-source",
     "title_en": "Agents A1 — Open-source",
-    "link": "ai-releases.html#ep-##27-1",
+    "link": "ai-releases.html###27-1",
     "meta_pl": "LLM",
     "meta_en": "LLM",
     "num": "##27-1"
