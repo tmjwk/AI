@@ -115,10 +115,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .month-dot[data-type="weekly"]{background:var(--ba)}
 .month-dot[data-type="breaking"]{background:var(--rd)}
 .month-cell-count{font-size:var(--fs-xs);color:var(--hm);font-family:monospace;font-weight:600;margin-top:auto}
-.month-cell-tooltip{position:fixed;z-index:9999;display:none;pointer-events:none;background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:10px 14px;font-size:var(--fs-s);color:var(--fg);box-shadow:0 4px 16px rgba(0,0,0,.5);max-width:320px;min-width:200px;text-align:left}
+.month-cell-tooltip{position:fixed;z-index:9999;display:none;pointer-events:auto;background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:10px 14px;font-size:var(--fs-s);color:var(--fg);box-shadow:0 4px 16px rgba(0,0,0,.5);max-width:320px;min-width:200px;text-align:left}
 .month-cell:hover .month-cell-tooltip{display:block}
-.month-cell-tooltip-title{font-weight:600;color:var(--hp);margin-bottom:4px}
-.month-cell-tooltip-event{font-size:var(--fs-xs);color:var(--hm);margin-bottom:2px;display:flex;align-items:center;gap:4px}
+.month-cell-tooltip:hover{display:block !important}
+.month-cell-tooltip-title{font-weight:600;color:var(--hp);margin-bottom:6px;font-size:var(--fs-s)}
+.month-cell-tooltip-event{font-size:var(--fs-xs);margin-bottom:4px;display:flex;align-items:center;gap:6px;text-decoration:none;color:var(--hm);padding:4px 6px;border-radius:4px;transition:all .15s;cursor:pointer}
+.month-cell-tooltip-event:hover{background:var(--bg);color:var(--ac)}
+.month-cell-tooltip-event .month-dot{flex-shrink:0}
 
 /* Mobile fallback — force timeline on small phones only (≤480px) */
 /* Tablets (481px+) keep month grid available */
@@ -487,7 +490,7 @@ function renderMonthGrid() {
     if (cell.events.length > 0) {
       var tooltipEvents = cell.events.map(function(e) {
         var title = lang === 'en' ? (e.title_en || e.title_pl || '') : (e.title_pl || e.title_en || '');
-        return '<div class="month-cell-tooltip-event"><span class="month-dot" data-type="' + esc(e.type) + '"></span>' + esc(title.substring(0, 60)) + (title.length > 60 ? '...' : '') + '</div>';
+        return '<a href="' + esc(e.link) + '" class="month-cell-tooltip-event"><span class="month-dot" data-type="' + esc(e.type) + '"></span>' + esc(title.substring(0, 60)) + (title.length > 60 ? '...' : '') + '</a>';
       }).join('');
       tooltip = '<div class="month-cell-tooltip"><div class="month-cell-tooltip-title">' + esc(formatDate(cell.date, lang)) + '</div>' + tooltipEvents + '</div>';
     }
@@ -545,7 +548,7 @@ function renderMonthGrid() {
 if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', function() { renderAll(); applyView(); }); } else { renderAll(); applyView(); }
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-47-g322ebf9 · Deploy: <span id="deploy-ts">2026-07-18 04:53:05 UTC</span> · <span id="deploy-hash">v85780779</span>
+v8.9.50-48-g0b257cd · Deploy: <span id="deploy-ts">2026-07-18 04:59:52 UTC</span> · <span id="deploy-hash">v900e9b53</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
