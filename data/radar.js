@@ -1,7 +1,256 @@
-// AI Radar data — V4 auto-generated from radar.json (Nurt 2: bilingual)
-// NIE EDYTUJ RĘCZNIE
-
+// AI Radar — auto-generated from radar.json
 const episodes = [
+  {
+    "id": "ep-2026-07-17",
+    "date": "2026-07-17",
+    "title_pl": "Vulkan i Mojo vs Nvidia CUDA, Kimi K3, Nous Research $75M, PrismML, Thinking Machines Inkling",
+    "title_en": "Vulkan and Mojo vs Nvidia CUDA, Kimi K3, Nous Research $75M, PrismML, Thinking Machines Inkling",
+    "collapsed": false,
+    "sections": [
+      {
+        "id": "s1",
+        "num": "01",
+        "icon": "📊",
+        "title_pl": "LM Arena Leaderboard + Cost Per Intelligence",
+        "title_en": "LM Arena Leaderboard + Cost Per Intelligence",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "LM Arena — Kimi K3 na poziomie Claude Fable",
+            "desc_pl": "Kimi K3 (2.8T parametrów) na pierwszym miejscu w niektórych rankingach. Claude Fable wciąż prowadzi ogólnie.",
+            "desc_en": "Kimi K3 (2.8T params) first place in some rankings. Claude Fable still leads overall.",
+            "tags": [
+              "kimi",
+              "k3",
+              "lm-arena"
+            ],
+            "date": "2026-07-16"
+          },
+          {
+            "title": "Cost Per Intelligence Index",
+            "desc_pl": "artificialanalysis.ai: Kimi K3 < $1/task, Claude Fable ~$3/task. DeepSeek V4 Flash 2-4 cents. Ten sam intelligence, 10× tańszy.",
+            "desc_en": "artificialanalysis.ai: Kimi K3 < $1/task, Claude Fable ~$3/task. DeepSeek V4 Flash 2-4 cents. Same intelligence, 10× cheaper.",
+            "tags": [
+              "cost",
+              "benchmark"
+            ],
+            "date": "2026-07-17"
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "num": "02",
+        "icon": "🚀",
+        "title_pl": "Nowe modele i narzędzia",
+        "title_en": "New models and tools",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "Meta Muse Spark 1.1 dla agentów",
+            "desc_pl": "Multimodal reasoning, 1M context, parallel agents. Outperforms Gemini 3.1 Pro. Tańszy niż Claude.",
+            "desc_en": "Multimodal reasoning, 1M context, parallel agents. Outperforms Gemini 3.1 Pro. Cheaper than Claude.",
+            "tags": [
+              "meta",
+              "muse-spark"
+            ],
+            "date": "2026-07-09"
+          },
+          {
+            "title": "Hermes Cloud — VPS agents w 60 sekund",
+            "desc_pl": "Segmented tool batch dispatch — parallel agents workflows. Zamiast sekwencyjnie, działają równolegle.",
+            "desc_en": "Segmented tool batch dispatch — parallel agents workflows. Instead of sequential, they run in parallel.",
+            "tags": [
+              "hermes",
+              "agents"
+            ],
+            "date": "2026-07-17"
+          },
+          {
+            "title": "PrismML — 27B Qwen na iPhone",
+            "desc_pl": "Kompresja 27B modelu do 4-6GB. iPhone 11+ token/s. Speculative decoding via Spark. Apple w rozmowach o akwizycję.",
+            "desc_en": "27B model compressed to 4-6GB. iPhone 11+ token/s. Speculative decoding via Spark. Apple in acquisition talks.",
+            "tags": [
+              "prismml",
+              "iphone",
+              "apple"
+            ],
+            "date": "2026-07-15"
+          },
+          {
+            "title": "Thinking Machines Inkling — open weight LLM",
+            "desc_pl": "Mira Murati (były CTO OpenAI). 975B MoE (41B active), 1M context. Multimodal, self-tuning. Open weights.",
+            "desc_en": "Mira Murati (former OpenAI CTO). 975B MoE (41B active), 1M context. Multimodal, self-tuning. Open weights.",
+            "tags": [
+              "thinking-machines",
+              "inkling",
+              "mira-murati"
+            ],
+            "date": "2026-07-16"
+          },
+          {
+            "title": "Kimi K3 2.8T-A50B Open Weight",
+            "desc_pl": "Moonshot AI. 2.8T params, $3/$15 per M tok. Open weight. Poziom Claude Fable. Z Chin.",
+            "desc_en": "Moonshot AI. 2.8T params, $3/$15 per M tok. Open weight. Claude Fable level. From China.",
+            "tags": [
+              "kimi",
+              "k3",
+              "moonshot"
+            ],
+            "date": "2026-07-16"
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "num": "03",
+        "icon": "💰",
+        "title_pl": "Pieniądze — kto ma, kto wydaje",
+        "title_en": "Money — who has, who spends",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "Nous Research — $75M at $1.5B valuation",
+            "desc_pl": "Open-source AI lab. Robot Ventures lead. 20-person team. Distributed training over internet.",
+            "desc_en": "Open-source AI lab. Robot Ventures lead. 20-person team. Distributed training over internet.",
+            "tags": [
+              "nous",
+              "funding"
+            ],
+            "date": "2026-07-14"
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "num": "04",
+        "icon": "⚔️",
+        "title_pl": "Vulkan i Mojo vs Nvidia CUDA",
+        "title_en": "Vulkan and Mojo vs Nvidia CUDA",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "Vulkan — cross-platform compute API",
+            "desc_pl": "Z gaming community. Matrix operations na dowolnym CPU/GPU. Khronos Group, Oregon. Koniec monopolu CUDA.",
+            "desc_en": "From gaming community. Matrix operations on any CPU/GPU. Khronos Group, Oregon. End of CUDA monopoly.",
+            "tags": [
+              "vulkan",
+              "khronos",
+              "cuda"
+            ],
+            "date": "2026-07-17"
+          },
+          {
+            "title": "Mojo — Chris Lattner (LLVM, Swift)",
+            "desc_pl": "Python syntax, C performance. 700 linii vs 3000 CUDA. Modular company. Beta → production this fall.",
+            "desc_en": "Python syntax, C performance. 700 lines vs 3000 CUDA. Modular company. Beta → production this fall.",
+            "tags": [
+              "mojo",
+              "modular",
+              "chris-lattner"
+            ],
+            "date": "2026-07-17"
+          },
+          {
+            "title": "llama.cpp vs Ollama vs vLLM",
+            "desc_pl": "llama.cpp (Georgi Gerganov, C++) — portable, GPU/CPU. Ollama — user-friendly, uses llama.cpp. vLLM — production, long context.",
+            "desc_en": "llama.cpp (Georgi Gerganov, C++) — portable, GPU/CPU. Ollama — user-friendly, uses llama.cpp. vLLM — production, long context.",
+            "tags": [
+              "llama-cpp",
+              "ollama",
+              "vllm"
+            ],
+            "date": "2026-07-17"
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "num": "05",
+        "icon": "📰",
+        "title_pl": "News i事件",
+        "title_en": "News and events",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "Suno source code hack",
+            "desc_pl": "Haker ukradł source code Suno. Ujawnił jak Suno scrape'ował muzykę z YouTube, Deezer, Genius.",
+            "desc_en": "Hacker stole Suno source code. Revealed how Suno scraped music from YouTube, Deezer, Genius.",
+            "tags": [
+              "suno",
+              "hack",
+              "security"
+            ],
+            "date": "2026-07-16"
+          },
+          {
+            "title": "Anaconda kupuje Kilo Code",
+            "desc_pl": "Open-source AI coding agent, 3M+ developers. Anaconda z Texas. VS Code, JetBrains, CLI. 500+ models.",
+            "desc_en": "Open-source AI coding agent, 3M+ developers. Anaconda from Texas. VS Code, JetBrains, CLI. 500+ models.",
+            "tags": [
+              "anaconda",
+              "kilo-code",
+              "acquisition"
+            ],
+            "date": "2026-07-16"
+          },
+          {
+            "title": "Anthropic przepisał Bun z Zig do Rust",
+            "desc_pl": "11 dni, 64 parallel Claude agents. 500K lines of code. $165K simulated cost. 128 bugs fixed.",
+            "desc_en": "11 days, 64 parallel Claude agents. 500K lines of code. $165K simulated cost. 128 bugs fixed.",
+            "tags": [
+              "anthropic",
+              "bun",
+              "rust"
+            ],
+            "date": "2026-07-17"
+          },
+          {
+            "title": "11 Labs — $600M annual revenue",
+            "desc_pl": "Voice cloning, TTS. Najlepszy system multi-language. Szybki wzrost.",
+            "desc_en": "Voice cloning, TTS. Best multi-language system. Fast growth.",
+            "tags": [
+              "11labs",
+              "tts",
+              "revenue"
+            ],
+            "date": "2026-07-17"
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "num": "06",
+        "icon": "📋",
+        "title_pl": "Rynek pracy — layoffs",
+        "title_en": "Job market — layoffs",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "Xbox cut 50% jobs — 14 layers of management",
+            "desc_pl": "Flatten org structure. 14 warstw zarządzania w niektórych działach.",
+            "desc_en": "Flatten org structure. 14 layers of management in some divisions.",
+            "tags": [
+              "xbox",
+              "layoffs"
+            ],
+            "date": "2026-07-17"
+          },
+          {
+            "title": "Gartner: 80% AI layoffs fail",
+            "desc_pl": "Firmy które zwolniły ludzi dla AI — rehiring. AI jako amplification, nie replacement.",
+            "desc_en": "Companies that fired people for AI — rehiring. AI as amplification, not replacement.",
+            "tags": [
+              "gartner",
+              "layoffs",
+              "ai"
+            ],
+            "date": "2026-07-17"
+          }
+        ]
+      }
+    ]
+  },
   {
     "id": "ep-2026-07-10",
     "date": "2026-07-10",
@@ -1884,199 +2133,5 @@ const episodes = [
     ],
     "title_pl": "Odcinek 26.06.2026",
     "title_en": "Episode 06/26/2026"
-  }
-];
-
-const sticky = [
-  {
-    "id": "possible",
-    "num": 2,
-    "icon": "⚡",
-    "type": "list",
-    "items": [
-      {
-        "dot_color": "green",
-        "html_pl": "<strong>open-source od alibaba</strong> — buduje wirtualny świat wewnątrz ai do symulacji środowiska agentowego.",
-        "html_en": "<strong>open-source from alibaba</strong> — builds virtual world inside ai to simulate agentic environment.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "otwartoźródłowy, agentowy model moe do kodowania (9b-397b), obudowa (harness) wbudowana w wagi modelu. pokonuje najnowocześniejsze modele komercyjne. ",
-        "html_en": "open-source agentic coding moe (9b-397b), harness trained into model weights. beats frontier models. $100m funding, santa clara.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "<strong>25,000 oszustów bombardsowali modele anthropic, zbierając q&a pary do treningu chińskich modeli</strong> — id wymagane dla darmowych kont. nie wdrożone jeszcze.",
-        "html_en": "<strong>25,000 fraudsters bombarded anthropic models, collecting q&a pairs for training chinese models</strong> — id required for free accounts. not implemented yet.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "<strong>rząd i duże firmy mają dostęp do najnowszych modeli (gpt 5</strong> — najlepsze modele w open-source.",
-        "html_en": "<strong>government and big companies have access to latest models (gpt 5</strong> — best models in open-source.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "1. uruchom podagenty 2. napisz mi specyfikację wdrożeniową 3. przeprowadź ze mną wywiad na temat projektu 4. zweryfikuj, zanim zbudujesz 5. zbuduj mi ",
-        "html_en": "1. launch sub agents  2. write me an implementation spec  3. interview me about the project  4. verify before you build  5. build me a skill  6. autom",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "<strong>langchain: over-abstraction (8 poziomów), docs nie matchują kodu, breaking changes</strong> — agent harness z planowaniem i sub-agentami.",
-        "html_en": "<strong>langchain: over-abstraction (8 levels), docs don't match code, breaking changes</strong> — agent harness with planning and sub-agents.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "<strong>open-source alternatywa dla claude tag</strong> — działa ze slack, whatsapp i dowolnym modelem (nie tylko claude). własny copilot.",
-        "html_en": "<strong>open-source alternative to claude tag</strong> — works with slack, whatsapp and any model (not just claude). own copilot.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "<strong>open-source narzędzie deepseek</strong> — draft model przewiduje bloki tokenów naraz. do 85% szybciej dla deepseek v4, działa z qwen i gemma.",
-        "html_en": "<strong>open-source tool from deepseek</strong> — draft model predicts a block of tokens at once. up to 85% faster for deepseek v4, works with qwen and gemma.",
-        "episode_id": "ep-2026-07-03"
-      },
-      {
-        "dot_color": "green",
-        "html_pl": "x wydał serwer mcp (model context protocol) do zapytań o dane z twittera. oprogramowanie jest darmowe, ale dostęp do danych jest płatny.",
-        "html_en": "x released mcp server for querying twitter data. software free, but data access paid.",
-        "episode_id": "ep-2026-07-03"
-      }
-    ],
-    "title_pl": "CO JEST OBECNIE MOŻLIWE",
-    "title_en": "WHAT IS CURRENTLY POSSIBLE"
-  },
-  {
-    "id": "benchmarks",
-    "num": 6,
-    "icon": "🏆",
-    "type": "table",
-    "headers": [
-      "Rank",
-      "Model",
-      "Score",
-      "Status"
-    ],
-    "rows": [
-      [
-        1,
-        "Claude Fable 5",
-        1564,
-        {
-          "tag": {
-            "color": "green",
-            "text": "Active"
-          }
-        }
-      ],
-      [
-        2,
-        "Claude Opus 4.8 (thinking)",
-        1552,
-        {
-          "tag": {
-            "color": "green",
-            "text": "Active"
-          }
-        }
-      ],
-      [
-        3,
-        "Muse Spark (Meta)",
-        1550,
-        {
-          "tag": {
-            "color": "green",
-            "text": "Active"
-          }
-        }
-      ],
-      [
-        4,
-        "Claude Opus 4.7",
-        1550,
-        {
-          "tag": {
-            "color": "green",
-            "text": "Active"
-          }
-        }
-      ],
-      [
-        5,
-        "Claude Opus 4.6",
-        1547,
-        {
-          "tag": {
-            "color": "green",
-            "text": "Active"
-          }
-        }
-      ],
-      [
-        6,
-        "Qwen 3.7 max",
-        1541,
-        {
-          "tag": {
-            "color": "green",
-            "text": "Open"
-          }
-        }
-      ],
-      [
-        7,
-        "GLM-5.2",
-        1534,
-        {
-          "tag": {
-            "color": "green",
-            "text": "Open"
-          }
-        }
-      ],
-      [
-        8,
-        "Gemini",
-        1523,
-        {
-          "tag": {
-            "color": "green",
-            "text": "Active"
-          }
-        }
-      ],
-      [
-        9,
-        "GPT 5.5",
-        1518,
-        {
-          "tag": {
-            "color": "green",
-            "text": "Active"
-          }
-        }
-      ],
-      [
-        10,
-        "GPT 5.6",
-        "preliminary",
-        {
-          "tag": {
-            "color": "orange",
-            "text": "New"
-          }
-        }
-      ]
-    ],
-    "note": "Źródło: LM Arena (lmarena.ai) · Data: 10.07.2026",
-    "title_pl": "LM ARENA — RANKINGI (10.07.2026)",
-    "title_en": "LM ARENA — RANKINGS (07.10.2026)"
   }
 ];

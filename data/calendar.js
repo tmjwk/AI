@@ -2,9 +2,19 @@
 // Each product = separate event on its ACTUAL release date (not episode date)
 // Types: ai_search (product), diamandis (discussion), lev (discussion), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-18 02:18:12 UTC
+// Generated: 2026-07-18 02:34:58 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-07-17",
+    "type": "lev",
+    "title_pl": "Radar — Vulkan i Mojo vs Nvidia CUDA, Kimi K3, Nous Research $75M, PrismML, Thinking Machines Inkling",
+    "title_en": "Radar — Vulkan and Mojo vs Nvidia CUDA, Kimi K3, Nous Research $75M, PrismML, Thinking Machines Inkling",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "8 sekcji radar",
+    "meta_en": "8 radar sections",
+    "num": "ep-2026-07-17"
+  },
   {
     "date": "2026-07-16",
     "type": "ai_search",
