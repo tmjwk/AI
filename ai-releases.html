@@ -217,10 +217,11 @@ document.addEventListener('click',function(e){
   }
 });
 
-if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',renderAll)}else{renderAll()}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',function(){renderAll();handleHashExpand()})}else{renderAll();handleHashExpand()}
+function handleHashExpand(){if(!location.hash)return;var h=location.hash.substring(1);setTimeout(function(){var ep=document.querySelector('[data-ep-id="'+h+'"]');if(!ep)return;ep.classList.add('open');var btn=ep.querySelector('.ep-toggle');if(btn)btn.innerHTML='<span class="pl">▲ Zwiń</span><span class="en">▲ Collapse</span>';setTimeout(function(){ep.scrollIntoView({behavior:'smooth',block:'start'});ep.style.transition='box-shadow .3s';ep.style.boxShadow='0 0 0 2px var(--ac)';setTimeout(function(){ep.style.boxShadow=''},2000)},200)},500)}
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-52-gccdd11f · Deploy: <span id="deploy-ts">2026-07-18 06:08:48 UTC</span> · <span id="deploy-hash">vb7592a43</span>
+v8.9.50-53-gbb6122c · Deploy: <span id="deploy-ts">2026-07-18 06:38:56 UTC</span> · <span id="deploy-hash">v20eb8ca7</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
