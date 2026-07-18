@@ -490,7 +490,7 @@ function renderMonthGrid() {
     if (cell.events.length > 0) {
       var tooltipEvents = cell.events.map(function(e) {
         var title = lang === 'en' ? (e.title_en || e.title_pl || '') : (e.title_pl || e.title_en || '');
-        return '<a href="' + esc(e.link) + '" class="month-cell-tooltip-event"><span class="month-dot" data-type="' + esc(e.type) + '"></span>' + esc(title.substring(0, 60)) + (title.length > 60 ? '...' : '') + '</a>';
+        return '<a href="' + esc(e.link) + '" class="month-cell-tooltip-event" target="_blank" rel="noopener"><span class="month-dot" data-type="' + esc(e.type) + '"></span>' + esc(title.substring(0, 60)) + (title.length > 60 ? '...' : '') + '</a>';
       }).join('');
       tooltip = '<div class="month-cell-tooltip"><div class="month-cell-tooltip-title">' + esc(formatDate(cell.date, lang)) + '</div>' + tooltipEvents + '</div>';
     }
@@ -527,8 +527,11 @@ function renderMonthGrid() {
   });
 
   // Click on cell with events → switch to list view filtered to that date
+  // BUT: if click is inside tooltip (on a link), don't trigger cell click
   tableEl.querySelectorAll('.month-cell.has-events').forEach(function(cell) {
-    cell.addEventListener('click', function() {
+    cell.addEventListener('click', function(e) {
+      // If click is inside tooltip → let the link work, don't switch views
+      if(e.target.closest('.month-cell-tooltip'))return;
       var date = this.dataset.date;
       // Switch to list view + scroll to that date
       currentView = 'list';
@@ -548,7 +551,7 @@ function renderMonthGrid() {
 if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', function() { renderAll(); applyView(); }); } else { renderAll(); applyView(); }
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-51-gf87be67 · Deploy: <span id="deploy-ts">2026-07-18 06:00:02 UTC</span> · <span id="deploy-hash">v900e9b53</span>
+v8.9.50-52-gccdd11f · Deploy: <span id="deploy-ts">2026-07-18 06:08:48 UTC</span> · <span id="deploy-hash">v9688daaf</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
