@@ -123,7 +123,8 @@ const episodes = [
                 "label": "BenchLM",
                 "url": "https://benchlm.ai"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-lm-arena-kimi-k3-na-poziomie-claude-fabl"
           },
           {
             "title": "Cost Per Intelligence Index",
@@ -139,7 +140,8 @@ const episodes = [
                 "label": "Artificial Analysis",
                 "url": "https://artificialanalysis.ai"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-cost-per-intelligence-index"
           }
         ]
       },
@@ -165,7 +167,8 @@ const episodes = [
                 "label": "Meta AI",
                 "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-meta-muse-spark-1-1-dla-agent-w"
           },
           {
             "title": "Hermes Cloud — VPS agents w 60 sekund",
@@ -181,7 +184,8 @@ const episodes = [
                 "label": "Hermes",
                 "url": "https://github.com/nousresearch/hermes"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-hermes-cloud-vps-agents-w-60-sekund"
           },
           {
             "title": "PrismML — 27B Qwen na iPhone",
@@ -198,7 +202,8 @@ const episodes = [
                 "label": "PrismML",
                 "url": "https://prismlm.com"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-prismml-27b-qwen-na-iphone"
           },
           {
             "title": "Thinking Machines Inkling — open weight LLM",
@@ -219,7 +224,8 @@ const episodes = [
                 "label": "Inkling model",
                 "url": "https://www.thinkingmachines.ai/blog/inkling"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-thinking-machines-inkling-open-weight-ll"
           },
           {
             "title": "Kimi K3 2.8T-A50B Open Weight",
@@ -240,7 +246,8 @@ const episodes = [
                 "label": "API",
                 "url": "https://platform.moonshot.ai"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-kimi-k3-2-8t-a50b-open-weight"
           }
         ]
       },
@@ -266,7 +273,8 @@ const episodes = [
                 "label": "Nous Research",
                 "url": "https://nousresearch.org"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-nous-research-75m-at-1-5b-valuation"
           }
         ]
       },
@@ -297,7 +305,8 @@ const episodes = [
                 "label": "GitHub",
                 "url": "https://github.com/KhronosGroup"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-vulkan-cross-platform-compute-api"
           },
           {
             "title": "Mojo — Chris Lattner (LLVM, Swift)",
@@ -318,7 +327,8 @@ const episodes = [
                 "label": "GitHub",
                 "url": "https://github.com/modularml/mojo"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-mojo-chris-lattner-llvm-swift"
           },
           {
             "title": "llama.cpp vs Ollama vs vLLM",
@@ -343,7 +353,8 @@ const episodes = [
                 "label": "vLLM",
                 "url": "https://github.com/vllm-project/vllm"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-llama-cpp-vs-ollama-vs-vllm"
           }
         ]
       },
@@ -374,7 +385,8 @@ const episodes = [
                 "label": "Variety article",
                 "url": "https://variety.com"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-suno-source-code-hack"
           },
           {
             "title": "Anaconda kupuje Kilo Code",
@@ -395,7 +407,8 @@ const episodes = [
                 "label": "Kilo Code",
                 "url": "https://github.com/anthropics/kilo-code"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-anaconda-kupuje-kilo-code"
           },
           {
             "title": "Anthropic przepisał Bun z Zig do Rust",
@@ -416,7 +429,8 @@ const episodes = [
                 "label": "Anthropic",
                 "url": "https://anthropic.com"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-anthropic-przepisa-bun-z-zig-do-rust"
           },
           {
             "title": "11 Labs — $600M annual revenue",
@@ -433,7 +447,8 @@ const episodes = [
                 "label": "11 Labs",
                 "url": "https://elevenlabs.io"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-11-labs-600m-annual-revenue"
           }
         ]
       },
@@ -459,7 +474,8 @@ const episodes = [
                 "label": "News",
                 "url": "https://www.theverge.com"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-xbox-cut-50-jobs-14-layers-of-management"
           },
           {
             "title": "Gartner: 80% AI layoffs fail",
@@ -476,7 +492,8 @@ const episodes = [
                 "label": "Gartner",
                 "url": "https://www.gartner.com"
               }
-            ]
+            ],
+            "id": "ep-2026-07-17-gartner-80-ai-layoffs-fail"
           }
         ]
       }
@@ -606,7 +623,8 @@ const episodes = [
                 "label": "API",
                 "url": "https://developers.openai.com"
               }
-            ]
+            ],
+            "id": "ep-2026-07-10-gpt-5-6-oficjalnie-wydany"
           },
           {
             "title": "Grok (xAI) — konkurent Claude",
@@ -628,7 +646,8 @@ const episodes = [
                 "label": "Grok",
                 "url": "https://grok.com"
               }
-            ]
+            ],
+            "id": "ep-2026-07-10-grok-xai-konkurent-claude"
           },
           {
             "title": "Fable 5 dostępny (promo kończy się 12.07)",
@@ -640,7 +659,8 @@ const episodes = [
                 "text": "Anthropic"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-fable-5-dost-pny-promo-ko-czy-si-12-07"
           },
           {
             "title": "Muse Spark (Meta) — ulepszony",
@@ -652,7 +672,8 @@ const episodes = [
                 "text": "Meta"
               }
             ],
-            "date": "2026-07-09"
+            "date": "2026-07-09",
+            "id": "ep-2026-07-10-muse-spark-meta-ulepszony"
           },
           {
             "title": "Gemini 3.5 Pro — opóźniony do 17.07",
@@ -664,7 +685,8 @@ const episodes = [
                 "text": "Google"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-gemini-3-5-pro-op-niony-do-17-07"
           }
         ]
       },
@@ -700,7 +722,8 @@ const episodes = [
                 "label": "Paper",
                 "url": "https://arxiv.org/abs/2507.00123"
               }
-            ]
+            ],
+            "id": "ep-2026-07-10-deepseek-dspark-speculative-decoding"
           },
           {
             "title": "HY3 Open MoE LLM — $0.10",
@@ -722,7 +745,8 @@ const episodes = [
                 "label": "GitHub",
                 "url": "https://github.com/tencent/Hy3"
               }
-            ]
+            ],
+            "id": "ep-2026-07-10-hy3-open-moe-llm-0-10"
           },
           {
             "title": "DeepSeek V4 Pro vs Fable 5 — koszt Flappy Bird",
@@ -738,7 +762,8 @@ const episodes = [
                 "text": "Cost"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-deepseek-v4-pro-vs-fable-5-koszt-flappy-"
           },
           {
             "title": "Boston Dynamics 5th gen Atlas",
@@ -756,7 +781,8 @@ const episodes = [
                 "label": "Boston Dynamics",
                 "url": "https://bostondynamics.com/atlas"
               }
-            ]
+            ],
+            "id": "ep-2026-07-10-boston-dynamics-5th-gen-atlas"
           },
           {
             "title": "UB humanoid robots — $18,000",
@@ -772,7 +798,8 @@ const episodes = [
                 "text": "Robotyka"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-ub-humanoid-robots-18-000"
           },
           {
             "title": "Mojo language → Qualcomm",
@@ -794,7 +821,8 @@ const episodes = [
                 "label": "Qualcomm",
                 "url": "https://www.qualcomm.com"
               }
-            ]
+            ],
+            "id": "ep-2026-07-10-mojo-language-qualcomm"
           }
         ]
       },
@@ -816,7 +844,8 @@ const episodes = [
                 "text": "Tip"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-claude-md-self-modifying-trick"
           },
           {
             "title": "Model routing — oszczędność 60-90%",
@@ -828,7 +857,8 @@ const episodes = [
                 "text": "Cost"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-model-routing-oszcz-dno-60-90"
           },
           {
             "title": "Karpathy: 3 poziomy AI — web → desktop → org-wide",
@@ -840,7 +870,8 @@ const episodes = [
                 "text": "Agents"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-karpathy-3-poziomy-ai-web-desktop-org-wi"
           },
           {
             "title": "Google OKF — Open Knowledge Format",
@@ -858,7 +889,8 @@ const episodes = [
                 "label": "Google Cloud",
                 "url": "https://cloud.google.com/okf"
               }
-            ]
+            ],
+            "id": "ep-2026-07-10-google-okf-open-knowledge-format"
           },
           {
             "title": "Composio — agenci połączeni z 100+ apps",
@@ -876,7 +908,8 @@ const episodes = [
                 "label": "Composio",
                 "url": "https://composio.dev"
               }
-            ]
+            ],
+            "id": "ep-2026-07-10-composio-agenci-po-czeni-z-100-apps"
           },
           {
             "title": "Japa = LoRA dla world models",
@@ -888,7 +921,8 @@ const episodes = [
                 "text": "Research"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-japa-lora-dla-world-models"
           },
           {
             "title": "10 komponentów AI agent harness",
@@ -900,7 +934,8 @@ const episodes = [
                 "text": "Architecture"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-10-komponent-w-ai-agent-harness"
           }
         ]
       },
@@ -926,7 +961,8 @@ const episodes = [
                 "text": "Robotyka"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-chiny-140-firm-robotycznych-300-modeli"
           },
           {
             "title": "OpenAI zabija Atlas browser",
@@ -944,7 +980,8 @@ const episodes = [
                 "label": "OpenAI",
                 "url": "https://openai.com"
               }
-            ]
+            ],
+            "id": "ep-2026-07-10-openai-zabija-atlas-browser"
           },
           {
             "title": "Anthropic Certified Architect exam",
@@ -956,7 +993,8 @@ const episodes = [
                 "text": "Anthropic"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-anthropic-certified-architect-exam"
           },
           {
             "title": "AI pogłębia lukę kompetencyjną",
@@ -968,7 +1006,8 @@ const episodes = [
                 "text": "Jobs"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-ai-pog-bia-luk-kompetencyjn"
           }
         ]
       },
@@ -990,7 +1029,8 @@ const episodes = [
                 "text": "Podcast"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-joe-rogan-aravind-srinivas-perplexity"
           },
           {
             "title": "Sync — DeepSeek V4 Flash lokalnie",
@@ -1002,7 +1042,8 @@ const episodes = [
                 "text": "Open-source"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-sync-deepseek-v4-flash-lokalnie"
           },
           {
             "title": "Llama.cpp zoptymalizowany Claude Fable (65% szybciej)",
@@ -1014,7 +1055,8 @@ const episodes = [
                 "text": "Open-source"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-llama-cpp-zoptymalizowany-claude-fable-6"
           },
           {
             "title": "Computational archaeology — zwoje z Wezuwiusza",
@@ -1026,7 +1068,8 @@ const episodes = [
                 "text": "AI Science"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-computational-archaeology-zwoje-z-wezuwi"
           },
           {
             "title": "Claude in Chrome — oficjalne rozszerzenie",
@@ -1038,7 +1081,8 @@ const episodes = [
                 "text": "Anthropic"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-claude-in-chrome-oficjalne-rozszerzenie"
           },
           {
             "title": "OpenClaw — Android + iOS",
@@ -1050,7 +1094,8 @@ const episodes = [
                 "text": "Open-source"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "id": "ep-2026-07-10-openclaw-android-ios"
           }
         ]
       },
@@ -1154,7 +1199,8 @@ const episodes = [
                 "label": "Alibaba",
                 "url": "https://github.com/QwenLM"
               }
-            ]
+            ],
+            "id": "ep-2026-07-03-qwen-agent-world-alibaba"
           },
           {
             "title": "Nano Banana v2 Light",
@@ -1170,7 +1216,8 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-06-30",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "id": "ep-2026-07-03-nano-banana-v2-light"
           },
           {
             "title": "Ornith AI",
@@ -1190,7 +1237,8 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "id": "ep-2026-07-03-ornith-ai"
           },
           {
             "title": "CoreWeave AREA",
@@ -1210,7 +1258,8 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "id": "ep-2026-07-03-coreweave-area"
           },
           {
             "title": "Anthropic KYC — 25,000 fraudulent accounts",
@@ -1232,7 +1281,8 @@ const episodes = [
                 "label": "Anthropic",
                 "url": "https://anthropic.com"
               }
-            ]
+            ],
+            "id": "ep-2026-07-03-anthropic-kyc-25-000-fraudulent-accounts"
           },
           {
             "title": "Two-class AI gap",
@@ -1248,7 +1298,8 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "id": "ep-2026-07-03-two-class-ai-gap"
           },
           {
             "title": "6 Power Phrases dla Claude Code",
@@ -1264,7 +1315,8 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "id": "ep-2026-07-03-6-power-phrases-dla-claude-code"
           },
           {
             "title": "Google Open Knowledge Format (OKF)",
@@ -1280,7 +1332,8 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "id": "ep-2026-07-03-google-open-knowledge-format-okf"
           },
           {
             "title": "LangChain umiera — Deep Agents",
@@ -1306,7 +1359,8 @@ const episodes = [
                 "label": "Deep Agents",
                 "url": "https://github.com/langchain-ai/deep-agents"
               }
-            ]
+            ],
+            "id": "ep-2026-07-03-langchain-umiera-deep-agents"
           },
           {
             "title": "Claude Tag — @claude w Slacku",
@@ -1322,7 +1376,8 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "id": "ep-2026-07-03-claude-tag-claude-w-slacku"
           },
           {
             "title": "OpenTag — open-source Claude Tag",
@@ -1338,7 +1393,8 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "id": "ep-2026-07-03-opentag-open-source-claude-tag"
           },
           {
             "title": "Ponytail — rules dla Claude Code",
@@ -1354,7 +1410,8 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "id": "ep-2026-07-03-ponytail-rules-dla-claude-code"
           },
           {
             "title": "Harness Training (Ornith)",
@@ -1370,7 +1427,8 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "id": "ep-2026-07-03-harness-training-ornith"
           },
           {
             "title": "DeepPark — speculative decoding",
@@ -1386,7 +1444,8 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "id": "ep-2026-07-03-deeppark-speculative-decoding"
           },
           {
             "title": "X (Twitter) MCP Server",
@@ -1402,7 +1461,8 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "id": "ep-2026-07-03-x-twitter-mcp-server"
           },
           {
             "title": "Google Gemini SQL 2",
@@ -1418,7 +1478,8 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "id": "ep-2026-07-03-google-gemini-sql-2"
           }
         ],
         "title_pl": "TYDZIEŃ: 26.06 – 03.07",
@@ -1525,7 +1586,8 @@ const episodes = [
             "desc_pl": "Wydano GLM 5.2 — open-sourceowy MoE 745B, który przewyższa flagowe modele w programowaniu. Kosztuje 1/6 ceny GPT-5.5. Zcode (odpowiednik Claude Code) wciąż ustępuje Anthropic.",
             "desc_en": "Released GLM 5.2 — open-source MoE 745B, beats frontier models in coding. 1/6 the cost of GPT-5.5. Zcode (Claude Code analog) still lags Anthropic.",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-z-ai-zhipu-ai"
           },
           {
             "title": "ByteDance",
@@ -1545,7 +1607,8 @@ const episodes = [
             "desc_pl": "3 releasy w 1 tygodniu: Seedance 2.5 (4K video), Seed 2.1 (productivity agent), Dance OPD (unified image). Najbardziej aktywna firma tygodnia.",
             "desc_en": "3 releases in 1 week: Seedance 2.5 (4K video), Seed 2.1 (productivity agent), Dance OPD (unified image). Most active company of the week.",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-bytedance"
           },
           {
             "title": "Sakana AI",
@@ -1565,7 +1628,8 @@ const episodes = [
             "desc_pl": "Fugu Ultra — orchestration layer (nie base model). Koordynuje wiele modeli przez 1 API. Bije Claude Fable na niektórych benchmarkach. $5/$30 API.",
             "desc_en": "Fugu Ultra — orchestration layer (not base model). Coordinates multiple models via 1 API. Beats Claude Fable on some benchmarks. $5/$30 API.",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-sakana-ai"
           },
           {
             "title": "Reflection AI",
@@ -1585,7 +1649,8 @@ const episodes = [
             "desc_pl": "6,3 mld dolarów umowa ze SpaceX — centrum danych Colossus 2, 150 mln dolarów miesięcznie do 2029. Dostęp do GPU NVIDIA GB300. Dołącza do Anthropic, Google, Cursor.",
             "desc_en": "$6.3B deal with SpaceX — Colossus 2 data center, $150M/month until 2029. Access to NVIDIA GB300. Joins Anthropic, Google, Cursor.",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-reflection-ai"
           },
           {
             "title": "Subquadratic",
@@ -1605,7 +1670,8 @@ const episodes = [
             "desc_pl": "Miami startup — 12M token kontekst, 50x szybszy niż FlashAttention, 20x tańszy. Architektura SSA. Hostowane API.",
             "desc_en": "Miami startup — 12M token context, 50x faster than FlashAttention, 20x cheaper. SSA architecture. Hosted API.",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-subquadratic"
           },
           {
             "title": "Lev Selector",
@@ -1625,7 +1691,8 @@ const episodes = [
             "desc_pl": "Ph.D., 40+ lat w oprogramowaniu. Cotygodniowe aktualizacje AI w piątki. 6,96K subskrybentów, 293 filmy. Slides na GitHubie (75 PPTX) + Google Drive.",
             "desc_en": "Ph.D., 40+ years in software. Weekly AI updates every Friday. 6.96K subs, 293 videos. Slides on GitHub (75 PPTX) + Google Drive.",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-lev-selector"
           },
           {
             "title": "Groq — $650M",
@@ -1642,7 +1709,8 @@ const episodes = [
                 "label": "Groq",
                 "url": "https://groq.com"
               }
-            ]
+            ],
+            "id": "ep-2026-06-26-groq-650m"
           },
           {
             "title": "Baseten — $1.5B",
@@ -1659,7 +1727,8 @@ const episodes = [
                 "label": "Baseten",
                 "url": "https://baseten.co"
               }
-            ]
+            ],
+            "id": "ep-2026-06-26-baseten-1-5b"
           },
           {
             "title": "Reflection AI + SpaceX",
@@ -1670,7 +1739,8 @@ const episodes = [
             "desc_pl": "$150M/miesiąc za Colossus 2 data center. Umowa do 2029. NVIDIA GB300 chips. Obok Anthropic, Google, Cursor.",
             "desc_en": "$150M/month for Colossus 2 data center. Contract until 2029. NVIDIA GB300 chips. Alongside Anthropic, Google, Cursor.",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-reflection-ai-spacex"
           },
           {
             "title": "Merge Labs — $250M",
@@ -1681,7 +1751,8 @@ const episodes = [
             "desc_pl": "Seed round prowadzony przez OpenAI. Ultrasound BCI, nieinwazyjny. Alternatywa dla Neuralink.",
             "desc_en": "Seed round led by OpenAI. Ultrasound BCI, non-invasive. Alternative to Neuralink.",
             "date": "2026-06-15",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-merge-labs-250m"
           },
           {
             "title": "📈 Orin Token Price Index — inteligencja jako towar",
@@ -1692,7 +1763,8 @@ const episodes = [
             "desc_pl": "Cena tokenów spadła ~1000x w kilka lat. Od GPT-3 (175B, 2020) do multi-trillion param models (2026). AI może podnieść globalny GDP z dziesiątek bilionów do setek bilionów lub kwadrylionów dolarów.<br><br><strong>GLM 5.2</strong> kosztuje 1/6 GPT-5.5 przy podobnej jakości w programowanie.",
             "desc_en": "Token prices dropped ~1000x in a few years. From GPT-3 (175B, 2020) to multi-trillion param models (2026). AI could raise global GDP from tens of trillions to hundreds of trillions or quadrillions of dollars. <strong>GLM 5.2</strong> costs 1/6 of GPT-5.5 at similar coding quality.",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-orin-token-price-index-inteligencja-jako"
           },
           {
             "title": "Trump Executive Order",
@@ -1709,7 +1781,8 @@ const episodes = [
                 "label": "White House",
                 "url": "https://www.whitehouse.gov"
               }
-            ]
+            ],
+            "id": "ep-2026-06-26-trump-executive-order"
           },
           {
             "title": "Anthropic Fable 5 + Mythos 5 — ban",
@@ -1726,7 +1799,8 @@ const episodes = [
                 "label": "Anthropic",
                 "url": "https://anthropic.com"
               }
-            ]
+            ],
+            "id": "ep-2026-06-26-anthropic-fable-5-mythos-5-ban"
           },
           {
             "title": "OpenAI GPT 5.6 — staggered release",
@@ -1737,7 +1811,8 @@ const episodes = [
             "desc_pl": "Gov poprosił o opóźnienie. Najpierw zaufani partnerzy, customer-by-customer approval. Nie dla broad wdrożenie.",
             "desc_en": "Gov requested delay. First trusted partners, customer-by-customer approval. Not for broad deployment.",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-openai-gpt-5-6-staggered-release"
           },
           {
             "title": "Alibaba — US blacklist",
@@ -1748,7 +1823,8 @@ const episodes = [
             "desc_pl": "Gov orgs nie mogą kontraktować. Od 2027 żadnych usług Alibaba. Powód: kontrola CCP. Jack Ma — $2.8B antitrust fine, IPO suspended, \"disappeared\". Inwestorzy stracili zaufanie do chińskiego biznesu.",
             "desc_en": "Gov orgs cannot contract. From 2027 no Alibaba services. Reason: CCP control. Jack Ma — $2.8B antitrust fine, IPO suspended, \"disappeared\". Investors lost trust in Chinese business.",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-alibaba-us-blacklist"
           },
           {
             "title": "Agent Map-Reduce",
@@ -1759,7 +1835,8 @@ const episodes = [
             "desc_pl": "Orchestrator (dyrygent) rozdziela zadania do podagentów, którzy odsyłają wyniki z powrotem. Coś jak Hadoop/Spark dla agentów. Znane również jako: LLM MapReduce, Agentic MapReduce, Fan-out/fan-in, Agentic wide search.",
             "desc_en": "Orchestrator (conductor) distributes tasks to sub-agents, who send results back. Like Hadoop/Spark for agents. Also known as: LLM MapReduce, Agentic MapReduce, Fan-out/fan-in, Agentic wide search.",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-agent-map-reduce"
           },
           {
             "title": "3-Layer Agent Architecture",
@@ -1770,7 +1847,8 @@ const episodes = [
             "desc_pl": "1. Core runtime (możliwości-agnostic, MCP, lazy loading)<br>2. Shared plugins (skills, MCP servers, hooks)<br>3. Per-client config (thin, bez forków)",
             "desc_en": "1. Core runtime (capability-agnostic, MCP, lazy loading)<br>2. Shared plugins (skills, MCP servers, hooks)<br>3. Per-client config (thin, no forks)",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-3-layer-agent-architecture"
           },
           {
             "title": "Agentic OS — 4 poziomy",
@@ -1781,7 +1859,8 @@ const episodes = [
             "desc_pl": "1. Umiejętności & Automatyzacja (audyt przepływu pracy)<br>2. Pamięć & Stan (Obsidian, strukturalna mapa)<br>3. Interfejs (wizualna otoczka/panel)<br>4. Dystrybucja (pakowanie dla zespołów/klientów)",
             "desc_en": "1. Skills & Automation (workflow audit)<br>2. Memory & State (Obsidian, structured map)<br>3. Interface (visual wrapper/dashboard)<br>4. Distribution (packaging for teams/clients)",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-agentic-os-4-poziomy"
           },
           {
             "title": "Brain in the Middle",
@@ -1792,7 +1871,8 @@ const episodes = [
             "desc_pl": "Klasyczna app: input → custom software → output.<br>Agent app: input → AI agent (skills, MCP) → output. Agent zastępuje całe custom software.",
             "desc_en": "Classic app: input → custom software → output.<br>Agent app: input → AI agent (skills, MCP) → output. Agent replaces entire custom software.",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-brain-in-the-middle"
           },
           {
             "title": "💡 Fable Brain Prompting — 8 instrukcji od Anthropic",
@@ -1803,7 +1883,8 @@ const episodes = [
             "desc_pl": "Fable Brain Prompting — 8 instrukcji od Anthropic dotyczących skutecznej komunikacji z AI.",
             "desc_en": "Fable Brain Prompting — 8 instructions from Anthropic for effective AI communication.",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-fable-brain-prompting-8-instrukcji-od-an"
           },
           {
             "title": "🔧 Harness Engineering — x6 różnica",
@@ -1814,7 +1895,8 @@ const episodes = [
             "desc_pl": "Ten sam model może dać <strong>6x lepsze wyniki</strong> zależnie od otoczka. Kluczowe: kontekst management, memory as hint, tool validation, feedback loops.",
             "desc_en": "The same model can give <strong>6x better results</strong> depending on the harness. Key: context management, memory as hint, tool validation, feedback loops.",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-harness-engineering-x6-r-nica"
           },
           {
             "title": "⏰ Custom Scheduling dla Digital Employee",
@@ -1825,7 +1907,8 @@ const episodes = [
             "desc_pl": "Custom \"mycron\" zamiast system crontab. Browser session persistence, hot-reload (60s), RAND_DELAY (anti-thundering herd), per-minute dedup, isolated per-user logging.",
             "desc_en": "Custom \"mycron\" instead of system crontab. Browser session persistence, hot-reload (60s), RAND_DELAY (anti-thundering herd), per-minute dedup, isolated per-user logging.",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-custom-scheduling-dla-digital-employee"
           },
           {
             "title": "Lev Selector — GitHub (75 PPTX)",
@@ -1877,7 +1960,8 @@ const episodes = [
             "desc_pl": "Wszystkie materiały edukacyjne darmowe na <a href=\"https://github.com/lselector/ml_ai_doc\" style=\"color:var(--bl)\">github.com/lselector/ml_ai_doc</a>",
             "desc_en": "All educational materials free on <a href=\"https://github.com/lselector/ml_ai_doc\" style=\"color:var(--bl)\">github.com/lselector/ml_ai_doc</a>",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-lev-selector-github-75-pptx"
           },
           {
             "title": "Weekly AI Updates — GitHub (seminar/2026)",
@@ -1888,7 +1972,8 @@ const episodes = [
             "desc_pl": "30 plików PPTX z weekly updates 2026: <a href=\"https://github.com/lselector/seminar/tree/master/2026\" style=\"color:var(--bl)\">github.com/lselector/seminar/tree/master/2026</a>",
             "desc_en": "30 PPTX files with weekly updates 2026: <a href=\"https://github.com/lselector/seminar/tree/master/2026\" style=\"color:var(--bl)\">github.com/lselector/seminar/tree/master/2026</a>",
             "date": "2026-06-26",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "id": "ep-2026-06-26-weekly-ai-updates-github-seminar-2026"
           }
         ],
         "title_pl": "TYDZIEŃ: 26.06 – 03.07",

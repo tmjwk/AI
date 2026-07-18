@@ -128,7 +128,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.9.50-49-g47c1e85) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.9.50-50-g6dd546e) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -305,7 +305,8 @@ function renderCard(card){
   const langHint = lang==='pl'?'pl':'en';
   const cardLangClass = lang==='en' ? ' en' : '';
   const linksHtml = (card.links && card.links.length > 0) ? `<div class="card-links" style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap">${card.links.map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener" style="font-size:var(--fs-xs);padding:2px 8px;border:1px solid var(--bd);border-radius:4px;color:var(--hs);text-decoration:none">${esc(l.label)}</a>`).join('')}</div>` : '';
-  return `<div class="card${cardLangClass}"${styleAttr}>
+  const cardId = card.id ? ` id="card-${esc(card.id)}"` : '';
+  return `<div class="card${cardLangClass}"${cardId}${styleAttr}>
 <h3>${card.title}${newBadge}${dateBadge}<span class="card-lang" data-lang="${langHint}" onclick="var c=this.closest('.card');c.classList.toggle('en');this.setAttribute('data-lang',c.classList.contains('en')?'en':'pl')"></span></h3>
 ${descHtml}
 ${codeHtml}
@@ -424,27 +425,45 @@ if (document.readyState === 'loading') {
 // Hash-based expand: if URL has #ep-YYYY-MM-DD, expand that episode + scroll to it
 function handleHashExpand(){
   if(!location.hash)return;
-  var epId=location.hash.substring(1);
+  var hash=location.hash.substring(1);
   setTimeout(function(){
-    var ep=document.querySelector('[data-ep-id="'+epId+'"]');
-    if(!ep)return;
-    // Expand episode
-    if(!ep.classList.contains('open')){
-      var btn=ep.querySelector('.ep-toggle-btn');
-      if(btn)btn.click();
+    // If hash starts with "card-" → scroll to specific card
+    if(hash.indexOf('card-')===0){
+      var cardEl=document.getElementById(hash);
+      if(!cardEl)return;
+      // Find parent episode and expand it
+      var ep=cardEl.closest('.episode');
+      if(ep&&!ep.classList.contains('open')){
+        var btn=ep.querySelector('.ep-toggle-btn');
+        if(btn)btn.click();
+      }
+      // Scroll to card (with sticky header offset)
+      setTimeout(function(){
+        var rect=cardEl.getBoundingClientRect();
+        window.scrollTo({top:window.scrollY+rect.top-100,behavior:'smooth'});
+        // Highlight card briefly
+        cardEl.style.transition='box-shadow .3s';
+        cardEl.style.boxShadow='0 0 0 2px var(--ac)';
+        setTimeout(function(){cardEl.style.boxShadow=''},2000);
+      },300);
+    } else {
+      // Hash is episode ID — expand + scroll to episode
+      var ep=document.querySelector('[data-ep-id="'+hash+'"]');
+      if(!ep)return;
+      if(!ep.classList.contains('open')){
+        var btn=ep.querySelector('.ep-toggle-btn');
+        if(btn)btn.click();
+      }
+      setTimeout(function(){ep.scrollIntoView({behavior:'smooth',block:'start'})},200);
     }
-    // Scroll to episode
-    setTimeout(function(){
-      ep.scrollIntoView({behavior:'smooth',block:'start'});
-    },200);
-  },300);
+  },500);
 }
 
 
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-49-g47c1e85 · Deploy: <span id="deploy-ts">2026-07-18 05:06:09 UTC</span> · <span id="deploy-hash">v7a82db54</span>
+v8.9.50-50-g6dd546e · Deploy: <span id="deploy-ts">2026-07-18 05:52:41 UTC</span> · <span id="deploy-hash">v39463df5</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
