@@ -5,7 +5,7 @@ const episodes = [
     "date": "2026-07-17",
     "title_pl": "Vulkan i Mojo vs Nvidia CUDA, Kimi K3, Nous Research $75M, PrismML, Thinking Machines Inkling",
     "title_en": "Vulkan and Mojo vs Nvidia CUDA, Kimi K3, Nous Research $75M, PrismML, Thinking Machines Inkling",
-    "collapsed": false,
+    "collapsed": true,
     "sections": [
       {
         "id": "s1",
@@ -64,7 +64,7 @@ const episodes = [
               "hermes",
               "agents"
             ],
-            "date": "2026-07-17"
+            "date": "2026-07-15"
           },
           {
             "title": "PrismML — 27B Qwen na iPhone",
@@ -138,7 +138,7 @@ const episodes = [
               "khronos",
               "cuda"
             ],
-            "date": "2026-07-17"
+            "date": "2026-07-10"
           },
           {
             "title": "Mojo — Chris Lattner (LLVM, Swift)",
@@ -149,7 +149,7 @@ const episodes = [
               "modular",
               "chris-lattner"
             ],
-            "date": "2026-07-17"
+            "date": "2026-07-10"
           },
           {
             "title": "llama.cpp vs Ollama vs vLLM",
@@ -203,7 +203,7 @@ const episodes = [
               "bun",
               "rust"
             ],
-            "date": "2026-07-17"
+            "date": "2026-07-10"
           },
           {
             "title": "11 Labs — $600M annual revenue",
@@ -214,7 +214,7 @@ const episodes = [
               "tts",
               "revenue"
             ],
-            "date": "2026-07-17"
+            "date": "2026-07-15"
           }
         ]
       },
@@ -234,7 +234,7 @@ const episodes = [
               "xbox",
               "layoffs"
             ],
-            "date": "2026-07-17"
+            "date": "2026-07-15"
           },
           {
             "title": "Gartner: 80% AI layoffs fail",
@@ -245,7 +245,7 @@ const episodes = [
               "layoffs",
               "ai"
             ],
-            "date": "2026-07-17"
+            "date": "2026-07-15"
           }
         ]
       }
@@ -256,7 +256,7 @@ const episodes = [
     "date": "2026-07-10",
     "title_pl": "Odcinek 10.07.2026",
     "title_en": "Episode 07/10/2026",
-    "collapsed": false,
+    "collapsed": true,
     "sections": [
       {
         "id": "week-2026-07-10",
@@ -276,7 +276,7 @@ const episodes = [
                 "text": "OpenAI"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-09"
           },
           {
             "title": "Grok (xAI) — konkurent Claude",
@@ -350,7 +350,7 @@ const episodes = [
                 "text": "Chiny"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-08"
           },
           {
             "title": "HY3 Open MoE LLM — $0.10",
@@ -390,7 +390,7 @@ const episodes = [
                 "text": "Robotyka"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-07"
           },
           {
             "title": "UB humanoid robots — $18,000",
@@ -476,7 +476,7 @@ const episodes = [
                 "text": "Google"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-06-26"
           },
           {
             "title": "Composio — agenci połączeni z 100+ apps",
@@ -724,7 +724,7 @@ const episodes = [
   {
     "id": "ep-2026-07-03",
     "date": "2026-07-03",
-    "collapsed": false,
+    "collapsed": true,
     "sections": [
       {
         "id": "week-latest",
@@ -749,7 +749,7 @@ const episodes = [
             "code": "",
             "list": [],
             "full_width": false,
-            "date": "2026-07-03",
+            "date": "2026-07-01",
             "episode_id": "ep-2026-07-03"
           },
           {
@@ -765,7 +765,7 @@ const episodes = [
             "code": "",
             "list": [],
             "full_width": false,
-            "date": "2026-07-03",
+            "date": "2026-06-30",
             "episode_id": "ep-2026-07-03"
           },
           {
@@ -1027,7 +1027,7 @@ const episodes = [
             "code": "",
             "list": [],
             "full_width": false,
-            "date": "2026-07-03",
+            "date": "2026-07-01",
             "episode_id": "ep-2026-07-03"
           },
           {
@@ -1043,7 +1043,7 @@ const episodes = [
             "code": "",
             "list": [],
             "full_width": false,
-            "date": "2026-07-03",
+            "date": "2026-06-30",
             "episode_id": "ep-2026-07-03"
           },
           {
@@ -1486,7 +1486,7 @@ const episodes = [
             "full_width": false,
             "desc_pl": "Pivot z producenta chipów na chmurę skoncentrowaną na wnioskowaniu. 6 miesięcy po tym, jak NVIDIA licencjonowała technologię i przejęła CEO.",
             "desc_en": "Pivot from chipmaker to inference-focused cloud. 6 months after NVIDIA licensed the technology and poached the CEO.",
-            "date": "2026-06-26",
+            "date": "2026-06-20",
             "episode_id": "ep-2026-06-26"
           },
           {
@@ -1497,7 +1497,7 @@ const episodes = [
             "full_width": false,
             "desc_pl": "Infrastructure dla AI wnioskowanie. Działa na Google Cloud z NVIDIA GPUs. ~60 pracowników, założona 2019, San Francisco.",
             "desc_en": "Infrastructure for AI inference. Runs on Google Cloud with NVIDIA GPUs. ~60 employees, founded 2019, San Francisco.",
-            "date": "2026-06-26",
+            "date": "2026-06-18",
             "episode_id": "ep-2026-06-26"
           },
           {
@@ -1519,7 +1519,7 @@ const episodes = [
             "full_width": false,
             "desc_pl": "Seed round prowadzony przez OpenAI. Ultrasound BCI, nieinwazyjny. Alternatywa dla Neuralink.",
             "desc_en": "Seed round led by OpenAI. Ultrasound BCI, non-invasive. Alternative to Neuralink.",
-            "date": "2026-06-26",
+            "date": "2026-06-15",
             "episode_id": "ep-2026-06-26"
           },
           {
@@ -1541,7 +1541,7 @@ const episodes = [
             "full_width": false,
             "desc_pl": "Firma musi dać federal government early access (do ~30 dni) do najbardziej zaawansowanych modeli przed publicznym wdrożeniem.",
             "desc_en": "Companies must give federal government early access (up to ~30 days) to most advanced models before public deployment.",
-            "date": "2026-06-26",
+            "date": "2026-06-23",
             "episode_id": "ep-2026-06-26"
           },
           {
@@ -1552,7 +1552,7 @@ const episodes = [
             "full_width": false,
             "desc_pl": "US gov zakazał dostępu 12.06.2026 (export control). Mythos ban zdjęty 27.06 (zaufani partnerzy). Fable nadal offline, brak timeline.",
             "desc_en": "US gov banned access 06.12.2026 (export control). Mythos ban lifted 06.27 (trusted partners). Fable still offline, no timeline.",
-            "date": "2026-06-26",
+            "date": "2026-06-20",
             "episode_id": "ep-2026-06-26"
           },
           {
@@ -1865,7 +1865,7 @@ const episodes = [
             "full_width": false,
             "desc_pl": "Pivot z producenta chipów na chmurę skoncentrowaną na wnioskowaniu. 6 miesięcy po tym, jak NVIDIA licencjonowała technologię i przejęła CEO.",
             "desc_en": "Pivot from chipmaker to inference-focused cloud. 6 months after NVIDIA licensed the technology and poached the CEO.",
-            "date": "2026-06-26",
+            "date": "2026-06-20",
             "episode_id": "ep-2026-06-26"
           },
           {
@@ -1876,7 +1876,7 @@ const episodes = [
             "full_width": false,
             "desc_pl": "Infrastructure dla AI wnioskowanie. Działa na Google Cloud z NVIDIA GPUs. ~60 pracowników, założona 2019, San Francisco.",
             "desc_en": "Infrastructure for AI inference. Runs on Google Cloud with NVIDIA GPUs. ~60 employees, founded 2019, San Francisco.",
-            "date": "2026-06-26",
+            "date": "2026-06-18",
             "episode_id": "ep-2026-06-26"
           },
           {
@@ -1898,7 +1898,7 @@ const episodes = [
             "full_width": false,
             "desc_pl": "Seed round prowadzony przez OpenAI. Ultrasound BCI, nieinwazyjny. Alternatywa dla Neuralink.",
             "desc_en": "Seed round led by OpenAI. Ultrasound BCI, non-invasive. Alternative to Neuralink.",
-            "date": "2026-06-26",
+            "date": "2026-06-15",
             "episode_id": "ep-2026-06-26"
           },
           {
@@ -1930,7 +1930,7 @@ const episodes = [
             "full_width": false,
             "desc_pl": "Firma musi dać federal government early access (do ~30 dni) do najbardziej zaawansowanych modeli przed publicznym wdrożeniem.",
             "desc_en": "Companies must give federal government early access (up to ~30 days) to most advanced models before public deployment.",
-            "date": "2026-06-26",
+            "date": "2026-06-23",
             "episode_id": "ep-2026-06-26"
           },
           {
@@ -1941,7 +1941,7 @@ const episodes = [
             "full_width": false,
             "desc_pl": "US gov zakazał dostępu 12.06.2026 (export control). Mythos ban zdjęty 27.06 (zaufani partnerzy). Fable nadal offline, brak timeline.",
             "desc_en": "US gov banned access 06.12.2026 (export control). Mythos ban lifted 06.27 (trusted partners). Fable still offline, no timeline.",
-            "date": "2026-06-26",
+            "date": "2026-06-20",
             "episode_id": "ep-2026-06-26"
           },
           {

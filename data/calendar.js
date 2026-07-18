@@ -1,10 +1,30 @@
-// AI Calendar — auto-generated from releases (individual items) + episodes + radar + weekly
-// Each product = separate event on its ACTUAL release date (not episode date)
-// Types: ai_search (product), diamandis (discussion), lev (discussion), weekly
+// AI Calendar — auto-generated from releases (items) + radar (cards) + episodes + weekly
+// Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
+// Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-18 02:44:59 UTC
+// Generated: 2026-07-18 03:03:26 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-07-17",
+    "type": "lev",
+    "title_pl": "Cost Per Intelligence Index",
+    "title_en": "Cost Per Intelligence Index",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "LM Arena Leaderboard + Cost Pe",
+    "meta_en": "LM Arena Leaderboard + Cost Pe",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-17",
+    "type": "lev",
+    "title_pl": "llama.cpp vs Ollama vs vLLM",
+    "title_en": "llama.cpp vs Ollama vs vLLM",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "Vulkan i Mojo vs Nvidia CUDA",
+    "meta_en": "Vulkan i Mojo vs Nvidia CUDA",
+    "num": "ep-2026-07-17"
+  },
   {
     "date": "2026-07-17",
     "type": "diamandis",
@@ -16,16 +36,6 @@ const CALENDAR = [
     "num": "#271"
   },
   {
-    "date": "2026-07-17",
-    "type": "lev",
-    "title_pl": "Radar — Vulkan i Mojo vs Nvidia CUDA, Kimi K3, Nous Research $75M, PrismML, Thinking Machines Inkling",
-    "title_en": "Radar — Vulkan and Mojo vs Nvidia CUDA, Kimi K3, Nous Research $75M, PrismML, Thinking Machines Inkling",
-    "link": "ai-radar.html#ep-2026-07-17",
-    "meta_pl": "8 sekcji radar",
-    "meta_en": "8 radar sections",
-    "num": "ep-2026-07-17"
-  },
-  {
     "date": "2026-07-16",
     "type": "ai_search",
     "title_pl": "Kimi K3 — Moonshot AI",
@@ -34,6 +44,116 @@ const CALENDAR = [
     "meta_pl": "LLM",
     "meta_en": "LLM",
     "num": "##29-1"
+  },
+  {
+    "date": "2026-07-16",
+    "type": "lev",
+    "title_pl": "LM Arena — Kimi K3 na poziomie Claude Fable",
+    "title_en": "LM Arena — Kimi K3 na poziomie Claude Fable",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "LM Arena Leaderboard + Cost Pe",
+    "meta_en": "LM Arena Leaderboard + Cost Pe",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-16",
+    "type": "lev",
+    "title_pl": "Thinking Machines Inkling — open weight LLM",
+    "title_en": "Thinking Machines Inkling — open weight LLM",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-16",
+    "type": "lev",
+    "title_pl": "Kimi K3 2.8T-A50B Open Weight",
+    "title_en": "Kimi K3 2.8T-A50B Open Weight",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-16",
+    "type": "lev",
+    "title_pl": "Suno source code hack",
+    "title_en": "Suno source code hack",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "News i事件",
+    "meta_en": "News i事件",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-16",
+    "type": "lev",
+    "title_pl": "Anaconda kupuje Kilo Code",
+    "title_en": "Anaconda kupuje Kilo Code",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "News i事件",
+    "meta_en": "News i事件",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-15",
+    "type": "lev",
+    "title_pl": "Hermes Cloud — VPS agents w 60 sekund",
+    "title_en": "Hermes Cloud — VPS agents w 60 sekund",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-15",
+    "type": "lev",
+    "title_pl": "PrismML — 27B Qwen na iPhone",
+    "title_en": "PrismML — 27B Qwen na iPhone",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-15",
+    "type": "lev",
+    "title_pl": "11 Labs — $600M annual revenue",
+    "title_en": "11 Labs — $600M annual revenue",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "News i事件",
+    "meta_en": "News i事件",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-15",
+    "type": "lev",
+    "title_pl": "Xbox cut 50% jobs — 14 layers of management",
+    "title_en": "Xbox cut 50% jobs — 14 layers of management",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "Rynek pracy — layoffs",
+    "meta_en": "Rynek pracy — layoffs",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-15",
+    "type": "lev",
+    "title_pl": "Gartner: 80% AI layoffs fail",
+    "title_en": "Gartner: 80% AI layoffs fail",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "Rynek pracy — layoffs",
+    "meta_en": "Rynek pracy — layoffs",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-14",
+    "type": "lev",
+    "title_pl": "Nous Research — $75M at $1.5B valuation",
+    "title_en": "Nous Research — $75M at $1.5B valuation",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "Pieniądze — kto ma, kto wydaje",
+    "meta_en": "Pieniądze — kto ma, kto wydaje",
+    "num": "ep-2026-07-17"
   },
   {
     "date": "2026-07-13",
@@ -108,11 +228,261 @@ const CALENDAR = [
   {
     "date": "2026-07-10",
     "type": "lev",
-    "title_pl": "Radar — Odcinek 10.07.2026",
-    "title_en": "Radar — Episode 07/10/2026",
+    "title_pl": "Vulkan — cross-platform compute API",
+    "title_en": "Vulkan — cross-platform compute API",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "Vulkan i Mojo vs Nvidia CUDA",
+    "meta_en": "Vulkan i Mojo vs Nvidia CUDA",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Mojo — Chris Lattner (LLVM, Swift)",
+    "title_en": "Mojo — Chris Lattner (LLVM, Swift)",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "Vulkan i Mojo vs Nvidia CUDA",
+    "meta_en": "Vulkan i Mojo vs Nvidia CUDA",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Anthropic przepisał Bun z Zig do Rust",
+    "title_en": "Anthropic przepisał Bun z Zig do Rust",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "News i事件",
+    "meta_en": "News i事件",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Grok (xAI) — konkurent Claude",
+    "title_en": "Grok (xAI) — konkurent Claude",
     "link": "ai-radar.html#ep-2026-07-10",
-    "meta_pl": "8 sekcji radar",
-    "meta_en": "8 radar sections",
+    "meta_pl": "TYDZIEŃ: 04.07 – 10.07",
+    "meta_en": "TYDZIEŃ: 04.07 – 10.07",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Fable 5 dostępny (promo kończy się 12.07)",
+    "title_en": "Fable 5 dostępny (promo kończy się 12.07)",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "TYDZIEŃ: 04.07 – 10.07",
+    "meta_en": "TYDZIEŃ: 04.07 – 10.07",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Gemini 3.5 Pro — opóźniony do 17.07",
+    "title_en": "Gemini 3.5 Pro — opóźniony do 17.07",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "TYDZIEŃ: 04.07 – 10.07",
+    "meta_en": "TYDZIEŃ: 04.07 – 10.07",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "HY3 Open MoE LLM — $0.10",
+    "title_en": "HY3 Open MoE LLM — $0.10",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "DeepSeek V4 Pro vs Fable 5 — koszt Flappy Bird",
+    "title_en": "DeepSeek V4 Pro vs Fable 5 — koszt Flappy Bird",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "UB humanoid robots — $18,000",
+    "title_en": "UB humanoid robots — $18,000",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Mojo language → Qualcomm",
+    "title_en": "Mojo language → Qualcomm",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Claude.md self-modifying trick",
+    "title_en": "Claude.md self-modifying trick",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Model routing — oszczędność 60-90%",
+    "title_en": "Model routing — oszczędność 60-90%",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Karpathy: 3 poziomy AI — web → desktop → org-wide",
+    "title_en": "Karpathy: 3 poziomy AI — web → desktop → org-wide",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Composio — agenci połączeni z 100+ apps",
+    "title_en": "Composio — agenci połączeni z 100+ apps",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Japa = LoRA dla world models",
+    "title_en": "Japa = LoRA dla world models",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "10 komponentów AI agent harness",
+    "title_en": "10 komponentów AI agent harness",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Chiny: 140 firm robotycznych, 300+ modeli",
+    "title_en": "Chiny: 140 firm robotycznych, 300+ modeli",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "REGULACJE I GEOPOLITYKA",
+    "meta_en": "REGULACJE I GEOPOLITYKA",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "OpenAI zabija Atlas browser",
+    "title_en": "OpenAI zabija Atlas browser",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "REGULACJE I GEOPOLITYKA",
+    "meta_en": "REGULACJE I GEOPOLITYKA",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Anthropic Certified Architect exam",
+    "title_en": "Anthropic Certified Architect exam",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "REGULACJE I GEOPOLITYKA",
+    "meta_en": "REGULACJE I GEOPOLITYKA",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "AI pogłębia lukę kompetencyjną",
+    "title_en": "AI pogłębia lukę kompetencyjną",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "REGULACJE I GEOPOLITYKA",
+    "meta_en": "REGULACJE I GEOPOLITYKA",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Joe Rogan × Aravind Srinivas (Perplexity)",
+    "title_en": "Joe Rogan × Aravind Srinivas (Perplexity)",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "ZASOBY EDUKACYJNE",
+    "meta_en": "ZASOBY EDUKACYJNE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Sync — DeepSeek V4 Flash lokalnie",
+    "title_en": "Sync — DeepSeek V4 Flash lokalnie",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "ZASOBY EDUKACYJNE",
+    "meta_en": "ZASOBY EDUKACYJNE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Llama.cpp zoptymalizowany Claude Fable (65% szybciej)",
+    "title_en": "Llama.cpp zoptymalizowany Claude Fable (65% szybciej)",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "ZASOBY EDUKACYJNE",
+    "meta_en": "ZASOBY EDUKACYJNE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Computational archaeology — zwoje z Wezuwiusza",
+    "title_en": "Computational archaeology — zwoje z Wezuwiusza",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "ZASOBY EDUKACYJNE",
+    "meta_en": "ZASOBY EDUKACYJNE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "Claude in Chrome — oficjalne rozszerzenie",
+    "title_en": "Claude in Chrome — oficjalne rozszerzenie",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "ZASOBY EDUKACYJNE",
+    "meta_en": "ZASOBY EDUKACYJNE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-10",
+    "type": "lev",
+    "title_pl": "OpenClaw — Android + iOS",
+    "title_en": "OpenClaw — Android + iOS",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "ZASOBY EDUKACYJNE",
+    "meta_en": "ZASOBY EDUKACYJNE",
     "num": "ep-2026-07-10"
   },
   {
@@ -156,6 +526,36 @@ const CALENDAR = [
     "num": "##28-1"
   },
   {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Meta Muse Spark 1.1 dla agentów",
+    "title_en": "Meta Muse Spark 1.1 dla agentów",
+    "link": "ai-radar.html#ep-2026-07-17",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "GPT 5.6 oficjalnie wydany",
+    "title_en": "GPT 5.6 oficjalnie wydany",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "TYDZIEŃ: 04.07 – 10.07",
+    "meta_en": "TYDZIEŃ: 04.07 – 10.07",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Muse Spark (Meta) — ulepszony",
+    "title_en": "Muse Spark (Meta) — ulepszony",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "TYDZIEŃ: 04.07 – 10.07",
+    "meta_en": "TYDZIEŃ: 04.07 – 10.07",
+    "num": "ep-2026-07-10"
+  },
+  {
     "date": "2026-07-08",
     "type": "ai_search",
     "title_pl": "Grok 4.5 — xAI",
@@ -174,6 +574,16 @@ const CALENDAR = [
     "meta_pl": "TTS",
     "meta_en": "TTS",
     "num": "##28-2"
+  },
+  {
+    "date": "2026-07-08",
+    "type": "lev",
+    "title_pl": "DeepSeek DSpark — speculative decoding",
+    "title_en": "DeepSeek DSpark — speculative decoding",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-07-10"
   },
   {
     "date": "2026-07-08",
@@ -224,6 +634,16 @@ const CALENDAR = [
     "meta_pl": "Multimodal",
     "meta_en": "Multimodal",
     "num": "##28-2"
+  },
+  {
+    "date": "2026-07-07",
+    "type": "lev",
+    "title_pl": "Boston Dynamics 5th gen Atlas",
+    "title_en": "Boston Dynamics 5th gen Atlas",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-07-10"
   },
   {
     "date": "2026-07-06",
@@ -278,11 +698,281 @@ const CALENDAR = [
   {
     "date": "2026-07-03",
     "type": "lev",
-    "title_pl": "Radar — Odcinek 03.07.2026",
-    "title_en": "Radar — Episode 07/03/2026",
+    "title_pl": "Ornith AI",
+    "title_en": "Ornith AI",
     "link": "ai-radar.html#ep-2026-07-03",
-    "meta_pl": "8 sekcji radar",
-    "meta_en": "8 radar sections",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "CoreWeave AREA",
+    "title_en": "CoreWeave AREA",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "Anthropic KYC — 25,000 fraudulent accounts",
+    "title_en": "Anthropic KYC — 25,000 fraudulent accounts",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "Two-class AI gap",
+    "title_en": "Two-class AI gap",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "6 Power Phrases dla Claude Code",
+    "title_en": "6 Power Phrases dla Claude Code",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "Google Open Knowledge Format (OKF)",
+    "title_en": "Google Open Knowledge Format (OKF)",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "LangChain umiera — Deep Agents",
+    "title_en": "LangChain umiera — Deep Agents",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "Claude Tag — @claude w Slacku",
+    "title_en": "Claude Tag — @claude w Slacku",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "OpenTag — open-source Claude Tag",
+    "title_en": "OpenTag — open-source Claude Tag",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "Ponytail — rules dla Claude Code",
+    "title_en": "Ponytail — rules dla Claude Code",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "Harness Training (Ornith)",
+    "title_en": "Harness Training (Ornith)",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "DeepPark — speculative decoding",
+    "title_en": "DeepPark — speculative decoding",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "X (Twitter) MCP Server",
+    "title_en": "X (Twitter) MCP Server",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "Google Gemini SQL 2",
+    "title_en": "Google Gemini SQL 2",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "Ornith AI",
+    "title_en": "Ornith AI",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "CoreWeave AREA",
+    "title_en": "CoreWeave AREA",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "Anthropic KYC — 25,000 fraudulent accounts",
+    "title_en": "Anthropic KYC — 25,000 fraudulent accounts",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "REGULACJE I GEOPOLITYKA",
+    "meta_en": "REGULACJE I GEOPOLITYKA",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "Two-class AI gap",
+    "title_en": "Two-class AI gap",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "REGULACJE I GEOPOLITYKA",
+    "meta_en": "REGULACJE I GEOPOLITYKA",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "6 Power Phrases dla Claude Code",
+    "title_en": "6 Power Phrases dla Claude Code",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "Google Open Knowledge Format (OKF)",
+    "title_en": "Google Open Knowledge Format (OKF)",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "LangChain umiera — Deep Agents",
+    "title_en": "LangChain umiera — Deep Agents",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "Claude Tag — @claude w Slacku",
+    "title_en": "Claude Tag — @claude w Slacku",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "OpenTag — open-source Claude Tag",
+    "title_en": "OpenTag — open-source Claude Tag",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "Ponytail — rules dla Claude Code",
+    "title_en": "Ponytail — rules dla Claude Code",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "Harness Training (Ornith)",
+    "title_en": "Harness Training (Ornith)",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "DeepPark — speculative decoding",
+    "title_en": "DeepPark — speculative decoding",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "X (Twitter) MCP Server",
+    "title_en": "X (Twitter) MCP Server",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-03",
+    "type": "lev",
+    "title_pl": "Google Gemini SQL 2",
+    "title_en": "Google Gemini SQL 2",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
     "num": "ep-2026-07-03"
   },
   {
@@ -304,6 +994,26 @@ const CALENDAR = [
     "meta_pl": "LLM",
     "meta_en": "LLM",
     "num": "##27-1"
+  },
+  {
+    "date": "2026-07-01",
+    "type": "lev",
+    "title_pl": "Qwen Agent World (Alibaba)",
+    "title_en": "Qwen Agent World (Alibaba)",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-01",
+    "type": "lev",
+    "title_pl": "Qwen Agent World (Alibaba)",
+    "title_en": "Qwen Agent World (Alibaba)",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-07-03"
   },
   {
     "date": "2026-07-01",
@@ -357,6 +1067,26 @@ const CALENDAR = [
   },
   {
     "date": "2026-06-30",
+    "type": "lev",
+    "title_pl": "Nano Banana v2 Light",
+    "title_en": "Nano Banana v2 Light",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-06-30",
+    "type": "lev",
+    "title_pl": "Nano Banana v2 Light",
+    "title_en": "Nano Banana v2 Light",
+    "link": "ai-radar.html#ep-2026-07-03",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-06-30",
     "type": "diamandis",
     "title_pl": "Podcast #267 — US Government Blocks GPT-5.6, Alibaba's AI Theft, and Why OpenAI Is Stalling Their IPO | #267",
     "title_en": "Podcast #267 — US Government Blocks GPT-5.6, Alibaba's AI Theft, and Why OpenAI Is Stalling Their IPO | #267",
@@ -378,11 +1108,491 @@ const CALENDAR = [
   {
     "date": "2026-06-26",
     "type": "lev",
-    "title_pl": "Radar — Odcinek 26.06.2026",
-    "title_en": "Radar — Episode 06/26/2026",
+    "title_pl": "Google OKF — Open Knowledge Format",
+    "title_en": "Google OKF — Open Knowledge Format",
+    "link": "ai-radar.html#ep-2026-07-10",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Z.AI (Zhipu AI)",
+    "title_en": "Z.AI (Zhipu AI)",
     "link": "ai-radar.html#ep-2026-06-26",
-    "meta_pl": "8 sekcji radar",
-    "meta_en": "8 radar sections",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "ByteDance",
+    "title_en": "ByteDance",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Sakana AI",
+    "title_en": "Sakana AI",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Reflection AI",
+    "title_en": "Reflection AI",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Subquadratic",
+    "title_en": "Subquadratic",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Lev Selector",
+    "title_en": "Lev Selector",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Reflection AI + SpaceX",
+    "title_en": "Reflection AI + SpaceX",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "📈 Orin Token Price Index — inteligencja jako towar",
+    "title_en": "📈 Orin Token Price Index — inteligencja jako towar",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "OpenAI GPT 5.6 — staggered release",
+    "title_en": "OpenAI GPT 5.6 — staggered release",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Alibaba — US blacklist",
+    "title_en": "Alibaba — US blacklist",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Agent Map-Reduce",
+    "title_en": "Agent Map-Reduce",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "3-Layer Agent Architecture",
+    "title_en": "3-Layer Agent Architecture",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Agentic OS — 4 poziomy",
+    "title_en": "Agentic OS — 4 poziomy",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Brain in the Middle",
+    "title_en": "Brain in the Middle",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "💡 Fable Brain Prompting — 8 instrukcji od Anthropic",
+    "title_en": "💡 Fable Brain Prompting — 8 instrukcji od Anthropic",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "🔧 Harness Engineering — x6 różnica",
+    "title_en": "🔧 Harness Engineering — x6 różnica",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "⏰ Custom Scheduling dla Digital Employee",
+    "title_en": "⏰ Custom Scheduling dla Digital Employee",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Lev Selector — GitHub (75 PPTX)",
+    "title_en": "Lev Selector — GitHub (75 PPTX)",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Weekly AI Updates — GitHub (seminar/2026)",
+    "title_en": "Weekly AI Updates — GitHub (seminar/2026)",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Z.AI (Zhipu AI)",
+    "title_en": "Z.AI (Zhipu AI)",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "ByteDance",
+    "title_en": "ByteDance",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Sakana AI",
+    "title_en": "Sakana AI",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Reflection AI",
+    "title_en": "Reflection AI",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Subquadratic",
+    "title_en": "Subquadratic",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Lev Selector",
+    "title_en": "Lev Selector",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Reflection AI + SpaceX",
+    "title_en": "Reflection AI + SpaceX",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "PIENIĄDZE — KTO MA, KTO WYDAJE",
+    "meta_en": "PIENIĄDZE — KTO MA, KTO WYDAJE",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "📈 Orin Token Price Index — inteligencja jako towar",
+    "title_en": "📈 Orin Token Price Index — inteligencja jako towar",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "PIENIĄDZE — KTO MA, KTO WYDAJE",
+    "meta_en": "PIENIĄDZE — KTO MA, KTO WYDAJE",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "OpenAI GPT 5.6 — staggered release",
+    "title_en": "OpenAI GPT 5.6 — staggered release",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "REGULACJE I GEOPOLITYKA",
+    "meta_en": "REGULACJE I GEOPOLITYKA",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Alibaba — US blacklist",
+    "title_en": "Alibaba — US blacklist",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "REGULACJE I GEOPOLITYKA",
+    "meta_en": "REGULACJE I GEOPOLITYKA",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Agent Map-Reduce",
+    "title_en": "Agent Map-Reduce",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "3-Layer Agent Architecture",
+    "title_en": "3-Layer Agent Architecture",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Agentic OS — 4 poziomy",
+    "title_en": "Agentic OS — 4 poziomy",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Brain in the Middle",
+    "title_en": "Brain in the Middle",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "💡 Fable Brain Prompting — 8 instrukcji od Anthropic",
+    "title_en": "💡 Fable Brain Prompting — 8 instrukcji od Anthropic",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "🔧 Harness Engineering — x6 różnica",
+    "title_en": "🔧 Harness Engineering — x6 różnica",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "⏰ Custom Scheduling dla Digital Employee",
+    "title_en": "⏰ Custom Scheduling dla Digital Employee",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Lev Selector — GitHub (75 PPTX)",
+    "title_en": "Lev Selector — GitHub (75 PPTX)",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "ZASOBY EDUKACYJNE",
+    "meta_en": "ZASOBY EDUKACYJNE",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-26",
+    "type": "lev",
+    "title_pl": "Weekly AI Updates — GitHub (seminar/2026)",
+    "title_en": "Weekly AI Updates — GitHub (seminar/2026)",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "ZASOBY EDUKACYJNE",
+    "meta_en": "ZASOBY EDUKACYJNE",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-23",
+    "type": "lev",
+    "title_pl": "Trump Executive Order",
+    "title_en": "Trump Executive Order",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-23",
+    "type": "lev",
+    "title_pl": "Trump Executive Order",
+    "title_en": "Trump Executive Order",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "REGULACJE I GEOPOLITYKA",
+    "meta_en": "REGULACJE I GEOPOLITYKA",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-20",
+    "type": "lev",
+    "title_pl": "Groq — $650M",
+    "title_en": "Groq — $650M",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-20",
+    "type": "lev",
+    "title_pl": "Anthropic Fable 5 + Mythos 5 — ban",
+    "title_en": "Anthropic Fable 5 + Mythos 5 — ban",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-20",
+    "type": "lev",
+    "title_pl": "Groq — $650M",
+    "title_en": "Groq — $650M",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "PIENIĄDZE — KTO MA, KTO WYDAJE",
+    "meta_en": "PIENIĄDZE — KTO MA, KTO WYDAJE",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-20",
+    "type": "lev",
+    "title_pl": "Anthropic Fable 5 + Mythos 5 — ban",
+    "title_en": "Anthropic Fable 5 + Mythos 5 — ban",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "REGULACJE I GEOPOLITYKA",
+    "meta_en": "REGULACJE I GEOPOLITYKA",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-18",
+    "type": "lev",
+    "title_pl": "Baseten — $1.5B",
+    "title_en": "Baseten — $1.5B",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-18",
+    "type": "lev",
+    "title_pl": "Baseten — $1.5B",
+    "title_en": "Baseten — $1.5B",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "PIENIĄDZE — KTO MA, KTO WYDAJE",
+    "meta_en": "PIENIĄDZE — KTO MA, KTO WYDAJE",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-15",
+    "type": "lev",
+    "title_pl": "Merge Labs — $250M",
+    "title_en": "Merge Labs — $250M",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-06-15",
+    "type": "lev",
+    "title_pl": "Merge Labs — $250M",
+    "title_en": "Merge Labs — $250M",
+    "link": "ai-radar.html#ep-2026-06-26",
+    "meta_pl": "PIENIĄDZE — KTO MA, KTO WYDAJE",
+    "meta_en": "PIENIĄDZE — KTO MA, KTO WYDAJE",
     "num": "ep-2026-06-26"
   }
 ];
