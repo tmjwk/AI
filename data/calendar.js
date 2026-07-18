@@ -2,9 +2,19 @@
 // Each product = separate event on its ACTUAL release date (not episode date)
 // Types: ai_search (product), diamandis (discussion), lev (discussion), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-15 00:26:41 UTC
+// Generated: 2026-07-18 02:18:12 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-07-16",
+    "type": "ai_search",
+    "title_pl": "Kimi K3 — Moonshot AI",
+    "title_en": "Kimi K3 — Moonshot AI",
+    "link": "ai-releases.html#ep-##29-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##29-1"
+  },
   {
     "date": "2026-07-13",
     "type": "ai_search",

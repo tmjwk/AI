@@ -1,6 +1,47 @@
 // AI Releases — auto-generated from releases.json
 const RELEASES = [
   {
+    "num": "##29-1",
+    "date": "2026-07-17",
+    "title_pl": "Kimi K3 — najlepszy open source model, poziom Fable",
+    "title_en": "Kimi K3 — best open source model, Fable level",
+    "yt": "bEnE5pbpe_Q",
+    "collapsed": false,
+    "items": [
+      {
+        "title_pl": "Kimi K3",
+        "title_en": "Kimi K3",
+        "vendor": "Moonshot AI",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-07-16",
+        "thumbnail": "https://i.ytimg.com/vi/bEnE5pbpe_Q/hqdefault.jpg",
+        "review_pl": "Najlepszy open source model AI. 2.7T parametrów (MoE), 1M context. Built na Kimi Delta Intention i Attention Residuals. SWE-bench: blisko Fable 5 i GPT 5.6, 20-punktowa przewaga nad konkurencją. Biję GPT 5.6 na AI Briefcase, Automation Bench, Spreadsheet Bench, Browse Comp. Hallucination rate: 51% (mniej niż GPT 5.6 i Fable 5). Code Arena: bije Fable 5 i GPT 5.6 w front-end web dev. Najtańszy frontier model — tańszy od GPT 5.6 i Fable 5. Open source weights do 27.07.2026. Testy AI Search: liquid physics simulator (40 min, 1 prompt), Blender v8 engine, financial explainer NVIDIA Q2 ($81.6B revenue, +85% YoY), 3D model test, mecha shooter, music composition, cancer detection (nie przeszedł frog test). Deep research: 20 min, profesjonalny raport z tabelami. Najlepszy model do video game development — visual tastes lepsze niż Claude/GPT.",
+        "review_en": "Best open source AI model. 2.7T params (MoE), 1M context. Built on Kimi Delta Intention and Attention Residuals. SWE-bench: close to Fable 5 and GPT 5.6, 20-point lead over competition. Beats GPT 5.6 on AI Briefcase, Automation Bench, Spreadsheet Bench, Browse Comp. Hallucination rate: 51% (less than GPT 5.6 and Fable 5). Code Arena: beats Fable 5 and GPT 5.6 in front-end web dev. Cheapest frontier model — cheaper than GPT 5.6 and Fable 5. Open source weights by July 27, 2026. AI Search tests: liquid physics simulator (40 min, 1 prompt), Blender v8 engine, financial explainer NVIDIA Q2 ($81.6B revenue, +85% YoY), 3D model test, mecha shooter, music composition, cancer detection (failed frog test). Deep research: 20 min, professional report with tables. Best model for video game development — visual tastes better than Claude/GPT.",
+        "links": [
+          {
+            "label_pl": "Kimi K3",
+            "label_en": "Kimi K3",
+            "url": "https://www.kimi.com/",
+            "type": "official"
+          },
+          {
+            "label_pl": "Kimi API",
+            "label_en": "Kimi API",
+            "url": "https://platform.moonshot.ai/",
+            "type": "demo"
+          },
+          {
+            "label_pl": "Attention Residual",
+            "label_en": "Attention Residual",
+            "url": "https://youtu.be/2IfAVV7ewO0",
+            "type": "demo"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "num": "##28-2",
     "date": "2026-07-12",
     "title_pl": "GPT 5.6, Grok 4.5, Muse Spark, Hy3 — 17 nowości",
