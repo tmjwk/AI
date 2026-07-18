@@ -128,7 +128,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.9.50-43-gbfce5d4) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.9.50-44-gf55d679) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -304,12 +304,14 @@ function renderCard(card){
   const dateBadge = card.date ? ` <span style="color:var(--hd);font-size:var(--fs-xs);font-family:monospace;margin-left:6px">${card.date}</span>` : '';
   const langHint = lang==='pl'?'pl':'en';
   const cardLangClass = lang==='en' ? ' en' : '';
+  const linksHtml = (card.links && card.links.length > 0) ? `<div class="card-links" style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap">${card.links.map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener" style="font-size:var(--fs-xs);padding:2px 8px;border:1px solid var(--bd);border-radius:4px;color:var(--hs);text-decoration:none">${esc(l.label)}</a>`).join('')}</div>` : '';
   return `<div class="card${cardLangClass}"${styleAttr}>
 <h3>${card.title}${newBadge}${dateBadge}<span class="card-lang" data-lang="${langHint}" onclick="var c=this.closest('.card');c.classList.toggle('en');this.setAttribute('data-lang',c.classList.contains('en')?'en':'pl')"></span></h3>
 ${descHtml}
 ${codeHtml}
 ${tagsHtml ? `<p style="margin:0">${tagsHtml}</p>` : ''}
 ${listHtml}
+${linksHtml}
 </div>`;
 }
 
@@ -334,7 +336,8 @@ function renderSection(sec){
       return `<tr>${cells}</tr>`;
     }).join('');
     body = `<table class="table">${headerRow}<tbody>${bodyRows}</tbody></table>`;
-    if (sec.note) body += `<p style="font-size:var(--fs-s);color:var(--hd);margin-top:8px">${sec.note}</p>`;
+    if (sec.notes_pl || sec.notes_en) body += `<p style="font-size:var(--fs-s);color:var(--hd);margin-top:8px"><span class="pl">${esc(sec.notes_pl||'')}</span><span class="en">${esc(sec.notes_en||sec.notes_pl||'')}</span></p>`;
+    else if (sec.note) body += `<p style="font-size:var(--fs-s);color:var(--hd);margin-top:8px">${sec.note}</p>`;
   }
 
   return `<div class="sec" id="${sec.id}">
@@ -422,7 +425,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-43-gbfce5d4 · Deploy: <span id="deploy-ts">2026-07-18 03:03:28 UTC</span> · <span id="deploy-hash">v7f9a3921</span>
+v8.9.50-44-gf55d679 · Deploy: <span id="deploy-ts">2026-07-18 03:17:39 UTC</span> · <span id="deploy-hash">v230ee1f4</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
