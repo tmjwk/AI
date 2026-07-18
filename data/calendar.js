@@ -2,9 +2,19 @@
 // Each product = separate event on its ACTUAL release date (not episode date)
 // Types: ai_search (product), diamandis (discussion), lev (discussion), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-18 02:34:58 UTC
+// Generated: 2026-07-18 02:44:59 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-07-17",
+    "type": "diamandis",
+    "title_pl": "Podcast #271 — Model 975B Miry Murati, Ramin Hasani o post-transformer AI, Demis i AI FINRA | #271",
+    "title_en": "Podcast #271 — Mira Murati's 975B Open Model, Ramin Hasani on Post-Transformer AI, and Demis' AI FINRA | #271",
+    "link": "ai-pulse.html#271",
+    "meta_pl": "9 tematów",
+    "meta_en": "9 topics",
+    "num": "#271"
+  },
   {
     "date": "2026-07-17",
     "type": "lev",

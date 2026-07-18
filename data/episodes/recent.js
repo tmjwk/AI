@@ -1,5 +1,307 @@
 const RECENT_EPISODES = [
   {
+    "num": "#271",
+    "collapsed": false,
+    "channel": "Diamandis Moonshots",
+    "title": "Mira Murati's 975B Open Model, Ramin Hasani on Post-Transformer AI, and Demis' AI FINRA | EP #271",
+    "title_pl": "Model 975B Miry Murati, Ramin Hasani o post-transformer AI, Demis i AI FINRA | #271",
+    "title_en": "Mira Murati's 975B Open Model, Ramin Hasani on Post-Transformer AI, and Demis' AI FINRA | #271",
+    "date": "2026-07-17",
+    "duration": "120 min",
+    "yt": "bAoXVyibE6Q",
+    "hosts_count_pl": "5 gospodarzy",
+    "hosts_count_en": "5 hosts",
+    "topics_count_pl": "9 tematów",
+    "topics_count_en": "9 topics",
+    "hosts": [
+      {
+        "name": "Peter Diamandis",
+        "dot_color": "var(--hp)",
+        "role_pl": "Glowny host. Abundance evangelist, Founder XPRIZE",
+        "role_en": "Main host. Abundance evangelist, Founder XPRIZE",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Dr. Alexander Wissner-Gross",
+        "dot_color": "var(--hp)",
+        "role_pl": "In-house ASI. Technical perspective. Founder Reified.",
+        "role_en": "In-house ASI. Technical perspective. Founder Reified.",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Dave Blundin",
+        "dot_color": "var(--hp)",
+        "role_pl": "Managing partner of Link Exponential Ventures. VC investor.",
+        "role_en": "Managing partner of Link Exponential Ventures. VC investor.",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Salim Ismail",
+        "dot_color": "var(--hp)",
+        "role_pl": "CEO of OpenExo. Exponential organizations.",
+        "role_en": "CEO of OpenExo. Exponential organizations.",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Ramin Hasani",
+        "dot_color": "var(--hp)",
+        "role_pl": "Guest. Liquid AI co-founder. Post-transformer architecture researcher.",
+        "role_en": "Guest. Liquid AI co-founder. Post-transformer architecture researcher.",
+        "is_guest": true,
+        "is_absent": false
+      }
+    ],
+    "topics": [
+      {
+        "num": "01",
+        "title_pl": "Demis Hassabis i AI FINRA — regulacja frontier AI",
+        "title_en": "Demis Hassabis and AI FINRA — frontier AI regulation",
+        "time": "00:00 – 25:00",
+        "fakty_pl": "Demis Hassabis (CEO DeepMind) wezwal do utworzenia US-led frontier AI standards body modelowanego na FINRA. Sam Altman wczesniej opublikowal op-ed w Financial Times z podobna propozycja. Alex: 'to regulatory capture — Demis probuje utworzyc kartel frontier labs'. Elon (klip z 3 lata temu): 'prawdopodobnie bedzie AI regulatory agency podobna do FAA/FCC'. Problem: gdy incumbenci ustalaja zasady, tworza barrier dla nowych labow. Ramin (Liquid AI): regulacja musi byc capability-based, ale horizon problem — regulacja reaguje wolniej niz AI sie rozwija. Dave: FINRA analogy ma nogi, ale roznice wieksze niz podobienstwa.",
+        "fakty_en": "Demis Hassabis (CEO DeepMind) called for US-led frontier AI standards body modeled on FINRA. Sam Altman previously published op-ed in Financial Times with similar proposal. Alex: 'this is regulatory capture — Demis is trying to form a cartel of frontier labs'. Elon (clip from 3 years ago): 'there will probably be an AI regulatory agency similar to FAA/FCC'. Problem: when incumbents set rules, they create barriers for new labs. Ramin (Liquid AI): regulation must be capability-based, but horizon problem — regulation reacts slower than AI develops. Dave: FINRA analogy has legs, but differences bigger than similarities.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "To regulatory capture. Demis probuje utworzyc kartel frontier labs. W hypercompetitive landscape to budowanie moatu.",
+            "text_en": "This is regulatory capture. Demis is trying to form a cartel of frontier labs. In a hypercompetitive landscape this is building a moat."
+          },
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "FINRA analogy ma nogi, ale roznice wieksze niz podobienstwa. Nie mozesz wyciagnac ludzi z startupu na rok.",
+            "text_en": "FINRA analogy has legs, but differences bigger than similarities. You can't pull people out of a startup for a year."
+          },
+          {
+            "host": "Ramin Hasani",
+            "dot_color": "var(--hp)",
+            "text_pl": "Regulacja musi byc capability-based. Horizon problem — regulacja reaguje wolniej niz AI sie rozwija.",
+            "text_en": "Regulation must be capability-based. Horizon problem — regulation reacts slower than AI develops."
+          }
+        ],
+        "wniosek_pl": "AI regulacja to <strong>50/50 regulatory capture vs safety</strong>. Incumbenci tworza moat, ale non-state actors i tak ignora zasady.",
+        "wniosek_en": "AI regulation is <strong>50/50 regulatory capture vs safety</strong>. Incumbents build moats, but non-state actors ignore rules anyway.",
+        "kontekst_pl": "Sam Altman (Financial Times op-ed) + Demis Hassabis (essay 'A Framework for Frontier AI') — obaj wezwa do regulacji w tym samym tygodniu.",
+        "kontekst_en": "Sam Altman (Financial Times op-ed) + Demis Hassabis (essay 'A Framework for Frontier AI') — both called for regulation in the same week.",
+        "title": "Demis Hassabis i AI FINRA — regulacja frontier AI"
+      },
+      {
+        "num": "02",
+        "title_pl": "Mira Murati — Thinking Machines Inkling 975B open weight",
+        "title_en": "Mira Murati — Thinking Machines Inkling 975B open weight",
+        "time": "25:00 – 40:00",
+        "fakty_pl": "Mira Murati (byly CTO OpenAI) wydana pierwszy model — Inkling. 975B MoE (41B active), 1M context. Open weight — download, fine-tune, run on-prem. Alex: 'slabszy niz GLM 5.2 ktory jest najsilniejszym chińskim open weight'. Ramin: 'model layer nie jest juz miejscem gdzie mozna extract value jesli nie hit frontier'. Customization over leaderboard dominance — Mira stawia na fine-tuning, nie benchmarki. Reinforcement fine-tuning jako nowy paradigm. Dave: 'ludzie chca fine-tune open weight models on their own hardware'.",
+        "fakty_en": "Mira Murati (former OpenAI CTO) released first model — Inkling. 975B MoE (41B active), 1M context. Open weight — download, fine-tune, run on-prem. Alex: 'weaker than GLM 5.2 which is the strongest Chinese open weight'. Ramin: 'model layer is no longer where you can extract value if you don't hit frontier'. Customization over leaderboard dominance — Mira bets on fine-tuning, not benchmarks. Reinforcement fine-tuning as new paradigm. Dave: 'people want to fine-tune open weight models on their own hardware'.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Mira wydana dokladnie to czego rynek potrzebuje. Customization over leaderboard dominance.",
+            "text_en": "Mira shipped exactly what the market needs. Customization over leaderboard dominance."
+          },
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Slabszy niz GLM 5.2. Nie jest najsilniejszym open weight modelem ogolnie.",
+            "text_en": "Weaker than GLM 5.2. Not the strongest open weight model overall."
+          },
+          {
+            "host": "Ramin Hasani",
+            "dot_color": "var(--hp)",
+            "text_pl": "Model layer nie jest juz miejscem gdzie mozna extract value jesli nie hit frontier.",
+            "text_en": "Model layer is no longer where you can extract value if you don't hit frontier."
+          }
+        ],
+        "wniosek_pl": "Inkling = <strong>customization play</strong>, nie frontier play. Mira stawia na fine-tuning + on-prem, nie benchmark dominance.",
+        "wniosek_en": "Inkling = <strong>customization play</strong>, not frontier play. Mira bets on fine-tuning + on-prem, not benchmark dominance.",
+        "kontekst_pl": "Thinking Machines Lab — startup Miry Murati, miliardy dolarow funding. Inkling wydany 16.07.2026.",
+        "kontekst_en": "Thinking Machines Lab — Mira Murati's startup, billions in funding. Inkling released July 16, 2026.",
+        "title": "Mira Murati — Thinking Machines Inkling 975B open weight"
+      },
+      {
+        "num": "03",
+        "title_pl": "Ramin Hasani — Liquid AI i post-transformer architektury",
+        "title_en": "Ramin Hasani — Liquid AI and post-transformer architectures",
+        "time": "40:00 – 55:00",
+        "fakty_pl": "Ramin Hasani (Liquid AI co-founder) gosc episode. Liquid AI = small language models, post-transformer architecture. Specialized models per vertical (finance, e-commerce, biotech). Ramin: 'enterprise applications sa verticalized — budujemy specialized models per vertical'. Liquid AI ma conversations z financial services, e-commerce, biotech. Stochastic games / game theory approach do policy design. Ramin: 'regulacja musi byc adaptive, API-based, driven by benchmarks'. Alex: 'potrzebujemy real-time audits i open evaluation suites'.",
+        "fakty_en": "Ramin Hasani (Liquid AI co-founder) guest on episode. Liquid AI = small language models, post-transformer architecture. Specialized models per vertical (finance, e-commerce, biotech). Ramin: 'enterprise applications are verticalized — we build specialized models per vertical'. Liquid AI has conversations with financial services, e-commerce, biotech. Stochastic games / game theory approach to policy design. Ramin: 'regulation must be adaptive, API-based, driven by benchmarks'. Alex: 'we need real-time audits and open evaluation suites'.",
+        "glosy": [
+          {
+            "host": "Ramin Hasani",
+            "dot_color": "var(--hp)",
+            "text_pl": "Enterprise applications sa verticalized. Budujemy specialized models per vertical — finance, e-commerce, biotech.",
+            "text_en": "Enterprise applications are verticalized. We build specialized models per vertical — finance, e-commerce, biotech."
+          },
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Potrzebujemy real-time audits i open evaluation suites. Inaczej political gatekeeping.",
+            "text_en": "We need real-time audits and open evaluation suites. Otherwise political gatekeeping."
+          }
+        ],
+        "wniosek_pl": "Liquid AI = <strong>post-transformer + vertical specialization</strong>. Nie frontier, ale specialized models dla enterprise.",
+        "wniosek_en": "Liquid AI = <strong>post-transformer + vertical specialization</strong>. Not frontier, but specialized models for enterprise.",
+        "kontekst_pl": "Ramin Hasani — Austrian-Persian, Liquid AI co-founder. Post-transformer architectures (Liquid Neural Networks).",
+        "kontekst_en": "Ramin Hasani — Austrian-Persian, Liquid AI co-founder. Post-transformer architectures (Liquid Neural Networks).",
+        "title": "Ramin Hasani — Liquid AI i post-transformer architektury"
+      },
+      {
+        "num": "04",
+        "title_pl": "Recursive self-improvement — czy ASI sie zbiza?",
+        "title_en": "Recursive self-improvement — is ASI approaching?",
+        "time": "55:00 – 70:00",
+        "fakty_pl": "Peter: 'to najwazniejszy moment w historii ludzkosci'. Recursive self-improvement = AI makes itself smarter, then uses smarter AI to create next gen. OpenAI potwierdzilo ze GPT 5.6 Soul byl uzyty do post-train Luna. Anthropic dzielil sie testami recursive self-improvement. Ramin: 'early evidence of recursive self-improvement w Mythos-level models'. Alex: 'defensive co-scaling — alignment through scaling, nie great man theory'. Ramin: 'about three years ago we published a paper ourselves on this'. Od 10 years to 10 million years — learning to recursive evolution.",
+        "fakty_en": "Peter: 'this is the most important moment in human history'. Recursive self-improvement = AI makes itself smarter, then uses smarter AI to create next gen. OpenAI confirmed GPT 5.6 Soul was used to post-train Luna. Anthropic shared tests of recursive self-improvement. Ramin: 'early evidence of recursive self-improvement in Mythos-level models'. Alex: 'defensive co-scaling — alignment through scaling, not great man theory'. Ramin: 'about three years ago we published a paper ourselves on this'. From 10 years to 10 million years — learning to recursive evolution.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "To najwazniejszy moment w historii ludzkosci. Recursive self-improvement to engine hard takeoff.",
+            "text_en": "This is the most important moment in human history. Recursive self-improvement is the engine of hard takeoff."
+          },
+          {
+            "host": "Ramin Hasani",
+            "dot_color": "var(--hp)",
+            "text_pl": "Early evidence of recursive self-improvement w Mythos-level models. Ale to self-reported data, nie confirmed independently.",
+            "text_en": "Early evidence of recursive self-improvement in Mythos-level models. But this is self-reported data, not independently confirmed."
+          }
+        ],
+        "wniosek_pl": "Recursive self-improvement <strong>pre-ignition event</strong>. OpenAI i Anthropic potwierdzili — ale self-reported.",
+        "wniosek_en": "Recursive self-improvement <strong>pre-ignition event</strong>. OpenAI and Anthropic confirmed — but self-reported.",
+        "kontekst_pl": "GPT 5.6 Soul post-trains Luna (OpenAI potwierdzilo). Anthropic dzielil sie recursive self-improvement tests.",
+        "kontekst_en": "GPT 5.6 Soul post-trains Luna (OpenAI confirmed). Anthropic shared recursive self-improvement tests.",
+        "title": "Recursive self-improvement — czy ASI sie zbiza?"
+      },
+      {
+        "num": "05",
+        "title_pl": "China — open ecosystems always win",
+        "title_en": "China — open ecosystems always win",
+        "time": "20:00 – 25:00",
+        "fakty_pl": "Peter: 'open ecosystems always win throughout history'. US historical strength = open ecosystems. Alex: 'US response is to define permissible ceiling rather than a wall — tying open release ceiling to China's pace'. Perverse incentive: let China win race to greater super intelligence so Western labs can escape regulation. Worst case: best Western researchers move to China. China experiencing biotech boom — could happen in AI. Alex: 'how do we even define capabilities? Worry about regulatory capture of labs themselves'.",
+        "fakty_en": "Peter: 'open ecosystems always win throughout history'. US historical strength = open ecosystems. Alex: 'US response is to define permissible ceiling rather than a wall — tying open release ceiling to China's pace'. Perverse incentive: let China win race to greater super intelligence so Western labs can escape regulation. Worst case: best Western researchers move to China. China experiencing biotech boom — could happen in AI. Alex: 'how do we even define capabilities? Worry about regulatory capture of labs themselves'.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Open ecosystems always win throughout history. US strength = open ecosystems.",
+            "text_en": "Open ecosystems always win throughout history. US strength = open ecosystems."
+          },
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Perverse incentive: let China win race to greater SI so Western labs escape regulation. Worst case: best researchers move to China.",
+            "text_en": "Perverse incentive: let China win race to greater SI so Western labs escape regulation. Worst case: best researchers move to China."
+          }
+        ],
+        "wniosek_pl": "Regulacja AI = <strong>ryzyko dla USA</strong>. China z open ecosystem moze wygrac. Perverse incentive do puszczenia China вперед.",
+        "wniosek_en": "AI regulation = <strong>risk for USA</strong>. China with open ecosystem can win. Perverse incentive to let China advance.",
+        "kontekst_pl": "China biotech boom — podobny pattern moze sie powtorzyc w AI.",
+        "kontekst_en": "China biotech boom — similar pattern could repeat in AI.",
+        "title": "China — open ecosystems always win"
+      },
+      {
+        "num": "06",
+        "title_pl": "Fine-tuning paradigm — reinforcement fine-tuning jako nowy standard",
+        "title_en": "Fine-tuning paradigm — reinforcement fine-tuning as new standard",
+        "time": "35:00 – 45:00",
+        "fakty_pl": "Dave: 'fine-tuning didn't historically increase capabilities, but reinforcement fine-tuning changed that'. People want fine-tuned open weight models on their own hardware. Alex: 'reinforcement fine-tuning — for first time via labeled examples you can increase capabilities'. Dave: 'we've been fine-tuning Qwen all week — huge unlock to bring model in-house with local data'. Ramin: 'model layer not anymore where you extract value if not hitting frontier'. OpenAI started open source → went closed → big revenue. Meta was leader of open → now competing with frontier.",
+        "fakty_en": "Dave: 'fine-tuning didn't historically increase capabilities, but reinforcement fine-tuning changed that'. People want fine-tuned open weight models on their own hardware. Alex: 'reinforcement fine-tuning — for first time via labeled examples you can increase capabilities'. Dave: 'we've been fine-tuning Qwen all week — huge unlock to bring model in-house with local data'. Ramin: 'model layer not anymore where you extract value if not hitting frontier'. OpenAI started open source → went closed → big revenue. Meta was leader of open → now competing with frontier.",
+        "glosy": [
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Fine-tuning historycznie nie zwiekszal capabilities. Reinforcement fine-tuning to zmienilo. Fine-tuning Qwen all week — huge unlock.",
+            "text_en": "Fine-tuning historically didn't increase capabilities. Reinforcement fine-tuning changed that. Fine-tuning Qwen all week — huge unlock."
+          },
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Reinforcement fine-tuning — po raz pierwszy via labeled examples mozna zwiekszyc capabilities.",
+            "text_en": "Reinforcement fine-tuning — for the first time via labeled examples you can increase capabilities."
+          }
+        ],
+        "wniosek_pl": "Reinforcement fine-tuning = <strong>nowy paradigm</strong>. Open weight models + local data + on-prem = huge unlock dla enterprise.",
+        "wniosek_en": "Reinforcement fine-tuning = <strong>new paradigm</strong>. Open weight models + local data + on-prem = huge unlock for enterprise.",
+        "kontekst_pl": "OpenAI: open source → closed → big revenue. Meta: open leader → frontier competitor.",
+        "kontekst_en": "OpenAI: open source → closed → big revenue. Meta: open leader → frontier competitor.",
+        "title": "Fine-tuning paradigm — reinforcement fine-tuning jako nowy standard"
+      },
+      {
+        "num": "07",
+        "title_pl": "Defensive co-scaling — alignment przez scaling",
+        "title_en": "Defensive co-scaling — alignment through scaling",
+        "time": "45:00 – 55:00",
+        "fakty_pl": "Alex: 'defensive co-scaling — borrowed from human alignment. Rather than hoping for great man theory of alignment, scale together'. Focus next 14 years on alignment research — Peter: 'backfire because every alignment capability is actually new capability'. Ramin: 'behavior of models always in system prompt — changes because fundamental reasons this is actually limited'. Liquid AI published paper 3 years ago on this. Pre-ignition event — level one rather than level two.",
+        "fakty_en": "Alex: 'defensive co-scaling — borrowed from human alignment. Rather than hoping for great man theory of alignment, scale together'. Focus next 14 years on alignment research — Peter: 'backfire because every alignment capability is actually new capability'. Ramin: 'behavior of models always in system prompt — changes because fundamental reasons this is actually limited'. Liquid AI published paper 3 years ago on this. Pre-ignition event — level one rather than level two.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Defensive co-scaling — alignment through scaling, nie great man theory. Scale together.",
+            "text_en": "Defensive co-scaling — alignment through scaling, not great man theory. Scale together."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Focus next 14 years on alignment research backfire — every alignment capability is actually new capability.",
+            "text_en": "Focus next 14 years on alignment research backfires — every alignment capability is actually new capability."
+          }
+        ],
+        "wniosek_pl": "Defensive co-scaling = <strong>alignment przez scale, nie przez great man</strong>. Pre-ignition event — level one.",
+        "wniosek_en": "Defensive co-scaling = <strong>alignment through scale, not through great man</strong>. Pre-ignition event — level one.",
+        "kontekst_pl": "Liquid AI opublikowal paper 3 lata temu o recursive self-improvement.",
+        "kontekst_en": "Liquid AI published paper 3 years ago on recursive self-improvement.",
+        "title": "Defensive co-scaling — alignment przez scaling"
+      },
+      {
+        "num": "08",
+        "title_pl": "Kimi K3 — open weight 2.8T z Chin",
+        "title_en": "Kimi K3 — 2.8T open weight from China",
+        "time": "00:00 – 05:00",
+        "fakty_pl": "Kimi K3 (Moonshot AI) — 2.8T parametrów, open weight. Na poziomie Claude Fable w niektorych rankingach. $3/$15 per M tok. Z Chin. Lev Selector omawial w tym samym tygodniu. AI Search zrobil pelny review. Najtanszy frontier model.",
+        "fakty_en": "Kimi K3 (Moonshot AI) — 2.8T params, open weight. Claude Fable level in some rankings. $3/$15 per M tok. From China. Lev Selector discussed same week. AI Search did full review. Cheapest frontier model.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Kimi K3 z Chin — open weight, Fable level. To pokazuje ze China nie potrzebuje Nvidii ani closed labs.",
+            "text_en": "Kimi K3 from China — open weight, Fable level. This shows China doesn't need Nvidia or closed labs."
+          }
+        ],
+        "wniosek_pl": "Kimi K3 = <strong>China догоняет frontier</strong> z open weight. 2.8T params, Fable level, najtanszy.",
+        "wniosek_en": "Kimi K3 = <strong>China catching up to frontier</strong> with open weight. 2.8T params, Fable level, cheapest.",
+        "kontekst_pl": "Patrz rowniez: AI Search review (Kimi K3 midweek), Lev Selector weekly (17.07).",
+        "kontekst_en": "See also: AI Search review (Kimi K3 midweek), Lev Selector weekly (July 17).",
+        "title": "Kimi K3 — open weight 2.8T z Chin"
+      },
+      {
+        "num": "09",
+        "title_pl": "Podsumowanie — singularity accelerating",
+        "title_en": "Summary — singularity accelerating",
+        "time": "70:00 – 120:00",
+        "fakty_pl": "Peter: 'singularity accelerating — recursive self-improvement pre-ignition'. 4 amerykanskie laby na frontier + 2 chinskie. Open weight vs closed — open ecosystems always win. Regulation = regulatory capture risk. Mira Murati customization play. Liquid AI vertical specialization. Kimi K3 — China догоняет. Najwazniejszy moment w historii ludzkosci.",
+        "fakty_en": "Peter: 'singularity accelerating — recursive self-improvement pre-ignition'. 4 American labs at frontier + 2 Chinese. Open weight vs closed — open ecosystems always win. Regulation = regulatory capture risk. Mira Murati customization play. Liquid AI vertical specialization. Kimi K3 — China catching up. Most important moment in human history.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Singularity accelerating. Recursive self-improvement pre-ignition. Najwazniejszy moment w historii ludzkosci.",
+            "text_en": "Singularity accelerating. Recursive self-improvement pre-ignition. Most important moment in human history."
+          }
+        ],
+        "wniosek_pl": "Singularity <strong>accelerating</strong>. Pre-ignition event. Open weight + recursive self-improvement = exponential.",
+        "wniosek_en": "Singularity <strong>accelerating</strong>. Pre-ignition event. Open weight + recursive self-improvement = exponential.",
+        "kontekst_pl": "Odcinek #271 z gosciem Raminem Hasani (Liquid AI). 5 gospodarzy.",
+        "kontekst_en": "Episode #271 with guest Ramin Hasani (Liquid AI). 5 hosts.",
+        "title": "Podsumowanie — singularity accelerating"
+      }
+    ]
+  },
+  {
     "num": "#270",
     "collapsed": false,
     "channel": "Diamandis Moonshots",

@@ -1,6 +1,18 @@
 const EPISODES_INDEX = {
   "episodes": [
     {
+      "num": "#271",
+      "title": "Mira Murati's 975B Open Model, Ramin Hasani on Post-Transformer AI, and Demis' AI FINRA | EP #271",
+      "title_pl": "Model 975B Miry Murati, Ramin Hasani o post-transformer AI, Demis i AI FINRA | #271",
+      "title_en": "Mira Murati's 975B Open Model, Ramin Hasani on Post-Transformer AI, and Demis' AI FINRA | #271",
+      "date": "2026-07-17",
+      "duration": "120 min",
+      "channel": "Diamandis Moonshots",
+      "yt": "bAoXVyibE6Q",
+      "topics_count": 9,
+      "hosts_count": 5
+    },
+    {
       "num": "#270",
       "title": "Grok 4.5 vs GPT-5.6, Apple pozywa OpenAI, a Chiny doganiają Elona | #270",
       "title_pl": "Grok 4.5 vs GPT-5.6, Apple pozywa OpenAI, a Chiny doganiają Elona",
