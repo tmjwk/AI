@@ -8,6 +8,95 @@ const episodes = [
     "collapsed": true,
     "sections": [
       {
+        "id": "s0",
+        "num": "00",
+        "icon": "📊",
+        "title_pl": "LM Arena Leaderboard (stan: 16.07.2026)",
+        "title_en": "LM Arena Leaderboard (as of: July 16, 2026)",
+        "type": "table",
+        "headers": [
+          "#",
+          "Model",
+          "Vendor",
+          "Score",
+          "Zmiana"
+        ],
+        "rows": [
+          [
+            "1",
+            "Claude Fable 5",
+            "Anthropic",
+            "1425",
+            "—"
+          ],
+          [
+            "2",
+            "GPT 5.6 Soul",
+            "OpenAI",
+            "1418",
+            "↑2"
+          ],
+          [
+            "3",
+            "Claude Opus 4.8",
+            "Anthropic",
+            "1402",
+            "↓1"
+          ],
+          [
+            "4",
+            "Kimi K3",
+            "Moonshot AI",
+            "1395",
+            "🆕"
+          ],
+          [
+            "5",
+            "Grok 4.5",
+            "xAI",
+            "1389",
+            "↑3"
+          ],
+          [
+            "6",
+            "Muse Spark 1.1",
+            "Meta",
+            "1372",
+            "↑1"
+          ],
+          [
+            "7",
+            "DeepSeek V4 Pro",
+            "DeepSeek",
+            "1365",
+            "↓2"
+          ],
+          [
+            "8",
+            "GLM-5.2",
+            "Z.AI/Zhipu",
+            "1358",
+            "—"
+          ],
+          [
+            "9",
+            "Gemini 3.1 Pro",
+            "Google",
+            "1345",
+            "↓3"
+          ],
+          [
+            "10",
+            "Qwen 3.6 Plus",
+            "Alibaba",
+            "1338",
+            "—"
+          ]
+        ],
+        "notes_pl": "Kimi K3 #1 w Frontend Code Arena (1679 pkt) — bije Claude Fable 5. Open weight, 2.8T params. Źródło: lmarena.ai, 16.07.2026",
+        "notes_en": "Kimi K3 #1 in Frontend Code Arena (1679 pts) — beats Claude Fable 5. Open weight, 2.8T params. Source: lmarena.ai, July 16, 2026"
+      },
+      {
         "id": "s1",
         "num": "01",
         "icon": "📊",
@@ -24,7 +113,17 @@ const episodes = [
               "k3",
               "lm-arena"
             ],
-            "date": "2026-07-16"
+            "date": "2026-07-16",
+            "links": [
+              {
+                "label": "LM Arena",
+                "url": "https://lmarena.ai"
+              },
+              {
+                "label": "BenchLM",
+                "url": "https://benchlm.ai"
+              }
+            ]
           },
           {
             "title": "Cost Per Intelligence Index",
@@ -34,7 +133,13 @@ const episodes = [
               "cost",
               "benchmark"
             ],
-            "date": "2026-07-17"
+            "date": "2026-07-17",
+            "links": [
+              {
+                "label": "Artificial Analysis",
+                "url": "https://artificialanalysis.ai"
+              }
+            ]
           }
         ]
       },
@@ -54,7 +159,13 @@ const episodes = [
               "meta",
               "muse-spark"
             ],
-            "date": "2026-07-09"
+            "date": "2026-07-09",
+            "links": [
+              {
+                "label": "Meta AI",
+                "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"
+              }
+            ]
           },
           {
             "title": "Hermes Cloud — VPS agents w 60 sekund",
@@ -64,7 +175,13 @@ const episodes = [
               "hermes",
               "agents"
             ],
-            "date": "2026-07-15"
+            "date": "2026-07-15",
+            "links": [
+              {
+                "label": "Hermes",
+                "url": "https://github.com/nousresearch/hermes"
+              }
+            ]
           },
           {
             "title": "PrismML — 27B Qwen na iPhone",
@@ -75,7 +192,13 @@ const episodes = [
               "iphone",
               "apple"
             ],
-            "date": "2026-07-15"
+            "date": "2026-07-15",
+            "links": [
+              {
+                "label": "PrismML",
+                "url": "https://prismlm.com"
+              }
+            ]
           },
           {
             "title": "Thinking Machines Inkling — open weight LLM",
@@ -86,7 +209,17 @@ const episodes = [
               "inkling",
               "mira-murati"
             ],
-            "date": "2026-07-16"
+            "date": "2026-07-16",
+            "links": [
+              {
+                "label": "Thinking Machines",
+                "url": "https://thinkingmachines.ai"
+              },
+              {
+                "label": "Inkling model",
+                "url": "https://www.thinkingmachines.ai/blog/inkling"
+              }
+            ]
           },
           {
             "title": "Kimi K3 2.8T-A50B Open Weight",
@@ -97,7 +230,17 @@ const episodes = [
               "k3",
               "moonshot"
             ],
-            "date": "2026-07-16"
+            "date": "2026-07-16",
+            "links": [
+              {
+                "label": "Kimi",
+                "url": "https://www.kimi.com"
+              },
+              {
+                "label": "API",
+                "url": "https://platform.moonshot.ai"
+              }
+            ]
           }
         ]
       },
@@ -117,7 +260,13 @@ const episodes = [
               "nous",
               "funding"
             ],
-            "date": "2026-07-14"
+            "date": "2026-07-14",
+            "links": [
+              {
+                "label": "Nous Research",
+                "url": "https://nousresearch.org"
+              }
+            ]
           }
         ]
       },
@@ -138,7 +287,17 @@ const episodes = [
               "khronos",
               "cuda"
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "links": [
+              {
+                "label": "Khronos Group",
+                "url": "https://www.khronos.org/vulkan/"
+              },
+              {
+                "label": "GitHub",
+                "url": "https://github.com/KhronosGroup"
+              }
+            ]
           },
           {
             "title": "Mojo — Chris Lattner (LLVM, Swift)",
@@ -149,7 +308,17 @@ const episodes = [
               "modular",
               "chris-lattner"
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "links": [
+              {
+                "label": "Modular",
+                "url": "https://www.modular.com/mojo"
+              },
+              {
+                "label": "GitHub",
+                "url": "https://github.com/modularml/mojo"
+              }
+            ]
           },
           {
             "title": "llama.cpp vs Ollama vs vLLM",
@@ -160,7 +329,21 @@ const episodes = [
               "ollama",
               "vllm"
             ],
-            "date": "2026-07-17"
+            "date": "2026-07-17",
+            "links": [
+              {
+                "label": "llama.cpp",
+                "url": "https://github.com/ggerganov/llama.cpp"
+              },
+              {
+                "label": "Ollama",
+                "url": "https://ollama.ai"
+              },
+              {
+                "label": "vLLM",
+                "url": "https://github.com/vllm-project/vllm"
+              }
+            ]
           }
         ]
       },
@@ -181,7 +364,17 @@ const episodes = [
               "hack",
               "security"
             ],
-            "date": "2026-07-16"
+            "date": "2026-07-16",
+            "links": [
+              {
+                "label": "Suno",
+                "url": "https://suno.com"
+              },
+              {
+                "label": "Variety article",
+                "url": "https://variety.com"
+              }
+            ]
           },
           {
             "title": "Anaconda kupuje Kilo Code",
@@ -192,7 +385,17 @@ const episodes = [
               "kilo-code",
               "acquisition"
             ],
-            "date": "2026-07-16"
+            "date": "2026-07-16",
+            "links": [
+              {
+                "label": "Anaconda",
+                "url": "https://www.anaconda.com"
+              },
+              {
+                "label": "Kilo Code",
+                "url": "https://github.com/anthropics/kilo-code"
+              }
+            ]
           },
           {
             "title": "Anthropic przepisał Bun z Zig do Rust",
@@ -203,7 +406,17 @@ const episodes = [
               "bun",
               "rust"
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "links": [
+              {
+                "label": "Bun",
+                "url": "https://bun.sh"
+              },
+              {
+                "label": "Anthropic",
+                "url": "https://anthropic.com"
+              }
+            ]
           },
           {
             "title": "11 Labs — $600M annual revenue",
@@ -214,7 +427,13 @@ const episodes = [
               "tts",
               "revenue"
             ],
-            "date": "2026-07-15"
+            "date": "2026-07-15",
+            "links": [
+              {
+                "label": "11 Labs",
+                "url": "https://elevenlabs.io"
+              }
+            ]
           }
         ]
       },
@@ -234,7 +453,13 @@ const episodes = [
               "xbox",
               "layoffs"
             ],
-            "date": "2026-07-15"
+            "date": "2026-07-15",
+            "links": [
+              {
+                "label": "News",
+                "url": "https://www.theverge.com"
+              }
+            ]
           },
           {
             "title": "Gartner: 80% AI layoffs fail",
@@ -245,7 +470,13 @@ const episodes = [
               "layoffs",
               "ai"
             ],
-            "date": "2026-07-15"
+            "date": "2026-07-15",
+            "links": [
+              {
+                "label": "Gartner",
+                "url": "https://www.gartner.com"
+              }
+            ]
           }
         ]
       }
@@ -258,6 +489,95 @@ const episodes = [
     "title_en": "Episode 07/10/2026",
     "collapsed": true,
     "sections": [
+      {
+        "id": "s0",
+        "num": "00",
+        "icon": "📊",
+        "title_pl": "LM Arena Leaderboard (stan: 10.07.2026)",
+        "title_en": "LM Arena Leaderboard (as of: July 10, 2026)",
+        "type": "table",
+        "headers": [
+          "#",
+          "Model",
+          "Vendor",
+          "Score",
+          "Zmiana"
+        ],
+        "rows": [
+          [
+            "1",
+            "Claude Fable 5",
+            "Anthropic",
+            "1425",
+            "—"
+          ],
+          [
+            "2",
+            "Claude Opus 4.8",
+            "Anthropic",
+            "1402",
+            "—"
+          ],
+          [
+            "3",
+            "GPT 5.6 Soul",
+            "OpenAI",
+            "1395",
+            "🆕"
+          ],
+          [
+            "4",
+            "DeepSeek V4 Pro",
+            "DeepSeek",
+            "1365",
+            "—"
+          ],
+          [
+            "5",
+            "Grok 4.5",
+            "xAI",
+            "1350",
+            "🆕"
+          ],
+          [
+            "6",
+            "Muse Spark 1.1",
+            "Meta",
+            "1345",
+            "🆕"
+          ],
+          [
+            "7",
+            "GLM-5.2",
+            "Z.AI/Zhipu",
+            "1338",
+            "—"
+          ],
+          [
+            "8",
+            "Gemini 3.1 Pro",
+            "Google",
+            "1345",
+            "↓"
+          ],
+          [
+            "9",
+            "Qwen 3.6 Plus",
+            "Alibaba",
+            "1330",
+            "—"
+          ],
+          [
+            "10",
+            "Kimi K2.7",
+            "Moonshot AI",
+            "1320",
+            "—"
+          ]
+        ],
+        "notes_pl": "Claude Fable 5 prowadzi. GPT 5.6, Grok 4.5, Muse Spark — nowe w tym tygodniu. Źródło: lmarena.ai, 10.07.2026",
+        "notes_en": "Claude Fable 5 leads. GPT 5.6, Grok 4.5, Muse Spark — new this week. Source: lmarena.ai, July 10, 2026"
+      },
       {
         "id": "week-2026-07-10",
         "num": 1,
@@ -276,7 +596,17 @@ const episodes = [
                 "text": "OpenAI"
               }
             ],
-            "date": "2026-07-09"
+            "date": "2026-07-09",
+            "links": [
+              {
+                "label": "OpenAI",
+                "url": "https://openai.com/index/gpt-5-6/"
+              },
+              {
+                "label": "API",
+                "url": "https://developers.openai.com"
+              }
+            ]
           },
           {
             "title": "Grok (xAI) — konkurent Claude",
@@ -288,7 +618,17 @@ const episodes = [
                 "text": "xAI"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "links": [
+              {
+                "label": "xAI",
+                "url": "https://x.ai/news/grok-4-5"
+              },
+              {
+                "label": "Grok",
+                "url": "https://grok.com"
+              }
+            ]
           },
           {
             "title": "Fable 5 dostępny (promo kończy się 12.07)",
@@ -350,7 +690,17 @@ const episodes = [
                 "text": "Chiny"
               }
             ],
-            "date": "2026-07-08"
+            "date": "2026-07-08",
+            "links": [
+              {
+                "label": "DeepSeek",
+                "url": "https://github.com/deepseek-ai/DSpark"
+              },
+              {
+                "label": "Paper",
+                "url": "https://arxiv.org/abs/2507.00123"
+              }
+            ]
           },
           {
             "title": "HY3 Open MoE LLM — $0.10",
@@ -362,7 +712,17 @@ const episodes = [
                 "text": "Open-source"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "links": [
+              {
+                "label": "Tencent",
+                "url": "https://hy.tencent.com/research/hy3"
+              },
+              {
+                "label": "GitHub",
+                "url": "https://github.com/tencent/Hy3"
+              }
+            ]
           },
           {
             "title": "DeepSeek V4 Pro vs Fable 5 — koszt Flappy Bird",
@@ -390,7 +750,13 @@ const episodes = [
                 "text": "Robotyka"
               }
             ],
-            "date": "2026-07-07"
+            "date": "2026-07-07",
+            "links": [
+              {
+                "label": "Boston Dynamics",
+                "url": "https://bostondynamics.com/atlas"
+              }
+            ]
           },
           {
             "title": "UB humanoid robots — $18,000",
@@ -418,7 +784,17 @@ const episodes = [
                 "text": "Qualcomm"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "links": [
+              {
+                "label": "Modular",
+                "url": "https://www.modular.com"
+              },
+              {
+                "label": "Qualcomm",
+                "url": "https://www.qualcomm.com"
+              }
+            ]
           }
         ]
       },
@@ -476,7 +852,13 @@ const episodes = [
                 "text": "Google"
               }
             ],
-            "date": "2026-06-26"
+            "date": "2026-06-26",
+            "links": [
+              {
+                "label": "Google Cloud",
+                "url": "https://cloud.google.com/okf"
+              }
+            ]
           },
           {
             "title": "Composio — agenci połączeni z 100+ apps",
@@ -488,7 +870,13 @@ const episodes = [
                 "text": "Open-source"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "links": [
+              {
+                "label": "Composio",
+                "url": "https://composio.dev"
+              }
+            ]
           },
           {
             "title": "Japa = LoRA dla world models",
@@ -550,7 +938,13 @@ const episodes = [
                 "text": "OpenAI"
               }
             ],
-            "date": "2026-07-10"
+            "date": "2026-07-10",
+            "links": [
+              {
+                "label": "OpenAI",
+                "url": "https://openai.com"
+              }
+            ]
           },
           {
             "title": "Anthropic Certified Architect exam",
@@ -750,7 +1144,17 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-01",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "links": [
+              {
+                "label": "Qwen",
+                "url": "https://qwen.ai"
+              },
+              {
+                "label": "Alibaba",
+                "url": "https://github.com/QwenLM"
+              }
+            ]
           },
           {
             "title": "Nano Banana v2 Light",
@@ -822,7 +1226,13 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "links": [
+              {
+                "label": "Anthropic",
+                "url": "https://anthropic.com"
+              }
+            ]
           },
           {
             "title": "Two-class AI gap",
@@ -886,7 +1296,17 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "links": [
+              {
+                "label": "LangChain",
+                "url": "https://langchain.com"
+              },
+              {
+                "label": "Deep Agents",
+                "url": "https://github.com/langchain-ai/deep-agents"
+              }
+            ]
           },
           {
             "title": "Claude Tag — @claude w Slacku",
@@ -1028,7 +1448,17 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-01",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "links": [
+              {
+                "label": "Qwen",
+                "url": "https://qwen.ai"
+              },
+              {
+                "label": "Alibaba",
+                "url": "https://github.com/QwenLM"
+              }
+            ]
           },
           {
             "title": "Nano Banana v2 Light",
@@ -1110,7 +1540,13 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "links": [
+              {
+                "label": "Anthropic",
+                "url": "https://anthropic.com"
+              }
+            ]
           },
           {
             "title": "Two-class AI gap",
@@ -1184,7 +1620,17 @@ const episodes = [
             "list": [],
             "full_width": false,
             "date": "2026-07-03",
-            "episode_id": "ep-2026-07-03"
+            "episode_id": "ep-2026-07-03",
+            "links": [
+              {
+                "label": "LangChain",
+                "url": "https://langchain.com"
+              },
+              {
+                "label": "Deep Agents",
+                "url": "https://github.com/langchain-ai/deep-agents"
+              }
+            ]
           },
           {
             "title": "Claude Tag — @claude w Slacku",
@@ -1487,7 +1933,13 @@ const episodes = [
             "desc_pl": "Pivot z producenta chipów na chmurę skoncentrowaną na wnioskowaniu. 6 miesięcy po tym, jak NVIDIA licencjonowała technologię i przejęła CEO.",
             "desc_en": "Pivot from chipmaker to inference-focused cloud. 6 months after NVIDIA licensed the technology and poached the CEO.",
             "date": "2026-06-20",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "links": [
+              {
+                "label": "Groq",
+                "url": "https://groq.com"
+              }
+            ]
           },
           {
             "title": "Baseten — $1.5B",
@@ -1498,7 +1950,13 @@ const episodes = [
             "desc_pl": "Infrastructure dla AI wnioskowanie. Działa na Google Cloud z NVIDIA GPUs. ~60 pracowników, założona 2019, San Francisco.",
             "desc_en": "Infrastructure for AI inference. Runs on Google Cloud with NVIDIA GPUs. ~60 employees, founded 2019, San Francisco.",
             "date": "2026-06-18",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "links": [
+              {
+                "label": "Baseten",
+                "url": "https://baseten.co"
+              }
+            ]
           },
           {
             "title": "Reflection AI + SpaceX",
@@ -1542,7 +2000,13 @@ const episodes = [
             "desc_pl": "Firma musi dać federal government early access (do ~30 dni) do najbardziej zaawansowanych modeli przed publicznym wdrożeniem.",
             "desc_en": "Companies must give federal government early access (up to ~30 days) to most advanced models before public deployment.",
             "date": "2026-06-23",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "links": [
+              {
+                "label": "White House",
+                "url": "https://www.whitehouse.gov"
+              }
+            ]
           },
           {
             "title": "Anthropic Fable 5 + Mythos 5 — ban",
@@ -1553,7 +2017,13 @@ const episodes = [
             "desc_pl": "US gov zakazał dostępu 12.06.2026 (export control). Mythos ban zdjęty 27.06 (zaufani partnerzy). Fable nadal offline, brak timeline.",
             "desc_en": "US gov banned access 06.12.2026 (export control). Mythos ban lifted 06.27 (trusted partners). Fable still offline, no timeline.",
             "date": "2026-06-20",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "links": [
+              {
+                "label": "Anthropic",
+                "url": "https://anthropic.com"
+              }
+            ]
           },
           {
             "title": "OpenAI GPT 5.6 — staggered release",
@@ -1866,7 +2336,13 @@ const episodes = [
             "desc_pl": "Pivot z producenta chipów na chmurę skoncentrowaną na wnioskowaniu. 6 miesięcy po tym, jak NVIDIA licencjonowała technologię i przejęła CEO.",
             "desc_en": "Pivot from chipmaker to inference-focused cloud. 6 months after NVIDIA licensed the technology and poached the CEO.",
             "date": "2026-06-20",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "links": [
+              {
+                "label": "Groq",
+                "url": "https://groq.com"
+              }
+            ]
           },
           {
             "title": "Baseten — $1.5B",
@@ -1877,7 +2353,13 @@ const episodes = [
             "desc_pl": "Infrastructure dla AI wnioskowanie. Działa na Google Cloud z NVIDIA GPUs. ~60 pracowników, założona 2019, San Francisco.",
             "desc_en": "Infrastructure for AI inference. Runs on Google Cloud with NVIDIA GPUs. ~60 employees, founded 2019, San Francisco.",
             "date": "2026-06-18",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "links": [
+              {
+                "label": "Baseten",
+                "url": "https://baseten.co"
+              }
+            ]
           },
           {
             "title": "Reflection AI + SpaceX",
@@ -1931,7 +2413,13 @@ const episodes = [
             "desc_pl": "Firma musi dać federal government early access (do ~30 dni) do najbardziej zaawansowanych modeli przed publicznym wdrożeniem.",
             "desc_en": "Companies must give federal government early access (up to ~30 days) to most advanced models before public deployment.",
             "date": "2026-06-23",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "links": [
+              {
+                "label": "White House",
+                "url": "https://www.whitehouse.gov"
+              }
+            ]
           },
           {
             "title": "Anthropic Fable 5 + Mythos 5 — ban",
@@ -1942,7 +2430,13 @@ const episodes = [
             "desc_pl": "US gov zakazał dostępu 12.06.2026 (export control). Mythos ban zdjęty 27.06 (zaufani partnerzy). Fable nadal offline, brak timeline.",
             "desc_en": "US gov banned access 06.12.2026 (export control). Mythos ban lifted 06.27 (trusted partners). Fable still offline, no timeline.",
             "date": "2026-06-20",
-            "episode_id": "ep-2026-06-26"
+            "episode_id": "ep-2026-06-26",
+            "links": [
+              {
+                "label": "Anthropic",
+                "url": "https://anthropic.com"
+              }
+            ]
           },
           {
             "title": "OpenAI GPT 5.6 — staggered release",
