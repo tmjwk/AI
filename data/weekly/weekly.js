@@ -3,6 +3,169 @@
 
 const WEEKLY = [
   {
+    "num": 29,
+    "date": "2026-07-19",
+    "collapsed": false,
+    "title_pl": "AI Tydzień #29 | 13-19/07/2026",
+    "title_en": "AI Week #29 | 13-19/07/2026",
+    "headline_pl": "30 wydarzeń AI w jednym tygodniu. Kimi K3 (2.8T open weight) dogonił Claude Fable na LM Arena. Mira Murati wydała Inkling (975B open weight). OpenAI pokazał GPT Red — model do atakowania innych modeli. Vulkan i Mojo zagroziły monopolowi CUDA. Roboty walczyły w klatce UFC. Bonsai 27B zmieścił się na iPhone. Sunday Robotics składa pranie z 99% success rate. Lev Selector omówił cost per intelligence — Kimi K3 < $1/task vs Claude Fable ~$3. Anthropic przepisał Bun z Zig do Rust w 11 dni. Anaconda kupiła Kilo Code. Suno zostało zhakowane. Gartner: 80% AI layoffs fail.",
+    "headline_en": "30 AI events in one week. Kimi K3 (2.8T open weight) caught up to Claude Fable on LM Arena. Mira Murati released Inkling (975B open weight). OpenAI showed GPT Red — model for attacking other models. Vulkan and Mojo threatened CUDA monopoly. Robots fought in UFC cage. Bonsai 27B fit on iPhone. Sunday Robotics folds laundry with 99% success rate. Lev Selector discussed cost per intelligence — Kimi K3 < $1/task vs Claude Fable ~$3. Anthropic rewrote Bun from Zig to Rust in 11 days. Anaconda bought Kilo Code. Suno got hacked. Gartner: 80% AI layoffs fail.",
+    "sections": [
+      {
+        "title_pl": "Kimi K3 — open weight dogania frontier",
+        "title_en": "Kimi K3 — open weight catches up to frontier",
+        "body_pl": "Moonshot AI wydał Kimi K3 — 2.8T parametrów (MoE, 50B active), open weight. Na LM Arena Kimi K3 zajął #1 w Frontend Code Arena (1679 pkt), bijąc Claude Fable 5. W ogólnym ranking #4, tuż za Fable, GPT 5.6 i Opus 4.8. Cost per intelligence: Kimi K3 < $1/task vs Claude Fable ~$3/task. DeepSeek V4 Flash 2-4 cents. Lev Selector: 'to model Claude Fable level i jest open'. AI Search: 'najlepszy open source model, poziom Fable'. Open weights do 27.07.\n\n**Implikacja:** Open source AI nie jest już 'kilka miesięcy za frontier' — dogonił. Kimi K3 to Fable-level model za ułamek ceny. Demokratyzacja frontier AI z Chin.",
+        "body_en": "Moonshot AI released Kimi K3 — 2.8T params (MoE, 50B active), open weight. On LM Arena Kimi K3 took #1 in Frontend Code Arena (1679 pts), beating Claude Fable 5. In overall ranking #4, just behind Fable, GPT 5.6 and Opus 4.8. Cost per intelligence: Kimi K3 < $1/task vs Claude Fable ~$3/task. DeepSeek V4 Flash 2-4 cents. Lev Selector: 'this is a Claude Fable level model and it's open'. AI Search: 'best open source model, Fable level'. Open weights by July 27.\n\n**Implication:** Open source AI is no longer 'a few months behind frontier' — it caught up. Kimi K3 is a Fable-level model for a fraction of the price. Democratization of frontier AI from China.",
+        "quotes": [
+          {
+            "author": "Lev Selector",
+            "text_pl": "To model Claude Fable level i jest open. 2.8T parametrów, $3/$15 per M tok.",
+            "text_en": "This is a Claude Fable level model and it's open. 2.8T params, $3/$15 per M tok."
+          },
+          {
+            "author": "AI Search",
+            "text_pl": "Najlepszy open source model AI. Poziom Fable.",
+            "text_en": "Best open source AI model. Fable level."
+          }
+        ]
+      },
+      {
+        "title_pl": "Mira Murati — Inkling 975B open weight",
+        "title_en": "Mira Murati — Inkling 975B open weight",
+        "body_pl": "Mira Murati (były CTO OpenAI) wydała pierwszy model — Inkling. 975B MoE (41B active), 1M context. Multimodal: text, image, audio. Open weight — download, fine-tune, run on-prem. Customization over leaderboard dominance. Alex Wissner-Gross (Diamandis #271): 'słabszy niż GLM 5.2'. Ramin Hasani: 'model layer nie jest juz miejscem gdzie mozna extract value'. Reinforcement fine-tuning jako nowy paradigm.\n\n**Implikacja:** Mira stawia na customization + on-prem, nie na benchmark dominance. Open weight + fine-tuning = huge unlock dla enterprise. Model layer staje się commodity.",
+        "body_en": "Mira Murati (former OpenAI CTO) released first model — Inkling. 975B MoE (41B active), 1M context. Multimodal: text, image, audio. Open weight — download, fine-tune, run on-prem. Customization over leaderboard dominance. Alex Wissner-Gross (Diamandis #271): 'weaker than GLM 5.2'. Ramin Hasani: 'model layer is no longer where you can extract value'. Reinforcement fine-tuning as new paradigm.\n\n**Implication:** Mira bets on customization + on-prem, not benchmark dominance. Open weight + fine-tuning = huge unlock for enterprise. Model layer becomes commodity.",
+        "quotes": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Mira wydana dokladnie to czego rynek potrzebuje. Customization over leaderboard dominance.",
+            "text_en": "Mira shipped exactly what the market needs. Customization over leaderboard dominance."
+          }
+        ]
+      },
+      {
+        "title_pl": "Vulkan i Mojo vs Nvidia CUDA — koniec monopolu",
+        "title_en": "Vulkan and Mojo vs Nvidia CUDA — end of monopoly",
+        "body_pl": "Lev Selector poświęcił pół odcinka na Vulkan i Mojo jako alternatywy dla CUDA. Vulkan — cross-platform compute API z gaming community, matrix operations na dowolnym CPU/GPU. Mojo — Chris Lattner (LLVM, Swift), Python syntax, C performance, 700 linii vs 3000 CUDA. Qualcomm kupił Modular (twórcę Mojo). llama.cpp z Vulkan backendem działa na dowolnym GPU. Ollama używa llama.cpp pod maską.\n\n**Implikacja:** Nvidia traci monopol na AI compute. Vulkan + Mojo = dowolny hardware może запускac LLM. Demokratyzacja compute = koniec CUDA vendor lock-in.",
+        "body_en": "Lev Selector spent half the episode on Vulkan and Mojo as CUDA alternatives. Vulkan — cross-platform compute API from gaming community, matrix operations on any CPU/GPU. Mojo — Chris Lattner (LLVM, Swift), Python syntax, C performance, 700 lines vs 3000 CUDA. Qualcomm bought Modular (Mojo creator). llama.cpp with Vulkan backend runs on any GPU. Ollama uses llama.cpp under the hood.\n\n**Implication:** Nvidia loses AI compute monopoly. Vulkan + Mojo = any hardware can run LLMs. Compute democratization = end of CUDA vendor lock-in.",
+        "quotes": [
+          {
+            "author": "Lev Selector",
+            "text_pl": "Vulkan i Mojo are challenging Nvidia CUDA. 15 lat monopolu się kończy.",
+            "text_en": "Vulkan and Mojo are challenging Nvidia CUDA. 15 years monopoly ending."
+          }
+        ]
+      },
+      {
+        "title_pl": "GPT Red — OpenAI model do atakowania AI",
+        "title_en": "GPT Red — OpenAI model for attacking AI",
+        "body_pl": "OpenAI ujawnił GPT Red — internal model do red-teamingu (atakowania innych modeli). 84% attack success rate vs 13% human baseline. Self-play training: GPT Red atakuje modele, modele uczą się bronić. Znajduje prompt injection vulnerabilities. NIE publiczny — internal only.\n\n**Implikacja:** AI bezpieczeństwo staje się AI vs AI. GPT Red = automated hacker. 84% vs 13% ludzkiego — AI jest lepsze w znajdowaniu luk niż ludzie. Może to oznaczać koniec manual security testing.",
+        "body_en": "OpenAI revealed GPT Red — internal model for red-teaming (attacking other models). 84% attack success rate vs 13% human baseline. Self-play training: GPT Red attacks models, models learn to defend. Finds prompt injection vulnerabilities. NOT public — internal only.\n\n**Implication:** AI security becomes AI vs AI. GPT Red = automated hacker. 84% vs 13% human — AI is better at finding vulnerabilities than humans. Could mean end of manual security testing.",
+        "quotes": [
+          {
+            "author": "AI Search",
+            "text_pl": "GPT Red to model do atakowania innych modeli. 84% success rate vs 13% ludzkiego.",
+            "text_en": "GPT Red is a model for attacking other models. 84% success rate vs 13% human."
+          }
+        ]
+      },
+      {
+        "title_pl": "Robotyka — UFC, pranie, hoverboards",
+        "title_en": "Robotics — UFC, laundry, hoverboards",
+        "body_pl": "Roboty humanoidalne walczyły w klatce UFC (flying kicks, punchy). Transportowane na hoverboards. Sunday Robotics ACT 2 — 99.1% success rate w składaniu prania, 100% dla shorts/tops/polos. Zero-shot w nowych domach. Booster T2 (75 DOF, open-source) — akrobacje których Optimus nie potrafi. Quadruped robot dla przemysłu (nuclear plants, mining).\n\n**Implikacja:** Robotyka wchodzi w fazę konsumencką. UFC fight = roboty są na tyle sprawne że można je bicić w klatce. 99% laundry = household robot blisko. Hoverboards = transport robotów.",
+        "body_en": "Humanoid robots fought in UFC cage (flying kicks, punches). Transported on hoverboards. Sunday Robotics ACT 2 — 99.1% success rate in laundry folding, 100% for shorts/tops/polos. Zero-shot in new homes. Booster T2 (75 DOF, open-source) — acrobatics Optimus can't do. Quadruped robot for industry (nuclear plants, mining).\n\n**Implication:** Robotics enters consumer phase. UFC fight = robots are agile enough to fight in a cage. 99% laundry = household robot close. Hoverboards = robot transport.",
+        "quotes": [
+          {
+            "author": "AI Search",
+            "text_pl": "Roboty UFC — flying kicks. Head gets knocked loose. Humanoid robots tylko będą lepsze.",
+            "text_en": "Robot UFC — flying kicks. Head gets knocked loose. Humanoid robots will only get better."
+          }
+        ]
+      },
+      {
+        "title_pl": "Bonsai 27B — LLM na telefonie",
+        "title_en": "Bonsai 27B — LLM on phone",
+        "body_pl": "Bonsai 27B — skompresowany Qwen 3.6 na telefon. Ternary weights (-1, 0, +1) = 5.9GB (turnary) lub 3.9GB (1-bit). 80.5% benchmark vs 85% pełny Qwen. Mieści się na iPhone 17 Pro. Open source — już dostępne na GitHub.\n\n**Implikacja:** Frontier AI na telefonie = koniec chmury dla wielu zastosowań. Ternary quantization = 4× mniejszy model przy 5% utracie jakości. Privacy + offline + zero latency.",
+        "body_en": "Bonsai 27B — compressed Qwen 3.6 for phone. Ternary weights (-1, 0, +1) = 5.9GB (ternary) or 3.9GB (1-bit). 80.5% benchmark vs 85% full Qwen. Fits iPhone 17 Pro. Open source — already on GitHub.\n\n**Implication:** Frontier AI on phone = end of cloud for many use cases. Ternary quantization = 4× smaller model at 5% quality loss. Privacy + offline + zero latency.",
+        "quotes": [
+          {
+            "author": "AI Search",
+            "text_pl": "Bonsai 27B — 27B model na telefonie. Ternary weights, 5.9GB. 80.5% benchmark.",
+            "text_en": "Bonsai 27B — 27B model on phone. Ternary weights, 5.9GB. 80.5% benchmark."
+          }
+        ]
+      },
+      {
+        "title_pl": "Demis Hassabis i AI FINRA — regulacja frontier",
+        "title_en": "Demis Hassabis and AI FINRA — frontier regulation",
+        "body_pl": "Demis Hassabis (CEO DeepMind) wezwał do US-led frontier AI standards body modelowanego na FINRA. Sam Altman wcześnej opublikował podobny op-ed. Alex Wissner-Gross (Diamandis #271): 'regulatory capture — Demis tworzy kartel frontier labs'. Ramin Hasani: 'regulacja musi być capability-based'. Problem: open ecosystems always win — China z open weight może wygrać.\n\n**Implikacja:** AI regulacja to 50/50 regulatory capture vs safety. Incumbenci tworzą moat, ale non-state actors ignorują zasady. Perverse incentive: puszcząć China żeby uciec od regulacji.",
+        "body_en": "Demis Hassabis (CEO DeepMind) called for US-led frontier AI standards body modeled on FINRA. Sam Altman previously published similar op-ed. Alex Wissner-Gross (Diamandis #271): 'regulatory capture — Demis forming cartel of frontier labs'. Ramin Hasani: 'regulation must be capability-based'. Problem: open ecosystems always win — China with open weight can win.\n\n**Implication:** AI regulation is 50/50 regulatory capture vs safety. Incumbents build moats, but non-state actors ignore rules. Perverse incentive: let China win to escape regulation.",
+        "quotes": [
+          {
+            "author": "Dr. Alexander Wissner-Gross",
+            "text_pl": "To regulatory capture. Demis probuje utworzyc kartel frontier labs.",
+            "text_en": "This is regulatory capture. Demis is trying to form a cartel of frontier labs."
+          }
+        ]
+      },
+      {
+        "title_pl": "AI video lokalnie na telefonie + Wan Dancer",
+        "title_en": "AI video locally on phone + Wan Dancer",
+        "body_pl": "Open-source: generowanie wideo lokalnie na telefonie (5s, 480p, 16fps). Chunk-based generation, heavy pruning, memory-efficient decoder. Wan Dancer (Alibaba) — generuje do 3 minut tańca do muzyki. Key frame control. Open source. Wan Streamer 0.3 — real-time avatars mogą interagować z otoczeniem.\n\n**Implikacja:** AI video generation nie wymaga już chmury. Telefon = wystarczający. Wan Dancer = 3 minuty koherentnego wideo z muzyką — to koniec choreografii.",
+        "body_en": "Open-source: video generation locally on phone (5s, 480p, 16fps). Chunk-based generation, heavy pruning, memory-efficient decoder. Wan Dancer (Alibaba) — generates up to 3 minutes of dance to music. Key frame control. Open source. Wan Streamer 0.3 — real-time avatars can interact with surroundings.\n\n**Implication:** AI video generation no longer requires cloud. Phone = sufficient. Wan Dancer = 3 minutes coherent video with music — end of choreography.",
+        "quotes": [
+          {
+            "author": "AI Search",
+            "text_pl": "Generowanie wideo lokalnie na telefonie. 5 sekund, 480p, 16fps. Open source.",
+            "text_en": "Video generation locally on phone. 5 seconds, 480p, 16fps. Open source."
+          }
+        ]
+      },
+      {
+        "title_pl": "Recursive self-improvement — pre-ignition event",
+        "title_en": "Recursive self-improvement — pre-ignition event",
+        "body_pl": "Peter Diamandis (#271): 'najważniejszy moment w historii ludzkości'. OpenAI potwierdził: GPT 5.6 Soul post-trains Luna. Anthropic dzielił się testami recursive self-improvement. Ramin Hasani: 'early evidence w Mythos-level models'. Alex: 'defensive co-scaling — alignment through scaling'. Pre-ignition event — level one, nie level two.\n\n**Implikacja:** Recursive self-improvement to nie teoria — to dzieje się teraz. AI pomaga budować lepsze AI. Singularity accelerating.",
+        "body_en": "Peter Diamandis (#271): 'most important moment in human history'. OpenAI confirmed: GPT 5.6 Soul post-trains Luna. Anthropic shared recursive self-improvement tests. Ramin Hasani: 'early evidence in Mythos-level models'. Alex: 'defensive co-scaling — alignment through scaling'. Pre-ignition event — level one, not level two.\n\n**Implication:** Recursive self-improvement is not theory — it's happening now. AI helps build better AI. Singularity accelerating.",
+        "quotes": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Najwazniejszy moment w historii ludzkosci. Recursive self-improvement pre-ignition.",
+            "text_en": "Most important moment in human history. Recursive self-improvement pre-ignition."
+          }
+        ]
+      },
+      {
+        "title_pl": "News i acquisitions — Suno hack, Anaconda→Kilo, Bun→Rust",
+        "title_en": "News and acquisitions — Suno hack, Anaconda→Kilo, Bun→Rust",
+        "body_pl": "Suno source code zhakowany — ujawniło jak Suno scrape'ował muzykę z YouTube/Deezer/Genius. Anaconda kupiła Kilo Code (3M+ developers, 500+ models). Anthropic przepisał Bun z Zig do Rust — 11 dni, 64 parallel Claude agents, $165K simulated cost, 500K lines, 128 bugs fixed. Nous Research — $75M at $1.5B valuation. 11 Labs — $600M annual revenue. Gartner: 80% AI layoffs fail — companies rehiring.\n\n**Implikacja:** AI security (Suno hack), AI acquisitions (Anaconda→Kilo), AI rewriting code (Bun→Rust). 80% AI layoffs fail — AI jako amplification, nie replacement.",
+        "body_en": "Suno source code hacked — revealed how Suno scraped music from YouTube/Deezer/Genius. Anaconda bought Kilo Code (3M+ developers, 500+ models). Anthropic rewrote Bun from Zig to Rust — 11 days, 64 parallel Claude agents, $165K simulated cost, 500K lines, 128 bugs fixed. Nous Research — $75M at $1.5B valuation. 11 Labs — $600M annual revenue. Gartner: 80% AI layoffs fail — companies rehiring.\n\n**Implication:** AI security (Suno hack), AI acquisitions (Anaconda→Kilo), AI rewriting code (Bun→Rust). 80% AI layoffs fail — AI as amplification, not replacement.",
+        "quotes": [
+          {
+            "author": "Lev Selector",
+            "text_pl": "Anthropic przepisał Bun z Zig do Rust w 11 dni. 64 parallel Claude agents. $165K simulated cost.",
+            "text_en": "Anthropic rewrote Bun from Zig to Rust in 11 days. 64 parallel Claude agents. $165K simulated cost."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "AI Search",
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=uQ2Hqg5MZ-8"
+      },
+      {
+        "name": "Lev Selector",
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=lbNEryqhpRg"
+      },
+      {
+        "name": "Diamandis Moonshots",
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=bAoXVyibE6Q"
+      }
+    ]
+  },
+  {
     "num": 28,
     "date": "2026-07-12",
     "collapsed": true,

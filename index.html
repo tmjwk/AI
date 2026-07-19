@@ -129,7 +129,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.9.50-57-gfba70da) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.9.50-58-g9ba87e2) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -229,6 +229,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="sec" style="margin-top:40px">
 <div class="sec-t"><span class="pl">📅 Najnowsze aktualizacje</span><span class="en">📅 Latest updates</span></div>
 <ul class="update-list">
+<li><span class="update-date">19.07.2026</span> Weekly AI Summary #29: Kimi K3 dogania Fable, Mira Murati Inkling 975B, Vulkan+Mojo vs CUDA, GPT Red hacker, roboty UFC, Bonsai 27B na iPhone, recursive self-improvement pre-ignition</li>
 <li><span class="update-date">13.07.2026</span> Diamandis #270: Grok 4.5 vs GPT-5.6 (wojna cenowa), Apple pozywa OpenAI (trade secrets), China dogania Elon (space race), SpaceX reusability, asteroid mining, LEO satellite innovation, robotyka (Booster T2, Unitree, UBTech)</li>
 <li><span class="update-date">12.07.2026</span> Weekly AI Summary #2 REWRITE (12 sekcji, 26 cytatów, implikacje): GPT 5.6, Grok 4.5, JSpace, GPT Live, AI chips, Unitree surgery, DSpark, OKF, Mojo→Qualcomm, world models, robotyka, governance</li>
 <li><span class="update-date">10.07.2026</span> Lev Selector 10.07: GPT 5.6 + Grok (xAI) + DeepSeek DSpark + HY3 MoE + BD Atlas 5gen + UB robots 8K + Mojo→Qualcomm + OKF + Composio</li>
@@ -417,7 +418,7 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-57-gfba70da · Deploy: <span id="deploy-ts">2026-07-19 09:03:19 UTC</span> · <span id="deploy-hash">v92bba136</span>
+v8.9.50-58-g9ba87e2 · Deploy: <span id="deploy-ts">2026-07-19 09:11:16 UTC</span> · <span id="deploy-hash">v41a6119d</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
