@@ -1,6 +1,235 @@
 // AI Releases — auto-generated from releases.json
 const RELEASES = [
   {
+    "num": "##29-2",
+    "date": "2026-07-19",
+    "title_pl": "Kimi K3, tańczące waifus, robot UFC, song to MIDI, GPT Red, hoverboards",
+    "title_en": "Kimi K3, dancing waifus, robot UFC, song to MIDI, GPT Red, hoverboards",
+    "yt": "uQ2Hqg5MZ-8",
+    "collapsed": false,
+    "items": [
+      {
+        "title_pl": "Nvidia RD",
+        "title_en": "Nvidia RD",
+        "vendor": "NVIDIA",
+        "category_pl": "Generacja 3D",
+        "category_en": "3D Generation",
+        "date": "2026-07-15",
+        "thumbnail": "https://i.ytimg.com/vi/uQ2Hqg5MZ-8/hqdefault.jpg",
+        "review_pl": "AI generujący realistyczne ruchy 3D ludzi w czasie rzeczywistym. Dwuetapowe planowanie: najpierw ścieżka, potem animacja kończyn. Można zmieniać akcję i kontrolować trasę. Przydatne dla gier, animacji, treningu robotów.",
+        "review_en": "AI generating realistic 3D human movements in real-time. Two-stage planning: path first, then limb animation. Can change action and control path. Useful for games, animations, robot training.",
+        "links": [
+          {
+            "label_pl": "NVIDIA",
+            "label_en": "NVIDIA",
+            "url": "https://research.nvidia.com",
+            "type": "official"
+          }
+        ]
+      },
+      {
+        "title_pl": "Wan Dancer",
+        "title_en": "Wan Dancer",
+        "vendor": "Alibaba",
+        "category_pl": "Generacja wideo",
+        "category_en": "Video Generation",
+        "date": "2026-07-15",
+        "thumbnail": "https://i.ytimg.com/vi/uQ2Hqg5MZ-8/hqdefault.jpg",
+        "review_pl": "Generuje długie, zsynchronizowane wideo postaci tańczących do muzyki. Do 3 minut koherentnego wideo. Key frame control. Open source. Wymaga high-end GPU.",
+        "review_en": "Generates long, synchronized videos of characters dancing to music. Up to 3 minutes coherent. Key frame control. Open source. Requires high-end GPU.",
+        "links": [
+          {
+            "label_pl": "GitHub",
+            "label_en": "GitHub",
+            "url": "https://wan-dancer.github.io/",
+            "type": "official"
+          }
+        ]
+      },
+      {
+        "title_pl": "Google G&AM",
+        "title_en": "Google G&AM",
+        "vendor": "Google",
+        "category_pl": "Generacja 3D",
+        "category_en": "3D Generation",
+        "date": "2026-07-16",
+        "thumbnail": "https://i.ytimg.com/vi/uQ2Hqg5MZ-8/hqdefault.jpg",
+        "review_pl": "Generative Anthropometric Model — projektowanie twarzy i postaci z precyzyjną kontrolą. 253 identity controls, 383 expression controls. Slidery dla identity, expression, head rotation, eye direction.",
+        "review_en": "Generative Anthropometric Model — design faces and characters with precise control. 253 identity controls, 383 expression controls. Sliders for identity, expression, head rotation, eye direction.",
+        "links": [
+          {
+            "label_pl": "Google",
+            "label_en": "Google",
+            "url": "https://research.google",
+            "type": "official"
+          }
+        ]
+      },
+      {
+        "title_pl": "Lucida",
+        "title_en": "Lucida",
+        "vendor": "MIT",
+        "category_pl": "Image Generation",
+        "category_en": "Image Generation",
+        "date": "2026-07-14",
+        "thumbnail": "https://i.ytimg.com/vi/uQ2Hqg5MZ-8/hqdefault.jpg",
+        "review_pl": "Background removal model od MIT. Biję komercyjne API 4.3× na camouflage. Obsługuje hair, tricky backgrounds. Open source, MIT license. 6 sekund na obraz.",
+        "review_en": "Background removal model from MIT. Beats commercial API 4.3× on camouflage. Handles hair, tricky backgrounds. Open source, MIT license. 6 seconds per image.",
+        "links": [
+          {
+            "label_pl": "GitHub",
+            "label_en": "GitHub",
+            "url": "https://github.com/mit",
+            "type": "github"
+          }
+        ]
+      },
+      {
+        "title_pl": "Bonsai 27B",
+        "title_en": "Bonsai 27B",
+        "vendor": "Open-source",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-07-14",
+        "thumbnail": "https://i.ytimg.com/vi/uQ2Hqg5MZ-8/hqdefault.jpg",
+        "review_pl": "Skompresowany Qwen 3.6 na telefon. Ternary weights (-1, 0, +1) = 5.9GB (turnary) lub 3.9GB (1-bit). 80.5% benchmark vs 85% pełny Qwen. Mieści się na iPhone 17 Pro.",
+        "review_en": "Compressed Qwen 3.6 for phone. Ternary weights (-1, 0, +1) = 5.9GB (ternary) or 3.9GB (1-bit). 80.5% benchmark vs 85% full Qwen. Fits iPhone 17 Pro.",
+        "links": [
+          {
+            "label_pl": "GitHub",
+            "label_en": "GitHub",
+            "url": "https://github.com/prism-ml/Ternary-Bonsai-27B",
+            "type": "github"
+          }
+        ]
+      },
+      {
+        "title_pl": "GPT Red",
+        "title_en": "GPT Red",
+        "vendor": "OpenAI",
+        "category_pl": "Bezpieczeństwo",
+        "category_en": "Security",
+        "date": "2026-07-15",
+        "thumbnail": "https://i.ytimg.com/vi/uQ2Hqg5MZ-8/hqdefault.jpg",
+        "review_pl": "Internal model OpenAI do atakowania innych modeli (red-teaming). Znajduje prompt injection vulnerabilities. 84% attack success rate vs 13% human baseline. Self-play training. NIE publiczny — internal only.",
+        "review_en": "OpenAI internal model for attacking other models (red-teaming). Finds prompt injection vulnerabilities. 84% attack success rate vs 13% human baseline. Self-play training. NOT public — internal only.",
+        "links": [
+          {
+            "label_pl": "OpenAI",
+            "label_en": "OpenAI",
+            "url": "https://openai.com/index/gpt-red/",
+            "type": "official"
+          }
+        ]
+      },
+      {
+        "title_pl": "Nvidia PiD v1.5",
+        "title_en": "Nvidia PiD v1.5",
+        "vendor": "NVIDIA",
+        "category_pl": "Image Generation",
+        "category_en": "Image Generation",
+        "date": "2026-07-15",
+        "thumbnail": "https://i.ytimg.com/vi/uQ2Hqg5MZ-8/hqdefault.jpg",
+        "review_pl": "Najszybszy open-source upscaler v1.5. Lepsze detale i kolory vs v1. Plug-and-play z FLUX, FLUX.2, Qwen-Image. Pixel Diffusion decoder.",
+        "review_en": "Fastest open-source upscaler v1.5. Better details and colors vs v1. Plug-and-play with FLUX, FLUX.2, Qwen-Image. Pixel Diffusion decoder.",
+        "links": [
+          {
+            "label_pl": "HuggingFace",
+            "label_en": "HuggingFace",
+            "url": "https://huggingface.co/nvidia/PiD",
+            "type": "huggingface"
+          }
+        ]
+      },
+      {
+        "title_pl": "Sunday Robotics ACT 2",
+        "title_en": "Sunday Robotics ACT 2",
+        "vendor": "Sunday Robotics",
+        "category_pl": "Robotyka",
+        "category_en": "Robotics",
+        "date": "2026-07-16",
+        "thumbnail": "https://i.ytimg.com/vi/uQ2Hqg5MZ-8/hqdefault.jpg",
+        "review_pl": "Robot do domu — 99.1% success rate w składaniu prania. 100% dla shorts, tops, polos. Zero-shot w nowych domach. Uczy się odkurzać, organizować, zamykać zamki.",
+        "review_en": "Home robot — 99.1% success rate in laundry folding. 100% for shorts, tops, polos. Zero-shot in new homes. Learning to vacuum, organize, zip clothing.",
+        "links": [
+          {
+            "label_pl": "YouTube",
+            "label_en": "YouTube",
+            "url": "https://www.youtube.com/watch?v=ACT-2",
+            "type": "demo"
+          }
+        ]
+      },
+      {
+        "title_pl": "Wan Streamer 0.3",
+        "title_en": "Wan Streamer 0.3",
+        "vendor": "Wan",
+        "category_pl": "Awatary realtime",
+        "category_en": "Realtime Avatars",
+        "date": "2026-07-17",
+        "thumbnail": "https://i.ytimg.com/vi/uQ2Hqg5MZ-8/hqdefault.jpg",
+        "review_pl": "Real-time avatars v0.3 — postać może interagować z otoczeniem (nie tylko siedzieć). Peace sign, hands on hips, hair touch. Dzieli wideo na world stream + event stream.",
+        "review_en": "Real-time avatars v0.3 — character can interact with surroundings (not just sit). Peace sign, hands on hips, hair touch. Splits video into world stream + event stream.",
+        "links": [
+          {
+            "label_pl": "Wan Streamer",
+            "label_en": "Wan Streamer",
+            "url": "https://wan-streamer.com/v0.3/",
+            "type": "official"
+          }
+        ]
+      },
+      {
+        "title_pl": "Robot UFC + Hoverboards",
+        "title_en": "Robot UFC + Hoverboards",
+        "vendor": "Various",
+        "category_pl": "Robotyka",
+        "category_en": "Robotics",
+        "date": "2026-07-18",
+        "thumbnail": "https://i.ytimg.com/vi/uQ2Hqg5MZ-8/hqdefault.jpg",
+        "review_pl": "Humanoid robots walczą w klatce UFC. Flying kicks, punchy. Roboty transportowane na hoverboards. Quadruped robot dla przemysłu (nuclear plants, steel mills, mining).",
+        "review_en": "Humanoid robots fight in UFC cage. Flying kicks, punches. Robots transported on hoverboards. Quadruped robot for industry (nuclear plants, steel mills, mining).",
+        "links": []
+      },
+      {
+        "title_pl": "Genion (unified vision model)",
+        "title_en": "Genion (unified vision model)",
+        "vendor": "Open-source",
+        "category_pl": "Multimodal",
+        "category_en": "Multimodal",
+        "date": "2026-07-17",
+        "thumbnail": "https://i.ytimg.com/vi/uQ2Hqg5MZ-8/hqdefault.jpg",
+        "review_pl": "Jeden unified model dla depth, object tracking, camera motion, segmentation. Video models repurposed jako visual understanding systems. Input video → predict depth, normal, segmentation.",
+        "review_en": "One unified model for depth, object tracking, camera motion, segmentation. Video models repurposed as visual understanding systems. Input video → predict depth, normal, segmentation.",
+        "links": []
+      },
+      {
+        "title_pl": "Song to MIDI",
+        "title_en": "Song to MIDI",
+        "vendor": "Open-source",
+        "category_pl": "Audio",
+        "category_en": "Audio",
+        "date": "2026-07-15",
+        "thumbnail": "https://i.ytimg.com/vi/uQ2Hqg5MZ-8/hqdefault.jpg",
+        "review_pl": "AI zamienia pełną piosenkę na nuty dla każdego instrumentu osobno. Reverse engineering utworu. Darmowe online. Plug into DAW do edycji.",
+        "review_en": "AI turns full song into notes for each separate instrument. Reverse engineering songs. Free online. Plug into DAW for editing.",
+        "links": []
+      },
+      {
+        "title_pl": "Local video gen on phone",
+        "title_en": "Local video gen on phone",
+        "vendor": "Open-source",
+        "category_pl": "Generacja wideo",
+        "category_en": "Video Generation",
+        "date": "2026-07-16",
+        "thumbnail": "https://i.ytimg.com/vi/uQ2Hqg5MZ-8/hqdefault.jpg",
+        "review_pl": "Generowanie wideo lokalnie na telefonie. 5 sekund, 480p, 16fps. Chunk-based generation, heavy pruning, memory-efficient decoder. Open source — już dostępne.",
+        "review_en": "Video generation locally on phone. 5 seconds, 480p, 16fps. Chunk-based generation, heavy pruning, memory-efficient decoder. Open source — already available.",
+        "links": []
+      }
+    ]
+  },
+  {
     "num": "##29-1",
     "date": "2026-07-17",
     "title_pl": "Kimi K3 — najlepszy open source model, poziom Fable",

@@ -2,9 +2,39 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-18 06:56:59 UTC
+// Generated: 2026-07-19 08:58:44 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-07-18",
+    "type": "ai_search",
+    "title_pl": "Robot UFC + Hoverboards — Various",
+    "title_en": "Robot UFC + Hoverboards — Various",
+    "link": "ai-releases.html###29-2",
+    "meta_pl": "Robotics",
+    "meta_en": "Robotics",
+    "num": "##29-2"
+  },
+  {
+    "date": "2026-07-17",
+    "type": "ai_search",
+    "title_pl": "Wan Streamer 0.3 — Wan",
+    "title_en": "Wan Streamer 0.3 — Wan",
+    "link": "ai-releases.html###29-2",
+    "meta_pl": "Realtime Avatars",
+    "meta_en": "Realtime Avatars",
+    "num": "##29-2"
+  },
+  {
+    "date": "2026-07-17",
+    "type": "ai_search",
+    "title_pl": "Genion (unified vision model) — Open-source",
+    "title_en": "Genion (unified vision model) — Open-source",
+    "link": "ai-releases.html###29-2",
+    "meta_pl": "Multimodal",
+    "meta_en": "Multimodal",
+    "num": "##29-2"
+  },
   {
     "date": "2026-07-17",
     "type": "lev",
@@ -34,6 +64,36 @@ const CALENDAR = [
     "meta_pl": "9 tematów",
     "meta_en": "9 topics",
     "num": "#271"
+  },
+  {
+    "date": "2026-07-16",
+    "type": "ai_search",
+    "title_pl": "Google G&AM — Google",
+    "title_en": "Google G&AM — Google",
+    "link": "ai-releases.html###29-2",
+    "meta_pl": "3D Generation",
+    "meta_en": "3D Generation",
+    "num": "##29-2"
+  },
+  {
+    "date": "2026-07-16",
+    "type": "ai_search",
+    "title_pl": "Sunday Robotics ACT 2 — Sunday Robotics",
+    "title_en": "Sunday Robotics ACT 2 — Sunday Robotics",
+    "link": "ai-releases.html###29-2",
+    "meta_pl": "Robotics",
+    "meta_en": "Robotics",
+    "num": "##29-2"
+  },
+  {
+    "date": "2026-07-16",
+    "type": "ai_search",
+    "title_pl": "Local video gen on phone — Open-source",
+    "title_en": "Local video gen on phone — Open-source",
+    "link": "ai-releases.html###29-2",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##29-2"
   },
   {
     "date": "2026-07-16",
@@ -97,6 +157,56 @@ const CALENDAR = [
   },
   {
     "date": "2026-07-15",
+    "type": "ai_search",
+    "title_pl": "Nvidia RD — NVIDIA",
+    "title_en": "Nvidia RD — NVIDIA",
+    "link": "ai-releases.html###29-2",
+    "meta_pl": "3D Generation",
+    "meta_en": "3D Generation",
+    "num": "##29-2"
+  },
+  {
+    "date": "2026-07-15",
+    "type": "ai_search",
+    "title_pl": "Wan Dancer — Alibaba",
+    "title_en": "Wan Dancer — Alibaba",
+    "link": "ai-releases.html###29-2",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##29-2"
+  },
+  {
+    "date": "2026-07-15",
+    "type": "ai_search",
+    "title_pl": "GPT Red — OpenAI",
+    "title_en": "GPT Red — OpenAI",
+    "link": "ai-releases.html###29-2",
+    "meta_pl": "Security",
+    "meta_en": "Security",
+    "num": "##29-2"
+  },
+  {
+    "date": "2026-07-15",
+    "type": "ai_search",
+    "title_pl": "Nvidia PiD v1.5 — NVIDIA",
+    "title_en": "Nvidia PiD v1.5 — NVIDIA",
+    "link": "ai-releases.html###29-2",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##29-2"
+  },
+  {
+    "date": "2026-07-15",
+    "type": "ai_search",
+    "title_pl": "Song to MIDI — Open-source",
+    "title_en": "Song to MIDI — Open-source",
+    "link": "ai-releases.html###29-2",
+    "meta_pl": "Audio",
+    "meta_en": "Audio",
+    "num": "##29-2"
+  },
+  {
+    "date": "2026-07-15",
     "type": "lev",
     "title_pl": "Hermes Cloud — VPS agents w 60 sekund",
     "title_en": "Hermes Cloud — VPS agents w 60 sekund",
@@ -144,6 +254,26 @@ const CALENDAR = [
     "meta_pl": "Rynek pracy — layoffs",
     "meta_en": "Rynek pracy — layoffs",
     "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-14",
+    "type": "ai_search",
+    "title_pl": "Lucida — MIT",
+    "title_en": "Lucida — MIT",
+    "link": "ai-releases.html###29-2",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##29-2"
+  },
+  {
+    "date": "2026-07-14",
+    "type": "ai_search",
+    "title_pl": "Bonsai 27B — Open-source",
+    "title_en": "Bonsai 27B — Open-source",
+    "link": "ai-releases.html###29-2",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##29-2"
   },
   {
     "date": "2026-07-14",
