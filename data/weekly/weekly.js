@@ -132,6 +132,24 @@ const WEEKLY = [
         ]
       },
       {
+        "title_pl": "Meta — Muse Spark 1.1 + privacy skandal + closed API",
+        "title_en": "Meta — Muse Spark 1.1 + privacy scandal + closed API",
+        "body_pl": "Meta wydała Muse Spark 1.1 — multimodal reasoning, 1M context, parallel agents. Outperforms Gemini 3.1 Pro. Lev Selector: 'only 26 cents per task vs Claude Fable ~$3'. Ale Muse Image ma Instagram profile references DOMYŚLNIE WŁĄCZONE — privacy skandal. Trzeba ręcznie wyłączyć.\n\nDave Blundin (Diamandis #271): 'Meta was leader of open source, now it's closed API'. OpenAI started open → went closed → big revenue. Meta followed same path — Muse Spark to closed API, nie open weight.\n\n**Implikacja:** Meta przeszedł z open source lidera na closed API — taki sam path jak OpenAI. Muse Spark 1.1 konkurencyjny cenowo (26 cents) ale zamknięty. Privacy skandal z Instagram profiles = Meta nie szanuje user data.",
+        "body_en": "Meta released Muse Spark 1.1 — multimodal reasoning, 1M context, parallel agents. Outperforms Gemini 3.1 Pro. Lev Selector: 'only 26 cents per task vs Claude Fable ~$3'. But Muse Image has Instagram profile references ON BY DEFAULT — privacy scandal. Must manually disable.\n\nDave Blundin (Diamandis #271): 'Meta was leader of open source, now it's closed API'. OpenAI started open → went closed → big revenue. Meta followed same path — Muse Spark is closed API, not open weight.\n\n**Implication:** Meta went from open source leader to closed API — same path as OpenAI. Muse Spark 1.1 competitively priced (26 cents) but closed. Privacy scandal with Instagram profiles = Meta doesn't respect user data.",
+        "quotes": [
+          {
+            "author": "Lev Selector",
+            "text_pl": "Muse Spark od Meta — tylko 26 cents per task vs Claude Fable ~$3. Outperforms Gemini 3.1 Pro.",
+            "text_en": "Muse Spark from Meta — only 26 cents per task vs Claude Fable ~$3. Outperforms Gemini 3.1 Pro."
+          },
+          {
+            "author": "Dave Blundin",
+            "text_pl": "Meta była liderem open source, teraz ma closed API. Taki sam path jak OpenAI.",
+            "text_en": "Meta was leader of open source, now has closed API. Same path as OpenAI."
+          }
+        ]
+      },
+      {
         "title_pl": "News i acquisitions — Suno hack, Anaconda→Kilo, Bun→Rust",
         "title_en": "News and acquisitions — Suno hack, Anaconda→Kilo, Bun→Rust",
         "body_pl": "Suno source code zhakowany — ujawniło jak Suno scrape'ował muzykę z YouTube/Deezer/Genius. Anaconda kupiła Kilo Code (3M+ developers, 500+ models). Anthropic przepisał Bun z Zig do Rust — 11 dni, 64 parallel Claude agents, $165K simulated cost, 500K lines, 128 bugs fixed. Nous Research — $75M at $1.5B valuation. 11 Labs — $600M annual revenue. Gartner: 80% AI layoffs fail — companies rehiring.\n\n**Implikacja:** AI security (Suno hack), AI acquisitions (Anaconda→Kilo), AI rewriting code (Bun→Rust). 80% AI layoffs fail — AI jako amplification, nie replacement.",
