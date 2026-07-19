@@ -1,6 +1,4 @@
 // AI Weekly Summary — auto-generated from weekly.json
-// Schema: WEEKLY = [{num, date, collapsed, title_en, title_pl, headline_en, headline_pl, sections[{title_en, title_pl, body_en, body_pl, quotes[{author, text_en, text_pl}]}], sources[]}]
-
 const WEEKLY = [
   {
     "num": 29,
@@ -148,21 +146,9 @@ const WEEKLY = [
       }
     ],
     "sources": [
-      {
-        "name": "AI Search",
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=uQ2Hqg5MZ-8"
-      },
-      {
-        "name": "Lev Selector",
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=lbNEryqhpRg"
-      },
-      {
-        "name": "Diamandis Moonshots",
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=bAoXVyibE6Q"
-      }
+      "AI Search (uQ2Hqg5MZ-8) — 19.07.2026",
+      "Lev Selector (lbNEryqhpRg) — 19.07.2026",
+      "Diamandis Moonshots (bAoXVyibE6Q) — 19.07.2026"
     ]
   },
   {
