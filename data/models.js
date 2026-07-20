@@ -2123,6 +2123,9 @@ const M = [
   }
 ];
 
+const TODAY = "2026-07-19";
+const NEW_DAYS = 14;
+
 const CATS = [
   "LLM",
   "Image Generation",
