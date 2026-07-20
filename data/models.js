@@ -2122,3 +2122,23 @@ const M = [
     "is_new": false
   }
 ];
+
+const CATS = [
+  "LLM",
+  "Image Generation",
+  "Video Generation",
+  "3D Generation",
+  "World Models",
+  "Coding",
+  "TTS",
+  "Multimodal",
+  "AI Science Agents",
+  "AI Research",
+  "Humanoid Robots",
+  "Realtime Avatars",
+  "4D Human",
+  "Neural Interface",
+  "Hardware",
+  "AI Wellness",
+  "Security"
+];
