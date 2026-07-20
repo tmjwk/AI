@@ -1,10 +1,4 @@
-// AI Models data — V4 auto-generated from models.json (Nurt 2: bilingual)
-// Schema: {r, n, v, d, o, c, desc_pl, desc_en, b_pl, b_en}
-// NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
-
-const TODAY = "2026-07-12";
-const NEW_DAYS = 14;
-
+// AI Models — auto-generated from models.json
 const M = [
   {
     "r": 2,
@@ -1982,167 +1976,149 @@ const M = [
     "desc_en": "Image model — strong visual reasoning, accurate layouts, text rendering, 4K (16MP). References, bounding box microediting. #2 on leaderboards (behind GPT Image 2). Closed, paid.",
     "b_pl": "4K output, microediting z bounding box, #2 na leaderboardach",
     "b_en": "4K output, microediting with bounding box, #2 on leaderboards"
+  },
+  {
+    "n": "Nvidia PiD v1.5",
+    "v": "NVIDIA",
+    "c": "Image Generation",
+    "desc_pl": "Najszybszy open-source upscaler v1.5. Pixel Diffusion decoder — zamienia latent representations w super-resolved pixels. Plug-and-play z FLUX, FLUX.2, Qwen-Image. Lepsze detale i kolory vs v1.",
+    "desc_en": "Fastest open-source upscaler v1.5. Pixel Diffusion decoder — turns latent representations into super-resolved pixels. Plug-and-play with FLUX, FLUX.2, Qwen-Image. Better details and colors vs v1.",
+    "b_pl": "FLUX, FLUX.2, Qwen-Image kompatybilny. Open source. HuggingFace.",
+    "b_en": "FLUX, FLUX.2, Qwen-Image compatible. Open source. HuggingFace.",
+    "r": 15,
+    "date": "2026-07-15",
+    "is_new": true
+  },
+  {
+    "n": "Kimi K3",
+    "v": "Moonshot AI",
+    "c": "LLM",
+    "desc_pl": "2.8T MoE (50B active), 1M context. Open weight. #1 Frontend Code Arena (1679 pkt). Fable level. $3/$15 per M tok. Hallucination rate 51%. Biję GPT 5.6 na AI Briefcase, Automation Bench.",
+    "desc_en": "2.8T MoE (50B active), 1M context. Open weight. #1 Frontend Code Arena (1679 pts). Fable level. $3/$15 per M tok. Hallucination rate 51%. Beats GPT 5.6 on AI Briefcase, Automation Bench.",
+    "b_pl": "SWE-bench: blisko Fable 5 i GPT 5.6. DeepSeek SWE: 69%. Kernel Bench: top. Design Arena: top.",
+    "b_en": "SWE-bench: close to Fable 5 and GPT 5.6. DeepSeek SWE: 69%. Kernel Bench: top. Design Arena: top.",
+    "r": 4,
+    "date": "2026-07-16",
+    "is_new": true
+  },
+  {
+    "n": "Bonsai 27B",
+    "v": "Open-source",
+    "c": "LLM",
+    "desc_pl": "Skompresowany Qwen 3.6 na telefon. Ternary weights (-1, 0, +1) = 5.9GB. 1-bit = 3.9GB. 80.5% benchmark vs 85% pełny Qwen. Mieści się na iPhone 17 Pro.",
+    "desc_en": "Compressed Qwen 3.6 for phone. Ternary weights (-1, 0, +1) = 5.9GB. 1-bit = 3.9GB. 80.5% benchmark vs 85% full Qwen. Fits iPhone 17 Pro.",
+    "b_pl": "Ternary: 5.9GB, 1-bit: 3.9GB. Open source GitHub.",
+    "b_en": "Ternary: 5.9GB, 1-bit: 3.9GB. Open source GitHub.",
+    "r": 20,
+    "date": "2026-07-14",
+    "is_new": true
+  },
+  {
+    "n": "GPT Red",
+    "v": "OpenAI",
+    "c": "Security",
+    "desc_pl": "Internal model do red-teaming (atakowania innych modeli). 84% attack success rate vs 13% human. Self-play training. Znajduje prompt injection. NIE publiczny.",
+    "desc_en": "Internal model for red-teaming (attacking other models). 84% attack success rate vs 13% human. Self-play training. Finds prompt injection. NOT public.",
+    "b_pl": "84% attack rate. Internal only. Not released.",
+    "b_en": "84% attack rate. Internal only. Not released.",
+    "r": 50,
+    "date": "2026-07-15",
+    "is_new": true
+  },
+  {
+    "n": "Nvidia RD",
+    "v": "NVIDIA",
+    "c": "3D Generation",
+    "desc_pl": "AI generujący realistyczne ruchy 3D ludzi w czasie rzeczywistym. Dwuetapowe planowanie: ścieżka → animacja kończyn. Gry, animacje, trening robotów.",
+    "desc_en": "AI generating realistic 3D human movements in real-time. Two-stage planning: path → limb animation. Games, animations, robot training.",
+    "b_pl": "Real-time. Two-stage motion planning.",
+    "b_en": "Real-time. Two-stage motion planning.",
+    "r": 30,
+    "date": "2026-07-15",
+    "is_new": true
+  },
+  {
+    "n": "Wan Dancer",
+    "v": "Alibaba",
+    "c": "Video Generation",
+    "desc_pl": "Generuje do 3 minut tańca do muzyki. Key frame control. Open source. Wymaga high-end GPU.",
+    "desc_en": "Generates up to 3 minutes of dance to music. Key frame control. Open source. Requires high-end GPU.",
+    "b_pl": "3 min coherent. Music-to-dance. Open source.",
+    "b_en": "3 min coherent. Music-to-dance. Open source.",
+    "r": 25,
+    "date": "2026-07-15",
+    "is_new": true
+  },
+  {
+    "n": "Lucida",
+    "v": "MIT",
+    "c": "Image Generation",
+    "desc_pl": "Background removal model. Biję komercyjne API 4.3× na camouflage. Hair, tricky backgrounds. Open source, MIT license. 6 sekund/obraz.",
+    "desc_en": "Background removal model. Beats commercial API 4.3× on camouflage. Hair, tricky backgrounds. Open source, MIT license. 6 seconds/image.",
+    "b_pl": "4.3× better than commercial. MIT license. 6s/image.",
+    "b_en": "4.3× better than commercial. MIT license. 6s/image.",
+    "r": 20,
+    "date": "2026-07-14",
+    "is_new": true
+  },
+  {
+    "n": "Thinking Machines Inkling",
+    "v": "Thinking Machines",
+    "c": "LLM",
+    "desc_pl": "975B MoE (41B active), 1M context. Multimodal: text, image, audio. Open weight. Customization over leaderboard. Mira Murati (były CTO OpenAI).",
+    "desc_en": "975B MoE (41B active), 1M context. Multimodal: text, image, audio. Open weight. Customization over leaderboard. Mira Murati (former OpenAI CTO).",
+    "b_pl": "Multimodal native. Open weight. Fine-tune yourself.",
+    "b_en": "Multimodal native. Open weight. Fine-tune yourself.",
+    "r": 15,
+    "date": "2026-07-16",
+    "is_new": true
+  },
+  {
+    "n": "GPT 5.6",
+    "v": "OpenAI",
+    "c": "LLM",
+    "desc_pl": "Flagowy model OpenAI — Soul ($5/$30), Terra, Luna. #1 SWE-bench, ARC AGI 2 (92.5%). Tańszy od Fable 2×. Throttled przez White House do 20 firm.",
+    "desc_en": "OpenAI flagship — Soul ($5/$30), Terra, Luna. #1 SWE-bench, ARC AGI 2 (92.5%). Cheaper than Fable 2×. Throttled by White House to 20 companies.",
+    "b_pl": "SWE-bench #1. ARC AGI 2: 92.5%. 89% błędów na Omniscience.",
+    "b_en": "SWE-bench #1. ARC AGI 2: 92.5%. 89% errors on Omniscience.",
+    "r": 2,
+    "date": "2026-07-09",
+    "is_new": false
+  },
+  {
+    "n": "LongCat 2.0",
+    "v": "Meituan",
+    "c": "LLM",
+    "desc_pl": "1.6T MoE (48B active), trenowany BEZ NVIDIA GPU — na ASIC. Biję Gemini 3.1 Pro. Open-source. Historyczny — pierwszy frontier bez NVIDIA.",
+    "desc_en": "1.6T MoE (48B active), trained WITHOUT NVIDIA GPUs — on ASIC. Beats Gemini 3.1 Pro. Open-source. Historic — first frontier without NVIDIA.",
+    "b_pl": "ASIC super pods. Zero rollbacks. Open source.",
+    "b_en": "ASIC super pods. Zero rollbacks. Open source.",
+    "r": 10,
+    "date": "2026-07-04",
+    "is_new": false
+  },
+  {
+    "n": "Agents A1",
+    "v": "Open-source",
+    "c": "LLM",
+    "desc_pl": "35B parametrów — bije Kimi K2.6 i DeepSeek V4 Pro na HLE i FrontierScience. FP8: 37.7GB, Q4: 21GB.",
+    "desc_en": "35B params — beats Kimi K2.6 and DeepSeek V4 Pro on HLE and FrontierScience. FP8: 37.7GB, Q4: 21GB.",
+    "b_pl": "HLE: beats >1T models. FP8: 37.7GB.",
+    "b_en": "HLE: beats >1T models. FP8: 37.7GB.",
+    "r": 25,
+    "date": "2026-06-26",
+    "is_new": false
+  },
+  {
+    "n": "Nano Banana 2 Light",
+    "v": "Google",
+    "c": "Image Generation",
+    "desc_pl": "Najszybszy i najbardziej cost-efficient image model Google. High throughput.",
+    "desc_en": "Google's fastest and most cost-efficient image model. High throughput.",
+    "b_pl": "Fastest Google image model. $0.034/1k.",
+    "b_en": "Fastest Google image model. $0.034/1k.",
+    "r": 20,
+    "date": "2026-06-30",
+    "is_new": false
   }
-];
-
-const SOURCES = [
-  {
-    "n": 1,
-    "d": "2026-06-28",
-    "id": "7c_ieWfAbrw",
-    "t": "GPT 5.6, Mythos ban lifted, realtime avatars, Seedance 2.5, brain ultrasound",
-    "tr": 1
-  },
-  {
-    "n": 2,
-    "d": "2026-06-24",
-    "id": "1U8dJ94QFNc",
-    "t": "New top local AI image generator is here! Already uncensored",
-    "tr": 0
-  },
-  {
-    "n": 3,
-    "d": "2026-06-21",
-    "id": "kkLlzQqa7MY",
-    "t": "New robot waifus, GLM 5.2 craze, AI spas, new world models, new science agents",
-    "tr": 1
-  },
-  {
-    "n": 4,
-    "d": "2026-06-17",
-    "id": "6d__WOpZswY",
-    "t": "New #1 open-source AI model is here!",
-    "tr": 0
-  },
-  {
-    "n": 5,
-    "d": "2026-06-14",
-    "id": "SxiRANj0xLs",
-    "t": "RIP Claude Fable, open-source AI unleashed, full body avatars, new Google models, new TTS",
-    "tr": 1
-  },
-  {
-    "n": 6,
-    "d": "2026-06-11",
-    "id": "GUEE9OA4keo",
-    "t": "Claude Fable 5 is here!",
-    "tr": 0
-  },
-  {
-    "n": 7,
-    "d": "2026-06-09",
-    "id": "OA4gchz1Zcs",
-    "t": "New BEST local AI image generator is here!",
-    "tr": 0
-  },
-  {
-    "n": 8,
-    "d": "2026-06-07",
-    "id": "CzxqQJOswvo",
-    "t": "Full body waifus, AI dreams, realtime AI music, open-source Gemini Omni",
-    "tr": 1
-  },
-  {
-    "n": 9,
-    "d": "2026-06-02",
-    "id": "DlvhlQOBHBw",
-    "t": "The BEST AI for 4K images. Free & fast",
-    "tr": 0
-  },
-  {
-    "n": 10,
-    "d": "2026-05-31",
-    "id": "RdqYvdT74i0",
-    "t": "Self-improving AI, Opus 4.8, Nvidia bangers, game-ready 3D models, juggling robots",
-    "tr": 0
-  },
-  {
-    "n": 11,
-    "d": "2026-05-28",
-    "id": "QvN6Tu6dHYM",
-    "t": "The acceleration is here!",
-    "tr": 0
-  },
-  {
-    "n": 12,
-    "d": "2026-05-24",
-    "id": "pC6KHflGye0",
-    "t": "AI scientist, DNA editors, AI NPCs, new Qwen, open-source robots, new video editors",
-    "tr": 0
-  },
-  {
-    "n": 13,
-    "d": "2026-05-21",
-    "id": "J02-39xtlt4",
-    "t": "Google strikes back! Gemini Omni, AI glasses, new models",
-    "tr": 0
-  },
-  {
-    "n": 14,
-    "d": "2026-05-17",
-    "id": "NnsQj2nDkKA",
-    "t": "Real gundams, top 3D generator, open-source world models, ChatGPT updates, new TTS",
-    "tr": 0
-  },
-  {
-    "n": 15,
-    "d": "2026-05-14",
-    "id": "s3rNDndvav0",
-    "t": "The biggest AI breakthrough in medicine & drug discovery",
-    "tr": 0
-  },
-  {
-    "n": 16,
-    "d": "2026-05-10",
-    "id": "quxnhOeRz7I",
-    "t": "Self-evolving AI, robot fights, new GPT voice, new local image model, Gemma upgrade",
-    "tr": 0
-  },
-  {
-    "n": 17,
-    "d": "2026-05-08",
-    "id": "7r_WJ9xpne0",
-    "t": "Robot girlfriends, recursive AI agents, full AI research, Happy Horse",
-    "tr": 0
-  },
-  {
-    "n": 18,
-    "d": "2026-04-23",
-    "id": "G8fqduzB5lc",
-    "t": "Claude Opus 4.7, Qwen 3.6, Happy Oyster, realtime 3D worlds, new Google TTS",
-    "tr": 0
-  },
-  {
-    "n": 19,
-    "d": "2026-04-17",
-    "id": "1_5sSJK2rU0",
-    "t": "Claude Mythos, Deepseek v4, HappyHorse, Meta new AI, realtime video games",
-    "tr": 0
-  },
-  {
-    "n": 20,
-    "d": "2026-04-09",
-    "id": "o5rGuknRw2A",
-    "t": "Google open-source AI, Claude Code leaked, new Wan, new Qwen, image gen on phone",
-    "tr": 0
-  }
-];
-
-const CATS = [
-  "LLM",
-  "Image Generation",
-  "Video Generation",
-  "3D Generation",
-  "World Models",
-  "Coding",
-  "TTS",
-  "Multimodal",
-  "AI Science Agents",
-  "AI Research",
-  "Humanoid Robots",
-  "Realtime Avatars",
-  "4D Human",
-  "Neural Interface",
-  "Hardware",
-  "AI Wellness"
 ];
