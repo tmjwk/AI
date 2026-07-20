@@ -1987,7 +1987,9 @@ const M = [
     "b_en": "FLUX, FLUX.2, Qwen-Image compatible. Open source. HuggingFace.",
     "r": 15,
     "date": "2026-07-15",
-    "is_new": true
+    "is_new": true,
+    "d": "2026-07-15",
+    "o": 0
   },
   {
     "n": "Kimi K3",
@@ -1999,7 +2001,9 @@ const M = [
     "b_en": "SWE-bench: close to Fable 5 and GPT 5.6. DeepSeek SWE: 69%. Kernel Bench: top. Design Arena: top.",
     "r": 4,
     "date": "2026-07-16",
-    "is_new": true
+    "is_new": true,
+    "d": "2026-07-16",
+    "o": 1
   },
   {
     "n": "Bonsai 27B",
@@ -2011,7 +2015,9 @@ const M = [
     "b_en": "Ternary: 5.9GB, 1-bit: 3.9GB. Open source GitHub.",
     "r": 20,
     "date": "2026-07-14",
-    "is_new": true
+    "is_new": true,
+    "d": "2026-07-14",
+    "o": 1
   },
   {
     "n": "GPT Red",
@@ -2023,7 +2029,9 @@ const M = [
     "b_en": "84% attack rate. Internal only. Not released.",
     "r": 50,
     "date": "2026-07-15",
-    "is_new": true
+    "is_new": true,
+    "d": "2026-07-15",
+    "o": 0
   },
   {
     "n": "Nvidia RD",
@@ -2035,7 +2043,9 @@ const M = [
     "b_en": "Real-time. Two-stage motion planning.",
     "r": 30,
     "date": "2026-07-15",
-    "is_new": true
+    "is_new": true,
+    "d": "2026-07-15",
+    "o": 0
   },
   {
     "n": "Wan Dancer",
@@ -2047,7 +2057,9 @@ const M = [
     "b_en": "3 min coherent. Music-to-dance. Open source.",
     "r": 25,
     "date": "2026-07-15",
-    "is_new": true
+    "is_new": true,
+    "d": "2026-07-15",
+    "o": 0
   },
   {
     "n": "Lucida",
@@ -2059,7 +2071,9 @@ const M = [
     "b_en": "4.3× better than commercial. MIT license. 6s/image.",
     "r": 20,
     "date": "2026-07-14",
-    "is_new": true
+    "is_new": true,
+    "d": "2026-07-14",
+    "o": 1
   },
   {
     "n": "Thinking Machines Inkling",
@@ -2071,7 +2085,9 @@ const M = [
     "b_en": "Multimodal native. Open weight. Fine-tune yourself.",
     "r": 15,
     "date": "2026-07-16",
-    "is_new": true
+    "is_new": true,
+    "d": "2026-07-16",
+    "o": 0
   },
   {
     "n": "GPT 5.6",
@@ -2083,7 +2099,9 @@ const M = [
     "b_en": "SWE-bench #1. ARC AGI 2: 92.5%. 89% errors on Omniscience.",
     "r": 2,
     "date": "2026-07-09",
-    "is_new": false
+    "is_new": false,
+    "d": "2026-07-09",
+    "o": 0
   },
   {
     "n": "LongCat 2.0",
@@ -2095,7 +2113,9 @@ const M = [
     "b_en": "ASIC super pods. Zero rollbacks. Open source.",
     "r": 10,
     "date": "2026-07-04",
-    "is_new": false
+    "is_new": false,
+    "d": "2026-07-04",
+    "o": 1
   },
   {
     "n": "Agents A1",
@@ -2107,7 +2127,9 @@ const M = [
     "b_en": "HLE: beats >1T models. FP8: 37.7GB.",
     "r": 25,
     "date": "2026-06-26",
-    "is_new": false
+    "is_new": false,
+    "d": "2026-06-26",
+    "o": 1
   },
   {
     "n": "Nano Banana 2 Light",
@@ -2119,29 +2141,18 @@ const M = [
     "b_en": "Fastest Google image model. $0.034/1k.",
     "r": 20,
     "date": "2026-06-30",
-    "is_new": false
+    "is_new": false,
+    "d": "2026-06-30",
+    "o": 0
   }
+];
+
+const CATS = [
+  "LLM", "Image Generation", "Video Generation", "3D Generation", "World Models",
+  "Coding", "TTS", "Multimodal", "AI Science Agents", "AI Research",
+  "Humanoid Robots", "Realtime Avatars", "4D Human", "Neural Interface",
+  "Hardware", "AI Wellness", "Security"
 ];
 
 const TODAY = "2026-07-19";
 const NEW_DAYS = 14;
-
-const CATS = [
-  "LLM",
-  "Image Generation",
-  "Video Generation",
-  "3D Generation",
-  "World Models",
-  "Coding",
-  "TTS",
-  "Multimodal",
-  "AI Science Agents",
-  "AI Research",
-  "Humanoid Robots",
-  "Realtime Avatars",
-  "4D Human",
-  "Neural Interface",
-  "Hardware",
-  "AI Wellness",
-  "Security"
-];
