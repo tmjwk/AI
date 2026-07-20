@@ -1,4 +1,4 @@
-// AI Weekly Summary — auto-generated from weekly.json
+// AI Weekly Summary — auto-generated
 const WEEKLY = [
   {
     "num": 29,
@@ -146,6 +146,19 @@ const WEEKLY = [
             "author": "Dave Blundin",
             "text_pl": "Meta była liderem open source, teraz ma closed API. Taki sam path jak OpenAI.",
             "text_en": "Meta was leader of open source, now has closed API. Same path as OpenAI."
+          }
+        ]
+      },
+      {
+        "title_pl": "Nvidia PiD v1.5 — najszybszy open-source upscaler",
+        "title_en": "Nvidia PiD v1.5 — fastest open-source upscaler",
+        "body_pl": "Nvidia wydała PiD v1.5 — update najszybszego open-source upscalera. Lepsze detale i kolory vs v1. Plug-and-play z FLUX, FLUX.2, Qwen-Image. Pixel Diffusion decoder — zamienia latent representations bezpośrednio w super-resolved pixels.\n\n**Implikacja:** Upscaling staje się commodity. PiD v1.5 = darmowy, open-source, plug-and-play. Koniec płacenia za komercyjne upscalery.",
+        "body_en": "Nvidia released PiD v1.5 — update to fastest open-source upscaler. Better details and colors vs v1. Plug-and-play with FLUX, FLUX.2, Qwen-Image. Pixel Diffusion decoder — turns latent representations directly into super-resolved pixels.\n\n**Implication:** Upscaling becomes commodity. PiD v1.5 = free, open-source, plug-and-play. End of paying for commercial upscalers.",
+        "quotes": [
+          {
+            "author": "AI Search",
+            "text_pl": "Najszybszy open-source upscaler v1.5. Lepsze detale i kolory. Plug-and-play.",
+            "text_en": "Fastest open-source upscaler v1.5. Better details and colors. Plug-and-play."
           }
         ]
       },

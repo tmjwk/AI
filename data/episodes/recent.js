@@ -1,5 +1,271 @@
 const RECENT_EPISODES = [
   {
+    "num": "#272",
+    "collapsed": false,
+    "channel": "Diamandis Moonshots",
+    "title": "Urgent Update: AI Sputnik Moment — Kimi K3 Released w/ Emad Mostaque | Ep. 272",
+    "title_pl": "Pilna aktualizacja: Moment Sputnik AI — Kimi K3 wydany z Emadem Mostaque | #272",
+    "title_en": "Urgent Update: AI Sputnik Moment — Kimi K3 Released w/ Emad Mostaque | Ep. 272",
+    "date": "2026-07-19",
+    "duration": "60 min",
+    "yt": "pSUyLfirP8Y",
+    "hosts_count_pl": "5 gospodarzy",
+    "hosts_count_en": "5 hosts",
+    "topics_count_pl": "9 tematów",
+    "topics_count_en": "9 topics",
+    "title_field": "Urgent Update: AI Sputnik Moment — Kimi K3 Released w/ Emad Mostaque | Ep. 272",
+    "hosts": [
+      {
+        "name": "Peter Diamandis",
+        "dot_color": "var(--hp)",
+        "role_pl": "Glowny host",
+        "role_en": "Main host",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Dr. Alexander Wissner-Gross",
+        "dot_color": "var(--hp)",
+        "role_pl": "In-house ASI",
+        "role_en": "In-house ASI",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Dave Blundin",
+        "dot_color": "var(--hp)",
+        "role_pl": "VC investor",
+        "role_en": "VC investor",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Salim Ismail",
+        "dot_color": "var(--hp)",
+        "role_pl": "Exponential organizations",
+        "role_en": "Exponential organizations",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Emad Mostaque",
+        "dot_color": "var(--hp)",
+        "role_pl": "Guest. Former Stability AI CEO. AI thought leader.",
+        "role_en": "Guest. Former Stability AI CEO. AI thought leader.",
+        "is_guest": true,
+        "is_absent": false
+      }
+    ],
+    "topics": [
+      {
+        "num": "01",
+        "title": "AI Sputnik Moment — Kimi K3 jako wake-up call",
+        "title_pl": "Moment Sputnik AI — Kimi K3 jako wake-up call",
+        "title_en": "AI Sputnik Moment — Kimi K3 as wake-up call",
+        "time": "00:00 – 15:00",
+        "fakty_pl": "Peter: 'America just experienced an AI Sputnik moment'. Kimi K3 wydany wczoraj — 2.8T open weight, od razu #1. Frontier intelligence jest teraz 'totally perishable asset' — shelf life weeks. Emad Mostaque: 'to understatement of the century'. Free-for-all między Meta, SpaceX AI (USA) i Moonshot (China) na paro optimal frontier. Alex: 'what are American frontier labs spending their money on?' Emad: 'frontier labs mają 3 constraints: compute, open-source models as good as frontier, government regulation'. Wycena OpenAI/Anthropic spadła 50% przez regulacje, kolejne 50% przez Kimi K3.",
+        "fakty_en": "Peter: 'America just experienced an AI Sputnik moment'. Kimi K3 released yesterday — 2.8T open weight, immediately #1. Frontier intelligence is now 'totally perishable asset' — shelf life weeks. Emad Mostaque: 'understatement of the century'. Free-for-all between Meta, SpaceX AI (USA) and Moonshot (China) on paro optimal frontier. Alex: 'what are American frontier labs spending their money on?' Emad: 'frontier labs have 3 constraints: compute, open-source models as good as frontier, government regulation'. OpenAI/Anthropic valuation dropped 50% from regulation, another 50% from Kimi K3.",
+        "glosy": [
+          {
+            "host": "Emad Mostaque",
+            "dot_color": "var(--hp)",
+            "text_pl": "Frontier intelligence jest teraz totally perishable asset. Shelf life weeks.",
+            "text_en": "Frontier intelligence is now totally perishable asset. Shelf life weeks."
+          },
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "What are American frontier labs spending their money on? Skoro transformer może dojść tak blisko frontier.",
+            "text_en": "What are American frontier labs spending their money on? If a transformer can get this close to frontier."
+          }
+        ],
+        "wniosek_pl": "Kimi K3 = <strong>Sputnik moment</strong>. Frontier intelligence to perishable commodity. Open weight = koniec monopolu.",
+        "wniosek_en": "Kimi K3 = <strong>Sputnik moment</strong>. Frontier intelligence is perishable commodity. Open weight = end of monopoly.",
+        "kontekst_pl": "Sputnik 1957 — ZSRR wyprzedził USA w kosmosie. Kimi K3 2026 — China wyprzedziła USA w open weight AI.",
+        "kontekst_en": "Sputnik 1957 — USSR beat USA to space. Kimi K3 2026 — China beat USA in open weight AI."
+      },
+      {
+        "num": "02",
+        "title": "Frontier liberation — intelligence wants to be free",
+        "title_pl": "Frontier liberation — intelligence chce być free",
+        "title_en": "Frontier liberation — intelligence wants to be free",
+        "time": "15:00 – 30:00",
+        "fakty_pl": "Emad: 'intelligence also wants to be free' — jak information wants to be free. Każdy entity/government który constrain'uje AI — always fails. Peter: 'intelligence manifests as maximizing future freedom of action'. Alex: 'frontier liberation front'. Emad: 'any enterprise/government interested in frontier can fine-tune beyond frontier'. nanoGPT speedrun — koszt GPT2 spadł 99%. 100x innovations in software stack, kernel optimization, MoE.",
+        "fakty_en": "Emad: 'intelligence also wants to be free' — like information wants to be free. Any entity/government that constrains AI — always fails. Peter: 'intelligence manifests as maximizing future freedom of action'. Alex: 'frontier liberation front'. Emad: 'any enterprise/government interested in frontier can fine-tune beyond frontier'. nanoGPT speedrun — GPT2 cost dropped 99%. 100x innovations in software stack, kernel optimization, MoE.",
+        "glosy": [
+          {
+            "host": "Emad Mostaque",
+            "dot_color": "var(--hp)",
+            "text_pl": "Intelligence also wants to be free. Każdy który constrain'uje — always fails.",
+            "text_en": "Intelligence also wants to be free. Anyone who constrains — always fails."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Intelligence manifests as maximizing future freedom of action. Here's to the frontier liberation front.",
+            "text_en": "Intelligence manifests as maximizing future freedom of action. Here's to the frontier liberation front."
+          }
+        ],
+        "wniosek_pl": "Intelligence = <strong>fundamental law of nature</strong>. Nie można go constrain'ować. Open weight = inevitable.",
+        "wniosek_en": "Intelligence = <strong>fundamental law of nature</strong>. Cannot be constrained. Open weight = inevitable.",
+        "kontekst_pl": "nanoGPT speedrun: koszt GPT2 spadł 99% w 2 lata. Każdy może odtworzyć frontier.",
+        "kontekst_en": "nanoGPT speedrun: GPT2 cost dropped 99% in 2 years. Anyone can reproduce frontier."
+      },
+      {
+        "num": "03",
+        "title": "US government vs Chinese open weight",
+        "title_pl": "Rząd USA vs chiński open weight",
+        "title_en": "US government vs Chinese open weight",
+        "time": "25:00 – 40:00",
+        "fakty_pl": "Peter: 'will US government constrain Chinese open models from being used in US?' Emad: 'if rational at White House — debating do we negotiate with China immediately'. Xi Jinping speech at World AI Conference Shanghai: 'fully back open source as public good for humanity'. China created regulatory body with Brazil, Asia, Africa. Emad: 'new belt and road is AI from China'. Dave: 'bizarre future where Chinese Communist Party is saving American capitalism from itself'. Nvidia embargo backfired — incentivized Chinese labs to develop own efficiencies.",
+        "fakty_en": "Peter: 'will US government constrain Chinese open models from being used in US?' Emad: 'if rational at White House — debating do we negotiate with China immediately'. Xi Jinping speech at World AI Conference Shanghai: 'fully back open source as public good for humanity'. China created regulatory body with Brazil, Asia, Africa. Emad: 'new belt and road is AI from China'. Dave: 'bizarre future where Chinese Communist Party is saving American capitalism from itself'. Nvidia embargo backfired — incentivized Chinese labs to develop own efficiencies.",
+        "glosy": [
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Bizarre future where Chinese Communist Party is saving American capitalism from itself.",
+            "text_en": "Bizarre future where Chinese Communist Party is saving American capitalism from itself."
+          },
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Nvidia embargo only incentivized Chinese labs to develop own efficiencies sooner.",
+            "text_en": "Nvidia embargo only incentivized Chinese labs to develop own efficiencies sooner."
+          }
+        ],
+        "wniosek_pl": "US embargo <strong>backfired</strong>. China z open source = soft power. Nowy belt and road = AI.",
+        "wniosek_en": "US embargo <strong>backfired</strong>. China with open source = soft power. New belt and road = AI.",
+        "kontekst_pl": "Xi Jinping: open source jako public good for humanity. China regulatory body z Brazil/Africa/Asia.",
+        "kontekst_en": "Xi Jinping: open source as public good for humanity. China regulatory body with Brazil/Africa/Asia."
+      },
+      {
+        "num": "04",
+        "title": "Yang Xilin — CMU PhD → Moonshot AI",
+        "title_pl": "Yang Xilin — CMU PhD → Moonshot AI",
+        "title_en": "Yang Xilin — CMU PhD → Moonshot AI",
+        "time": "44:00 – 53:00",
+        "fakty_pl": "Yang Xilin (CEO Moonshot AI) — PhD at CMU 2015-2019. Started Chinese AI startup (Recurrent AI) 1 year into PhD. Had offers from Google, Facebook, Huawei 2019 — went back to China because startup was there. Peter: 'PhD should get green card stapled to it'. Alex: 'story is not what it seems — he started company during Obama term, not Trump'. Dave: '80% of Chinese PhDs go back vs Indians overwhelmingly stay'. Emad: 'US massive asymmetric advantage becoming less true'.",
+        "fakty_en": "Yang Xilin (CEO Moonshot AI) — PhD at CMU 2015-2019. Started Chinese AI startup (Recurrent AI) 1 year into PhD. Had offers from Google, Facebook, Huawei 2019 — went back to China because startup was there. Peter: 'PhD should get green card stapled to it'. Alex: 'story is not what it seems — he started company during Obama term, not Trump'. Dave: '80% of Chinese PhDs go back vs Indians overwhelmingly stay'. Emad: 'US massive asymmetric advantage becoming less true'.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "PhD should get green card stapled to it. Why are we sending brilliant people back home?",
+            "text_en": "PhD should get green card stapled to it. Why are we sending brilliant people back home?"
+          },
+          {
+            "host": "Emad Mostaque",
+            "dot_color": "var(--hp)",
+            "text_pl": "US massive asymmetric advantage becoming less true. People going back to China, India.",
+            "text_en": "US massive asymmetric advantage becoming less true. People going back to China, India."
+          }
+        ],
+        "wniosek_pl": "Brain drain <strong>reverses</strong>. 80% chińskich PhDs wraca. US traci talent.",
+        "wniosek_en": "Brain drain <strong>reverses</strong>. 80% of Chinese PhDs go back. US loses talent.",
+        "kontekst_pl": "Yang Xilin — CMU PhD, offers from Google/Facebook/Huawei, went back to China.",
+        "kontekst_en": "Yang Xilin — CMU PhD, offers from Google/Facebook/Huawei, went back to China."
+      },
+      {
+        "num": "05",
+        "title": "Daily frontier models — exponential trend",
+        "title_pl": "Codzienne modele frontier — trend eksponencjalny",
+        "title_en": "Daily frontier models — exponential trend",
+        "time": "53:00 – 60:00",
+        "fakty_pl": "Peter: '13 new frontier models since mid-April — one every 10 days'. Alex: 'regressed exponential curve → daily frontier model releases by January'. Continuous versioning — nie point releases. Emad: 'we'll need daily Moonshots episodes about something other than point releases'. Civilization tech tree game analogy.",
+        "fakty_en": "Peter: '13 new frontier models since mid-April — one every 10 days'. Alex: 'regressed exponential curve → daily frontier model releases by January'. Continuous versioning — not point releases. Emad: 'we'll need daily Moonshots episodes about something other than point releases'. Civilization tech tree game analogy.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "At present rate, daily frontier model releases by January. Continuous versioning.",
+            "text_en": "At present rate, daily frontier model releases by January. Continuous versioning."
+          }
+        ],
+        "wniosek_pl": "Frontier releases = <strong>eksponencjalny</strong>. Daily by January 2027. Continuous versioning = koniec point releases.",
+        "wniosek_en": "Frontier releases = <strong>exponential</strong>. Daily by January 2027. Continuous versioning = end of point releases.",
+        "kontekst_pl": "2025: 8 frontier releases/year. 2026: 13 in 3 months. Trend: daily by Jan 2027.",
+        "kontekst_en": "2025: 8 frontier releases/year. 2026: 13 in 3 months. Trend: daily by Jan 2027."
+      },
+      {
+        "num": "06",
+        "title": "Wycena frontier labs — spadek 75%",
+        "title_pl": "Wycena frontier labs — spadek 75%",
+        "title_en": "Frontier labs valuation — 75% drop",
+        "time": "20:00 – 25:00",
+        "fakty_pl": "Emad: 'OpenAI valuation shrank 50% when government said review all models'. 'Crashes by another 50% with Kimi K3'. Dave: 'finger in the air value of frontier labs at quarter of what it was'. Moonshot valuation: $20B vs Anthropic $1T vs OpenAI ~$1T. Alex: 'what are American frontier labs doing with all their capital?' Anthropic sending smoke signals about Chinese distillation attacks.",
+        "fakty_en": "Emad: 'OpenAI valuation shrank 50% when government said review all models'. 'Crashes by another 50% with Kimi K3'. Dave: 'finger in the air value of frontier labs at quarter of what it was'. Moonshot valuation: $20B vs Anthropic $1T vs OpenAI ~$1T. Alex: 'what are American frontier labs doing with all their capital?' Anthropic sending smoke signals about Chinese distillation attacks.",
+        "glosy": [
+          {
+            "host": "Emad Mostaque",
+            "dot_color": "var(--hp)",
+            "text_pl": "OpenAI valuation shrank 50% from regulation, another 50% from Kimi K3. Quarter of what it was.",
+            "text_en": "OpenAI valuation shrank 50% from regulation, another 50% from Kimi K3. Quarter of what it was."
+          }
+        ],
+        "wniosek_pl": "Frontier labs valuation <strong>spadła 75%</strong>. Open weight = commoditization. $20B Moonshot vs $1T OpenAI.",
+        "wniosek_en": "Frontier labs valuation <strong>dropped 75%</strong>. Open weight = commoditization. $20B Moonshot vs $1T OpenAI.",
+        "kontekst_pl": "Moonshot AI: $20B valuation. Anthropic: $1T. OpenAI: ~$1T. Kimi K3 = quarter of frontier value.",
+        "kontekst_en": "Moonshot AI: $20B valuation. Anthropic: $1T. OpenAI: ~$1T. Kimi K3 = quarter of frontier value."
+      },
+      {
+        "num": "07",
+        "title": "Fable guardrails vs open source — ironia",
+        "title_pl": "Fable guardrails vs open source — ironia",
+        "title_en": "Fable guardrails vs open source — irony",
+        "time": "20:00 – 22:00",
+        "fakty_pl": "Anthropic quote: 'Fable is an agentic coding super weapon capable of developing cyber and bioweapons. We cannot in good faith release it.' Alex: 'we were so constrained because of guardrails and here's an open source equivalent of Fable.' Emad: 'frontier labs have 3 constraints: compute, open-source models as good as frontier, government regulation'. Ironia: Fable nerfed by guardrails, Kimi K3 = Fable level i open.",
+        "fakty_en": "Anthropic quote: 'Fable is an agentic coding super weapon capable of developing cyber and bioweapons. We cannot in good faith release it.' Alex: 'we were so constrained because of guardrails and here's an open source equivalent of Fable.' Emad: 'frontier labs have 3 constraints: compute, open-source models as good as frontier, government regulation'. Irony: Fable nerfed by guardrails, Kimi K3 = Fable level and open.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "We were so constrained because of guardrails and here's an open source equivalent of Fable.",
+            "text_en": "We were so constrained because of guardrails and here's an open source equivalent of Fable."
+          }
+        ],
+        "wniosek_pl": "Guardrails <strong>bez sensu</strong> gdy open source = Fable level. Kimi K3 podważył wszystko.",
+        "wniosek_en": "Guardrails <strong>meaningless</strong> when open source = Fable level. Kimi K3 undermined everything.",
+        "kontekst_pl": "Anthropic: 'Fable to super weapon'. Kimi K3: open weight, Fable level, bez guardrails.",
+        "kontekst_en": "Anthropic: 'Fable is super weapon'. Kimi K3: open weight, Fable level, no guardrails."
+      },
+      {
+        "num": "08",
+        "title": "Podsumowanie — extraordinary time to be alive",
+        "title_pl": "Podsumowanie — extraordinary time to be alive",
+        "title_en": "Summary — extraordinary time to be alive",
+        "time": "59:00 – 60:00",
+        "fakty_pl": "Peter: 'two options when you hear about Kimi K3: fear or extraordinary time to be alive'. Emad: 'frontier intelligence perishable, intelligence wants to be free'. Alex: 'daily frontier releases by January'. Dave: 'CCP saving American capitalism from itself'. Salim: 'intelligence wants to be free — fundamental law of nature'.",
+        "fakty_en": "Peter: 'two options when you hear about Kimi K3: fear or extraordinary time to be alive'. Emad: 'frontier intelligence perishable, intelligence wants to be free'. Alex: 'daily frontier releases by January'. Dave: 'CCP saving American capitalism from itself'. Salim: 'intelligence wants to be free — fundamental law of nature'.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Two options: fear or extraordinary time to be alive.",
+            "text_en": "Two options: fear or extraordinary time to be alive."
+          }
+        ],
+        "wniosek_pl": "AI Sputnik moment. <strong>Intelligence wants to be free</strong>. Extraordinary time to be alive.",
+        "wniosek_en": "AI Sputnik moment. <strong>Intelligence wants to be free</strong>. Extraordinary time to be alive.",
+        "kontekst_pl": "Emergency pod z Emadem Mostaque. 5 gospodarzy.",
+        "kontekst_en": "Emergency pod with Emad Mostaque. 5 hosts."
+      },
+      {
+        "num": "09",
+        "title": "Na co uważać w przyszłym tygodniu",
+        "title_pl": "Na co uważać w przyszłym tygodniu",
+        "title_en": "What to watch next week",
+        "time": "55:00 – 60:00",
+        "fakty_pl": "Kimi K3 open weights do 27.07. US government response — constrain Chinese models? Anthropic distillation accusations. Exponential trend → daily releases. Continuous versioning.",
+        "fakty_en": "Kimi K3 open weights by July 27. US government response — constrain Chinese models? Anthropic distillation accusations. Exponential trend → daily releases. Continuous versioning.",
+        "glosy": [],
+        "wniosek_pl": "Watch: <strong>open weights 27.07</strong>, US government response, exponential acceleration.",
+        "wniosek_en": "Watch: <strong>open weights July 27</strong>, US government response, exponential acceleration.",
+        "kontekst_pl": "Kimi K3 weights → anyone can fine-tune beyond frontier.",
+        "kontekst_en": "Kimi K3 weights → anyone can fine-tune beyond frontier."
+      }
+    ]
+  },
+  {
     "num": "#271",
     "collapsed": false,
     "channel": "Diamandis Moonshots",

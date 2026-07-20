@@ -2,17 +2,27 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-19 09:11:12 UTC
+// Generated: 2026-07-20 03:27:53 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-07-19",
+    "type": "diamandis",
+    "title_pl": "Podcast #272 — Pilna aktualizacja: Moment Sputnik AI — Kimi K3 wydany z Emadem Mostaque | #272",
+    "title_en": "Podcast #272 — Urgent Update: AI Sputnik Moment — Kimi K3 Released w/ Emad Mostaque | Ep. 272",
+    "link": "ai-pulse.html#272",
+    "meta_pl": "9 tematów",
+    "meta_en": "9 topics",
+    "num": "#272"
+  },
   {
     "date": "2026-07-19",
     "type": "weekly",
     "title_pl": "AI Tydzień #29 | 13-19/07/2026",
     "title_en": "AI Week #29 | 13-19/07/2026",
     "link": "index.html#article-29",
-    "meta_pl": "10 sekcji",
-    "meta_en": "10 sections",
+    "meta_pl": "12 sekcji",
+    "meta_en": "12 sections",
     "num": "29"
   },
   {

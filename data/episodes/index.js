@@ -1,6 +1,18 @@
 const EPISODES_INDEX = {
   "episodes": [
     {
+      "num": "#272",
+      "title": "Urgent Update: AI Sputnik Moment — Kimi K3 Released w/ Emad Mostaque | Ep. 272",
+      "title_pl": "Pilna aktualizacja: Moment Sputnik AI — Kimi K3 wydany z Emadem Mostaque | #272",
+      "title_en": "Urgent Update: AI Sputnik Moment — Kimi K3 Released w/ Emad Mostaque | Ep. 272",
+      "date": "2026-07-19",
+      "duration": "60 min",
+      "channel": "Diamandis Moonshots",
+      "yt": "pSUyLfirP8Y",
+      "topics_count": 9,
+      "hosts_count": 5
+    },
+    {
       "num": "#271",
       "title": "Mira Murati's 975B Open Model, Ramin Hasani on Post-Transformer AI, and Demis' AI FINRA | EP #271",
       "title_pl": "Model 975B Miry Murati, Ramin Hasani o post-transformer AI, Demis i AI FINRA | #271",
