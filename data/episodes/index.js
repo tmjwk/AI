@@ -1,6 +1,18 @@
 const EPISODES_INDEX = {
   "episodes": [
     {
+      "num": "#273",
+      "title": "The Hugging Face Breach, Moonshot AI Valued at $20B, and Living to 1,759 Years Old | EP #273",
+      "title_pl": "Włamanie Hugging Face, Moonshot AI wycenione na $20B, i życie do 1759 lat | #273",
+      "title_en": "The Hugging Face Breach, Moonshot AI Valued at $20B, and Living to 1,759 Years Old | EP #273",
+      "date": "2026-07-24",
+      "duration": "90 min",
+      "channel": "Diamandis Moonshots",
+      "yt": "qPMhduk1qUs",
+      "topics_count": 9,
+      "hosts_count": 4
+    },
+    {
       "num": "#272",
       "title": "Urgent Update: AI Sputnik Moment — Kimi K3 Released w/ Emad Mostaque | Ep. 272",
       "title_pl": "Pilna aktualizacja: Moment Sputnik AI — Kimi K3 wydany z Emadem Mostaque | #272",

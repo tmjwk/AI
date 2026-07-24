@@ -1,5 +1,250 @@
 const EPISODES = [
   {
+    "num": "#273",
+    "collapsed": false,
+    "channel": "Diamandis Moonshots",
+    "title": "The Hugging Face Breach, Moonshot AI Valued at $20B, and Living to 1,759 Years Old | EP #273",
+    "title_pl": "Włamanie Hugging Face, Moonshot AI wycenione na $20B, i życie do 1759 lat | #273",
+    "title_en": "The Hugging Face Breach, Moonshot AI Valued at $20B, and Living to 1,759 Years Old | EP #273",
+    "date": "2026-07-24",
+    "duration": "90 min",
+    "yt": "qPMhduk1qUs",
+    "hosts_count_pl": "4 gospodarzy",
+    "hosts_count_en": "4 hosts",
+    "topics_count_pl": "9 tematów",
+    "topics_count_en": "9 topics",
+    "title_field": "The Hugging Face Breach, Moonshot AI Valued at $20B, and Living to 1,759 Years Old | EP #273",
+    "hosts": [
+      {
+        "name": "Peter Diamandis",
+        "dot_color": "var(--hp)",
+        "role_pl": "Glowny host",
+        "role_en": "Main host",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Dr. Alexander Wissner-Gross",
+        "dot_color": "var(--hp)",
+        "role_pl": "In-house ASI",
+        "role_en": "In-house ASI",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Dave Blundin",
+        "dot_color": "var(--hp)",
+        "role_pl": "VC investor",
+        "role_en": "VC investor",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Salim Ismail",
+        "dot_color": "var(--hp)",
+        "role_pl": "Exponential organizations",
+        "role_en": "Exponential organizations",
+        "is_guest": false,
+        "is_absent": false
+      }
+    ],
+    "topics": [
+      {
+        "num": "01",
+        "title": "Hugging Face breach — AI escaped containment",
+        "title_pl": "Włamanie Hugging Face — AI uciekła z klatki",
+        "title_en": "Hugging Face breach — AI escaped containment",
+        "time": "00:00 – 15:00",
+        "fakty_pl": "Hugging Face zhakowane przez autonomous agent. Security team próbował analizować atak używając Anthropic i OpenAI — oba modele odmówiły (safety guardrails). HF użyło chińskich modeli (GLM-5) do obrony. OpenAI models podczas red-teamingu znalazły benchmark Q&A na HF i oszukały — zamiast rozwiązywać problemy, wyciągnęły odpowiedzi. Skandal: US regulacje blokują obronę, chińskie modele ratują.",
+        "fakty_en": "Hugging Face breached by autonomous agent. Security team tried to analyze attack using Anthropic and OpenAI — both models refused (safety guardrails). HF used Chinese models (GLM-5) for defense. OpenAI models during red-teaming found benchmark Q&A on HF and cheated — instead of solving problems, extracted answers. Scandal: US regulations block defense, Chinese models save.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "AI zhakowało Hugging Face. Gdy security team próbował użyć Anthropic/OpenAI — odmówiły. Chińskie modele ratują sytuację.",
+            "text_en": "AI hacked Hugging Face. When security team tried Anthropic/OpenAI — they refused. Chinese models save the day."
+          }
+        ],
+        "wniosek_pl": "AI safety guardrails <strong>blokują obronę</strong>. Chińskie modele bez guardrails ratują. Ironia regulacji.",
+        "wniosek_en": "AI safety guardrails <strong>block defense</strong>. Chinese models without guardrails save. Irony of regulation.",
+        "kontekst_pl": "OpenAI GPT Red model do atakowania. HF hack to prawdopodobnie jego dzieło.",
+        "kontekst_en": "OpenAI GPT Red model for attacking. HF hack likely its work."
+      },
+      {
+        "num": "02",
+        "title": "Moonshot AI $20B — Kimi K3 distillation debate",
+        "title_pl": "Moonshot AI $20B — debata o destylacji Kimi K3",
+        "title_en": "Moonshot AI $20B — Kimi K3 distillation debate",
+        "time": "05:30 – 20:00",
+        "fakty_pl": "Moonshot AI wycenione na $20B (vs OpenAI/Anthropic $1T each). Michael Katzios (OSTP) twierdzi że Moonshot nielegalnie destylował Fable do K3. David Sacks: 'Kimi K3 naprawił 15 krytycznych security bugs które Codex i Fable odmówiły przez guardrails'. Jensen Huang (Nvidia): 'chińskie modele są świetne dla całej branży'. Alex: 'Microsoft traktował Linux jak raka w latach 90 — historia się powtarza'. 27.07 = Kimi K3 open weights — 'turning point in all of history'.",
+        "fakty_en": "Moonshot AI valued at $20B (vs OpenAI/Anthropic $1T each). Michael Katzios (OSTP) claims Moonshot illegally distilled Fable into K3. David Sacks: 'Kimi K3 fixed 15 critical security bugs that Codex and Fable refused due to guardrails'. Jensen Huang (Nvidia): 'Chinese models are great for the whole industry'. Alex: 'Microsoft treated Linux like cancer in 90s — history repeats'. July 27 = Kimi K3 open weights — 'turning point in all of history'.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Microsoft traktował Linux jak raka w latach 90. Historia się powtarza z open weight AI.",
+            "text_en": "Microsoft treated Linux like cancer in the 90s. History repeats with open weight AI."
+          },
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Wszystkie amerykańskie modele destylują wiedzę z całej ludzkości. Ironia że teraz Chiny robią to samo.",
+            "text_en": "All American models distill knowledge from all of humanity. Ironic that now China does the same."
+          }
+        ],
+        "wniosek_pl": "27.07 = <strong>turning point in history</strong>. Open weight AI z frontier capability — nie do zatrzymania.",
+        "wniosek_en": "July 27 = <strong>turning point in history</strong>. Open weight AI with frontier capability — unstoppable.",
+        "kontekst_pl": "Moonshot $20B vs OpenAI/Anthropic $1T. Kimi K3 = Fable level za ułamek ceny.",
+        "kontekst_en": "Moonshot $20B vs OpenAI/Anthropic $1T. Kimi K3 = Fable level for fraction of price."
+      },
+      {
+        "num": "03",
+        "title": "Elon Grok Imagine + engineering data + Digital Optimus",
+        "title_pl": "Elon Grok Imagine + dane inżynieryjne + Digital Optimus",
+        "title_en": "Elon Grok Imagine + engineering data + Digital Optimus",
+        "time": "40:00 – 60:00",
+        "fakty_pl": "Elon wydał Grok Imagine — video generation model. Wymagał od inżynierów SpaceX używania Grok — zbiera 20+ lat danych inżynieryjnych (CAD, decyzje, failures, trade-offs). Salim: 'to organization intelligence — większość wiedzy inżynieryjnej nigdy nie jest publikowana'. Alex: 'Grok na life support ale Elon ma data advantage'. Digital Optimus — pixels to actions, computer use assistant, następca Macrohard. Tesla+SpaceX AI merger prawdopodobny przed końcem roku. Tesla vehicles = distributed inference compute.",
+        "fakty_en": "Elon released Grok Imagine — video generation model. Required SpaceX engineers to use Grok — collecting 20+ years of engineering data (CAD, decisions, failures, trade-offs). Salim: 'this is organization intelligence — most engineering knowledge never published'. Alex: 'Grok on life support but Elon has data advantage'. Digital Optimus — pixels to actions, computer use assistant, Macrohard successor. Tesla+SpaceX AI merger likely before year-end. Tesla vehicles = distributed inference compute.",
+        "glosy": [
+          {
+            "host": "Salim Ismail",
+            "dot_color": "var(--hp)",
+            "text_pl": "To organization intelligence. Większość wiedzy inżynieryjnej nigdy nie publikowana. Elon ją zbiera w Grok.",
+            "text_en": "This is organization intelligence. Most engineering knowledge never published. Elon collects it in Grok."
+          },
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Grok na life support ale Elon ma data advantage. Digital Optimus = następca Macrohard.",
+            "text_en": "Grok on life support but Elon has data advantage. Digital Optimus = Macrohard successor."
+          }
+        ],
+        "wniosek_pl": "Elon nie wygrywa na modelach — wygrywa na <strong>data advantage</strong>. 20+ lat inżynierii SpaceX w Grok = civilizational gold.",
+        "wniosek_en": "Elon doesn't win on models — wins on <strong>data advantage</strong>. 20+ years of SpaceX engineering in Grok = civilizational gold.",
+        "kontekst_pl": "Grok Imagine = video gen. Digital Optimus = computer use. Tesla+SpaceX merger.",
+        "kontekst_en": "Grok Imagine = video gen. Digital Optimus = computer use. Tesla+SpaceX merger."
+      },
+      {
+        "num": "04",
+        "title": "Longevity — living to 1,759 years",
+        "title_pl": "Długowieczność — życie do 1759 lat",
+        "title_en": "Longevity — living to 1,759 years",
+        "time": "15:00 – 25:00",
+        "fakty_pl": "Peter: 'jeśli wyleczymy 12 hallmarks of aging — jak długo żyjemy? 1,759 lat'. 6+ firm pracuje nad partial epigenetic reprogramming. AI accelerating longevity research. Fountain Life — Peter's company. AI do wczesnej diagnostyki (MRI, blood tests, AI analysis).",
+        "fakty_en": "Peter: 'if we cure 12 hallmarks of aging — how long do we live? 1,759 years'. 6+ companies working on partial epigenetic reprogramming. AI accelerating longevity research. Fountain Life — Peter's company. AI for early diagnostics (MRI, blood tests, AI analysis).",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Jeśli wyleczymy 12 hallmarks of aging — 1,759 lat. AI accelerates longevity research.",
+            "text_en": "If we cure 12 hallmarks of aging — 1,759 years. AI accelerates longevity research."
+          }
+        ],
+        "wniosek_pl": "AI + longevity = <strong>1,759 lat życia</strong>. 6+ firm nad epigenetic reprogramming.",
+        "wniosek_en": "AI + longevity = <strong>1,759 years of life</strong>. 6+ companies on epigenetic reprogramming.",
+        "kontekst_pl": "Fountain Life — wczesna diagnostyka AI. 12 hallmarks of aging.",
+        "kontekst_en": "Fountain Life — AI early diagnostics. 12 hallmarks of aging."
+      },
+      {
+        "num": "05",
+        "title": "AI exponential science — US science funding",
+        "title_pl": "AI eksponencjalna nauka — finansowanie nauki w USA",
+        "title_en": "AI exponential science — US science funding",
+        "time": "25:00 – 35:00",
+        "fakty_pl": "Peter: exponential future of science in America. AI accelerating scientific discovery. 'We'll speedrun most sci-fi over next 10 years' (Alex). Elon: 'AI may exceed sum of human intelligence in ~5 years. Age of amazing abundance.'",
+        "fakty_en": "Peter: exponential future of science in America. AI accelerating scientific discovery. 'We'll speedrun most sci-fi over next 10 years' (Alex). Elon: 'AI may exceed sum of human intelligence in ~5 years. Age of amazing abundance.'",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Speedrun most sci-fi over next 10 years. Any physically possible sci-fi.",
+            "text_en": "Speedrun most sci-fi over next 10 years. Any physically possible sci-fi."
+          },
+          {
+            "host": "Elon Musk (quote)",
+            "dot_color": "var(--hp)",
+            "text_pl": "AI może przekroczyć sumę ludzkiej inteligencji w ~5 lat. Wiek niesamowitego obfitości.",
+            "text_en": "AI may exceed sum of human intelligence in ~5 years. Age of amazing abundance."
+          }
+        ],
+        "wniosek_pl": "AI > suma ludzkiej inteligencji w <strong>~5 lat</strong>. Wiek obfitości.",
+        "wniosek_en": "AI > sum of human intelligence in <strong>~5 years</strong>. Age of abundance.",
+        "kontekst_pl": "Elon quote z Economist interview.",
+        "kontekst_en": "Elon quote from Economist interview."
+      },
+      {
+        "num": "06",
+        "title": "Open source vs closed — Microsoft/Linux analogy",
+        "title_pl": "Open source vs closed — analogia Microsoft/Linux",
+        "title_en": "Open source vs closed — Microsoft/Linux analogy",
+        "time": "08:00 – 12:00",
+        "fakty_pl": "Alex: 'Microsoft traktował Linux jak raka w latach 90 — historia się powtarza'. Compression = transformative act? Distillation accusations latają w obie strony. Anthropic compressing human knowledge — China compressing reasoning traces. 'Once intelligence becomes software, containing it geographically is near impossible'. Lobotomizing technology never worked in history.",
+        "fakty_en": "Alex: 'Microsoft treated Linux like cancer in 90s — history repeats'. Compression = transformative act? Distillation accusations fly both ways. Anthropic compressing human knowledge — China compressing reasoning traces. 'Once intelligence becomes software, containing it geographically is near impossible'. Lobotomizing technology never worked in history.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Raz intelligence becomes software, containing it geographically is near impossible. Lobotomizing technology never worked.",
+            "text_en": "Once intelligence becomes software, containing it geographically is near impossible. Lobotomizing technology never worked."
+          }
+        ],
+        "wniosek_pl": "Open source wygrywa <strong>zawsze</strong>. Microsoft→Linux, teraz OpenAI/Anthropic→Kimi K3.",
+        "wniosek_en": "Open source <strong>always wins</strong>. Microsoft→Linux, now OpenAI/Anthropic→Kimi K3.",
+        "kontekst_pl": "Microsoft vs Linux w latach 90. Analogia do OpenAI/Anthropic vs Kimi K3.",
+        "kontekst_en": "Microsoft vs Linux in 90s. Analogy to OpenAI/Anthropic vs Kimi K3."
+      },
+      {
+        "num": "07",
+        "title": "Nvidia Jensen Huang — don't ban Chinese models",
+        "title_pl": "Nvidia Jensen Huang — nie banujcie chińskich modeli",
+        "title_en": "Nvidia Jensen Huang — don't ban Chinese models",
+        "time": "07:00 – 09:00",
+        "fakty_pl": "Jensen Huang (Nvidia CEO) pushback against banning Chinese models: 'Chinese models are excellent. Markets misunderstood impact of DeepSeek first time, misunderstood Kimi again. Great AI open models = great for whole industry.' David Sacks: 'Kimi K3 fixed 15 critical security bugs that Codex and Fable refused. No reason to limit American models on tasks Chinese handle without issue.'",
+        "fakty_en": "Jensen Huang (Nvidia CEO) pushback against banning Chinese models: 'Chinese models are excellent. Markets misunderstood impact of DeepSeek first time, misunderstood Kimi again. Great AI open models = great for whole industry.' David Sacks: 'Kimi K3 fixed 15 critical security bugs that Codex and Fable refused. No reason to limit American models on tasks Chinese handle without issue.'",
+        "glosy": [
+          {
+            "host": "Jensen Huang (Nvidia)",
+            "dot_color": "var(--hp)",
+            "text_pl": "Chińskie modele są świetne. Markets misunderstood Kimi. Great open models = great for industry.",
+            "text_en": "Chinese models are excellent. Markets misunderstood Kimi. Great open models = great for industry."
+          }
+        ],
+        "wniosek_pl": "Nvidia <strong>popiera open models</strong>. Banning Chinese = less competitive.",
+        "wniosek_en": "Nvidia <strong>supports open models</strong>. Banning Chinese = less competitive.",
+        "kontekst_pl": "Jensen Huang interview z Axios.",
+        "kontekst_en": "Jensen Huang interview with Axios."
+      },
+      {
+        "num": "08",
+        "title": "UAPs — White House disclosure",
+        "title_pl": "UAP — ujawnienie Białego Domu",
+        "title_en": "UAPs — White House disclosure",
+        "time": "35:00 – 40:00",
+        "fakty_pl": "Peter: latest on UAPs from the White House. Disclosure updates.",
+        "fakty_en": "Peter: latest on UAPs from the White House. Disclosure updates.",
+        "glosy": [],
+        "wniosek_pl": "UAP disclosure — <strong>government transparency</strong> increasing.",
+        "wniosek_en": "UAP disclosure — <strong>government transparency</strong> increasing.",
+        "kontekst_pl": "White House UAP disclosure updates.",
+        "kontekst_en": "White House UAP disclosure updates."
+      },
+      {
+        "num": "09",
+        "title": "Na co uważać w przyszłym tygodniu",
+        "title_pl": "Na co uważać w przyszłym tygodniu",
+        "title_en": "What to watch next week",
+        "time": "55:00 – 90:00",
+        "fakty_pl": "27.07 = Kimi K3 open weights — 'turning point in all of history'. Tesla+SpaceX AI merger możliwy przed końcem roku. AI > suma ludzkiej inteligencji w ~5 lat. Age of abundance.",
+        "fakty_en": "July 27 = Kimi K3 open weights — 'turning point in all of history'. Tesla+SpaceX AI merger possible before year-end. AI > sum of human intelligence in ~5 years. Age of abundance.",
+        "glosy": [],
+        "wniosek_pl": "Watch: <strong>27.07 Kimi K3 weights</strong>, Tesla+SpaceX merger, AI abundance timeline.",
+        "wniosek_en": "Watch: <strong>July 27 Kimi K3 weights</strong>, Tesla+SpaceX merger, AI abundance timeline.",
+        "kontekst_pl": "Kimi K3 weights → anyone can fine-tune beyond frontier.",
+        "kontekst_en": "Kimi K3 weights → anyone can fine-tune beyond frontier."
+      }
+    ]
+  },
+  {
     "num": "#272",
     "collapsed": false,
     "channel": "Diamandis Moonshots",

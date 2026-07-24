@@ -2,7 +2,7 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-24 20:45:01 UTC
+// Generated: 2026-07-24 20:51:30 UTC
 
 const CALENDAR = [
   {
@@ -94,6 +94,16 @@ const CALENDAR = [
     "meta_pl": "Rynek pracy — layoffs",
     "meta_en": "Rynek pracy — layoffs",
     "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-24",
+    "type": "diamandis",
+    "title_pl": "Podcast #273 — Włamanie Hugging Face, Moonshot AI wycenione na $20B, i życie do 1759 lat | #273",
+    "title_en": "Podcast #273 — The Hugging Face Breach, Moonshot AI Valued at $20B, and Living to 1,759 Years Old | EP #273",
+    "link": "ai-pulse.html#273",
+    "meta_pl": "9 tematów",
+    "meta_en": "9 topics",
+    "num": "#273"
   },
   {
     "date": "2026-07-23",
