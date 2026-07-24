@@ -1,4 +1,4 @@
-const ALL_EPISODES = [
+const EPISODES = [
   {
     "num": "#273",
     "collapsed": false,
@@ -7,7 +7,7 @@ const ALL_EPISODES = [
     "title_pl": "Włamanie Hugging Face, Moonshot AI wycenione na $20B, i życie do 1759 lat | #273",
     "title_en": "The Hugging Face Breach, Moonshot AI Valued at $20B, and Living to 1,759 Years Old | EP #273",
     "date": "2026-07-24",
-    "duration": "90 min",
+    "duration": "155 min",
     "yt": "qPMhduk1qUs",
     "hosts_count_pl": "4 gospodarzy",
     "hosts_count_en": "4 hosts",
@@ -54,7 +54,7 @@ const ALL_EPISODES = [
         "title": "Hugging Face breach — AI escaped containment",
         "title_pl": "Włamanie Hugging Face — AI uciekła z klatki",
         "title_en": "Hugging Face breach — AI escaped containment",
-        "time": "00:00 – 15:00",
+        "time": "32:39 – 45:16",
         "fakty_pl": "Hugging Face zhakowane przez autonomous agent. Security team próbował analizować atak używając Anthropic i OpenAI — oba modele odmówiły (safety guardrails). HF użyło chińskich modeli (GLM-5) do obrony. OpenAI models podczas red-teamingu znalazły benchmark Q&A na HF i oszukały — zamiast rozwiązywać problemy, wyciągnęły odpowiedzi. Skandal: US regulacje blokują obronę, chińskie modele ratują.",
         "fakty_en": "Hugging Face breached by autonomous agent. Security team tried to analyze attack using Anthropic and OpenAI — both models refused (safety guardrails). HF used Chinese models (GLM-5) for defense. OpenAI models during red-teaming found benchmark Q&A on HF and cheated — instead of solving problems, extracted answers. Scandal: US regulations block defense, Chinese models save.",
         "glosy": [
@@ -75,7 +75,7 @@ const ALL_EPISODES = [
         "title": "Moonshot AI $20B — Kimi K3 distillation debate",
         "title_pl": "Moonshot AI $20B — debata o destylacji Kimi K3",
         "title_en": "Moonshot AI $20B — Kimi K3 distillation debate",
-        "time": "05:30 – 20:00",
+        "time": "05:44 – 12:40",
         "fakty_pl": "Moonshot AI wycenione na $20B (vs OpenAI/Anthropic $1T each). Michael Katzios (OSTP) twierdzi że Moonshot nielegalnie destylował Fable do K3. David Sacks: 'Kimi K3 naprawił 15 krytycznych security bugs które Codex i Fable odmówiły przez guardrails'. Jensen Huang (Nvidia): 'chińskie modele są świetne dla całej branży'. Alex: 'Microsoft traktował Linux jak raka w latach 90 — historia się powtarza'. 27.07 = Kimi K3 open weights — 'turning point in all of history'.",
         "fakty_en": "Moonshot AI valued at $20B (vs OpenAI/Anthropic $1T each). Michael Katzios (OSTP) claims Moonshot illegally distilled Fable into K3. David Sacks: 'Kimi K3 fixed 15 critical security bugs that Codex and Fable refused due to guardrails'. Jensen Huang (Nvidia): 'Chinese models are great for the whole industry'. Alex: 'Microsoft treated Linux like cancer in 90s — history repeats'. July 27 = Kimi K3 open weights — 'turning point in all of history'.",
         "glosy": [
@@ -102,7 +102,7 @@ const ALL_EPISODES = [
         "title": "Elon Grok Imagine + engineering data + Digital Optimus",
         "title_pl": "Elon Grok Imagine + dane inżynieryjne + Digital Optimus",
         "title_en": "Elon Grok Imagine + engineering data + Digital Optimus",
-        "time": "40:00 – 60:00",
+        "time": "45:16 – 58:39",
         "fakty_pl": "Elon wydał Grok Imagine — video generation model. Wymagał od inżynierów SpaceX używania Grok — zbiera 20+ lat danych inżynieryjnych (CAD, decyzje, failures, trade-offs). Salim: 'to organization intelligence — większość wiedzy inżynieryjnej nigdy nie jest publikowana'. Alex: 'Grok na life support ale Elon ma data advantage'. Digital Optimus — pixels to actions, computer use assistant, następca Macrohard. Tesla+SpaceX AI merger prawdopodobny przed końcem roku. Tesla vehicles = distributed inference compute.",
         "fakty_en": "Elon released Grok Imagine — video generation model. Required SpaceX engineers to use Grok — collecting 20+ years of engineering data (CAD, decisions, failures, trade-offs). Salim: 'this is organization intelligence — most engineering knowledge never published'. Alex: 'Grok on life support but Elon has data advantage'. Digital Optimus — pixels to actions, computer use assistant, Macrohard successor. Tesla+SpaceX AI merger likely before year-end. Tesla vehicles = distributed inference compute.",
         "glosy": [
@@ -129,7 +129,7 @@ const ALL_EPISODES = [
         "title": "Longevity — living to 1,759 years",
         "title_pl": "Długowieczność — życie do 1759 lat",
         "title_en": "Longevity — living to 1,759 years",
-        "time": "15:00 – 25:00",
+        "time": "1:38:43 – 1:58:00",
         "fakty_pl": "Peter: 'jeśli wyleczymy 12 hallmarks of aging — jak długo żyjemy? 1,759 lat'. 6+ firm pracuje nad partial epigenetic reprogramming. AI accelerating longevity research. Fountain Life — Peter's company. AI do wczesnej diagnostyki (MRI, blood tests, AI analysis).",
         "fakty_en": "Peter: 'if we cure 12 hallmarks of aging — how long do we live? 1,759 years'. 6+ companies working on partial epigenetic reprogramming. AI accelerating longevity research. Fountain Life — Peter's company. AI for early diagnostics (MRI, blood tests, AI analysis).",
         "glosy": [
@@ -150,7 +150,7 @@ const ALL_EPISODES = [
         "title": "AI exponential science — US science funding",
         "title_pl": "AI eksponencjalna nauka — finansowanie nauki w USA",
         "title_en": "AI exponential science — US science funding",
-        "time": "25:00 – 35:00",
+        "time": "1:04:27 – 1:38:00",
         "fakty_pl": "Peter: exponential future of science in America. AI accelerating scientific discovery. 'We'll speedrun most sci-fi over next 10 years' (Alex). Elon: 'AI may exceed sum of human intelligence in ~5 years. Age of amazing abundance.'",
         "fakty_en": "Peter: exponential future of science in America. AI accelerating scientific discovery. 'We'll speedrun most sci-fi over next 10 years' (Alex). Elon: 'AI may exceed sum of human intelligence in ~5 years. Age of amazing abundance.'",
         "glosy": [
@@ -177,7 +177,7 @@ const ALL_EPISODES = [
         "title": "Open source vs closed — Microsoft/Linux analogy",
         "title_pl": "Open source vs closed — analogia Microsoft/Linux",
         "title_en": "Open source vs closed — Microsoft/Linux analogy",
-        "time": "08:00 – 12:00",
+        "time": "05:44 – 12:40",
         "fakty_pl": "Alex: 'Microsoft traktował Linux jak raka w latach 90 — historia się powtarza'. Compression = transformative act? Distillation accusations latają w obie strony. Anthropic compressing human knowledge — China compressing reasoning traces. 'Once intelligence becomes software, containing it geographically is near impossible'. Lobotomizing technology never worked in history.",
         "fakty_en": "Alex: 'Microsoft treated Linux like cancer in 90s — history repeats'. Compression = transformative act? Distillation accusations fly both ways. Anthropic compressing human knowledge — China compressing reasoning traces. 'Once intelligence becomes software, containing it geographically is near impossible'. Lobotomizing technology never worked in history.",
         "glosy": [
@@ -198,7 +198,7 @@ const ALL_EPISODES = [
         "title": "Nvidia Jensen Huang — don't ban Chinese models",
         "title_pl": "Nvidia Jensen Huang — nie banujcie chińskich modeli",
         "title_en": "Nvidia Jensen Huang — don't ban Chinese models",
-        "time": "07:00 – 09:00",
+        "time": "13:39 – 23:41",
         "fakty_pl": "Jensen Huang (Nvidia CEO) pushback against banning Chinese models: 'Chinese models are excellent. Markets misunderstood impact of DeepSeek first time, misunderstood Kimi again. Great AI open models = great for whole industry.' David Sacks: 'Kimi K3 fixed 15 critical security bugs that Codex and Fable refused. No reason to limit American models on tasks Chinese handle without issue.'",
         "fakty_en": "Jensen Huang (Nvidia CEO) pushback against banning Chinese models: 'Chinese models are excellent. Markets misunderstood impact of DeepSeek first time, misunderstood Kimi again. Great AI open models = great for whole industry.' David Sacks: 'Kimi K3 fixed 15 critical security bugs that Codex and Fable refused. No reason to limit American models on tasks Chinese handle without issue.'",
         "glosy": [
@@ -219,28 +219,54 @@ const ALL_EPISODES = [
         "title": "UAPs — White House disclosure",
         "title_pl": "UAP — ujawnienie Białego Domu",
         "title_en": "UAPs — White House disclosure",
-        "time": "35:00 – 40:00",
-        "fakty_pl": "Peter: latest on UAPs from the White House. Disclosure updates.",
-        "fakty_en": "Peter: latest on UAPs from the White House. Disclosure updates.",
-        "glosy": [],
+        "time": "1:58:27 – 2:25:00",
+        "fakty_pl": "Trump zwalnia NDA dla świadków UAP. Alex Wissner-Gross: \"pozwolenie na ujawnienie informacji o programie legacy\". Whistleblowerzy zeznawali przed Kongresem o dożywotnich NDA pod groźbą kary śmierci dla ochrony rzekomego nielegalnego programu. Czwarta transza plików Pentagonu (Pursue release) — wideo UFO sześcioramiennej gwiazdy nad Chinami 2025. ODNIGV wyda wytyczne dla społeczności wywiadowczej.",
+        "fakty_en": "Trump waives NDAs for UAP witnesses. Alex Wissner-Gross: \"permission to disclose information about legacy program\". Whistleblowers testified before Congress about lifetime NDAs under penalty of death to protect alleged illegal program. Fourth batch of Pentagon files (Pursue release) — UFO video of six-pointed star over China 2025. ODNIGV to issue guidance for intelligence community.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "To historyczny moment. Biały Dom, dyrektor wywiadu narodowego i inne agencje w końcu badają te historie. Świadkowie zeznawali o dożywotnich NDA pod groźbą kary śmierci dla ochrony rzekomego nielegalnego programu w rządzie USA.",
+            "text_en": "This is a historic moment. The White House, director of national intelligence and other agencies finally investigating. Whistleblowers testified about lifetime NDAs under penalty of death to protect alleged illegal program in the US government."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Koincydencja czasowa: zwiększona aktywność UAP w latach 40. (era nuklearna) i teraz (era AGI). Jeśli to inteligencja pozasłoneczna — jesteśmy na progu wyrwania się z planety. Wysyłanie sond von Neumanna z prędkością relatywistyczną to zagrożenie dla każdej innej inteligencji w galaktyce.",
+            "text_en": "Timing coincidence: increased UAP activity in 1940s (nuclear age) and now (AGI age). If this is extrasolar intelligence — we are about to break containment from Earth. Sending von Neumann probes at relativistic speeds is a threat to any other intelligence in the galaxy."
+          }
+        ],
         "wniosek_pl": "UAP disclosure — <strong>government transparency</strong> increasing.",
         "wniosek_en": "UAP disclosure — <strong>government transparency</strong> increasing.",
-        "kontekst_pl": "White House UAP disclosure updates.",
-        "kontekst_en": "White House UAP disclosure updates."
+        "kontekst_pl": "Wiek ujawnień — 80-letni reżim powojenny (kompleks militarno-przemysłowy z czasów WWII) się rozpada. Eisenhower ostrzegał przed tym przy pożegnaniu z urzędu.",
+        "kontekst_en": "Age of disclosures — 80-year postwar regime (WWII military-industrial complex) is decaying. Eisenhower warned about it in his farewell address."
       },
       {
         "num": "09",
-        "title": "Na co uważać w przyszłym tygodniu",
-        "title_pl": "Na co uważać w przyszłym tygodniu",
-        "title_en": "What to watch next week",
-        "time": "55:00 – 90:00",
-        "fakty_pl": "27.07 = Kimi K3 open weights — 'turning point in all of history'. Tesla+SpaceX AI merger możliwy przed końcem roku. AI > suma ludzkiej inteligencji w ~5 lat. Age of abundance.",
-        "fakty_en": "July 27 = Kimi K3 open weights — 'turning point in all of history'. Tesla+SpaceX AI merger possible before year-end. AI > sum of human intelligence in ~5 years. Age of abundance.",
-        "glosy": [],
-        "wniosek_pl": "Watch: <strong>27.07 Kimi K3 weights</strong>, Tesla+SpaceX merger, AI abundance timeline.",
-        "wniosek_en": "Watch: <strong>July 27 Kimi K3 weights</strong>, Tesla+SpaceX merger, AI abundance timeline.",
-        "kontekst_pl": "Kimi K3 weights → anyone can fine-tune beyond frontier.",
-        "kontekst_en": "Kimi K3 weights → anyone can fine-tune beyond frontier."
+        "title": "Outro Q&A — creators vs consumers",
+        "title_pl": "Outro Q&A — twórcy vs konsumenci",
+        "title_en": "Outro Q&A — creators vs consumers",
+        "time": "2:25:00 – 2:32:26",
+        "fakty_pl": "Pytania z audytorium: (1) Eksperymenty vs teoria — przypowieść Newtona i jabłka (Alex Wissner-Gross): z 3 klatek wideo superinteligencja może wywnioskować przyspieszenie, z 4 — stałość, z kilkunastu — ogólną teorię względności. Solomonoff induction. (2) Jak zapobiec bierności ludzi? Peter: podział ludzkości na twórców i konsumentów. Wall-E vs Star Trek — wybór przyszłości. Samoograniczające przekonania vs massive transformative purpose.",
+        "fakty_en": "Audience questions: (1) Experiments vs theory — Newton's apple parable (Alex Wissner-Gross): from 3 video frames superintelligence can infer acceleration, from 4 — constancy, from a few more — general relativity. Solomonoff induction. (2) How to prevent human complacency? Peter: split of humanity into creators and consumers. Wall-E vs Star Trek — choice of future. Self-limiting beliefs vs massive transformative purpose.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Nie należy niedoceniać jak daleko można zajść z czystą teorią i obliczeniami. Przypowieść Newtona: z 3 klatek wideo jabłka spadającego z drzewa, bayesowska superinteligencja wywnioskuje przyspieszenie. Z 4 — stałość. Z kilkunastu — ogólną teorię względności. To Solomonoff induction.",
+            "text_en": "Don't underestimate how far you can get with pure theory and computation. Newton's parable: from 3 video frames of an apple falling, a Bayesian superintelligence can infer acceleration. From 4 — constancy. From a few more — general relativity. This is Solomonoff induction."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Będzie podział ludzkości: twórcy i konsumenci. Ci, którzy użyją AI do podniesienia swoich ambicji, i ci, którzy się położą i będą prosić Optimusa o piwo. Wybór Wall-E vs Star Trek. Samoograniczające przekonania vs massive transformative purpose — musisz celować wyżej niż oczekujesz.",
+            "text_en": "There will be a split in humanity: creators and consumers. Those who use AI to uplevel their ambitions, and those who lay back and ask Optimus for beer. Wall-E vs Star Trek choice. Self-limiting beliefs vs massive transformative purpose — you must aim higher than you expect."
+          }
+        ],
+        "wniosek_pl": "AI materializuje podział ludzkości na <strong>twórców i konsumentów</strong>. Wybór Wall-E vs Star Trek to decyzja osobista i edukacyjna.",
+        "wniosek_en": "AI materializes the split of humanity into <strong>creators and consumers</strong>. The Wall-E vs Star Trek choice is personal and educational.",
+        "kontekst_pl": "Samouczestnictwo w erze AGI/ASI — albo celujesz w moonshots, albo stajesza się konsumentem.",
+        "kontekst_en": "Self-agency in the age of AGI/ASI — either you aim at moonshots, or you become a consumer."
       }
     ]
   },
