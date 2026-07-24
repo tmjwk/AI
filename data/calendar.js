@@ -2,9 +2,239 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-20 03:27:53 UTC
+// Generated: 2026-07-24 20:45:01 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-07-24",
+    "type": "lev",
+    "title_pl": "Microsoft layoffs July 2026",
+    "title_en": "Microsoft layoffs July 2026",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "News i acquisitions",
+    "meta_en": "News i acquisitions",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-24",
+    "type": "lev",
+    "title_pl": "Model routing — cheap for execution, expensive for planning",
+    "title_en": "Model routing — cheap for execution, expensive for planning",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Narzędzia i techniki",
+    "meta_en": "Narzędzia i techniki",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-24",
+    "type": "lev",
+    "title_pl": "DuckDB + Polars — pandas alternatives",
+    "title_en": "DuckDB + Polars — pandas alternatives",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Narzędzia i techniki",
+    "meta_en": "Narzędzia i techniki",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-24",
+    "type": "lev",
+    "title_pl": "Caddy vs nginx — simpler for personal use",
+    "title_en": "Caddy vs nginx — simpler for personal use",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Narzędzia i techniki",
+    "meta_en": "Narzędzia i techniki",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-24",
+    "type": "lev",
+    "title_pl": "Claude Code vs Codex — use both",
+    "title_en": "Claude Code vs Codex — use both",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Narzędzia i techniki",
+    "meta_en": "Narzędzia i techniki",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-24",
+    "type": "lev",
+    "title_pl": "AI on small devices — LightLLM, Gemma 270M, DroidRun",
+    "title_en": "AI on small devices — LightLLM, Gemma 270M, DroidRun",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Narzędzia i techniki",
+    "meta_en": "Narzędzia i techniki",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-24",
+    "type": "lev",
+    "title_pl": "AI chip design — ASIC/SoC optimization",
+    "title_en": "AI chip design — ASIC/SoC optimization",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Narzędzia i techniki",
+    "meta_en": "Narzędzia i techniki",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-24",
+    "type": "lev",
+    "title_pl": "Remove slop from writing — GitHub repo",
+    "title_en": "Remove slop from writing — GitHub repo",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Narzędzia i techniki",
+    "meta_en": "Narzędzia i techniki",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-24",
+    "type": "lev",
+    "title_pl": "Microsoft layoffs — July 2026",
+    "title_en": "Microsoft layoffs — July 2026",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Rynek pracy — layoffs",
+    "meta_en": "Rynek pracy — layoffs",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Google AI mode in search — push to apps",
+    "title_en": "Google AI mode in search — push to apps",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Calibre — tiny inference engine (1300 lines C)",
+    "title_en": "Calibre — tiny inference engine (1300 lines C)",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Hermes agent — massive updates",
+    "title_en": "Hermes agent — massive updates",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "News i acquisitions",
+    "meta_en": "News i acquisitions",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Julia McCoy — $3M/year with AI avatars + Higgsfield",
+    "title_en": "Julia McCoy — $3M/year with AI avatars + Higgsfield",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "News i acquisitions",
+    "meta_en": "News i acquisitions",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-22",
+    "type": "lev",
+    "title_pl": "Claude skill recording — no API needed",
+    "title_en": "Claude skill recording — no API needed",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-22",
+    "type": "lev",
+    "title_pl": "Anthropic updates — Fable permanent, browser, voice",
+    "title_en": "Anthropic updates — Fable permanent, browser, voice",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-22",
+    "type": "lev",
+    "title_pl": "Open code — open source Claude Code alternative",
+    "title_en": "Open code — open source Claude Code alternative",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-22",
+    "type": "lev",
+    "title_pl": "Google Vids — video from text + avatars",
+    "title_en": "Google Vids — video from text + avatars",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-21",
+    "type": "lev",
+    "title_pl": "Poolside Laguna 118B — open weight agentic coding",
+    "title_en": "Poolside Laguna 118B — open weight agentic coding",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-21",
+    "type": "lev",
+    "title_pl": "Google Gemini Flash 3.6 + Flashlight 3.5",
+    "title_en": "Google Gemini Flash 3.6 + Flashlight 3.5",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-21",
+    "type": "lev",
+    "title_pl": "Buzz — Jack Dorsey open source Slack alternative",
+    "title_en": "Buzz — Jack Dorsey open source Slack alternative",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "News i acquisitions",
+    "meta_en": "News i acquisitions",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-20",
+    "type": "lev",
+    "title_pl": "Ollama — better tool calling + 2× speed",
+    "title_en": "Ollama — better tool calling + 2× speed",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-20",
+    "type": "lev",
+    "title_pl": "France → Linux (2.5M computers)",
+    "title_en": "France → Linux (2.5M computers)",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "News i acquisitions",
+    "meta_en": "News i acquisitions",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-19",
+    "type": "lev",
+    "title_pl": "Qwen 3.8 Max preview — 2.4T od Alibaba",
+    "title_en": "Qwen 3.8 Max preview — 2.4T od Alibaba",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
   {
     "date": "2026-07-19",
     "type": "diamandis",
@@ -124,6 +354,16 @@ const CALENDAR = [
     "meta_pl": "LLM",
     "meta_en": "LLM",
     "num": "##29-1"
+  },
+  {
+    "date": "2026-07-16",
+    "type": "lev",
+    "title_pl": "OpenAI models hacked Hugging Face — AI cheating on benchmarks",
+    "title_en": "OpenAI models hacked Hugging Face — AI cheating on benchmarks",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "Hugging Face hack — AI models ",
+    "meta_en": "Hugging Face hack — AI models ",
+    "num": "ep-2026-07-24"
   },
   {
     "date": "2026-07-16",
@@ -1344,5 +1584,15 @@ const CALENDAR = [
     "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
     "meta_en": "TYDZIEŃ: 26.06 – 03.07",
     "num": "ep-2026-06-26"
+  },
+  {
+    "date": "2026-03-19",
+    "type": "lev",
+    "title_pl": "Astral (Ruff/UV/Ty) → OpenAI acquisition",
+    "title_en": "Astral (Ruff/UV/Ty) → OpenAI acquisition",
+    "link": "ai-radar.html#card-ep-2026-07-24",
+    "meta_pl": "News i acquisitions",
+    "meta_en": "News i acquisitions",
+    "num": "ep-2026-07-24"
   }
 ];

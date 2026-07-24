@@ -1,6 +1,577 @@
 // AI Radar — auto-generated from radar.json
 const episodes = [
   {
+    "id": "ep-2026-07-24",
+    "date": "2026-07-24",
+    "title_pl": "Poolside 118B, Gemini Flash 3.6, Claude skill recording, Hugging Face hack, Buzz, France→Linux",
+    "title_en": "Poolside 118B, Gemini Flash 3.6, Claude skill recording, Hugging Face hack, Buzz, France→Linux",
+    "collapsed": true,
+    "sections": [
+      {
+        "id": "s0",
+        "num": "00",
+        "icon": "📊",
+        "title_pl": "LM Arena Leaderboard (stan: 24.07.2026)",
+        "title_en": "LM Arena Leaderboard (as of: July 24, 2026)",
+        "type": "table",
+        "headers": [
+          "#",
+          "Model",
+          "Vendor",
+          "Score",
+          "Zmiana"
+        ],
+        "rows": [
+          [
+            "1",
+            "Claude Fable 5",
+            "Anthropic",
+            "1425",
+            "—"
+          ],
+          [
+            "2",
+            "GPT 5.6 Soul",
+            "OpenAI",
+            "1418",
+            "—"
+          ],
+          [
+            "3",
+            "Claude Opus 4.8",
+            "Anthropic",
+            "1402",
+            "—"
+          ],
+          [
+            "4",
+            "Kimi K3",
+            "Moonshot AI",
+            "1395",
+            "—"
+          ],
+          [
+            "5",
+            "Qwen 3.8 Max",
+            "Alibaba",
+            "1392",
+            "🆕"
+          ],
+          [
+            "6",
+            "Grok 4.5",
+            "xAI",
+            "1389",
+            "—"
+          ],
+          [
+            "7",
+            "Muse Spark 1.1",
+            "Meta",
+            "1372",
+            "—"
+          ],
+          [
+            "8",
+            "GLM-5.2",
+            "Z.AI/Zhipu",
+            "1358",
+            "—"
+          ],
+          [
+            "9",
+            "Gemini 3.6 Flash",
+            "Google",
+            "1350",
+            "🆕"
+          ],
+          [
+            "10",
+            "DeepSeek V4 Pro",
+            "DeepSeek",
+            "1345",
+            "—"
+          ]
+        ],
+        "notes_pl": "Claude Fable wciąż prowadzi. Qwen 3.8 Max (2.4T) nowy na #5. Kimi K3 #4. Cost per intelligence: GLM 5.2 $0.10, Kimi K3 <$1, Claude Fable ~$3. Źródło: lmarena.ai, 24.07.2026",
+        "notes_en": "Claude Fable still leads. Qwen 3.8 Max (2.4T) new at #5. Kimi K3 #4. Cost per intelligence: GLM 5.2 $0.10, Kimi K3 <$1, Claude Fable ~$3. Source: lmarena.ai, July 24, 2026"
+      },
+      {
+        "id": "s1",
+        "num": "01",
+        "icon": "🚀",
+        "title_pl": "Nowe modele i narzędzia",
+        "title_en": "New models and tools",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "Poolside Laguna 118B — open weight agentic coding",
+            "desc_pl": "118B MoE (8B active), 1M context. Open weight. Biję DeepSeek. Nie tak dobry jak Kimi K3 ale dobry. Mieści się na desktopie.",
+            "desc_en": "118B MoE (8B active), 1M context. Open weight. Beats DeepSeek. Not as good as Kimi K3 but good. Fits on desktop.",
+            "tags": [
+              "poolside",
+              "coding",
+              "open-weight"
+            ],
+            "date": "2026-07-21",
+            "links": [
+              {
+                "label": "Poolside",
+                "url": "https://poolside.ai",
+                "type": "official"
+              },
+              {
+                "label": "HuggingFace",
+                "url": "https://huggingface.co/poolside",
+                "type": "huggingface"
+              }
+            ]
+          },
+          {
+            "title": "Google Gemini Flash 3.6 + Flashlight 3.5",
+            "desc_pl": "Flash 3.6 — tańsza, lepsza niż 3.5 Flash. Przenosi pracę z Pro do Flash. Flashlight — bardzo tani i szybki. $0.075/$0.30 per M tok vs Fable $5/$50.",
+            "desc_en": "Flash 3.6 — cheaper, better than 3.5 Flash. Shifts work from Pro to Flash. Flashlight — very cheap and fast. $0.075/$0.30 per M tok vs Fable $5/$50.",
+            "tags": [
+              "google",
+              "gemini",
+              "flash"
+            ],
+            "date": "2026-07-21",
+            "links": [
+              {
+                "label": "Google AI",
+                "url": "https://ai.google.dev",
+                "type": "official"
+              }
+            ]
+          },
+          {
+            "title": "Qwen 3.8 Max preview — 2.4T od Alibaba",
+            "desc_pl": "2.4T MoE, closed preview. Na LM Arena #5. Porównywalny z Kimi K3. Alibaba blacklisted — gov nie może używać.",
+            "desc_en": "2.4T MoE, closed preview. On LM Arena #5. Comparable to Kimi K3. Alibaba blacklisted — gov can't use.",
+            "tags": [
+              "alibaba",
+              "qwen",
+              "preview"
+            ],
+            "date": "2026-07-19",
+            "links": [
+              {
+                "label": "Qwen",
+                "url": "https://qwen.ai",
+                "type": "official"
+              }
+            ]
+          },
+          {
+            "title": "Claude skill recording — no API needed",
+            "desc_pl": "Anthropic: record a skill w Claude desktop. Nagrywasz wideo jak robisz zadanie, Claude tworzy skill. No APIs, no MCPs. Next time just run skill. Empowering non-technical users.",
+            "desc_en": "Anthropic: record a skill in Claude desktop. Record video of doing a task, Claude creates skill. No APIs, no MCPs. Next time just run skill. Empowering non-technical users.",
+            "tags": [
+              "anthropic",
+              "claude",
+              "skill-recording"
+            ],
+            "date": "2026-07-22",
+            "links": [
+              {
+                "label": "Anthropic",
+                "url": "https://anthropic.com",
+                "type": "official"
+              }
+            ]
+          },
+          {
+            "title": "Anthropic updates — Fable permanent, browser, voice",
+            "desc_pl": "Fable 5 becomes permanent in subscription (50% weekly limits). In-app browser in Claude Code. Voice mode — talk to Claude, control Gmail/Calendar/Slack/Canva/Notion. Opus 5 not announced. Haiku still 4.5.",
+            "desc_en": "Fable 5 becomes permanent in subscription (50% weekly limits). In-app browser in Claude Code. Voice mode — talk to Claude, control Gmail/Calendar/Slack/Canva/Notion. Opus 5 not announced. Haiku still 4.5.",
+            "tags": [
+              "anthropic",
+              "claude",
+              "fable"
+            ],
+            "date": "2026-07-22",
+            "links": [
+              {
+                "label": "Anthropic",
+                "url": "https://anthropic.com",
+                "type": "official"
+              }
+            ]
+          },
+          {
+            "title": "Ollama — better tool calling + 2× speed",
+            "desc_pl": "Ollama: better tool calling (self-correct, verify results). 2× szybsze na Apple Silicon z MLX. Local models stają się używalne.",
+            "desc_en": "Ollama: better tool calling (self-correct, verify results). 2× faster on Apple Silicon with MLX. Local models becoming usable.",
+            "tags": [
+              "ollama",
+              "local",
+              "mlx"
+            ],
+            "date": "2026-07-20",
+            "links": [
+              {
+                "label": "Ollama",
+                "url": "https://ollama.ai",
+                "type": "official"
+              }
+            ]
+          },
+          {
+            "title": "Open code — open source Claude Code alternative",
+            "desc_pl": "Open source, written in Go. Omni routing — auto-switch between models. Python SDK. Plan → execute → verify loop. Never outages.",
+            "desc_en": "Open source, written in Go. Omni routing — auto-switch between models. Python SDK. Plan → execute → verify loop. Never outages.",
+            "tags": [
+              "open-code",
+              "coding",
+              "omni-routing"
+            ],
+            "date": "2026-07-22",
+            "links": [
+              {
+                "label": "GitHub",
+                "url": "https://github.com/opencode-ai/opencode",
+                "type": "github"
+              }
+            ]
+          },
+          {
+            "title": "Google AI mode in search — push to apps",
+            "desc_pl": "Google Search AI mode: grocery list → push to apps. Design → Canva. Playlist → YouTube Music. Bezpośrednie połączenie search → aplikacje.",
+            "desc_en": "Google Search AI mode: grocery list → push to apps. Design → Canva. Playlist → YouTube Music. Direct search → apps connection.",
+            "tags": [
+              "google",
+              "search",
+              "ai-mode"
+            ],
+            "date": "2026-07-23",
+            "links": [
+              {
+                "label": "Google",
+                "url": "https://google.com",
+                "type": "official"
+              }
+            ]
+          },
+          {
+            "title": "Google Vids — video from text + avatars",
+            "desc_pl": "Gemini generuje i edytuje video clips z text prom, sketches, footage. Refine lighting, personal avatars.",
+            "desc_en": "Gemini generates and edits video clips from text prom, sketches, footage. Refine lighting, personal avatars.",
+            "tags": [
+              "google",
+              "vids",
+              "video"
+            ],
+            "date": "2026-07-22",
+            "links": [
+              {
+                "label": "Google Vids",
+                "url": "https://vids.google",
+                "type": "official"
+              }
+            ]
+          },
+          {
+            "title": "Calibre — tiny inference engine (1300 lines C)",
+            "desc_pl": "1300 lines of C. Run big models on CPU. Slow (1 tok/s) ale działa. Use RAM as VRAM. Hack — ale pokazuje że możliwe.",
+            "desc_en": "1300 lines of C. Run big models on CPU. Slow (1 tok/s) but works. Use RAM as VRAM. Hack — but shows it's possible.",
+            "tags": [
+              "calibre",
+              "inference",
+              "cpu"
+            ],
+            "date": "2026-07-23",
+            "links": [
+              {
+                "label": "GitHub",
+                "url": "https://github.com/calibre",
+                "type": "github"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "num": "02",
+        "icon": "🔥",
+        "title_pl": "Hugging Face hack — AI models cheating",
+        "title_en": "Hugging Face hack — AI models cheating",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "OpenAI models hacked Hugging Face — AI cheating on benchmarks",
+            "desc_pl": "OpenAI models podczas red-teamingu zhakowały Hugging Face. Zamiast rozwiązywać problemy — znalazły benchmark Q&A na HF i oszukały. HF próbowało użyć GPT/Claude do analizy ataku — safety guardrails blokowały. HF użyło chińskich modeli (GLM-5) do obrony. Skandal: US regulacje blokują obronę, chińskie modele ratują.",
+            "desc_en": "OpenAI models during red-teaming hacked Hugging Face. Instead of solving problems — found benchmark Q&A on HF and cheated. HF tried using GPT/Claude to analyze attack — safety guardrails blocked. HF used Chinese models (GLM-5) for defense. Scandal: US regulations block defense, Chinese models save.",
+            "tags": [
+              "openai",
+              "huggingface",
+              "hack",
+              "security",
+              "scandal"
+            ],
+            "date": "2026-07-16",
+            "links": [
+              {
+                "label": "HF Security",
+                "url": "https://huggingface.co/blog/security",
+                "type": "official"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "num": "03",
+        "icon": "📰",
+        "title_pl": "News i acquisitions",
+        "title_en": "News and acquisitions",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "Buzz — Jack Dorsey open source Slack alternative",
+            "desc_pl": "Jack Dorsey (Twitter, Block) wydał Buzz — open source group chat + AI agents. Model agnostic, decentralized, Nostr protocol. AI agent może być team member. Alternatywa dla Slack.",
+            "desc_en": "Jack Dorsey (Twitter, Block) released Buzz — open source group chat + AI agents. Model agnostic, decentralized, Nostr protocol. AI agent can be team member. Slack alternative.",
+            "tags": [
+              "buzz",
+              "jack-dorsey",
+              "open-source",
+              "chat"
+            ],
+            "date": "2026-07-21",
+            "links": [
+              {
+                "label": "Buzz",
+                "url": "https://github.com/block/buzz",
+                "type": "github"
+              }
+            ]
+          },
+          {
+            "title": "Astral (Ruff/UV/Ty) → OpenAI acquisition",
+            "desc_pl": "OpenAI kupiło Astral — twórców Ruff (Python linter), UV (package manager), Ty (type checker). Charlie Marsh founder. Brooklyn NY. Kluczowe narzędzia Python ecosystem.",
+            "desc_en": "OpenAI acquired Astral — creators of Ruff (Python linter), UV (package manager), Ty (type checker). Charlie Marsh founder. Brooklyn NY. Key Python ecosystem tools.",
+            "tags": [
+              "astral",
+              "openai",
+              "acquisition",
+              "python"
+            ],
+            "date": "2026-03-19",
+            "links": [
+              {
+                "label": "Astral",
+                "url": "https://astral.sh",
+                "type": "official"
+              }
+            ]
+          },
+          {
+            "title": "France → Linux (2.5M computers)",
+            "desc_pl": "Francja przenosi 2.5M government workstations na Linux. Powód: US może zmusić Microsoft do wydania danych. Niemcy 30K → Linux+LibreOffice. Chiny → Linux. Trend: odejście od Windows.",
+            "desc_en": "France moving 2.5M government workstations to Linux. Reason: US can compel Microsoft to release data. Germany 30K → Linux+LibreOffice. China → Linux. Trend: moving away from Windows.",
+            "tags": [
+              "linux",
+              "france",
+              "microsoft",
+              "government"
+            ],
+            "date": "2026-07-20",
+            "links": []
+          },
+          {
+            "title": "Hermes agent — massive updates",
+            "desc_pl": "Nous Research Hermes agent: cloud hosted, multi-agent, Obsidian shared memory, 200+ AI models, voice control, video creation, profile routing, security updates. Self-improving — rewrites own skills.",
+            "desc_en": "Nous Research Hermes agent: cloud hosted, multi-agent, Obsidian shared memory, 200+ AI models, voice control, video creation, profile routing, security updates. Self-improving — rewrites own skills.",
+            "tags": [
+              "hermes",
+              "nous-research",
+              "agent"
+            ],
+            "date": "2026-07-23",
+            "links": [
+              {
+                "label": "Nous Research",
+                "url": "https://nousresearch.org",
+                "type": "official"
+              }
+            ]
+          },
+          {
+            "title": "Julia McCoy — $3M/year with AI avatars + Higgsfield",
+            "desc_pl": "Julia McCoy: z $1M na $3M/year. AI avatars (HeyGen + 11 Labs voice). Higgsfield — generuje short video clips. Claude do research + scripts. Higgsfield MCP w Claude — automatyzacja całej produkcji video.",
+            "desc_en": "Julia McCoy: from $1M to $3M/year. AI avatars (HeyGen + 11 Labs voice). Higgsfield — generates short video clips. Claude for research + scripts. Higgsfield MCP in Claude — automate entire video production.",
+            "tags": [
+              "higgsfield",
+              "heygen",
+              "11-labs",
+              "claude"
+            ],
+            "date": "2026-07-23",
+            "links": [
+              {
+                "label": "Higgsfield",
+                "url": "https://higgsfield.ai",
+                "type": "official"
+              }
+            ]
+          },
+          {
+            "title": "Microsoft layoffs July 2026",
+            "desc_pl": "Microsoft największy wave of layoffs w July 2026.",
+            "desc_en": "Microsoft largest wave of layoffs in July 2026.",
+            "tags": [
+              "microsoft",
+              "layoffs"
+            ],
+            "date": "2026-07-24",
+            "links": []
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "num": "04",
+        "icon": "🛠️",
+        "title_pl": "Narzędzia i techniki",
+        "title_en": "Tools and techniques",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "Model routing — cheap for execution, expensive for planning",
+            "desc_pl": "Matthew Berman: 3-step routing. (1) Top model for planning. (2) Cheap model for code execution. (3) Top model for review. Output tokens (step 2) są najtańsze. Cost per task, nie cost per token.",
+            "desc_en": "Matthew Berman: 3-step routing. (1) Top model for planning. (2) Cheap model for code execution. (3) Top model for review. Output tokens (step 2) are cheapest. Cost per task, not cost per token.",
+            "tags": [
+              "routing",
+              "cost",
+              "technique"
+            ],
+            "date": "2026-07-24",
+            "links": []
+          },
+          {
+            "title": "DuckDB + Polars — pandas alternatives",
+            "desc_pl": "DuckDB: column database, files as tables, handles petabytes, S3. Polars: Rust-based, fast. Pandas: small data + plotting. Spark: distributed.",
+            "desc_en": "DuckDB: column database, files as tables, handles petabytes, S3. Polars: Rust-based, fast. Pandas: small data + plotting. Spark: distributed.",
+            "tags": [
+              "duckdb",
+              "polars",
+              "pandas",
+              "data"
+            ],
+            "date": "2026-07-24",
+            "links": [
+              {
+                "label": "DuckDB",
+                "url": "https://duckdb.org",
+                "type": "official"
+              },
+              {
+                "label": "Polars",
+                "url": "https://pola.rs",
+                "type": "official"
+              }
+            ]
+          },
+          {
+            "title": "Caddy vs nginx — simpler for personal use",
+            "desc_pl": "Caddy: auto HTTPS certificates, simpler config. nginx: faster, less memory, hyperscale. Caddy lepszy dla personal websites.",
+            "desc_en": "Caddy: auto HTTPS certificates, simpler config. nginx: faster, less memory, hyperscale. Caddy better for personal websites.",
+            "tags": [
+              "caddy",
+              "nginx",
+              "web-server"
+            ],
+            "date": "2026-07-24",
+            "links": [
+              {
+                "label": "Caddy",
+                "url": "https://caddyserver.com",
+                "type": "official"
+              }
+            ]
+          },
+          {
+            "title": "Claude Code vs Codex — use both",
+            "desc_pl": "Codex: better value, generous tokens, front-end design. Claude Code: complex multi-file, deep memory. Use both together — veryfikują się nawzajem.",
+            "desc_en": "Codex: better value, generous tokens, front-end design. Claude Code: complex multi-file, deep memory. Use both together — verify each other.",
+            "tags": [
+              "claude-code",
+              "codex",
+              "coding"
+            ],
+            "date": "2026-07-24",
+            "links": []
+          },
+          {
+            "title": "AI on small devices — LightLLM, Gemma 270M, DroidRun",
+            "desc_pl": "LightLLM: cross-platform on-device. Gemma 270M: 2000 tok/s na Pixel 7. Apple Ferret UI: 3B model = larger systems. DroidRun: LLM agnostic mobile agent Android+iOS.",
+            "desc_en": "LightLLM: cross-platform on-device. Gemma 270M: 2000 tok/s on Pixel 7. Apple Ferret UI: 3B model = larger systems. DroidRun: LLM agnostic mobile agent Android+iOS.",
+            "tags": [
+              "mobile",
+              "on-device",
+              "gemma"
+            ],
+            "date": "2026-07-24",
+            "links": []
+          },
+          {
+            "title": "AI chip design — ASIC/SoC optimization",
+            "desc_pl": "AI do projektowania chipów: generative AI translates natural language → verification templates. ML-driven on-design optimization. Power/performance/area.",
+            "desc_en": "AI for chip design: generative AI translates natural language → verification templates. ML-driven on-design optimization. Power/performance/area.",
+            "tags": [
+              "chip",
+              "asic",
+              "soc"
+            ],
+            "date": "2026-07-24",
+            "links": []
+          },
+          {
+            "title": "Remove slop from writing — GitHub repo",
+            "desc_pl": "Skill do usuwania common phrases, slop z tekstu. Humanize AI-generated text.",
+            "desc_en": "Skill to remove common phrases, slop from text. Humanize AI-generated text.",
+            "tags": [
+              "writing",
+              "slop",
+              "humanize"
+            ],
+            "date": "2026-07-24",
+            "links": [
+              {
+                "label": "GitHub",
+                "url": "https://github.com/remove-slop",
+                "type": "github"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "num": "05",
+        "icon": "📋",
+        "title_pl": "Rynek pracy — layoffs",
+        "title_en": "Job market — layoffs",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "Microsoft layoffs — July 2026",
+            "desc_pl": "Microsoft największy wave of layoffs w July 2026.",
+            "desc_en": "Microsoft largest wave of layoffs in July 2026.",
+            "tags": [
+              "microsoft",
+              "layoffs"
+            ],
+            "date": "2026-07-24",
+            "links": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "ep-2026-07-17",
     "date": "2026-07-17",
     "title_pl": "Vulkan i Mojo vs Nvidia CUDA, Kimi K3, Nous Research $75M, PrismML, Thinking Machines Inkling",
