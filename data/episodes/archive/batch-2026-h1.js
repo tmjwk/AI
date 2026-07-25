@@ -9,7 +9,7 @@ const ARCHIVE_EPISODES = [
     "channel": "Peter Diamandis · Moonshots & Millionaires",
     "title": "US Government Blocks GPT-5.6, Alibaba's AI Theft, and Why OpenAI Is Stalling Their IPO | #267",
     "date": "2026-06-30",
-    "duration": "2h17m",
+    "duration": "2h31m",
     "hosts_count_pl": "4 gospodarzy",
     "hosts_count_en": "4 hosts",
     "topics_count_pl": "7 tematów",
@@ -131,39 +131,6 @@ const ARCHIVE_EPISODES = [
         "title_en": "OpenAI cofa IPO"
       },
       {
-        "num": "03",
-        "title": "Alibaba distillation campaign",
-        "time": "79:34 – 90:00",
-        "fakty_pl": "Anthropic oskarża chińską firmę Alibaba o prowadzenie masowej <strong>kampanii destylacji</strong> przeciwko Claude.",
-        "fakty_en": "Anthropic accuses Chinese company Alibaba of running a massive <strong>distillation campaign</strong> against Claude.",
-        "glosy": [
-          {
-            "host": "Peter",
-            "dot_color": "var(--hp)",
-            "text_pl": "Anthropic oskarża Alibaba o masową kampanię destylacji przeciwko Claude. To jest druga zimna wojna — USA kontra Chiny w AI.",
-            "text_en": "The world seems to be on a path, sort of a second cold war type path."
-          },
-          {
-            "host": "Dave",
-            "dot_color": "var(--hp)",
-            "text_pl": "<strong>To będzie wymówka</strong>, której USA i Europa użyją do tłumienia chińskiego AI. Potrzebują pretekstu, destylacja go daje.",
-            "text_en": "This will be the excuse that the US and Europe and maybe South America use cuz they need to suppress Chinese AI somehow."
-          },
-          {
-            "host": "Alex",
-            "dot_color": "var(--hp)",
-            "text_pl": "<strong>Ktokolwiek jest tym zszokowany jest całkowicie poza kontaktem</strong> z tym, co Chiny naprawdę robią. Destylacja to wojna asymetryczna — nie trzeba kraść wag, wystarczy dostęp do API.",
-            "text_en": "Anyone who's shocked by this is way out of touch with what China's actually doing."
-          }
-        ],
-        "wniosek_pl": "Distillation to <strong>wojna asymetryczna</strong> — Chińczycy nie muszą trenować od zera, kopiują wnioskowanie traces z western models. Regulacje export control nie powstrzymają tego.",
-        "wniosek_en": "Distillation is <strong>asymmetric warfare</strong> — the Chinese don't have to train from scratch, they copy reasoning traces from western models. Export control regulations won't stop this.",
-        "kontekst_pl": "<strong>Destylacja</strong> polega na tym, że model A (Claude) generuje odpowiedzi, a model B (Alibaba) uczy się na tych odpowiedziach. Nie trzeba kraść wag — wystarczy dostęp do API. Dlatego Anthropic ogranicza API dla chińskich firm. Ale Chińczycy mogą używać pośredników (VPN, spółki fasadowe). 12 wzmianek o destylacji w tym odcinku — to główny temat geopolityczny.",
-        "kontekst_en": "<strong>Distillation</strong> means model A (Claude) generates responses, and model B (Alibaba) learns from those responses. You don't need to steal weights — API access is enough. That's why Anthropic restricts API for Chinese companies. But the Chinese can use intermediaries (VPN, shell companies). 12 mentions of distillation in this episode — it's the main geopolitical topic.",
-        "title_pl": "Alibaba distillation campaign",
-        "title_en": "Alibaba distillation campaign"
-      },
-      {
         "num": "04",
         "title": "Neuralink telepathy",
         "time": "55:23 – 62:00",
@@ -195,6 +162,39 @@ const ARCHIVE_EPISODES = [
         "kontekst_en": "Alex's theory: the <strong>hippocampus</strong> works like an encoder-only transformer. If true, telepathy = embedding transfer between brains. \"You don't need all the words. You use as few words as possible to activate a shared latent space.\" Immad predicts that demand for non-invasive brain-computer interfaces will force Neuralink to change direction. Elon plans neocortex-to-cloud communication by the early 2030s.",
         "title_pl": "Neuralink telepathy",
         "title_en": "Neuralink telepathy"
+      },
+      {
+        "num": "03",
+        "title": "Alibaba distillation campaign",
+        "time": "79:34 – 90:00",
+        "fakty_pl": "Anthropic oskarża chińską firmę Alibaba o prowadzenie masowej <strong>kampanii destylacji</strong> przeciwko Claude.",
+        "fakty_en": "Anthropic accuses Chinese company Alibaba of running a massive <strong>distillation campaign</strong> against Claude.",
+        "glosy": [
+          {
+            "host": "Peter",
+            "dot_color": "var(--hp)",
+            "text_pl": "Anthropic oskarża Alibaba o masową kampanię destylacji przeciwko Claude. To jest druga zimna wojna — USA kontra Chiny w AI.",
+            "text_en": "The world seems to be on a path, sort of a second cold war type path."
+          },
+          {
+            "host": "Dave",
+            "dot_color": "var(--hp)",
+            "text_pl": "<strong>To będzie wymówka</strong>, której USA i Europa użyją do tłumienia chińskiego AI. Potrzebują pretekstu, destylacja go daje.",
+            "text_en": "This will be the excuse that the US and Europe and maybe South America use cuz they need to suppress Chinese AI somehow."
+          },
+          {
+            "host": "Alex",
+            "dot_color": "var(--hp)",
+            "text_pl": "<strong>Ktokolwiek jest tym zszokowany jest całkowicie poza kontaktem</strong> z tym, co Chiny naprawdę robią. Destylacja to wojna asymetryczna — nie trzeba kraść wag, wystarczy dostęp do API.",
+            "text_en": "Anyone who's shocked by this is way out of touch with what China's actually doing."
+          }
+        ],
+        "wniosek_pl": "Distillation to <strong>wojna asymetryczna</strong> — Chińczycy nie muszą trenować od zera, kopiują wnioskowanie traces z western models. Regulacje export control nie powstrzymają tego.",
+        "wniosek_en": "Distillation is <strong>asymmetric warfare</strong> — the Chinese don't have to train from scratch, they copy reasoning traces from western models. Export control regulations won't stop this.",
+        "kontekst_pl": "<strong>Destylacja</strong> polega na tym, że model A (Claude) generuje odpowiedzi, a model B (Alibaba) uczy się na tych odpowiedziach. Nie trzeba kraść wag — wystarczy dostęp do API. Dlatego Anthropic ogranicza API dla chińskich firm. Ale Chińczycy mogą używać pośredników (VPN, spółki fasadowe). 12 wzmianek o destylacji w tym odcinku — to główny temat geopolityczny.",
+        "kontekst_en": "<strong>Distillation</strong> means model A (Claude) generates responses, and model B (Alibaba) learns from those responses. You don't need to steal weights — API access is enough. That's why Anthropic restricts API for Chinese companies. But the Chinese can use intermediaries (VPN, shell companies). 12 mentions of distillation in this episode — it's the main geopolitical topic.",
+        "title_pl": "Alibaba distillation campaign",
+        "title_en": "Alibaba distillation campaign"
       },
       {
         "num": "05",
@@ -271,7 +271,7 @@ const ARCHIVE_EPISODES = [
       {
         "num": "07",
         "title": "Future of humanity — space colonization",
-        "time": "125:00 – 138:00",
+        "time": "2:13:00 – 2:26:00",
         "fakty_pl": "Discussion about ocean colonies, orbital habitats, <strong>heterogeneous vs homogeneous future</strong>.",
         "fakty_en": "Discussion about ocean colonies, orbital habitats, <strong>heterogeneous vs homogeneous future</strong>.",
         "glosy": [
