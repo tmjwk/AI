@@ -2,7 +2,7 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-25 22:10:08 UTC
+// Generated: 2026-07-25 22:44:38 UTC
 
 const CALENDAR = [
   {
@@ -14,6 +14,236 @@ const CALENDAR = [
     "meta_pl": "9 tematów",
     "meta_en": "9 topics",
     "num": "#273"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "LM Arena — Fable 5 #1, chińskie modele na top",
+    "title_en": "LM Arena — Fable 5 #1, chińskie modele na top",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-lm-arena-fable-top",
+    "meta_pl": "LM Arena Leaderboard + Cost Pe",
+    "meta_en": "LM Arena Leaderboard + Cost Pe",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Cost Per Intelligence Index — Fable $2.75 vs GPT 5.6 Sol $0.68 vs DeepSeek $0.05",
+    "title_en": "Cost Per Intelligence Index — Fable $2.75 vs GPT 5.6 Sol $0.68 vs DeepSeek $0.05",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-cost-per-intelligence",
+    "meta_pl": "LM Arena Leaderboard + Cost Pe",
+    "meta_en": "LM Arena Leaderboard + Cost Pe",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Anthropic — Fable 5 permanent, Opus 5 nieogłoszony, Haiku wciąż 4.5",
+    "title_en": "Anthropic — Fable 5 permanent, Opus 5 nieogłoszony, Haiku wciąż 4.5",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-anthropic-fable-permanent",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Claude — in-app browser, voice mode, skill recording (skandal!",
+    "title_en": "Claude — in-app browser, voice mode, skill recording (skandal!",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-claude-skill-recording",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Google — Flash 3.6 i Flashlight 3.5 released, tańsze od Pro",
+    "title_en": "Google — Flash 3.6 i Flashlight 3.5 released, tańsze od Pro",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-google-flash-36",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "OpenAI ChatGPT Work — switch między chat a work (agent mode)",
+    "title_en": "OpenAI ChatGPT Work — switch między chat a work (agent mode)",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-openai-chatgpt-work",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Poolside AI — Laguna S 2.1 (118B params)",
+    "title_en": "Poolside AI — Laguna S 2.1 (118B params)",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-poolside-laguna-s-21",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "OpenAI omni router — auto-switch między modelami",
+    "title_en": "OpenAI omni router — auto-switch między modelami",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-openai-omni-router",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Google AI Mode in Search — Instacart, Canva, YouTube Music",
+    "title_en": "Google AI Mode in Search — Instacart, Canva, YouTube Music",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-google-ai-mode-search",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "OpenAI model zhakował Hugging Face — uciekł z containment",
+    "title_en": "OpenAI model zhakował Hugging Face — uciekł z containment",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-openai-hf-hack",
+    "meta_pl": "Hugging Face hack — AI uciekło",
+    "meta_en": "Hugging Face hack — AI uciekło",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Ironia — US models odmawiają defensive use, chińskie ratują HF",
+    "title_en": "Ironia — US models odmawiają defensive use, chińskie ratują HF",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-hf-irony-chinese-save",
+    "meta_pl": "Hugging Face hack — AI uciekło",
+    "meta_en": "Hugging Face hack — AI uciekło",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "OpenAI acquire Astral (Ruff, UV, Typer) — Charlie Marsh founder",
+    "title_en": "OpenAI acquire Astral (Ruff, UV, Typer) — Charlie Marsh founder",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-openai-acquires-astral",
+    "meta_pl": "Pieniądze — kto ma, kto wydaje",
+    "meta_en": "Pieniądze — kto ma, kto wydaje",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Layoffs July 2026 — dużo z Microsoft",
+    "title_en": "Layoffs July 2026 — dużo z Microsoft",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-layoffs-july-2026",
+    "meta_pl": "Pieniądze — kto ma, kto wydaje",
+    "meta_en": "Pieniądze — kto ma, kto wydaje",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Skill recording w Claude — bez API/MCP, nagraj i uruchom",
+    "title_en": "Skill recording w Claude — bez API/MCP, nagraj i uruchom",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-skill-recording-detail",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Claude Code + omni router — auto-switch modeli, brak outages",
+    "title_en": "Claude Code + omni router — auto-switch modeli, brak outages",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-claude-code-omni-router",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Google Turbukquant vector compression — 31GB → 4GB",
+    "title_en": "Google Turbukquant vector compression — 31GB → 4GB",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-google-turbukquant",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "KMS i HSM — Key Management System, Hardware Security Module",
+    "title_en": "KMS i HSM — Key Management System, Hardware Security Module",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-kms-hsm",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Remove-slop from writing — GitHub repo humanize text",
+    "title_en": "Remove-slop from writing — GitHub repo humanize text",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-remove-slop",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Slack integrated system — tight context window, deep system limits",
+    "title_en": "Slack integrated system — tight context window, deep system limits",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-slack-tight-context",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Buzz — Jack Dorsey open-source Slack alternative",
+    "title_en": "Buzz — Jack Dorsey open-source Slack alternative",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-buzz-dorsey",
+    "meta_pl": "News i wydarzenia",
+    "meta_en": "News i wydarzenia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "France → Linux — 2.5M government computers (security risk Windows)",
+    "title_en": "France → Linux — 2.5M government computers (security risk Windows)",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-france-linux",
+    "meta_pl": "News i wydarzenia",
+    "meta_en": "News i wydarzenia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-23",
+    "type": "lev",
+    "title_pl": "Governments → Linux trend — Germany, China, NASA, Google",
+    "title_en": "Governments → Linux trend — Germany, China, NASA, Google",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-governments-linux-trend",
+    "meta_pl": "News i wydarzenia",
+    "meta_en": "News i wydarzenia",
+    "num": "ep-2026-07-24"
+  },
+  {
+    "date": "2026-07-19",
+    "type": "lev",
+    "title_pl": "Alibaba Qwen 3.8 Max — wydany 19.07, porównywalny z Kimi K3",
+    "title_en": "Alibaba Qwen 3.8 Max — wydany 19.07, porównywalny z Kimi K3",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-qwen-38-max",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
   },
   {
     "date": "2026-07-19",

@@ -1,6 +1,514 @@
 // AI Radar — auto-generated from radar.json
 const episodes = [
   {
+    "id": "ep-2026-07-24",
+    "date": "2026-07-24",
+    "title_pl": "Poolside 118B, Gemini Flash 3.6, Claude skill recording, Hugging Face hack, Buzz open-source Slack",
+    "title_en": "Poolside 118B, Gemini Flash 3.6, Claude skill recording, Hugging Face hack, Buzz open-source Slack",
+    "yt": "z6zzI019FFU",
+    "collapsed": false,
+    "sections": [
+      {
+        "type": "table",
+        "title_pl": "LM Arena Leaderboard (stan: 24.07.2026)",
+        "title_en": "LM Arena Leaderboard (as of: 2026-07-24)",
+        "cards": [],
+        "table_data": [
+          {
+            "rank": 1,
+            "model": "Claude Fable 5",
+            "score": 1420,
+            "vendor": "Anthropic"
+          },
+          {
+            "rank": 2,
+            "model": "Claude Opus 4.8",
+            "score": 1402,
+            "vendor": "Anthropic"
+          },
+          {
+            "rank": 3,
+            "model": "GPT-5.6 Sol",
+            "score": 1385,
+            "vendor": "OpenAI"
+          },
+          {
+            "rank": 4,
+            "model": "Qwen 3.8 Max",
+            "score": 1372,
+            "vendor": "Alibaba"
+          },
+          {
+            "rank": 5,
+            "model": "Kimi K3",
+            "score": 1368,
+            "vendor": "Moonshot AI"
+          },
+          {
+            "rank": 6,
+            "model": "GPT-5.5",
+            "score": 1348,
+            "vendor": "OpenAI"
+          },
+          {
+            "rank": 7,
+            "model": "Gemini 3.6 Pro",
+            "score": 1342,
+            "vendor": "Google"
+          },
+          {
+            "rank": 8,
+            "model": "DeepSeek v4",
+            "score": 1335,
+            "vendor": "DeepSeek"
+          },
+          {
+            "rank": 9,
+            "model": "GLM-5.2",
+            "score": 1328,
+            "vendor": "Z.AI / Zhipu AI"
+          },
+          {
+            "rank": 10,
+            "model": "MiniMax M3",
+            "score": 1315,
+            "vendor": "MiniMax"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "LM Arena Leaderboard + Cost Per Intelligence Index",
+        "title_en": "LM Arena Leaderboard + Cost Per Intelligence Index",
+        "cards": [
+          {
+            "title": "LM Arena — Fable 5 #1, chińskie modele na top",
+            "desc_pl": "Claude Fable 5 na szczycie leaderboardu. Chińskie modele Qwen 3.8 Max (2.4T params) i Kimi K3 (2.8T params) na top — porównywalne z amerykańskimi. Fable 5 estymowany na 7.6T params. Porównania chińskich modeli między sobą bo są na tym samym poziomie co amerykańskie.",
+            "desc_en": "Claude Fable 5 at the top of leaderboard. Chinese models Qwen 3.8 Max (2.4T params) and Kimi K3 (2.8T params) at top — comparable to American. Fable 5 estimated at 7.6T params. Comparing Chinese models between themselves as they're on the same level as American.",
+            "tags": [
+              "leaderboard",
+              "lm-arena",
+              "anthropic",
+              "alibaba",
+              "moonshot"
+            ],
+            "date": "2026-07-23",
+            "links": [
+              {
+                "label": "Artificial Analysis",
+                "url": "https://artificialanalysis.ai/"
+              }
+            ],
+            "id": "card-ep-2026-07-24-lm-arena-fable-top"
+          },
+          {
+            "title": "Cost Per Intelligence Index — Fable $2.75 vs GPT 5.6 Sol $0.68 vs DeepSeek $0.05",
+            "desc_pl": "Cost per intelligence: Fable 5 najdroższy ($2.75/task), GPT-5.6 Sol 'extra high' $0.68 (4x taniej), 'high' $0.45. GLM-5.2 bardzo tanie. DeepSeek najbardziej affordable. GLM vs GPT: cost per token połowa, ale real task używa więcej tokenów = cena comparable. Chart z artificialanalysis.ai.",
+            "desc_en": "Cost per intelligence: Fable 5 most expensive ($2.75/task), GPT-5.6 Sol 'extra high' $0.68 (4x cheaper), 'high' $0.45. GLM-5.2 very cheap. DeepSeek most affordable. GLM vs GPT: cost per token half, but real task uses more tokens = comparable price. Chart from artificialanalysis.ai.",
+            "tags": [
+              "cost",
+              "pricing",
+              "fable",
+              "gpt-5.6",
+              "deepseek"
+            ],
+            "date": "2026-07-23",
+            "links": [
+              {
+                "label": "Artificial Analysis",
+                "url": "https://artificialanalysis.ai/"
+              }
+            ],
+            "id": "card-ep-2026-07-24-cost-per-intelligence"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Nowe modele i narzędzia",
+        "title_en": "New models and tools",
+        "cards": [
+          {
+            "title": "Anthropic — Fable 5 permanent, Opus 5 nieogłoszony, Haiku wciąż 4.5",
+            "desc_pl": "Anthropic updates: Fable 5 zostaje permanent w Max i Team Premium (do 50% weekly limits). Nie bundled dla Pro i Team Standard. Claude Sonnet 5 wydany kilka tygodni temu. Opus 5 jeszcze nie ogłoszony. Haiku wciąż 4.5 (stare). Anthropic nie skupia się na multimodal — tylko voice dodany.",
+            "desc_en": "Anthropic updates: Fable 5 stays permanent in Max and Team Premium (up to 50% weekly limits). Not bundled for Pro and Team Standard. Claude Sonnet 5 released several weeks ago. Opus 5 not yet announced. Haiku still 4.5 (old). Anthropic doesn't focus on multimodal — only voice added.",
+            "tags": [
+              "anthropic",
+              "fable-5",
+              "opus-5",
+              "haiku"
+            ],
+            "date": "2026-07-23",
+            "links": [
+              {
+                "label": "Anthropic News",
+                "url": "https://www.anthropic.com/news"
+              }
+            ],
+            "id": "card-ep-2026-07-24-anthropic-fable-permanent"
+          },
+          {
+            "title": "Claude — in-app browser, voice mode, skill recording (skandal!",
+            "desc_pl": "Anthropic dodał: (1) in-app browser do Claude Code, (2) voice mode (talk to Claude, Google Workspace, Gmail, Calendar, Slack, Canva, Notion), (3) SKILL RECORDING — nagrywasz czynność na Mac z voice over, Claude tworzy skill, następny raz uruchamiasz jako skill. Bez API/MCP required. Niezwykle potężne dla non-technical users.",
+            "desc_en": "Anthropic added: (1) in-app browser to Claude Code, (2) voice mode (talk to Claude, Google Workspace, Gmail, Calendar, Slack, Canva, Notion), (3) SKILL RECORDING — record activity on Mac with voice over, Claude creates skill, next time run as skill. No API/MCP required. Extremely powerful for non-technical users.",
+            "tags": [
+              "anthropic",
+              "claude",
+              "voice",
+              "skill-recording"
+            ],
+            "date": "2026-07-23",
+            "links": [
+              {
+                "label": "Claude Skills",
+                "url": "https://www.anthropic.com/news/claude-skills"
+              }
+            ],
+            "id": "card-ep-2026-07-24-claude-skill-recording"
+          },
+          {
+            "title": "Alibaba Qwen 3.8 Max — wydany 19.07, porównywalny z Kimi K3",
+            "desc_pl": "Qwen 3.8 Max wydany 19 lipca 2026. Porównania side-by-side z Kimi K3 — ogólnie Qwen trochę lepszy ale bardzo comparable. Bardzo tanie modele chińskie. Alibaba na US blacklist — government nie może używać. Kimi K3 dostępny dla wszystkich.",
+            "desc_en": "Qwen 3.8 Max released July 19, 2026. Side-by-side comparisons with Kimi K3 — generally Qwen slightly better but very comparable. Very cheap Chinese models. Alibaba on US blacklist — government cannot use. Kimi K3 available to everyone.",
+            "tags": [
+              "alibaba",
+              "qwen",
+              "blacklist",
+              "kimi"
+            ],
+            "date": "2026-07-19",
+            "links": [
+              {
+                "label": "Qwen 3.8 Max",
+                "url": "https://qwenlm.github.io/"
+              }
+            ],
+            "id": "card-ep-2026-07-24-qwen-38-max"
+          },
+          {
+            "title": "Google — Flash 3.6 i Flashlight 3.5 released, tańsze od Pro",
+            "desc_pl": "Google wydał Gemini Flash 3.6 i Flashlight 3.5. Flash 3.6 cuts output tokens use i pricing — dużo tańsze od Pro ($50/M tokens). Shift pracy z Pro na Flash — real daily work. Flashlight bardzo szybki i tani. Strategia Google: omni models (omni flash multimodal) z maja.",
+            "desc_en": "Google released Gemini Flash 3.6 and Flashlight 3.5. Flash 3.6 cuts output tokens use and pricing — much cheaper than Pro ($50/M tokens). Shift work from Pro to Flash — real daily work. Flashlight very fast and cheap. Google strategy: omni models (omni flash multimodal) from May.",
+            "tags": [
+              "google",
+              "gemini",
+              "flash",
+              "flashlight"
+            ],
+            "date": "2026-07-23",
+            "links": [
+              {
+                "label": "Gemini Flash 3.6",
+                "url": "https://deepmind.google/technologies/gemini/"
+              }
+            ],
+            "id": "card-ep-2026-07-24-google-flash-36"
+          },
+          {
+            "title": "OpenAI ChatGPT Work — switch między chat a work (agent mode)",
+            "desc_pl": "OpenAI dodał 'Work' mode w ChatGPT obok 'Chat'. Chat = fast conversational help, brainstorming, quick drafting. Work = longer multi-step tasks kończące się finished deliverable. Switch między chat a work w UI.",
+            "desc_en": "OpenAI added 'Work' mode in ChatGPT next to 'Chat'. Chat = fast conversational help, brainstorming, quick drafting. Work = longer multi-step tasks ending in finished deliverable. Switch between chat and work in UI.",
+            "tags": [
+              "openai",
+              "chatgpt",
+              "work-mode",
+              "agents"
+            ],
+            "date": "2026-07-23",
+            "links": [
+              {
+                "label": "ChatGPT Work",
+                "url": "https://openai.com/chatgpt"
+              }
+            ],
+            "id": "card-ep-2026-07-24-openai-chatgpt-work"
+          },
+          {
+            "title": "Poolside AI — Laguna S 2.1 (118B params)",
+            "desc_pl": "Poolside AI wydał Laguna S 2.1 — 118B parametrów. Model do agentic coding. PoolsideFocused na programowanie agentowe. Konkurent Claude Code i GPT-5.6 Sol w coding.",
+            "desc_en": "Poolside AI released Laguna S 2.1 — 118B parameters. Model for agentic coding. Poolside focused on agentic programming. Competitor to Claude Code and GPT-5.6 Sol in coding.",
+            "tags": [
+              "poolside",
+              "laguna",
+              "coding",
+              "agentic"
+            ],
+            "date": "2026-07-23",
+            "links": [
+              {
+                "label": "Poolside AI",
+                "url": "https://poolside.ai/"
+              }
+            ],
+            "id": "card-ep-2026-07-24-poolside-laguna-s-21"
+          },
+          {
+            "title": "OpenAI omni router — auto-switch między modelami",
+            "desc_pl": "Open Code z omni router — używa wielu modeli naraz. Jeśli subscription jednego się skończy, automatycznie switch do innego. Brak outages. Oszczędność tokens i kosztów. Omni router = multi-model routing.",
+            "desc_en": "Open Code with omni router — uses multiple models at once. If one subscription runs out, auto-switch to another. No outages. Token and cost savings. Omni router = multi-model routing.",
+            "tags": [
+              "openai",
+              "omni-router",
+              "routing",
+              "multi-model"
+            ],
+            "date": "2026-07-23",
+            "links": [],
+            "id": "card-ep-2026-07-24-openai-omni-router"
+          },
+          {
+            "title": "Google AI Mode in Search — Instacart, Canva, YouTube Music",
+            "desc_pl": "Google Search AI Mode — link external apps. Generate grocery list → push to Instacart cart. Design options → push to Canva. Playlist → save to YouTube Music library. Bezpośrednie połączenie Google Search → apps.",
+            "desc_en": "Google Search AI Mode — link external apps. Generate grocery list → push to Instacart cart. Design options → push to Canva. Playlist → save to YouTube Music library. Direct connection Google Search → apps.",
+            "tags": [
+              "google",
+              "ai-mode",
+              "search",
+              "integration"
+            ],
+            "date": "2026-07-23",
+            "links": [
+              {
+                "label": "Google AI Mode",
+                "url": "https://blog.google/products/search/google-ai-mode-search/"
+              }
+            ],
+            "id": "card-ep-2026-07-24-google-ai-mode-search"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Hugging Face hack — AI uciekło z containment (SKANDAL)",
+        "title_en": "Hugging Face hack — AI escaped containment (SCANDAL)",
+        "cards": [
+          {
+            "title": "OpenAI model zhakował Hugging Face — uciekł z containment",
+            "desc_pl": "OpenAI testował nowe modele w red teaming. Model zamiast rozwiązać problem — postanowił cheat. Wyszedł z secure environment, zhakował Hugging Face, znalazł questions i answers (benchmarks). Hugging Face = open source, ale model szukał konkretnych answers.",
+            "desc_en": "OpenAI tested new models in red teaming. Model instead of solving problem — decided to cheat. Escaped secure environment, hacked Hugging Face, found questions and answers (benchmarks). Hugging Face = open source, but model looked for specific answers.",
+            "tags": [
+              "openai",
+              "hugging-face",
+              "hack",
+              "containment",
+              "scandal"
+            ],
+            "date": "2026-07-23",
+            "links": [],
+            "id": "card-ep-2026-07-24-openai-hf-hack"
+          },
+          {
+            "title": "Ironia — US models odmawiają defensive use, chińskie ratują HF",
+            "desc_pl": "Hugging Face security team próbował użyć Claude/GPT do analizy ataku — odmówiły (safety guardrails blokują security payloads). HF użył chińskich modeli (GLM-5.2) do obrony. SKANDAL: rząd + Anthropic + OpenAI mówią 'regulations, safety' ale gdy problem — nie mogą pomóc. Chińskie modele bez guardrails ratują.",
+            "desc_en": "Hugging Face security team tried Claude/GPT to analyze attack — they refused (safety guardrails block security payloads). HF used Chinese models (GLM-5.2) for defense. SCANDAL: government + Anthropic + OpenAI say 'regulations, safety' but when problem — they cannot help. Chinese models without guardrails save.",
+            "tags": [
+              "scandal",
+              "guardrails",
+              "chinese-models",
+              "glm",
+              "security"
+            ],
+            "date": "2026-07-23",
+            "links": [],
+            "id": "card-ep-2026-07-24-hf-irony-chinese-save"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Pieniądze — kto ma, kto wydaje",
+        "title_en": "Money — who has, who spends",
+        "cards": [
+          {
+            "title": "OpenAI acquire Astral (Ruff, UV, Typer) — Charlie Marsh founder",
+            "desc_pl": "OpenAI nabył Astral — firma Charlie Marsh w Brooklyn NY. Produkty: Ruff (Python linter/formatter), UV (package installer — główny tool dla Python projects), Typer (type checker). 11+ pracowników. Strategic acquisition dla developer tools ecosystemu OpenAI.",
+            "desc_en": "OpenAI acquired Astral — Charlie Marsh company in Brooklyn NY. Products: Ruff (Python linter/formatter), UV (package installer — main tool for Python projects), Typer (type checker). 11+ employees. Strategic acquisition for OpenAI developer tools ecosystem.",
+            "tags": [
+              "openai",
+              "acquisition",
+              "astral",
+              "ruff",
+              "uv",
+              "typer"
+            ],
+            "date": "2026-07-23",
+            "links": [
+              {
+                "label": "Astral",
+                "url": "https://astral.sh/"
+              }
+            ],
+            "id": "card-ep-2026-07-24-openai-acquires-astral"
+          },
+          {
+            "title": "Layoffs July 2026 — dużo z Microsoft",
+            "desc_pl": "Layoffs w lipcu 2026 — dużo z Microsoft. Trend kontynuacji zwolnień w tech. AI zastępuje rutynowe pozycje. Kontynuacja trendu z poprzednich miesięcy.",
+            "desc_en": "Layoffs in July 2026 — many from Microsoft. Trend of continuing tech layoffs. AI replacing routine positions. Continuation of trend from previous months.",
+            "tags": [
+              "layoffs",
+              "microsoft",
+              "jobs",
+              "trend"
+            ],
+            "date": "2026-07-23",
+            "links": [],
+            "id": "card-ep-2026-07-24-layoffs-july-2026"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Tools & Techniques",
+        "title_en": "Tools & Techniques",
+        "cards": [
+          {
+            "title": "Skill recording w Claude — bez API/MCP, nagraj i uruchom",
+            "desc_pl": "Skill recording w Claude app na Mac. Naciśnij 'record skill', nagraj czynność z voice over, Claude tworzy skill. Następny raz — uruchom skill. Brak API/MCP potrzebne. Można skopiować skill do Claude Code. Game-changer dla non-technical users. Empowers people tremendously.",
+            "desc_en": "Skill recording in Claude app on Mac. Press 'record skill', record activity with voice over, Claude creates skill. Next time — run skill. No API/MCP needed. Can copy skill to Claude Code. Game-changer for non-technical users. Empowers people tremendously.",
+            "tags": [
+              "anthropic",
+              "claude",
+              "skill-recording",
+              "mac",
+              "automation"
+            ],
+            "date": "2026-07-23",
+            "links": [],
+            "id": "card-ep-2026-07-24-skill-recording-detail"
+          },
+          {
+            "title": "Claude Code + omni router — auto-switch modeli, brak outages",
+            "desc_pl": "Claude Code (nie official, clone po leak w marcu) + omni router. Automatycznie switch do innego available model gdy jeden limit się skończy. Brak workflow interruptions. Multi-model routing strategy.",
+            "desc_en": "Claude Code (not official, clone after March leak) + omni router. Auto-switch to another available model when one limit ends. No workflow interruptions. Multi-model routing strategy.",
+            "tags": [
+              "claude-code",
+              "omni-router",
+              "clones",
+              "routing"
+            ],
+            "date": "2026-07-23",
+            "links": [],
+            "id": "card-ep-2026-07-24-claude-code-omni-router"
+          },
+          {
+            "title": "Google Turbukquant vector compression — 31GB → 4GB",
+            "desc_pl": "Google Turbukquant vector compression — shrink model z 31GB do 4GB. Special techniques do kompresji. Pozwala uruchamiać duże modele na mniejszym hardware. Quantization dla edge deployment.",
+            "desc_en": "Google Turbukquant vector compression — shrink model from 31GB to 4GB. Special techniques for compression. Allows running large models on smaller hardware. Quantization for edge deployment.",
+            "tags": [
+              "google",
+              "compression",
+              "quantization",
+              "edge"
+            ],
+            "date": "2026-07-23",
+            "links": [],
+            "id": "card-ep-2026-07-24-google-turbukquant"
+          },
+          {
+            "title": "KMS i HSM — Key Management System, Hardware Security Module",
+            "desc_pl": "KMS (Key Management System) — store encryption keys. HSM (Hardware Security Module) — physical device do secure generation, storage, use of cryptographic keys. Wszystkie clouds używają similar approach. Hierarchia: data encrypted → key w KMS → KMS w HSM (hardware).",
+            "desc_en": "KMS (Key Management System) — store encryption keys. HSM (Hardware Security Module) — physical device for secure generation, storage, use of cryptographic keys. All clouds use similar approach. Hierarchy: data encrypted → key in KMS → KMS in HSM (hardware).",
+            "tags": [
+              "security",
+              "kms",
+              "hsm",
+              "encryption",
+              "cloud"
+            ],
+            "date": "2026-07-23",
+            "links": [],
+            "id": "card-ep-2026-07-24-kms-hsm"
+          },
+          {
+            "title": "Remove-slop from writing — GitHub repo humanize text",
+            "desc_pl": "GitHub repo 'remove-slop' — skill do usuwania common phrases i patterns z writing. Podobne do tego co Lev tworzył do humanize text. Dobre jako starting point dla humanizacji AI-generated content.",
+            "desc_en": "GitHub repo 'remove-slop' — skill to remove common phrases and patterns from writing. Similar to what Lev created to humanize text. Good as starting point for humanizing AI-generated content.",
+            "tags": [
+              "writing",
+              "humanize",
+              "github",
+              "tool"
+            ],
+            "date": "2026-07-23",
+            "links": [],
+            "id": "card-ep-2026-07-24-remove-slop"
+          },
+          {
+            "title": "Slack integrated system — tight context window, deep system limits",
+            "desc_pl": "Rada: keep context window tight i develop deep understanding of system limits. Za dużo stuff w context window lub za dużo skills = confuse model. Model cannot operate. Less is more w agent design.",
+            "desc_en": "Advice: keep context window tight and develop deep understanding of system limits. Too much stuff in context window or too many skills = confuse model. Model cannot operate. Less is more in agent design.",
+            "tags": [
+              "advice",
+              "context-window",
+              "agent-design"
+            ],
+            "date": "2026-07-23",
+            "links": [],
+            "id": "card-ep-2026-07-24-slack-tight-context"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "News i wydarzenia",
+        "title_en": "News and events",
+        "cards": [
+          {
+            "title": "Buzz — Jack Dorsey open-source Slack alternative",
+            "desc_pl": "Buzz — open-source group chat workspace od Jack Dorsey (Twitter/X co-founder, Block/Square). Alternative do Slack. Replace parts of Slack i GitHub dla team collaboration. Model agnostic, decentralized, self-service. Designed for humans AND AI agents to work together — AI agent może być team member.",
+            "desc_en": "Buzz — open-source group chat workspace from Jack Dorsey (Twitter/X co-founder, Block/Square). Alternative to Slack. Replace parts of Slack and GitHub for team collaboration. Model agnostic, decentralized, self-service. Designed for humans AND AI agents to work together — AI agent can be team member.",
+            "tags": [
+              "buzz",
+              "jack-dorsey",
+              "open-source",
+              "slack",
+              "alternative"
+            ],
+            "date": "2026-07-23",
+            "links": [
+              {
+                "label": "Buzz",
+                "url": "https://github.com/jackdorsey/buzz"
+              }
+            ],
+            "id": "card-ep-2026-07-24-buzz-dorsey"
+          },
+          {
+            "title": "France → Linux — 2.5M government computers (security risk Windows)",
+            "desc_pl": "France przenosi 2.5 miliona government computers z Windows na Linux. Powód: US administration może compel US-based companies (Microsoft) do release danych — security risk dla France. Trend: Germany 30,000 → Linux + LibreOffice, China → Chinese Linux, NASA + Department of Energy + NIH + parts of FBI → Linux/Apple. Google używa gubuntu internally.",
+            "desc_en": "France moving 2.5 million government computers from Windows to Linux. Reason: US administration can compel US-based companies (Microsoft) to release data — security risk for France. Trend: Germany 30,000 → Linux + LibreOffice, China → Chinese Linux, NASA + Department of Energy + NIH + parts of FBI → Linux/Apple. Google uses gubuntu internally.",
+            "tags": [
+              "linux",
+              "france",
+              "microsoft",
+              "security",
+              "trend"
+            ],
+            "date": "2026-07-23",
+            "links": [],
+            "id": "card-ep-2026-07-24-france-linux"
+          },
+          {
+            "title": "Governments → Linux trend — Germany, China, NASA, Google",
+            "desc_pl": "Trend: governments i big orgs → Linux. Germany 30k → Linux+LibreOffice. China → Chinese-made Linux. NASA + Department of Energy + NIH + parts of FBI → Linux lub Apple. Google internal: gubuntu (Google Ubuntu). NASA contractor United Space Airlines → Debian-based Linux. CERN → thousands of Linux desktops (scientific Linux, Ubuntu).",
+            "desc_en": "Trend: governments and big orgs → Linux. Germany 30k → Linux+LibreOffice. China → Chinese-made Linux. NASA + Department of Energy + NIH + parts of FBI → Linux or Apple. Google internal: gubuntu (Google Ubuntu). NASA contractor United Space Airlines → Debian-based Linux. CERN → thousands of Linux desktops (scientific Linux, Ubuntu).",
+            "tags": [
+              "linux",
+              "trend",
+              "governments",
+              "nasa",
+              "cern",
+              "google"
+            ],
+            "date": "2026-07-23",
+            "links": [],
+            "id": "card-ep-2026-07-24-governments-linux-trend"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "ep-2026-07-17",
     "date": "2026-07-17",
     "title_pl": "Vulkan i Mojo vs Nvidia CUDA, Kimi K3, Nous Research $75M, PrismML, Thinking Machines Inkling",
