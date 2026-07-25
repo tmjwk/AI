@@ -2,9 +2,19 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-20 03:27:53 UTC
+// Generated: 2026-07-25 22:10:08 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-07-24",
+    "type": "diamandis",
+    "title_pl": "Podcast #273 — Włamanie Hugging Face, Moonshot AI wycenione na $20B, i życie do 1759 lat | #273",
+    "title_en": "Podcast #273 — The Hugging Face Breach, Moonshot AI Valued at $20B, and Living to 1,759 Years Old | EP #273",
+    "link": "ai-pulse.html#273",
+    "meta_pl": "9 tematów",
+    "meta_en": "9 topics",
+    "num": "#273"
+  },
   {
     "date": "2026-07-19",
     "type": "diamandis",
@@ -54,26 +64,6 @@ const CALENDAR = [
     "meta_pl": "Multimodal",
     "meta_en": "Multimodal",
     "num": "##29-2"
-  },
-  {
-    "date": "2026-07-17",
-    "type": "lev",
-    "title_pl": "Cost Per Intelligence Index",
-    "title_en": "Cost Per Intelligence Index",
-    "link": "ai-radar.html#card-ep-2026-07-17-cost-per-intelligence-index",
-    "meta_pl": "LM Arena Leaderboard + Cost Pe",
-    "meta_en": "LM Arena Leaderboard + Cost Pe",
-    "num": "ep-2026-07-17"
-  },
-  {
-    "date": "2026-07-17",
-    "type": "lev",
-    "title_pl": "llama.cpp vs Ollama vs vLLM",
-    "title_en": "llama.cpp vs Ollama vs vLLM",
-    "link": "ai-radar.html#card-ep-2026-07-17-llama-cpp-vs-ollama-vs-vllm",
-    "meta_pl": "Vulkan i Mojo vs Nvidia CUDA",
-    "meta_en": "Vulkan i Mojo vs Nvidia CUDA",
-    "num": "ep-2026-07-17"
   },
   {
     "date": "2026-07-17",
@@ -138,6 +128,16 @@ const CALENDAR = [
   {
     "date": "2026-07-16",
     "type": "lev",
+    "title_pl": "Cost Per Intelligence Index",
+    "title_en": "Cost Per Intelligence Index",
+    "link": "ai-radar.html#card-ep-2026-07-17-cost-per-intelligence-index",
+    "meta_pl": "LM Arena Leaderboard + Cost Pe",
+    "meta_en": "LM Arena Leaderboard + Cost Pe",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-16",
+    "type": "lev",
     "title_pl": "Thinking Machines Inkling — open weight LLM",
     "title_en": "Thinking Machines Inkling — open weight LLM",
     "link": "ai-radar.html#card-ep-2026-07-17-thinking-machines-inkling-open-weight-ll",
@@ -153,6 +153,16 @@ const CALENDAR = [
     "link": "ai-radar.html#card-ep-2026-07-17-kimi-k3-2-8t-a50b-open-weight",
     "meta_pl": "Nowe modele i narzędzia",
     "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-17"
+  },
+  {
+    "date": "2026-07-16",
+    "type": "lev",
+    "title_pl": "llama.cpp vs Ollama vs vLLM",
+    "title_en": "llama.cpp vs Ollama vs vLLM",
+    "link": "ai-radar.html#card-ep-2026-07-17-llama-cpp-vs-ollama-vs-vllm",
+    "meta_pl": "Vulkan i Mojo vs Nvidia CUDA",
+    "meta_en": "Vulkan i Mojo vs Nvidia CUDA",
     "num": "ep-2026-07-17"
   },
   {
@@ -406,236 +416,6 @@ const CALENDAR = [
     "num": "ep-2026-07-17"
   },
   {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Grok (xAI) — konkurent Claude",
-    "title_en": "Grok (xAI) — konkurent Claude",
-    "link": "ai-radar.html#card-ep-2026-07-10-grok-xai-konkurent-claude",
-    "meta_pl": "TYDZIEŃ: 04.07 – 10.07",
-    "meta_en": "TYDZIEŃ: 04.07 – 10.07",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Fable 5 dostępny (promo kończy się 12.07)",
-    "title_en": "Fable 5 dostępny (promo kończy się 12.07)",
-    "link": "ai-radar.html#card-ep-2026-07-10-fable-5-dost-pny-promo-ko-czy-si-12-07",
-    "meta_pl": "TYDZIEŃ: 04.07 – 10.07",
-    "meta_en": "TYDZIEŃ: 04.07 – 10.07",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Gemini 3.5 Pro — opóźniony do 17.07",
-    "title_en": "Gemini 3.5 Pro — opóźniony do 17.07",
-    "link": "ai-radar.html#card-ep-2026-07-10-gemini-3-5-pro-op-niony-do-17-07",
-    "meta_pl": "TYDZIEŃ: 04.07 – 10.07",
-    "meta_en": "TYDZIEŃ: 04.07 – 10.07",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "HY3 Open MoE LLM — $0.10",
-    "title_en": "HY3 Open MoE LLM — $0.10",
-    "link": "ai-radar.html#card-ep-2026-07-10-hy3-open-moe-llm-0-10",
-    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
-    "meta_en": "KTO ROBI CIEKAWE RZECZY",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "DeepSeek V4 Pro vs Fable 5 — koszt Flappy Bird",
-    "title_en": "DeepSeek V4 Pro vs Fable 5 — koszt Flappy Bird",
-    "link": "ai-radar.html#card-ep-2026-07-10-deepseek-v4-pro-vs-fable-5-koszt-flappy-",
-    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
-    "meta_en": "KTO ROBI CIEKAWE RZECZY",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "UB humanoid robots — $18,000",
-    "title_en": "UB humanoid robots — $18,000",
-    "link": "ai-radar.html#card-ep-2026-07-10-ub-humanoid-robots-18-000",
-    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
-    "meta_en": "KTO ROBI CIEKAWE RZECZY",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Mojo language → Qualcomm",
-    "title_en": "Mojo language → Qualcomm",
-    "link": "ai-radar.html#card-ep-2026-07-10-mojo-language-qualcomm",
-    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
-    "meta_en": "KTO ROBI CIEKAWE RZECZY",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Claude.md self-modifying trick",
-    "title_en": "Claude.md self-modifying trick",
-    "link": "ai-radar.html#card-ep-2026-07-10-claude-md-self-modifying-trick",
-    "meta_pl": "ARCHITEKTURY I WZORCE",
-    "meta_en": "ARCHITEKTURY I WZORCE",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Model routing — oszczędność 60-90%",
-    "title_en": "Model routing — oszczędność 60-90%",
-    "link": "ai-radar.html#card-ep-2026-07-10-model-routing-oszcz-dno-60-90",
-    "meta_pl": "ARCHITEKTURY I WZORCE",
-    "meta_en": "ARCHITEKTURY I WZORCE",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Karpathy: 3 poziomy AI — web → desktop → org-wide",
-    "title_en": "Karpathy: 3 poziomy AI — web → desktop → org-wide",
-    "link": "ai-radar.html#card-ep-2026-07-10-karpathy-3-poziomy-ai-web-desktop-org-wi",
-    "meta_pl": "ARCHITEKTURY I WZORCE",
-    "meta_en": "ARCHITEKTURY I WZORCE",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Composio — agenci połączeni z 100+ apps",
-    "title_en": "Composio — agenci połączeni z 100+ apps",
-    "link": "ai-radar.html#card-ep-2026-07-10-composio-agenci-po-czeni-z-100-apps",
-    "meta_pl": "ARCHITEKTURY I WZORCE",
-    "meta_en": "ARCHITEKTURY I WZORCE",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Japa = LoRA dla world models",
-    "title_en": "Japa = LoRA dla world models",
-    "link": "ai-radar.html#card-ep-2026-07-10-japa-lora-dla-world-models",
-    "meta_pl": "ARCHITEKTURY I WZORCE",
-    "meta_en": "ARCHITEKTURY I WZORCE",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "10 komponentów AI agent harness",
-    "title_en": "10 komponentów AI agent harness",
-    "link": "ai-radar.html#card-ep-2026-07-10-10-komponent-w-ai-agent-harness",
-    "meta_pl": "ARCHITEKTURY I WZORCE",
-    "meta_en": "ARCHITEKTURY I WZORCE",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Chiny: 140 firm robotycznych, 300+ modeli",
-    "title_en": "Chiny: 140 firm robotycznych, 300+ modeli",
-    "link": "ai-radar.html#card-ep-2026-07-10-chiny-140-firm-robotycznych-300-modeli",
-    "meta_pl": "REGULACJE I GEOPOLITYKA",
-    "meta_en": "REGULACJE I GEOPOLITYKA",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "OpenAI zabija Atlas browser",
-    "title_en": "OpenAI zabija Atlas browser",
-    "link": "ai-radar.html#card-ep-2026-07-10-openai-zabija-atlas-browser",
-    "meta_pl": "REGULACJE I GEOPOLITYKA",
-    "meta_en": "REGULACJE I GEOPOLITYKA",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Anthropic Certified Architect exam",
-    "title_en": "Anthropic Certified Architect exam",
-    "link": "ai-radar.html#card-ep-2026-07-10-anthropic-certified-architect-exam",
-    "meta_pl": "REGULACJE I GEOPOLITYKA",
-    "meta_en": "REGULACJE I GEOPOLITYKA",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "AI pogłębia lukę kompetencyjną",
-    "title_en": "AI pogłębia lukę kompetencyjną",
-    "link": "ai-radar.html#card-ep-2026-07-10-ai-pog-bia-luk-kompetencyjn",
-    "meta_pl": "REGULACJE I GEOPOLITYKA",
-    "meta_en": "REGULACJE I GEOPOLITYKA",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Joe Rogan × Aravind Srinivas (Perplexity)",
-    "title_en": "Joe Rogan × Aravind Srinivas (Perplexity)",
-    "link": "ai-radar.html#card-ep-2026-07-10-joe-rogan-aravind-srinivas-perplexity",
-    "meta_pl": "ZASOBY EDUKACYJNE",
-    "meta_en": "ZASOBY EDUKACYJNE",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Sync — DeepSeek V4 Flash lokalnie",
-    "title_en": "Sync — DeepSeek V4 Flash lokalnie",
-    "link": "ai-radar.html#card-ep-2026-07-10-sync-deepseek-v4-flash-lokalnie",
-    "meta_pl": "ZASOBY EDUKACYJNE",
-    "meta_en": "ZASOBY EDUKACYJNE",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Llama.cpp zoptymalizowany Claude Fable (65% szybciej)",
-    "title_en": "Llama.cpp zoptymalizowany Claude Fable (65% szybciej)",
-    "link": "ai-radar.html#card-ep-2026-07-10-llama-cpp-zoptymalizowany-claude-fable-6",
-    "meta_pl": "ZASOBY EDUKACYJNE",
-    "meta_en": "ZASOBY EDUKACYJNE",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Computational archaeology — zwoje z Wezuwiusza",
-    "title_en": "Computational archaeology — zwoje z Wezuwiusza",
-    "link": "ai-radar.html#card-ep-2026-07-10-computational-archaeology-zwoje-z-wezuwi",
-    "meta_pl": "ZASOBY EDUKACYJNE",
-    "meta_en": "ZASOBY EDUKACYJNE",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "Claude in Chrome — oficjalne rozszerzenie",
-    "title_en": "Claude in Chrome — oficjalne rozszerzenie",
-    "link": "ai-radar.html#card-ep-2026-07-10-claude-in-chrome-oficjalne-rozszerzenie",
-    "meta_pl": "ZASOBY EDUKACYJNE",
-    "meta_en": "ZASOBY EDUKACYJNE",
-    "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-10",
-    "type": "lev",
-    "title_pl": "OpenClaw — Android + iOS",
-    "title_en": "OpenClaw — Android + iOS",
-    "link": "ai-radar.html#card-ep-2026-07-10-openclaw-android-ios",
-    "meta_pl": "ZASOBY EDUKACYJNE",
-    "meta_en": "ZASOBY EDUKACYJNE",
-    "num": "ep-2026-07-10"
-  },
-  {
     "date": "2026-07-09",
     "type": "ai_search",
     "title_pl": "Muse Spark 1.1 — Meta",
@@ -698,11 +478,241 @@ const CALENDAR = [
   {
     "date": "2026-07-09",
     "type": "lev",
+    "title_pl": "Grok (xAI) — konkurent Claude",
+    "title_en": "Grok (xAI) — konkurent Claude",
+    "link": "ai-radar.html#card-ep-2026-07-10-grok-xai-konkurent-claude",
+    "meta_pl": "TYDZIEŃ: 04.07 – 10.07",
+    "meta_en": "TYDZIEŃ: 04.07 – 10.07",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Fable 5 dostępny (promo kończy się 12.07)",
+    "title_en": "Fable 5 dostępny (promo kończy się 12.07)",
+    "link": "ai-radar.html#card-ep-2026-07-10-fable-5-dost-pny-promo-ko-czy-si-12-07",
+    "meta_pl": "TYDZIEŃ: 04.07 – 10.07",
+    "meta_en": "TYDZIEŃ: 04.07 – 10.07",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
     "title_pl": "Muse Spark (Meta) — ulepszony",
     "title_en": "Muse Spark (Meta) — ulepszony",
     "link": "ai-radar.html#card-ep-2026-07-10-muse-spark-meta-ulepszony",
     "meta_pl": "TYDZIEŃ: 04.07 – 10.07",
     "meta_en": "TYDZIEŃ: 04.07 – 10.07",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Gemini 3.5 Pro — opóźniony do 17.07",
+    "title_en": "Gemini 3.5 Pro — opóźniony do 17.07",
+    "link": "ai-radar.html#card-ep-2026-07-10-gemini-3-5-pro-op-niony-do-17-07",
+    "meta_pl": "TYDZIEŃ: 04.07 – 10.07",
+    "meta_en": "TYDZIEŃ: 04.07 – 10.07",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "HY3 Open MoE LLM — $0.10",
+    "title_en": "HY3 Open MoE LLM — $0.10",
+    "link": "ai-radar.html#card-ep-2026-07-10-hy3-open-moe-llm-0-10",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "DeepSeek V4 Pro vs Fable 5 — koszt Flappy Bird",
+    "title_en": "DeepSeek V4 Pro vs Fable 5 — koszt Flappy Bird",
+    "link": "ai-radar.html#card-ep-2026-07-10-deepseek-v4-pro-vs-fable-5-koszt-flappy-",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "UB humanoid robots — $18,000",
+    "title_en": "UB humanoid robots — $18,000",
+    "link": "ai-radar.html#card-ep-2026-07-10-ub-humanoid-robots-18-000",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Mojo language → Qualcomm",
+    "title_en": "Mojo language → Qualcomm",
+    "link": "ai-radar.html#card-ep-2026-07-10-mojo-language-qualcomm",
+    "meta_pl": "KTO ROBI CIEKAWE RZECZY",
+    "meta_en": "KTO ROBI CIEKAWE RZECZY",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Claude.md self-modifying trick",
+    "title_en": "Claude.md self-modifying trick",
+    "link": "ai-radar.html#card-ep-2026-07-10-claude-md-self-modifying-trick",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Model routing — oszczędność 60-90%",
+    "title_en": "Model routing — oszczędność 60-90%",
+    "link": "ai-radar.html#card-ep-2026-07-10-model-routing-oszcz-dno-60-90",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Karpathy: 3 poziomy AI — web → desktop → org-wide",
+    "title_en": "Karpathy: 3 poziomy AI — web → desktop → org-wide",
+    "link": "ai-radar.html#card-ep-2026-07-10-karpathy-3-poziomy-ai-web-desktop-org-wi",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Composio — agenci połączeni z 100+ apps",
+    "title_en": "Composio — agenci połączeni z 100+ apps",
+    "link": "ai-radar.html#card-ep-2026-07-10-composio-agenci-po-czeni-z-100-apps",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Japa = LoRA dla world models",
+    "title_en": "Japa = LoRA dla world models",
+    "link": "ai-radar.html#card-ep-2026-07-10-japa-lora-dla-world-models",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "10 komponentów AI agent harness",
+    "title_en": "10 komponentów AI agent harness",
+    "link": "ai-radar.html#card-ep-2026-07-10-10-komponent-w-ai-agent-harness",
+    "meta_pl": "ARCHITEKTURY I WZORCE",
+    "meta_en": "ARCHITEKTURY I WZORCE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Chiny: 140 firm robotycznych, 300+ modeli",
+    "title_en": "Chiny: 140 firm robotycznych, 300+ modeli",
+    "link": "ai-radar.html#card-ep-2026-07-10-chiny-140-firm-robotycznych-300-modeli",
+    "meta_pl": "REGULACJE I GEOPOLITYKA",
+    "meta_en": "REGULACJE I GEOPOLITYKA",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "OpenAI zabija Atlas browser",
+    "title_en": "OpenAI zabija Atlas browser",
+    "link": "ai-radar.html#card-ep-2026-07-10-openai-zabija-atlas-browser",
+    "meta_pl": "REGULACJE I GEOPOLITYKA",
+    "meta_en": "REGULACJE I GEOPOLITYKA",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Anthropic Certified Architect exam",
+    "title_en": "Anthropic Certified Architect exam",
+    "link": "ai-radar.html#card-ep-2026-07-10-anthropic-certified-architect-exam",
+    "meta_pl": "REGULACJE I GEOPOLITYKA",
+    "meta_en": "REGULACJE I GEOPOLITYKA",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "AI pogłębia lukę kompetencyjną",
+    "title_en": "AI pogłębia lukę kompetencyjną",
+    "link": "ai-radar.html#card-ep-2026-07-10-ai-pog-bia-luk-kompetencyjn",
+    "meta_pl": "REGULACJE I GEOPOLITYKA",
+    "meta_en": "REGULACJE I GEOPOLITYKA",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Joe Rogan × Aravind Srinivas (Perplexity)",
+    "title_en": "Joe Rogan × Aravind Srinivas (Perplexity)",
+    "link": "ai-radar.html#card-ep-2026-07-10-joe-rogan-aravind-srinivas-perplexity",
+    "meta_pl": "ZASOBY EDUKACYJNE",
+    "meta_en": "ZASOBY EDUKACYJNE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Sync — DeepSeek V4 Flash lokalnie",
+    "title_en": "Sync — DeepSeek V4 Flash lokalnie",
+    "link": "ai-radar.html#card-ep-2026-07-10-sync-deepseek-v4-flash-lokalnie",
+    "meta_pl": "ZASOBY EDUKACYJNE",
+    "meta_en": "ZASOBY EDUKACYJNE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Llama.cpp zoptymalizowany Claude Fable (65% szybciej)",
+    "title_en": "Llama.cpp zoptymalizowany Claude Fable (65% szybciej)",
+    "link": "ai-radar.html#card-ep-2026-07-10-llama-cpp-zoptymalizowany-claude-fable-6",
+    "meta_pl": "ZASOBY EDUKACYJNE",
+    "meta_en": "ZASOBY EDUKACYJNE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Computational archaeology — zwoje z Wezuwiusza",
+    "title_en": "Computational archaeology — zwoje z Wezuwiusza",
+    "link": "ai-radar.html#card-ep-2026-07-10-computational-archaeology-zwoje-z-wezuwi",
+    "meta_pl": "ZASOBY EDUKACYJNE",
+    "meta_en": "ZASOBY EDUKACYJNE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "Claude in Chrome — oficjalne rozszerzenie",
+    "title_en": "Claude in Chrome — oficjalne rozszerzenie",
+    "link": "ai-radar.html#card-ep-2026-07-10-claude-in-chrome-oficjalne-rozszerzenie",
+    "meta_pl": "ZASOBY EDUKACYJNE",
+    "meta_en": "ZASOBY EDUKACYJNE",
+    "num": "ep-2026-07-10"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "lev",
+    "title_pl": "OpenClaw — Android + iOS",
+    "title_en": "OpenClaw — Android + iOS",
+    "link": "ai-radar.html#card-ep-2026-07-10-openclaw-android-ios",
+    "meta_pl": "ZASOBY EDUKACYJNE",
+    "meta_en": "ZASOBY EDUKACYJNE",
     "num": "ep-2026-07-10"
   },
   {
@@ -846,146 +856,6 @@ const CALENDAR = [
     "num": "##27-1"
   },
   {
-    "date": "2026-07-03",
-    "type": "lev",
-    "title_pl": "Ornith AI",
-    "title_en": "Ornith AI",
-    "link": "ai-radar.html#card-ep-2026-07-03-ornith-ai",
-    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
-    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
-    "num": "ep-2026-07-03"
-  },
-  {
-    "date": "2026-07-03",
-    "type": "lev",
-    "title_pl": "CoreWeave AREA",
-    "title_en": "CoreWeave AREA",
-    "link": "ai-radar.html#card-ep-2026-07-03-coreweave-area",
-    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
-    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
-    "num": "ep-2026-07-03"
-  },
-  {
-    "date": "2026-07-03",
-    "type": "lev",
-    "title_pl": "Anthropic KYC — 25,000 fraudulent accounts",
-    "title_en": "Anthropic KYC — 25,000 fraudulent accounts",
-    "link": "ai-radar.html#card-ep-2026-07-03-anthropic-kyc-25-000-fraudulent-accounts",
-    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
-    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
-    "num": "ep-2026-07-03"
-  },
-  {
-    "date": "2026-07-03",
-    "type": "lev",
-    "title_pl": "Two-class AI gap",
-    "title_en": "Two-class AI gap",
-    "link": "ai-radar.html#card-ep-2026-07-03-two-class-ai-gap",
-    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
-    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
-    "num": "ep-2026-07-03"
-  },
-  {
-    "date": "2026-07-03",
-    "type": "lev",
-    "title_pl": "6 Power Phrases dla Claude Code",
-    "title_en": "6 Power Phrases dla Claude Code",
-    "link": "ai-radar.html#card-ep-2026-07-03-6-power-phrases-dla-claude-code",
-    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
-    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
-    "num": "ep-2026-07-03"
-  },
-  {
-    "date": "2026-07-03",
-    "type": "lev",
-    "title_pl": "Google Open Knowledge Format (OKF)",
-    "title_en": "Google Open Knowledge Format (OKF)",
-    "link": "ai-radar.html#card-ep-2026-07-03-google-open-knowledge-format-okf",
-    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
-    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
-    "num": "ep-2026-07-03"
-  },
-  {
-    "date": "2026-07-03",
-    "type": "lev",
-    "title_pl": "LangChain umiera — Deep Agents",
-    "title_en": "LangChain umiera — Deep Agents",
-    "link": "ai-radar.html#card-ep-2026-07-03-langchain-umiera-deep-agents",
-    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
-    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
-    "num": "ep-2026-07-03"
-  },
-  {
-    "date": "2026-07-03",
-    "type": "lev",
-    "title_pl": "Claude Tag — @claude w Slacku",
-    "title_en": "Claude Tag — @claude w Slacku",
-    "link": "ai-radar.html#card-ep-2026-07-03-claude-tag-claude-w-slacku",
-    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
-    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
-    "num": "ep-2026-07-03"
-  },
-  {
-    "date": "2026-07-03",
-    "type": "lev",
-    "title_pl": "OpenTag — open-source Claude Tag",
-    "title_en": "OpenTag — open-source Claude Tag",
-    "link": "ai-radar.html#card-ep-2026-07-03-opentag-open-source-claude-tag",
-    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
-    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
-    "num": "ep-2026-07-03"
-  },
-  {
-    "date": "2026-07-03",
-    "type": "lev",
-    "title_pl": "Ponytail — rules dla Claude Code",
-    "title_en": "Ponytail — rules dla Claude Code",
-    "link": "ai-radar.html#card-ep-2026-07-03-ponytail-rules-dla-claude-code",
-    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
-    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
-    "num": "ep-2026-07-03"
-  },
-  {
-    "date": "2026-07-03",
-    "type": "lev",
-    "title_pl": "Harness Training (Ornith)",
-    "title_en": "Harness Training (Ornith)",
-    "link": "ai-radar.html#card-ep-2026-07-03-harness-training-ornith",
-    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
-    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
-    "num": "ep-2026-07-03"
-  },
-  {
-    "date": "2026-07-03",
-    "type": "lev",
-    "title_pl": "DeepPark — speculative decoding",
-    "title_en": "DeepPark — speculative decoding",
-    "link": "ai-radar.html#card-ep-2026-07-03-deeppark-speculative-decoding",
-    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
-    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
-    "num": "ep-2026-07-03"
-  },
-  {
-    "date": "2026-07-03",
-    "type": "lev",
-    "title_pl": "X (Twitter) MCP Server",
-    "title_en": "X (Twitter) MCP Server",
-    "link": "ai-radar.html#card-ep-2026-07-03-x-twitter-mcp-server",
-    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
-    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
-    "num": "ep-2026-07-03"
-  },
-  {
-    "date": "2026-07-03",
-    "type": "lev",
-    "title_pl": "Google Gemini SQL 2",
-    "title_en": "Google Gemini SQL 2",
-    "link": "ai-radar.html#card-ep-2026-07-03-google-gemini-sql-2",
-    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
-    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
-    "num": "ep-2026-07-03"
-  },
-  {
     "date": "2026-07-02",
     "type": "ai_search",
     "title_pl": "LingBot World 2 — Robbyant",
@@ -1004,6 +874,146 @@ const CALENDAR = [
     "meta_pl": "LLM",
     "meta_en": "LLM",
     "num": "##27-1"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "lev",
+    "title_pl": "Ornith AI",
+    "title_en": "Ornith AI",
+    "link": "ai-radar.html#card-ep-2026-07-03-ornith-ai",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "lev",
+    "title_pl": "CoreWeave AREA",
+    "title_en": "CoreWeave AREA",
+    "link": "ai-radar.html#card-ep-2026-07-03-coreweave-area",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "lev",
+    "title_pl": "Anthropic KYC — 25,000 fraudulent accounts",
+    "title_en": "Anthropic KYC — 25,000 fraudulent accounts",
+    "link": "ai-radar.html#card-ep-2026-07-03-anthropic-kyc-25-000-fraudulent-accounts",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "lev",
+    "title_pl": "Two-class AI gap",
+    "title_en": "Two-class AI gap",
+    "link": "ai-radar.html#card-ep-2026-07-03-two-class-ai-gap",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "lev",
+    "title_pl": "6 Power Phrases dla Claude Code",
+    "title_en": "6 Power Phrases dla Claude Code",
+    "link": "ai-radar.html#card-ep-2026-07-03-6-power-phrases-dla-claude-code",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "lev",
+    "title_pl": "Google Open Knowledge Format (OKF)",
+    "title_en": "Google Open Knowledge Format (OKF)",
+    "link": "ai-radar.html#card-ep-2026-07-03-google-open-knowledge-format-okf",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "lev",
+    "title_pl": "LangChain umiera — Deep Agents",
+    "title_en": "LangChain umiera — Deep Agents",
+    "link": "ai-radar.html#card-ep-2026-07-03-langchain-umiera-deep-agents",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "lev",
+    "title_pl": "Claude Tag — @claude w Slacku",
+    "title_en": "Claude Tag — @claude w Slacku",
+    "link": "ai-radar.html#card-ep-2026-07-03-claude-tag-claude-w-slacku",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "lev",
+    "title_pl": "OpenTag — open-source Claude Tag",
+    "title_en": "OpenTag — open-source Claude Tag",
+    "link": "ai-radar.html#card-ep-2026-07-03-opentag-open-source-claude-tag",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "lev",
+    "title_pl": "Ponytail — rules dla Claude Code",
+    "title_en": "Ponytail — rules dla Claude Code",
+    "link": "ai-radar.html#card-ep-2026-07-03-ponytail-rules-dla-claude-code",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "lev",
+    "title_pl": "Harness Training (Ornith)",
+    "title_en": "Harness Training (Ornith)",
+    "link": "ai-radar.html#card-ep-2026-07-03-harness-training-ornith",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "lev",
+    "title_pl": "DeepPark — speculative decoding",
+    "title_en": "DeepPark — speculative decoding",
+    "link": "ai-radar.html#card-ep-2026-07-03-deeppark-speculative-decoding",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "lev",
+    "title_pl": "X (Twitter) MCP Server",
+    "title_en": "X (Twitter) MCP Server",
+    "link": "ai-radar.html#card-ep-2026-07-03-x-twitter-mcp-server",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
+  },
+  {
+    "date": "2026-07-02",
+    "type": "lev",
+    "title_pl": "Google Gemini SQL 2",
+    "title_en": "Google Gemini SQL 2",
+    "link": "ai-radar.html#card-ep-2026-07-03-google-gemini-sql-2",
+    "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
+    "meta_en": "TYDZIEŃ: 26.06 – 03.07",
+    "num": "ep-2026-07-03"
   },
   {
     "date": "2026-07-01",
@@ -1106,7 +1116,7 @@ const CALENDAR = [
     "num": "ep-2026-07-10"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "Z.AI (Zhipu AI)",
     "title_en": "Z.AI (Zhipu AI)",
@@ -1116,7 +1126,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "ByteDance",
     "title_en": "ByteDance",
@@ -1126,7 +1136,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "Sakana AI",
     "title_en": "Sakana AI",
@@ -1136,7 +1146,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "Reflection AI",
     "title_en": "Reflection AI",
@@ -1146,7 +1156,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "Subquadratic",
     "title_en": "Subquadratic",
@@ -1156,7 +1166,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "Lev Selector",
     "title_en": "Lev Selector",
@@ -1166,7 +1176,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "Reflection AI + SpaceX",
     "title_en": "Reflection AI + SpaceX",
@@ -1176,7 +1186,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "📈 Orin Token Price Index — inteligencja jako towar",
     "title_en": "📈 Orin Token Price Index — inteligencja jako towar",
@@ -1186,7 +1196,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "OpenAI GPT 5.6 — staggered release",
     "title_en": "OpenAI GPT 5.6 — staggered release",
@@ -1196,7 +1206,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "Alibaba — US blacklist",
     "title_en": "Alibaba — US blacklist",
@@ -1206,7 +1216,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "Agent Map-Reduce",
     "title_en": "Agent Map-Reduce",
@@ -1216,7 +1226,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "3-Layer Agent Architecture",
     "title_en": "3-Layer Agent Architecture",
@@ -1226,7 +1236,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "Agentic OS — 4 poziomy",
     "title_en": "Agentic OS — 4 poziomy",
@@ -1236,7 +1246,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "Brain in the Middle",
     "title_en": "Brain in the Middle",
@@ -1246,7 +1256,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "💡 Fable Brain Prompting — 8 instrukcji od Anthropic",
     "title_en": "💡 Fable Brain Prompting — 8 instrukcji od Anthropic",
@@ -1256,7 +1266,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "🔧 Harness Engineering — x6 różnica",
     "title_en": "🔧 Harness Engineering — x6 różnica",
@@ -1266,7 +1276,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "⏰ Custom Scheduling dla Digital Employee",
     "title_en": "⏰ Custom Scheduling dla Digital Employee",
@@ -1276,7 +1286,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "Lev Selector — GitHub (75 PPTX)",
     "title_en": "Lev Selector — GitHub (75 PPTX)",
@@ -1286,7 +1296,7 @@ const CALENDAR = [
     "num": "ep-2026-06-26"
   },
   {
-    "date": "2026-06-26",
+    "date": "2026-06-25",
     "type": "lev",
     "title_pl": "Weekly AI Updates — GitHub (seminar/2026)",
     "title_en": "Weekly AI Updates — GitHub (seminar/2026)",
