@@ -13,68 +13,79 @@ const episodes = [
         "title_pl": "LM Arena Leaderboard (stan: 24.07.2026)",
         "title_en": "LM Arena Leaderboard (as of: 2026-07-24)",
         "cards": [],
-        "table_data": [
-          {
-            "rank": 1,
-            "model": "Claude Fable 5",
-            "score": 1420,
-            "vendor": "Anthropic"
-          },
-          {
-            "rank": 2,
-            "model": "Claude Opus 4.8",
-            "score": 1402,
-            "vendor": "Anthropic"
-          },
-          {
-            "rank": 3,
-            "model": "GPT-5.6 Sol",
-            "score": 1385,
-            "vendor": "OpenAI"
-          },
-          {
-            "rank": 4,
-            "model": "Qwen 3.8 Max",
-            "score": 1372,
-            "vendor": "Alibaba"
-          },
-          {
-            "rank": 5,
-            "model": "Kimi K3",
-            "score": 1368,
-            "vendor": "Moonshot AI"
-          },
-          {
-            "rank": 6,
-            "model": "GPT-5.5",
-            "score": 1348,
-            "vendor": "OpenAI"
-          },
-          {
-            "rank": 7,
-            "model": "Gemini 3.6 Pro",
-            "score": 1342,
-            "vendor": "Google"
-          },
-          {
-            "rank": 8,
-            "model": "DeepSeek v4",
-            "score": 1335,
-            "vendor": "DeepSeek"
-          },
-          {
-            "rank": 9,
-            "model": "GLM-5.2",
-            "score": 1328,
-            "vendor": "Z.AI / Zhipu AI"
-          },
-          {
-            "rank": 10,
-            "model": "MiniMax M3",
-            "score": 1315,
-            "vendor": "MiniMax"
-          }
-        ]
+        "headers": [
+          "Rank",
+          "Model",
+          "Score",
+          "Vendor"
+        ],
+        "rows": [
+          [
+            1,
+            "Claude Fable 5",
+            1420,
+            "Anthropic"
+          ],
+          [
+            2,
+            "Claude Opus 4.8",
+            1402,
+            "Anthropic"
+          ],
+          [
+            3,
+            "GPT-5.6 Sol",
+            1385,
+            "OpenAI"
+          ],
+          [
+            4,
+            "Qwen 3.8 Max",
+            1372,
+            "Alibaba"
+          ],
+          [
+            5,
+            "Kimi K3",
+            1368,
+            "Moonshot AI"
+          ],
+          [
+            6,
+            "GPT-5.5",
+            1348,
+            "OpenAI"
+          ],
+          [
+            7,
+            "Gemini 3.6 Pro",
+            1342,
+            "Google"
+          ],
+          [
+            8,
+            "DeepSeek v4",
+            1335,
+            "DeepSeek"
+          ],
+          [
+            9,
+            "GLM-5.2",
+            1328,
+            "Z.AI / Zhipu AI"
+          ],
+          [
+            10,
+            "MiniMax M3",
+            1315,
+            "MiniMax"
+          ]
+        ],
+        "id": "lm-arena-2026-07-24",
+        "num": "lm-arena-2026-07-24",
+        "icon": "📊",
+        "notes_pl": "Stan na 24.07.2026. Fable 5 #1, chińskie modele (Qwen 3.8 Max, Kimi K3) na top.",
+        "notes_en": "As of 2026-07-24. Fable 5 #1, Chinese models (Qwen 3.8 Max, Kimi K3) at top."
       },
       {
         "type": "cards",
