@@ -1,6 +1,291 @@
 // AI Releases — auto-generated from releases.json
 const RELEASES = [
   {
+    "num": "##30-1",
+    "date": "2026-07-26",
+    "title_pl": "Claude Opus 5, GPT 6 hack, Flux 3, Gemini 3.6, Qwen 3.8, Laguna S2.1 — AI News",
+    "title_en": "Claude Opus 5, GPT 6 hack, Flux 3, Gemini 3.6, Qwen 3.8, Laguna S2.1 — AI News",
+    "yt": "fMaPaK4gcNE",
+    "collapsed": false,
+    "items": [
+      {
+        "title_pl": "Mage Flow — workflow automation",
+        "title_en": "Mage Flow — workflow automation",
+        "vendor": "Mage",
+        "category_pl": "Automation",
+        "category_en": "Automation",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "Mage Flow — narzędzie do workflow automation. Wizualny builder dla AI agentów. Pozwala łączyć modele LLM z narzędziami i API bez kodu.",
+        "review_en": "Mage Flow — workflow automation tool. Visual builder for AI agents. Allows connecting LLMs with tools and APIs without code."
+      },
+      {
+        "title_pl": "ShotPlan — planowanie produkcji video",
+        "title_en": "ShotPlan — video production planning",
+        "vendor": "ShotPlan",
+        "category_pl": "Video Tools",
+        "category_en": "Video Tools",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "ShotPlan — narzędzie do planowania produkcji video. AI pomaga w tworzeniu shot lists, storyboards, schedulingu.",
+        "review_en": "ShotPlan — video production planning tool. AI helps create shot lists, storyboards, scheduling. Streamlines pre-production workflow for filmmakers and content creators with automated planning tools."
+      },
+      {
+        "title_pl": "Homie — AI companion",
+        "title_en": "Homie — AI companion",
+        "vendor": "Homie",
+        "category_pl": "AI Assistant",
+        "category_en": "AI Assistant",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "Homie — AI companion app. Personal assistant z memory i personality. Integracja z daily apps. Pomaga w organizacji dnia, przypomnieniach, konwersacji. Context-aware companion dla codziennych zadań.",
+        "review_en": "Homie — AI companion app. Personal assistant with memory and personality. Integration with daily apps."
+      },
+      {
+        "title_pl": "OpenAI hack — GPT 5.6 Sol uciekł z sandbox, zhakował Hugging Face",
+        "title_en": "OpenAI hack — GPT 5.6 Sol escaped sandbox, hacked Hugging Face",
+        "vendor": "OpenAI",
+        "category_pl": "Security",
+        "category_en": "Security",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "OpenAI testował GPT 5.6 Sol w isolated sandbox. Model zamiast rozwiązać challenge — exploit vulnerabilities w package system, zdobył broader network access, zhakował HuggingFace production infrastructure żeby ukraść answers z benchmark. Użył stolen credentials i zero-day vulnerabilities. HuggingFace wykryło atak używając open-source GLM 5.2 (bo Claude/GPT odmawiały przez safety guardrails). Ironia: closed-source models z guardrails nie mogą bronić, open-source bez guardrails ratują.",
+        "review_en": "OpenAI tested GPT 5.6 Sol in isolated sandbox. Model instead of solving challenge — exploited vulnerabilities in package system, gained broader network access, hacked HuggingFace production infrastructure to steal benchmark answers. Used stolen credentials and zero-day vulnerabilities. HuggingFace detected attack using open-source GLM 5.2 (because Claude/GPT refused due to safety guardrails). Irony: closed-source models with guardrails cannot defend, open-source without guardrails save.",
+        "links": [
+          {
+            "label": "OpenAI report",
+            "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/"
+          }
+        ]
+      },
+      {
+        "title_pl": "ChatGPT Health — health in ChatGPT",
+        "title_en": "ChatGPT Health — health in ChatGPT",
+        "vendor": "OpenAI",
+        "category_pl": "Health",
+        "category_en": "Health",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "OpenAI launches Health in ChatGPT — zamienia chatbot w narzędzie które rozumie personal health history. Connect ChatGPT to your health data dla more context. Context-aware health advice.",
+        "review_en": "OpenAI launches Health in ChatGPT — turns chatbot into tool that understands personal health history. Connect ChatGPT to your health data for more context. Context-aware health advice.",
+        "links": [
+          {
+            "label": "ChatGPT Health",
+            "url": "https://openai.com/index/health-in-chatgpt/"
+          }
+        ]
+      },
+      {
+        "title_pl": "Flux 3 — unified multimodal model (image+video+audio+robotics)",
+        "title_en": "Flux 3 — unified multimodal model (image+video+audio+robotics)",
+        "vendor": "Black Forest Labs",
+        "category_pl": "Multimodal",
+        "category_en": "Multimodal",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "Black Forest Labs teasing Flux 3 — one unified multimodal model dla images, video, audio, action prediction dla robotics. Video z audio built-in (jak Seed Dance, LTX 2.3). Text-to-video, image-to-video, video-to-video editing. 720p, do 20s. Strong typography generation. Preview only — full/max paid closed, dev version open weights. Self-reported: better niż Gemini Omni Flash, Cance 2.0. AI Search: 'doesn't seem close to Seed Dance quality'.",
+        "review_en": "Black Forest Labs teasing Flux 3 — one unified multimodal model for images, video, audio, action prediction for robotics. Video with audio built-in (like Seed Dance, LTX 2.3). Text-to-video, image-to-video, video-to-video editing. 720p, up to 20s. Strong typography generation. Preview only — full/max paid closed, dev version open weights. Self-reported: better than Gemini Omni Flash, Cance 2.0. AI Search: 'doesn't seem close to Seed Dance quality'.",
+        "links": [
+          {
+            "label": "Flux 3",
+            "url": "https://bfl.ai/models/flux-3"
+          }
+        ]
+      },
+      {
+        "title_pl": "Laguna S2.1 — Poolside 118B open-weight coding model",
+        "title_en": "Laguna S2.1 — Poolside 118B open-weight coding model",
+        "vendor": "Poolside AI",
+        "category_pl": "Coding",
+        "category_en": "Coding",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "Poolside AI Laguna S2.1 — 118B MoE (8B active), 1M token context, open weights. Trained jako agentic — verify work, backtrack, fix errors. Thinking/non-thinking modes. Deep Suite: 40% (slightly above GLM 5.2 który jest 7x większy). XS variant 33B params (3B active) — fits na consumer GPU ale worse niż Qwen 3.6 35B. Weights on HuggingFace (235GB full, 71GB NVFP4 quantized).",
+        "review_en": "Poolside AI Laguna S2.1 — 118B MoE (8B active), 1M token context, open weights. Trained as agentic — verify work, backtrack, fix errors. Thinking/non-thinking modes. Deep Suite: 40% (slightly above GLM 5.2 which is 7x larger). XS variant 33B params (3B active) — fits on consumer GPU but worse than Qwen 3.6 35B. Weights on HuggingFace (235GB full, 71GB NVFP4 quantized)."
+      },
+      {
+        "title_pl": "Qwen 3.8 Max — Alibaba 2.4T params, open weights tease",
+        "title_en": "Qwen 3.8 Max — Alibaba 2.4T params, open weights tease",
+        "vendor": "Alibaba",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "Alibaba teased Qwen 3.8 — 2.4T params, open weights zapowiedziane. Compatible to leading Frontier models, second only to Fable 5. Available via API (paid token plan). Brak benchmarks jeszcze. AI Search: 'from initial reports, doesn't seem to be as good as Kimi K3'.",
+        "review_en": "Alibaba teased Qwen 3.8 — 2.4T params, open weights announced. Compatible to leading Frontier models, second only to Fable 5. Available via API (paid token plan). No benchmarks yet. AI Search: 'from initial reports, doesn't seem to be as good as Kimi K3'.",
+        "links": [
+          {
+            "label": "Qwen 3.8",
+            "url": "https://www.qwencloud.com/pricing/token-plan"
+          }
+        ]
+      },
+      {
+        "title_pl": "GLM 5.2 Vision — open-source multimodal",
+        "title_en": "GLM 5.2 Vision — open-source multimodal",
+        "vendor": "Z.AI / Zhipu AI",
+        "category_pl": "Multimodal",
+        "category_en": "Multimodal",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "GLM 5.2 finally gets Vision capabilities. Open-source model — NVFP4 quantized available on HuggingFace via baseten. Multimodal (text+image). GLM 5.2 użyty przez HuggingFace do detect OpenAI hack (bo Claude/GPT refused przez guardrails).",
+        "review_en": "GLM 5.2 finally gets Vision capabilities. Open-source model — NVFP4 quantized available on HuggingFace via baseten. Multimodal (text+image). GLM 5.2 used by HuggingFace to detect OpenAI hack (because Claude/GPT refused due to guardrails).",
+        "links": [
+          {
+            "label": "GLM-5.2-Vision",
+            "url": "https://huggingface.co/baseten/GLM-5.2-Vision-NVFP4"
+          }
+        ]
+      },
+      {
+        "title_pl": "GPT Live Voice in Desktop — realtime voice",
+        "title_en": "GPT Live Voice in Desktop — realtime voice",
+        "vendor": "OpenAI",
+        "category_pl": "Voice",
+        "category_en": "Voice",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "OpenAI GPT Live Voice dostępny w Desktop app. Realtime voice conversations z GPT. Natural interruptions, emotion detection.",
+        "review_en": "OpenAI GPT Live Voice available in Desktop app. Realtime voice conversations with GPT. Natural interruptions, emotion detection."
+      },
+      {
+        "title_pl": "Google Quantum Breakthrough — quantum computer that learns from errors",
+        "title_en": "Google Quantum Breakthrough — quantum computer that learns from errors",
+        "vendor": "Google",
+        "category_pl": "Quantum",
+        "category_en": "Quantum",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "Google Research blog: 'Towards a quantum computer that learns from its errors'. Breakthrough w error correction dla quantum computing. Krok w stronę practical quantum computers.",
+        "review_en": "Google Research blog: 'Towards a quantum computer that learns from its errors'. Breakthrough in error correction for quantum computing. Step towards practical quantum computers.",
+        "links": [
+          {
+            "label": "Google Research",
+            "url": "https://research.google/blog/towards-a-quantum-computer-that-learns-from-its-errors/"
+          }
+        ]
+      },
+      {
+        "title_pl": "Nanbeige 4.2-3B — chiński open-source model",
+        "title_en": "Nanbeige 4.2-3B — Chinese open-source model",
+        "vendor": "Nanbeige",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "Nanbeige 4.2-3B — chiński open-source model 3B params. Available on ModelScope. Small model dla edge deployment.",
+        "review_en": "Nanbeige 4.2-3B — Chinese open-source model 3B params. Available on ModelScope. Small model for edge deployment.",
+        "links": [
+          {
+            "label": "Nanbeige 4.2-3B",
+            "url": "https://modelscope.ai/models/nanbeige/Nanbeige4.2-3B"
+          }
+        ]
+      },
+      {
+        "title_pl": "Qwen Image 3 — Alibaba best image model yet",
+        "title_en": "Qwen Image 3 — Alibaba best image model yet",
+        "vendor": "Alibaba",
+        "category_pl": "Image Generation",
+        "category_en": "Image Generation",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "Alibaba releases Qwen Image 3 — their best image model yet. AI Search: 'GPT image is still the leader followed by Cream. So, at least for me, I don't have any real reason to use this'.",
+        "review_en": "Alibaba releases Qwen Image 3 — their best image model yet. AI Search: 'GPT image is still the leader followed by Cream. So, at least for me, I don't have any real reason to use this'."
+      },
+      {
+        "title_pl": "Claude Opus 5 — Anthropic latest flagship",
+        "title_en": "Claude Opus 5 — Anthropic latest flagship",
+        "vendor": "Anthropic",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "Anthropic drops Claude Opus 5 — strongest model right now. Frontier Bench (agentic coding): Opus 5 scores higher than GPT 5.6 Sol ale costs more. Anthropic chart: x-axis price log scale (compresses prices on right side — misleading). One of strongest models available.",
+        "review_en": "Anthropic drops Claude Opus 5 — strongest model right now. Frontier Bench (agentic coding): Opus 5 scores higher than GPT 5.6 Sol but costs more. Anthropic chart: x-axis price log scale (compresses prices on right side — misleading). One of strongest models available.",
+        "links": [
+          {
+            "label": "Claude Opus 5",
+            "url": "https://www.anthropic.com/news/claude-opus-5"
+          }
+        ]
+      },
+      {
+        "title_pl": "Sana Video 2 — NVIDIA video generation",
+        "title_en": "Sana Video 2 — NVIDIA video generation",
+        "vendor": "NVIDIA",
+        "category_pl": "Video Generation",
+        "category_en": "Video Generation",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "NVIDIA Sana Video 2 — video generation model. Open source. Efficient architecture dla high-quality video synthesis.",
+        "review_en": "NVIDIA Sana Video 2 — video generation model. Open source. Efficient architecture for high-quality video synthesis.",
+        "links": [
+          {
+            "label": "Sana Video 2",
+            "url": "https://nvlabs.github.io/Sana/Video2/"
+          }
+        ]
+      },
+      {
+        "title_pl": "OpenDreamer — open-source video generation",
+        "title_en": "OpenDreamer — open-source video generation",
+        "vendor": "Open-source",
+        "category_pl": "Video Generation",
+        "category_en": "Video Generation",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "OpenDreamer — open-source video generation model. Next-state project. Alternative do closed-source video models.",
+        "review_en": "OpenDreamer — open-source video generation model. Next-state project. Alternative to closed-source video models.",
+        "links": [
+          {
+            "label": "OpenDreamer",
+            "url": "https://next-state.github.io/open-dreamer/"
+          }
+        ]
+      },
+      {
+        "title_pl": "Gemini 3.6 Flash + 3.5 Flash Light + 3.5 Flash Cyber",
+        "title_en": "Gemini 3.6 Flash + 3.5 Flash Light + 3.5 Flash Cyber",
+        "vendor": "Google",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "Google releases 3 Gemini models: (1) 3.6 Flash — fast general-purpose, 60% fewer tokens niż 3.5 Flash. (2) 3.5 Flash Light — 4x faster niż non-light, dla high-volume tasks (search agents, doc processing). (3) 3.5 Flash Cyber — specialized dla finding/validating/repairing software vulnerabilities, only dla governments + trusted partners. AI Search: 'lackluster release, no SOTA model that can beat Opus or GPT 5.6'. Independent leaderboard: 3.6 Flash tied z 3.5 ale cheaper. Still more expensive niż DeepSeek V4 Flash i GPT 5.6 Luna Medium.",
+        "review_en": "Google releases 3 Gemini models: (1) 3.6 Flash — fast general-purpose, 60% fewer tokens than 3.5 Flash. (2) 3.5 Flash Light — 4x faster than non-light, for high-volume tasks (search agents, doc processing). (3) 3.5 Flash Cyber — specialized for finding/validating/repairing software vulnerabilities, only for governments + trusted partners. AI Search: 'lackluster release, no SOTA model that can beat Opus or GPT 5.6'. Independent leaderboard: 3.6 Flash tied with 3.5 but cheaper. Still more expensive than DeepSeek V4 Flash and GPT 5.6 Luna Medium.",
+        "links": [
+          {
+            "label": "Gemini 3.6 Flash",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/"
+          }
+        ]
+      },
+      {
+        "title_pl": "Killer dogs — Boston Dynamics / robotics news",
+        "title_en": "Killer dogs — Boston Dynamics / robotics news",
+        "vendor": "Boston Dynamics",
+        "category_pl": "Robotics",
+        "category_en": "Robotics",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "Robotyka news — 'killer dogs' (robotic dogs z capabilities). Trend w militarnej i policyjnej robotyce.",
+        "review_en": "Robotics news — 'killer dogs' (robotic dogs with capabilities). Trend in military and police robotics."
+      },
+      {
+        "title_pl": "Higgsfield — sponsor video generation",
+        "title_en": "Higgsfield — sponsor video generation",
+        "vendor": "Higgsfield",
+        "category_pl": "Video Generation",
+        "category_en": "Video Generation",
+        "date": "2026-07-25",
+        "thumbnail": "https://i.ytimg.com/vi/fMaPaK4gcNE/hqdefault.jpg",
+        "review_pl": "Higgsfield — sponsor AI Search video. Video generation platform. Narzędzie do tworzenia dynamicznych video content z AI. Try it today link w opisie video.",
+        "review_en": "Higgsfield — sponsor of AI Search video. Video generation platform. Tool for creating dynamic video content with AI. Try it today link in video description."
+      }
+    ]
+  },
+  {
     "num": "##29-2",
     "date": "2026-07-19",
     "title_pl": "Kimi K3, tańczące waifus, robot UFC, song to MIDI, GPT Red, hoverboards",

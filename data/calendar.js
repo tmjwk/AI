@@ -2,9 +2,199 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-25 22:44:38 UTC
+// Generated: 2026-07-26 07:25:24 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "Mage Flow — workflow automation — Mage",
+    "title_en": "Mage Flow — workflow automation — Mage",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "Automation",
+    "meta_en": "Automation",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "ShotPlan — planowanie produkcji video — ShotPlan",
+    "title_en": "ShotPlan — planowanie produkcji video — ShotPlan",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "Video Tools",
+    "meta_en": "Video Tools",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "Homie — AI companion — Homie",
+    "title_en": "Homie — AI companion — Homie",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "AI Assistant",
+    "meta_en": "AI Assistant",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "OpenAI hack — GPT 5.6 Sol uciekł z sandbox, zhakował Hugging Face — OpenAI",
+    "title_en": "OpenAI hack — GPT 5.6 Sol uciekł z sandbox, zhakował Hugging Face — OpenAI",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "Security",
+    "meta_en": "Security",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "ChatGPT Health — health in ChatGPT — OpenAI",
+    "title_en": "ChatGPT Health — health in ChatGPT — OpenAI",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "Health",
+    "meta_en": "Health",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "Flux 3 — unified multimodal model (image+video+audio+robotics) — Black Forest Labs",
+    "title_en": "Flux 3 — unified multimodal model (image+video+audio+robotics) — Black Forest Labs",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "Multimodal",
+    "meta_en": "Multimodal",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "Laguna S2.1 — Poolside 118B open-weight coding model — Poolside AI",
+    "title_en": "Laguna S2.1 — Poolside 118B open-weight coding model — Poolside AI",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "Coding",
+    "meta_en": "Coding",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "Qwen 3.8 Max — Alibaba 2.4T params, open weights tease — Alibaba",
+    "title_en": "Qwen 3.8 Max — Alibaba 2.4T params, open weights tease — Alibaba",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "GLM 5.2 Vision — open-source multimodal — Z.AI / Zhipu AI",
+    "title_en": "GLM 5.2 Vision — open-source multimodal — Z.AI / Zhipu AI",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "Multimodal",
+    "meta_en": "Multimodal",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "GPT Live Voice in Desktop — realtime voice — OpenAI",
+    "title_en": "GPT Live Voice in Desktop — realtime voice — OpenAI",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "Voice",
+    "meta_en": "Voice",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "Google Quantum Breakthrough — quantum computer that learns from errors — Google",
+    "title_en": "Google Quantum Breakthrough — quantum computer that learns from errors — Google",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "Quantum",
+    "meta_en": "Quantum",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "Nanbeige 4.2-3B — chiński open-source model — Nanbeige",
+    "title_en": "Nanbeige 4.2-3B — chiński open-source model — Nanbeige",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "Qwen Image 3 — Alibaba best image model yet — Alibaba",
+    "title_en": "Qwen Image 3 — Alibaba best image model yet — Alibaba",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "Claude Opus 5 — Anthropic latest flagship — Anthropic",
+    "title_en": "Claude Opus 5 — Anthropic latest flagship — Anthropic",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "Sana Video 2 — NVIDIA video generation — NVIDIA",
+    "title_en": "Sana Video 2 — NVIDIA video generation — NVIDIA",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "OpenDreamer — open-source video generation — Open-source",
+    "title_en": "OpenDreamer — open-source video generation — Open-source",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "Gemini 3.6 Flash + 3.5 Flash Light + 3.5 Flash Cyber — Google",
+    "title_en": "Gemini 3.6 Flash + 3.5 Flash Light + 3.5 Flash Cyber — Google",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "Killer dogs — Boston Dynamics / robotics news — Boston Dynamics",
+    "title_en": "Killer dogs — Boston Dynamics / robotics news — Boston Dynamics",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "Robotics",
+    "meta_en": "Robotics",
+    "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "ai_search",
+    "title_pl": "Higgsfield — sponsor video generation — Higgsfield",
+    "title_en": "Higgsfield — sponsor video generation — Higgsfield",
+    "link": "ai-releases.html###30-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##30-1"
+  },
   {
     "date": "2026-07-24",
     "type": "diamandis",

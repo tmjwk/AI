@@ -2,10 +2,148 @@
 // Schema: {r, n, v, d, o, c, desc_pl, desc_en, b_pl, b_en}
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
-const TODAY = "2026-07-25";
+const TODAY = "2026-07-26";
 const NEW_DAYS = 14;
 
 const M = [
+  {
+    "n": "GLM 5.2 Vision",
+    "v": "Z.AI / Zhipu AI",
+    "c": "Multimodal",
+    "d": "2026-07-25",
+    "o": 1,
+    "r": 6,
+    "is_new": true,
+    "desc_pl": "GLM 5.2 Vision — open-source multimodal (text+image). NVFP4 quantized na HuggingFace via baseten. GLM 5.2 użyty przez HuggingFace do detect OpenAI hack (bo Claude/GPT refused przez guardrails).",
+    "desc_en": "GLM 5.2 Vision — open-source multimodal (text+image). NVFP4 quantized on HuggingFace via baseten. GLM 5.2 used by HuggingFace to detect OpenAI hack (because Claude/GPT refused due to guardrails).",
+    "b_pl": "Open source. Multimodal. Ironia: ratuje HuggingFace gdy closed-source odmawiają.",
+    "b_en": "Open source. Multimodal. Irony: saves HuggingFace when closed-source refuse.",
+    "url": "https://huggingface.co/baseten/GLM-5.2-Vision-NVFP4"
+  },
+  {
+    "n": "Gemini 3.6 Flash",
+    "v": "Google",
+    "c": "LLM",
+    "d": "2026-07-25",
+    "o": 0,
+    "r": 7,
+    "is_new": true,
+    "desc_pl": "Google Gemini 3.6 Flash — fast general-purpose, 60% fewer tokens niż 3.5 Flash. Coding, doc analysis, knowledge work, visual understanding, computer control. Available via API, AI Studio, agentic coding platform (anti-gravity).",
+    "desc_en": "Google Gemini 3.6 Flash — fast general-purpose, 60% fewer tokens than 3.5 Flash. Coding, doc analysis, knowledge work, visual understanding, computer control. Available via API, AI Studio, agentic coding platform (anti-gravity).",
+    "b_pl": "60% fewer tokens niż 3.5 Flash. Independent: tied z 3.5 ale cheaper. Still droższy niż DeepSeek V4 Flash, GPT 5.6 Luna Medium.",
+    "b_en": "60% fewer tokens than 3.5 Flash. Independent: tied with 3.5 but cheaper. Still more expensive than DeepSeek V4 Flash, GPT 5.6 Luna Medium.",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/"
+  },
+  {
+    "n": "Nanbeige 4.2-3B",
+    "v": "Nanbeige",
+    "c": "LLM",
+    "d": "2026-07-25",
+    "o": 1,
+    "r": 15,
+    "is_new": true,
+    "desc_pl": "Nanbeige 4.2-3B — chiński open-source model 3B params. Available on ModelScope. Small model dla edge deployment.",
+    "desc_en": "Nanbeige 4.2-3B — Chinese open-source model 3B params. Available on ModelScope. Small model for edge deployment.",
+    "b_pl": "3B params. Edge deployment. Chiński.",
+    "b_en": "3B params. Edge deployment. Chinese.",
+    "url": "https://modelscope.ai/models/nanbeige/Nanbeige4.2-3B"
+  },
+  {
+    "n": "OpenDreamer",
+    "v": "Open-source",
+    "c": "Video Generation",
+    "d": "2026-07-25",
+    "o": 1,
+    "r": 9,
+    "is_new": true,
+    "desc_pl": "OpenDreamer — open-source video generation model. Next-state project. Alternative do closed-source video models.",
+    "desc_en": "OpenDreamer — open-source video generation model. Next-state project. Alternative to closed-source video models.",
+    "b_pl": "Open source. Alternative do Sora, Veo.",
+    "b_en": "Open source. Alternative to Sora, Veo.",
+    "url": "https://next-state.github.io/open-dreamer/"
+  },
+  {
+    "n": "Sana Video 2",
+    "v": "NVIDIA",
+    "c": "Video Generation",
+    "d": "2026-07-25",
+    "o": 1,
+    "r": 7,
+    "is_new": true,
+    "desc_pl": "NVIDIA Sana Video 2 — open-source video generation. Efficient architecture dla high-quality video synthesis.",
+    "desc_en": "NVIDIA Sana Video 2 — open-source video generation. Efficient architecture for high-quality video synthesis.",
+    "b_pl": "Open source. High-quality video synthesis.",
+    "b_en": "Open source. High-quality video synthesis.",
+    "url": "https://nvlabs.github.io/Sana/Video2/"
+  },
+  {
+    "n": "Qwen Image 3",
+    "v": "Alibaba",
+    "c": "Image Generation",
+    "d": "2026-07-25",
+    "o": 0,
+    "r": 6,
+    "is_new": true,
+    "desc_pl": "Alibaba Qwen Image 3 — najlepszy image model Alibaba yet. AI Search: 'GPT image is still the leader followed by Cream. I don't have any real reason to use this'.",
+    "desc_en": "Alibaba Qwen Image 3 — best Alibaba image model yet. AI Search: 'GPT image is still the leader followed by Cream. I don't have any real reason to use this'.",
+    "b_pl": "Najlepszy image model Alibaba. Konkurent GPT image, Cream.",
+    "b_en": "Best Alibaba image model. Competitor to GPT image, Cream."
+  },
+  {
+    "n": "Qwen 3.8 Max",
+    "v": "Alibaba",
+    "c": "LLM",
+    "d": "2026-07-25",
+    "o": 0,
+    "r": 4,
+    "is_new": true,
+    "desc_pl": "Alibaba Qwen 3.8 — 2.4T params, open weights tease. Compatible to Frontier, second only to Fable 5. API only (paid). Brak benchmarks jeszcze. AI Search: 'nie tak dobry jak Kimi K3'.",
+    "desc_en": "Alibaba Qwen 3.8 — 2.4T params, open weights tease. Compatible to Frontier, second only to Fable 5. API only (paid). No benchmarks yet. AI Search: 'not as good as Kimi K3'.",
+    "b_pl": "Available via API. Open weights zapowiedziane.",
+    "b_en": "Available via API. Open weights announced.",
+    "url": "https://www.qwencloud.com/pricing/token-plan"
+  },
+  {
+    "n": "Flux 3",
+    "v": "Black Forest Labs",
+    "c": "Multimodal",
+    "d": "2026-07-25",
+    "o": 0,
+    "r": 5,
+    "is_new": true,
+    "desc_pl": "Flux 3 — unified multimodal model dla images, video, audio, action prediction dla robotics. Video z audio built-in. 720p, do 20s. Preview only — full/max paid closed, dev open weights.",
+    "desc_en": "Flux 3 — unified multimodal model for images, video, audio, action prediction for robotics. Video with audio built-in. 720p, up to 20s. Preview only — full/max paid closed, dev open weights.",
+    "b_pl": "Text-to-video, image-to-video, video-to-video editing. Strong typography. Self-reported better niż Gemini Omni Flash.",
+    "b_en": "Text-to-video, image-to-video, video-to-video editing. Strong typography. Self-reported better than Gemini Omni Flash.",
+    "url": "https://bfl.ai/models/flux-3"
+  },
+  {
+    "n": "Laguna S2.1",
+    "v": "Poolside AI",
+    "c": "Coding",
+    "d": "2026-07-25",
+    "o": 1,
+    "r": 8,
+    "is_new": true,
+    "desc_pl": "Poolside Laguna S2.1 — 118B MoE (8B active), 1M context, open weights. Trained jako agentic — verify work, backtrack, fix errors. XS variant 33B (3B active).",
+    "desc_en": "Poolside Laguna S2.1 — 118B MoE (8B active), 1M context, open weights. Trained as agentic — verify work, backtrack, fix errors. XS variant 33B (3B active).",
+    "b_pl": "Deep Suite: 40% (slightly above GLM 5.2 który jest 7x większy). XS worse niż Qwen 3.6 35B.",
+    "b_en": "Deep Suite: 40% (slightly above GLM 5.2 which is 7x larger). XS worse than Qwen 3.6 35B."
+  },
+  {
+    "n": "Claude Opus 5",
+    "v": "Anthropic",
+    "c": "LLM",
+    "d": "2026-07-25",
+    "o": 0,
+    "r": 1,
+    "is_new": true,
+    "desc_pl": "Anthropic Claude Opus 5 — najsilniejszy model right now. Frontier Bench (agentic coding) wyżej niż GPT 5.6 Sol ale droższy. Anthropic chart: x-axis price log scale (misleading).",
+    "desc_en": "Anthropic Claude Opus 5 — strongest model right now. Frontier Bench (agentic coding) higher than GPT 5.6 Sol but more expensive. Anthropic chart: x-axis price log scale (misleading).",
+    "b_pl": "Agentic coding #1. Frontier Bench wyżej niż GPT 5.6 Sol.",
+    "b_en": "Agentic coding #1. Frontier Bench higher than GPT 5.6 Sol.",
+    "url": "https://www.anthropic.com/news/claude-opus-5"
+  },
   {
     "r": 2,
     "n": "GPT 5.6 Sol",
@@ -2139,13 +2277,13 @@ const M = [
 ];
 
 const CATS = [
-  "LLM",
-  "Image Generation",
-  "Video Generation",
-  "World Models",
-  "Coding",
-  "TTS",
   "Multimodal",
+  "LLM",
+  "Video Generation",
+  "Image Generation",
+  "Coding",
+  "World Models",
+  "TTS",
   "AI Science Agents",
   "AI Research",
   "Humanoid Robots",
