@@ -2,9 +2,19 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-26 07:25:24 UTC
+// Generated: 2026-07-26 08:02:07 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-07-26",
+    "type": "weekly",
+    "title_pl": "AI Tydzień #30 | 20-26/07/2026",
+    "title_en": "AI Week #30 | July 20-26, 2026",
+    "link": "index.html#article-30",
+    "meta_pl": "12 sekcji",
+    "meta_en": "12 sections",
+    "num": "30"
+  },
   {
     "date": "2026-07-25",
     "type": "ai_search",
