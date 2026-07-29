@@ -68,8 +68,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .tl-event-type[data-type="lev"]{color:var(--bl)}
 .tl-event-type[data-type="weekly"]{color:var(--ba)}
 .tl-event-desc{font-size:var(--fs-s);color:var(--hm);margin-top:4px;line-height:1.4}
-.sidebar{position:sticky;top:80px;display:flex;flex-direction:column;gap:16px}
-@media(max-width:900px){.sidebar{position:static;order:-1}}
+.sidebar{position:sticky;top:80px;display:flex;flex-direction:column;gap:16px;max-height:calc(100vh - 100px);overflow-y:auto;padding-right:4px}
+.sidebar::-webkit-scrollbar{width:6px}
+.sidebar::-webkit-scrollbar-track{background:var(--bg)}
+.sidebar::-webkit-scrollbar-thumb{background:var(--bd);border-radius:3px}
+.sidebar::-webkit-scrollbar-thumb:hover{background:var(--hm)}
+@media(max-width:900px){.sidebar{position:static;order:-1;max-height:none;overflow-y:visible}}
 .trend-card{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:14px}
 .trend-title{font-size:var(--fs-s);font-weight:700;color:var(--hp);text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px;display:flex;align-items:center;gap:6px}
 .trend-list{list-style:none;padding:0;margin:0}
