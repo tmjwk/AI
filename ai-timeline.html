@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pl" data-title-pl="AI Timeline" data-title-en="AI Timeline"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><script>
+(function(){
+  var html=document.documentElement;
+  var tpl=html.getAttribute('data-title-pl');
+  var ten=html.getAttribute('data-title-en');
+  if(!tpl||!ten)return;
+  function upd(){var lang=html.getAttribute('data-lang')||'pl';document.title=lang==='en'?ten:tpl}
+  upd();
+  var obs=new MutationObserver(function(muts){
+    muts.forEach(function(m){if(m.attributeName==='data-lang')upd()});
+  });
+  obs.observe(html,{attributes:true,attributeFilter:['data-lang']});
+})();
+</script><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><title>AI Timeline</title>
+<meta name="description" content="AI Timeline — pionowa oś czasu wszystkich wydarzeń AI + trendy (top vendors, modele, aktywność tygodniowa).">
+<script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))</script>
+<script>document.documentElement.setAttribute("data-lang",localStorage.getItem("lang")||"pl")</script>
+<style>
+:root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--rd:#ef4444;--bl:#3b82f6;--pr:#a855f7;--fs-xs:0.625rem;--fs-s:0.75rem;--fs-m:0.875rem;--fs-l:1rem;--fs-xl:1.25rem;--fs-xxl:5rem;--fs-h1:1.75rem;--fs-h2:1.125rem;--fs-body:1rem;--fs-aux:0.75rem}
+[data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--rd:#dc2626;--bl:#1d4ed8;--pr:#7e22ce}
+@media(max-width:540px){:root{--fs-s:0.6875rem;--fs-m:0.8125rem;--fs-l:0.9375rem;--fs-xl:1.125rem;--fs-xxl:3.75rem}}
+*{box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:0;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
+.c{max-width:clamp(900px,95vw,1400px);margin:0 auto;padding:20px}
+.h{position:sticky;top:0;background:var(--bg);z-index:100;padding:16px 0;border-bottom:1px solid var(--bd);margin-bottom:16px;transition:background .2s}
+.hr{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:8px;flex-wrap:wrap}
+.h h1{font-size:var(--fs-xl);margin:0;font-weight:700;color:var(--hp);letter-spacing:-.02em}
+.h .sub{font-size:var(--fs-s);color:var(--hm);margin-top:4px}
+.nav-links{display:flex;gap:4px;align-items:center;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding-bottom:2px}
+.nav-links::-webkit-scrollbar{height:3px}
+.nav-links::-webkit-scrollbar-track{background:var(--bg)}
+.nav-links::-webkit-scrollbar-thumb{background:var(--bd);border-radius:2px}
+.nav-btn{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:6px;background:var(--card);border:1px solid var(--bd);color:var(--hs);text-decoration:none;font-size:var(--fs-s);font-weight:500;white-space:nowrap;transition:all .15s}
+.nav-btn:hover{border-color:var(--ac);color:var(--ac)}
+.nav-btn.cur{background:var(--ac);color:#000;border-color:var(--ac)}
+.tgl{display:flex;gap:6px;align-items:center}
+.tgl button{background:var(--card);border:1px solid var(--bd);color:var(--hs);padding:4px 8px;border-radius:4px;cursor:pointer;font-size:var(--fs-s)}
+.tgl button:hover{color:var(--ac);border-color:var(--ac)}
+.pl{display:inline}
+.en{display:none}
+[data-lang="en"] .pl{display:none}
+[data-lang="en"] .en{display:inline}
+.filters{display:flex;gap:6px;flex-wrap:wrap;padding:8px 0 16px;border-bottom:1px solid var(--bdl);margin-bottom:16px}
+.chip{padding:4px 12px;border-radius:16px;background:var(--card);border:1px solid var(--bd);color:var(--hm);font-size:var(--fs-s);cursor:pointer;transition:all .15s}
+.chip:hover{border-color:var(--ac)}
+.chip.active{background:var(--ac);color:#000;border-color:var(--ac);font-weight:600}
+.chip .cnt{opacity:.7;font-size:var(--fs-xs);margin-left:4px}
+.layout{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:flex-start}
+@media(max-width:900px){.layout{grid-template-columns:1fr}}
+.timeline{display:flex;flex-direction:column;gap:0}
+.tl-day{margin-bottom:24px}
+.tl-day-header{display:flex;align-items:center;gap:10px;margin-bottom:8px;padding:8px 0;border-bottom:2px solid var(--bd)}
+.tl-day-date{font-size:var(--fs-m);font-weight:700;color:var(--hp);white-space:nowrap}
+.tl-day-meta{font-size:var(--fs-xs);color:var(--hm);text-transform:uppercase;letter-spacing:.1em}
+.tl-day-count{margin-left:auto;font-size:var(--fs-xs);color:var(--hm);background:var(--card);padding:2px 8px;border-radius:10px;border:1px solid var(--bd)}
+.tl-event{display:block;padding:12px 14px;background:var(--card);border:1px solid var(--bd);border-radius:8px;margin-bottom:6px;text-decoration:none;color:var(--fg);transition:all .15s;cursor:pointer;border-left:3px solid var(--bd)}
+.tl-event:hover{border-color:var(--ac);border-left-color:var(--ac);transform:translateX(2px)}
+.tl-event[data-type="diamandis"]{border-left-color:var(--pr)}
+.tl-event[data-type="ai_search"]{border-left-color:var(--ac)}
+.tl-event[data-type="lev"]{border-left-color:var(--bl)}
+.tl-event[data-type="weekly"]{border-left-color:var(--ba)}
+.tl-event-title{font-size:var(--fs-m);font-weight:600;color:var(--hp);margin-bottom:2px;display:block}
+.tl-event-meta{font-size:var(--fs-xs);color:var(--hm);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tl-event-type{font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+.tl-event-type[data-type="diamandis"]{color:var(--pr)}
+.tl-event-type[data-type="ai_search"]{color:var(--ac)}
+.tl-event-type[data-type="lev"]{color:var(--bl)}
+.tl-event-type[data-type="weekly"]{color:var(--ba)}
+.tl-event-desc{font-size:var(--fs-s);color:var(--hm);margin-top:4px;line-height:1.4}
+.sidebar{position:sticky;top:80px;display:flex;flex-direction:column;gap:16px}
+@media(max-width:900px){.sidebar{position:static;order:-1}}
+.trend-card{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:14px}
+.trend-title{font-size:var(--fs-s);font-weight:700;color:var(--hp);text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.trend-list{list-style:none;padding:0;margin:0}
+.trend-item{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--bdl);font-size:var(--fs-s)}
+.trend-item:last-child{border-bottom:none}
+.trend-item-name{color:var(--hs);flex:1}
+.trend-item-count{color:var(--ac);font-weight:600;font-family:monospace;font-size:var(--fs-xs);background:rgba(74,222,128,.1);padding:1px 6px;border-radius:4px;margin-left:8px}
+.trend-item-rank{color:var(--hm);font-size:var(--fs-xs);width:18px;font-weight:700}
+.weekly-chart{display:flex;align-items:flex-end;gap:2px;height:50px;margin-top:8px}
+.weekly-bar{flex:1;background:var(--ac);border-radius:2px 2px 0 0;min-height:2px;position:relative;cursor:pointer;transition:opacity .15s}
+.weekly-bar:hover{opacity:.7}
+.weekly-bar-label{position:absolute;bottom:-16px;left:50%;transform:translateX(-50%);font-size:var(--fs-xs);color:var(--hm);white-space:nowrap}
+.weekly-bar-tooltip{position:absolute;top:-18px;left:50%;transform:translateX(-50%);background:var(--card);border:1px solid var(--bd);padding:2px 6px;border-radius:4px;font-size:var(--fs-xs);color:var(--hp);opacity:0;transition:opacity .15s;white-space:nowrap;pointer-events:none}
+.weekly-bar:hover .weekly-bar-tooltip{opacity:1}
+.weekly-meta{font-size:var(--fs-xs);color:var(--hm);margin-top:24px}
+.month-picker{display:flex;flex-direction:column;gap:4px}
+.month-btn{background:var(--card);border:1px solid var(--bd);color:var(--hs);padding:6px 10px;border-radius:4px;font-size:var(--fs-s);cursor:pointer;text-align:left;transition:all .15s;display:flex;justify-content:space-between;align-items:center}
+.month-btn:hover{border-color:var(--ac);color:var(--ac)}
+.month-btn .m-count{color:var(--hm);font-size:var(--fs-xs)}
+.loading-hint{opacity:0;text-align:center;padding:20px;color:var(--hm);font-size:var(--fs-s);animation:show-hint 0s 60s forwards}
+.loading-hint button{background:var(--card);border:1px solid var(--bd);color:var(--fg);padding:6px 16px;border-radius:6px;cursor:pointer;margin-top:8px;font-size:var(--fs-s)}
+@keyframes show-hint{to{opacity:1}}
+@media print{.h,.tgl,.filters,.sidebar{display:none!important}}
+.search-wrap{margin-bottom:12px}
+.search{width:100%;padding:8px 12px;background:var(--card);border:1px solid var(--bd);color:var(--fg);border-radius:6px;font-size:var(--fs-m)}
+.search:focus{outline:none;border-color:var(--ac)}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="h">
+<div class="hr">
+<h1><span class="pl">📅 AI Timeline</span><span class="en">📅 AI Timeline</span></h1>
+<div class="tgl">
+<button id="langBtn" onclick="toggleLang()">EN</button>
+<button id="themeBtn" onclick="toggleTheme()">☀️</button>
+</div>
+</div>
+<div class="sub"><span class="pl">Pionowa oś czasu + trendy — top vendors, modele, aktywność tygodniowa</span><span class="en">Vertical timeline + trends — top vendors, models, weekly activity</span></div>
+<div class="nav nav-links" style="margin-top:10px">
+<a href="index.html" class="nav-btn"><span class="pl">🏠 Hub</span><span class="en">🏠 Hub</span></a>
+<a href="ai-models.html" class="nav-btn"><span class="pl">📊 Modele</span><span class="en">📊 Models</span></a>
+<a href="ai-benchmarks.html" class="nav-btn"><span class="pl">🏆 Benchmarki</span><span class="en">🏆 Benchmarks</span></a>
+<a href="ai-radar.html" class="nav-btn"><span class="pl">📡 Radar</span><span class="en">📡 Radar</span></a>
+<a href="ai-pulse.html" class="nav-btn"><span class="pl">💓 Puls</span><span class="en">💓 Pulse</span></a>
+<a href="ai-releases.html" class="nav-btn"><span class="pl">🆕 Nowości</span><span class="en">🆕 Releases</span></a>
+<a href="ai-timeline.html" class="nav-btn cur"><span class="pl">📅 Timeline</span><span class="en">📅 Timeline</span></a>
+<a href="ai-glossary.html" class="nav-btn"><span class="pl">📖 Słownik</span><span class="en">📖 Glossary</span></a>
+</div>
+</div>
+
+<div class="search-wrap">
+<input type="text" class="search" id="search" placeholder="🔍 Szukaj w timeline..." autocomplete="off">
+</div>
+
+<div class="filters" id="filters"></div>
+
+<div class="layout">
+<div class="timeline" id="timeline"></div>
+<div class="sidebar" id="sidebar"></div>
+</div>
+
+<div class="loading-hint">
+<span class="pl">Wciąż ładuje dane? Wolny internet — poczekaj lub kliknij Odśwież.</span>
+<span class="en">Still loading? Slow internet — wait or click Refresh.</span>
+<button onclick="location.reload()"><span class="pl">Odśwież</span><span class="en">Refresh</span></button>
+</div>
+</div>
+
+<script src="data/calendar.js?v=20260729210000" onerror="dataLoadFailed()"></script>
+<script src="data/trends.js?v=20260729210000" onerror="dataLoadFailed()"></script>
+<script>
+function dataLoadFailed(){var c=document.getElementById('timeline');if(c)c.innerHTML='<div style="text-align:center;padding:40px 20px;color:var(--hm)"><div style="font-size:48px;margin-bottom:16px">⚠</div><h2 style="color:var(--hp);margin-bottom:8px"><span class="pl">Nie udało się załadować danych</span><span class="en">Failed to load data</span></h2><p><span class="pl">Sprawdź połączenie i odśwież.</span><span class="en">Check connection and refresh.</span></p><button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 20px;border-radius:6px;cursor:pointer;font-weight:600"><span class="pl">Odśwież</span><span class="en">Refresh</span></button></div>'}
+function toggleLang(){var h=document.documentElement;var n=h.getAttribute('data-lang')==='pl'?'en':'pl';h.setAttribute('data-lang',n);localStorage.setItem('lang',n);document.getElementById('langBtn').textContent=n==='pl'?'EN':'PL';render()}
+function toggleTheme(){var h=document.documentElement;var n=h.getAttribute('data-theme')==='dark'?'light':'dark';h.setAttribute('data-theme',n);localStorage.setItem('theme',n);document.getElementById('themeBtn').textContent=n==='dark'?'☀️':'🌙'}
+var S={filter:'all',search:'',lang:document.documentElement.getAttribute('data-lang')||'pl'};
+var L=function(pl,en){return S.lang==='en'?en:pl};
+var TYPE_LABELS={diamandis:{pl:'Diamandis',en:'Diamandis',icon:'💓'},ai_search:{pl:'AI Search',en:'AI Search',icon:'🆕'},lev:{pl:'Lev Selector',en:'Lev Selector',icon:'📡'},weekly:{pl:'Weekly',en:'Weekly',icon:'📰'}};
+var MONTHS_PL=['styczeń','luty','marzec','kwiecień','maj','czerwiec','lipiec','sierpień','wrzesień','październik','listopad','grudzień'];
+var MONTHS_EN=['January','February','March','April','May','June','July','August','September','October','November','December'];
+var DAYS_PL=['niedziela','poniedziałek','wtorek','środa','czwartek','piątek','sobota'];
+var DAYS_EN=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+function formatDate(dateStr){
+  var d=new Date(dateStr+'T00:00:00');
+  var day=d.getDate();var month=d.getMonth();var year=d.getFullYear();
+  var dow=d.getDay();
+  var months=S.lang==='en'?MONTHS_EN:MONTHS_PL;
+  var days=S.lang==='en'?DAYS_EN:DAYS_PL;
+  return{full:days[dow]+', '+day+' '+months[month]+' '+year,short:day+' '+(S.lang==='en'?months[month].slice(0,3):months[month]),dow:days[dow]};
+}
+
+function nm(s){return(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
+
+function renderFilters(){
+  var c=document.getElementById('filters');
+  var types=['all','diamandis','ai_search','lev','weekly'];
+  var h='';
+  types.forEach(function(t){
+    var label=t==='all'?L('Wszystkie','All'):TYPE_LABELS[t][S.lang];
+    var cnt=t==='all'?CALENDAR.length:CALENDAR.filter(function(e){return e.type===t}).length;
+    var active=S.filter===t?' active':'';
+    h+='<span class="chip'+active+'" data-filter="'+t+'">'+label+' <span class="cnt">('+cnt+')</span></span>';
+  });
+  c.innerHTML=h;
+  c.querySelectorAll('.chip').forEach(function(ch){
+    ch.addEventListener('click',function(){
+      S.filter=ch.getAttribute('data-filter');
+      render();
+    });
+  });
+}
+
+function renderTimeline(){
+  var c=document.getElementById('timeline');
+  var filtered=CALENDAR.filter(function(e){
+    var ok=S.filter==='all'||e.type===S.filter;
+    if(ok&&S.search){
+      var txt=nm(e.title_pl+' '+e.title_en+' '+(e.meta_pl||'')+' '+(e.meta_en||''));
+      ok=txt.includes(nm(S.search));
+    }
+    return ok;
+  });
+  // Sort DESC by date
+  filtered.sort(function(a,b){return(b.date||'').localeCompare(a.date||'')});
+  
+  if(filtered.length===0){
+    c.innerHTML='<div style="text-align:center;padding:40px;color:var(--hm)"><span class="pl">Brak wyników</span><span class="en">No results</span></div>';
+    return;
+  }
+  
+  // Group by date
+  var byDate={};
+  filtered.forEach(function(e){if(!byDate[e.date])byDate[e.date]=[];byDate[e.date].push(e)});
+  
+  var h='';
+  Object.keys(byDate).sort(function(a,b){return b.localeCompare(a)}).forEach(function(date){
+    var events=byDate[date];
+    var fd=formatDate(date);
+    h+='<div class="tl-day">';
+    h+='<div class="tl-day-header"><span class="tl-day-date">'+fd.full+'</span><span class="tl-day-count">'+events.length+' '+(S.lang==='en'?(events.length===1?'event':'events'):(events.length===1?'wydarzenie':'wydarzeń'))+'</span></div>';
+    events.forEach(function(e){
+      var tl=TYPE_LABELS[e.type]||{pl:e.type,en:e.type,icon:'•'};
+      var title=S.lang==='en'?(e.title_en||e.title_pl):e.title_pl;
+      var meta=S.lang==='en'?(e.meta_en||e.meta_pl):e.meta_pl;
+      var link=e.link||'#';
+      h+='<a class="tl-event" data-type="'+e.type+'" href="'+link+'">';
+      h+='<span class="tl-event-title">'+esc(title)+'</span>';
+      h+='<span class="tl-event-meta"><span class="tl-event-type" data-type="'+e.type+'">'+tl.icon+' '+tl[S.lang]+'</span>';
+      if(meta)h+='<span>• '+esc(meta)+'</span>';
+      h+='</span>';
+      h+='</a>';
+    });
+    h+='</div>';
+  });
+  c.innerHTML=h;
+}
+
+function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+
+function renderSidebar(){
+  var c=document.getElementById('sidebar');
+  if(typeof TRENDS==='undefined'){c.innerHTML='';return}
+  
+  var h='';
+  
+  // Weekly activity chart
+  h+='<div class="trend-card">';
+  h+='<div class="trend-title">📈 '+L('Aktywność/tydzień','Weekly activity')+'</div>';
+  var maxW=0;
+  TRENDS.weekly_activity.forEach(function(w){if(w.count>maxW)maxW=w.count});
+  h+='<div class="weekly-chart">';
+  TRENDS.weekly_activity.forEach(function(w){
+    var pct=maxW>0?Math.round(w.count/maxW*100):0;
+    h+='<div class="weekly-bar" style="height:'+pct+'%"><div class="weekly-bar-tooltip">'+w.week_label+': '+w.count+'</div></div>';
+  });
+  h+='</div>';
+  var total12=TRENDS.weekly_activity.reduce(function(s,w){return s+w.count},0);
+  h+='<div class="weekly-meta">'+L('Ostatnie 12 tygodni: ','Last 12 weeks: ')+total12+' '+L('wydarzeń','events')+'</div>';
+  h+='</div>';
+  
+  // Top vendors (all-time)
+  h+='<div class="trend-card">';
+  h+='<div class="trend-title">🏆 '+L('Top vendors (all-time)','Top vendors (all-time)')+'</div>';
+  h+='<ul class="trend-list">';
+  TRENDS.all_time.top_vendors.slice(0,8).forEach(function(v,i){
+    h+='<li class="trend-item"><span class="trend-item-rank">#'+(i+1)+'</span><span class="trend-item-name">'+esc(v[0])+'</span><span class="trend-item-count">'+v[1]+'</span></li>';
+  });
+  h+='</ul>';
+  h+='</div>';
+  
+  // Top models (all-time)
+  h+='<div class="trend-card">';
+  h+='<div class="trend-title">🎯 '+L('Top modele (all-time)','Top models (all-time)')+'</div>';
+  h+='<ul class="trend-list">';
+  TRENDS.all_time.top_models.slice(0,8).forEach(function(m,i){
+    h+='<li class="trend-item"><span class="trend-item-rank">#'+(i+1)+'</span><span class="trend-item-name">'+esc(m[0])+'</span><span class="trend-item-count">'+m[1]+'</span></li>';
+  });
+  h+='</ul>';
+  h+='</div>';
+  
+  // Month picker
+  h+='<div class="trend-card">';
+  h+='<div class="trend-title">📅 '+L('Miesiące','Months')+'</div>';
+  h+='<div class="month-picker">';
+  TRENDS.months.forEach(function(m){
+    var d=new Date(m.month+'-01T00:00:00');
+    var monthName=S.lang==='en'?MONTHS_EN[d.getMonth()]:MONTHS_PL[d.getMonth()];
+    var year=d.getFullYear();
+    h+='<button class="month-btn" onclick="scrollToMonth(\''+m.month+'\')"><span>'+monthName+' '+year+'</span><span class="m-count">'+m.total+'</span></button>';
+  });
+  h+='</div>';
+  h+='</div>';
+  
+  // Stats
+  h+='<div class="trend-card">';
+  h+='<div class="trend-title">📊 '+L('Statystyki','Stats')+'</div>';
+  h+='<div style="font-size:var(--fs-s);color:var(--hm);line-height:1.8">';
+  h+=L('Łącznie wydarzeń: ','Total events: ')+TRENDS.meta.total_events+'<br>';
+  h+=L('Miesięcy: ','Months: ')+TRENDS.meta.total_months+'<br>';
+  Object.keys(TRENDS.all_time.by_type).forEach(function(t){
+    var tl=TYPE_LABELS[t]||{pl:t,en:t};
+    h+='• '+(S.lang==='en'?tl.en:tl.pl)+': '+TRENDS.all_time.by_type[t]+'<br>';
+  });
+  h+='</div>';
+  h+='</div>';
+  
+  c.innerHTML=h;
+}
+
+function scrollToMonth(month){
+  // Find first event of this month and scroll to it
+  var events=CALENDAR.filter(function(e){return e.date&&e.date.startsWith(month)});
+  if(events.length===0)return;
+  events.sort(function(a,b){return b.date.localeCompare(a.date)});
+  var firstDate=events[0].date;
+  var day=document.querySelector('.tl-day-date');
+  // Just scroll to top for now — TODO: find specific day
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function render(){
+  renderFilters();
+  renderTimeline();
+  renderSidebar();
+}
+
+document.getElementById('search').addEventListener('input',function(e){S.search=e.target.value;renderTimeline()});
+document.getElementById('langBtn').textContent=S.lang==='pl'?'EN':'PL';
+document.getElementById('themeBtn').textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀️':'🌙';
+render();
+</script>
+</body>
+</html>
