@@ -2,9 +2,19 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-26 08:02:07 UTC
+// Generated: 2026-07-29 20:21:03 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-07-29",
+    "type": "diamandis",
+    "title_pl": "Podcast #275 — Dario vs Jensen o open weights, OpenAI i Anthropic w DC, Xi Jinping eksportuje AI do Global South | #275",
+    "title_en": "Podcast #275 — Dario vs Jensen on Open Weights, OpenAI & Anthropic in DC, Xi Exports AI to Global South | EP #275",
+    "link": "ai-pulse.html#275",
+    "meta_pl": "9 tematów",
+    "meta_en": "9 topics",
+    "num": "#275"
+  },
   {
     "date": "2026-07-26",
     "type": "weekly",

@@ -5,6 +5,16 @@
 const EPISODES_INDEX = {
   "episodes": [
     {
+      "num": "#275",
+      "title": "Dario vs Jensen on Open Weights, OpenAI & Anthropic in DC, Xi Exports AI to Global South | EP #275",
+      "date": "2026-07-29",
+      "duration": "123 min",
+      "channel": "Diamandis Moonshots",
+      "yt": "O70Ff5xBnYo",
+      "collapsed": true,
+      "batch": "recent"
+    },
+    {
       "num": "#273",
       "title": "The Hugging Face Breach, Moonshot AI Valued at $20B, and Living to 1,759 Years Old | EP #273",
       "date": "2026-07-24",
@@ -52,7 +62,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "XCunMF6frio",
       "collapsed": true,
-      "batch": "recent"
+      "batch": "batch-2026-h2"
     },
     {
       "num": "#268",

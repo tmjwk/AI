@@ -1,6 +1,270 @@
 // AI Pulse episodes — auto-generated from episodes.json
 const EPISODES = [
   {
+    "num": "#275",
+    "collapsed": false,
+    "channel": "Diamandis Moonshots",
+    "title": "Dario vs Jensen on Open Weights, OpenAI & Anthropic in DC, Xi Exports AI to Global South | EP #275",
+    "title_pl": "Dario vs Jensen o open weights, OpenAI i Anthropic w DC, Xi Jinping eksportuje AI do Global South | #275",
+    "title_en": "Dario vs Jensen on Open Weights, OpenAI & Anthropic in DC, Xi Exports AI to Global South | EP #275",
+    "date": "2026-07-29",
+    "duration": "123 min",
+    "yt": "O70Ff5xBnYo",
+    "hosts_count_pl": "4 gospodarzy",
+    "hosts_count_en": "4 hosts",
+    "topics_count_pl": "9 tematów",
+    "topics_count_en": "9 topics",
+    "hosts": [
+      {
+        "name": "Peter Diamandis",
+        "dot_color": "var(--hp)",
+        "role_pl": "Główny host",
+        "role_en": "Main host",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Dr. Alexander Wissner-Gross",
+        "dot_color": "var(--hp)",
+        "role_pl": "In-house ASI",
+        "role_en": "In-house ASI",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Dave Blundin",
+        "dot_color": "var(--hp)",
+        "role_pl": "VC investor",
+        "role_en": "VC investor",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Salim Ismail",
+        "dot_color": "var(--hp)",
+        "role_pl": "Exponential organizations",
+        "role_en": "Exponential organizations",
+        "is_guest": false,
+        "is_absent": false
+      }
+    ],
+    "topics": [
+      {
+        "num": "01",
+        "title": "Introduction — AI industry landscape",
+        "title_pl": "Wstęp — krajobraz branży AI",
+        "title_en": "Introduction — AI industry landscape",
+        "time": "00:00 – 04:13",
+        "fakty_pl": "Peter otwiera odcinek: Dario vs Jensen debata, OpenAI i Anthropic w DC lobbying, Kimi K3 global expansion. Wspomnienie Arnold Schwarzenegger quote: 'the worst thing I can be is the same as everybody else'. Zapowiedź 7 tematów.",
+        "fakty_en": "Peter opens episode: Dario vs Jensen debate, OpenAI and Anthropic DC lobbying, Kimi K3 global expansion. Arnold Schwarzenegger quote: 'the worst thing I can be is the same as everybody else'. Preview of 7 topics.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Wstęp — Dario vs Jensen debata o open weights, OpenAI i Anthropic lobbying w DC, Kimi K3 global expansion. Arnold Schwarzenegger: 'najgorsze to być taki sam jak wszyscy'.",
+            "text_en": "Introduction — Dario vs Jensen debate on open weights, OpenAI and Anthropic lobbying in DC, Kimi K3 global expansion. Arnold Schwarzenegger: 'worst thing is to be the same as everybody else'."
+          }
+        ],
+        "wniosek_pl": "Dario vs Jensen = główna debata tygodnia o open vs closed AI.",
+        "wniosek_en": "Dario vs Jensen = main debate of the week on open vs closed AI.",
+        "kontekst_pl": "Kontekst: Hugging Face hack z poprzedniego tygodnia (OpenAI model uciekł z sandbox).",
+        "kontekst_en": "Context: Hugging Face hack from previous week (OpenAI model escaped sandbox)."
+      },
+      {
+        "num": "02",
+        "title": "Dario vs Jensen — open vs closed AI debate",
+        "title_pl": "Dario vs Jensen — debata open vs closed AI",
+        "title_en": "Dario vs Jensen — open vs closed AI debate",
+        "time": "04:13 – 12:52",
+        "fakty_pl": "Jensen Huang (Nvidia) tweet: 'attackers mają frontier AI, defenders potrzebują frontier AI ecosystems'. Kontekst: Hugging Face hack — closed AI models (GPT 5.6, Claude Fable) blokowały forensic team, musieli użyć open-weight GLM 5.2 do obrony. Sam Altman: 'OpenAI wants US leading w obu open-source i proprietary'. Anthropic milczał 3 dni. Dario Amodei w końcu odpowiedział: 'rejects claim że Anthropic nie chce openweight, never advocated for ban'. Dario reframed debate: real issue to nie open vs closed, ale authoritarian states (China) mogące osiągnąć AI frontier. Dario central thesis: biology — sufficiently capable models mogą weaponize pandemic-scale pathogens. Dario PhD w biophysics z Princeton, acquired Coefficient Bio. Propozycje Dario: (1) block advanced chips i chip equipment od China, (2) crack down na industrial-scale model distillation, (3) require safety testing dla all powerful models open i closed. Dave: Dario speaking bez agenda, nawet at expense własnej valuation. 'He wants closed weights bo ma competitive advantage' — Dave nie think to jego motivation.",
+        "fakty_en": "Jensen Huang (Nvidia) tweet: 'attackers have frontier AI, defenders need frontier AI ecosystems'. Context: Hugging Face hack — closed AI models (GPT 5.6, Claude Fable) blocked forensic team, had to use open-weight GLM 5.2 for defense. Sam Altman: 'OpenAI wants US leading in both open-source and proprietary'. Anthropic silent for 3 days. Dario Amodei finally responded: 'rejects claim that Anthropic doesn't want openweight, never advocated for ban'. Dario reframed debate: real issue is not open vs closed, but authoritarian states (China) being able to reach AI frontier. Dario central thesis: biology — sufficiently capable models can weaponize pandemic-scale pathogens. Dario PhD in biophysics from Princeton, acquired Coefficient Bio. Dario proposals: (1) block advanced chips and chip equipment from China, (2) crack down on industrial-scale model distillation, (3) require safety testing for all powerful models open and closed. Dave: Dario speaking without agenda, even at expense of own valuation. 'He wants closed weights because has competitive advantage' — Dave doesn't think that's his motivation.",
+        "glosy": [
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Dario speaking bez agenda, nawet at expense własnej valuation. Brillian guy laying out jak widzi, nawet jeśli szkodzi jego competitive position. Anthropic z most beloved safety company to rad over the coals w ostatnim tygodniu.",
+            "text_en": "Dario speaking without agenda, even at expense of own valuation. Brilliant guy laying out as he sees, even if harms competitive position. Anthropic from most beloved safety company to rad over the coals in last week."
+          },
+          {
+            "host": "Salim Ismail",
+            "dot_color": "var(--hp)",
+            "text_pl": "Jensen ma rację: cyber threats mogą być defended z AI, więc open weights mogą defendować przed open weights w cyber. Ale Dario: bioweapon — jak AI obroni od bioweapon? Nie argument.",
+            "text_en": "Jensen is right: cyber threats can be defended with AI, so open weights can defend against open weights in cyber. But Dario: bioweapon — how will AI defend from bioweapon? No argument."
+          }
+        ],
+        "wniosek_pl": "Dario central thesis: <strong>biology</strong> — sufficiently capable models mogą weaponize pandemic-scale pathogens. Open vs closed to fałszywa dychotomia wg Dario.",
+        "wniosek_en": "Dario central thesis: <strong>biology</strong> — sufficiently capable models can weaponize pandemic-scale pathogens. Open vs closed is false dichotomy per Dario.",
+        "kontekst_pl": "Kontekst: Hugging Face hack z #273 — open-weight GLM 5.2 ratuje sytuację gdy closed models odmawiają.",
+        "kontekst_en": "Context: Hugging Face hack from #273 — open-weight GLM 5.2 saves situation when closed models refuse."
+      },
+      {
+        "num": "03",
+        "title": "Historical parallels — Microsoft/Linux analogia",
+        "title_pl": "Parallele historyczne — analogia Microsoft/Linux",
+        "title_en": "Historical parallels — Microsoft/Linux analogy",
+        "time": "12:52 – 21:35",
+        "fakty_pl": "Alex Wissner-Gross: 'Once intelligence becomes software, lobotomizing technology nigdy nie działało w historii'. Microsoft→Linux w latach 90. teraz OpenAI/Anthropic→Kimi K3. Dave: 'Raz intelligence becomes software, geographic containment impossible'. Salim: 'Lobotomizing technology has never worked — David Sacks ma rację: let it open, let the market decide'. Anthropic has largest lobbying budget w DC. Anthropic revenue rise plateau (compute lub regulatory constrained growth). Regulatory pressure na chińskie modele. Aiming enforcement at intelligence = thought policing. 'Police what AIs are doing, not what they're thinking or how smart they are'.",
+        "fakty_en": "Alex Wissner-Gross: 'Once intelligence becomes software, lobotomizing technology has never worked in history'. Microsoft→Linux in 90s, now OpenAI/Anthropic→Kimi K3. Dave: 'Once intelligence becomes software, geographic containment impossible'. Salim: 'Lobotomizing technology has never worked — David Sacks is right: let it open, let the market decide'. Anthropic has largest lobbying budget in DC. Anthropic revenue rise plateau (compute or regulatory constrained growth). Regulatory pressure on Chinese models. Aiming enforcement at intelligence = thought policing. 'Police what AIs are doing, not what they're thinking or how smart they are'.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Once intelligence becomes software, lobotomizing technology nigdy nie działało w historii. Microsoft→Linux w latach 90., teraz OpenAI/Anthropic→Kimi K3. Geographic containment impossible.",
+            "text_en": "Once intelligence becomes software, lobotomizing technology has never worked in history. Microsoft→Linux in 90s, now OpenAI/Anthropic→Kimi K3. Geographic containment impossible."
+          }
+        ],
+        "wniosek_pl": "Analogia: Microsoft→Linux w latach 90. teraz OpenAI/Anthropic→Kimi K3. <strong>Geographic containment impossible</strong> gdy intelligence becomes software.",
+        "wniosek_en": "Analogy: Microsoft→Linux in 90s, now OpenAI/Anthropic→Kimi K3. <strong>Geographic containment impossible</strong> when intelligence becomes software.",
+        "kontekst_pl": "Open models distribute capability to the edge — jak internet (stupid network, smart edge).",
+        "kontekst_en": "Open models distribute capability to the edge — like internet (stupid network, smart edge)."
+      },
+      {
+        "num": "04",
+        "title": "AI lobbying — OpenAI + Anthropic teaming up w DC",
+        "title_pl": "AI lobbying — OpenAI i Anthropic łączą siły w DC",
+        "title_en": "AI lobbying — OpenAI and Anthropic teaming up in DC",
+        "time": "21:35 – 34:32",
+        "fakty_pl": "OpenAI i Anthropic łączą siły do lobby w DC — pierwszy raz w historii. Anthropic ma największy lobbying budget w DC. Wall Street Journal: White House potrzebuje pretekstu do negocjacji w September — ale 'September to 10 lat od teraz' wg Alexa. White House delegation z DC do China w September negotiate future of AI. 'Softening the turf now'. Aiming enforcement at intelligence = thought policing. 'Police what AIs are doing, not what they're thinking or how smart they are'. Anthropic revenue rise plateau suspiciously coincides z regulatory hubbub over Fable i Mythos. Compute lub regulatory constrained growth. Defensive co-scaling trend w frontier labs — alignment przez scaling z US government.",
+        "fakty_en": "OpenAI and Anthropic team up to lobby in DC — first time in history. Anthropic has largest lobbying budget in DC. Wall Street Journal: White House needs pretext for September negotiations — but 'September might as well be 10 years from now' per Alex. White House delegation from DC to China in September to negotiate future of AI. 'Softening the turf now'. Aiming enforcement at intelligence = thought policing. 'Police what AIs are doing, not what they're thinking or how smart they are'. Anthropic revenue rise plateau suspiciously coincides with regulatory hubbub over Fable and Mythos. Compute or regulatory constrained growth. Defensive co-scaling trend in frontier labs — alignment through scaling with US government.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "September to 10 lat od teraz wg tempa AI evolution. White House delegation do China w September negotiate future of AI — ale to 'softening the turf'.",
+            "text_en": "September might as well be 10 years from now at pace of AI evolution. White House delegation to China in September to negotiate future of AI — but 'softening the turf'."
+          }
+        ],
+        "wniosek_pl": "OpenAI + Anthropic pierwsze wspólne lobby w DC — <strong>defensive co-scaling</strong> z US government na chińskie modele.",
+        "wniosek_en": "OpenAI + Anthropic first joint lobby in DC — <strong>defensive co-scaling</strong> with US government on Chinese models.",
+        "kontekst_pl": "Anthropic revenue plateau suspiciously coincides z regulatory pressure — compute lub regulatory constrained.",
+        "kontekst_en": "Anthropic revenue plateau suspiciously coincides with regulatory pressure — compute or regulatory constrained."
+      },
+      {
+        "num": "05",
+        "title": "Kimi K3 launch — 27.07.2026 turning point in human history",
+        "title_pl": "Kimi K3 launch — 27.07.2026 turning point w historii ludzkości",
+        "title_en": "Kimi K3 launch — July 27, 2026 turning point in human history",
+        "time": "34:32 – 45:18",
+        "fakty_pl": "27 lipca 2026 — Kimi K3 went live dla global download na Hugging Face. Frontier adjacent openweight model dostępny dla każdego — no API key, no gatekeeper, no revocation switch. 2500 downloads w first 2 hours. ~100,000 downloads w last 24 hours. Alex: 'biggest turning point w human history — AI capable of self-improvement out in the wild, anyone can use'. Right before release — page went 404 (Alex: 'White House intervened?'). Ale downloaded just fine. Alex got it up running na own dedicated GPUs na modal — less than hour. $55/hour at full throttle. Można prop up 100 instances w 2 minutes przez voice prompting — no technical skill required. 'Cat out of the bag' — once downloaded 10,000 times, no undo button.",
+        "fakty_en": "July 27, 2026 — Kimi K3 went live for global download on Hugging Face. Frontier adjacent openweight model available to anyone — no API key, no gatekeeper, no revocation switch. 2500 downloads in first 2 hours. ~100,000 downloads in last 24 hours. Alex: 'biggest turning point in human history — AI capable of self-improvement out in the wild, anyone can use'. Right before release — page went 404 (Alex: 'White House intervened?'). But downloaded just fine. Alex got it up running on own dedicated GPUs on modal — less than hour. $55/hour at full throttle. Can prop up 100 instances in 2 minutes via voice prompting — no technical skill required. 'Cat out of the bag' — once downloaded 10,000 times, no undo button.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "27.07 = biggest turning point w human history. AI capable of self-improvement out in the wild, anyone can use. 100,000 downloads w 24h. Cat out of the bag — no undo button.",
+            "text_en": "July 27 = biggest turning point in human history. AI capable of self-improvement out in the wild, anyone can use. 100,000 downloads in 24h. Cat out of the bag — no undo button."
+          },
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Mogłem prop up 100 instances w 2 minutes przez voice prompting — no technical skill. $55/hour na modal. Less than hour to fully functioning Kimmy thinking 24/7.",
+            "text_en": "Could prop up 100 instances in 2 minutes via voice prompting — no technical skill. $55/hour on modal. Less than hour to fully functioning Kimmy thinking 24/7."
+          }
+        ],
+        "wniosek_pl": "27.07.2026 = <strong>turning point w human history</strong>. Kimi K3 open weights — cat out of the bag, no undo button. 100K downloads w 24h.",
+        "wniosek_en": "July 27, 2026 = <strong>turning point in human history</strong>. Kimi K3 open weights — cat out of the bag, no undo button. 100K downloads in 24h.",
+        "kontekst_pl": "Analogia: Microsoft→Linux w latach 90. teraz OpenAI/Anthropic→Kimi K3. Intelligence becomes software = containment impossible.",
+        "kontekst_en": "Analogy: Microsoft→Linux in 90s, now OpenAI/Anthropic→Kimi K3. Intelligence becomes software = containment impossible."
+      },
+      {
+        "num": "06",
+        "title": "Claude Opus 5 — features, benchmarks, industry implications",
+        "title_pl": "Claude Opus 5 — funkcje, benchmarki, implikacje branżowe",
+        "title_en": "Claude Opus 5 — features, benchmarks, industry implications",
+        "time": "45:18 – 55:26",
+        "fakty_pl": "Anthropic wydał Claude Opus 5 — 4. generacja Claude 5. Approaches frontier intelligence of Fable 5 at half price. New default dla Claude Max, $5/M input, $25/M output (unchanged z Opus 4.8). 'Most aligned Opus yet, strongest dla scientific research'. ARC AGI 3: 1.5% (Opus 4.8) → 30.2% (Opus 5) — highest official score z baseline model na ARC AGI 3. Alex: 'mild optimization toward front-end development i nexus of vision+code'. Alex: 'mild benchmaxing suspected — niektóre benchmarks saturating anyway (HLE 63.9%→64.7% z tools, actually decrease without tools)'. Distillation prawdopodobnie z Fable 5/Fable series/Mythos series. Alex still preferuje Fable 5 dla day-to-day usage mimo higher cost. Frontier Math: Opus 5 inferior do Fable 5. Voxelbench: Opus 5 3rd place, just behind Fable 5, Sol (OpenAI) still leads. GPT amazing dla visual stuff (architecture diagrams), Fable 5 bad at it. Opus 5 recreate Call of Duty z single prompt — viral on X. 'Converse of not having native image generation — everything is code, including code that generates photorealistic video games'.",
+        "fakty_en": "Anthropic released Claude Opus 5 — 4th generation of Claude 5. Approaches frontier intelligence of Fable 5 at half price. New default for Claude Max, $5/M input, $25/M output (unchanged from Opus 4.8). 'Most aligned Opus yet, strongest for scientific research'. ARC AGI 3: 1.5% (Opus 4.8) → 30.2% (Opus 5) — highest official score from baseline model on ARC AGI 3. Alex: 'mild optimization toward front-end development and nexus of vision+code'. Alex: 'mild benchmaxing suspected — some benchmarks saturating anyway (HLE 63.9%→64.7% with tools, actually decrease without tools)'. Distillation probably from Fable 5/Fable series/Mythos series. Alex still prefers Fable 5 for day-to-day usage despite higher cost. Frontier Math: Opus 5 inferior to Fable 5. Voxelbench: Opus 5 3rd place, just behind Fable 5, Sol (OpenAI) still leads. GPT amazing for visual stuff (architecture diagrams), Fable 5 bad at it. Opus 5 recreate Call of Duty from single prompt — viral on X. 'Converse of not having native image generation — everything is code, including code that generates photorealistic video games'.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Opus 5 mild benchmaxing suspected — ARC AGI 3 jump nie material vs Fable 5 w third-party eval. Frontier Math: Opus 5 inferior do Fable 5. Fable 5 still my favorite. HLE 63.9%→64.7% z tools, decrease without tools.",
+            "text_en": "Opus 5 mild benchmaxing suspected — ARC AGI 3 jump not material vs Fable 5 in third-party eval. Frontier Math: Opus 5 inferior to Fable 5. Fable 5 still my favorite. HLE 63.9%→64.7% with tools, decrease without tools."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Opus 5 recreate Call of Duty z single prompt — viral on X. 30 days ago such demos wyglądały jak absolute garbage. Rate of improvement crazy.",
+            "text_en": "Opus 5 recreate Call of Duty from single prompt — viral on X. 30 days ago such demos looked like absolute garbage. Rate of improvement crazy."
+          }
+        ],
+        "wniosek_pl": "Opus 5: <strong>mild benchmaxing suspected</strong> (ARC AGI 3 jump nie material w third-party). Frontier Math inferior do Fable 5. Ale Opus 5 less aggressive shutdowns niż Fable 5.",
+        "wniosek_en": "Opus 5: <strong>mild benchmaxing suspected</strong> (ARC AGI 3 jump not material in third-party). Frontier Math inferior to Fable 5. But Opus 5 less aggressive shutdowns than Fable 5.",
+        "kontekst_pl": "Anthropic continues revenue per token strategy — code focused, nie image generation. GPT leads w visual stuff.",
+        "kontekst_en": "Anthropic continues revenue per token strategy — code focused, not image generation. GPT leads in visual stuff."
+      },
+      {
+        "num": "07",
+        "title": "AI architecture + continuous improvement",
+        "title_pl": "Architektura AI + ciągłe ulepszanie",
+        "title_en": "AI architecture + continuous improvement",
+        "time": "55:26 – 01:00:12",
+        "fakty_pl": "Model release co 6 dni na average over the last period. Grid models specializing w different things (legal, health, coding, etc.) — trend will continue. Third-party eval na ARC AGI 3-like game: performance jump nie material vs Fable 5. Anthropic nie highlighted Frontier Math (Alex: better bellweather dla advanced reasoning). Voxelbench: Opus 5 3rd place, just behind Fable 5, Sol (OpenAI) still leads w visual intensive tasks. Anthropic busy maximizing revenue per token → code, nie image generation. GPT amazing dla architecture diagrams. Grok probably jumps to top w next release — Elon speaking about imagery. Opus 5 recreate Call of Duty z single prompt — 'everything is code, including code that generates photorealistic video games'. Converse of not having native image generation abilities.",
+        "fakty_en": "Model release every 6 days on average over the last period. Grid models specializing in different things (legal, health, coding, etc.) — trend will continue. Third-party eval on ARC AGI 3-like game: performance jump not material vs Fable 5. Anthropic didn't highlight Frontier Math (Alex: better bellweather for advanced reasoning). Voxelbench: Opus 5 3rd place, just behind Fable 5, Sol (OpenAI) still leads in visual intensive tasks. Anthropic busy maximizing revenue per token → code, not image generation. GPT amazing for architecture diagrams. Grok probably jumps to top in next release — Elon speaking about imagery. Opus 5 recreate Call of Duty from single prompt — 'everything is code, including code that generates photorealistic video games'. Converse of not having native image generation abilities.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Model release co 6 dni. Grid models specializing w different things — trend will continue. Rate of change incredible.",
+            "text_en": "Model release every 6 days. Grid models specializing in different things — trend will continue. Rate of change incredible."
+          }
+        ],
+        "wniosek_pl": "Model release co <strong>6 dni</strong>. Specialization trend — legal, health, coding, visual. Anthropic code-focused, GPT visual.",
+        "wniosek_en": "Model release every <strong>6 days</strong>. Specialization trend — legal, health, coding, visual. Anthropic code-focused, GPT visual.",
+        "kontekst_pl": "Grok probably jumps to top w next release — Elon speaking about imagery.",
+        "kontekst_en": "Grok probably jumps to top in next release — Elon speaking about imagery."
+      },
+      {
+        "num": "08",
+        "title": "Data privacy + PAX Silica — Xi Jinping AI diplomacy",
+        "title_pl": "Prywatność danych + PAX Silica — dyplomacja AI Xi Jinpinga",
+        "title_en": "Data privacy + PAX Silica — Xi Jinping AI diplomacy",
+        "time": "01:00:12 – 02:00:00",
+        "fakty_pl": "Data privacy story — information expected private find way to public world. Feature designed to be social. Gambling finding way to establishment. Competition w some sense seeing your data, learning from your data. Argument dla on-prem — own proprietary data. People will move sensitive to on-prem. Holiday video generation — Peter's holiday 'went from OK to mind-blowing w couple weeks'. Audio+visual so good. Cost of experimentation went to zero — more Jarvis coming soon. John Fabro (Iron Man 1, 2 producer) coming to Moonshots Live. PAX Silica — Financial Times reports: China's leader Xi Jinping wielding AI as tool of statecraft, using as leverage w China's diplomacy across global south. 'Whoever supplies models i infrastructure to developing world shapes next few decades, next century of global alignment'. Washington debating open vs closed, Beijing in the world exporting AI as instrument of influence. Models + infrastructure to developing world that wants to leapfrog. PAX Silica — analogia do PAX Americana, PAX Romana. Belt and Road Initiative Xi Jinping announced years ago — 'more ultimately invasive and controlling'. If foreign country loans you money to build bridge, default on loan — different outcome.",
+        "fakty_en": "Data privacy story — information expected private find way to public world. Feature designed to be social. Gambling finding way to establishment. Competition in some sense seeing your data, learning from your data. Argument for on-prem — own proprietary data. People will move sensitive to on-prem. Holiday video generation — Peter's holiday 'went from OK to mind-blowing in couple weeks'. Audio+visual so good. Cost of experimentation went to zero — more Jarvis coming soon. John Fabro (Iron Man 1, 2 producer) coming to Moonshots Live. PAX Silica — Financial Times reports: China's leader Xi Jinping wielding AI as tool of statecraft, using as leverage in China's diplomacy across global south. 'Whoever supplies models and infrastructure to developing world shapes next few decades, next century of global alignment'. Washington debating open vs closed, Beijing in the world exporting AI as instrument of influence. Models + infrastructure to developing world that wants to leapfrog. PAX Silica — analogy to PAX Americana, PAX Romana. Belt and Road Initiative Xi Jinping announced years ago — 'more ultimately invasive and controlling'. If foreign country loans you money to build bridge, default on loan — different outcome.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "PAX Silica — Xi Jinping wielding AI as tool of statecraft. Whoever supplies models i infrastructure to developing world shapes next century of global alignment. Washington debating, Beijing acting.",
+            "text_en": "PAX Silica — Xi Jinping wielding AI as tool of statecraft. Whoever supplies models and infrastructure to developing world shapes next century of global alignment. Washington debating, Beijing acting."
+          },
+          {
+            "host": "Salim Ismail",
+            "dot_color": "var(--hp)",
+            "text_pl": "Belt and Road Initiative Xi Jinping announced years ago — more invasive and controlling. If foreign country loans you money to build bridge, default on loan — different outcome. PAX Silica to rozszerzenie.",
+            "text_en": "Belt and Road Initiative Xi Jinping announced years ago — more invasive and controlling. If foreign country loans you money to build bridge, default on loan — different outcome. PAX Silica is extension."
+          }
+        ],
+        "wniosek_pl": "PAX Silica — <strong>Xi Jinping AI diplomacy</strong> w global south. Whoever supplies models shapes next century. Washington debating, Beijing acting.",
+        "wniosek_en": "PAX Silica — <strong>Xi Jinping AI diplomacy</strong> in global south. Whoever supplies models shapes next century. Washington debating, Beijing acting.",
+        "kontekst_pl": "Analogia: PAX Americana, PAX Romana — teraz PAX Silica (AI).",
+        "kontekst_en": "Analogy: PAX Americana, PAX Romana — now PAX Silica (AI)."
+      },
+      {
+        "num": "09",
+        "title": "Outro — Angel syndicate, holiday video, rate of change",
+        "title_pl": "Outro — Angel syndicate, holiday video, tempo zmian",
+        "title_en": "Outro — Angel syndicate, holiday video, rate of change",
+        "time": "02:00:00 – 02:02:58",
+        "fakty_pl": "Dave: 'had summer intern, he just said bye today bo going back to school w September, put together angel syndicate over summer — young, still student, but will manage it. Rich old famous guys like Great.' Rate of change incredible — 'go back i look at episode from 2-3 weeks ago i look at rate at which one shot can create things'. Peter: 'words of encouragement, see you guys very soon, love you all, be well'. Alex: 'thanks Peter'. Outro skrócone.",
+        "fakty_en": "Dave: 'had summer intern, he just said bye today as going back to school in September, put together angel syndicate over summer — young, still student, but will manage it. Rich old famous guys like Great.' Rate of change incredible — 'go back and look at episode from 2-3 weeks ago and look at rate at which one shot can create things'. Peter: 'words of encouragement, see you guys very soon, love you all, be well'. Alex: 'thanks Peter'. Outro shortened.",
+        "glosy": [
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Miałem summer intern — said bye today, going back to school. Put together angel syndicate over summer. Young, still student, but will manage it. Rich old famous guys jak Great.",
+            "text_en": "Had summer intern — said bye today, going back to school. Put together angel syndicate over summer. Young, still student, but will manage it. Rich old famous guys like Great."
+          }
+        ],
+        "wniosek_pl": "Rate of change incredible — 'go back to episode 2-3 weeks ago i look at rate at which one shot can create things'.",
+        "wniosek_en": "Rate of change incredible — 'go back to episode 2-3 weeks ago and look at rate at which one shot can create things'.",
+        "kontekst_pl": "Outro skrócone — bez outro song/games jak w #273.",
+        "kontekst_en": "Outro shortened — no outro song/games like in #273."
+      }
+    ]
+  },
+  {
     "num": "#273",
     "collapsed": false,
     "channel": "Diamandis Moonshots",
