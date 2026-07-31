@@ -2,9 +2,249 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-29 20:21:03 UTC
+// Generated: 2026-07-31 19:23:56 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Microsoft Mage Flow — text-to-image 4B params, open source",
+    "title_en": "Microsoft Mage Flow — text-to-image 4B params, open source",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-microsoft-mage-flow",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Celeris AI — 1500 tokens/sec, 8K context, diffusion-based",
+    "title_en": "Celeris AI — 1500 tokens/sec, 8K context, diffusion-based",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-celeris-one-ai",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Sakana AI Fugaku Ultra V1.1 — bije Fable 5 na coding benchmarks",
+    "title_en": "Sakana AI Fugaku Ultra V1.1 — bije Fable 5 na coding benchmarks",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-sakana-fugaku-beats-fable",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Open agents — OpenCode (TypeScript), Hermess (Python), Open Code (Go)",
+    "title_en": "Open agents — OpenCode (TypeScript), Hermess (Python), Open Code (Go)",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-open-agents-multi-lang",
+    "meta_pl": "Agents — OpenCode, Hermess, Ab",
+    "meta_en": "Agents — OpenCode, Hermess, Ab",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Microsoft Agent Framework — harness dla Python i .NET",
+    "title_en": "Microsoft Agent Framework — harness dla Python i .NET",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-microsoft-agent-framework",
+    "meta_pl": "Agents — OpenCode, Hermess, Ab",
+    "meta_en": "Agents — OpenCode, Hermess, Ab",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "GenSpark — multi-agent orchestration platform (Palo Alto)",
+    "title_en": "GenSpark — multi-agent orchestration platform (Palo Alto)",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-genspark-orchestration",
+    "meta_pl": "Agents — OpenCode, Hermess, Ab",
+    "meta_en": "Agents — OpenCode, Hermess, Ab",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Andrew Ng open-worker — agent model agnostic (OpenAI, Anthropic, Gemini, DeepSeek, local)",
+    "title_en": "Andrew Ng open-worker — agent model agnostic (OpenAI, Anthropic, Gemini, DeepSeek, local)",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-andrew-ng-open-worker",
+    "meta_pl": "Agents — OpenCode, Hermess, Ab",
+    "meta_en": "Agents — OpenCode, Hermess, Ab",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Recursive Superintelligence — Richard Socher startup, $650M at $4B valuation",
+    "title_en": "Recursive Superintelligence — Richard Socher startup, $650M at $4B valuation",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-recursive-superintelligence-socher",
+    "meta_pl": "Agents — OpenCode, Hermess, Ab",
+    "meta_en": "Agents — OpenCode, Hermess, Ab",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Tasklet — $175M valuation startup (San Francisco)",
+    "title_en": "Tasklet — $175M valuation startup (San Francisco)",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-tasklet-startup",
+    "meta_pl": "Agents — OpenCode, Hermess, Ab",
+    "meta_en": "Agents — OpenCode, Hermess, Ab",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Model fusion — multiple models answer same question, synthesis",
+    "title_en": "Model fusion — multiple models answer same question, synthesis",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-model-fusion",
+    "meta_pl": "Model fusion vs model routing",
+    "meta_en": "Model fusion vs model routing",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Model routing — distribute tasks between specialized models",
+    "title_en": "Model routing — distribute tasks between specialized models",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-model-routing",
+    "meta_pl": "Model fusion vs model routing",
+    "meta_en": "Model fusion vs model routing",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "OpenRouter fusion + Runway AI router for generative media",
+    "title_en": "OpenRouter fusion + Runway AI router for generative media",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-openrouter-runway",
+    "meta_pl": "Model fusion vs model routing",
+    "meta_en": "Model fusion vs model routing",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Google Slides convert to video — Gemini + slides + voice over/avatar",
+    "title_en": "Google Slides convert to video — Gemini + slides + voice over/avatar",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-google-slides-video",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "SGLang — LLM serving agent, outperforms llama.cpp w multi-user",
+    "title_en": "SGLang — LLM serving agent, outperforms llama.cpp w multi-user",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-sglang-serving",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Llama.cpp rewritten in pure Rust — 2 years, version 3 state-of-the-art",
+    "title_en": "Llama.cpp rewritten in pure Rust — 2 years, version 3 state-of-the-art",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-llama-rust-rewrite",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "JCode — Claude Code w Rust, brew install, much faster",
+    "title_en": "JCode — Claude Code w Rust, brew install, much faster",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-jcode-rust",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Topcode — full-stack Rust web framework (Tokio creator)",
+    "title_en": "Topcode — full-stack Rust web framework (Tokio creator)",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-topcode-rust-web",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Government shift C/C++ → Rust — federal directives, Google 76%→20%",
+    "title_en": "Government shift C/C++ → Rust — federal directives, Google 76%→20%",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-rust-shift-government",
+    "meta_pl": "News i wydarzenia",
+    "meta_en": "News i wydarzenia",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "DuckDB, Snowflake, Lightream — SQL alternatives for analytics",
+    "title_en": "DuckDB, Snowflake, Lightream — SQL alternatives for analytics",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-duckdb-snowflake-lightream",
+    "meta_pl": "News i wydarzenia",
+    "meta_en": "News i wydarzenia",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Lada 2.2 Flash — 103B params diffusion MoE, 128K context",
+    "title_en": "Lada 2.2 Flash — 103B params diffusion MoE, 128K context",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-lada-22-flash",
+    "meta_pl": "News i wydarzenia",
+    "meta_en": "News i wydarzenia",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Tencent Hierra 1.0 — research agent, recursive self-improvement",
+    "title_en": "Tencent Hierra 1.0 — research agent, recursive self-improvement",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-tencent-hierra",
+    "meta_pl": "News i wydarzenia",
+    "meta_en": "News i wydarzenia",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "GigaToken — fast open-source tokenizer, 1000x faster than industry",
+    "title_en": "GigaToken — fast open-source tokenizer, 1000x faster than industry",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-gigatoken",
+    "meta_pl": "News i wydarzenia",
+    "meta_en": "News i wydarzenia",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "lev",
+    "title_pl": "Layoffs July 2026 — kontynuacja trendu",
+    "title_en": "Layoffs July 2026 — kontynuacja trendu",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-layoffs-july",
+    "meta_pl": "News i wydarzenia",
+    "meta_en": "News i wydarzenia",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-29",
+    "type": "lev",
+    "title_pl": "Kimi K3 dostępny na Ollama Cloud — $20 lub $100/miesiąc",
+    "title_en": "Kimi K3 dostępny na Ollama Cloud — $20 lub $100/miesiąc",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-kimi-k3-ollama",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-31"
+  },
   {
     "date": "2026-07-29",
     "type": "diamandis",
@@ -14,6 +254,66 @@ const CALENDAR = [
     "meta_pl": "9 tematów",
     "meta_en": "9 topics",
     "num": "#275"
+  },
+  {
+    "date": "2026-07-28",
+    "type": "lev",
+    "title_pl": "DeepSeek V4 Flash GA — Pro still preview, 44 vs Opus 5 61",
+    "title_en": "DeepSeek V4 Flash GA — Pro still preview, 44 vs Opus 5 61",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-deepseek-v4-ga",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-28",
+    "type": "lev",
+    "title_pl": "Anthropic usunął 80% Claude Code prompts — Baris Cherr",
+    "title_en": "Anthropic usunął 80% Claude Code prompts — Baris Cherr",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-anthropic-80-prompts-removed",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-28",
+    "type": "lev",
+    "title_pl": "OpenAI nie wiedział o ataku 9 dni — Hugging Face znalazło",
+    "title_en": "OpenAI nie wiedział o ataku 9 dni — Hugging Face znalazło",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-openai-9-days-undetected",
+    "meta_pl": "OpenAI agent escape investigat",
+    "meta_en": "OpenAI agent escape investigat",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-27",
+    "type": "lev",
+    "title_pl": "Claude dominuje coding — Fable 5 i Opus 5 na top",
+    "title_en": "Claude dominuje coding — Fable 5 i Opus 5 na top",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-claude-dominates-coding",
+    "meta_pl": "LM Arena + Cost Per Intelligen",
+    "meta_en": "LM Arena + Cost Per Intelligen",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-27",
+    "type": "lev",
+    "title_pl": "GPT 5.6 Luna Max 7 cents — OpenAI RSI optimized inference",
+    "title_en": "GPT 5.6 Luna Max 7 cents — OpenAI RSI optimized inference",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-gpt-luna-max-rsi",
+    "meta_pl": "LM Arena + Cost Per Intelligen",
+    "meta_en": "LM Arena + Cost Per Intelligen",
+    "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-27",
+    "type": "lev",
+    "title_pl": "Cost Per Intelligence — Fable 5 $3 vs Luna 7 cents vs DeepSeek 3 cents",
+    "title_en": "Cost Per Intelligence — Fable 5 $3 vs Luna 7 cents vs DeepSeek 3 cents",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-cost-per-intelligence",
+    "meta_pl": "LM Arena + Cost Per Intelligen",
+    "meta_en": "LM Arena + Cost Per Intelligen",
+    "num": "ep-2026-07-31"
   },
   {
     "date": "2026-07-26",
@@ -214,6 +514,16 @@ const CALENDAR = [
     "meta_pl": "Video Generation",
     "meta_en": "Video Generation",
     "num": "##30-1"
+  },
+  {
+    "date": "2026-07-25",
+    "type": "lev",
+    "title_pl": "Claude Opus 5 — wydany 25.07 (Friday), tańszy niż Fable 5",
+    "title_en": "Claude Opus 5 — wydany 25.07 (Friday), tańszy niż Fable 5",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-opus-5-released",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-31"
   },
   {
     "date": "2026-07-24",

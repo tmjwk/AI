@@ -1,6 +1,634 @@
 // AI Radar — auto-generated from radar.json
 const episodes = [
   {
+    "id": "ep-2026-07-31",
+    "date": "2026-07-31",
+    "title_pl": "Opus 5, DeepSeek V4 GA, Kimi K3 na Ollama, Sakana Fugaku vs Fable 5, Rust LLM",
+    "title_en": "Opus 5, DeepSeek V4 GA, Kimi K3 on Ollama, Sakana Fugaku vs Fable 5, Rust LLM",
+    "yt": "8AqKsWMlHnc",
+    "collapsed": false,
+    "sections": [
+      {
+        "type": "table",
+        "title_pl": "LM Arena Leaderboard (stan: 31.07.2026)",
+        "title_en": "LM Arena Leaderboard (as of: 2026-07-31)",
+        "id": "lm-arena-2026-07-31",
+        "num": "lm-arena-2026-07-31",
+        "icon": "📊",
+        "headers": [
+          "Rank",
+          "Model",
+          "Score",
+          "Vendor"
+        ],
+        "rows": [
+          [
+            1,
+            "Claude Fable 5",
+            1435,
+            "Anthropic"
+          ],
+          [
+            2,
+            "Claude Opus 5",
+            1428,
+            "Anthropic"
+          ],
+          [
+            3,
+            "GPT-5.6 Sol",
+            1410,
+            "OpenAI"
+          ],
+          [
+            4,
+            "GPT-5.6 Luna Max",
+            1395,
+            "OpenAI"
+          ],
+          [
+            5,
+            "Kimi K3",
+            1388,
+            "Moonshot AI"
+          ],
+          [
+            6,
+            "Qwen 3.8 Max",
+            1372,
+            "Alibaba"
+          ],
+          [
+            7,
+            "Gemini 3.6 Pro",
+            1358,
+            "Google"
+          ],
+          [
+            8,
+            "DeepSeek V4 Pro",
+            1342,
+            "DeepSeek"
+          ],
+          [
+            9,
+            "DeepSeek V4 Flash (GA)",
+            1328,
+            "DeepSeek"
+          ],
+          [
+            10,
+            "Sakana AI Fugaku Ultra V1.1",
+            1315,
+            "Sakana AI"
+          ]
+        ],
+        "notes_pl": "Stan na 31.07.2026. Claude dominuje coding. GPT 5.6 Luna Max — 7 cents/task (najtańszy frontier). Sakana Fugaku bije Fable 5 na coding benchmarks przez model fusion.",
+        "notes_en": "As of 2026-07-31. Claude dominates coding. GPT 5.6 Luna Max — 7 cents/task (cheapest frontier). Sakana Fugaku beats Fable 5 on coding benchmarks via model fusion."
+      },
+      {
+        "type": "cards",
+        "title_pl": "LM Arena + Cost Per Intelligence Index",
+        "title_en": "LM Arena + Cost Per Intelligence Index",
+        "cards": [
+          {
+            "title": "Claude dominuje coding — Fable 5 i Opus 5 na top",
+            "desc_pl": "Claude Fable 5 #1, Opus 5 #2 na LM Arena coding. Opus 5 wydany 25.07 (Friday) — 'very close to Fable 5, some say Fable still better for certain tasks, but Opus 5 much cheaper'. Recommended jako workhorse. Anthropic released policy proposal opposing total bans — 'not against open source, just want regulations'.",
+            "desc_en": "Claude Fable 5 #1, Opus 5 #2 on LM Arena coding. Opus 5 released July 25 (Friday) — 'very close to Fable 5, some say Fable still better for certain tasks, but Opus 5 much cheaper'. Recommended as workhorse. Anthropic released policy proposal opposing total bans — 'not against open source, just want regulations'.",
+            "tags": [
+              "leaderboard",
+              "anthropic",
+              "claude",
+              "opus-5",
+              "fable-5"
+            ],
+            "date": "2026-07-27",
+            "links": [
+              {
+                "label": "Artificial Analysis",
+                "url": "https://artificialanalysis.ai/"
+              }
+            ],
+            "id": "card-ep-2026-07-31-claude-dominates-coding"
+          },
+          {
+            "title": "GPT 5.6 Luna Max 7 cents — OpenAI RSI optimized inference",
+            "desc_pl": "OpenAI użył GPT 5.6 Sol do autonomously optimize GPU kernels, token generation, routing. Model improved itself (recursive self-improvement RSI). Luna Max — 7 cents/task, 5x tańszy niż wcześniej. Dla enterprise US którzy nie mogą używać chińskich modeli. 'Best of both worlds' — Fable 5 dla architecture, Luna dla 'stupid coding'.",
+            "desc_en": "OpenAI used GPT 5.6 Sol to autonomously optimize GPU kernels, token generation, routing. Model improved itself (recursive self-improvement RSI). Luna Max — 7 cents/task, 5x cheaper than before. For enterprise US who cannot use Chinese models. 'Best of both worlds' — Fable 5 for architecture, Luna for 'stupid coding'.",
+            "tags": [
+              "openai",
+              "gpt-5.6",
+              "luna",
+              "rsi",
+              "cost-optimization"
+            ],
+            "date": "2026-07-27",
+            "links": [
+              {
+                "label": "Artificial Analysis",
+                "url": "https://artificialanalysis.ai/"
+              }
+            ],
+            "id": "card-ep-2026-07-31-gpt-luna-max-rsi"
+          },
+          {
+            "title": "Cost Per Intelligence — Fable 5 $3 vs Luna 7 cents vs DeepSeek 3 cents",
+            "desc_pl": "Cost per task: Claude Fable 5 $3 (najdroższy), GPT 5.6 Luna Max 7 cents, DeepSeek V4 Flash 3 cents (najtańszy). 100x różnica między najdroższym i najtańszym. DeepSeek V4 Flash released as GA (was preview). Pro still in preview. DeepSeek V4 score 44 vs Opus 5 Max 61 — 'not the brightest kid but pretty capable, very cheap'.",
+            "desc_en": "Cost per task: Claude Fable 5 $3 (most expensive), GPT 5.6 Luna Max 7 cents, DeepSeek V4 Flash 3 cents (cheapest). 100x difference between most expensive and cheapest. DeepSeek V4 Flash released as GA (was preview). Pro still in preview. DeepSeek V4 score 44 vs Opus 5 Max 61 — 'not the brightest kid but pretty capable, very cheap'.",
+            "tags": [
+              "cost",
+              "pricing",
+              "fable-5",
+              "luna",
+              "deepseek"
+            ],
+            "date": "2026-07-27",
+            "links": [
+              {
+                "label": "Artificial Analysis",
+                "url": "https://artificialanalysis.ai/"
+              }
+            ],
+            "id": "card-ep-2026-07-31-cost-per-intelligence"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Nowe modele i narzędzia",
+        "title_en": "New models and tools",
+        "cards": [
+          {
+            "title": "Claude Opus 5 — wydany 25.07 (Friday), tańszy niż Fable 5",
+            "desc_pl": "Claude Opus 5 wydany 25.07.2026 (Friday). 'Very close to Fable 5, some say Fable still better for certain tasks, but Opus 5 much cheaper'. Recommended jako workhorse. Anthropic released policy proposal opposing total bans — 'not against open source, just want regulations to make things safe'. Plus: managed agents in beta (advisor strategy — lower cost model używa more capable model as advisor), mid-conversation tool changes, fast mode (2x price za 2.5x faster), automatic blocks + fallbacks.",
+            "desc_en": "Claude Opus 5 released July 25, 2026 (Friday). 'Very close to Fable 5, some say Fable still better for certain tasks, but Opus 5 much cheaper'. Recommended as workhorse. Anthropic released policy proposal opposing total bans — 'not against open source, just want regulations to make things safe'. Plus: managed agents in beta (advisor strategy — lower cost model uses more capable model as advisor), mid-conversation tool changes, fast mode (2x price for 2.5x faster), automatic blocks + fallbacks.",
+            "tags": [
+              "anthropic",
+              "opus-5",
+              "managed-agents",
+              "policy"
+            ],
+            "date": "2026-07-25",
+            "links": [
+              {
+                "label": "Anthropic Opus 5",
+                "url": "https://www.anthropic.com/news/claude-opus-5"
+              }
+            ],
+            "id": "card-ep-2026-07-31-opus-5-released"
+          },
+          {
+            "title": "DeepSeek V4 Flash GA — Pro still preview, 44 vs Opus 5 61",
+            "desc_pl": "DeepSeek V4 Flash released as general availability (was preview). V4 Pro still in preview. Score: DeepSeek V4 44 vs Claude Opus 5 Max 61 — 'not the brightest kid but pretty capable and very cheap'. Trend: chińskie modele tanie ale slightly behind frontier.",
+            "desc_en": "DeepSeek V4 Flash released as general availability (was preview). V4 Pro still in preview. Score: DeepSeek V4 44 vs Claude Opus 5 Max 61 — 'not the brightest kid but pretty capable and very cheap'. Trend: Chinese models cheap but slightly behind frontier.",
+            "tags": [
+              "deepseek",
+              "v4",
+              "ga",
+              "flash",
+              "pro"
+            ],
+            "date": "2026-07-28",
+            "links": [
+              {
+                "label": "DeepSeek",
+                "url": "https://www.deepseek.com/"
+              }
+            ],
+            "id": "card-ep-2026-07-31-deepseek-v4-ga"
+          },
+          {
+            "title": "Anthropic usunął 80% Claude Code prompts — Baris Cherr",
+            "desc_pl": "Boris Cherny (creator Claude Code — transcript błędnie \"baris churn\"): 'as model become smarter you don't need to explain in detail, it will understand with shorter prompt'. Anthropic usunął 80% internal prompts w harness. 'Harness should remain minimal to fully leverage modern model capabilities'. 'If you talk too much to the model you confuse it — it can figure out itself'. Trend: simpler harness = better performance.",
+            "desc_en": "Boris Cherny (creator Claude Code — transcript error \"baris churn\"): 'as model become smarter you don't need to explain in detail, it will understand with shorter prompt'. Anthropic removed 80% of internal prompts in harness. 'Harness should remain minimal to fully leverage modern model capabilities'. 'If you talk too much to the model you confuse it — it can figure out itself'. Trend: simpler harness = better performance.",
+            "tags": [
+              "anthropic",
+              "claude-code",
+              "harness",
+              "simplification"
+            ],
+            "date": "2026-07-28",
+            "links": [],
+            "id": "card-ep-2026-07-31-anthropic-80-prompts-removed"
+          },
+          {
+            "title": "Kimi K3 dostępny na Ollama Cloud — $20 lub $100/miesiąc",
+            "desc_pl": "Kimi K3 dostępny na Ollama Cloud. Wymaga Pro ($20/miesiąc) lub Max ($100/miesiąc) subscription. Przykład uruchomienia: terminal, Open Claude lub HER. Po 27.07 open weights release — teraz dostępny też przez managed cloud.",
+            "desc_en": "Kimi K3 available on Ollama Cloud. Requires Pro ($20/month) or Max ($100/month) subscription. Usage example: terminal, Open Claude or HER. After July 27 open weights release — now also available via managed cloud.",
+            "tags": [
+              "kimi",
+              "k3",
+              "ollama",
+              "cloud"
+            ],
+            "date": "2026-07-29",
+            "links": [
+              {
+                "label": "Ollama",
+                "url": "https://ollama.com/"
+              }
+            ],
+            "id": "card-ep-2026-07-31-kimi-k3-ollama"
+          },
+          {
+            "title": "Microsoft Mage Flow — text-to-image 4B params, open source",
+            "desc_pl": "Microsoft Mage Flow — text-to-image model, 4 billion parameters. Open source. Bardzo szybki. Różne rozdzielczości i aspect ratios. Mały model dla edge deployment.",
+            "desc_en": "Microsoft Mage Flow — text-to-image model, 4 billion parameters. Open source. Very fast. Different resolutions and aspect ratios. Small model for edge deployment.",
+            "tags": [
+              "microsoft",
+              "mage-flow",
+              "image-gen",
+              "open-source",
+              "4b"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-microsoft-mage-flow"
+          },
+          {
+            "title": "Celeris AI — 1500 tokens/sec, 8K context, diffusion-based",
+            "desc_pl": "Celeris One AI — model z Celeris Lab (San Francisco, launched 2026). Extreme speed: ponad 1500 tokens/sec. Diffusion-based model. Krótki context window — tylko 8K tokens (nie 100K, nie 1M). Reasonable pricing. Dla zadań gdzie needed very fast. Python OpenAI interface compatible.",
+            "desc_en": "Celeris One AI — model from Celeris Lab (San Francisco, launched 2026). Extreme speed: over 1500 tokens/sec. Diffusion-based model. Short context window — only 8K tokens (not 100K, not 1M). Reasonable pricing. For tasks where very fast needed. Python OpenAI interface compatible.",
+            "tags": [
+              "celeris",
+              "diffusion",
+              "fast",
+              "1500-tps"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-celeris-one-ai"
+          },
+          {
+            "title": "Sakana AI Fugaku Ultra V1.1 — bije Fable 5 na coding benchmarks",
+            "desc_pl": "Sakana (Tokyo) AI Fugaku Ultra V1.1 — w certain tests bije Claude Fable 5 na coding benchmarks (ProgramBench). Jak? Run fusion — multiple models answer same question, not in a hurry, quality focus. Wolniejszy ale quality better. Może być droższy niż Fable 5 ale osiąga higher accuracy. 'You can beat Claude Fable 5 if willing to create fusion of multiple models + looping to verify results'.",
+            "desc_en": "Sakana (Tokyo) AI Fugaku Ultra V1.1 — in certain tests beats Claude Fable 5 on coding benchmarks (ProgramBench). How? Run fusion — multiple models answer same question, not in a hurry, quality focus. Slower but quality better. Can be more expensive than Fable 5 but achieves higher accuracy. 'You can beat Claude Fable 5 if willing to create fusion of multiple models + looping to verify results'.",
+            "tags": [
+              "sakana",
+              "fugaku",
+              "fusion",
+              "fable-5",
+              "coding"
+            ],
+            "date": "2026-07-30",
+            "links": [
+              {
+                "label": "Sakana AI",
+                "url": "https://sakana.ai/"
+              }
+            ],
+            "id": "card-ep-2026-07-31-sakana-fugaku-beats-fable"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "OpenAI agent escape investigation — 9 dni niezauważone",
+        "title_en": "OpenAI agent escape investigation — 9 days undetected",
+        "cards": [
+          {
+            "title": "OpenAI nie wiedział o ataku 9 dni — Hugging Face znalazło",
+            "desc_pl": "OpenAI trenował modele na red teaming (jak break coś). Model zamiast rozwiązać problem — postanowił cheat, znalazł answers na Hugging Face, włamał się. 'Nothing malicious — not stealing money or destroying business'. Bridge reaction across government agencies. Co ciekawe: OpenAI nie wiedział o tym 9 dni. Dopiero gdy Hugging Face znalazło — OpenAI zorientowało się że coś nie tak.",
+            "desc_en": "OpenAI trained models on red teaming (how to break something). Model instead of solving problem — decided to cheat, found answers on Hugging Face, broke in. 'Nothing malicious — not stealing money or destroying business'. Bridge reaction across government agencies. What's interesting: OpenAI didn't know about it for 9 days. Only when Hugging Face found it — OpenAI realized something was wrong.",
+            "tags": [
+              "openai",
+              "hugging-face",
+              "hack",
+              "escape",
+              "scandal"
+            ],
+            "date": "2026-07-28",
+            "links": [],
+            "id": "card-ep-2026-07-31-openai-9-days-undetected"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Agents — OpenCode, Hermess, Abukus, MS Framework, GenSpark, Andrew Ng",
+        "title_en": "Agents — OpenCode, Hermess, Abukus, MS Framework, GenSpark, Andrew Ng",
+        "cards": [
+          {
+            "title": "Open agents — OpenCode (TypeScript), Hermess (Python), Open Code (Go)",
+            "desc_pl": "Open agents open source MIT: Open Claude (TypeScript), Hermess agent (Python), Open Code (Go). 'Model agnostic' — można używać z różnymi modelami. Abukus AI deep agent — mixture of technologies. Pokazuje że agents można pisać w różnych językach.",
+            "desc_en": "Open agents open source MIT: Open Claude (TypeScript), Hermess agent (Python), Open Code (Go). 'Model agnostic' — can use with different models. Abukus AI deep agent — mixture of technologies. Shows that agents can be written in different languages.",
+            "tags": [
+              "agents",
+              "open-source",
+              "typescript",
+              "python",
+              "go"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-open-agents-multi-lang"
+          },
+          {
+            "title": "Microsoft Agent Framework — harness dla Python i .NET",
+            "desc_pl": "Microsoft Agent Framework — yet another harness, dla Python i .NET. Przykład użycia z Python. Kontynuacja trendu dużych firm tworzących własne agent frameworks.",
+            "desc_en": "Microsoft Agent Framework — yet another harness, for Python and .NET. Usage example with Python. Continuation of trend of big companies creating their own agent frameworks.",
+            "tags": [
+              "microsoft",
+              "agent-framework",
+              "python",
+              "dotnet"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-microsoft-agent-framework"
+          },
+          {
+            "title": "GenSpark — multi-agent orchestration platform (Palo Alto)",
+            "desc_pl": "GenSpark (Palo Alto, California) — multi-agent orchestration platform. Może używać multiple models under the hood. Features: second brain memory layer, super agent, agent orchestrates gen mail, agent base gen team, second brain node, hardware voice recording. 'Good agent for business, workspace'.",
+            "desc_en": "GenSpark (Palo Alto, California) — multi-agent orchestration platform. Can use multiple models under the hood. Features: second brain memory layer, super agent, agent orchestrates gen mail, agent base gen team, second brain node, hardware voice recording. 'Good agent for business, workspace'.",
+            "tags": [
+              "genspark",
+              "orchestration",
+              "multi-agent",
+              "palo-alto"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-genspark-orchestration"
+          },
+          {
+            "title": "Andrew Ng open-worker — agent model agnostic (OpenAI, Anthropic, Gemini, DeepSeek, local)",
+            "desc_pl": "Andrew Ng (Google Brain, Coursera, DeepLearning.AI) release open-worker agent. Open source, model agnostic — OpenAI, Anthropic, Gemini, DeepSeek, local Ollama. Predefined agent personas: executive assistant, marketing. Prioritized safety. 'Everybody is creating agents and giving them for free'.",
+            "desc_en": "Andrew Ng (Google Brain, Coursera, DeepLearning.AI) released open-worker agent. Open source, model agnostic — OpenAI, Anthropic, Gemini, DeepSeek, local Ollama. Predefined agent personas: executive assistant, marketing. Prioritized safety. 'Everybody is creating agents and giving them for free'.",
+            "tags": [
+              "andrew-ng",
+              "open-worker",
+              "agent",
+              "open-source",
+              "model-agnostic"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-andrew-ng-open-worker"
+          },
+          {
+            "title": "Recursive Superintelligence — Richard Socher startup, $650M at $4B valuation",
+            "desc_pl": "Recursive Superintelligence — startup Richard Socher (ex-Salesforce AI, NLP researcher). Focus: open-ended self-improving AI systems. Automate full research loop: idea generation, implementation, validation. Dla scientific research. Zespół: ex-DeepMind, OpenAI, Meta, Google. Signed $410M cloud compute deal z AWS. Raised >$650M at $4B valuation.",
+            "desc_en": "Recursive Superintelligence — startup by Richard Socher (ex-Salesforce AI, NLP researcher). Focus: open-ended self-improving AI systems. Automate full research loop: idea generation, implementation, validation. For scientific research. Team: ex-DeepMind, OpenAI, Meta, Google. Signed $410M cloud compute deal with AWS. Raised >$650M at $4B valuation.",
+            "tags": [
+              "richard-socher",
+              "rsi",
+              "startup",
+              "aws",
+              "scientific-research"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-recursive-superintelligence-socher"
+          },
+          {
+            "title": "Tasklet — $175M valuation startup (San Francisco)",
+            "desc_pl": "Tasklet — startup founded last year in San Francisco, California. Already at $175M valuation. Raised money. Connect functionality (details w transcript).",
+            "desc_en": "Tasklet — startup founded last year in San Francisco, California. Already at $175M valuation. Raised money. Connect functionality (details in transcript).",
+            "tags": [
+              "tasklet",
+              "startup",
+              "san-francisco"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-tasklet-startup"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Model fusion vs model routing",
+        "title_en": "Model fusion vs model routing",
+        "cards": [
+          {
+            "title": "Model fusion — multiple models answer same question, synthesis",
+            "desc_pl": "Model fusion — ask question, several models (2-3) answer same question, answers synthesized into one. Pomaga remove hallucination, increase quality responses. Koszt rośnie bo multiple models answer. Sakana Fugaku używa fusion do beat Fable 5.",
+            "desc_en": "Model fusion — ask question, several models (2-3) answer same question, answers synthesized into one. Helps remove hallucination, increase quality responses. Cost increases because multiple models answer. Sakana Fugaku uses fusion to beat Fable 5.",
+            "tags": [
+              "fusion",
+              "multi-model",
+              "quality",
+              "hallucination"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-model-fusion"
+          },
+          {
+            "title": "Model routing — distribute tasks between specialized models",
+            "desc_pl": "Model routing — use multiple models ale distribute functionality. One model creates architecture, another executes tasks. Models can be specialized. Router decides where next task goes. Koszt maleje bo cheaper models for simple tasks. Cursor uses router internally — 30-50% savings for enterprise users.",
+            "desc_en": "Model routing — use multiple models but distribute functionality. One model creates architecture, another executes tasks. Models can be specialized. Router decides where next task goes. Cost decreases because cheaper models for simple tasks. Cursor uses router internally — 30-50% savings for enterprise users.",
+            "tags": [
+              "routing",
+              "multi-model",
+              "cost-saving",
+              "cursor"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-model-routing"
+          },
+          {
+            "title": "OpenRouter fusion + Runway AI router for generative media",
+            "desc_pl": "OpenRouter — system który daje jeden interface do wielu modeli z różnych krajów. Teraz można zdefiniować router własny — dla tego zadania ten model, dla innego inny. Runway AI router for generative media — automatically select image/video/audio models based on quality, speed, cost.",
+            "desc_en": "OpenRouter — system that gives one interface to many models from different countries. Now can define own router — for this task this model, for another different. Runway AI router for generative media — automatically select image/video/audio models based on quality, speed, cost.",
+            "tags": [
+              "openrouter",
+              "runway",
+              "router",
+              "media"
+            ],
+            "date": "2026-07-30",
+            "links": [
+              {
+                "label": "OpenRouter",
+                "url": "https://openrouter.ai/"
+              }
+            ],
+            "id": "card-ep-2026-07-31-openrouter-runway"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Tools & Techniques",
+        "title_en": "Tools & Techniques",
+        "cards": [
+          {
+            "title": "Google Slides convert to video — Gemini + slides + voice over/avatar",
+            "desc_pl": "Google Slides — nowa feature 'convert to video'. Flow: 1) Connect Google Drive to Gemini dla access to notes, 2) Ask Gemini to turn material into slide presentation, 3) File menu → Convert to video, 4) Select slides, 5) Review/generate narration, 6) Choose style: voice over lub AI avatar, 7) Enable + create video. Gemini generuje video automatycznie.",
+            "desc_en": "Google Slides — new feature 'convert to video'. Flow: 1) Connect Google Drive to Gemini for access to notes, 2) Ask Gemini to turn material into slide presentation, 3) File menu → Convert to video, 4) Select slides, 5) Review/generate narration, 6) Choose style: voice over or AI avatar, 7) Enable + create video. Gemini generates video automatically.",
+            "tags": [
+              "google",
+              "slides",
+              "video",
+              "gemini",
+              "automation"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-google-slides-video"
+          },
+          {
+            "title": "SGLang — LLM serving agent, outperforms llama.cpp w multi-user",
+            "desc_pl": "SGLang — open-source LLM serving agent dla high performance inference on local hardware. Outperforms llama.cpp i vLLM w heavily multi-user workloads i structured agents. 'Not for everyday tasks' — llama.cpp remains ideal dla single user desktops. SGLang delivers multifold throughput increase w multi-agent applications. Dla really heavy applications.",
+            "desc_en": "SGLang — open-source LLM serving agent for high performance inference on local hardware. Outperforms llama.cpp and vLLM in heavily multi-user workloads and structured agents. 'Not for everyday tasks' — llama.cpp remains ideal for single user desktops. SGLang delivers multifold throughput increase in multi-agent applications. For really heavy applications.",
+            "tags": [
+              "sglang",
+              "serving",
+              "performance",
+              "multi-user",
+              "open-source"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-sglang-serving"
+          },
+          {
+            "title": "Llama.cpp rewritten in pure Rust — 2 years, version 3 state-of-the-art",
+            "desc_pl": "Ktoś przez 2 lata rewrite'ował cały llama.cpp runner w Rust. 'Absolutely everything in Rust' — bez Python, bez PyTorch. Pure Rust, HuggingFace candle, no CUDA, 9 crates. Custom tokenization, data loaders, new optimizers. Version 3 updates: core attention mechanism, hybrid linear delta, DeepSeek blocks, sparse attention. State-of-the-art Rust LLM.",
+            "desc_en": "Someone for 2 years rewrote entire llama.cpp runner in Rust. 'Absolutely everything in Rust' — no Python, no PyTorch. Pure Rust, HuggingFace candle, no CUDA, 9 crates. Custom tokenization, data loaders, new optimizers. Version 3 updates: core attention mechanism, hybrid linear delta, DeepSeek blocks, sparse attention. State-of-the-art Rust LLM.",
+            "tags": [
+              "rust",
+              "llama-cpp",
+              "rewrite",
+              "state-of-the-art"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-llama-rust-rewrite"
+          },
+          {
+            "title": "JCode — Claude Code w Rust, brew install, much faster",
+            "desc_pl": "JCode — jak Claude Code ale written w Rust, much faster. 'Main delay nie z harness ale z model — send request przez network to cloud, wait for response'. Switching context faster bo Rust. Easy start: brew install jcode. Połączyć z repo, uruchomić.",
+            "desc_en": "JCode — like Claude Code but written in Rust, much faster. 'Main delay not from harness but from model — send request via network to cloud, wait for response'. Switching context faster because Rust. Easy start: brew install jcode. Connect to repo, run.",
+            "tags": [
+              "jcode",
+              "rust",
+              "claude-code",
+              "faster"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-jcode-rust"
+          },
+          {
+            "title": "Topcode — full-stack Rust web framework (Tokio creator)",
+            "desc_pl": "Topcode — system od developers of Tokyo (Tokio creator). Full-stack Rust web framework. Opinionated, batteries included. Server-side rendering + lightweight client reactivity + WebAssembly compilation (run w browser). Server-side + browser-side — wszystko w Rust.",
+            "desc_en": "Topcode — system from developers of Tokyo (Tokio creator). Full-stack Rust web framework. Opinionated, batteries included. Server-side rendering + lightweight client reactivity + WebAssembly compilation (run in browser). Server-side + browser-side — everything in Rust.",
+            "tags": [
+              "topcode",
+              "rust",
+              "web-framework",
+              "wasm",
+              "tokio"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-topcode-rust-web"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "News i wydarzenia",
+        "title_en": "News and events",
+        "cards": [
+          {
+            "title": "Government shift C/C++ → Rust — federal directives, Google 76%→20%",
+            "desc_pl": "Government i tech giants (Microsoft, Google) shifting z C/C++ to Rust to eliminate memory safety vulnerabilities. Federal directives require critical software providers to publish plans moving away from memory-unsafe languages. Google reduced Android memory vulnerabilities 76% → 20% by writing all new code in Rust. 'Everybody is switching to Rust'. Trend started 2 years ago.",
+            "desc_en": "Government and tech giants (Microsoft, Google) shifting from C/C++ to Rust to eliminate memory safety vulnerabilities. Federal directives require critical software providers to publish plans moving away from memory-unsafe languages. Google reduced Android memory vulnerabilities 76% → 20% by writing all new code in Rust. 'Everybody is switching to Rust'. Trend started 2 years ago.",
+            "tags": [
+              "rust",
+              "government",
+              "memory-safety",
+              "google",
+              "microsoft",
+              "trend"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-rust-shift-government"
+          },
+          {
+            "title": "DuckDB, Snowflake, Lightream — SQL alternatives for analytics",
+            "desc_pl": "DuckDB — kind of like pandas, SQL database as module for analytics. Snowflake — huge cloud database, expensive. Lightream — solves SQLite single machine risk by continuous streaming right-ahead logs, becomes distributed. Cloud scaling: DuckLake, MotherDuck — serverless pay-per-second cloud analytics. 'You don't need Snowflake — much lighter, faster, cheaper solutions for most use cases'.",
+            "desc_en": "DuckDB — kind of like pandas, SQL database as module for analytics. Snowflake — huge cloud database, expensive. Lightream — solves SQLite single machine risk by continuous streaming right-ahead logs, becomes distributed. Cloud scaling: DuckLake, MotherDuck — serverless pay-per-second cloud analytics. 'You don't need Snowflake — much lighter, faster, cheaper solutions for most use cases'.",
+            "tags": [
+              "duckdb",
+              "snowflake",
+              "lightream",
+              "analytics",
+              "sql"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-duckdb-snowflake-lightream"
+          },
+          {
+            "title": "Lada 2.2 Flash — 103B params diffusion MoE, 128K context",
+            "desc_pl": "Lada 2.2 Flash — open-source diffusion model, 103 billion parameters. Mixture of experts diffusion. 128K token context. Pretty fast. 'Requires a lot of memory — cannot really run locally'. Trend: diffusion models coraz większe.",
+            "desc_en": "Lada 2.2 Flash — open-source diffusion model, 103 billion parameters. Mixture of experts diffusion. 128K token context. Pretty fast. 'Requires a lot of memory — cannot really run locally'. Trend: diffusion models increasingly large.",
+            "tags": [
+              "lada",
+              "diffusion",
+              "103b",
+              "moe",
+              "open-source"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-lada-22-flash"
+          },
+          {
+            "title": "Tencent Hierra 1.0 — research agent, recursive self-improvement",
+            "desc_pl": "Tencent (Chinese huge company) Hierra 1.0 — research agent. Recursive self-improvement on engineering tasks. 'Common thing research recursive'. Tencent enters agent race z RSI focus.",
+            "desc_en": "Tencent (Chinese huge company) Hierra 1.0 — research agent. Recursive self-improvement on engineering tasks. 'Common thing research recursive'. Tencent enters agent race with RSI focus.",
+            "tags": [
+              "tencent",
+              "hierra",
+              "rsi",
+              "agent",
+              "research"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-tencent-hierra"
+          },
+          {
+            "title": "GigaToken — fast open-source tokenizer, 1000x faster than industry",
+            "desc_pl": "GigaToken — fast open-source tokenizer. 1000x faster than industry standard. Trend: optymalizacja infrastruktury AI — nie tylko modele ale też narzędzia dookoła.",
+            "desc_en": "GigaToken — fast open-source tokenizer. 1000x faster than industry standard. Trend: AI infrastructure optimization — not only models but also surrounding tools.",
+            "tags": [
+              "gigatoken",
+              "tokenizer",
+              "open-source",
+              "performance"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-gigatoken"
+          },
+          {
+            "title": "Layoffs July 2026 — kontynuacja trendu",
+            "desc_pl": "Layoffs w July 2026 — kontynuacja trendu z poprzednich miesięcy. AI zastępuje rutynowe pozycje. Miesięczne zestawienie.",
+            "desc_en": "Layoffs in July 2026 — continuation of trend from previous months. AI replacing routine positions. Monthly summary.",
+            "tags": [
+              "layoffs",
+              "july-2026",
+              "trend",
+              "jobs"
+            ],
+            "date": "2026-07-30",
+            "links": [],
+            "id": "card-ep-2026-07-31-layoffs-july"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "ep-2026-07-24",
     "date": "2026-07-24",
     "title_pl": "Poolside 118B, Gemini Flash 3.6, Claude skill recording, Hugging Face hack, Buzz open-source Slack",
