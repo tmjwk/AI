@@ -1,10 +1,10 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-07-31 19:23:56 UTC
+// Generated: 2026-07-31 19:39:22 UTC
 // Total events: 210, months: 2
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-07-31 19:23:56 UTC",
+    "generated": "2026-07-31 19:39:22 UTC",
     "total_events": 210,
     "total_months": 2
   },
@@ -78,11 +78,11 @@ const TRENDS = {
           5
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           5
         ],
         [
-          "GPT 5.6",
+          "GPT 5",
           5
         ],
         [
@@ -117,11 +117,11 @@ const TRENDS = {
           3
         ],
         [
-          "OpenAI",
+          "Alibaba",
           2
         ],
         [
-          "Alibaba",
+          "OpenAI",
           2
         ],
         [
@@ -155,19 +155,19 @@ const TRENDS = {
       ],
       "top_models": [
         [
-          "GPT-5.6",
-          1
-        ],
-        [
           "GPT-5",
           1
         ],
         [
-          "GPT 5",
+          "GPT-5.6",
           1
         ],
         [
           "GPT 5.6",
+          1
+        ],
+        [
+          "GPT 5",
           1
         ],
         [
@@ -324,11 +324,11 @@ const TRENDS = {
         6
       ],
       [
-        "GPT 5",
+        "GPT 5.6",
         6
       ],
       [
-        "GPT 5.6",
+        "GPT 5",
         6
       ],
       [
@@ -372,7 +372,7 @@ const TRENDS = {
         2
       ],
       [
-        "GPT-5.6",
+        "GPT-5",
         2
       ]
     ],

@@ -151,7 +151,8 @@ const episodes = [
             ],
             "id": "card-ep-2026-07-31-cost-per-intelligence"
           }
-        ]
+        ],
+        "icon": "📋"
       },
       {
         "type": "cards",
@@ -279,7 +280,8 @@ const episodes = [
             ],
             "id": "card-ep-2026-07-31-sakana-fugaku-beats-fable"
           }
-        ]
+        ],
+        "icon": "📋"
       },
       {
         "type": "cards",
@@ -301,7 +303,8 @@ const episodes = [
             "links": [],
             "id": "card-ep-2026-07-31-openai-9-days-undetected"
           }
-        ]
+        ],
+        "icon": "📋"
       },
       {
         "type": "cards",
@@ -394,7 +397,8 @@ const episodes = [
             "links": [],
             "id": "card-ep-2026-07-31-tasklet-startup"
           }
-        ]
+        ],
+        "icon": "📋"
       },
       {
         "type": "cards",
@@ -448,7 +452,8 @@ const episodes = [
             ],
             "id": "card-ep-2026-07-31-openrouter-runway"
           }
-        ]
+        ],
+        "icon": "📋"
       },
       {
         "type": "cards",
@@ -528,7 +533,8 @@ const episodes = [
             "links": [],
             "id": "card-ep-2026-07-31-topcode-rust-web"
           }
-        ]
+        ],
+        "icon": "📋"
       },
       {
         "type": "cards",
@@ -624,7 +630,8 @@ const episodes = [
             "links": [],
             "id": "card-ep-2026-07-31-layoffs-july"
           }
-        ]
+        ],
+        "icon": "📋"
       }
     ]
   },
@@ -760,7 +767,8 @@ const episodes = [
             ],
             "id": "card-ep-2026-07-24-cost-per-intelligence"
           }
-        ]
+        ],
+        "icon": "📋"
       },
       {
         "type": "cards",
@@ -914,7 +922,8 @@ const episodes = [
             ],
             "id": "card-ep-2026-07-24-google-ai-mode-search"
           }
-        ]
+        ],
+        "icon": "📋"
       },
       {
         "type": "cards",
@@ -951,7 +960,8 @@ const episodes = [
             "links": [],
             "id": "card-ep-2026-07-24-hf-irony-chinese-save"
           }
-        ]
+        ],
+        "icon": "📋"
       },
       {
         "type": "cards",
@@ -993,7 +1003,8 @@ const episodes = [
             "links": [],
             "id": "card-ep-2026-07-24-layoffs-july-2026"
           }
-        ]
+        ],
+        "icon": "📋"
       },
       {
         "type": "cards",
@@ -1085,7 +1096,8 @@ const episodes = [
             "links": [],
             "id": "card-ep-2026-07-24-slack-tight-context"
           }
-        ]
+        ],
+        "icon": "📋"
       },
       {
         "type": "cards",
@@ -1143,7 +1155,8 @@ const episodes = [
             "links": [],
             "id": "card-ep-2026-07-24-governments-linux-trend"
           }
-        ]
+        ],
+        "icon": "📋"
       }
     ]
   },

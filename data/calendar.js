@@ -2,7 +2,7 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-31 19:23:56 UTC
+// Generated: 2026-07-31 19:39:22 UTC
 
 const CALENDAR = [
   {
