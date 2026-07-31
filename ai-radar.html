@@ -64,6 +64,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .sec-t .icon{font-size:var(--fs-xl)}
 .card{background:var(--card);border:1px solid var(--bdl);border-radius:8px;padding:14px;margin-bottom:10px;transition:border-color .15s}
 .card:hover{border-color:var(--bd)}
+.card-desc.collapsible{max-height:4.5em;overflow:hidden;position:relative;margin-bottom:0}
+.card-desc.collapsible::after{content:"";position:absolute;bottom:0;left:0;right:0;height:1.5em;background:linear-gradient(transparent,var(--card))}
+.card.expanded .card-desc{max-height:none}
+.card.expanded .card-desc::after{display:none}
+.card-expand-btn{background:none;border:none;color:var(--ac);cursor:pointer;font-size:var(--fs-s);padding:4px 0;margin-top:4px;font-weight:600}
+.card-expand-btn:hover{text-decoration:underline}
 .card h3{font-size:var(--fs-l);margin:0 0 6px 0;color:var(--hp);font-weight:600;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
 .card p{font-size:var(--fs-m);color:var(--hm);margin:0 0 4px 0}
 .card .tag{display:inline-block;padding:2px 8px;border-radius:10px;font-size:var(--fs-xs);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-right:4px}
@@ -129,7 +135,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .episode .e-meta{font-size:var(--fs-s);color:var(--hm);display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
 .episode .e-meta .m-item{display:flex;align-items:center;gap:5px}
 .episode .e-meta .m-item .mv{color:var(--hs);font-weight:600}
-.ep-collapse{display:none}
+.ep-collapse{display:block}
 .ep-old{position:relative}
 .ep-old.open+.ep-collapse{display:block}
 .ep-old .ep-toggle-btn{position:absolute;top:10px;right:10px;z-index:10;background:var(--bg);border:1px solid var(--ba);border-radius:6px;padding:4px 12px;cursor:pointer;font-size:var(--fs-s);color:var(--ba);font-weight:600;transition:all .15s;white-space:nowrap}
@@ -150,7 +156,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v8.9.50-101-g53335bf) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v8.9.50-103-g8ce32b6) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -276,7 +282,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 
 </div>
-<script src="data/radar.js?v=20260731195827" onerror="dataLoadFailed()"></script>
+<script src="data/radar.js?v=20260731200548" onerror="dataLoadFailed()"></script>
 <script>
 function dataLoadFailed(){var c=document.getElementById('episodes');if(c)c.innerHTML='<div class="nr" style="text-align:center;padding:40px 20px;color:var(--hm)"><div style="font-size:48px;margin-bottom:16px">⚠</div><h2 style="color:var(--hp);margin-bottom:8px"><span class="pl">Nie udało się załadować danych</span><span class="en">Failed to load data</span></h2><p style="margin-bottom:16px"><span class="pl">Sprawdź połączenie internetowe i odśwież stronę. Jeśli masz wolny internet — poczekaj dłużej lub kliknij Odśwież.</span><span class="en">Check your internet connection and refresh. If you have slow internet — wait longer or click Refresh.</span></p><button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 20px;border-radius:6px;cursor:pointer;font-weight:600"><span class="pl">Odśwież stronę</span><span class="en">Refresh page</span></button></div>';console.error('Failed to load data for ai-radar.html');}
 </script>
@@ -325,7 +331,9 @@ function renderCard(card){
     ? `<ul class="list" style="margin-top:8px">${card.list.map(it=>`<li><span class="dot dot-${it.dot_color}"></span> <span class="pl">${it.html_pl||''}</span><span class="en">${it.html_en||it.html_pl||''}</span></li>`).join('')}</ul>`
     : '';
   const styleAttr = card.full_width ? ' style="margin-top:10px"' : '';
-  const descHtml = (card.desc_pl || card.desc_en) ? `<p><span class="pl">${card.desc_pl||''}</span><span class="en">${card.desc_en||card.desc_pl||''}</span></p>` : '';
+  const descText = lang==='en' ? (card.desc_en || card.desc_pl || '') : (card.desc_pl || card.desc_en || '');
+  const isLong = descText.length > 200;
+  const descHtml = descText ? `<p class="card-desc${isLong?' collapsible':''}"><span class="pl">${card.desc_pl||''}</span><span class="en">${card.desc_en||card.desc_pl||''}</span></p>${isLong?`<button class="card-expand-btn" onclick="var c=this.closest('.card');c.classList.toggle('expanded');this.textContent=c.classList.contains('expanded')?'▲ '+(lang==='en'?'Less':'Mniej'):'▼ '+(lang==='en'?'More':'Więcej')">▼ ${lang==='en'?'More':'Więcej'}</button>`:''}` : '';
   // Badge NOWE tylko dla kart z aktualnego tygodnia (7 dni)
   const isNew = card.date && (Date.now() - new Date(card.date).getTime()) < 7 * 24 * 60 * 60 * 1000;
   const newBadge = isNew ? ` <span style="background:var(--ac);color:#000;padding:1px 6px;border-radius:3px;font-size:var(--fs-xs);font-weight:700;margin-left:6px">NOWE</span>` : '';
@@ -504,7 +512,9 @@ function renderEdition(sorted, idx){
   // Edition header
   var h = '<div class="edition-header">';
   h += '<h2>📰 '+esc(title)+'</h2>';
-  h += '<div class="ed-meta">📅 '+ep.date+' • YT: <a href="https://www.youtube.com/watch?v='+ep.yt+'" target="_blank" rel="noopener" style="color:var(--ac)">'+ep.yt+'</a></div>';
+  var ytId = ep.yt || '';
+  var ytHtml = ytId ? ' • YT: <a href="https://www.youtube.com/watch?v='+ytId+'" target="_blank" rel="noopener" style="color:var(--ac)">'+ytId+'</a>' : '';
+  h += '<div class="ed-meta">📅 '+ep.date+ytHtml+'</div>';
   // Nav buttons
   h += '<div class="edition-nav">';
   h += '<button onclick="renderEdition(window.__sorted, '+(idx+1)+')" '+(idx >= sorted.length-1 ? 'disabled' : '')+'>← '+(lang==='en'?'Older':'Starsza')+'</button>';
@@ -589,7 +599,7 @@ function handleHashExpand(){
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v8.9.50-101-g53335bf · Deploy: <span id="deploy-ts">2026-07-31 19:58:29 UTC</span> · <span id="deploy-hash">v81ab605a</span>
+v8.9.50-103-g8ce32b6 · Deploy: <span id="deploy-ts">2026-07-31 20:05:50 UTC</span> · <span id="deploy-hash">v06258d7d</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
