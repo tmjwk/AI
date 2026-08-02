@@ -2,9 +2,159 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-07-31 19:39:22 UTC
+// Generated: 2026-08-02 11:16:20 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-01",
+    "type": "ai_search",
+    "title_pl": "ID V2V — Netflix open-source video style transfer — Netflix",
+    "title_en": "ID V2V — Netflix open-source video style transfer — Netflix",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##31-1"
+  },
+  {
+    "date": "2026-08-01",
+    "type": "ai_search",
+    "title_pl": "Crisper Whisper 2 — open-source transcription, word-level timing — Nyra Labs",
+    "title_en": "Crisper Whisper 2 — open-source transcription, word-level timing — Nyra Labs",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "TTS",
+    "meta_en": "TTS",
+    "num": "##31-1"
+  },
+  {
+    "date": "2026-08-01",
+    "type": "ai_search",
+    "title_pl": "Redesign — flat image into editable layers (Figma/Photoshop) — Open-source",
+    "title_en": "Redesign — flat image into editable layers (Figma/Photoshop) — Open-source",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##31-1"
+  },
+  {
+    "date": "2026-08-01",
+    "type": "ai_search",
+    "title_pl": "Instella — AMD open-source MoE, trained on AMD Instinct (no NVIDIA) — AMD",
+    "title_en": "Instella — AMD open-source MoE, trained on AMD Instinct (no NVIDIA) — AMD",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##31-1"
+  },
+  {
+    "date": "2026-08-01",
+    "type": "ai_search",
+    "title_pl": "Ideogram Object Remover — brush over, auto-remove (lowest error rate) — Ideogram",
+    "title_en": "Ideogram Object Remover — brush over, auto-remove (lowest error rate) — Ideogram",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##31-1"
+  },
+  {
+    "date": "2026-08-01",
+    "type": "ai_search",
+    "title_pl": "Higgsfield — sponsor, Seed Dance 2.0 4K, marketing + cinema studio — Higgsfield",
+    "title_en": "Higgsfield — sponsor, Seed Dance 2.0 4K, marketing + cinema studio — Higgsfield",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##31-1"
+  },
+  {
+    "date": "2026-08-01",
+    "type": "ai_search",
+    "title_pl": "Inkling Small — Thinking Machines 276B, omnimodal (text+audio+image+video) — Thinking Machines",
+    "title_en": "Inkling Small — Thinking Machines 276B, omnimodal (text+audio+image+video) — Thinking Machines",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "Multimodal",
+    "meta_en": "Multimodal",
+    "num": "##31-1"
+  },
+  {
+    "date": "2026-08-01",
+    "type": "ai_search",
+    "title_pl": "Prism — robotics algorithm, multi-sensor movement control — Open-source",
+    "title_en": "Prism — robotics algorithm, multi-sensor movement control — Open-source",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##31-1"
+  },
+  {
+    "date": "2026-08-01",
+    "type": "ai_search",
+    "title_pl": "Seedance 2.5 — ByteDance best video model, 30s, high-action scenes — ByteDance",
+    "title_en": "Seedance 2.5 — ByteDance best video model, 30s, high-action scenes — ByteDance",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##31-1"
+  },
+  {
+    "date": "2026-08-01",
+    "type": "ai_search",
+    "title_pl": "Minimax H3 — rebranded Hailuo, 2K video, open source next week — MiniMax",
+    "title_en": "Minimax H3 — rebranded Hailuo, 2K video, open source next week — MiniMax",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##31-1"
+  },
+  {
+    "date": "2026-08-01",
+    "type": "ai_search",
+    "title_pl": "Gemini Robotics 2 — Google DeepMind, feet to fingertips, 3 models — Google",
+    "title_en": "Gemini Robotics 2 — Google DeepMind, feet to fingertips, 3 models — Google",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##31-1"
+  },
+  {
+    "date": "2026-08-01",
+    "type": "ai_search",
+    "title_pl": "Wonder — Adobe video world model, interactive 3D exploration — Adobe",
+    "title_en": "Wonder — Adobe video world model, interactive 3D exploration — Adobe",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "World Models",
+    "meta_en": "World Models",
+    "num": "##31-1"
+  },
+  {
+    "date": "2026-08-01",
+    "type": "ai_search",
+    "title_pl": "Gemini Voice Typing — Mac OS, hold Fn key, AI dictation — Google",
+    "title_en": "Gemini Voice Typing — Mac OS, hold Fn key, AI dictation — Google",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "TTS",
+    "meta_en": "TTS",
+    "num": "##31-1"
+  },
+  {
+    "date": "2026-08-01",
+    "type": "ai_search",
+    "title_pl": "Phi Zero — video world model, 'physical language' reasoning — Open-source",
+    "title_en": "Phi Zero — video world model, 'physical language' reasoning — Open-source",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "World Models",
+    "meta_en": "World Models",
+    "num": "##31-1"
+  },
+  {
+    "date": "2026-07-31",
+    "type": "ai_search",
+    "title_pl": "DeepSeek V4 Flash 0731 — as good as GLM 5.2, 100x cheaper than Opus — DeepSeek",
+    "title_en": "DeepSeek V4 Flash 0731 — as good as GLM 5.2, 100x cheaper than Opus — DeepSeek",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##31-1"
+  },
   {
     "date": "2026-07-30",
     "type": "lev",
@@ -284,6 +434,16 @@ const CALENDAR = [
     "meta_pl": "OpenAI agent escape investigat",
     "meta_en": "OpenAI agent escape investigat",
     "num": "ep-2026-07-31"
+  },
+  {
+    "date": "2026-07-27",
+    "type": "ai_search",
+    "title_pl": "Kimi K3 open sourced — 2.8T MoE, 104B active, 1.56TB — Moonshot AI",
+    "title_en": "Kimi K3 open sourced — 2.8T MoE, 104B active, 1.56TB — Moonshot AI",
+    "link": "ai-releases.html###31-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##31-1"
   },
   {
     "date": "2026-07-27",

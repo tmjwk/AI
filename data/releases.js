@@ -1,6 +1,264 @@
 // AI Releases — auto-generated from releases.json
 const RELEASES = [
   {
+    "num": "##31-1",
+    "date": "2026-08-02",
+    "title_pl": "DeepSeek V4 Flash 0731, Seedance 2.5, Minimax H3, Gemini Robotics 2, AMD Instella — AI News",
+    "title_en": "DeepSeek V4 Flash 0731, Seedance 2.5, Minimax H3, Gemini Robotics 2, AMD Instella — AI News",
+    "yt": "OrcBSpADCGk",
+    "collapsed": false,
+    "items": [
+      {
+        "title_pl": "ID V2V — Netflix open-source video style transfer",
+        "title_en": "ID V2V — Netflix open-source video style transfer",
+        "vendor": "Netflix",
+        "category_pl": "Video Generation",
+        "category_en": "Video Generation",
+        "date": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "Netflix releases ID V2V — open-source AI do video style transfer. Zmień style sceny bez wpływu na identity/movement postaci. Edit one key frame → system spread style across entire video. 720p, 80GB model. GitHub download + run locally.",
+        "review_en": "Netflix releases ID V2V — open-source AI for video style transfer. Change scene style without affecting character identity/movement. Edit one key frame → system spreads style across entire video. 720p, 80GB model. GitHub download + run locally.",
+        "links": [
+          {
+            "label": "ID V2V",
+            "url": "https://eyeline-labs.github.io/ID-V2V/"
+          }
+        ]
+      },
+      {
+        "title_pl": "Crisper Whisper 2 — open-source transcription, word-level timing",
+        "title_en": "Crisper Whisper 2 — open-source transcription, word-level timing",
+        "vendor": "Nyra Labs",
+        "category_pl": "TTS",
+        "category_en": "TTS",
+        "date": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "Crisper Whisper 2 — open-source transcription tool. Verbatim mode (stutters, hesitations, laughter) lub intended mode (polished transcript). Word-level timing. 4 models: 0.2B (<500MB, no GPU needed) to 2B (3GB). Better than 11 Labs on self-made benchmarks. Free HuggingFace space.",
+        "review_en": "Crisper Whisper 2 — open-source transcription tool. Verbatim mode (stutters, hesitations, laughter) or intended mode (polished transcript). Word-level timing. 4 models: 0.2B (<500MB, no GPU needed) to 2B (3GB). Better than 11 Labs on self-made benchmarks. Free HuggingFace space.",
+        "links": [
+          {
+            "label": "Crisper Whisper",
+            "url": "https://nyra-labs.com/crisperwhisper"
+          }
+        ]
+      },
+      {
+        "title_pl": "DeepSeek V4 Flash 0731 — as good as GLM 5.2, 100x cheaper than Opus",
+        "title_en": "DeepSeek V4 Flash 0731 — as good as GLM 5.2, 100x cheaper than Opus",
+        "vendor": "DeepSeek",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-07-31",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "DeepSeek V4 Flash 0731 — newest version. Performs as good as GLM 5.2 i Opus 4.8 ale 70% mniejszy i 100x tańszy niż Claude Opus. 3 cents/M tokens — cheapest frontier intelligence. DSpark architecture breakthrough. 167GB, fits on 1 DGX Spark. Unsloth 1-bit: 82.5GB. Beats previous V4 Pro by 10 points. Agentic coding, software engineering, cyber security benchmarks.",
+        "review_en": "DeepSeek V4 Flash 0731 — newest version. Performs as good as GLM 5.2 and Opus 4.8 but 70% smaller and 100x cheaper than Claude Opus. 3 cents/M tokens — cheapest frontier intelligence. DSpark architecture breakthrough. 167GB, fits on 1 DGX Spark. Unsloth 1-bit: 82.5GB. Beats previous V4 Pro by 10 points. Agentic coding, software engineering, cyber security benchmarks.",
+        "links": [
+          {
+            "label": "DeepSeek V4 Flash 0731",
+            "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
+          }
+        ]
+      },
+      {
+        "title_pl": "Redesign — flat image into editable layers (Figma/Photoshop)",
+        "title_en": "Redesign — flat image into editable layers (Figma/Photoshop)",
+        "vendor": "Open-source",
+        "category_pl": "Image Generation",
+        "category_en": "Image Generation",
+        "date": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "Redesign — AI turns flat image into layers. Edit each component, recolor, reposition, resize. Think screenshot → Figma/Photoshop project. Uses PaddleOCR, Qwen Image Layered, Dino, SAM2. <4GB. Requires OpenAI API key (can swap for local model). GitHub download.",
+        "review_en": "Redesign — AI turns flat image into layers. Edit each component, recolor, reposition, resize. Think screenshot → Figma/Photoshop project. Uses PaddleOCR, Qwen Image Layered, Dino, SAM2. <4GB. Requires OpenAI API key (can swap for local model). GitHub download.",
+        "links": [
+          {
+            "label": "Redesign",
+            "url": "https://github.com/jintae-00/ReDesign"
+          }
+        ]
+      },
+      {
+        "title_pl": "Kimi K3 open sourced — 2.8T MoE, 104B active, 1.56TB",
+        "title_en": "Kimi K3 open sourced — 2.8T MoE, 104B active, 1.56TB",
+        "vendor": "Moonshot AI",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-07-27",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "Kimi K3 full model released on HuggingFace (27.07 jak zapowiedziano). 2.8T MoE, 104B active. Kimi Delta attention + attention residuals. Moonvit vision encoder — vision capabilities baked in. 1.56TB full, Unsloth 1-bit: 594GB. Stack multiple enterprise GPUs. Most powerful open-source model right now.",
+        "review_en": "Kimi K3 full model released on HuggingFace (July 27 as announced). 2.8T MoE, 104B active. Kimi Delta attention + attention residuals. Moonvit vision encoder — vision capabilities baked in. 1.56TB full, Unsloth 1-bit: 594GB. Stack multiple enterprise GPUs. Most powerful open-source model right now.",
+        "links": [
+          {
+            "label": "Kimi K3",
+            "url": "https://huggingface.co/moonshotai/Kimi-K3"
+          }
+        ]
+      },
+      {
+        "title_pl": "Instella — AMD open-source MoE, trained on AMD Instinct (no NVIDIA)",
+        "title_en": "Instella — AMD open-source MoE, trained on AMD Instinct (no NVIDIA)",
+        "vendor": "AMD",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "AMD Instella — open-source MoE trained entirely on AMD Instinct + ROCm software stack (no NVIDIA CUDA). 16B total, 2.8B active. Beats Gemma 4 E4B i Qwen 3.5 smaller. Multi-head latent attention + far skip collective (overlap communication/computation). Checkpoints from pre-training, mid-training + training recipes + code. Think version 32GB.",
+        "review_en": "AMD Instella — open-source MoE trained entirely on AMD Instinct + ROCm software stack (no NVIDIA CUDA). 16B total, 2.8B active. Beats Gemma 4 E4B and Qwen 3.5 smaller. Multi-head latent attention + far skip collective (overlap communication/computation). Checkpoints from pre-training, mid-training + training recipes + code. Think version 32GB.",
+        "links": [
+          {
+            "label": "Instella",
+            "url": "https://rocm.blogs.amd.com/artificial-intelligence/instella-moe/README.html"
+          }
+        ]
+      },
+      {
+        "title_pl": "Ideogram Object Remover — brush over, auto-remove (lowest error rate)",
+        "title_en": "Ideogram Object Remover — brush over, auto-remove (lowest error rate)",
+        "vendor": "Ideogram",
+        "category_pl": "Image Generation",
+        "category_en": "Image Generation",
+        "date": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "Ideogram Object Remover — brush over object, auto-highlight + remove. Preserves shadows, reflections, overlapping objects. Lowest error rate vs Nano Banana 2 i GPT image 2 medium on removal bench. Free online, daily credits.",
+        "review_en": "Ideogram Object Remover — brush over object, auto-highlight + remove. Preserves shadows, reflections, overlapping objects. Lowest error rate vs Nano Banana 2 and GPT image 2 medium on removal bench. Free online, daily credits.",
+        "links": [
+          {
+            "label": "Ideogram Object Remover",
+            "url": "https://ideogram.ai/apps/object-remover"
+          }
+        ]
+      },
+      {
+        "title_pl": "Higgsfield — sponsor, Seed Dance 2.0 4K, marketing + cinema studio",
+        "title_en": "Higgsfield — sponsor, Seed Dance 2.0 4K, marketing + cinema studio",
+        "vendor": "Higgsfield",
+        "category_pl": "Video Generation",
+        "category_en": "Video Generation",
+        "date": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "Higgsfield — sponsor AI Search. All-in-one AI creation platform. Seed Dance 2.0 4K available, Seed Dance 2.5 coming soon. Marketing Studio (UGC, tutorials, unboxings, product reviews). Cinema Studio (end-to-end filmmaking pipeline, scene planning, camera control, character consistency).",
+        "review_en": "Higgsfield — sponsor of AI Search. All-in-one AI creation platform. Seed Dance 2.0 4K available, Seed Dance 2.5 coming soon. Marketing Studio (UGC, tutorials, unboxings, product reviews). Cinema Studio (end-to-end filmmaking pipeline, scene planning, camera control, character consistency)."
+      },
+      {
+        "title_pl": "Inkling Small — Thinking Machines 276B, omnimodal (text+audio+image+video)",
+        "title_en": "Inkling Small — Thinking Machines 276B, omnimodal (text+audio+image+video)",
+        "vendor": "Thinking Machines",
+        "category_pl": "Multimodal",
+        "category_en": "Multimodal",
+        "date": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "Thinking Machines (Mira Murati, ex-OpenAI CTO) releases Inkling Small — omnimodal model (text, audio, images, video). 276B total, 12B active. Quarter size of full Inkling. In some cases higher performance niż full model z less compute. 532GB. 1 point below full Inkling na artificial analysis. Main advantage: audio capabilities. Behind DeepSeek V4 Flash in intelligence.",
+        "review_en": "Thinking Machines (Mira Murati, ex-OpenAI CTO) releases Inkling Small — omnimodal model (text, audio, images, video). 276B total, 12B active. Quarter size of full Inkling. In some cases higher performance than full model with less compute. 532GB. 1 point below full Inkling on artificial analysis. Main advantage: audio capabilities. Behind DeepSeek V4 Flash in intelligence.",
+        "links": [
+          {
+            "label": "Inkling Small",
+            "url": "https://huggingface.co/thinkingmachines/Inkling-Small"
+          }
+        ]
+      },
+      {
+        "title_pl": "Prism — robotics algorithm, multi-sensor movement control",
+        "title_en": "Prism — robotics algorithm, multi-sensor movement control",
+        "vendor": "Open-source",
+        "category_pl": "Humanoid Robots",
+        "category_en": "Humanoid Robots",
+        "date": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "Prism — robotics system. Takes sensor readings, images, instructions → outputs movement actions. Multi-signal: force, velocity, contact, friction, joint angle. Much higher success rate vs other algorithms, especially object manipulation. Lower error rate. Code released.",
+        "review_en": "Prism — robotics system. Takes sensor readings, images, instructions → outputs movement actions. Multi-signal: force, velocity, contact, friction, joint angle. Much higher success rate vs other algorithms, especially object manipulation. Lower error rate. Code released.",
+        "links": [
+          {
+            "label": "Prism",
+            "url": "https://lsh3163.github.io/prism/"
+          }
+        ]
+      },
+      {
+        "title_pl": "Seedance 2.5 — ByteDance best video model, 30s, high-action scenes",
+        "title_en": "Seedance 2.5 — ByteDance best video model, 30s, high-action scenes",
+        "vendor": "ByteDance",
+        "category_pl": "Video Generation",
+        "category_en": "Video Generation",
+        "date": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "ByteDance Seedance 2.5 — probably best video model out there. High-action fight scenes, character consistency. Multimodal: reference videos, 3D scenes, green screen, storyboard input. 30s videos (others max 15-20s). 720p (1080p/4K coming). 50 reference inputs (audio, images, video). $4.60/10s clip (460 credits, $10=1000 credits). API next week. Available on Dreamina (not US yet).",
+        "review_en": "ByteDance Seedance 2.5 — probably best video model out there. High-action fight scenes, character consistency. Multimodal: reference videos, 3D scenes, green screen, storyboard input. 30s videos (others max 15-20s). 720p (1080p/4K coming). 50 reference inputs (audio, images, video). $4.60/10s clip (460 credits, $10=1000 credits). API next week. Available on Dreamina (not US yet).",
+        "links": [
+          {
+            "label": "Seedance 2.5",
+            "url": "https://seed.bytedance.com/en/seedance2_5"
+          }
+        ]
+      },
+      {
+        "title_pl": "Minimax H3 — rebranded Hailuo, 2K video, open source next week",
+        "title_en": "Minimax H3 — rebranded Hailuo, 2K video, open source next week",
+        "vendor": "MiniMax",
+        "category_pl": "Video Generation",
+        "category_en": "Video Generation",
+        "date": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "MiniMax H3 — rebranded from Hailuo. Super powerful multimodal: text, images, video, audio. 2K resolution videos. Input 2 images → trailer. Storyboard + logo → ad. Green screen + background. Audio + K-pop image → MV. $1.20/10s (120 credits) — 3x cheaper than Seedance 2.5. 15s max. Open source next week! 'Best open video model out there' once released.",
+        "review_en": "MiniMax H3 — rebranded from Hailuo. Super powerful multimodal: text, images, video, audio. 2K resolution videos. Input 2 images → trailer. Storyboard + logo → ad. Green screen + background. Audio + K-pop image → MV. $1.20/10s (120 credits) — 3x cheaper than Seedance 2.5. 15s max. Open source next week! 'Best open video model out there' once released.",
+        "links": [
+          {
+            "label": "MiniMax H3",
+            "url": "https://www.minimax.io/blog/minimax-h3"
+          }
+        ]
+      },
+      {
+        "title_pl": "Gemini Robotics 2 — Google DeepMind, feet to fingertips, 3 models",
+        "title_en": "Gemini Robotics 2 — Google DeepMind, feet to fingertips, 3 models",
+        "vendor": "Google",
+        "category_pl": "Humanoid Robots",
+        "category_en": "Humanoid Robots",
+        "date": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "Google DeepMind Gemini Robotics 2 — new family. Feet to fingertips: walking, balancing, reaching, grasping, reasoning in one continuous sequence. 3 models: (1) Gemini Robotics 2 — VLA (vision-language-action), (2) Gemini Robotics ER2 — higher-level reasoning, environment understanding, task planning, failure correction, multi-robot coordination, (3) Gemini Robotics on-device 2 — smaller, runs locally offline. Apollo 2 humanoid robot. Better hand control: unscrewing light bulb, tying trash bag, sealing Ziploc. AI Studio + trusted tester program.",
+        "review_en": "Google DeepMind Gemini Robotics 2 — new family. Feet to fingertips: walking, balancing, reaching, grasping, reasoning in one continuous sequence. 3 models: (1) Gemini Robotics 2 — VLA (vision-language-action), (2) Gemini Robotics ER2 — higher-level reasoning, environment understanding, task planning, failure correction, multi-robot coordination, (3) Gemini Robotics on-device 2 — smaller, runs locally offline. Apollo 2 humanoid robot. Better hand control: unscrewing light bulb, tying trash bag, sealing Ziploc. AI Studio + trusted tester program.",
+        "links": [
+          {
+            "label": "Gemini Robotics 2",
+            "url": "https://deepmind.google/models/gemini-robotics/"
+          }
+        ]
+      },
+      {
+        "title_pl": "Wonder — Adobe video world model, interactive 3D exploration",
+        "title_en": "Wonder — Adobe video world model, interactive 3D exploration",
+        "vendor": "Adobe",
+        "category_pl": "World Models",
+        "category_en": "World Models",
+        "date": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "Adobe Wonder — video world model. Generate interactive world, explore in real time, press keys to navigate. Input video → walk around scene in 3D (same movements, different camera perspective). Various environments, characters, art styles. Quality not perfect — noise, artifacts, edge inconsistencies. Code + models coming soon.",
+        "review_en": "Adobe Wonder — video world model. Generate interactive world, explore in real time, press keys to navigate. Input video → walk around scene in 3D (same movements, different camera perspective). Various environments, characters, art styles. Quality not perfect — noise, artifacts, edge inconsistencies. Code + models coming soon."
+      },
+      {
+        "title_pl": "Gemini Voice Typing — Mac OS, hold Fn key, AI dictation",
+        "title_en": "Gemini Voice Typing — Mac OS, hold Fn key, AI dictation",
+        "vendor": "Google",
+        "category_pl": "TTS",
+        "category_en": "TTS",
+        "date": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "Google Gemini Voice Typing — Mac OS only (Windows coming). Hold Fn key, speak naturally into any app. Gemini transcription, removes filler words/mistakes/repeats. Understands self-corrections. Cleans up formatting, punctuation. Inserts text at cursor. Gemini reasoning mode: highlight documents → summarize. Similar to Typeless, WhisperFlow.",
+        "review_en": "Google Gemini Voice Typing — Mac OS only (Windows coming). Hold Fn key, speak naturally into any app. Gemini transcription, removes filler words/mistakes/repeats. Understands self-corrections. Cleans up formatting, punctuation. Inserts text at cursor. Gemini reasoning mode: highlight documents → summarize. Similar to Typeless, WhisperFlow."
+      },
+      {
+        "title_pl": "Phi Zero — video world model, 'physical language' reasoning",
+        "title_en": "Phi Zero — video world model, 'physical language' reasoning",
+        "vendor": "Open-source",
+        "category_pl": "World Models",
+        "category_en": "World Models",
+        "date": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/OrcBSpADCGk/hqdefault.jpg",
+        "review_pl": "Phi Zero — video world model built around 'physical language'. Instead of immediately generating next frames, model first reasons about how everything should move and change physically. Then video generator renders frames. Good at predicting what happens next. Applications: interactive worlds, autonomous driving videos, robot training videos. Outperforms other world models on physical coherence. Code coming soon.",
+        "review_en": "Phi Zero — video world model built around 'physical language'. Instead of immediately generating next frames, model first reasons about how everything should move and change physically. Then video generator renders frames. Good at predicting what happens next. Applications: interactive worlds, autonomous driving videos, robot training videos. Outperforms other world models on physical coherence. Code coming soon."
+      }
+    ]
+  },
+  {
     "num": "##30-1",
     "date": "2026-07-26",
     "title_pl": "Claude Opus 5, GPT 6 hack, Flux 3, Gemini 3.6, Qwen 3.8, Laguna S2.1 — AI News",

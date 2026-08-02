@@ -1,27 +1,70 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-07-31 19:39:22 UTC
-// Total events: 210, months: 2
+// Generated: 2026-08-02 11:16:20 UTC
+// Total events: 226, months: 3
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-07-31 19:39:22 UTC",
-    "total_events": 210,
-    "total_months": 2
+    "generated": "2026-08-02 11:16:20 UTC",
+    "total_events": 226,
+    "total_months": 3
   },
   "months": [
     {
-      "month": "2026-07",
-      "total": 178,
+      "month": "2026-08",
+      "total": 14,
       "by_type": {
+        "ai_search": 14
+      },
+      "top_vendors": [
+        [
+          "Google",
+          2
+        ],
+        [
+          "NVIDIA",
+          1
+        ],
+        [
+          "Higgsfield",
+          1
+        ],
+        [
+          "Thinking Machines",
+          1
+        ],
+        [
+          "PrismML",
+          1
+        ],
+        [
+          "ByteDance",
+          1
+        ],
+        [
+          "MiniMax",
+          1
+        ]
+      ],
+      "top_models": [
+        [
+          "Inkling",
+          1
+        ]
+      ]
+    },
+    {
+      "month": "2026-07",
+      "total": 180,
+      "by_type": {
+        "ai_search": 56,
         "lev": 113,
         "diamandis": 7,
-        "weekly": 4,
-        "ai_search": 54
+        "weekly": 4
       },
       "top_vendors": [
         [
           "Anthropic",
-          32
+          33
         ],
         [
           "OpenAI",
@@ -41,11 +84,11 @@ const TRENDS = {
         ],
         [
           "DeepSeek",
-          7
+          8
         ],
         [
           "Moonshot AI",
-          7
+          8
         ],
         [
           "NVIDIA",
@@ -67,7 +110,7 @@ const TRENDS = {
         ],
         [
           "Kimi K3",
-          6
+          7
         ],
         [
           "Claude Code",
@@ -87,7 +130,7 @@ const TRENDS = {
         ],
         [
           "DeepSeek V4",
-          3
+          4
         ],
         [
           "Claude Fable",
@@ -98,7 +141,7 @@ const TRENDS = {
           3
         ],
         [
-          "Qwen 3",
+          "GLM 5",
           2
         ]
       ]
@@ -117,11 +160,11 @@ const TRENDS = {
           3
         ],
         [
-          "Alibaba",
+          "OpenAI",
           2
         ],
         [
-          "OpenAI",
+          "Alibaba",
           2
         ],
         [
@@ -248,14 +291,14 @@ const TRENDS = {
       "week_label": "2026-W31",
       "week_start": "2026-07-27",
       "week_end": "2026-08-02",
-      "count": 31
+      "count": 47
     }
   ],
   "all_time": {
     "top_vendors": [
       [
         "Anthropic",
-        34
+        35
       ],
       [
         "OpenAI",
@@ -263,7 +306,7 @@ const TRENDS = {
       ],
       [
         "Google",
-        16
+        18
       ],
       [
         "Alibaba",
@@ -275,15 +318,27 @@ const TRENDS = {
       ],
       [
         "DeepSeek",
-        7
+        8
       ],
       [
         "Moonshot AI",
-        7
+        8
       ],
       [
         "NVIDIA",
-        4
+        5
+      ],
+      [
+        "Thinking Machines",
+        3
+      ],
+      [
+        "ByteDance",
+        3
+      ],
+      [
+        "Z.AI",
+        3
       ],
       [
         "Microsoft",
@@ -300,18 +355,6 @@ const TRENDS = {
       [
         "Boston Dynamics",
         3
-      ],
-      [
-        "xAI",
-        3
-      ],
-      [
-        "Poolside AI",
-        2
-      ],
-      [
-        "Z.AI",
-        2
       ]
     ],
     "top_models": [
@@ -321,7 +364,7 @@ const TRENDS = {
       ],
       [
         "Kimi K3",
-        6
+        7
       ],
       [
         "GPT 5.6",
@@ -341,7 +384,7 @@ const TRENDS = {
       ],
       [
         "DeepSeek V4",
-        3
+        4
       ],
       [
         "Claude Fable",
@@ -350,6 +393,14 @@ const TRENDS = {
       [
         "Muse Spark",
         3
+      ],
+      [
+        "Inkling",
+        2
+      ],
+      [
+        "GLM 5",
+        2
       ],
       [
         "Qwen 3",
@@ -366,21 +417,13 @@ const TRENDS = {
       [
         "Wan Streamer",
         2
-      ],
-      [
-        "Wan Wan",
-        2
-      ],
-      [
-        "GPT-5",
-        2
       ]
     ],
     "by_type": {
+      "ai_search": 75,
       "lev": 139,
       "diamandis": 8,
-      "weekly": 4,
-      "ai_search": 59
+      "weekly": 4
     }
   }
 };

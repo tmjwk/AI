@@ -2,10 +2,179 @@
 // Schema: {r, n, v, d, o, c, desc_pl, desc_en, b_pl, b_en}
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
-const TODAY = "2026-07-26";
+const TODAY = "2026-08-02";
 const NEW_DAYS = 14;
 
 const M = [
+  {
+    "n": "Ideogram Object Remover",
+    "v": "Ideogram",
+    "c": "Image Generation",
+    "d": "2026-08-01",
+    "o": 0,
+    "r": 13,
+    "is_new": true,
+    "desc_pl": "Ideogram Object Remover — brush over object, auto-remove. Lowest error rate vs Nano Banana 2, GPT image 2. Preserves shadows, reflections.",
+    "desc_en": "Ideogram Object Remover — brush over object, auto-remove. Lowest error rate vs Nano Banana 2, GPT image 2. Preserves shadows, reflections.",
+    "b_pl": "Free online, daily credits.",
+    "b_en": "Free online, daily credits."
+  },
+  {
+    "n": "Phi Zero",
+    "v": "Open-source",
+    "c": "World Models",
+    "d": "2026-08-01",
+    "o": 1,
+    "r": 9,
+    "is_new": true,
+    "desc_pl": "Phi Zero — video world model z 'physical language'. Model reasons about physical movement before generating frames. Interactive worlds, autonomous driving, robot training. Outperforms other world models.",
+    "desc_en": "Phi Zero — video world model with 'physical language'. Model reasons about physical movement before generating frames. Interactive worlds, autonomous driving, robot training. Outperforms other world models.",
+    "b_pl": "Physical coherence reasoning before frame generation.",
+    "b_en": "Physical coherence reasoning before frame generation."
+  },
+  {
+    "n": "Gemini Voice Typing",
+    "v": "Google",
+    "c": "TTS",
+    "d": "2026-08-01",
+    "o": 0,
+    "r": 12,
+    "is_new": true,
+    "desc_pl": "Google Gemini Voice Typing — Mac OS only. Hold Fn key, speak into any app. Gemini transcription, removes fillers. Gemini reasoning mode: summarize documents.",
+    "desc_en": "Google Gemini Voice Typing — Mac OS only. Hold Fn key, speak into any app. Gemini transcription, removes fillers. Gemini reasoning mode: summarize documents.",
+    "b_pl": "AI dictation, self-correction aware.",
+    "b_en": "AI dictation, self-correction aware."
+  },
+  {
+    "n": "Wonder",
+    "v": "Adobe",
+    "c": "World Models",
+    "d": "2026-08-01",
+    "o": 0,
+    "r": 8,
+    "is_new": true,
+    "desc_pl": "Adobe Wonder — video world model. Interactive 3D exploration. Input video → walk around scene. Various environments, art styles. Code coming soon.",
+    "desc_en": "Adobe Wonder — video world model. Interactive 3D exploration. Input video → walk around scene. Various environments, art styles. Code coming soon.",
+    "b_pl": "Real-time interactive world exploration.",
+    "b_en": "Real-time interactive world exploration."
+  },
+  {
+    "n": "Gemini Robotics 2",
+    "v": "Google",
+    "c": "Humanoid Robots",
+    "d": "2026-08-01",
+    "o": 0,
+    "r": 3,
+    "is_new": true,
+    "desc_pl": "Google DeepMind Gemini Robotics 2 — feet to fingertips. Walking+balancing+reaching+grasping+reasoning. 3 models: GR2 (VLA), GR ER2 (reasoning), GR on-device 2 (offline). Apollo 2 humanoid.",
+    "desc_en": "Google DeepMind Gemini Robotics 2 — feet to fingertips. Walking+balancing+reaching+grasping+reasoning. 3 models: GR2 (VLA), GR ER2 (reasoning), GR on-device 2 (offline). Apollo 2 humanoid.",
+    "b_pl": "Dextrous finger movements: unscrewing bulbs, tying bags.",
+    "b_en": "Dextrous finger movements: unscrewing bulbs, tying bags."
+  },
+  {
+    "n": "Minimax H3",
+    "v": "MiniMax",
+    "c": "Video Generation",
+    "d": "2026-08-01",
+    "o": 0,
+    "r": 5,
+    "is_new": true,
+    "desc_pl": "MiniMax H3 — rebranded Hailuo. Multimodal: text+image+video+audio. 2K resolution. 15s. $1.20/10s (3x cheaper niż Seedance 2.5). Open source next week!",
+    "desc_en": "MiniMax H3 — rebranded Hailuo. Multimodal: text+image+video+audio. 2K resolution. 15s. $1.20/10s (3x cheaper than Seedance 2.5). Open source next week!",
+    "b_pl": "2K video. Best open video model once released.",
+    "b_en": "2K video. Best open video model once released."
+  },
+  {
+    "n": "Prism",
+    "v": "Open-source",
+    "c": "Humanoid Robots",
+    "d": "2026-08-01",
+    "o": 1,
+    "r": 15,
+    "is_new": true,
+    "desc_pl": "Prism — robotics algorithm. Multi-sensor movement control: force, velocity, contact, friction, joint angle. Higher success rate vs other algorithms.",
+    "desc_en": "Prism — robotics algorithm. Multi-sensor movement control: force, velocity, contact, friction, joint angle. Higher success rate vs other algorithms.",
+    "b_pl": "Object manipulation, physical contact response.",
+    "b_en": "Object manipulation, physical contact response."
+  },
+  {
+    "n": "Inkling Small",
+    "v": "Thinking Machines",
+    "c": "Multimodal",
+    "d": "2026-08-01",
+    "o": 1,
+    "r": 8,
+    "is_new": true,
+    "desc_pl": "Thinking Machines Inkling Small — omnimodal (text+audio+image+video). 276B total, 12B active. 532GB. Sometimes higher performance niż full Inkling z less compute. Audio capabilities main advantage.",
+    "desc_en": "Thinking Machines Inkling Small — omnimodal (text+audio+image+video). 276B total, 12B active. 532GB. Sometimes higher performance than full Inkling with less compute. Audio capabilities main advantage.",
+    "b_pl": "Omnimodal — audio, images, video understanding.",
+    "b_en": "Omnimodal — audio, images, video understanding."
+  },
+  {
+    "n": "Instella",
+    "v": "AMD",
+    "c": "LLM",
+    "d": "2026-08-01",
+    "o": 1,
+    "r": 11,
+    "is_new": true,
+    "desc_pl": "AMD Instella — open-source MoE trained on AMD Instinct + ROCm (no NVIDIA). 16B total, 2.8B active. Beats Gemma 4 E4B. Multi-head latent attention + far skip collective. Think version 32GB.",
+    "desc_en": "AMD Instella — open-source MoE trained on AMD Instinct + ROCm (no NVIDIA). 16B total, 2.8B active. Beats Gemma 4 E4B. Multi-head latent attention + far skip collective. Think version 32GB.",
+    "b_pl": "First frontier model without NVIDIA. Checkpoints + training recipes published.",
+    "b_en": "First frontier model without NVIDIA. Checkpoints + training recipes published."
+  },
+  {
+    "n": "Redesign",
+    "v": "Open-source",
+    "c": "Image Generation",
+    "d": "2026-08-01",
+    "o": 1,
+    "r": 14,
+    "is_new": true,
+    "desc_pl": "Redesign — flat image into editable layers. Screenshot → Figma/Photoshop. Uses PaddleOCR, Qwen Image Layered, Dino, SAM2. <4GB.",
+    "desc_en": "Redesign — flat image into editable layers. Screenshot → Figma/Photoshop. Uses PaddleOCR, Qwen Image Layered, Dino, SAM2. <4GB.",
+    "b_pl": "Recolor, reposition, resize elements.",
+    "b_en": "Recolor, reposition, resize elements."
+  },
+  {
+    "n": "ID V2V",
+    "v": "Netflix",
+    "c": "Video Generation",
+    "d": "2026-08-01",
+    "o": 1,
+    "r": 12,
+    "is_new": true,
+    "desc_pl": "Netflix ID V2V — open-source video style transfer. Change style without affecting identity/movement. Edit key frame → spread across video. 720p, 80GB.",
+    "desc_en": "Netflix ID V2V — open-source video style transfer. Change style without affecting identity/movement. Edit key frame → spread across video. 720p, 80GB.",
+    "b_pl": "Background, lighting, clothing, style — all editable.",
+    "b_en": "Background, lighting, clothing, style — all editable."
+  },
+  {
+    "n": "Crisper Whisper 2",
+    "v": "Nyra Labs",
+    "c": "TTS",
+    "d": "2026-08-01",
+    "o": 1,
+    "r": 10,
+    "is_new": true,
+    "desc_pl": "Crisper Whisper 2 — open-source transcription. Verbatim + intended modes. Word-level timing. 4 models: 0.2B (<500MB) to 2B (3GB). Better than 11 Labs.",
+    "desc_en": "Crisper Whisper 2 — open-source transcription. Verbatim + intended modes. Word-level timing. 4 models: 0.2B (<500MB) to 2B (3GB). Better than 11 Labs.",
+    "b_pl": "Word-level timestamps. No GPU needed (0.2B version).",
+    "b_en": "Word-level timestamps. No GPU needed (0.2B version)."
+  },
+  {
+    "n": "DeepSeek V4 Flash 0731",
+    "v": "DeepSeek",
+    "c": "LLM",
+    "d": "2026-07-31",
+    "o": 1,
+    "r": 3,
+    "is_new": true,
+    "desc_pl": "DeepSeek V4 Flash 0731 — newest. As good as GLM 5.2 i Opus 4.8 ale 70% mniejszy, 100x tańszy. 3 cents/M tokens. DSpark architecture. 167GB, Unsloth 1-bit 82.5GB.",
+    "desc_en": "DeepSeek V4 Flash 0731 — newest. As good as GLM 5.2 and Opus 4.8 but 70% smaller, 100x cheaper. 3 cents/M tokens. DSpark architecture. 167GB, Unsloth 1-bit 82.5GB.",
+    "b_pl": "Cheapest frontier intelligence. Beats V4 Pro by 10 points.",
+    "b_en": "Cheapest frontier intelligence. Beats V4 Pro by 10 points."
+  },
   {
     "n": "GLM 5.2 Vision",
     "v": "Z.AI / Zhipu AI",
@@ -2277,16 +2446,16 @@ const M = [
 ];
 
 const CATS = [
-  "Multimodal",
-  "LLM",
-  "Video Generation",
   "Image Generation",
-  "Coding",
   "World Models",
   "TTS",
+  "Humanoid Robots",
+  "Video Generation",
+  "Multimodal",
+  "LLM",
+  "Coding",
   "AI Science Agents",
   "AI Research",
-  "Humanoid Robots",
   "Realtime Avatars",
   "4D Human",
   "Neural Interface",
