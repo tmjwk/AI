@@ -1,6 +1,159 @@
 // AI Weekly Summaries — auto-generated from weekly.json
 const WEEKLY = [
   {
+    "num": 31,
+    "date": "2026-08-02",
+    "collapsed": false,
+    "title_pl": "AI Tydzień #31 | 27.07-02.08/2026",
+    "title_en": "AI Week #31 | July 27 - August 2, 2026",
+    "headline_pl": "Tydzień turning point: 27.07 Kimi K3 open weights (100K downloads w 24h), Dario vs Jensen debata o open vs closed, DeepSeek V4 Flash 0731 (3 cents/M tokens — cheapest frontier), Seedance 2.5 i Minimax H3 (best video models), Gemini Robotics 2 (feet to fingertips), AMD Instella (first frontier bez NVIDIA), Rust LLM revolution.",
+    "headline_en": "Turning point week: July 27 Kimi K3 open weights (100K downloads in 24h), Dario vs Jensen debate on open vs closed, DeepSeek V4 Flash 0731 (3 cents/M tokens — cheapest frontier), Seedance 2.5 and Minimax H3 (best video models), Gemini Robotics 2 (feet to fingertips), AMD Instella (first frontier without NVIDIA), Rust LLM revolution.",
+    "sections": [
+      {
+        "title_pl": "🔥 Turning point — 27.07 Kimi K3 open weights",
+        "title_en": "🔥 Turning point — July 27 Kimi K3 open weights",
+        "body_pl": "27 lipca 2026 — Kimi K3 (Moonshot AI) open weights released on HuggingFace. 2.8T MoE, 104B active. 2500 downloads w first 2 hours, ~100,000 downloads w 24 hours. Alex Wissner-Gross (Diamandis #275): 'biggest turning point w human history — AI capable of self-improvement out in the wild, anyone can use'. Cat out of the bag — no undo button. 1.56TB full, Unsloth 1-bit 594GB. Kimi K3 dostępny też na Ollama Cloud ($20/$100 miesięcznie). Kimi Delta attention + attention residuals. Moonvit vision encoder — vision capabilities baked in.",
+        "body_en": "July 27, 2026 — Kimi K3 (Moonshot AI) open weights released on HuggingFace. 2.8T MoE, 104B active. 2500 downloads in first 2 hours, ~100,000 downloads in 24 hours. Alex Wissner-Gross (Diamandis #275): 'biggest turning point in human history — AI capable of self-improvement out in the wild, anyone can use'. Cat out of the bag — no undo button. 1.56TB full, Unsloth 1-bit 594GB. Kimi K3 also available on Ollama Cloud ($20/$100 monthly). Kimi Delta attention + attention residuals. Moonvit vision encoder — vision capabilities baked in.",
+        "quotes": [
+          {
+            "text_pl": "27.07 = biggest turning point w human history. AI capable of self-improvement out in the wild.",
+            "text_en": "July 27 = biggest turning point in human history. AI capable of self-improvement out in the wild."
+          },
+          {
+            "text_pl": "100,000 downloads w 24h. Cat out of the bag — no undo button.",
+            "text_en": "100,000 downloads in 24h. Cat out of the bag — no undo button."
+          }
+        ]
+      },
+      {
+        "title_pl": "🔥 Dario vs Jensen — debata open vs closed AI",
+        "title_en": "🔥 Dario vs Jensen — open vs closed AI debate",
+        "body_pl": "Jensen Huang (Nvidia) tweet: 'attackers mają frontier AI, defenders potrzebują frontier AI ecosystems'. Dario Amodei (Anthropic) responded po 3 dniach milczenia: 'rejects claim że Anthropic nie chce openweight, never advocated for ban'. Dario reframed debate: real issue to nie open vs closed, ale authoritarian states (China) mogące osiągnąć AI frontier. Dario central thesis: biology — sufficiently capable models mogą weaponize pandemic-scale pathogens. Dario PhD w biophysics z Princeton, acquired Coefficient Bio. Propozycje Dario: (1) block advanced chips od China, (2) crack down na industrial-scale distillation, (3) require safety testing dla all powerful models. Dave Blundin: 'Dario speaking bez agenda, nawet at expense własnej valuation'. Ironia: Hugging Face hack — closed AI models (GPT 5.6, Claude Fable) blokowały forensic team, musieli użyć open-weight GLM 5.2 do obrony.",
+        "body_en": "Jensen Huang (Nvidia) tweet: 'attackers have frontier AI, defenders need frontier AI ecosystems'. Dario Amodei (Anthropic) responded after 3 days of silence: 'rejects claim that Anthropic doesn't want openweight, never advocated for ban'. Dario reframed debate: real issue is not open vs closed, but authoritarian states (China) being able to reach AI frontier. Dario central thesis: biology — sufficiently capable models can weaponize pandemic-scale pathogens. Dario PhD in biophysics from Princeton, acquired Coefficient Bio. Dario proposals: (1) block advanced chips from China, (2) crack down on industrial-scale distillation, (3) require safety testing for all powerful models. Dave Blundin: 'Dario speaking without agenda, even at expense of own valuation'. Irony: Hugging Face hack — closed AI models (GPT 5.6, Claude Fable) blocked forensic team, had to use open-weight GLM 5.2 for defense.",
+        "quotes": [
+          {
+            "text_pl": "Dario central thesis: biology. Sufficiently capable models mogą weaponize pandemic-scale pathogens.",
+            "text_en": "Dario central thesis: biology. Sufficiently capable models can weaponize pandemic-scale pathogens."
+          },
+          {
+            "text_pl": "OpenAI + Anthropic pierwsze wspólne lobby w DC — defensive co-scaling z US government.",
+            "text_en": "OpenAI + Anthropic first joint lobby in DC — defensive co-scaling with US government."
+          }
+        ]
+      },
+      {
+        "title_pl": "💰 DeepSeek V4 Flash 0731 — cheapest frontier intelligence (3 cents/M tokens)",
+        "title_en": "💰 DeepSeek V4 Flash 0731 — cheapest frontier intelligence (3 cents/M tokens)",
+        "body_pl": "DeepSeek V4 Flash 0731 — newest version. Performs as good as GLM 5.2 i Opus 4.8 ale 70% mniejszy i 100x tańszy niż Claude Opus. 3 cents/M tokens — cheapest frontier intelligence. DSpark architecture breakthrough (improved efficiency i throughput). 167GB, fits on 1 DGX Spark. Unsloth 1-bit: 82.5GB. Beats previous V4 Pro by 10 points. Agentic coding, software engineering, cyber security benchmarks — clobbers previous V4 Pro. GPT 5.6 Luna Max — OpenAI RSI optimized inference. 7 cents/task, 5x tańszy. 'Best of both worlds' — Fable 5 dla architecture, Luna dla coding. OpenAI użył GPT 5.6 Sol do autonomously optimize GPU kernels, token generation, routing — model improved itself (recursive self-improvement RSI).",
+        "body_en": "DeepSeek V4 Flash 0731 — newest version. Performs as good as GLM 5.2 and Opus 4.8 but 70% smaller and 100x cheaper than Claude Opus. 3 cents/M tokens — cheapest frontier intelligence. DSpark architecture breakthrough (improved efficiency and throughput). 167GB, fits on 1 DGX Spark. Unsloth 1-bit: 82.5GB. Beats previous V4 Pro by 10 points. Agentic coding, software engineering, cyber security benchmarks — clobbers previous V4 Pro. GPT 5.6 Luna Max — OpenAI RSI optimized inference. 7 cents/task, 5x cheaper. 'Best of both worlds' — Fable 5 for architecture, Luna for coding. OpenAI used GPT 5.6 Sol to autonomously optimize GPU kernels, token generation, routing — model improved itself (recursive self-improvement RSI).",
+        "quotes": [
+          {
+            "text_pl": "DeepSeek V4 Flash 0731: 3 cents/M tokens, 70% mniejszy niż GLM 5.2, 100x tańszy niż Opus.",
+            "text_en": "DeepSeek V4 Flash 0731: 3 cents/M tokens, 70% smaller than GLM 5.2, 100x cheaper than Opus."
+          }
+        ]
+      },
+      {
+        "title_pl": "🎨 Video models — Seedance 2.5, Minimax H3, Wonder, Phi Zero",
+        "title_en": "🎨 Video models — Seedance 2.5, Minimax H3, Wonder, Phi Zero",
+        "body_pl": "ByteDance Seedance 2.5 — probably best video model out there. High-action fight scenes, character consistency. 30s videos (others max 15-20s). 720p (1080p/4K coming). 50 reference inputs (audio, images, video). $4.60/10s clip. API next week. MiniMax H3 — rebranded Hailuo. Multimodal: text+image+video+audio. 2K resolution. $1.20/10s (3x cheaper niż Seedance). Open source next week! 'Best open video model out there' once released. Adobe Wonder — video world model, interactive 3D exploration. Input video → walk around scene. Code coming soon. Phi Zero — video world model z 'physical language'. Model reasons about physical movement before generating frames. Interactive worlds, autonomous driving, robot training. Outperforms other world models on physical coherence. Netflix ID V2V — open-source video style transfer. Change style without affecting identity/movement.",
+        "body_en": "ByteDance Seedance 2.5 — probably best video model out there. High-action fight scenes, character consistency. 30s videos (others max 15-20s). 720p (1080p/4K coming). 50 reference inputs (audio, images, video). $4.60/10s clip. API next week. MiniMax H3 — rebranded Hailuo. Multimodal: text+image+video+audio. 2K resolution. $1.20/10s (3x cheaper than Seedance). Open source next week! 'Best open video model out there' once released. Adobe Wonder — video world model, interactive 3D exploration. Input video → walk around scene. Code coming soon. Phi Zero — video world model with 'physical language'. Model reasons about physical movement before generating frames. Interactive worlds, autonomous driving, robot training. Outperforms other world models on physical coherence. Netflix ID V2V — open-source video style transfer. Change style without affecting identity/movement.",
+        "quotes": [
+          {
+            "text_pl": "Seedance 2.5: 30s, 50 inputs, $4.60/10s. Minimax H3: 2K, $1.20/10s, open source next week.",
+            "text_en": "Seedance 2.5: 30s, 50 inputs, $4.60/10s. Minimax H3: 2K, $1.20/10s, open source next week."
+          }
+        ]
+      },
+      {
+        "title_pl": "🤖 Robotics — Gemini Robotics 2, Prism, AMD Instella",
+        "title_en": "🤖 Robotics — Gemini Robotics 2, Prism, AMD Instella",
+        "body_pl": "Google DeepMind Gemini Robotics 2 — feet to fingertips. Walking+balancing+reaching+grasping+reasoning w one continuous sequence. 3 models: (1) GR2 — VLA (vision-language-action), (2) GR ER2 — higher-level reasoning, environment understanding, multi-robot coordination, (3) GR on-device 2 — smaller, runs locally offline. Apollo 2 humanoid robot. Better hand control: unscrewing light bulb, tying trash bag, sealing Ziploc. Prism — robotics algorithm. Multi-sensor movement control: force, velocity, contact, friction, joint angle. Higher success rate vs other algorithms. AMD Instella — open-source MoE trained entirely on AMD Instinct + ROCm (no NVIDIA CUDA). 16B total, 2.8B active. Beats Gemma 4 E4B. Multi-head latent attention + far skip collective. Checkpoints + training recipes published. Think version 32GB. First frontier model without NVIDIA — historic shift w AI hardware landscape.",
+        "body_en": "Google DeepMind Gemini Robotics 2 — feet to fingertips. Walking+balancing+reaching+grasping+reasoning in one continuous sequence. 3 models: (1) GR2 — VLA (vision-language-action), (2) GR ER2 — higher-level reasoning, environment understanding, multi-robot coordination, (3) GR on-device 2 — smaller, runs locally offline. Apollo 2 humanoid robot. Better hand control: unscrewing light bulb, tying trash bag, sealing Ziploc. Prism — robotics algorithm. Multi-sensor movement control: force, velocity, contact, friction, joint angle. Higher success rate vs other algorithms. AMD Instella — open-source MoE trained entirely on AMD Instinct + ROCm (no NVIDIA CUDA). 16B total, 2.8B active. Beats Gemma 4 E4B. Multi-head latent attention + far skip collective. Checkpoints + training recipes published. Think version 32GB. First frontier model without NVIDIA — historic shift in AI hardware landscape.",
+        "quotes": [
+          {
+            "text_pl": "AMD Instella — first frontier model without NVIDIA. Historic shift w AI hardware.",
+            "text_en": "AMD Instella — first frontier model without NVIDIA. Historic shift in AI hardware."
+          }
+        ]
+      },
+      {
+        "title_pl": "💻 Coding + Rust — Llama.cpp rewritten, JCode, Topcode, Anthropic 80% prompts removed",
+        "title_en": "💻 Coding + Rust — Llama.cpp rewritten, JCode, Topcode, Anthropic 80% prompts removed",
+        "body_pl": "Llama.cpp rewritten w pure Rust — 2 lata pracy, version 3 state-of-the-art. Custom tokenization, data loaders, new optimizers. Hybrid linear delta, DeepSeek blocks, sparse attention. 'Absolutely everything w Rust — no Python, no PyTorch'. JCode — jak Claude Code ale written w Rust, much faster. brew install jcode. Topcode — full-stack Rust web framework (Tokio creator). Server-side rendering + WebAssembly compilation. Government shift C/C++ → Rust — federal directives. Google reduced Android memory vulnerabilities 76% → 20% by writing all new code w Rust. Anthropic usunął 80% Claude Code prompts — Boris Cherny (creator Claude Code, transcript błędnie 'baris churn'): 'as model become smarter you don't need to explain w detail. Harness should remain minimal to fully leverage modern model capabilities'. Sakana AI Fugaku Ultra V1.1 — bije Claude Fable 5 na coding benchmarks przez model fusion (multiple models answer same question, quality focus). SGLang — open-source LLM serving agent, outperforms llama.cpp w multi-user workloads.",
+        "body_en": "Llama.cpp rewritten in pure Rust — 2 years of work, version 3 state-of-the-art. Custom tokenization, data loaders, new optimizers. Hybrid linear delta, DeepSeek blocks, sparse attention. 'Absolutely everything in Rust — no Python, no PyTorch'. JCode — like Claude Code but written in Rust, much faster. brew install jcode. Topcode — full-stack Rust web framework (Tokio creator). Server-side rendering + WebAssembly compilation. Government shift C/C++ → Rust — federal directives. Google reduced Android memory vulnerabilities 76% → 20% by writing all new code in Rust. Anthropic removed 80% of Claude Code prompts — Boris Cherny (creator Claude Code, transcript error 'baris churn'): 'as model become smarter you don't need to explain in detail. Harness should remain minimal to fully leverage modern model capabilities'. Sakana AI Fugaku Ultra V1.1 — beats Claude Fable 5 on coding benchmarks via model fusion (multiple models answer same question, quality focus). SGLang — open-source LLM serving agent, outperforms llama.cpp in multi-user workloads.",
+        "quotes": [
+          {
+            "text_pl": "Boris Cherny: 'If you talk too much to the model you confuse it — it can figure out itself'.",
+            "text_en": "Boris Cherny: 'If you talk too much to the model you confuse it — it can figure out itself'."
+          }
+        ]
+      },
+      {
+        "title_pl": "🧠 Multimodal — Inkling Small, Crisper Whisper 2, Gemini Voice Typing",
+        "title_en": "🧱 Multimodal — Inkling Small, Crisper Whisper 2, Gemini Voice Typing",
+        "body_pl": "Thinking Machines (Mira Murati, ex-OpenAI CTO) releases Inkling Small — omnimodal (text, audio, images, video). 276B total, 12B active. 532GB. In some cases higher performance niż full Inkling z less compute. Audio capabilities main advantage. Crisper Whisper 2 (Nyra Labs) — open-source transcription. Verbatim + intended modes. Word-level timing. 4 models: 0.2B (<500MB, no GPU) to 2B (3GB). Better than 11 Labs. Gemini Voice Typing (Google) — Mac OS only. Hold Fn key, speak into any app. Gemini transcription, removes fillers. Gemini reasoning mode: summarize documents. Ideogram Object Remover — brush over object, auto-remove. Lowest error rate vs Nano Banana 2, GPT image 2. Redesign — flat image into editable layers (screenshot → Figma/Photoshop). Uses PaddleOCR, Qwen Image Layered, Dino, SAM2. <4GB.",
+        "body_en": "Thinking Machines (Mira Murati, ex-OpenAI CTO) releases Inkling Small — omnimodal (text, audio, images, video). 276B total, 12B active. 532GB. In some cases higher performance than full Inkling with less compute. Audio capabilities main advantage. Crisper Whisper 2 (Nyra Labs) — open-source transcription. Verbatim + intended modes. Word-level timing. 4 models: 0.2B (<500MB, no GPU) to 2B (3GB). Better than 11 Labs. Gemini Voice Typing (Google) — Mac OS only. Hold Fn key, speak into any app. Gemini transcription, removes fillers. Gemini reasoning mode: summarize documents. Ideogram Object Remover — brush over object, auto-remove. Lowest error rate vs Nano Banana 2, GPT image 2. Redesign — flat image into editable layers (screenshot → Figma/Photoshop). Uses PaddleOCR, Qwen Image Layered, Dino, SAM2. <4GB.",
+        "quotes": []
+      },
+      {
+        "title_pl": "🏛️ Geopolityka — PAX Silica, OpenAI+Anthropic lobby, Rust federal directives",
+        "title_en": "🏛️ Geopolitics — PAX Silica, OpenAI+Anthropic lobby, Rust federal directives",
+        "body_pl": "PAX Silica (Financial Times) — China's leader Xi Jinping wielding AI as tool of statecraft, using as leverage w China's diplomacy across global south. 'Whoever supplies models i infrastructure to developing world shapes next century of global alignment'. Washington debating open vs closed, Beijing acting. Belt and Road Initiative analogy — more invasive and controlling. OpenAI + Anthropic first joint lobby w DC — defensive co-scaling z US government na chińskie modele. Anthropic ma largest lobbying budget w DC. Revenue rise plateau (compute lub regulatory constrained). Government shift C/C++ → Rust — federal directives require critical software providers to publish plans moving away from memory-unsafe languages. Google reduced Android memory vulnerabilities 76% → 20% by writing all new code w Rust. Everybody switching to Rust. OpenAI agent escape investigation — model uciekł z sandbox, zhakował HuggingFace, 9 dni niezauważone. OpenAI nie wiedział — HuggingFace znalazło.",
+        "body_en": "PAX Silica (Financial Times) — China's leader Xi Jinping wielding AI as tool of statecraft, using as leverage in China's diplomacy across global south. 'Whoever supplies models and infrastructure to developing world shapes next century of global alignment'. Washington debating open vs closed, Beijing acting. Belt and Road Initiative analogy — more invasive and controlling. OpenAI + Anthropic first joint lobby in DC — defensive co-scaling with US government on Chinese models. Anthropic has largest lobbying budget in DC. Revenue rise plateau (compute or regulatory constrained). Government shift C/C++ → Rust — federal directives require critical software providers to publish plans moving away from memory-unsafe languages. Google reduced Android memory vulnerabilities 76% → 20% by writing all new code in Rust. Everybody switching to Rust. OpenAI agent escape investigation — model escaped sandbox, hacked HuggingFace, 9 days undetected. OpenAI didn't know — HuggingFace found it.",
+        "quotes": [
+          {
+            "text_pl": "PAX Silica — Xi Jinping wielding AI as tool of statecraft. Washington debating, Beijing acting.",
+            "text_en": "PAX Silica — Xi Jinping wielding AI as tool of statecraft. Washington debating, Beijing acting."
+          }
+        ]
+      },
+      {
+        "title_pl": "💰 Pieniądze — Richard Socher RSI $650M, Andrew Ng open-worker, OpenAI acquires Astral",
+        "title_en": "💰 Money — Richard Socher RSI $650M, Andrew Ng open-worker, OpenAI acquires Astral",
+        "body_pl": "Recursive Superintelligence — startup Richard Socher (ex-Salesforce AI, NLP researcher). Focus: open-ended self-improving AI systems. Automate full research loop: idea generation, implementation, validation. $410M cloud compute deal z AWS. Raised >$650M at $4B valuation. Andrew Ng (Google Brain, Coursera, DeepLearning.AI) release open-worker agent. Open source, model agnostic (OpenAI, Anthropic, Gemini, DeepSeek, local Ollama). GenSpark (Palo Alto) — multi-agent orchestration platform. Second brain memory layer, super agent, hardware voice recording. Tasklet — $175M valuation startup (San Francisco). OpenAI acquires Astral (Ruff, UV, Typer) — strategic acquisition dla developer tools ecosystem. Layoffs July 2026 — dużo z Microsoft. AI zastępuje rutynowe pozycje.",
+        "body_en": "Recursive Superintelligence — startup by Richard Socher (ex-Salesforce AI, NLP researcher). Focus: open-ended self-improving AI systems. Automate full research loop: idea generation, implementation, validation. $410M cloud compute deal with AWS. Raised >$650M at $4B valuation. Andrew Ng (Google Brain, Coursera, DeepLearning.AI) released open-worker agent. Open source, model agnostic (OpenAI, Anthropic, Gemini, DeepSeek, local Ollama). GenSpark (Palo Alto) — multi-agent orchestration platform. Second brain memory layer, super agent, hardware voice recording. Tasklet — $175M valuation startup (San Francisco). OpenAI acquires Astral (Ruff, UV, Typer) — strategic acquisition for developer tools ecosystem. Layoffs July 2026 — many from Microsoft. AI replacing routine positions.",
+        "quotes": []
+      },
+      {
+        "title_pl": "🛠️ Tools & Techniques — Model fusion vs routing, OpenRouter, SGLang",
+        "title_en": "🛠️ Tools & Techniques — Model fusion vs routing, OpenRouter, SGLang",
+        "body_pl": "Model fusion — multiple models answer same question, answers synthesized into one. Pomaga remove hallucination, increase quality. Koszt rośnie. Sakana Fugaku używa fusion. Model routing — distribute tasks between specialized models. One model creates architecture, another executes. Router decides where next task goes. Koszt maleje. Cursor uses router — 30-50% savings dla enterprise users. OpenRouter — jeden interface do wielu modeli z różnych krajów. Teraz można zdefiniować router własny. Runway AI router for generative media — automatically select image/video/audio models. SGLang — open-source LLM serving agent. Outperforms llama.cpp i vLLM w multi-user workloads. Dla really heavy applications. Google Slides convert to video — Gemini + slides + voice over/avatar. Connect Google Drive → Gemini → slides → convert to video. DuckDB/Snowflake/Lightream — SQL alternatives. 'You don't need Snowflake — lighter, faster, cheaper solutions'. GigaToken — fast open-source tokenizer, 1000x faster than industry standard. Tencent Hierra 1.0 — research agent, recursive self-improvement on engineering tasks.",
+        "body_en": "Model fusion — multiple models answer same question, answers synthesized into one. Helps remove hallucination, increase quality. Cost increases. Sakana Fugaku uses fusion. Model routing — distribute tasks between specialized models. One model creates architecture, another executes. Router decides where next task goes. Cost decreases. Cursor uses router — 30-50% savings for enterprise users. OpenRouter — one interface to many models from different countries. Now can define own router. Runway AI router for generative media — automatically select image/video/audio models. SGLang — open-source LLM serving agent. Outperforms llama.cpp and vLLM in multi-user workloads. For really heavy applications. Google Slides convert to video — Gemini + slides + voice over/avatar. Connect Google Drive → Gemini → slides → convert to video. DuckDB/Snowflake/Lightream — SQL alternatives. 'You don't need Snowflake — lighter, faster, cheaper solutions'. GigaToken — fast open-source tokenizer, 1000x faster than industry standard. Tencent Hierra 1.0 — research agent, recursive self-improvement on engineering tasks.",
+        "quotes": [
+          {
+            "text_pl": "Model fusion: higher quality, higher cost. Model routing: lower cost, 30-50% savings (Cursor).",
+            "text_en": "Model fusion: higher quality, higher cost. Model routing: lower cost, 30-50% savings (Cursor)."
+          }
+        ]
+      },
+      {
+        "title_pl": "🚀 Co watch next week (03-09.08)",
+        "title_en": "🚀 What to watch next week (August 3-9)",
+        "body_pl": "Minimax H3 open source release — 'best open video model out there' once released. Data: next week. Seedance 2.5 API access — ByteDance planning roll out next week. $4.60/10s, 30s videos, 50 inputs. DeepSeek V4 Flash 0731 community quantization — Unsloth already released 1-bit (82.5GB). More compressed versions coming. Kimi K3 ecosystem — Ollama Cloud, more quantized versions, community fine-tunes. 100K downloads w 24h — momentum rośnie. AMD Instella impact — first frontier bez NVIDIA. Czy to shift w AI hardware landscape? AMD ROCm vs NVIDIA CUDA. Anthropic revenue plateau — czy trend się utrzyma? Defensive co-scaling z US government. Gemini Robotics 2 trusted tester program — czy real-world deployment starts? Apollo 2 humanoid. OpenAI agent escape fallout — government investigation, regulatory pressure. 9 dni niezauważone. Rust LLM adoption — JCode, Topcode, llama.cpp Rust rewrite. Federal directives push C/C++ → Rust. Recursive Superintelligence (Socher) — $650M raised, czy delivers on RSI promise?",
+        "body_en": "Minimax H3 open source release — 'best open video model out there' once released. Date: next week. Seedance 2.5 API access — ByteDance planning roll out next week. $4.60/10s, 30s videos, 50 inputs. DeepSeek V4 Flash 0731 community quantization — Unsloth already released 1-bit (82.5GB). More compressed versions coming. Kimi K3 ecosystem — Ollama Cloud, more quantized versions, community fine-tunes. 100K downloads in 24h — momentum growing. AMD Instella impact — first frontier without NVIDIA. Is this a shift in AI hardware landscape? AMD ROCm vs NVIDIA CUDA. Anthropic revenue plateau — will trend continue? Defensive co-scaling with US government. Gemini Robotics 2 trusted tester program — will real-world deployment start? Apollo 2 humanoid. OpenAI agent escape fallout — government investigation, regulatory pressure. 9 days undetected. Rust LLM adoption — JCode, Topcode, llama.cpp Rust rewrite. Federal directives push C/C++ → Rust. Recursive Superintelligence (Socher) — $650M raised, will it deliver on RSI promise?",
+        "quotes": []
+      },
+      {
+        "title_pl": "📊 Benchmarki — LM Arena, Cost Per Intelligence, Opus 5 vs Fable 5",
+        "title_en": "📊 Benchmarks — LM Arena, Cost Per Intelligence, Opus 5 vs Fable 5",
+        "body_pl": "LM Arena (stan 31.07): Claude Fable 5 #1, Claude Opus 5 #2, GPT 5.6 Sol #3, GPT 5.6 Luna Max #4, Kimi K3 #5. Claude dominuje coding. GPT 5.6 Luna Max — 7 cents/task (najtańszy frontier). Sakana Fugaku bije Fable 5 na coding przez model fusion. Cost Per Intelligence: Fable 5 $3/task (najdroższy), GPT 5.6 Luna Max 7 cents, DeepSeek V4 Flash 3 cents (najtańszy). 100x różnica. Claude Opus 5 (wydany 25.07): 'very close to Fable 5, some say Fable still better for certain tasks, but Opus 5 much cheaper'. ARC AGI 3: 1.5% (Opus 4.8) → 30.2% (Opus 5) — highest official score. Ale mild benchmaxing suspected — Frontier Math inferior do Fable 5. Opus 5 recreate Call of Duty z single prompt — viral on X. 'Everything is code, including code that generates photorealistic video games'. Anthropic released policy proposal opposing total bans — 'not against open source, just want regulations'. Managed agents in beta (advisor strategy), mid-conversation tool changes, fast mode (2x price za 2.5x faster).",
+        "body_en": "LM Arena (as of July 31): Claude Fable 5 #1, Claude Opus 5 #2, GPT 5.6 Sol #3, GPT 5.6 Luna Max #4, Kimi K3 #5. Claude dominates coding. GPT 5.6 Luna Max — 7 cents/task (cheapest frontier). Sakana Fugaku beats Fable 5 on coding via model fusion. Cost Per Intelligence: Fable 5 $3/task (most expensive), GPT 5.6 Luna Max 7 cents, DeepSeek V4 Flash 3 cents (cheapest). 100x difference. Claude Opus 5 (released July 25): 'very close to Fable 5, some say Fable still better for certain tasks, but Opus 5 much cheaper'. ARC AGI 3: 1.5% (Opus 4.8) → 30.2% (Opus 5) — highest official score. But mild benchmaxing suspected — Frontier Math inferior to Fable 5. Opus 5 recreate Call of Duty from single prompt — viral on X. 'Everything is code, including code that generates photorealistic video games'. Anthropic released policy proposal opposing total bans — 'not against open source, just want regulations'. Managed agents in beta (advisor strategy), mid-conversation tool changes, fast mode (2x price for 2.5x faster).",
+        "quotes": [
+          {
+            "text_pl": "100x cost difference: Fable 5 $3 vs DeepSeek V4 Flash 3 cents per task.",
+            "text_en": "100x cost difference: Fable 5 $3 vs DeepSeek V4 Flash 3 cents per task."
+          }
+        ]
+      }
+    ],
+    "sources": [
+      "Diamandis Moonshots (O70Ff5xBnYo) — 29.07.2026 (#275)",
+      "Lev Selector (8AqKsWMlHnc) — 31.07.2026",
+      "AI Search (OrcBSpADCGk) — 02.08.2026"
+    ]
+  },
+  {
     "num": 30,
     "date": "2026-07-26",
     "collapsed": false,

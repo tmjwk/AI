@@ -1,18 +1,19 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-08-02 11:16:20 UTC
-// Total events: 226, months: 3
+// Generated: 2026-08-02 11:21:12 UTC
+// Total events: 227, months: 3
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-08-02 11:16:20 UTC",
-    "total_events": 226,
+    "generated": "2026-08-02 11:21:12 UTC",
+    "total_events": 227,
     "total_months": 3
   },
   "months": [
     {
       "month": "2026-08",
-      "total": 14,
+      "total": 15,
       "by_type": {
+        "weekly": 1,
         "ai_search": 14
       },
       "top_vendors": [
@@ -198,11 +199,11 @@ const TRENDS = {
       ],
       "top_models": [
         [
-          "GPT-5",
+          "GPT-5.6",
           1
         ],
         [
-          "GPT-5.6",
+          "GPT-5",
           1
         ],
         [
@@ -291,7 +292,7 @@ const TRENDS = {
       "week_label": "2026-W31",
       "week_start": "2026-07-27",
       "week_end": "2026-08-02",
-      "count": 47
+      "count": 48
     }
   ],
   "all_time": {
@@ -420,10 +421,10 @@ const TRENDS = {
       ]
     ],
     "by_type": {
+      "weekly": 5,
       "ai_search": 75,
       "lev": 139,
-      "diamandis": 8,
-      "weekly": 4
+      "diamandis": 8
     }
   }
 };
