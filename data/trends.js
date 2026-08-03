@@ -1,22 +1,30 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-08-02 11:21:12 UTC
-// Total events: 227, months: 3
+// Generated: 2026-08-03 04:15:28 UTC
+// Total events: 228, months: 3
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-08-02 11:21:12 UTC",
-    "total_events": 227,
+    "generated": "2026-08-03 04:15:28 UTC",
+    "total_events": 228,
     "total_months": 3
   },
   "months": [
     {
       "month": "2026-08",
-      "total": 15,
+      "total": 16,
       "by_type": {
-        "weekly": 1,
-        "ai_search": 14
+        "ai_search": 15,
+        "weekly": 1
       },
       "top_vendors": [
+        [
+          "ByteDance",
+          2
+        ],
+        [
+          "MiniMax",
+          2
+        ],
         [
           "Google",
           2
@@ -35,14 +43,6 @@ const TRENDS = {
         ],
         [
           "PrismML",
-          1
-        ],
-        [
-          "ByteDance",
-          1
-        ],
-        [
-          "MiniMax",
           1
         ]
       ],
@@ -199,11 +199,11 @@ const TRENDS = {
       ],
       "top_models": [
         [
-          "GPT-5.6",
+          "GPT-5",
           1
         ],
         [
-          "GPT-5",
+          "GPT-5.6",
           1
         ],
         [
@@ -330,11 +330,11 @@ const TRENDS = {
         5
       ],
       [
-        "Thinking Machines",
-        3
+        "ByteDance",
+        4
       ],
       [
-        "ByteDance",
+        "Thinking Machines",
         3
       ],
       [
@@ -416,13 +416,13 @@ const TRENDS = {
         2
       ],
       [
-        "Wan Streamer",
+        "Wan Wan",
         2
       ]
     ],
     "by_type": {
+      "ai_search": 76,
       "weekly": 5,
-      "ai_search": 75,
       "lev": 139,
       "diamandis": 8
     }

@@ -1,6 +1,41 @@
 // AI Releases — auto-generated from releases.json
 const RELEASES = [
   {
+    "num": "##31-2",
+    "date": "2026-08-03",
+    "title_pl": "Seedance 2.5 vs Minimax H3 — pełne porównanie (appendix)",
+    "title_en": "Seedance 2.5 vs Minimax H3 — full comparison (appendix)",
+    "yt": "Vpvne2istKg",
+    "collapsed": false,
+    "items": [
+      {
+        "title_pl": "Seedance 2.5 vs Minimax H3 — porównanie video generatorów",
+        "title_en": "Seedance 2.5 vs Minimax H3 — video generator comparison",
+        "vendor": "ByteDance / MiniMax",
+        "category_pl": "Video Generation",
+        "category_en": "Video Generation",
+        "date": "2026-08-01",
+        "thumbnail": "https://i.ytimg.com/vi/Vpvne2istKg/hqdefault.jpg",
+        "review_pl": "AI Search appendix — pełne porównanie Seedance 2.5 (ByteDance) vs Minimax H3 (MiniMax, rebranded Hailuo). Oba modele multimodal: text, images, video, audio. SEEDANCE 2.5 WYGRYWA: high-action fight scenes (character consistency incredible, physics flawless), instruction following (30s Pixar princess+dragon prompt — flawless), 3D ref to video, sketch to animation, 30s max duration (can extend infinitely), 50 reference inputs (30 images + 10 video + 10 audio). 720p (1080p/4K coming). MINIMAX H3 WYGRYWA: music videos (syncing to music), text overlay effects, 2K resolution by default, half the price ($1.20/10s vs $5-6/10s), API already out ($0.13/sec for 2K), open source imminent (quantized fits RTX 3090 — consumer GPU!). OBA FAIL: Vivaldi's Summer (violin movements OK ale nie zna piece), Pythagorean theorem (znają formula ale nie diagram), Peru map highlight (motion graphics fail). SPONSOR: Abacus AI (ChatLLM) — nie Higgsfield tym razem. Platform: Lumina by BytePlus dla Seedance. WERDYKT: Seedance = best for high-action/production content. Minimax = best for music videos/2K/budget. Open source Minimax = game changer dla local deployment.",
+        "review_en": "AI Search appendix — full comparison of Seedance 2.5 (ByteDance) vs Minimax H3 (MiniMax, rebranded Hailuo). Both models multimodal: text, images, video, audio. SEEDANCE 2.5 WINS: high-action fight scenes (character consistency incredible, physics flawless), instruction following (30s Pixar princess+dragon prompt — flawless), 3D ref to video, sketch to animation, 30s max duration (can extend infinitely), 50 reference inputs (30 images + 10 video + 10 audio). 720p (1080p/4K coming). MINIMAX H3 WINS: music videos (syncing to music), text overlay effects, 2K resolution by default, half the price ($1.20/10s vs $5-6/10s), API already out ($0.13/sec for 2K), open source imminent (quantized fits RTX 3090 — consumer GPU!). BOTH FAIL: Vivaldi's Summer (violin movements OK but doesn't know piece), Pythagorean theorem (know formula but not diagram), Peru map highlight (motion graphics fail). SPONSOR: Abacus AI (ChatLLM) — not Higgsfield this time. Platform: Lumina by BytePlus for Seedance. VERDICT: Seedance = best for high-action/production content. Minimax = best for music videos/2K/budget. Open source Minimax = game changer for local deployment.",
+        "links": [
+          {
+            "label": "Lumina (Seedance)",
+            "url": "https://byteplus.pxf.io/n4BX7x"
+          },
+          {
+            "label": "Minimax (Hailuo)",
+            "url": "https://hailuoai.pxf.io/0G19e3"
+          },
+          {
+            "label": "ChatLLM (Abacus AI)",
+            "url": "http://chatllm.abacus.ai/?token=aisearch"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "num": "##31-1",
     "date": "2026-08-02",
     "title_pl": "DeepSeek V4 Flash 0731, Seedance 2.5, Minimax H3, Gemini Robotics 2, AMD Instella — AI News",

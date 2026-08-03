@@ -2,7 +2,7 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-02 11:21:12 UTC
+// Generated: 2026-08-03 04:16:02 UTC
 
 const CALENDAR = [
   {
@@ -14,6 +14,16 @@ const CALENDAR = [
     "meta_pl": "12 sekcji",
     "meta_en": "12 sections",
     "num": "31"
+  },
+  {
+    "date": "2026-08-01",
+    "type": "ai_search",
+    "title_pl": "Seedance 2.5 vs Minimax H3 — porównanie video generatorów — ByteDance / MiniMax",
+    "title_en": "Seedance 2.5 vs Minimax H3 — porównanie video generatorów — ByteDance / MiniMax",
+    "link": "ai-releases.html###31-2",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##31-2"
   },
   {
     "date": "2026-08-01",
