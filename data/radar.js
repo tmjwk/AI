@@ -1,6 +1,649 @@
 // AI Radar — auto-generated from radar.json
 const episodes = [
   {
+    "id": "ep-2026-08-07",
+    "date": "2026-08-07",
+    "title_pl": "Grok Build Mode, Sakana AI, Hassabis Chief Scientist, Inkling-Small, Rust takeover, GraphRAG",
+    "title_en": "Grok Build Mode, Sakana AI, Hassabis Chief Scientist, Inkling-Small, Rust takeover, GraphRAG",
+    "yt": "J3oUaee542k",
+    "collapsed": false,
+    "sections": [
+      {
+        "type": "table",
+        "title_pl": "LM Arena Leaderboard (stan: 07.08.2026)",
+        "title_en": "LM Arena Leaderboard (as of: 2026-08-07)",
+        "id": "lm-arena-2026-08-07",
+        "num": "lm-arena-2026-08-07",
+        "icon": "📊",
+        "headers": [
+          "Rank",
+          "Model",
+          "Score",
+          "Vendor"
+        ],
+        "rows": [
+          [
+            1,
+            "Claude Fable 5",
+            1442,
+            "Anthropic"
+          ],
+          [
+            2,
+            "Claude Opus 5",
+            1438,
+            "Anthropic"
+          ],
+          [
+            3,
+            "GPT-5.6 Sol",
+            1415,
+            "OpenAI"
+          ],
+          [
+            4,
+            "GPT-5.6 Luna Max",
+            1402,
+            "OpenAI"
+          ],
+          [
+            5,
+            "Kimi K3",
+            1392,
+            "Moonshot AI"
+          ],
+          [
+            6,
+            "Qwen 3.8 Max",
+            1378,
+            "Alibaba"
+          ],
+          [
+            7,
+            "Muse Spark 1.2",
+            1365,
+            "Meta"
+          ],
+          [
+            8,
+            "Gemini 3.6 Pro",
+            1352,
+            "Google"
+          ],
+          [
+            9,
+            "DeepSeek V4 Flash 0731",
+            1340,
+            "DeepSeek"
+          ],
+          [
+            10,
+            "GLM-5.2",
+            1328,
+            "Z.AI / Zhipu AI"
+          ]
+        ],
+        "notes_pl": "Stan na 07.08.2026. Claude dominuje coding i chat. Muse Spark 1.2 od Meta nowy w coding. Cost per intelligence: Fable 5 $3, DeepSeek V4 Flash 3 cents, GPT 5.6 Luna niedrogi.",
+        "notes_en": "As of 2026-08-07. Claude dominates coding and chat. Muse Spark 1.2 from Meta new in coding. Cost per intelligence: Fable 5 $3, DeepSeek V4 Flash 3 cents, GPT 5.6 Luna inexpensive."
+      },
+      {
+        "type": "cards",
+        "title_pl": "LM Arena + Cost Per Intelligence Index",
+        "title_en": "LM Arena + Cost Per Intelligence Index",
+        "cards": [
+          {
+            "title": "Claude dominuje coding i chat — Muse Spark 1.2 nowy od Meta",
+            "desc_pl": "Claude (blue) dominuje coding i chat na LM Arena. Gemini (red), OpenAI (yellow), open-source (green, mostly Chinese). Nowość: Muse Spark 1.2 od Meta — focused na coding. Muse Spark 1.1 i 1.2 już dostępne. Trend: Claude wciąż #1 ale chińskie modele i Meta zyskują.",
+            "desc_en": "Claude (blue) dominates coding and chat on LM Arena. Gemini (red), OpenAI (yellow), open-source (green, mostly Chinese). New: Muse Spark 1.2 from Meta — focused on coding. Muse Spark 1.1 and 1.2 already available. Trend: Claude still #1 but Chinese models and Meta gaining.",
+            "tags": [
+              "leaderboard",
+              "lm-arena",
+              "anthropic",
+              "meta",
+              "muse-spark"
+            ],
+            "date": "2026-08-06",
+            "links": [
+              {
+                "label": "Artificial Analysis",
+                "url": "https://artificialanalysis.ai/"
+              }
+            ],
+            "id": "card-ep-2026-08-07-claude-dominates-muse-spark"
+          },
+          {
+            "title": "Cost Per Intelligence — Fable 5 $3 vs DeepSeek 3 cents vs Luna niedrogi",
+            "desc_pl": "Cost per task: Claude Fable 5 $3 (najdroższy), DeepSeek V4 Flash 3 cents (najtańszy frontier), GPT 5.6 Luna also inexpensive i good choice. artificialanalysis.ai — recommended do regular check. 100x różnica między najdroższym i najtańszym frontier.",
+            "desc_en": "Cost per task: Claude Fable 5 $3 (most expensive), DeepSeek V4 Flash 3 cents (cheapest frontier), GPT 5.6 Luna also inexpensive and good choice. artificialanalysis.ai — recommended for regular check. 100x difference between most expensive and cheapest frontier.",
+            "tags": [
+              "cost",
+              "pricing",
+              "fable-5",
+              "deepseek",
+              "luna"
+            ],
+            "date": "2026-08-06",
+            "links": [
+              {
+                "label": "Artificial Analysis",
+                "url": "https://artificialanalysis.ai/"
+              }
+            ],
+            "id": "card-ep-2026-08-07-cost-per-intelligence"
+          }
+        ],
+        "icon": "📋"
+      },
+      {
+        "type": "cards",
+        "title_pl": "Nowe modele i narzędzia",
+        "title_en": "New models and tools",
+        "cards": [
+          {
+            "title": "xAI Grok Build Mode — text-to-app w chat, multiple parallel agents",
+            "desc_pl": "xAI launches Grok Build Mode — jak Claude Code ale w chat. Text-to-app: create apps from text prompts, publish z URL immediately. Integrates coding agents, image generation, live web browsing, multiple parallel helper agents. Quick web application creation.",
+            "desc_en": "xAI launches Grok Build Mode — like Claude Code but in chat. Text-to-app: create apps from text prompts, publish with URL immediately. Integrates coding agents, image generation, live web browsing, multiple parallel helper agents. Quick web application creation.",
+            "tags": [
+              "xai",
+              "grok",
+              "build-mode",
+              "text-to-app"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-grok-build-mode"
+          },
+          {
+            "title": "Sakana AI — nature-inspired intelligence, spike neural networks",
+            "desc_pl": "Sakana AI (Tokyo) — nature-inspired intelligence. Innovations: model merging, autonomous research agents, biologically inspired architectures, continuous thought machines, spike neural networks (neural spikes running in time like real brain). Very innovative company.",
+            "desc_en": "Sakana AI (Tokyo) — nature-inspired intelligence. Innovations: model merging, autonomous research agents, biologically inspired architectures, continuous thought machines, spike neural networks (neural spikes running in time like real brain). Very innovative company.",
+            "tags": [
+              "sakana",
+              "nature-inspired",
+              "spike-neural-networks",
+              "tokyo"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-sakana-nature-inspired"
+          },
+          {
+            "title": "Demis Hassabis — Chief Scientist of Alphabet (promotion)",
+            "desc_pl": "Demis Hassabis (DeepMind founder, Nobel Prize winner) becomes Chief Scientist of Alphabet (mother company). Big promotion. DeepMind is part of Google. Hassabis — amazing person, Nobel Prize winner.",
+            "desc_en": "Demis Hassabis (DeepMind founder, Nobel Prize winner) becomes Chief Scientist of Alphabet (mother company). Big promotion. DeepMind is part of Google. Hassabis — amazing person, Nobel Prize winner.",
+            "tags": [
+              "hassabis",
+              "alphabet",
+              "deepmind",
+              "promotion",
+              "nobel"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-hassabis-chief-scientist"
+          },
+          {
+            "title": "Inkling-Small 276B — Thinking Machines, 4x smaller, 1M context",
+            "desc_pl": "Thinking Machines Inkling-Small — 276B params, 4x smaller niż full Inkling. Nearly same performance. 1M context length. Very inexpensive. Small active params (dark = active) — runs on modest hardware. Good model dla cost-efficient deployment.",
+            "desc_en": "Thinking Machines Inkling-Small — 276B params, 4x smaller than full Inkling. Nearly same performance. 1M context length. Very inexpensive. Small active params (dark = active) — runs on modest hardware. Good model for cost-efficient deployment.",
+            "tags": [
+              "thinking-machines",
+              "inkling",
+              "276b",
+              "mira-murati"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-inkling-small-276b"
+          },
+          {
+            "title": "Google Gemini Spark — personal AI agent dla Google Workspace",
+            "desc_pl": "Google Gemini Spark — personal AI agent. Operates on Google Workspace: Gmail, Docs, Drive, Calendar, Sheets. Chrome auto-browse — can pilot web browser dla research. Google's answer to AI personal assistants.",
+            "desc_en": "Google Gemini Spark — personal AI agent. Operates on Google Workspace: Gmail, Docs, Drive, Calendar, Sheets. Chrome auto-browse — can pilot web browser for research. Google's answer to AI personal assistants.",
+            "tags": [
+              "google",
+              "gemini",
+              "spark",
+              "workspace",
+              "agent"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-gemini-spark-agent"
+          },
+          {
+            "title": "OpenAI Astra — solves 10 long-standing math problems, $2000 compute",
+            "desc_pl": "OpenAI Astra — unreleased long-horizon model family dla parallel multi-agent execution na complex multi-hour technical assignments. Solved 10 long-standing mathematical problems. Not about speed — about achieving it. Solutions generated dla ~$2000 API compute tokens. Every mathematical proof formally verified using machine-checkable Lean certificates.",
+            "desc_en": "OpenAI Astra — unreleased long-horizon model family for parallel multi-agent execution on complex multi-hour technical assignments. Solved 10 long-standing mathematical problems. Not about speed — about achieving it. Solutions generated for ~$2000 API compute tokens. Every mathematical proof formally verified using machine-checkable Lean certificates.",
+            "tags": [
+              "openai",
+              "astra",
+              "math",
+              "long-horizon",
+              "lean-certificates"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-openai-astra-math"
+          }
+        ],
+        "icon": "📋"
+      },
+      {
+        "type": "cards",
+        "title_pl": "Coding & Tools — Muse Code, Claude /doctor, /watch, Buzzy, Agent OS",
+        "title_en": "Coding & Tools — Muse Code, Claude /doctor, /watch, Buzzy, Agent OS",
+        "cards": [
+          {
+            "title": "Muse Code vs Claude Code — Meta's cheap fast coding worker",
+            "desc_pl": "Meta Muse Code — harness dla Muse Spark 1.2 model, focused na long-horizon software engineering. Install jak Claude Code, use w terminal. Automatic fan-out of parallel sub-agents. Not as good as Claude Code ale inexpensive — 'fast cheap worker'. Positioning: quick tasks gdzie Claude Code overkill.",
+            "desc_en": "Meta Muse Code — harness for Muse Spark 1.2 model, focused on long-horizon software engineering. Install like Claude Code, use in terminal. Automatic fan-out of parallel sub-agents. Not as good as Claude Code but inexpensive — 'fast cheap worker'. Positioning: quick tasks where Claude Code overkill.",
+            "tags": [
+              "meta",
+              "muse-code",
+              "muse-spark",
+              "coding",
+              "harness"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-muse-code-vs-claude"
+          },
+          {
+            "title": "Claude /doctor — built-in health checks dla Claude Code",
+            "desc_pl": "Claude Code new feature: /doctor command. Runs health checks on installation, configuration, skills, MCP servers. Tells what's wrong, where to trim or fix. Run /doctor lub from Unix prompt: claude --doctor. Built-in feature (not third-party).",
+            "desc_en": "Claude Code new feature: /doctor command. Runs health checks on installation, configuration, skills, MCP servers. Tells what's wrong, where to trim or fix. Run /doctor or from Unix prompt: claude --doctor. Built-in feature (not third-party).",
+            "tags": [
+              "anthropic",
+              "claude-code",
+              "doctor",
+              "health-check"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-claude-doctor"
+          },
+          {
+            "title": "Claude /watch skill — watches video and summarizes it",
+            "desc_pl": "Claude /watch skill — can watch video and summarize it. Takes frames and analyzes them. Very interesting capability — video understanding + summarization.",
+            "desc_en": "Claude /watch skill — can watch video and summarize it. Takes frames and analyzes them. Very interesting capability — video understanding + summarization.",
+            "tags": [
+              "anthropic",
+              "claude",
+              "watch",
+              "video",
+              "summarize"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-claude-watch-skill"
+          },
+          {
+            "title": "Buzzy — cinematic AI canvas, 50+ tools, 70+ models",
+            "desc_pl": "Buzzy — cinematic AI canvas. Agentic Infinite Canvas dla end-to-end AI video production. Integrates 50+ tools, 70+ image/video models (Seedance, Veo, Kling, Runway). Director-level controls. Sophisticated system dla video creation. buzzy.now.",
+            "desc_en": "Buzzy — cinematic AI canvas. Agentic Infinite Canvas for end-to-end AI video production. Integrates 50+ tools, 70+ image/video models (Seedance, Veo, Kling, Runway). Director-level controls. Sophisticated system for video creation. buzzy.now.",
+            "tags": [
+              "buzzy",
+              "video",
+              "canvas",
+              "cinematic",
+              "tools"
+            ],
+            "date": "2026-08-06",
+            "links": [
+              {
+                "label": "Buzzy",
+                "url": "https://buzzy.now"
+              }
+            ],
+            "id": "card-ep-2026-08-07-buzzy-cinematic-canvas"
+          },
+          {
+            "title": "5 Layers of AI Operating System — Julian Goldie's mission control",
+            "desc_pl": "Julian Goldie's Agent OS — 5 layers: (1) Mission control dashboard (all models + agents visible), (2) Obsidian-type wiki z markdown files (shared between systems), (3) Router (choose model/agent per task), (4) Loop engineering dla continuous improvement, (5) Skills analysis after tasks. 'Anybody can do it w half an hour — ask Claude Code to create local app'.",
+            "desc_en": "Julian Goldie's Agent OS — 5 layers: (1) Mission control dashboard (all models + agents visible), (2) Obsidian-type wiki with markdown files (shared between systems), (3) Router (choose model/agent per task), (4) Loop engineering for continuous improvement, (5) Skills analysis after tasks. 'Anybody can do it in half an hour — ask Claude Code to create local app'.",
+            "tags": [
+              "agent-os",
+              "julian-goldie",
+              "dashboard",
+              "router",
+              "obsidian"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-agent-os-5-layers"
+          },
+          {
+            "title": "Hermes Agent 0.20 — realtime voice, bidirectional, voice notes",
+            "desc_pl": "Hermes Agent 0.20 (herald release) — realtime voice, bidirectional. Talk while it's thinking. Voice notes work across apps (WhatsApp). Grounded citation, safe approval prompts, open line ID dla continuous collaboration. Tailscale connects local AI agents to mobile devices — end-to-end encrypted mesh network without exposing ports.",
+            "desc_en": "Hermes Agent 0.20 (herald release) — realtime voice, bidirectional. Talk while it's thinking. Voice notes work across apps (WhatsApp). Grounded citation, safe approval prompts, open line ID for continuous collaboration. Tailscale connects local AI agents to mobile devices — end-to-end encrypted mesh network without exposing ports.",
+            "tags": [
+              "hermes",
+              "voice",
+              "bidirectional",
+              "tailscale",
+              "mobile"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-hermes-020-tailscale"
+          }
+        ],
+        "icon": "📋"
+      },
+      {
+        "type": "cards",
+        "title_pl": "Local & Open Source — Liquid, Qwythos, KAT-Coder, ZLUDA, Pi, Rust",
+        "title_en": "Local & Open Source — Liquid, Qwythos, KAT-Coder, ZLUDA, Pi, Rust",
+        "cards": [
+          {
+            "title": "Liquid LFM2.5-2.6B — small local agentic model, CPU only",
+            "desc_pl": "Liquid AI LFM2.5-2.6B — small local agentic model. Runs w very small amount of memory — phones, laptops, CPU only. Works out of box z harnesses: Hermes agent, Open Claude, Pi models. Trained z multi-step agent workflows.",
+            "desc_en": "Liquid AI LFM2.5-2.6B — small local agentic model. Runs in very small amount of memory — phones, laptops, CPU only. Works out of box with harnesses: Hermes agent, Open Claude, Pi models. Trained with multi-step agent workflows.",
+            "tags": [
+              "liquid-ai",
+              "lfm",
+              "local",
+              "agentic",
+              "cpu"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-liquid-lfm25"
+          },
+          {
+            "title": "Empero Qwythos 27B — open, local, multimodal, 1M context",
+            "desc_pl": "Empero Qwythos 27B — based on Qwen 3.5 27B. Open, local, multimodal. 1M context, open weights, Apache license. Vision: images, screenshots, charts, handwriting. Native multi-tooling, predictions. Smaller 9B version also available. Empero — independent research lab (Germany).",
+            "desc_en": "Empero Qwythos 27B — based on Qwen 3.5 27B. Open, local, multimodal. 1M context, open weights, Apache license. Vision: images, screenshots, charts, handwriting. Native multi-tooling, predictions. Smaller 9B version also available. Empero — independent research lab (Germany).",
+            "tags": [
+              "empero",
+              "qwythos",
+              "27b",
+              "multimodal",
+              "local",
+              "apache"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-qwythos-27b"
+          },
+          {
+            "title": "KAT-Coder-V2.5-Dev — open weight MoE coding, 127K supervised",
+            "desc_pl": "KAT-Coder-V2.5-Dev — Apache, open weight, mixture of experts dla coding. From China, based on Qwen 3.6. Trained z 127,000 supervised examples. Very good results on benchmarks dla small model.",
+            "desc_en": "KAT-Coder-V2.5-Dev — Apache, open weight, mixture of experts for coding. From China, based on Qwen 3.6. Trained with 127,000 supervised examples. Very good results on benchmarks for small model.",
+            "tags": [
+              "kat-coder",
+              "moe",
+              "coding",
+              "qwen",
+              "open-source"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-kat-coder-v25"
+          },
+          {
+            "title": "ZLUDA — running CUDA on AMD graphics cards",
+            "desc_pl": "ZLUDA — open source software compatibility layer. Allows unmodified NVIDIA CUDA applications run on AMD GPUs. Translates instructions on the fly. Historic — breaks NVIDIA CUDA monopoly. AMD GPUs can now run CUDA code.",
+            "desc_en": "ZLUDA — open source software compatibility layer. Allows unmodified NVIDIA CUDA applications run on AMD GPUs. Translates instructions on the fly. Historic — breaks NVIDIA CUDA monopoly. AMD GPUs can now run CUDA code.",
+            "tags": [
+              "zluda",
+              "amd",
+              "cuda",
+              "compatibility",
+              "open-source"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-zluda-cuda-amd"
+          },
+          {
+            "title": "Pi on RTX 3060 12GB — lightweight coding agent dla old GPUs",
+            "desc_pl": "Pi — lightweight coding agent harness dla local models. Runs on old i small GPU memory card (RTX 3060 12GB). Prefill speed i token/sec generation — important dla local run. Mixture of expert + grouped query attention reduces VRAM i KV cache pressure. Local setups win na privacy/control, lose na hardest long-horizon tasks.",
+            "desc_en": "Pi — lightweight coding agent harness for local models. Runs on old and small GPU memory card (RTX 3060 12GB). Prefill speed and token/sec generation — important for local run. Mixture of expert + grouped query attention reduces VRAM and KV cache pressure. Local setups win on privacy/control, lose on hardest long-horizon tasks.",
+            "tags": [
+              "pi",
+              "local",
+              "rtx-3060",
+              "coding-agent",
+              "vram"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-pi-rtx-3060"
+          },
+          {
+            "title": "Rust quiet systems takeover — Discord 8GB→400MB, government shift",
+            "desc_pl": "Rust adoption continues. Discord example: memory 8GB → 400MB, latency spikes 300ms → ~0, CPU 100% → 60%, latency 250ms → 10ms. Government: American government pushes contractors to memory-safe languages instead of C/C++. Initially mandatory, now risk-based agency discretion. Google cut Android memory safety bugs 75% → 20% by removing C/C++. Darpa explores AI-assisted C-to-Rust migration. 'If you are an engineer you have to know Rust. You just must.'",
+            "desc_en": "Rust adoption continues. Discord example: memory 8GB → 400MB, latency spikes 300ms → ~0, CPU 100% → 60%, latency 250ms → 10ms. Government: American government pushes contractors to memory-safe languages instead of C/C++. Initially mandatory, now risk-based agency discretion. Google cut Android memory safety bugs 75% → 20% by removing C/C++. Darpa explores AI-assisted C-to-Rust migration. 'If you are an engineer you have to know Rust. You just must.'",
+            "tags": [
+              "rust",
+              "discord",
+              "government",
+              "memory-safety",
+              "darpa"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-rust-takeover"
+          }
+        ],
+        "icon": "📋"
+      },
+      {
+        "type": "cards",
+        "title_pl": "News i wydarzenia",
+        "title_en": "News and events",
+        "cards": [
+          {
+            "title": "Neuralink wheelchair + BCI — $40B valuation, brain controls wheelchair",
+            "desc_pl": "Neuralink (Elon Musk) — market valuation surpassed $40 billion. Years developing brain-computer interfaces. Monkeys first, then humans controlling cursor. Now: person in wheelchair can navigate chair z brain. Person cannot move limbs but can move the chair. Historic milestone dla BCI.",
+            "desc_en": "Neuralink (Elon Musk) — market valuation surpassed $40 billion. Years developing brain-computer interfaces. Monkeys first, then humans controlling cursor. Now: person in wheelchair can navigate chair with brain. Person cannot move limbs but can move the chair. Historic milestone for BCI.",
+            "tags": [
+              "neuralink",
+              "bci",
+              "wheelchair",
+              "elon-musk",
+              "brain"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-neuralink-wheelchair"
+          },
+          {
+            "title": "Qwen 3.8 Max open weight — 2.4T params, $2/$6 per M tokens",
+            "desc_pl": "Alibaba Qwen 3.8 Max open weight. 2.4T params, flagship model. Pricing: $2 input, $6 output per million tokens. Very affordable. Blue on benchmark — very good performance across multiple benchmarks.",
+            "desc_en": "Alibaba Qwen 3.8 Max open weight. 2.4T params, flagship model. Pricing: $2 input, $6 output per million tokens. Very affordable. Blue on benchmark — very good performance across multiple benchmarks.",
+            "tags": [
+              "alibaba",
+              "qwen",
+              "3.8-max",
+              "open-weight",
+              "flagship"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-qwen-38-max-open"
+          },
+          {
+            "title": "GenOffice vs MS Office — GenSpark AI workspace, free open source",
+            "desc_pl": "GenSpark (Palo Alto) created GenOffice — like Microsoft Office ale AI-enabled, open source, free. Sheets, docs. Works z MS Office documents. Initially created by single engineer w about a week. 'Nowadays any of you can talk to Claude Code Fable and ask it to generate something like Microsoft Word for free'. gen.ai — download and use.",
+            "desc_en": "GenSpark (Palo Alto) created GenOffice — like Microsoft Office but AI-enabled, open source, free. Sheets, docs. Works with MS Office documents. Initially created by single engineer in about a week. 'Nowadays any of you can talk to Claude Code Fable and ask it to generate something like Microsoft Word for free'. gen.ai — download and use.",
+            "tags": [
+              "genspark",
+              "genoffice",
+              "open-source",
+              "free",
+              "ms-office"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-genoffice-genspark"
+          },
+          {
+            "title": "Mobile Next, MobileCLI, MobileMCP — AI mobile app testing",
+            "desc_pl": "Mobile Next — development toolset dla mobile app creators. Test on emulator lub connected live phone. MobileCLI — AI enabled, press screen, do swipes, describe tests w text. MobileMCP — like Playwright dla browsers ale dla mobile. Mobile-right tool. Jill Migadesish (Germany) — mobile app testing i automation.",
+            "desc_en": "Mobile Next — development toolset for mobile app creators. Test on emulator or connected live phone. MobileCLI — AI enabled, press screen, do swipes, describe tests in text. MobileMCP — like Playwright for browsers but for mobile. Mobile-right tool. Jill Migadesish (Germany) — mobile app testing and automation.",
+            "tags": [
+              "mobile",
+              "testing",
+              "mobilecli",
+              "mobilemcp",
+              "playwright"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-mobile-testing"
+          },
+          {
+            "title": "Zero Day Clock — exploit time shrinking, now negative",
+            "desc_pl": "Zero Day Clock — tracks shrinking time from CVE (Common Vulnerabilities and Exposures) disclosure to first confirmed exploitation. Time going down, now NEGATIVE — hackers exploit before public announcement. Exploit survival curves shift left year over year — attackers faster than patch cycles. 'Patching alone increasingly too slow. Exposure reduction and faster remediation matter more.'",
+            "desc_en": "Zero Day Clock — tracks shrinking time from CVE (Common Vulnerabilities and Exposures) disclosure to first confirmed exploitation. Time going down, now NEGATIVE — hackers exploit before public announcement. Exploit survival curves shift left year over year — attackers faster than patch cycles. 'Patching alone increasingly too slow. Exposure reduction and faster remediation matter more.'",
+            "tags": [
+              "security",
+              "zero-day",
+              "cve",
+              "exploit",
+              "patching"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-zero-day-clock"
+          }
+        ],
+        "icon": "📋"
+      },
+      {
+        "type": "cards",
+        "title_pl": "Pieniądze, Memory & Tools",
+        "title_en": "Money, Memory & Tools",
+        "cards": [
+          {
+            "title": "9Router — FREE AI router + token saver, local + cloud",
+            "desc_pl": "9Router — free AI router i token saver. Connects locally do many models z different providers. Integrates tools: Claude Code, Cursor, GitHub. Built-in optimization features reduce token usage. Run local + build complete applications without recurring costs.",
+            "desc_en": "9Router — free AI router and token saver. Connects locally to many models from different providers. Integrates tools: Claude Code, Cursor, GitHub. Built-in optimization features reduce token usage. Run local + build complete applications without recurring costs.",
+            "tags": [
+              "9router",
+              "router",
+              "token-saver",
+              "free",
+              "local"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-9router"
+          },
+          {
+            "title": "Tencent open-source AI memory system — mermaid diagrams, 4 semantic layers",
+            "desc_pl": "Tencent open-source MIT license memory plug-in. Large context windows degrade LLM performance, waste tokens. Compresses execution logs into interactive mermaid diagrams. Memory structured into episodic events i 4 semantic layers (facts to persona defaults). Runs locally via SQLite — fast hybrid search, complete privacy, zero API vendor dependencies. Inspired by cognitive psychology.",
+            "desc_en": "Tencent open-source MIT license memory plug-in. Large context windows degrade LLM performance, waste tokens. Compresses execution logs into interactive mermaid diagrams. Memory structured into episodic events and 4 semantic layers (facts to persona defaults). Runs locally via SQLite — fast hybrid search, complete privacy, zero API vendor dependencies. Inspired by cognitive psychology.",
+            "tags": [
+              "tencent",
+              "memory",
+              "mermaid",
+              "sqlite",
+              "open-source"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-tencent-memory"
+          },
+          {
+            "title": "GraphRAG — graphs better than vectors (Microsoft)",
+            "desc_pl": "GraphRAG (originally Microsoft) — positioning that graphs are better than vectors. '2.5 years ago we were playing z vector databases dla RAG. Now we're using wiki-type structure (basically a graph) and getting better performance.' Trend shift: vector databases → graph-based retrieval.",
+            "desc_en": "GraphRAG (originally Microsoft) — positioning that graphs are better than vectors. '2.5 years ago we were playing with vector databases for RAG. Now we're using wiki-type structure (basically a graph) and getting better performance.' Trend shift: vector databases → graph-based retrieval.",
+            "tags": [
+              "graphrag",
+              "microsoft",
+              "graphs",
+              "vectors",
+              "rag"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-graphrag-vs-vectors"
+          },
+          {
+            "title": "Microsoft FARAH 1.5 — browser agent model, 3 sizes, open weights MIT",
+            "desc_pl": "Microsoft FARAH 1.5 — family of browser automation models. 3 sizes: 4B, 9B, 27B. Built on Qwen 3.5, open weights MIT license. Observe-think-act loop dla interactive decision making across multi-step web tasks. Long workflows, relatively long context dla small models. Safety checkpoints. Best used w sandbox environments.",
+            "desc_en": "Microsoft FARAH 1.5 — family of browser automation models. 3 sizes: 4B, 9B, 27B. Built on Qwen 3.5, open weights MIT license. Observe-think-act loop for interactive decision making across multi-step web tasks. Long workflows, relatively long context for small models. Safety checkpoints. Best used in sandbox environments.",
+            "tags": [
+              "microsoft",
+              "farah",
+              "browser-agent",
+              "qwen",
+              "mit"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-microsoft-farah"
+          },
+          {
+            "title": "Abacus AI Autobots — self-improving agents demo",
+            "desc_pl": "Abacus AI Autobots — inside ChatLLM. Self-evaluating agents designed to continuously grade performance and autonomously optimize workflow strategies. Examples: sales lead scoring, stock paper trading, YouTube thumbnail testing. Abacus — high quality, deep agent product, runs on server, compliance dla big enterprise.",
+            "desc_en": "Abacus AI Autobots — inside ChatLLM. Self-evaluating agents designed to continuously grade performance and autonomously optimize workflow strategies. Examples: sales lead scoring, stock paper trading, YouTube thumbnail testing. Abacus — high quality, deep agent product, runs on server, compliance for big enterprise.",
+            "tags": [
+              "abacus",
+              "autobots",
+              "self-improving",
+              "chatllm",
+              "enterprise"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-abacus-autobots"
+          },
+          {
+            "title": "Leopold Aschenbrenner — lost $30B, Mikuel Sea raised $15B z AI",
+            "desc_pl": "Leopold Aschenbrenner (Situational Awareness manifesto, hedge fund) — lost ~$30B out of $45B, down to $10B. Trying to calm investors. Ex-OpenAI researcher. Got married w middle of all that. Mikuel Sea claims ChatGPT guided structuring bitcoin-based preferred stock helped raise ~$15B. Core rule: 'don't try to outwork automation, leverage AI as force multiplier'. Ask AI dla novel high-value solutions, not mastering tasks AI can already perform.",
+            "desc_en": "Leopold Aschenbrenner (Situational Awareness manifesto, hedge fund) — lost ~$30B out of $45B, down to $10B. Trying to calm investors. Ex-OpenAI researcher. Got married in middle of all that. Mikuel Sea claims ChatGPT guided structuring bitcoin-based preferred stock helped raise ~$15B. Core rule: 'don't try to outwork automation, leverage AI as force multiplier'. Ask AI for novel high-value solutions, not mastering tasks AI can already perform.",
+            "tags": [
+              "aschenbrenner",
+              "hedge-fund",
+              "loss",
+              "mikuel-sea",
+              "ai-leverage"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-aschenbrenner-mikuel"
+          },
+          {
+            "title": "Meta Compute — renting GPU capacity to external clients",
+            "desc_pl": "Meta invested heavily w infrastructure, now renting out GPU capacity to external clients. Competing z Amazon i other infrastructure providers. Trend: big tech companies becoming cloud providers.",
+            "desc_en": "Meta invested heavily in infrastructure, now renting out GPU capacity to external clients. Competing with Amazon and other infrastructure providers. Trend: big tech companies becoming cloud providers.",
+            "tags": [
+              "meta",
+              "compute",
+              "gpu",
+              "rental",
+              "cloud"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-meta-compute"
+          },
+          {
+            "title": "Codebase Memory MCP — knowledge graph dla AI coding agents",
+            "desc_pl": "Codebase Memory MCP — fast i token efficient MCP server. Indexes codebases w persistent knowledge graph dla AI coding agents. Parses source code z tree-sitter, stores structural info (functions, classes, calls, inputs, routes) w SQLite. Agents query graph instead of rereading files — cuts token usage dramatically. Trend: graph-based memory replacing vector search.",
+            "desc_en": "Codebase Memory MCP — fast and token efficient MCP server. Indexes codebases in persistent knowledge graph for AI coding agents. Parses source code with tree-sitter, stores structural info (functions, classes, calls, inputs, routes) in SQLite. Agents query graph instead of rereading files — cuts token usage dramatically. Trend: graph-based memory replacing vector search.",
+            "tags": [
+              "mcp",
+              "codebase",
+              "memory",
+              "graph",
+              "sqlite"
+            ],
+            "date": "2026-08-06",
+            "links": [],
+            "id": "card-ep-2026-08-07-codebase-memory-mcp"
+          }
+        ],
+        "icon": "📋"
+      }
+    ]
+  },
+  {
     "id": "ep-2026-07-31",
     "date": "2026-07-31",
     "title_pl": "Opus 5, DeepSeek V4 GA, Kimi K3 na Ollama, Sakana Fugaku vs Fable 5, Rust LLM",

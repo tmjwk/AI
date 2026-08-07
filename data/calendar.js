@@ -2,9 +2,339 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-03 04:16:02 UTC
+// Generated: 2026-08-07 21:32:44 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Claude dominuje coding i chat — Muse Spark 1.2 nowy od Meta",
+    "title_en": "Claude dominuje coding i chat — Muse Spark 1.2 nowy od Meta",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-claude-dominates-muse-spark",
+    "meta_pl": "LM Arena + Cost Per Intelligen",
+    "meta_en": "LM Arena + Cost Per Intelligen",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Cost Per Intelligence — Fable 5 $3 vs DeepSeek 3 cents vs Luna niedrogi",
+    "title_en": "Cost Per Intelligence — Fable 5 $3 vs DeepSeek 3 cents vs Luna niedrogi",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-cost-per-intelligence",
+    "meta_pl": "LM Arena + Cost Per Intelligen",
+    "meta_en": "LM Arena + Cost Per Intelligen",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "xAI Grok Build Mode — text-to-app w chat, multiple parallel agents",
+    "title_en": "xAI Grok Build Mode — text-to-app w chat, multiple parallel agents",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-grok-build-mode",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Sakana AI — nature-inspired intelligence, spike neural networks",
+    "title_en": "Sakana AI — nature-inspired intelligence, spike neural networks",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-sakana-nature-inspired",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Demis Hassabis — Chief Scientist of Alphabet (promotion)",
+    "title_en": "Demis Hassabis — Chief Scientist of Alphabet (promotion)",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-hassabis-chief-scientist",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Inkling-Small 276B — Thinking Machines, 4x smaller, 1M context",
+    "title_en": "Inkling-Small 276B — Thinking Machines, 4x smaller, 1M context",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-inkling-small-276b",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Google Gemini Spark — personal AI agent dla Google Workspace",
+    "title_en": "Google Gemini Spark — personal AI agent dla Google Workspace",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-gemini-spark-agent",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "OpenAI Astra — solves 10 long-standing math problems, $2000 compute",
+    "title_en": "OpenAI Astra — solves 10 long-standing math problems, $2000 compute",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-openai-astra-math",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Muse Code vs Claude Code — Meta's cheap fast coding worker",
+    "title_en": "Muse Code vs Claude Code — Meta's cheap fast coding worker",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-muse-code-vs-claude",
+    "meta_pl": "Coding & Tools — Muse Code, Cl",
+    "meta_en": "Coding & Tools — Muse Code, Cl",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Claude /doctor — built-in health checks dla Claude Code",
+    "title_en": "Claude /doctor — built-in health checks dla Claude Code",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-claude-doctor",
+    "meta_pl": "Coding & Tools — Muse Code, Cl",
+    "meta_en": "Coding & Tools — Muse Code, Cl",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Claude /watch skill — watches video and summarizes it",
+    "title_en": "Claude /watch skill — watches video and summarizes it",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-claude-watch-skill",
+    "meta_pl": "Coding & Tools — Muse Code, Cl",
+    "meta_en": "Coding & Tools — Muse Code, Cl",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Buzzy — cinematic AI canvas, 50+ tools, 70+ models",
+    "title_en": "Buzzy — cinematic AI canvas, 50+ tools, 70+ models",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-buzzy-cinematic-canvas",
+    "meta_pl": "Coding & Tools — Muse Code, Cl",
+    "meta_en": "Coding & Tools — Muse Code, Cl",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "5 Layers of AI Operating System — Julian Goldie's mission control",
+    "title_en": "5 Layers of AI Operating System — Julian Goldie's mission control",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-agent-os-5-layers",
+    "meta_pl": "Coding & Tools — Muse Code, Cl",
+    "meta_en": "Coding & Tools — Muse Code, Cl",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Hermes Agent 0.20 — realtime voice, bidirectional, voice notes",
+    "title_en": "Hermes Agent 0.20 — realtime voice, bidirectional, voice notes",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-hermes-020-tailscale",
+    "meta_pl": "Coding & Tools — Muse Code, Cl",
+    "meta_en": "Coding & Tools — Muse Code, Cl",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Liquid LFM2.5-2.6B — small local agentic model, CPU only",
+    "title_en": "Liquid LFM2.5-2.6B — small local agentic model, CPU only",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-liquid-lfm25",
+    "meta_pl": "Local & Open Source — Liquid, ",
+    "meta_en": "Local & Open Source — Liquid, ",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Empero Qwythos 27B — open, local, multimodal, 1M context",
+    "title_en": "Empero Qwythos 27B — open, local, multimodal, 1M context",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-qwythos-27b",
+    "meta_pl": "Local & Open Source — Liquid, ",
+    "meta_en": "Local & Open Source — Liquid, ",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "KAT-Coder-V2.5-Dev — open weight MoE coding, 127K supervised",
+    "title_en": "KAT-Coder-V2.5-Dev — open weight MoE coding, 127K supervised",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-kat-coder-v25",
+    "meta_pl": "Local & Open Source — Liquid, ",
+    "meta_en": "Local & Open Source — Liquid, ",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "ZLUDA — running CUDA on AMD graphics cards",
+    "title_en": "ZLUDA — running CUDA on AMD graphics cards",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-zluda-cuda-amd",
+    "meta_pl": "Local & Open Source — Liquid, ",
+    "meta_en": "Local & Open Source — Liquid, ",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Pi on RTX 3060 12GB — lightweight coding agent dla old GPUs",
+    "title_en": "Pi on RTX 3060 12GB — lightweight coding agent dla old GPUs",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-pi-rtx-3060",
+    "meta_pl": "Local & Open Source — Liquid, ",
+    "meta_en": "Local & Open Source — Liquid, ",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Rust quiet systems takeover — Discord 8GB→400MB, government shift",
+    "title_en": "Rust quiet systems takeover — Discord 8GB→400MB, government shift",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-rust-takeover",
+    "meta_pl": "Local & Open Source — Liquid, ",
+    "meta_en": "Local & Open Source — Liquid, ",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Neuralink wheelchair + BCI — $40B valuation, brain controls wheelchair",
+    "title_en": "Neuralink wheelchair + BCI — $40B valuation, brain controls wheelchair",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-neuralink-wheelchair",
+    "meta_pl": "News i wydarzenia",
+    "meta_en": "News i wydarzenia",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Qwen 3.8 Max open weight — 2.4T params, $2/$6 per M tokens",
+    "title_en": "Qwen 3.8 Max open weight — 2.4T params, $2/$6 per M tokens",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-qwen-38-max-open",
+    "meta_pl": "News i wydarzenia",
+    "meta_en": "News i wydarzenia",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "GenOffice vs MS Office — GenSpark AI workspace, free open source",
+    "title_en": "GenOffice vs MS Office — GenSpark AI workspace, free open source",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-genoffice-genspark",
+    "meta_pl": "News i wydarzenia",
+    "meta_en": "News i wydarzenia",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Mobile Next, MobileCLI, MobileMCP — AI mobile app testing",
+    "title_en": "Mobile Next, MobileCLI, MobileMCP — AI mobile app testing",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-mobile-testing",
+    "meta_pl": "News i wydarzenia",
+    "meta_en": "News i wydarzenia",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Zero Day Clock — exploit time shrinking, now negative",
+    "title_en": "Zero Day Clock — exploit time shrinking, now negative",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-zero-day-clock",
+    "meta_pl": "News i wydarzenia",
+    "meta_en": "News i wydarzenia",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "9Router — FREE AI router + token saver, local + cloud",
+    "title_en": "9Router — FREE AI router + token saver, local + cloud",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-9router",
+    "meta_pl": "Pieniądze, Memory & Tools",
+    "meta_en": "Pieniądze, Memory & Tools",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Tencent open-source AI memory system — mermaid diagrams, 4 semantic layers",
+    "title_en": "Tencent open-source AI memory system — mermaid diagrams, 4 semantic layers",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-tencent-memory",
+    "meta_pl": "Pieniądze, Memory & Tools",
+    "meta_en": "Pieniądze, Memory & Tools",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "GraphRAG — graphs better than vectors (Microsoft)",
+    "title_en": "GraphRAG — graphs better than vectors (Microsoft)",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-graphrag-vs-vectors",
+    "meta_pl": "Pieniądze, Memory & Tools",
+    "meta_en": "Pieniądze, Memory & Tools",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Microsoft FARAH 1.5 — browser agent model, 3 sizes, open weights MIT",
+    "title_en": "Microsoft FARAH 1.5 — browser agent model, 3 sizes, open weights MIT",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-microsoft-farah",
+    "meta_pl": "Pieniądze, Memory & Tools",
+    "meta_en": "Pieniądze, Memory & Tools",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Abacus AI Autobots — self-improving agents demo",
+    "title_en": "Abacus AI Autobots — self-improving agents demo",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-abacus-autobots",
+    "meta_pl": "Pieniądze, Memory & Tools",
+    "meta_en": "Pieniądze, Memory & Tools",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Leopold Aschenbrenner — lost $30B, Mikuel Sea raised $15B z AI",
+    "title_en": "Leopold Aschenbrenner — lost $30B, Mikuel Sea raised $15B z AI",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-aschenbrenner-mikuel",
+    "meta_pl": "Pieniądze, Memory & Tools",
+    "meta_en": "Pieniądze, Memory & Tools",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Meta Compute — renting GPU capacity to external clients",
+    "title_en": "Meta Compute — renting GPU capacity to external clients",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-meta-compute",
+    "meta_pl": "Pieniądze, Memory & Tools",
+    "meta_en": "Pieniądze, Memory & Tools",
+    "num": "ep-2026-08-07"
+  },
+  {
+    "date": "2026-08-06",
+    "type": "lev",
+    "title_pl": "Codebase Memory MCP — knowledge graph dla AI coding agents",
+    "title_en": "Codebase Memory MCP — knowledge graph dla AI coding agents",
+    "link": "ai-radar.html#card-card-ep-2026-08-07-codebase-memory-mcp",
+    "meta_pl": "Pieniądze, Memory & Tools",
+    "meta_en": "Pieniądze, Memory & Tools",
+    "num": "ep-2026-08-07"
+  },
   {
     "date": "2026-08-02",
     "type": "weekly",
