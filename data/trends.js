@@ -1,18 +1,19 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-08-07 21:32:44 UTC
-// Total events: 261, months: 3
+// Generated: 2026-08-08 21:22:36 UTC
+// Total events: 262, months: 3
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-08-07 21:32:44 UTC",
-    "total_events": 261,
+    "generated": "2026-08-08 21:22:36 UTC",
+    "total_events": 262,
     "total_months": 3
   },
   "months": [
     {
       "month": "2026-08",
-      "total": 49,
+      "total": 50,
       "by_type": {
+        "diamandis": 1,
         "lev": 33,
         "weekly": 1,
         "ai_search": 15
@@ -20,15 +21,19 @@ const TRENDS = {
       "top_vendors": [
         [
           "Anthropic",
-          5
+          6
+        ],
+        [
+          "Google",
+          4
         ],
         [
           "Meta",
           3
         ],
         [
-          "Google",
-          3
+          "OpenAI",
+          2
         ],
         [
           "Thinking Machines",
@@ -53,10 +58,6 @@ const TRENDS = {
         [
           "xAI",
           1
-        ],
-        [
-          "OpenAI",
-          1
         ]
       ],
       "top_models": [
@@ -69,11 +70,11 @@ const TRENDS = {
           2
         ],
         [
-          "Muse Spark",
+          "Claude dominuje",
           1
         ],
         [
-          "Claude dominuje",
+          "Muse Spark",
           1
         ],
         [
@@ -240,11 +241,11 @@ const TRENDS = {
       ],
       "top_models": [
         [
-          "GPT-5.6",
+          "GPT-5",
           1
         ],
         [
-          "GPT-5",
+          "GPT-5.6",
           1
         ],
         [
@@ -340,15 +341,15 @@ const TRENDS = {
     "top_vendors": [
       [
         "Anthropic",
-        40
+        41
       ],
       [
         "OpenAI",
-        22
+        23
       ],
       [
         "Google",
-        19
+        20
       ],
       [
         "Meta",
@@ -462,10 +463,10 @@ const TRENDS = {
       ]
     ],
     "by_type": {
+      "diamandis": 9,
       "lev": 172,
       "weekly": 5,
-      "ai_search": 76,
-      "diamandis": 8
+      "ai_search": 76
     }
   }
 };

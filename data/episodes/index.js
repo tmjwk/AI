@@ -5,6 +5,16 @@
 const EPISODES_INDEX = {
   "episodes": [
     {
+      "num": "#276",
+      "title": "Google's Jeff Dean Exits, SpaceX Hits $100B in Rev & OpenAI's Astra Solves Decade-Old Math Problems",
+      "date": "2026-08-08",
+      "duration": "129 min",
+      "channel": "Diamandis Moonshots",
+      "yt": "Jku8b2YKuy0",
+      "collapsed": true,
+      "batch": "recent"
+    },
+    {
       "num": "#275",
       "title": "Dario vs Jensen on Open Weights, OpenAI & Anthropic in DC, Xi Exports AI to Global South | EP #275",
       "date": "2026-07-29",
@@ -52,7 +62,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "CsRx7kFN4bo",
       "collapsed": true,
-      "batch": "recent"
+      "batch": "batch-2026-h2"
     },
     {
       "num": "#269",

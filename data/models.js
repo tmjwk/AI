@@ -2,10 +2,66 @@
 // Schema: {r, n, v, d, o, c, desc_pl, desc_en, b_pl, b_en}
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
-const TODAY = "2026-08-02";
+const TODAY = "2026-08-08";
 const NEW_DAYS = 14;
 
 const M = [
+  {
+    "n": "Gemini 4",
+    "v": "Google",
+    "c": "LLM",
+    "d": "2026-08-08",
+    "o": 0,
+    "r": 8,
+    "is_new": true,
+    "desc_pl": "Google Gemini 4 — unreleased model teased by Demis Hassabis w notce do staff przy reorganizacji (Hassabis → Alphabet Chief Scientist, Koray Kavukcuoglu → CEO DeepMind). Hassabis wyraźnie wskazał nazwę 'Gemini 4' jako nadchodzący model i napisał że AGI jest close at hand. Akcje Alphabet spadły 5% po ogłoszeniu. Alex hot take: 'Gemini has lost the mandate of heaven — Gemini is just not winning frontier model race'. Google annual release cadence = too slow w era monthly frontier pushes.",
+    "desc_en": "Google Gemini 4 — unreleased model teased by Demis Hassabis in his note to staff during the reorganization (Hassabis → Alphabet Chief Scientist, Koray Kavukcuoglu → CEO DeepMind). Hassabis explicitly named 'Gemini 4' as the upcoming model and wrote that AGI is close at hand. Alphabet shares fell 5% on the announcement. Alex hot take: 'Gemini has lost the mandate of heaven — Gemini is just not winning frontier model race'. Google's annual release cadence = too slow in an era of monthly frontier pushes.",
+    "b_pl": "Teased by Hassabis. Unreleased. Alphabet -5% on announcement. AGI 'close at hand'.",
+    "b_en": "Teased by Hassabis. Unreleased. Alphabet -5% on announcement. AGI 'close at hand'.",
+    "url": "https://deepmind.google/models/gemini/"
+  },
+  {
+    "n": "HARK",
+    "v": "Brett Adcock",
+    "c": "Multimodal",
+    "d": "2026-08-08",
+    "o": 0,
+    "r": 12,
+    "is_new": true,
+    "desc_pl": "HARK — AI company Bretta Adcocka (CEO Figure AI). First product 'Handoff' — web browsing AI agent (CUA — computer use assistant). Beating GPT 5.4 i Claude Opus 4.8 na benchmarku OM2W (Online Mind2Web) — test czy agent może successfully complete real tasks na live websites których nigdy nie widział. $4B valuation przy launch. Model architecture ten sam co Figure. Alex hot take: 'HARK is a recapitalization measure for Brett to buy himself more equity in Figure' — falsifiable prediction: Figure acquire lub reverse aqua-hire HARK. Model architecture HARK i Figure same.",
+    "desc_en": "HARK — AI company by Brett Adcock (CEO of Figure AI). First product 'Handoff' — web browsing AI agent (CUA — computer use assistant). Beating GPT 5.4 and Claude Opus 4.8 on the OM2W (Online Mind2Web) benchmark — testing whether an agent can successfully complete real tasks on live websites it has never seen before. $4B valuation at launch. Model architecture same as Figure. Alex hot take: 'HARK is a recapitalization measure for Brett to buy himself more equity in Figure' — falsifiable prediction: Figure acquires or reverse aqua-hires HARK. Model architecture of HARK and Figure same.",
+    "b_pl": "$4B valuation at launch. Handoff = web browsing CUA. Beats GPT 5.4 i Claude Opus 4.8 na OM2W.",
+    "b_en": "$4B valuation at launch. Handoff = web browsing CUA. Beats GPT 5.4 and Claude Opus 4.8 on OM2W.",
+    "url": "https://hark.com"
+  },
+  {
+    "n": "Discovery Loop",
+    "v": "Jeff Dean",
+    "c": "LLM",
+    "d": "2026-08-08",
+    "o": 0,
+    "r": 6,
+    "is_new": true,
+    "desc_pl": "Discovery Loop — public benefit corporation założona przez Jeffa Deana (chief scientist Google przez 27 lat) + 3 innych top Google AI leaders. Misja: budować AI models które can improve themselves with little no help — recursive self-improvement (RSI). Dean: 'goal is to be more fully automated than traditionally has been possible'. Venode wczesny investor. Google (GCP) prawdopodobnie drugi investor — strategic compute partnership. Spin-out z Google, ale powiązanie cloud.",
+    "desc_en": "Discovery Loop — public benefit corporation founded by Jeff Dean (Google chief scientist for 27 years) + 3 other top Google AI leaders. Mission: build AI models that can improve themselves with little or no help — recursive self-improvement (RSI). Dean: 'goal is to be more fully automated than traditionally has been possible'. Venode early investor. Google (GCP) likely second investor — strategic compute partnership. Spin-out from Google, but cloud-linked.",
+    "b_pl": "Jeff Dean + 3 Google AI leaders. Public benefit corp. Recursive self-improvement. Venode early investor.",
+    "b_en": "Jeff Dean + 3 Google AI leaders. Public benefit corp. Recursive self-improvement. Venode early investor.",
+    "url": "https://discoveryloop.ai"
+  },
+  {
+    "n": "OpenAI Astra",
+    "v": "OpenAI",
+    "c": "LLM",
+    "d": "2026-08-08",
+    "o": 0,
+    "r": 2,
+    "is_new": true,
+    "desc_pl": "OpenAI Astra — unreleased model. 1 sierpnia 2026: 249-page manuscript opisujący 10 nowych wyników w mathematics i theoretical computer science — high-dimensional geometry, coding theory, group theory, quantum complexity, extremal combinatorics. Każdy wynik z machine-checkable proof certificate (Lean). Total compute cost ~$2000 — mniej niż monthly stipend jednego graduate student. Field Medalist Tim Gowers recommended for publication. Cosmologist Will Kinney: 'dark night for mathematics — old gods slaughtered by new machine gods'. FIRST model to hit 'critical' na OpenAI cybersecurity preparedness framework. Long range autonomy rumored. OpenAI dał 100,000 GPT Pro licenses academic scientists za darmo.",
+    "desc_en": "OpenAI Astra — unreleased model. August 1, 2026: 249-page manuscript describing 10 new results in mathematics and theoretical computer science — high-dimensional geometry, coding theory, group theory, quantum complexity, extremal combinatorics. Each result with machine-checkable proof certificate (Lean). Total compute cost ~$2000 — less than a single graduate student's monthly stipend. Field Medalist Tim Gowers recommended for publication. Cosmologist Will Kinney: 'dark night for mathematics — old gods slaughtered by new machine gods'. FIRST model to hit 'critical' on OpenAI cybersecurity preparedness framework. Long range autonomy rumored. OpenAI gave 100,000 GPT Pro licenses to academic scientists for free.",
+    "b_pl": "10 math breakthroughs. $2000 compute. Lean certificates. 'Critical' cyber. Gowers recommended for publication.",
+    "b_en": "10 math breakthroughs. $2000 compute. Lean certificates. 'Critical' cyber. Gowers recommended for publication.",
+    "url": "https://openai.com/index/astra/"
+  },
   {
     "n": "Ideogram Object Remover",
     "v": "Ideogram",
@@ -2446,13 +2502,13 @@ const M = [
 ];
 
 const CATS = [
+  "LLM",
+  "Multimodal",
   "Image Generation",
   "World Models",
   "TTS",
   "Humanoid Robots",
   "Video Generation",
-  "Multimodal",
-  "LLM",
   "Coding",
   "AI Science Agents",
   "AI Research",

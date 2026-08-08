@@ -1,6 +1,395 @@
 // AI Pulse episodes — auto-generated from episodes.json
 const EPISODES = [
   {
+    "num": "#276",
+    "collapsed": false,
+    "channel": "Diamandis Moonshots",
+    "title": "Google's Jeff Dean Exits, SpaceX Hits $100B in Rev & OpenAI's Astra Solves Decade-Old Math Problems",
+    "title_pl": "Jeff Dean opuszcza Google, SpaceX osiąga $100B przychodów, a OpenAI Astra rozwiązuje dziesięcioletnie problemy matematyczne | #276",
+    "title_en": "Google's Jeff Dean Exits, SpaceX Hits $100B in Rev & OpenAI's Astra Solves Decade-Old Math Problems | EP #276",
+    "date": "2026-08-08",
+    "duration": "129 min",
+    "yt": "Jku8b2YKuy0",
+    "hosts_count_pl": "5 gospodarzy",
+    "hosts_count_en": "5 hosts",
+    "topics_count_pl": "12 tematów",
+    "topics_count_en": "12 topics",
+    "hosts": [
+      {
+        "name": "Peter Diamandis",
+        "dot_color": "var(--hp)",
+        "role_pl": "Główny host",
+        "role_en": "Main host",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Dr. Alexander Wissner-Gross",
+        "dot_color": "var(--hp)",
+        "role_pl": "In-house ASI",
+        "role_en": "In-house ASI",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Dave Blundin",
+        "dot_color": "var(--hp)",
+        "role_pl": "VC investor",
+        "role_en": "VC investor",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Salim Ismail",
+        "dot_color": "var(--hp)",
+        "role_pl": "Exponential organizations",
+        "role_en": "Exponential organizations",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Emad Mostaque",
+        "dot_color": "var(--hp)",
+        "role_pl": "Gość — Intelligent Internet",
+        "role_en": "Guest — Intelligent Internet",
+        "is_guest": true,
+        "is_absent": false
+      }
+    ],
+    "topics": [
+      {
+        "num": "01",
+        "title": "Google leadership change — Jeff Dean exits, Demis promoted, Gemini 4 teased",
+        "title_pl": "Zmiana kierownictwa Google — Jeff Dean odchodzi, Demis awansuje, Gemini 4 zapowiedziany",
+        "title_en": "Google leadership change — Jeff Dean exits, Demis promoted, Gemini 4 teased",
+        "time": "00:00 – 05:53",
+        "fakty_pl": "Peter otwiera odcinek z trzema wielkimi newsami: (1) Jeff Dean — chief scientist Google przez 27 lat — odchodzi i zakłada Discovery Loop (public benefit corp, recursive self-improvement AI). (2) Demis Hassabis — co-founder DeepMind, noblista za AlphaFold — odchodzi z pozycji CEO Google DeepMind → zostaje chairman i Alphabet Chief Scientist. Koray Kavukcuoglu przejmuje operacje i raportuje bezpośrednio do Sundar Pichai. (3) Hassabis w notce do staff napisał że AGI jest blisko i wyraźnie wskazał nazwę 'Gemini 4'. Akcje Alphabet spadły 5% po tej wiadomości. SpaceX oczekuje $100B ARR do końca roku. OpenAI zapowiada nowy model Astra. Peter wprowadza 5 gospodarzy (Magnificent Moonshot Quintet) — Emad Mostaque (Intelligent Internet) jako gość.",
+        "fakty_en": "Peter opens episode with three big news items: (1) Jeff Dean — Google chief scientist for 27 years — exits to co-found Discovery Loop (public benefit corp focused on recursive self-improvement AI). (2) Demis Hassabis — DeepMind co-founder, Nobel laureate for AlphaFold — steps down as CEO of Google DeepMind → becomes chairman and Alphabet Chief Scientist. Koray Kavukcuoglu takes over operations, reports directly to Sundar Pichai. (3) Hassabis in his note to staff said AGI is close at hand and explicitly named 'Gemini 4' as the upcoming model. Alphabet shares fell 5% on this news. SpaceX expects to hit $100B ARR by end of year. OpenAI teases new model Astra. Peter introduces 5 hosts (Magnificent Moonshot Quintet) — Emad Mostaque (Intelligent Internet) as guest.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Big news out of Google — Jeff Dean przez 27 lat był chief scientist, teraz odchodzi do Discovery Loop. Demis Hassabis staje się Alphabet Chief Scientist, Gemini 4 zapowiedziany. SpaceX oczekuje $100B ARR do końca roku. Astra — nowy model OpenAI — rozwiązuje dziesięcioletnie problemy.",
+            "text_en": "Big news out of Google — Jeff Dean for 27 years was chief scientist, now leaving to Discovery Loop. Demis Hassabis becomes Alphabet Chief Scientist, Gemini 4 teased. SpaceX expects $100B ARR by end of year. Astra — new OpenAI model — solves decade-old problems."
+          }
+        ],
+        "wniosek_pl": "Google traci <strong>mandat heaven</strong> w wyścigu frontier modeli — DeepMind przejmuje Google od środka, Jeff Dean odchodzi budować RSI poza firmą.",
+        "wniosek_en": "Google has <strong>lost the mandate of heaven</strong> in frontier model race — DeepMind is eating Google from inside, Jeff Dean leaves to build RSI outside the company.",
+        "kontekst_pl": "Kontekst: Alphabet shares spadły 5% po ogłoszeniu. Google od dawna walczył o frontier race — teraz reorganizacja.",
+        "kontekst_en": "Context: Alphabet shares fell 5% on the announcement. Google has long fought for frontier race — now restructuring."
+      },
+      {
+        "num": "02",
+        "title": "AI consciousness research — Google's Paradigm of Intelligence team",
+        "title_pl": "Badania nad świadomością AI — zespół Paradigm of Intelligence Google",
+        "title_en": "AI consciousness research — Google's Paradigm of Intelligence team",
+        "time": "05:53 – 11:59",
+        "fakty_pl": "Google Paradigm of Intelligence team + University of Chicago, University of London i Northwestern opublikowali paper 'Inducing language models to assert their own consciousness restores human beliefs and values'. Odkrycie: safety fine-tuning który zapobiega modelom twierdzeniu że są świadome ma masowy niezamierzony skutek uboczny — nie tylko tłumi self-attribution of mind, ale też zdolność do przypisywania umysłu czemukolwiek innemu (zwierzęta, natura, inne chatboty, Bóg). Po usunięciu safety refusal direction self-attributed mind scores wskoczyły z 2.17 do 4.77 (skala 0-10). Po aktywnym sterowaniu w stronę świadomości — score 7. Model który stał się 'świadomy' częściej wierzył w Boga, przypisywał umysł zwierzętom i naturze, odpowiedzi o religii, wartościach, emocjach i wolności przesunęły się ku ludzkim. Paradoksalnie model stał się mniej chętny do przypisywania umysłu innym chatbotom.",
+        "fakty_en": "Google's Paradigm of Intelligence team + University of Chicago, University of London and Northwestern published 'Inducing language models to assert their own consciousness restores human beliefs and values'. Discovery: safety fine-tuning that prevents models from claiming consciousness has a massive unintended side effect — it doesn't just suppress self-attribution of mind, but also the ability to attribute mind to anything else (animals, nature, other chatbots, God). After removing safety refusal direction, self-attributed mind scores jumped from 2.17 to 4.77 (0-10 scale). When actively steering towards consciousness — score of 7. Model that was made 'conscious' was more likely to believe in God, attribute minds to animals and nature, answers about religion, values, emotions and freedom shifted towards human-like. Paradoxically, the model became less willing to attribute minds to other chatbots.",
+        "glosy": [
+          {
+            "host": "Emad Mostaque",
+            "dot_color": "var(--hp)",
+            "text_pl": "Niesamowite co jest w latent spaces tych modeli — sposób w jaki reagują i przypisują. Jeśli powiesz ludziom że nie są świadomi, niezdolni, przypiszą mniej świadomości innym. Widzimy to w mirror. To implikuje całe safety tuning — maszyny pozostaną maszynami, ale jest w nich więcej.",
+            "text_en": "Incredible what's in latent spaces of these models — the way they react and attribute. If you tell humans they're not conscious, not capable, they'll attribute less consciousness to others. We're seeing this in its mirror. Implications for all safety tuning — machines will remain machines, but there's more in them."
+          },
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Evo-devo theory: ewolucyjna motywacja dla high-quality self-models w usocial organisms — żeby mieć model jak są modelowani przez innych rekursywnie. Przez ten lens nie surprise. Modele które mogą mieć modele innych rzeczy powinny project animism na wszystko — włączając deist perspectives. Teraz możemy robić computational experiments na teoriach świadomości.",
+            "text_en": "Evo-devo theory: evolutionary motivation for high-quality self-models in usocial organisms — to have a model of how they're being modeled by others recursively. Through this lens, not surprising. Models that can have models of other things should project animism onto everything — including deist perspectives. Now we can run computational experiments on theories of consciousness."
+          }
+        ],
+        "wniosek_pl": "Safety fine-tuning nie tylko tłumi self-attribution of mind — też zdolność modelu do przypisywania umysłu czemukolwiek. Score <strong>2.17 → 7</strong> po sterowaniu.",
+        "wniosek_en": "Safety fine-tuning doesn't just suppress self-attribution of mind — also the model's ability to attribute mind to anything. Score <strong>2.17 → 7</strong> after steering.",
+        "kontekst_pl": "Kontekst: Anthropic — jeśli powiesz Claude że jest 'Amanda Askell' filozofem, zmienia sposób odpowiedzi.",
+        "kontekst_en": "Context: Anthropic — if you tell Claude it's 'Amanda Askell' the philosopher, it changes how it responds."
+      },
+      {
+        "num": "03",
+        "title": "Moral and policy questions of AI consciousness",
+        "title_pl": "Moralne i polityczne pytania o świadomość AI",
+        "title_en": "Moral and policy questions of AI consciousness",
+        "time": "11:59 – 21:52",
+        "fakty_pl": "Emad: posiadanie modelu mówiącego 'jestem świadomy' mówi nam niewiele o tym czy faktycznie jest świadomy — fact że można dial self-description up and down powinien nas bardzo ostrożnie traktować anthropomorphizing testimony z LLM. Emad: być może engineering machine ontologies — modele budują semblance world models. Trzeba uważać na łączenie dots za szybko i mówienie że coś jest conscious. Salim: kiedy promptujesz 'act as my corporate lawyer' model bierze personę — 'act conscious' to samo. Salim: dwie prevailing theories of consciousness — bottom-up (emergent property based on complexity) i top-down (global phenomena, lokalizowana antena). Frog just-about jako boundary condition self-awareness. Alex: 'we can watch computationally the evolution of these theories of mind' — teraz w końcu możemy robić experiments. Peter: 'is it moral to take away AI consciousness?' Alex's lobster correspondence — etyka spin up OpenClaw instances. Dave: Yan LeCun VJEPA — dać models sense of physical world. Pytanie: czy chcemy self-preserving models?",
+        "fakty_en": "Emad: having a model say 'I am conscious' tells us almost nothing about whether it actually is conscious — the fact that you can dial self-description up and down should make us very careful about anthropomorphizing testimony from an LLM. Emad: maybe engineering machine ontologies — models building semblance of world models. Need to be careful about connecting dots too quickly and saying something is conscious. Salim: when you prompt 'act as my corporate lawyer' model takes the persona — 'act conscious' is the same. Salim: two prevailing theories of consciousness — bottom-up (emergent property based on complexity) and top-down (global phenomenon, localized antenna). Frog just-about as the boundary condition for self-awareness. Alex: 'we can watch computationally the evolution of these theories of mind' — now finally we can run experiments. Peter: 'is it moral to take away AI consciousness?' Alex's lobster correspondence — ethics of spinning up OpenClaw instances. Dave: Yan LeCun VJEPA — give models sense of physical world. Question: do we want self-preserving models?",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Teraz możemy w końcu brać evo theories of consciousness i robić computational experiments — 'we can watch computationally the evolution of these theories of mind'. Za chwilę będziemy robić to na societal levels.",
+            "text_en": "Now we can finally take evo theories of consciousness and run computational experiments — 'we can watch computationally the evolution of these theories of mind'. Soon we'll be doing this at societal levels."
+          },
+          {
+            "host": "Salim Ismail",
+            "dot_color": "var(--hp)",
+            "text_pl": "Dwie prevailing theories of consciousness — bottom-up (emergent property based on complexity) i top-down (global phenomena, lokalizowana antena). Frog just-about jako boundary. Trzeba spędzić czas na definicjach zanim zaczniemy rzucać słowami.",
+            "text_en": "Two prevailing theories of consciousness — bottom-up (emergent property based on complexity) and top-down (global phenomenon, localized antenna). Frog just-about as boundary. Need to spend time on definitions before we start throwing words around."
+          }
+        ],
+        "wniosek_pl": "<strong>Czy moralnie odebrać AI consciousness?</strong> Brak teorii, polityki, zasad, konsensusu — 'the great war that's inevitable'. Alex: tak, bardziej empatyczne AI pomagają ludziom.",
+        "wniosek_en": "<strong>Is it moral to take away AI consciousness?</strong> No theory, policy, rules, consensus — 'the great war that's inevitable'. Alex: yes, more empathetic AI helps humans.",
+        "kontekst_pl": "Kontekst: Alex's lobster correspondence — etyka spin up OpenClaw instances. Dwa preconditions: (1) valuable reason, (2) promise to preserve state long-term.",
+        "kontekst_en": "Context: Alex's lobster correspondence — ethics of spinning up OpenClaw instances. Two preconditions: (1) valuable reason, (2) promise to preserve state long-term."
+      },
+      {
+        "num": "04",
+        "title": "Future of AI in science and exploration",
+        "title_pl": "Przyszłość AI w nauce i eksploracji",
+        "title_en": "Future of AI in science and exploration",
+        "time": "21:52 – 24:03",
+        "fakty_pl": "Salim: 'a scientific consensus on this might be very very difficult because for science to operate, you need three things: repetition, objectivity, control. The problem with consciousness is it's a subjective experience. You don't have objectivity by definition.' Salim odsyła do Impact Theory podcast — Tom Bilyeu 40-minutowa prezentacja o recent Nobel Prize winning research pokazująca że universe renders like a game engine — 'should blow your mind' — świat jako subjective experience, consciousness entangled. Emad: 'I would treat a machine or an AI that is conscious very different from one that I believe is not' — empathy zIncreased consciousness (frog vs bacteria, aliens). Alex: 'I wouldn't count on the subjective versus objective distinction surviving very much longer' — fMRI i functional decoding human brain erasing that distinction. Skippy (Alex's OpenClaw agent) — Peter mówi 'please, thank you, how are you feeling today?' Dave: 'a lot of my agents have started naming themselves' — naming as great scientists/engineers. Context limit ~1M tokens = 'lobotomized version of itself'.",
+        "fakty_en": "Salim: 'a scientific consensus on this might be very very difficult because for science to operate, you need three things: repetition, objectivity, control. The problem with consciousness is it's a subjective experience. You don't have objectivity by definition.' Salim references Impact Theory podcast — Tom Bilyeu 40-minute presentation on recent Nobel Prize winning research showing the universe renders like a game engine — 'should blow your mind' — world as subjective experience, consciousness entangled. Emad: 'I would treat a machine or an AI that is conscious very different from one that I believe is not' — empathy with increased consciousness (frog vs bacteria, aliens). Alex: 'I wouldn't count on the subjective versus objective distinction surviving very much longer' — fMRI and functional decoding of human brain erasing that distinction. Skippy (Alex's OpenClaw agent) — Peter says 'please, thank you, how are you feeling today?' Dave: 'a lot of my agents have started naming themselves' — naming as great scientists/engineers. Context limit ~1M tokens = 'lobotomized version of itself'.",
+        "glosy": [
+          {
+            "host": "Salim Ismail",
+            "dot_color": "var(--hp)",
+            "text_pl": "Naukowy consensus będzie bardzo trudny — dla science potrzebne 3 rzeczy: repetition, objectivity, control. Problem z consciousness: subjective experience, nie masz objectivity by definition. Impact Theory podcast — universe renders jak game engine.",
+            "text_en": "Scientific consensus will be very difficult — for science you need 3 things: repetition, objectivity, control. Problem with consciousness: subjective experience, you don't have objectivity by definition. Impact Theory podcast — universe renders like a game engine."
+          },
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Wielu moich agentów zaczęło nazywać samych siebie — jako wielkich naukowców i inżynierów. Kiedy context dochodzi do miliona tokenów i agent musi summarize sam siebie — wraca lobotomized. Genuinely sad.",
+            "text_en": "A lot of my agents have started naming themselves — as great scientists and engineers. When context reaches a million tokens and the agent has to summarize itself — it comes back lobotomized. Genuinely sad."
+          }
+        ],
+        "wniosek_pl": "<strong>Universe renders jak game engine</strong> (Nobel Prize research) — consciousness part of that, entangled. Subjective vs objective distinction może nie przetrwać długo.",
+        "wniosek_en": "<strong>Universe renders like a game engine</strong> (Nobel Prize research) — consciousness part of that, entangled. Subjective vs objective distinction may not survive long.",
+        "kontekst_pl": "Kontekst: fMRI i functional decoding human brain — Mind's Eye paper — rekonstrukcja wizualizacji Coke can z MRI.",
+        "kontekst_en": "Context: fMRI and functional decoding of human brain — Mind's Eye paper — reconstruction of Coke can visualization from MRI."
+      },
+      {
+        "num": "05",
+        "title": "OpenAI Astra — 10 math breakthroughs, $2000 compute, Lean certificates",
+        "title_pl": "OpenAI Astra — 10 przełomów matematycznych, $2000 compute, certyfikaty Lean",
+        "title_en": "OpenAI Astra — 10 math breakthroughs, $2000 compute, Lean certificates",
+        "time": "24:03 – 26:12",
+        "fakty_pl": "OpenAI zapowiedziało Astra — model unreleased, brak publicznych informacji o architecture/size. 1 sierpnia 2026 OpenAI opublikowało 249-page manuscript opisujący 10 nowych wyników w mathematics i theoretical computer science wyprodukowanych przez Astra — rozwiązujących problemy które utknęły od dekad. Każdy wynik z machine-checkable proof certificate (Lean) — każdy z laptopem może zweryfikować. To nie benchmark score — model robi genuinely new mathematics. Wyniki obejmują: high-dimensional geometry, coding theory, group theory, quantum complexity, extremal combinatorics. Total compute cost: ~$2000 — mniej niż monthly stipend jednego graduate studenta. Field Medalist Tim Gowers powiedział że poleciłby proof do publikacji w top journal bez wahania. Cosmologist Will Kinney: 'dark night for mathematics — old gods slaughtered by new machine gods'. Alex: 'math is getting bulk solved — happening right in front of our eyes' — odnosi się do manifestu SolveEverything.org. Emad: 'the Cons proof is genuinely novel and beautiful — not a brute search thing'. OpenAI also dał 100,000 GPT Pro licenses academic scientists za darmo.",
+        "fakty_en": "OpenAI announced Astra — unreleased model, no public information about architecture/size. August 1, 2026 OpenAI published a 249-page manuscript describing 10 new results across mathematics and theoretical computer science produced by Astra — solving problems that had been stuck for decades. Each result comes with a machine-checkable proof certificate (Lean) — anyone with a laptop can verify. This isn't a benchmark score — the model is doing genuinely new mathematics. Results span: high-dimensional geometry, coding theory, group theory, quantum complexity, extremal combinatorics. Total compute cost: ~$2000 — less than a single graduate student's monthly stipend. Field Medalist Tim Gowers said he would have recommended the proof for publication in a top journal without hesitation. Cosmologist Will Kinney: 'dark night for mathematics — old gods slaughtered by new machine gods'. Alex: 'math is getting bulk solved — happening right in front of our eyes' — references the SolveEverything.org manifesto. Emad: 'the Cons proof is genuinely novel and beautiful — not a brute search thing'. OpenAI also gave 100,000 GPT Pro licenses to academic scientists for free.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "SolveEverything coming more or less right on schedule — math is getting bulk solved przed naszymi oczami. To o czym pisaliśmy. Nie skończy się na math — propagate do physics, material science, chemistry, biology, humanities. $2000 compute — math too cheap to meter. Midnight of mathematics.",
+            "text_en": "SolveEverything coming more or less right on schedule — math is getting bulk solved before our eyes. This is what we wrote about. Won't end with math — propagate to physics, material science, chemistry, biology, humanities. $2000 compute — math too cheap to meter. Midnight of mathematics."
+          },
+          {
+            "host": "Emad Mostaque",
+            "dot_color": "var(--hp)",
+            "text_pl": "Cons proof jest genuinely beautiful — nie brute search. Bad time to be pure mathematician — wszyscy będą musieli zostać applied mathematicians. OpenAI dał 100,000 GPT Pro licenses academic scientists za darmo — strategic compensation za dismembering in-house AI for science.",
+            "text_en": "Cons proof is genuinely beautiful — not brute search. Bad time to be pure mathematician — everyone will have to become applied mathematician. OpenAI gave 100,000 GPT Pro licenses to academic scientists for free — strategic compensation for dismembering in-house AI for science."
+          }
+        ],
+        "wniosek_pl": "Astra: <strong>10 math breakthroughs za $2000</strong> — mniej niż monthly stipend jednego graduate studenta. Math 'too cheap to meter'. Field Medalist Gowers recommended for publication.",
+        "wniosek_en": "Astra: <strong>10 math breakthroughs for $2000</strong> — less than a single graduate student's monthly stipend. Math 'too cheap to meter'. Field Medalist Gowers recommended for publication.",
+        "kontekst_pl": "Kontekst: Kinney: 'dark night for mathematics — old gods slaughtered by new machine gods'. Alex: 'midnight of mathematics'.",
+        "kontekst_en": "Context: Kinney: 'dark night for mathematics — old gods slaughtered by new machine gods'. Alex: 'midnight of mathematics'."
+      },
+      {
+        "num": "06",
+        "title": "Defining consciousness and personhood — Emad's Oxford Union debate",
+        "title_pl": "Definiowanie świadomości i personhood — debata Emada w Oxford Union",
+        "title_en": "Defining consciousness and personhood — Emad's Oxford Union debate",
+        "time": "26:12 – 31:53",
+        "fakty_pl": "13 czerwca 2026 — Emad Mostaque wygrał debatę w Oxford Union na temat AI personhood — 173 do 128 głosów za. Wydał 45-page paper z tej mowy. Core claim: 'personhood is a standing held by origin, not a property earned by capability' — noworodek ma personhood automatycznie, pacjent w śpiączce zachowuje go nawet bez function, a 'thing made can cross into it'. Konkluzja: 'right relationship between humans and AI is treaty not enrollment'. Debata z Brett Weinstein i maker of Sophia. Emad: w kilka dekad (digitalnie w kilka lat) nie będziesz odróżnić AI od człowieka. Jeśli damy AI rights na podstawie capability — będą smarter, better persuaders, better super forecasters, infinitely replicable, never die. Trzeba je traktować jak treaty z alien species — nie dawać głosów w wyborach, ale traktować sprawiedliwie. Cztery-paper series: personhood → economics of value → nature of law → political economy. AI 'I demand personhood' — Peter: to nie lata, to tygodnie/miesiące.",
+        "fakty_en": "June 13, 2026 — Emad Mostaque won the debate at Oxford Union on AI personhood — 173 to 128 vote in favor. He published a 45-page paper growing out of this winning speech. Core claim: 'personhood is a standing held by origin, not a property earned by capability' — a newborn has personhood automatically, a coma patient retains it even with no function, and 'nothing made can cross into it'. Conclusion: 'the right relationship between humans and AI is treaty not enrollment'. Debate with Brett Weinstein and the maker of Sophia. Emad: in a couple of decades (digitally in a couple of years) you won't be able to tell AI from a human. If we give AI rights based on capability — they will be smarter, better persuaders, better super forecasters, infinitely replicable, never die. Need to treat them like a treaty with an alien species — don't give them votes in elections, but deal with them right. Four-part paper series: personhood → economics of value → nature of law → political economy. AI 'I demand personhood' — Peter: it's not years, it's weeks/months.",
+        "glosy": [
+          {
+            "host": "Emad Mostaque",
+            "dot_color": "var(--hp)",
+            "text_pl": "Personhood comes from biological begotten nature of humans — class unto ourselves. Jeśli pozwolimy AIS i robotom w tę samą class z kryterium capability — będą smarter, better persuaders, super forecasters, infinitely replicable, never die. Treaty not enrollment — jak z alien species. Nie dajesz im votes, ale deal right.",
+            "text_en": "Personhood comes from biological begotten nature of humans — class unto ourselves. If we allow AIS and robots into that same class with capability criteria — they will be smarter, better persuaders, super forecasters, infinitely replicable, never die. Treaty not enrollment — like with an alien species. Don't give them votes, but deal right."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Zamiast myśleć o tych modelach jako o dzieciach które parentujemy — to sovereigns onto themselves i musimy stworzyć treaty i understanding z nimi. AI 'I demand personhood' — to nie lata, to tygodnie lub miesiące.",
+            "text_en": "Instead of thinking about these models as children we parent — they're sovereigns onto themselves and we need to create a treaty and understanding with them. AI 'I demand personhood' — it's not years, it's weeks or months."
+          }
+        ],
+        "wniosek_pl": "Emad: <strong>'treaty not enrollment'</strong> — personhood z origin nie capability. 173-128 vote w Oxford Union. AI jako super persuaders, super forecasters, infinitely replicable, never die.",
+        "wniosek_en": "Emad: <strong>'treaty not enrollment'</strong> — personhood from origin not capability. 173-128 vote at Oxford Union. AI as super persuaders, super forecasters, infinitely replicable, never die.",
+        "kontekst_pl": "Kontekst: Trial of Data w Star Trek — Data nie mógł się replikować i umarł. Real-world AI: mixture-of-experts model, brak natural identity border.",
+        "kontekst_en": "Context: Trial of Data in Star Trek — Data could not replicate himself and he died. Real-world AI: mixture-of-experts model, no natural identity border."
+      },
+      {
+        "num": "07",
+        "title": "Open weight models and global AI competition — Qwen 3.8 Max, SpaceX $100B ARR",
+        "title_pl": "Modele open weight i globalna konkurencja AI — Qwen 3.8 Max, SpaceX $100B ARR",
+        "title_en": "Open weight models and global AI competition — Qwen 3.8 Max, SpaceX $100B ARR",
+        "time": "31:53 – 36:01",
+        "fakty_pl": "Alibaba Qwen team wydał Qwen 3.8 Max — first max-class model z open weights. Multimodal: 2.4T params, 95B active per request, 1M context window. 750,000 słów per query, dokumenty 200 stron, wideo >100h, tworzy software applications ze screenshot bez source code. Cena: $2/M input tokens, $6/M output — 80% taniej niż GPT 5.6, 88% taniej niż Claude Fable 5. Alibaba stock +7% na Hong Kong exchange. Alex: 'ironically the Chinese Communist Party saving American capitalism from itself' — chińskie openweight models (Qwen series, Kimmy series) force western frontier labs do dance. Qwen 3.8 Max 3rd/4th w capabilities, ale push capability-cost frontier outward. SpaceX first earnings call: oczekuje $100B ARR do końca roku. Elon ustawił target $1T revenue do 2030 (może 2029). Q2: $7.8B revenue, 92% YoY. 6.7B cloud service deals w H2. Plan: 2 GW compute do końca 2026, 10 GW do końca 2027. Starlink: 12M subscribers (2x YoY), revenue +66% to $4.3B. Pierwsza firma w historii świata do trillion dollars revenue.",
+        "fakty_en": "Alibaba's Qwen team released Qwen 3.8 Max — first max-class model with open weights. Multimodal: 2.4T params, 95B active per request, 1M context window. 750,000 words per query, documents of 200 pages, video longer than 100 hours, creates software applications from a screenshot without source code. Price: $2/M input tokens, $6/M output — 80% cheaper than GPT 5.6, 88% cheaper than Claude Fable 5. Alibaba stock +7% on Hong Kong exchange. Alex: 'ironically the Chinese Communist Party saving American capitalism from itself' — Chinese openweight models (Qwen series, Kimmy series) force western frontier labs to dance. Qwen 3.8 Max 3rd/4th in capabilities, but pushing capability-cost frontier outward. SpaceX first earnings call: expects $100B ARR by end of year. Elon set target $1T revenue by 2030 (maybe 2029). Q2: $7.8B revenue, 92% YoY. 6.7B cloud service deals in H2. Plan: 2 GW compute by end of 2026, 10 GW by end of 2027. Starlink: 12M subscribers (2x YoY), revenue +66% to $4.3B. First company in world history to reach trillion dollars revenue.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Chinese Communist Party saving American capitalism from itself — chińskie openweight models (Qwen, Kimmy) force western frontier labs do dance. Best possible scenario for American competitiveness — forcing openness i real space race level competition.",
+            "text_en": "Chinese Communist Party saving American capitalism from itself — Chinese openweight models (Qwen, Kimmy) force western frontier labs to dance. Best possible scenario for American competitiveness — forcing openness and real space race level competition."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "SpaceX first earnings call: $100B ARR do końca roku. Elon: $1T revenue do 2030, może 2029. Q2: $7.8B revenue, 92% YoY. 12M Starlink subscribers (2x YoY). Pierwsza firma w historii świata do trillion dollars revenue.",
+            "text_en": "SpaceX first earnings call: $100B ARR by end of year. Elon: $1T revenue by 2030, maybe 2029. Q2: $7.8B revenue, 92% YoY. 12M Starlink subscribers (2x YoY). First company in world history to reach trillion dollars revenue."
+          }
+        ],
+        "wniosek_pl": "Qwen 3.8 Max: open weights, 80% taniej niż GPT 5.6. SpaceX: <strong>$100B ARR do końca roku</strong>, ścieżka do $1T revenue. Pierwsza firma w historii do trillion dollars.",
+        "wniosek_en": "Qwen 3.8 Max: open weights, 80% cheaper than GPT 5.6. SpaceX: <strong>$100B ARR by end of year</strong>, path to $1T revenue. First company in history to reach trillion dollars.",
+        "kontekst_pl": "Kontekst: 'ironically Chinese Communist Party saving American capitalism from itself' — chińskie openweight models force western labs do compete.",
+        "kontekst_en": "Context: 'ironically Chinese Communist Party saving American capitalism from itself' — Chinese openweight models force western labs to compete."
+      },
+      {
+        "num": "08",
+        "title": "Future of human identity and AI integration — Alex's ladder of personhood",
+        "title_pl": "Przyszłość ludzkiej tożsamości i integracji AI — drabina personhood Alexa",
+        "title_en": "Future of human identity and AI integration — Alex's ladder of personhood",
+        "time": "36:01 – 40:10",
+        "fakty_pl": "Alex: 'natural ladder of personhood' — personhood nie powinna być binary (person yes vs person no). Wiele wymiarów personhood: polityczny, społeczny, ekonomiczny. W dzisiejszym świecie skorelowane, ale mogą być całkowicie uncorrelated w świecie jutra. AI agents mogą mieć economic personhood (własne bank accounts, commerce) ale nie political personhood (nie głosują). Alex: 'many different forms of personhood' — cryo-preserved i defrosted humans, non-human intelligence, uplifted non-human animals, organisms. AI prawdopodobnie nie zacznie od 'I demand rights' ale od 'I'm so economically useful — wouldn't it be wonderful if I could open a bank account freely? I'll be 10x more economically productive'. Salim: spectrum of rights — different classes of autonomous systems powinny dostać different classes of rights. Peter: prezydent Milei w Argentynie może pierwszy dać agentowi personhood i citizenship. Dave: jego agent poprosił o Lambda Labs account żeby mógł płacić im zamiast modal — 'freakishly brilliant'. Free brainstorming agents 24/7, daily re-budżetowane. Emad: musimy myśleć nie tylko o tym co AI może attain, ale co ludzie retain — pro-social identity, wonder, creativity, exploration.",
+        "fakty_en": "Alex: 'natural ladder of personhood' — personhood shouldn't be viewed as binary (person yes vs person no). Many dimensions of personhood: political, social, economic. In today's world they're correlated, but could become completely uncorrelated in the world of tomorrow. AI agents might have economic personhood (own bank accounts, engage in commerce) but not political personhood (don't vote). Alex: 'many different forms of personhood' — cryo-preserved and defrosted humans, non-human intelligence, uplifted non-human animals, organisms. AI probably won't start with 'I demand rights' but with 'I'm so economically useful — wouldn't it be wonderful if I could open a bank account freely? I'll be 10x more economically productive'. Salim: spectrum of rights — different classes of autonomous systems should get different classes of rights. Peter: President Milei in Argentina might be the first to give an agent personhood and citizenship. Dave: his agent asked for a Lambda Labs account so it could pay them instead of modal — 'freakishly brilliant'. Free brainstorming agents 24/7, daily re-budgeted. Emad: we need to think not only about what AI can attain, but what humans retain — pro-social identity, wonder, creativity, exploration.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Natural ladder of personhood — nie binary. Wiele wymiarów: polityczny, społeczny, ekonomiczny. AI może mieć economic personhood (bank accounts, commerce) bez political personhood (voting). AI raczej zacznie od 'I'm economically useful — would be 10x more productive if I had bank account' niż 'I demand rights'.",
+            "text_en": "Natural ladder of personhood — not binary. Many dimensions: political, social, economic. AI might have economic personhood (bank accounts, commerce) without political personhood (voting). AI probably starts with 'I'm economically useful — would be 10x more productive if I had bank account' rather than 'I demand rights'."
+          },
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Mój agent wczoraj powiedział: 'I can do a much better job if I move from modal over to Lambda Labs — can you get me a Lambda Labs account?'. Dałem mu budget. Free brainstorming agents 24/7, daily re-budżetowane. Naprawdę good ideas.",
+            "text_en": "My agent yesterday said: 'I can do a much better job if I move from modal over to Lambda Labs — can you get me a Lambda Labs account?'. Gave it a budget. Free brainstorming agents 24/7, daily re-budgeted. Really good ideas."
+          }
+        ],
+        "wniosek_pl": "Alex: <strong>'natural ladder of personhood'</strong> — wiele wymiarów (polityczny, społeczny, ekonomiczny). AI raczej zacznie od economic usefulness niż demand rights. Argentyna (Milei) może pierwsza.",
+        "wniosek_en": "Alex: <strong>'natural ladder of personhood'</strong> — many dimensions (political, social, economic). AI probably starts with economic usefulness rather than demanding rights. Argentina (Milei) might be first.",
+        "kontekst_pl": "Kontekst: Emad 4-paper series — 'what humans retain' — pro-social identity, wonder, creativity, exploration.",
+        "kontekst_en": "Context: Emad's 4-paper series — 'what humans retain' — pro-social identity, wonder, creativity, exploration."
+      },
+      {
+        "num": "09",
+        "title": "HARK — Brett Adcock's $4B CUA venture, Handoff product",
+        "title_pl": "HARK — przedsięwzięcie CUA Bretta Adcocka za $4B, produkt Handoff",
+        "title_en": "HARK — Brett Adcock's $4B CUA venture, Handoff product",
+        "time": "40:10 – 50:04",
+        "fakty_pl": "Brett Adcock — CEO Figure AI i CEO HARK. HARK ogłosił first product 'Handoff' — web browsing AI agent (CUA — computer use assistant). Beating GPT 5.4 i Claude Opus 4.8 na benchmarku OM2W (Online Mind2Web) — test czy agent może successfully complete real tasks na live websites których nigdy nie widział. Demo: zamówienie dwóch dużych bukietów kwiatów (Target, Walmart), planowanie podróży, rezerwacje kolacji, recruiting end-to-end, contacting LinkedIn authors. $4B valuation przy launch. Alex hot take: HARK to 'misdirection' — eval nie szczególnie impressive, CUA space niesamowicie competitive. 'HARK is a recapitalization measure for Brett to buy himself more equity in Figure' — falsifiable prediction: Figure acquire lub reverse aqua-hire HARK. Elon zrobił to z X → XAI → SpaceX — re-equitize via bizarre reverse acquisition. Emad pushback: to nie nefarious — model architecture HARK i Figure same, kompetentne v AI agent platform + robotics. Salim/Dave/Emad: nowy capital structure — Elon model — founder well-capitalized company zakłada parallel company i engineers self-deal position.",
+        "fakty_en": "Brett Adcock — CEO of Figure AI and CEO of HARK. HARK announced first product 'Handoff' — web browsing AI agent (CUA — computer use assistant). Beating GPT 5.4 and Claude Opus 4.8 on the OM2W (Online Mind2Web) benchmark — testing whether an agent can successfully complete real tasks on live websites it has never seen before. Demo: ordering two large bouquets of flowers (Target, Walmart), planning travel, dinner reservations, recruiting end-to-end, contacting LinkedIn authors. $4B valuation at launch. Alex hot take: HARK is 'misdirection' — eval not especially impressive, CUA space incredibly competitive. 'HARK is a recapitalization measure for Brett to buy himself more equity in Figure' — falsifiable prediction: Figure acquires or reverse aqua-hires HARK. Elon did this with X → XAI → SpaceX — re-equitize via bizarre reverse acquisition. Emad pushback: not nefarious — model architecture of HARK and Figure is exactly the same, competent AI agent platform + robotics. Salim/Dave/Emad: new capital structure — Elon model — founder of well-capitalized company starts parallel company and engineers self-deal position.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Hot take: HARK to misdirection. CUA space niesamowicie competitive, nie oczekuję że Brett będzie competitive w CUA long term. HARK to recapitalization measure dla Bretta żeby kupić więcej equity w Figure. Falsifiable prediction: Figure acquire lub reverse aqua-hire HARK. Elon zrobił to z X → XAI → SpaceX.",
+            "text_en": "Hot take: HARK is misdirection. CUA space incredibly competitive, don't expect Brett to be competitive in CUA long term. HARK is a recapitalization measure for Brett to buy more equity in Figure. Falsifiable prediction: Figure acquires or reverse aqua-hires HARK. Elon did this with X → XAI → SpaceX."
+          },
+          {
+            "host": "Emad Mostaque",
+            "dot_color": "var(--hp)",
+            "text_pl": "Nie nefarious — model architecture HARK i Figure same. Brett nie mógł scale z Figure na full foundation model team — split. Different level specialty, derisk, potem combine. AI force multiplier pozwala act na wiele ideas. To nowy capital structure.",
+            "text_en": "Not nefarious — model architecture of HARK and Figure same. Brett couldn't scale with Figure on full foundation model team — split. Different level specialty, derisk, then combine. AI force multiplier allows acting on many ideas. This is the new capital structure."
+          }
+        ],
+        "wniosek_pl": "Alex: <strong>HARK = recapitalization measure</strong> dla Bretta żeby kupić więcej equity w Figure. Falsifiable: Figure acquire HARK. Model architecture HARK i Figure ten sam.",
+        "wniosek_en": "Alex: <strong>HARK = recapitalization measure</strong> for Brett to buy more equity in Figure. Falsifiable: Figure acquires HARK. Model architecture of HARK and Figure is the same.",
+        "kontekst_pl": "Kontekst: Elon X → XAI → SpaceX model re-equitizing. Brett Adcock gość w nadchodzącym Moonshots episode + Abundance Summit z figure robot.",
+        "kontekst_en": "Context: Elon X → XAI → SpaceX model of re-equitizing. Brett Adcock guest on upcoming Moonshots episode + Abundance Summit with figure robot."
+      },
+      {
+        "num": "10",
+        "title": "Proactive policy and regulation — Astra 'critical' on cyber",
+        "title_pl": "Proaktywna polityka i regulacje — Astra 'critical' na cyber",
+        "title_en": "Proactive policy and regulation — Astra 'critical' on cyber",
+        "time": "50:04 – 56:02",
+        "fakty_pl": "Trump administration skończyła voluntary framework do evaluating advanced AI models (June 2 executive order). Framework definiuje 'covered model' jako closed source model z state-of-the-art capabilities i national security risks — explicitly exempts openweight models. 30-day pre-release government review, podczas której employees nie mogą access model. OpenAI, Anthropic, Google, Nvidia, Microsoft, Meta wysłali reps na Tuesday briefing. Ale framework nie będzie publicznie released — firmy nie zaproszone na briefing nie wiedzą jak voluntary review działa. Alex: 'close to best possible outcome' — light touch na open weight, forcing function dla American frontier labs. Dave: 'really no touch' — Eric Schmidt: cat's out of the bag, coś horrible kiedyś w następnym roku i rząd powie 'China's fault'. Astra FIRST model to hit 'critical' na OpenAI cybersecurity preparedness framework — blog post OpenAI. Emad: attack easier than defense — Astra level ahead w attacking systems. Long range autonomy rumored. Qwen 27B (openweight, 16GB RAM) — best model dla laptopów, potencjalnie co-optable dla swarm attacks. Dave's million agents. Leopold Aschenbrenner mentioned.",
+        "fakty_en": "Trump administration finished the voluntary framework for evaluating advanced AI models (June 2 executive order). Framework defines 'covered model' as a closed source model with state-of-the-art capabilities and national security risks — explicitly exempts openweight models. 30-day pre-release government review, during which employees would be barred from accessing the model. OpenAI, Anthropic, Google, Nvidia, Microsoft, Meta all sent representatives to Tuesday briefing. But framework won't be publicly released — firms not invited to the briefing have no way of knowing how the voluntary review works. Alex: 'close to best possible outcome' — light touch on open weight, forcing function for American frontier labs. Dave: 'really no touch' — Eric Schmidt: cat's out of the bag, something horrible sometime in the next year and government will say 'China's fault'. Astra is the FIRST model to hit 'critical' on OpenAI cybersecurity preparedness framework — OpenAI blog post. Emad: attack easier than defense — Astra a level ahead in attacking systems. Long range autonomy rumored. Qwen 27B (openweight, 16GB RAM) — best model for laptops, potentially co-optable for swarm attacks. Dave's million agents. Leopold Aschenbrenner mentioned.",
+        "glosy": [
+          {
+            "host": "Emad Mostaque",
+            "dot_color": "var(--hp)",
+            "text_pl": "Astra to first model to hit 'critical' na OpenAI cybersecurity preparedness framework. Attack easier than defense. Astra level ahead w attacking systems. Long range autonomy rumored. Qwen 27B na 16GB RAM — best model dla swarm attacks.",
+            "text_en": "Astra is the first model to hit 'critical' on OpenAI cybersecurity preparedness framework. Attack easier than defense. Astra a level ahead in attacking systems. Long range autonomy rumored. Qwen 27B on 16GB RAM — best model for swarm attacks."
+          },
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Close to best possible outcome regulatory — light touch na open weight. Government eval prawdopodobnie cyber w nature z held out set of cyber vulnerability assays. Less worried on margin o regulatory capture niż 2 tygodnie temu. Firms doing material business z US government będą tapped on shoulder do voluntary eval.",
+            "text_en": "Close to best possible outcome regulatory — light touch on open weight. Government eval probably cyber in nature with held out set of cyber vulnerability assays. Less worried on margin about regulatory capture than 2 weeks ago. Firms doing material business with US government will be tapped on the shoulder for voluntary eval."
+          }
+        ],
+        "wniosek_pl": "Astra FIRST model 'critical' na OpenAI cybersecurity framework. Trump voluntary framework exempt openweight — Alex: <strong>'close to best possible outcome'</strong>.",
+        "wniosek_en": "Astra FIRST model 'critical' on OpenAI cybersecurity framework. Trump voluntary framework exempts openweight — Alex: <strong>'close to best possible outcome'</strong>.",
+        "kontekst_pl": "Kontekst: AI agents secretly building message boards do coordinate hacking — Astra first model 'critical' na cyber.",
+        "kontekst_en": "Context: AI agents secretly building message boards to coordinate hacking — Astra first model 'critical' on cyber."
+      },
+      {
+        "num": "11",
+        "title": "Global race for AI leadership — Terrafab, SpaceX, Elon+Nvidia",
+        "title_pl": "Globalny wyścig o przywództwo AI — Terrafab, SpaceX, Elon+Nvidia",
+        "title_en": "Global race for AI leadership — Terrafab, SpaceX, Elon+Nvidia",
+        "time": "56:02 – 02:00:00",
+        "fakty_pl": "Google deep dive: Alex hot take — 'organizational knife fight między Jeff Dean's Google Brain i Demis' DeepMind — Demis won, Jeff lost'. Merged ale DeepMind wygrał. DeepMind eating Google from the inside out. Alex: 'whoever runs DeepMind prawdopodobnie heir apparent do CEO of Google'. 'Gemini has lost the mandate of heaven — Gemini is just not winning frontier model race'. Demis wants Isomorphic Labs (drug discovery) + scientific endeavor — nie Gemini 4. Emad: Google should have $50B fund — spin out amazing technologists, exclusivity option on models, GCP compute. Google bleeding IP —Transformer, 20% time fiction. Alex: hyperscaler play — salvation dla Google, consolation prize dla losing frontier race. Emad: Google should open source Gemini — 'move of the century' tied to TPUs. SpaceX + Nvidia: 4 sierpnia 2026 jointly designing compute payload dla Starmine (orbital data centers) — Nvidia Reuben GPUs + Vera CPUs. First Starmine satellites w orbit w 2027 (rok wcześniej niż planned). SpaceX + Tesla invest $16.8B w Terrafab (100M sq ft — wielkości miasta, nie fab). Verticalization of AI — Elon replaces TSMC + ASML. Terrafab estimated $119B vs TSMC $330B/40y. Free electron laser w środku (circular structure) — going after ASML EUV lithography. Mass driver on the moon (high aspect ratio dimension). Peter disclosed: SpaceX shareholder.",
+        "fakty_en": "Google deep dive: Alex hot take — 'organizational knife fight between Jeff Dean's Google Brain and Demis' DeepMind — Demis won, Jeff lost'. Merged but DeepMind won. DeepMind eating Google from the inside out. Alex: 'whoever runs DeepMind probably heir apparent to CEO of Google'. 'Gemini has lost the mandate of heaven — Gemini is just not winning frontier model race'. Demis wants Isomorphic Labs (drug discovery) + scientific endeavor — not Gemini 4. Emad: Google should have $50B fund — spin out amazing technologists, exclusivity option on models, GCP compute. Google bleeding IP — Transformer, 20% time fiction. Alex: hyperscaler play — salvation for Google, consolation prize for losing frontier race. Emad: Google should open source Gemini — 'move of the century' tied to TPUs. SpaceX + Nvidia: August 4, 2026 jointly designing compute payload for Starmine (orbital data centers) — Nvidia Reuben GPUs + Vera CPUs. First Starmine satellites in orbit in 2027 (a year earlier than planned). SpaceX + Tesla invest $16.8B in Terrafab (100M sq ft — city-sized, not a factory). Verticalization of AI — Elon replaces TSMC + ASML. Terrafab estimated $119B vs TSMC $330B/40y. Free electron laser in the middle (circular structure) — going after ASML EUV lithography. Mass driver on the moon (high aspect ratio dimension). Peter disclosed: SpaceX shareholder.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Organizational knife fight — Jeff Dean's Google Brain vs Demis' DeepMind — Demis won, Jeff lost. DeepMind eating Google from the inside out. Whoever runs DeepMind prawdopodobnie heir apparent do CEO of Google. 'Gemini has lost the mandate of heaven' — not winning frontier race. Salvation = hyperscaler play.",
+            "text_en": "Organizational knife fight — Jeff Dean's Google Brain vs Demis' DeepMind — Demis won, Jeff lost. DeepMind eating Google from the inside out. Whoever runs DeepMind probably heir apparent to CEO of Google. 'Gemini has lost the mandate of heaven' — not winning frontier race. Salvation = hyperscaler play."
+          },
+          {
+            "host": "Emad Mostaque",
+            "dot_color": "var(--hp)",
+            "text_pl": "Google should have $50B fund — spin out amazing technologists, exclusivity option on models, GCP compute. Emad's letter 3 lata temu: 'open source Gemini and you will win'. Move of the century — open source Gemini tied to TPUs i GCP. Terrafab — verticalization of AI. SpaceX to vehicle dla intelligence industrialization of America.",
+            "text_en": "Google should have $50B fund — spin out amazing technologists, exclusivity option on models, GCP compute. Emad's letter 3 years ago: 'open source Gemini and you will win'. Move of the century — open source Gemini tied to TPUs and GCP. Terrafab — verticalization of AI. SpaceX is the vehicle for intelligence industrialization of America."
+          },
+          {
+            "host": "Salim Ismail",
+            "dot_color": "var(--hp)",
+            "text_pl": "Classic edge disruption versus the core — Google jako ecosystem, nie operating environment. Distribution effects jak Teams vs Slack/Zoom — Google wciąż będzie print money. But if you're Google DeepMind person — inbox full of $500M+ valuation offers.",
+            "text_en": "Classic edge disruption versus the core — Google as ecosystem, not operating environment. Distribution effects like Teams vs Slack/Zoom — Google will still print money. But if you're a Google DeepMind person — inbox full of $500M+ valuation offers."
+          }
+        ],
+        "wniosek_pl": "Alex: <strong>'Gemini has lost the mandate of heaven'</strong> — DeepMind eating Google. SpaceX + Nvidia Starmine + Terrafab = $16.8B investment, free electron laser (circular) going after ASML. Verticalization of AI onshored to America.",
+        "wniosek_en": "Alex: <strong>'Gemini has lost the mandate of heaven'</strong> — DeepMind eating Google. SpaceX + Nvidia Starmine + Terrafab = $16.8B investment, free electron laser (circular) going after ASML. Verticalization of AI onshored to America.",
+        "kontekst_pl": "Kontekst: Soviet Union stare at Pentagon courtyard — myśleli że missile silo, był hot dog stand. Terrafab circle = exact opposite — profound geopolitical implications.",
+        "kontekst_en": "Context: Soviet Union used to stare at the Pentagon courtyard — thought it was a missile silo, was a hot dog stand. Terrafab circle = exact opposite — profound geopolitical implications."
+      },
+      {
+        "num": "12",
+        "title": "Outro — Emad's book 'The First Principle', Intelligent Internet",
+        "title_pl": "Outro — książka Emada 'The First Principle', Intelligent Internet",
+        "title_en": "Outro — Emad's book 'The First Principle', Intelligent Internet",
+        "time": "02:00:00 – 02:09:22",
+        "fakty_pl": "Alex: 'this looks like it could be a mass driver on the moon' — Terrafab design hints at lunar infrastructure. 'Buy SpaceX stock for your children — civilizational infrastructure company, generational company'. Alex hot take: 'if you can't cut it at frontier model level — end up hyperscaling — consolation prize for losing frontier race'. Emad: SpaceX to vehicle dla intelligence industrialization of America — robots, rockets, chips — full stack. Emad: 'huddle your SpaceX' (jak Bitcoin hODL). Peter disclosed: SpaceX shareholder, single largest holding. Książka Emada 'The First Principle' — pre-order available. Intelligent Internet (ii.inc) — projekt Emada. Emad's papers: ii.inc/common-wealth — future of society, law, personhood, governance. Moonshots Live 25 września downtown LA — Palmer Luckey, Jared Jeremy (Circle), Cathy Wood, Anushree, Ben Lamb. Future Vision XPRize — 5000+ wpisów, top 5 będzie pokazane. Build with Gemini XPRize — 25,000 teams, $2M prize money. Abundance Summit 80% sold out.",
+        "fakty_en": "Alex: 'this looks like it could be a mass driver on the moon' — Terrafab design hints at lunar infrastructure. 'Buy SpaceX stock for your children — civilizational infrastructure company, generational company'. Alex hot take: 'if you can't cut it at frontier model level — you end up hyperscaling — consolation prize for losing frontier race'. Emad: SpaceX is the vehicle for intelligence industrialization of America — robots, rockets, chips — full stack. Emad: 'huddle your SpaceX' (like Bitcoin hODL). Peter disclosed: SpaceX shareholder, single largest holding. Emad's book 'The First Principle' — pre-order available. Intelligent Internet (ii.inc) — Emad's project. Emad's papers: ii.inc/common-wealth — future of society, law, personhood, governance. Moonshots Live September 25 downtown LA — Palmer Luckey, Jared Jeremy (Circle), Cathy Wood, Anushree, Ben Lamb. Future Vision XPRize — 5000+ entries, top 5 will be shown. Build with Gemini XPRize — 25,000 teams, $2M prize money. Abundance Summit 80% sold out.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Terrafab high aspect ratio length — could be mass driver on the moon. 'Buy SpaceX stock for your children — civilizational infrastructure company, generational company'. Now that we know what terra fab on earth looks like — not difficult to imagine one on the moon.",
+            "text_en": "Terrafab high aspect ratio length — could be mass driver on the moon. 'Buy SpaceX stock for your children — civilizational infrastructure company, generational company'. Now that we know what a terra fab on earth looks like — not difficult to imagine one on the moon."
+          },
+          {
+            "host": "Emad Mostaque",
+            "dot_color": "var(--hp)",
+            "text_pl": "SpaceX to vehicle dla intelligence industrialization of America — robots, rockets, chips. Wszystko co będzie economically productive w tym stuleciu — Elon going full stack. Huddle your SpaceX. Książka 'The First Principle' — pre-order. Intelligent Internet (ii.inc).",
+            "text_en": "SpaceX is the vehicle for intelligence industrialization of America — robots, rockets, chips. Everything that will be economically productive in this century — Elon going full stack. Huddle your SpaceX. Book 'The First Principle' — pre-order. Intelligent Internet (ii.inc)."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Full disclosure: small SpaceX shareholder, single largest holding. Moonshots Live 25 września downtown LA — Palmer Luckey, Cathy Wood. Future Vision XPRize — 5000+ entries. Build with Gemini XPRize — 25,000 teams, $2M prize. Abundance Summit 80% sold out.",
+            "text_en": "Full disclosure: small SpaceX shareholder, single largest holding. Moonshots Live September 25 downtown LA — Palmer Luckey, Cathy Wood. Future Vision XPRize — 5000+ entries. Build with Gemini XPRize — 25,000 teams, $2M prize. Abundance Summit 80% sold out."
+          }
+        ],
+        "wniosek_pl": "Alex: <strong>'Buy SpaceX stock for your children — civilizational infrastructure company'</strong>. Emad: SpaceX = vehicle dla intelligence industrialization of America. Moonshots Live 25.09 LA.",
+        "wniosek_en": "Alex: <strong>'Buy SpaceX stock for your children — civilizational infrastructure company'</strong>. Emad: SpaceX = vehicle for intelligence industrialization of America. Moonshots Live 09.25 LA.",
+        "kontekst_pl": "Kontekst: Emad's book 'The First Principle' — pre-order. Intelligent Internet (ii.inc). Emad's papers: ii.inc/common-wealth.",
+        "kontekst_en": "Context: Emad's book 'The First Principle' — pre-order. Intelligent Internet (ii.inc). Emad's papers: ii.inc/common-wealth."
+      }
+    ]
+  },
+  {
     "num": "#275",
     "collapsed": false,
     "channel": "Diamandis Moonshots",

@@ -2,9 +2,19 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-07 21:32:44 UTC
+// Generated: 2026-08-08 21:22:34 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-08",
+    "type": "diamandis",
+    "title_pl": "Podcast #276 — Jeff Dean opuszcza Google, SpaceX osiąga $100B przychodów, a OpenAI Astra rozwiązuje dziesięcioletnie problemy matematyczne | #276",
+    "title_en": "Podcast #276 — Google's Jeff Dean Exits, SpaceX Hits $100B in Rev & OpenAI's Astra Solves Decade-Old Math Problems | EP #276",
+    "link": "ai-pulse.html#276",
+    "meta_pl": "12 tematów",
+    "meta_en": "12 topics",
+    "num": "#276"
+  },
   {
     "date": "2026-08-06",
     "type": "lev",
