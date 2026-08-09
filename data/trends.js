@@ -1,22 +1,22 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-08-08 21:22:36 UTC
-// Total events: 262, months: 3
+// Generated: 2026-08-09 11:18:39 UTC
+// Total events: 279, months: 3
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-08-08 21:22:36 UTC",
-    "total_events": 262,
+    "generated": "2026-08-09 11:18:39 UTC",
+    "total_events": 279,
     "total_months": 3
   },
   "months": [
     {
       "month": "2026-08",
-      "total": 50,
+      "total": 67,
       "by_type": {
+        "ai_search": 32,
         "diamandis": 1,
         "lev": 33,
-        "weekly": 1,
-        "ai_search": 15
+        "weekly": 1
       },
       "top_vendors": [
         [
@@ -24,15 +24,31 @@ const TRENDS = {
           6
         ],
         [
+          "Alibaba",
+          5
+        ],
+        [
           "Google",
-          4
+          5
         ],
         [
           "Meta",
+          4
+        ],
+        [
+          "ByteDance",
           3
         ],
         [
           "OpenAI",
+          3
+        ],
+        [
+          "Tencent",
+          2
+        ],
+        [
+          "Higgsfield",
           2
         ],
         [
@@ -42,25 +58,17 @@ const TRENDS = {
         [
           "Microsoft",
           2
-        ],
-        [
-          "MiniMax",
-          2
-        ],
-        [
-          "ByteDance",
-          2
-        ],
-        [
-          "DeepSeek",
-          1
-        ],
-        [
-          "xAI",
-          1
         ]
       ],
       "top_models": [
+        [
+          "Qwen 3",
+          3
+        ],
+        [
+          "Muse Spark",
+          2
+        ],
         [
           "Inkling",
           2
@@ -70,11 +78,11 @@ const TRENDS = {
           2
         ],
         [
-          "Claude dominuje",
+          "Wan Animate",
           1
         ],
         [
-          "Muse Spark",
+          "Claude dominuje",
           1
         ],
         [
@@ -87,10 +95,6 @@ const TRENDS = {
         ],
         [
           "Muse Code",
-          1
-        ],
-        [
-          "Qwen 3",
           1
         ]
       ]
@@ -164,11 +168,11 @@ const TRENDS = {
           5
         ],
         [
-          "GPT 5.6",
+          "GPT 5",
           5
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           5
         ],
         [
@@ -203,11 +207,11 @@ const TRENDS = {
           3
         ],
         [
-          "Alibaba",
+          "OpenAI",
           2
         ],
         [
-          "OpenAI",
+          "Alibaba",
           2
         ],
         [
@@ -241,19 +245,19 @@ const TRENDS = {
       ],
       "top_models": [
         [
-          "GPT-5",
-          1
-        ],
-        [
           "GPT-5.6",
           1
         ],
         [
-          "GPT 5.6",
+          "GPT-5",
           1
         ],
         [
           "GPT 5",
+          1
+        ],
+        [
+          "GPT 5.6",
           1
         ],
         [
@@ -345,19 +349,19 @@ const TRENDS = {
       ],
       [
         "OpenAI",
-        23
+        24
       ],
       [
         "Google",
-        20
-      ],
-      [
-        "Meta",
-        13
+        21
       ],
       [
         "Alibaba",
-        13
+        17
+      ],
+      [
+        "Meta",
+        14
       ],
       [
         "DeepSeek",
@@ -366,6 +370,14 @@ const TRENDS = {
       [
         "Moonshot AI",
         8
+      ],
+      [
+        "Tencent",
+        5
+      ],
+      [
+        "ByteDance",
+        5
       ],
       [
         "Microsoft",
@@ -388,15 +400,7 @@ const TRENDS = {
         4
       ],
       [
-        "Tencent",
-        4
-      ],
-      [
-        "ByteDance",
-        4
-      ],
-      [
-        "MIT",
+        "Higgsfield",
         3
       ]
     ],
@@ -414,20 +418,24 @@ const TRENDS = {
         7
       ],
       [
-        "GPT 5.6",
-        6
-      ],
-      [
         "GPT 5",
         6
       ],
       [
-        "Opus 5",
+        "GPT 5.6",
+        6
+      ],
+      [
+        "Qwen 3",
         5
       ],
       [
         "Muse Spark",
-        4
+        5
+      ],
+      [
+        "Opus 5",
+        5
       ],
       [
         "DeepSeek V4",
@@ -435,10 +443,6 @@ const TRENDS = {
       ],
       [
         "Inkling",
-        3
-      ],
-      [
-        "Qwen 3",
         3
       ],
       [
@@ -463,10 +467,10 @@ const TRENDS = {
       ]
     ],
     "by_type": {
+      "ai_search": 93,
       "diamandis": 9,
       "lev": 172,
-      "weekly": 5,
-      "ai_search": 76
+      "weekly": 5
     }
   }
 };

@@ -2,10 +2,192 @@
 // Schema: {r, n, v, d, o, c, desc_pl, desc_en, b_pl, b_en}
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
-const TODAY = "2026-08-08";
+const TODAY = "2026-08-09";
 const NEW_DAYS = 14;
 
 const M = [
+  {
+    "n": "Muse Spark 1.2",
+    "v": "Meta",
+    "c": "Coding",
+    "d": "2026-08-08",
+    "o": 0,
+    "r": 9,
+    "is_new": true,
+    "desc_pl": "Meta Muse Spark 1.2 — real-world coding + agentic workflows. 1M context, multimodal. Self-reported benchmarks misleading (używa GPT 5.6 Terra nie Sol). Artificial analysis: way behind top 10. Ale tani — tańszy niż Gemini 3.6 Flash i Kimi K3. Muse Code harness. Closed source, API only.",
+    "desc_en": "Meta Muse Spark 1.2 — real-world coding + agentic workflows. 1M context, multimodal. Self-reported benchmarks misleading (uses GPT 5.6 Terra not Sol). Artificial analysis: way behind top 10. But cheap — cheaper than Gemini 3.6 Flash and Kimi K3. Muse Code harness. Closed source, API only.",
+    "b_pl": "1M context. Cheaper niż Gemini 3.6 Flash i Kimi K3.",
+    "b_en": "1M context. Cheaper than Gemini 3.6 Flash and Kimi K3."
+  },
+  {
+    "n": "Long Horizon Harness",
+    "v": "Open-source",
+    "c": "Coding",
+    "d": "2026-08-08",
+    "o": 1,
+    "r": 14,
+    "is_new": true,
+    "desc_pl": "Long Horizon Harness — framework dla complex long tasks (hours/days). 3 role: manager, executor (fresh context), auditor (independent verification). Works across Claude Code, Codex CLI, Gemini CLI, ZCode, KimmyCode. SWE-bench +28.9%.",
+    "desc_en": "Long Horizon Harness — framework for complex long tasks (hours/days). 3 roles: manager, executor (fresh context), auditor (independent verification). Works across Claude Code, Codex CLI, Gemini CLI, ZCode, KimmyCode. SWE-bench +28.9%.",
+    "b_pl": "SWE-bench +28.9%, OS World 2 tripled. Cross-CLI.",
+    "b_en": "SWE-bench +28.9%, OS World 2 tripled. Cross-CLI."
+  },
+  {
+    "n": "Big Bang",
+    "v": "Open-source",
+    "c": "LLM",
+    "d": "2026-08-08",
+    "o": 1,
+    "r": 11,
+    "is_new": true,
+    "desc_pl": "Big Bang — self-evolving model na Qwen 3.6 35B base. Generator agents tworzą trudne problemy, critic szuka błędów, metacritic sprawdza real improvement. BrowseComp, Frontier Science, Humanity's Last Exam massive improvement.",
+    "desc_en": "Big Bang — self-evolving model on Qwen 3.6 35B base. Generator agents create difficult problems, critic finds mistakes, metacritic checks real improvement. BrowseComp, Frontier Science, Humanity's Last Exam massive improvement.",
+    "b_pl": "Self-evolving: generator + critic + metacritic agents.",
+    "b_en": "Self-evolving: generator + critic + metacritic agents."
+  },
+  {
+    "n": "Xiaomi Robotics 1",
+    "v": "Xiaomi",
+    "c": "Humanoid Robots",
+    "d": "2026-08-08",
+    "o": 1,
+    "r": 10,
+    "is_new": true,
+    "desc_pl": "Xiaomi Robotics 1 — foundation model dla everyday objects. Pick up, place, zip bag, pack suitcase, navigate. 100K hours handheld gripper video + 10K hours robot data. Natural language instructions.",
+    "desc_en": "Xiaomi Robotics 1 — foundation model for everyday objects. Pick up, place, zip bag, pack suitcase, navigate. 100K hours handheld gripper video + 10K hours robot data. Natural language instructions.",
+    "b_pl": "100K hours handheld gripper video. Open source + training details.",
+    "b_en": "100K hours handheld gripper video. Open source + training details."
+  },
+  {
+    "n": "Cruiser Y1",
+    "v": "UBTech",
+    "c": "Humanoid Robots",
+    "d": "2026-08-08",
+    "o": 0,
+    "r": 13,
+    "is_new": true,
+    "desc_pl": "UBTech Cruiser Y1 — wheeled industrial humanoid robots. Praca w warehouse. Swarm intelligence koordynuje wielu robotów — no redundancy, no overlap. 'Army of robots concurrently.'",
+    "desc_en": "UBTech Cruiser Y1 — wheeled industrial humanoid robots. Warehouse work. Swarm intelligence coordinates multiple robots — no redundancy, no overlap. 'Army of robots concurrently.'",
+    "b_pl": "Swarm intelligence. Wheeled dla warehouse.",
+    "b_en": "Swarm intelligence. Wheeled for warehouse."
+  },
+  {
+    "n": "Gen1",
+    "v": "Persona AI",
+    "c": "Humanoid Robots",
+    "d": "2026-08-08",
+    "o": 0,
+    "r": 12,
+    "is_new": true,
+    "desc_pl": "Persona AI Gen1 — humanoid robot teleoperation. VR headset → real-time control. Zadanie welding (precyzyjne/stabilne ruchy). High-risk industrial environments deployment.",
+    "desc_en": "Persona AI Gen1 — humanoid robot teleoperation. VR headset → real-time control. Welding task (precise/stable movements). High-risk industrial environments deployment.",
+    "b_pl": "VR teleoperation. Welding-grade precision.",
+    "b_en": "VR teleoperation. Welding-grade precision."
+  },
+  {
+    "n": "ClinFusion",
+    "v": "Alibaba",
+    "c": "AI Science Agents",
+    "d": "2026-08-08",
+    "o": 1,
+    "r": 6,
+    "is_new": true,
+    "desc_pl": "Alibaba ClinFusion — holistic medical understanding. X-rays/scans/3D imaging + text → clinical reports. Combined vision encoder dla wszystkich typów medical data. Beats GPT 5.2 multimodal. 32B (72GB) + 8B (24GB).",
+    "desc_en": "Alibaba ClinFusion — holistic medical understanding. X-rays/scans/3D imaging + text → clinical reports. Combined vision encoder for all medical data types. Beats GPT 5.2 multimodal. 32B (72GB) + 8B (24GB).",
+    "b_pl": "Best open-source medical model in that size range.",
+    "b_en": "Best open-source medical model in that size range."
+  },
+  {
+    "n": "WeatherNext 2",
+    "v": "Google",
+    "c": "AI Research",
+    "d": "2026-08-08",
+    "o": 1,
+    "r": 8,
+    "is_new": true,
+    "desc_pl": "Google WeatherNext 2 — predykcja huraganów/tropical cyclones. 15 dni advance, 1000 scenariuszy. Track + intensity + wind w jednym modelu. 28km resolution, 1 TPU <1 min forecast. 20TB training. Nature paper. Open source + Mini.",
+    "desc_en": "Google WeatherNext 2 — hurricane/tropical cyclone prediction. 15 days advance, 1000 scenarios. Track + intensity + wind in single model. 28km resolution, 1 TPU <1 min forecast. 20TB training. Nature paper. Open source + Mini.",
+    "b_pl": "15 dni advance. Nature paper. Mini version na Colab free.",
+    "b_en": "15 days advance. Nature paper. Mini version on Colab free."
+  },
+  {
+    "n": "LeapTalk",
+    "v": "Open-source",
+    "c": "Realtime Avatars",
+    "d": "2026-08-08",
+    "o": 1,
+    "r": 10,
+    "is_new": true,
+    "desc_pl": "LeapTalk — realtime talking avatars. Reference image + speech audio → lip-synced video. 200fps na H200 GPU. Tysiące razy szybciej niż Hello 3/EchoMimic.",
+    "desc_en": "LeapTalk — realtime talking avatars. Reference image + speech audio → lip-synced video. 200fps on H200 GPU. Thousands of times faster than Hello 3/EchoMimic.",
+    "b_pl": "200fps na H200. Thousands of times faster niż EchoMimic.",
+    "b_en": "200fps on H200. Thousands of times faster than EchoMimic."
+  },
+  {
+    "n": "Hunyuan3D Buffalo",
+    "v": "Tencent",
+    "c": "3D Generation",
+    "d": "2026-08-08",
+    "o": 1,
+    "r": 10,
+    "is_new": true,
+    "desc_pl": "Tencent Hunyuan3D Buffalo — unified 3D model: generate + understand + edit + separate. Text prompt editing (turn head to bull's head, remove sail, add glasses). Segmentacja na części. Code coming soon.",
+    "desc_en": "Tencent Hunyuan3D Buffalo — unified 3D model: generate + understand + edit + separate. Text prompt editing (turn head to bull's head, remove sail, add glasses). Segment into parts. Code coming soon.",
+    "b_pl": "All-in-one 3D: generate + edit + segment.",
+    "b_en": "All-in-one 3D: generate + edit + segment."
+  },
+  {
+    "n": "VocalRender",
+    "v": "Open-source",
+    "c": "TTS",
+    "d": "2026-08-08",
+    "o": 1,
+    "r": 12,
+    "is_new": true,
+    "desc_pl": "VocalRender — singing voice z lyrics + MIDI melody. Autoregressive (broad sketch) + diffusion (fine details). Tylko chiński. <10GB. Training code released.",
+    "desc_en": "VocalRender — singing voice from lyrics + MIDI melody. Autoregressive (broad sketch) + diffusion (fine details). Chinese only. <10GB. Training code released.",
+    "b_pl": "Autoregressive + diffusion pipeline. Training code published.",
+    "b_en": "Autoregressive + diffusion pipeline. Training code published."
+  },
+  {
+    "n": "Wan Animate 2",
+    "v": "Alibaba",
+    "c": "Video Generation",
+    "d": "2026-08-08",
+    "o": 1,
+    "r": 7,
+    "is_new": true,
+    "desc_pl": "Alibaba Wan Animate 2 — photo + reference video → animowana postać. Hands/fingers, facial expressions, multiple characters, camera angle control. Light: real-time streaming <1s. 33GB, ComfyUI support.",
+    "desc_en": "Alibaba Wan Animate 2 — photo + reference video → animated character. Hands/fingers, facial expressions, multiple characters, camera angle control. Light: real-time streaming <1s. 33GB, ComfyUI support.",
+    "b_pl": "Real-time streaming (Light). Multiple characters + facial expressions.",
+    "b_en": "Real-time streaming (Light). Multiple characters + facial expressions."
+  },
+  {
+    "n": "MAC",
+    "v": "Open-source",
+    "c": "3D Generation",
+    "d": "2026-08-08",
+    "o": 1,
+    "r": 14,
+    "is_new": true,
+    "desc_pl": "MAC (Multi-Agent CAD) — system wieloagentowy generujący printable 3D CAD files z text prompt. 116x mniej tokenów niż CAD-Skills, 13x tańszy. Model agnostic.",
+    "desc_en": "MAC (Multi-Agent CAD) — multi-agent system that generates printable 3D CAD files from text prompt. 116x fewer tokens than CAD-Skills, 13x cheaper. Model agnostic.",
+    "b_pl": "Text → printable CAD. 116x fewer tokens vs CAD-Skills.",
+    "b_en": "Text → printable CAD. 116x fewer tokens vs CAD-Skills."
+  },
+  {
+    "n": "SymphonyGen",
+    "v": "Open-source",
+    "c": "TTS",
+    "d": "2026-08-08",
+    "o": 1,
+    "r": 15,
+    "is_new": true,
+    "desc_pl": "SymphonyGen — open-source AI do pełnej muzyki orkiestrowej. Generuje harmony skeleton, potem rozwija w kompletną aranżację. Własny harmony albo skeleton z istniejącego utworu. Modele <5MB.",
+    "desc_en": "SymphonyGen — open-source AI for full orchestral music. Generates harmony skeleton first, then expands into complete arrangement. Own harmony or skeleton from existing piece. Models <5MB.",
+    "b_pl": "Under 5MB models. Run locally na consumer devices.",
+    "b_en": "Under 5MB models. Run locally on consumer devices."
+  },
   {
     "n": "Gemini 4",
     "v": "Google",
@@ -2502,21 +2684,21 @@ const M = [
 ];
 
 const CATS = [
-  "LLM",
-  "Multimodal",
-  "Image Generation",
-  "World Models",
-  "TTS",
-  "Humanoid Robots",
-  "Video Generation",
   "Coding",
+  "LLM",
+  "Humanoid Robots",
   "AI Science Agents",
   "AI Research",
   "Realtime Avatars",
+  "3D Generation",
+  "TTS",
+  "Video Generation",
+  "Multimodal",
+  "Image Generation",
+  "World Models",
   "4D Human",
   "Neural Interface",
   "Hardware",
-  "3D Generation",
   "AI Wellness",
   "Security"
 ];

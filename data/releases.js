@@ -1,6 +1,293 @@
 // AI Releases — auto-generated from releases.json
 const RELEASES = [
   {
+    "num": "##32-1",
+    "date": "2026-08-09",
+    "title_pl": "SymphonyGen, Wan Animate 2, Qwen 3.8 Max, WeatherNext 2, Xiaomi Robotics 1 — AI News",
+    "title_en": "SymphonyGen, Wan Animate 2, Qwen 3.8 Max, WeatherNext 2, Xiaomi Robotics 1 — AI News",
+    "yt": "uJgzFn0GT7M",
+    "collapsed": false,
+    "items": [
+      {
+        "title_pl": "SymphonyGen — open-source orkiestra z harmony skeleton",
+        "title_en": "SymphonyGen — open-source orchestra from harmony skeleton",
+        "vendor": "Open-source",
+        "category_pl": "TTS",
+        "category_en": "TTS",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "SymphonyGen — open-source AI do pełnej muzyki orkiestrowej. Najpierw generuje harmony skeleton, potem rozwija go w kompletną aranżację orkiestrową. Możesz podać własny harmony albo wziąć skeleton z istniejącego utworu. Modele poniżej 5MB — mieszczą się na większości urządzeń konsumenckich. Open source, run locally.",
+        "review_en": "SymphonyGen — open-source AI for full orchestral music. First generates a harmony skeleton, then expands it into a complete orchestral arrangement. You can input your own harmony or extract the skeleton from an existing piece. Models under 5MB — fit on most consumer devices. Open source, run locally.",
+        "links": [
+          {
+            "label": "SymphonyGen",
+            "url": "https://symphonygen.github.io/"
+          }
+        ]
+      },
+      {
+        "title_pl": "MAC (Multi-Agent CAD) — text prompt → printable 3D CAD files",
+        "title_en": "MAC (Multi-Agent CAD) — text prompt → printable 3D CAD files",
+        "vendor": "Open-source",
+        "category_pl": "3D Generation",
+        "category_en": "3D Generation",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "MAC (Multi-Agent CAD) — system wieloagentowy generujący printable 3D CAD files z text prompt. 116x mniej tokenów niż CAD-Skills, 13x tańszy. Model agnostic (użyli Qwen, ale można podmienić). Wyższy pass rate. Open source, run locally.",
+        "review_en": "MAC (Multi-Agent CAD) — multi-agent system that generates printable 3D CAD files from a text prompt. 116x fewer tokens than CAD-Skills, 13x cheaper. Model agnostic (they used Qwen, but you can swap it). Higher pass rate. Open source, run locally.",
+        "links": [
+          {
+            "label": "MAC",
+            "url": "https://github.com/Pan-Chera/Multi-Agent-CAD"
+          }
+        ]
+      },
+      {
+        "title_pl": "Wan Animate 2 — Alibaba photo + reference video → animacja",
+        "title_en": "Wan Animate 2 — Alibaba photo + reference video → animation",
+        "vendor": "Alibaba",
+        "category_pl": "Video Generation",
+        "category_en": "Video Generation",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "Alibaba Wan Animate 2 — photo + reference video → animowana postać. Działa z hands/fingers, facial expressions, multiple characters, irregular body proportions, camera angle control. Wan Animate 2 Light: real-time streaming (<1s latency). 33GB full, int8 half size, ComfyUI support. Open source.",
+        "review_en": "Alibaba Wan Animate 2 — photo + reference video → animated character. Works with hands/fingers, facial expressions, multiple characters, irregular body proportions, camera angle control. Wan Animate 2 Light: real-time streaming (<1s latency). 33GB full, int8 half size, ComfyUI support. Open source.",
+        "links": [
+          {
+            "label": "Wan Animate 2",
+            "url": "https://humanaigc.github.io/wan-animate-2/"
+          }
+        ]
+      },
+      {
+        "title_pl": "VocalRender — singing voice z lyrics + MIDI melody",
+        "title_en": "VocalRender — singing voice from lyrics + MIDI melody",
+        "vendor": "Open-source",
+        "category_pl": "TTS",
+        "category_en": "TTS",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "VocalRender — śpiewający voice z lyrics + MIDI melody. Wersje VocalRender + Pro. Autoregressive (broad sketch) + diffusion (fine details). Tylko chiński (wytrenuj własny dla innych języków). <10GB. Open source + training code.",
+        "review_en": "VocalRender — singing voice from lyrics + MIDI melody. VocalRender + Pro versions. Autoregressive (broad sketch) + diffusion (fine details). Chinese only (train your own for other languages). <10GB. Open source + training code.",
+        "links": [
+          {
+            "label": "VocalRender",
+            "url": "https://pymaster17.github.io/VocalRender/"
+          }
+        ]
+      },
+      {
+        "title_pl": "Hunyuan3D Buffalo — Tencent unified 3D: generate + understand + edit",
+        "title_en": "Hunyuan3D Buffalo — Tencent unified 3D: generate + understand + edit",
+        "vendor": "Tencent",
+        "category_pl": "3D Generation",
+        "category_en": "3D Generation",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "Tencent Hunyuan3D Buffalo — unified 3D model: generate + understand + edit + separate 3D objects. Text prompt editing (turn head to bull's head, remove sail, add glasses). Segmentacja modeli 3D na części. Code coming soon.",
+        "review_en": "Tencent Hunyuan3D Buffalo — unified 3D model: generate + understand + edit + separate 3D objects. Text prompt editing (turn head to bull's head, remove sail, add glasses). Segment 3D models into parts. Code coming soon.",
+        "links": [
+          {
+            "label": "Hunyuan3D Buffalo",
+            "url": "https://tencent-hunyuan.github.io/Hunyuan3D-Buffalo1.0/"
+          }
+        ]
+      },
+      {
+        "title_pl": "LeapTalk — realtime talking avatars, 200fps na H200",
+        "title_en": "LeapTalk — realtime talking avatars, 200fps on H200",
+        "vendor": "Open-source",
+        "category_pl": "Realtime Avatars",
+        "category_en": "Realtime Avatars",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "LeapTalk — realtime talking avatars. Reference image + speech audio → lip-synced video. 200fps na GPU H200. Tysiące razy szybciej niż Hello 3/EchoMimic. Open source.",
+        "review_en": "LeapTalk — realtime talking avatars. Reference image + speech audio → lip-synced video. 200fps on H200 GPU. Thousands of times faster than Hello 3/EchoMimic. Open source.",
+        "links": [
+          {
+            "label": "LeapTalk",
+            "url": "https://zhangrongxiang.github.io/leaptalk-page/"
+          }
+        ]
+      },
+      {
+        "title_pl": "Higgsfield — sponsor, Seedance 2.5 30s, 50 referencji",
+        "title_en": "Higgsfield — sponsor, Seedance 2.5 30s, 50 references",
+        "vendor": "Higgsfield",
+        "category_pl": "Video Generation",
+        "category_en": "Video Generation",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "Higgsfield — sponsor AI Search. Seedance 2.5 dostępne: 30s video, 50 referencji (30 img + 10 vid + 10 aud), editing control, narrative with audio, extend generations, 3D clay render reference.",
+        "review_en": "Higgsfield — sponsor of AI Search. Seedance 2.5 available: 30s video, 50 references (30 img + 10 vid + 10 aud), editing control, narrative with audio, extend generations, 3D clay render reference.",
+        "links": [
+          {
+            "label": "Higgsfield",
+            "url": "https://higgsfield.ai/s/theaisearch-qPkHlP"
+          }
+        ]
+      },
+      {
+        "title_pl": "Qwen 3.8 Max — 2.4T params, open source next week",
+        "title_en": "Qwen 3.8 Max — 2.4T params, open source next week",
+        "vendor": "Alibaba",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "Alibaba Qwen 3.8 Max — 2.4T params, open source next week. Agentic benchmarks match Fable 5/GPT 5.6 Sol. Autonomous self-improving harness: 16 dni, 265 commits, 127 PRs. Chip design: 12x mniejszy niż baseline. 1 punkt poniżej Kimi K3 ale 400B params mniejszy. API dostępne teraz.",
+        "review_en": "Alibaba Qwen 3.8 Max — 2.4T params, open source next week. Agentic benchmarks match Fable 5/GPT 5.6 Sol. Autonomous self-improving harness: 16 days, 265 commits, 127 PRs. Chip design: 12x smaller than baseline. 1 point below Kimi K3 but 400B params smaller. API available now.",
+        "links": [
+          {
+            "label": "Qwen 3.8 Max",
+            "url": "https://qwen.ai/blog?id=qwen3.8"
+          }
+        ]
+      },
+      {
+        "title_pl": "WeatherNext 2 — Google huragany, 15 dni advance, 1000 scenariuszy",
+        "title_en": "WeatherNext 2 — Google hurricanes, 15 days advance, 1000 scenarios",
+        "vendor": "Google",
+        "category_pl": "AI Research",
+        "category_en": "AI Research",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "Google WeatherNext 2 — predykcja huraganów/tropical cyclones. 15 dni advance, 1000 scenariuszy. Łączy track + intensity + wind structure w jednym modelu. 28km resolution (100x coarser niż tradycyjne). 1 TPU, <1 min forecast. 20TB training data, 5000 historical storms. Nature paper. Open source + Mini version (Google Colab free).",
+        "review_en": "Google WeatherNext 2 — hurricane/tropical cyclone prediction. 15 days advance, 1000 scenarios. Combines track + intensity + wind structure in single model. 28km resolution (100x coarser than traditional). 1 TPU, <1 min forecast. 20TB training data, 5000 historical storms. Nature paper. Open source + Mini version (Google Colab free).",
+        "links": [
+          {
+            "label": "WeatherNext 2",
+            "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/"
+          }
+        ]
+      },
+      {
+        "title_pl": "GPT math breakthroughs (Astra) — 10 otwartych problemów rozwiązanych",
+        "title_en": "GPT math breakthroughs (Astra) — 10 open problems solved",
+        "vendor": "OpenAI",
+        "category_pl": "AI Research",
+        "category_en": "AI Research",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "OpenAI internal Astra model rozwiązał 10 otwartych problemów matematycznych (geometry, coding theory, group theory, quantum complexity, cryptography, combinatorics). $2000 compute cost. Reasoning walkthroughs opublikowane. 'Scientific acceleration already here.'",
+        "review_en": "OpenAI internal Astra model solved 10 open math problems (geometry, coding theory, group theory, quantum complexity, cryptography, combinatorics). $2000 compute cost. Reasoning walkthroughs released. 'Scientific acceleration already here.'",
+        "links": [
+          {
+            "label": "OpenAI math breakthroughs",
+            "url": "https://openai.com/index/ten-advances-in-mathematics/"
+          }
+        ]
+      },
+      {
+        "title_pl": "ClinFusion — Alibaba holistic medical understanding",
+        "title_en": "ClinFusion — Alibaba holistic medical understanding",
+        "vendor": "Alibaba",
+        "category_pl": "AI Science Agents",
+        "category_en": "AI Science Agents",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "Alibaba ClinFusion — holistic medical understanding. X-rays/scans/3D imaging + text → clinical reports. Combined vision encoder dla wszystkich typów medical data. Beats GPT 5.2 na multimodal benchmarks. 32B (72GB) + 8B (24GB). Open source. 'Best open-source model for medical analysis in that size range.'",
+        "review_en": "Alibaba ClinFusion — holistic medical understanding. X-rays/scans/3D imaging + text → clinical reports. Combined vision encoder for all medical data types. Beats GPT 5.2 on multimodal benchmarks. 32B (72GB) + 8B (24GB). Open source. 'Best open-source model for medical analysis in that size range.'",
+        "links": [
+          {
+            "label": "ClinFusion",
+            "url": "https://github.com/Alibaba-DAMO-Academy/ClinFusion"
+          }
+        ]
+      },
+      {
+        "title_pl": "Gen1 welding (Persona AI) — humanoid teleoperation VR",
+        "title_en": "Gen1 welding (Persona AI) — humanoid teleoperation VR",
+        "vendor": "Persona AI",
+        "category_pl": "Humanoid Robots",
+        "category_en": "Humanoid Robots",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "Persona AI Gen1 — humanoid robot teleoperation. VR headset → real-time control. Zadanie welding (precyzyjne/stabilne ruchy). Deployment w high-risk industrial environments.",
+        "review_en": "Persona AI Gen1 — humanoid robot teleoperation. VR headset → real-time control. Welding task (precise/stable movements). High-risk industrial environments deployment."
+      },
+      {
+        "title_pl": "UBTECH swarm intelligence — Cruiser Y1 wheeled humanoid",
+        "title_en": "UBTECH swarm intelligence — Cruiser Y1 wheeled humanoid",
+        "vendor": "UBTech",
+        "category_pl": "Humanoid Robots",
+        "category_en": "Humanoid Robots",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "UBTech Cruiser Y1 — wheeled industrial humanoid robots. Praca w warehouse. Swarm intelligence koordynuje wielu robotów — no redundancy, no overlap. 'Army of robots concurrently.'",
+        "review_en": "UBTech Cruiser Y1 — wheeled industrial humanoid robots. Warehouse work. Swarm intelligence coordinates multiple robots — no redundancy, no overlap. 'Army of robots concurrently.'"
+      },
+      {
+        "title_pl": "Xiaomi Robotics 1 — foundation model dla everyday objects",
+        "title_en": "Xiaomi Robotics 1 — foundation model for everyday objects",
+        "vendor": "Xiaomi",
+        "category_pl": "Humanoid Robots",
+        "category_en": "Humanoid Robots",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "Xiaomi Robotics 1 — foundation model dla everyday objects. Pick up, place, zip bag, pack suitcase, navigate. 100K hours handheld gripper video + 10K hours robot data. Natural language instructions. Open source + training details.",
+        "review_en": "Xiaomi Robotics 1 — foundation model for everyday objects. Pick up, place, zip bag, pack suitcase, navigate. 100K hours handheld gripper video + 10K hours robot data. Natural language instructions. Open source + training details.",
+        "links": [
+          {
+            "label": "Xiaomi Robotics 1",
+            "url": "https://github.com/XiaomiRobotics/Xiaomi-Robotics-1"
+          }
+        ]
+      },
+      {
+        "title_pl": "Big Bang — self-evolving model na Qwen 3.6 35B",
+        "title_en": "Big Bang — self-evolving model on Qwen 3.6 35B",
+        "vendor": "Open-source",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "Big Bang — self-evolving model. Qwen 3.6 35B base. Generator agents tworzą trudne problemy scientific/technical, critic agent szuka błędów, metacritic agent sprawdza real research improvement. BrowseComp, Bench, Frontier Science, Humanity's Last Exam massive improvement. Open source.",
+        "review_en": "Big Bang — self-evolving model. Qwen 3.6 35B base. Generator agents create difficult scientific/technical problems, critic agent finds mistakes, metacritic agent checks real research improvement. BrowseComp, Bench, Frontier Science, Humanity's Last Exam massive improvement. Open source.",
+        "links": [
+          {
+            "label": "Big Bang",
+            "url": "https://github.com/endless-frontier/BigBang-v1"
+          }
+        ]
+      },
+      {
+        "title_pl": "Muse Spark 1.2 — Meta real-world coding + agentic workflows",
+        "title_en": "Muse Spark 1.2 — Meta real-world coding + agentic workflows",
+        "vendor": "Meta",
+        "category_pl": "Coding",
+        "category_en": "Coding",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "Meta Muse Spark 1.2 — update dla real-world coding + agentic workflows. 1M context, multimodal. Self-reported benchmarks misleading (używa GPT 5.6 Terra nie Sol). Artificial analysis: way behind top 10. Ale tani — tańszy niż Gemini 3.6 Flash i Kimi K3. Muse Code harness wprowadzony. Closed source, API only.",
+        "review_en": "Meta Muse Spark 1.2 — updated for real-world coding + agentic workflows. 1M context, multimodal. Self-reported benchmarks misleading (uses GPT 5.6 Terra not Sol). Artificial analysis shows way behind top 10. But cheap — cheaper than Gemini 3.6 Flash and Kimi K3. Muse Code harness also introduced. Closed source, API only.",
+        "links": [
+          {
+            "label": "Muse Spark 1.2",
+            "url": "https://developer.meta.com/ai/resources/blog/build-with-muse-code/"
+          }
+        ]
+      },
+      {
+        "title_pl": "Long Horizon Harness — framework dla complex long tasks",
+        "title_en": "Long Horizon Harness — framework for complex long tasks",
+        "vendor": "Open-source",
+        "category_pl": "Coding",
+        "category_en": "Coding",
+        "date": "2026-08-08",
+        "thumbnail": "https://i.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
+        "review_pl": "Long Horizon Harness — framework dla complex long tasks (hours/days). 3 role: manager (assigns tasks), executor (fresh context per task), auditor (independent verification). Works across Claude Code, Codex CLI, Gemini CLI, ZCode, KimmyCode. SWE-bench +28.9%, OS World 2 tripled, Terminal Bench +7.5%. Open source.",
+        "review_en": "Long Horizon Harness — framework for complex long tasks (hours/days). 3 roles: manager (assigns tasks), executor (fresh context per task), auditor (independent verification). Works across Claude Code, Codex CLI, Gemini CLI, ZCode, KimmyCode. SWE-bench +28.9%, OS World 2 tripled, Terminal Bench +7.5%. Open source.",
+        "links": [
+          {
+            "label": "Long Horizon Harness",
+            "url": "https://lh-harness.pages.dev"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "num": "##31-2",
     "date": "2026-08-03",
     "title_pl": "Seedance 2.5 vs Minimax H3 — pełne porównanie (appendix)",

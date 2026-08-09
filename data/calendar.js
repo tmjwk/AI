@@ -2,9 +2,179 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-08 21:22:34 UTC
+// Generated: 2026-08-09 11:18:33 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "SymphonyGen — open-source orkiestra z harmony skeleton — Open-source",
+    "title_en": "SymphonyGen — open-source orkiestra z harmony skeleton — Open-source",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "TTS",
+    "meta_en": "TTS",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "MAC (Multi-Agent CAD) — text prompt → printable 3D CAD files — Open-source",
+    "title_en": "MAC (Multi-Agent CAD) — text prompt → printable 3D CAD files — Open-source",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "3D Generation",
+    "meta_en": "3D Generation",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "Wan Animate 2 — Alibaba photo + reference video → animacja — Alibaba",
+    "title_en": "Wan Animate 2 — Alibaba photo + reference video → animacja — Alibaba",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "VocalRender — singing voice z lyrics + MIDI melody — Open-source",
+    "title_en": "VocalRender — singing voice z lyrics + MIDI melody — Open-source",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "TTS",
+    "meta_en": "TTS",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "Hunyuan3D Buffalo — Tencent unified 3D: generate + understand + edit — Tencent",
+    "title_en": "Hunyuan3D Buffalo — Tencent unified 3D: generate + understand + edit — Tencent",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "3D Generation",
+    "meta_en": "3D Generation",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "LeapTalk — realtime talking avatars, 200fps na H200 — Open-source",
+    "title_en": "LeapTalk — realtime talking avatars, 200fps na H200 — Open-source",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "Realtime Avatars",
+    "meta_en": "Realtime Avatars",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "Higgsfield — sponsor, Seedance 2.5 30s, 50 referencji — Higgsfield",
+    "title_en": "Higgsfield — sponsor, Seedance 2.5 30s, 50 referencji — Higgsfield",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "Qwen 3.8 Max — 2.4T params, open source next week — Alibaba",
+    "title_en": "Qwen 3.8 Max — 2.4T params, open source next week — Alibaba",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "WeatherNext 2 — Google huragany, 15 dni advance, 1000 scenariuszy — Google",
+    "title_en": "WeatherNext 2 — Google huragany, 15 dni advance, 1000 scenariuszy — Google",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "AI Research",
+    "meta_en": "AI Research",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "GPT math breakthroughs (Astra) — 10 otwartych problemów rozwiązanych — OpenAI",
+    "title_en": "GPT math breakthroughs (Astra) — 10 otwartych problemów rozwiązanych — OpenAI",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "AI Research",
+    "meta_en": "AI Research",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "ClinFusion — Alibaba holistic medical understanding — Alibaba",
+    "title_en": "ClinFusion — Alibaba holistic medical understanding — Alibaba",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "AI Science Agents",
+    "meta_en": "AI Science Agents",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "Gen1 welding (Persona AI) — humanoid teleoperation VR — Persona AI",
+    "title_en": "Gen1 welding (Persona AI) — humanoid teleoperation VR — Persona AI",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "UBTECH swarm intelligence — Cruiser Y1 wheeled humanoid — UBTech",
+    "title_en": "UBTECH swarm intelligence — Cruiser Y1 wheeled humanoid — UBTech",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "Xiaomi Robotics 1 — foundation model dla everyday objects — Xiaomi",
+    "title_en": "Xiaomi Robotics 1 — foundation model dla everyday objects — Xiaomi",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "Big Bang — self-evolving model na Qwen 3.6 35B — Open-source",
+    "title_en": "Big Bang — self-evolving model na Qwen 3.6 35B — Open-source",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "Muse Spark 1.2 — Meta real-world coding + agentic workflows — Meta",
+    "title_en": "Muse Spark 1.2 — Meta real-world coding + agentic workflows — Meta",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "Coding",
+    "meta_en": "Coding",
+    "num": "##32-1"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "ai_search",
+    "title_pl": "Long Horizon Harness — framework dla complex long tasks — Open-source",
+    "title_en": "Long Horizon Harness — framework dla complex long tasks — Open-source",
+    "link": "ai-releases.html###32-1",
+    "meta_pl": "Coding",
+    "meta_en": "Coding",
+    "num": "##32-1"
+  },
   {
     "date": "2026-08-08",
     "type": "diamandis",
