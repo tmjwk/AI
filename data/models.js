@@ -12,7 +12,7 @@ const M = [
     "c": "Coding",
     "d": "2026-08-08",
     "o": 0,
-    "r": 9,
+    "r": 5,
     "is_new": true,
     "desc_pl": "Meta Muse Spark 1.2 — real-world coding + agentic workflows. 1M context, multimodal. Self-reported benchmarks misleading (używa GPT 5.6 Terra nie Sol). Artificial analysis: way behind top 10. Ale tani — tańszy niż Gemini 3.6 Flash i Kimi K3. Muse Code harness. Closed source, API only.",
     "desc_en": "Meta Muse Spark 1.2 — real-world coding + agentic workflows. 1M context, multimodal. Self-reported benchmarks misleading (uses GPT 5.6 Terra not Sol). Artificial analysis: way behind top 10. But cheap — cheaper than Gemini 3.6 Flash and Kimi K3. Muse Code harness. Closed source, API only.",
@@ -25,7 +25,7 @@ const M = [
     "c": "Coding",
     "d": "2026-08-08",
     "o": 1,
-    "r": 14,
+    "r": 6,
     "is_new": true,
     "desc_pl": "Long Horizon Harness — framework dla complex long tasks (hours/days). 3 role: manager, executor (fresh context), auditor (independent verification). Works across Claude Code, Codex CLI, Gemini CLI, ZCode, KimmyCode. SWE-bench +28.9%.",
     "desc_en": "Long Horizon Harness — framework for complex long tasks (hours/days). 3 roles: manager, executor (fresh context), auditor (independent verification). Works across Claude Code, Codex CLI, Gemini CLI, ZCode, KimmyCode. SWE-bench +28.9%.",
@@ -38,7 +38,7 @@ const M = [
     "c": "LLM",
     "d": "2026-08-08",
     "o": 1,
-    "r": 11,
+    "r": 21,
     "is_new": true,
     "desc_pl": "Big Bang — self-evolving model na Qwen 3.6 35B base. Generator agents tworzą trudne problemy, critic szuka błędów, metacritic sprawdza real improvement. BrowseComp, Frontier Science, Humanity's Last Exam massive improvement.",
     "desc_en": "Big Bang — self-evolving model on Qwen 3.6 35B base. Generator agents create difficult problems, critic finds mistakes, metacritic checks real improvement. BrowseComp, Frontier Science, Humanity's Last Exam massive improvement.",
@@ -51,7 +51,7 @@ const M = [
     "c": "Humanoid Robots",
     "d": "2026-08-08",
     "o": 1,
-    "r": 10,
+    "r": 12,
     "is_new": true,
     "desc_pl": "Xiaomi Robotics 1 — foundation model dla everyday objects. Pick up, place, zip bag, pack suitcase, navigate. 100K hours handheld gripper video + 10K hours robot data. Natural language instructions.",
     "desc_en": "Xiaomi Robotics 1 — foundation model for everyday objects. Pick up, place, zip bag, pack suitcase, navigate. 100K hours handheld gripper video + 10K hours robot data. Natural language instructions.",
@@ -64,7 +64,7 @@ const M = [
     "c": "Humanoid Robots",
     "d": "2026-08-08",
     "o": 0,
-    "r": 13,
+    "r": 15,
     "is_new": true,
     "desc_pl": "UBTech Cruiser Y1 — wheeled industrial humanoid robots. Praca w warehouse. Swarm intelligence koordynuje wielu robotów — no redundancy, no overlap. 'Army of robots concurrently.'",
     "desc_en": "UBTech Cruiser Y1 — wheeled industrial humanoid robots. Warehouse work. Swarm intelligence coordinates multiple robots — no redundancy, no overlap. 'Army of robots concurrently.'",
@@ -77,7 +77,7 @@ const M = [
     "c": "Humanoid Robots",
     "d": "2026-08-08",
     "o": 0,
-    "r": 12,
+    "r": 14,
     "is_new": true,
     "desc_pl": "Persona AI Gen1 — humanoid robot teleoperation. VR headset → real-time control. Zadanie welding (precyzyjne/stabilne ruchy). High-risk industrial environments deployment.",
     "desc_en": "Persona AI Gen1 — humanoid robot teleoperation. VR headset → real-time control. Welding task (precise/stable movements). High-risk industrial environments deployment.",
@@ -90,7 +90,7 @@ const M = [
     "c": "AI Science Agents",
     "d": "2026-08-08",
     "o": 1,
-    "r": 6,
+    "r": 4,
     "is_new": true,
     "desc_pl": "Alibaba ClinFusion — holistic medical understanding. X-rays/scans/3D imaging + text → clinical reports. Combined vision encoder dla wszystkich typów medical data. Beats GPT 5.2 multimodal. 32B (72GB) + 8B (24GB).",
     "desc_en": "Alibaba ClinFusion — holistic medical understanding. X-rays/scans/3D imaging + text → clinical reports. Combined vision encoder for all medical data types. Beats GPT 5.2 multimodal. 32B (72GB) + 8B (24GB).",
@@ -103,7 +103,7 @@ const M = [
     "c": "AI Research",
     "d": "2026-08-08",
     "o": 1,
-    "r": 8,
+    "r": 7,
     "is_new": true,
     "desc_pl": "Google WeatherNext 2 — predykcja huraganów/tropical cyclones. 15 dni advance, 1000 scenariuszy. Track + intensity + wind w jednym modelu. 28km resolution, 1 TPU <1 min forecast. 20TB training. Nature paper. Open source + Mini.",
     "desc_en": "Google WeatherNext 2 — hurricane/tropical cyclone prediction. 15 days advance, 1000 scenarios. Track + intensity + wind in single model. 28km resolution, 1 TPU <1 min forecast. 20TB training. Nature paper. Open source + Mini.",
@@ -116,7 +116,7 @@ const M = [
     "c": "Realtime Avatars",
     "d": "2026-08-08",
     "o": 1,
-    "r": 10,
+    "r": 4,
     "is_new": true,
     "desc_pl": "LeapTalk — realtime talking avatars. Reference image + speech audio → lip-synced video. 200fps na H200 GPU. Tysiące razy szybciej niż Hello 3/EchoMimic.",
     "desc_en": "LeapTalk — realtime talking avatars. Reference image + speech audio → lip-synced video. 200fps on H200 GPU. Thousands of times faster than Hello 3/EchoMimic.",
@@ -129,7 +129,7 @@ const M = [
     "c": "3D Generation",
     "d": "2026-08-08",
     "o": 1,
-    "r": 10,
+    "r": 8,
     "is_new": true,
     "desc_pl": "Tencent Hunyuan3D Buffalo — unified 3D model: generate + understand + edit + separate. Text prompt editing (turn head to bull's head, remove sail, add glasses). Segmentacja na części. Code coming soon.",
     "desc_en": "Tencent Hunyuan3D Buffalo — unified 3D model: generate + understand + edit + separate. Text prompt editing (turn head to bull's head, remove sail, add glasses). Segment into parts. Code coming soon.",
@@ -142,7 +142,7 @@ const M = [
     "c": "TTS",
     "d": "2026-08-08",
     "o": 1,
-    "r": 12,
+    "r": 10,
     "is_new": true,
     "desc_pl": "VocalRender — singing voice z lyrics + MIDI melody. Autoregressive (broad sketch) + diffusion (fine details). Tylko chiński. <10GB. Training code released.",
     "desc_en": "VocalRender — singing voice from lyrics + MIDI melody. Autoregressive (broad sketch) + diffusion (fine details). Chinese only. <10GB. Training code released.",
@@ -155,7 +155,7 @@ const M = [
     "c": "Video Generation",
     "d": "2026-08-08",
     "o": 1,
-    "r": 7,
+    "r": 10,
     "is_new": true,
     "desc_pl": "Alibaba Wan Animate 2 — photo + reference video → animowana postać. Hands/fingers, facial expressions, multiple characters, camera angle control. Light: real-time streaming <1s. 33GB, ComfyUI support.",
     "desc_en": "Alibaba Wan Animate 2 — photo + reference video → animated character. Hands/fingers, facial expressions, multiple characters, camera angle control. Light: real-time streaming <1s. 33GB, ComfyUI support.",
@@ -168,7 +168,7 @@ const M = [
     "c": "3D Generation",
     "d": "2026-08-08",
     "o": 1,
-    "r": 14,
+    "r": 9,
     "is_new": true,
     "desc_pl": "MAC (Multi-Agent CAD) — system wieloagentowy generujący printable 3D CAD files z text prompt. 116x mniej tokenów niż CAD-Skills, 13x tańszy. Model agnostic.",
     "desc_en": "MAC (Multi-Agent CAD) — multi-agent system that generates printable 3D CAD files from text prompt. 116x fewer tokens than CAD-Skills, 13x cheaper. Model agnostic.",
@@ -181,7 +181,7 @@ const M = [
     "c": "TTS",
     "d": "2026-08-08",
     "o": 1,
-    "r": 15,
+    "r": 11,
     "is_new": true,
     "desc_pl": "SymphonyGen — open-source AI do pełnej muzyki orkiestrowej. Generuje harmony skeleton, potem rozwija w kompletną aranżację. Własny harmony albo skeleton z istniejącego utworu. Modele <5MB.",
     "desc_en": "SymphonyGen — open-source AI for full orchestral music. Generates harmony skeleton first, then expands into complete arrangement. Own harmony or skeleton from existing piece. Models <5MB.",
@@ -194,7 +194,7 @@ const M = [
     "c": "LLM",
     "d": "2026-08-08",
     "o": 0,
-    "r": 8,
+    "r": 17,
     "is_new": true,
     "desc_pl": "Google Gemini 4 — unreleased model teased by Demis Hassabis w notce do staff przy reorganizacji (Hassabis → Alphabet Chief Scientist, Koray Kavukcuoglu → CEO DeepMind). Hassabis wyraźnie wskazał nazwę 'Gemini 4' jako nadchodzący model i napisał że AGI jest close at hand. Akcje Alphabet spadły 5% po ogłoszeniu. Alex hot take: 'Gemini has lost the mandate of heaven — Gemini is just not winning frontier model race'. Google annual release cadence = too slow w era monthly frontier pushes.",
     "desc_en": "Google Gemini 4 — unreleased model teased by Demis Hassabis in his note to staff during the reorganization (Hassabis → Alphabet Chief Scientist, Koray Kavukcuoglu → CEO DeepMind). Hassabis explicitly named 'Gemini 4' as the upcoming model and wrote that AGI is close at hand. Alphabet shares fell 5% on the announcement. Alex hot take: 'Gemini has lost the mandate of heaven — Gemini is just not winning frontier model race'. Google's annual release cadence = too slow in an era of monthly frontier pushes.",
@@ -208,7 +208,7 @@ const M = [
     "c": "Multimodal",
     "d": "2026-08-08",
     "o": 0,
-    "r": 12,
+    "r": 9,
     "is_new": true,
     "desc_pl": "HARK — AI company Bretta Adcocka (CEO Figure AI). First product 'Handoff' — web browsing AI agent (CUA — computer use assistant). Beating GPT 5.4 i Claude Opus 4.8 na benchmarku OM2W (Online Mind2Web) — test czy agent może successfully complete real tasks na live websites których nigdy nie widział. $4B valuation przy launch. Model architecture ten sam co Figure. Alex hot take: 'HARK is a recapitalization measure for Brett to buy himself more equity in Figure' — falsifiable prediction: Figure acquire lub reverse aqua-hire HARK. Model architecture HARK i Figure same.",
     "desc_en": "HARK — AI company by Brett Adcock (CEO of Figure AI). First product 'Handoff' — web browsing AI agent (CUA — computer use assistant). Beating GPT 5.4 and Claude Opus 4.8 on the OM2W (Online Mind2Web) benchmark — testing whether an agent can successfully complete real tasks on live websites it has never seen before. $4B valuation at launch. Model architecture same as Figure. Alex hot take: 'HARK is a recapitalization measure for Brett to buy himself more equity in Figure' — falsifiable prediction: Figure acquires or reverse aqua-hires HARK. Model architecture of HARK and Figure same.",
@@ -222,7 +222,7 @@ const M = [
     "c": "LLM",
     "d": "2026-08-08",
     "o": 0,
-    "r": 6,
+    "r": 12,
     "is_new": true,
     "desc_pl": "Discovery Loop — public benefit corporation założona przez Jeffa Deana (chief scientist Google przez 27 lat) + 3 innych top Google AI leaders. Misja: budować AI models które can improve themselves with little no help — recursive self-improvement (RSI). Dean: 'goal is to be more fully automated than traditionally has been possible'. Venode wczesny investor. Google (GCP) prawdopodobnie drugi investor — strategic compute partnership. Spin-out z Google, ale powiązanie cloud.",
     "desc_en": "Discovery Loop — public benefit corporation founded by Jeff Dean (Google chief scientist for 27 years) + 3 other top Google AI leaders. Mission: build AI models that can improve themselves with little or no help — recursive self-improvement (RSI). Dean: 'goal is to be more fully automated than traditionally has been possible'. Venode early investor. Google (GCP) likely second investor — strategic compute partnership. Spin-out from Google, but cloud-linked.",
@@ -236,7 +236,7 @@ const M = [
     "c": "LLM",
     "d": "2026-08-08",
     "o": 0,
-    "r": 2,
+    "r": 5,
     "is_new": true,
     "desc_pl": "OpenAI Astra — unreleased model. 1 sierpnia 2026: 249-page manuscript opisujący 10 nowych wyników w mathematics i theoretical computer science — high-dimensional geometry, coding theory, group theory, quantum complexity, extremal combinatorics. Każdy wynik z machine-checkable proof certificate (Lean). Total compute cost ~$2000 — mniej niż monthly stipend jednego graduate student. Field Medalist Tim Gowers recommended for publication. Cosmologist Will Kinney: 'dark night for mathematics — old gods slaughtered by new machine gods'. FIRST model to hit 'critical' na OpenAI cybersecurity preparedness framework. Long range autonomy rumored. OpenAI dał 100,000 GPT Pro licenses academic scientists za darmo.",
     "desc_en": "OpenAI Astra — unreleased model. August 1, 2026: 249-page manuscript describing 10 new results in mathematics and theoretical computer science — high-dimensional geometry, coding theory, group theory, quantum complexity, extremal combinatorics. Each result with machine-checkable proof certificate (Lean). Total compute cost ~$2000 — less than a single graduate student's monthly stipend. Field Medalist Tim Gowers recommended for publication. Cosmologist Will Kinney: 'dark night for mathematics — old gods slaughtered by new machine gods'. FIRST model to hit 'critical' on OpenAI cybersecurity preparedness framework. Long range autonomy rumored. OpenAI gave 100,000 GPT Pro licenses to academic scientists for free.",
@@ -250,7 +250,7 @@ const M = [
     "c": "Image Generation",
     "d": "2026-08-01",
     "o": 0,
-    "r": 13,
+    "r": 15,
     "is_new": true,
     "desc_pl": "Ideogram Object Remover — brush over object, auto-remove. Lowest error rate vs Nano Banana 2, GPT image 2. Preserves shadows, reflections.",
     "desc_en": "Ideogram Object Remover — brush over object, auto-remove. Lowest error rate vs Nano Banana 2, GPT image 2. Preserves shadows, reflections.",
@@ -263,7 +263,7 @@ const M = [
     "c": "World Models",
     "d": "2026-08-01",
     "o": 1,
-    "r": 9,
+    "r": 10,
     "is_new": true,
     "desc_pl": "Phi Zero — video world model z 'physical language'. Model reasons about physical movement before generating frames. Interactive worlds, autonomous driving, robot training. Outperforms other world models.",
     "desc_en": "Phi Zero — video world model with 'physical language'. Model reasons about physical movement before generating frames. Interactive worlds, autonomous driving, robot training. Outperforms other world models.",
@@ -276,7 +276,7 @@ const M = [
     "c": "TTS",
     "d": "2026-08-01",
     "o": 0,
-    "r": 12,
+    "r": 9,
     "is_new": true,
     "desc_pl": "Google Gemini Voice Typing — Mac OS only. Hold Fn key, speak into any app. Gemini transcription, removes fillers. Gemini reasoning mode: summarize documents.",
     "desc_en": "Google Gemini Voice Typing — Mac OS only. Hold Fn key, speak into any app. Gemini transcription, removes fillers. Gemini reasoning mode: summarize documents.",
@@ -302,7 +302,7 @@ const M = [
     "c": "Humanoid Robots",
     "d": "2026-08-01",
     "o": 0,
-    "r": 3,
+    "r": 4,
     "is_new": true,
     "desc_pl": "Google DeepMind Gemini Robotics 2 — feet to fingertips. Walking+balancing+reaching+grasping+reasoning. 3 models: GR2 (VLA), GR ER2 (reasoning), GR on-device 2 (offline). Apollo 2 humanoid.",
     "desc_en": "Google DeepMind Gemini Robotics 2 — feet to fingertips. Walking+balancing+reaching+grasping+reasoning. 3 models: GR2 (VLA), GR ER2 (reasoning), GR on-device 2 (offline). Apollo 2 humanoid.",
@@ -328,7 +328,7 @@ const M = [
     "c": "Humanoid Robots",
     "d": "2026-08-01",
     "o": 1,
-    "r": 15,
+    "r": 16,
     "is_new": true,
     "desc_pl": "Prism — robotics algorithm. Multi-sensor movement control: force, velocity, contact, friction, joint angle. Higher success rate vs other algorithms.",
     "desc_en": "Prism — robotics algorithm. Multi-sensor movement control: force, velocity, contact, friction, joint angle. Higher success rate vs other algorithms.",
@@ -354,7 +354,7 @@ const M = [
     "c": "LLM",
     "d": "2026-08-01",
     "o": 1,
-    "r": 11,
+    "r": 22,
     "is_new": true,
     "desc_pl": "AMD Instella — open-source MoE trained on AMD Instinct + ROCm (no NVIDIA). 16B total, 2.8B active. Beats Gemma 4 E4B. Multi-head latent attention + far skip collective. Think version 32GB.",
     "desc_en": "AMD Instella — open-source MoE trained on AMD Instinct + ROCm (no NVIDIA). 16B total, 2.8B active. Beats Gemma 4 E4B. Multi-head latent attention + far skip collective. Think version 32GB.",
@@ -367,7 +367,7 @@ const M = [
     "c": "Image Generation",
     "d": "2026-08-01",
     "o": 1,
-    "r": 14,
+    "r": 16,
     "is_new": true,
     "desc_pl": "Redesign — flat image into editable layers. Screenshot → Figma/Photoshop. Uses PaddleOCR, Qwen Image Layered, Dino, SAM2. <4GB.",
     "desc_en": "Redesign — flat image into editable layers. Screenshot → Figma/Photoshop. Uses PaddleOCR, Qwen Image Layered, Dino, SAM2. <4GB.",
@@ -380,7 +380,7 @@ const M = [
     "c": "Video Generation",
     "d": "2026-08-01",
     "o": 1,
-    "r": 12,
+    "r": 16,
     "is_new": true,
     "desc_pl": "Netflix ID V2V — open-source video style transfer. Change style without affecting identity/movement. Edit key frame → spread across video. 720p, 80GB.",
     "desc_en": "Netflix ID V2V — open-source video style transfer. Change style without affecting identity/movement. Edit key frame → spread across video. 720p, 80GB.",
@@ -393,7 +393,7 @@ const M = [
     "c": "TTS",
     "d": "2026-08-01",
     "o": 1,
-    "r": 10,
+    "r": 8,
     "is_new": true,
     "desc_pl": "Crisper Whisper 2 — open-source transcription. Verbatim + intended modes. Word-level timing. 4 models: 0.2B (<500MB) to 2B (3GB). Better than 11 Labs.",
     "desc_en": "Crisper Whisper 2 — open-source transcription. Verbatim + intended modes. Word-level timing. 4 models: 0.2B (<500MB) to 2B (3GB). Better than 11 Labs.",
@@ -406,7 +406,7 @@ const M = [
     "c": "LLM",
     "d": "2026-07-31",
     "o": 1,
-    "r": 3,
+    "r": 7,
     "is_new": true,
     "desc_pl": "DeepSeek V4 Flash 0731 — newest. As good as GLM 5.2 i Opus 4.8 ale 70% mniejszy, 100x tańszy. 3 cents/M tokens. DSpark architecture. 167GB, Unsloth 1-bit 82.5GB.",
     "desc_en": "DeepSeek V4 Flash 0731 — newest. As good as GLM 5.2 and Opus 4.8 but 70% smaller, 100x cheaper. 3 cents/M tokens. DSpark architecture. 167GB, Unsloth 1-bit 82.5GB.",
@@ -419,7 +419,7 @@ const M = [
     "c": "Multimodal",
     "d": "2026-07-25",
     "o": 1,
-    "r": 6,
+    "r": 7,
     "is_new": true,
     "desc_pl": "GLM 5.2 Vision — open-source multimodal (text+image). NVFP4 quantized na HuggingFace via baseten. GLM 5.2 użyty przez HuggingFace do detect OpenAI hack (bo Claude/GPT refused przez guardrails).",
     "desc_en": "GLM 5.2 Vision — open-source multimodal (text+image). NVFP4 quantized on HuggingFace via baseten. GLM 5.2 used by HuggingFace to detect OpenAI hack (because Claude/GPT refused due to guardrails).",
@@ -433,7 +433,7 @@ const M = [
     "c": "LLM",
     "d": "2026-07-25",
     "o": 0,
-    "r": 7,
+    "r": 14,
     "is_new": true,
     "desc_pl": "Google Gemini 3.6 Flash — fast general-purpose, 60% fewer tokens niż 3.5 Flash. Coding, doc analysis, knowledge work, visual understanding, computer control. Available via API, AI Studio, agentic coding platform (anti-gravity).",
     "desc_en": "Google Gemini 3.6 Flash — fast general-purpose, 60% fewer tokens than 3.5 Flash. Coding, doc analysis, knowledge work, visual understanding, computer control. Available via API, AI Studio, agentic coding platform (anti-gravity).",
@@ -447,7 +447,7 @@ const M = [
     "c": "LLM",
     "d": "2026-07-25",
     "o": 1,
-    "r": 15,
+    "r": 28,
     "is_new": true,
     "desc_pl": "Nanbeige 4.2-3B — chiński open-source model 3B params. Available on ModelScope. Small model dla edge deployment.",
     "desc_en": "Nanbeige 4.2-3B — Chinese open-source model 3B params. Available on ModelScope. Small model for edge deployment.",
@@ -461,7 +461,7 @@ const M = [
     "c": "Video Generation",
     "d": "2026-07-25",
     "o": 1,
-    "r": 9,
+    "r": 12,
     "is_new": true,
     "desc_pl": "OpenDreamer — open-source video generation model. Next-state project. Alternative do closed-source video models.",
     "desc_en": "OpenDreamer — open-source video generation model. Next-state project. Alternative to closed-source video models.",
@@ -475,7 +475,7 @@ const M = [
     "c": "Video Generation",
     "d": "2026-07-25",
     "o": 1,
-    "r": 7,
+    "r": 9,
     "is_new": true,
     "desc_pl": "NVIDIA Sana Video 2 — open-source video generation. Efficient architecture dla high-quality video synthesis.",
     "desc_en": "NVIDIA Sana Video 2 — open-source video generation. Efficient architecture for high-quality video synthesis.",
@@ -502,7 +502,7 @@ const M = [
     "c": "LLM",
     "d": "2026-07-25",
     "o": 0,
-    "r": 4,
+    "r": 10,
     "is_new": true,
     "desc_pl": "Alibaba Qwen 3.8 — 2.4T params, open weights tease. Compatible to Frontier, second only to Fable 5. API only (paid). Brak benchmarks jeszcze. AI Search: 'nie tak dobry jak Kimi K3'.",
     "desc_en": "Alibaba Qwen 3.8 — 2.4T params, open weights tease. Compatible to Frontier, second only to Fable 5. API only (paid). No benchmarks yet. AI Search: 'not as good as Kimi K3'.",
@@ -530,7 +530,7 @@ const M = [
     "c": "Coding",
     "d": "2026-07-25",
     "o": 1,
-    "r": 8,
+    "r": 4,
     "is_new": true,
     "desc_pl": "Poolside Laguna S2.1 — 118B MoE (8B active), 1M context, open weights. Trained jako agentic — verify work, backtrack, fix errors. XS variant 33B (3B active).",
     "desc_en": "Poolside Laguna S2.1 — 118B MoE (8B active), 1M context, open weights. Trained as agentic — verify work, backtrack, fix errors. XS variant 33B (3B active).",
@@ -543,7 +543,7 @@ const M = [
     "c": "LLM",
     "d": "2026-07-25",
     "o": 0,
-    "r": 1,
+    "r": 2,
     "is_new": true,
     "desc_pl": "Anthropic Claude Opus 5 — najsilniejszy model right now. Frontier Bench (agentic coding) wyżej niż GPT 5.6 Sol ale droższy. Anthropic chart: x-axis price log scale (misleading).",
     "desc_en": "Anthropic Claude Opus 5 — strongest model right now. Frontier Bench (agentic coding) higher than GPT 5.6 Sol but more expensive. Anthropic chart: x-axis price log scale (misleading).",
@@ -552,7 +552,7 @@ const M = [
     "url": "https://www.anthropic.com/news/claude-opus-5"
   },
   {
-    "r": 2,
+    "r": 4,
     "n": "GPT 5.6 Sol",
     "v": "OpenAI",
     "d": "2026-07-10",
@@ -600,7 +600,7 @@ const M = [
     }
   },
   {
-    "r": 8,
+    "r": 16,
     "n": "Claude Opus 4.8",
     "v": "Anthropic",
     "d": "2026-05-28",
@@ -626,7 +626,7 @@ const M = [
     }
   },
   {
-    "r": 5,
+    "r": 11,
     "n": "GLM-5.2",
     "v": "Z.AI / Zhipu AI",
     "d": "2026-06-16",
@@ -650,7 +650,7 @@ const M = [
     }
   },
   {
-    "r": 11,
+    "r": 23,
     "n": "MiniMax M3",
     "v": "MiniMax",
     "d": "2026-05-31",
@@ -671,7 +671,7 @@ const M = [
     }
   },
   {
-    "r": 16,
+    "r": 30,
     "n": "Kimi K2.7 Code",
     "v": "Moonshot AI",
     "d": "2026-06-12",
@@ -692,7 +692,7 @@ const M = [
     }
   },
   {
-    "r": 10,
+    "r": 19,
     "n": "GPT-5.5",
     "v": "OpenAI",
     "d": "2026-04-23",
@@ -719,7 +719,7 @@ const M = [
     }
   },
   {
-    "r": 15,
+    "r": 27,
     "n": "DeepSeek v4",
     "v": "DeepSeek",
     "d": "2026-04-24",
@@ -740,7 +740,7 @@ const M = [
     }
   },
   {
-    "r": 12,
+    "r": 24,
     "n": "Qwen 3.6 Plus",
     "v": "Alibaba",
     "d": "2026-05-19",
@@ -761,7 +761,7 @@ const M = [
     }
   },
   {
-    "r": 19,
+    "r": 33,
     "n": "Gemma 4 12B Unified",
     "v": "Google",
     "d": "2026-06-03",
@@ -779,7 +779,7 @@ const M = [
     }
   },
   {
-    "r": 3,
+    "r": 6,
     "n": "Claude Opus 4.7",
     "v": "Anthropic",
     "d": "2026-04-16",
@@ -804,7 +804,7 @@ const M = [
     }
   },
   {
-    "r": 20,
+    "r": 35,
     "n": "Meta AI (Llama 4)",
     "v": "Meta",
     "d": "2026-04",
@@ -819,7 +819,7 @@ const M = [
     "b_en": "open-weights in the future, community ecosystem"
   },
   {
-    "r": 7,
+    "r": 8,
     "n": "Krea 2",
     "v": "Krea",
     "d": "2026-06-23",
@@ -864,7 +864,7 @@ const M = [
     "b_en": "text rendering in images — logos, posters, design with text"
   },
   {
-    "r": 10,
+    "r": 11,
     "n": "FLUX.2 [dev]",
     "v": "Black Forest Labs",
     "d": "2025-11",
@@ -879,7 +879,7 @@ const M = [
     "b_en": "photorealism, precise color and pose control, image editing"
   },
   {
-    "r": 17,
+    "r": 21,
     "n": "Image Gen on Phone",
     "v": "Various",
     "d": "2026-05",
@@ -954,7 +954,7 @@ const M = [
     "b_en": "physical AI, robot training, industrial vision — automotive, manufacturing"
   },
   {
-    "r": 14,
+    "r": 15,
     "n": "Realtime Video Games AI",
     "v": "Various",
     "d": "2026-04",
@@ -1119,7 +1119,7 @@ const M = [
     "b_en": "video generation, dynamic environments — Happy Horse predecessor"
   },
   {
-    "r": 10,
+    "r": 11,
     "n": "Moya",
     "v": "DroidUp (Shanghai)",
     "d": "2026-02-23",
@@ -1134,7 +1134,7 @@ const M = [
     "b_en": "hyper-realistic facial expressions, social interactions with humans"
   },
   {
-    "r": 11,
+    "r": 13,
     "n": "LeRobot",
     "v": "Hugging Face",
     "d": "2025-01",
@@ -1149,7 +1149,7 @@ const M = [
     "b_en": "open-source robot training, community-driven, reproducible research"
   },
   {
-    "r": 9,
+    "r": 10,
     "n": "Real Gundam",
     "v": "Various",
     "d": "2026-05",
@@ -1224,7 +1224,7 @@ const M = [
     "b_en": "hands-free AI assistance, real-time visual understanding"
   },
   {
-    "r": 6,
+    "r": 7,
     "n": "Domain Shuttle",
     "v": "Domain Shuttle (open-source)",
     "d": "2026-06",
@@ -1239,7 +1239,7 @@ const M = [
     "b_en": "video generation with reference images — character and object consistency across scenes"
   },
   {
-    "r": 24,
+    "r": 39,
     "n": "Ornith 1.0",
     "v": "Ornith (open-source)",
     "d": "2026-06",
@@ -1304,7 +1304,7 @@ const M = [
     "b_en": "chip architecture — vertical transistor stacking, 2x density over previous generation"
   },
   {
-    "r": 13,
+    "r": 14,
     "n": "Dance OPD",
     "v": "ByteDance (research)",
     "d": "2026-06",
@@ -1319,7 +1319,7 @@ const M = [
     "b_en": "unified image generation + editing — one model instead of many specialists"
   },
   {
-    "r": 14,
+    "r": 17,
     "n": "Unzero",
     "v": "Unconventional AI (open-source, MIT)",
     "d": "2026-06",
@@ -1349,7 +1349,7 @@ const M = [
     "b_en": "humanoid training dataset — real-home teleoperation, 500h of robot training data"
   },
   {
-    "r": 6,
+    "r": 7,
     "n": "Unitree R1",
     "v": "Unitree",
     "d": "2026-06",
@@ -1364,7 +1364,7 @@ const M = [
     "b_en": "affordable humanoid robot — $4,900, acrobatics, kung-fu, cheapest market option"
   },
   {
-    "r": 18,
+    "r": 32,
     "n": "Seed 2.1",
     "v": "ByteDance",
     "d": "2026-06",
@@ -1400,7 +1400,7 @@ const M = [
     "b_en": "4D reconstruction from single video — converting ordinary video into interactive 4D scene"
   },
   {
-    "r": 5,
+    "r": 6,
     "n": "Perception DM",
     "v": "ByteDance (open-source)",
     "d": "2026-06",
@@ -1430,7 +1430,7 @@ const M = [
     "b_en": "autonomous data creation — AI creates and verifies its own training data, self-improving"
   },
   {
-    "r": 9,
+    "r": 18,
     "n": "Sakana Fugu",
     "v": "Sakana AI",
     "d": "2026-06",
@@ -1466,7 +1466,7 @@ const M = [
     "b_en": "interactive world generation — persistent memory, hundreds of frames, scene consistency"
   },
   {
-    "r": 7,
+    "r": 8,
     "n": "PermaVid",
     "v": "PermaVid (open-source)",
     "d": "2026-06-21",
@@ -1481,7 +1481,7 @@ const M = [
     "b_en": "consistent video editing — persistent memory, stable edits in long clips"
   },
   {
-    "r": 8,
+    "r": 11,
     "n": "Omni Director",
     "v": "Clling (research)",
     "d": "2026-06-21",
@@ -1496,7 +1496,7 @@ const M = [
     "b_en": "camera motion cloning — transferring camera movement from ref video to new images"
   },
   {
-    "r": 15,
+    "r": 18,
     "n": "Boogu Image",
     "v": "Boogu (open-source)",
     "d": "2026-06-21",
@@ -1511,7 +1511,7 @@ const M = [
     "b_en": "image generation + editing in one model — permissive license, Flux/Nano Banana competitor"
   },
   {
-    "r": 8,
+    "r": 9,
     "n": "TeaStyle V2",
     "v": "TeaStyle (open-source)",
     "d": "2026-06-21",
@@ -1586,7 +1586,7 @@ const M = [
     "b_en": "autonomous chemistry research — AI proposes and analyzes chemical experiments"
   },
   {
-    "r": 7,
+    "r": 8,
     "n": "Ace",
     "v": "Sony",
     "d": "2026-06-21",
@@ -1631,7 +1631,7 @@ const M = [
     "b_en": "robot training exoskeleton — cloning human movements with force/torque feedback"
   },
   {
-    "r": 5,
+    "r": 6,
     "n": "Scale-2",
     "v": "ZAI (open-source)",
     "d": "2026-06-14",
@@ -1646,7 +1646,7 @@ const M = [
     "b_en": "motion transfer — animating characters from reference video, best open-source"
   },
   {
-    "r": 10,
+    "r": 11,
     "n": "Actionable World Representation",
     "v": "Research (open-source)",
     "d": "2026-06-14",
@@ -1661,7 +1661,7 @@ const M = [
     "b_en": "actionable world models — digital twins with object motion for robots"
   },
   {
-    "r": 11,
+    "r": 12,
     "n": "Oscar",
     "v": "Research (open-source)",
     "d": "2026-06-14",
@@ -1691,7 +1691,7 @@ const M = [
     "b_en": "real-time translation — simultaneous translation, available via API and mobile"
   },
   {
-    "r": 21,
+    "r": 36,
     "n": "Diffusion Gemma",
     "v": "Google (open-source, Apache 2)",
     "d": "2026-06-14",
@@ -1709,7 +1709,7 @@ const M = [
     }
   },
   {
-    "r": 9,
+    "r": 13,
     "n": "Stream Force",
     "v": "Research",
     "d": "2026-06-14",
@@ -1754,7 +1754,7 @@ const M = [
     "b_en": "autonomous research agent — hypothesis tree, persistent memory"
   },
   {
-    "r": 23,
+    "r": 38,
     "n": "Next N2",
     "v": "Next (open-source)",
     "d": "2026-06-14",
@@ -1832,7 +1832,7 @@ const M = [
     "b_en": "multi-image 3D reconstruction — fusing unaligned photos"
   },
   {
-    "r": 12,
+    "r": 13,
     "n": "Moverse",
     "v": "Research",
     "d": "2026-06-14",
@@ -1847,7 +1847,7 @@ const M = [
     "b_en": "360 world from image — panorama → 3D Gaussian model → interactive world"
   },
   {
-    "r": 11,
+    "r": 12,
     "n": "I1",
     "v": "Princeton (open-source)",
     "d": "2026-06-14",
@@ -1862,7 +1862,7 @@ const M = [
     "b_en": "fully open-source image model — training code + data, for research"
   },
   {
-    "r": 13,
+    "r": 14,
     "n": "Anchor World",
     "v": "Research",
     "d": "2026-06-14",
@@ -1892,7 +1892,7 @@ const M = [
     "b_en": "fast 3D mesh generation — 18x faster, prompt/image → 3D mesh"
   },
   {
-    "r": 10,
+    "r": 14,
     "n": "MilliVid",
     "v": "Research",
     "d": "2026-06-14",
@@ -1922,7 +1922,7 @@ const M = [
     "b_en": "AI body scanning, personalized wellness, health diagnostics"
   },
   {
-    "r": 11,
+    "r": 15,
     "n": "Bernini",
     "v": "ByteDance",
     "d": "2026-06-07",
@@ -1982,7 +1982,7 @@ const M = [
     "b_en": "real-time AI music — playable instrument, DAW plugin, MIDI control, 200ms latency"
   },
   {
-    "r": 22,
+    "r": 37,
     "n": "GPT Dreaming",
     "v": "OpenAI",
     "d": "2026-06-07",
@@ -2015,7 +2015,7 @@ const M = [
     "b_en": "multi-person 3D motion capture — markerless, occlusion handling, hug/dance/wrestling"
   },
   {
-    "r": 9,
+    "r": 10,
     "n": "Reve 2",
     "v": "Reve AI",
     "d": "2026-06-07",
@@ -2030,7 +2030,7 @@ const M = [
     "b_en": "layout-controlled image generation — object separation, layer editing, poster design"
   },
   {
-    "r": 7,
+    "r": 15,
     "n": "Qwen 3.7 Plus",
     "v": "Alibaba",
     "d": "2026-06-07",
@@ -2066,7 +2066,7 @@ const M = [
     "b_en": "local AI hardware — 128GB unified memory fits Qwen 3.7 35B (72GB), local offline agents"
   },
   {
-    "r": 16,
+    "r": 20,
     "n": "Stable Layers",
     "v": "Stability AI",
     "d": "2026-06-07",
@@ -2081,7 +2081,7 @@ const M = [
     "b_en": "image layer separation — transparent layers, alpha masks, layer editing"
   },
   {
-    "r": 5,
+    "r": 6,
     "n": "DR2",
     "v": "Deep Robotics",
     "d": "2026-06-07",
@@ -2096,7 +2096,7 @@ const M = [
     "b_en": "industrial humanoid robot — extreme environments, precise manipulation + raw power"
   },
   {
-    "r": 8,
+    "r": 9,
     "n": "UBTECH humanoid couple",
     "v": "UBTECH",
     "d": "2026-06-07",
@@ -2171,7 +2171,7 @@ const M = [
     "b_en": "autonomous driving simulation — multi-camera, extreme weather, editable scenes, synthetic training data"
   },
   {
-    "r": 13,
+    "r": 25,
     "n": "Nemotron 3 Ultra",
     "v": "NVIDIA",
     "d": "2026-06-07",
@@ -2207,7 +2207,7 @@ const M = [
     "b_en": "controllable TTS — inline emotion/style tags, real-time expressive voice, chat-native"
   },
   {
-    "r": 12,
+    "r": 17,
     "n": "NAVA",
     "v": "Baidu (Ernie team)",
     "d": "2026-06-07",
@@ -2222,7 +2222,7 @@ const M = [
     "b_en": "video with native audio — joint audio-visual generation, smaller than competitors"
   },
   {
-    "r": 14,
+    "r": 26,
     "n": "MAI Thinking 1",
     "v": "Microsoft",
     "d": "2026-06-07",
@@ -2286,7 +2286,7 @@ const M = [
     "b_en": "3D object tracking from 2D video, transparent and reflective surfaces"
   },
   {
-    "r": 12,
+    "r": 13,
     "n": "SeFi image",
     "v": "JM Liu",
     "d": "2026-07-12",
@@ -2370,7 +2370,7 @@ const M = [
     "b_en": "720p@60fps interactive world, actions and events, object control"
   },
   {
-    "r": 4,
+    "r": 8,
     "n": "Grok 4.5",
     "v": "xAI",
     "d": "2026-07-12",
@@ -2390,7 +2390,7 @@ const M = [
     }
   },
   {
-    "r": 6,
+    "r": 13,
     "n": "Muse Spark 1.1",
     "v": "Meta",
     "d": "2026-07-12",
@@ -2410,7 +2410,7 @@ const M = [
     }
   },
   {
-    "r": 4,
+    "r": 5,
     "n": "Booster T2",
     "v": "Booster Robotics",
     "d": "2026-07-12",
@@ -2452,7 +2452,7 @@ const M = [
     "b_en": "Annotation editing, transparent layers, multilingual, infographics"
   },
   {
-    "r": 17,
+    "r": 31,
     "n": "Hy3",
     "v": "Tencent",
     "d": "2026-07-12",
@@ -2500,7 +2500,7 @@ const M = [
     "b_en": "Native sound, complex physics concepts, realistic — preview only"
   },
   {
-    "r": 6,
+    "r": 7,
     "n": "Reve 2.1",
     "v": "Reve",
     "d": "2026-07-12",
@@ -2521,7 +2521,7 @@ const M = [
     "desc_en": "Fastest open-source upscaler v1.5. Pixel Diffusion decoder — turns latent representations into super-resolved pixels. Plug-and-play with FLUX, FLUX.2, Qwen-Image. Better details and colors vs v1.",
     "b_pl": "FLUX, FLUX.2, Qwen-Image kompatybilny. Open source. HuggingFace.",
     "b_en": "FLUX, FLUX.2, Qwen-Image compatible. Open source. HuggingFace.",
-    "r": 15,
+    "r": 19,
     "date": "2026-07-15",
     "is_new": true,
     "d": "2026-07-15",
@@ -2535,7 +2535,7 @@ const M = [
     "desc_en": "2.8T MoE (50B active), 1M context. Open weight. #1 Frontend Code Arena (1679 pts). Fable level. $3/$15 per M tok. Hallucination rate 51%. Beats GPT 5.6 on AI Briefcase, Automation Bench.",
     "b_pl": "SWE-bench: blisko Fable 5 i GPT 5.6. DeepSeek SWE: 69%. Kernel Bench: top. Design Arena: top.",
     "b_en": "SWE-bench: close to Fable 5 and GPT 5.6. DeepSeek SWE: 69%. Kernel Bench: top. Design Arena: top.",
-    "r": 4,
+    "r": 9,
     "date": "2026-07-16",
     "is_new": true,
     "d": "2026-07-16",
@@ -2549,7 +2549,7 @@ const M = [
     "desc_en": "Compressed Qwen 3.6 for phone. Ternary weights (-1, 0, +1) = 5.9GB. 1-bit = 3.9GB. 80.5% benchmark vs 85% full Qwen. Fits iPhone 17 Pro.",
     "b_pl": "Ternary: 5.9GB, 1-bit: 3.9GB. Open source GitHub.",
     "b_en": "Ternary: 5.9GB, 1-bit: 3.9GB. Open source GitHub.",
-    "r": 20,
+    "r": 34,
     "date": "2026-07-14",
     "is_new": true,
     "d": "2026-07-14",
@@ -2563,7 +2563,7 @@ const M = [
     "desc_en": "Internal model for red-teaming (attacking other models). 84% attack success rate vs 13% human. Self-play training. Finds prompt injection. NOT public.",
     "b_pl": "84% attack rate. Internal only. Not released.",
     "b_en": "84% attack rate. Internal only. Not released.",
-    "r": 50,
+    "r": 1,
     "date": "2026-07-15",
     "is_new": true,
     "d": "2026-07-15",
@@ -2577,7 +2577,7 @@ const M = [
     "desc_en": "AI generating realistic 3D human movements in real-time. Two-stage planning: path → limb animation. Games, animations, robot training.",
     "b_pl": "Real-time. Two-stage motion planning.",
     "b_en": "Real-time. Two-stage motion planning.",
-    "r": 30,
+    "r": 10,
     "date": "2026-07-15",
     "is_new": true,
     "d": "2026-07-15",
@@ -2591,7 +2591,7 @@ const M = [
     "desc_en": "Generates up to 3 minutes of dance to music. Key frame control. Open source. Requires high-end GPU.",
     "b_pl": "3 min coherent. Music-to-dance. Open source.",
     "b_en": "3 min coherent. Music-to-dance. Open source.",
-    "r": 25,
+    "r": 18,
     "date": "2026-07-15",
     "is_new": true,
     "d": "2026-07-15",
@@ -2605,7 +2605,7 @@ const M = [
     "desc_en": "Background removal model. Beats commercial API 4.3× on camouflage. Hair, tricky backgrounds. Open source, MIT license. 6 seconds/image.",
     "b_pl": "4.3× better than commercial. MIT license. 6s/image.",
     "b_en": "4.3× better than commercial. MIT license. 6s/image.",
-    "r": 20,
+    "r": 22,
     "date": "2026-07-14",
     "is_new": true,
     "d": "2026-07-14",
@@ -2619,7 +2619,7 @@ const M = [
     "desc_en": "975B MoE (41B active), 1M context. Multimodal: text, image, audio. Open weight. Customization over leaderboard. Mira Murati (former OpenAI CTO).",
     "b_pl": "Multimodal native. Open weight. Fine-tune yourself.",
     "b_en": "Multimodal native. Open weight. Fine-tune yourself.",
-    "r": 15,
+    "r": 29,
     "date": "2026-07-16",
     "is_new": true,
     "d": "2026-07-16",
@@ -2633,7 +2633,7 @@ const M = [
     "desc_en": "OpenAI flagship — Soul ($5/$30), Terra, Luna. #1 SWE-bench, ARC AGI 2 (92.5%). Cheaper than Fable 2×. Throttled by White House to 20 companies.",
     "b_pl": "SWE-bench #1. ARC AGI 2: 92.5%. 89% błędów na Omniscience.",
     "b_en": "SWE-bench #1. ARC AGI 2: 92.5%. 89% errors on Omniscience.",
-    "r": 2,
+    "r": 3,
     "date": "2026-07-09",
     "is_new": false,
     "d": "2026-07-09",
@@ -2647,7 +2647,7 @@ const M = [
     "desc_en": "1.6T MoE (48B active), trained WITHOUT NVIDIA GPUs — on ASIC. Beats Gemini 3.1 Pro. Open-source. Historic — first frontier without NVIDIA.",
     "b_pl": "ASIC super pods. Zero rollbacks. Open source.",
     "b_en": "ASIC super pods. Zero rollbacks. Open source.",
-    "r": 10,
+    "r": 20,
     "date": "2026-07-04",
     "is_new": false,
     "d": "2026-07-04",
@@ -2661,7 +2661,7 @@ const M = [
     "desc_en": "35B params — beats Kimi K2.6 and DeepSeek V4 Pro on HLE and FrontierScience. FP8: 37.7GB, Q4: 21GB.",
     "b_pl": "HLE: beats >1T models. FP8: 37.7GB.",
     "b_en": "HLE: beats >1T models. FP8: 37.7GB.",
-    "r": 25,
+    "r": 40,
     "date": "2026-06-26",
     "is_new": false,
     "d": "2026-06-26",
@@ -2675,7 +2675,7 @@ const M = [
     "desc_en": "Google's fastest and most cost-efficient image model. High throughput.",
     "b_pl": "Fastest Google image model. $0.034/1k.",
     "b_en": "Fastest Google image model. $0.034/1k.",
-    "r": 20,
+    "r": 23,
     "date": "2026-06-30",
     "is_new": false,
     "d": "2026-06-30",
