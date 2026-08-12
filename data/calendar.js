@@ -2,9 +2,39 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-09 11:18:33 UTC
+// Generated: 2026-08-12 17:02:39 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-11",
+    "type": "ai_search",
+    "title_pl": "Minimax H3 advanced — Spectrum, SageAttention, live preview, Loras, Turbo, GGUFs — MiniMax",
+    "title_en": "Minimax H3 advanced — Spectrum, SageAttention, live preview, Loras, Turbo, GGUFs — MiniMax",
+    "link": "ai-releases.html###32-2",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##32-2"
+  },
+  {
+    "date": "2026-08-11",
+    "type": "diamandis",
+    "title_pl": "Podcast #278 — Sergey Brin przejmuje Gemini, 4 laboratoria tracą containment, compute na giełdzie z Kush Bavaria | #278",
+    "title_en": "Podcast #278 — Sergey Brin Retakes Gemini, 4 Labs Lose Containment, Compute Trades at NYSE w/ Kush Bavaria | EP 278",
+    "link": "ai-pulse.html#278",
+    "meta_pl": "6 tematów",
+    "meta_en": "6 topics",
+    "num": "#278"
+  },
+  {
+    "date": "2026-08-09",
+    "type": "weekly",
+    "title_pl": "AI Tydzień #32 | 3-9/08/2026",
+    "title_en": "AI Week #32 | August 3-9, 2026",
+    "link": "index.html#article-32",
+    "meta_pl": "12 sekcji",
+    "meta_en": "12 sections",
+    "num": "32"
+  },
   {
     "date": "2026-08-08",
     "type": "ai_search",

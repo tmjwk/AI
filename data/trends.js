@@ -1,24 +1,28 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-08-09 11:18:39 UTC
-// Total events: 279, months: 3
+// Generated: 2026-08-12 17:02:39 UTC
+// Total events: 282, months: 3
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-08-09 11:18:39 UTC",
-    "total_events": 279,
+    "generated": "2026-08-12 17:02:39 UTC",
+    "total_events": 282,
     "total_months": 3
   },
   "months": [
     {
       "month": "2026-08",
-      "total": 67,
+      "total": 70,
       "by_type": {
-        "ai_search": 32,
-        "diamandis": 1,
-        "lev": 33,
-        "weekly": 1
+        "ai_search": 33,
+        "diamandis": 2,
+        "weekly": 2,
+        "lev": 33
       },
       "top_vendors": [
+        [
+          "Google",
+          6
+        ],
         [
           "Anthropic",
           6
@@ -28,12 +32,12 @@ const TRENDS = {
           5
         ],
         [
-          "Google",
-          5
-        ],
-        [
           "Meta",
           4
+        ],
+        [
+          "MiniMax",
+          3
         ],
         [
           "ByteDance",
@@ -53,10 +57,6 @@ const TRENDS = {
         ],
         [
           "Thinking Machines",
-          2
-        ],
-        [
-          "Microsoft",
           2
         ]
       ],
@@ -168,11 +168,11 @@ const TRENDS = {
           5
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           5
         ],
         [
-          "GPT 5.6",
+          "GPT 5",
           5
         ],
         [
@@ -245,19 +245,19 @@ const TRENDS = {
       ],
       "top_models": [
         [
-          "GPT-5.6",
-          1
-        ],
-        [
           "GPT-5",
           1
         ],
         [
-          "GPT 5",
+          "GPT-5.6",
           1
         ],
         [
           "GPT 5.6",
+          1
+        ],
+        [
+          "GPT 5",
           1
         ],
         [
@@ -353,7 +353,7 @@ const TRENDS = {
       ],
       [
         "Google",
-        21
+        22
       ],
       [
         "Alibaba",
@@ -400,7 +400,7 @@ const TRENDS = {
         4
       ],
       [
-        "Higgsfield",
+        "MiniMax",
         3
       ]
     ],
@@ -418,11 +418,11 @@ const TRENDS = {
         7
       ],
       [
-        "GPT 5",
+        "GPT 5.6",
         6
       ],
       [
-        "GPT 5.6",
+        "GPT 5",
         6
       ],
       [
@@ -467,10 +467,10 @@ const TRENDS = {
       ]
     ],
     "by_type": {
-      "ai_search": 93,
-      "diamandis": 9,
-      "lev": 172,
-      "weekly": 5
+      "ai_search": 94,
+      "diamandis": 10,
+      "weekly": 6,
+      "lev": 172
     }
   }
 };

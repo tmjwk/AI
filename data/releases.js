@@ -1,6 +1,37 @@
 // AI Releases — auto-generated from releases.json
 const RELEASES = [
   {
+    "num": "##32-2",
+    "date": "2026-08-12",
+    "title_pl": "Minimax H3 advanced tutorial — ComfyUI, loras, turbo, live preview, GGUF",
+    "title_en": "Minimax H3 advanced tutorial — ComfyUI, loras, turbo, live preview, GGUF",
+    "yt": "G3YHSvXZP_g",
+    "collapsed": false,
+    "items": [
+      {
+        "title_pl": "Minimax H3 advanced — Spectrum, SageAttention, live preview, Loras, Turbo, GGUFs",
+        "title_en": "Minimax H3 advanced — Spectrum, SageAttention, live preview, Loras, Turbo, GGUFs",
+        "vendor": "MiniMax",
+        "category_pl": "Video Generation",
+        "category_en": "Video Generation",
+        "date": "2026-08-11",
+        "thumbnail": "https://i.ytimg.com/vi/G3YHSvXZP_g/hqdefault.jpg",
+        "review_pl": "AI Search tutorial — zaawansowane techniki Minimax H3 w ComfyUI. Spectrum node update (lower quality loss), SageAttention (auto mode), live preview via KJ Nodes + tiny VAE (<10MB, model preview override node, preview frames during generation, cancel halfway). Loras: realism people (131MB, amateur realistic look), whispering, looping sketch anime, fictional woman. Turbo Loras: 4-5x speedup (20→4 steps), Larry VR, lightx2v, Joyox (BF16). Low VRAM techniques: pruned FP8/INT8 versions, spectrum acceleration, sage attention. Higgsfield sponsor. GGUFs for even lower VRAM. Dead easy workflow. Making audio + images for Minimax H3. Prompt tips.",
+        "review_en": "AI Search tutorial — advanced Minimax H3 techniques in ComfyUI. Spectrum node update (lower quality loss), SageAttention (auto mode), live preview via KJ Nodes + tiny VAE (<10MB, model preview override node, preview frames during generation, cancel halfway). Loras: realism people (131MB, amateur realistic look), whispering, looping sketch anime, fictional woman. Turbo Loras: 4-5x speedup (20→4 steps), Larry VR, lightx2v, Joyox (BF16). Low VRAM techniques: pruned FP8/INT8 versions, spectrum acceleration, sage attention. Higgsfield sponsor. GGUFs for even lower VRAM. Dead easy workflow. Making audio + images for Minimax H3. Prompt tips.",
+        "links": [
+          {
+            "label": "Minimax H3",
+            "url": "https://hailuoai.pxf.io/0G19e3"
+          },
+          {
+            "label": "Higgsfield",
+            "url": "https://higgsfield.ai/s/theaisearch-qPkHlP"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "num": "##32-1",
     "date": "2026-08-09",
     "title_pl": "SymphonyGen, Wan Animate 2, Qwen 3.8 Max, WeatherNext 2, Xiaomi Robotics 1 — AI News",

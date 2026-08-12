@@ -5,6 +5,16 @@
 const EPISODES_INDEX = {
   "episodes": [
     {
+      "num": "#278",
+      "title": "Sergey Brin Retakes Gemini, 4 Labs Lose Containment, Compute Trades at NYSE w/ Kush Bavaria | EP 278",
+      "date": "2026-08-11",
+      "duration": "60 min",
+      "channel": "Diamandis Moonshots",
+      "yt": "Q6PTLG71NGc",
+      "collapsed": true,
+      "batch": "recent"
+    },
+    {
       "num": "#276",
       "title": "Google's Jeff Dean Exits, SpaceX Hits $100B in Rev & OpenAI's Astra Solves Decade-Old Math Problems",
       "date": "2026-08-08",
@@ -52,7 +62,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "bAoXVyibE6Q",
       "collapsed": true,
-      "batch": "recent"
+      "batch": "batch-2026-h2"
     },
     {
       "num": "#270",
