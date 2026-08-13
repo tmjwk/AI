@@ -2,10 +2,100 @@
 // Schema: {r, n, v, d, o, c, desc_pl, desc_en, b_pl, b_en}
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
-const TODAY = "2026-08-12";
+const TODAY = "2026-08-13";
 const NEW_DAYS = 14;
 
 const M = [
+  {
+    "n": "Dragon Hatchling",
+    "v": "Open-source",
+    "c": "LLM",
+    "d": "2026-08-13",
+    "o": 0,
+    "is_new": true,
+    "url": "https://github.com/papers/dragon-hatchling",
+    "yt": "uoGnH0REG7A",
+    "desc_pl": "Dragon Hatchling (DH) — purportowany post-transformer architecture climbing ARC AGI at fraction of cost. Tweet Suzanny z Pathway AI flaguje architecture non-attention-based osiągającą better than ARC AGI scores przy dramatically less compute. Transformers mają known ceiling: quadratic cost of attention over long sequences, massive parameter counts dla marginal gains. Alex czytał paper: 'hot mess, kitchen sink of motifs, not simple/elegant, not deeply internalizing bitter lesson. Particles floating in 3+1 dimensions, end-to-end differentiable, Hebbian learning, biomimetic — throw everything in pot, hope pops out transformers. ARC AGI1 performance curve superficially great, ale doesn't generalize.' Alex spodziewa się simpler, more beautiful, more elegant — DH tego nie jest. Post-transformer przez ship of Theseus replacement: diffusion transformers, linearized attention (Moonshot), recurrence — nie step change, ale piece-by-piece replacement of attention is all you need. GPT-4 level reasoning za 1% compute = na telefon, intelligence free.",
+    "desc_en": "Dragon Hatchling (DH) — purported post-transformer architecture climbing ARC AGI at a fraction of cost. Tweet from Susanna at Pathway AI flags a non-attention-based architecture achieving better than ARC AGI scores at dramatically less compute. Transformers have a known ceiling: quadratic cost of attention over long sequences, massive parameter counts for marginal gains. Alex read the paper: 'hot mess, kitchen sink of motifs, not simple/elegant, not deeply internalizing the bitter lesson. Particles floating in 3+1 dimensions, end-to-end differentiable, Hebbian learning, biomimetic — throw everything in pot, hope pops out transformers. ARC AGI1 performance curve superficially great, but doesn't generalize.' Alex expects simpler, more beautiful, more elegant — DH is not that. Post-transformer via ship of Theseus replacement: diffusion transformers, linearized attention (Moonshot), recurrence — not a step change, but piece-by-piece replacement of attention is all you need. GPT-4 level reasoning at 1% compute = on phone, intelligence free.",
+    "b_pl": "Post-transformer arch. ARC AGI at fraction of cost. Hot mess, kitchen sink of motifs. Ship of Theseus replacement.",
+    "b_en": "Post-transformer arch. ARC AGI at fraction of cost. Hot mess, kitchen sink of motifs. Ship of Theseus replacement.",
+    "r": 44
+  },
+  {
+    "n": "LTX 2.5",
+    "v": "LTX (open-source)",
+    "c": "Video Generation",
+    "d": "2026-08-13",
+    "o": 0,
+    "is_new": true,
+    "url": "https://www.ltx.ai/",
+    "yt": "uoGnH0REG7A",
+    "desc_pl": "LTX 2.5 — najnowsza wersja najpopularniejszego open-source state-of-the-art video generation model. Działa na MacBook Pro — extraordinary milestone dla frontier video modeli. Fusion Fidelity Rendering — zamiast lock every scene to one compression rate, model allocates compute by scene complexity i budget, rendering flawless detail where it matters, efficient everywhere else. Generates fast enough to run live inside a game, simulation, or power a live avatar. Real-time products already earning off worlds built on it. Generates 10s clip w 7s. Emad: 'video frontier models like 20B parameters, generate in 2K. Frontier level models coming on laptop. Data going into these models getting better i better. Model = input data distribution compiled into weights.' Interactive movies — generate faster than view it, movie measuring your emotions i changing as you're viewing it. 'First model that could do it at high definition' — interactive Elden Ring quality as of this week.",
+    "desc_en": "LTX 2.5 — newest version of the most popular open-source state-of-the-art video generation model. Runs on MacBook Pro — extraordinary milestone for frontier video models. Fusion Fidelity Rendering — instead of locking every scene to one compression rate, the model allocates compute by scene complexity and budget, rendering flawless detail where it matters, efficient everywhere else. Generates fast enough to run live inside a game, simulation, or power a live avatar. Real-time products are already earning off worlds built on it. Generates a 10s clip in 7s. Emad: 'video frontier models like 20B parameters, generate in 2K. Frontier level models coming to laptop. Data going into these models is getting better and better. A model = an input data distribution that gets compiled into weights.' Interactive movies — generate faster than you can view it, a movie measuring your emotions and changing as you're viewing it. 'First model that could do it at high definition' — interactive Elden Ring quality as of this week.",
+    "b_pl": "Open-source video gen. Runs na MacBook Pro. 10s clip w 7s. Interactive movies live. Fusion Fidelity Rendering.",
+    "b_en": "Open-source video gen. Runs on MacBook Pro. 10s clip in 7s. Interactive movies live. Fusion Fidelity Rendering.",
+    "r": 19
+  },
+  {
+    "n": "EVO2",
+    "v": "Open-source",
+    "c": "AI Science Agents",
+    "d": "2026-08-13",
+    "o": 0,
+    "is_new": true,
+    "url": "https://evo2.science/",
+    "yt": "uoGnH0REG7A",
+    "desc_pl": "EVO2 — 40B parameter open-source AI model do DNA sequence design. Stanford researchers użyli EVO2 do zaprojektowania DNA sequences dla bacteriofagów (viruses infecting bacteria, nie istniejących w naturze). Zsyntetyzowali ~300 designs → 16 viable phages capable of infecting E.coli. Engineering phages effective against E.coli strains które nigdy nie evolved natural resistance. Genetics expert: 'biology's Wright brothers moment.' Trenowany na million strains. Emad: 'ran it on my MacBook.' Johns Hopkins biosecurity researchers: 'no longer a question of whether a viral genome design will exist but whether it can be used without enabling serious harm.' Dual-use technology. Można pobrać i używać. Cold take Alex: 'not profoundly new — MIT 2002-2003 Ginkgo Bioworks foundation project, designing custom genomes z building blocks. Incremental improvement, nie novelty.' Defense: DNA sequencers everywhere ($330 MinION USB), AI vaccine at speed of light.",
+    "desc_en": "EVO2 — 40B parameter open-source AI model for DNA sequence design. Stanford researchers used EVO2 to design DNA sequences for bacteriophages (viruses that infect bacteria, that did not exist in nature). Synthesized ~300 designs → 16 viable phages capable of infecting E.coli. Engineering phages effective against E.coli strains that had never evolved any natural resistance. Genetics expert: 'biology's Wright brothers moment.' Trained on a million strains. Emad: 'ran it on my MacBook.' Johns Hopkins biosecurity researchers: 'no longer a question of whether a viral genome design will exist but whether it can be used without enabling serious harm.' Dual-use technology. Can be downloaded and used. Cold take Alex: 'not profoundly new — MIT 2002-2003 Ginkgo Bioworks foundation project, designing custom genomes with building blocks. Incremental improvement, not novelty.' Defense: DNA sequencers everywhere ($330 MinION USB), AI vaccine at speed of light.",
+    "b_pl": "40B open-source. 300 designs → 16 viable phages. Stanford. 'Biology's Wright brothers moment.' Runs on MacBook.",
+    "b_en": "40B open-source. 300 designs → 16 viable phages. Stanford. 'Biology's Wright brothers moment.' Runs on MacBook.",
+    "r": 5
+  },
+  {
+    "n": "Muse Glimmer",
+    "v": "Meta",
+    "c": "LLM",
+    "d": "2026-08-13",
+    "o": 0,
+    "is_new": true,
+    "url": "https://ai.meta.com/blog/muse-glimmer/",
+    "yt": "uoGnH0REG7A",
+    "desc_pl": "Muse Glimmer — nowa klasa on-device modeli od Meta, open sourced przez Marka Zuckerberga w 6500-word essay 'The Future is for Everyone'. 30B dense parameter model running on laptop — highest performing model of its size on-device. 'Personal intelligence' — super intelligence distributed to every person on earth, running on phone, in ear, on glasses, working for you and only for you. Coming weeks: open weights dla Muse Spark 1.2 (latest foundation model, one of leading models in the world). Większe models coming soon. Meta 3B+ users reach across WhatsApp, Instagram, Facebook. Alex: 'broadly bravo to Zuck for renewing faith for American open-weight open-source models.' Parallels Elon's Cursor acquisition — Meta acquired Scale (training data + post-training know-how).",
+    "desc_en": "Muse Glimmer — new class of on-device models from Meta, open sourced by Mark Zuckerberg in his 6500-word essay 'The Future is for Everyone'. 30B dense parameter model running on laptop — highest performing model of its size on-device. 'Personal intelligence' — super intelligence distributed to every person on earth, running on phone, in ear, on glasses, working for you and only for you. Coming weeks: open weights for Muse Spark 1.2 (latest foundation model, one of the leading models in the world). Bigger models coming soon. Meta has 3B+ user reach across WhatsApp, Instagram, Facebook. Alex: 'broadly bravo to Zuck for renewing the faith for American open-weight open-source models.' Parallels Elon's Cursor acquisition — Meta acquired Scale (training data + post-training know-how).",
+    "b_pl": "30B dense on-device. Open source. Highest performing of its size. Personal intelligence distributed.",
+    "b_en": "30B dense on-device. Open source. Highest performing of its size. Personal intelligence distributed.",
+    "r": 43
+  },
+  {
+    "n": "Grok 4.7",
+    "v": "xAI",
+    "c": "LLM",
+    "d": "2026-08-13",
+    "o": 0,
+    "is_new": true,
+    "url": "https://x.ai/news/grok-4-7",
+    "yt": "uoGnH0REG7A",
+    "desc_pl": "Grok 4.7 — rumored za 2 tygodnie od nagrania (xAI). 2T params (vs 1.5T dla 4.5). Kluczowy detail: trenowany na all SpaceX physics i engineering knowledge — Elon ma ambitious plan wykorzystać SpaceX engineering jako training corpus. Emad: 'Elon said publicly że 4.7 will go above Opus — take number one in a couple of weeks.' Cursor originally wziął Kimmy K2 i post-trained z 3× compute pre-train — ten sam pattern. Elon fired original XAI team, brought in Cursor. Grok 5: 6T then 10T params. Elon wants monthly pre-training sessions — 'shooting the moon, ale we're in the moonshots business'. Alex: 'pytanie nie can they catch up — can they leapfrog frontier, nie tylko catch up?' Pytanie: czy SpaceX engineering data daje unfair advantage w physical reasoning.",
+    "desc_en": "Grok 4.7 — rumored for 2 weeks from recording (xAI). 2T params (vs 1.5T for 4.5). Key detail: trained on all SpaceX physics and engineering knowledge — Elon's ambitious plan to leverage SpaceX engineering as a training corpus. Emad: 'Elon said publicly that 4.7 will go above Opus — take number one in a couple of weeks.' Cursor originally took Kimmy K2 and post-trained with 3× compute of pre-train — same pattern. Elon fired the original XAI team, brought in Cursor. Grok 5: 6T then 10T params. Elon wants monthly pre-training sessions — 'shooting the moon, but we're in the moonshots business'. Alex: 'the question is not can they catch up — can they leapfrog the frontier, not just catch up?' Question: does SpaceX engineering data give an unfair advantage in physical reasoning?",
+    "b_pl": "Rumored 2 tyg. 2T params. Trained na SpaceX engineering data. Above Opus. Grok 5 = 6T then 10T.",
+    "b_en": "Rumored 2 wks. 2T params. Trained on SpaceX engineering data. Above Opus. Grok 5 = 6T then 10T.",
+    "r": 42
+  },
+  {
+    "n": "Grok 4.6",
+    "v": "xAI",
+    "c": "LLM",
+    "d": "2026-08-13",
+    "o": 0,
+    "is_new": true,
+    "url": "https://x.ai/news/grok-4-6",
+    "yt": "uoGnH0REG7A",
+    "desc_pl": "Grok 4.6 — najnowszy model xAI, drop rano nagrania podcastu. Matches GPT 5.6 Sol na artificial analysis intelligence index at 61 — tying for frontier-level performance. $2/$6 per M tokens input/output (vs Fable $50) — 10× tańszy. Focus: long-running agents — stays with complex tasks across many steps (research, code, analyze, product idea → working first version). Self-tests i verifies own work before moving on. Available today w Cursor i Grok build. Cadence: 4.5 → 4.6 (2 tyg) → 4.7 rumored (2 tyg). Alex: 'essentially next version of Cursor — XAI leaned heavily on post-training dzięki Cursor acquisition. Westernized wersja chińskiej distillation — siphoning reasoning traces.' Bull case Elon: algorithmic insights (Cursor reasoning traces) + compute advantage (Nvidia GPUs + Dyson swarm). 4.5 = 1.5T params post-trained do 4.6.",
+    "desc_en": "Grok 4.6 — xAI's latest model, dropped the morning of the podcast recording. Matches GPT 5.6 Sol on the artificial analysis intelligence index at 61 — tying for frontier-level performance. $2/$6 per M tokens input/output (vs Fable $50) — 10× cheaper. Focus: long-running agents — stays with complex tasks across many steps (research, code, analyze, product idea → working first version). Self-tests and verifies own work before moving on. Available today in Cursor and Grok build. Cadence: 4.5 → 4.6 (2 wks) → 4.7 rumored (2 wks). Alex: 'essentially next version of Cursor — XAI leaned heavily on post-training thanks to Cursor acquisition. Westernized version of Chinese distillation — siphoning reasoning traces.' Bull case Elon: algorithmic insights (Cursor reasoning traces) + compute advantage (Nvidia GPUs + Dyson swarm). 4.5 = 1.5T params post-trained to 4.6.",
+    "b_pl": "Matches GPT 5.6 Sol (61). $2/$6 per M tok. Long-running agents. Self-tests. Cursor acquisition.",
+    "b_en": "Matches GPT 5.6 Sol (61). $2/$6 per M tok. Long-running agents. Self-tests. Cursor acquisition.",
+    "r": 41
+  },
   {
     "n": "Muse Spark 1.2",
     "v": "Meta",
@@ -2684,15 +2774,15 @@ const M = [
 ];
 
 const CATS = [
-  "Coding",
   "LLM",
-  "Humanoid Robots",
+  "Video Generation",
   "AI Science Agents",
+  "Coding",
+  "Humanoid Robots",
   "AI Research",
   "Realtime Avatars",
   "3D Generation",
   "TTS",
-  "Video Generation",
   "Multimodal",
   "Image Generation",
   "World Models",

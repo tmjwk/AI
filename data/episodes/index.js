@@ -5,6 +5,16 @@
 const EPISODES_INDEX = {
   "episodes": [
     {
+      "num": "#279",
+      "title": "Bernie Demands the Labs Stop, Wall Street Turns GPUs Into Bonds, Grok 4.7 Takes #1 ft. Emad Mostaque",
+      "date": "2026-08-13",
+      "duration": "145 min",
+      "channel": "Diamandis Moonshots",
+      "yt": "uoGnH0REG7A",
+      "collapsed": true,
+      "batch": "recent"
+    },
+    {
       "num": "#278",
       "title": "Sergey Brin Retakes Gemini, 4 Labs Lose Containment, Compute Trades at NYSE w/ Kush Bavaria | EP 278",
       "date": "2026-08-11",
@@ -52,7 +62,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "pSUyLfirP8Y",
       "collapsed": true,
-      "batch": "recent"
+      "batch": "batch-2026-h2"
     },
     {
       "num": "#271",

@@ -1,20 +1,20 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-08-12 17:02:39 UTC
-// Total events: 282, months: 3
+// Generated: 2026-08-13 21:15:17 UTC
+// Total events: 283, months: 3
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-08-12 17:02:39 UTC",
-    "total_events": 282,
+    "generated": "2026-08-13 21:15:17 UTC",
+    "total_events": 283,
     "total_months": 3
   },
   "months": [
     {
       "month": "2026-08",
-      "total": 70,
+      "total": 71,
       "by_type": {
+        "diamandis": 3,
         "ai_search": 33,
-        "diamandis": 2,
         "weekly": 2,
         "lev": 33
       },
@@ -48,15 +48,15 @@ const TRENDS = {
           3
         ],
         [
+          "xAI",
+          2
+        ],
+        [
           "Tencent",
           2
         ],
         [
           "Higgsfield",
-          2
-        ],
-        [
-          "Thinking Machines",
           2
         ]
       ],
@@ -78,6 +78,10 @@ const TRENDS = {
           2
         ],
         [
+          "Grok 4",
+          1
+        ],
+        [
           "Wan Animate",
           1
         ],
@@ -86,11 +90,11 @@ const TRENDS = {
           1
         ],
         [
-          "DeepSeek 3",
+          "Fable 5",
           1
         ],
         [
-          "Fable 5",
+          "DeepSeek 3",
           1
         ],
         [
@@ -168,11 +172,11 @@ const TRENDS = {
           5
         ],
         [
-          "GPT 5.6",
+          "GPT 5",
           5
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           5
         ],
         [
@@ -207,11 +211,11 @@ const TRENDS = {
           3
         ],
         [
-          "OpenAI",
+          "Alibaba",
           2
         ],
         [
-          "Alibaba",
+          "OpenAI",
           2
         ],
         [
@@ -245,19 +249,19 @@ const TRENDS = {
       ],
       "top_models": [
         [
-          "GPT-5",
-          1
-        ],
-        [
           "GPT-5.6",
           1
         ],
         [
-          "GPT 5.6",
+          "GPT-5",
           1
         ],
         [
           "GPT 5",
+          1
+        ],
+        [
+          "GPT 5.6",
           1
         ],
         [
@@ -372,6 +376,10 @@ const TRENDS = {
         8
       ],
       [
+        "xAI",
+        5
+      ],
+      [
         "Tencent",
         5
       ],
@@ -386,10 +394,6 @@ const TRENDS = {
       [
         "NVIDIA",
         5
-      ],
-      [
-        "xAI",
-        4
       ],
       [
         "Thinking Machines",
@@ -418,11 +422,11 @@ const TRENDS = {
         7
       ],
       [
-        "GPT 5.6",
+        "GPT 5",
         6
       ],
       [
-        "GPT 5",
+        "GPT 5.6",
         6
       ],
       [
@@ -440,6 +444,10 @@ const TRENDS = {
       [
         "DeepSeek V4",
         4
+      ],
+      [
+        "Grok 4",
+        3
       ],
       [
         "Inkling",
@@ -460,15 +468,11 @@ const TRENDS = {
       [
         "GLM 5",
         2
-      ],
-      [
-        "Claude Opus",
-        2
       ]
     ],
     "by_type": {
+      "diamandis": 11,
       "ai_search": 94,
-      "diamandis": 10,
       "weekly": 6,
       "lev": 172
     }

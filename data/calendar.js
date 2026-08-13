@@ -2,9 +2,19 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-12 17:02:39 UTC
+// Generated: 2026-08-13 21:15:17 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-13",
+    "type": "diamandis",
+    "title_pl": "Podcast #279 — Bernie żąda by laboratoria się zatrzymały, Wall Street zamienia GPU w obligacje, Grok 4.7 zajmuje #1 z Emadem Mostaque | #279",
+    "title_en": "Podcast #279 — Bernie Demands the Labs Stop, Wall Street Turns GPUs Into Bonds, Grok 4.7 Takes #1 ft. Emad Mostaque | EP #279",
+    "link": "ai-pulse.html#279",
+    "meta_pl": "12 tematów",
+    "meta_en": "12 topics",
+    "num": "#279"
+  },
   {
     "date": "2026-08-11",
     "type": "ai_search",
