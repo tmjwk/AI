@@ -2,9 +2,329 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-13 21:15:17 UTC
+// Generated: 2026-08-14 20:33:47 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Claude dominuje coding — Gemini 3.7 Flash nowy, Grok 4.6 wchodzi do top 5",
+    "title_en": "Claude dominuje coding — Gemini 3.7 Flash nowy, Grok 4.6 wchodzi do top 5",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-claude-dominates-gemini-flash-new",
+    "meta_pl": "LM Arena + Cost Per Intelligen",
+    "meta_en": "LM Arena + Cost Per Intelligen",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Cost Per Intelligence — Fable $3 vs Muse Spark $0.40 vs Gemini Flash Lite $0.10 vs Muse Glimmer $0.07",
+    "title_en": "Cost Per Intelligence — Fable $3 vs Muse Spark $0.40 vs Gemini Flash Lite $0.10 vs Muse Glimmer $0.07",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-cost-per-intelligence-glimmer-7-cents",
+    "meta_pl": "LM Arena + Cost Per Intelligen",
+    "meta_en": "LM Arena + Cost Per Intelligen",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Meta Muse Glimmer — 30B dense open weight, Apple MLX, $0.07/task",
+    "title_en": "Meta Muse Glimmer — 30B dense open weight, Apple MLX, $0.07/task",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-meta-muse-glimmer-30b",
+    "meta_pl": "Nowe modele (8) — Muse Glimmer",
+    "meta_en": "Nowe modele (8) — Muse Glimmer",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Grok 4.6 — matches GPT 5.6 Sol (61), $2/$6, 500K context, long-running agents",
+    "title_en": "Grok 4.6 — matches GPT 5.6 Sol (61), $2/$6, 500K context, long-running agents",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-grok-4-6-matches-gpt-sol",
+    "meta_pl": "Nowe modele (8) — Muse Glimmer",
+    "meta_en": "Nowe modele (8) — Muse Glimmer",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "GLM 5.3 — 743B MoE, 1M context, $1.4/$4.4, coding focus, ZCode variant",
+    "title_en": "GLM 5.3 — 743B MoE, 1M context, $1.4/$4.4, coding focus, ZCode variant",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-glm-5.3-743b-moe",
+    "meta_pl": "Nowe modele (8) — Muse Glimmer",
+    "meta_en": "Nowe modele (8) — Muse Glimmer",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "DeepSeek V4 Pro — wydany + open-source harness v0.1, ceny podniesione ale wciąż 10x tańszy",
+    "title_en": "DeepSeek V4 Pro — wydany + open-source harness v0.1, ceny podniesione ale wciąż 10x tańszy",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-deepseek-v4-pro-open-harness",
+    "meta_pl": "Nowe modele (8) — Muse Glimmer",
+    "meta_en": "Nowe modele (8) — Muse Glimmer",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Gemini 3.7 Flash — Sergey Brin pushed, affordable, on par z chińskimi",
+    "title_en": "Gemini 3.7 Flash — Sergey Brin pushed, affordable, on par z chińskimi",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-gemini-3.7-flash-brin",
+    "meta_pl": "Nowe modele (8) — Muse Glimmer",
+    "meta_en": "Nowe modele (8) — Muse Glimmer",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "OpenAI GPT-5.6-Cyber — wersja cybersecurity modelu",
+    "title_en": "OpenAI GPT-5.6-Cyber — wersja cybersecurity modelu",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-gpt-5.6-cyber-security",
+    "meta_pl": "Nowe modele (8) — Muse Glimmer",
+    "meta_en": "Nowe modele (8) — Muse Glimmer",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "NVIDIA Nemotron 3.5 Lightning — 52 warstwy, tylko 6 attention, 23 Mamba 2, 23 MoE, 30B/3B active",
+    "title_en": "NVIDIA Nemotron 3.5 Lightning — 52 warstwy, tylko 6 attention, 23 Mamba 2, 23 MoE, 30B/3B active",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-nvidia-nemotron-3.5-lightning",
+    "meta_pl": "Nowe modele (8) — Muse Glimmer",
+    "meta_en": "Nowe modele (8) — Muse Glimmer",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "MiniMax Code 2.0 — rebuild desktop agent, 90% lower first token latency, agent teams",
+    "title_en": "MiniMax Code 2.0 — rebuild desktop agent, 90% lower first token latency, agent teams",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-minimax-code-2.0",
+    "meta_pl": "Nowe modele (8) — Muse Glimmer",
+    "meta_en": "Nowe modele (8) — Muse Glimmer",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Claude Code cross-session messaging — sesje rozmawiają ze sobą",
+    "title_en": "Claude Code cross-session messaging — sesje rozmawiają ze sobą",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-claude-code-cross-session",
+    "meta_pl": "Harness revolution — cross-ses",
+    "meta_en": "Harness revolution — cross-ses",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Prime Agent — 95.5% ARC AGI 3 (człowiek 95.4!), recursive LM, MIT license",
+    "title_en": "Prime Agent — 95.5% ARC AGI 3 (człowiek 95.4!), recursive LM, MIT license",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-prime-agent-95.5-arc-agi-3",
+    "meta_pl": "Harness revolution — cross-ses",
+    "meta_en": "Harness revolution — cross-ses",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Gauntlet Loop — Matt Schumer, run difficult tests + criticism loop, improve",
+    "title_en": "Gauntlet Loop — Matt Schumer, run difficult tests + criticism loop, improve",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-gauntlet-loop-schumer",
+    "meta_pl": "Harness revolution — cross-ses",
+    "meta_en": "Harness revolution — cross-ses",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Harness-R1 — outcome-graded agents, 9B engineer reads failures, writes patches, 44%→54%",
+    "title_en": "Harness-R1 — outcome-graded agents, 9B engineer reads failures, writes patches, 44%→54%",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-harness-r1-outcome-graded",
+    "meta_pl": "Harness revolution — cross-ses",
+    "meta_en": "Harness revolution — cross-ses",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Hermes /learn — convert docs into agent skills + browser-use upgrade (12 tools → 1)",
+    "title_en": "Hermes /learn — convert docs into agent skills + browser-use upgrade (12 tools → 1)",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-hermes-learn-browser-use",
+    "meta_pl": "Harness revolution — cross-ses",
+    "meta_en": "Harness revolution — cross-ses",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Discovery Loop — Jeff Dean's company, recursive self-improvement, Google-sponsored",
+    "title_en": "Discovery Loop — Jeff Dean's company, recursive self-improvement, Google-sponsored",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-discovery-loop-jeff-dean",
+    "meta_pl": "Tools & Techniques — Discovery",
+    "meta_en": "Tools & Techniques — Discovery",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Grok Imagine Image 2.0 — xAI image generation",
+    "title_en": "Grok Imagine Image 2.0 — xAI image generation",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-grok-imagine-image-2.0",
+    "meta_pl": "Tools & Techniques — Discovery",
+    "meta_en": "Tools & Techniques — Discovery",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Claude Obsidian plugin v2 — generate Obsidian knowledge base",
+    "title_en": "Claude Obsidian plugin v2 — generate Obsidian knowledge base",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-claude-obsidian-plugin-v2",
+    "meta_pl": "Tools & Techniques — Discovery",
+    "meta_en": "Tools & Techniques — Discovery",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "cmux — agent-friendly terminal dla Mac, run Claude Code + Codex w jednej aplikacji",
+    "title_en": "cmux — agent-friendly terminal dla Mac, run Claude Code + Codex w jednej aplikacji",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-cmux-terminal-mac",
+    "meta_pl": "Tools & Techniques — Discovery",
+    "meta_en": "Tools & Techniques — Discovery",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Kestra — governed AI agents, YAML workflows, human-controlled",
+    "title_en": "Kestra — governed AI agents, YAML workflows, human-controlled",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-kestra-governed-ai",
+    "meta_pl": "Tools & Techniques — Discovery",
+    "meta_en": "Tools & Techniques — Discovery",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "LangGraph — production-grade, runtime over diagrams",
+    "title_en": "LangGraph — production-grade, runtime over diagrams",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-langgraph-production-runtime",
+    "meta_pl": "Tools & Techniques — Discovery",
+    "meta_en": "Tools & Techniques — Discovery",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Karpathy's Prompting 2.0 — voice zamiast tekstu, messy → clean via interview",
+    "title_en": "Karpathy's Prompting 2.0 — voice zamiast tekstu, messy → clean via interview",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-karpathy-prompting-2.0",
+    "meta_pl": "Coding & AI dev — Karpathy Pro",
+    "meta_en": "Coding & AI dev — Karpathy Pro",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "AI Coding Skills — modular control, test-driven development",
+    "title_en": "AI Coding Skills — modular control, test-driven development",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-ai-coding-skills-modular",
+    "meta_pl": "Coding & AI dev — Karpathy Pro",
+    "meta_en": "Coding & AI dev — Karpathy Pro",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Blender + MCP — text prompts → Blender animations",
+    "title_en": "Blender + MCP — text prompts → Blender animations",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-blender-mcp-animations",
+    "meta_pl": "Coding & AI dev — Karpathy Pro",
+    "meta_en": "Coding & AI dev — Karpathy Pro",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Claude Code token leak fixes — caveman, ponytail, omniroute, RTK (Rust token killer)",
+    "title_en": "Claude Code token leak fixes — caveman, ponytail, omniroute, RTK (Rust token killer)",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-claude-code-token-leak-fixes",
+    "meta_pl": "Coding & AI dev — Karpathy Pro",
+    "meta_en": "Coding & AI dev — Karpathy Pro",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Ling 3.0 tiny — <8B, 128 experts, 266K context, hybrid reasoning MoE",
+    "title_en": "Ling 3.0 tiny — <8B, 128 experts, 266K context, hybrid reasoning MoE",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-ling-3.0-tiny",
+    "meta_pl": "Coding & AI dev — Karpathy Pro",
+    "meta_en": "Coding & AI dev — Karpathy Pro",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Anthropic invisible watermarks + Coldcard seed exploit ($100M Bitcoin theft)",
+    "title_en": "Anthropic invisible watermarks + Coldcard seed exploit ($100M Bitcoin theft)",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-watermarks-coldcard-security",
+    "meta_pl": "News & Industry — watermarks, ",
+    "meta_en": "News & Industry — watermarks, ",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Zuckerberg AI access (democratic but money buys more) + Lovable $400M at $13.3B",
+    "title_en": "Zuckerberg AI access (democratic but money buys more) + Lovable $400M at $13.3B",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-zuckerberg-lovable-funding",
+    "meta_pl": "News & Industry — watermarks, ",
+    "meta_en": "News & Industry — watermarks, ",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Double descent explained + Stanford Virtual Biotech (37K agents, 60K trials, James Zou)",
+    "title_en": "Double descent explained + Stanford Virtual Biotech (37K agents, 60K trials, James Zou)",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-double-descent-stanford-biotech",
+    "meta_pl": "News & Industry — watermarks, ",
+    "meta_en": "News & Industry — watermarks, ",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Pax Silica (Philippines, 4000 acres, US-led secure AI supply chain) + Sybase → MS SQL Server history",
+    "title_en": "Pax Silica (Philippines, 4000 acres, US-led secure AI supply chain) + Sybase → MS SQL Server history",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-pax-silica-sybase-history",
+    "meta_pl": "News & Industry — watermarks, ",
+    "meta_en": "News & Industry — watermarks, ",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "OpenMausBot (agent teams in chat, free open-source) + Granian vs uvicorn (Rust HTTP/2 server)",
+    "title_en": "OpenMausBot (agent teams in chat, free open-source) + Granian vs uvicorn (Rust HTTP/2 server)",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-openmausbot-granian-uvicorn",
+    "meta_pl": "News & Industry — watermarks, ",
+    "meta_en": "News & Industry — watermarks, ",
+    "num": "ep-2026-08-14"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "lev",
+    "title_pl": "Stella's AI app launch (influencer coded app, made money quickly) + VEED Fabric AI video + Jobs",
+    "title_en": "Stella's AI app launch (influencer coded app, made money quickly) + VEED Fabric AI video + Jobs",
+    "link": "ai-radar.html#card-card-ep-2026-08-14-stella-veed-jobs",
+    "meta_pl": "News & Industry — watermarks, ",
+    "meta_en": "News & Industry — watermarks, ",
+    "num": "ep-2026-08-14"
+  },
   {
     "date": "2026-08-13",
     "type": "diamandis",

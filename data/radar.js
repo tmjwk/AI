@@ -1,6 +1,671 @@
 // AI Radar — auto-generated from radar.json
 const episodes = [
   {
+    "id": "ep-2026-08-14",
+    "date": "2026-08-14",
+    "title_pl": "Muse Glimmer, Grok 4.6, GLM 5.3, DeepSeek V4 Pro, Nemotron 3.5 Lightning, harness revolution",
+    "title_en": "Muse Glimmer, Grok 4.6, GLM 5.3, DeepSeek V4 Pro, Nemotron 3.5 Lightning, harness revolution",
+    "yt": "A2E_9vCGN1s",
+    "collapsed": false,
+    "sections": [
+      {
+        "type": "table",
+        "title_pl": "LM Arena Leaderboard (stan: 14.08.2026)",
+        "title_en": "LM Arena Leaderboard (as of: 2026-08-14)",
+        "id": "lm-arena-2026-08-14",
+        "num": "lm-arena-2026-08-14",
+        "icon": "📊",
+        "headers": [
+          "Rank",
+          "Model",
+          "Score",
+          "Vendor"
+        ],
+        "rows": [
+          [
+            1,
+            "Claude Fable 5",
+            1452,
+            "Anthropic"
+          ],
+          [
+            2,
+            "Claude Opus 5",
+            1444,
+            "Anthropic"
+          ],
+          [
+            3,
+            "GPT-5.6 Sol",
+            1421,
+            "OpenAI"
+          ],
+          [
+            4,
+            "Grok 4.6",
+            1410,
+            "xAI"
+          ],
+          [
+            5,
+            "Kimi K3",
+            1398,
+            "Moonshot AI"
+          ],
+          [
+            6,
+            "Qwen 3.8 Max",
+            1385,
+            "Alibaba"
+          ],
+          [
+            7,
+            "Gemini 3.7 Flash",
+            1372,
+            "Google"
+          ],
+          [
+            8,
+            "Muse Spark 1.2",
+            1360,
+            "Meta"
+          ],
+          [
+            9,
+            "DeepSeek V4 Pro",
+            1348,
+            "DeepSeek"
+          ],
+          [
+            10,
+            "GLM-5.3",
+            1336,
+            "Z.AI / Zhipu AI"
+          ]
+        ],
+        "notes_pl": "Stan na 14.08.2026. Claude (Fable 5, Opus 5) wciąż dominuje coding i chat. Nowość: Gemini 3.7 Flash od Sergey Brin pushed — w czołówce na poziomie chińskich modeli. Grok 4.6 (xAI) wkracza do top 5,matching GPT-5.6 Sol w artificial analysis index 61. Cost per intelligence: Claude Fable 5 $3/task, Muse Spark $0.40, Gemini Flash Lite $0.10, Muse Glimmer $0.07.",
+        "notes_en": "As of 2026-08-14. Claude (Fable 5, Opus 5) still dominates coding and chat. New: Gemini 3.7 Flash pushed by Sergey Brin — in top tier at par with Chinese models. Grok 4.6 (xAI) enters top 5, matching GPT-5.6 Sol on artificial analysis index 61. Cost per intelligence: Claude Fable 5 $3/task, Muse Spark $0.40, Gemini Flash Lite $0.10, Muse Glimmer $0.07."
+      },
+      {
+        "type": "cards",
+        "title_pl": "LM Arena + Cost Per Intelligence",
+        "title_en": "LM Arena + Cost Per Intelligence",
+        "icon": "📋",
+        "cards": [
+          {
+            "title": "Claude dominuje coding — Gemini 3.7 Flash nowy, Grok 4.6 wchodzi do top 5",
+            "desc_pl": "LM Arena (stan 12.08): lewa strona = chat, prawa = coding. Coding mocno niebieski (Claude). Gemini (czerwony) na dole, OpenAI (żółty) środek, open-source (zielony, głównie chińskie) mocno rośnie. Nowość: Gemini 3.7 Flash (właśnie wydany) na 7. pozycji. Kimi K3 max, Qwen 3.8 Max i GLM-5.3 w top 10. Trend utrzymany od tygodni: Claude wciąż #1, ale chińskie modele i Meta zyskują.",
+            "desc_en": "LM Arena (as of 08-12): left = chat, right = coding. Coding heavily blue (Claude). Gemini (red) on bottom, OpenAI (yellow) middle, open-source (green, mostly Chinese) growing fast. New: Gemini 3.7 Flash (just released) at position 7. Kimi K3 max, Qwen 3.8 Max and GLM-5.3 in top 10. Trend holds for weeks: Claude still #1, but Chinese models and Meta gaining.",
+            "tags": [
+              "leaderboard",
+              "lm-arena",
+              "anthropic",
+              "gemini-flash",
+              "grok-4.6"
+            ],
+            "date": "2026-08-13",
+            "links": [
+              {
+                "label": "LM Arena (artificialanalysis.ai)",
+                "url": "https://artificialanalysis.ai/"
+              }
+            ],
+            "id": "card-ep-2026-08-14-claude-dominates-gemini-flash-new"
+          },
+          {
+            "title": "Cost Per Intelligence — Fable $3 vs Muse Spark $0.40 vs Gemini Flash Lite $0.10 vs Muse Glimmer $0.07",
+            "desc_pl": "Cost per task na artificial analysis index. Claude Fable 5 — $3 (najdroższy). GPT 5.6 Sol — 3x tańszy od Fable. Muse Spark 1.2 (Meta) — $0.40. Gemini 3.5 Flash Lite — $0.10 (bardzo dobry stosunek jakości do ceny). Muse Glimmer (nowo wydany) — $0.07/task (open weight 30B dense). 100x różnica między najdroższym i najtańszym frontier. DeepSeek V4 Pro podniósł ceny (od niedzieli), ale wciąż 10x tańszy od amerykańskich.",
+            "desc_en": "Cost per task on artificial analysis index. Claude Fable 5 — $3 (most expensive). GPT 5.6 Sol — 3x cheaper than Fable. Muse Spark 1.2 (Meta) — $0.40. Gemini 3.5 Flash Lite — $0.10 (very good price/quality). Muse Glimmer (just released) — $0.07/task (open weight 30B dense). 100x difference between most expensive and cheapest frontier. DeepSeek V4 Pro raised prices (since Sunday), but still 10x cheaper than American frontier models.",
+            "tags": [
+              "cost",
+              "pricing",
+              "fable-5",
+              "muse-spark",
+              "gemini-flash-lite",
+              "muse-glimmer"
+            ],
+            "date": "2026-08-13",
+            "links": [
+              {
+                "label": "Artificial Analysis",
+                "url": "https://artificialanalysis.ai/"
+              }
+            ],
+            "id": "card-ep-2026-08-14-cost-per-intelligence-glimmer-7-cents"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Nowe modele (8) — Muse Glimmer, Grok 4.6, GLM 5.3, DeepSeek V4 Pro, Gemini 3.7 Flash, GPT-5.6-Cyber, Nemotron 3.5 Lightning, MiniMax Code 2.0",
+        "title_en": "New models (8) — Muse Glimmer, Grok 4.6, GLM 5.3, DeepSeek V4 Pro, Gemini 3.7 Flash, GPT-5.6-Cyber, Nemotron 3.5 Lightning, MiniMax Code 2.0",
+        "icon": "📋",
+        "cards": [
+          {
+            "title": "Meta Muse Glimmer — 30B dense open weight, Apple MLX, $0.07/task",
+            "desc_pl": "Meta Muse Glimmer — 30B dense multimodal model dla always-on local agents. Open weight, Meta Apache license. 128K context (nie milion ale dobre). Słowo 'glimmer' = migoczące światło. Działa na Apple MLX — speculative decoding, fast visual coding, image input. Warianty: full precision (16-bit) oraz heavily quantized (24GB VRAM). Good dla text/image perception, tool use, multi-step long-horizon tasks i failure recovery. Najtańszy frontier w cost per intelligence ($0.07).",
+            "desc_en": "Meta Muse Glimmer — 30B dense multimodal model for always-on local agents. Open weight, Meta Apache license. 128K context (not million but solid). 'Glimmer' = flickering light. Runs on Apple MLX — speculative decoding, fast visual coding, image input. Variants: full precision (16-bit) and heavily quantized (24GB VRAM). Good for text/image perception, tool use, multi-step long-horizon tasks and failure recovery. Cheapest frontier in cost per intelligence ($0.07).",
+            "tags": [
+              "meta",
+              "muse-glimmer",
+              "30b",
+              "open-weight",
+              "apple-mlx",
+              "local"
+            ],
+            "date": "2026-08-13",
+            "links": [
+              {
+                "label": "Meta blog",
+                "url": "https://ai.meta.com/blog/muse-glimmer/"
+              }
+            ],
+            "id": "card-ep-2026-08-14-meta-muse-glimmer-30b"
+          },
+          {
+            "title": "Grok 4.6 — matches GPT 5.6 Sol (61), $2/$6, 500K context, long-running agents",
+            "desc_pl": "xAI Grok 4.6 — wydany 2 dni temu, dostępny dla płacących klientów. Na artificial analysis intelligence index: 61, matching GPT-5.6 Sol (top model OpenAI). $2 input / $6 output per M token (10x tańszy od Claude Fable 5). 500K token context window. Zoptymalizowany dla long-running agents — research, code, analyze, product idea → działający prototyp. Bardzo dobry w visual tasks. Convincing presentations na YouTube.",
+            "desc_en": "xAI Grok 4.6 — released 2 days ago, available to paid Grok customers. On artificial analysis intelligence index: 61, matching GPT-5.6 Sol (OpenAI top model). $2 input / $6 output per M tokens (10x cheaper than Claude Fable 5). 500K token context window. Optimized for long-running agents — research, code, analyze, product idea → working first version. Very good with visual tasks. Convincing presentations on YouTube.",
+            "tags": [
+              "xai",
+              "grok-4.6",
+              "long-running-agents",
+              "frontier"
+            ],
+            "date": "2026-08-13",
+            "links": [
+              {
+                "label": "xAI news",
+                "url": "https://x.ai/news/grok-4-6"
+              }
+            ],
+            "id": "card-ep-2026-08-14-grok-4-6-matches-gpt-sol"
+          },
+          {
+            "title": "GLM 5.3 — 743B MoE, 1M context, $1.4/$4.4, coding focus, ZCode variant",
+            "desc_pl": "Z.AI / Zhipu AI GLM 5.3 ( poprzedni 5.2). Sparse mixture of experts 743B params (jak wcześniej). 1M token context. Skupili się na large-scale post-training dla real-world coding tasks, RL environments i compute. Frontier coding performance — tworzy plany i je wykonuje. API pricing bardzo przystępny: $1.4 input / $4.4 output per M token. Wariant ZCode specjalnie dla coding. Dostępne też w subskrypcjach (Lite, Pro, Max).",
+            "desc_en": "Z.AI / Zhipu AI GLM 5.3 (previous 5.2). Sparse mixture of experts 743B params (same as before). 1M token context. Focused on large-scale post-training for real-world coding tasks, RL environments and compute. Frontier coding performance — creates plans and executes them. API pricing very affordable: $1.4 input / $4.4 output per M token. ZCode variant specifically for coding. Also available in subscriptions (Lite, Pro, Max).",
+            "tags": [
+              "glm-5.3",
+              "z.ai",
+              "zhipu",
+              "moe",
+              "743b",
+              "1m-context",
+              "coding"
+            ],
+            "date": "2026-08-13",
+            "links": [
+              {
+                "label": "Z.AI blog",
+                "url": "https://z.ai/blog/glm-5.3"
+              }
+            ],
+            "id": "card-ep-2026-08-14-glm-5.3-743b-moe"
+          },
+          {
+            "title": "DeepSeek V4 Pro — wydany + open-source harness v0.1, ceny podniesione ale wciąż 10x tańszy",
+            "desc_pl": "DeepSeek V4 Pro — nowy model + harness v0.1 (preview, open source). Pierwszy raz DeepSeek udostępnił swój harness (jak Claude Code ale open). Od niedzieli podnieśli ceny — wciąż jednak order of magnitude tańszy od amerykańskich frontier. Najdroższy wariant < $2 za flash, pro < $4 output. Peak pricing zależy od chińskich peak hours. Wysoka jakość + open-source harness = osobny produkt.",
+            "desc_en": "DeepSeek V4 Pro — new model + harness v0.1 (preview, open source). First time DeepSeek released their harness (like Claude Code but open). Since Sunday they raised prices — still order of magnitude cheaper than American frontier. Most expensive variant < $2 for flash, pro < $4 output. Peak pricing depends on Chinese peak hours. High quality + open-source harness = separate product.",
+            "tags": [
+              "deepseek",
+              "v4-pro",
+              "open-source-harness",
+              "coding"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-deepseek-v4-pro-open-harness"
+          },
+          {
+            "title": "Gemini 3.7 Flash — Sergey Brin pushed, affordable, on par z chińskimi",
+            "desc_pl": "Google Gemini 3.7 Flash — Sergey Brin (co-founder Google) dołączył do developmentu i pushuje Gemini (po opóźnieniach w Gemini Pro). Wydali Flash, wygląda bardzo dobrze na benchmarks i jest affordable — na poziomie chińskich modeli. Dostępny przez różne kanały Google. Wkracza do top 7 LM Arena (poz. 7). Nowy silny gracz w segmencie tanich modeli frontier.",
+            "desc_en": "Google Gemini 3.7 Flash — Sergey Brin (Google co-founder) joined development and pushes Gemini (after delays in Gemini Pro). They released Flash, looks very good on benchmarks and is affordable — at par with Chinese models. Available through different Google channels. Enters LM Arena top 7 (position 7). New strong player in the cheap frontier segment.",
+            "tags": [
+              "google",
+              "gemini-3.7-flash",
+              "sergey-brin",
+              "affordable"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-gemini-3.7-flash-brin"
+          },
+          {
+            "title": "OpenAI GPT-5.6-Cyber — wersja cybersecurity modelu",
+            "desc_pl": "OpenAI ships GPT-5.6-Cyber — wersja modelu dla advanced cybersecurity work. Specjalnie dostrojony dla defensive i offensive security tasks: analiza podatności, threat hunting, reverse engineering malware, exploit research. Kontynuacja linii GPT 5.6 (Sol, Terra, Luna) ale z cyber focus.",
+            "desc_en": "OpenAI ships GPT-5.6-Cyber — version of the model for advanced cybersecurity work. Specifically tuned for defensive and offensive security tasks: vulnerability analysis, threat hunting, malware reverse engineering, exploit research. Continuation of the GPT 5.6 line (Sol, Terra, Luna) but with cyber focus.",
+            "tags": [
+              "openai",
+              "gpt-5.6-cyber",
+              "cybersecurity",
+              "security"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-gpt-5.6-cyber-security"
+          },
+          {
+            "title": "NVIDIA Nemotron 3.5 Lightning — 52 warstwy, tylko 6 attention, 23 Mamba 2, 23 MoE, 30B/3B active",
+            "desc_pl": "NVIDIA Nemotron 3.5 Lightning — bardzo ciekawa architektura. 52 total layers, tylko 6 attention, 23 mamba-2 state space layers, 23 mixture of expert layers. Mało attention → mniej GPU memory. 30B params, 3B active. Działa na single GPU. Max context 1M (zależy od GPU/memory). Inference-focused: 4-bit quantization + reference fine-tuning, 16-bit via HuggingFace. Tool use, structured output, code validation, sub-agents, multi-token predictions. Bardzo praktyczny dla production.",
+            "desc_en": "NVIDIA Nemotron 3.5 Lightning — very interesting architecture. 52 total layers, only 6 attention, 23 mamba-2 state space layers, 23 mixture of expert layers. Little attention → less GPU memory. 30B params, 3B active. Runs on a single GPU. Max context 1M (depends on GPU/memory). Inference-focused: 4-bit quantization + reference fine-tuning, 16-bit via HuggingFace. Tool use, structured output, code validation, sub-agents, multi-token predictions. Very practical for production.",
+            "tags": [
+              "nvidia",
+              "nemotron",
+              "lightning",
+              "mamba-2",
+              "moe",
+              "hybrid",
+              "single-gpu"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-nvidia-nemotron-3.5-lightning"
+          },
+          {
+            "title": "MiniMax Code 2.0 — rebuild desktop agent, 90% lower first token latency, agent teams",
+            "desc_pl": "MiniMax Code 2.0 — rebuild desktop agent na open-source Pi framework. >90% lower first token latency (znacznie szybciej, mniej stall-ów, silniejsza persistence). Bardzo ważny: teams of agents dzielą research, strategy, production i review między osobnych agentów. Memory i reusable skills preserve organizational. Desktop agent dla vibe coding.",
+            "desc_en": "MiniMax Code 2.0 — rebuild desktop agent on open-source Pi framework. >90% lower first token latency (much faster, fewer stalls, stronger persistence). Very important: teams of agents split research, strategy, production and review among separate agents. Memory and reusable skills preserve organizational. Desktop agent for vibe coding.",
+            "tags": [
+              "minimax",
+              "code-2.0",
+              "desktop-agent",
+              "agent-teams",
+              "latency"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-minimax-code-2.0"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Harness revolution — cross-session, Prime Agent, Gauntlet Loop, Harness-R1, Hermes /learn",
+        "title_en": "Harness revolution — cross-session, Prime Agent, Gauntlet Loop, Harness-R1, Hermes /learn",
+        "icon": "📋",
+        "cards": [
+          {
+            "title": "Claude Code cross-session messaging — sesje rozmawiają ze sobą",
+            "desc_pl": "Claude Code nowa funkcja: cross-session messaging. Multiple sesje mogą rozmawiać ze sobą, wymieniać concise plain text handoffs, redukując manual copy-paste. Bardzo ważne dla pracy z wieloma równoległymi sesjami Claude Code. Sesje share results bez przełączania okien.",
+            "desc_en": "Claude Code new feature: cross-session messaging. Multiple sessions can talk to each other, exchange concise plain text handoffs, reducing manual copy-paste. Very important for working with multiple parallel Claude Code sessions. Sessions share results without switching windows.",
+            "tags": [
+              "anthropic",
+              "claude-code",
+              "cross-session",
+              "messaging"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-claude-code-cross-session"
+          },
+          {
+            "title": "Prime Agent — 95.5% ARC AGI 3 (człowiek 95.4!), recursive LM, MIT license",
+            "desc_pl": "Prime Agent (od Prime Intellect) — harness. Osiąga 95.5% na ARC AGI 3 — PONAD poziom człowieka (95.4). Absurdalnie wysoki wynik (kilka miesięcy temu walczyli o pojedyncze procenty). MIT license — permissive open-source. Recursive language model approach: trzyma large input external jako zmienne, model pisze code do inspect/filter/summarize/delegate work zamiast ingestować każdy token. Persistent Python environment + tools + sub-agents. Defeats context rot — inspects stored document slices zamiast ładować wszystko w jednym prompcie.",
+            "desc_en": "Prime Agent (from Prime Intellect) — harness. Achieves 95.5% on ARC AGI 3 — ABOVE human level (95.4). Absurdly high score (few months ago people fought for single percentage points). MIT license — permissive open-source. Recursive language model approach: keeps large input external as variables, model writes code to inspect/filter/summarize/delegate work instead of ingesting every token. Persistent Python environment + tools + sub-agents. Defeats context rot — inspects stored document slices instead of loading everything in one prompt.",
+            "tags": [
+              "prime-agent",
+              "prime-intellect",
+              "arc-agi-3",
+              "recursive-lm",
+              "mit-license",
+              "context-rot"
+            ],
+            "date": "2026-08-13",
+            "links": [
+              {
+                "label": "Prime Intellect",
+                "url": "https://www.primeintellect.ai/"
+              }
+            ],
+            "id": "card-ep-2026-08-14-prime-agent-95.5-arc-agi-3"
+          },
+          {
+            "title": "Gauntlet Loop — Matt Schumer, run difficult tests + criticism loop, improve",
+            "desc_pl": "Gauntlet Loop (Matt Schumer) — harness pattern. Schumer sławny przez essay 'something big is happening' (80M views) o tym że publicz underestimates rapidly improving AI capabilities. Gauntlet = run difficult series of attacks/tests/criticism on AI response, then return i improve, return i improve. Prompt needs three essentials: ambitious outcome, concrete benchmark critics inspect, explicit stopping boundary. Idzie w pętli improving response. Bardzo skuteczne.",
+            "desc_en": "Gauntlet Loop (Matt Schumer) — harness pattern. Schumer famous for essay 'something big is happening' (80M views) about the public underestimating rapidly improving AI capabilities. Gauntlet = run difficult series of attacks/tests/criticism on AI response, then return and improve, return and improve. Prompt needs three essentials: ambitious outcome, concrete benchmark critics inspect, explicit stopping boundary. Goes in a loop improving response. Very effective.",
+            "tags": [
+              "gauntlet-loop",
+              "matt-schumer",
+              "harness",
+              "qa-loop",
+              "self-improve"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-gauntlet-loop-schumer"
+          },
+          {
+            "title": "Harness-R1 — outcome-graded agents, 9B engineer reads failures, writes patches, 44%→54%",
+            "desc_pl": "Harness-R1 — outcome-graded agents. Deploy AI agent + collect every failure trajectory. Separate 9B parameter harness engineer reads failures, diagnosis what's going wrong, writes executable code patches zmieniające runtime. Patch agents rerun exact same task z original weights frozen — only patches that actually raise task success survive (ewolucyjne podejście). Raises vanilla target average success from 44% to 54%. Outcome-tested harness engineering outperform much larger prompter-generated models. Reward harness za success — nowy sposób trenowania vibe coding.",
+            "desc_en": "Harness-R1 — outcome-graded agents. Deploy AI agent + collect every failure trajectory. Separate 9B parameter harness engineer reads failures, diagnoses what's going wrong, writes executable code patches that change runtime. Patch agents rerun exact same task with original weights frozen — only patches that actually raise task success survive (evolutionary approach). Raises vanilla target average success from 44% to 54%. Outcome-tested harness engineering outperforms much larger prompter-generated models. Reward harness for success — new way of training vibe coding.",
+            "tags": [
+              "harness-r1",
+              "outcome-graded",
+              "evolutionary",
+              "9b-engineer",
+              "patches"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-harness-r1-outcome-graded"
+          },
+          {
+            "title": "Hermes /learn — convert docs into agent skills + browser-use upgrade (12 tools → 1)",
+            "desc_pl": "Hermes /learn — issue /learn command, Hermes konwertuje dokumenty (PDF, książki, kolekcje dokumentów) w agent skill. Resulting skill organizuje source material w focused on-demand references. Browser-use upgrade: skonsolidowali 12 separate browser action tools w jeden unified browser-use mode + CLI. Mniej tokenów, lepsza robota. Bardzo popularny agentic framework open-source.",
+            "desc_en": "Hermes /learn — issue /learn command, Hermes converts documents (PDFs, books, document collections) into agent skill. Resulting skill organizes source material into focused on-demand references. Browser-use upgrade: consolidated 12 separate browser action tools into one unified browser-use mode + CLI. Fewer tokens, better job. Very popular open-source agentic framework.",
+            "tags": [
+              "hermes",
+              "learn",
+              "skills",
+              "browser-use",
+              "open-source"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-hermes-learn-browser-use"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Tools & Techniques — Discovery Loop, Grok Imagine 2.0, Obsidian v2, cmux, Kestra, LangGraph",
+        "title_en": "Tools & Techniques — Discovery Loop, Grok Imagine 2.0, Obsidian v2, cmux, Kestra, LangGraph",
+        "icon": "📋",
+        "cards": [
+          {
+            "title": "Discovery Loop — Jeff Dean's company, recursive self-improvement, Google-sponsored",
+            "desc_pl": "Discovery Loop — nowa firma założona przez legendarnych ludzi z Google (Jeff Dean — centralna postać Google Translate, Magazines, Times). Sponsorowana przez Google. Cel: recursive self-improvement system dla research, science, improvement. Continuous exploration model. Pół nowoczesnego Google w zespole.",
+            "desc_en": "Discovery Loop — new company founded by legendary Google people (Jeff Dean — central figure of Google Translate, Magazines, Times). Sponsored by Google. Goal: recursive self-improvement system for research, science, improvement. Continuous exploration model. Half of modern Google in the team.",
+            "tags": [
+              "discovery-loop",
+              "jeff-dean",
+              "google",
+              "recursive",
+              "self-improvement"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-discovery-loop-jeff-dean"
+          },
+          {
+            "title": "Grok Imagine Image 2.0 — xAI image generation",
+            "desc_pl": "Grok Imagine Image 2.0 — najnowsza wersja image generation od xAI. Najnowsza iteracja imaging processing.",
+            "desc_en": "Grok Imagine Image 2.0 — latest version of image generation from xAI. Newest iteration of imaging processing.",
+            "tags": [
+              "xai",
+              "grok-imagine",
+              "image-generation",
+              "2.0"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-grok-imagine-image-2.0"
+          },
+          {
+            "title": "Claude Obsidian plugin v2 — generate Obsidian knowledge base",
+            "desc_pl": "Anthropic Claude Obsidian plugin v2. Generuje Obsidian knowledge base. Można to robić bez plug-in (instrukcje dla Claude) ale plug-in to ułatwia. Obsidian — markdown-based personal wiki.",
+            "desc_en": "Anthropic Claude Obsidian plugin v2. Generates Obsidian knowledge base. Can be done without plugin (instructions to Claude) but plugin makes it easier. Obsidian — markdown-based personal wiki.",
+            "tags": [
+              "anthropic",
+              "claude",
+              "obsidian",
+              "plugin",
+              "knowledge-base"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-claude-obsidian-plugin-v2"
+          },
+          {
+            "title": "cmux — agent-friendly terminal dla Mac, run Claude Code + Codex w jednej aplikacji",
+            "desc_pl": "cmux — terminal dla Mac, bardzo wygodny dla uruchamiania różnych agentów. W jednej aplikacji uruchomisz Claude Code, Codex i cokolwiek chcesz. Lev Selector rozważa przejście z Visual Studio Code → Zed → cmux. Łatwy download, install, try.",
+            "desc_en": "cmux — terminal for Mac, very convenient for running different agents. In one app you can run Claude Code, Codex and whatever you want. Lev Selector considering switching from Visual Studio Code → Zed → cmux. Easy download, install, try.",
+            "tags": [
+              "cmux",
+              "terminal",
+              "mac",
+              "agent-friendly",
+              "claude-code",
+              "codex"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-cmux-terminal-mac"
+          },
+          {
+            "title": "Kestra — governed AI agents, YAML workflows, human-controlled",
+            "desc_pl": "Kestra — governed AI agents. Combines deterministic orchestration z AI reasoning. High-impact actions under human control. YAML workflows versionable, reviewable, deployable. GitHub triage posum approval. Self-host locally z Docker + Kubernetes. Determinism + AI w jednym.",
+            "desc_en": "Kestra — governed AI agents. Combines deterministic orchestration with AI reasoning. High-impact actions under human control. YAML workflows versionable, reviewable, deployable. GitHub triage posum approval. Self-host locally with Docker + Kubernetes. Determinism + AI in one.",
+            "tags": [
+              "kestra",
+              "governed-ai",
+              "yaml",
+              "orchestration",
+              "self-host"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-kestra-governed-ai"
+          },
+          {
+            "title": "LangGraph — production-grade, runtime over diagrams",
+            "desc_pl": "LangGraph — runtime over diagrams. Production-grade, production-ready. 2 lata temu Lev był bardzo upset (skomplikowany system, obsolete documentation, constant updates, things break, brak kontroli). Dziś — AI może look at LangGraph app i fix what's wrong, więc jest użyteczny. Dużo downloads, convenient environment. Restart/rerun possible gdy coś pójdzie źle.",
+            "desc_en": "LangGraph — runtime over diagrams. Production-grade, production-ready. 2 years ago Lev was very upset (complicated system, obsolete documentation, constant updates, things break, no control). Today — AI can look at LangGraph app and fix what's wrong, so it's usable. Lots of downloads, convenient environment. Restart/rerun possible when something goes wrong.",
+            "tags": [
+              "langgraph",
+              "production",
+              "runtime",
+              "diagrams",
+              "orchestration"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-langgraph-production-runtime"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Coding & AI dev — Karpathy Prompting 2.0, AI Coding Skills, Blender+MCP, Claude Code token fixes, Ling 3.0 tiny",
+        "title_en": "Coding & AI dev — Karpathy Prompting 2.0, AI Coding Skills, Blender+MCP, Claude Code token fixes, Ling 3.0 tiny",
+        "icon": "📋",
+        "cards": [
+          {
+            "title": "Karpathy's Prompting 2.0 — voice zamiast tekstu, messy → clean via interview",
+            "desc_pl": "Andrej Karpathy — Prompting 2.0. Zamiast pisać prompty, mówisz używając głosu. Wyrażasz wszystko: intent, architectural decisions, constraints, uncertainties, examples. Najpierw warn model że speech recognition może wprowadzić typos. Następnie freely describe goals. Model reconstructs messy content w cleaner shared understanding — czasem przez short interview style back-and-forth. Rekomendowane jako starting point dla nowych projektów.",
+            "desc_en": "Andrej Karpathy — Prompting 2.0. Instead of writing prompts, you speak using your voice. You express everything: intent, architectural decisions, constraints, uncertainties, examples. First warn model that speech recognition may introduce typos. Then freely describe goals. Model reconstructs messy content into cleaner shared understanding — sometimes through short interview style back-and-forth. Recommended as starting point for new projects.",
+            "tags": [
+              "karpathy",
+              "prompting-2.0",
+              "voice",
+              "interview",
+              "starting-point"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-karpathy-prompting-2.0"
+          },
+          {
+            "title": "AI Coding Skills — modular control, test-driven development",
+            "desc_pl": "AI Coding Skills (Matt Pcio). Model approach: groomie interviews users one decision at a time to spec, preserves agreed design in code-free specification, encouraging agents to inspect two ticket slices. Work by end-to-end features rather than database API. Emphasizes test-driven development (TDD). Modular control dla lepszego development flow.",
+            "desc_en": "AI Coding Skills (Matt Pcio). Model approach: groomie interviews users one decision at a time to spec, preserves agreed design in code-free specification, encouraging agents to inspect two ticket slices. Work by end-to-end features rather than database API. Emphasizes test-driven development (TDD). Modular control for better development flow.",
+            "tags": [
+              "coding-skills",
+              "modular",
+              "tdd",
+              "spec-driven",
+              "agent-friendly"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-ai-coding-skills-modular"
+          },
+          {
+            "title": "Blender + MCP — text prompts → Blender animations",
+            "desc_pl": "Blender + MCP. Wiele shorts na YouTube zrobionych w Blender (np. jet engine turbine). Teraz Claude Code używa MCP do instruowania Blender co ma robić — możesz tworzyć animations z text prompts. blender.org — słynne narzędzie graficzne i animacyjne. Control za pomocą text prompts → generate animations → videos. Bardzo łatwe, dużo demos na YouTube.",
+            "desc_en": "Blender + MCP. Many YouTube shorts made in Blender (e.g. jet engine turbine). Now Claude Code uses MCP to instruct Blender what to do — you can create animations from text prompts. blender.org — famous graphical and animation tool. Control via text prompts → generate animations → videos. Very easy, many demos on YouTube.",
+            "tags": [
+              "blender",
+              "mcp",
+              "animation",
+              "text-to-video",
+              "claude-code"
+            ],
+            "date": "2026-08-13",
+            "links": [
+              {
+                "label": "blender.org",
+                "url": "https://www.blender.org"
+              }
+            ],
+            "id": "card-ep-2026-08-14-blender-mcp-animations"
+          },
+          {
+            "title": "Claude Code token leak fixes — caveman, ponytail, omniroute, RTK (Rust token killer)",
+            "desc_pl": "Claude Code 'token leak' — gdy Claude myśli i drukuje reasoning, consumes a lot of tokens. 4 tools go fix: (1) caveman — normal auth likely fails bo token expiry check uses local time, caveman use UTC; (2) ponytail — podobny fix; (3) omniroute — pozwala wybrać różne modele i providerów (268 providers!); (4) RTK (Rust Token Killer) — reduces shell output. Można używać pojedynczo lub w kombinacji — redukuje tokens, płacisz mniej.",
+            "desc_en": "Claude Code 'token leak' — when Claude thinks and prints reasoning, it consumes a lot of tokens. 4 tools to fix: (1) caveman — normal auth likely fails because token expiry check uses local time, caveman uses UTC; (2) ponytail — similar fix; (3) omniroute — lets you select different models and providers (268 providers!); (4) RTK (Rust Token Killer) — reduces shell output. Can be used individually or in combination — reduces tokens, you pay less.",
+            "tags": [
+              "claude-code",
+              "token-leak",
+              "caveman",
+              "ponytail",
+              "omniroute",
+              "rtk"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-claude-code-token-leak-fixes"
+          },
+          {
+            "title": "Ling 3.0 tiny — <8B, 128 experts, 266K context, hybrid reasoning MoE",
+            "desc_pl": "Ling 3.0 tiny — small, sparse, fast. Hybrid reasoning mixture of experts model. <8B total params, 128 experts (wow!). 266K context window. Różne precision levels of weights, różne quantization. Dobry model dla small efficient deployment.",
+            "desc_en": "Ling 3.0 tiny — small, sparse, fast. Hybrid reasoning mixture of experts model. <8B total params, 128 experts (wow!). 266K context window. Different precision levels of weights, different quantization. Good model for small efficient deployment.",
+            "tags": [
+              "ling-3.0-tiny",
+              "small",
+              "sparse",
+              "moe",
+              "128-experts",
+              "hybrid"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-ling-3.0-tiny"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "News & Industry — watermarks, Coldcard, Zuckerberg, Double descent, Pax Silica, OpenMausBot, Sybase, Jobs, Lovable, Granian, Stella, VEED",
+        "title_en": "News & Industry — watermarks, Coldcard, Zuckerberg, Double descent, Pax Silica, OpenMausBot, Sybase, Jobs, Lovable, Granian, Stella, VEED",
+        "icon": "📋",
+        "cards": [
+          {
+            "title": "Anthropic invisible watermarks + Coldcard seed exploit ($100M Bitcoin theft)",
+            "desc_pl": "SECURITY. Anthropic dodaje invisible watermarks do ALL Claude text (i obiecali tooling do sprawdzenia czy tekst zawiera watermark — removal tools w 24h). Coldcard seed exploit: hardware wallet Bitcoin miał problem z RNG (random number generator) seed → ludzie ukradli $100M w Bitcoin. Prawdopodobnie użyto AI. Exploit naprawiony.",
+            "desc_en": "SECURITY. Anthropic adds invisible watermarks to ALL Claude text (and they promised tooling to check if text contains the watermark — removal tools within 24h). Coldcard seed exploit: Bitcoin hardware wallet had RNG (random number generator) seed problem → people stole $100M in Bitcoin. Probably AI used. Exploit fixed.",
+            "tags": [
+              "anthropic",
+              "watermarks",
+              "coldcard",
+              "bitcoin",
+              "security",
+              "exploit"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-watermarks-coldcard-security"
+          },
+          {
+            "title": "Zuckerberg AI access (democratic but money buys more) + Lovable $400M at $13.3B",
+            "desc_pl": "INDUSTRY. Mark Zuckerberg discusses future: AI should be democratic, accessible dla all, ale people with more money get more AI (contradiction). Against few companies controlling AI. Lovable (vibe coding startup, founders Fabian Hayden i Anton Osa) — raised $400M at $13.3B valuation. Hit $500M ARR (annualized revenue) w June. Europe-based vibe coding startup.",
+            "desc_en": "INDUSTRY. Mark Zuckerberg discusses future: AI should be democratic, accessible to all, but people with more money get more AI (contradiction). Against few companies controlling AI. Lovable (vibe coding startup, founders Fabian Hayden and Anton Osa) — raised $400M at $13.3B valuation. Hit $500M ARR (annualized revenue) in June. Europe-based vibe coding startup.",
+            "tags": [
+              "zuckerberg",
+              "meta",
+              "democratic-ai",
+              "lovable",
+              "vibe-coding",
+              "funding"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-zuckerberg-lovable-funding"
+          },
+          {
+            "title": "Double descent explained + Stanford Virtual Biotech (37K agents, 60K trials, James Zou)",
+            "desc_pl": "SCIENCE. Double descent — w deep learning, gdy zwiększasz params modelu, error najpierw spada, potem rośnie (overfit), ale potem spada ZNOWU poniżej classical sweet spot. Dzieje się tak gdy more params niż data points — infinite perfect fits istnieją, gradient descent prefers smoothest lowest norm one. Stanford Virtual Biotech (James Zou) — 37,000 clinical trial agents, processing 60,000 trials. Pharmaceutical testing via AI agents — quite achievement dla science.",
+            "desc_en": "SCIENCE. Double descent — in deep learning, when you increase model params, error first drops, then rises (overfit), but then drops AGAIN below the classical sweet spot. Happens when more params than data points — infinite perfect fits exist, gradient descent prefers smoothest lowest norm one. Stanford Virtual Biotech (James Zou) — 37,000 clinical trial agents, processing 60,000 trials. Pharmaceutical testing via AI agents — quite an achievement for science.",
+            "tags": [
+              "double-descent",
+              "deep-learning",
+              "stanford",
+              "virtual-biotech",
+              "james-zou",
+              "clinical-trials"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-double-descent-stanford-biotech"
+          },
+          {
+            "title": "Pax Silica (Philippines, 4000 acres, US-led secure AI supply chain) + Sybase → MS SQL Server history",
+            "desc_pl": "GEOPOLITICS + HISTORY. Pax Silica — duży projekt, started recently, wiele krajów participating. Pierwsze miejsce: Philippines. US-led initiative dla secure AI semiconductors, minerals, energy — wszystko dla AI. >1000 hectares / 4000 acres budują stuff dla AI. Sybase & Microsoft SQL Server: Lev spędził lata w Sybase. 4 lata po założeniu kontrakt z Microsoft. Po kilku latach Microsoft nie przedłużył kontraktu, kupili kod → became Microsoft SQL Server (originally Sybase!). 2010 SAP bought Sybase za $6B. IQ (column database for analytics) — wymyślili w Sybase.",
+            "desc_en": "GEOPOLITICS + HISTORY. Pax Silica — large project, started recently, many countries participating. First location: Philippines. US-led initiative for secure AI semiconductors, minerals, energy — all for AI. >1000 hectares / 4000 acres building stuff for AI. Sybase & Microsoft SQL Server: Lev spent years in Sybase. 4 years after founding, contract with Microsoft. After few years Microsoft didn't renew contract, bought the code → became Microsoft SQL Server (originally Sybase!). 2010 SAP bought Sybase for $6B. IQ (column database for analytics) — invented in Sybase.",
+            "tags": [
+              "pax-silica",
+              "philippines",
+              "supply-chain",
+              "sybase",
+              "microsoft-sql-server",
+              "history",
+              "sap"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-pax-silica-sybase-history"
+          },
+          {
+            "title": "OpenMausBot (agent teams in chat, free open-source) + Granian vs uvicorn (Rust HTTP/2 server)",
+            "desc_pl": "OPEN TOOLS. OpenMausBot — free open-source mark agent workspace, modeled on GrokBot. Presents agents jako chat contacts each z distinct role, cooperate together. Teams of AI bots in chat. Granian vs uvicorn: uvicorn to common server dla FastAPI. Granian — napisany w Rust, supports HTTP/2 out of the box, async z all latest protocols. Almost drop-in replacement dla uvicorn. Nowe aplikacje: idź na Granian.",
+            "desc_en": "OPEN TOOLS. OpenMausBot — free open-source mark agent workspace, modeled on GrokBot. Presents agents as chat contacts each with distinct role, cooperate together. Teams of AI bots in chat. Granian vs uvicorn: uvicorn is common server for FastAPI. Granian — written in Rust, supports HTTP/2 out of the box, async with all latest protocols. Almost drop-in replacement for uvicorn. New applications: go for Granian.",
+            "tags": [
+              "openmausbot",
+              "agent-teams",
+              "chat",
+              "free",
+              "granian",
+              "uvicorn",
+              "rust",
+              "fastapi"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-openmausbot-granian-uvicorn"
+          },
+          {
+            "title": "Stella's AI app launch (influencer coded app, made money quickly) + VEED Fabric AI video + Jobs",
+            "desc_pl": "CREATORS + JOBS. Stella (influencer, młoda kobieta) — created vibe coded application dla telefonu z AI, made a lot of money very quickly. Miała już duże following ale nadal bardzo impressive. VEED Fabric AI Video test (Julia McCoy tested vid.io): weź picture (np. yourself), weź voice → generates video z lip-sync avatar, wszystko wygląda dobrze dla 10-30 second outputs. JOBS: nic major w sierpniu yet.",
+            "desc_en": "CREATORS + JOBS. Stella (influencer, young woman) — created vibe coded application for phone with AI, made a lot of money very quickly. Already had big following but still very impressive. VEED Fabric AI Video test (Julia McCoy tested vid.io): take a picture (e.g. yourself), take voice → generates video with lip-sync avatar, everything looks good for 10-30 second outputs. JOBS: nothing major in August yet.",
+            "tags": [
+              "stella",
+              "vibe-coding",
+              "veed",
+              "fabric-ai",
+              "video",
+              "avatar",
+              "jobs"
+            ],
+            "date": "2026-08-13",
+            "links": [],
+            "id": "card-ep-2026-08-14-stella-veed-jobs"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "ep-2026-08-07",
     "date": "2026-08-07",
     "title_pl": "Grok Build Mode, Sakana AI, Hassabis Chief Scientist, Inkling-Small, Rust takeover, GraphRAG",

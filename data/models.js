@@ -2,10 +2,130 @@
 // Schema: {r, n, v, d, o, c, desc_pl, desc_en, b_pl, b_en}
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
-const TODAY = "2026-08-13";
+const TODAY = "2026-08-14";
 const NEW_DAYS = 14;
 
 const M = [
+  {
+    "n": "Grok Imagine Image 2.0",
+    "v": "xAI",
+    "c": "Image Generation",
+    "d": "2026-08-13",
+    "o": 0,
+    "is_new": true,
+    "url": "",
+    "yt": "A2E_9vCGN1s",
+    "desc_pl": "Grok Imagine Image 2.0 — najnowsza wersja image generation od xAI. Najnowsza iteracja imaging processing od xAI. xAI enters image generation space.",
+    "desc_en": "Grok Imagine Image 2.0 — latest version of image generation from xAI. Newest iteration of imaging processing from xAI. xAI enters image generation space.",
+    "b_pl": "xAI image generation. Latest imaging iteration.",
+    "b_en": "xAI image generation. Latest imaging iteration.",
+    "r": 24
+  },
+  {
+    "n": "Ling 3.0 tiny",
+    "v": "Open-source",
+    "c": "LLM",
+    "d": "2026-08-13",
+    "o": 0,
+    "is_new": true,
+    "url": "",
+    "yt": "A2E_9vCGN1s",
+    "desc_pl": "Ling 3.0 tiny — small, sparse, fast. Hybrid reasoning mixture of experts model. <8B total params, 128 experts. 266K context window. Różne precision levels of weights, różne quantization. Dobry model dla small efficient deployment.",
+    "desc_en": "Ling 3.0 tiny — small, sparse, fast. Hybrid reasoning mixture of experts model. <8B total params, 128 experts. 266K context window. Different precision levels of weights, different quantization. Good model for small efficient deployment.",
+    "b_pl": "<8B total, 128 experts, 266K context. Hybrid reasoning MoE. Small efficient.",
+    "b_en": "<8B total, 128 experts, 266K context. Hybrid reasoning MoE. Small efficient.",
+    "r": 50
+  },
+  {
+    "n": "MiniMax Code 2.0",
+    "v": "MiniMax",
+    "c": "Coding",
+    "d": "2026-08-13",
+    "o": 0,
+    "is_new": true,
+    "url": "",
+    "yt": "A2E_9vCGN1s",
+    "desc_pl": "MiniMax Code 2.0 — rebuild desktop agent na open-source Pi framework. >90% lower first token latency (znacznie szybciej, mniej stall-ów, silniejsza persistence). Teams of agents dzielą research, strategy, production i review między osobnych agentów. Memory i reusable skills preserve organizational. Desktop agent dla vibe coding.",
+    "desc_en": "MiniMax Code 2.0 — rebuild desktop agent on open-source Pi framework. >90% lower first token latency (much faster, fewer stalls, stronger persistence). Teams of agents split research, strategy, production and review among separate agents. Memory and reusable skills preserve organizational. Desktop agent for vibe coding.",
+    "b_pl": "Desktop agent rebuild. 90% lower first token latency. Agent teams.",
+    "b_en": "Desktop agent rebuild. 90% lower first token latency. Agent teams.",
+    "r": 7
+  },
+  {
+    "n": "NVIDIA Nemotron 3.5 Lightning",
+    "v": "NVIDIA",
+    "c": "LLM",
+    "d": "2026-08-13",
+    "o": 0,
+    "is_new": true,
+    "url": "",
+    "yt": "A2E_9vCGN1s",
+    "desc_pl": "NVIDIA Nemotron 3.5 Lightning — 52 total layers, tylko 6 attention, 23 mamba-2 state space layers, 23 mixture of expert layers. Mało attention → mniej GPU memory. 30B params, 3B active. Działa na single GPU. Max context 1M (zależy od GPU). Inference-focused: 4-bit quantization + reference fine-tuning, 16-bit via HuggingFace. Tool use, structured output, code validation, sub-agents, multi-token predictions.",
+    "desc_en": "NVIDIA Nemotron 3.5 Lightning — 52 total layers, only 6 attention, 23 mamba-2 state space layers, 23 mixture of expert layers. Little attention → less GPU memory. 30B params, 3B active. Runs on single GPU. Max context 1M (depends on GPU). Inference-focused: 4-bit quantization + reference fine-tuning, 16-bit via HuggingFace. Tool use, structured output, code validation, sub-agents, multi-token predictions.",
+    "b_pl": "52 layers, 6 attention, 23 Mamba 2, 23 MoE. 30B/3B active. Single GPU. 1M context.",
+    "b_en": "52 layers, 6 attention, 23 Mamba 2, 23 MoE. 30B/3B active. Single GPU. 1M context.",
+    "r": 49
+  },
+  {
+    "n": "GPT-5.6-Cyber",
+    "v": "OpenAI",
+    "c": "LLM",
+    "d": "2026-08-13",
+    "o": 0,
+    "is_new": true,
+    "url": "",
+    "yt": "A2E_9vCGN1s",
+    "desc_pl": "OpenAI GPT-5.6-Cyber — wersja modelu dla advanced cybersecurity work. Specjalnie dostrojony dla defensive i offensive security tasks: analiza podatności, threat hunting, reverse engineering malware, exploit research. Kontynuacja linii GPT 5.6 (Sol, Terra, Luna) ale z cyber focus.",
+    "desc_en": "OpenAI GPT-5.6-Cyber — version of the model for advanced cybersecurity work. Specifically tuned for defensive and offensive security tasks: vulnerability analysis, threat hunting, malware reverse engineering, exploit research. Continuation of GPT 5.6 line (Sol, Terra, Luna) but with cyber focus.",
+    "b_pl": "Cybersecurity variant GPT 5.6. Threat hunting, malware reverse engineering.",
+    "b_en": "Cybersecurity variant of GPT 5.6. Threat hunting, malware reverse engineering.",
+    "r": 48
+  },
+  {
+    "n": "Gemini 3.7 Flash",
+    "v": "Google",
+    "c": "LLM",
+    "d": "2026-08-13",
+    "o": 0,
+    "is_new": true,
+    "url": "",
+    "yt": "A2E_9vCGN1s",
+    "desc_pl": "Google Gemini 3.7 Flash — Sergey Brin (co-founder Google) dołączył do developmentu i pushuje Gemini (po opóźnieniach w Gemini Pro). Wydali Flash, wygląda bardzo dobrze na benchmarks i jest affordable — na poziomie chińskich modeli. Dostępny przez różne kanały Google. Wkracza do top 7 LM Arena (poz. 7).",
+    "desc_en": "Google Gemini 3.7 Flash — Sergey Brin (Google co-founder) joined development and pushes Gemini (after delays in Gemini Pro). They released Flash, looks very good on benchmarks and is affordable — at par with Chinese models. Available through different Google channels. Enters LM Arena top 7 (position 7).",
+    "b_pl": "Sergey Brin pushed. Affordable. On par z chińskimi. LM Arena top 7.",
+    "b_en": "Sergey Brin pushed. Affordable. On par with Chinese. LM Arena top 7.",
+    "r": 47
+  },
+  {
+    "n": "DeepSeek V4 Pro",
+    "v": "DeepSeek",
+    "c": "LLM",
+    "d": "2026-08-13",
+    "o": 0,
+    "is_new": true,
+    "url": "",
+    "yt": "A2E_9vCGN1s",
+    "desc_pl": "DeepSeek V4 Pro — nowy model + harness v0.1 (preview, open source). Pierwszy raz DeepSeek udostępnił swój harness (jak Claude Code ale open). Od niedzieli podnieśli ceny — wciąż order of magnitude tańszy od amerykańskich frontier. Peak pricing zależy od chińskich peak hours. Wysoka jakość + open-source harness = osobny produkt.",
+    "desc_en": "DeepSeek V4 Pro — new model + harness v0.1 (preview, open source). First time DeepSeek released their harness (like Claude Code but open). Since Sunday raised prices — still order of magnitude cheaper than American frontier. Peak pricing depends on Chinese peak hours. High quality + open-source harness = separate product.",
+    "b_pl": "Open-source harness v0.1. Prices raised, wciąż 10x tańszy od frontier.",
+    "b_en": "Open-source harness v0.1. Prices raised, still 10x cheaper than frontier.",
+    "r": 46
+  },
+  {
+    "n": "GLM 5.3",
+    "v": "Z.AI / Zhipu AI",
+    "c": "LLM",
+    "d": "2026-08-13",
+    "o": 0,
+    "is_new": true,
+    "url": "https://z.ai/blog/glm-5.3",
+    "yt": "A2E_9vCGN1s",
+    "desc_pl": "GLM 5.3 — sparse mixture of experts 743B params (jak 5.2). 1M token context. Skupili się na large-scale post-training dla real-world coding tasks, RL environments i compute. Frontier coding performance — tworzy plany i je wykonuje. ZCode variant specjalnie dla coding. API: $1.4 input / $4.4 output per M token. Subskrypcje: Lite, Pro, Max.",
+    "desc_en": "GLM 5.3 — sparse mixture of experts 743B params (like 5.2). 1M token context. Focused on large-scale post-training for real-world coding tasks, RL environments and compute. Frontier coding performance — creates plans and executes them. ZCode variant specifically for coding. API: $1.4 input / $4.4 output per M token. Subscriptions: Lite, Pro, Max.",
+    "b_pl": "743B MoE. 1M context. $1.4/$4.4 per M tok. Frontier coding. ZCode variant.",
+    "b_en": "743B MoE. 1M context. $1.4/$4.4 per M tok. Frontier coding. ZCode variant.",
+    "r": 45
+  },
   {
     "n": "Dragon Hatchling",
     "v": "Open-source",
@@ -2774,17 +2894,17 @@ const M = [
 ];
 
 const CATS = [
+  "Image Generation",
   "LLM",
+  "Coding",
   "Video Generation",
   "AI Science Agents",
-  "Coding",
   "Humanoid Robots",
   "AI Research",
   "Realtime Avatars",
   "3D Generation",
   "TTS",
   "Multimodal",
-  "Image Generation",
   "World Models",
   "4D Human",
   "Neural Interface",
