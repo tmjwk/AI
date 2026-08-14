@@ -1,7 +1,4 @@
-// AI Benchmarks data — V4 auto-generated from benchmarks.json (Nurt 2: bilingual)
-// Schema: {n, fn, c, t_pl, t_en, url, o, y, ty, tier}
-// NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
-
+// Benchmarks — auto-generated from benchmarks.json
 const B = [
   {
     "n": "MMLU",
@@ -890,50 +887,64 @@ const B = [
     "tier": 2,
     "t_pl": "Długoterminowe zadania genomics. GPT 5.6 Soul znacznie przewyższa Claude Opus 4.8. Claude Fable odmawia odpowiedzi (guardrails).",
     "t_en": "Long-horizon genomics tasks. GPT 5.6 Soul significantly outperforms Claude Opus 4.8. Claude Fable refuses to answer (guardrails)."
+  },
+  {
+    "n": "CyberJim",
+    "fn": "Cybersecurity benchmark evaluating AI model capabilities in cyber attack/defense scenarios",
+    "c": "Bezpieczeństwo i cyberataki",
+    "url": "https://cybersecuritybenchmark.com/",
+    "desc_pl": "Benchmark cyberbezpieczeństwa — DeepSeek V4 Pro: 83.3, Mythos: 83.2. Open-source capability na cyber attacks.",
+    "desc_en": "Cybersecurity benchmark — DeepSeek V4 Pro: 83.3, Mythos: 83.2. Open-source capability on cyber attacks."
+  },
+  {
+    "n": "Voxelbench",
+    "fn": "3D visual understanding benchmark",
+    "c": "Wizja i multimodalność",
+    "url": "https://voxelbench.github.io/",
+    "desc_pl": "Voxelbench — benchmark 3D visual understanding. Opus 5: 3rd place, just behind Fable 5, Sol (OpenAI) leads.",
+    "desc_en": "Voxelbench — 3D visual understanding benchmark. Opus 5: 3rd place, just behind Fable 5, Sol (OpenAI) leads."
+  },
+  {
+    "n": "Removal bench",
+    "fn": "Object removal quality benchmark for image generation models",
+    "c": "Generowanie obrazów",
+    "url": "https://removalbench.com/",
+    "desc_pl": "Removal bench — mierzy jakość usuwania obiektów z obrazów. Ideogram Object Remover: lowest error rate vs Nano Banana 2, GPT image 2.",
+    "desc_en": "Removal bench — measures quality of object removal from images. Ideogram Object Remover: lowest error rate vs Nano Banana 2, GPT image 2."
+  },
+  {
+    "n": "Terminal Bench",
+    "fn": "Terminal/command-line task completion benchmark",
+    "c": "Programowanie i inżynieria",
+    "url": "https://terminalbench.com/",
+    "desc_pl": "Terminal Bench — ukończenie zadań w terminalu. Long Horizon Harness: +7.5%. GPT 5.6 Luna z harness: significantly higher.",
+    "desc_en": "Terminal Bench — terminal task completion. Long Horizon Harness: +7.5%. GPT 5.6 Luna with harness: significantly higher."
+  },
+  {
+    "n": "OS World 2",
+    "fn": "Operating system task automation benchmark",
+    "c": "Programowanie i inżynieria",
+    "url": "https://os-world.github.io/",
+    "desc_pl": "OS World 2 — automatyzacja zadań w systemie operacyjnym. Long Horizon Harness: tripled completion rate.",
+    "desc_en": "OS World 2 — OS task automation. Long Horizon Harness: tripled completion rate."
+  },
+  {
+    "n": "BrowseComp",
+    "fn": "Web browsing comprehension benchmark",
+    "c": "Rozumowanie i logika",
+    "url": "https://browsecomp.com/",
+    "desc_pl": "BrowseComp — comprehension z web browsing. Big Bang self-evolving model: massive improvement vs base Qwen 3.6 35B.",
+    "desc_en": "BrowseComp — web browsing comprehension. Big Bang self-evolving model: massive improvement vs base Qwen 3.6 35B."
+  },
+  {
+    "n": "Val's Index",
+    "fn": "Finance and coding combined benchmark",
+    "c": "Programowanie i inżynieria",
+    "url": "https://valsindex.com/",
+    "desc_pl": "Val's Index — jak dobry jest model w finance i coding. Muse Spark 1.2: below GPT 5.6 Sol i Kimi K3, ale cheapest.",
+    "desc_en": "Val's Index — how good a model is across finance and coding. Muse Spark 1.2: below GPT 5.6 Sol and Kimi K3, but cheapest."
   }
 ];
-
-const CATS = [
-  "Wiedza i rozumowanie",
-  "Matematyka",
-  "Coding",
-  "Agentic",
-  "Multimodal",
-  "Generowanie obrazów",
-  "Generowanie wideo",
-  "3D",
-  "Robotyka",
-  "Nauki ścisłe",
-  "Bezpieczeństwo",
-  "Areny i leaderboardy"
-];
-
-const CATS_EN = {
-  "Wiedza i rozumowanie": "Knowledge & Reasoning",
-  "Matematyka": "Math",
-  "Coding": "Coding",
-  "Agentic": "Agentic",
-  "Multimodal": "Multimodal",
-  "Generowanie obrazów": "Image Generation",
-  "Generowanie wideo": "Video Generation",
-  "3D": "3D",
-  "Robotyka": "Robotics",
-  "Nauki ścisłe": "Hard Sciences",
-  "Bezpieczeństwo": "Safety",
-  "Areny i leaderboardy": "Arenas & Leaderboards"
-};
-
-const ICONS = {
-  "Wiedza i rozumowanie": "🧠",
-  "Matematyka": "🔢",
-  "Coding": "💻",
-  "Agentic": "🤖",
-  "Multimodal": "👁️",
-  "Generowanie obrazów": "🎨",
-  "Generowanie wideo": "🎬",
-  "3D": "📐",
-  "Robotyka": "🦾",
-  "Nauki ścisłe": "🔬",
-  "Bezpieczeństwo": "🛡️",
-  "Areny i leaderboardy": "🏆"
-};
+const CATS = ["Wiedza i rozumowanie", "Matematyka", "Coding", "Agentic", "Multimodal", "Generowanie obrazów", "Generowanie wideo", "3D", "Robotyka", "Nauki ścisłe", "Bezpieczeństwo", "Areny i leaderboardy"];
+const ICONS = {"Wiedza i rozumowanie": "🧠", "Matematyka": "🔢", "Coding": "💻", "Agentic": "🤖", "Multimodal": "👁️", "Generowanie obrazów": "🎨", "Generowanie wideo": "🎬", "3D": "📐", "Robotyka": "🦾", "Nauki ścisłe": "🔬", "Bezpieczeństwo": "🛡️", "Areny i leaderboardy": "🏆"};
+const CATS_EN = {"Wiedza i rozumowanie": "Knowledge & Reasoning", "Matematyka": "Math", "Coding": "Coding", "Agentic": "Agentic", "Multimodal": "Multimodal", "Generowanie obrazów": "Image Generation", "Generowanie wideo": "Video Generation", "3D": "3D", "Robotyka": "Robotics", "Nauki ścisłe": "Hard Sciences", "Bezpieczeństwo": "Safety", "Areny i leaderboardy": "Arenas & Leaderboards"};

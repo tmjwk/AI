@@ -228,21 +228,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 <div class="sec" style="margin-top:40px">
 <div class="sec-t"><span class="pl">📅 Najnowsze aktualizacje</span><span class="en">📅 Latest updates</span></div>
-<ul class="update-list">
-<li><span class="update-date">14.08.2026</span> Lev Selector 14.08: Muse Glimmer 7¢, Grok 4.6, GLM 5.3, DeepSeek V4 Pro+harness, Nemotron 3.5 Lightning (Mamba 2), Prime Agent 95.5% ARC AGI 3, Karpathy Prompting 2.0</li>
-<li><span class="update-date">13.08.2026</span> Diamandis #279: Bernie Sanders pause AI, Grok 4.6/4.7, NVIDIA $500B Wall Street, Hollywood $2M AI movie, AI viruses (EVO2), flying cars</li>
-<li><span class="update-date">12.08.2026</span> AI Search tutorial: Minimax H3 advanced (ComfyUI, Loras, Turbo, GGUFs)</li>
-<li><span class="update-date">11.08.2026</span> Diamandis #278: Sergey Brin wraca do Gemini, 4 laboratoria tracą containment, Chiny 1B agentów, boty 57% ruchu</li>
-<li><span class="update-date">09.08.2026</span> Weekly AI Summary #32: Jeff Dean exits, Astra 10 math problems, Emad Mostaque personhood, Qwen 3.8 Max</li>
-<li><span class="update-date">09.08.2026</span> AI Search 09.08: 17 nowości (SymphonyGen, Wan Animate 2, VocalRender, LeapTalk 200fps, ClinFusion, Xiaomi Robotics 1)</li>
-</ul>
+<ul class="update-list" id="stickyList"></ul>
 </div>
 
 
 </div>
 
-<script src="data/models.js?v=20260814203740" onerror="dataLoadFailed()"></script>
-<script src="data/weekly/weekly.js?v=20260814203740" onerror="dataLoadFailed()"></script>
+<script src="data/models.js?v=20260814234132" onerror="dataLoadFailed()"></script>
+<script src="data/weekly/weekly.js?v=20260814234132" onerror="dataLoadFailed()"></script>
+<script src="data/sticky.js?v=20260814234132" onerror="dataLoadFailed()"></script>
 <script>
 let theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
 let lang="pl";
@@ -418,8 +412,25 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-backup-pre-rank-fix-v8.9.50-127-1-g99e87f5 · Deploy: <span id="deploy-ts">2026-08-14 20:37:42 UTC</span> · <span id="deploy-hash">v32eb98cb</span>
+backup-pre-rank-fix-v8.9.50-127-1-g99e87f5 · Deploy: <span id="deploy-ts">2026-08-14 23:42:06 UTC</span> · <span id="deploy-hash">v52205bc8</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
-<script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
+<script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})
+// Render sticky updates from sticky.js
+function renderSticky(){
+  var list=document.getElementById('stickyList');
+  if(!list||typeof STICKY==='undefined')return;
+  var lang=document.documentElement.getAttribute('data-lang')||'pl';
+  var h='';
+  STICKY.forEach(function(item){
+    var text=lang==='en'?item.text_en:item.text_pl;
+    var d=item.date.split('-');
+    var dateStr=d[2]+'.'+d[1]+'.'+d[0];
+    h+='<li><span class="update-date">'+dateStr+'</span> '+text+'</li>';
+  });
+  list.innerHTML=h;
+}
+renderSticky();
+
+</script>
 </body></html>
