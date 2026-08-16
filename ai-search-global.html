@@ -169,17 +169,6 @@ function loadData(name,url,callback){
   document.head.appendChild(script);
 }
 
-function checkAlreadyLoaded(){
-  var allLoaded=true;
-  if(typeof M==='undefined')allLoaded=false;
-  if(typeof RECENT_EPISODES==='undefined'&&typeof EPISODES==='undefined')allLoaded=false;
-  if(typeof RELEASES==='undefined')allLoaded=false;
-  if(typeof episodes==='undefined')allLoaded=false;
-  if(typeof CALENDAR==='undefined')allLoaded=false;
-  if(typeof G==='undefined'&&typeof GLOSSARY==='undefined')allLoaded=false;
-  if(allLoaded){onAllDataLoaded();return true;}
-  return false;
-}
 function onAllDataLoaded(){
   // Extract data from loaded JS variables
   if(typeof M!=='undefined')searchData.models=M;
@@ -193,16 +182,29 @@ function onAllDataLoaded(){
   document.getElementById('searchInput').placeholder=S.lang==='en'?'Search everything...':'Szukaj we wszystkim...';
 }
 
-// Check if data already loaded (scripts may be in DOM already)
-if(!checkAlreadyLoaded()){
-// Load all data files
-loadData('models','data/models.js?v=20260817010000');
-loadData('episodes','data/episodes/recent.js?v=20260817010000');
-loadData('releases','data/releases.js?v=20260817010000');
-loadData('radar','data/radar.js?v=20260817010000');
-loadData('calendar','data/calendar.js?v=20260817010000');
-loadData('glossary','data/glossary.js?v=20260817010000');
-} // end if(!checkAlreadyLoaded())
+// Load all data files via script injection
+var scriptsToLoad=[
+  ['models','data/models.js'],
+  ['episodes','data/episodes/recent.js'],
+  ['releases','data/releases.js'],
+  ['radar','data/radar.js'],
+  ['calendar','data/calendar.js'],
+  ['glossary','data/glossary.js']
+];
+var loadedScripts=0;
+scriptsToLoad.forEach(function(s){
+  var script=document.createElement('script');
+  script.src=s[1]+'?v=20260817020000';
+  script.onload=function(){
+    loadedScripts++;
+    if(loadedScripts>=scriptsToLoad.length){onAllDataLoaded();}
+  };
+  script.onerror=function(){
+    loadedScripts++;
+    if(loadedScripts>=scriptsToLoad.length){onAllDataLoaded();}
+  };
+  document.head.appendChild(script);
+});
 
 // === SEARCH ===
 function search(query){
