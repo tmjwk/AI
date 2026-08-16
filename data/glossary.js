@@ -919,6 +919,118 @@ const G = [
     "en": "ZLUDA",
     "d_pl": "Open-source projekt (twórca: vosen / Janusz Borkowski) udostępniający warstwę kompatybilności CUDA dla GPU innych niż NVIDIA — głównie AMD, ale także Intel. Pozwala uruchamiać aplikacje pisane pod CUDA bez modyfikacji na GPU AMD. Wersja 3 (luty 2024) przyniosła duże poprawy wydajności. Ważne dla dywersyfikacji GPU w erze monopolu NVIDIA w treningu AI.",
     "d_en": "An open-source project (creator: vosen / Janusz Borkowski) providing a CUDA compatibility layer for non-NVIDIA GPUs — primarily AMD, also Intel. It lets CUDA-based applications run unmodified on AMD GPUs. Version 3 (February 2024) brought major performance improvements. ZLUDA is strategically important for diversifying the GPU market beyond NVIDIA's AI-training monopoly."
+  },
+  {
+    "c": "Kontekst i wydajność",
+    "t": "Context rot",
+    "en": "Context Rot",
+    "d_pl": "Zjawisko pogorszenia jakości odpowiedzi LLM, gdy rozmiar wejścia (kontekstu) rośnie — nawet dla zadań trywialnych. Nazwę ukuł Tim Lee (Understanding AI, listopad 2025); Chroma (lipiec 2025) i Stanford (2023) pokazali, że już ~4 000 tokenów (20 dokumentów) potrafi obniżyć accuracy z 70-75% do 55-60%. Podtyp \"lost in the middle\": model pomyłki w środku długiego promptu. Mitigacje: RAG, reranking, kompresja kontekstu, KV-cache pruning.",
+    "d_en": "Performance degradation of LLMs as input context length grows — even on simple tasks. Coined by Tim Lee (Understanding AI, November 2025); experiments by Chroma (July 2025) and a 2023 Stanford study show ~4 000 tokens (20 retrieved documents) can drop accuracy from 70-75% to 55-60%. Subsumes the older \"lost in the middle\" phenomenon. Mitigations include RAG, reranking, context compression, and KV-cache pruning."
+  },
+  {
+    "c": "Trening i optymalizacja",
+    "t": "Double descent",
+    "en": "Double Descent",
+    "d_pl": "Fenomen ML opisany przez Belkina et al. (PNAS 2019), w którym błąd testowy maleje, rośnie (klasyczny bias-variance trade-off), a potem maleje DRUGI raz, gdy pojemność modelu rośnie PONIŻEJ progu interpolacji (interpolation threshold). \"Deep Double Descent\" (OpenAI 2019) pokazał to też dla szerokości ResNet, liczby epok i rozmiaru danych. Skutek: przeuczenie (overfitting) nie jest już jedynym kryterium — zbyt mały model też błęduje.",
+    "d_en": "An ML phenomenon described by Belkin et al. (PNAS 2019) where the test error initially decreases, rises (classic U-shaped bias-variance trade-off), and then decreases A SECOND TIME as model capacity grows past the \"interpolation threshold\". OpenAI's Deep Double Descent (2019) showed the curve also applies to width, epochs, and dataset size. Practical implication: bigger-than-interpolation models can still generalize well — overfitting is not the only failure mode."
+  },
+  {
+    "c": "Architektury i modele",
+    "t": "EVO2",
+    "en": "Evo 2 (DNA Foundation Model)",
+    "d_pl": "Otwartoźródłowy model podstawowy DNA od Arc Institute (we współpracy ze Stanford, 2026), w wersjach 7B i 40B parametrów, trenowany na 9 bilionach par zasad DNA ze wszystkich domen życia (Prokaryota, Eukaryota, Archaea). Kontekst 1M tokenów. Publikacja: Nature (Brixi et al. 2026). Zastosowania: przewidywanie wpływu mutacji (np. BRCA1), projektowanie nowych sekwencji genomowych, modelowanie RNA i białek. Pierwszy model zdolny do generalistycznego projektowania genomów.",
+    "d_en": "An open-source DNA foundation model from Arc Institute (with Stanford, 2026), released in 7B and 40B parameter variants and trained on 9 trillion nucleotides from all domains of life (prokaryotes, eukaryotes, archaea). 1M-token context. Published in Nature (Brixi et al. 2026). Applications include predicting mutational effects (e.g. BRCA1), de novo genome design, and joint modeling of DNA, RNA, and proteins — the first generalist genomic design model."
+  },
+  {
+    "c": "Agentic i narzędzia",
+    "t": "Gauntlet Loop",
+    "en": "Gauntlet Loop (Matt Schumer)",
+    "d_pl": "Technika promptowania agentów spopularyzowana przez Matta Shumera (lipiec 2026) — jeden zwięzły, 3-linijkowy prompt uruchamia sekwencję pod-agentów: planer, wykonawca, krytyk/ewaluator, które iteracyjnie piszą, oceniają i poprawiają rozwiązanie. Pozwoliła \"one-shot\" wygenerować kompletne gry FPS w Claude Code. Wada: pętla może uciec na boki (drift), wymaga ograniczeń budżetu tokenów i czasowych. Stała się standardowym wzorcem \"loop prompting\".",
+    "d_en": "An agent prompting technique popularized by Matt Schumer (July 2026) in which a single ~3-line prompt spins up a chain of sub-agents — typically a planner, an executor, and a critic/evaluator — that iteratively generate, critique, and revise a solution. It enabled Claude Code to one-shot complete FPS games. Trade-off: the loop can drift; budgets on tokens and wall-clock time are mandatory. It has become a canonical \"loop prompting\" pattern."
+  },
+  {
+    "c": "Agentic i narzędzia",
+    "t": "Harness-R1",
+    "en": "Harness-R1",
+    "d_pl": "Otwarty, \"outcome-grounded\" framework (DeepExperience, sierpień 2026, arXiv 2608.02276), który doucza \"inżyniera harnessu\" — model 9B — by poprawiał runtime wokół zamrożonego agenta docelowego. Inżynier czyta paczkę nieudanych trajektorii agenta i pisze reużywalny patch do runtime (narzędzia, prompt scaffolding, narzędzia kontrolne). Trening w trybie online, gradient przez wynik (pass/fail), a nie przez imitację. Repo: github.com/DeepExperience/Harness-R1.",
+    "d_en": "An open, outcome-grounded framework (DeepExperience, August 2026, arXiv 2608.02276) that post-trains a dedicated \"harness engineer\" — a 9B-parameter model — to improve the executable runtime surrounding a frozen target agent. The engineer reads batches of failed agent trajectories and writes reusable runtime patches (tool wrappers, scaffolding, guardrails). Training is online and outcome-graded (pass/fail), not imitation-based. Repo: github.com/DeepExperience/Harness-R1."
+  },
+  {
+    "c": "Agentic i narzędzia",
+    "t": "Prime Agent",
+    "en": "Prime Agent (Prime Intellect)",
+    "d_pl": "Otwarty (licencja MIT) self-improving harness dla kodowania i długich zadań autonomicznych od Prime Intellect (sierpień 2026). Buduje na dwóch abstrakcjach: Recursive Language Model (RLM) — traktuje kontekst jako zmienne (\"prompt-as-a-variable\") i pod-agentów jako wywołania funkcji — oraz programmatycznym feedbacku. Z Claude Opus 5 osiągnął 95.5% na ARC-AGI-3, pokonując ludzki baseline (95.4%). Zysk nie jest specyficzny dla benchmarku — transferuje się na zadania kodowania.",
+    "d_en": "An open-source (MIT) self-improving coding harness from Prime Intellect (August 2026). Built on two abstractions: the Recursive Language Model (RLM) — treating context as variables (\"prompt-as-a-variable\") and sub-agents as function calls — and programmatic feedback. With Claude Opus 5 it scored 95.5% on ARC-AGI-3, surpassing the human-expert baseline (95.4%). The gain is not benchmark-specific and transfers to coding tasks."
+  },
+  {
+    "c": "Architektury i modele",
+    "t": "Mamba 2",
+    "en": "Mamba-2 (State Space Duality)",
+    "d_pl": "Architektura modelu sekwencyjnego (Tri Dao, Albert Gu, 2024, arXiv 2405.21060) oparta na State Space Models — alternatywa dla attention. Główna nowość: Structured State Space Duality (SSD) — równoważność między SSM a formą multi-head attention, co pozwala na 2-8x szybszy trening niż Mamba-1 (wyższa wydajność GPU). Mamba-2 zachowuje liniową złożoność względem sekwencji O(n), więc skaluje się na długie konteksty lepiej niż transformer.",
+    "d_en": "A sequence-model architecture (Tri Dao, Albert Gu, 2024, arXiv 2405.21060) built on State Space Models as an alternative to attention. The key innovation is Structured State Space Duality (SSD) — a duality between SSMs and a form of multi-head attention that allows 2-8x faster training than Mamba-1 by leveraging GPU-efficient matmul. Mamba-2 keeps linear O(n) complexity w.r.t. sequence length, so it scales to long contexts better than the quadratic transformer."
+  },
+  {
+    "c": "Architektury i modele",
+    "t": "Cactus Needle",
+    "en": "Cactus Needle 2",
+    "d_pl": "Otwarty 45M-parametrowy model agentic LLM (Cactus Compute, sierpień 2026) zaprojektowany dla urządzeń edge — telefonów, smartwatchów, Raspberry Pi. Cały model to jeden 14 MB binarny (kompresja 2-bit), uruchamia pełną sesję tool-calling w 28 MB RAM. Osiąga ~500 tokenów/s na smartfonie. Wspiera function calling, structured extraction i device use. Przypadek użycia: lokalne asystenty offline z pełną prywatnością danych.",
+    "d_en": "An open 45M-parameter agentic LLM (Cactus Compute, August 2026) designed for edge devices — phones, wearables, Raspberry Pi. The whole model is a single 14 MB binary (2-bit compression) that runs a full tool-calling session in 28 MB of RAM. It hits ~500 tokens/s on a smartphone and supports function calling, structured extraction, and device use. Use case: privacy-preserving offline assistants running entirely on-device."
+  },
+  {
+    "c": "Modalności",
+    "t": "WorldClaw",
+    "en": "WorldClaw (Tencent Hunyuan)",
+    "d_pl": "Agentic framework od Tencent Hunyuan (sierpień 2026, arXiv 2608.05248) do coarse-to-fine generowania dużych, eksplorowalnych i edytowalnych światów 3D z dowolnego tekstu. Łączy agentów planowania, semantic voxel grids i diffusion modele geometrii. Wyjścia: jawna geometria 3D (meshes/voxels), a nie tylko NeRF/Gaussian splats — więc gotowe do gier i silników (Unreal, Unity). Skaluje się na miasta i krajobrazy, nie tylko obiekty.",
+    "d_en": "An agentic framework from Tencent Hunyuan (August 2026, arXiv 2608.05248) for coarse-to-fine generation of large-scale, explorable, editable 3D worlds from open-ended text. It combines planning agents, semantic voxel grids, and geometry diffusion models. Outputs are explicit 3D geometry (meshes/voxels) — not just NeRF or Gaussian splats — making them game-engine-ready (Unreal, Unity). It scales to cities and landscapes, not just individual objects."
+  },
+  {
+    "c": "Agentic i narzędzia",
+    "t": "Dyna 2",
+    "en": "Dyna-2 (World-Action Model)",
+    "d_pl": "Model podstawowy robotyki od Dyna Robotics (sierpień 2026) — World-Action Model (WAM) pretrenowany na ponad 1 milionie godzin egocentrycznego wideo ludzkiego (~170 lat ciągłego materiału). Pierwszy model robotyczny wykazujący \"prawdziwe\" prawa skalowania (scaling laws) na danych hold-out. Nacisk na naukę z pasywnego wideo bez robotyk-specific labels, by uniknąć wąskiego gardła danych demonstracyjnych.",
+    "d_en": "A robotics foundation model from Dyna Robotics (August 2026) — a World-Action Model (WAM) pre-trained on more than one million hours of egocentric human video (≈170 years of continuous footage). It is the first robotic model to demonstrate \"true\" scaling laws on held-out human data. The emphasis is on learning from passive video without robotics-specific labels, sidestepping the demonstration-data bottleneck."
+  },
+  {
+    "c": "Infrastruktura",
+    "t": "NeMo SwitchYard",
+    "en": "NVIDIA NeMo Switchyard",
+    "d_pl": "Otwartoźródłowy (NVIDIA, sierpień 2026) router modeli/agentów — przesyła ruch LLM między dostawcami (OpenAI, Anthropic, open-source) z kompatybilnością natywnego API OpenAI/Anthropic. Można tworzyć, testować i Contributing routing algorithms (cost-aware, latency-aware, quality-aware). Integracja z istniejącym stackiem NVIDIA NeMo. Konkurencja dla OpenRouter Fusion i Sakana Fugu. Repo: github.com/NVIDIA-NeMo/Switchyard.",
+    "d_en": "NVIDIA's open-source (August 2026) model/agent router that dispatches LLM traffic across providers (OpenAI, Anthropic, open-source) with native OpenAI/Anthropic API compatibility. Users can build, test, and contribute routing algorithms (cost-aware, latency-aware, quality-aware). It integrates with the existing NVIDIA NeMo stack. Competes with OpenRouter Fusion and Sakana Fugu. Repo: github.com/NVIDIA-NeMo/Switchyard."
+  },
+  {
+    "c": "Agentic i narzędzia",
+    "t": "MatrAIx",
+    "en": "MatrAIx (Persona 8B)",
+    "d_pl": "Otwarty projekt (Harvard + MIT, sierpień 2026, arXiv 2608.04205) symulacji populacji świata przez 8,3 miliarda wirtualnych person AI (Persona 8B), każda opisana przez 1290 cech (psychologia, nawyki, preferencje). Składa się z trzech komponentów: populacji, \"Playground\" (gdzie persona biorą udział w ankietach, rozmawiają z chatbotami, przeglądają strony) oraz warstwy ewaluacji. Caset ~1 mln person filtrowany z danych ludzkich + 400k syntetycznych.",
+    "d_en": "An open project (Harvard + MIT, August 2026, arXiv 2608.04205) simulating the world's population with 8.3 billion virtual AI personas (Persona 8B), each detailed across 1290 traits (psychology, habits, preferences). It has three components: the population, a \"Playground\" where personas take surveys, chat with bots, browse websites, and an evaluation layer. A curated coreset of ~1M personas (599,847 human-grounded + 400,000 synthetic) is released."
+  },
+  {
+    "c": "Modalności",
+    "t": "Index TTS 2.5",
+    "en": "IndexTTS 2.5 (Bilibili)",
+    "d_pl": "SOTA open-source system text-to-speech od zespołu IndexTeam (Bilibili, styczeń 2026, arXiv 2601.03888). Wersja 2.5 osiąga 2.28× poprawę RTF (real-time factor) vs IndexTTS 2 przy zachowaniu porównywalnego WER i speaker similarity. Zero-shot voice cloning z jednego referencyjnego klipu, wsparcie dla chińskiego, angielskiego, japońskiego, hiszpańskiego i arabskiego. Model ~5,5 GB — mieści się na typowym sprzęcie konsumenckim.",
+    "d_en": "A SOTA open-source text-to-speech system from Bilibili's IndexTeam (January 2026, arXiv 2601.03888). Version 2.5 achieves a 2.28× improvement in real-time factor (RTF) over IndexTTS 2 while maintaining comparable word error rate (WER) and speaker similarity. Zero-shot voice cloning from a single reference clip, with support for Chinese, English, Japanese, Spanish, and Arabic. The model is ~5.5 GB — fits on typical consumer hardware."
+  },
+  {
+    "c": "Modalności",
+    "t": "JoyAI Video Edit",
+    "en": "JoyAI-Video-Edit (JD)",
+    "d_pl": "Otwarty 16B-parametrowy autoregresyjny model dyfuzyjny (JD Open Source, sierpień 2026, Apache 2.0) do edycji wideo w czasie rzeczywistym — 720p przy 30 FPS na pojedynczym GPU NVIDIA B200. Instrukcja-kierowana edytowalność (open-ended streaming video editing): prompt tekstowy steruje edycją w locie (filtry, transitions, modyfikacje obiektów). Repo: github.com/jd-opensource/JoyAI-Video-Edit; wagi na HuggingFace.",
+    "d_en": "An open 16B-parameter autoregressive diffusion model (JD Open Source, August 2026, Apache 2.0) for real-time video editing — 720p at 30 FPS on a single NVIDIA B200 GPU. It supports instruction-guided, open-ended streaming video editing: a text prompt drives in-flight edits (filters, transitions, object modifications). Repo: github.com/jd-opensource/JoyAI-Video-Edit; weights on Hugging Face."
+  },
+  {
+    "c": "Modalności",
+    "t": "MiniMax Music 3",
+    "en": "MiniMax Music 3",
+    "d_pl": "Otwarto-wagowy model generacji muzyki od MiniMax (sierpień 2026, huggingface.co/MiniMaxAI/MiniMax-Music3). Generuje kompletne piosenki do 5 minut (zwrotki, refreny, mostki), wyjście 32 kHz, 16-bit stereo WAV. Pełna precyzja: 9,8 GB — mieści się na typowym sprzęcie konsumenckim; kwantyzacja int8 redukuje do ~2,5 GB. Najlepszy open-source generator muzyczny w 2026 r. według rankingów społeczności.",
+    "d_en": "An open-weight music generation model from MiniMax (August 2026, huggingface.co/MiniMaxAI/MiniMax-Music3). It generates full songs up to 5 minutes long (verses, choruses, bridges) as 32 kHz, 16-bit stereo WAV. Full precision is 9.8 GB — fits on typical consumer hardware; int8 quantization reduces it to ~2.5 GB. Widely regarded as the best open-source music generator in 2026."
+  },
+  {
+    "c": "Modalności",
+    "t": "SCoPE (Tencent)",
+    "en": "SCoPE (TencentARC)",
+    "d_pl": "Technika kontroli kamery w generacji wideo AI od Tencent ARC (sierpień 2026) — Sightline-Coordinate Positional Encoding. Dodaje \"promień kamery\" (camera ray) jako drugą współrzędną pozycjonowania dla każdego tokenu w pretrained video diffusion transformer (np. Wan2.2-I2V-A14B). Dzięki temu wygenerowane wideo podąża po zadanej trajektorii kamery, zachowując prior image-to-video. Repo: github.com/TencentARC/SCoPE.",
+    "d_en": "A camera control technique for AI video generation from Tencent ARC (August 2026) — Sightline-Coordinate Positional Encoding. It adds the camera ray as a second positional coordinate for every token in a pretrained video diffusion transformer (e.g. Wan2.2-I2V-A14B). The generated video then follows a prescribed camera trajectory while preserving the image-to-video prior. Repo: github.com/TencentARC/SCoPE."
   }
 ];
 
