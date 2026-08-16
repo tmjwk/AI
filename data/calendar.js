@@ -2,9 +2,229 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-14 23:52:23 UTC
+// Generated: 2026-08-16 19:55:35 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "JoyAI Video Edit — open-source edytor video z promptem (16B, 720p 30fps) — Open-source",
+    "title_en": "JoyAI Video Edit — open-source edytor video z promptem (16B, 720p 30fps) — Open-source",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "Scope (Tencent) — kontrola ruchu kamery w AI video — Tencent",
+    "title_en": "Scope (Tencent) — kontrola ruchu kamery w AI video — Tencent",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "DeepSeek V4 Pro 0813 — 1.7T MoE, D-Spark, 6 centów/task — DeepSeek",
+    "title_en": "DeepSeek V4 Pro 0813 — 1.7T MoE, D-Spark, 6 centów/task — DeepSeek",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "DeepSeek Harness — pierwszy harness od DeepSeek — DeepSeek",
+    "title_en": "DeepSeek Harness — pierwszy harness od DeepSeek — DeepSeek",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "Coding",
+    "meta_en": "Coding",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "Grok 4.6 — xAI łapie frontier, tańszy niż GPT-5.6 — xAI",
+    "title_en": "Grok 4.6 — xAI łapie frontier, tańszy niż GPT-5.6 — xAI",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "Qwen 3.8 Max — 2.4T MoE, 95B active, open source — Alibaba",
+    "title_en": "Qwen 3.8 Max — 2.4T MoE, 95B active, open source — Alibaba",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "MiDasheng (Xiaomi) — generator scen audio, <12GB — Xiaomi",
+    "title_en": "MiDasheng (Xiaomi) — generator scen audio, <12GB — Xiaomi",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "TTS",
+    "meta_en": "TTS",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "Genspark SecondBrain — wearable recorder, 35h battery, 64GB local — Genspark",
+    "title_en": "Genspark SecondBrain — wearable recorder, 35h battery, 64GB local — Genspark",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "Hardware",
+    "meta_en": "Hardware",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "LTX 2.5 vs Minimax H3 — porównanie video modeli — Open-source",
+    "title_en": "LTX 2.5 vs Minimax H3 — porównanie video modeli — Open-source",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "Sign language to text — Google DeepMind realtime translation — Open-source",
+    "title_en": "Sign language to text — Google DeepMind realtime translation — Open-source",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "Multimodal",
+    "meta_en": "Multimodal",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "GPT Ultrafast — 750 tok/s, Cerebras partnership — OpenAI",
+    "title_en": "GPT Ultrafast — 750 tok/s, Cerebras partnership — OpenAI",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "Qwen 3.8 27B — Opus 4.6 Max intelligence na lokalnym GPU — Alibaba",
+    "title_en": "Qwen 3.8 27B — Opus 4.6 Max intelligence na lokalnym GPU — Alibaba",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "GLM 5.3 — najlepszy open-source model, światowy lider cybersecurity — Z.AI / Zhipu AI",
+    "title_en": "GLM 5.3 — najlepszy open-source model, światowy lider cybersecurity — Z.AI / Zhipu AI",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "Gemini 3.7 Flash — 340 tok/s, frontier Code #1 wśród flash — Google",
+    "title_en": "Gemini 3.7 Flash — 340 tok/s, frontier Code #1 wśród flash — Google",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "Minimax Music 3 — najlepszy open-source music generator, 9.8GB — MiniMax",
+    "title_en": "Minimax Music 3 — najlepszy open-source music generator, 9.8GB — MiniMax",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "TTS",
+    "meta_en": "TTS",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "Index TTS 2.5 — SOTA TTS, voice cloning, 5.5GB — Open-source",
+    "title_en": "Index TTS 2.5 — SOTA TTS, voice cloning, 5.5GB — Open-source",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "TTS",
+    "meta_en": "TTS",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "Magi 2 — 114B MoE video model, 8x Hopper GPU — Open-source",
+    "title_en": "Magi 2 — 114B MoE video model, 8x Hopper GPU — Open-source",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "Cactus Needle — 45M params, 14MB binary, Raspberry Pi 5 — Open-source",
+    "title_en": "Cactus Needle — 45M params, 14MB binary, Raspberry Pi 5 — Open-source",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "WorldClaw (Tencent) — całe otwarte 3D worlds z text — Tencent",
+    "title_en": "WorldClaw (Tencent) — całe otwarte 3D worlds z text — Tencent",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "World Models",
+    "meta_en": "World Models",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "Dyna 2 — world action model, 1M+ godzin human video — Open-source",
+    "title_en": "Dyna 2 — world action model, 1M+ godzin human video — Open-source",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "Nemotron 3.5 Lightning + NeMo SwitchYard — router, 3x tańszy — NVIDIA",
+    "title_en": "Nemotron 3.5 Lightning + NeMo SwitchYard — router, 3x tańszy — NVIDIA",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##33-1"
+  },
+  {
+    "date": "2026-08-15",
+    "type": "ai_search",
+    "title_pl": "MatrAIx — symulacja populacji z 8.3B persona agents — Open-source",
+    "title_en": "MatrAIx — symulacja populacji z 8.3B persona agents — Open-source",
+    "link": "ai-releases.html###33-1",
+    "meta_pl": "AI Research",
+    "meta_en": "AI Research",
+    "num": "##33-1"
+  },
   {
     "date": "2026-08-13",
     "type": "lev",

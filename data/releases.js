@@ -1,6 +1,390 @@
 // AI Releases — auto-generated from releases.json
 const RELEASES = [
   {
+    "num": "##33-1",
+    "date": "2026-08-16",
+    "title_pl": "DeepSeek V4 0813, GLM 5.3, Grok 4.6, LTX 2.5, Qwen 3.8, Gemini 3.7 — AI News",
+    "title_en": "DeepSeek V4 0813, GLM 5.3, Grok 4.6, LTX 2.5, Qwen 3.8, Gemini 3.7 — AI News",
+    "yt": "62HSUsS0ypo",
+    "collapsed": false,
+    "items": [
+      {
+        "title_pl": "JoyAI Video Edit — open-source edytor video z promptem (16B, 720p 30fps)",
+        "title_en": "JoyAI Video Edit — open-source prompt-based video editor (16B, 720p 30fps)",
+        "vendor": "Open-source",
+        "category_pl": "Video Generation",
+        "category_en": "Video Generation",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "JoyAI Video Edit — 16B multimodal diffusion transformer do edycji istniejących video z promptem w języku naturalnym. 720p 30fps, real-time editing (~1s latency). Autoregressive diffusion model — procesuje video chunk by chunk. Edycja ubrań, usuwanie postaci, dodawanie czapek, zmiana stylu. Jakość porównywalna z Kling 3 Omni. Apache 2. 32.5GB. ComfyUI support.",
+        "review_en": "JoyAI Video Edit — 16B multimodal diffusion transformer for editing existing videos with natural language prompts. 720p 30fps, real-time editing (~1s latency). Autoregressive diffusion model — processes video chunk by chunk. Edit outfits, remove characters, add hats, change style. Quality matches Kling 3 Omni. Apache 2. 32.5GB. ComfyUI support.",
+        "links": [
+          {
+            "label": "JoyAI Video Edit",
+            "url": "https://github.com/jd-opensource/JoyAI-Video-Edit"
+          }
+        ]
+      },
+      {
+        "title_pl": "Scope (Tencent) — kontrola ruchu kamery w AI video",
+        "title_en": "Scope (Tencent) — camera movement control for AI video",
+        "vendor": "Tencent",
+        "category_pl": "Video Generation",
+        "category_en": "Video Generation",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "Tencent Scope — framework do kontroli ruchu kamery w AI video. Input image + camera path → video. Pullback, rise, push sweep, S curve, crane up, dolly in. Apache 2. Bazuje na 12.2 + Diff Singer Studio. Run locally z instrukcjami w repo.",
+        "review_en": "Tencent Scope — framework for controlling camera movement in AI video. Input image + camera path → video. Pullback, rise, push sweep, S curve, crane up, dolly in. Apache 2. Based on 12.2 + Diff Singer Studio. Run locally with instructions in repo.",
+        "links": [
+          {
+            "label": "Scope",
+            "url": "https://visual-ai.github.io/scope"
+          }
+        ]
+      },
+      {
+        "title_pl": "DeepSeek V4 Pro 0813 — 1.7T MoE, D-Spark, 6 centów/task",
+        "title_en": "DeepSeek V4 Pro 0813 — 1.7T MoE, D-Spark, 6 cents/task",
+        "vendor": "DeepSeek",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "DeepSeek V4 Pro 0813 — 1.7T MoE z D-Spark speculative decoding. Performance na poziomie GLM, Kimi K3 i Opus na knowledge/agentic benchmarks (Humanity's Last Exam, Terminal Bench, DeepSWE). Artificial Analysis: poniżej Kimi K3, tied z GLM 5.2. Koszt 6 centów/task — najtańszy frontier model. 893GB raw. Unsloth GGUFs w drodze. Najlepszy intelligence vs cost.",
+        "review_en": "DeepSeek V4 Pro 0813 — 1.7T MoE with D-Spark speculative decoding. Performs as well as GLM, Kimi K3 and Opus on knowledge/agentic benchmarks (Humanity's Last Exam, Terminal Bench, DeepSWE). Artificial Analysis: slightly below Kimi K3, tied with GLM 5.2. Cost 6 cents/task — cheapest frontier model. 893GB raw. Unsloth GGUFs coming. Best intelligence vs cost.",
+        "links": [
+          {
+            "label": "DeepSeek V4 Pro 0813",
+            "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
+          }
+        ]
+      },
+      {
+        "title_pl": "DeepSeek Harness — pierwszy harness od DeepSeek",
+        "title_en": "DeepSeek Harness — first harness from DeepSeek",
+        "vendor": "DeepSeek",
+        "category_pl": "Coding",
+        "category_en": "Coding",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "DeepSeek Harness — pierwszy własny harness dla DeepSeek models (wcześniej brakowało). Dev preview, iterating rapidly, expect breaking changes. Najlepiej używać harness od tego samego producenta co model — w przyszłości recommended harness dla DeepSeek.",
+        "review_en": "DeepSeek Harness — first own harness for DeepSeek models (was lacking before). Dev preview, iterating rapidly, expect breaking changes. Best to use harness from the same company as the model — going forward the recommended harness for DeepSeek.",
+        "links": [
+          {
+            "label": "DeepSeek Harness",
+            "url": "https://github.com/deepseek-ai/deepseek-harness"
+          }
+        ]
+      },
+      {
+        "title_pl": "Grok 4.6 — xAI łapie frontier, tańszy niż GPT-5.6",
+        "title_en": "Grok 4.6 — xAI catches frontier, cheaper than GPT-5.6",
+        "vendor": "xAI",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "xAI Grok 4.6 — caught up to frontier. Artificial Analysis: tied z GPT 5.6 Soul, 1 punkt powyżej Chimera 3. GDP val: outperforms Fable 5 i GPT 5.6. DeepSWE: wciąż za GPT. Self-checking podczas long tasks. Cursor + Grok Build + API. Koszt = Qwen 1.5 3 (tańszy niż GPT-5.6). Closed, paid.",
+        "review_en": "xAI Grok 4.6 — caught up to frontier. Artificial Analysis: tied with GPT 5.6 Soul, 1 point above Chimera 3. GDP val: outperforms Fable 5 and GPT 5.6. DeepSWE: still behind GPT. Self-checking during long tasks. Cursor + Grok Build + API. Cost = Qwen 1.5 3 (cheaper than GPT-5.6). Closed, paid.",
+        "links": [
+          {
+            "label": "Grok 4.6",
+            "url": "https://x.ai/news/grok-4-6"
+          }
+        ]
+      },
+      {
+        "title_pl": "Qwen 3.8 Max — 2.4T MoE, 95B active, open source",
+        "title_en": "Qwen 3.8 Max — 2.4T MoE, 95B active, open source",
+        "vendor": "Alibaba",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "Alibaba Qwen 3.8 Max — 2.4T MoE, 95B active. Open source. Matches frontier closed models na agentic benchmarks. Artificial Analysis: 2 punkty poniżej Qwen 1.5 3, lepiej niż DeepSeek V4. 4.8TB full. API dostępne teraz. Props dla Alibaba za darmowe wydanie tak masywnego modelu.",
+        "review_en": "Alibaba Qwen 3.8 Max — 2.4T MoE, 95B active. Open source. Matches frontier closed models on agentic benchmarks. Artificial Analysis: 2 points below Qwen 1.5 3, better than DeepSeek V4. 4.8TB full. API available now. Props to Alibaba for releasing such a massive model for free.",
+        "links": [
+          {
+            "label": "Qwen 3.8 Max",
+            "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+          }
+        ]
+      },
+      {
+        "title_pl": "MiDasheng (Xiaomi) — generator scen audio, <12GB",
+        "title_en": "MiDasheng (Xiaomi) — audio scene generator, <12GB",
+        "vendor": "Xiaomi",
+        "category_pl": "TTS",
+        "category_en": "TTS",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "Xiaomi MiDasheng — generator scen audio: speech, music, sound effects, environmental noises. Emocje, multiple languages. <12GB total — mieści się na mid-end GPU. GitHub open source z instrukcjami. Speech z emocjami (rage, angry), brass quintet music, environmental sounds. Super flexible dla kompletnych audio scenes.",
+        "review_en": "Xiaomi MiDasheng — audio scene generator: speech, music, sound effects, environmental noises. Emotions, multiple languages. <12GB total — fits on mid-end GPU. GitHub open source with instructions. Speech with emotions (rage, angry), brass quintet music, environmental sounds. Super flexible for complete audio scenes.",
+        "links": [
+          {
+            "label": "MiDasheng",
+            "url": "https://xingws.github.io/midashenglm-gen-demo/"
+          }
+        ]
+      },
+      {
+        "title_pl": "Genspark SecondBrain — wearable recorder, 35h battery, 64GB local",
+        "title_en": "Genspark SecondBrain — wearable recorder, 35h battery, 64GB local",
+        "vendor": "Genspark",
+        "category_pl": "Hardware",
+        "category_en": "Hardware",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "Genspark SecondBrain — SPONSOR AI Search. Wearable recorder (credit card size), 35h battery, 4-mic bone conduction array, 64GB local storage. AI organizuje meetings, conversations, ideas. Connects to email, calendar, Notion, Google Workspace, HubSpot. Personal Wikipedia z Twoich nagrań. Super Agent do actions (draft emails, proposals, documents). Bookmark button na ważne momenty.",
+        "review_en": "Genspark SecondBrain — SPONSOR of AI Search. Wearable recorder (credit card size), 35h battery, 4-mic bone conduction array, 64GB local storage. AI organizes meetings, conversations, ideas. Connects to email, calendar, Notion, Google Workspace, HubSpot. Personal Wikipedia from your recordings. Super Agent for actions (draft emails, proposals, documents). Bookmark button for important moments.",
+        "links": [
+          {
+            "label": "Genspark SecondBrain",
+            "url": "https://shop.genspark.ai/s/theaisearch"
+          }
+        ]
+      },
+      {
+        "title_pl": "LTX 2.5 vs Minimax H3 — porównanie video modeli",
+        "title_en": "LTX 2.5 vs Minimax H3 — video models comparison",
+        "vendor": "Open-source",
+        "category_pl": "Video Generation",
+        "category_en": "Video Generation",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "LTX 2.5 vs Minimax H3 — porównanie na diverse prompts. Minimax H3 wygrywa: fight scenes, emotion, anime, text rendering, professor Pythagorean theorem. LTX 2.5 wygrywa: camera movements (orbit). LTX faster (half time). Oba open source. LTX 2.5: native multi-shot, cleaner motion, audio baked in, int8 22GB, ComfyUI support, działa z LTX 2 LoRAs. Minimax H3 wciąż lider jakości.",
+        "review_en": "LTX 2.5 vs Minimax H3 — comparison on diverse prompts. Minimax H3 wins: fight scenes, emotion, anime, text rendering, professor Pythagorean theorem. LTX 2.5 wins: camera movements (orbit). LTX faster (half time). Both open source. LTX 2.5: native multi-shot, cleaner motion, audio baked in, int8 22GB, ComfyUI support, works with LTX 2 LoRAs. Minimax H3 still quality leader.",
+        "links": [
+          {
+            "label": "LTX 2.5",
+            "url": "https://ltx.io/model/ltx-2-5"
+          }
+        ]
+      },
+      {
+        "title_pl": "Sign language to text — Google DeepMind realtime translation",
+        "title_en": "Sign language to text — Google DeepMind realtime translation",
+        "vendor": "Open-source",
+        "category_pl": "Multimodal",
+        "category_en": "Multimodal",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "Google DeepMind — AI konwertuje sign language na text realtime. Trenowany na 100K+ hours data, 50+ sign languages. 70 na benchmark — najwyższy score to date. ASL available teraz na Gboard + Live Transcribe na Pixel 11. Więcej devices i languages w drodze. Useful dla osób głuchych/hard-of-hearing.",
+        "review_en": "Google DeepMind — AI converts sign language to text in real time. Trained on 100K+ hours of data, 50+ sign languages. 70 on benchmark — highest score to date. ASL available now on Gboard + Live Transcribe on Pixel 11. More devices and languages coming soon. Useful for deaf/hard-of-hearing people.",
+        "links": [
+          {
+            "label": "Sign language to text",
+            "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/"
+          }
+        ]
+      },
+      {
+        "title_pl": "GPT Ultrafast — 750 tok/s, Cerebras partnership",
+        "title_en": "GPT Ultrafast — 750 tok/s, Cerebras partnership",
+        "vendor": "OpenAI",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "OpenAI GPT Ultrafast — ultra-fast GPT model na GPT-5.6 Soul. 750 output tokens/sec — 14x faster niż standard. Powered by Cerebras partnership. >2x szybciej niż Gemini 3.7 Flash. Use cases: incident response, financial research, quant trading, customer support, voice. Limited preview dla select customers. Capacity expansion planned.",
+        "review_en": "OpenAI GPT Ultrafast — ultra-fast GPT model on GPT-5.6 Soul. 750 output tokens/sec — 14x faster than standard. Powered by Cerebras partnership. >2x faster than Gemini 3.7 Flash. Use cases: incident response, financial research, quant trading, customer support, voice. Limited preview for select customers. Capacity expansion planned.",
+        "links": [
+          {
+            "label": "GPT Ultrafast",
+            "url": "https://openai.com/index/previewing-ultrafast/"
+          }
+        ]
+      },
+      {
+        "title_pl": "Qwen 3.8 27B — Opus 4.6 Max intelligence na lokalnym GPU",
+        "title_en": "Qwen 3.8 27B — Opus 4.6 Max intelligence on local GPU",
+        "vendor": "Alibaba",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "Alibaba Qwen 3.8 27B — najlepszy medium-sized model do lokalnego użytku. Outperforms Opus 4.6 Max na agentic/knowledge benchmarks. Multimodal (image + video), 1M context. 56GB full, 30GB FP8, 9GB Q2 GGUF. Unsloth GGUFs dostępne. 'Underwhelming compared to Qwen 3.6' ale wciąż dobry. Najlepszy model offline w tym size range.",
+        "review_en": "Alibaba Qwen 3.8 27B — best medium-sized model for local use. Outperforms Opus 4.6 Max on agentic/knowledge benchmarks. Multimodal (image + video), 1M context. 56GB full, 30GB FP8, 9GB Q2 GGUF. Unsloth GGUFs available. 'Underwhelming compared to Qwen 3.6' but still good. Best offline model in this size range.",
+        "links": [
+          {
+            "label": "Qwen 3.8 27B",
+            "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
+          }
+        ]
+      },
+      {
+        "title_pl": "GLM 5.3 — najlepszy open-source model, światowy lider cybersecurity",
+        "title_en": "GLM 5.3 — best open-source model, world cybersecurity leader",
+        "vendor": "Z.AI / Zhipu AI",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "Z.AI GLM 5.3 — najlepszy open-source model teraz. Ten sam size co 5.2 (743B MoE), tylko post-trained harder (więcej environments, diverse tasks, compute). CriminalBench: best. DeepSWE: huge improvement. GDP Val: world's best. Cybersecurity: best in world (Cyber Gym), outperforms Fable 5 i GPT 5.6. ExploitBench/ExploitGym: insane improvement. Znalazł thousands of vulnerabilities w open-source projects. Open source za ~2 tygodnie. ZCode plan dostępny teraz.",
+        "review_en": "Z.AI GLM 5.3 — best open-source model right now. Same size as 5.2 (743B MoE), just post-trained harder (more environments, diverse tasks, compute). CriminalBench: best. DeepSWE: huge improvement. GDP Val: world's best. Cybersecurity: best in world (Cyber Gym), outperforms Fable 5 and GPT 5.6. ExploitBench/ExploitGym: insane improvement. Found thousands of vulnerabilities in open-source projects. Open source in ~2 weeks. ZCode plan available now.",
+        "links": [
+          {
+            "label": "GLM 5.3",
+            "url": "https://z.ai/blog/glm-5.3"
+          }
+        ]
+      },
+      {
+        "title_pl": "Gemini 3.7 Flash — 340 tok/s, frontier Code #1 wśród flash",
+        "title_en": "Gemini 3.7 Flash — 340 tok/s, frontier Code #1 among flash",
+        "vendor": "Google",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "Google Gemini 3.7 Flash — najszybszy model. 340 output tokens/sec. Frontier Code #1 wśród flash models. Multimodal (text, images, video, audio, documents). DeepSweep: blisko GPT 5.6 Turbo. Web dev, PDF comprehension bardzo dobre. 40 centów/task (3x droższy niż GPT 5.6 Luna Max 5 centów). Trade-off speed vs cost. Anti-gravity + AI Studio + Gemini app (Pro/Ultra only).",
+        "review_en": "Google Gemini 3.7 Flash — fastest model. 340 output tokens/sec. Frontier Code #1 among flash models. Multimodal (text, images, video, audio, documents). DeepSweep: close to GPT 5.6 Turbo. Web dev, PDF comprehension very good. 40 cents/task (3x more expensive than GPT 5.6 Luna Max at 5 cents). Trade-off speed vs cost. Anti-gravity + AI Studio + Gemini app (Pro/Ultra only).",
+        "links": [
+          {
+            "label": "Gemini 3.7 Flash",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/"
+          }
+        ]
+      },
+      {
+        "title_pl": "Minimax Music 3 — najlepszy open-source music generator, 9.8GB",
+        "title_en": "Minimax Music 3 — best open-source music generator, 9.8GB",
+        "vendor": "MiniMax",
+        "category_pl": "TTS",
+        "category_en": "TTS",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "MiniMax Music 3 — najlepszy open-source music generator. Genre, speed, key, instruments, vibe via prompt. Lyrics z meta tags (intro, outro, verse, bridge, chorus). Super clean professional songs. 9.8GB full, int8 dostępne (low-end GPUs). Open source. Tutorial już dostępny.",
+        "review_en": "MiniMax Music 3 — best open-source music generator. Genre, speed, key, instruments, vibe via prompt. Lyrics with meta tags (intro, outro, verse, bridge, chorus). Super clean professional songs. 9.8GB full, int8 available (low-end GPUs). Open source. Tutorial already available.",
+        "links": [
+          {
+            "label": "Minimax Music 3 tutorial",
+            "url": "https://youtu.be/aUcDyeZgz_k"
+          }
+        ]
+      },
+      {
+        "title_pl": "Index TTS 2.5 — SOTA TTS, voice cloning, 5.5GB",
+        "title_en": "Index TTS 2.5 — SOTA TTS, voice cloning, 5.5GB",
+        "vendor": "Open-source",
+        "category_pl": "TTS",
+        "category_en": "TTS",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "Index TTS 2.5 — state-of-the-art text-to-speech. Kilka sekund reference voice → say anything. Emocje (angry), multiple languages. Voice cloning + dubbing (Chinese → Spanish). 5.5GB total — mieści się na consumer devices. Open source z instrukcjami na Hugging Face.",
+        "review_en": "Index TTS 2.5 — state-of-the-art text-to-speech. Few seconds of reference voice → say anything. Emotions (angry), multiple languages. Voice cloning + dubbing (Chinese → Spanish). 5.5GB total — fits on consumer devices. Open source with instructions on Hugging Face.",
+        "links": [
+          {
+            "label": "Index TTS 2.5",
+            "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5"
+          }
+        ]
+      },
+      {
+        "title_pl": "Magi 2 — 114B MoE video model, 8x Hopper GPU",
+        "title_en": "Magi 2 — 114B MoE video model, 8x Hopper GPU",
+        "vendor": "Open-source",
+        "category_pl": "Video Generation",
+        "category_en": "Video Generation",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "Magi 2 — 114B MoE (6B active) video model. Audio baked in. 10s generations, 1080p refiner. 228GB total — potrzeba 8x Nvidia Hopper GPU. Nie consumer-usable ale architecture interesting. Open source.",
+        "review_en": "Magi 2 — 114B MoE (6B active) video model. Audio baked in. 10s generations, 1080p refiner. 228GB total — needs 8x Nvidia Hopper GPU. Not consumer-usable but architecture interesting. Open source.",
+        "links": [
+          {
+            "label": "Magi 2",
+            "url": "https://huggingface.co/sand-ai/MAGI-2-preview"
+          }
+        ]
+      },
+      {
+        "title_pl": "Cactus Needle — 45M params, 14MB binary, Raspberry Pi 5",
+        "title_en": "Cactus Needle — 45M params, 14MB binary, Raspberry Pi 5",
+        "vendor": "Open-source",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "Cactus Needle 2 — ultra-tiny model dla very small devices. 45M params, 14MB binary, 28MB RAM. No GPU needed. 500 tok/s na Raspberry Pi 5, 1500 na VR, 700 na cheap phones <$200. Use cases: device control, tool calling, info extraction. Not for long reasoning/agentic tasks.",
+        "review_en": "Cactus Needle 2 — ultra-tiny model for very small devices. 45M params, 14MB binary, 28MB RAM. No GPU needed. 500 tok/s on Raspberry Pi 5, 1500 on VR, 700 on cheap phones <$200. Use cases: device control, tool calling, info extraction. Not for long reasoning/agentic tasks.",
+        "links": [
+          {
+            "label": "Cactus Needle",
+            "url": "https://cactuscompute.com/needle"
+          }
+        ]
+      },
+      {
+        "title_pl": "WorldClaw (Tencent) — całe otwarte 3D worlds z text",
+        "title_en": "WorldClaw (Tencent) — entire open 3D worlds from text",
+        "vendor": "Tencent",
+        "category_pl": "World Models",
+        "category_en": "World Models",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "Tencent WorldClaw — generuje całe otwarte 3D worlds z text description. Snowy village, desert battlefield. Depth, normal, individual objects. Multi-agent planning → sequential generation (coarse to fine) → inspection/refinement. GitHub dostępny ale jeszcze nie open source. Reusable w video game design.",
+        "review_en": "Tencent WorldClaw — generates entire open 3D worlds from text description. Snowy village, desert battlefield. Depth, normal, individual objects. Multi-agent planning → sequential generation (coarse to fine) → inspection/refinement. GitHub available but not open source yet. Reusable in video game design.",
+        "links": [
+          {
+            "label": "WorldClaw",
+            "url": "https://tencent-hunyuan.github.io/Hunyuan3D-WorldClaw/"
+          }
+        ]
+      },
+      {
+        "title_pl": "Dyna 2 — world action model, 1M+ godzin human video",
+        "title_en": "Dyna 2 — world action model, 1M+ hours human video",
+        "vendor": "Open-source",
+        "category_pl": "Humanoid Robots",
+        "category_en": "Humanoid Robots",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "Dyna 2 — world action model trained na 1M+ godzin first-person human videos (~170 lat continuous experience). Folding clothes, cooking, cleaning, assembling. Scaling law: więcej human data → lepsza robot performance. Small amount robot data needed for adaptation. Robot wykonuje folding, cleaning, manipulating objects. Fascinating — humans teach robots via video.",
+        "review_en": "Dyna 2 — world action model trained on 1M+ hours of first-person human videos (~170 years of continuous experience). Folding clothes, cooking, cleaning, assembling. Scaling law: more human data → better robot performance. Small amount of robot data needed for adaptation. Robot performs folding, cleaning, manipulating objects. Fascinating — humans teach robots via video.",
+        "links": [
+          {
+            "label": "Dyna 2",
+            "url": "https://www.dyna.co/dyna-2"
+          }
+        ]
+      },
+      {
+        "title_pl": "Nemotron 3.5 Lightning + NeMo SwitchYard — router, 3x tańszy",
+        "title_en": "Nemotron 3.5 Lightning + NeMo SwitchYard — router, 3x cheaper",
+        "vendor": "NVIDIA",
+        "category_pl": "LLM",
+        "category_en": "LLM",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "NVIDIA Nemotron 3.5 Lightning — 30B MoE, 1M context. 6 attention layers, 23 Mamba 2, 23 MoE. Najszybszy 30B model (~2x Qwen 3.6). NeMo SwitchYard — open-source router, picks best model per task (traffic controller). Complicated → intelligent agent, simple → small/fast agent. 3x tańszy niż Opus 4.8 alone + więcej tasks completed. 22GB FP4. Open source.",
+        "review_en": "NVIDIA Nemotron 3.5 Lightning — 30B MoE, 1M context. 6 attention layers, 23 Mamba 2, 23 MoE. Fastest 30B model (~2x Qwen 3.6). NeMo SwitchYard — open-source router, picks best model per task (traffic controller). Complicated → intelligent agent, simple → small/fast agent. 3x cheaper than Opus 4.8 alone + more tasks completed. 22GB FP4. Open source.",
+        "links": [
+          {
+            "label": "Nemotron Lightning",
+            "url": "https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx"
+          }
+        ]
+      },
+      {
+        "title_pl": "MatrAIx — symulacja populacji z 8.3B persona agents",
+        "title_en": "MatrAIx — population simulation with 8.3B persona agents",
+        "vendor": "Open-source",
+        "category_pl": "AI Research",
+        "category_en": "AI Research",
+        "date": "2026-08-15",
+        "thumbnail": "https://i.ytimg.com/vi/62HSUsS0ypo/hqdefault.jpg",
+        "review_pl": "MatrAIx — symulacja całej populacji ludzkiej z 8.3B persona agents. 1290 persona attributes, 1000+ applications. Test products na millions of simulated users. Surveys, shopping, chatbot testing (helpfulness, safety, reliability). 'Może my też jesteśmy persona agents w simulation.' Pytanie: jak blisko simlated users do real humans? Too early to say ale concept fascinating.",
+        "review_en": "MatrAIx — simulates entire human population with 8.3B persona agents. 1290 persona attributes, 1000+ applications. Test products on millions of simulated users. Surveys, shopping, chatbot testing (helpfulness, safety, reliability). 'Maybe we are also persona agents in a simulation.' Question: how close are simulated users to real humans? Too early to say but fascinating concept.",
+        "links": [
+          {
+            "label": "MatrAIx",
+            "url": "https://matraix.ai/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "num": "##32-2",
     "date": "2026-08-12",
     "title_pl": "Minimax H3 advanced tutorial — ComfyUI, loras, turbo, live preview, GGUF",
