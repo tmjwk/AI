@@ -169,6 +169,17 @@ function loadData(name,url,callback){
   document.head.appendChild(script);
 }
 
+function checkAlreadyLoaded(){
+  var allLoaded=true;
+  if(typeof M==='undefined')allLoaded=false;
+  if(typeof RECENT_EPISODES==='undefined'&&typeof EPISODES==='undefined')allLoaded=false;
+  if(typeof RELEASES==='undefined')allLoaded=false;
+  if(typeof episodes==='undefined')allLoaded=false;
+  if(typeof CALENDAR==='undefined')allLoaded=false;
+  if(typeof G==='undefined'&&typeof GLOSSARY==='undefined')allLoaded=false;
+  if(allLoaded){onAllDataLoaded();return true;}
+  return false;
+}
 function onAllDataLoaded(){
   // Extract data from loaded JS variables
   if(typeof M!=='undefined')searchData.models=M;
@@ -177,11 +188,13 @@ function onAllDataLoaded(){
   if(typeof RELEASES!=='undefined')searchData.releases=RELEASES;
   if(typeof episodes!=='undefined')searchData.radar=episodes;
   if(typeof CALENDAR!=='undefined')searchData.calendar=CALENDAR;
-  if(typeof G!=='undefined')searchData.glossary=G;
+  if(typeof G!=='undefined')searchData.glossary=G;else if(typeof GLOSSARY!=='undefined')searchData.glossary=GLOSSARY;
   document.getElementById('searchInput').disabled=false;
   document.getElementById('searchInput').placeholder=S.lang==='en'?'Search everything...':'Szukaj we wszystkim...';
 }
 
+// Check if data already loaded (scripts may be in DOM already)
+if(!checkAlreadyLoaded()){
 // Load all data files
 loadData('models','data/models.js?v=20260817010000');
 loadData('episodes','data/episodes/recent.js?v=20260817010000');
@@ -189,6 +202,7 @@ loadData('releases','data/releases.js?v=20260817010000');
 loadData('radar','data/radar.js?v=20260817010000');
 loadData('calendar','data/calendar.js?v=20260817010000');
 loadData('glossary','data/glossary.js?v=20260817010000');
+} // end if(!checkAlreadyLoaded())
 
 // === SEARCH ===
 function search(query){
