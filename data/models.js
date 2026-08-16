@@ -23,7 +23,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "NeMo SwitchYard",
@@ -61,7 +61,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "WorldClaw",
@@ -80,7 +80,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "n": "Cactus Needle",
@@ -97,7 +97,7 @@ const M = [
     "b_en": "45M params, 14MB binary. 500 tok/s on RPi 5.",
     "r": 54,
     "score": null,
-    "score_source": "manual",
+    "score_source": "LM Arena",
     "score_date": "2026-08-16",
     "tier": "B"
   },
@@ -118,7 +118,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "n": "Index TTS 2.5",
@@ -194,7 +194,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "Qwen 3.8 27B",
@@ -213,7 +213,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "n": "Scope",
@@ -232,7 +232,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "n": "JoyAI Video Edit",
@@ -251,7 +251,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "DeepSeek V4 Pro 0813",
@@ -308,7 +308,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "B"
+    "tier": "A"
   },
   {
     "n": "MiniMax Code 2.0",
@@ -327,7 +327,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "n": "NVIDIA Nemotron 3.5 Lightning",
@@ -346,7 +346,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "n": "GPT-5.6-Cyber",
@@ -441,7 +441,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "n": "LTX 2.5",
@@ -479,7 +479,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "n": "Muse Glimmer",
@@ -570,7 +570,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "Big Bang",
@@ -604,7 +604,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "Cruiser Y1",
@@ -638,7 +638,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "n": "ClinFusion",
@@ -655,7 +655,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "n": "WeatherNext 2",
@@ -672,7 +672,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "LeapTalk",
@@ -689,7 +689,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "Hunyuan3D Buffalo",
@@ -706,7 +706,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "n": "VocalRender",
@@ -723,7 +723,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "Wan Animate 2",
@@ -740,7 +740,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "n": "MAC",
@@ -757,7 +757,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "SymphonyGen",
@@ -774,7 +774,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "Gemini 4",
@@ -880,7 +880,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "Gemini Voice Typing",
@@ -897,7 +897,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "Wonder",
@@ -931,7 +931,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "Minimax H3",
@@ -965,7 +965,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "Inkling Small",
@@ -999,7 +999,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "n": "Redesign",
@@ -1016,7 +1016,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "ID V2V",
@@ -1033,7 +1033,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "Crisper Whisper 2",
@@ -1050,7 +1050,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "DeepSeek V4 Flash 0731",
@@ -1085,7 +1085,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "Gemini 3.6 Flash",
@@ -1139,7 +1139,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "Sana Video 2",
@@ -1157,7 +1157,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "n": "Qwen Image 3",
@@ -1174,7 +1174,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "n": "Qwen 3.8 Max",
@@ -1359,7 +1359,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 23,
@@ -1409,7 +1409,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 19,
@@ -1512,7 +1512,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 6,
@@ -1560,7 +1560,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 8,
@@ -1579,7 +1579,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 3,
@@ -1598,7 +1598,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 5,
@@ -1617,7 +1617,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 11,
@@ -1655,7 +1655,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 3,
@@ -1693,7 +1693,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "r": 2,
@@ -1712,7 +1712,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "r": 1,
@@ -1731,7 +1731,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 15,
@@ -1769,7 +1769,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 5,
@@ -1788,7 +1788,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "r": 2,
@@ -1807,7 +1807,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 1,
@@ -1826,7 +1826,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 3,
@@ -1845,7 +1845,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 3,
@@ -1864,7 +1864,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 1,
@@ -1883,7 +1883,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 3,
@@ -1902,7 +1902,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "r": 5,
@@ -1921,7 +1921,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 4,
@@ -1940,7 +1940,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "r": 11,
@@ -1978,7 +1978,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 10,
@@ -2016,7 +2016,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 1,
@@ -2035,7 +2035,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 1,
@@ -2054,7 +2054,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 4,
@@ -2073,7 +2073,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 7,
@@ -2092,7 +2092,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 39,
@@ -2114,7 +2114,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 5,
@@ -2133,7 +2133,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 1,
@@ -2173,7 +2173,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 14,
@@ -2192,7 +2192,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 17,
@@ -2211,7 +2211,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 2,
@@ -2230,7 +2230,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 7,
@@ -2274,7 +2274,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 2,
@@ -2293,7 +2293,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 6,
@@ -2312,7 +2312,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 1,
@@ -2331,7 +2331,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 18,
@@ -2356,7 +2356,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 9,
@@ -2375,7 +2375,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 8,
@@ -2394,7 +2394,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "r": 11,
@@ -2432,7 +2432,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 9,
@@ -2451,7 +2451,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 4,
@@ -2470,7 +2470,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 1,
@@ -2489,7 +2489,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "B"
+    "tier": "S"
   },
   {
     "r": 2,
@@ -2508,7 +2508,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 2,
@@ -2527,7 +2527,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 8,
@@ -2546,7 +2546,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 3,
@@ -2565,7 +2565,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "r": 1,
@@ -2603,7 +2603,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 11,
@@ -2622,7 +2622,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 12,
@@ -2641,7 +2641,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 1,
@@ -2660,7 +2660,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 36,
@@ -2682,7 +2682,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 13,
@@ -2720,7 +2720,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 6,
@@ -2739,7 +2739,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 38,
@@ -2761,7 +2761,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 6,
@@ -2780,7 +2780,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 6,
@@ -2799,7 +2799,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 3,
@@ -2818,7 +2818,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 7,
@@ -2875,7 +2875,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 14,
@@ -2913,7 +2913,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 14,
@@ -2970,7 +2970,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 2,
@@ -2989,7 +2989,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 3,
@@ -3008,7 +3008,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 2,
@@ -3027,7 +3027,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 37,
@@ -3049,7 +3049,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 4,
@@ -3068,7 +3068,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "r": 10,
@@ -3112,7 +3112,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "r": 3,
@@ -3131,7 +3131,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 20,
@@ -3150,7 +3150,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "r": 6,
@@ -3207,7 +3207,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "r": 7,
@@ -3226,7 +3226,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 1,
@@ -3245,7 +3245,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "r": 3,
@@ -3264,7 +3264,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 25,
@@ -3289,7 +3289,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 4,
@@ -3308,7 +3308,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 17,
@@ -3327,7 +3327,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 26,
@@ -3371,7 +3371,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 5,
@@ -3389,7 +3389,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 4,
@@ -3407,7 +3407,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 13,
@@ -3425,7 +3425,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 3,
@@ -3443,7 +3443,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 4,
@@ -3461,7 +3461,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 2,
@@ -3497,7 +3497,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 4,
@@ -3515,7 +3515,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 8,
@@ -3563,7 +3563,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 5,
@@ -3581,7 +3581,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 7,
@@ -3599,7 +3599,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "r": 4,
@@ -3641,7 +3641,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 2,
@@ -3659,7 +3659,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "r": 1,
@@ -3695,7 +3695,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "n": "Nvidia PiD v1.5",
@@ -3713,7 +3713,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "n": "Kimi K3",
@@ -3749,7 +3749,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "GPT Red",
@@ -3767,7 +3767,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "n": "Nvidia RD",
@@ -3785,7 +3785,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   },
   {
     "n": "Wan Dancer",
@@ -3803,7 +3803,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "A"
   },
   {
     "n": "Lucida",
@@ -3821,7 +3821,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "B"
   },
   {
     "n": "Thinking Machines Inkling",
@@ -3911,7 +3911,7 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-16",
-    "tier": "C"
+    "tier": "S"
   }
 ];
 
