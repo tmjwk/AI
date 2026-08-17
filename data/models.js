@@ -97,8 +97,8 @@ const M = [
     "b_en": "45M params, 14MB binary. 500 tok/s on RPi 5.",
     "r": 54,
     "score": null,
-    "score_source": "LM Arena",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -115,10 +115,10 @@ const M = [
     "b_pl": "114B MoE, audio baked in. 8x Hopper GPU.",
     "b_en": "114B MoE, audio baked in. 8x Hopper GPU.",
     "r": 22,
-    "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
-    "tier": "S"
+    "score": 1105.0,
+    "score_source": "AI Video Arena",
+    "score_date": "2026-08-17",
+    "tier": "C"
   },
   {
     "n": "Index TTS 2.5",
@@ -173,8 +173,8 @@ const M = [
     "b_en": "750 tok/s (Cerebras). 14x faster than standard.",
     "r": 53,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -192,8 +192,8 @@ const M = [
     "b_en": "Speech + music + SFX in one scene. <12GB.",
     "r": 12,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -211,8 +211,8 @@ const M = [
     "b_en": "Opus 4.6 Max intelligence locally. 9GB Q2 GGUF.",
     "r": 52,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -229,10 +229,10 @@ const M = [
     "b_pl": "Camera path control. Apache 2. Run locally.",
     "b_en": "Camera path control. Apache 2. Run locally.",
     "r": 21,
-    "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
-    "tier": "A"
+    "score": 100.0,
+    "score_source": "AI Video Arena",
+    "score_date": "2026-08-17",
+    "tier": "C"
   },
   {
     "n": "JoyAI Video Edit",
@@ -249,8 +249,8 @@ const M = [
     "b_en": "16B, 720p 30fps, real-time ~1s. Apache 2.",
     "r": 20,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -287,8 +287,8 @@ const M = [
     "b_en": "xAI image generation. Latest imaging iteration.",
     "r": 24,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "C"
   },
   {
@@ -306,8 +306,8 @@ const M = [
     "b_en": "<8B total, 128 experts, 266K context. Hybrid reasoning MoE. Small efficient.",
     "r": 50,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "A"
   },
   {
@@ -324,10 +324,10 @@ const M = [
     "b_pl": "Desktop agent rebuild. 90% lower first token latency. Agent teams.",
     "b_en": "Desktop agent rebuild. 90% lower first token latency. Agent teams.",
     "r": 7,
-    "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
-    "tier": "A"
+    "score": 65.0,
+    "score_source": "SWE-bench",
+    "score_date": "2026-08-17",
+    "tier": "S"
   },
   {
     "n": "NVIDIA Nemotron 3.5 Lightning",
@@ -344,8 +344,8 @@ const M = [
     "b_en": "52 layers, 6 attention, 23 Mamba 2, 23 MoE. 30B/3B active. Single GPU. 1M context.",
     "r": 49,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -401,8 +401,8 @@ const M = [
     "b_en": "Open-source harness v0.1. Prices raised, still 10x cheaper than frontier.",
     "r": 46,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -439,8 +439,8 @@ const M = [
     "b_en": "Post-transformer arch. ARC AGI at fraction of cost. Hot mess, kitchen sink of motifs. Ship of Theseus replacement.",
     "r": 44,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -567,10 +567,10 @@ const M = [
     "desc_en": "Long Horizon Harness — framework for complex long tasks (hours/days). 3 roles: manager, executor (fresh context), auditor (independent verification). Works across Claude Code, Codex CLI, Gemini CLI, ZCode, KimmyCode. SWE-bench +28.9%.",
     "b_pl": "SWE-bench +28.9%, OS World 2 tripled. Cross-CLI.",
     "b_en": "SWE-bench +28.9%, OS World 2 tripled. Cross-CLI.",
-    "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
-    "tier": "B"
+    "score": 65.0,
+    "score_source": "SWE-bench",
+    "score_date": "2026-08-17",
+    "tier": "S"
   },
   {
     "n": "Big Bang",
@@ -585,8 +585,8 @@ const M = [
     "b_pl": "Self-evolving: generator + critic + metacritic agents.",
     "b_en": "Self-evolving: generator + critic + metacritic agents.",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -721,8 +721,8 @@ const M = [
     "b_pl": "Autoregressive + diffusion pipeline. Training code published.",
     "b_en": "Autoregressive + diffusion pipeline. Training code published.",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -737,10 +737,10 @@ const M = [
     "desc_en": "Alibaba Wan Animate 2 — photo + reference video → animated character. Hands/fingers, facial expressions, multiple characters, camera angle control. Light: real-time streaming <1s. 33GB, ComfyUI support.",
     "b_pl": "Real-time streaming (Light). Multiple characters + facial expressions.",
     "b_en": "Real-time streaming (Light). Multiple characters + facial expressions.",
-    "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
-    "tier": "A"
+    "score": 1121.0,
+    "score_source": "AI Video Arena",
+    "score_date": "2026-08-17",
+    "tier": "C"
   },
   {
     "n": "MAC",
@@ -772,8 +772,8 @@ const M = [
     "b_pl": "Under 5MB models. Run locally na consumer devices.",
     "b_en": "Under 5MB models. Run locally on consumer devices.",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -826,8 +826,8 @@ const M = [
     "b_en": "Jeff Dean + 3 Google AI leaders. Public benefit corp. Recursive self-improvement. Venode early investor.",
     "url": "https://discoveryloop.ai",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "C"
   },
   {
@@ -861,8 +861,8 @@ const M = [
     "b_pl": "Free online, daily credits.",
     "b_en": "Free online, daily credits.",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "C"
   },
   {
@@ -894,10 +894,10 @@ const M = [
     "desc_en": "Google Gemini Voice Typing — Mac OS only. Hold Fn key, speak into any app. Gemini transcription, removes fillers. Gemini reasoning mode: summarize documents.",
     "b_pl": "AI dictation, self-correction aware.",
     "b_en": "AI dictation, self-correction aware.",
-    "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
-    "tier": "B"
+    "score": 1212.0,
+    "score_source": "TTS Arena",
+    "score_date": "2026-08-17",
+    "tier": "S"
   },
   {
     "n": "Wonder",
@@ -997,8 +997,8 @@ const M = [
     "b_pl": "First frontier model without NVIDIA. Checkpoints + training recipes published.",
     "b_en": "First frontier model without NVIDIA. Checkpoints + training recipes published.",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -1014,8 +1014,8 @@ const M = [
     "b_pl": "Recolor, reposition, resize elements.",
     "b_en": "Recolor, reposition, resize elements.",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -1031,8 +1031,8 @@ const M = [
     "b_pl": "Background, lighting, clothing, style — all editable.",
     "b_en": "Background, lighting, clothing, style — all editable.",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -1048,8 +1048,8 @@ const M = [
     "b_pl": "Word-level timestamps. No GPU needed (0.2B version).",
     "b_en": "Word-level timestamps. No GPU needed (0.2B version).",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -1119,8 +1119,8 @@ const M = [
     "b_en": "3B params. Edge deployment. Chinese.",
     "url": "https://modelscope.ai/models/nanbeige/Nanbeige4.2-3B",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -1137,8 +1137,8 @@ const M = [
     "b_en": "Open source. Alternative to Sora, Veo.",
     "url": "https://next-state.github.io/open-dreamer/",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -1155,8 +1155,8 @@ const M = [
     "b_en": "Open source. High-quality video synthesis.",
     "url": "https://nvlabs.github.io/Sana/Video2/",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "A"
   },
   {
@@ -1172,8 +1172,8 @@ const M = [
     "b_pl": "Najlepszy image model Alibaba. Konkurent GPT image, Cream.",
     "b_en": "Best Alibaba image model. Competitor to GPT image, Cream.",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -1357,8 +1357,8 @@ const M = [
       "confidence": 2
     },
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -1407,8 +1407,8 @@ const M = [
       "confidence": 1
     },
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -1510,8 +1510,8 @@ const M = [
       "lmstats": 5.0
     },
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -1538,10 +1538,10 @@ const M = [
       "composite": 83.5,
       "confidence": 2
     },
-    "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
-    "tier": "S"
+    "score": 890.0,
+    "score_source": "LM Arena",
+    "score_date": "2026-08-17",
+    "tier": "C"
   },
   {
     "r": 35,
@@ -1558,8 +1558,8 @@ const M = [
     "b_pl": "Open-weights w przyszłości, ekosystem community",
     "b_en": "open-weights in the future, community ecosystem",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -1577,8 +1577,8 @@ const M = [
     "b_pl": "Tunable creativity, style references, moodboard conditioning — design i art",
     "b_en": "tunable creativity, style references, moodboard conditioning — design and art",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -1596,8 +1596,8 @@ const M = [
     "b_pl": "Całkowita kontrola stylu, edycja obrazów, integracja z Gemini",
     "b_en": "complete style control, image editing, Gemini integration",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -1615,8 +1615,8 @@ const M = [
     "b_pl": "Renderowanie tekstu w obrazach — logo, poster, design z napisami",
     "b_en": "text rendering in images — logos, posters, design with text",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -1634,8 +1634,8 @@ const M = [
     "b_pl": "Fotorealizm, precyzyjna kontrola kolorów i póz, image editing",
     "b_en": "photorealism, precise color and pose control, image editing",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -1653,8 +1653,8 @@ const M = [
     "b_pl": "Prywatność (offline), mobile-first UX, szybkie iteracje",
     "b_en": "privacy (offline), mobile-first UX, fast iterations",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -1690,10 +1690,10 @@ const M = [
     "desc_en": "Wan 2.5 — video generation model from Alibaba. Open weight, 14B params, text-to-video and image-to-video. Sora competitor.",
     "b_pl": "Open-source text-to-video, lokalne uruchamianie, custom trening",
     "b_en": "open-source text-to-video, local running, custom training",
-    "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
-    "tier": "A"
+    "score": 1158.0,
+    "score_source": "AI Video Arena",
+    "score_date": "2026-08-17",
+    "tier": "C"
   },
   {
     "r": 2,
@@ -1766,10 +1766,10 @@ const M = [
     "desc_en": "Claude Code — CLI tool from Anthropic. Agentic coding in terminal, git integration, MCP, custom commands. Best for refactoring.",
     "b_pl": "Programowanie terminalowe/CLI, agentowe — autonomiczne modyfikacje repozytoriów",
     "b_en": "terminal/CLI coding, agentic — autonomous repository modifications",
-    "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
-    "tier": "S"
+    "score": 49.0,
+    "score_source": "SWE-bench",
+    "score_date": "2026-08-17",
+    "tier": "A"
   },
   {
     "r": 5,
@@ -1785,10 +1785,10 @@ const M = [
     "desc_en": "Audio emotion tags, 70+ languages, mid-sentence tone shifts, GA March 2026",
     "b_pl": "Kontrola emocji w czasie rzeczywistym, dubbing aktorski, wielu mówców",
     "b_en": "real-time emotion control, voice acting, multi-speaker",
-    "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
-    "tier": "A"
+    "score": 106.0,
+    "score_source": "TTS Arena",
+    "score_date": "2026-08-17",
+    "tier": "S"
   },
   {
     "r": 2,
@@ -1804,9 +1804,9 @@ const M = [
     "desc_en": "GPT Voice (GPT-Realtime-2) — realtime voice API from OpenAI. Sub-second latency, natural interruptions, emotion detection. For voice agents.",
     "b_pl": "Naturalna ekspresja emocji, integracja z GPT-5.5, 128k kontekst",
     "b_en": "natural emotion expression, GPT-5.5 integration, 128k context",
-    "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score": 208.0,
+    "score_source": "TTS Arena",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -1824,8 +1824,8 @@ const M = [
     "b_pl": "Wielojęzyczne, szczegółowe tagi audio, integracja z Gemini",
     "b_en": "multilingual, granular audio tags, Gemini integration",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -2090,8 +2090,8 @@ const M = [
     "b_pl": "Video generation z reference images — spójność postaci i obiektów między scenami",
     "b_en": "video generation with reference images — character and object consistency across scenes",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -2112,8 +2112,8 @@ const M = [
       "lmstats": 10.0
     },
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -2190,8 +2190,8 @@ const M = [
     "b_pl": "Unified image generation + editing — jeden model zamiast wielu specjalistów",
     "b_en": "unified image generation + editing — one model instead of many specialists",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -2208,10 +2208,10 @@ const M = [
     "desc_en": "New architecture — coupled oscillators instead of diffusion, synchronizing thousands of oscillators",
     "b_pl": "Non-diffusion image generation — coupled oscillators architecture, alternatywa dla diffusion",
     "b_en": "non-diffusion image generation — coupled oscillators architecture, alternative to diffusion",
-    "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
-    "tier": "B"
+    "score": 1339.0,
+    "score_source": "Image Arena",
+    "score_date": "2026-08-17",
+    "tier": "A"
   },
   {
     "r": 2,
@@ -2272,8 +2272,8 @@ const M = [
       "confidence": 1
     },
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -2353,10 +2353,10 @@ const M = [
       "composite": 75.0,
       "confidence": 1
     },
-    "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
-    "tier": "S"
+    "score": 95.0,
+    "score_source": "LM Arena",
+    "score_date": "2026-08-17",
+    "tier": "C"
   },
   {
     "r": 9,
@@ -2392,8 +2392,8 @@ const M = [
     "b_pl": "Consistent video editing — persistent memory, stabilne edycje w długich klipach",
     "b_en": "consistent video editing — persistent memory, stable edits in long clips",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "A"
   },
   {
@@ -2410,9 +2410,9 @@ const M = [
     "desc_en": "Clone camera motion from reference video to new image — dolly zoom, bullet time, lens distortion",
     "b_pl": "Camera motion cloning — przenoszenie ruchu kamery z ref wideo na nowe obrazy",
     "b_en": "camera motion cloning — transferring camera movement from ref video to new images",
-    "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score": 50.0,
+    "score_source": "AI Video Arena",
+    "score_date": "2026-08-17",
     "tier": "C"
   },
   {
@@ -2430,8 +2430,8 @@ const M = [
     "b_pl": "Image generation + editing w jednym modelu — permissive license, konkurent Flux/Nano Banana",
     "b_en": "image generation + editing in one model — permissive license, Flux/Nano Banana competitor",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -2449,8 +2449,8 @@ const M = [
     "b_pl": "Style transfer — konwersja stylów między obrazami, chained style transfers",
     "b_en": "style transfer — converting styles between images, chained style transfers",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -2467,10 +2467,10 @@ const M = [
     "desc_en": "Training/fine-tuning package for LTX 2.3 video model — extension, inpainting, outpainting, video-to-video",
     "b_pl": "Video model dostrajanie — custom characters, VFX, style training dla LTX 2.3",
     "b_en": "video model fine-tuning — custom characters, VFX, style training for LTX 2.3",
-    "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
-    "tier": "B"
+    "score": 1121.0,
+    "score_source": "AI Video Arena",
+    "score_date": "2026-08-17",
+    "tier": "C"
   },
   {
     "r": 1,
@@ -2487,8 +2487,8 @@ const M = [
     "b_pl": "AI automation by demonstration — nagrywasz task, AI uczy się go replikować",
     "b_en": "AI automation by demonstration — you record a task, AI learns to replicate it",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -2601,8 +2601,8 @@ const M = [
     "b_pl": "Motion transfer — animowanie postaci z reference video, najlepszy open-source",
     "b_en": "motion transfer — animating characters from reference video, best open-source",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -2680,8 +2680,8 @@ const M = [
       "lmstats": 8.0
     },
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -2699,8 +2699,8 @@ const M = [
     "b_pl": "Physics-controlled video gen — joystick dla obiektów w wideo",
     "b_en": "physics-controlled video gen — joystick for objects in video",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "C"
   },
   {
@@ -2718,8 +2718,8 @@ const M = [
     "b_pl": "Agent benchmark — test real professional workflows, 55 industrii",
     "b_en": "agent benchmark — testing real professional workflows, 55 industries",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -2759,8 +2759,8 @@ const M = [
       "lmstats": 15.0
     },
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -2778,8 +2778,8 @@ const M = [
     "b_pl": "Voice cloning TTS — 2B params, few-shot voice cloning",
     "b_en": "voice cloning TTS — 2B params, few-shot voice cloning",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -2873,8 +2873,8 @@ const M = [
     "b_pl": "Fully open-source image model — training code + data, dla nauki",
     "b_en": "fully open-source image model — training code + data, for research",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -2930,8 +2930,8 @@ const M = [
     "b_pl": "Long video generation — spójne długie wideo przez hierarchical autoencoder",
     "b_en": "long video generation — consistent long video via hierarchical autoencoder",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "C"
   },
   {
@@ -2968,8 +2968,8 @@ const M = [
     "b_pl": "Video editing z referencjami — add/remove objects, change scene/weather/style, multi-reference merge",
     "b_en": "video editing with references — add/remove objects, change scene/weather/style, multi-reference merge",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -3047,8 +3047,8 @@ const M = [
       "lmstats": 30.0
     },
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -3085,8 +3085,8 @@ const M = [
     "b_pl": "Layout-controlled image generation — separacja obiektów, editowanie warstw, poster design",
     "b_en": "layout-controlled image generation — object separation, layer editing, poster design",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "C"
   },
   {
@@ -3110,8 +3110,8 @@ const M = [
       "confidence": 1
     },
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "A"
   },
   {
@@ -3148,8 +3148,8 @@ const M = [
     "b_pl": "Image layer separation — transparent layers, alpha masks, editowanie warstw",
     "b_en": "image layer separation — transparent layers, alpha masks, layer editing",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "A"
   },
   {
@@ -3224,8 +3224,8 @@ const M = [
     "b_pl": "Instant voice cloning — few-shot TTS, bazuje na F5-TTS, fits consumer GPU",
     "b_en": "instant voice cloning — few-shot TTS, based on F5-TTS, fits consumer GPU",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -3287,8 +3287,8 @@ const M = [
       "confidence": 1
     },
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -3306,8 +3306,8 @@ const M = [
     "b_pl": "Controllable TTS — inline emotion/style tags, real-time expressive voice, chat-native",
     "b_en": "controllable TTS — inline emotion/style tags, real-time expressive voice, chat-native",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -3325,8 +3325,8 @@ const M = [
     "b_pl": "Video with native audio — joint audio-visual generation, smaller than competitors",
     "b_en": "video with native audio — joint audio-visual generation, smaller than competitors",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -3350,8 +3350,8 @@ const M = [
       "confidence": 1
     },
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -3369,8 +3369,8 @@ const M = [
     "b_pl": "Image generation + editing — top-tier quality, blind tests favorable",
     "b_en": "image generation + editing — top-tier quality, favorable blind tests",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -3423,8 +3423,8 @@ const M = [
     "b_pl": "Efektywny generator obrazów, dual-stream architecture, tekst i reklamy",
     "b_en": "Efficient image generator, dual-stream architecture, text and ads",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -3441,8 +3441,8 @@ const M = [
     "b_pl": "Naturalna konwersacja voice, live translation, wizualne odpowiedzi, korekcja wymowy",
     "b_en": "Natural voice conversation, live translation, visual responses, pronunciation correction",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -3561,8 +3561,8 @@ const M = [
       "confidence": 1
     },
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -3615,8 +3615,8 @@ const M = [
     "b_pl": "Edycja z annotacjami, transparent layers, multilingual, infographics",
     "b_en": "Annotation editing, transparent layers, multilingual, infographics",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "C"
   },
   {
@@ -3639,8 +3639,8 @@ const M = [
       "confidence": 1
     },
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -3657,8 +3657,8 @@ const M = [
     "b_pl": "Agent-style image generation, web search, Marketplace integration, reasoning",
     "b_en": "Agent-style image generation, web search, Marketplace integration, reasoning",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -3675,8 +3675,8 @@ const M = [
     "b_pl": "Native sound, złożone koncepcje fizyczne, realistic — preview tylko",
     "b_en": "Native sound, complex physics concepts, realistic — preview only",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -3693,8 +3693,8 @@ const M = [
     "b_pl": "4K output, microediting z bounding box, #2 na leaderboardach",
     "b_en": "4K output, microediting with bounding box, #2 on leaderboards",
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "A"
   },
   {
@@ -3711,8 +3711,8 @@ const M = [
     "d": "2026-07-15",
     "o": 0,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -3747,8 +3747,8 @@ const M = [
     "d": "2026-07-14",
     "o": 1,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -3801,8 +3801,8 @@ const M = [
     "d": "2026-07-15",
     "o": 0,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "A"
   },
   {
@@ -3819,8 +3819,8 @@ const M = [
     "d": "2026-07-14",
     "o": 1,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "B"
   },
   {
@@ -3837,8 +3837,8 @@ const M = [
     "d": "2026-07-16",
     "o": 0,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "C"
   },
   {
@@ -3873,8 +3873,8 @@ const M = [
     "d": "2026-07-04",
     "o": 1,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -3891,8 +3891,8 @@ const M = [
     "d": "2026-06-26",
     "o": 1,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   },
   {
@@ -3909,8 +3909,8 @@ const M = [
     "d": "2026-06-30",
     "o": 0,
     "score": null,
-    "score_source": "manual",
-    "score_date": "2026-08-16",
+    "score_source": "web search (not found)",
+    "score_date": "2026-08-17",
     "tier": "S"
   }
 ];
