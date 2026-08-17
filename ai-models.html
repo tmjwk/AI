@@ -95,7 +95,8 @@ select option{color:var(--fg)}
 .k{margin-bottom:24px}
 .kt{font-size:var(--fs-s);text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:1px solid var(--bdl);padding-bottom:6px;margin-bottom:8px;font-weight:600;display:flex;justify-content:space-between;align-items:center}
 .kt .kc{color:var(--hd);font-size:var(--fs-xs);font-family:monospace}
-.m{display:grid;grid-template-columns:50px 32px 1fr 1fr 30px;gap:10px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--bdl);transition:background .15s;cursor:pointer;position:relative}
+.m{display:grid;grid-template-columns:44px 28px minmax(180px,240px) minmax(360px,1fr) 28px;gap:14px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--bdl);transition:background .15s;cursor:pointer;position:relative}
+.m .d{max-width:62ch;line-height:1.55}
 .m:hover{background:var(--card);border-radius:4px}
 .m.highlight{animation:hl 1s ease-in-out 3}
 .m.new-user{border-left:3px solid var(--ac);padding-left:8px}
@@ -172,7 +173,8 @@ select option{color:var(--fg)}
 .nav-btn:hover{border-color:var(--ac);color:var(--fg)}.nav-btn.cur{border-color:var(--ac);color:var(--ac);background:rgba(74,222,128,.06);font-weight:700}/* Nav PL/EN labels */
 [data-lang="pl"] .nav-btn .en{display:none !important}
 [data-lang="en"] .nav-btn .pl{display:none !important}
-@media(max-width:540px){.m{grid-template-columns:38px 24px 1fr 1fr 24px;gap:6px}.n{font-size:var(--fs-m)}.d{font-size:var(--fs-m);grid-column:3 / span 2}.mc{grid-column:5;grid-row:1}.stats{grid-template-columns:repeat(2,1fr)}.hr{flex-direction:column;align-items:flex-start;gap:8px}.h h1{font-size:var(--fs-l)}.nav-btn{font-size:var(--fs-s);padding:4px 8px}.nav-links{gap:4px;width:100%}}
+@media(max-width:768px){.m{grid-template-columns:34px 24px 1fr 24px;gap:8px;align-items:baseline}.tier-badge{grid-row:1}.n{grid-column:3;grid-row:1}.d{grid-column:2 / span 2;grid-row:2;font-size:var(--fs-s);max-width:none}.mc{grid-column:4;grid-row:1}.r{grid-row:1}}
+@media(max-width:540px){.m{grid-template-columns:34px 1fr 24px;gap:8px}.tier-badge{display:none}.n{grid-column:2;grid-row:1}.d{grid-column:2;grid-row:2;font-size:var(--fs-s);max-width:none}.mc{grid-column:3;grid-row:1}.r{grid-column:1;grid-row:1}.stats{grid-template-columns:repeat(2,1fr)}.hr{flex-direction:column;align-items:flex-start;gap:8px}.h h1{font-size:var(--fs-l)}.nav-btn{font-size:var(--fs-s);padding:4px 8px}.nav-links{gap:4px;width:100%}}
 @media(max-width:380px){.nav-btn{font-size:var(--fs-xs);padding:3px 6px}}
 <script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))</script>
 
@@ -201,7 +203,7 @@ select option{color:var(--fg)}
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v9.2) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v9.3) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -397,7 +399,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v9.2 · Deploy: <span id="deploy-ts">2026-08-17 01:16:55 UTC</span> · <span id="deploy-hash">h0ca02eee</span>
+v9.3 · Deploy: <span id="deploy-ts">2026-08-17 01:27:10 UTC</span> · <span id="deploy-hash">h1e5d82d6</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
