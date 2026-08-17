@@ -2,7 +2,7 @@
 // Schema: {r, n, v, d, o, c, desc_pl, desc_en, b_pl, b_en}
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
-const TODAY = "2026-08-16";
+const TODAY = "2026-08-17";
 const NEW_DAYS = 14;
 
 const M = [
@@ -3912,6 +3912,25 @@ const M = [
     "score_source": "web search (not found)",
     "score_date": "2026-08-17",
     "tier": "S"
+  },
+  {
+    "r": 25,
+    "n": "GPT Image 2 (high)",
+    "v": "OpenAI",
+    "d": "2026-04-21",
+    "o": 0,
+    "c": "Image Generation",
+    "tags": [],
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-0",
+    "yt": "",
+    "desc_pl": "Następca DALL-E 3 — natywny model obrazów w ChatGPT. #1 na Artificial Analysis Image Arena (ELO 1375). Lepsze renderowanie tekstu, obsługa wielojęzyczna, edycja obrazów.",
+    "desc_en": "Successor to DALL-E 3 — native ChatGPT image model. #1 on Artificial Analysis Image Arena (ELO 1375). Improved text rendering, multilingual support, image editing.",
+    "b_pl": "Generowanie obrazów z tekstem, fotorealizm, edycja obrazów",
+    "b_en": "Text-to-image with accurate text rendering, photorealism, image editing",
+    "score": 1375,
+    "score_source": "Image Arena",
+    "score_date": "2026-08-17",
+    "tier": "A"
   }
 ];
 
