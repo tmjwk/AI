@@ -107,7 +107,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v9.7) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v10.0) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -185,7 +185,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 @keyframes show-hint{to{opacity:1}}
 @media print{.loading-hint{display:none}}
 
-</style><meta name="description" content="Słownik AI: Architektury, Trening, Kontekst, Agentic, Modalności, Infrastruktura, Bezpieczeństwo, Ewaluacja.">
+</style><meta name="description" content="Słownik AI — 147 terminów z web-verified definicjami" data-desc-pl="Słownik AI — 147 terminów z web-verified definicjami" data-desc-en="AI Glossary — 147 terms with web-verified definitions">
 <meta property="og:title" content="Słownik AI — 102 terminy w 8 kategoriach">
 <meta property="og:description" content="Słownik AI: Architektury, Trening, Kontekst, Agentic, Modalności, Infrastruktura, Bezpieczeństwo, Ewaluacja.">
 <meta property="og:type" content="website">
@@ -210,7 +210,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 
 
 <button class="tgl" id="themeTgl">🌙</button>
-<button class="tgl" id="langTgl" title="Przełącz język / Switch language">EN</button>
+<button class="tgl" id="langTgl" title="Przełącz język na angielski" data-title-pl="Przełącz język na angielski" data-title-en="Switch language to Polish">EN</button>
 </div>
 </div>
 
@@ -237,6 +237,9 @@ function L(obj,field_pl,field_en){/* bilingual helper — zwraca PL lub EN wg S.
   if(S.lang==='en'&&obj[field_en]&&obj[field_en].trim())return obj[field_en];
   return obj[field_pl];
 }
+
+function updateTitleAttrs(lang){document.querySelectorAll('[data-title-pl]').forEach(function(el){var t=lang==='en'?el.getAttribute('data-title-en'):el.getAttribute('data-title-pl');if(t)el.setAttribute('title',t)})}
+
 function init(){
 S.theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
 S.lang=localStorage.getItem('lang')||'pl';
@@ -244,7 +247,7 @@ document.documentElement.setAttribute('data-theme',S.theme);
 document.documentElement.setAttribute('data-lang',S.lang);
 document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';
 const langBtn=document.getElementById('langTgl');if(langBtn){langBtn.textContent=S.lang==='pl'?'EN':'PL';var sp=document.getElementById('search');if(sp){sp.placeholder=S.lang==='en'?'🔍 Search term... (e.g. transformer, MoE, RAG)':'🔍 Szukaj terminu... (np. transformer, MoE, RAG)'};langBtn.addEventListener('click',toggleLang)}
-renderChips();render();attachTermLangToggles();
+renderChips();render();updateTitleAttrs(S.lang||"pl");attachTermLangToggles();
 // Cross-site search: czytaj ?q= z URL
 const urlQ=new URLSearchParams(location.search).get('q');
 if(urlQ){S.q=urlQ;document.getElementById('search').value=urlQ;render();attachTermLangToggles()}
@@ -262,9 +265,9 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v9.7 · Deploy: <span id="deploy-ts">2026-08-17 20:39:58 UTC</span> · <span id="deploy-hash">he5e5c0f4</span>
+v10.0 · Deploy: <span id="deploy-ts">2026-08-17 20:45:55 UTC</span> · <span id="deploy-hash">h09a6bafb</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
-<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry" data-title-pl="Do góry" data-title-en="Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
 </body></html>

@@ -15,7 +15,7 @@
 })();
 </script><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
 <title>AI Weekly — Hub</title>
-<meta name="description" content="Aktualny przegląd AI: 123 modeli, 74 benchmarków, 102 terminów, panele dyskusyjne i radar branżowy.">
+<meta name="description" content="AI Hub — niedzielny update, modele, benchmarki, radar" data-desc-pl="AI Hub — niedzielny update, modele, benchmarki, radar" data-desc-en="AI Hub — weekly update, models, benchmarks, radar">
 <meta property="og:title" content="AI Weekly — Hub">
 <meta property="og:description" content="Weekly AI Summary — komprehensywne podsumowanie tygodnia w AI.">
 <meta property="og:type" content="website">
@@ -129,7 +129,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v9.7) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v10.0) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -216,7 +216,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <h1>📰 <span class="pl">AI — Niedzielny update</span><span class="en">AI — Sunday Update</span></h1>
 <div class="nav nav-links">
 <a href="index.html" class="nav-btn cur"><span class="pl">🏠 Hub</span><span class="en">🏠 Hub</span></a><a href="ai-models.html" class="nav-btn"><span class="pl">📊 Modele</span><span class="en">📊 Models</span></a><a href="ai-benchmarks.html" class="nav-btn"><span class="pl">🏆 Benchmarki</span><span class="en">🏆 Benchmarks</span></a><a href="ai-radar.html" class="nav-btn"><span class="pl">📡 Radar</span><span class="en">📡 Radar</span></a><a href="ai-pulse.html" class="nav-btn"><span class="pl">💓 Puls</span><span class="en">💓 Pulse</span></a><a href="ai-releases.html" class="nav-btn"><span class="pl">🆕 Nowości</span><span class="en">🆕 Releases</span></a><a href="ai-timeline.html" class="nav-btn"><span class="pl">📅 Timeline</span><span class="en">📅 Timeline</span></a><a href="ai-search-global.html" class="nav-btn"><span class="pl">🔍 Szukaj</span><span class="en">🔍 Search</span></a><a href="ai-glossary.html" class="nav-btn"><span class="pl">📖 Słownik</span><span class="en">📖 Glossary</span></a>
-<button class="tgl" id="langTgl" title="Przełącz język / Switch language">EN</button>
+<button class="tgl" id="langTgl" title="Przełącz język na angielski" data-title-pl="Przełącz język na angielski" data-title-en="Switch language to Polish">EN</button>
 <button class="tgl" id="themeTgl">🌙</button>
 </div>
 </div>
@@ -412,9 +412,9 @@ if (document.readyState === 'loading') {
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.article.collapsed').forEach(a=>a.classList.remove('collapsed'))}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v9.7 · Deploy: <span id="deploy-ts">2026-08-17 20:39:58 UTC</span> · <span id="deploy-hash">hefe9787a</span>
+v10.0 · Deploy: <span id="deploy-ts">2026-08-17 20:45:55 UTC</span> · <span id="deploy-hash">h1069a4f4</span>
 </footer>
-<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry" data-title-pl="Do góry" data-title-en="Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})
 // Render sticky updates from sticky.js
 function renderSticky(){

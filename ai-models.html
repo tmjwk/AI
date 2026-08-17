@@ -203,7 +203,7 @@ select option{color:var(--fg)}
 .btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
 .btt:hover{opacity:.85}
 .btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v9.7) — PDF-friendly, paper-saving ====== */
+/* ====== PRINT STYLES (TODO #13, v10.0) — PDF-friendly, paper-saving ====== */
 @media print{
   /* Force light theme regardless of user setting */
   :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
@@ -281,7 +281,7 @@ select option{color:var(--fg)}
 @keyframes show-hint{to{opacity:1}}
 @media print{.loading-hint{display:none}}
 
-</style><meta name="description" content="Modele AI: LLM, Image Generation, Video, 3D, Coding, TTS, Humanoid Robots. Open-source i proprietary.">
+</style><meta name="description" content="Modele AI — katalog 204 modeli w 17 kategoriach" data-desc-pl="Modele AI — katalog 204 modeli w 17 kategoriach" data-desc-en="AI Models — catalog of 204 models in 17 categories">
 <meta property="og:title" content="Modele AI — 106 modeli w 16 kategoriach">
 <meta property="og:description" content="Modele AI: LLM, Image Generation, Video, 3D, Coding, TTS, Humanoid Robots. Open-source i proprietary.">
 <meta property="og:type" content="website">
@@ -303,7 +303,7 @@ select option{color:var(--fg)}
 
 
 
-<button class="tgl" id="themeTgl">🌙</button><button class="tgl" id="langTglHeader" title="Przełącz język / Switch language">EN</button>
+<button class="tgl" id="themeTgl">🌙</button><button class="tgl" id="langTglHeader" title="Przełącz język na angielski" data-title-pl="Przełącz język na angielski" data-title-en="Switch language to Polish">EN</button>
 </div></div>
 <div class="badge-info" id="badgeInfo" onclick="this.style.display='none'"></div>
 <div class="banner" id="banner"></div>
@@ -359,6 +359,9 @@ function showBadgeInfo(type,event){event.stopPropagation();const info={'restrict
 function daysAgo(d){const t=new Date(TODAY);const m=new Date(d+'-15');if(isNaN(m))return 999;return Math.floor((t-m)/(1000*60*60*24))}
 function lastVisit(){const v=localStorage.getItem('lastVisit');if(v)return new Date(v);const t=new Date(TODAY);t.setDate(t.getDate()-14);return t}
 function checkNew(m){const lv=lastVisit();const md=new Date(m.d.length===7?m.d+'-15':m.d);return md>lv}
+
+function updateTitleAttrs(lang){document.querySelectorAll('[data-title-pl]').forEach(function(el){var t=lang==='en'?el.getAttribute('data-title-en'):el.getAttribute('data-title-pl');if(t)el.setAttribute('title',t)})}
+
 function init(){
 S.theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
 S.lang=localStorage.getItem('lang')||'pl';
@@ -399,9 +402,9 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v9.7 · Deploy: <span id="deploy-ts">2026-08-17 20:39:58 UTC</span> · <span id="deploy-hash">h99fbfe74</span>
+v10.0 · Deploy: <span id="deploy-ts">2026-08-17 20:45:55 UTC</span> · <span id="deploy-hash">h65b2814b</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
-<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry" data-title-pl="Do góry" data-title-en="Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
 </body></html>

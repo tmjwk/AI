@@ -13,7 +13,7 @@
   obs.observe(html,{attributes:true,attributeFilter:['data-lang']});
 })();
 </script><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><title>Nowości AI</title>
-<meta name="description" content="Nowości AI — omówienia nowych modeli i narzędzi AI. Modele, benchmarki, demo linki.">
+<meta name="description" content="Nowości AI — cotygodniowe aktualizacje" data-desc-pl="Nowości AI — cotygodniowe aktualizacje" data-desc-en="AI Releases — weekly updates">
 <script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))</script>
 <script>document.documentElement.setAttribute("data-lang",localStorage.getItem("lang")||"pl")</script>
 <style>
@@ -100,7 +100,7 @@ footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);t
 <h1>🆕 <span class="pl">Nowości AI</span><span class="en">AI Releases</span></h1>
 <div class="nav nav-links">
 <a href="index.html" class="nav-btn"><span class="pl">🏠 Hub</span><span class="en">🏠 Hub</span></a><a href="ai-models.html" class="nav-btn"><span class="pl">📊 Modele</span><span class="en">📊 Models</span></a><a href="ai-benchmarks.html" class="nav-btn"><span class="pl">🏆 Benchmarki</span><span class="en">🏆 Benchmarks</span></a><a href="ai-radar.html" class="nav-btn"><span class="pl">📡 Radar</span><span class="en">📡 Radar</span></a><a href="ai-pulse.html" class="nav-btn"><span class="pl">💓 Puls</span><span class="en">💓 Pulse</span></a><a href="ai-releases.html" class="nav-btn cur"><span class="pl">🆕 Nowości</span><span class="en">🆕 Releases</span></a><a href="ai-timeline.html" class="nav-btn"><span class="pl">📅 Timeline</span><span class="en">📅 Timeline</span></a><a href="ai-search-global.html" class="nav-btn"><span class="pl">🔍 Szukaj</span><span class="en">🔍 Search</span></a><a href="ai-glossary.html" class="nav-btn"><span class="pl">📖 Słownik</span><span class="en">📖 Glossary</span></a>
-<button class="tgl" id="langTgl" title="Przełącz język / Switch language">EN</button>
+<button class="tgl" id="langTgl" title="Przełącz język na angielski" data-title-pl="Przełącz język na angielski" data-title-en="Switch language to Polish">EN</button>
 <button class="tgl" id="themeTgl">🌙</button>
 </div>
 </div>
@@ -158,7 +158,7 @@ function renderItem(item){
         '<span class="rel-vendor">'+esc(item.vendor||'')+'</span>'+
         '<span class="rel-cat"><span class="pl">'+esc(catPl)+'</span><span class="en">'+esc(catEn)+'</span></span>'+
         '<span class="rel-date">'+esc(item.date||'')+'</span>'+
-        '<button class="rel-lang" title="Przełącz język / Switch language">EN</button>'+
+        '<button class="rel-lang" title="Przełącz język na angielski" data-title-pl="Przełącz język na angielski" data-title-en="Switch language to Polish">EN</button>'+
       '</div>'+
       '<div class="rel-review"><span class="pl">'+esc(revPl).replace(/\n/g,'<br>')+'</span><span class="en">'+esc(revEn).replace(/\n/g,'<br>')+'</span></div>'+
       renderLinks(item.links)+
@@ -221,8 +221,8 @@ if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded'
 function handleHashExpand(){if(!location.hash)return;var h=location.hash.substring(1);setTimeout(function(){var ep=document.querySelector('[data-ep-id="'+h+'"]');if(!ep)return;ep.classList.add('open');var btn=ep.querySelector('.ep-toggle');if(btn)btn.innerHTML='<span class="pl">▲ Zwiń</span><span class="en">▲ Collapse</span>';setTimeout(function(){ep.scrollIntoView({behavior:'smooth',block:'start'});ep.style.transition='box-shadow .3s';ep.style.boxShadow='0 0 0 2px var(--ac)';setTimeout(function(){ep.style.boxShadow=''},10000)},200)},500)}
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v9.7 · Deploy: <span id="deploy-ts">2026-08-17 20:39:58 UTC</span> · <span id="deploy-hash">ha326ff81</span>
+v10.0 · Deploy: <span id="deploy-ts">2026-08-17 20:45:55 UTC</span> · <span id="deploy-hash">hc5386fb8</span>
 </footer>
-<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry" data-title-pl="Do góry" data-title-en="Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
 </body></html>
