@@ -258,7 +258,7 @@ function nm(s){return(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u0
 function L(obj,field_pl,field_en){if(S.lang==='en'&&obj[field_en]&&obj[field_en].trim())return obj[field_en];return obj[field_pl]}
 function init(){
 S.theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
-S.lang="pl";
+S.lang=localStorage.getItem('lang')||'pl';
 document.documentElement.setAttribute('data-theme',S.theme);
 document.documentElement.setAttribute('data-lang',S.lang);
 document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';
@@ -278,7 +278,7 @@ init();
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v9.5 · Deploy: <span id="deploy-ts">2026-08-17 19:26:12 UTC</span> · <span id="deploy-hash">h2cc1a5f0</span>
+v9.5 · Deploy: <span id="deploy-ts">2026-08-17 19:32:36 UTC</span> · <span id="deploy-hash">h2974652b</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>

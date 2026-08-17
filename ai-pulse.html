@@ -316,7 +316,7 @@ function dataLoadFailed(){var c=document.getElementById('episodes');if(c)c.inner
 <script>
 const t=document.getElementById('themeTgl');
 let theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
-let lang="pl";
+let lang=localStorage.getItem('lang')||'pl';
 document.documentElement.setAttribute('data-theme',theme);
 document.documentElement.setAttribute('data-lang',lang);
 t.textContent=theme==='dark'?'🌙':'☀️';
@@ -584,7 +584,7 @@ document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeE
 </div>
 
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v9.5 · Deploy: <span id="deploy-ts">2026-08-17 19:26:12 UTC</span> · <span id="deploy-hash">h8308dfcd</span>
+v9.5 · Deploy: <span id="deploy-ts">2026-08-17 19:32:36 UTC</span> · <span id="deploy-hash">h77a14e86</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry / Back to top">↑</button>
