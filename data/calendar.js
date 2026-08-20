@@ -2,9 +2,29 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-16 19:55:35 UTC
+// Generated: 2026-08-20 20:53:03 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-18",
+    "type": "diamandis",
+    "title_pl": "Podcast #281 — Chińska końcówka: oś czasu ASI, relacje USA-Chiny i bańka AI $1.7T z Alvinem Graylinem | 281",
+    "title_en": "Podcast #281 — China's Endgame: ASI Timelines, US-China Relations, and the $1.7T AI Bubble With Alvin Graylin | 281",
+    "link": "ai-pulse.html#281",
+    "meta_pl": "15 tematów",
+    "meta_en": "15 topics",
+    "num": "#281"
+  },
+  {
+    "date": "2026-08-16",
+    "type": "weekly",
+    "title_pl": "AI Tydzień #33 | 10-16/08/2026",
+    "title_en": "AI Week #33 | August 10-16, 2026",
+    "link": "index.html#article-33",
+    "meta_pl": "12 sekcji",
+    "meta_en": "12 sections",
+    "num": "33"
+  },
   {
     "date": "2026-08-15",
     "type": "ai_search",

@@ -1,22 +1,22 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-08-16 19:55:37 UTC
-// Total events: 337, months: 3
+// Generated: 2026-08-20 20:53:03 UTC
+// Total events: 339, months: 3
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-08-16 19:55:37 UTC",
-    "total_events": 337,
+    "generated": "2026-08-20 20:53:03 UTC",
+    "total_events": 339,
     "total_months": 3
   },
   "months": [
     {
       "month": "2026-08",
-      "total": 125,
+      "total": 127,
       "by_type": {
+        "diamandis": 4,
+        "weekly": 3,
         "ai_search": 55,
-        "lev": 65,
-        "diamandis": 3,
-        "weekly": 2
+        "lev": 65
       },
       "top_vendors": [
         [
@@ -82,19 +82,19 @@ const TRENDS = {
           3
         ],
         [
-          "DeepSeek V4",
-          2
-        ],
-        [
           "DeepSeek DeepSeek",
           2
         ],
         [
-          "GPT-5.6",
+          "DeepSeek V4",
           2
         ],
         [
           "GPT-5",
+          2
+        ],
+        [
+          "GPT-5.6",
           2
         ],
         [
@@ -172,11 +172,11 @@ const TRENDS = {
           5
         ],
         [
-          "GPT 5.6",
+          "GPT 5",
           5
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           5
         ],
         [
@@ -249,19 +249,19 @@ const TRENDS = {
       ],
       "top_models": [
         [
-          "GPT-5.6",
-          1
-        ],
-        [
           "GPT-5",
           1
         ],
         [
-          "GPT 5.6",
+          "GPT-5.6",
           1
         ],
         [
           "GPT 5",
+          1
+        ],
+        [
+          "GPT 5.6",
           1
         ],
         [
@@ -422,11 +422,11 @@ const TRENDS = {
         7
       ],
       [
-        "GPT 5.6",
+        "GPT 5",
         7
       ],
       [
-        "GPT 5",
+        "GPT 5.6",
         7
       ],
       [
@@ -454,11 +454,11 @@ const TRENDS = {
         5
       ],
       [
-        "GPT-5.6",
+        "GPT-5",
         4
       ],
       [
-        "GPT-5",
+        "GPT-5.6",
         4
       ],
       [
@@ -471,10 +471,10 @@ const TRENDS = {
       ]
     ],
     "by_type": {
+      "diamandis": 12,
+      "weekly": 7,
       "ai_search": 116,
-      "lev": 204,
-      "diamandis": 11,
-      "weekly": 6
+      "lev": 204
     }
   }
 };
