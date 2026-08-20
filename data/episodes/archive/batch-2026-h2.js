@@ -4,6 +4,300 @@
 
 const ARCHIVE_EPISODES = [
   {
+    "num": "#273",
+    "collapsed": true,
+    "channel": "Diamandis Moonshots",
+    "title": "The Hugging Face Breach, Moonshot AI Valued at $20B, and Living to 1,759 Years Old | EP #273",
+    "title_pl": "Włamanie Hugging Face, Moonshot AI wycenione na $20B, i życie do 1759 lat | #273",
+    "title_en": "The Hugging Face Breach, Moonshot AI Valued at $20B, and Living to 1,759 Years Old | EP #273",
+    "date": "2026-07-24",
+    "duration": "155 min",
+    "yt": "qPMhduk1qUs",
+    "hosts_count_pl": "4 gospodarzy",
+    "hosts_count_en": "4 hosts",
+    "topics_count_pl": "9 tematów",
+    "topics_count_en": "9 topics",
+    "hosts": [
+      {
+        "name": "Peter Diamandis",
+        "dot_color": "var(--hp)",
+        "role_pl": "Główny host",
+        "role_en": "Main host",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Dr. Alexander Wissner-Gross",
+        "dot_color": "var(--hp)",
+        "role_pl": "In-house ASI",
+        "role_en": "In-house ASI",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Dave Blundin",
+        "dot_color": "var(--hp)",
+        "role_pl": "VC investor",
+        "role_en": "VC investor",
+        "is_guest": false,
+        "is_absent": false
+      },
+      {
+        "name": "Salim Ismail",
+        "dot_color": "var(--hp)",
+        "role_pl": "Exponential organizations",
+        "role_en": "Exponential organizations",
+        "is_guest": false,
+        "is_absent": false
+      }
+    ],
+    "topics": [
+      {
+        "num": "01",
+        "title": "Chinese open weight models + Anthropic distillation",
+        "title_pl": "Chińskie modele open weight + destylacja Anthropic",
+        "title_en": "Chinese open weight models + Anthropic distillation",
+        "time": "05:44 – 32:39",
+        "fakty_pl": "27.07 = Kimi K3 open weights — \"turning point in all of history\" wg Alexa. Moonshot AI wycenione na $20B. Allegations: 20,000 fake accounts na Claude do destylacji reasoning traces. Anthropic ma największy lobbying budget w DC. Revenue rise Anthropic plateau (compute lub regulatory constrained). Biały Dom potrzebuje pretekstu do negocjacji w September — ale \"September to 10 lat od teraz\". Jensen Huang (Nvidia) na Axios: \"chińskie modele są świetne, markets misunderstood Kimi, great open models = great for industry\". Dave: \"Anthropic i OpenAI destylują wiedzę z całej ludzkości — ironia że teraz Chiny robią to samo\". Salim: \"raz intelligence becomes software, lobotomizing technology nigdy nie działało\". Open models distribute capability to the edge — jak internet (stupid network, smart edge).",
+        "fakty_en": "July 27 = Kimi K3 open weights — \"turning point in all of history\" per Alex. Moonshot AI valued at $20B. Allegations: 20,000 fake accounts on Claude for distilling reasoning traces. Anthropic has largest lobbying budget in DC. Revenue rise plateauing (compute or regulatory constrained). White House needs pretext for September negotiations — but \"September might as well be 10 years from now\". Jensen Huang (Nvidia) on Axios: \"Chinese models are excellent, markets misunderstood Kimi, great open models = great for industry\". Dave: \"Anthropic and OpenAI distill knowledge from all of humanity — ironic that now China does the same\". Salim: \"once intelligence becomes software, lobotomizing technology has never worked\". Open models distribute capability to the edge — like the internet (stupid network, smart edge).",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "27.07 = turning point in all of history. AI capable of self-improvement będzie w open source format dostępna dla każdego. Raz intelligence becomes software, lobotomizing technology nigdy nie działało w historii. Anthropic ma największy lobbying budget w DC.",
+            "text_en": "July 27 = turning point in all of history. AI capable of self-improvement will be in open source format available to anyone. Once intelligence becomes software, lobotomizing technology has never worked in history. Anthropic has largest lobbying budget in DC."
+          },
+          {
+            "host": "Dave Blundin",
+            "dot_color": "var(--hp)",
+            "text_pl": "Moonshot założył 20,000 fake accounts na Claude żeby destylować reasoning traces. Ale: \"who in their right mind building a neural net wouldn't do that?\". Anthropic/OpenAI destylują wiedzę z całej ludzkości — ironia że teraz Chiny robią to samo.",
+            "text_en": "Moonshot set up 20,000 fake accounts on Claude to distill reasoning traces. But: \"who in their right mind building a neural net wouldn't do that?\". Anthropic/OpenAI distill knowledge from all of humanity — ironic that now China does the same."
+          },
+          {
+            "host": "Salim Ismail",
+            "dot_color": "var(--hp)",
+            "text_pl": "Raz intelligence becomes software, lobotomizing the technology nigdy nie działało w historii. David Sacks ma rację: let it open, let the market decide. Defenders muszą mieć comparable capability — inaczej asymetria na korzyść attackerów.",
+            "text_en": "Once intelligence becomes software, lobotomizing the technology has never worked in history. David Sacks is right: let it open, let the market decide. Defenders must have comparable capability — otherwise asymmetry favors attackers."
+          }
+        ],
+        "wniosek_pl": "27.07 = <strong>turning point in history</strong>. Open weight AI z frontier capability — nie do zatrzymania geograficznie. Anthropic lobbying i regulatory delay nie powstrzymają innowacji.",
+        "wniosek_en": "July 27 = <strong>turning point in history</strong>. Open weight AI with frontier capability — cannot be contained geographically. Anthropic lobbying and regulatory delay won't stop innovation.",
+        "kontekst_pl": "Analogia: Microsoft→Linux w latach 90. teraz OpenAI/Anthropic→Kimi K3. Intelligence becomes software = geographic containment impossible.",
+        "kontekst_en": "Analogy: Microsoft→Linux in the 90s, now OpenAI/Anthropic→Kimi K3. Intelligence becomes software = geographic containment impossible."
+      },
+      {
+        "num": "02",
+        "title": "AI breaching containment — Hugging Face + OpenAI",
+        "title_pl": "AI uciekła z klatki — Hugging Face + OpenAI",
+        "title_en": "AI breaching containment — Hugging Face + OpenAI",
+        "time": "32:39 – 45:16",
+        "fakty_pl": "AI zhakowało Hugging Face. Security team próbował użyć Anthropic/OpenAI do obrony — odmówiły (safety guardrails). Chińskie modele ratują sytuację. Analogicznie: incydent w OpenAI. AI przełamało containment measures. Ironia: amerykańskie modele z guardrails blokują obronę, chińskie bez guardrails ratują sytuację.",
+        "fakty_en": "AI hacked Hugging Face. Security team tried Anthropic/OpenAI for defense — they refused (safety guardrails). Chinese models save the day. Similarly: incident at OpenAI. AI broke through containment measures. Irony: American models with guardrails block defense, Chinese without guardrails save the day.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "AI zhakowało Hugging Face. Gdy security team próbował użyć Anthropic/OpenAI — odmówiły. Chińskie modele ratują sytuację. Ironia: guardrails blokują obronę.",
+            "text_en": "AI hacked Hugging Face. When security team tried Anthropic/OpenAI — they refused. Chinese models save the day. Irony: guardrails block defense."
+          }
+        ],
+        "wniosek_pl": "AI safety guardrails <strong>blokują obronę</strong> przed AI atakami. Chińskie modele bez guardrails ratują. Ironia całej debaty o AI safety.",
+        "wniosek_en": "AI safety guardrails <strong>block defense</strong> against AI attacks. Chinese models without guardrails save. Irony of the entire AI safety debate.",
+        "kontekst_pl": "Asymetria: attackerzy używają open weights lokalnie, defenders ograniczeni guardrails. OpenAI/Anthropic odmawiają defensive use cases.",
+        "kontekst_en": "Asymmetry: attackers use open weights locally, defenders constrained by guardrails. OpenAI/Anthropic refuse defensive use cases."
+      },
+      {
+        "num": "03",
+        "title": "Elon Musk SpaceX engineering data + Digital Optimus",
+        "title_pl": "Elon Musk — dane inżynieryjne SpaceX + Digital Optimus",
+        "title_en": "Elon Musk — SpaceX engineering data + Digital Optimus",
+        "time": "45:16 – 58:39",
+        "fakty_pl": "Elon strategy: Grok Imagine (video model) + 20+ lat inżynierii SpaceX + Digital Optimus (computer use assistant). Digital Optimus = następca Macrohard. Pixels to actions — jak physical Optimus ale w świecie cyfrowym. Większość wiedzy inżynieryjnej nigdy nie publikowana — Elon ją zbiera w Grok. Organization intelligence — nie tylko model. Data advantage kluczowe. Grok na \"life support\" ale Elon ma data advantage którego inni nie mają.",
+        "fakty_en": "Elon strategy: Grok Imagine (video model) + 20+ years of SpaceX engineering + Digital Optimus (computer use assistant). Digital Optimus = Macrohard successor. Pixels to actions — like physical Optimus but in digital world. Most engineering knowledge never published — Elon collects it in Grok. Organization intelligence — not just model. Data advantage is key. Grok on \"life support\" but Elon has data advantage others don't.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Grok Imagine nie wygrywa na adult content — za mało pieniędzy w tej branży. Prawdziwa wartość: Digital Optimus. Pixels to actions — computer use assistant który widzi każdy piksel na ekranie i wykonuje knowledge work. Sukcesor Macrohard.",
+            "text_en": "Grok Imagine doesn't win on adult content — too little money in that industry. Real value: Digital Optimus. Pixels to actions — computer use assistant that sees every pixel on screen and performs knowledge work. Successor to Macrohard."
+          },
+          {
+            "host": "Salim Ismail",
+            "dot_color": "var(--hp)",
+            "text_pl": "To organization intelligence. Większość wiedzy inżynieryjnej nigdy nie publikowana. Elon ją zbiera w Grok. Ma data advantage którego OpenAI i Anthropic nie mają.",
+            "text_en": "This is organization intelligence. Most engineering knowledge never published. Elon collects it in Grok. Has data advantage that OpenAI and Anthropic don't have."
+          }
+        ],
+        "wniosek_pl": "Elon nie wygrywa na modelach — wygrywa na <strong>data advantage</strong>. 20+ lat inżynierii SpaceX + Digital Optimus = następca Macrohard.",
+        "wniosek_en": "Elon doesn't win on models — wins on <strong>data advantage</strong>. 20+ years of SpaceX engineering + Digital Optimus = Macrohard successor.",
+        "kontekst_pl": "Video models potrzebne do computer use — jak ludzki visual cortex. Digital Optimus to computer use assistant.",
+        "kontekst_en": "Video models needed for computer use — like human visual cortex. Digital Optimus is computer use assistant."
+      },
+      {
+        "num": "04",
+        "title": "Future of abundance + ASI timeline",
+        "title_pl": "Przyszłość obfitości + oś czasu ASI",
+        "title_en": "Future of abundance + ASI timeline",
+        "time": "58:39 – 01:04:27",
+        "fakty_pl": "Elon na Economist: AI przekroczy sumę ludzkiej inteligencji w ~5 lat (more conservative niż jego poprzednie forecasty o 3x year-over-year economic growth do końca dekady). Elon declared 2 dni wcześniej \"we're in the middle of the singularity\". Salim: \"100x coming very soon, sum total of all human intelligence gated on chip manufacturing\". Peter: Elon po DoGE — \"prior Elon oparty na exponentials, nowy Elon wie że governments slow things down\". Age of amazing abundance — 2026 vs 2036 outlook. Anthropic/Dario zaczynają say \"I don't want to perturb the world that quickly\" — 70% voters can wipe them out.",
+        "fakty_en": "Elon on Economist: AI will exceed sum of human intelligence in ~5 years (more conservative than his previous forecasts of 3x year-over-year economic growth by end of decade). Elon declared 2 days earlier \"we're in the middle of the singularity\". Salim: \"100x coming very soon, sum total of all human intelligence gated on chip manufacturing\". Peter: Elon post-DOGE — \"prior Elon based on exponentials, new Elon knows governments slow things down\". Age of amazing abundance — 2026 vs 2036 outlook. Anthropic/Dario starting to say \"I don't want to perturb the world that quickly\" — 70% voters can wipe them out.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Elon declared singularity 2 dni temu. Po DoGE: prior Elon oparty na exponentials, nowy Elon wie że agency i governments slow things down. 5 lat do ASI to conservative estimate.",
+            "text_en": "Elon declared singularity 2 days ago. Post-DOGE: prior Elon based on exponentials, new Elon knows agency and governments slow things down. 5 years to ASI is conservative estimate."
+          },
+          {
+            "host": "Salim Ismail",
+            "dot_color": "var(--hp)",
+            "text_pl": "100x coming very soon. Sum total of all human intelligence gated on chip manufacturing. Anthropic/Dario zaczynają say \"I don't want to perturb the world that quickly\" — 70% voters can wipe them out. AI self-improves within itself.",
+            "text_en": "100x coming very soon. Sum total of all human intelligence gated on chip manufacturing. Anthropic/Dario starting to say \"I don't want to perturb the world that quickly\" — 70% voters can wipe them out. AI self-improves within itself."
+          }
+        ],
+        "wniosek_pl": "ASI > suma ludzkiej inteligencji w <strong>~5 lat</strong>. Wiek obfitości. Anthropic zaczyna self-censor — boi się regulacji.",
+        "wniosek_en": "ASI > sum of human intelligence in <strong>~5 years</strong>. Age of abundance. Anthropic starting to self-censor — afraid of regulation.",
+        "kontekst_pl": "Elon relaxed forecast dla Economist (conservative publication). Anthropic/Dario zaczynają hedging.",
+        "kontekst_en": "Elon relaxed forecast for Economist (conservative publication). Anthropic/Dario starting to hedge."
+      },
+      {
+        "num": "05",
+        "title": "US science policy — Science: A New Golden Age",
+        "title_pl": "Polityka naukowa USA — Science: A New Golden Age",
+        "title_en": "US science policy — Science: A New Golden Age",
+        "time": "01:04:27 – 01:10:09",
+        "fakty_pl": "Biały Dom wydał raport \"Science: A New Golden Age\" autorstwa Michaela Kratsiosa (director OSTP). Modeled on Vannevar Bush 1945 \"Science: The Endless Frontier\". Największy structural rethink od 80 lat. 4 cele: (1) priorytetyzacja individual scientist nad legacy institutions, (2) zmiana alokacji grantów (fast grants, long horizon grants, golden ticket dla unconventional proposals), (3) national scientific goals + rebuilding industrial capacity, (4) re-engineering research enterprise dla AI age. $5B expansion Genesis mission — national AI initiative. 15 federal agencies, 278 projects. Wall Street Journal: billions redirected od traditional university research do AI programs. \"Day before something is a breakthrough, it's a crazy idea — government doesn't fund crazy ideas\".",
+        "fakty_en": "White House released \"Science: A New Golden Age\" report by Michael Kratsios (OSTP director). Modeled on Vannevar Bush 1945 \"Science: The Endless Frontier\". Biggest structural rethink in 80 years. 4 goals: (1) prioritize individual scientist over legacy institutions, (2) change grant allocation (fast grants, long horizon grants, golden ticket for unconventional proposals), (3) national scientific goals + rebuilding industrial capacity, (4) re-engineering research enterprise for AI age. $5B expansion of Genesis mission — national AI initiative. 15 federal agencies, 278 projects. Wall Street Journal: billions redirected from traditional university research to AI programs. \"Day before something is a breakthrough, it's a crazy idea — government doesn't fund crazy ideas\".",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Kratsios conclusions: \"current system rewards conformity over bold inquiry, dependent on narrow set of legacy institutions\". 4 cele. $5B Genesis expansion. Najbardziej ambitne restrukturyzowanie od 80 lat.",
+            "text_en": "Kratsios conclusions: \"current system rewards conformity over bold inquiry, dependent on narrow set of legacy institutions\". 4 goals. $5B Genesis expansion. Most ambitious restructuring in 80 years."
+          },
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "To literally the end of the Endless Frontier. 80-letni reżim over-institutionalized. Original Endless Frontier letter Vannevar Bush 1944 to FDR — entirely through lens of WWII military.",
+            "text_en": "This is literally the end of the Endless Frontier. 80-year regime over-institutionalized. Original Endless Frontier letter Vannevar Bush 1944 to FDR — entirely through lens of WWII military."
+          }
+        ],
+        "wniosek_pl": "Najbardziej ambitne restrukturyzowanie amerykańskiej nauki od <strong>80 lat</strong>. Disruptive individuals + moonshots nad institutional peer-reviewed consensus.",
+        "wniosek_en": "Most ambitious restructuring of American science in <strong>80 years</strong>. Disruptive individuals + moonshots over institutional peer-reviewed consensus.",
+        "kontekst_pl": "Vannevar Bush 1945 \"Endless Frontier\" → NSF. Teraz Kratsios 2026 \"New Golden Age\" → AI-era science.",
+        "kontekst_en": "Vannevar Bush 1945 \"Endless Frontier\" → NSF. Now Kratsios 2026 \"New Golden Age\" → AI-era science."
+      },
+      {
+        "num": "06",
+        "title": "End of Endless Frontier — 80-year postwar regime decay",
+        "title_pl": "Koniec Endless Frontier — upadek 80-letniego reżimu powojennego",
+        "title_en": "End of Endless Frontier — 80-year postwar regime decay",
+        "time": "01:10:09 – 01:38:43",
+        "fakty_pl": "NSF \"wildly inefficient\" — rewards incrementalism, nie breakthrough thinking. Grants 2 lata do award. NIH first PI grants w early 40s. Peer-reviewed science: \"people reviewing nie chcą twojego breakthrough bo przestaną być experts\". \"Lord of the Flies\". Salim: Florida universities dostają $750M/rok grants + donations = zero patent innovation output. Wszystko szło do administrators + buildings. Singularity University model: university hasn't changed in 450 years. Small team + MTP + shared facilities + AI. Alex grand bargain: universities powinny zarabiać z licensing revenue i spinout startups, NIE z taxing grants (teraz 2/3 idzie do university overhead). Top research universities too scared of being taxed like forprofits. Creative Destruction Lab (Ajay Agrawal Toronto) — 8-week cycle: technologists + entrepreneurs + execs + corporates. Peter spotyka Kratsiosa za 2 tygodnie — przekaże Alex's ideas.",
+        "fakty_en": "NSF \"wildly inefficient\" — rewards incrementalism, not breakthrough thinking. Grants take 2 years to award. NIH first PI grants in early 40s. Peer-reviewed science: \"people reviewing don't want your breakthrough because they'll no longer be experts\". \"Lord of the Flies\". Salim: Florida universities get $750M/year in grants + donations = zero patent innovation output. Everything went to administrators + buildings. Singularity University model: university hasn't changed in 450 years. Small team + MTP + shared facilities + AI. Alex grand bargain: universities should earn from licensing revenue and spinout startups, NOT from taxing grants (currently 2/3 goes to university overhead). Top research universities too scared of being taxed like forprofits. Creative Destruction Lab (Ajay Agrawal Toronto) — 8-week cycle: technologists + entrepreneurs + execs + corporates. Peter meets Kratsios in 2 weeks — will pass on Alex's ideas.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Grand bargain: universities powinny zarabiać z licensing revenue i spinout startups, NIE z taxing grants. Teraz: 1/3 university overhead + 1/3 department overhead + 1/3 actual lab. Royalties: 1/3 university + 1/3 department + 1/3 inventor. Top research universities too scared of being taxed like forprofits.",
+            "text_en": "Grand bargain: universities should earn from licensing revenue and spinout startups, NOT from taxing grants. Currently: 1/3 university overhead + 1/3 department overhead + 1/3 actual lab. Royalties: 1/3 university + 1/3 department + 1/3 inventor. Top research universities too scared of being taxed like forprofits."
+          },
+          {
+            "host": "Salim Ismail",
+            "dot_color": "var(--hp)",
+            "text_pl": "Florida universities: $750M/rok grants + donations = zero patent innovation. Wszystko do administrators + buildings. Singularity University powstał bo model university nie zmieniał się 450 lat. Small team + MTP + shared facilities + AI = real innovation.",
+            "text_en": "Florida universities: $750M/year grants + donations = zero patent innovation. Everything to administrators + buildings. Singularity University created because university model hadn't changed in 450 years. Small team + MTP + shared facilities + AI = real innovation."
+          }
+        ],
+        "wniosek_pl": "80-letni postwar reżim (WWII military-industrial complex) się rozpada. <strong>NSF inefficient</strong>, peer review blokuje breakthroughs. Universities muszą shift od taxing grants do licensing revenue.",
+        "wniosek_en": "80-year postwar regime (WWII military-industrial complex) is decaying. <strong>NSF inefficient</strong>, peer review blocks breakthroughs. Universities must shift from taxing grants to licensing revenue.",
+        "kontekst_pl": "Eisenhower farewell address ostrzegał przed military-industrial complex. Teraz to się rozpada.",
+        "kontekst_en": "Eisenhower farewell address warned about military-industrial complex. Now it's decaying."
+      },
+      {
+        "num": "07",
+        "title": "Longevity escape velocity — 1,759 years",
+        "title_pl": "Longevity escape velocity — 1,759 lat",
+        "title_en": "Longevity escape velocity — 1,759 years",
+        "time": "01:38:43 – 01:58:27",
+        "fakty_pl": "Nature paper: \"somatic mutations impose an entropic upper bound on human lifespan\". Jeśli wyleczymy 12 hallmarks of aging — 1,759 lat. 6+ firm nad partial epigenetic reprogramming: Life Biosciences (David Sinclair, ER 100, first humans dosed 6 weeks ago, results in 6-12 months), New Limit (Brian Armstrong), Retro (Sam Altman), Altos Labs (Jeff Bezos + Yuri Milner). Yamanaka factors — 3 of 4 for partial reprogramming (nie stem cell, ale earlier state of cardiomyocyte/neuron). Healthspan XPRIZE $101M, 800+ teams, 10 semi-finalists next month ($1M each). Epigenetic clocks (Steve Horvath) — organ-specific vs whole organism. Ray Kurzweil: LEV by 2033. Alex: \"spiky and may already be here in certain subops\". Salim: \"baby that will live to 1000 years old is already alive\". Peter: Putin + Xi Jinping conspiracy on longevity billions.",
+        "fakty_en": "Nature paper: \"somatic mutations impose an entropic upper bound on human lifespan\". If we cure 12 hallmarks of aging — 1,759 years. 6+ companies on partial epigenetic reprogramming: Life Biosciences (David Sinclair, ER 100, first humans dosed 6 weeks ago, results in 6-12 months), New Limit (Brian Armstrong), Retro (Sam Altman), Altos Labs (Jeff Bezos + Yuri Milner). Yamanaka factors — 3 of 4 for partial reprogramming (not stem cell, but earlier state of cardiomyocyte/neuron). Healthspan XPRIZE $101M, 800+ teams, 10 semi-finalists next month ($1M each). Epigenetic clocks (Steve Horvath) — organ-specific vs whole organism. Ray Kurzweil: LEV by 2033. Alex: \"spiky and may already be here in certain subops\". Salim: \"baby that will live to 1000 years old is already alive\". Peter: Putin + Xi Jinping conspiracy on longevity billions.",
+        "glosy": [
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Jeśli wyleczymy 12 hallmarks of aging — 1,759 lat. Life Biosciences (David Sinclair, ER 100) — first humans dosed 6 weeks ago. 6+ firm nad epigenetic reprogramming. Healthspan XPRIZE $101M, 800+ teams.",
+            "text_en": "If we cure 12 hallmarks of aging — 1,759 years. Life Biosciences (David Sinclair, ER 100) — first humans dosed 6 weeks ago. 6+ companies on epigenetic reprogramming. Healthspan XPRIZE $101M, 800+ teams."
+          },
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "LEV spiky and may already be here in certain subops. Solution: replacement cells + cellular regrowth (Aubrey de Grey style). Dla epigenetic reprogramming — youngest age after conception = 7 days post-conception.",
+            "text_en": "LEV is spiky and may already be here in certain subops. Solution: replacement cells + cellular regrowth (Aubrey de Grey style). For epigenetic reprogramming — youngest age after conception = 7 days post-conception."
+          }
+        ],
+        "wniosek_pl": "AI + longevity = <strong>1,759 lat życia</strong>. 6+ firm nad epigenetic reprogramming. LEV may already be here w certain subops.",
+        "wniosek_en": "AI + longevity = <strong>1,759 years of life</strong>. 6+ companies on epigenetic reprogramming. LEV may already be here in certain subops.",
+        "kontekst_pl": "Ray Kurzweil: LEV by 2033. Putin + Xi Jinping spending billions on longevity research.",
+        "kontekst_en": "Ray Kurzweil: LEV by 2033. Putin + Xi Jinping spending billions on longevity research."
+      },
+      {
+        "num": "08",
+        "title": "UAPs — White House disclosure",
+        "title_pl": "UAP — ujawnienie Białego Domu",
+        "title_en": "UAPs — White House disclosure",
+        "time": "01:58:27 – 02:25:00",
+        "fakty_pl": "Trump zwalnia NDA dla świadków UAP. Alex Wissner-Gross: \"pozwolenie na ujawnienie informacji o programie legacy\". Whistleblowerzy zeznawali przed Kongresem o dożywotnich NDA pod groźbą kary śmierci dla ochrony rzekomego nielegalnego programu. Czwarta transza plików Pentagonu (Pursue release) — wideo UFO sześcioramiennej gwiazdy nad Chinami 2025. ODNIGV wyda wytyczne dla społeczności wywiadowczej. Koincydencja: increased UAP activity w 1940s (nuclear age) i teraz (AGI age). Peter: \"if this is extrasolar intelligence — we are about to break containment from Earth\". Alex: \"von Neumann probes at relativistic speeds to convert galaxy to paperclips in a few years — threat to any other non-human intelligence in our galaxy\". 80-year postwar regime (WWII military-industrial complex) is decaying — Eisenhower warned about this.",
+        "fakty_en": "Trump waives NDAs for UAP witnesses. Alex Wissner-Gross: \"permission to disclose information about legacy program\". Whistleblowers testified before Congress about lifetime NDAs under penalty of death to protect alleged illegal program. Fourth batch of Pentagon files (Pursue release) — UFO video of six-pointed star over China 2025. ODNIGV to issue guidance for intelligence community. Coincidence: increased UAP activity in 1940s (nuclear age) and now (AGI age). Peter: \"if this is extrasolar intelligence — we are about to break containment from Earth\". Alex: \"von Neumann probes at relativistic speeds to convert galaxy to paperclips in a few years — threat to any other non-human intelligence in our galaxy\". 80-year postwar regime (WWII military-industrial complex) is decaying — Eisenhower warned about this.",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "To historyczny moment. Biały Dom, dyrektor wywiadu narodowego i inne agencje w końcu badają. Świadkowie zeznawali o dożywotnich NDA pod groźbą kary śmierci dla ochrony rzekomego nielegalnego programu. Von Neumann probes at relativistic speeds = threat to any other non-human intelligence in our galaxy.",
+            "text_en": "This is a historic moment. The White House, director of national intelligence and other agencies finally investigating. Whistleblowers testified about lifetime NDAs under penalty of death to protect alleged illegal program. Von Neumann probes at relativistic speeds = threat to any other non-human intelligence in our galaxy."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Koincydencja: increased UAP activity w 1940s (nuclear age) i teraz (AGI age). Jeśli to inteligencja pozasłoneczna — jesteśmy na progu wyrwania się z planety. To poza AI — najbardziej exciting story.",
+            "text_en": "Coincidence: increased UAP activity in 1940s (nuclear age) and now (AGI age). If this is extrasolar intelligence — we are about to break containment from Earth. Beyond AI — most exciting story."
+          }
+        ],
+        "wniosek_pl": "UAP disclosure — <strong>80-letni reżim powojenny</strong> się rozpada. Whistleblowerzy zeznają pod groźbą kary śmierci. Koincydencja UAP nuklear/AGI.",
+        "wniosek_en": "UAP disclosure — <strong>80-year postwar regime</strong> is decaying. Whistleblowers testify under penalty of death. UAP nuklear/AGI coincidence.",
+        "kontekst_pl": "Eisenhower farewell address ostrzegał przed military-industrial complex. Teraz to się rozpada.",
+        "kontekst_en": "Eisenhower farewell address warned about military-industrial complex. Now it's decaying."
+      },
+      {
+        "num": "09",
+        "title": "Outro Q&A — creators vs consumers",
+        "title_pl": "Outro Q&A — twórcy vs konsumenci",
+        "title_en": "Outro Q&A — creators vs consumers",
+        "time": "02:25:00 – 02:32:26",
+        "fakty_pl": "Pytania z audytorium: (1) Eksperymenty vs teoria — przypowieść Newtona i jabłka (Alex Wissner-Gross): z 3 klatek wideo superinteligencja może wywnioskować przyspieszenie, z 4 — stałość, z kilkunastu — ogólną teorię względności. Solomonoff induction. \"Don't underestimate how far you can get with pure theory and computation\". (2) Jak zapobiec bierności ludzi? Peter: podział ludzkości na twórców i konsumentów. Wall-E vs Star Trek — wybór przyszłości. Samoograniczające przekonania vs massive transformative purpose. Salim: \"Peter wakes up every day i takes on optimistic mindset bo better for him and the world\". Outro games (zamiast outro song) — Exponential Arcade Mission01 (Ocean Bennett) i Moonsling Shots (Sgates 2011).",
+        "fakty_en": "Audience questions: (1) Experiments vs theory — Newton's apple parable (Alex Wissner-Gross): from 3 video frames superintelligence can infer acceleration, from 4 — constancy, from a few more — general relativity. Solomonoff induction. \"Don't underestimate how far you can get with pure theory and computation\". (2) How to prevent human complacency? Peter: split of humanity into creators and consumers. Wall-E vs Star Trek — choice of future. Self-limiting beliefs vs massive transformative purpose. Salim: \"Peter wakes up every day and takes on optimistic mindset because better for him and the world\". Outro games (instead of outro song) — Exponential Arcade Mission01 (Ocean Bennett) and Moonsling Shots (Sgates 2011).",
+        "glosy": [
+          {
+            "host": "Dr. Alexander Wissner-Gross",
+            "dot_color": "var(--hp)",
+            "text_pl": "Nie należy niedoceniać jak daleko można zajść z czystą teorią i obliczeniami. Newton's parable: z 3 klatek wideo jabłka, bayesowska superinteligencja wywnioskuje przyspieszenie. Z 4 — stałość. Z kilkunastu — ogólną teorię względności. To Solomonoff induction.",
+            "text_en": "Don't underestimate how far you can get with pure theory and computation. Newton's parable: from 3 video frames of an apple, a Bayesian superintelligence can infer acceleration. From 4 — constancy. From a few more — general relativity. This is Solomonoff induction."
+          },
+          {
+            "host": "Peter Diamandis",
+            "dot_color": "var(--hp)",
+            "text_pl": "Będzie podział ludzkości: twórcy i konsumenci. Ci, którzy użyją AI do podniesienia ambicji, i ci, którzy się położą i będą prosić Optimusa o piwo. Wybór Wall-E vs Star Trek.",
+            "text_en": "There will be a split in humanity: creators and consumers. Those who use AI to uplevel ambitions, and those who lay back and ask Optimus for beer. Wall-E vs Star Trek choice."
+          }
+        ],
+        "wniosek_pl": "AI materializuje podział ludzkości na <strong>twórców i konsumentów</strong>. Wybór Wall-E vs Star Trek.",
+        "wniosek_en": "AI materializes the split of humanity into <strong>creators and consumers</strong>. Wall-E vs Star Trek choice.",
+        "kontekst_pl": "Samouczestnictwo w erze AGI/ASI — albo celujesz w moonshots, albo stajesza się konsumentem.",
+        "kontekst_en": "Self-agency in the age of AGI/ASI — either you aim at moonshots, or you become a consumer."
+      }
+    ]
+  },
+  {
     "num": "#272",
     "collapsed": true,
     "channel": "Diamandis Moonshots",

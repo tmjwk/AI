@@ -5,6 +5,16 @@
 const EPISODES_INDEX = {
   "episodes": [
     {
+      "num": "#281",
+      "title": "China's Endgame: ASI Timelines, US-China Relations, and the $1.7T AI Bubble With Alvin Graylin | 281",
+      "date": "2026-08-18",
+      "duration": "143 min",
+      "channel": "Moonshots",
+      "yt": "Slle5_AxBzs",
+      "collapsed": true,
+      "batch": "recent"
+    },
+    {
       "num": "#279",
       "title": "Bernie Demands the Labs Stop, Wall Street Turns GPUs Into Bonds, Grok 4.7 Takes #1 ft. Emad Mostaque",
       "date": "2026-08-13",
@@ -52,7 +62,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "qPMhduk1qUs",
       "collapsed": true,
-      "batch": "recent"
+      "batch": "batch-2026-h2"
     },
     {
       "num": "#272",
