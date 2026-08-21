@@ -1,7 +1,4 @@
-// AI Glossary data — V4 auto-generated from glossary.json (Nurt 2: bilingual)
-// Schema: {c: category, t: term (PL), en: english name, d_pl: description PL, d_en: description EN}
-// NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
-
+// Glossary — auto-generated from glossary.json
 const G = [
   {
     "c": "Modalności",
@@ -1031,38 +1028,57 @@ const G = [
     "en": "SCoPE (TencentARC)",
     "d_pl": "Technika kontroli kamery w generacji wideo AI od Tencent ARC (sierpień 2026) — Sightline-Coordinate Positional Encoding. Dodaje \"promień kamery\" (camera ray) jako drugą współrzędną pozycjonowania dla każdego tokenu w pretrained video diffusion transformer (np. Wan2.2-I2V-A14B). Dzięki temu wygenerowane wideo podąża po zadanej trajektorii kamery, zachowując prior image-to-video. Repo: github.com/TencentARC/SCoPE.",
     "d_en": "A camera control technique for AI video generation from Tencent ARC (August 2026) — Sightline-Coordinate Positional Encoding. It adds the camera ray as a second positional coordinate for every token in a pretrained video diffusion transformer (e.g. Wan2.2-I2V-A14B). The generated video then follows a prescribed camera trajectory while preserving the image-to-video prior. Repo: github.com/TencentARC/SCoPE."
+  },
+  {
+    "t": "VLA (Vision Language Action)",
+    "en": "VLA (Vision Language Action)",
+    "c": "Robotyka",
+    "d_pl": "Vision Language Action — modele które łączą camera observations, natural language instructions, robot state → generate control actions dla robotów. Zastępują brittle task-specific pipelines. OpenVLA library: 7B parameter model trained na ~million robot episodes z Open X Embodiment dataset. Chiny 100x ahead of US w VLA deployments.",
+    "d_en": "Vision Language Action — models that combine camera observations, natural language instructions, robot state → generate control actions for robots. Replace brittle task-specific pipelines. OpenVLA library: 7B parameter model trained on ~million robot episodes from Open X Embodiment dataset. China 100x ahead of US in VLA deployments."
+  },
+  {
+    "t": "WAM (World Action Model)",
+    "en": "WAM (World Action Model)",
+    "c": "Robotyka",
+    "d_pl": "World Action Models — model future video world dynamics alongside action selection. Trend shift: classic VLA → WAM. NVIDIA Cosmos 3 jako open model + dataset. Dyna 2 (Diner Robotics) pretrained na >1M godzin egocentric human video. Very hot area w robotics research.",
+    "d_en": "World Action Models — model future video world dynamics alongside action selection. Trend shift: classic VLA → WAM. NVIDIA Cosmos 3 as open model + dataset. Dyna 2 (Diner Robotics) pretrained on >1M hours of egocentric human video. Very hot area in robotics research."
+  },
+  {
+    "t": "MTP (Multi-Token Prediction)",
+    "en": "MTP (Multi-Token Prediction)",
+    "c": "Architektury i modele",
+    "d_pl": "Multi-Token Prediction — head draftuje wiele tokenów naraz, pełny model weryfikuje i syntezuje. Qwen 3.8 27B używa MTP. Wymaga enable w llama CPP (option --draft-mtp). Przyspiesza inference.",
+    "d_en": "Multi-Token Prediction — head drafts multiple tokens at once, full model verifies and synthesizes. Qwen 3.8 27B uses MTP. Requires enable in llama CPP (option --draft-mtp). Speeds up inference."
+  },
+  {
+    "t": "Harness engineering",
+    "en": "Harness engineering",
+    "c": "Agentic i narzędzia",
+    "d_pl": "Production layer around agents — context and memory management, MCP tool access, model routing, guardrails, tracing, observability. Claude Code = ~500K lines of code. DeepSeek harness = open source alternative, 180K GitHub stars w tydzień (rekord). Focus shifting: better models → better harnesses.",
+    "d_en": "Production layer around agents — context and memory management, MCP tool access, model routing, guardrails, tracing, observability. Claude Code = ~500K lines of code. DeepSeek harness = open source alternative, 180K GitHub stars in a week (record). Focus shifting: better models → better harnesses."
+  },
+  {
+    "t": "Loop engineering",
+    "en": "Loop engineering",
+    "c": "Agentic i narzędzia",
+    "d_pl": "Goal-driven agents that repeatedly reason, act, observe, evaluate, revise until condition satisfied or stop. Core of harness engineering. Loop = cykl reason→act→observe→evaluate→revise.",
+    "d_en": "Goal-driven agents that repeatedly reason, act, observe, evaluate, revise until condition satisfied or stop. Core of harness engineering. Loop = cycle of reason→act→observe→evaluate→revise."
+  },
+  {
+    "t": "OpenVLA",
+    "en": "OpenVLA",
+    "c": "Robotyka",
+    "d_pl": "Open Vision Language Action library (GitHub). 7B parameter model trained on ~million robot episodes from Open X Embodiment dataset. Major open implementation of VLA.",
+    "d_en": "Open Vision Language Action library (GitHub). 7B parameter model trained on ~million robot episodes from Open X Embodiment dataset. Major open implementation of VLA."
+  },
+  {
+    "t": "Cosmos 3",
+    "en": "Cosmos 3",
+    "c": "Robotyka",
+    "d_pl": "NVIDIA open model + dataset collection for VLA/WAM (World Action Models) and hybrids. Hosted discussion on shift from classic VLA to WAM. Open model dla robotics research.",
+    "d_en": "NVIDIA open model + dataset collection for VLA/WAM (World Action Models) and hybrids. Hosted discussion on shift from classic VLA to WAM. Open model for robotics research."
   }
 ];
-
-const CATS = [
-  "Architektury i modele",
-  "Trening i optymalizacja",
-  "Kontekst i wydajność",
-  "Agentic i narzędzia",
-  "Modalności",
-  "Infrastruktura",
-  "Bezpieczeństwo i regulacje",
-  "Ewaluacja"
-];
-
-const CATS_EN = {
-  "Architektury i modele": "Architectures & Models",
-  "Trening i optymalizacja": "Training & Optimization",
-  "Kontekst i wydajność": "Context & Performance",
-  "Agentic i narzędzia": "Agentic & Tools",
-  "Modalności": "Modalities",
-  "Infrastruktura": "Infrastructure",
-  "Bezpieczeństwo i regulacje": "Safety & Regulation",
-  "Ewaluacja": "Evaluation"
-};
-
-const ICONS = {
-  "Architektury i modele": "🧠",
-  "Trening i optymalizacja": "🏋️",
-  "Kontekst i wydajność": "⚡",
-  "Agentic i narzędzia": "🤖",
-  "Modalności": "🎨",
-  "Infrastruktura": "🖥️",
-  "Bezpieczeństwo i regulacje": "🛡️",
-  "Ewaluacja": "🏆"
-};
+const CATS = ["Architektury i modele", "Trening i optymalizacja", "Kontekst i wydajność", "Agentic i narzędzia", "Modalności", "Infrastruktura", "Bezpieczeństwo i regulacje", "Ewaluacja"];
+const ICONS = {"Architektury i modele": "🧠", "Trening i optymalizacja": "🏋️", "Kontekst i wydajność": "⚡", "Agentic i narzędzia": "🤖", "Modalności": "🎨", "Infrastruktura": "🖥️", "Bezpieczeństwo i regulacje": "🛡️", "Ewaluacja": "🏆"};
+const CATS_EN = {"Architektury i modele": "Architectures & Models", "Trening i optymalizacja": "Training & Optimization", "Kontekst i wydajność": "Context & Performance", "Agentic i narzędzia": "Agentic & Tools", "Modalności": "Modalities", "Infrastruktura": "Infrastructure", "Bezpieczeństwo i regulacje": "Safety & Regulation", "Ewaluacja": "Evaluation"};
