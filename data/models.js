@@ -2,7 +2,7 @@
 // Schema: {r, n, v, d, o, c, desc_pl, desc_en, b_pl, b_en}
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
-const TODAY = "2026-08-20";
+const TODAY = "2026-08-21";
 const NEW_DAYS = 14;
 
 const M = [
@@ -3943,6 +3943,63 @@ const M = [
     "tier_override": "S",
     "tier_override_reason": "#1 na Artificial Analysis Image Arena (ELO 1375)",
     "tier_override_date": "2026-08-21"
+  },
+  {
+    "r": 55,
+    "n": "Dots 3-node",
+    "v": "Dots (China, open-source)",
+    "d": "2026-08-20",
+    "o": 1,
+    "c": "LLM",
+    "tags": [],
+    "url": "",
+    "yt": "Kd27bA-yeqk",
+    "desc_pl": "Dots 3-node — 280B MoE, Apache open model z Chin. 500K token context window. Multimodalny: text, images, video, audio. Dostępny na OpenRouter (text+image). Long horizon AI model.",
+    "desc_en": "Dots 3-node — 280B MoE, Apache open model from China. 500K token context window. Multimodal: text, images, video, audio. Available on OpenRouter (text+image). Long horizon AI model.",
+    "b_pl": "Long horizon, 500K context, multimodal, open-source",
+    "b_en": "Long horizon, 500K context, multimodal, open-source",
+    "score": null,
+    "score_source": "manual",
+    "score_date": "2026-08-21",
+    "tier": "B"
+  },
+  {
+    "r": 6,
+    "n": "Etched",
+    "v": "Etched (startup)",
+    "d": "2026-08-20",
+    "o": 0,
+    "c": "Hardware",
+    "tags": [],
+    "url": "",
+    "yt": "Kd27bA-yeqk",
+    "desc_pl": "Etched — startup projektujący specialized inference chips dla transformer models. Szybsze i tańsze niż general-purpose GPUs. $700M raised at $21B valuation (było $10B miesiąc temu). Ponad $1B w customer contracts.",
+    "desc_en": "Etched — startup designing specialized inference chips for transformer models. Faster and cheaper than general-purpose GPUs. $700M raised at $21B valuation (was $10B month ago). Over $1B in customer contracts.",
+    "b_pl": "Custom AI inference chips, $21B valuation",
+    "b_en": "Custom AI inference chips, $21B valuation",
+    "score": null,
+    "score_source": "manual",
+    "score_date": "2026-08-21",
+    "tier": "C"
+  },
+  {
+    "r": 9,
+    "n": "Cursor Origin",
+    "v": "Cursor",
+    "d": "2026-08-20",
+    "o": 0,
+    "c": "Coding",
+    "tags": [],
+    "url": "",
+    "yt": "Kd27bA-yeqk",
+    "desc_pl": "Cursor Origin — własny git code hosting wbudowany w Cursor. Repositories, code browsing, pull requests, reviews. Existing GitHub repos można sync. Target: agent-scale development. Launch zbiegł z 8-hour GitHub outage. Tylko paid Cursor users.",
+    "desc_en": "Cursor Origin — own git code hosting built into Cursor. Repositories, code browsing, pull requests, reviews. Existing GitHub repos can sync. Target: agent-scale development. Launch coincided with 8-hour GitHub outage. Paid Cursor users only.",
+    "b_pl": "Git hosting w Cursor, agent-scale development",
+    "b_en": "Git hosting in Cursor, agent-scale development",
+    "score": null,
+    "score_source": "manual",
+    "score_date": "2026-08-21",
+    "tier": "C"
   }
 ];
 

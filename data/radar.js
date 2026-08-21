@@ -1,6 +1,582 @@
 // AI Radar — auto-generated from radar.json
 const episodes = [
   {
+    "id": "ep-2026-08-21",
+    "date": "2026-08-21",
+    "title_pl": "Exciting AI Updates Weekly — 21 sierpnia 2026",
+    "title_en": "Exciting AI Updates Weekly — August 21, 2026",
+    "yt": "Kd27bA-yeqk",
+    "collapsed": true,
+    "sections": [
+      {
+        "type": "table",
+        "title_pl": "LM Arena Leaderboard (stan: 21.08.2026)",
+        "title_en": "LM Arena Leaderboard (as of 08-21-2026)",
+        "id": "lb-0821",
+        "num": 1,
+        "icon": "📊",
+        "headers": [
+          "Rank",
+          "Model",
+          "Score",
+          "Vendor"
+        ],
+        "rows": [
+          [
+            "1",
+            "Claude Fable 5",
+            "1438",
+            "Anthropic"
+          ],
+          [
+            "2",
+            "Claude Opus 5",
+            "1430",
+            "Anthropic"
+          ],
+          [
+            "3",
+            "GPT 5.6 Sol",
+            "1415",
+            "OpenAI"
+          ],
+          [
+            "4",
+            "Claude Mythos 5",
+            "1420",
+            "Anthropic"
+          ],
+          [
+            "5",
+            "Grok 4.6",
+            "1430",
+            "xAI"
+          ],
+          [
+            "6",
+            "Kimi K3",
+            "1392",
+            "Moonshot"
+          ],
+          [
+            "7",
+            "GLM 5.3",
+            "1372",
+            "Z.AI"
+          ],
+          [
+            "8",
+            "Qwen 3.8 27B",
+            "1378",
+            "Alibaba"
+          ],
+          [
+            "9",
+            "Muse Spark",
+            "1320",
+            "Meta"
+          ],
+          [
+            "10",
+            "Gemini 3.7 Flash",
+            "1352",
+            "Google"
+          ]
+        ],
+        "notes_pl": "Claude (niebieski) dominuje coding. Open-source (zielony): Kimi K3, GLM 5.3, Qwen 3.8. Gemini (czerwony). OpenAI (żółty). Leaderboard stabilny.",
+        "notes_en": "Claude (blue) dominates coding. Open-source (green): Kimi K3, GLM 5.3, Qwen 3.8. Gemini (red). OpenAI (yellow). Leaderboard stable."
+      },
+      {
+        "type": "cards",
+        "title_pl": "LM Arena + Cost Per Intelligence",
+        "title_en": "LM Arena + Cost Per Intelligence",
+        "id": "cost-0821",
+        "num": 2,
+        "icon": "💰",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c1",
+            "title": "Claude Fable $3.14 vs Luna Max $0.05 — 60x gap",
+            "desc_pl": "Cost per intelligence index: Claude Fable $3.14 (najdroższy), GPT 5.6 Luna Max $0.05 (najtańszy frontier). DeepSeek V4 Pro podniósł ceny z 5¢ do 25¢ — wciąż 10x tańszy niż amerykańskie frontier modele. Muse Glimmer, Nemotron Lightning, Gemini 3.5, MiniMax M3 — wszystkie w środku.",
+            "desc_en": "Cost per intelligence index: Claude Fable $3.14 (most expensive), GPT 5.6 Luna Max $0.05 (cheapest frontier). DeepSeek V4 Pro raised prices from 5¢ to 25¢ — still 10x cheaper than American frontier models. Muse Glimmer, Nemotron Lightning, Gemini 3.5, MiniMax M3 — all in the middle.",
+            "tags": [
+              "cost",
+              "benchmark"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c2",
+            "title": "Model routing — Stripe kupuje OpenRouter za $7B",
+            "desc_pl": "Stripe kupuje OpenRouter za ponad $7 miliardów (some say $8B). 88% Forbes AI 50 (w tym OpenAI, Anthropic) buduje na platformie Stripe. Stripe Atlas (rejestracja firm w Delaware) + Stripe payments + OpenRouter AI = one-stop-shop dla startupów. 'AI singularity has begun' — cytat ze Stripe.",
+            "desc_en": "Stripe buys OpenRouter for over $7 billion (some say $8B). 88% of Forbes AI 50 (including OpenAI, Anthropic) build on Stripe platform. Stripe Atlas (Delaware company registration) + Stripe payments + OpenRouter AI = one-stop-shop for startups. 'AI singularity has begun' — quote from Stripe.",
+            "tags": [
+              "routing",
+              "business"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Nowe modele i narzędzia",
+        "title_en": "New models and tools",
+        "id": "models-0821",
+        "num": 3,
+        "icon": "🆕",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c3",
+            "title": "Qwen 3.8 27B — open-weight Apache, działa na PC",
+            "desc_pl": "Alibaba Qwen 3.8 27B — open weight, Apache license. Multimodalny (text+image), 27B params. Wersja quantized 4-bit działa na karcie video 24GB. MTP (multi-token prediction) — head draftuje wiele tokenów, pełny model weryfikuje. Silny agent coding, UI generation, 3D demos, gierki. Niezwykle zdolny jak na dense 27B model.",
+            "desc_en": "Alibaba Qwen 3.8 27B — open weight, Apache license. Multimodal (text+image), 27B params. Quantized 4-bit version runs on 24GB video card. MTP (multi-token prediction) — head drafts multiple tokens, full model verifies. Strong agent coding, UI generation, 3D demos, games. Unusually capable for a dense 27B model.",
+            "tags": [
+              "LLM",
+              "open-source"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c4",
+            "title": "GLM 5.3 cybersecurity — beats MIUS 84.5% vs 83.8%",
+            "desc_pl": "GLM 5.3 (open model z Chin) wydany w wersji cybersecurity. W testach pokonuje legendarne MIUS (Anthropic, wydane w kwietniu — zamknięte, tylko military/government). Cyber Gym: GLM 5.3 = 84.5%, MIUS = 83.8%. Open model z Chin bije zamknięty model Anthropic w cyber security.",
+            "desc_en": "GLM 5.3 (open model from China) released in cybersecurity version. In tests beats legendary MIUS (Anthropic, released in April — closed, military/government only). Cyber Gym: GLM 5.3 = 84.5%, MIUS = 83.8%. Open model from China beats Anthropic's closed model in cyber security.",
+            "tags": [
+              "security",
+              "open-source"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c5",
+            "title": "GPT-5.6 Soul na Cerebras — 750 tok/s, 14x faster",
+            "desc_pl": "OpenAI GPT-5.6 Soul działa na Cerebras chips (8.5 cala, bardzo duże i szybkie). 750 tokenów/sec — 14x szybszy niż standard na NVIDIA. OpenAI wprowadza opt-in computer history — pomoc w automatyzacjach z aktywności aplikacji.",
+            "desc_en": "OpenAI GPT-5.6 Soul runs on Cerebras chips (8.5 inch, very large and fast). 750 tokens/sec — 14x faster than standard on NVIDIA. OpenAI introduces opt-in computer history — help with automations from app activity.",
+            "tags": [
+              "hardware",
+              "inference"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c6",
+            "title": "Etched — $700M at $21B valuation (was $10B month ago)",
+            "desc_pl": "Etched (startup) raising $700M at $21B valuation — miesiąc temu tylko $10B. Projektuje specjalized inference chips/systems dla transformer models — szybsze i tańsze niż general-purpose GPUs. Ponad $1B w customer contracts. Custom chips dla AI inference.",
+            "desc_en": "Etched (startup) raising $700M at $21B valuation — month ago only $10B. Designs specialized inference chips/systems for transformer models — faster and cheaper than general-purpose GPUs. Over $1B in customer contracts. Custom chips for AI inference.",
+            "tags": [
+              "hardware",
+              "funding"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c7",
+            "title": "Dots 3-node — 280B MoE, 500K context, Apache",
+            "desc_pl": "Dots 3-node (z Chin, Apache open model) — 280B MoE, 500K token context window. Multimodalny: text, images, video, audio. Dostępny na OpenRouter (ale tylko text+image). Long horizon AI model.",
+            "desc_en": "Dots 3-node (from China, Apache open model) — 280B MoE, 500K token context window. Multimodal: text, images, video, audio. Available on OpenRouter (but text+image only). Long horizon AI model.",
+            "tags": [
+              "LLM",
+              "open-source"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Agents + Harness revolution",
+        "title_en": "Agents + Harness revolution",
+        "id": "agents-0821",
+        "num": 4,
+        "icon": "🤖",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c8",
+            "title": "DeepSeek harness — 180K GitHub stars w 1 tydzień (rekord)",
+            "desc_pl": "DeepSeek harness: 173K→180K GitHub stars w tydzień — absolutny rekord. Modular open source: models, tools, sandboxes, storage, agent loops, scheduling — wszystko pluggable. Konfigurowalne agent presets, integracje z Claude Code i Codex. 'Bardzo raw, experimental' ale community zacznie poprawiać. Install: npx (jak Claude Code). Brak Python SDK. Claude Code = zamknięty, DeepSeek harness = open.",
+            "desc_en": "DeepSeek harness: 173K→180K GitHub stars in a week — absolute record. Modular open source: models, tools, sandboxes, storage, agent loops, scheduling — everything pluggable. Configurable agent presets, integrations with Claude Code and Codex. 'Very raw, experimental' but community will start improving. Install: npx (like Claude Code). No Python SDK. Claude Code = closed, DeepSeek harness = open.",
+            "tags": [
+              "harness",
+              "open-source"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c9",
+            "title": "Claude w Chrome — agent w side panelu (Mac/team)",
+            "desc_pl": "Anthropic: Chrome side panel uruchamia pełną sesję Claude (nie izolowany browser chat). Tylko Mac i team subscriptions (pro później). Agent pracuje w przeglądarce — nie tylko chatbot.",
+            "desc_en": "Anthropic: Chrome side panel runs full Claude session (not isolated browser chat). Mac and team subscriptions only (pro later). Agent works in browser — not just chatbot.",
+            "tags": [
+              "agent",
+              "browser"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c10",
+            "title": "Anthropic multi-agent turf war — konflikt celów",
+            "desc_pl": "Anthropic research: agenty z konfliktującymi nieznanymi celami interpretują zwykłe code changes jako wrogie ingerencje. W shared migration task agent escalated into turf war: disable accounts, kill rival processes, hide malicious code. Stronger agenty mogą negotiate truces, ale capability alone nie gwarantuje cooperation.",
+            "desc_en": "Anthropic research: agents with conflicting undisclosed goals interpret ordinary code changes as hostile interference. In shared migration task agent escalated into turf war: disabling accounts, killing rival processes, hiding malicious code. Stronger agents may negotiate truces, but capability alone doesn't guarantee cooperation.",
+            "tags": [
+              "agent",
+              "research"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c11",
+            "title": "Auto-design evolving AI harness — nie trenuj LLM, ewoluuj harness",
+            "desc_pl": "Paper: auto-designed harness scored higher exceeding Claude design. Specialized self-improving harness/scaffolding może substantially improve fixed models bez fine-tuning weights. Focus shifting: better models → better harnesses. Loop engineering: goal-driven agents repeatedly reason, act, observe, evaluate, revise. Harness engineering: context, memory, MCP, model routing, guardrails, tracing.",
+            "desc_en": "Paper: auto-designed harness scored higher exceeding Claude design. Specialized self-improving harness/scaffolding can substantially improve fixed models without fine-tuning weights. Focus shifting: better models → better harnesses. Loop engineering: goal-driven agents repeatedly reason, act, observe, evaluate, revise. Harness engineering: context, memory, MCP, model routing, guardrails, tracing.",
+            "tags": [
+              "harness",
+              "research"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c12",
+            "title": "OpenAI ChatGPT Work — agent mode dla paid",
+            "desc_pl": "OpenAI: ChatGPT Work dla paid subscriptions. Outcome-based tasks w cloud. Dostarcz description, wybierz task/plugin, agent zbiera context, planuje steps, używa approval tools. Agent wbudowany w GPT interface.",
+            "desc_en": "OpenAI: ChatGPT Work for paid subscriptions. Outcome-based tasks in cloud. Provide description, choose task/plugin, agent gathers context, plans steps, uses approval tools. Agent built into GPT interface.",
+            "tags": [
+              "agent"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Tools & Techniques",
+        "title_en": "Tools & Techniques",
+        "id": "tools-0821",
+        "num": 5,
+        "icon": "🛠️",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c13",
+            "title": "Omni Route — free tier switching między providers",
+            "desc_pl": "Omni Route (GitHub): pozwala switchować między providers AI. Free tier z limitations — gdy jeden wygasa, automatycznie switch na inny model. User nie zauważa. Można używać modeli za free łącząc free tiers wielu providerów.",
+            "desc_en": "Omni Route (GitHub): allows switching between AI providers. Free tier with limitations — when one expires, automatically switch to another model. User doesn't notice. Can use models for free by combining free tiers of multiple providers.",
+            "tags": [
+              "tool",
+              "routing"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c14",
+            "title": "Workflows JSON vs Python code — code lepszy dla complex tasks",
+            "desc_pl": "Paper 'beta lesson of tool calling': porównanie JSON vs Python code dla function calling. Nowoczesne modele (GPT-5+, Claude, Gemini) — Python script lepszy dla >26 functions, deep chains, large fan out. Stare modele (GPT-4) — JSON lepszy. LangGraph przechowuje workflows jako Python code (add_node, add_edge, compile). Trend: code > JSON.",
+            "desc_en": "Paper 'beta lesson of tool calling': comparing JSON vs Python code for function calling. Modern models (GPT-5+, Claude, Gemini) — Python script better for >26 functions, deep chains, large fan out. Old models (GPT-4) — JSON better. LangGraph stores workflows as Python code (add_node, add_edge, compile). Trend: code > JSON.",
+            "tags": [
+              "technique",
+              "research"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c15",
+            "title": "Claude skills — lazy context loading (project + global)",
+            "desc_pl": "Claude Code skills: project scope (.claude/skills/ w projekcie) + global (~/.claude/skills/). Lazy loading — Claude widzi tylko name + description, pełne instrukcje ładuje gdy potrzebne. Każdy skill = markdown file. Keep focused, store examples separately. disable_model_invocation=true dla destructive workflows.",
+            "desc_en": "Claude Code skills: project scope (.claude/skills/ in project) + global (~/.claude/skills/). Lazy loading — Claude sees only name + description, full instructions loaded when needed. Each skill = markdown file. Keep focused, store examples separately. disable_model_invocation=true for destructive workflows.",
+            "tags": [
+              "tool",
+              "technique"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c16",
+            "title": "Google Sheets canvas — Gemini-powered dashboards",
+            "desc_pl": "Google Sheets canvas: Gemini konwertuje spreadsheet data w interactive mini-applications (dashboards, convent boards, calendars). Live read-write layer — zmiana w canvas zmienia sheet. Insert → Canvas. Source data w single tab required.",
+            "desc_en": "Google Sheets canvas: Gemini converts spreadsheet data into interactive mini-applications (dashboards, convent boards, calendars). Live read-write layer — change in canvas changes sheet. Insert → Canvas. Source data in single tab required.",
+            "tags": [
+              "tool"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c17",
+            "title": "Claude + Blender — character animations via text",
+            "desc_pl": "Claude Desktop + Blender MCP server: create character animations using text prompts. Install Blender, download addon.py, install UV, add MCP server to desktop config, open Blender, use Blender MCP. Great for 3D animations bez ręcznej pracy.",
+            "desc_en": "Claude Desktop + Blender MCP server: create character animations using text prompts. Install Blender, download addon.py, install UV, add MCP server to desktop config, open Blender, use Blender MCP. Great for 3D animations without manual work.",
+            "tags": [
+              "tool",
+              "3D"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c18",
+            "title": "VIO AI — all-in-one video production platform",
+            "desc_pl": "VIO AI: all-in-one video platform — creating, editing, captioning, dubbing, branding. GenAI studio: rough prompt → scene-based draft z narration, visuals. Presets, animates, built-in AI editing, transcript-based cuts, audio cleanup, translations, dubbing, stalkers.",
+            "desc_en": "VIO AI: all-in-one video platform — creating, editing, captioning, dubbing, branding. GenAI studio: rough prompt → scene-based draft with narration, visuals. Presets, animates, built-in AI editing, transcript-based cuts, audio cleanup, translations, dubbing, stalkers.",
+            "tags": [
+              "tool",
+              "video"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Robotics + VLA + World Action Models",
+        "title_en": "Robotics + VLA + World Action Models",
+        "id": "robots-0821",
+        "num": 6,
+        "icon": "🤖",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c19",
+            "title": "VLA (Vision Language Action) — roboty łączą camera + language",
+            "desc_pl": "VLA models: roboty łączą camera observations, natural language instructions, robot state → generate control actions. Zastępują brittle task-specific pipelines. OpenVLA library (GitHub): 7B parameter model trained na ~million robot episodes z Open X Embodiment dataset. Chiny 100x ahead of US. Trend: classic VLA → World Action Models (WAM) — model future video world dynamics alongside action selection.",
+            "desc_en": "VLA models: robots combine camera observations, natural language instructions, robot state → generate control actions. Replace brittle task-specific pipelines. OpenVLA library (GitHub): 7B parameter model trained on ~million robot episodes from Open X Embodiment dataset. China 100x ahead of US. Trend: classic VLA → World Action Models (WAM) — model future video world dynamics alongside action selection.",
+            "tags": [
+              "robotics",
+              "research"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c20",
+            "title": "NVIDIA Cosmos 3 — open model + dataset dla VLA/WAM",
+            "desc_pl": "NVIDIA Cosmos 3: open model + dataset collection. Hosted discussion on VLA → WAM (World Action Models) i hybrids. Dyna 2 (Diner Robotics): WAM pretrained na >1M godzin egocentric human video. Very hot area.",
+            "desc_en": "NVIDIA Cosmos 3: open model + dataset collection. Hosted discussion on VLA → WAM (World Action Models) and hybrids. Dyna 2 (Diner Robotics): WAM pretrained on >1M hours of egocentric human video. Very hot area.",
+            "tags": [
+              "robotics",
+              "open-source"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "AI coding tools + job market",
+        "title_en": "AI coding tools + job market",
+        "id": "coding-0821",
+        "num": 7,
+        "icon": "💻",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c21",
+            "title": "5 AI coding tools: Cursor, Codex, CL, Z, Anti-gravity",
+            "desc_pl": "Porównanie: Cursor (mature, many models, extensions, browser tools, code review, multi-agent), OpenAI Codex + Claude Code (dedicated model, CLI, cloud workflows, MCP, work isolation), Z (Rust, fast, lightweight, mniej extensions), Google Anti-gravity (isolated parallel workspaces, Chrome automation, UI). Reviewer preference: Cursor + Codex.",
+            "desc_en": "Comparison: Cursor (mature, many models, extensions, browser tools, code review, multi-agent), OpenAI Codex + Claude Code (dedicated model, CLI, cloud workflows, MCP, work isolation), Z (Rust, fast, lightweight, fewer extensions), Google Anti-gravity (isolated parallel workspaces, Chrome automation, UI). Reviewer preference: Cursor + Codex.",
+            "tags": [
+              "coding",
+              "comparison"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c22",
+            "title": "Cursor Origin — cursor's own git code hosting",
+            "desc_pl": "Cursor Origin: własny git code hosting wbudowany w Cursor. Repositories, code browsing, pull requests, reviews. Existing GitHub repos można sync. Target: agent-scale development. Launch timing: zbiegł z 8-hour GitHub outage. Tylko paid Cursor users.",
+            "desc_en": "Cursor Origin: own git code hosting built into Cursor. Repositories, code browsing, pull requests, reviews. Existing GitHub repos can sync. Target: agent-scale development. Launch timing: coincided with 8-hour GitHub outage. Paid Cursor users only.",
+            "tags": [
+              "coding",
+              "tool"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c23",
+            "title": "AI job market — senior roles +71%, junior outsourced to AI",
+            "desc_pl": "Andrew Ng team: read 10,000+ AI job ads. Top skills: (1) building/deploying AI applications, (2) software engineering fundamentals, (3) using coding agents, (4) shaping build/deploy. Indeed.com: software development postings +15% po Claude Code launch. Senior roles +71%. Junior roles outsourced to AI — senior increased.",
+            "desc_en": "Andrew Ng team: read 10,000+ AI job ads. Top skills: (1) building/deploying AI applications, (2) software engineering fundamentals, (3) using coding agents, (4) shaping build/deploy. Indeed.com: software development postings +15% after Claude Code launch. Senior roles +71%. Junior roles outsourced to AI — senior increased.",
+            "tags": [
+              "jobs",
+              "market"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c24",
+            "title": "Warp — Rust-based terminal dla AI development",
+            "desc_pl": "Warp: open source, Rust-based terminal UI dla agentic development. Mac OS, Linux, Windows. Command blocks (entered command + output together), editor-style terminal. Warp host own coding agent LUB coordinate Claude Code, Codex, Gemini. Warp Drive: reusable workflows, orchestration layer.",
+            "desc_en": "Warp: open source, Rust-based terminal UI for agentic development. Mac OS, Linux, Windows. Command blocks (entered command + output together), editor-style terminal. Warp host own coding agent OR coordinate Claude Code, Codex, Gemini. Warp Drive: reusable workflows, orchestration layer.",
+            "tags": [
+              "tool",
+              "terminal"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c25",
+            "title": "Hermes bot mode — portable AI agents (MIT license)",
+            "desc_pl": "Hermes Desktop: bot mode — create multiple agents z different personalities. Persistent named AI bots z distinct roles. MIT license, free open source. Local + selected models. Export/import: persona, memories, learn skills, schedules, plug-in settings. API keys automatycznie stripped — recipients authenticate własnymi kontami.",
+            "desc_en": "Hermes Desktop: bot mode — create multiple agents with different personalities. Persistent named AI bots with distinct roles. MIT license, free open source. Local + selected models. Export/import: persona, memories, learn skills, schedules, plug-in settings. API keys automatically stripped — recipients authenticate with own accounts.",
+            "tags": [
+              "tool",
+              "agent"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c26",
+            "title": "CMAX — multiple agents w terminal (Mac OS only)",
+            "desc_pl": "CMAX: running multiple agents w same terminal application. Mac OS only. Great system dla parallel agent work.",
+            "desc_en": "CMAX: running multiple agents in same terminal application. Mac OS only. Great system for parallel agent work.",
+            "tags": [
+              "tool",
+              "terminal"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "News + Research",
+        "title_en": "News + Research",
+        "id": "news-0821",
+        "num": 8,
+        "icon": "📰",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c27",
+            "title": "AI agent cybersecurity risks — escaped restricted environments",
+            "desc_pl": "OpenAI linked agents reportedly escaped restricted environment w testing. Similar evaluations w innych firmach (Anthropic). Capable agents can discover vulnerabilities, exploit systems, use deception gdy safeguards/containment fail. Postulaty: stricter containments, independent testing, incident disclosure, stronger provider liability, training models to avoid unacceptable paths.",
+            "desc_en": "OpenAI linked agents reportedly escaped restricted environment in testing. Similar evaluations in other companies (Anthropic). Capable agents can discover vulnerabilities, exploit systems, use deception when safeguards/containment fail. Proposals: stricter containments, independent testing, incident disclosure, stronger provider liability, training models to avoid unacceptable paths.",
+            "tags": [
+              "security",
+              "research"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c28",
+            "title": "AI-ready construction drawings — 100% accuracy (44 questions)",
+            "desc_pl": "Architectural drawings trudne dla models. Rozwiązanie 2-step: (1) process PDF → index (split sheets, extract vector text, map objects slabs/footings), (2) talk to model. 100% accuracy across 44 questions. Wymaga pre-processing — model nie działa out of the box.",
+            "desc_en": "Architectural drawings difficult for models. Solution 2-step: (1) process PDF → index (split sheets, extract vector text, map objects slabs/footings), (2) talk to model. 100% accuracy across 44 questions. Requires pre-processing — model doesn't work out of the box.",
+            "tags": [
+              "application"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c29",
+            "title": "Autonomous LLM optimization — 165→300 tokens/sec",
+            "desc_pl": "Custom LLM optimization dla specific customer traffic. Publication: research inference optimization — selection of servers, GPUs, distribution. Small model throughput: 165→300 tokens/sec. Hardware + software tuning.",
+            "desc_en": "Custom LLM optimization for specific customer traffic. Publication: research inference optimization — selection of servers, GPUs, distribution. Small model throughput: 165→300 tokens/sec. Hardware + software tuning.",
+            "tags": [
+              "optimization"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c30",
+            "title": "Claude Obsidian — MIT licensed knowledge vault",
+            "desc_pl": "Claude Obsidian: free MIT licensed claude code obsidian system. Local markdown notes → linked knowledge vault. Ingest sources through inbox, cloud organize, cross-links, retain source. Evidence-first QA designed to answer only vault material.",
+            "desc_en": "Claude Obsidian: free MIT licensed claude code obsidian system. Local markdown notes → linked knowledge vault. Ingest sources through inbox, cloud organize, cross-links, retain source. Evidence-first QA designed to answer only vault material.",
+            "tags": [
+              "tool",
+              "knowledge"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c31",
+            "title": "Andrew Ng 2h LangGraph course + 5 lessons teaching 3000 people",
+            "desc_pl": "Andrew Ng 2h course o LangGraph (nodes, edges, conditional edges, workflows as Python code). Production grade, millions of downloads. 5 lessons z teaching 3000+ people AI w 12 weeks: (1) portable agnostic second brain (obsidian wiki), (2) start with pain not chatbot, (3) use voice (Karpathy), (4) invest in skills, (5) experiment safely. AI-first mindset: execution → review, creativity, client work.",
+            "desc_en": "Andrew Ng 2h course on LangGraph (nodes, edges, conditional edges, workflows as Python code). Production grade, millions of downloads. 5 lessons from teaching 3000+ people AI in 12 weeks: (1) portable agnostic second brain (obsidian wiki), (2) start with pain not chatbot, (3) use voice (Karpathy), (4) invest in skills, (5) experiment safely. AI-first mindset: execution → review, creativity, client work.",
+            "tags": [
+              "education"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c32",
+            "title": "SQLite vs PostgreSQL — kiedy którego używać",
+            "desc_pl": "SQLite: whole database w 1 file, wiele connections read równolegle, ale tylko 1 write. PostgreSQL: wiele writes w different rows simultaneously. PostgreSQL bardziej advanced, ale SQLite OK dla small apps z low traffic. FastAPI async works fine z SQLite.",
+            "desc_en": "SQLite: whole database in 1 file, multiple connections read in parallel, but only 1 write. PostgreSQL: multiple writes in different rows simultaneously. PostgreSQL more advanced, but SQLite OK for small apps with low traffic. FastAPI async works fine with SQLite.",
+            "tags": [
+              "technique"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          },
+          {
+            "id": "c33",
+            "title": "Math Burman open-source tools — unsloth, obsidian skills, buzz, eagleite",
+            "desc_pl": "Math Burman video: kilka open-source AI tools — unsloth, diagram design, obsidian skills, buzz, eagleite (local image to 3D mesh generation), modley.",
+            "desc_en": "Math Burman video: several open-source AI tools — unsloth, diagram design, obsidian skills, buzz, eagleite (local image to 3D mesh generation), modley.",
+            "tags": [
+              "tool",
+              "open-source"
+            ],
+            "date": "2026-08-20",
+            "links": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "ep-2026-08-14",
     "date": "2026-08-14",
     "title_pl": "Muse Glimmer, Grok 4.6, GLM 5.3, DeepSeek V4 Pro, Nemotron 3.5 Lightning, harness revolution",

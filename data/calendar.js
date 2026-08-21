@@ -2,9 +2,339 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-20 20:53:03 UTC
+// Generated: 2026-08-21 19:21:54 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Claude Fable $3.14 vs Luna Max $0.05 — 60x gap",
+    "title_en": "Claude Fable $3.14 vs Luna Max $0.05 — 60x gap",
+    "link": "ai-radar.html#card-c1",
+    "meta_pl": "LM Arena + Cost Per Intelligen",
+    "meta_en": "LM Arena + Cost Per Intelligen",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Model routing — Stripe kupuje OpenRouter za $7B",
+    "title_en": "Model routing — Stripe kupuje OpenRouter za $7B",
+    "link": "ai-radar.html#card-c2",
+    "meta_pl": "LM Arena + Cost Per Intelligen",
+    "meta_en": "LM Arena + Cost Per Intelligen",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Qwen 3.8 27B — open-weight Apache, działa na PC",
+    "title_en": "Qwen 3.8 27B — open-weight Apache, działa na PC",
+    "link": "ai-radar.html#card-c3",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "GLM 5.3 cybersecurity — beats MIUS 84.5% vs 83.8%",
+    "title_en": "GLM 5.3 cybersecurity — beats MIUS 84.5% vs 83.8%",
+    "link": "ai-radar.html#card-c4",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "GPT-5.6 Soul na Cerebras — 750 tok/s, 14x faster",
+    "title_en": "GPT-5.6 Soul na Cerebras — 750 tok/s, 14x faster",
+    "link": "ai-radar.html#card-c5",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Etched — $700M at $21B valuation (was $10B month ago)",
+    "title_en": "Etched — $700M at $21B valuation (was $10B month ago)",
+    "link": "ai-radar.html#card-c6",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Dots 3-node — 280B MoE, 500K context, Apache",
+    "title_en": "Dots 3-node — 280B MoE, 500K context, Apache",
+    "link": "ai-radar.html#card-c7",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "DeepSeek harness — 180K GitHub stars w 1 tydzień (rekord)",
+    "title_en": "DeepSeek harness — 180K GitHub stars w 1 tydzień (rekord)",
+    "link": "ai-radar.html#card-c8",
+    "meta_pl": "Agents + Harness revolution",
+    "meta_en": "Agents + Harness revolution",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Claude w Chrome — agent w side panelu (Mac/team)",
+    "title_en": "Claude w Chrome — agent w side panelu (Mac/team)",
+    "link": "ai-radar.html#card-c9",
+    "meta_pl": "Agents + Harness revolution",
+    "meta_en": "Agents + Harness revolution",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Anthropic multi-agent turf war — konflikt celów",
+    "title_en": "Anthropic multi-agent turf war — konflikt celów",
+    "link": "ai-radar.html#card-c10",
+    "meta_pl": "Agents + Harness revolution",
+    "meta_en": "Agents + Harness revolution",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Auto-design evolving AI harness — nie trenuj LLM, ewoluuj harness",
+    "title_en": "Auto-design evolving AI harness — nie trenuj LLM, ewoluuj harness",
+    "link": "ai-radar.html#card-c11",
+    "meta_pl": "Agents + Harness revolution",
+    "meta_en": "Agents + Harness revolution",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "OpenAI ChatGPT Work — agent mode dla paid",
+    "title_en": "OpenAI ChatGPT Work — agent mode dla paid",
+    "link": "ai-radar.html#card-c12",
+    "meta_pl": "Agents + Harness revolution",
+    "meta_en": "Agents + Harness revolution",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Omni Route — free tier switching między providers",
+    "title_en": "Omni Route — free tier switching między providers",
+    "link": "ai-radar.html#card-c13",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Workflows JSON vs Python code — code lepszy dla complex tasks",
+    "title_en": "Workflows JSON vs Python code — code lepszy dla complex tasks",
+    "link": "ai-radar.html#card-c14",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Claude skills — lazy context loading (project + global)",
+    "title_en": "Claude skills — lazy context loading (project + global)",
+    "link": "ai-radar.html#card-c15",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Google Sheets canvas — Gemini-powered dashboards",
+    "title_en": "Google Sheets canvas — Gemini-powered dashboards",
+    "link": "ai-radar.html#card-c16",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Claude + Blender — character animations via text",
+    "title_en": "Claude + Blender — character animations via text",
+    "link": "ai-radar.html#card-c17",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "VIO AI — all-in-one video production platform",
+    "title_en": "VIO AI — all-in-one video production platform",
+    "link": "ai-radar.html#card-c18",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "VLA (Vision Language Action) — roboty łączą camera + language",
+    "title_en": "VLA (Vision Language Action) — roboty łączą camera + language",
+    "link": "ai-radar.html#card-c19",
+    "meta_pl": "Robotics + VLA + World Action ",
+    "meta_en": "Robotics + VLA + World Action ",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "NVIDIA Cosmos 3 — open model + dataset dla VLA/WAM",
+    "title_en": "NVIDIA Cosmos 3 — open model + dataset dla VLA/WAM",
+    "link": "ai-radar.html#card-c20",
+    "meta_pl": "Robotics + VLA + World Action ",
+    "meta_en": "Robotics + VLA + World Action ",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "5 AI coding tools: Cursor, Codex, CL, Z, Anti-gravity",
+    "title_en": "5 AI coding tools: Cursor, Codex, CL, Z, Anti-gravity",
+    "link": "ai-radar.html#card-c21",
+    "meta_pl": "AI coding tools + job market",
+    "meta_en": "AI coding tools + job market",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Cursor Origin — cursor's own git code hosting",
+    "title_en": "Cursor Origin — cursor's own git code hosting",
+    "link": "ai-radar.html#card-c22",
+    "meta_pl": "AI coding tools + job market",
+    "meta_en": "AI coding tools + job market",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "AI job market — senior roles +71%, junior outsourced to AI",
+    "title_en": "AI job market — senior roles +71%, junior outsourced to AI",
+    "link": "ai-radar.html#card-c23",
+    "meta_pl": "AI coding tools + job market",
+    "meta_en": "AI coding tools + job market",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Warp — Rust-based terminal dla AI development",
+    "title_en": "Warp — Rust-based terminal dla AI development",
+    "link": "ai-radar.html#card-c24",
+    "meta_pl": "AI coding tools + job market",
+    "meta_en": "AI coding tools + job market",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Hermes bot mode — portable AI agents (MIT license)",
+    "title_en": "Hermes bot mode — portable AI agents (MIT license)",
+    "link": "ai-radar.html#card-c25",
+    "meta_pl": "AI coding tools + job market",
+    "meta_en": "AI coding tools + job market",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "CMAX — multiple agents w terminal (Mac OS only)",
+    "title_en": "CMAX — multiple agents w terminal (Mac OS only)",
+    "link": "ai-radar.html#card-c26",
+    "meta_pl": "AI coding tools + job market",
+    "meta_en": "AI coding tools + job market",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "AI agent cybersecurity risks — escaped restricted environments",
+    "title_en": "AI agent cybersecurity risks — escaped restricted environments",
+    "link": "ai-radar.html#card-c27",
+    "meta_pl": "News + Research",
+    "meta_en": "News + Research",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "AI-ready construction drawings — 100% accuracy (44 questions)",
+    "title_en": "AI-ready construction drawings — 100% accuracy (44 questions)",
+    "link": "ai-radar.html#card-c28",
+    "meta_pl": "News + Research",
+    "meta_en": "News + Research",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Autonomous LLM optimization — 165→300 tokens/sec",
+    "title_en": "Autonomous LLM optimization — 165→300 tokens/sec",
+    "link": "ai-radar.html#card-c29",
+    "meta_pl": "News + Research",
+    "meta_en": "News + Research",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Claude Obsidian — MIT licensed knowledge vault",
+    "title_en": "Claude Obsidian — MIT licensed knowledge vault",
+    "link": "ai-radar.html#card-c30",
+    "meta_pl": "News + Research",
+    "meta_en": "News + Research",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Andrew Ng 2h LangGraph course + 5 lessons teaching 3000 people",
+    "title_en": "Andrew Ng 2h LangGraph course + 5 lessons teaching 3000 people",
+    "link": "ai-radar.html#card-c31",
+    "meta_pl": "News + Research",
+    "meta_en": "News + Research",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "SQLite vs PostgreSQL — kiedy którego używać",
+    "title_en": "SQLite vs PostgreSQL — kiedy którego używać",
+    "link": "ai-radar.html#card-c32",
+    "meta_pl": "News + Research",
+    "meta_en": "News + Research",
+    "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "lev",
+    "title_pl": "Math Burman open-source tools — unsloth, obsidian skills, buzz, eagleite",
+    "title_en": "Math Burman open-source tools — unsloth, obsidian skills, buzz, eagleite",
+    "link": "ai-radar.html#card-c33",
+    "meta_pl": "News + Research",
+    "meta_en": "News + Research",
+    "num": "ep-2026-08-21"
+  },
   {
     "date": "2026-08-18",
     "type": "diamandis",
