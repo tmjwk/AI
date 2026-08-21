@@ -584,11 +584,15 @@ function handleHashExpand(){
       setTimeout(function(){
         var topic=document.getElementById(epId+'-topic-'+topicNum);
         if(topic){
-          topic.scrollIntoView({behavior:'smooth',block:'center'});
+          // Scroll with offset for sticky header (~100px)
+          var rect=topic.getBoundingClientRect();
+          var offset=rect.top+window.pageYOffset-120;
+          window.scrollTo({top:offset,behavior:'smooth'});
           // Highlight briefly
           topic.style.transition='background .3s';
-          topic.style.background='rgba(255,106,0,.15)';
-          setTimeout(function(){topic.style.background=''},2000);
+          topic.style.background='rgba(255,106,0,.2)';
+          topic.style.borderColor='#ff6a00';
+          setTimeout(function(){topic.style.background='';topic.style.borderColor=''},3000);
         }
       },400);
     } else {
@@ -603,7 +607,7 @@ document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeE
 </div>
 
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v10.6.1 · Deploy: <span id="deploy-ts">2026-08-21 23:14:30 UTC</span> · <span id="deploy-hash">h0c7c2ce2</span>
+v10.6.1 · Deploy: <span id="deploy-ts">2026-08-21 23:18:14 UTC</span> · <span id="deploy-hash">hfc8a0491</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry" data-title-pl="Do góry" data-title-en="Back to top">↑</button>
