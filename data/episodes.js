@@ -12,8 +12,8 @@ const EPISODES = [
     "yt": "TaJH0D2FKN8",
     "hosts_count_pl": "5 uczestników",
     "hosts_count_en": "5 participants",
-    "topics_count_pl": "15 tematów",
-    "topics_count_en": "15 topics",
+    "topics_count_pl": "14 tematów",
+    "topics_count_en": "14 topics",
     "hosts": [
       {
         "name": "Peter Diamandis",
@@ -407,7 +407,7 @@ const EPISODES = [
         "title": "Simulating Human Cells with AI",
         "title_pl": "Symulacja ludzkich komórek z AI",
         "title_en": "Simulating Human Cells with AI",
-        "time": "2:03:43 – 2:12:29",
+        "time": "2:03:43 – 2:13:14",
         "fakty_pl": "Ado (AI DΩ) — general purpose cell simulator. First world model of a human cell — predicts what happens at every level, remembers every change. Layered in sequence — watch cell's full multiomic response. Computationally testing new drugs designed in silico. Alex: 'Medicine is cooked'. Foothills of longevity escape velocity. Train world's best foundation model to model all cell states and interventions. Emad: human being becomes software engineering problem. 50 trillion cells. David Baker (2024 Nobel Prize Chemistry z Demis for protein folding) co-founded company.",
         "fakty_en": "Ado (AI DΩ) — general purpose cell simulator. First world model of a human cell — predicts what happens at every level, remembers every change. Layered in sequence — watch cell's full multiomic response. Computationally testing new drugs designed in silico. Alex: 'Medicine is cooked'. Foothills of longevity escape velocity. Train world's best foundation model to model all cell states and interventions. Emad: human being becomes software engineering problem. 50 trillion cells. David Baker (2024 Nobel Prize Chemistry with Demis for protein folding) co-founded company.",
         "glosy": [
@@ -439,31 +439,6 @@ const EPISODES = [
       },
       {
         "num": "14",
-        "title": "Outro / Moonshots Summit call-out",
-        "title_pl": "Zakończenie / zapowiedź Moonshots Summit",
-        "title_en": "Outro / Moonshots Summit call-out",
-        "time": "2:12:29 – 2:13:14",
-        "fakty_pl": "Peter prosi creatives o outro music videos — media@diamandis.com. Follow Moonshots na X (@moonshots_pod). Clips i recordings na X. Moonshots Summit — moonshots.com to apply. Peter i See mają AMA z abundance community w 8 minut — speedrun AMA.",
-        "fakty_en": "Peter asks creatives for outro music videos — media@diamandis.com. Follow Moonshots on X (@moonshots_pod). Clips and recordings on X. Moonshots Summit — moonshots.com to apply. Peter and See have AMA with abundance community in 8 minutes — speedrun AMA.",
-        "glosy": [
-          {
-            "author": "Peter Diamandis",
-            "text_pl": "Send us your outro music videos. media@diamandis.com. Follow us on X, moonshots_pod.",
-            "text_en": "Please send us your outro music videos. Send them to media@diamandis.com. Follow us on X, moonshots_pod."
-          },
-          {
-            "author": "Peter Diamandis",
-            "text_pl": "Join us at the Moonshot Summit. Go to moonshots.com to apply.",
-            "text_en": "Join us at the Moonshot Summit. Go to moonshots.com to apply."
-          }
-        ],
-        "wniosek_pl": "Outro + Moonshots Summit promocja. Speedrun AMA incoming.",
-        "wniosek_en": "Outro + Moonshots Summit promotion. Speedrun AMA incoming.",
-        "kontekst_pl": "Moonshots Summit — moonshots.com. Live event Sep 25.",
-        "kontekst_en": "Moonshots Summit — moonshots.com. Live event Sep 25."
-      },
-      {
-        "num": "15",
         "title": "AMA: Energy, Data Centers, and AI Infrastructure",
         "title_pl": "AMA: Energia, Data Centers i infrastruktura AI",
         "title_en": "AMA: Energy, Data Centers, and AI Infrastructure",
