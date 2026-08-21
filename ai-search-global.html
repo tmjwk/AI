@@ -238,10 +238,13 @@ function search(query){
     if(matchAny(epText,queries)){
       // Find matching topic
       var matchTopic='';
+      var matchTopicNum='';
       for(var i=0;i<topics.length;i++){
         var tText=topics[i].title_pl+' '+topics[i].title_en+' '+(topics[i].fakty_pl||'')+' '+(topics[i].fakty_en||'');
-        if(matchAny(tText,queries)){matchTopic=topics[i].title_pl||topics[i].title_en||'';break;}
+        if(matchAny(tText,queries)){matchTopic=topics[i].title_pl||topics[i].title_en||'';matchTopicNum=topics[i].num||'';break;}
       }
+      var epLink='ai-pulse.html#'+(ep.num||'').replace('#','');
+      if(matchTopicNum)epLink+='-topic-'+matchTopicNum;
       results.push({
         type:'episode',
         badge:'pulse',
@@ -249,7 +252,7 @@ function search(query){
         title:ep.num+' — '+(ep.title_pl||ep.title_en||'').substring(0,80),
         desc:matchTopic.substring(0,120),
         meta:ep.date+' · '+(topics.length||0)+' '+(S.lang==='en'?'topics':'tematów'),
-        link:'ai-pulse.html#'+(ep.num||'').replace('#','')
+        link:epLink
       });
     }
   });

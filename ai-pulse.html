@@ -372,9 +372,10 @@ function renderGlos(g){
   return `<li><span class="g-host"><span class="g-dot" style="background:${g.dot_color}"></span>${esc(g.host)}</span><span class="g-text"><span class="pl">${g.text_pl}</span><span class="en">${g.text_en}</span></span></li>`;
 }
 
-function renderTopic(tp){
+function renderTopic(tp, epNum){
   const glosyHtml = tp.glosy.map(renderGlos).join('');
-  return `<div class="topic" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}var col=this.closest('.ep-collapse');if(col){var ep=col.previousElementSibling;if(ep&&ep.classList.contains('episode')){if(this.classList.contains('en')){ep.classList.add('en')}else{var all=col.querySelectorAll('.topic');var anyEn=Array.from(all).some(function(t){return t.classList.contains('en')});if(!anyEn){ep.classList.remove('en')}}}}">
+  var topicId = (epNum||'')+'-topic-'+(tp.num||'');
+  return `<div class="topic" id="${topicId}" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}var col=this.closest('.ep-collapse');if(col){var ep=col.previousElementSibling;if(ep&&ep.classList.contains('episode')){if(this.classList.contains('en')){ep.classList.add('en')}else{var all=col.querySelectorAll('.topic');var anyEn=Array.from(all).some(function(t){return t.classList.contains('en')});if(!anyEn){ep.classList.remove('en')}}}}">
 <div class="t-head">
 <span class="t-num">${esc(tp.num)}</span>
 <span class="t-title"><span class="pl">${esc(tp.title_pl||tp.title)}</span><span class="en">${esc(tp.title_en||tp.title)}</span></span>
@@ -402,7 +403,7 @@ function renderTopic(tp){
 
 function renderEpisodeBody(ep){
   const hostsHtml = ep.hosts.map(renderHost).join('');
-  const topicsHtml = ep.topics.map(renderTopic).join('');
+  const topicsHtml = ep.topics.map(function(tp){return renderTopic(tp, ep.num)}).join('');
   return `<div class="ep-collapse">
 <div class="sec">
 <div class="sec-t"><span class="icon">🎙</span><span class="pl">Gospodarze i goście</span><span class="en">Hosts and guests</span><span class="cnt"><span class="pl">${esc(ep.hosts_count_pl)}</span><span class="en">${esc(ep.hosts_count_en)}</span></span></div>
@@ -566,7 +567,11 @@ if (document.readyState === 'loading') {
 
 function handleHashExpand(){
   if(!location.hash)return;
-  var epId=location.hash.substring(1);
+  var hash=location.hash.substring(1);
+  // Check if hash contains topic reference (e.g. #282-topic-12)
+  var topicMatch=hash.match(/^(.+?)-topic-(\d+)$/);
+  var epId=topicMatch?topicMatch[1]:hash;
+  var topicNum=topicMatch?topicMatch[2]:null;
   setTimeout(function(){
     var ep=document.querySelector('[data-num="#'+epId+'"]')||document.querySelector('[data-num="##'+epId+'"]');
     if(!ep)return;
@@ -574,7 +579,22 @@ function handleHashExpand(){
       var btn=ep.querySelector('.ep-toggle-btn');
       if(btn)btn.click();
     }
-    setTimeout(function(){ep.scrollIntoView({behavior:'smooth',block:'start'})},200);
+    if(topicNum){
+      // Scroll to specific topic after expansion
+      setTimeout(function(){
+        var topicId='#'+epId+'-topic-'+topicNum;
+        var topic=document.getElementById(topicId);
+        if(topic){
+          topic.scrollIntoView({behavior:'smooth',block:'center'});
+          // Highlight briefly
+          topic.style.transition='background .3s';
+          topic.style.background='rgba(255,106,0,.15)';
+          setTimeout(function(){topic.style.background=''},2000);
+        }
+      },400);
+    } else {
+      setTimeout(function(){ep.scrollIntoView({behavior:'smooth',block:'start'})},200);
+    }
   },300);
 }
 
@@ -584,7 +604,7 @@ document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeE
 </div>
 
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v10.6.1 · Deploy: <span id="deploy-ts">2026-08-21 22:38:16 UTC</span> · <span id="deploy-hash">h8d194ac1</span>
+v10.6.1 · Deploy: <span id="deploy-ts">2026-08-21 23:02:06 UTC</span> · <span id="deploy-hash">h357e6425</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry" data-title-pl="Do góry" data-title-en="Back to top">↑</button>
