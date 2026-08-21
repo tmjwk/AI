@@ -2,21 +2,11 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-21 20:43:58 UTC
+// Generated: 2026-08-21 21:33:08 UTC
 
 const CALENDAR = [
   {
     "date": "2026-08-21",
-    "type": "diamandis",
-    "title_pl": "Podcast #282 — OpenAI pauzuje trening frontier, predykcja Elona 100x się sprawdza, robot bije Usaina Bolta | #282",
-    "title_en": "Podcast #282 — OpenAI Pauses Frontier Training, Elon's 100X Prediction Lands, Robot Beats Usain Bolt | EP#282",
-    "link": "ai-pulse.html#282",
-    "meta_pl": "15 tematów",
-    "meta_en": "15 topics",
-    "num": "#282"
-  },
-  {
-    "date": "2026-08-20",
     "type": "lev",
     "title_pl": "Claude Fable $3.14 vs Luna Max $0.05 — 60x gap",
     "title_en": "Claude Fable $3.14 vs Luna Max $0.05 — 60x gap",
@@ -26,7 +16,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Model routing — Stripe kupuje OpenRouter za $7B",
     "title_en": "Model routing — Stripe kupuje OpenRouter za $7B",
@@ -36,7 +26,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Qwen 3.8 27B — open-weight Apache, działa na PC",
     "title_en": "Qwen 3.8 27B — open-weight Apache, działa na PC",
@@ -46,7 +36,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "GLM 5.3 cybersecurity — beats MIUS 84.5% vs 83.8%",
     "title_en": "GLM 5.3 cybersecurity — beats MIUS 84.5% vs 83.8%",
@@ -56,7 +46,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "GPT-5.6 Soul na Cerebras — 750 tok/s, 14x faster",
     "title_en": "GPT-5.6 Soul na Cerebras — 750 tok/s, 14x faster",
@@ -66,7 +56,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Etched — $700M at $21B valuation (was $10B month ago)",
     "title_en": "Etched — $700M at $21B valuation (was $10B month ago)",
@@ -76,7 +66,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Dots 3-node — 280B MoE, 500K context, Apache",
     "title_en": "Dots 3-node — 280B MoE, 500K context, Apache",
@@ -86,7 +76,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "DeepSeek harness — 180K GitHub stars w 1 tydzień (rekord)",
     "title_en": "DeepSeek harness — 180K GitHub stars w 1 tydzień (rekord)",
@@ -96,7 +86,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Claude w Chrome — agent w side panelu (Mac/team)",
     "title_en": "Claude w Chrome — agent w side panelu (Mac/team)",
@@ -106,7 +96,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Anthropic multi-agent turf war — konflikt celów",
     "title_en": "Anthropic multi-agent turf war — konflikt celów",
@@ -116,7 +106,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Auto-design evolving AI harness — nie trenuj LLM, ewoluuj harness",
     "title_en": "Auto-design evolving AI harness — nie trenuj LLM, ewoluuj harness",
@@ -126,7 +116,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "OpenAI ChatGPT Work — agent mode dla paid",
     "title_en": "OpenAI ChatGPT Work — agent mode dla paid",
@@ -136,7 +126,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Omni Route — free tier switching między providers",
     "title_en": "Omni Route — free tier switching między providers",
@@ -146,7 +136,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Workflows JSON vs Python code — code lepszy dla complex tasks",
     "title_en": "Workflows JSON vs Python code — code lepszy dla complex tasks",
@@ -156,7 +146,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Claude skills — lazy context loading (project + global)",
     "title_en": "Claude skills — lazy context loading (project + global)",
@@ -166,7 +156,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Google Sheets canvas — Gemini-powered dashboards",
     "title_en": "Google Sheets canvas — Gemini-powered dashboards",
@@ -176,7 +166,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Claude + Blender — character animations via text",
     "title_en": "Claude + Blender — character animations via text",
@@ -186,7 +176,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "VIO AI — all-in-one video production platform",
     "title_en": "VIO AI — all-in-one video production platform",
@@ -196,7 +186,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "VLA (Vision Language Action) — roboty łączą camera + language",
     "title_en": "VLA (Vision Language Action) — roboty łączą camera + language",
@@ -206,7 +196,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "NVIDIA Cosmos 3 — open model + dataset dla VLA/WAM",
     "title_en": "NVIDIA Cosmos 3 — open model + dataset dla VLA/WAM",
@@ -216,7 +206,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "5 AI coding tools: Cursor, Codex, CL, Z, Anti-gravity",
     "title_en": "5 AI coding tools: Cursor, Codex, CL, Z, Anti-gravity",
@@ -226,7 +216,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Cursor Origin — cursor's own git code hosting",
     "title_en": "Cursor Origin — cursor's own git code hosting",
@@ -236,7 +226,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "AI job market — senior roles +71%, junior outsourced to AI",
     "title_en": "AI job market — senior roles +71%, junior outsourced to AI",
@@ -246,7 +236,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Warp — Rust-based terminal dla AI development",
     "title_en": "Warp — Rust-based terminal dla AI development",
@@ -256,7 +246,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Hermes bot mode — portable AI agents (MIT license)",
     "title_en": "Hermes bot mode — portable AI agents (MIT license)",
@@ -266,7 +256,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "CMAX — multiple agents w terminal (Mac OS only)",
     "title_en": "CMAX — multiple agents w terminal (Mac OS only)",
@@ -276,7 +266,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "AI agent cybersecurity risks — escaped restricted environments",
     "title_en": "AI agent cybersecurity risks — escaped restricted environments",
@@ -286,7 +276,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "AI-ready construction drawings — 100% accuracy (44 questions)",
     "title_en": "AI-ready construction drawings — 100% accuracy (44 questions)",
@@ -296,7 +286,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Autonomous LLM optimization — 165→300 tokens/sec",
     "title_en": "Autonomous LLM optimization — 165→300 tokens/sec",
@@ -306,7 +296,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Claude Obsidian — MIT licensed knowledge vault",
     "title_en": "Claude Obsidian — MIT licensed knowledge vault",
@@ -316,7 +306,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Andrew Ng 2h LangGraph course + 5 lessons teaching 3000 people",
     "title_en": "Andrew Ng 2h LangGraph course + 5 lessons teaching 3000 people",
@@ -326,7 +316,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "SQLite vs PostgreSQL — kiedy którego używać",
     "title_en": "SQLite vs PostgreSQL — kiedy którego używać",
@@ -336,7 +326,7 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-08-21",
     "type": "lev",
     "title_pl": "Math Burman open-source tools — unsloth, obsidian skills, buzz, eagleite",
     "title_en": "Math Burman open-source tools — unsloth, obsidian skills, buzz, eagleite",
@@ -344,6 +334,16 @@ const CALENDAR = [
     "meta_pl": "News + Research",
     "meta_en": "News + Research",
     "num": "ep-2026-08-21"
+  },
+  {
+    "date": "2026-08-21",
+    "type": "diamandis",
+    "title_pl": "Podcast #282 — OpenAI pauzuje trening frontier, predykcja Elona 100x się sprawdza, robot bije Usaina Bolta | #282",
+    "title_en": "Podcast #282 — OpenAI Pauses Frontier Training, Elon's 100X Prediction Lands, Robot Beats Usain Bolt | EP#282",
+    "link": "ai-pulse.html#282",
+    "meta_pl": "14 tematów",
+    "meta_en": "14 topics",
+    "num": "#282"
   },
   {
     "date": "2026-08-18",

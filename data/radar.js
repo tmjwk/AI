@@ -107,7 +107,7 @@ const episodes = [
               "cost",
               "benchmark"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -119,7 +119,7 @@ const episodes = [
               "routing",
               "business"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           }
         ]
@@ -145,7 +145,7 @@ const episodes = [
               "LLM",
               "open-source"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -157,7 +157,7 @@ const episodes = [
               "security",
               "open-source"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -169,7 +169,7 @@ const episodes = [
               "hardware",
               "inference"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -181,7 +181,7 @@ const episodes = [
               "hardware",
               "funding"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -193,7 +193,7 @@ const episodes = [
               "LLM",
               "open-source"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           }
         ]
@@ -219,7 +219,7 @@ const episodes = [
               "harness",
               "open-source"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -231,7 +231,7 @@ const episodes = [
               "agent",
               "browser"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -243,7 +243,7 @@ const episodes = [
               "agent",
               "research"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -255,7 +255,7 @@ const episodes = [
               "harness",
               "research"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -266,7 +266,7 @@ const episodes = [
             "tags": [
               "agent"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           }
         ]
@@ -292,7 +292,7 @@ const episodes = [
               "tool",
               "routing"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -304,7 +304,7 @@ const episodes = [
               "technique",
               "research"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -316,7 +316,7 @@ const episodes = [
               "tool",
               "technique"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -327,7 +327,7 @@ const episodes = [
             "tags": [
               "tool"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -339,7 +339,7 @@ const episodes = [
               "tool",
               "3D"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -351,7 +351,7 @@ const episodes = [
               "tool",
               "video"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           }
         ]
@@ -377,7 +377,7 @@ const episodes = [
               "robotics",
               "research"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -389,7 +389,7 @@ const episodes = [
               "robotics",
               "open-source"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           }
         ]
@@ -415,7 +415,7 @@ const episodes = [
               "coding",
               "comparison"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -427,7 +427,7 @@ const episodes = [
               "coding",
               "tool"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -439,7 +439,7 @@ const episodes = [
               "jobs",
               "market"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -451,7 +451,7 @@ const episodes = [
               "tool",
               "terminal"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -463,7 +463,7 @@ const episodes = [
               "tool",
               "agent"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -475,7 +475,7 @@ const episodes = [
               "tool",
               "terminal"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           }
         ]
@@ -501,7 +501,7 @@ const episodes = [
               "security",
               "research"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -512,7 +512,7 @@ const episodes = [
             "tags": [
               "application"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -523,7 +523,7 @@ const episodes = [
             "tags": [
               "optimization"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -535,7 +535,7 @@ const episodes = [
               "tool",
               "knowledge"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -546,7 +546,7 @@ const episodes = [
             "tags": [
               "education"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -557,7 +557,7 @@ const episodes = [
             "tags": [
               "technique"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           },
           {
@@ -569,7 +569,7 @@ const episodes = [
               "tool",
               "open-source"
             ],
-            "date": "2026-08-20",
+            "date": "2026-08-21",
             "links": []
           }
         ]
