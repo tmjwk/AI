@@ -2,9 +2,19 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-21 21:33:08 UTC
+// Generated: 2026-08-21 22:28:29 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-21",
+    "type": "diamandis",
+    "title_pl": "Podcast #282 — OpenAI pauzuje trening frontier, predykcja Elona 100x się sprawdza, robot bije Usaina Bolta | #282",
+    "title_en": "Podcast #282 — OpenAI Pauses Frontier Training, Elon's 100X Prediction Lands, Robot Beats Usain Bolt | EP#282",
+    "link": "ai-pulse.html#282",
+    "meta_pl": "14 tematów",
+    "meta_en": "14 topics",
+    "num": "#282"
+  },
   {
     "date": "2026-08-21",
     "type": "lev",
@@ -336,16 +346,6 @@ const CALENDAR = [
     "num": "ep-2026-08-21"
   },
   {
-    "date": "2026-08-21",
-    "type": "diamandis",
-    "title_pl": "Podcast #282 — OpenAI pauzuje trening frontier, predykcja Elona 100x się sprawdza, robot bije Usaina Bolta | #282",
-    "title_en": "Podcast #282 — OpenAI Pauses Frontier Training, Elon's 100X Prediction Lands, Robot Beats Usain Bolt | EP#282",
-    "link": "ai-pulse.html#282",
-    "meta_pl": "14 tematów",
-    "meta_en": "14 topics",
-    "num": "#282"
-  },
-  {
     "date": "2026-08-18",
     "type": "diamandis",
     "title_pl": "Podcast #281 — Chińska końcówka: oś czasu ASI, relacje USA-Chiny i bańka AI $1.7T z Alvinem Graylinem | 281",
@@ -584,6 +584,16 @@ const CALENDAR = [
     "meta_pl": "AI Research",
     "meta_en": "AI Research",
     "num": "##33-1"
+  },
+  {
+    "date": "2026-08-13",
+    "type": "diamandis",
+    "title_pl": "Podcast #279 — Bernie żąda by laboratoria się zatrzymały, Wall Street zamienia GPU w obligacje, Grok 4.7 zajmuje #1 z Emadem Mostaque | #279",
+    "title_en": "Podcast #279 — Bernie Demands the Labs Stop, Wall Street Turns GPUs Into Bonds, Grok 4.7 Takes #1 ft. Emad Mostaque | EP #279",
+    "link": "ai-pulse.html#279",
+    "meta_pl": "12 tematów",
+    "meta_en": "12 topics",
+    "num": "#279"
   },
   {
     "date": "2026-08-13",
@@ -906,14 +916,14 @@ const CALENDAR = [
     "num": "ep-2026-08-14"
   },
   {
-    "date": "2026-08-13",
+    "date": "2026-08-11",
     "type": "diamandis",
-    "title_pl": "Podcast #279 — Bernie żąda by laboratoria się zatrzymały, Wall Street zamienia GPU w obligacje, Grok 4.7 zajmuje #1 z Emadem Mostaque | #279",
-    "title_en": "Podcast #279 — Bernie Demands the Labs Stop, Wall Street Turns GPUs Into Bonds, Grok 4.7 Takes #1 ft. Emad Mostaque | EP #279",
-    "link": "ai-pulse.html#279",
-    "meta_pl": "12 tematów",
-    "meta_en": "12 topics",
-    "num": "#279"
+    "title_pl": "Podcast #278 — Sergey Brin przejmuje Gemini, 4 laboratoria tracą containment, compute na giełdzie z Kush Bavaria | #278",
+    "title_en": "Podcast #278 — Sergey Brin Retakes Gemini, 4 Labs Lose Containment, Compute Trades at NYSE w/ Kush Bavaria | EP 278",
+    "link": "ai-pulse.html#278",
+    "meta_pl": "6 tematów",
+    "meta_en": "6 topics",
+    "num": "#278"
   },
   {
     "date": "2026-08-11",
@@ -926,16 +936,6 @@ const CALENDAR = [
     "num": "##32-2"
   },
   {
-    "date": "2026-08-11",
-    "type": "diamandis",
-    "title_pl": "Podcast #278 — Sergey Brin przejmuje Gemini, 4 laboratoria tracą containment, compute na giełdzie z Kush Bavaria | #278",
-    "title_en": "Podcast #278 — Sergey Brin Retakes Gemini, 4 Labs Lose Containment, Compute Trades at NYSE w/ Kush Bavaria | EP 278",
-    "link": "ai-pulse.html#278",
-    "meta_pl": "6 tematów",
-    "meta_en": "6 topics",
-    "num": "#278"
-  },
-  {
     "date": "2026-08-09",
     "type": "weekly",
     "title_pl": "AI Tydzień #32 | 3-9/08/2026",
@@ -944,6 +944,16 @@ const CALENDAR = [
     "meta_pl": "12 sekcji",
     "meta_en": "12 sections",
     "num": "32"
+  },
+  {
+    "date": "2026-08-08",
+    "type": "diamandis",
+    "title_pl": "Podcast #276 — Jeff Dean opuszcza Google, SpaceX osiąga $100B przychodów, a OpenAI Astra rozwiązuje dziesięcioletnie problemy matematyczne | #276",
+    "title_en": "Podcast #276 — Google's Jeff Dean Exits, SpaceX Hits $100B in Rev & OpenAI's Astra Solves Decade-Old Math Problems | EP #276",
+    "link": "ai-pulse.html#276",
+    "meta_pl": "12 tematów",
+    "meta_en": "12 topics",
+    "num": "#276"
   },
   {
     "date": "2026-08-08",
@@ -1114,16 +1124,6 @@ const CALENDAR = [
     "meta_pl": "Coding",
     "meta_en": "Coding",
     "num": "##32-1"
-  },
-  {
-    "date": "2026-08-08",
-    "type": "diamandis",
-    "title_pl": "Podcast #276 — Jeff Dean opuszcza Google, SpaceX osiąga $100B przychodów, a OpenAI Astra rozwiązuje dziesięcioletnie problemy matematyczne | #276",
-    "title_en": "Podcast #276 — Google's Jeff Dean Exits, SpaceX Hits $100B in Rev & OpenAI's Astra Solves Decade-Old Math Problems | EP #276",
-    "link": "ai-pulse.html#276",
-    "meta_pl": "12 tematów",
-    "meta_en": "12 topics",
-    "num": "#276"
   },
   {
     "date": "2026-08-06",
@@ -1857,16 +1857,6 @@ const CALENDAR = [
   },
   {
     "date": "2026-07-29",
-    "type": "lev",
-    "title_pl": "Kimi K3 dostępny na Ollama Cloud — $20 lub $100/miesiąc",
-    "title_en": "Kimi K3 dostępny na Ollama Cloud — $20 lub $100/miesiąc",
-    "link": "ai-radar.html#card-card-ep-2026-07-31-kimi-k3-ollama",
-    "meta_pl": "Nowe modele i narzędzia",
-    "meta_en": "Nowe modele i narzędzia",
-    "num": "ep-2026-07-31"
-  },
-  {
-    "date": "2026-07-29",
     "type": "diamandis",
     "title_pl": "Podcast #275 — Dario vs Jensen o open weights, OpenAI i Anthropic w DC, Xi Jinping eksportuje AI do Global South | #275",
     "title_en": "Podcast #275 — Dario vs Jensen on Open Weights, OpenAI & Anthropic in DC, Xi Exports AI to Global South | EP #275",
@@ -1874,6 +1864,16 @@ const CALENDAR = [
     "meta_pl": "9 tematów",
     "meta_en": "9 topics",
     "num": "#275"
+  },
+  {
+    "date": "2026-07-29",
+    "type": "lev",
+    "title_pl": "Kimi K3 dostępny na Ollama Cloud — $20 lub $100/miesiąc",
+    "title_en": "Kimi K3 dostępny na Ollama Cloud — $20 lub $100/miesiąc",
+    "link": "ai-radar.html#card-card-ep-2026-07-31-kimi-k3-ollama",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-31"
   },
   {
     "date": "2026-07-28",
@@ -2387,16 +2387,6 @@ const CALENDAR = [
   },
   {
     "date": "2026-07-19",
-    "type": "lev",
-    "title_pl": "Alibaba Qwen 3.8 Max — wydany 19.07, porównywalny z Kimi K3",
-    "title_en": "Alibaba Qwen 3.8 Max — wydany 19.07, porównywalny z Kimi K3",
-    "link": "ai-radar.html#card-card-ep-2026-07-24-qwen-38-max",
-    "meta_pl": "Nowe modele i narzędzia",
-    "meta_en": "Nowe modele i narzędzia",
-    "num": "ep-2026-07-24"
-  },
-  {
-    "date": "2026-07-19",
     "type": "diamandis",
     "title_pl": "Podcast #272 — Pilna aktualizacja: Moment Sputnik AI — Kimi K3 wydany z Emadem Mostaque | #272",
     "title_en": "Podcast #272 — Urgent Update: AI Sputnik Moment — Kimi K3 Released w/ Emad Mostaque | Ep. 272",
@@ -2416,6 +2406,16 @@ const CALENDAR = [
     "num": "29"
   },
   {
+    "date": "2026-07-19",
+    "type": "lev",
+    "title_pl": "Alibaba Qwen 3.8 Max — wydany 19.07, porównywalny z Kimi K3",
+    "title_en": "Alibaba Qwen 3.8 Max — wydany 19.07, porównywalny z Kimi K3",
+    "link": "ai-radar.html#card-card-ep-2026-07-24-qwen-38-max",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-07-24"
+  },
+  {
     "date": "2026-07-18",
     "type": "ai_search",
     "title_pl": "Robot UFC + Hoverboards — Various",
@@ -2424,6 +2424,16 @@ const CALENDAR = [
     "meta_pl": "Robotics",
     "meta_en": "Robotics",
     "num": "##29-2"
+  },
+  {
+    "date": "2026-07-17",
+    "type": "diamandis",
+    "title_pl": "Podcast #271 — Model 975B Miry Murati, Ramin Hasani o post-transformer AI, Demis i AI FINRA | #271",
+    "title_en": "Podcast #271 — Mira Murati's 975B Open Model, Ramin Hasani on Post-Transformer AI, and Demis' AI FINRA | #271",
+    "link": "ai-pulse.html#271",
+    "meta_pl": "9 tematów",
+    "meta_en": "9 topics",
+    "num": "#271"
   },
   {
     "date": "2026-07-17",
@@ -2444,16 +2454,6 @@ const CALENDAR = [
     "meta_pl": "Multimodal",
     "meta_en": "Multimodal",
     "num": "##29-2"
-  },
-  {
-    "date": "2026-07-17",
-    "type": "diamandis",
-    "title_pl": "Podcast #271 — Model 975B Miry Murati, Ramin Hasani o post-transformer AI, Demis i AI FINRA | #271",
-    "title_en": "Podcast #271 — Mira Murati's 975B Open Model, Ramin Hasani on Post-Transformer AI, and Demis' AI FINRA | #271",
-    "link": "ai-pulse.html#271",
-    "meta_pl": "9 tematów",
-    "meta_en": "9 topics",
-    "num": "#271"
   },
   {
     "date": "2026-07-16",
@@ -2697,16 +2697,6 @@ const CALENDAR = [
   },
   {
     "date": "2026-07-13",
-    "type": "ai_search",
-    "title_pl": "Booster T2 — Booster Robotics",
-    "title_en": "Booster T2 — Booster Robotics",
-    "link": "ai-releases.html###28-2",
-    "meta_pl": "Humanoid Robots",
-    "meta_en": "Humanoid Robots",
-    "num": "##28-2"
-  },
-  {
-    "date": "2026-07-13",
     "type": "diamandis",
     "title_pl": "Podcast #270 — Grok 4.5 vs GPT-5.6, Apple pozywa OpenAI, a Chiny doganiają Elona",
     "title_en": "Podcast #270 — Grok 4.5 vs GPT-5.6, Apple Sues OpenAI, and China Catches up to Elon",
@@ -2714,6 +2704,16 @@ const CALENDAR = [
     "meta_pl": "9 tematów",
     "meta_en": "9 topics",
     "num": "#270"
+  },
+  {
+    "date": "2026-07-13",
+    "type": "ai_search",
+    "title_pl": "Booster T2 — Booster Robotics",
+    "title_en": "Booster T2 — Booster Robotics",
+    "link": "ai-releases.html###28-2",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##28-2"
   },
   {
     "date": "2026-07-12",
@@ -3097,6 +3097,16 @@ const CALENDAR = [
   },
   {
     "date": "2026-07-08",
+    "type": "diamandis",
+    "title_pl": "Podcast #269 — Fable 5 Is Back & Govt-Leashed, Altman Offers 5% of OpenAI & AI Grows Conscious | #269",
+    "title_en": "Podcast #269 — Fable 5 Is Back & Govt-Leashed, Altman Offers 5% of OpenAI & AI Grows Conscious | #269",
+    "link": "ai-pulse.html#269",
+    "meta_pl": "9 tematów",
+    "meta_en": "9 topics",
+    "num": "#269"
+  },
+  {
+    "date": "2026-07-08",
     "type": "ai_search",
     "title_pl": "Grok 4.5 — xAI",
     "title_en": "Grok 4.5 — xAI",
@@ -3124,16 +3134,6 @@ const CALENDAR = [
     "meta_pl": "KTO ROBI CIEKAWE RZECZY",
     "meta_en": "KTO ROBI CIEKAWE RZECZY",
     "num": "ep-2026-07-10"
-  },
-  {
-    "date": "2026-07-08",
-    "type": "diamandis",
-    "title_pl": "Podcast #269 — Fable 5 Is Back & Govt-Leashed, Altman Offers 5% of OpenAI & AI Grows Conscious | #269",
-    "title_en": "Podcast #269 — Fable 5 Is Back & Govt-Leashed, Altman Offers 5% of OpenAI & AI Grows Conscious | #269",
-    "link": "ai-pulse.html#269",
-    "meta_pl": "9 tematów",
-    "meta_en": "9 topics",
-    "num": "#269"
   },
   {
     "date": "2026-07-07",
@@ -3207,16 +3207,6 @@ const CALENDAR = [
   },
   {
     "date": "2026-07-05",
-    "type": "ai_search",
-    "title_pl": "SeFi image — JM Liu",
-    "title_en": "SeFi image — JM Liu",
-    "link": "ai-releases.html###28-2",
-    "meta_pl": "Image Generation",
-    "meta_en": "Image Generation",
-    "num": "##28-2"
-  },
-  {
-    "date": "2026-07-05",
     "type": "weekly",
     "title_pl": "AI Tydzień #27 | 29/06-5/07/2026",
     "title_en": "AI Week #27 | 29/06-5/07/2026",
@@ -3224,6 +3214,16 @@ const CALENDAR = [
     "meta_pl": "8 sekcji",
     "meta_en": "8 sections",
     "num": "27"
+  },
+  {
+    "date": "2026-07-05",
+    "type": "ai_search",
+    "title_pl": "SeFi image — JM Liu",
+    "title_en": "SeFi image — JM Liu",
+    "link": "ai-releases.html###28-2",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##28-2"
   },
   {
     "date": "2026-07-04",
@@ -3397,6 +3397,16 @@ const CALENDAR = [
   },
   {
     "date": "2026-07-01",
+    "type": "diamandis",
+    "title_pl": "Podcast #268 — The State of AI and Robotics | #268",
+    "title_en": "Podcast #268 — The State of AI and Robotics | #268",
+    "link": "ai-pulse.html#268",
+    "meta_pl": "7 tematów",
+    "meta_en": "7 topics",
+    "num": "#268"
+  },
+  {
+    "date": "2026-07-01",
     "type": "lev",
     "title_pl": "Qwen Agent World (Alibaba)",
     "title_en": "Qwen Agent World (Alibaba)",
@@ -3406,14 +3416,14 @@ const CALENDAR = [
     "num": "ep-2026-07-03"
   },
   {
-    "date": "2026-07-01",
+    "date": "2026-06-30",
     "type": "diamandis",
-    "title_pl": "Podcast #268 — The State of AI and Robotics | #268",
-    "title_en": "Podcast #268 — The State of AI and Robotics | #268",
-    "link": "ai-pulse.html#268",
+    "title_pl": "Podcast #267 — US Government Blocks GPT-5.6, Alibaba's AI Theft, and Why OpenAI Is Stalling Their IPO | #267",
+    "title_en": "Podcast #267 — US Government Blocks GPT-5.6, Alibaba's AI Theft, and Why OpenAI Is Stalling Their IPO | #267",
+    "link": "ai-pulse.html#267",
     "meta_pl": "7 tematów",
     "meta_en": "7 topics",
-    "num": "#268"
+    "num": "#267"
   },
   {
     "date": "2026-06-30",
@@ -3464,16 +3474,6 @@ const CALENDAR = [
     "meta_pl": "TYDZIEŃ: 26.06 – 03.07",
     "meta_en": "TYDZIEŃ: 26.06 – 03.07",
     "num": "ep-2026-07-03"
-  },
-  {
-    "date": "2026-06-30",
-    "type": "diamandis",
-    "title_pl": "Podcast #267 — US Government Blocks GPT-5.6, Alibaba's AI Theft, and Why OpenAI Is Stalling Their IPO | #267",
-    "title_en": "Podcast #267 — US Government Blocks GPT-5.6, Alibaba's AI Theft, and Why OpenAI Is Stalling Their IPO | #267",
-    "link": "ai-pulse.html#267",
-    "meta_pl": "7 tematów",
-    "meta_en": "7 topics",
-    "num": "#267"
   },
   {
     "date": "2026-06-26",

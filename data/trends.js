@@ -1,10 +1,10 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-08-21 20:43:58 UTC
+// Generated: 2026-08-21 22:28:29 UTC
 // Total events: 373, months: 3
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-08-21 20:43:58 UTC",
+    "generated": "2026-08-21 22:28:29 UTC",
     "total_events": 373,
     "total_months": 3
   },
@@ -201,9 +201,9 @@ const TRENDS = {
       "month": "2026-06",
       "total": 32,
       "by_type": {
+        "diamandis": 1,
         "ai_search": 5,
-        "lev": 26,
-        "diamandis": 1
+        "lev": 26
       },
       "top_vendors": [
         [
@@ -211,11 +211,11 @@ const TRENDS = {
           3
         ],
         [
-          "Alibaba",
+          "OpenAI",
           2
         ],
         [
-          "OpenAI",
+          "Alibaba",
           2
         ],
         [
@@ -392,11 +392,11 @@ const TRENDS = {
         6
       ],
       [
-        "Nous Research",
+        "MIT",
         6
       ],
       [
-        "MIT",
+        "Nous Research",
         6
       ],
       [
