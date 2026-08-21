@@ -568,37 +568,36 @@ if (document.readyState === 'loading') {
 function handleHashExpand(){
   if(!location.hash)return;
   var hash=location.hash.substring(1);
-  // Check if hash contains topic reference (e.g. #282-topic-12)
   var topicMatch=hash.match(/^(.+?)-topic-(\d+)$/);
   var epId=topicMatch?topicMatch[1]:hash;
   var topicNum=topicMatch?topicMatch[2]:null;
-  setTimeout(function(){
+  
+  function tryScroll(attempt){
+    attempt=attempt||0;
+    if(attempt>15)return;
     var ep=document.querySelector('[data-num="#'+epId+'"]')||document.querySelector('[data-num="##'+epId+'"]');
-    if(!ep)return;
+    if(!ep){setTimeout(function(){tryScroll(attempt+1)},200);return}
     if(!ep.classList.contains('open')){
       var btn=ep.querySelector('.ep-toggle-btn');
       if(btn)btn.click();
     }
     if(topicNum){
-      // Scroll to specific topic after expansion
       setTimeout(function(){
         var topic=document.getElementById(epId+'-topic-'+topicNum);
-        if(topic){
-          // Scroll with offset for sticky header (~100px)
-          var rect=topic.getBoundingClientRect();
-          var offset=rect.top+window.pageYOffset-120;
-          window.scrollTo({top:offset,behavior:'smooth'});
-          // Highlight briefly
-          topic.style.transition='background .3s';
-          topic.style.background='rgba(255,106,0,.2)';
-          topic.style.borderColor='#ff6a00';
-          setTimeout(function(){topic.style.background='';topic.style.borderColor=''},3000);
-        }
-      },400);
+        if(!topic){setTimeout(function(){tryScroll(attempt+1)},300);return}
+        var rect=topic.getBoundingClientRect();
+        var offset=rect.top+window.pageYOffset-120;
+        window.scrollTo({top:offset,behavior:'smooth'});
+        topic.style.transition='background .3s,border-color .3s';
+        topic.style.background='rgba(255,106,0,.2)';
+        topic.style.borderColor='#ff6a00';
+        setTimeout(function(){topic.style.background='';topic.style.borderColor=''},3000);
+      },600);
     } else {
       setTimeout(function(){ep.scrollIntoView({behavior:'smooth',block:'start'})},200);
     }
-  },300);
+  }
+  tryScroll(0);
 }
 
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
@@ -607,7 +606,7 @@ document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeE
 </div>
 
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v10.6.1 · Deploy: <span id="deploy-ts">2026-08-21 23:25:55 UTC</span> · <span id="deploy-hash">hfc8a0491</span>
+v10.6.1 · Deploy: <span id="deploy-ts">2026-08-21 23:28:18 UTC</span> · <span id="deploy-hash">hb91602ed</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry" data-title-pl="Do góry" data-title-en="Back to top">↑</button>
