@@ -943,8 +943,44 @@ const B = [
     "url": "https://valsindex.com/",
     "desc_pl": "Val's Index — jak dobry jest model w finance i coding. Muse Spark 1.2: below GPT 5.6 Sol i Kimi K3, ale cheapest.",
     "desc_en": "Val's Index — how good a model is across finance and coding. Muse Spark 1.2: below GPT 5.6 Sol and Kimi K3, but cheapest."
+  },
+  {
+    "id": 1,
+    "n": "Cost Per Intelligence Index",
+    "fn": "Cost per task on Artificial Analysis",
+    "c": "Areny i leaderboardy",
+    "ty": "leaderboard",
+    "tier": 3,
+    "o": "Artificial Analysis",
+    "y": "2026",
+    "url": "https://artificialanalysis.ai",
+    "t_pl": "Cost Per Intelligence Index mierzy całkowity koszt wykonania zestandaryzowanych zadań przez różne modele. Uwzględnia cenę tokenów ORAZ liczbę tokenów użytych. Claude Fable $3.14 (najdroższy), GPT 5.6 Luna Max $0.05 (najtańszy frontier). DeepSeek V4 Pro podniósł z 5¢ do 25¢ — wciąż 10x tańszy niż amerykańskie frontier modele.",
+    "t_en": "Cost Per Intelligence Index measures total cost of executing standardized tasks across different models. Accounts for token price AND number of tokens used. Claude Fable $3.14 (most expensive), GPT 5.6 Luna Max $0.05 (cheapest frontier). DeepSeek V4 Pro raised from 5¢ to 25¢ — still 10x cheaper than American frontier models."
+  },
+  {
+    "id": 2,
+    "n": "Cyber Gym",
+    "fn": "Cybersecurity benchmark — cyber gym",
+    "c": "Bezpieczeństwo i cyberataki",
+    "ty": "arena",
+    "tier": 2,
+    "o": "Cyber Gym",
+    "y": "2026",
+    "url": "",
+    "t_pl": "Cyber Gym — benchmark cybersecurity. GLM 5.3 (open model z Chin) osiągnął 84.5%, pokonując legendarne MIUS od Anthropic (83.8%). MIUS był zamknięty, tylko military/government (wydany kwiecień 2026). Open model z Chin bije zamknięty model Anthropic w cyber security.",
+    "t_en": "Cyber Gym — cybersecurity benchmark. GLM 5.3 (open model from China) achieved 84.5%, beating legendary MIUS from Anthropic (83.8%). MIUS was closed, military/government only (released April 2026). Open model from China beats Anthropic closed model in cyber security."
+  },
+  {
+    "id": 3,
+    "n": "Frontend Code Arena",
+    "fn": "Frontend coding arena",
+    "c": "Programowanie i inżynieria",
+    "ty": "arena",
+    "tier": 2,
+    "o": "LM Arena",
+    "y": "2026",
+    "url": "",
+    "t_pl": "Frontend Code Arena — benchmark frontend coding. Kimi K3 (Moonshot AI) #1 z 1679 pkt. Open weight model osiąga top w frontend coding — konkurencja dla Claude w coding.",
+    "t_en": "Frontend Code Arena — frontend coding benchmark. Kimi K3 (Moonshot AI) #1 with 1679 points. Open weight model achieves top in frontend coding — competition for Claude in coding."
   }
 ];
-const CATS = ["Wiedza i rozumowanie", "Matematyka", "Coding", "Agentic", "Multimodal", "Generowanie obrazów", "Generowanie wideo", "3D", "Robotyka", "Nauki ścisłe", "Bezpieczeństwo", "Areny i leaderboardy"];
-const ICONS = {"Wiedza i rozumowanie": "🧠", "Matematyka": "🔢", "Coding": "💻", "Agentic": "🤖", "Multimodal": "👁️", "Generowanie obrazów": "🎨", "Generowanie wideo": "🎬", "3D": "📐", "Robotyka": "🦾", "Nauki ścisłe": "🔬", "Bezpieczeństwo": "🛡️", "Areny i leaderboardy": "🏆"};
-const CATS_EN = {"Wiedza i rozumowanie": "Knowledge & Reasoning", "Matematyka": "Math", "Coding": "Coding", "Agentic": "Agentic", "Multimodal": "Multimodal", "Generowanie obrazów": "Image Generation", "Generowanie wideo": "Video Generation", "3D": "3D", "Robotyka": "Robotics", "Nauki ścisłe": "Hard Sciences", "Bezpieczeństwo": "Safety", "Areny i leaderboardy": "Arenas & Leaderboards"};
