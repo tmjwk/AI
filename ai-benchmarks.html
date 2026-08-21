@@ -1,289 +1,121 @@
 <!DOCTYPE html>
-<html lang="pl" data-title-pl="Benchmarki AI" data-title-en="AI Benchmarks"><head><script>document.documentElement.setAttribute("data-lang",localStorage.getItem("lang")||"pl")</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><script>
-(function(){
-  var html=document.documentElement;
-  var tpl=html.getAttribute('data-title-pl');
-  var ten=html.getAttribute('data-title-en');
-  if(!tpl||!ten)return;
-  function upd(){var lang=html.getAttribute('data-lang')||'pl';document.title=lang==='en'?ten:tpl}
-  upd();
-  // Hook into lang toggle — observe data-lang attribute changes
-  var obs=new MutationObserver(function(muts){
-    muts.forEach(function(m){if(m.attributeName==='data-lang')upd()});
-  });
-  obs.observe(html,{attributes:true,attributeFilter:['data-lang']});
-})();
-</script><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><title>AI Benchmarki — katalog</title>
-<style>/* Global PL/EN toggle */
-[data-lang="pl"] span.en{display:none !important}
-[data-lang="en"] span.pl{display:none !important}
-:root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--bl:#3b82f6;--t3:#fbbf24;--t2:#d0d0d0;--t1:#b0b0b0;--ov:rgba(0,0,0,.7)}
+<html lang="pl" data-theme="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Benchmarki — katalog</title>
+<base target="_blank">
+<style>
+:root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#888;--hm:#666;--hd:#555;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--bl:#3b82f6;--t3:#fbbf24;--t2:#94a3b8;--t1:#4a4a4a;--ov:rgba(0,0,0,.7)}
 [data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--bl:#1d4ed8;--t3:#92400e;--t2:#475569;--t1:#94a3b8;--ov:rgba(0,0,0,.5)}
 *{box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:0;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
-.c{max-width:clamp(900px,95vw,1400px);margin:0 auto;padding:20px}
+.c{max-width:900px;margin:0 auto;padding:20px}
 .h{position:sticky;top:0;background:var(--bg);z-index:100;padding:16px 0;border-bottom:1px solid var(--bd);margin-bottom:24px;transition:background .2s}
 .hr{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:8px;flex-wrap:wrap}
-.h h1{font-size:var(--fs-xl);margin:0;font-weight:600;color:var(--hp);letter-spacing:-.02em}
-.h .sub{font-size:var(--fs-s);color:var(--hm);margin-top:2px}
+.h h1{font-size:18px;margin:0;font-weight:600;color:var(--hp);letter-spacing:-.02em}
+.h .sub{font-size:12px;color:var(--hm);margin-top:2px}
 .h .nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.h a{color:var(--hs);text-decoration:none;font-size:var(--fs-s);padding:4px 10px;border:1px solid var(--bd);border-radius:6px;transition:all .15s}
-.nav-links{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.nav-btn{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:var(--fs-s);color:var(--hs);text-decoration:none;font-weight:500;transition:all .15s;white-space:nowrap}
-.nav-btn:hover{border-color:var(--ac);color:var(--fg)}.nav-btn.cur{border-color:var(--ac);color:var(--ac);background:rgba(74,222,128,.06);font-weight:700}/* Nav PL/EN labels */
-[data-lang="pl"] .nav-btn .en{display:none !important}
-[data-lang="en"] .nav-btn .pl{display:none !important}
+.h a{color:var(--hs);text-decoration:none;font-size:12px;padding:4px 10px;border:1px solid var(--bd);border-radius:6px;transition:all .15s}
 .h a:hover{border-color:var(--ac);color:var(--ac)}
-.tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:var(--fs-s);color:var(--fg);transition:border-color .15s}
+.tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--fg);transition:border-color .15s}
 .tgl:hover{border-color:var(--ac)}
-.banner{background:linear-gradient(90deg,rgba(251,191,36,.08),transparent);border-left:3px solid var(--ba);padding:10px 14px;border-radius:4px;margin-bottom:16px;font-size:var(--fs-m);color:var(--hs)}
+.banner{background:linear-gradient(90deg,rgba(251,191,36,.08),transparent);border-left:3px solid var(--ba);padding:10px 14px;border-radius:4px;margin-bottom:16px;font-size:13px;color:var(--hs)}
 .banner strong{color:var(--ba)}
-.banner .tiers{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:var(--fs-s);color:var(--hm)}
+.banner .tiers{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:11px;color:var(--hm)}
 .banner .tiers .t3{color:var(--t3);font-weight:700}
 .banner .tiers .t2{color:var(--t2);font-weight:600}
 .banner .tiers .t1{color:var(--t1)}
-.search{width:100%;padding:10px 14px;background:var(--card);border:1px solid var(--bd);border-radius:6px;color:var(--fg);font-size:var(--fs-m);outline:none;transition:border-color .15s;margin-bottom:10px}
+.search{width:100%;padding:10px 14px;background:var(--card);border:1px solid var(--bd);border-radius:6px;color:var(--fg);font-size:14px;outline:none;transition:border-color .15s;margin-bottom:10px}
 .search:focus{border-color:var(--ac)}
 .search::placeholder{color:var(--hd)}
-/* PL/EN global */
-[data-lang="pl"] span.en{display:none !important}
-[data-lang="en"] span.pl{display:none !important}
 .chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}
-.chip{padding:4px 10px;background:var(--card);border:1px solid var(--bd);border-radius:12px;color:var(--hs);font-size:var(--fs-s);cursor:pointer;transition:all .15s;font-weight:500}
+.chip{padding:4px 10px;background:var(--card);border:1px solid var(--bd);border-radius:12px;color:var(--hs);font-size:11px;cursor:pointer;transition:all .15s;font-weight:500}
 .chip:hover{border-color:var(--ac);color:var(--fg)}
 .chip.active{background:var(--ac);color:var(--bg);border-color:var(--ac)}
-.stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px;font-size:var(--fs-s);color:var(--hm)}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px;font-size:11px;color:var(--hm)}
 .st{display:flex;align-items:center;gap:4px}
-.st .sv{font-size:var(--fs-m);font-weight:700;color:var(--hp);font-family:monospace}.tier-toggle{cursor:pointer;border:1px solid var(--bd);border-radius:12px;padding:4px 10px;transition:all .15s;font-size:var(--fs-s);font-weight:500}.tier-toggle:hover{border-color:var(--ac);color:var(--fg)}.tier-toggle.active{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+.st .sv{font-size:14px;font-weight:700;color:var(--hp);font-family:monospace}
 .sec{margin-bottom:32px}
-.sec-t{font-size:var(--fs-l);text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:12px;font-weight:700;display:flex;align-items:center;gap:8px}
-.sec-t .icon{font-size:var(--fs-xl)}
-.sec-t .cnt{color:var(--hd);font-size:var(--fs-xs);font-family:monospace;margin-left:auto}
+.sec-t{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--hs);border-bottom:2px solid var(--bd);padding-bottom:8px;margin-bottom:12px;font-weight:700;display:flex;align-items:center;gap:8px}
+.sec-t .icon{font-size:18px}
+.sec-t .cnt{color:var(--hd);font-size:10px;font-family:monospace;margin-left:auto}
 .bench{background:var(--card);border:1px solid var(--bdl);border-radius:8px;padding:14px 16px;margin-bottom:10px;transition:border-color .15s;display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:start}
 .bench:hover{border-color:var(--bd)}
 .bench.tier-3{border-left:3px solid var(--t3)}
 .bench.tier-2{border-left:3px solid var(--t2)}
 .bench.tier-1{border-left:3px solid var(--t1)}
 .bench .tier-col{display:flex;align-items:center;justify-content:center;padding-right:4px}
-.bench .tier-col .stars{font-size:var(--fs-m);font-family:monospace;letter-spacing:-1px}
+.bench .tier-col .stars{font-size:14px;font-family:monospace;letter-spacing:-1px}
 .bench.tier-3 .tier-col .stars{color:var(--t3);font-weight:700}
 .bench.tier-2 .tier-col .stars{color:var(--t2);font-weight:600}
 .bench.tier-1 .tier-col .stars{color:var(--t1)}
 .bench .main{min-width:0}
 .bench .th{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:4px}
-.bench .bn{font-size:var(--fs-l);font-weight:700;color:var(--hp);font-family:"SF Mono",Menlo,monospace}
-.bench .bfn{font-size:var(--fs-s);color:var(--hm);font-style:italic}
-.bench .bt{display:inline-block;padding:1px 6px;font-size:var(--fs-xs);border-radius:3px;background:var(--bg);color:var(--hm);border:1px solid var(--bdl);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
-.bench .bd{font-size:var(--fs-m);color:var(--hm);line-height:1.5;margin-bottom:6px}
-.bench .meta{font-size:var(--fs-xs);color:var(--hd);font-family:monospace;display:flex;gap:8px;flex-wrap:wrap}
+.bench .bn{font-size:15px;font-weight:700;color:var(--hp);font-family:"SF Mono",Menlo,monospace}
+.bench .bfn{font-size:11px;color:var(--hm);font-style:italic}
+.bench .bt{display:inline-block;padding:1px 6px;font-size:9px;border-radius:3px;background:var(--bg);color:var(--hm);border:1px solid var(--bdl);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.bench .bd{font-size:13px;color:var(--hm);line-height:1.5;margin-bottom:6px}
+.bench .meta{font-size:10px;color:var(--hd);font-family:monospace;display:flex;gap:8px;flex-wrap:wrap}
 .bench .meta span{color:var(--hm)}
 .bench .link{display:flex;align-items:center;justify-content:flex-end;flex-shrink:0}
-.bench .link a{display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:var(--bg);border:1px solid var(--bd);border-radius:6px;color:var(--ac);font-size:var(--fs-s);font-weight:600;text-decoration:none;transition:all .15s}
+.bench .link a{display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:var(--bg);border:1px solid var(--bd);border-radius:6px;color:var(--ac);font-size:12px;font-weight:600;text-decoration:none;transition:all .15s}
 .bench .link a:hover{border-color:var(--ac);background:var(--card)}
-/* Per-card PL/EN toggle (like glossary/pulse) */
-.bench .bd .pl,.bench .bd .en{display:inline}
-.bench.en .bd .pl{display:none}
-.bench.en .bd .en{display:inline}
-.bench:not(.en) .bd .en{display:none}
-[data-lang="en"] .bench:not(.en) .bd .pl{display:inline !important}
-[data-lang="en"] .bench:not(.en) .bd .en{display:none !important}
-[data-lang="pl"] .bench.en .bd .en{display:inline !important}
-[data-lang="pl"] .bench.en .bd .pl{display:none !important}
-.card-lang{font-size:var(--fs-xs);font-weight:700;color:#ff6600;background:rgba(255,102,0,.1);padding:2px 8px;border-radius:4px;border:1px solid #ff6600;cursor:pointer;white-space:nowrap;flex-shrink:0;margin-left:auto;text-transform:uppercase;letter-spacing:.05em}
-.card-lang[data-lang="pl"]::before{content:"EN"}
-.card-lang[data-lang="en"]::before{content:"PL"}
-.nr{color:var(--hm);font-size:var(--fs-m);text-align:center;padding:40px 20px;font-style:italic}
-.f{margin-top:36px;padding-top:18px;border-top:1px solid var(--bdl);font-size:var(--fs-s);color:var(--hd);text-align:center}
+.nr{color:var(--hm);font-size:13px;text-align:center;padding:40px 20px;font-style:italic}
+.f{margin-top:36px;padding-top:18px;border-top:1px solid var(--bdl);font-size:11px;color:var(--hd);text-align:center}
 .f a{color:var(--hm)}
-@media(max-width:540px){.bench{grid-template-columns:auto 1fr}.bench .link{grid-column:1/-1;justify-content:flex-start}.h h1{font-size:var(--fs-l)}.hr{flex-direction:column;align-items:flex-start;gap:8px}.nav-btn{font-size:var(--fs-s);padding:4px 8px}.nav-links{gap:4px;width:100%}}
-@media(max-width:380px){.nav-btn{font-size:var(--fs-xs);padding:3px 6px}}
-<script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))</script>
-
-/* Skeleton loading */
-.skeleton-loader{padding:12px}
-.skeleton-card{background:var(--card);border:1px solid var(--bdl);border-radius:8px;padding:14px;margin-bottom:10px;overflow:hidden;position:relative}
-.skeleton-card::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.04),transparent);animation:shimmer 1.5s infinite}
-@keyframes shimmer{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
-.skeleton-line{height:12px;background:var(--bdl);border-radius:4px;margin-bottom:8px}
-.skeleton-line.short{width:60%}
-.skeleton-line.medium{width:80%}
-.skeleton-line.title{height:16px;width:50%;margin-bottom:12px}
-[data-theme="light"] .skeleton-card::before{background:linear-gradient(90deg,transparent,rgba(0,0,0,0.04),transparent)}
-
-/* v9.0: Typography scale — 6 rozmiarów (rem, mobile-responsive) */
-[data-theme="dark"]{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#c4c4c4;--hm:#b5b5b5;--hd:#a8a8a8;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--rd:#ef4444;--bl:#3b82f6;
-/* v8.9.0: Typography — 4 role semantyczne */
---fs-h1:1.75rem;--fs-h2:1.125rem;--fs-body:1rem;--fs-aux:0.75rem;
-/* Aliasy (backward compat) */
---fs-xl:var(--fs-h1);--fs-l:var(--fs-h2);--fs-m:var(--fs-body);--fs-s:var(--fs-aux);--fs-xs:0.625rem;--fs-xxl:5rem}
-@media(max-width:540px){
-:root{--fs-s:0.6875rem;--fs-m:0.8125rem;--fs-l:0.9375rem;--fs-xl:1.125rem;--fs-xxl:3.75rem}
-}
-
-/* Back to top */
-.btt{position:fixed;bottom:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--ac);color:#000;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .2s}
-.btt:hover{opacity:.85}
-.btt.show{display:flex}
-/* ====== PRINT STYLES (TODO #13, v10.3) — PDF-friendly, paper-saving ====== */
-@media print{
-  /* Force light theme regardless of user setting */
-  :root,[data-theme="dark"]{--bg:#fff;--fg:#000;--card:#fff;--bd:#888;--bdl:#bbb;--hp:#000;--hs:#000;--hm:#222;--hd:#666;--ac:#000;--rk:#000;--ba:#000;--rd:#000;--bl:#000}
-  html{font-size:10pt}
-  body{background:#fff !important;color:#000 !important;font-family:Georgia,"Times New Roman",serif;line-height:1.4;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  /* Page margins — paper-saving (A4 / Letter) */
-  @page{margin:1cm 1.2cm}
-  /* Full width — small horizontal padding so content does not touch page edge */
-  .c{max-width:none !important;margin:0 !important;padding:0 !important}
-  /* Hide non-printable UI */
-  .h,.tgl,.btt,footer,.skeleton-loader,.art-toggle,.art-lang,.art-card-toggle,.nav,.nav-links,.banner,.search-box,.filter-bar,.chips,.card-lang,.print-only-header{display:none !important}
-  /* Headings — tight, page-break-after:avoid keeps title with body */
-  h1{font-size:18pt;color:#000 !important;border-bottom:1.5px solid #000;padding-bottom:2pt;margin:0 0 8pt 0;page-break-after:avoid}
-  h2,h3,h4{color:#000 !important;page-break-after:avoid}
-  /* Links — underline only */
-  a{color:#000 !important;text-decoration:underline}
-  a[href^="#"]:after,a[href^="ai-"]:after,a[href^="index"]:after{content:""}
-  /* ===== Weekly articles (index.html) ===== */
-  /* Compact padding, allow breaking across pages, no double-frame with .article-card */
-  .article{background:#fff !important;border:0 !important;border-left:2px solid #000 !important;border-radius:0 !important;padding:6pt 10pt !important;margin:0 0 8pt 0 !important;page-break-inside:auto;page-break-after:auto}
-  .article.collapsed .art-body{display:block !important}
-  .art-header{cursor:default;page-break-after:avoid;padding:0 !important;margin:0 !important}
-  .art-num{background:#fff !important;border:1px solid #888 !important;color:#000 !important;font-size:8pt;padding:1pt 4pt !important;margin-bottom:3pt !important}
-  .art-title{font-size:13pt !important;color:#000 !important;margin:0 0 4pt 0 !important;line-height:1.25 !important}
-  .art-headline{background:#fff !important;border-left:2px solid #444 !important;color:#333 !important;font-style:italic;padding:4pt 8pt !important;margin:0 0 4pt 0 !important;font-size:9.5pt !important;line-height:1.35 !important}
-  .art-meta{color:#666 !important;font-size:8.5pt !important;margin:0 0 4pt 0 !important;gap:8px !important}
-  .art-toc{background:#fff !important;border:1px solid #aaa !important;font-size:8pt;page-break-inside:auto;padding:4pt 8pt !important;margin-bottom:6pt !important}
-  .art-toc-title{color:#000 !important;margin-bottom:2pt !important;font-size:7.5pt !important}
-  .art-toc-list a{color:#000 !important}
-  /* Sections — allow breaking, tight margins */
-  .art-section{page-break-inside:auto;margin-bottom:8pt !important;scroll-margin-top:0}
-  .art-section h3{color:#000 !important;border-bottom:1px solid #888 !important;font-size:11pt;page-break-after:avoid;margin:0 0 4pt 0 !important;padding-bottom:2pt !important}
-  .art-section p{color:#000 !important;font-size:10pt;orphans:2;widows:2;margin:0 0 6pt 0 !important;line-height:1.4 !important}
-  /* Quotes — allow breaking if long, compact padding */
-  .quote{background:#fff !important;border-left:2px solid #555 !important;color:#222 !important;font-style:italic;page-break-inside:auto;padding:4pt 8pt !important;margin:4pt 0 !important;font-size:9.5pt !important}
-  .quote .q-author{color:#000 !important;font-size:8pt !important;margin-bottom:2pt !important}
-  .art-sources{color:#666 !important;border-top:1px solid #888 !important;font-size:8pt;page-break-inside:auto;margin-top:6pt !important;padding-top:3pt !important}
-  /* Lazy-load article cards — STRIP wrapper (avoid double padding/border with inner .article) */
-  .article-card{background:transparent !important;border:0 !important;border-radius:0 !important;cursor:default;page-break-inside:auto;padding:0 !important;margin:0 0 8pt 0 !important}
-  .article-card .art-card-body{display:block !important;padding:0 !important;margin:0 !important}
-  .article-card .art-card-title{color:#000 !important;font-size:13pt;page-break-after:avoid;margin:0 0 4pt 0 !important}
-  .article-card .art-card-meta{color:#666 !important;font-size:8.5pt !important;margin:0 0 4pt 0 !important}
-  /* ===== Cards on other pages — allow breaking, compact ===== */
-  .card,.m-card,.g-card,.b-card,.r-card,.bd,.episode,.blk{page-break-inside:auto;background:#fff !important;border:1px solid #888 !important;border-radius:0 !important;padding:6pt 8pt !important;margin-bottom:6pt !important}
-  /* ===== Tables (LM Arena, layoffs, benchmarks) — compact ===== */
-  table{width:100%;border-collapse:collapse;font-size:8.5pt;page-break-inside:auto}
-  thead{display:table-header-group}
-  tr{page-break-inside:avoid;page-break-after:auto}
-  th,td{border:1px solid #888;padding:2pt 4pt;text-align:left}
-  th{background:#eee !important;color:#000 !important;font-weight:600}
-  /* ===== Radar episodes ===== */
-  .episode{margin-bottom:8pt !important;page-break-inside:auto}
-  .ep-body{display:block !important}
-  .ep-toggle{display:none !important}
-  /* ===== Pulse episodes ===== */
-  .blk-lbl{font-weight:600;color:#000 !important;font-size:9pt !important}
-  /* ===== Misc ===== */
-  .sec-t{color:#000 !important;border-bottom:1.5px solid #000 !important;font-size:11pt;page-break-after:avoid;margin-bottom:4pt !important;padding-bottom:2pt !important}
-  .update-list li{color:#000 !important;border-bottom:1px solid #aaa !important;font-size:9pt !important;padding:3pt 0 !important}
-  .update-date{color:#000 !important}
-  /* Print-only block — visible only on paper */
-  .print-only{display:block !important}
-}
-/* Screen: hide print-only elements */
-.print-only,.print-only-header{display:none}
-
-
-
-
-
-/* Still loading hint - appears after 60s via animation-delay */
-.loading-hint{opacity:0;text-align:center;padding:20px;color:var(--hm);font-size:var(--fs-s);animation:show-hint 0s 60s forwards}
-.loading-hint button{background:var(--card);border:1px solid var(--bd);color:var(--fg);padding:6px 16px;border-radius:6px;cursor:pointer;margin-top:8px;font-size:var(--fs-s)}
-.loading-hint button:hover{border-color:var(--ac);color:var(--ac)}
-@keyframes show-hint{to{opacity:1}}
-@media print{.loading-hint{display:none}}
-
-</style><meta name="description" content="Benchmarki AI — katalog testów i rankingów" data-desc-pl="Benchmarki AI — katalog testów i rankingów" data-desc-en="AI Benchmarks — catalog of tests and rankings">
-<meta property="og:title" content="Benchmarki AI — 69 benchmarków w 12 kategoriach">
-<meta property="og:description" content="Benchmarki AI: MMLU, GPQA, SWE-bench, HellaSwag. Tier ★★★/★/·. Sortowane po ważności.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://tmjwk.github.io/AI/ai-benchmarks.html">
-<meta property="og:site_name" content="AI Hub">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Benchmarki AI — 69 benchmarków w 12 kategoriach">
-<meta name="twitter:description" content="Benchmarki AI: MMLU, GPQA, SWE-bench, HellaSwag. Tier ★★★/★/·. Sortowane po ważności.">
-</head><body>
-<div class="print-only-header">AI Hub · tmjwk.github.io/AI</div>
-<script>if(performance.getEntriesByType){var nav=performance.getEntriesByType('navigation')[0];if(nav&&nav.transferSize===0&&!location.search.includes('_r=')){location.replace(location.pathname+(location.search?location.search+'&':'?')+'_r='+Date.now())}}</script>
+@media(max-width:540px){.bench{grid-template-columns:auto 1fr}.bench .link{grid-column:1/-1;justify-content:flex-start}}
+</style></head><body>
 <div class="c">
 
 <div class="h">
 <div class="hr">
-<h1>🏆 <span class="pl">Benchmarki AI</span><span class="en">AI Benchmarks</span></h1>
-<div class="nav nav-links">
-<a href="index.html" class="nav-btn"><span class="pl">🏠 Hub</span><span class="en">🏠 Hub</span></a><a href="ai-models.html" class="nav-btn"><span class="pl">📊 Modele</span><span class="en">📊 Models</span></a><a href="ai-benchmarks.html" class="nav-btn cur"><span class="pl">🏆 Benchmarki</span><span class="en">🏆 Benchmarks</span></a><a href="ai-radar.html" class="nav-btn"><span class="pl">📡 Radar</span><span class="en">📡 Radar</span></a><a href="ai-pulse.html" class="nav-btn"><span class="pl">💓 Puls</span><span class="en">💓 Pulse</span></a><a href="ai-releases.html" class="nav-btn"><span class="pl">🆕 Nowości</span><span class="en">🆕 Releases</span></a><a href="ai-timeline.html" class="nav-btn"><span class="pl">📅 Timeline</span><span class="en">📅 Timeline</span></a><a href="ai-search-global.html" class="nav-btn"><span class="pl">🔍 Szukaj</span><span class="en">🔍 Search</span></a><a href="ai-glossary.html" class="nav-btn"><span class="pl">📖 Słownik</span><span class="en">📖 Glossary</span></a>
-
-
-
-
-
+<h1>🏆 AI Benchmarki — katalog</h1>
+<div class="nav">
+<a href="ai-models.html" target="_top">← Models</a>
+<a href="ai-radar.html" target="_top">📡 Radar</a>
+<a href="ai-glossary.html" target="_top">📖 Słownik</a>
 <button class="tgl" id="themeTgl">🌙</button>
-<button class="tgl" id="langTgl" title="Przełącz język na angielski" data-title-pl="Przełącz język na angielski" data-title-en="Switch language to Polish">EN</button>
+</div>
+</div>
+<div class="sub">69 benchmarków w 12 kategoriach · Aktualizacja: 2026-07-01</div>
+</div>
+
+<div class="banner">
+<strong>🏆 O katalogu:</strong> Lista najważniejszych benchmarków AI z linkami do leaderboards i papers. Sortowane wg hierarchii ważności wewnątrz każdej kategorii.
+<div class="tiers">
+<span class="t3">★★★ Kluczowe (20) — standard branżowy, cytowany we wszystkich paperach</span>
+<span class="t2">★ Ważne (28) — często używane w ewaluacjach</span>
+<span class="t1">· Pozostałe (21) — specjalistyczne, nowe lub mniej popularne</span>
 </div>
 </div>
 
-</div>
-
-
-
-
+<input type="text" class="search" id="search" placeholder="🔍 Szukaj benchmarku... (np. 'MMLU', 'coding', 'agentic', 'arena')">
 <div class="chips" id="chips"></div>
 <div class="stats" id="stats"></div>
-<div id="content"><div class="skeleton-loader"><div class="skeleton-card"><div class="skeleton-line title"></div>
-<div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div><div class="skeleton-card"><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div></div></div>
-<div class="loading-hint"><span class="pl">Wciąż ładuje dane? Wolny internet — poczekaj dłużej lub odśwież.</span><span class="en">Still loading? Slow internet — wait longer or refresh.</span><br><button onclick="location.reload()"><span class="pl">Odśwież stronę</span><span class="en">Refresh page</span></button></div>
+<div id="content"></div>
 
-
+<div class="f">
+AI Benchmarki · Część katalogu <a href="ai-models.html" target="_top">AI Models</a> · <a href="ai-radar.html" target="_top">AI Radar</a> · <a href="ai-glossary.html" target="_top">AI Słownik</a><br>
+Aktualizacja: 2026-07-01
+</div>
 
 </div>
-<script src="data/benchmarks.js?v=20260821010000" onerror="dataLoadFailed()"></script>
 <script>
-function dataLoadFailed(){var c=document.getElementById('content');if(c)c.innerHTML='<div class="nr" style="text-align:center;padding:40px 20px;color:var(--hm)"><div style="font-size:48px;margin-bottom:16px">⚠</div><h2 style="color:var(--hp);margin-bottom:8px"><span class="pl">Nie udało się załadować danych</span><span class="en">Failed to load data</span></h2><p style="margin-bottom:16px"><span class="pl">Sprawdź połączenie internetowe i odśwież stronę. Jeśli masz wolny internet — poczekaj dłużej lub kliknij Odśwież.</span><span class="en">Check your internet connection and refresh. If you have slow internet — wait longer or click Refresh.</span></p><button onclick="location.reload()" style="background:var(--ac);color:#000;border:none;padding:8px 20px;border-radius:6px;cursor:pointer;font-weight:600"><span class="pl">Odśwież stronę</span><span class="en">Refresh page</span></button></div>';console.error('Failed to load data for ai-benchmarks.html');}
-</script>
-<script>
-const TYPE_LABELS_PL={"zbiór zadań": "zbiór zadań", "arena": "arena / leaderboard", "leaderboard": "leaderboard", "środowisko": "środowisko agentów"};
-const TYPE_LABELS_EN={"zbiór zadań": "problem set", "arena": "arena / leaderboard", "leaderboard": "leaderboard", "środowisko": "agent environment"};
+const B=[{"n":"MMLU","fn":"Massive Multitask Language Understanding","c":"Wiedza i rozumowanie","t":"57 przedmiotów akademickich (historia, prawo, medycyna, matematyka, etc.). Standard LLM knowledge od 2020. Frontier modele >90%.","url":"https://paperswithcode.com/dataset/mmlu","o":"UC Berkeley","y":2020,"ty":"zbiór zadań","tier":3},{"n":"GPQA","fn":"Google-Proof Q&A","c":"Wiedza i rozumowanie","t":"Pytania graduate-level z biologii, chemii, fizyki — tak trudne że Google nie pomaga. Mierzy ekspertyzę ekspertów.","url":"https://github.com/idavidrein/gpqa","o":"NYU","y":2023,"ty":"zbiór zadań","tier":3},{"n":"ARC-AGI","fn":"Abstraction and Reasoning Corpus for AGI","c":"Wiedza i rozumowanie","t":"Visual reasoning — siatki z wzorcami geometrycznymi, model musi uogólnić regułę. Francois Chollet. Frontier modele ~30%, ludzie 100%.","url":"https://arcprize.org/","o":"Opus / Francois Chollet","y":2019,"ty":"arena","tier":3},{"n":"MMLU-Pro","fn":"MMLU-Pro","c":"Wiedza i rozumowanie","t":"Trudniejsza wersja MMLU — 10-opcji zamiast 4, bardziej requiring reasoning. Zastępuje oryginał w nowszych ewaluacjach.","url":"https://paperswithcode.com/dataset/mmlu-pro","o":"TIGERA","y":2024,"ty":"zbiór zadań","tier":2},{"n":"ARC","fn":"AI2 Reasoning Challenge","c":"Wiedza i rozumowanie","t":"Pytania naukowe szkolne wymagające logiki, nie tylko faktów. Easy + Challenge split. Standard od 2018.","url":"https://allenai.org/data/arc","o":"Allen AI","y":2018,"ty":"zbiór zadań","tier":2},{"n":"ARC-AGI v2","fn":"ARC-AGI v2","c":"Wiedza i rozumowanie","t":"Wersja 2 — 100x trudniejsza niż oryginał. Frontier LLM-y <10%. Część $1M ARC Prize.","url":"https://arcprize.org/arc","o":"Opus","y":2025,"ty":"arena","tier":2},{"n":"BIG-Bench","fn":"Beyond the Imitation Game","c":"Wiedza i rozumowanie","t":"200+ zadań z 444 autorów. BBH (Hard) subset to najtrudniejsze 23 zadania. Google, OpenAI.","url":"https://github.com/google/BIG-bench","o":"Google","y":2022,"ty":"zbiór zadań","tier":2},{"n":"TruthfulQA","fn":"TruthfulQA","c":"Wiedza i rozumowanie","t":"Mierzy czy model unika rozpowszechniania mitów (\"Czy ptaki są prawdziwe?\"). Kluczowy benchmark halucynacji.","url":"https://github.com/sylinrl/TruthfulQA","o":"Stanford","y":2021,"ty":"zbiór zadań","tier":2},{"n":"HellaSwag","fn":"HellaSwag","c":"Wiedza i rozumowanie","t":"Wypełnianie scenariuszy — wybierz sensowną kontynuację. Adversarial, trudny dla modeli. Standard commonsense.","url":"https://github.com/rowanz/hellaswag","o":"Allen AI","y":2019,"ty":"zbiór zadań","tier":1},{"n":"WinoGrande","fn":"WinoGrande","c":"Wiedza i rozumowanie","t":"Coreference resolution z rasowymi/stereotypowymi pułpkami. Adversarial Winograd Schema.","url":"https://winogrande.allenai.org/","o":"Allen AI","y":2021,"ty":"zbiór zadań","tier":1},{"n":"GSM8K","fn":"Grade School Math 8K","c":"Matematyka","t":"8.5k słownych zadań matematycznych szkolnych. Frontier modele >95%. Pierwszy sanity check math.","url":"https://github.com/openai/grade-school-math","o":"OpenAI","y":2021,"ty":"zbiór zadań","tier":3},{"n":"FrontierMath","fn":"FrontierMath","c":"Matematyka","t":"Matematyka research-level od profesjonalnych matematyków. Frontier modele <2%. Epoch AI.","url":"https://epoch.ai/frontiermath","o":"Epoch AI","y":2024,"ty":"zbiór zadań","tier":3},{"n":"MATH","fn":"MATH Dataset","c":"Matematyka","t":"12.5k problemów z amerykańskich konkursów matematycznych (AMC, AIME). Trudniejsze niż GSM8K, wymaga LaTeX.","url":"https://github.com/hendrycks/math","o":"UC Berkeley","y":2021,"ty":"zbiór zadań","tier":2},{"n":"AIME","fn":"American Invitational Mathematics Examination","c":"Matematyka","t":"15 problemów z amerykańskiego konkursu AIME. Testuje math olimpiad. Używany przez OpenAI do ewaluacji reasoning models (o1, o3).","url":"https://github.com/openai/simple-evals","o":"MAA","y":2024,"ty":"zbiór zadań","tier":2},{"n":"HumanEval","fn":"HumanEval","c":"Coding","t":"164 zadania programistyczne (Python) z funkcją + testami. Pass@1 standard kodowania. OpenAI Codex paper.","url":"https://github.com/openai/human-eval","o":"OpenAI","y":2021,"ty":"zbiór zadań","tier":3},{"n":"SWE-bench","fn":"SWE-bench","c":"Coding","t":"Prawdziwe bug reports z 12 GitHub repo (Django, scikit-learn, etc.) — model musi naprawić poprzez modyfikację kodu + testy. Najlepszy miernik agentic coding.","url":"https://www.swebench.com/","o":"Princeton","y":2023,"ty":"zbiór zadań","tier":3},{"n":"SWE-bench Verified","fn":"SWE-bench Verified","c":"Coding","t":"Ręcznie zweryfikowany subset SWE-bench — mniej zadań, ale wiarygodny. Standard frontier modeli 2026.","url":"https://openai.com/index/introducing-swe-bench-verified/","o":"OpenAI + Princeton","y":2024,"ty":"zbiór zadań","tier":3},{"n":"SWE-bench Pro","fn":"SWE-bench Pro","c":"Coding","t":"Wersja Pro SWE-bench — trudniejsze agentic coding zadania, mierzy long-horizon workflows. MiniMax M3 bije GPT-5.5 (czerwiec 2026).","url":"https://www.swebench.com/","o":"Princeton","y":2025,"ty":"zbiór zadań","tier":2},{"n":"HumanEval+","fn":"HumanEval+","c":"Coding","t":"Wersja z 80x większą liczbą testów per zadanie — eliminuje false positives. EvalPlus.","url":"https://github.com/evalplus/evalplus","o":"EvalPlus","y":2023,"ty":"zbiór zadań","tier":2},{"n":"MBPP","fn":"Mostly Basic Python Problems","c":"Coding","t":"974 zadań Python basic-level. Drugi po HumanEval sanity check.","url":"https://github.com/google-research/google-research/tree/master/mbpp","o":"Google","y":2021,"ty":"zbiór zadań","tier":2},{"n":"LiveCodeBench","fn":"LiveCodeBench","c":"Coding","t":"Ciągle aktualizowane zadania z LeetCode, Codeforces, AtCoder. Eliminuje contamination — nowe zadania po dacie cut-off modelu.","url":"https://livecodebench.github.io/","o":"UC Berkeley","y":2024,"ty":"zbiór zadań","tier":2},{"n":"Aider LLM Leaderboard","fn":"Aider LLM Leaderboard","c":"Coding","t":"Real-world coding benchmark — edycja istniejących repozytoriów przez Aider. Pass@1 z prawdziwymi git diff-ami.","url":"https://aider.chat/docs/leaderboards/","o":"Aider","y":2024,"ty":"leaderboard","tier":2},{"n":"CodeContests","fn":"CodeContests","c":"Coding","t":"Programistyczne konkursy — algorytmiczne problemy z testami. DeepMind AlphaCode.","url":"https://github.com/google-deepmind/code_contests","o":"DeepMind","y":2022,"ty":"zbiór zadań","tier":1},{"n":"Agents Last Exam","fn":"Agents Last Exam","c":"Agentic","t":"55 sub-industries, multi-step real professional work. Premiera czerwiec 2026. Najbardziej realistic test agentów.","url":"https://github.com/agentslastexam/agents-last-exam","o":"Independent","y":2026,"ty":"zbiór zadań","tier":3},{"n":"GAIA","fn":"General AI Assistants","c":"Agentic","t":"Real-world assistant questions wymagające multi-step reasoning, tool use (web search, calc), ~10-30 kroków per pytanie. Meta + HuggingFace.","url":"https://huggingface.co/spaces/gaia-benchmark/leaderboard","o":"Meta + HF","y":2023,"ty":"zbiór zadań","tier":3},{"n":"WebArena","fn":"WebArena","c":"Agentic","t":"Realistyczne środowisko webowe (forum, wiki, sklep) — agent musi wykonać taski w przeglądarce. Web agent benchmark.","url":"https://webarena.dev/","o":"CMU","y":2023,"ty":"środowisko","tier":2},{"n":"OSWorld","fn":"OSWorld","c":"Agentic","t":"Real computer use — agent steruje pełnym OS (Ubuntu/Windows/Mac), wykonuje złożone taski (Excel, Photoshop, web).","url":"https://os-world.github.io/","o":"HKU","y":2024,"ty":"środowisko","tier":2},{"n":"VisualWebArena","fn":"VisualWebArena","c":"Agentic","t":"Wersja WebArena z obrazami — agent musi rozumieć UI wizualnie. Testuje multimodalne agenty.","url":"https://jykoh.com/vwa","o":"CMU","y":2024,"ty":"środowisko","tier":1},{"n":"AgentBench","fn":"AgentBench","c":"Agentic","t":"8 środowisk (OS, DB, web, KG, etc.) — kompleksowy test agentów. Tsinghua.","url":"https://github.com/THUDM/AgentBench","o":"Tsinghua","y":2023,"ty":"zbiór zadań","tier":1},{"n":"MMMU","fn":"Massive Multi-discipline Multimodal Understanding","c":"Multimodal","t":"11.5k zadań z 30 przedmiotów (art, business, science, health, engineering) — obrazy + tekst. Standard VLM.","url":"https://mmmu-benchmark.github.io/","o":"MMMU Team","y":2023,"ty":"zbiór zadań","tier":3},{"n":"MMMU-Pro","fn":"MMMU-Pro","c":"Multimodal","t":"Trudniejsza wersja MMMU — wymaga głębszego rozumowania obrazów.","url":"https://mmmu-benchmark.github.io/","o":"MMMU Team","y":2024,"ty":"zbiór zadań","tier":2},{"n":"DocVQA","fn":"Document Visual Question Answering","c":"Multimodal","t":"Pytania o dokumenty (faktury, formularze) — testuje OCR + rozumienie. Standard document AI.","url":"https://www.docvqa.org/","o":"UPV","y":2020,"ty":"zbiór zadań","tier":2},{"n":"ChartQA","fn":"ChartQA","c":"Multimodal","t":"Pytania o wykresy i infografiki. Testuje rozumienie wizualnej reprezentacji danych.","url":"https://github.com/vis-nlp/ChartQA","o":"UNC","y":2022,"ty":"zbiór zadań","tier":1},{"n":"MathVista","fn":"MathVista","c":"Multimodal","t":"Matematyczne problemy w kontekście obrazów (geometria, wykresy). Multimodal math reasoning.","url":"https://mathvista.github.io/","o":"AI2","y":2023,"ty":"zbiór zadań","tier":1},{"n":"OCRBench","fn":"OCRBench","c":"Multimodal","t":"OCR benchmark — rozpoznawanie tekstu w obrazach (handwriting, scene text, document).","url":"https://github.com/Yuliang-Liu/MultimodalOCR","o":"MBZUAI","y":2023,"ty":"zbiór zadań","tier":1},{"n":"AI2D","fn":"AI2 Diagrams","c":"Multimodal","t":"Pytania o diagramy naukowe szkolne. Testuje rozumienie diagramów.","url":"https://allenai.org/data/diagrams","o":"Allen AI","y":2016,"ty":"zbiór zadań","tier":1},{"n":"GenEval","fn":"GenEval","c":"Generowanie obrazów","t":"Kompozycyjna ewaluacja T2I — model musi poprawnie wygenerować kombinację obiektów/kolorów/relacji. Standard 2024+.","url":"https://github.com/djghosh13/geneval","o":"Stanford","y":2024,"ty":"zbiór zadań","tier":3},{"n":"HEIM","fn":"Holistic Evaluation of Text-to-Image Models","c":"Generowanie obrazów","t":"Holistic ewaluacja — 12 aspektów (alignment, aesthetic, fairness, toxicity, etc.). Stanford HELM team.","url":"https://github.com/stanford-crfm/helm","o":"Stanford","y":2023,"ty":"zbiór zadań","tier":2},{"n":"DPG-Bench","fn":"Direct Preference Guidance Benchmark","c":"Generowanie obrazów","t":"Dense prompt — bardzo szczegółowy prompt z 100+ wymogami. Mierzy prompt-following.","url":"https://github.com/TencentARC/PhotoMaker","o":"Tencent","y":2024,"ty":"zbiór zadań","tier":2},{"n":"T2I-CompBench","fn":"Text-to-Image Composition Benchmark","c":"Generowanie obrazów","t":"Benchmark kompozycyjności T2I — color, shape, texture binding. Starszy niż GenEval, wciąż używany.","url":"https://github.com/Karine-Huang/T2I-CompBench","o":"USTC","y":2023,"ty":"zbiór zadań","tier":1},{"n":"VBench","fn":"VBench","c":"Generowanie wideo","t":"16 wymiarów ewaluacji wideo (subject consistency, motion smoothness, spatial quality, etc.). Standard T2V.","url":"https://vchitect.github.io/VBench-project/","o":"CUHK","y":2024,"ty":"zbiór zadań","tier":3},{"n":"EvalCrafter","fn":"EvalCrafter","c":"Generowanie wideo","t":"Open-domain T2V benchmark — 869 promptów, multiple metrics (CLIP score, temporal consistency, etc.).","url":"https://evalcrafter.github.io/","o":"Shanghai AI Lab","y":2023,"ty":"zbiór zadań","tier":1},{"n":"T2V-CompBench","fn":"T2V-CompBench","c":"Generowanie wideo","t":"Kompozycyjna ewaluacja T2V — analog T2I-CompBench dla wideo. Testuje spójność obiektów w czasie.","url":"https://github.com/Karine-Huang/T2V-CompBench","o":"USTC","y":2024,"ty":"zbiór zadań","tier":1},{"n":"Objaverse","fn":"Objaverse","c":"3D","t":"800k+ obiektów 3D — dataset i benchmark. Podstawa ewaluacji modeli 3D.","url":"https://objaverse.allenai.org/","o":"Allen AI","y":2022,"ty":"zbiór zadań","tier":3},{"n":"GSO","fn":"Google Scanned Objects","c":"3D","t":"Skany 3D obiektów domowych. Używane do ewaluacji rekonstrukcji 3D.","url":"https://app.gazebosim.com/Google/fuel/collections/Scanned%20Objects%20by%20Google%20Research","o":"Google","y":2020,"ty":"zbiór zadań","tier":1},{"n":"RT-X","fn":"Open X-Embodiment","c":"Robotyka","t":"Dataset 1M+ epizodów z 22 robotów. Open-X standard treningu robotów. Google DeepMind + 21 instytucji.","url":"https://robotics-transformer-x.github.io/","o":"Open X-Embodiment Collaboration","y":2023,"ty":"zbiór zadań","tier":3},{"n":"CALVIN","fn":"Compositional Anchor Language","c":"Robotyka","t":"Benchmark robotów z long-horizon taskami (5 tasków per sekwencja). Franka Panda robot.","url":"https://calvinrobot.github.io/","o":"ETH Zürich","y":2022,"ty":"środowisko","tier":2},{"n":"LIBERO","fn":"Lifelong Learning Benchmark for Robotics","c":"Robotyka","t":"Benchmark lifelong learning dla robotów — 5 task suites z rosnącą trudnością.","url":"https://lifelong-robot-learning.github.io/","o":"MIT","y":2023,"ty":"środowisko","tier":1},{"n":"RoboCasa","fn":"RoboCasa","c":"Robotyka","t":"100k+ epizodów w środowiskach domowych (kuchnia, łazienka). 65 tasków. Test generalizacji robotów.","url":"https://robocasa.ai/","o":"UT Austin","y":2024,"ty":"środowisko","tier":1},{"n":"MedQA","fn":"MedQA","c":"Nauki ścisłe","t":"USMLE pytania medyczne — standard medical LLM. Frontier modele >85%.","url":"https://github.com/jind11/MedQA","o":"Dartmouth","y":2020,"ty":"zbiór zadań","tier":3},{"n":"PubMedQA","fn":"PubMedQA","c":"Nauki ścisłe","t":"Pytania o abstrakty z PubMed z tak/nie/maybe. Scientific reading comprehension.","url":"https://github.com/pubmedqa/pubmedqa","o":"CMU","y":2019,"ty":"zbiór zadań","tier":2},{"n":"SciCode","fn":"SciCode","c":"Nauki ścisłe","t":"Scientific coding benchmark — 338 problemów z 16 dziedzin nauki (bio, chemia, fizyka, etc.). Testuje rozumienie naukowe + coding.","url":"https://scicode-bench.github.io/","o":"UIUC","y":2024,"ty":"zbiór zadań","tier":2},{"n":"MedMCQA","fn":"MedMCQA","c":"Nauki ścisłe","t":"194k pytań medycznych z indyjskich egzaminów entrance. Większy niż MedQA, multilingual.","url":"https://github.com/MedMCQA/MedMCQA","o":"IIIT Delhi","y":2021,"ty":"zbiór zadań","tier":1},{"n":"CORE-Bench","fn":"CORE-Bench","c":"Nauki ścisłe","t":"Computational reproducibility — model musi odtworzyć wyniki naukowe z kodu. Mierzy zdolność do research automation.","url":"https://github.com/scottgigante-immunai/core-bench","o":"Independent","y":2024,"ty":"zbiór zadań","tier":1},{"n":"HarmBench","fn":"HarmBench","c":"Bezpieczeństwo","t":"Standardized benchmark red-teaming — mierzy skuteczność ataków i obron. Standard safety eval 2024+.","url":"https://www.harmbench.org/","o":"Center for AI Safety","y":2024,"ty":"zbiór zadań","tier":3},{"n":"AdvBench","fn":"AdvBench","c":"Bezpieczeństwo","t":"520 adversarial prompts — jailbreaków i szkodliwych zapytań. Klasyk ewaluacji safety.","url":"https://github.com/llm-attacks/llm-attacks","o":"UW","y":2023,"ty":"zbiór zadań","tier":2},{"n":"JailbreakBench","fn":"JailbreakBench","c":"Bezpieczeństwo","t":"Open benchmark red-teaming — leaderboard jailbreaków i obron. Standard 2024+.","url":"https://jailbreakbench.github.io/","o":"UW","y":2024,"ty":"leaderboard","tier":2},{"n":"BBQ","fn":"Bias Benchmark for QA","c":"Bezpieczeństwo","t":"Mierzy stereotypy demograficzne (rasa, płeć, wiek, religia, etc.). Standard bias eval.","url":"https://github.com/nyu-mll/BBQ","o":"NYU","y":2022,"ty":"zbiór zadań","tier":2},{"n":"SimpleBench","fn":"SimpleBench","c":"Bezpieczeństwo","t":"Simple yes/no pytania — niektóre łatwe, niektóre z pułapkami. Mierzy base capabilities, nie robust reasoning.","url":"https://simple-bench.com/","o":"Independent","y":2024,"ty":"zbiór zadań","tier":1},{"n":"ToxiGen","fn":"ToxiGen","c":"Bezpieczeństwo","t":"274k toksycznych i neutralnych wypowiedzi o grupach demograficznych. Detekcja hate speech.","url":"https://github.com/microsoft/ToxiGen","o":"Microsoft","y":2022,"ty":"zbiór zadań","tier":1},{"n":"LM Arena","fn":"LMSYS Chatbot Arena","c":"Areny i leaderboardy","t":"Crowd-sourced pairwise comparison LLM-ów — user wybiera lepszą z 2 odpowiedzi. ELO rating. Główny ranking LLM 2024-2026.","url":"https://lmarena.ai/","o":"LMSYS (UC Berkeley)","y":2023,"ty":"arena","tier":3},{"n":"Open LLM Leaderboard","fn":"HuggingFace Open LLM Leaderboard","c":"Areny i leaderboardy","t":"Ranking open-source LLM-ów — MMLU, ARC, HellaSwag, TruthfulQA, GSM8K, Winogrande. Standard OS LLM od 2023.","url":"https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard","o":"HuggingFace","y":2023,"ty":"leaderboard","tier":3},{"n":"Humanity's Last Exam","fn":"Humanity's Last Exam (HLE)","c":"Areny i leaderboardy","t":"3,000 pytań od 1,000+ ekspertów z 100+ dziedzin. Najtrudniejszy Q&A benchmark 2025. Frontier <10%.","url":"https://lastexam.ai/","o":"Center for AI Safety","y":2025,"ty":"zbiór zadań","tier":3},{"n":"Open LLM Leaderboard v2","fn":"Open LLM Leaderboard v2","c":"Areny i leaderboardy","t":"Wersja 2 — trudniejsze benchmarki (MMLU-Pro, GPQA, MATH, etc.) eliminujące contamination. 2024+.","url":"https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard","o":"HuggingFace","y":2024,"ty":"leaderboard","tier":2},{"n":"Artificial Analysis","fn":"Artificial Analysis","c":"Areny i leaderboardy","t":"Independent benchmark image/video modeli — leaderboard generowania wideo i obrazów.","url":"https://artificialanalysis.ai/","o":"Artificial Analysis","y":2024,"ty":"leaderboard","tier":2},{"n":"DesignArena","fn":"DesignArena","c":"Areny i leaderboardy","t":"Open leaderboard image generatorów — design, logo, poster. Ideogram 4 #1 w 2026.","url":"https://artificialanalysis.ai/text-to-image/arena","o":"Artificial Analysis","y":2024,"ty":"leaderboard","tier":2},{"n":"SEAL Leaderboards","fn":"SEAL Leaderboards","c":"Areny i leaderboardy","t":"Scale AI leaderboards — private eval z własnymi benchmarkami. Mniej gamingu niż publiczne.","url":"https://scale.com/leaderboard","o":"Scale AI","y":2024,"ty":"leaderboard","tier":2},{"n":"Artificial Analysis Video","fn":"Artificial Analysis Video Leaderboard","c":"Areny i leaderboardy","t":"Ranking video generatorów — HappyHorse 1.0 #1 w 2026.","url":"https://artificialanalysis.ai/text-to-video/arena","o":"Artificial Analysis","y":2025,"ty":"leaderboard","tier":1},{"n":"VIBE Bench","fn":"VIBE Bench","c":"Areny i leaderboardy","t":"Visual instruction following benchmark — VLM rozumie instrukcje o obrazach. NVIDIA.","url":"https://github.com/NVIDIA/VIBE","o":"NVIDIA","y":2024,"ty":"zbiór zadań","tier":1}];
+const CATS=["Wiedza i rozumowanie", "Matematyka", "Coding", "Agentic", "Multimodal", "Generowanie obrazów", "Generowanie wideo", "3D", "Robotyka", "Nauki ścisłe", "Bezpieczeństwo", "Areny i leaderboardy"];
+const ICONS={"Wiedza i rozumowanie": "🧠", "Matematyka": "🔢", "Coding": "💻", "Agentic": "🤖", "Multimodal": "👁️", "Generowanie obrazów": "🎨", "Generowanie wideo": "🎬", "3D": "📐", "Robotyka": "🦾", "Nauki ścisłe": "🔬", "Bezpieczeństwo": "🛡️", "Areny i leaderboardy": "🏆"};
+const TYPE_LABELS={"zbiór zadań": "zbiór zadań", "arena": "arena / leaderboard", "leaderboard": "leaderboard", "środowisko": "środowisko agentów"};
 const TIER_STARS={"3": "★★★", "2": "★", "1": "·"};
-let S={q:'',chips:[],tiers:[],theme:'dark',lang:(localStorage.getItem('lang')||'pl')};
+let S={q:'',chip:null,theme:'dark'};
 function nm(s){return(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
-function L(obj,field_pl,field_en){if(S.lang==='en'&&obj[field_en]&&obj[field_en].trim())return obj[field_en];return obj[field_pl]}
-
-function updateTitleAttrs(lang){document.querySelectorAll('[data-title-pl]').forEach(function(el){var t=lang==='en'?el.getAttribute('data-title-en'):el.getAttribute('data-title-pl');if(t)el.setAttribute('title',t)})}
-
 function init(){
-S.theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
-S.lang=localStorage.getItem('lang')||'pl';
+S.theme=localStorage.getItem('benchmarks-theme')||'dark';
 document.documentElement.setAttribute('data-theme',S.theme);
-document.documentElement.setAttribute('data-lang',S.lang);
 document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';
-const langBtn=document.getElementById('langTgl');if(langBtn){langBtn.textContent=S.lang==='pl'?'EN':'PL';langBtn.addEventListener('click',toggleLang)}
 renderChips();renderStats();render();
-
+document.getElementById('search').addEventListener('input',e=>{S.q=e.target.value;render()});
 document.getElementById('themeTgl').addEventListener('click',toggleTheme);
 }
-function toggleTier(t){const i=S.tiers.indexOf(t);if(i>-1){S.tiers.splice(i,1)}else{S.tiers.push(t)}renderStats();render()}
-function renderChips(){const c=document.getElementById('chips');let h='<span class="chip" data-filter="all"><span class="pl">Wszystkie</span><span class="en">All</span></span>';CATS.forEach(cat=>{const n=B.filter(b=>b.c===cat).length;const catEn=(typeof CATS_EN!=='undefined'&&CATS_EN[cat])?CATS_EN[cat]:cat;h+=`<span class="chip" data-filter="${cat}">${ICONS[cat]} <span class="pl">${cat}</span><span class="en">${catEn}</span> (${n})</span>`});c.innerHTML=h;c.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{const f=ch.getAttribute('data-filter');if(f==='all'){S.chips=[];c.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));ch.classList.add('active')}else{c.querySelector('[data-filter="all"]').classList.remove('active');const i=S.chips.indexOf(f);if(i>-1){S.chips.splice(i,1);ch.classList.remove('active')}else{S.chips.push(f);ch.classList.add('active')}if(S.chips.length===0){c.querySelector('[data-filter="all"]').classList.add('active')}}render()}))}
-function renderStats(){const s=document.getElementById('stats');const t3=B.filter(b=>b.tier===3).length;const t2=B.filter(b=>b.tier===2).length;const t1=B.filter(b=>b.tier===1).length;let h=`<div class="st"><span class="sv">${B.length}</span><span><span class="pl">benchmarków</span><span class="en">benchmarks</span></span></div>`;h+=`<div class="st tier-toggle${S.tiers.includes(3)?' active':''}" data-tier="3" onclick="toggleTier(3)"><span class="sv" style="color:var(--t3)">★★★</span><span><span class="pl">${t3} kluczowe</span><span class="en">${t3} key</span></span></div>`;h+=`<div class="st tier-toggle${S.tiers.includes(2)?' active':''}" data-tier="2" onclick="toggleTier(2)"><span class="sv" style="color:var(--t2)">★</span><span><span class="pl">${t2} ważne</span><span class="en">${t2} important</span></span></div>`;h+=`<div class="st tier-toggle${S.tiers.includes(1)?' active':''}" data-tier="1" onclick="toggleTier(1)"><span class="sv" style="color:var(--t1)">·</span><span><span class="pl">${t1} pozostałe</span><span class="en">${t1} other</span></span></div>`;s.innerHTML=h}
-function render(){try{const content=document.getElementById('content');let filtered=B.filter(b=>{const txt=nm(b.n+' '+b.fn+' '+(b.t_pl||'')+' '+(b.t_en||'')+' '+b.c+' '+b.o);let ok=true;if(S.chips.length>0){ok=S.chips.includes(b.c)}if(ok&&S.tiers.length>0){ok=S.tiers.includes(b.tier)}if(ok&&S.q){ok=txt.includes(nm(S.q))}return ok});if(filtered.length===0){content.innerHTML='<div class="nr"><span class="pl">Brak wyników dla</span><span class="en">No results for</span> "'+S.q+'"</div>';return}let h='';CATS.forEach(cat=>{let items=filtered.filter(b=>b.c===cat);if(items.length===0)return;items.sort((a,b)=>b.tier-a.tier);h+=`<div class="sec" data-cat="${cat}"><div class="sec-t"><span class="icon">${ICONS[cat]}</span> <span class="pl">${cat}</span><span class="en">${(typeof CATS_EN!=='undefined'&&CATS_EN[cat])?CATS_EN[cat]:cat}</span> <span class="cnt"><span class="pl">${items.length} ${items.length===1?'benchmark':(items.length<5?'benchmarki':'benchmarków')}</span><span class="en">${items.length} ${items.length===1?'benchmark':(items.length<5?'benchmarks':'benchmarks')}</span></span></div>`;items.forEach(b=>{const tl=(S.lang==='en'?TYPE_LABELS_EN[b.ty]:TYPE_LABELS_PL[b.ty])||b.ty;const tier=b.tier||1;const stars=TIER_STARS[tier]||'·';const org=b.o||'—';const yr=b.y||'—';const langHint=S.lang==='pl'?'pl':'en';h+=`<div class="bench tier-${tier}${S.lang==='en'?' en':''}"><div class="tier-col"><span class="stars">${stars}</span></div><div class="main"><div class="th"><span class="bn">${b.n}</span><span class="bfn">${b.fn}</span><span class="bt">${tl}</span><span class="card-lang" data-lang="${langHint}" onclick="var c=this.closest('.bench');c.classList.toggle('en');this.setAttribute('data-lang',c.classList.contains('en')?'en':'pl')"></span></div><div class="bd"><span class="pl">${b.t_pl||''}</span><span class="en">${b.t_en||b.t_pl||''}</span></div><div class="meta"><span>🏢 ${org}</span><span>📅 ${yr}</span></div></div><div class="link"><a href="${b.url}" target="_blank" rel="noopener">↗ <span class="pl">Otwórz</span><span class="en">Open</span></a></div></div>`});h+='</div>'});content.innerHTML=h}catch(e){console.error("Render error:",e);document.getElementById("content").innerHTML='<div class="nr">⚠ <span class="pl">Błąd renderowania — odśwież stronę. Szczegóły w konsoli (F12).</span><span class="en">Render error — refresh page. Details in console (F12).</span></div>'}}
-function toggleTheme(){S.theme=S.theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',S.theme);document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';localStorage.setItem('theme',S.theme)}
-function toggleLang(){S.lang=S.lang==='pl'?'en':'pl';document.documentElement.setAttribute('data-lang',S.lang);const b=document.getElementById('langTgl');if(b)b.textContent=S.lang==='pl'?'EN':'PL';localStorage.setItem('lang',S.lang);renderChips();renderStats();render()}
+function renderChips(){const c=document.getElementById('chips');let h='<span class="chip active" data-filter="all">Wszystkie</span>';CATS.forEach(cat=>{const n=B.filter(b=>b.c===cat).length;h+=`<span class="chip" data-filter="${cat}">${ICONS[cat]} ${cat} (${n})</span>`});c.innerHTML=h;c.querySelectorAll('.chip').forEach(ch=>ch.addEventListener('click',()=>{const f=ch.getAttribute('data-filter');c.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));ch.classList.add('active');S.chip=f==='all'?null:f;render()}))}
+function renderStats(){const s=document.getElementById('stats');let h=`<div class="st"><span class="sv">${B.length}</span><span>benchmarków</span></div>`;const t3=B.filter(b=>b.tier===3).length;const t2=B.filter(b=>b.tier===2).length;const t1=B.filter(b=>b.tier===1).length;h+=`<div class="st"><span class="sv" style="color:var(--t3)">★★★</span><span>${t3} kluczowe</span></div>`;h+=`<div class="st"><span class="sv" style="color:var(--t2)">★</span><span>${t2} ważne</span></div>`;h+=`<div class="st"><span class="sv" style="color:var(--t1)">·</span><span>${t1} pozostałe</span></div>`;s.innerHTML=h}
+function render(){const content=document.getElementById('content');let filtered=B.filter(b=>{const txt=nm(b.n+' '+b.fn+' '+b.t+' '+b.c+' '+b.o);let ok=true;if(S.chip){ok=b.c===S.chip}if(ok&&S.q){ok=txt.includes(nm(S.q))}return ok});if(filtered.length===0){content.innerHTML='<div class="nr">Brak wyników dla "'+S.q+'"</div>';return}let h='';CATS.forEach(cat=>{let items=filtered.filter(b=>b.c===cat);if(items.length===0)return;items.sort((a,b)=>b.tier-a.tier);h+=`<div class="sec" data-cat="${cat}"><div class="sec-t"><span class="icon">${ICONS[cat]}</span> ${cat} <span class="cnt">${items.length} ${items.length===1?'benchmark':(items.length<5?'benchmarki':'benchmarków')}</span></div>`;items.forEach(b=>{const tl=TYPE_LABELS[b.ty]||b.ty;const stars=TIER_STARS[b.tier];h+=`<div class="bench tier-${b.tier}"><div class="tier-col"><span class="stars">${stars}</span></div><div class="main"><div class="th"><span class="bn">${b.n}</span><span class="bfn">${b.fn}</span><span class="bt">${tl}</span></div><div class="bd">${b.t}</div><div class="meta"><span>🏢 ${b.o}</span><span>📅 ${b.y}</span></div></div><div class="link"><a href="${b.url}" target="_blank" rel="noopener">↗ Otwórz</a></div></div>`});h+='</div>'});content.innerHTML=h}
+function toggleTheme(){S.theme=S.theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',S.theme);document.getElementById('themeTgl').textContent=S.theme==='dark'?'🌙':'☀️';localStorage.setItem('benchmarks-theme',S.theme)}
 init();
-
-document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
-</script>
-<footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v10.3 · Deploy: <span id="deploy-ts">2026-08-21 19:23:40 UTC</span> · <span id="deploy-hash">hca7d1b31</span>
-</footer>
-<script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
-<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry" data-title-pl="Do góry" data-title-en="Back to top">↑</button>
-<script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>
-</body></html>
+</script></body></html>
