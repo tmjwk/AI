@@ -357,11 +357,10 @@ function renderSection(sec){
   let body = '';
   if (sec.type === 'cards') {
     const sorted = (sec.cards||[]).slice().sort((a,b) => (b.date||'').localeCompare(a.date||''));
-    body = `<div class="grid">${sorted.map(renderCard).join('')}</div>`;
-    // Inject cost index chart if this is the Cost Per Intelligence section
+    // Inject cost index chart BEFORE cards if this is the Cost Per Intelligence section
     const secTitle = (sec.title_pl||sec.title||'').toLowerCase();
     if (secTitle.includes('cost per intelligence') || secTitle.includes('cost per int')) {
-      body += `<div id="costIndexChart" style="margin-top:16px;padding:12px;background:var(--card);border:1px solid var(--bd);border-radius:8px"></div>`;
+      body = `<div id="costIndexChart" style="margin-bottom:16px;padding:12px;background:var(--card);border:1px solid var(--bd);border-radius:8px"></div>`;
       // Load cost_index.json (once)
       if (!window._costIndexLoaded) {
         window._costIndexLoaded = true;
@@ -391,6 +390,7 @@ function renderSection(sec){
         }).catch(e=>{console.log('cost_index.json not loaded:',e)});
       }
     }
+    body += `<div class="grid">${sorted.map(renderCard).join('')}</div>`;
   } else if (sec.type === 'list') {
     body = `<ul class="list">${sec.items.map(it=>`<li><span class="dot dot-${it.dot_color}"></span> <span class="pl">${it.html_pl||''}</span><span class="en">${it.html_en||it.html_pl||''}</span></li>`).join('')}</ul>`;
   } else if (sec.type === 'table') {
@@ -632,7 +632,7 @@ function handleHashExpand(){
 document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();var s=document.getElementById('search');if(s)s.focus()}if(e.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(m){m.classList.remove('show')})}});
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v10.6.1 · Deploy: <span id="deploy-ts">2026-08-21 21:53:35 UTC</span> · <span id="deploy-hash">h69201498</span>
+v10.6.1 · Deploy: <span id="deploy-ts">2026-08-21 22:03:38 UTC</span> · <span id="deploy-hash">hb7544d19</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry" data-title-pl="Do góry" data-title-en="Back to top">↑</button>
