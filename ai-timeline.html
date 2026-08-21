@@ -199,10 +199,11 @@ function renderTimeline(){
   });
   // Sort DESC by date, then type priority (diamandis first within same date)
   var typePrio={diamandis:0,weekly:1,ai_search:2,lev:3};
+  function tp(t){return typePrio[t]!==undefined?typePrio[t]:9}
   filtered.sort(function(a,b){
     var dd=(b.date||'').localeCompare(a.date||'');
     if(dd!==0)return dd;
-    return (typePrio[a.type]||9)-(typePrio[b.type]||9);
+    return tp(a.type)-tp(b.type);
   });
   
   if(filtered.length===0){
