@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl" data-theme="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Benchmarki — katalog</title>
 <base target="_blank">
+<script>document.documentElement.setAttribute("data-lang",localStorage.getItem("lang")||"pl")</script>
 <style>
 :root{--bg:#0a0a0a;--fg:#e5e5e5;--card:#111;--bd:#2a2a2a;--bdl:#1a1a1a;--hp:#fafafa;--hs:#888;--hm:#666;--hd:#555;--ac:#4ade80;--rk:#6b8cce;--ba:#fbbf24;--bl:#3b82f6;--t3:#fbbf24;--t2:#94a3b8;--t1:#4a4a4a;--ov:rgba(0,0,0,.7)}
 [data-theme="light"]{--bg:#ffffff;--fg:#000000;--card:#f1f5f9;--bd:#94a3b8;--bdl:#cbd5e1;--hp:#000000;--hs:#1e293b;--hm:#1e293b;--hd:#334155;--ac:#15803d;--rk:#1e40af;--ba:#92400e;--bl:#1d4ed8;--t3:#92400e;--t2:#475569;--t1:#94a3b8;--ov:rgba(0,0,0,.5)}
@@ -16,6 +17,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 .h a:hover{border-color:var(--ac);color:var(--ac)}
 .tgl{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--fg);transition:border-color .15s}
 .tgl:hover{border-color:var(--ac)}
+.nav-links{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.nav-btn{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:14px;color:var(--hs);text-decoration:none;font-weight:500;transition:all .15s;white-space:nowrap}
+.nav-btn:hover{border-color:var(--ac);color:var(--fg)}
+.nav-btn.cur{border-color:var(--ac);color:var(--ac);background:rgba(74,222,128,.06);font-weight:700}
+[data-lang="pl"] .nav-btn .en{display:none !important}
+[data-lang="en"] .nav-btn .pl{display:none !important}
 .banner{background:linear-gradient(90deg,rgba(251,191,36,.08),transparent);border-left:3px solid var(--ba);padding:10px 14px;border-radius:4px;margin-bottom:16px;font-size:13px;color:var(--hs)}
 .banner strong{color:var(--ba)}
 .banner .tiers{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:11px;color:var(--hm)}
@@ -67,11 +74,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <div class="h">
 <div class="hr">
 <h1>🏆 AI Benchmarki — katalog</h1>
-<div class="nav">
-<a href="ai-models.html" target="_top">← Models</a>
-<a href="ai-radar.html" target="_top">📡 Radar</a>
-<a href="ai-glossary.html" target="_top">📖 Słownik</a>
-<button class="tgl" id="themeTgl">🌙</button>
+<div class="nav nav-links">
+<a href="index.html" class="nav-btn"><span class="pl">🏠 Hub</span><span class="en">🏠 Hub</span></a><a href="ai-models.html" class="nav-btn"><span class="pl">📊 Modele</span><span class="en">📊 Models</span></a><a href="ai-benchmarks.html" class="nav-btn cur"><span class="pl">🏆 Benchmarki</span><span class="en">🏆 Benchmarks</span></a><a href="ai-radar.html" class="nav-btn"><span class="pl">📡 Radar</span><span class="en">📡 Radar</span></a><a href="ai-pulse.html" class="nav-btn"><span class="pl">💓 Puls</span><span class="en">💓 Pulse</span></a><a href="ai-releases.html" class="nav-btn"><span class="pl">🆕 Nowości</span><span class="en">🆕 Releases</span></a><a href="ai-timeline.html" class="nav-btn"><span class="pl">📅 Timeline</span><span class="en">📅 Timeline</span></a><a href="ai-search-global.html" class="nav-btn"><span class="pl">🔍 Szukaj</span><span class="en">🔍 Search</span></a><a href="ai-glossary.html" class="nav-btn"><span class="pl">📖 Słownik</span><span class="en">📖 Glossary</span></a>
+
+
+
+
+
+<button class="tgl" id="themeTgl">🌙</button><button class="tgl" id="langTglHeader" title="Przełącz język na angielski" data-title-pl="Przełącz język na angielski" data-title-en="Switch language to Polish">EN</button>
 </div>
 </div>
 <div class="sub">69 benchmarków w 12 kategoriach · Aktualizacja: 2026-07-01</div>
@@ -89,48 +99,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,
 <input type="text" class="search" id="search" placeholder="🔍 Szukaj benchmarku... (np. 'MMLU', 'coding', 'agentic', 'arena')">
 <div class="chips" id="chips"></div>
 <div class="stats" id="stats"></div>
-<div id="costIndex" style="margin-bottom:24px;padding:16px;background:var(--card);border:1px solid var(--bd);border-radius:8px"></div>
 <div id="content"></div>
-<script>
-// Load cost_index.json
-fetch('data/cost_index.json').then(r=>r.json()).then(data=>{
-  if(!data||!data.models)return;
-  var lang=document.documentElement.getAttribute('data-lang')||'pl';
-  var desc=lang==='en'?data.description_en:data.description_pl;
-  var title=lang==='en'?'Cost Per Intelligence Index':'Cost Per Intelligence Index';
-  var source=data.source||'';
-  var date=data.date||'';
-  
-  // Sort by cost (cheapest first)
-  var models=[...data.models].sort((a,b)=>a.cost-b.cost);
-  
-  var h='<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px">';
-  h+='<h3 style="margin:0;font-size:var(--fs-l);color:var(--hp)">💰 '+title+'</h3>';
-  h+='<span style="font-size:var(--fs-xs);color:var(--hm)">'+source+' · '+date+'</span>';
-  h+='</div>';
-  h+='<p style="margin:0 0 12px;font-size:var(--fs-s);color:var(--hm)">'+desc+'</p>';
-  
-  // Bar chart
-  var maxCost=Math.max(...models.map(m=>m.cost));
-  h+='<div style="display:flex;flex-direction:column;gap:6px">';
-  models.forEach(m=>{
-    var pct=Math.round(m.cost/maxCost*100);
-    var color=m.cost<0.5?'var(--ac)':(m.cost<1.5?'var(--ba)':'var(--rk)');
-    h+='<div style="display:grid;grid-template-columns:200px 1fr 80px;gap:8px;align-items:center;font-size:var(--fs-s)">';
-    h+='<span style="color:var(--hp)">'+m.name+'</span>';
-    h+='<div style="background:var(--bdl);height:20px;border-radius:3px;overflow:hidden"><div style="background:'+color+';height:100%;width:'+pct+'%;transition:width .3s"></div></div>';
-    h+='<span style="text-align:right;font-family:monospace;color:var(--hp)">$'+m.cost.toFixed(2)+'</span>';
-    h+='</div>';
-  });
-  h+='</div>';
-  
-  h+='<p style="margin:12px 0 0;font-size:var(--fs-xs);color:var(--hd)">'+(lang==='en'?'Green = cheap (<$0.50), Yellow = medium, Blue = expensive':'Zielony = tani (<$0.50), Żółty = średni, Niebieski = drogi')+'</p>';
-  
-  document.getElementById('costIndex').innerHTML=h;
-}).catch(e=>{
-  document.getElementById('costIndex').style.display='none';
-});
-</script>
 
 <div class="f">
 AI Benchmarki · Część katalogu <a href="ai-models.html" target="_top">AI Models</a> · <a href="ai-radar.html" target="_top">AI Radar</a> · <a href="ai-glossary.html" target="_top">AI Słownik</a><br>
@@ -146,6 +115,7 @@ const TYPE_LABELS={"zbiór zadań": "zbiór zadań", "arena": "arena / leaderboa
 const TIER_STARS={"3": "★★★", "2": "★", "1": "·"};
 let S={q:'',chip:null,theme:'dark'};
 function nm(s){return(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
+function toggleLang(){S.lang=S.lang==='pl'?'en':'pl';document.documentElement.setAttribute('data-lang',S.lang);const b=document.getElementById('langTgl');if(b)b.textContent=S.lang==='pl'?'EN':'PL';var sp=document.getElementById('search');if(sp){sp.placeholder=S.lang==='en'?'🔍 Search...':'🔍 Szukaj...'}localStorage.setItem('lang',S.lang);render()}
 function init(){
 S.theme=localStorage.getItem('benchmarks-theme')||'dark';
 document.documentElement.setAttribute('data-theme',S.theme);
