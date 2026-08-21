@@ -197,8 +197,13 @@ function renderTimeline(){
     }
     return ok;
   });
-  // Sort DESC by date
-  filtered.sort(function(a,b){return(b.date||'').localeCompare(a.date||'')});
+  // Sort DESC by date, then type priority (diamandis first within same date)
+  var typePrio={diamandis:0,weekly:1,ai_search:2,lev:3};
+  filtered.sort(function(a,b){
+    var dd=(b.date||'').localeCompare(a.date||'');
+    if(dd!==0)return dd;
+    return (typePrio[a.type]||9)-(typePrio[b.type]||9);
+  });
   
   if(filtered.length===0){
     c.innerHTML='<div style="text-align:center;padding:40px;color:var(--hm)"><span class="pl">Brak wyników</span><span class="en">No results</span></div>';
