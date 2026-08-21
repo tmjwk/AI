@@ -2,9 +2,19 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-21 19:21:54 UTC
+// Generated: 2026-08-21 20:43:58 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-21",
+    "type": "diamandis",
+    "title_pl": "Podcast #282 — OpenAI pauzuje trening frontier, predykcja Elona 100x się sprawdza, robot bije Usaina Bolta | #282",
+    "title_en": "Podcast #282 — OpenAI Pauses Frontier Training, Elon's 100X Prediction Lands, Robot Beats Usain Bolt | EP#282",
+    "link": "ai-pulse.html#282",
+    "meta_pl": "15 tematów",
+    "meta_en": "15 topics",
+    "num": "#282"
+  },
   {
     "date": "2026-08-20",
     "type": "lev",

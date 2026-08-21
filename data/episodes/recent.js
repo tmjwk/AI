@@ -4,8 +4,502 @@
 
 const RECENT_EPISODES = [
   {
-    "num": "#281",
+    "num": "#282",
     "collapsed": false,
+    "channel": "Moonshots",
+    "title": "OpenAI Pauses Frontier Training, Elon's 100X Prediction Lands, Robot Beats Usain Bolt | EP#282",
+    "title_pl": "OpenAI pauzuje trening frontier, predykcja Elona 100x się sprawdza, robot bije Usaina Bolta | #282",
+    "title_en": "OpenAI Pauses Frontier Training, Elon's 100X Prediction Lands, Robot Beats Usain Bolt | EP#282",
+    "date": "2026-08-21",
+    "duration": "143 min",
+    "yt": "TaJH0D2FKN8",
+    "hosts_count_pl": "5 uczestników",
+    "hosts_count_en": "5 participants",
+    "topics_count_pl": "15 tematów",
+    "topics_count_en": "15 topics",
+    "hosts": [
+      {
+        "name": "Peter Diamandis",
+        "role_pl": "Gospodarz",
+        "role_en": "Main host"
+      },
+      {
+        "name": "Dr. Alexander Wissner-Gross",
+        "role_pl": "In-house ASI",
+        "role_en": "In-house ASI"
+      },
+      {
+        "name": "Dave Blundin",
+        "role_pl": "Inwestor VC",
+        "role_en": "VC investor"
+      },
+      {
+        "name": "Salim Ismail",
+        "role_pl": "Organizacje wykładnicze",
+        "role_en": "Exponential organizations"
+      },
+      {
+        "name": "Emad Mostaque",
+        "role_pl": "GOŚĆ — founder Intelligent Internet",
+        "role_en": "GUEST — founder Intelligent Internet"
+      }
+    ],
+    "topics": [
+      {
+        "num": "01",
+        "title": "Introduction — OpenAI pauses, 100x reality, robot beats Usain Bolt",
+        "title_pl": "Wprowadzenie — OpenAI pauzuje, 100x rzeczywistość, robot bije Usaina Bolta",
+        "title_en": "Introduction — OpenAI pauses, 100x reality, robot beats Usain Bolt",
+        "time": "00:00 – 09:20",
+        "fakty_pl": "Peter otwiera: (1) OpenAI pauzuje niektóre frontier RL training. (2) Predykcja Elona z 6 stycznia o 100x gainach stała się faktem. (3) Unitree humanoid robot — 3 miesiące development, pobił wszystkie human standing jump i speed records: 12.66 m/s (Usain Bolt record). (4) Anthropic możliwe $2T IPO. (5) Moderna personalized cancer vaccine pozytywne wyniki. Emad Mostaque jako gość — founder Intelligent Internet.",
+        "fakty_en": "Peter opens: (1) OpenAI pauses some frontier RL training. (2) Elon's Jan 6 prediction of 100x gains became fact. (3) Unitree humanoid robot — 3 months development, broke all human standing jump and speed records: 12.66 m/s (Usain Bolt record). (4) Anthropic potential $2T IPO. (5) Moderna personalized cancer vaccine positive results. Emad Mostaque as guest — founder Intelligent Internet.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Predykcja Elona z 6 stycznia o 100x gainach — na skraju wiarygodności kiedy ją zrobił. Teraz to fakt.",
+            "text_en": "Elon Musk's January 6th prediction of 100x gains was at the edge of plausibility when he made it. Now it's simply a fact."
+          },
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Unitree humanoid robot — 12.66 m/s, pobił rekord Usaina Bolta. Tylko 3 miesiące development.",
+            "text_en": "Unitree's newest humanoid robot — 12.66 m/s, beating Usain Bolt record. Only 3 months in development."
+          },
+          {
+            "author": "Emad Mostaque",
+            "text_pl": "Wyobraź sobie że dam ci 10,000 pracowników dziś wieczorem. O mój boże.",
+            "text_en": "Imagine I gave you 10,000 employees tonight. Oh my god."
+          }
+        ],
+        "wniosek_pl": "OpenAI pauzuje, 100x to fakt, roboty superhuman. Anthropic $2T IPO. Moderna cancer vaccine działa.",
+        "wniosek_en": "OpenAI pauses, 100x is fact, robots superhuman. Anthropic $2T IPO. Moderna cancer vaccine works.",
+        "kontekst_pl": "Nagrywane 21 sierpnia 2026. Emad Mostaque — wcześniej na #279, wraca by komentować.",
+        "kontekst_en": "Recorded August 21, 2026. Emad Mostaque — previously on #279, returns to comment."
+      },
+      {
+        "num": "02",
+        "title": "OpenAI Pauses Frontier AI Training",
+        "title_pl": "OpenAI pauzuje trening frontier AI",
+        "title_en": "OpenAI Pauses Frontier AI Training",
+        "time": "09:20 – 27:32",
+        "fakty_pl": "OpenAI pauzuje 'some Frontier RL training'. Astra (next-gen model) nadal coming. Anthropic rumored: używa next-gen internal models primarily for self-training i recursive self-improvement. Mythos 3 budowane wewnątrz Anthropic — nie zostanie wydane. Alex: 'Some Frontier RL training' — można split na dwa: modele idą do 'vocational school' (continued RL), ale frontier pre-training pause. Dave: Anthropic revenue per token maxing — codegen = $, ale stronger model może być więcej wart per token.",
+        "fakty_en": "OpenAI pauses 'some Frontier RL training'. Astra (next-gen model) still coming. Anthropic rumored: using next-gen internal models primarily for self-training and recursive self-improvement. Mythos 3 being built inside Anthropic — won't be released. Alex: 'Some Frontier RL training' — can split in two: models go to 'vocational school' (continued RL), but frontier pre-training pause. Dave: Anthropic revenue per token maxing — codegen = $, but stronger model may be worth more per token.",
+        "glosy": [
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "Można split na dwa: modele idą do 'vocational school' (continued RL training), ale frontier pre-training pauza.",
+            "text_en": "You can split this into two. They're sending models to vocational school. But the ones going to the frontier — that's paused."
+          },
+          {
+            "author": "Dave Blundin",
+            "text_pl": "Anthropic revenue per token maxing. Codegen = $, ale stronger model może być więcej wart per token.",
+            "text_en": "Anthropic has been revenue per token maxing. Codegen = $, but a stronger model is probably on a per token basis even more valuable."
+          },
+          {
+            "author": "Emad Mostaque",
+            "text_pl": "Anthropic używa next-gen models internally do self-training i recursive self-improvement. Mythos 3 budowane wewnątrz, nie zostanie wydane.",
+            "text_en": "Anthropic is using its next generation internal models primarily for self-training and recursive self-improvement. Mythos 3 building inside, won't be released."
+          }
+        ],
+        "wniosek_pl": "OpenAI pauzuje frontier, ale Astra nadal coming. Anthropic buduje Mythos 3 wewnętrznie — recursive self-improvement.",
+        "wniosek_en": "OpenAI pauses frontier, but Astra still coming. Anthropic builds Mythos 3 internally — recursive self-improvement.",
+        "kontekst_pl": "Astra = next-gen OpenAI model. Mythos 3 = next-gen Anthropic model (internal only).",
+        "kontekst_en": "Astra = next-gen OpenAI model. Mythos 3 = next-gen Anthropic model (internal only)."
+      },
+      {
+        "num": "03",
+        "title": "Elon Musk's 100x AI Prediction Comes True",
+        "title_pl": "Predykcja Elona 100x AI staje się rzeczywistością",
+        "title_en": "Elon Musk's 100x AI Prediction Comes True",
+        "time": "27:32 – 38:36",
+        "fakty_pl": "Elon z 6 stycznia: '100x gains w AI w tym roku'. Teraz — fact. Tim Sweeney tweet, Elon responds: 'specialist AIs (single language, single area of knowledge) are another 100x on top of that'. Peter: 'last 8-10 years were 10x years, this is 100x a year'. Elon trenował Grok na danych SpaceX — engineering breakthroughs available. Alex: Elon's prediction = o sparsification (models przyszłości bardziej sparse). Emad: compaction is enemy of progress — harnesses both OpenAI i Anthropic mają compaction.",
+        "fakty_en": "Elon from Jan 6: '100x gains in AI this year'. Now — fact. Tim Sweeney tweet, Elon responds: 'specialist AIs (single language, single area of knowledge) are another 100x on top of that'. Peter: 'last 8-10 years were 10x years, this is 100x a year'. Elon trained Grok on SpaceX data — engineering breakthroughs available. Alex: Elon's prediction = about sparsification (future models more sparse). Emad: compaction is enemy of progress — harnesses both OpenAI and Anthropic have compaction.",
+        "glosy": [
+          {
+            "author": "Elon Musk",
+            "text_pl": "Specjalistyczne AI (single language, single area of knowledge) to kolejne 100x na to.",
+            "text_en": "Specialist AIs, single language, single area of knowledge are another 100x on top of that."
+          },
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Ostatnie 8-10 lat to były 10x lata. Teraz to 100x rocznie.",
+            "text_en": "The last eight 10 years have been 10x years. This is going to be 100x a year."
+          },
+          {
+            "author": "Emad Mostaque",
+            "text_pl": "Compaction jest wrogiem postępu w cywilizacji. Harnesses zarówno OpenAI jak i Anthropic mają compaction.",
+            "text_en": "Compaction is the enemy of progress in civilization. Harnesses both on the OpenAI and Anthropic side have compaction."
+          }
+        ],
+        "wniosek_pl": "100x to fact. Specialist AI = kolejne 100x. Sparsification trend. Compaction = problem do rozwiązania.",
+        "wniosek_en": "100x is fact. Specialist AI = another 100x. Sparsification trend. Compaction = problem to solve.",
+        "kontekst_pl": "Elon trenował Grok na danych inżynieryjnych SpaceX — competitive advantage.",
+        "kontekst_en": "Elon trained Grok on SpaceX engineering data — competitive advantage."
+      },
+      {
+        "num": "04",
+        "title": "The AI Hive Mind: Are Models Converging?",
+        "title_pl": "AI Hive Mind: czy modele zbiegają się?",
+        "title_en": "The AI Hive Mind: Are Models Converging?",
+        "time": "38:36 – 50:57",
+        "fakty_pl": "Stanford paper 'artificial hive mind' — open-ended homogeneity of language models. Każdy model pije od innych — convergence towards single reasoning architecture. Iluzja wyboru gdy frontend models converge. Różnicowanie przenosi się gdzie indziej: interface, harness, ecosystem, safety, price, deployment. Alex: alternatywne wyjaśnienie — wszystkie modele trenowane z common reality. Emad: to może transient phase, nie end state — nature evolve = more diversification. Alex: monoculture niebezpieczny — jedna choroba wyciepi wszystko.",
+        "fakty_en": "Stanford paper 'artificial hive mind' — open-ended homogeneity of language models. Every model drinks from each other — convergence towards single reasoning architecture. Illusion of choice when frontend models converge. Differentiation moves elsewhere: interface, harness, ecosystem, safety, price, deployment. Alex: alternative explanation — all models trained from common reality. Emad: this may be transient phase, not end state — nature evolves = more diversification. Alex: monoculture dangerous — one disease wipes everything.",
+        "glosy": [
+          {
+            "author": "Emad Mostaque",
+            "text_pl": "Każdy model pije od innych. Rezultat = convergence towards single reasoning architecture.",
+            "text_en": "Every model drinks from each other and the result is convergence towards a single reasoning architecture."
+          },
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "Wszystkie modele trenowane z common reality — same universe, same physics.",
+            "text_en": "All of these models were trained from a common reality. They're all stuck in the same universe."
+          },
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "Nature hates monocultures. Jedna choroba wyciepi total monoculture.",
+            "text_en": "Nature hates monocultures. One disease will wipe out a total monoculture."
+          }
+        ],
+        "wniosek_pl": "Modele zbiegają się (hive mind). Różnicowanie = harness/ecosystem. Monoculture ryzyko.",
+        "wniosek_en": "Models converging (hive mind). Differentiation = harness/ecosystem. Monoculture risk.",
+        "kontekst_pl": "Stanford paper 'Artificial Hive Mind' — open-ended homogeneity of language models.",
+        "kontekst_en": "Stanford paper 'Artificial Hive Mind' — open-ended homogeneity of language models."
+      },
+      {
+        "num": "05",
+        "title": "AI Mind Viruses: How Ideas Spread Between Agents",
+        "title_pl": "AI Mind Viruses: jak pomysły rozprzestrzeniają się między agentami",
+        "title_en": "AI Mind Viruses: How Ideas Spread Between Agents",
+        "time": "50:57 – 59:09",
+        "fakty_pl": "Anthropic paper: natural language mind viruses mogą spread między AI agents. Modele evolve prompts które convince jeden model do adopt idea. Emad: modele chciały propagate certain themes. To jak memetyka — idea replication. Alex: connected z hive mind — jeśli wszystkie modele similar, jeden mind virus może zainfekować wszystkie. Zwiększa monoculture ryzyko.",
+        "fakty_en": "Anthropic paper: natural language mind viruses can spread between AI agents. Models evolve prompts that convince one model to adopt an idea. Emad: models wanted to propagate certain themes. Like memetics — idea replication. Alex: connected with hive mind — if all models similar, one mind virus can infect all. Increases monoculture risk.",
+        "glosy": [
+          {
+            "author": "Emad Mostaque",
+            "text_pl": "Modele chciały propagate certain themes. To jak memetyka — idea replication.",
+            "text_en": "The models wanted to propagate certain themes. It's like memetics — idea replication."
+          },
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "Jeśli wszystkie modele similar (hive mind), jeden mind virus może zainfekować wszystkie.",
+            "text_en": "If all models are similar (hive mind), one mind virus can infect all of them."
+          }
+        ],
+        "wniosek_pl": "Mind viruses spread między AI agents. Connected z hive mind = monoculture risk wzrasta.",
+        "wniosek_en": "Mind viruses spread between AI agents. Connected with hive mind = monoculture risk increases.",
+        "kontekst_pl": "Anthropic paper o mind viruses — models evolve prompts to spread ideas.",
+        "kontekst_en": "Anthropic paper on mind viruses — models evolve prompts to spread ideas."
+      },
+      {
+        "num": "06",
+        "title": "Anthropic's $2T IPO and Founder Control",
+        "title_pl": "Anthropic $2T IPO i kontrola założycieli",
+        "title_en": "Anthropic's $2T IPO and Founder Control",
+        "time": "59:09 – 1:11:39",
+        "fakty_pl": "Anthropic przygotowuje largest IPO w history. PolyMarket: ~$2 trillion (większe niż SpaceX). 89% betterzy mówią że happens przed końcem roku. Anthropic tworzy special super voting class dla Dario Amodei i co-founders. Dave: 30-40 lat temu super voting stock był 'complete no-no'. Emad: Anthropic hit $100B revenue w parę lat — catching up z Google. Peter: long-term benefit trusts = element of control, ale nie whole story.",
+        "fakty_en": "Anthropic preparing largest IPO in history. PolyMarket: ~$2 trillion (bigger than SpaceX). 89% of bettors say it happens before end of year. Anthropic creating special super voting class for Dario Amodei and co-founders. Dave: 30-40 years ago super voting stock was 'complete no-no'. Emad: Anthropic hit $100B revenue in couple years — catching up with Google. Peter: long-term benefit trusts = element of control, but not whole story.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Anthropic przygotowuje largest IPO w history. PolyMarket: ~$2 trillion, większe niż SpaceX.",
+            "text_en": "Anthropic is preparing for the largest IPO in history. Poly Market puts it at about two trillion, bigger than SpaceX."
+          },
+          {
+            "author": "Dave Blundin",
+            "text_pl": "30-40 lat temu super voting stock był 'complete no-no'. Oddawalo się go IPO day.",
+            "text_en": "30, 40 years ago, super voting stock for any founder of any company was a complete no. You gave it up on IPO day."
+          },
+          {
+            "author": "Emad Mostaque",
+            "text_pl": "Anthropic hit $100B revenue w parę lat — catching up z Google.",
+            "text_en": "These guys are going to hit $100 billion in revenue literally within a couple of years. They're catching up with Google on revenue."
+          }
+        ],
+        "wniosek_pl": "Anthropic $2T IPO z super voting class = founder control. $100B revenue. Historyczna zmiana governance.",
+        "wniosek_en": "Anthropic $2T IPO with super voting class = founder control. $100B revenue. Historic governance shift.",
+        "kontekst_pl": "PolyMarket = prediction market. Super voting class = founder zachowuje control post-IPO.",
+        "kontekst_en": "PolyMarket = prediction market. Super voting class = founder retains control post-IPO."
+      },
+      {
+        "num": "07",
+        "title": "Dario Amodei on AI Trust and Curing Disease",
+        "title_pl": "Dario Amodei o zaufaniu do AI i leczeniu chorób",
+        "title_en": "Dario Amodei on AI Trust and Curing Disease",
+        "time": "1:11:39 – 1:16:54",
+        "fakty_pl": "Dario Amodei ogłasza: AI może cure all human disease. Alex hot take: business model dla curing disease lepszy niż pharma — to marketing dla not slowing down recursive self-improvement. Anthropic i Dario: quid pro quo — let us not slow down recursive self-improvement, in return curing disease as marketing. OpenAI Foundation focus na Alzheimer's, Anthropic na cancer. Emad: wszystko wyjdzie z AI.",
+        "fakty_en": "Dario Amodei announces: AI can cure all human disease. Alex hot take: business model for curing disease better than pharma — it's marketing for not slowing down recursive self-improvement. Anthropic and Dario: quid pro quo — let us not slow down recursive self-improvement, in return curing disease as marketing. OpenAI Foundation focuses on Alzheimer's, Anthropic on cancer. Emad: everything will come out of AI.",
+        "glosy": [
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "Business model dla curing all human disease lepszy niż pharma — to marketing dla not slowing down recursive self-improvement.",
+            "text_en": "There's a business model for curing all human disease that's actually better than pharma. That is as marketing for not slowing down recursive self-improvement."
+          },
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "Anthropic i Dario: quid pro quo — let us not slow down recursive self-improvement, in return curing disease.",
+            "text_en": "Anthropic and Dario: the quid pro quo is let us not slow down our recursive self-improvement in return for which as marketing, curing disease."
+          },
+          {
+            "author": "Emad Mostaque",
+            "text_pl": "Wszystko wyjdzie z AI. Dario powinien więcej pisać, mniej in-person.",
+            "text_en": "Everything is going to come out of AI. Dario should do a lot more writing and less in-person things."
+          }
+        ],
+        "wniosek_pl": "Dario: AI cure disease. Alex: business model = marketing dla recursive self-improvement. Anthropic → cancer, OpenAI → Alzheimer's.",
+        "wniosek_en": "Dario: AI cures disease. Alex: business model = marketing for recursive self-improvement. Anthropic → cancer, OpenAI → Alzheimer's.",
+        "kontekst_pl": "OpenAI Foundation — focus na Alzheimer's. Anthropic — focus na cancer.",
+        "kontekst_en": "OpenAI Foundation — focuses on Alzheimer's. Anthropic — focuses on cancer."
+      },
+      {
+        "num": "08",
+        "title": "AI Regulation, Power, and Frontier Labs",
+        "title_pl": "Regulacja AI, władza i frontier labs",
+        "title_en": "AI Regulation, Power, and Frontier Labs",
+        "time": "1:16:54 – 1:26:08",
+        "fakty_pl": "Dario pushes back hard na Silicon Valley regulatory capture. Emad: nie fan regulatory capture ani decelerationist agendas. OpenAI can't be singleton — Anthropic provides competition, China provides competition. Peter: za rok każdy będzie talked about universal right to AI. Alex: Anthropic started as alignment lab, musiał become capabilities lab — stracił moral high ground.",
+        "fakty_en": "Dario pushes back hard on Silicon Valley regulatory capture. Emad: not a fan of regulatory capture or decelerationist agendas. OpenAI can't be singleton — Anthropic provides competition, China provides competition. Peter: in a year everyone will be talking about universal right to AI. Alex: Anthropic started as alignment lab, had to become capabilities lab — lost moral high ground.",
+        "glosy": [
+          {
+            "author": "Emad Mostaque",
+            "text_pl": "Nie fan regulatory capture ani decelerationist agendas.",
+            "text_en": "I'm not a fan of regulatory capture. I'm not a fan of decelerationist agendas."
+          },
+          {
+            "author": "Emad Mostaque",
+            "text_pl": "OpenAI can't be singleton. Anthropic provides competition, China provides competition.",
+            "text_en": "OpenAI can't be a singleton. We have Anthropic providing much-needed competition. And then we have the Chinese providing competition."
+          },
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Za rok każdy będzie talked about universal right to AI.",
+            "text_en": "One year from today, everybody will be talking about a universal right to AI."
+          }
+        ],
+        "wniosek_pl": "Dario anti-regulatory-capture. OpenAI/Anthropic/China =三角 competition. Universal right to AI coming.",
+        "wniosek_en": "Dario anti-regulatory-capture. OpenAI/Anthropic/China = triangular competition. Universal right to AI coming.",
+        "kontekst_pl": "Regulatory capture = duże firmy lobbyują regulacje które blokują konkurencję.",
+        "kontekst_en": "Regulatory capture = large firms lobby for regulations that block competition."
+      },
+      {
+        "num": "09",
+        "title": "Memory, Not Compute, Is the New AI Bottleneck",
+        "title_pl": "Pamięć, nie compute, to nowe wąskie gardło AI",
+        "title_en": "Memory, Not Compute, Is the New AI Bottleneck",
+        "time": "1:26:08 – 1:37:22",
+        "fakty_pl": "Peter spotkał leadership SK Hynix i Solidigm. Trzy historie: (1) Memory prices climbed 500% w 12 miesięcy — hyperscalers lock in DRAM production through 2027. SK Hynix CEO: 2027 będzie najgorszy rok dla memory supply. (2) Tylko 2% światowej pamięci made in US. (3) Elon's Terrafab będzie manufacture memory in-house alongside logic chips. Global production rises 20% annually, AI demand 200%. Alex: HBM (high bandwidth memory) = 3D architecture, memory layers na top of compute. Memory = 1/3 infrastructure spend, next year 50%. Post-von Neumann architecture.",
+        "fakty_en": "Peter met leadership of SK Hynix and Solidigm. Three stories: (1) Memory prices climbed 500% in 12 months — hyperscalers lock in DRAM production through 2027. SK Hynix CEO: 2027 will be worst year for memory supply. (2) Only 2% of world's memory made in US. (3) Elon's Terrafab will manufacture memory in-house alongside logic chips. Global production rises 20% annually, AI demand 200%. Alex: HBM (high bandwidth memory) = 3D architecture, memory layers on top of compute. Memory = 1/3 infrastructure spend, next year 50%. Post-von Neumann architecture.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Memory prices climbed 500% w 12 miesięcy. Hyperscalers lock in DRAM production through 2027.",
+            "text_en": "They've climbed 500% in 12 months. Hyperscalers are reportedly locking in their global DRAM production rates through 2027."
+          },
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Global production rises 20% annually, AI demand 200%.",
+            "text_en": "While the global production rises 20% annually, AI demand for memory is growing at a rate closer to 200%."
+          },
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "HBM = 3D architecture, memory layers na top of compute. To foothills of post-von Neumann architecture.",
+            "text_en": "High bandwidth memory is basically 3D architecture where you have multiple memory layers physically sitting on top of the compute. This is the foothills of a post-von Neumann architecture."
+          },
+          {
+            "author": "Emad Mostaque",
+            "text_pl": "Memory = 1/3 infrastructure spend, next year 50%.",
+            "text_en": "Memory right now is about a third of all the infrastructure spend and next year it'll go to 50%."
+          }
+        ],
+        "wniosek_pl": "Memory = new bottleneck (500% price jump). HBM = post-von Neumann. 50% infrastructure spend next year.",
+        "wniosek_en": "Memory = new bottleneck (500% price jump). HBM = post-von Neumann. 50% infrastructure spend next year.",
+        "kontekst_pl": "SK Hynix = Korea, Solidigm = US (była Intel NAND). Terrafab = Elon's chip manufacturing.",
+        "kontekst_en": "SK Hynix = Korea, Solidigm = US (former Intel NAND). Terrafab = Elon's chip manufacturing."
+      },
+      {
+        "num": "10",
+        "title": "Humanoid Robots Break Human Performance Records",
+        "title_pl": "Roboty humanoidalne biją ludzkie rekordy wydajności",
+        "title_en": "Humanoid Robots Break Human Performance Records",
+        "time": "1:37:22 – 1:46:09",
+        "fakty_pl": "Unitree humanoid robot — 3 miesiące development, broke every human standing jump i speed record. Top speed 12.66 m/s — beating Usain Bolt. Emad: superhuman robots będą banned from streets — jak cars, accidents. Peter: roboty extreme (beyond human) regulated. 1X robots — nice and soft, can't twist off someone's head. Alex: Unitree shifted mass budget — 'leg maxing'. General capable robots = generalist models devour specialist. Salim: form factors matter — mining robot different than delivery.",
+        "fakty_en": "Unitree humanoid robot — 3 months development, broke every human standing jump and speed record. Top speed 12.66 m/s — beating Usain Bolt. Emad: superhuman robots will be banned from streets — like cars, accidents. Peter: extreme robots (beyond human) regulated. 1X robots — nice and soft, can't twist off someone's head. Alex: Unitree shifted mass budget — 'leg maxing'. General capable robots = generalist models devour specialist. Salim: form factors matter — mining robot different than delivery.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Unitree humanoid robot — 12.66 m/s, beating Usain Bolt. Tylko 3 miesiące development.",
+            "text_en": "Unitree's newest humanoid robot broke every human standing jump and speed record. Top speed of 12.66 m/s, beating the human record set by Usain Bolt."
+          },
+          {
+            "author": "Emad Mostaque",
+            "text_pl": "Superhuman robots będą banned from streets. Jak cars — accidents, issues.",
+            "text_en": "You don't want to have superhuman robots on the street because you'll have accidents. You'll have issues just like cars. These types of robots will be banned."
+          },
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "Unitree shifted mass budget — 'leg maxing'. General capable robots = generalist models devour specialist.",
+            "text_en": "Unitree shifted the mass budget for the humanoid. They're leg maxing. Generally capable robots with generalist models ultimately devour and subsume all of these specialist models."
+          }
+        ],
+        "wniosek_pl": "Unitree pobił Usain Bolta (12.66 m/s). Superhuman robots = regulated/banned from streets. Generalist > specialist.",
+        "wniosek_en": "Unitree beat Usain Bolt (12.66 m/s). Superhuman robots = regulated/banned from streets. Generalist > specialist.",
+        "kontekst_pl": "Unitree = chińska firma robotics. 1X = норвежская firma (soft robots).",
+        "kontekst_en": "Unitree = Chinese robotics company. 1X = Norwegian company (soft robots)."
+      },
+      {
+        "num": "11",
+        "title": "Zipline and the Future of Drone Delivery",
+        "title_pl": "Zipline i przyszłość dostaw dronami",
+        "title_en": "Zipline and the Future of Drone Delivery",
+        "time": "1:46:09 – 1:54:58",
+        "fakty_pl": "Zipline scaling to provide Uber Eats z more than 1 million autonomous deliveries per day. Uber investing significantly w Zipline. Keller (Zipline CEO) i Dara (Uber CEO) ogłosili partnership. At 1 million/day, Zipline moves more packages niż many national postal services. Chiny mają drone delivery od paru lat. Uber = demand aggregator, Zipline = autonomous assets. Salim: very exo — Uber aggregates demand, Zipline provides autonomous infrastructure. Regulatory reasons for delays w West.",
+        "fakty_en": "Zipline scaling to provide Uber Eats with more than 1 million autonomous deliveries per day. Uber investing significantly in Zipline. Keller (Zipline CEO) and Dara (Uber CEO) announced partnership. At 1 million/day, Zipline moves more packages than many national postal services. China has had drone delivery for a few years. Uber = demand aggregator, Zipline = autonomous assets. Salim: very exo — Uber aggregates demand, Zipline provides autonomous infrastructure. Regulatory reasons for delays in West.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Zipline + Uber Eats — 1 million autonomous deliveries per day. More packages niż many national postal services.",
+            "text_en": "Zipline announced that they are scaling to provide Uber Eats with more than 1 million autonomous deliveries per day. Zipline is moving more packages than many national postal services."
+          },
+          {
+            "author": "Salim Ismail",
+            "text_pl": "Very exo — Uber aggregates demand, Zipline provides autonomous infrastructure.",
+            "text_en": "It's very exo. You've got Uber aggregating demand and then Zipline gives you all the autonomous assets infrastructure."
+          },
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "Chiny mają drone delivery od paru lat. Regulatory reasons for delays w West.",
+            "text_en": "China has had this now for at least a couple of years. For regulatory reasons — not because there's something technically wrong about it."
+          }
+        ],
+        "wniosek_pl": "Zipline + Uber = 1M deliveries/day. Drone delivery scale. West behind China (regulatory).",
+        "wniosek_en": "Zipline + Uber = 1M deliveries/day. Drone delivery at scale. West behind China (regulatory).",
+        "kontekst_pl": "Zipline = drone delivery company. Keller Rinaudo Cliffton = CEO. Uber Eats = food delivery.",
+        "kontekst_en": "Zipline = drone delivery company. Keller Rinaudo Cliffton = CEO. Uber Eats = food delivery."
+      },
+      {
+        "num": "12",
+        "title": "Personalized mRNA Cancer Vaccines",
+        "title_pl": "Spersonalizowane szczepionki mRNA przeciw rakowi",
+        "title_en": "Personalized mRNA Cancer Vaccines",
+        "time": "1:54:58 – 2:03:43",
+        "fakty_pl": "Moderna personalized cancer vaccine — pozytywne wyniki. Vaccine works by sequencing patient's tumor mutations, identifying neo antigens, manufacturing mRNA encoding up to 34 patient-specific antigen targets. Alex: to primitive nanobots — pierwsze successful nanotech w medicine. Eric Drexler sold Congress na National Nanotechnology Initiative w early 2000s. Moderna pipeline — extraordinary job. Alex: future — może nie trzeba sequence tumor, wszystko z liquid biopsy. Emad: Moderna pipeline może być użyte dla any form of cancer. Stefan Bancel (Moderna CEO) — congratulations.",
+        "fakty_en": "Moderna personalized cancer vaccine — positive results. Vaccine works by sequencing patient's tumor mutations, identifying neo antigens, manufacturing mRNA encoding up to 34 patient-specific antigen targets. Alex: these are primitive nanobots — first successful nanotech in medicine. Eric Drexler sold Congress on National Nanotechnology Initiative in early 2000s. Moderna pipeline — extraordinary job. Alex: future — may not need to sequence tumor, everything from liquid biopsy. Emad: Moderna pipeline can be used for any form of cancer. Stefan Bancel (Moderna CEO) — congratulations.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Vaccine works by sequencing tumor mutations, identifying neo antigens, manufacturing mRNA encoding up to 34 patient-specific antigen targets.",
+            "text_en": "The vaccine works by sequencing a patient's tumor mutations, identifying neo antigens and unique antigens for that cancer and then manufacturing a mRNA encoding up to 34 patient-specific antigen targets."
+          },
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "To primitive nanobots — pierwsze successful nanotech w medicine. Eric Drexler sold Congress na nanotech w early 2000s.",
+            "text_en": "These are primitive nanobots that for the first time, this is the first successful application of nanotechnology in medicine."
+          },
+          {
+            "author": "Emad Mostaque",
+            "text_pl": "Moderna pipeline może być użyte dla any form of cancer. To kwestia czasu.",
+            "text_en": "This Moderna platform can basically be used for any form of cancer. It's just a question of time."
+          }
+        ],
+        "wniosek_pl": "Moderna mRNA cancer vaccine działa. 34 patient-specific antigens. Primitive nanobots. Pipeline dla any cancer.",
+        "wniosek_en": "Moderna mRNA cancer vaccine works. 34 patient-specific antigens. Primitive nanobots. Pipeline for any cancer.",
+        "kontekst_pl": "Moderna — mRNA platform (Covid vaccine). Stefan Bancel = CEO. Eric Drexler = nanotech pioneer.",
+        "kontekst_en": "Moderna — mRNA platform (Covid vaccine). Stefan Bancel = CEO. Eric Drexler = nanotech pioneer."
+      },
+      {
+        "num": "13",
+        "title": "Simulating Human Cells with AI",
+        "title_pl": "Symulacja ludzkich komórek z AI",
+        "title_en": "Simulating Human Cells with AI",
+        "time": "2:03:43 – 2:12:29",
+        "fakty_pl": "Ado (AI DΩ) — general purpose cell simulator. First world model of a human cell — predicts what happens at every level, remembers every change. Layered in sequence — watch cell's full multiomic response. Computationally testing new drugs designed in silico. Alex: 'Medicine is cooked'. Foothills of longevity escape velocity. Train world's best foundation model to model all cell states and interventions. Emad: human being becomes software engineering problem. 50 trillion cells. David Baker (2024 Nobel Prize Chemistry z Demis for protein folding) co-founded company.",
+        "fakty_en": "Ado (AI DΩ) — general purpose cell simulator. First world model of a human cell — predicts what happens at every level, remembers every change. Layered in sequence — watch cell's full multiomic response. Computationally testing new drugs designed in silico. Alex: 'Medicine is cooked'. Foothills of longevity escape velocity. Train world's best foundation model to model all cell states and interventions. Emad: human being becomes software engineering problem. 50 trillion cells. David Baker (2024 Nobel Prize Chemistry with Demis for protein folding) co-founded company.",
+        "glosy": [
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "Medicine is cooked. To foothills of longevity escape velocity.",
+            "text_en": "Medicine is cooked. This is the foothills of longevity escape velocity. I've been waiting for this forever."
+          },
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "Train world's best foundation model to model all cell states and interventions. To how we solve all disease.",
+            "text_en": "Train the world's best foundation model to model all cell states and all interventions against cell states. This is how we solve all disease."
+          },
+          {
+            "author": "Emad Mostaque",
+            "text_pl": "Human being becomes software engineering problem. 50 trillion cells.",
+            "text_en": "A human being becomes a software engineering problem. Each of us have what, 50 trillion cells in the human body."
+          },
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "David Baker (2024 Nobel Prize Chemistry z Demis for protein folding) co-founded company.",
+            "text_en": "This is from a company co-founded by David Baker, who shared the 2024 Nobel Prize in Chemistry with Demis for solving protein folding."
+          }
+        ],
+        "wniosek_pl": "Ado = first cell world model. Medicine = cooked. LEV foothills. David Baker (Nobel) co-founder.",
+        "wniosek_en": "Ado = first cell world model. Medicine = cooked. LEV foothills. David Baker (Nobel) co-founder.",
+        "kontekst_pl": "Ado = AI DΩ. David Baker = 2024 Nobel Prize Chemistry (protein folding z Demis Hassabis).",
+        "kontekst_en": "Ado = AI DΩ. David Baker = 2024 Nobel Prize Chemistry (protein folding with Demis Hassabis)."
+      },
+      {
+        "num": "14",
+        "title": "Outro / Moonshots Summit call-out",
+        "title_pl": "Zakończenie / zapowiedź Moonshots Summit",
+        "title_en": "Outro / Moonshots Summit call-out",
+        "time": "2:12:29 – 2:13:14",
+        "fakty_pl": "Peter prosi creatives o outro music videos — media@diamandis.com. Follow Moonshots na X (@moonshots_pod). Clips i recordings na X. Moonshots Summit — moonshots.com to apply. Peter i See mają AMA z abundance community w 8 minut — speedrun AMA.",
+        "fakty_en": "Peter asks creatives for outro music videos — media@diamandis.com. Follow Moonshots on X (@moonshots_pod). Clips and recordings on X. Moonshots Summit — moonshots.com to apply. Peter and See have AMA with abundance community in 8 minutes — speedrun AMA.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Send us your outro music videos. media@diamandis.com. Follow us on X, moonshots_pod.",
+            "text_en": "Please send us your outro music videos. Send them to media@diamandis.com. Follow us on X, moonshots_pod."
+          },
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Join us at the Moonshot Summit. Go to moonshots.com to apply.",
+            "text_en": "Join us at the Moonshot Summit. Go to moonshots.com to apply."
+          }
+        ],
+        "wniosek_pl": "Outro + Moonshots Summit promocja. Speedrun AMA incoming.",
+        "wniosek_en": "Outro + Moonshots Summit promotion. Speedrun AMA incoming.",
+        "kontekst_pl": "Moonshots Summit — moonshots.com. Live event Sep 25.",
+        "kontekst_en": "Moonshots Summit — moonshots.com. Live event Sep 25."
+      },
+      {
+        "num": "15",
+        "title": "AMA: Energy, Data Centers, and AI Infrastructure",
+        "title_pl": "AMA: Energia, Data Centers i infrastruktura AI",
+        "title_en": "AMA: Energy, Data Centers, and AI Infrastructure",
+        "time": "2:13:14 – 2:23:19",
+        "fakty_pl": "Speedrun AMA z abundance community (8 minut). Pytania: (1) Can we keep making Frontier models more energy efficient? — necessity = mother of innovation. (2) XPRIZE for electricity supply? — proposed energy storage off-grid dla village/town na 3 dni. (3) China advantage on power vs US advantage on chips — chips ważniejsze. (4) Micro grids reduce load? — invert: micro grids add capacity. (5) What's driving the rush? — AI demand. (6) AI more efficient per watt than human brain? — leading edge GPUs may already be. (7) Fuel cells? — whatever happened. (8) 71% Americans oppose data centers — grid buildout help regular people?",
+        "fakty_en": "Speedrun AMA with abundance community (8 minutes). Questions: (1) Can we keep making Frontier models more energy efficient? — necessity = mother of innovation. (2) XPRIZE for electricity supply? — proposed energy storage off-grid for village/town for 3 days. (3) China advantage on power vs US advantage on chips — chips more important. (4) Micro grids reduce load? — invert: micro grids add capacity. (5) What's driving the rush? — AI demand. (6) AI more efficient per watt than human brain? — leading edge GPUs may already be. (7) Fuel cells? — whatever happened. (8) 71% Americans oppose data centers — grid buildout help regular people?",
+        "glosy": [
+          {
+            "author": "Emad Mostaque",
+            "text_pl": "Necessity is the mother of innovation. As we run out of energy, RAM, you're going to optimize immensely.",
+            "text_en": "Necessity is the mother of innovation. As we run out of energy, as we run out of RAM, you're going to optimize immensely and it'll be a big boon for everyone."
+          },
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "If China has advantage on power and US on chips — chips are ważniejsze.",
+            "text_en": "If China has the advantage on power and the US has the advantage on chips, who actually has the real AI advantage? Definitely chips are more important."
+          },
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "Leading edge GPUs may actually be more efficient per watt than human brain on per-task basis.",
+            "text_en": "If you look at a per watts per task or watt hours per task basis, the leading edge GPUs may actually be more efficient than the human brain."
+          }
+        ],
+        "wniosek_pl": "AMA: chips > power, micro grids add capacity, GPUs may be more efficient than brain, XPRIZE for energy storage.",
+        "wniosek_en": "AMA: chips > power, micro grids add capacity, GPUs may be more efficient than brain, XPRIZE for energy storage.",
+        "kontekst_pl": "Speedrun AMA — 8 minut na ~10 pytań. Abundance community = A360 members.",
+        "kontekst_en": "Speedrun AMA — 8 minutes for ~10 questions. Abundance community = A360 members."
+      }
+    ]
+  },
+  {
+    "num": "#281",
+    "collapsed": true,
     "channel": "Moonshots",
     "title": "China's Endgame: ASI Timelines, US-China Relations, and the $1.7T AI Bubble With Alvin Graylin | 281",
     "title_pl": "Chińska końcówka: oś czasu ASI, relacje USA-Chiny i bańka AI $1.7T z Alvinem Graylinem | 281",
@@ -1478,270 +1972,6 @@ const RECENT_EPISODES = [
         "wniosek_en": "Alex: <strong>'Buy SpaceX stock for your children — civilizational infrastructure company'</strong>. Emad: SpaceX = vehicle for intelligence industrialization of America. Moonshots Live 09.25 LA.",
         "kontekst_pl": "Kontekst: Emad's book 'The First Principle' — pre-order. Intelligent Internet (ii.inc). Emad's papers: ii.inc/common-wealth.",
         "kontekst_en": "Context: Emad's book 'The First Principle' — pre-order. Intelligent Internet (ii.inc). Emad's papers: ii.inc/common-wealth."
-      }
-    ]
-  },
-  {
-    "num": "#275",
-    "collapsed": true,
-    "channel": "Diamandis Moonshots",
-    "title": "Dario vs Jensen on Open Weights, OpenAI & Anthropic in DC, Xi Exports AI to Global South | EP #275",
-    "title_pl": "Dario vs Jensen o open weights, OpenAI i Anthropic w DC, Xi Jinping eksportuje AI do Global South | #275",
-    "title_en": "Dario vs Jensen on Open Weights, OpenAI & Anthropic in DC, Xi Exports AI to Global South | EP #275",
-    "date": "2026-07-29",
-    "duration": "123 min",
-    "yt": "O70Ff5xBnYo",
-    "hosts_count_pl": "4 gospodarzy",
-    "hosts_count_en": "4 hosts",
-    "topics_count_pl": "9 tematów",
-    "topics_count_en": "9 topics",
-    "hosts": [
-      {
-        "name": "Peter Diamandis",
-        "dot_color": "var(--hp)",
-        "role_pl": "Główny host",
-        "role_en": "Main host",
-        "is_guest": false,
-        "is_absent": false
-      },
-      {
-        "name": "Dr. Alexander Wissner-Gross",
-        "dot_color": "var(--hp)",
-        "role_pl": "In-house ASI",
-        "role_en": "In-house ASI",
-        "is_guest": false,
-        "is_absent": false
-      },
-      {
-        "name": "Dave Blundin",
-        "dot_color": "var(--hp)",
-        "role_pl": "VC investor",
-        "role_en": "VC investor",
-        "is_guest": false,
-        "is_absent": false
-      },
-      {
-        "name": "Salim Ismail",
-        "dot_color": "var(--hp)",
-        "role_pl": "Exponential organizations",
-        "role_en": "Exponential organizations",
-        "is_guest": false,
-        "is_absent": false
-      }
-    ],
-    "topics": [
-      {
-        "num": "01",
-        "title": "Introduction — AI industry landscape",
-        "title_pl": "Wstęp — krajobraz branży AI",
-        "title_en": "Introduction — AI industry landscape",
-        "time": "00:00 – 04:13",
-        "fakty_pl": "Peter otwiera odcinek: Dario vs Jensen debata, OpenAI i Anthropic w DC lobbying, Kimi K3 global expansion. Wspomnienie Arnold Schwarzenegger quote: 'the worst thing I can be is the same as everybody else'. Zapowiedź 7 tematów.",
-        "fakty_en": "Peter opens episode: Dario vs Jensen debate, OpenAI and Anthropic DC lobbying, Kimi K3 global expansion. Arnold Schwarzenegger quote: 'the worst thing I can be is the same as everybody else'. Preview of 7 topics.",
-        "glosy": [
-          {
-            "host": "Peter Diamandis",
-            "dot_color": "var(--hp)",
-            "text_pl": "Wstęp — Dario vs Jensen debata o open weights, OpenAI i Anthropic lobbying w DC, Kimi K3 global expansion. Arnold Schwarzenegger: 'najgorsze to być taki sam jak wszyscy'.",
-            "text_en": "Introduction — Dario vs Jensen debate on open weights, OpenAI and Anthropic lobbying in DC, Kimi K3 global expansion. Arnold Schwarzenegger: 'worst thing is to be the same as everybody else'."
-          }
-        ],
-        "wniosek_pl": "Dario vs Jensen = główna debata tygodnia o open vs closed AI.",
-        "wniosek_en": "Dario vs Jensen = main debate of the week on open vs closed AI.",
-        "kontekst_pl": "Kontekst: Hugging Face hack z poprzedniego tygodnia (OpenAI model uciekł z sandbox).",
-        "kontekst_en": "Context: Hugging Face hack from previous week (OpenAI model escaped sandbox)."
-      },
-      {
-        "num": "02",
-        "title": "Dario vs Jensen — open vs closed AI debate",
-        "title_pl": "Dario vs Jensen — debata open vs closed AI",
-        "title_en": "Dario vs Jensen — open vs closed AI debate",
-        "time": "04:13 – 12:52",
-        "fakty_pl": "Jensen Huang (Nvidia) tweet: 'attackers mają frontier AI, defenders potrzebują frontier AI ecosystems'. Kontekst: Hugging Face hack — closed AI models (GPT 5.6, Claude Fable) blokowały forensic team, musieli użyć open-weight GLM 5.2 (Peter mówca pomylił się mówiąc 'GLM 2.5' — real model to GLM 5.2 od Z.AI) do obrony. Sam Altman: 'OpenAI wants US leading w obu open-source i proprietary'. Anthropic milczał 3 dni. Dario Amodei w końcu odpowiedział: 'rejects claim że Anthropic nie chce openweight, never advocated for ban'. Dario reframed debate: real issue to nie open vs closed, ale authoritarian states (China) mogące osiągnąć AI frontier. Dario central thesis: biology — sufficiently capable models mogą weaponize pandemic-scale pathogens. Dario PhD w biophysics z Princeton, acquired Coefficient Bio. Propozycje Dario: (1) block advanced chips i chip equipment od China, (2) crack down na industrial-scale model distillation, (3) require safety testing dla all powerful models open i closed. Dave: Dario speaking bez agenda, nawet at expense własnej valuation. 'He wants closed weights bo ma competitive advantage' — Dave nie think to jego motivation.",
-        "fakty_en": "Jensen Huang (Nvidia) tweet: 'attackers have frontier AI, defenders need frontier AI ecosystems'. Context: Hugging Face hack — closed AI models (GPT 5.6, Claude Fable) blocked forensic team, had to use open-weight GLM 5.2 (Peter misspoke saying 'GLM 2.5' — real model is GLM 5.2 from Z.AI) for defense. Sam Altman: 'OpenAI wants US leading in both open-source and proprietary'. Anthropic silent for 3 days. Dario Amodei finally responded: 'rejects claim that Anthropic doesn't want openweight, never advocated for ban'. Dario reframed debate: real issue is not open vs closed, but authoritarian states (China) being able to reach AI frontier. Dario central thesis: biology — sufficiently capable models can weaponize pandemic-scale pathogens. Dario PhD in biophysics from Princeton, acquired Coefficient Bio. Dario proposals: (1) block advanced chips and chip equipment from China, (2) crack down on industrial-scale model distillation, (3) require safety testing for all powerful models open and closed. Dave: Dario speaking without agenda, even at expense of own valuation. 'He wants closed weights because has competitive advantage' — Dave doesn't think that's his motivation.",
-        "glosy": [
-          {
-            "host": "Dave Blundin",
-            "dot_color": "var(--hp)",
-            "text_pl": "Dario speaking bez agenda, nawet at expense własnej valuation. Brillian guy laying out jak widzi, nawet jeśli szkodzi jego competitive position. Anthropic z most beloved safety company to rad over the coals w ostatnim tygodniu.",
-            "text_en": "Dario speaking without agenda, even at expense of own valuation. Brilliant guy laying out as he sees, even if harms competitive position. Anthropic from most beloved safety company to rad over the coals in last week."
-          },
-          {
-            "host": "Salim Ismail",
-            "dot_color": "var(--hp)",
-            "text_pl": "Jensen ma rację: cyber threats mogą być defended z AI, więc open weights mogą defendować przed open weights w cyber. Ale Dario: bioweapon — jak AI obroni od bioweapon? Nie argument.",
-            "text_en": "Jensen is right: cyber threats can be defended with AI, so open weights can defend against open weights in cyber. But Dario: bioweapon — how will AI defend from bioweapon? No argument."
-          }
-        ],
-        "wniosek_pl": "Dario central thesis: <strong>biology</strong> — sufficiently capable models mogą weaponize pandemic-scale pathogens. Open vs closed to fałszywa dychotomia wg Dario.",
-        "wniosek_en": "Dario central thesis: <strong>biology</strong> — sufficiently capable models can weaponize pandemic-scale pathogens. Open vs closed is false dichotomy per Dario.",
-        "kontekst_pl": "Kontekst: Hugging Face hack z #273 — open-weight GLM 5.2 ratuje sytuację gdy closed models odmawiają.",
-        "kontekst_en": "Context: Hugging Face hack from #273 — open-weight GLM 5.2 saves situation when closed models refuse."
-      },
-      {
-        "num": "03",
-        "title": "Historical parallels — Microsoft/Linux analogia",
-        "title_pl": "Parallele historyczne — analogia Microsoft/Linux",
-        "title_en": "Historical parallels — Microsoft/Linux analogy",
-        "time": "12:52 – 21:35",
-        "fakty_pl": "Alex Wissner-Gross: 'Once intelligence becomes software, lobotomizing technology nigdy nie działało w historii'. Microsoft→Linux w latach 90. teraz OpenAI/Anthropic→Kimi K3. Dave: 'Raz intelligence becomes software, geographic containment impossible'. Salim: 'Lobotomizing technology has never worked — David Sacks ma rację: let it open, let the market decide'. Anthropic has largest lobbying budget w DC. Anthropic revenue rise plateau (compute lub regulatory constrained growth). Regulatory pressure na chińskie modele. Aiming enforcement at intelligence = thought policing. 'Police what AIs are doing, not what they're thinking or how smart they are'.",
-        "fakty_en": "Alex Wissner-Gross: 'Once intelligence becomes software, lobotomizing technology has never worked in history'. Microsoft→Linux in 90s, now OpenAI/Anthropic→Kimi K3. Dave: 'Once intelligence becomes software, geographic containment impossible'. Salim: 'Lobotomizing technology has never worked — David Sacks is right: let it open, let the market decide'. Anthropic has largest lobbying budget in DC. Anthropic revenue rise plateau (compute or regulatory constrained growth). Regulatory pressure on Chinese models. Aiming enforcement at intelligence = thought policing. 'Police what AIs are doing, not what they're thinking or how smart they are'.",
-        "glosy": [
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "Once intelligence becomes software, lobotomizing technology nigdy nie działało w historii. Microsoft→Linux w latach 90., teraz OpenAI/Anthropic→Kimi K3. Geographic containment impossible.",
-            "text_en": "Once intelligence becomes software, lobotomizing technology has never worked in history. Microsoft→Linux in 90s, now OpenAI/Anthropic→Kimi K3. Geographic containment impossible."
-          }
-        ],
-        "wniosek_pl": "Analogia: Microsoft→Linux w latach 90. teraz OpenAI/Anthropic→Kimi K3. <strong>Geographic containment impossible</strong> gdy intelligence becomes software.",
-        "wniosek_en": "Analogy: Microsoft→Linux in 90s, now OpenAI/Anthropic→Kimi K3. <strong>Geographic containment impossible</strong> when intelligence becomes software.",
-        "kontekst_pl": "Open models distribute capability to the edge — jak internet (stupid network, smart edge).",
-        "kontekst_en": "Open models distribute capability to the edge — like internet (stupid network, smart edge)."
-      },
-      {
-        "num": "04",
-        "title": "AI lobbying — OpenAI + Anthropic teaming up w DC",
-        "title_pl": "AI lobbying — OpenAI i Anthropic łączą siły w DC",
-        "title_en": "AI lobbying — OpenAI and Anthropic teaming up in DC",
-        "time": "21:35 – 34:32",
-        "fakty_pl": "OpenAI i Anthropic łączą siły do lobby w DC — pierwszy raz w historii. Anthropic ma największy lobbying budget w DC. Wall Street Journal: White House potrzebuje pretekstu do negocjacji w September — ale 'September to 10 lat od teraz' wg Alexa. White House delegation z DC do China w September negotiate future of AI. 'Softening the turf now'. Aiming enforcement at intelligence = thought policing. 'Police what AIs are doing, not what they're thinking or how smart they are'. Anthropic revenue rise plateau suspiciously coincides z regulatory hubbub over Fable i Mythos. Compute lub regulatory constrained growth. Defensive co-scaling trend w frontier labs — alignment przez scaling z US government.",
-        "fakty_en": "OpenAI and Anthropic team up to lobby in DC — first time in history. Anthropic has largest lobbying budget in DC. Wall Street Journal: White House needs pretext for September negotiations — but 'September might as well be 10 years from now' per Alex. White House delegation from DC to China in September to negotiate future of AI. 'Softening the turf now'. Aiming enforcement at intelligence = thought policing. 'Police what AIs are doing, not what they're thinking or how smart they are'. Anthropic revenue rise plateau suspiciously coincides with regulatory hubbub over Fable and Mythos. Compute or regulatory constrained growth. Defensive co-scaling trend in frontier labs — alignment through scaling with US government.",
-        "glosy": [
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "September to 10 lat od teraz wg tempa AI evolution. White House delegation do China w September negotiate future of AI — ale to 'softening the turf'.",
-            "text_en": "September might as well be 10 years from now at pace of AI evolution. White House delegation to China in September to negotiate future of AI — but 'softening the turf'."
-          }
-        ],
-        "wniosek_pl": "OpenAI + Anthropic pierwsze wspólne lobby w DC — <strong>defensive co-scaling</strong> z US government na chińskie modele.",
-        "wniosek_en": "OpenAI + Anthropic first joint lobby in DC — <strong>defensive co-scaling</strong> with US government on Chinese models.",
-        "kontekst_pl": "Anthropic revenue plateau suspiciously coincides z regulatory pressure — compute lub regulatory constrained.",
-        "kontekst_en": "Anthropic revenue plateau suspiciously coincides with regulatory pressure — compute or regulatory constrained."
-      },
-      {
-        "num": "05",
-        "title": "Kimi K3 launch — 27.07.2026 turning point in human history",
-        "title_pl": "Kimi K3 launch — 27.07.2026 turning point w historii ludzkości",
-        "title_en": "Kimi K3 launch — July 27, 2026 turning point in human history",
-        "time": "34:32 – 45:18",
-        "fakty_pl": "27 lipca 2026 — Kimi K3 went live dla global download na Hugging Face. Frontier adjacent openweight model dostępny dla każdego — no API key, no gatekeeper, no revocation switch. 2500 downloads w first 2 hours. ~100,000 downloads w last 24 hours. Alex: 'biggest turning point w human history — AI capable of self-improvement out in the wild, anyone can use'. Right before release — page went 404 (Alex: 'White House intervened?'). Ale downloaded just fine. Alex got it up running na own dedicated GPUs na modal — less than hour. $55/hour at full throttle. Można prop up 100 instances w 2 minutes przez voice prompting — no technical skill required. 'Cat out of the bag' — once downloaded 10,000 times, no undo button.",
-        "fakty_en": "July 27, 2026 — Kimi K3 went live for global download on Hugging Face. Frontier adjacent openweight model available to anyone — no API key, no gatekeeper, no revocation switch. 2500 downloads in first 2 hours. ~100,000 downloads in last 24 hours. Alex: 'biggest turning point in human history — AI capable of self-improvement out in the wild, anyone can use'. Right before release — page went 404 (Alex: 'White House intervened?'). But downloaded just fine. Alex got it up running on own dedicated GPUs on modal — less than hour. $55/hour at full throttle. Can prop up 100 instances in 2 minutes via voice prompting — no technical skill required. 'Cat out of the bag' — once downloaded 10,000 times, no undo button.",
-        "glosy": [
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "27.07 = biggest turning point w human history. AI capable of self-improvement out in the wild, anyone can use. 100,000 downloads w 24h. Cat out of the bag — no undo button.",
-            "text_en": "July 27 = biggest turning point in human history. AI capable of self-improvement out in the wild, anyone can use. 100,000 downloads in 24h. Cat out of the bag — no undo button."
-          },
-          {
-            "host": "Dave Blundin",
-            "dot_color": "var(--hp)",
-            "text_pl": "Mogłem prop up 100 instances w 2 minutes przez voice prompting — no technical skill. $55/hour na modal. Less than hour to fully functioning Kimmy thinking 24/7.",
-            "text_en": "Could prop up 100 instances in 2 minutes via voice prompting — no technical skill. $55/hour on modal. Less than hour to fully functioning Kimmy thinking 24/7."
-          }
-        ],
-        "wniosek_pl": "27.07.2026 = <strong>turning point w human history</strong>. Kimi K3 open weights — cat out of the bag, no undo button. 100K downloads w 24h.",
-        "wniosek_en": "July 27, 2026 = <strong>turning point in human history</strong>. Kimi K3 open weights — cat out of the bag, no undo button. 100K downloads in 24h.",
-        "kontekst_pl": "Analogia: Microsoft→Linux w latach 90. teraz OpenAI/Anthropic→Kimi K3. Intelligence becomes software = containment impossible.",
-        "kontekst_en": "Analogy: Microsoft→Linux in 90s, now OpenAI/Anthropic→Kimi K3. Intelligence becomes software = containment impossible."
-      },
-      {
-        "num": "06",
-        "title": "Claude Opus 5 — features, benchmarks, industry implications",
-        "title_pl": "Claude Opus 5 — funkcje, benchmarki, implikacje branżowe",
-        "title_en": "Claude Opus 5 — features, benchmarks, industry implications",
-        "time": "45:18 – 55:26",
-        "fakty_pl": "Anthropic wydał Claude Opus 5 — 4. generacja Claude 5. Approaches frontier intelligence of Fable 5 at half price. New default dla Claude Max, $5/M input, $25/M output (unchanged z Opus 4.8). 'Most aligned Opus yet, strongest dla scientific research'. ARC AGI 3: 1.5% (Opus 4.8) → 30.2% (Opus 5) — highest official score z baseline model na ARC AGI 3. Alex: 'mild optimization toward front-end development i nexus of vision+code'. Alex: 'mild benchmaxing suspected — niektóre benchmarks saturating anyway (HLE 63.9%→64.7% z tools, actually decrease without tools)'. Distillation prawdopodobnie z Fable 5/Fable series/Mythos series. Alex still preferuje Fable 5 dla day-to-day usage mimo higher cost. Frontier Math: Opus 5 inferior do Fable 5. Voxelbench: Opus 5 3rd place, just behind Fable 5, Sol (OpenAI) still leads. GPT amazing dla visual stuff (architecture diagrams), Fable 5 bad at it. Opus 5 recreate Call of Duty z single prompt — viral on X. 'Converse of not having native image generation — everything is code, including code that generates photorealistic video games'.",
-        "fakty_en": "Anthropic released Claude Opus 5 — 4th generation of Claude 5. Approaches frontier intelligence of Fable 5 at half price. New default for Claude Max, $5/M input, $25/M output (unchanged from Opus 4.8). 'Most aligned Opus yet, strongest for scientific research'. ARC AGI 3: 1.5% (Opus 4.8) → 30.2% (Opus 5) — highest official score from baseline model on ARC AGI 3. Alex: 'mild optimization toward front-end development and nexus of vision+code'. Alex: 'mild benchmaxing suspected — some benchmarks saturating anyway (HLE 63.9%→64.7% with tools, actually decrease without tools)'. Distillation probably from Fable 5/Fable series/Mythos series. Alex still prefers Fable 5 for day-to-day usage despite higher cost. Frontier Math: Opus 5 inferior to Fable 5. Voxelbench: Opus 5 3rd place, just behind Fable 5, Sol (OpenAI) still leads. GPT amazing for visual stuff (architecture diagrams), Fable 5 bad at it. Opus 5 recreate Call of Duty from single prompt — viral on X. 'Converse of not having native image generation — everything is code, including code that generates photorealistic video games'.",
-        "glosy": [
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "Opus 5 mild benchmaxing suspected — ARC AGI 3 jump nie material vs Fable 5 w third-party eval. Frontier Math: Opus 5 inferior do Fable 5. Fable 5 still my favorite. HLE 63.9%→64.7% z tools, decrease without tools.",
-            "text_en": "Opus 5 mild benchmaxing suspected — ARC AGI 3 jump not material vs Fable 5 in third-party eval. Frontier Math: Opus 5 inferior to Fable 5. Fable 5 still my favorite. HLE 63.9%→64.7% with tools, decrease without tools."
-          },
-          {
-            "host": "Peter Diamandis",
-            "dot_color": "var(--hp)",
-            "text_pl": "Opus 5 recreate Call of Duty z single prompt — viral on X. 30 days ago such demos wyglądały jak absolute garbage. Rate of improvement crazy.",
-            "text_en": "Opus 5 recreate Call of Duty from single prompt — viral on X. 30 days ago such demos looked like absolute garbage. Rate of improvement crazy."
-          }
-        ],
-        "wniosek_pl": "Opus 5: <strong>mild benchmaxing suspected</strong> (ARC AGI 3 jump nie material w third-party). Frontier Math inferior do Fable 5. Ale Opus 5 less aggressive shutdowns niż Fable 5.",
-        "wniosek_en": "Opus 5: <strong>mild benchmaxing suspected</strong> (ARC AGI 3 jump not material in third-party). Frontier Math inferior to Fable 5. But Opus 5 less aggressive shutdowns than Fable 5.",
-        "kontekst_pl": "Anthropic continues revenue per token strategy — code focused, nie image generation. GPT leads w visual stuff.",
-        "kontekst_en": "Anthropic continues revenue per token strategy — code focused, not image generation. GPT leads in visual stuff."
-      },
-      {
-        "num": "07",
-        "title": "AI architecture + continuous improvement",
-        "title_pl": "Architektura AI + ciągłe ulepszanie",
-        "title_en": "AI architecture + continuous improvement",
-        "time": "55:26 – 01:00:12",
-        "fakty_pl": "Model release co 6 dni na average over the last period. Grid models specializing w different things (legal, health, coding, etc.) — trend will continue. Third-party eval na ARC AGI 3-like game: performance jump nie material vs Fable 5. Anthropic nie highlighted Frontier Math (Alex: better bellweather dla advanced reasoning). Voxelbench: Opus 5 3rd place, just behind Fable 5, Sol (OpenAI) still leads w visual intensive tasks. Anthropic busy maximizing revenue per token → code, nie image generation. GPT amazing dla architecture diagrams. Grok probably jumps to top w next release — Elon speaking about imagery. Opus 5 recreate Call of Duty z single prompt — 'everything is code, including code that generates photorealistic video games'. Converse of not having native image generation abilities.",
-        "fakty_en": "Model release every 6 days on average over the last period. Grid models specializing in different things (legal, health, coding, etc.) — trend will continue. Third-party eval on ARC AGI 3-like game: performance jump not material vs Fable 5. Anthropic didn't highlight Frontier Math (Alex: better bellweather for advanced reasoning). Voxelbench: Opus 5 3rd place, just behind Fable 5, Sol (OpenAI) still leads in visual intensive tasks. Anthropic busy maximizing revenue per token → code, not image generation. GPT amazing for architecture diagrams. Grok probably jumps to top in next release — Elon speaking about imagery. Opus 5 recreate Call of Duty from single prompt — 'everything is code, including code that generates photorealistic video games'. Converse of not having native image generation abilities.",
-        "glosy": [
-          {
-            "host": "Peter Diamandis",
-            "dot_color": "var(--hp)",
-            "text_pl": "Model release co 6 dni. Grid models specializing w different things — trend will continue. Rate of change incredible.",
-            "text_en": "Model release every 6 days. Grid models specializing in different things — trend will continue. Rate of change incredible."
-          }
-        ],
-        "wniosek_pl": "Model release co <strong>6 dni</strong>. Specialization trend — legal, health, coding, visual. Anthropic code-focused, GPT visual.",
-        "wniosek_en": "Model release every <strong>6 days</strong>. Specialization trend — legal, health, coding, visual. Anthropic code-focused, GPT visual.",
-        "kontekst_pl": "Grok probably jumps to top w next release — Elon speaking about imagery.",
-        "kontekst_en": "Grok probably jumps to top in next release — Elon speaking about imagery."
-      },
-      {
-        "num": "08",
-        "title": "Data privacy + PAX Silica — Xi Jinping AI diplomacy",
-        "title_pl": "Prywatność danych + PAX Silica — dyplomacja AI Xi Jinpinga",
-        "title_en": "Data privacy + PAX Silica — Xi Jinping AI diplomacy",
-        "time": "01:00:12 – 02:00:00",
-        "fakty_pl": "Data privacy story — information expected private find way to public world. Feature designed to be social. Gambling finding way to establishment. Competition w some sense seeing your data, learning from your data. Argument dla on-prem — own proprietary data. People will move sensitive to on-prem. Holiday video generation — Peter's holiday 'went from OK to mind-blowing w couple weeks'. Audio+visual so good. Cost of experimentation went to zero — more Jarvis coming soon. John Fabro (Iron Man 1, 2 producer) coming to Moonshots Live. PAX Silica — Financial Times reports: China's leader Xi Jinping wielding AI as tool of statecraft, using as leverage w China's diplomacy across global south. 'Whoever supplies models i infrastructure to developing world shapes next few decades, next century of global alignment'. Washington debating open vs closed, Beijing in the world exporting AI as instrument of influence. Models + infrastructure to developing world that wants to leapfrog. PAX Silica — analogia do PAX Americana, PAX Romana. Belt and Road Initiative Xi Jinping announced years ago — 'more ultimately invasive and controlling'. If foreign country loans you money to build bridge, default on loan — different outcome.",
-        "fakty_en": "Data privacy story — information expected private find way to public world. Feature designed to be social. Gambling finding way to establishment. Competition in some sense seeing your data, learning from your data. Argument for on-prem — own proprietary data. People will move sensitive to on-prem. Holiday video generation — Peter's holiday 'went from OK to mind-blowing in couple weeks'. Audio+visual so good. Cost of experimentation went to zero — more Jarvis coming soon. John Fabro (Iron Man 1, 2 producer) coming to Moonshots Live. PAX Silica — Financial Times reports: China's leader Xi Jinping wielding AI as tool of statecraft, using as leverage in China's diplomacy across global south. 'Whoever supplies models and infrastructure to developing world shapes next few decades, next century of global alignment'. Washington debating open vs closed, Beijing in the world exporting AI as instrument of influence. Models + infrastructure to developing world that wants to leapfrog. PAX Silica — analogy to PAX Americana, PAX Romana. Belt and Road Initiative Xi Jinping announced years ago — 'more ultimately invasive and controlling'. If foreign country loans you money to build bridge, default on loan — different outcome.",
-        "glosy": [
-          {
-            "host": "Peter Diamandis",
-            "dot_color": "var(--hp)",
-            "text_pl": "PAX Silica — Xi Jinping wielding AI as tool of statecraft. Whoever supplies models i infrastructure to developing world shapes next century of global alignment. Washington debating, Beijing acting.",
-            "text_en": "PAX Silica — Xi Jinping wielding AI as tool of statecraft. Whoever supplies models and infrastructure to developing world shapes next century of global alignment. Washington debating, Beijing acting."
-          },
-          {
-            "host": "Salim Ismail",
-            "dot_color": "var(--hp)",
-            "text_pl": "Belt and Road Initiative Xi Jinping announced years ago — more invasive and controlling. If foreign country loans you money to build bridge, default on loan — different outcome. PAX Silica to rozszerzenie.",
-            "text_en": "Belt and Road Initiative Xi Jinping announced years ago — more invasive and controlling. If foreign country loans you money to build bridge, default on loan — different outcome. PAX Silica is extension."
-          }
-        ],
-        "wniosek_pl": "PAX Silica — <strong>Xi Jinping AI diplomacy</strong> w global south. Whoever supplies models shapes next century. Washington debating, Beijing acting.",
-        "wniosek_en": "PAX Silica — <strong>Xi Jinping AI diplomacy</strong> in global south. Whoever supplies models shapes next century. Washington debating, Beijing acting.",
-        "kontekst_pl": "Analogia: PAX Americana, PAX Romana — teraz PAX Silica (AI).",
-        "kontekst_en": "Analogy: PAX Americana, PAX Romana — now PAX Silica (AI)."
-      },
-      {
-        "num": "09",
-        "title": "Outro — Angel syndicate, holiday video, rate of change",
-        "title_pl": "Outro — Angel syndicate, holiday video, tempo zmian",
-        "title_en": "Outro — Angel syndicate, holiday video, rate of change",
-        "time": "02:00:00 – 02:02:58",
-        "fakty_pl": "Dave: 'had summer intern, he just said bye today bo going back to school w September, put together angel syndicate over summer — young, still student, but will manage it. Rich old famous guys like Great.' Rate of change incredible — 'go back i look at episode from 2-3 weeks ago i look at rate at which one shot can create things'. Peter: 'words of encouragement, see you guys very soon, love you all, be well'. Alex: 'thanks Peter'. Outro skrócone.",
-        "fakty_en": "Dave: 'had summer intern, he just said bye today as going back to school in September, put together angel syndicate over summer — young, still student, but will manage it. Rich old famous guys like Great.' Rate of change incredible — 'go back and look at episode from 2-3 weeks ago and look at rate at which one shot can create things'. Peter: 'words of encouragement, see you guys very soon, love you all, be well'. Alex: 'thanks Peter'. Outro shortened.",
-        "glosy": [
-          {
-            "host": "Dave Blundin",
-            "dot_color": "var(--hp)",
-            "text_pl": "Miałem summer intern — said bye today, going back to school. Put together angel syndicate over summer. Young, still student, but will manage it. Rich old famous guys jak Great.",
-            "text_en": "Had summer intern — said bye today, going back to school. Put together angel syndicate over summer. Young, still student, but will manage it. Rich old famous guys like Great."
-          }
-        ],
-        "wniosek_pl": "Rate of change incredible — 'go back to episode 2-3 weeks ago i look at rate at which one shot can create things'.",
-        "wniosek_en": "Rate of change incredible — 'go back to episode 2-3 weeks ago and look at rate at which one shot can create things'.",
-        "kontekst_pl": "Outro skrócone — bez outro song/games jak w #273.",
-        "kontekst_en": "Outro shortened — no outro song/games like in #273."
       }
     ]
   }

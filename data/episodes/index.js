@@ -5,6 +5,16 @@
 const EPISODES_INDEX = {
   "episodes": [
     {
+      "num": "#282",
+      "title": "OpenAI Pauses Frontier Training, Elon's 100X Prediction Lands, Robot Beats Usain Bolt | EP#282",
+      "date": "2026-08-21",
+      "duration": "143 min",
+      "channel": "Moonshots",
+      "yt": "TaJH0D2FKN8",
+      "collapsed": true,
+      "batch": "recent"
+    },
+    {
       "num": "#281",
       "title": "China's Endgame: ASI Timelines, US-China Relations, and the $1.7T AI Bubble With Alvin Graylin | 281",
       "date": "2026-08-18",
@@ -52,7 +62,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "O70Ff5xBnYo",
       "collapsed": true,
-      "batch": "recent"
+      "batch": "batch-2026-h2"
     },
     {
       "num": "#273",

@@ -1,20 +1,20 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-08-21 19:21:54 UTC
-// Total events: 372, months: 3
+// Generated: 2026-08-21 20:43:58 UTC
+// Total events: 373, months: 3
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-08-21 19:21:54 UTC",
-    "total_events": 372,
+    "generated": "2026-08-21 20:43:58 UTC",
+    "total_events": 373,
     "total_months": 3
   },
   "months": [
     {
       "month": "2026-08",
-      "total": 160,
+      "total": 161,
       "by_type": {
+        "diamandis": 5,
         "lev": 98,
-        "diamandis": 4,
         "weekly": 3,
         "ai_search": 55
       },
@@ -29,7 +29,7 @@ const TRENDS = {
         ],
         [
           "OpenAI",
-          11
+          12
         ],
         [
           "Alibaba",
@@ -172,11 +172,11 @@ const TRENDS = {
           5
         ],
         [
-          "GPT 5.6",
+          "GPT 5",
           5
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           5
         ],
         [
@@ -211,11 +211,11 @@ const TRENDS = {
           3
         ],
         [
-          "OpenAI",
+          "Alibaba",
           2
         ],
         [
-          "Alibaba",
+          "OpenAI",
           2
         ],
         [
@@ -257,11 +257,11 @@ const TRENDS = {
           1
         ],
         [
-          "GPT 5.6",
+          "GPT 5",
           1
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           1
         ],
         [
@@ -353,7 +353,7 @@ const TRENDS = {
       ],
       [
         "OpenAI",
-        32
+        33
       ],
       [
         "Google",
@@ -392,11 +392,11 @@ const TRENDS = {
         6
       ],
       [
-        "MIT",
+        "Nous Research",
         6
       ],
       [
-        "Nous Research",
+        "MIT",
         6
       ],
       [
@@ -422,11 +422,11 @@ const TRENDS = {
         8
       ],
       [
-        "GPT 5.6",
+        "GPT 5",
         7
       ],
       [
-        "GPT 5",
+        "GPT 5.6",
         7
       ],
       [
@@ -471,8 +471,8 @@ const TRENDS = {
       ]
     ],
     "by_type": {
+      "diamandis": 13,
       "lev": 237,
-      "diamandis": 12,
       "weekly": 7,
       "ai_search": 116
     }
