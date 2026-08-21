@@ -374,7 +374,7 @@ function renderGlos(g){
 
 function renderTopic(tp, epNum){
   const glosyHtml = tp.glosy.map(renderGlos).join('');
-  var topicId = (epNum||'')+'-topic-'+(tp.num||'');
+  var topicId = (epNum||'').replace('#','')+'-topic-'+(tp.num||'');
   return `<div class="topic" id="${topicId}" onclick="this.classList.toggle('en');var h=this.querySelector('.topic-hint');if(h){h.setAttribute('data-lang',this.classList.contains('en')?'en':'pl')}var col=this.closest('.ep-collapse');if(col){var ep=col.previousElementSibling;if(ep&&ep.classList.contains('episode')){if(this.classList.contains('en')){ep.classList.add('en')}else{var all=col.querySelectorAll('.topic');var anyEn=Array.from(all).some(function(t){return t.classList.contains('en')});if(!anyEn){ep.classList.remove('en')}}}}">
 <div class="t-head">
 <span class="t-num">${esc(tp.num)}</span>
@@ -582,8 +582,7 @@ function handleHashExpand(){
     if(topicNum){
       // Scroll to specific topic after expansion
       setTimeout(function(){
-        var topicId='#'+epId+'-topic-'+topicNum;
-        var topic=document.getElementById(topicId);
+        var topic=document.getElementById(epId+'-topic-'+topicNum);
         if(topic){
           topic.scrollIntoView({behavior:'smooth',block:'center'});
           // Highlight briefly
@@ -604,7 +603,7 @@ document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeE
 </div>
 
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v10.6.1 · Deploy: <span id="deploy-ts">2026-08-21 23:02:06 UTC</span> · <span id="deploy-hash">h357e6425</span>
+v10.6.1 · Deploy: <span id="deploy-ts">2026-08-21 23:14:30 UTC</span> · <span id="deploy-hash">h0c7c2ce2</span>
 </footer>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('/AI/sw.js').catch(function(e){console.log('SW registration failed:',e)})}</script>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry" data-title-pl="Do góry" data-title-en="Back to top">↑</button>
