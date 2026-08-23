@@ -2,9 +2,219 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-21 22:28:29 UTC
+// Generated: 2026-08-23 12:14:12 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "Evoke — open-source interaktywny świat z obrazu + joystick — Open-source",
+    "title_en": "Evoke — open-source interaktywny świat z obrazu + joystick — Open-source",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "World Models",
+    "meta_en": "World Models",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "4DAnyone — 4D gaussian splat animacja postaci — Open-source",
+    "title_en": "4DAnyone — 4D gaussian splat animacja postaci — Open-source",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "4D Human",
+    "meta_en": "4D Human",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "SenseNova U1.5 — realistyczne zdjęcia, plakaty, infografiki — SenseNova",
+    "title_en": "SenseNova U1.5 — realistyczne zdjęcia, plakaty, infografiki — SenseNova",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "Bernini v2 — ByteDance video editor (180GB), zmiana kamery/tła — ByteDance",
+    "title_en": "Bernini v2 — ByteDance video editor (180GB), zmiana kamery/tła — ByteDance",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "Ornith 1.5 — open-source LLM z self-improvement loop (9B dense + 35B MoE) — Ornith (open-source)",
+    "title_en": "Ornith 1.5 — open-source LLM z self-improvement loop (9B dense + 35B MoE) — Ornith (open-source)",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "Audio8 TTS 0.1B — tiny TTS, tylko 0.1B parametrów, voice cloning — Audio8 (open-source)",
+    "title_en": "Audio8 TTS 0.1B — tiny TTS, tylko 0.1B parametrów, voice cloning — Audio8 (open-source)",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "TTS",
+    "meta_en": "TTS",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "GeoWeaver — długie video w chunkach, depth + camera prediction — Open-source",
+    "title_en": "GeoWeaver — długie video w chunkach, depth + camera prediction — Open-source",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "Qwen Video Edit — Alibaba Qwen Image Edit + Wan video (41GB) — Alibaba",
+    "title_en": "Qwen Video Edit — Alibaba Qwen Image Edit + Wan video (41GB) — Alibaba",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "Paxini data glove — rękawica robotyczna z kamerą wide-angle — Paxini",
+    "title_en": "Paxini data glove — rękawica robotyczna z kamerą wide-angle — Paxini",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Hardware",
+    "meta_en": "Hardware",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "MX01 — transformujący się robot (bipedal/quadriped/wheeled) — Booster",
+    "title_en": "MX01 — transformujący się robot (bipedal/quadriped/wheeled) — Booster",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "UBTech Gen 1.5 / AHeadForm — lifelike humanoid, wyrażenia twarzy — UBTech",
+    "title_en": "UBTech Gen 1.5 / AHeadForm — lifelike humanoid, wyrażenia twarzy — UBTech",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Realtime Avatars",
+    "meta_en": "Realtime Avatars",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "Qiji horse — DAX AI robot horse, 300kg payload, 40km range — DAX AI",
+    "title_en": "Qiji horse — DAX AI robot horse, 300kg payload, 40km range — DAX AI",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "Superman robot — standing jump 2m (rekord > ludzki 1.8m), 12.7 m/s — Booster",
+    "title_en": "Superman robot — standing jump 2m (rekord > ludzki 1.8m), 12.7 m/s — Booster",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "Honor Lightning robot — sprinting, wyprzedza ludzi — Honor",
+    "title_en": "Honor Lightning robot — sprinting, wyprzedza ludzi — Honor",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "Adapt — robot tenisowy z real tennis match data — Open-source",
+    "title_en": "Adapt — robot tenisowy z real tennis match data — Open-source",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "DeepSeek V4 Flash Vision — matches Opus 4.8 na agentic coding, API only — DeepSeek",
+    "title_en": "DeepSeek V4 Flash Vision — matches Opus 4.8 na agentic coding, API only — DeepSeek",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "Happy Shrimp — AI music video — AI Search",
+    "title_en": "Happy Shrimp — AI music video — AI Search",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "Comfy MCP — AI agent (GPT/Claude) kontroluje ComfyUI natural language — Open-source",
+    "title_en": "Comfy MCP — AI agent (GPT/Claude) kontroluje ComfyUI natural language — Open-source",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Coding",
+    "meta_en": "Coding",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "Gen 1.5 — robot foundation model, uczy się z jednego video, 100x real-time — UBTech",
+    "title_en": "Gen 1.5 — robot foundation model, uczy się z jednego video, 100x real-time — UBTech",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "Avo — agentic harness, Claude Opus 5 → 100% ARC AGI 3 — Open-source",
+    "title_en": "Avo — agentic harness, Claude Opus 5 → 100% ARC AGI 3 — Open-source",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Coding",
+    "meta_en": "Coding",
+    "num": "##34-1"
+  },
+  {
+    "date": "2026-08-22",
+    "type": "ai_search",
+    "title_pl": "Humanoid Games — ceremonia z Tienong robotami — Various",
+    "title_en": "Humanoid Games — ceremonia z Tienong robotami — Various",
+    "link": "ai-releases.html###34-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##34-1"
+  },
   {
     "date": "2026-08-21",
     "type": "diamandis",
