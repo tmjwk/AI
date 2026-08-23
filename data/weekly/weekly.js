@@ -1,7 +1,7 @@
 // AI Weekly Summaries — auto-generated from weekly.json
 const WEEKLY = [
   {
-    "num": "34",
+    "num": 34,
     "date": "2026-08-23",
     "collapsed": true,
     "title_pl": "AI Tydzień #34 | 17-23/08/2026",
