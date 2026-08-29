@@ -106,6 +106,11 @@ footer{margin-top:40px;padding:10px 20px;font-size:var(--fs-s);color:var(--hd);t
 </div>
 </div>
 
+<div id="articles"><div class="skeleton-loader"><div class="skeleton-card"><div class="skeleton-line title"></div>
+<div class="skeleton-line medium"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div>
+</div>
+</div>
+
 <div id="episodes"><div style="text-align:center;padding:40px;color:var(--hm)">⏳ <span class="pl">Ładowanie...</span><span class="en">Loading...</span></div>
 </div>
 <div class="loading-hint"><span class="pl">Wciąż ładuje dane? Wolny internet — poczekaj dłużej lub odśwież.</span><span class="en">Still loading? Slow internet — wait longer or refresh.</span><br><button onclick="location.reload()"><span class="pl">Odśwież stronę</span><span class="en">Refresh page</span></button></div>
@@ -221,7 +226,7 @@ if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded'
 function handleHashExpand(){if(!location.hash)return;var h=location.hash.substring(1);setTimeout(function(){var ep=document.querySelector('[data-ep-id="'+h+'"]');if(!ep)return;ep.classList.add('open');var btn=ep.querySelector('.ep-toggle');if(btn)btn.innerHTML='<span class="pl">▲ Zwiń</span><span class="en">▲ Collapse</span>';setTimeout(function(){ep.scrollIntoView({behavior:'smooth',block:'start'});ep.style.transition='box-shadow .3s';ep.style.boxShadow='0 0 0 2px var(--ac)';setTimeout(function(){ep.style.boxShadow=''},10000)},200)},500)}
 </script>
 <footer style="background:var(--bg);border-top:1px solid var(--bd);padding:10px 20px;font-size:var(--fs-s);color:var(--hd);text-align:center;font-family:monospace;margin-top:40px">
-v11.0 · Deploy: <span id="deploy-ts">2026-08-29 19:29:10 UTC</span> · <span id="deploy-hash">h13ab534a</span>
+v11.1 · Deploy: <span id="deploy-ts">2026-08-29 19:43:17 UTC</span> · <span id="deploy-hash">hd223aa53</span>
 </footer>
 <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Do góry" data-title-pl="Do góry" data-title-en="Back to top">↑</button>
 <script>window.addEventListener("scroll",function(){var b=document.getElementById("btt");if(b){if(window.scrollY>300){b.classList.add("show")}else{b.classList.remove("show")}}})</script>

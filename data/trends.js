@@ -1,10 +1,10 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-08-29 19:25:43 UTC
+// Generated: 2026-08-29 19:41:03 UTC
 // Total events: 426, months: 3
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-08-29 19:25:43 UTC",
+    "generated": "2026-08-29 19:41:03 UTC",
     "total_events": 426,
     "total_months": 3
   },
@@ -172,11 +172,11 @@ const TRENDS = {
           5
         ],
         [
-          "GPT 5.6",
+          "GPT 5",
           5
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           5
         ],
         [
@@ -257,11 +257,11 @@ const TRENDS = {
           1
         ],
         [
-          "GPT 5.6",
+          "GPT 5",
           1
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           1
         ],
         [
@@ -430,11 +430,11 @@ const TRENDS = {
         7
       ],
       [
-        "GPT 5.6",
+        "GPT 5",
         7
       ],
       [
-        "GPT 5",
+        "GPT 5.6",
         7
       ],
       [
