@@ -1,21 +1,21 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-08-23 12:31:34 UTC
-// Total events: 395, months: 3
+// Generated: 2026-08-29 19:09:09 UTC
+// Total events: 396, months: 3
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-08-23 12:31:34 UTC",
-    "total_events": 395,
+    "generated": "2026-08-29 19:09:09 UTC",
+    "total_events": 396,
     "total_months": 3
   },
   "months": [
     {
       "month": "2026-08",
-      "total": 183,
+      "total": 184,
       "by_type": {
+        "diamandis": 6,
         "weekly": 4,
         "ai_search": 76,
-        "diamandis": 5,
         "lev": 98
       },
       "top_vendors": [
@@ -36,11 +36,11 @@ const TRENDS = {
           9
         ],
         [
-          "DeepSeek",
-          6
+          "xAI",
+          7
         ],
         [
-          "xAI",
+          "DeepSeek",
           6
         ],
         [
@@ -172,11 +172,11 @@ const TRENDS = {
           5
         ],
         [
-          "GPT 5.6",
+          "GPT 5",
           5
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           5
         ],
         [
@@ -211,11 +211,11 @@ const TRENDS = {
           3
         ],
         [
-          "Alibaba",
+          "OpenAI",
           2
         ],
         [
-          "OpenAI",
+          "Alibaba",
           2
         ],
         [
@@ -257,11 +257,11 @@ const TRENDS = {
           1
         ],
         [
-          "GPT 5.6",
+          "GPT 5",
           1
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           1
         ],
         [
@@ -373,7 +373,7 @@ const TRENDS = {
       ],
       [
         "xAI",
-        9
+        10
       ],
       [
         "Moonshot AI",
@@ -426,11 +426,11 @@ const TRENDS = {
         7
       ],
       [
-        "GPT 5.6",
+        "GPT 5",
         7
       ],
       [
-        "GPT 5",
+        "GPT 5.6",
         7
       ],
       [
@@ -471,9 +471,9 @@ const TRENDS = {
       ]
     ],
     "by_type": {
+      "diamandis": 14,
       "weekly": 8,
       "ai_search": 137,
-      "diamandis": 13,
       "lev": 237
     }
   }

@@ -2,9 +2,19 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-23 12:31:34 UTC
+// Generated: 2026-08-29 19:09:09 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-27",
+    "type": "diamandis",
+    "title_pl": "Podcast #283 — Sam Altman: singularity zwalnia, Emad uruchamia 18 Grokbotów, Waymo ciące hardware 83% | #283",
+    "title_en": "Podcast #283 — Sam Altman: Singularity Slow-Down, Emad Runs 18 Grokbots, Waymo Slashes Hardware 83% | EP #283",
+    "link": "ai-pulse.html#283",
+    "meta_pl": "13 tematów",
+    "meta_en": "13 topics",
+    "num": "#283"
+  },
   {
     "date": "2026-08-23",
     "type": "weekly",

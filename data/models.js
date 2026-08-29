@@ -2,7 +2,7 @@
 // Schema: {r, n, v, d, o, c, desc_pl, desc_en, b_pl, b_en}
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
-const TODAY = "2026-08-21";
+const TODAY = "2026-08-23";
 const NEW_DAYS = 14;
 
 const M = [
@@ -1905,7 +1905,7 @@ const M = [
     "tier": "S",
     "tier_override": "S",
     "tier_override_reason": "najpotężniejszy model wideo na rynku (upgrade z #1 HappyHorse-1.0)",
-    "tier_override_date": "2026-08-23"
+    "tier_override_date": "2026-08-29"
   },
   {
     "r": 5,
@@ -1945,7 +1945,7 @@ const M = [
     "score_date": "2026-08-16",
     "tier": "S",
     "tier_override_reason": "#1 na Artificial Analysis leaderboard (video generation)",
-    "tier_override_date": "2026-08-23",
+    "tier_override_date": "2026-08-29",
     "tier_override": "S"
   },
   {
@@ -3740,7 +3740,7 @@ const M = [
     "tier": "S",
     "tier_override": "S",
     "tier_override_reason": "#1 Frontend Code Arena (1679 pkt)",
-    "tier_override_date": "2026-08-23"
+    "tier_override_date": "2026-08-29"
   },
   {
     "n": "Bonsai 27B",
@@ -3942,7 +3942,7 @@ const M = [
     "tier": "S",
     "tier_override": "S",
     "tier_override_reason": "#1 na Artificial Analysis Image Arena (ELO 1375)",
-    "tier_override_date": "2026-08-23"
+    "tier_override_date": "2026-08-29"
   },
   {
     "r": 55,

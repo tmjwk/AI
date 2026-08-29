@@ -1,6 +1,330 @@
 {
   "EPISODES": [
     {
+      "num": "#283",
+      "collapsed": true,
+      "channel": "Moonshots",
+      "title": "Sam Altman: Singularity Slow-Down, Emad Runs 18 Grokbots, Waymo Slashes Hardware 83% | EP #283",
+      "title_pl": "Sam Altman: singularity zwalnia, Emad uruchamia 18 Grokbotów, Waymo ciące hardware 83% | #283",
+      "title_en": "Sam Altman: Singularity Slow-Down, Emad Runs 18 Grokbots, Waymo Slashes Hardware 83% | EP #283",
+      "date": "2026-08-27",
+      "duration": "130 min",
+      "yt": "0mOXQ4_kY04",
+      "hosts_count_pl": "5 uczestników",
+      "hosts_count_en": "5 participants",
+      "topics_count_pl": "13 tematów",
+      "topics_count_en": "13 topics",
+      "hosts": [
+        {
+          "name": "Peter Diamandis",
+          "role_pl": "Gospodarz",
+          "role_en": "Main host"
+        },
+        {
+          "name": "Dr. Alexander Wissner-Gross",
+          "role_pl": "In-house ASI",
+          "role_en": "In-house ASI"
+        },
+        {
+          "name": "Dave Blundin",
+          "role_pl": "Inwestor VC",
+          "role_en": "VC investor"
+        },
+        {
+          "name": "Salim Ismail",
+          "role_pl": "Organizacje wykładnicze",
+          "role_en": "Exponential organizations"
+        },
+        {
+          "name": "Emad Mostaque",
+          "role_pl": "GOŚĆ — founder Intelligent Internet",
+          "role_en": "GUEST — founder Intelligent Internet"
+        }
+      ],
+      "topics": [
+        {
+          "num": "01",
+          "title": "Is the Singularity Slowing Down?",
+          "title_pl": "Czy singularność zwalnia?",
+          "title_en": "Is the Singularity Slowing Down?",
+          "time": "00:00 – 23:00",
+          "fakty_pl": "Sam Altman tweet: singularity może slow down. Google back z Gemini crushing agent benchmarks. NVIDIA fighting Chinese model domination z own open models. AI playing Cupid — matchmaking. Waymo cost savings 83%. Emad runs 18 Grokbots. Peter: 'best antidote for fear is knowledge and understanding'. Dave: 'bathed in fluorescent light for singularity'. Emad: compaction problem, harness engineering.",
+          "fakty_en": "Sam Altman tweet: singularity may slow down. Google back with Gemini crushing agent benchmarks. NVIDIA fighting Chinese model domination with own open models. AI playing Cupid — matchmaking. Waymo cost savings 83%. Emad runs 18 Grokbots. Peter: 'best antidote for fear is knowledge and understanding'. Dave: 'bathed in fluorescent light for singularity'. Emad: compaction problem, harness engineering.",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "Najlepsze antidotum na strach to wiedza i zrozumienie.",
+              "text_en": "The best antidote for fear is knowledge and understanding."
+            },
+            {
+              "author": "Sam Altman",
+              "text_pl": "Singularność może zwolnić.",
+              "text_en": "Singularity may slow down."
+            }
+          ],
+          "wniosek_pl": "Altman: singularity może zwolnić. Ale Google, NVIDIA, Waymo nadal accelerate.",
+          "wniosek_en": "Altman: singularity may slow down. But Google, NVIDIA, Waymo still accelerating.",
+          "kontekst_pl": "Sam Altman tweet o slow down — czy to strategiczna pauza czy realność?",
+          "kontekst_en": "Sam Altman tweet about slow down — strategic pause or reality?"
+        },
+        {
+          "num": "02",
+          "title": "Grokbot and the Rise of AI Agent Swarms",
+          "title_pl": "Grokbot i powstanie AI agent swarms",
+          "title_en": "Grokbot and the Rise of AI Agent Swarms",
+          "time": "23:00 – 30:58",
+          "fakty_pl": "Emad Mostaque runs 18 Grokbots simultaneously — agent swarm. AI agents coordinate, delegate, execute tasks. Grokbot = xAI's agent platform. Swarm intelligence — multiple agents collaborating. Emad: to future of work — 10,000 employees for everyone. Agent swarms can handle complex multi-step workflows.",
+          "fakty_en": "Emad Mostaque runs 18 Grokbots simultaneously — agent swarm. AI agents coordinate, delegate, execute tasks. Grokbot = xAI's agent platform. Swarm intelligence — multiple agents collaborating. Emad: this is future of work — 10,000 employees for everyone. Agent swarms can handle complex multi-step workflows.",
+          "glosy": [
+            {
+              "author": "Emad Mostaque",
+              "text_pl": "Uruchamiam 18 Grokbotów jednocześnie. To future of work — 10,000 employees for everyone.",
+              "text_en": "I run 18 Grokbots simultaneously. This is the future of work — 10,000 employees for everyone."
+            }
+          ],
+          "wniosek_pl": "Agent swarms = future of work. Emad 18 Grokbotów = preview personal AI army.",
+          "wniosek_en": "Agent swarms = future of work. Emad's 18 Grokbots = preview of personal AI army.",
+          "kontekst_pl": "Grokbot = xAI agent platform. Swarm = multiple coordinated agents.",
+          "kontekst_en": "Grokbot = xAI agent platform. Swarm = multiple coordinated agents."
+        },
+        {
+          "num": "03",
+          "title": "Gemini and the Frontier Lab Race",
+          "title_pl": "Gemini i wyścig frontier labs",
+          "title_en": "Gemini and the Frontier Lab Race",
+          "time": "30:58 – 45:36",
+          "fakty_pl": "Google back z Gemini crushing agent benchmarks. Frontier lab race intensifies — OpenAI, Anthropic, Google, xAI. Gemini improvements w agentic tasks. Google leveraging search + YouTube data advantage. Competition drives innovation ale także monoculture risk. Alex: convergence towards single architecture (hive mind).",
+          "fakty_en": "Google back with Gemini crushing agent benchmarks. Frontier lab race intensifies — OpenAI, Anthropic, Google, xAI. Gemini improvements in agentic tasks. Google leveraging search + YouTube data advantage. Competition drives innovation but also monoculture risk. Alex: convergence towards single architecture (hive mind).",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "Google wraca z Gemini crushing agent benchmarks.",
+              "text_en": "Google is back with Gemini crushing agent benchmarks."
+            }
+          ],
+          "wniosek_pl": "Google Gemini back w game. Frontier race 4-way: OpenAI, Anthropic, Google, xAI.",
+          "wniosek_en": "Google Gemini back in the game. Frontier race 4-way: OpenAI, Anthropic, Google, xAI.",
+          "kontekst_pl": "Agent benchmarks = tasks requiring multi-step reasoning + tool use.",
+          "kontekst_en": "Agent benchmarks = tasks requiring multi-step reasoning + tool use."
+        },
+        {
+          "num": "04",
+          "title": "NVIDIA's $6B Open-Source AI Bet",
+          "title_pl": "NVIDIA $6B zakład na open-source AI",
+          "title_en": "NVIDIA's $6B Open-Source AI Bet",
+          "time": "45:36 – 54:45",
+          "fakty_pl": "NVIDIA fighting Chinese model domination z own open models. $6B investment w open-source AI. NVIDIA tradycyjnie hardware company — teraz entering model space. Strategic move: compete z DeepSeek, GLM, Qwen. Open-source jako competitive moat. NVIDIA leverage GPU ecosystem.",
+          "fakty_en": "NVIDIA fighting Chinese model domination with own open models. $6B investment in open-source AI. NVIDIA traditionally hardware company — now entering model space. Strategic move: compete with DeepSeek, GLM, Qwen. Open-source as competitive moat. NVIDIA leverage GPU ecosystem.",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "NVIDIA walczy z chińską dominacją modeli z własnymi open models. $6B inwestycji.",
+              "text_en": "NVIDIA is fighting against Chinese model domination with its own open models. $6B investment."
+            }
+          ],
+          "wniosek_pl": "NVIDIA $6B w open-source AI. Hardware → models. Compete z Chinami.",
+          "wniosek_en": "NVIDIA $6B in open-source AI. Hardware → models. Compete with China.",
+          "kontekst_pl": "NVIDIA = GPU monopoly. Open-source models = strategic moat.",
+          "kontekst_en": "NVIDIA = GPU monopoly. Open-source models = strategic moat."
+        },
+        {
+          "num": "05",
+          "title": "Chinese Models Challenge Anthropic",
+          "title_pl": "Chińskie modele rzucają wyzwanie Anthropic",
+          "title_en": "Chinese Models Challenge Anthropic",
+          "time": "54:45 – 1:00:04",
+          "fakty_pl": "Chińskie modele (DeepSeek, GLM, Qwen) challenge Anthropic. Open-weight dominance — Qwen 700M+ downloads. Cost advantage: 10x tańsze niż amerykańskie frontier. GLM 5.3 cybersecurity bije MIUS. DeepSeek V4 Flash Vision matches Opus 4.8. Chiny: distributed innovation, 30+ prowincji rywalizuje. USA: regulatory capture attempts.",
+          "fakty_en": "Chinese models (DeepSeek, GLM, Qwen) challenge Anthropic. Open-weight dominance — Qwen 700M+ downloads. Cost advantage: 10x cheaper than American frontier. GLM 5.3 cybersecurity beats MIUS. DeepSeek V4 Flash Vision matches Opus 4.8. China: distributed innovation, 30+ provinces compete. USA: regulatory capture attempts.",
+          "glosy": [
+            {
+              "author": "Emad Mostaque",
+              "text_pl": "Chińskie modele challenge Anthropic. Open-weight dominance — Qwen 700M+ pobrań.",
+              "text_en": "Chinese models challenge Anthropic. Open-weight dominance — Qwen 700M+ downloads."
+            }
+          ],
+          "wniosek_pl": "Chiny challenge Anthropic. Open-weight + cost advantage = competitive threat.",
+          "wniosek_en": "China challenges Anthropic. Open-weight + cost advantage = competitive threat.",
+          "kontekst_pl": "Alvin Graylin (#281): Chiny nie wierzą w ASI 'tuż-tuż', ale budują infrastrukturę.",
+          "kontekst_en": "Alvin Graylin (#281): China doesn't believe ASI is 'around the corner', but builds infrastructure."
+        },
+        {
+          "num": "06",
+          "title": "Should Anthropic IPO?",
+          "title_pl": "Czy Anthropic powinno IPO?",
+          "title_en": "Should Anthropic IPO?",
+          "time": "1:00:04 – 1:10:16",
+          "fakty_pl": "Anthropic $2T IPO — should they? PolyMarket 89% says happens this year. Super voting class dla Dario. Dave: 30-40 lat temu super voting = no-no. Emad: $100B revenue catching up z Google. Alex: Anthropic started as alignment lab, musiał become capabilities lab. Peter: universal right to AI coming. Quid pro quo: cure disease as marketing dla recursive self-improvement.",
+          "fakty_en": "Anthropic $2T IPO — should they? PolyMarket 89% says happens this year. Super voting class for Dario. Dave: 30-40 years ago super voting = no-no. Emad: $100B revenue catching up with Google. Alex: Anthropic started as alignment lab, had to become capabilities lab. Peter: universal right to AI coming. Quid pro quo: cure disease as marketing for recursive self-improvement.",
+          "glosy": [
+            {
+              "author": "Dave Blundin",
+              "text_pl": "30-40 lat temu super voting stock był complete no-no. Teraz Dario bierze to na next level.",
+              "text_en": "30-40 years ago super voting stock was a complete no. Now Dario takes it to the next level."
+            },
+            {
+              "author": "Emad Mostaque",
+              "text_pl": "Anthropic hit $100B revenue w parę lat — catching up z Google.",
+              "text_en": "Anthropic hit $100B revenue in couple years — catching up with Google."
+            }
+          ],
+          "wniosek_pl": "Anthropic $2T IPO z super voting = founder control. $100B revenue. Historyczna governance.",
+          "wniosek_en": "Anthropic $2T IPO with super voting = founder control. $100B revenue. Historic governance.",
+          "kontekst_pl": "Kontynuacja z #282 — Anthropic IPO dyskusja.",
+          "kontekst_en": "Continuation from #282 — Anthropic IPO discussion."
+        },
+        {
+          "num": "07",
+          "title": "AI Matchmaking and the Future of Dating",
+          "title_pl": "AI matchmaking i przyszłość randkowania",
+          "title_en": "AI Matchmaking and the Future of Dating",
+          "time": "1:10:16 – 1:20:02",
+          "fakty_pl": "AI playing Cupid — matchmaking. AI może analyze compatibility lepiej niż ludzie. Dating apps integrują AI agents. Emad: AI zna ciebie lepiej niż ty sam. Peter: AI jako personal matchmaker. Alex: AI może simulate relationship outcomes. Implications dla social dynamics.",
+          "fakty_en": "AI playing Cupid — matchmaking. AI can analyze compatibility better than humans. Dating apps integrate AI agents. Emad: AI knows you better than you know yourself. Peter: AI as personal matchmaker. Alex: AI can simulate relationship outcomes. Implications for social dynamics.",
+          "glosy": [
+            {
+              "author": "Emad Mostaque",
+              "text_pl": "AI zna cię lepiej niż ty sam. Może być najlepszym matchmakerem.",
+              "text_en": "AI knows you better than you know yourself. Can be the best matchmaker."
+            }
+          ],
+          "wniosek_pl": "AI matchmaking = lepsze compatibility analysis. Dating apps + AI agents.",
+          "wniosek_en": "AI matchmaking = better compatibility analysis. Dating apps + AI agents.",
+          "kontekst_pl": "AI w dating — nowy trend. Privacy implications.",
+          "kontekst_en": "AI in dating — new trend. Privacy implications."
+        },
+        {
+          "num": "08",
+          "title": "AI and the 10-Day Work Week",
+          "title_pl": "AI i 10-dniowy tydzień pracy",
+          "title_en": "AI and the 10-Day Work Week",
+          "time": "1:20:02 – 1:27:08",
+          "fakty_pl": "AI enables 10-day work week (more output, less days). Productivity gains from AI agents. Emad: 18 Grokbots = 10,000 employees. Dave: re-industrialization needed. White collar displacement first. Peter: universal right to AI. Alex: AI-first mindset shifts work from execution to review.",
+          "fakty_en": "AI enables 10-day work week (more output, less days). Productivity gains from AI agents. Emad: 18 Grokbots = 10,000 employees. Dave: re-industrialization needed. White collar displacement first. Peter: universal right to AI. Alex: AI-first mindset shifts work from execution to review.",
+          "glosy": [
+            {
+              "author": "Emad Mostaque",
+              "text_pl": "18 Grokbotów = 10,000 pracowników. To umożliwia 10-day work week.",
+              "text_en": "18 Grokbots = 10,000 employees. This enables a 10-day work week."
+            }
+          ],
+          "wniosek_pl": "AI → 10-day work week. Productivity gains. White collar displacement.",
+          "wniosek_en": "AI → 10-day work week. Productivity gains. White collar displacement.",
+          "kontekst_pl": "10-day work week = more output per day, fewer days worked.",
+          "kontekst_en": "10-day work week = more output per day, fewer days worked."
+        },
+        {
+          "num": "09",
+          "title": "Are PhDs Still Worth It in the AI Era?",
+          "title_pl": "Czy PhD nadal ma sens w erze AI?",
+          "title_en": "Are PhDs Still Worth It in the AI Era?",
+          "time": "1:27:08 – 1:30:15",
+          "fakty_pl": "PhD value w AI era — debata. AI może do research faster than PhD students. Ale PhD = deep expertise, critical thinking. Alex: AI handles execution, humans handle review + creativity. Dave: senior roles increased (+71%), junior outsourced. PhD może być less valuable ale specialized knowledge still matters.",
+          "fakty_en": "PhD value in AI era — debate. AI can do research faster than PhD students. But PhD = deep expertise, critical thinking. Alex: AI handles execution, humans handle review + creativity. Dave: senior roles increased (+71%), junior outsourced. PhD may be less valuable but specialized knowledge still matters.",
+          "glosy": [
+            {
+              "author": "Alex Wissner-Gross",
+              "text_pl": "AI handles execution, humans handle review + creativity.",
+              "text_en": "AI handles execution, humans handle review + creativity."
+            }
+          ],
+          "wniosek_pl": "PhD less valuable dla execution, ale specialized knowledge + critical thinking still matter.",
+          "wniosek_en": "PhD less valuable for execution, but specialized knowledge + critical thinking still matter.",
+          "kontekst_pl": "Senior roles +71%, junior outsourced to AI (Indeed.com data).",
+          "kontekst_en": "Senior roles +71%, junior outsourced to AI (Indeed.com data)."
+        },
+        {
+          "num": "10",
+          "title": "The Growing Backlash Against Data Centers",
+          "title_pl": "Rosący backlash przeciw data centers",
+          "title_en": "The Growing Backlash Against Data Centers",
+          "time": "1:30:15 – 1:38:37",
+          "fakty_pl": "71% Americans oppose data centers. Memory bottleneck — 500% price jump. Energy demand: AI 200% growth vs 20% production. Grid buildout: help regular people or make electricity scarcer? Emad: memory = 1/3 infrastructure spend, next year 50%. HBM = post-von Neumann. SK Hynix: 2027 worst year for supply.",
+          "fakty_en": "71% Americans oppose data centers. Memory bottleneck — 500% price jump. Energy demand: AI 200% growth vs 20% production. Grid buildout: help regular people or make electricity scarcer? Emad: memory = 1/3 infrastructure spend, next year 50%. HBM = post-von Neumann. SK Hynix: 2027 worst year for supply.",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "71% Amerykanów oppose data centers. Grid buildout — help czy make scarcer?",
+              "text_en": "71% of Americans oppose data centers. Grid buildout — help or make scarcer?"
+            }
+          ],
+          "wniosek_pl": "Data center backlash rośnie. Memory = new bottleneck. Energy + memory = AI constraints.",
+          "wniosek_en": "Data center backlash growing. Memory = new bottleneck. Energy + memory = AI constraints.",
+          "kontekst_pl": "Kontynuacja z #282 — memory bottleneck dyskusja.",
+          "kontekst_en": "Continuation from #282 — memory bottleneck discussion."
+        },
+        {
+          "num": "11",
+          "title": "Waymo Slashes Autonomous Driving Costs",
+          "title_pl": "Waymo ciące koszty autonomous driving",
+          "title_en": "Waymo Slashes Autonomous Driving Costs",
+          "time": "1:38:37 – 1:45:11",
+          "fakty_pl": "Waymo unveiled O-high vehicle — purpose-built robo taxi minivan designed by Chinese EV maker Zeekr. 83% hardware cost reduction. Waymo + Uber partnership. Google/Waymo leveraging AI + fleet data. Robotaxi economics improving. Cost parity z human drivers approaching. China already ma drone delivery + robotaxis at scale.",
+          "fakty_en": "Waymo unveiled O-high vehicle — purpose-built robo taxi minivan designed by Chinese EV maker Zeekr. 83% hardware cost reduction. Waymo + Uber partnership. Google/Waymo leveraging AI + fleet data. Robotaxi economics improving. Cost parity with human drivers approaching. China already has drone delivery + robotaxis at scale.",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "Waymo unveiled O-high vehicle — 83% hardware cost reduction. Robotaxi economics improving.",
+              "text_en": "Waymo unveiled O-high vehicle — 83% hardware cost reduction. Robotaxi economics improving."
+            }
+          ],
+          "wniosek_pl": "Waymo 83% cost reduction. Robotaxi cost parity z human drivers approaching.",
+          "wniosek_en": "Waymo 83% cost reduction. Robotaxi cost parity with human drivers approaching.",
+          "kontekst_pl": "Zeekr = Chinese EV maker. Waymo = Google/Alphabet subsidiary.",
+          "kontekst_en": "Zeekr = Chinese EV maker. Waymo = Google/Alphabet subsidiary."
+        },
+        {
+          "num": "12",
+          "title": "Humanoid Drivers and Autonomous Rescue Drones",
+          "title_pl": "Humanoidalni kierowcy i autonomiczne drony ratunkowe",
+          "title_en": "Humanoid Drivers and Autonomous Rescue Drones",
+          "time": "1:45:11 – 1:57:20",
+          "fakty_pl": "Humanoid robots as drivers — can drive existing vehicles. Autonomous rescue drones — search & rescue operations. AI w emergency response. Robotaxi + humanoid = universal mobility. Emad: superhuman robots banned from streets. Alex: generalist robots devour specialist. Dave: robotics fertile investment theme post-AGI.",
+          "fakty_en": "Humanoid robots as drivers — can drive existing vehicles. Autonomous rescue drones — search & rescue operations. AI in emergency response. Robotaxi + humanoid = universal mobility. Emad: superhuman robots banned from streets. Alex: generalist robots devour specialist. Dave: robotics fertile investment theme post-AGI.",
+          "glosy": [
+            {
+              "author": "Emad Mostaque",
+              "text_pl": "Superhuman robots będą banned from streets. Jak cars — accidents.",
+              "text_en": "Superhuman robots will be banned from streets. Like cars — accidents."
+            },
+            {
+              "author": "Dave Blundin",
+              "text_pl": "Robotics fertile investment theme post-AGI, post-ASI.",
+              "text_en": "Robotics is a fertile investment theme post-AGI, post-ASI."
+            }
+          ],
+          "wniosek_pl": "Humanoid drivers + rescue drones. Universal mobility. Robotics = investment theme.",
+          "wniosek_en": "Humanoid drivers + rescue drones. Universal mobility. Robotics = investment theme.",
+          "kontekst_pl": "Humanoid driving = robot kieruje zwykłym samochodem (nie autonomous vehicle).",
+          "kontekst_en": "Humanoid driving = robot drives regular car (not autonomous vehicle)."
+        },
+        {
+          "num": "13",
+          "title": "Starship, Starlink, and the Future of Spaceflight",
+          "title_pl": "Starship, Starlink i przyszłość lotów kosmicznych",
+          "title_en": "Starship, Starlink, and the Future of Spaceflight",
+          "time": "1:57:20 – 2:10:00",
+          "fakty_pl": "SpaceX Starship — next-gen heavy lift rocket. Starlink satellite internet — global coverage. Elon's vision: Mars colonization. Starship enables cheaper launches. Starlink revenue funds Mars. AI w spacecraft design + operations. Peter: space economy $1T+. Alex: SpaceX data trained Grok — engineering breakthroughs. Emad: space = next frontier dla AI infrastructure.",
+          "fakty_en": "SpaceX Starship — next-gen heavy lift rocket. Starlink satellite internet — global coverage. Elon's vision: Mars colonization. Starship enables cheaper launches. Starlink revenue funds Mars. AI in spacecraft design + operations. Peter: space economy $1T+. Alex: SpaceX data trained Grok — engineering breakthroughs. Emad: space = next frontier for AI infrastructure.",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "Space economy $1T+. Starship enables cheaper launches.",
+              "text_en": "Space economy $1T+. Starship enables cheaper launches."
+            },
+            {
+              "author": "Alex Wissner-Gross",
+              "text_pl": "SpaceX data trained Grok — engineering breakthroughs available.",
+              "text_en": "SpaceX data trained Grok — engineering breakthroughs available."
+            }
+          ],
+          "wniosek_pl": "Starship + Starlink = SpaceX ecosystem. Space economy $1T+. AI w spacecraft.",
+          "wniosek_en": "Starship + Starlink = SpaceX ecosystem. Space economy $1T+. AI in spacecraft.",
+          "kontekst_pl": "Starship = fully reusable. Starlink = 6000+ satellites. Mars = Elon's goal.",
+          "kontekst_en": "Starship = fully reusable. Starlink = 6000+ satellites. Mars = Elon's goal."
+        }
+      ]
+    },
+    {
       "num": "#282",
       "collapsed": true,
       "channel": "Moonshots",

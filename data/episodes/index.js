@@ -5,6 +5,16 @@
 const EPISODES_INDEX = {
   "episodes": [
     {
+      "num": "#283",
+      "title": "Sam Altman: Singularity Slow-Down, Emad Runs 18 Grokbots, Waymo Slashes Hardware 83% | EP #283",
+      "date": "2026-08-27",
+      "duration": "130 min",
+      "channel": "Moonshots",
+      "yt": "0mOXQ4_kY04",
+      "collapsed": true,
+      "batch": "recent"
+    },
+    {
       "num": "#282",
       "title": "OpenAI Pauses Frontier Training, Elon's 100X Prediction Lands, Robot Beats Usain Bolt | EP#282",
       "date": "2026-08-21",
@@ -52,7 +62,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "Jku8b2YKuy0",
       "collapsed": true,
-      "batch": "recent"
+      "batch": "batch-2026-h2"
     },
     {
       "num": "#275",

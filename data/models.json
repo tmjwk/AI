@@ -1,6 +1,6 @@
 {
   "meta": {
-    "TODAY": "2026-08-23",
+    "TODAY": "2026-08-29",
     "NEW_DAYS": 14
   },
   "M": [
@@ -1903,7 +1903,7 @@
       "tier": "S",
       "tier_override": "S",
       "tier_override_reason": "najpotężniejszy model wideo na rynku (upgrade z #1 HappyHorse-1.0)",
-      "tier_override_date": "2026-08-23"
+      "tier_override_date": "2026-08-29"
     },
     {
       "r": 5,
@@ -1943,7 +1943,7 @@
       "score_date": "2026-08-16",
       "tier": "S",
       "tier_override_reason": "#1 na Artificial Analysis leaderboard (video generation)",
-      "tier_override_date": "2026-08-23",
+      "tier_override_date": "2026-08-29",
       "tier_override": "S"
     },
     {
@@ -3738,7 +3738,7 @@
       "tier": "S",
       "tier_override": "S",
       "tier_override_reason": "#1 Frontend Code Arena (1679 pkt)",
-      "tier_override_date": "2026-08-23"
+      "tier_override_date": "2026-08-29"
     },
     {
       "n": "Bonsai 27B",
@@ -3940,7 +3940,7 @@
       "tier": "S",
       "tier_override": "S",
       "tier_override_reason": "#1 na Artificial Analysis Image Arena (ELO 1375)",
-      "tier_override_date": "2026-08-23"
+      "tier_override_date": "2026-08-29"
     },
     {
       "r": 55,
