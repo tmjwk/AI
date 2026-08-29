@@ -1,6 +1,532 @@
 {
   "episodes": [
     {
+      "id": "ep-2026-08-28",
+      "date": "2026-08-28",
+      "title_pl": "Exciting AI Updates Weekly — 28 sierpnia 2026",
+      "title_en": "Exciting AI Updates Weekly — August 28, 2026",
+      "yt": "D5qeklkQqRg",
+      "collapsed": true,
+      "sections": [
+        {
+          "type": "table",
+          "title_pl": "LM Arena Leaderboard (stan: 28.08.2026)",
+          "title_en": "LM Arena Leaderboard (as of 08-28-2026)",
+          "id": "lb-0828",
+          "num": 1,
+          "icon": "📊",
+          "headers": [
+            "Rank",
+            "Model",
+            "Score",
+            "Vendor"
+          ],
+          "rows": [
+            [
+              "1",
+              "Claude Fable 5",
+              "1438",
+              "Anthropic"
+            ],
+            [
+              "2",
+              "Claude Opus 5",
+              "1430",
+              "Anthropic"
+            ],
+            [
+              "3",
+              "Grok 4.6",
+              "1430",
+              "xAI"
+            ],
+            [
+              "4",
+              "GPT 5.6 Sol",
+              "1415",
+              "OpenAI"
+            ],
+            [
+              "5",
+              "Kimi K3",
+              "1392",
+              "Moonshot"
+            ],
+            [
+              "6",
+              "GLM 5.3",
+              "1372",
+              "Z.AI"
+            ],
+            [
+              "7",
+              "Qwen 3.8",
+              "1378",
+              "Alibaba"
+            ],
+            [
+              "8",
+              "Muse Spark",
+              "1320",
+              "Meta"
+            ],
+            [
+              "9",
+              "Gemini 3.7 Flash",
+              "1352",
+              "Google"
+            ],
+            [
+              "10",
+              "DeepSeek V4 Pro",
+              "1368",
+              "DeepSeek"
+            ]
+          ],
+          "notes_pl": "Claude (niebieski) dominuje. Open-source (zielony) overtaking closed models. Open models > 50% na Vercel platform w June.",
+          "notes_en": "Claude (blue) dominates. Open-source (green) overtaking closed models. Open models > 50% on Vercel platform in June.",
+          "cards": []
+        },
+        {
+          "type": "cards",
+          "title_pl": "Cost Per Intelligence + Open Models",
+          "title_en": "Cost Per Intelligence + Open Models",
+          "id": "cost-0828",
+          "num": 2,
+          "icon": "💰",
+          "headers": [],
+          "rows": [],
+          "notes_pl": "",
+          "notes_en": "",
+          "cards": [
+            {
+              "id": "c1",
+              "title": "Open models overtaking closed — Vercel stats June 2026",
+              "desc_pl": "Vercel platform stats: open models > 50% usage w June 2026. Closed models (OpenAI, Anthropic) tracą share. DeepSeek, GLM, Qwen dominują. Trend: open-source wygrywa w deployment.",
+              "desc_en": "Vercel platform stats: open models > 50% usage in June 2026. Closed models (OpenAI, Anthropic) losing share. DeepSeek, GLM, Qwen dominate. Trend: open-source wins in deployment.",
+              "tags": [
+                "trend",
+                "open-source"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c2",
+              "title": "Reviewing and validating = new bottleneck",
+              "desc_pl": "Lev: reviewing and validating is the new bottleneck. AI generates, humans review. Quality assurance staje się kluczowe. 'AI never sleeps' ale output needs validation.",
+              "desc_en": "Lev: reviewing and validating is the new bottleneck. AI generates, humans review. Quality assurance becomes critical. 'AI never sleeps' but output needs validation.",
+              "tags": [
+                "insight"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "title_pl": "Nowe modele i narzędzia",
+          "title_en": "New models and tools",
+          "id": "models-0828",
+          "num": 3,
+          "icon": "🆕",
+          "headers": [],
+          "rows": [],
+          "notes_pl": "",
+          "notes_en": "",
+          "cards": [
+            {
+              "id": "c3",
+              "title": "NVIDIA AVO — Claude Opus 5 → 100% ARC AGI 3 (30%→100%)",
+              "desc_pl": "NVIDIA AVO agent improves Claude Opus 5 performance na ARC AGI 3 from 30% to 100%. Unbelievable improvement. Harness/scaffolding breakthrough — bez fine-tuning weights. ARC AGI = abstraction and reasoning corpus for AGI.",
+              "desc_en": "NVIDIA AVO agent improves Claude Opus 5 performance on ARC AGI 3 from 30% to 100%. Unbelievable improvement. Harness/scaffolding breakthrough — without fine-tuning weights. ARC AGI = abstraction and reasoning corpus for AGI.",
+              "tags": [
+                "benchmark",
+                "harness"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c4",
+              "title": "DeepSeek Flash gets Vision — V4 Flash z obrazami",
+              "desc_pl": "DeepSeek released V4 Flash z vision capabilities. Możesz dostarczyć obrazy. Krzywa performance absolutnie amazing. Matches Opus 4.8 na agentic coding. API only.",
+              "desc_en": "DeepSeek released V4 Flash with vision capabilities. Can provide images. Performance curve absolutely amazing. Matches Opus 4.8 on agentic coding. API only.",
+              "tags": [
+                "LLM",
+                "vision"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c5",
+              "title": "Qwen 3.8 Flash Next — 125B core, 51B embedding, 6B active",
+              "desc_pl": "Qwen 3.8 Flash Next: 125B core parameters, 51B engram embedding parameters, tylko 6B active. Sparse MoE. Bardzo efficient.",
+              "desc_en": "Qwen 3.8 Flash Next: 125B core parameters, 51B engram embedding parameters, only 6B active. Sparse MoE. Very efficient.",
+              "tags": [
+                "LLM"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c6",
+              "title": "Kimi Linear — cheaper long context, delta attention",
+              "desc_pl": "Kimi Linear: KDA (Kimi Delta Attention) layer uses recurrent linear style attention. Cheaper long context. Moonshot kontynuuje innowacje w efficiency.",
+              "desc_en": "Kimi Linear: KDA (Kimi Delta Attention) layer uses recurrent linear style attention. Cheaper long context. Moonshot continues efficiency innovations.",
+              "tags": [
+                "LLM",
+                "efficiency"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c7",
+              "title": "Ox Alpha na OpenRouter — nobody knows what it is",
+              "desc_pl": "Ox Alpha na OpenRouter — performing very well ale nobody knows co to. SSI company promised release w August, haven't happened. Very secretive since creation.",
+              "desc_en": "Ox Alpha on OpenRouter — performing very well but nobody knows what it is. SSI company promised release in August, haven't happened. Very secretive since creation.",
+              "tags": [
+                "mystery"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c8",
+              "title": "Alibaba Wan 3.0 — document-to-video AI",
+              "desc_pl": "Alibaba Wan 3.0: document-to-video AI. Zamień dokument w video. Nowa wersja Wan video generation model.",
+              "desc_en": "Alibaba Wan 3.0: document-to-video AI. Convert document to video. New version of Wan video generation model.",
+              "tags": [
+                "video"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "title_pl": "Harness revolution — 52 open harnesses",
+          "title_en": "Harness revolution — 52 open harnesses",
+          "id": "harness-0828",
+          "num": 4,
+          "icon": "🤖",
+          "headers": [],
+          "rows": [],
+          "notes_pl": "",
+          "notes_en": "",
+          "cards": [
+            {
+              "id": "c9",
+              "title": "OpenAI open-sourced Codex harness",
+              "desc_pl": "OpenAI open-sourced Codex harness. Harness = code, nie model. Można modify, improve. Trend: harnesses stają się open-source. Claude Code leaked (end March), community took code.",
+              "desc_en": "OpenAI open-sourced Codex harness. Harness = code, not model. Can modify, improve. Trend: harnesses becoming open-source. Claude Code leaked (end March), community took code.",
+              "tags": [
+                "harness",
+                "open-source"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c10",
+              "title": "52 open harnesses compiled — Lev's list",
+              "desc_pl": "Lev skompilował listę 52 open harnesses: Codex CLI, PI (minimal), Open Code, Claude Code, Grok Build, Harness, Her Agent, Open Claude. Wszystkie open code. Harness engineering = nowa dyscyplina.",
+              "desc_en": "Lev compiled list of 52 open harnesses: Codex CLI, PI (minimal), Open Code, Claude Code, Grok Build, Harness, Her Agent, Open Claude. All open code. Harness engineering = new discipline.",
+              "tags": [
+                "harness",
+                "list"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c11",
+              "title": "Time to 100K GitHub stars — Claude Code fastest",
+              "desc_pl": "Claude Code: fastest to 100K GitHub stars. Code leaked end of March, community took it. DeepSeek harness: 180K w tydzień (rekord). Harness competition intensifies.",
+              "desc_en": "Claude Code: fastest to 100K GitHub stars. Code leaked end of March, community took it. DeepSeek harness: 180K in a week (record). Harness competition intensifies.",
+              "tags": [
+                "harness",
+                "github"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "title_pl": "Robotics + Hardware",
+          "title_en": "Robotics + Hardware",
+          "id": "robots-0828",
+          "num": 5,
+          "icon": "🦾",
+          "headers": [],
+          "rows": [],
+          "notes_pl": "",
+          "notes_en": "",
+          "cards": [
+            {
+              "id": "c12",
+              "title": "2026 World Humanoid Robot Games — robot beats Usain Bolt",
+              "desc_pl": "Chiny: 2026 World Humanoid Robot Games. Robot bije rekord Usaina Bolta z 2009 (9.58s na 100m). Robot sprinting faster than human. Big event z wielu robotów.",
+              "desc_en": "China: 2026 World Humanoid Robot Games. Robot beats Usain Bolt's 2009 record (9.58s for 100m). Robot sprinting faster than human. Big event with many robots.",
+              "tags": [
+                "robotics",
+                "record"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c13",
+              "title": "Robotics & VLA — trend continues",
+              "desc_pl": "Robotics & VLA (Vision Language Action) trend continues. World Action Models. NVIDIA Cosmos 3. Robot foundation models uczą się z video.",
+              "desc_en": "Robotics & VLA (Vision Language Action) trend continues. World Action Models. NVIDIA Cosmos 3. Robot foundation models learn from video.",
+              "tags": [
+                "robotics",
+                "VLA"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c14",
+              "title": "Anthropic silicon team — custom Claude chips",
+              "desc_pl": "Anthropic tworzy silicon team dla custom Claude chips. Vertical integration — model + hardware. Trend: AI labs robią własne chipi (jak Google TPU, Elon Terrafab).",
+              "desc_en": "Anthropic creating silicon team for custom Claude chips. Vertical integration — model + hardware. Trend: AI labs making own chips (like Google TPU, Elon Terrafab).",
+              "tags": [
+                "hardware",
+                "chips"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c15",
+              "title": "Xiaomi Aluminum AI Cube",
+              "desc_pl": "Xiaomi Aluminum AI Cube — nowy AI hardware product. Xiaomi wchodzi w AI devices.",
+              "desc_en": "Xiaomi Aluminum AI Cube — new AI hardware product. Xiaomi enters AI devices. This is a significant development in the AI ecosystem with implications for future research and deployment.",
+              "tags": [
+                "hardware"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "title_pl": "Tools & Techniques",
+          "title_en": "Tools & Techniques",
+          "id": "tools-0828",
+          "num": 6,
+          "icon": "🛠️",
+          "headers": [],
+          "rows": [],
+          "notes_pl": "",
+          "notes_en": "",
+          "cards": [
+            {
+              "id": "c16",
+              "title": "Perplexity + NVIDIA — local AI agent",
+              "desc_pl": "Perplexity + NVIDIA partnership: local AI agent. AI agent działający lokalnie na GPU. Privacy + speed. Trend: on-device AI.",
+              "desc_en": "Perplexity + NVIDIA partnership: local AI agent. AI agent running locally on GPU. Privacy + speed. Trend: on-device AI.",
+              "tags": [
+                "tool",
+                "local"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c17",
+              "title": "OpenAI Apple Messages for ChatGPT",
+              "desc_pl": "OpenAI: Apple Messages integration dla ChatGPT. ChatGPT dostępny w iMessage. Apple + OpenAI partnership deepens.",
+              "desc_en": "OpenAI: Apple Messages integration for ChatGPT. ChatGPT available in iMessage. Apple + OpenAI partnership deepens.",
+              "tags": [
+                "integration"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c18",
+              "title": "Habit-Hooks — avoid agent slop",
+              "desc_pl": "Habit-Hooks: narzędzie do avoid agent slop. Quality control dla AI agents. Zapobiega niskiej jakości output.",
+              "desc_en": "Habit-Hooks: tool to avoid agent slop. Quality control for AI agents. Prevents low quality output.",
+              "tags": [
+                "tool",
+                "quality"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c19",
+              "title": "FreeToken — open local inference engine",
+              "desc_pl": "FreeToken: open local inference engine. Darmowy, lokalny. Alternatywa dla płatnych API. Trend: lokalna inference.",
+              "desc_en": "FreeToken: open local inference engine. Free, local. Alternative to paid APIs. Trend: local inference.",
+              "tags": [
+                "tool",
+                "local"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c20",
+              "title": "Mixedbread Toast 1 — AI search",
+              "desc_pl": "Mixedbread's Toast 1: AI search engine. Nowa alternatywa dla Perplexity/Google. AI-powered search.",
+              "desc_en": "Mixedbread's Toast 1: AI search engine. New alternative to Perplexity/Google. AI-powered search.",
+              "tags": [
+                "search"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c21",
+              "title": "OpenBot — self-hosted AI coworkers",
+              "desc_pl": "OpenBot: self-hosted AI coworkers. Lokalni AI agenci jako 'współpracownicy'. Open-source.",
+              "desc_en": "OpenBot: self-hosted AI coworkers. Local AI agents as 'coworkers'. Open-source. This is a significant development in the AI ecosystem with implications for future research and deployment.",
+              "tags": [
+                "tool",
+                "agent"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c22",
+              "title": "Unsloth — efficient LLM training + 4x more context",
+              "desc_pl": "Unsloth: efficient LLM training. 4x more context from same GPU. TurboFieldfare: SSD-streamed LLM. SST (Solid State Transformers). Trend: efficiency > raw power.",
+              "desc_en": "Unsloth: efficient LLM training. 4x more context from same GPU. TurboFieldfare: SSD-streamed LLM. SST (Solid State Transformers). Trend: efficiency > raw power.",
+              "tags": [
+                "training",
+                "efficiency"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c23",
+              "title": "Qwen3.8-27B on 24GB RTX 3090 — local deployment",
+              "desc_pl": "Qwen3.8-27B running na 24GB RTX 3090. Local deployment viable. MTP (multi-token prediction). Apache license.",
+              "desc_en": "Qwen3.8-27B running on 24GB RTX 3090. Local deployment viable. MTP (multi-token prediction). Apache license.",
+              "tags": [
+                "local",
+                "deployment"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "title_pl": "News + Research",
+          "title_en": "News + Research",
+          "id": "news-0828",
+          "num": 7,
+          "icon": "📰",
+          "headers": [],
+          "rows": [],
+          "notes_pl": "",
+          "notes_en": "",
+          "cards": [
+            {
+              "id": "c24",
+              "title": "Google Gemini Enterprise for Legal",
+              "desc_pl": "Google Gemini Enterprise for Legal: suite of AI skills and agents for legal teams. Google wchodzi w vertical-specific AI. Konkurencja dla Harvey AI.",
+              "desc_en": "Google Gemini Enterprise for Legal: suite of AI skills and agents for legal teams. Google enters vertical-specific AI. Competition for Harvey AI.",
+              "tags": [
+                "legal",
+                "enterprise"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c25",
+              "title": "Ornith 1.5 by DeepReinforce — self-teaching AI",
+              "desc_pl": "Ornith 1.5 by DeepReinforce: self-teaching AI. System sam tworzy training tasks. 9B dense + 35B MoE. Self-improvement loop.",
+              "desc_en": "Ornith 1.5 by DeepReinforce: self-teaching AI. System creates training tasks itself. 9B dense + 35B MoE. Self-improvement loop.",
+              "tags": [
+                "LLM",
+                "self-improvement"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c26",
+              "title": "AI Evals: Human Taste at Scale",
+              "desc_pl": "AI Evals: human taste at scale. Nowy framework dla evaluating AI output quality. Trend: human-in-the-loop evaluation.",
+              "desc_en": "AI Evals: human taste at scale. New framework for evaluating AI output quality. Trend: human-in-the-loop evaluation.",
+              "tags": [
+                "evaluation"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c27",
+              "title": "Meta's plan to replace humans with AI imploded",
+              "desc_pl": "Meta's plan to replace humans with AI imploded. Over-ambitious automation backfired. Lesson: AI augments, nie fully replaces humans.",
+              "desc_en": "Meta's plan to replace humans with AI imploded. Over-ambitious automation backfired. Lesson: AI augments, not fully replaces humans.",
+              "tags": [
+                "news",
+                "lesson"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            },
+            {
+              "id": "c28",
+              "title": "Podman vs Docker — Lev's take",
+              "desc_pl": "Podman vs Docker: Lev's take. Podman = daemonless, Docker = standard. Trend: Podman gaining traction w AI deployments.",
+              "desc_en": "Podman vs Docker: Lev's take. Podman = daemonless, Docker = standard. Trend: Podman gaining traction in AI deployments.",
+              "tags": [
+                "tool",
+                "comparison"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "title_pl": "Jobs & Layoffs",
+          "title_en": "Jobs & Layoffs",
+          "id": "jobs-0828",
+          "num": 8,
+          "icon": "💼",
+          "headers": [],
+          "rows": [],
+          "notes_pl": "",
+          "notes_en": "",
+          "cards": [
+            {
+              "id": "c29",
+              "title": "Jobs & Layoffs August 2026",
+              "desc_pl": "Layoffs w August 2026. Trend: senior roles increase, junior outsourced to AI. AI-first mindset shifts work from execution to review.",
+              "desc_en": "Layoffs in August 2026. Trend: senior roles increase, junior outsourced to AI. AI-first mindset shifts work from execution to review.",
+              "tags": [
+                "jobs"
+              ],
+              "date": "2026-08-28",
+              "links": []
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "ep-2026-08-21",
       "date": "2026-08-21",
       "title_pl": "Exciting AI Updates Weekly — 21 sierpnia 2026",

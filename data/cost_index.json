@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-21",
-  "source": "Lev Selector 21.08.2026",
+  "date": "2026-08-28",
+  "source": "Lev Selector 28.08.2026",
   "description_pl": "Cost Per Intelligence Index — całkowity koszt wykonania zestandaryzowanych zadań. Uwzględnia cenę tokenów ORAZ liczbę tokenów użytych.",
   "description_en": "Cost Per Intelligence Index — total cost of executing standardized tasks. Accounts for token price AND number of tokens used.",
   "currency": "USD per million tokens (approximate)",
@@ -15,7 +15,7 @@
       "name": "Muse Glimmer",
       "cost": 0.08,
       "vendor": "Meta",
-      "category": "cheap open-source"
+      "category": "open-source"
     },
     {
       "name": "Gemini 3.5 Flash",
@@ -28,12 +28,6 @@
       "cost": 0.1,
       "vendor": "Alibaba",
       "category": "open-source"
-    },
-    {
-      "name": "Nemotron Lightning",
-      "cost": 0.12,
-      "vendor": "NVIDIA",
-      "category": "cheap"
     },
     {
       "name": "MiniMax M3",
@@ -63,7 +57,7 @@
       "name": "DeepSeek V4 Pro",
       "cost": 0.25,
       "vendor": "DeepSeek",
-      "category": "raised from 5¢"
+      "category": "raised"
     },
     {
       "name": "Muse Spark",

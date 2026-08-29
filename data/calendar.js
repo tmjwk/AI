@@ -2,9 +2,299 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-29 19:09:09 UTC
+// Generated: 2026-08-29 19:20:24 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Open models overtaking closed — Vercel stats June 2026",
+    "title_en": "Open models overtaking closed — Vercel stats June 2026",
+    "link": "ai-radar.html#card-c1",
+    "meta_pl": "Cost Per Intelligence + Open M",
+    "meta_en": "Cost Per Intelligence + Open M",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Reviewing and validating = new bottleneck",
+    "title_en": "Reviewing and validating = new bottleneck",
+    "link": "ai-radar.html#card-c2",
+    "meta_pl": "Cost Per Intelligence + Open M",
+    "meta_en": "Cost Per Intelligence + Open M",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "NVIDIA AVO — Claude Opus 5 → 100% ARC AGI 3 (30%→100%)",
+    "title_en": "NVIDIA AVO — Claude Opus 5 → 100% ARC AGI 3 (30%→100%)",
+    "link": "ai-radar.html#card-c3",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "DeepSeek Flash gets Vision — V4 Flash z obrazami",
+    "title_en": "DeepSeek Flash gets Vision — V4 Flash z obrazami",
+    "link": "ai-radar.html#card-c4",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Qwen 3.8 Flash Next — 125B core, 51B embedding, 6B active",
+    "title_en": "Qwen 3.8 Flash Next — 125B core, 51B embedding, 6B active",
+    "link": "ai-radar.html#card-c5",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Kimi Linear — cheaper long context, delta attention",
+    "title_en": "Kimi Linear — cheaper long context, delta attention",
+    "link": "ai-radar.html#card-c6",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Ox Alpha na OpenRouter — nobody knows what it is",
+    "title_en": "Ox Alpha na OpenRouter — nobody knows what it is",
+    "link": "ai-radar.html#card-c7",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Alibaba Wan 3.0 — document-to-video AI",
+    "title_en": "Alibaba Wan 3.0 — document-to-video AI",
+    "link": "ai-radar.html#card-c8",
+    "meta_pl": "Nowe modele i narzędzia",
+    "meta_en": "Nowe modele i narzędzia",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "OpenAI open-sourced Codex harness",
+    "title_en": "OpenAI open-sourced Codex harness",
+    "link": "ai-radar.html#card-c9",
+    "meta_pl": "Harness revolution — 52 open h",
+    "meta_en": "Harness revolution — 52 open h",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "52 open harnesses compiled — Lev's list",
+    "title_en": "52 open harnesses compiled — Lev's list",
+    "link": "ai-radar.html#card-c10",
+    "meta_pl": "Harness revolution — 52 open h",
+    "meta_en": "Harness revolution — 52 open h",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Time to 100K GitHub stars — Claude Code fastest",
+    "title_en": "Time to 100K GitHub stars — Claude Code fastest",
+    "link": "ai-radar.html#card-c11",
+    "meta_pl": "Harness revolution — 52 open h",
+    "meta_en": "Harness revolution — 52 open h",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "2026 World Humanoid Robot Games — robot beats Usain Bolt",
+    "title_en": "2026 World Humanoid Robot Games — robot beats Usain Bolt",
+    "link": "ai-radar.html#card-c12",
+    "meta_pl": "Robotics + Hardware",
+    "meta_en": "Robotics + Hardware",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Robotics & VLA — trend continues",
+    "title_en": "Robotics & VLA — trend continues",
+    "link": "ai-radar.html#card-c13",
+    "meta_pl": "Robotics + Hardware",
+    "meta_en": "Robotics + Hardware",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Anthropic silicon team — custom Claude chips",
+    "title_en": "Anthropic silicon team — custom Claude chips",
+    "link": "ai-radar.html#card-c14",
+    "meta_pl": "Robotics + Hardware",
+    "meta_en": "Robotics + Hardware",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Xiaomi Aluminum AI Cube",
+    "title_en": "Xiaomi Aluminum AI Cube",
+    "link": "ai-radar.html#card-c15",
+    "meta_pl": "Robotics + Hardware",
+    "meta_en": "Robotics + Hardware",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Perplexity + NVIDIA — local AI agent",
+    "title_en": "Perplexity + NVIDIA — local AI agent",
+    "link": "ai-radar.html#card-c16",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "OpenAI Apple Messages for ChatGPT",
+    "title_en": "OpenAI Apple Messages for ChatGPT",
+    "link": "ai-radar.html#card-c17",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Habit-Hooks — avoid agent slop",
+    "title_en": "Habit-Hooks — avoid agent slop",
+    "link": "ai-radar.html#card-c18",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "FreeToken — open local inference engine",
+    "title_en": "FreeToken — open local inference engine",
+    "link": "ai-radar.html#card-c19",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Mixedbread Toast 1 — AI search",
+    "title_en": "Mixedbread Toast 1 — AI search",
+    "link": "ai-radar.html#card-c20",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "OpenBot — self-hosted AI coworkers",
+    "title_en": "OpenBot — self-hosted AI coworkers",
+    "link": "ai-radar.html#card-c21",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Unsloth — efficient LLM training + 4x more context",
+    "title_en": "Unsloth — efficient LLM training + 4x more context",
+    "link": "ai-radar.html#card-c22",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Qwen3.8-27B on 24GB RTX 3090 — local deployment",
+    "title_en": "Qwen3.8-27B on 24GB RTX 3090 — local deployment",
+    "link": "ai-radar.html#card-c23",
+    "meta_pl": "Tools & Techniques",
+    "meta_en": "Tools & Techniques",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Google Gemini Enterprise for Legal",
+    "title_en": "Google Gemini Enterprise for Legal",
+    "link": "ai-radar.html#card-c24",
+    "meta_pl": "News + Research",
+    "meta_en": "News + Research",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Ornith 1.5 by DeepReinforce — self-teaching AI",
+    "title_en": "Ornith 1.5 by DeepReinforce — self-teaching AI",
+    "link": "ai-radar.html#card-c25",
+    "meta_pl": "News + Research",
+    "meta_en": "News + Research",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "AI Evals: Human Taste at Scale",
+    "title_en": "AI Evals: Human Taste at Scale",
+    "link": "ai-radar.html#card-c26",
+    "meta_pl": "News + Research",
+    "meta_en": "News + Research",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Meta's plan to replace humans with AI imploded",
+    "title_en": "Meta's plan to replace humans with AI imploded",
+    "link": "ai-radar.html#card-c27",
+    "meta_pl": "News + Research",
+    "meta_en": "News + Research",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Podman vs Docker — Lev's take",
+    "title_en": "Podman vs Docker — Lev's take",
+    "link": "ai-radar.html#card-c28",
+    "meta_pl": "News + Research",
+    "meta_en": "News + Research",
+    "num": "ep-2026-08-28"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "lev",
+    "title_pl": "Jobs & Layoffs August 2026",
+    "title_en": "Jobs & Layoffs August 2026",
+    "link": "ai-radar.html#card-c29",
+    "meta_pl": "Jobs & Layoffs",
+    "meta_en": "Jobs & Layoffs",
+    "num": "ep-2026-08-28"
+  },
   {
     "date": "2026-08-27",
     "type": "diamandis",
