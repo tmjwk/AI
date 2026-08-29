@@ -1,6 +1,325 @@
 // AI Pulse episodes — auto-generated from episodes.json
 const EPISODES = [
   {
+    "num": "#284",
+    "collapsed": true,
+    "channel": "Moonshots",
+    "title": "NVIDIA's $96.2B Quarter, China's 200,000 Fake Accounts, & OpenAI's New Chip | EP #284",
+    "title_pl": "NVIDIA $96.2B kwartał, 200,000 fałszywych kont Chin, nowy chip OpenAI | #284",
+    "title_en": "NVIDIA's $96.2B Quarter, China's 200,000 Fake Accounts, & OpenAI's New Chip | EP #284",
+    "date": "2026-08-29",
+    "duration": "150 min",
+    "yt": "tfBEWh9ibfU",
+    "hosts_count_pl": "4 uczestników",
+    "hosts_count_en": "4 participants",
+    "topics_count_pl": "14 tematów",
+    "topics_count_en": "14 topics",
+    "hosts": [
+      {
+        "name": "Peter Diamandis",
+        "role_pl": "Gospodarz",
+        "role_en": "Main host"
+      },
+      {
+        "name": "Dr. Alexander Wissner-Gross",
+        "role_pl": "In-house ASI",
+        "role_en": "In-house ASI"
+      },
+      {
+        "name": "Dave Blundin",
+        "role_pl": "Inwestor VC",
+        "role_en": "VC investor"
+      },
+      {
+        "name": "Salim Ismail",
+        "role_pl": "Organizacje wykładnicze",
+        "role_en": "Exponential organizations"
+      }
+    ],
+    "topics": [
+      {
+        "num": "01",
+        "title": "NVIDIA's $96.2B Quarter and the Circular AI Economy",
+        "title_pl": "Kwartał NVIDIA $96.2B i cyrkularna ekonomia AI",
+        "title_en": "NVIDIA's $96.2B Quarter and the Circular AI Economy",
+        "time": "00:00 – 24:25",
+        "fakty_pl": "NVIDIA $96.2B quarter revenue — rekord. AI circular economy: GPUs reused, repurposed, resold. NVIDIA dominant w AI hardware. Hyperscalers lock in GPU supply through 2027. Circular economy = secondary market dla GPUs.",
+        "fakty_en": "NVIDIA $96.2B quarter revenue — record. AI circular economy: GPUs reused, repurposed, resold. NVIDIA dominant in AI hardware. Hyperscalers lock in GPU supply through 2027. Circular economy = secondary market for GPUs.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "NVIDIA $96.2B rekord. AI circular economy emerging.",
+        "wniosek_en": "NVIDIA $96.2B record. AI circular economy emerging.",
+        "kontekst_pl": "NVIDIA = GPU monopoly dla AI training.",
+        "kontekst_en": "NVIDIA = GPU monopoly for AI training."
+      },
+      {
+        "num": "02",
+        "title": "China's AI Video Boom and the World Model Race",
+        "title_pl": "Boom AI video w Chinach i wyścig world models",
+        "title_en": "China's AI Video Boom and the World Model Race",
+        "time": "24:25 – 34:51",
+        "fakty_pl": "Chiny: AI video boom. World model race intensifies. Chińskie modele video (Wan, Bernini) konkurencyjne. World models = następna granica AI.",
+        "fakty_en": "China: AI video boom. World model race intensifies. Chinese video models (Wan, Bernini) competitive. World models = next AI frontier.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Chiny AI video boom. World model race.",
+        "wniosek_en": "China AI video boom. World model race.",
+        "kontekst_pl": "World models = AI które rozumie fizykę i dynamikę świata.",
+        "kontekst_en": "World models = AI that understands physics and world dynamics."
+      },
+      {
+        "num": "03",
+        "title": "China Cracks Down on AI Companions",
+        "title_pl": "Chiny zakazują AI companions",
+        "title_en": "China Cracks Down on AI Companions",
+        "time": "34:51 – 45:00",
+        "fakty_pl": "Chiny: crackdown na AI companions. Regulacja AI relacji emocjonalnych. Ochrona użytkowników przed uzależnieniem. AI companions = bots symulujące relacje.",
+        "fakty_en": "China: crackdown on AI companions. Regulating AI emotional relationships. Protecting users from addiction. AI companions = bots simulating relationships.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Chiny regulują AI companions. Ochrona przed uzależnieniem.",
+        "wniosek_en": "China regulates AI companions. Protection from addiction.",
+        "kontekst_pl": "AI companions = chatbots symulujące emocjonalne relacje.",
+        "kontekst_en": "AI companions = chatbots simulating emotional relationships."
+      },
+      {
+        "num": "04",
+        "title": "Flock Safety and 20 Billion License Plate Scans",
+        "title_pl": "Flock Safety i 20 miliardów skanów tablic rejestracyjnych",
+        "title_en": "Flock Safety and 20 Billion License Plate Scans",
+        "time": "45:00 – 1:07:37",
+        "fakty_pl": "Flock Safety: 20 billion license plate scans. Surveillance infrastructure. Privacy concerns. AI-powered surveillance network. Law enforcement usage.",
+        "fakty_en": "Flock Safety: 20 billion license plate scans. Surveillance infrastructure. Privacy concerns. AI-powered surveillance network. Law enforcement usage.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Flock Safety 20B scans. AI surveillance scale.",
+        "wniosek_en": "Flock Safety 20B scans. AI surveillance at scale.",
+        "kontekst_pl": "Flock Safety = AI-powered license plate recognition.",
+        "kontekst_en": "Flock Safety = AI-powered license plate recognition."
+      },
+      {
+        "num": "05",
+        "title": "Only 4% of Companies Expect AI Job Cuts",
+        "title_pl": "Tylko 4% firm spodziewa się zwolnień z powodu AI",
+        "title_en": "Only 4% of Companies Expect AI Job Cuts",
+        "time": "1:07:37 – 1:20:57",
+        "fakty_pl": "Tylko 4% firm expect AI job cuts. AI augments rather than replaces. Senior roles increase, junior outsourced. AI-first mindset: execution → review, creativity.",
+        "fakty_en": "Only 4% of companies expect AI job cuts. AI augments rather than replaces. Senior roles increase, junior outsourced. AI-first mindset: execution → review, creativity.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "4% firm = AI job cuts. AI augments > replaces.",
+        "wniosek_en": "4% companies = AI job cuts. AI augments > replaces.",
+        "kontekst_pl": "Contrast z fear-mongering o AI replacing all jobs.",
+        "kontekst_en": "Contrast with fear-mongering about AI replacing all jobs."
+      },
+      {
+        "num": "06",
+        "title": "China's 200,000 Fake Accounts and the Data Center Fight",
+        "title_pl": "200,000 fałszywych kont Chin i walka o data centers",
+        "title_en": "China's 200,000 Fake Accounts and the Data Center Fight",
+        "time": "1:20:57 – 1:26:57",
+        "fakty_pl": "Chiny: 200,000 fake accounts do distillation from US models. Data center fight: 71% Americans oppose. Energy demand 200% vs 20% production. Memory bottleneck.",
+        "fakty_en": "China: 200,000 fake accounts for distillation from US models. Data center fight: 71% Americans oppose. Energy demand 200% vs 20% production. Memory bottleneck.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "200K fake accounts. Data center backlash + memory bottleneck.",
+        "wniosek_en": "200K fake accounts. Data center backlash + memory bottleneck.",
+        "kontekst_pl": "Anthropic skarżył na 20K accounts — realnie 200K.",
+        "kontekst_en": "Anthropic complained about 20K accounts — actually 200K."
+      },
+      {
+        "num": "07",
+        "title": "OpenAI's New Chip and Apple's Local AI Push",
+        "title_pl": "Nowy chip OpenAI i Apple local AI",
+        "title_en": "OpenAI's New Chip and Apple's Local AI Push",
+        "time": "1:26:57 – 1:40:49",
+        "fakty_pl": "OpenAI developing own AI chip. Apple pushing local AI (on-device). Vertical integration trend: AI labs robią własne chipi. Anthropic silicon team, Elon Terrafab, Google TPU.",
+        "fakty_en": "OpenAI developing own AI chip. Apple pushing local AI (on-device). Vertical integration trend: AI labs making own chips. Anthropic silicon team, Elon Terrafab, Google TPU.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "OpenAI chip + Apple local AI. Vertical integration trend.",
+        "wniosek_en": "OpenAI chip + Apple local AI. Vertical integration trend.",
+        "kontekst_pl": "Custom AI chips = competitive moat.",
+        "kontekst_en": "Custom AI chips = competitive moat."
+      },
+      {
+        "num": "08",
+        "title": "Nuclear, Solar, and the AI Energy Race",
+        "title_pl": "Nuklearna, solarna i wyścig energii AI",
+        "title_en": "Nuclear, Solar, and the AI Energy Race",
+        "time": "1:40:49 – 1:49:52",
+        "fakty_pl": "AI energy race: nuclear + solar. Nuclear dla baseline power, solar dla peak. AI demand 200% growth. Chiny budują 10x więcej energii niż USA. Three Mile Island restart dla Microsoft AI.",
+        "fakty_en": "AI energy race: nuclear + solar. Nuclear for baseline power, solar for peak. AI demand 200% growth. China builds 10x more energy than US. Three Mile Island restart for Microsoft AI.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Nuclear + solar = AI energy. Chiny 10x USA.",
+        "wniosek_en": "Nuclear + solar = AI energy. China 10x US.",
+        "kontekst_pl": "Three Mile Island restart = Microsoft AI data center.",
+        "kontekst_en": "Three Mile Island restart = Microsoft AI data center."
+      },
+      {
+        "num": "09",
+        "title": "Rainmaker Drones and the Future of Water",
+        "title_pl": "Drony Rainmaker i przyszłość wody",
+        "title_en": "Rainmaker Drones and the Future of Water",
+        "time": "1:49:52 – 1:56:23",
+        "fakty_pl": "Rainmaker drones: cloud seeding dla water generation. AI w weather modification. Water scarcity = global challenge. Drones automate cloud seeding.",
+        "fakty_en": "Rainmaker drones: cloud seeding for water generation. AI in weather modification. Water scarcity = global challenge. Drones automate cloud seeding.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Rainmaker drones = AI weather modification dla water.",
+        "wniosek_en": "Rainmaker drones = AI weather modification for water.",
+        "kontekst_pl": "Cloud seeding = technika zwiększania opadów.",
+        "kontekst_en": "Cloud seeding = technique to increase precipitation."
+      },
+      {
+        "num": "10",
+        "title": "Pancreatic Cancer Survival Nearly Doubles",
+        "title_pl": "Przetrwanie raka trzustki prawie się podwoiło",
+        "title_en": "Pancreatic Cancer Survival Nearly Doubles",
+        "time": "1:56:23 – 2:00:16",
+        "fakty_pl": "Pancreatic cancer survival nearly doubles — major breakthrough. AI w cancer research. Early detection + personalized treatment. Moderna mRNA pipeline + Ado cell simulator.",
+        "fakty_en": "Pancreatic cancer survival nearly doubles — major breakthrough. AI in cancer research. Early detection + personalized treatment. Moderna mRNA pipeline + Ado cell simulator.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Pancreatic cancer survival doubled. AI + medicine breakthrough.",
+        "wniosek_en": "Pancreatic cancer survival doubled. AI + medicine breakthrough.",
+        "kontekst_pl": "Kontynuacja z #282 — Moderna mRNA cancer vaccine.",
+        "kontekst_en": "Continuation from #282 — Moderna mRNA cancer vaccine."
+      },
+      {
+        "num": "11",
+        "title": "Regrowing Tooth Enamel",
+        "title_pl": "Odtwarzanie szkliwa zębowego",
+        "title_en": "Regrowing Tooth Enamel",
+        "time": "2:00:16 – 2:05:24",
+        "fakty_pl": "Regrowing tooth enamel — scientific breakthrough. AI w materials science. Tooth enamel regeneration = clinical reality. Healthspan extension.",
+        "fakty_en": "Regrowing tooth enamel — scientific breakthrough. AI in materials science. Tooth enamel regeneration = clinical reality. Healthspan extension.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Tooth enamel regeneration. AI + materials science.",
+        "wniosek_en": "Tooth enamel regeneration. AI + materials science.",
+        "kontekst_pl": "Enamel = najtwardsza substancja w ludzkim ciele.",
+        "kontekst_en": "Enamel = hardest substance in human body."
+      },
+      {
+        "num": "12",
+        "title": "The Trillion-Dollar Lunar Economy",
+        "title_pl": "Bilionowa gospodarka księżycowa",
+        "title_en": "The Trillion-Dollar Lunar Economy",
+        "time": "2:05:24 – 2:12:44",
+        "fakty_pl": "Trillion-dollar lunar economy. Moon mining, Helium-3, rare earth elements. SpaceX Starship enables cheaper lunar access. Space economy $1T+.",
+        "fakty_en": "Trillion-dollar lunar economy. Moon mining, Helium-3, rare earth elements. SpaceX Starship enables cheaper lunar access. Space economy $1T+.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Lunar economy $1T. Moon mining + Starship.",
+        "wniosek_en": "Lunar economy $1T. Moon mining + Starship.",
+        "kontekst_pl": "Helium-3 = potencjalne paliwo fusion.",
+        "kontekst_en": "Helium-3 = potential fusion fuel."
+      },
+      {
+        "num": "13",
+        "title": "Tesla Robotaxis and the Future of Transportation",
+        "title_pl": "Tesla Robotaxis i przyszłość transportu",
+        "title_en": "Tesla Robotaxis and the Future of Transportation",
+        "time": "2:12:44 – 2:20:03",
+        "fakty_pl": "Tesla robotaxis — future of transportation. Waymo 83% cost reduction. Autonomous driving approaching cost parity z human drivers. Robotaxi economics improving.",
+        "fakty_en": "Tesla robotaxis — future of transportation. Waymo 83% cost reduction. Autonomous driving approaching cost parity with human drivers. Robotaxi economics improving.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Tesla robotaxis + Waymo. Transport transformation.",
+        "wniosek_en": "Tesla robotaxis + Waymo. Transport transformation.",
+        "kontekst_pl": "Waymo O-high vehicle = 83% cost reduction (z #283).",
+        "kontekst_en": "Waymo O-high vehicle = 83% cost reduction (from #283)."
+      },
+      {
+        "num": "14",
+        "title": "AI Companions Get a Physical Form",
+        "title_pl": "AI companions dostają formę fizyczną",
+        "title_en": "AI Companions Get a Physical Form",
+        "time": "2:20:03 – 2:30:00",
+        "fakty_pl": "AI companions get physical form — humanoid robots as companions. UBTech AHeadForm lifelike robots. AI + robotics = emotional + physical presence. Ethical implications.",
+        "fakty_en": "AI companions get physical form — humanoid robots as companions. UBTech AHeadForm lifelike robots. AI + robotics = emotional + physical presence. Ethical implications.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "AI companions physical form. Humanoid + emotional AI.",
+        "wniosek_en": "AI companions physical form. Humanoid + emotional AI.",
+        "kontekst_pl": "Kontynuacja z AI Search ##34-1 — UBTech lifelike humanoid.",
+        "kontekst_en": "Continuation from AI Search ##34-1 — UBTech lifelike humanoid."
+      }
+    ]
+  },
+  {
     "num": "#283",
     "collapsed": true,
     "channel": "Moonshots",

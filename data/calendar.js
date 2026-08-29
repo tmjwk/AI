@@ -2,9 +2,19 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-29 19:20:24 UTC
+// Generated: 2026-08-29 19:25:43 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-29",
+    "type": "diamandis",
+    "title_pl": "Podcast #284 — NVIDIA $96.2B kwartał, 200,000 fałszywych kont Chin, nowy chip OpenAI | #284",
+    "title_en": "Podcast #284 — NVIDIA's $96.2B Quarter, China's 200,000 Fake Accounts, & OpenAI's New Chip | EP #284",
+    "link": "ai-pulse.html#284",
+    "meta_pl": "14 tematów",
+    "meta_en": "14 topics",
+    "num": "#284"
+  },
   {
     "date": "2026-08-28",
     "type": "lev",

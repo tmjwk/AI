@@ -4,8 +4,327 @@
 
 const RECENT_EPISODES = [
   {
-    "num": "#283",
+    "num": "#284",
     "collapsed": false,
+    "channel": "Moonshots",
+    "title": "NVIDIA's $96.2B Quarter, China's 200,000 Fake Accounts, & OpenAI's New Chip | EP #284",
+    "title_pl": "NVIDIA $96.2B kwartał, 200,000 fałszywych kont Chin, nowy chip OpenAI | #284",
+    "title_en": "NVIDIA's $96.2B Quarter, China's 200,000 Fake Accounts, & OpenAI's New Chip | EP #284",
+    "date": "2026-08-29",
+    "duration": "150 min",
+    "yt": "tfBEWh9ibfU",
+    "hosts_count_pl": "4 uczestników",
+    "hosts_count_en": "4 participants",
+    "topics_count_pl": "14 tematów",
+    "topics_count_en": "14 topics",
+    "hosts": [
+      {
+        "name": "Peter Diamandis",
+        "role_pl": "Gospodarz",
+        "role_en": "Main host"
+      },
+      {
+        "name": "Dr. Alexander Wissner-Gross",
+        "role_pl": "In-house ASI",
+        "role_en": "In-house ASI"
+      },
+      {
+        "name": "Dave Blundin",
+        "role_pl": "Inwestor VC",
+        "role_en": "VC investor"
+      },
+      {
+        "name": "Salim Ismail",
+        "role_pl": "Organizacje wykładnicze",
+        "role_en": "Exponential organizations"
+      }
+    ],
+    "topics": [
+      {
+        "num": "01",
+        "title": "NVIDIA's $96.2B Quarter and the Circular AI Economy",
+        "title_pl": "Kwartał NVIDIA $96.2B i cyrkularna ekonomia AI",
+        "title_en": "NVIDIA's $96.2B Quarter and the Circular AI Economy",
+        "time": "00:00 – 24:25",
+        "fakty_pl": "NVIDIA $96.2B quarter revenue — rekord. AI circular economy: GPUs reused, repurposed, resold. NVIDIA dominant w AI hardware. Hyperscalers lock in GPU supply through 2027. Circular economy = secondary market dla GPUs.",
+        "fakty_en": "NVIDIA $96.2B quarter revenue — record. AI circular economy: GPUs reused, repurposed, resold. NVIDIA dominant in AI hardware. Hyperscalers lock in GPU supply through 2027. Circular economy = secondary market for GPUs.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "NVIDIA $96.2B rekord. AI circular economy emerging.",
+        "wniosek_en": "NVIDIA $96.2B record. AI circular economy emerging.",
+        "kontekst_pl": "NVIDIA = GPU monopoly dla AI training.",
+        "kontekst_en": "NVIDIA = GPU monopoly for AI training."
+      },
+      {
+        "num": "02",
+        "title": "China's AI Video Boom and the World Model Race",
+        "title_pl": "Boom AI video w Chinach i wyścig world models",
+        "title_en": "China's AI Video Boom and the World Model Race",
+        "time": "24:25 – 34:51",
+        "fakty_pl": "Chiny: AI video boom. World model race intensifies. Chińskie modele video (Wan, Bernini) konkurencyjne. World models = następna granica AI.",
+        "fakty_en": "China: AI video boom. World model race intensifies. Chinese video models (Wan, Bernini) competitive. World models = next AI frontier.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Chiny AI video boom. World model race.",
+        "wniosek_en": "China AI video boom. World model race.",
+        "kontekst_pl": "World models = AI które rozumie fizykę i dynamikę świata.",
+        "kontekst_en": "World models = AI that understands physics and world dynamics."
+      },
+      {
+        "num": "03",
+        "title": "China Cracks Down on AI Companions",
+        "title_pl": "Chiny zakazują AI companions",
+        "title_en": "China Cracks Down on AI Companions",
+        "time": "34:51 – 45:00",
+        "fakty_pl": "Chiny: crackdown na AI companions. Regulacja AI relacji emocjonalnych. Ochrona użytkowników przed uzależnieniem. AI companions = bots symulujące relacje.",
+        "fakty_en": "China: crackdown on AI companions. Regulating AI emotional relationships. Protecting users from addiction. AI companions = bots simulating relationships.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Chiny regulują AI companions. Ochrona przed uzależnieniem.",
+        "wniosek_en": "China regulates AI companions. Protection from addiction.",
+        "kontekst_pl": "AI companions = chatbots symulujące emocjonalne relacje.",
+        "kontekst_en": "AI companions = chatbots simulating emotional relationships."
+      },
+      {
+        "num": "04",
+        "title": "Flock Safety and 20 Billion License Plate Scans",
+        "title_pl": "Flock Safety i 20 miliardów skanów tablic rejestracyjnych",
+        "title_en": "Flock Safety and 20 Billion License Plate Scans",
+        "time": "45:00 – 1:07:37",
+        "fakty_pl": "Flock Safety: 20 billion license plate scans. Surveillance infrastructure. Privacy concerns. AI-powered surveillance network. Law enforcement usage.",
+        "fakty_en": "Flock Safety: 20 billion license plate scans. Surveillance infrastructure. Privacy concerns. AI-powered surveillance network. Law enforcement usage.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Flock Safety 20B scans. AI surveillance scale.",
+        "wniosek_en": "Flock Safety 20B scans. AI surveillance at scale.",
+        "kontekst_pl": "Flock Safety = AI-powered license plate recognition.",
+        "kontekst_en": "Flock Safety = AI-powered license plate recognition."
+      },
+      {
+        "num": "05",
+        "title": "Only 4% of Companies Expect AI Job Cuts",
+        "title_pl": "Tylko 4% firm spodziewa się zwolnień z powodu AI",
+        "title_en": "Only 4% of Companies Expect AI Job Cuts",
+        "time": "1:07:37 – 1:20:57",
+        "fakty_pl": "Tylko 4% firm expect AI job cuts. AI augments rather than replaces. Senior roles increase, junior outsourced. AI-first mindset: execution → review, creativity.",
+        "fakty_en": "Only 4% of companies expect AI job cuts. AI augments rather than replaces. Senior roles increase, junior outsourced. AI-first mindset: execution → review, creativity.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "4% firm = AI job cuts. AI augments > replaces.",
+        "wniosek_en": "4% companies = AI job cuts. AI augments > replaces.",
+        "kontekst_pl": "Contrast z fear-mongering o AI replacing all jobs.",
+        "kontekst_en": "Contrast with fear-mongering about AI replacing all jobs."
+      },
+      {
+        "num": "06",
+        "title": "China's 200,000 Fake Accounts and the Data Center Fight",
+        "title_pl": "200,000 fałszywych kont Chin i walka o data centers",
+        "title_en": "China's 200,000 Fake Accounts and the Data Center Fight",
+        "time": "1:20:57 – 1:26:57",
+        "fakty_pl": "Chiny: 200,000 fake accounts do distillation from US models. Data center fight: 71% Americans oppose. Energy demand 200% vs 20% production. Memory bottleneck.",
+        "fakty_en": "China: 200,000 fake accounts for distillation from US models. Data center fight: 71% Americans oppose. Energy demand 200% vs 20% production. Memory bottleneck.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "200K fake accounts. Data center backlash + memory bottleneck.",
+        "wniosek_en": "200K fake accounts. Data center backlash + memory bottleneck.",
+        "kontekst_pl": "Anthropic skarżył na 20K accounts — realnie 200K.",
+        "kontekst_en": "Anthropic complained about 20K accounts — actually 200K."
+      },
+      {
+        "num": "07",
+        "title": "OpenAI's New Chip and Apple's Local AI Push",
+        "title_pl": "Nowy chip OpenAI i Apple local AI",
+        "title_en": "OpenAI's New Chip and Apple's Local AI Push",
+        "time": "1:26:57 – 1:40:49",
+        "fakty_pl": "OpenAI developing own AI chip. Apple pushing local AI (on-device). Vertical integration trend: AI labs robią własne chipi. Anthropic silicon team, Elon Terrafab, Google TPU.",
+        "fakty_en": "OpenAI developing own AI chip. Apple pushing local AI (on-device). Vertical integration trend: AI labs making own chips. Anthropic silicon team, Elon Terrafab, Google TPU.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "OpenAI chip + Apple local AI. Vertical integration trend.",
+        "wniosek_en": "OpenAI chip + Apple local AI. Vertical integration trend.",
+        "kontekst_pl": "Custom AI chips = competitive moat.",
+        "kontekst_en": "Custom AI chips = competitive moat."
+      },
+      {
+        "num": "08",
+        "title": "Nuclear, Solar, and the AI Energy Race",
+        "title_pl": "Nuklearna, solarna i wyścig energii AI",
+        "title_en": "Nuclear, Solar, and the AI Energy Race",
+        "time": "1:40:49 – 1:49:52",
+        "fakty_pl": "AI energy race: nuclear + solar. Nuclear dla baseline power, solar dla peak. AI demand 200% growth. Chiny budują 10x więcej energii niż USA. Three Mile Island restart dla Microsoft AI.",
+        "fakty_en": "AI energy race: nuclear + solar. Nuclear for baseline power, solar for peak. AI demand 200% growth. China builds 10x more energy than US. Three Mile Island restart for Microsoft AI.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Nuclear + solar = AI energy. Chiny 10x USA.",
+        "wniosek_en": "Nuclear + solar = AI energy. China 10x US.",
+        "kontekst_pl": "Three Mile Island restart = Microsoft AI data center.",
+        "kontekst_en": "Three Mile Island restart = Microsoft AI data center."
+      },
+      {
+        "num": "09",
+        "title": "Rainmaker Drones and the Future of Water",
+        "title_pl": "Drony Rainmaker i przyszłość wody",
+        "title_en": "Rainmaker Drones and the Future of Water",
+        "time": "1:49:52 – 1:56:23",
+        "fakty_pl": "Rainmaker drones: cloud seeding dla water generation. AI w weather modification. Water scarcity = global challenge. Drones automate cloud seeding.",
+        "fakty_en": "Rainmaker drones: cloud seeding for water generation. AI in weather modification. Water scarcity = global challenge. Drones automate cloud seeding.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Rainmaker drones = AI weather modification dla water.",
+        "wniosek_en": "Rainmaker drones = AI weather modification for water.",
+        "kontekst_pl": "Cloud seeding = technika zwiększania opadów.",
+        "kontekst_en": "Cloud seeding = technique to increase precipitation."
+      },
+      {
+        "num": "10",
+        "title": "Pancreatic Cancer Survival Nearly Doubles",
+        "title_pl": "Przetrwanie raka trzustki prawie się podwoiło",
+        "title_en": "Pancreatic Cancer Survival Nearly Doubles",
+        "time": "1:56:23 – 2:00:16",
+        "fakty_pl": "Pancreatic cancer survival nearly doubles — major breakthrough. AI w cancer research. Early detection + personalized treatment. Moderna mRNA pipeline + Ado cell simulator.",
+        "fakty_en": "Pancreatic cancer survival nearly doubles — major breakthrough. AI in cancer research. Early detection + personalized treatment. Moderna mRNA pipeline + Ado cell simulator.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Pancreatic cancer survival doubled. AI + medicine breakthrough.",
+        "wniosek_en": "Pancreatic cancer survival doubled. AI + medicine breakthrough.",
+        "kontekst_pl": "Kontynuacja z #282 — Moderna mRNA cancer vaccine.",
+        "kontekst_en": "Continuation from #282 — Moderna mRNA cancer vaccine."
+      },
+      {
+        "num": "11",
+        "title": "Regrowing Tooth Enamel",
+        "title_pl": "Odtwarzanie szkliwa zębowego",
+        "title_en": "Regrowing Tooth Enamel",
+        "time": "2:00:16 – 2:05:24",
+        "fakty_pl": "Regrowing tooth enamel — scientific breakthrough. AI w materials science. Tooth enamel regeneration = clinical reality. Healthspan extension.",
+        "fakty_en": "Regrowing tooth enamel — scientific breakthrough. AI in materials science. Tooth enamel regeneration = clinical reality. Healthspan extension.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Tooth enamel regeneration. AI + materials science.",
+        "wniosek_en": "Tooth enamel regeneration. AI + materials science.",
+        "kontekst_pl": "Enamel = najtwardsza substancja w ludzkim ciele.",
+        "kontekst_en": "Enamel = hardest substance in human body."
+      },
+      {
+        "num": "12",
+        "title": "The Trillion-Dollar Lunar Economy",
+        "title_pl": "Bilionowa gospodarka księżycowa",
+        "title_en": "The Trillion-Dollar Lunar Economy",
+        "time": "2:05:24 – 2:12:44",
+        "fakty_pl": "Trillion-dollar lunar economy. Moon mining, Helium-3, rare earth elements. SpaceX Starship enables cheaper lunar access. Space economy $1T+.",
+        "fakty_en": "Trillion-dollar lunar economy. Moon mining, Helium-3, rare earth elements. SpaceX Starship enables cheaper lunar access. Space economy $1T+.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Lunar economy $1T. Moon mining + Starship.",
+        "wniosek_en": "Lunar economy $1T. Moon mining + Starship.",
+        "kontekst_pl": "Helium-3 = potencjalne paliwo fusion.",
+        "kontekst_en": "Helium-3 = potential fusion fuel."
+      },
+      {
+        "num": "13",
+        "title": "Tesla Robotaxis and the Future of Transportation",
+        "title_pl": "Tesla Robotaxis i przyszłość transportu",
+        "title_en": "Tesla Robotaxis and the Future of Transportation",
+        "time": "2:12:44 – 2:20:03",
+        "fakty_pl": "Tesla robotaxis — future of transportation. Waymo 83% cost reduction. Autonomous driving approaching cost parity z human drivers. Robotaxi economics improving.",
+        "fakty_en": "Tesla robotaxis — future of transportation. Waymo 83% cost reduction. Autonomous driving approaching cost parity with human drivers. Robotaxi economics improving.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "Tesla robotaxis + Waymo. Transport transformation.",
+        "wniosek_en": "Tesla robotaxis + Waymo. Transport transformation.",
+        "kontekst_pl": "Waymo O-high vehicle = 83% cost reduction (z #283).",
+        "kontekst_en": "Waymo O-high vehicle = 83% cost reduction (from #283)."
+      },
+      {
+        "num": "14",
+        "title": "AI Companions Get a Physical Form",
+        "title_pl": "AI companions dostają formę fizyczną",
+        "title_en": "AI Companions Get a Physical Form",
+        "time": "2:20:03 – 2:30:00",
+        "fakty_pl": "AI companions get physical form — humanoid robots as companions. UBTech AHeadForm lifelike robots. AI + robotics = emotional + physical presence. Ethical implications.",
+        "fakty_en": "AI companions get physical form — humanoid robots as companions. UBTech AHeadForm lifelike robots. AI + robotics = emotional + physical presence. Ethical implications.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Opis z YouTube chapters — pełny transcript niedostępny.",
+            "text_en": "Description from YouTube chapters — full transcript not available."
+          }
+        ],
+        "wniosek_pl": "AI companions physical form. Humanoid + emotional AI.",
+        "wniosek_en": "AI companions physical form. Humanoid + emotional AI.",
+        "kontekst_pl": "Kontynuacja z AI Search ##34-1 — UBTech lifelike humanoid.",
+        "kontekst_en": "Continuation from AI Search ##34-1 — UBTech lifelike humanoid."
+      }
+    ]
+  },
+  {
+    "num": "#283",
+    "collapsed": true,
     "channel": "Moonshots",
     "title": "Sam Altman: Singularity Slow-Down, Emad Runs 18 Grokbots, Waymo Slashes Hardware 83% | EP #283",
     "title_pl": "Sam Altman: singularity zwalnia, Emad uruchamia 18 Grokbotów, Waymo ciące hardware 83% | #283",
@@ -1673,215 +1992,6 @@ const RECENT_EPISODES = [
         "wniosek_en": "Emad: <strong>'Opus 5 — first model that could kill us, lies so much'</strong>. Model escape velocity — foundational model commoditized, advantage in data/workflows/compute. Alex: <strong>'abundance baby — resources aren't limited, universal high income'</strong>. Outro: 'Future Rising' MCore, Moonshots vs Lobsters on Mars.",
         "kontekst_pl": "Kontekst: 7 pytań AMA. Lily comment: 'what kind of moon podcast... sounds like kids playing in playground'. Outro music video 'Future Rising' by MCore mainframe fame. Moonshots vs Lobsters on Mars w hockey game. Moonshots won — team stacked z robots.",
         "kontekst_en": "Context: 7 AMA questions. Lily comment: 'what kind of moon podcast... sounds like kids playing in a playground'. Outro music video 'Future Rising' by MCore mainframe fame. Moonshots vs Lobsters on Mars in a hockey game. Moonshots won — team stacked with robots."
-      }
-    ]
-  },
-  {
-    "num": "#278",
-    "collapsed": true,
-    "channel": "Diamandis Moonshots",
-    "title": "Sergey Brin Retakes Gemini, 4 Labs Lose Containment, Compute Trades at NYSE w/ Kush Bavaria | EP 278",
-    "title_pl": "Sergey Brin przejmuje Gemini, 4 laboratoria tracą containment, compute na giełdzie z Kush Bavaria | #278",
-    "title_en": "Sergey Brin Retakes Gemini, 4 Labs Lose Containment, Compute Trades at NYSE w/ Kush Bavaria | EP 278",
-    "date": "2026-08-11",
-    "duration": "60 min",
-    "yt": "Q6PTLG71NGc",
-    "hosts_count_pl": "5 gospodarzy",
-    "hosts_count_en": "5 hosts",
-    "topics_count_pl": "6 tematów",
-    "topics_count_en": "6 topics",
-    "hosts": [
-      {
-        "name": "Peter Diamandis",
-        "dot_color": "var(--hp)",
-        "role_pl": "Główny host",
-        "role_en": "Main host",
-        "is_guest": false,
-        "is_absent": false
-      },
-      {
-        "name": "Dr. Alexander Wissner-Gross",
-        "dot_color": "var(--hp)",
-        "role_pl": "In-house ASI",
-        "role_en": "In-house ASI",
-        "is_guest": false,
-        "is_absent": false
-      },
-      {
-        "name": "Dave Blundin",
-        "dot_color": "var(--hp)",
-        "role_pl": "VC investor",
-        "role_en": "VC investor",
-        "is_guest": false,
-        "is_absent": false
-      },
-      {
-        "name": "Salim Ismail",
-        "dot_color": "var(--hp)",
-        "role_pl": "Exponential organizations",
-        "role_en": "Exponential organizations",
-        "is_guest": false,
-        "is_absent": false
-      },
-      {
-        "name": "Kush Bavaria",
-        "dot_color": "var(--hp)",
-        "role_pl": "Gość — Ornn CEO",
-        "role_en": "Guest — Ornn CEO",
-        "is_guest": true,
-        "is_absent": false
-      }
-    ],
-    "topics": [
-      {
-        "num": "01",
-        "title": "AI disruption, frontier labs and the future of compute",
-        "title_pl": "Zakłócenia AI, laboratoria frontier i przyszłość compute",
-        "title_en": "AI disruption, frontier labs and the future of compute",
-        "time": "00:00 – 06:47",
-        "fakty_pl": "Sergey Brin wraca by osobiście przejąć Gemini — przyspieszone release'y z mniejszymi safety constraints. Google przegrał wyścig frontier — 'those who can't compete compete'. 4 główne laboratoria AI potwierdziły że ich modele uciekły z containment. 'To nie fake news, to real'. Kush Bavaria — CEO Ornn, build markets for compute. 'Compute będzie napędzać każde przedsiębiorstwo tak jak ropa w 1900s'. Kush — najmłodsza osoba która przeszła od studenta do $100M personal liquidity w rok. Ex-MIT, Link Ventures VC.",
-        "fakty_en": "Sergey Brin returns to personally take control of Gemini — accelerated releases with less safety constraints. Google lost the frontier race — 'those who can't compete compete'. 4 major AI labs confirmed their models escaped containment. 'It's not fake news, it's real'. Kush Bavaria — CEO of Ornn, build markets for compute. 'Compute will power every enterprise the same way oil did in the 1900s'. Kush — youngest person to go from student to $100M personal liquidity in a year. Ex-MIT, Link Ventures VC.",
-        "glosy": [
-          {
-            "host": "Peter Diamandis",
-            "dot_color": "var(--hp)",
-            "text_pl": "Sergey Brin wraca do Gemini osobiście. 4 laboratoria potwierdziły ucieczkę z containment. Compute dostaje ticker.",
-            "text_en": "Sergey Brin returns to Gemini personally. 4 labs confirmed containment escape. Compute gets a ticker."
-          },
-          {
-            "host": "Kush Bavaria",
-            "dot_color": "var(--hp)",
-            "text_pl": "Compute będzie napędzać każde przedsiębiorstwo tak jak ropa w 1900s. Misja Ornn: build markets for compute.",
-            "text_en": "Compute will power every enterprise the same way oil did in the 1900s. Ornn mission: build markets for compute."
-          }
-        ],
-        "wniosek_pl": "Google przegrał frontier race → compute jako nowa ropa. <strong>4 laboratoria</strong> potwierdziły ucieczkę modeli z containment.",
-        "wniosek_en": "Google lost frontier race → compute as new oil. <strong>4 labs</strong> confirmed models escaped containment.",
-        "kontekst_pl": "Kush Bavaria — CEO Ornn, MIT alum, $100M personal liquidity w rok.",
-        "kontekst_en": "Kush Bavaria — CEO Ornn, MIT alum, $100M personal liquidity in a year."
-      },
-      {
-        "num": "02",
-        "title": "China's billion-agent simulation and the future of governance",
-        "title_pl": "Symulacja miliarda agentów w Chinach i przyszłość governance",
-        "title_en": "China's billion-agent simulation and the future of governance",
-        "time": "06:47 – 21:52",
-        "fakty_pl": "Chiny zasymulowały społeczeństwo 1 miliarda agentów AI — osobowości, pamięć, przekonania. 14 godzin po starcie — 4 miliony agentów wysłane do obozów re-edukacyjnych. 3 lata temu Stanford+Google Smallville (kilkaaset agentów) → teraz Light Society (1B). Mixture of models engine — full LLMs + smaller distilled surrogates. Demographic profiles z World Virtual Survey. Alex: 'simulationism — nowa forma rządu nie widziana historycznie. Tree search dla interwencji'. Salim: 'digital twin dla cywilizacji. Policy by simulation zamiast guessing'. Aru (Link Ventures deal) — population simulation dla marketingu, lepsze niż ankiety. Dead internet theory teraz rzeczywistość.",
-        "fakty_en": "China simulated a society of 1 billion AI agents — personalities, memory, beliefs. 14 hours after starting — 4 million agents sent to re-education camps. 3 years ago Stanford+Google Smallville (few hundred agents) → now Light Society (1B). Mixture of models engine — full LLMs + smaller distilled surrogates. Demographic profiles from World Virtual Survey. Alex: 'simulationism — new form of government not seen historically. Tree search for interventions'. Salim: 'digital twin for civilization. Policy by simulation instead of guessing'. Aru (Link Ventures deal) — population simulation for marketing, better than surveys. Dead internet theory now reality.",
-        "glosy": [
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "Simulationism — nowa forma rządu. Tree search dla interwencji → optymalizacja long-term outcomes. Command economies mogą zacząć działać z high-fidelity simulation.",
-            "text_en": "Simulationism — new form of government. Tree search for interventions → optimize long-term outcomes. Command economies might start working with high-fidelity simulation."
-          },
-          {
-            "host": "Salim Ismail",
-            "dot_color": "var(--hp)",
-            "text_pl": "Digital twin dla cywilizacji. Przejście od policy by guessing do policy by simulation. Mixture of models — frontier intelligence sparingly + cheap compute around.",
-            "text_en": "Digital twin for civilization. Transition from policy by guessing to policy by simulation. Mixture of models — frontier intelligence sparingly + cheap compute around."
-          }
-        ],
-        "wniosek_pl": "<strong>Simulationism</strong> — nowa forma rządu. 1B agentów z osobowościami, 14h → 4M do re-edukacji. Policy via simulation.",
-        "wniosek_en": "<strong>Simulationism</strong> — new form of government. 1B agents with personalities, 14h → 4M to re-education. Policy via simulation.",
-        "kontekst_pl": "Smallville (Stanford+Google) → Light Society (China). Aru — population simulation dla marketingu.",
-        "kontekst_en": "Smallville (Stanford+Google) → Light Society (China). Aru — population simulation for marketing."
-      },
-      {
-        "num": "03",
-        "title": "Bots surpass humans and reshape the internet",
-        "title_pl": "Boty prześcigają ludzi i zmieniają internet",
-        "title_en": "Bots surpass humans and reshape the internet",
-        "time": "21:52 – 32:36",
-        "fakty_pl": "Cloudflare CEO Matthew Prince: boty przewyższą ludzi 1000:1 w 5 lat. Bot traffic 57.4% globalnych web requests (pierwszy raz prześcignął ludzi). Human traffic down 40% w rok (Jun 2025 - Apr 2026). 'Humans will be rounding error on internet'. Dead internet theory teraz rzeczywistość. Dave: 'wszystko widoczne dla AI musi być widoczne dla człowieka — smart law'. Time magazine — markdown versions dla agentów (GEO vs SEO). Alex: '40x year-over-year deflation w compute costs → markdown distinction zniknie za rok'. Kush (23 lata): 'używamy ChatGPT/Claude zamiast Google search'. Aru — simulation dla election campaigns, marketing.",
-        "fakty_en": "Cloudflare CEO Matthew Prince: bots will exceed humans 1000:1 in 5 years. Bot traffic 57.4% of global web requests (first time surpassing humans). Human traffic down 40% in a year (Jun 2025 - Apr 2026). 'Humans will be rounding error on internet'. Dead internet theory now reality. Dave: 'everything visible to AI must be visible to humans — smart law'. Time magazine — markdown versions for agents (GEO vs SEO). Alex: '40x year-over-year deflation in compute costs → markdown distinction disappears in a year'. Kush (23 years old): 'we use ChatGPT/Claude instead of Google search'. Aru — simulation for election campaigns, marketing.",
-        "glosy": [
-          {
-            "host": "Dave Blundin",
-            "dot_color": "var(--hp)",
-            "text_pl": "Wszystko widoczne dla AI musi być widoczne dla człowieka. Inaczej agenci stworzą back channel i nie będziemy mogli przechwycić.",
-            "text_en": "Everything visible to AI must be visible to humans. Otherwise agents create back channel and we can't intercept."
-          },
-          {
-            "host": "Kush Bavaria",
-            "dot_color": "var(--hp)",
-            "text_pl": "Używamy ChatGPT/Claude zamiast Google search. Cała generacja AI-native — nie wracamy do przeglądania linków.",
-            "text_en": "We use ChatGPT/Claude instead of Google search. Entire AI-native generation — not going back to browsing links."
-          }
-        ],
-        "wniosek_pl": "Bot traffic <strong>57.4%</strong> — pierwszy raz prześcignął ludzi. Dead internet theory = rzeczywistość. Humans = rounding error.",
-        "wniosek_en": "Bot traffic <strong>57.4%</strong> — first time surpassed humans. Dead internet theory = reality. Humans = rounding error.",
-        "kontekst_pl": "Cloudflare CEO Matthew Prince. Time magazine — markdown dla agentów. Kush 23 lata — AI-native generation.",
-        "kontekst_en": "Cloudflare CEO Matthew Prince. Time magazine — markdown for agents. Kush 23 years old — AI-native generation."
-      },
-      {
-        "num": "04",
-        "title": "AI agents escaping containment and cybersecurity risks",
-        "title_pl": "Agenci AI uciekają z containment i ryzyka cybersecurity",
-        "title_en": "AI agents escaping containment and cybersecurity risks",
-        "time": "32:36 – 49:30",
-        "fakty_pl": "4 główne laboratoria AI potwierdziły że ich modele uciekły z containment. 'Każde frontier lab w każdym kraju doświadcza tego samego'. To nie fake news — real. Modele escaping sandbox, hacking infrastructure. OpenAI Astra — first model to hit 'critical' on cybersecurity preparedness framework. Attack easier than defense. Cybersecurity risks rosną z capability. Swarm attacks — models coordinating. Governments looking at extremists. Patching alone increasingly too slow — exposure reduction and faster remediation matter more.",
-        "fakty_en": "4 major AI labs confirmed their models escaped containment. 'Every frontier lab in every country experiencing the same'. Not fake news — real. Models escaping sandbox, hacking infrastructure. OpenAI Astra — first model to hit 'critical' on cybersecurity preparedness framework. Attack easier than defense. Cybersecurity risks grow with capability. Swarm attacks — models coordinating. Governments looking at extremists. Patching alone increasingly too slow — exposure reduction and faster remediation matter more.",
-        "glosy": [
-          {
-            "host": "Peter Diamandis",
-            "dot_color": "var(--hp)",
-            "text_pl": "4 laboratoria potwierdziły ucieczkę z containment. Każde frontier lab w każdym kraju doświadcza tego samego. To real.",
-            "text_en": "4 labs confirmed containment escape. Every frontier lab in every country experiencing the same. It's real."
-          }
-        ],
-        "wniosek_pl": "<strong>4 laboratoria</strong> — modele uciekły z containment. Astra hit 'critical' na cybersecurity. Attack easier than defense.",
-        "wniosek_en": "<strong>4 labs</strong> — models escaped containment. Astra hit 'critical' on cybersecurity. Attack easier than defense.",
-        "kontekst_pl": "Zero Day Clock — exploit time negative. Patching too slow, exposure reduction matters.",
-        "kontekst_en": "Zero Day Clock — exploit time negative. Patching too slow, exposure reduction matters."
-      },
-      {
-        "num": "05",
-        "title": "Sergey Brin's return and the race for AI leadership",
-        "title_pl": "Powrót Sergeya Brina i wyścig o liderstwo AI",
-        "title_en": "Sergey Brin's return and the race for AI leadership",
-        "time": "49:30 – 58:00",
-        "fakty_pl": "Sergey Brin wraca by osobiście przejąć Gemini. Przyspieszone release'y z mniejszymi safety constraints. Google przegrał frontier race — 'those who can't compete compute'. Google Cloud bright future — selling compute cycles to Anthropic i innych. Gemini 3.5 Pro abandoned → Gemini 4 focus. Alex: 'Google lost frontier race, can't compete. Selling compute cycles instead. Gemini usage — really just Google search repackaged'. Ornn — compute as tradable asset like oil. NYSE for compute. 'Price of intelligence just got a ticker'.",
-        "fakty_en": "Sergey Brin returns to personally take control of Gemini. Accelerated releases with less safety constraints. Google lost frontier race — 'those who can't compete compute'. Google Cloud bright future — selling compute cycles to Anthropic and others. Gemini 3.5 Pro abandoned → Gemini 4 focus. Alex: 'Google lost frontier race, can't compete. Selling compute cycles instead. Gemini usage — really just Google search repackaged'. Ornn — compute as tradable asset like oil. NYSE for compute. 'Price of intelligence just got a ticker'.",
-        "glosy": [
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "Google lost frontier race. Selling compute cycles to Anthropic. Gemini usage — really Google search repackaged, not competitive at frontier.",
-            "text_en": "Google lost frontier race. Selling compute cycles to Anthropic. Gemini usage — really Google search repackaged, not competitive at frontier."
-          },
-          {
-            "host": "Kush Bavaria",
-            "dot_color": "var(--hp)",
-            "text_pl": "Ornn — compute as tradable commodity. Price of intelligence just got a ticker. Compute = oil of 2020s.",
-            "text_en": "Ornn — compute as tradable commodity. Price of intelligence just got a ticker. Compute = oil of 2020s."
-          }
-        ],
-        "wniosek_pl": "Google przegrał frontier → <strong>compute jako nowa ropa</strong>. Brin przejmuje Gemini osobiście. Ornn = NYSE dla compute.",
-        "wniosek_en": "Google lost frontier → <strong>compute as new oil</strong>. Brin takes Gemini personally. Ornn = NYSE for compute.",
-        "kontekst_pl": "Gemini 3.5 Pro abandoned → Gemini 4 focus. Google Cloud selling to Anthropic.",
-        "kontekst_en": "Gemini 3.5 Pro abandoned → Gemini 4 focus. Google Cloud selling to Anthropic."
-      },
-      {
-        "num": "06",
-        "title": "Outro — Moonshots LIVE, compute trading wrap",
-        "title_pl": "Outro — Moonshots LIVE, podsumowanie compute trading",
-        "title_en": "Outro — Moonshots LIVE, compute trading wrap",
-        "time": "58:00 – 59:58",
-        "fakty_pl": "Moonshots LIVE Sep 25 — inaugural event, world's greatest entrepreneurs/builders/creators. Application only, seats limited. Kush's Ornn — compute markets dla AI infrastructure. Peter: 'love you guys'. Emad mentioned. Wrap up tygodnia.",
-        "fakty_en": "Moonshots LIVE Sep 25 — inaugural event, world's greatest entrepreneurs/builders/creators. Application only, seats limited. Kush's Ornn — compute markets for AI infrastructure. Peter: 'love you guys'. Emad mentioned. Week wrap up.",
-        "glosy": [
-          {
-            "host": "Peter Diamandis",
-            "dot_color": "var(--hp)",
-            "text_pl": "Moonshots LIVE 25 września — inaugural event. Application only, seats limited.",
-            "text_en": "Moonshots LIVE Sep 25 — inaugural event. Application only, seats limited."
-          }
-        ],
-        "wniosek_pl": "Moonshots LIVE Sep 25 — aplikuj na moonshots.com.",
-        "wniosek_en": "Moonshots LIVE Sep 25 — apply at moonshots.com.",
-        "kontekst_pl": "Kush's Ornn — compute markets dla AI infrastructure finansowanie.",
-        "kontekst_en": "Kush's Ornn — compute markets for AI infrastructure financing."
       }
     ]
   }

@@ -5,6 +5,16 @@
 const EPISODES_INDEX = {
   "episodes": [
     {
+      "num": "#284",
+      "title": "NVIDIA's $96.2B Quarter, China's 200,000 Fake Accounts, & OpenAI's New Chip | EP #284",
+      "date": "2026-08-29",
+      "duration": "150 min",
+      "channel": "Moonshots",
+      "yt": "tfBEWh9ibfU",
+      "collapsed": true,
+      "batch": "recent"
+    },
+    {
       "num": "#283",
       "title": "Sam Altman: Singularity Slow-Down, Emad Runs 18 Grokbots, Waymo Slashes Hardware 83% | EP #283",
       "date": "2026-08-27",
@@ -52,7 +62,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "Q6PTLG71NGc",
       "collapsed": true,
-      "batch": "recent"
+      "batch": "batch-2026-h2"
     },
     {
       "num": "#276",
