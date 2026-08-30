@@ -1,6 +1,86 @@
 // AI Weekly Summaries — auto-generated from weekly.json
 const WEEKLY = [
   {
+    "num": 35,
+    "date": "2026-08-30",
+    "collapsed": true,
+    "title_pl": "AI Tydzień #35 | 24-30/08/2026",
+    "title_en": "AI Week #35 | August 24-30, 2026",
+    "headline_pl": "Tydzień revealów i rekordów: Ox Alpha revealed = GLM Flash (320B, vision), Hy4 10-cent model at frontier, Tien Gong robot 100m w 9.39s (beats Usain Bolt!), NVIDIA $96.2B quarter, OpenAI Jalapeno chip (half NVIDIA power), DeepSeek harness 180K stars, NVIDIA AVO → Claude Opus 5 100% ARC AGI 3, Sam Altman singularity slow-down, Anthropic $2T IPO, 200K fake accounts manipulating AI debate, pancreatic cancer survival doubled, Model L intimacy robot.",
+    "headline_en": "Week of reveals and records: Ox Alpha revealed = GLM Flash (320B, vision), Hy4 10-cent model at frontier, Tien Gong robot 100m in 9.39s (beats Usain Bolt!), NVIDIA $96.2B quarter, OpenAI Jalapeno chip (half NVIDIA power), DeepSeek harness 180K stars, NVIDIA AVO → Claude Opus 5 100% ARC AGI 3, Sam Altman singularity slow-down, Anthropic $2T IPO, 200K fake accounts manipulating AI debate, pancreatic cancer survival doubled, Model L intimacy robot.",
+    "sections": [
+      {
+        "title_pl": "🔥 Ox Alpha revealed = GLM Flash — mystery solved",
+        "title_en": "🔥 Ox Alpha revealed = GLM Flash — mystery solved",
+        "body_pl": "Ox Alpha — mysterious stealth model na OpenReader performing very well — revealed jako GLM Flash! 320B MoE z vision capabilities (previous GLM nie miał). Open weights released. Better dla frontend dev, images, documents, videos. GLM 5.3 (no vision) = most intelligent open-source model, tied z frontier. Unsloth released GGUF + 1-bit version only 217GB.",
+        "body_en": "Ox Alpha — mysterious stealth model on OpenRouter performing very well — revealed as GLM Flash! 320B MoE with vision capabilities (previous GLM didn't have). Open weights released. Better for frontend dev, images, documents, videos. GLM 5.3 (no vision) = most intelligent open-source model, tied with frontier. Unsloth released GGUF + 1-bit version only 217GB.",
+        "quotes": []
+      },
+      {
+        "title_pl": "🏃 Tien Gong robot 100m w 9.39s — beats Usain Bolt (9.58s)",
+        "title_en": "🏃 Tien Gong robot 100m in 9.39s — beats Usain Bolt (9.58s)",
+        "body_pl": "World Humanoid Games w Chinach — Tien Gong robot finished 100m w 9.39 seconds, beating Usain Bolt's 2009 record z 9.58s. Honor robot also fast. Chińskie humanoid robots speed improvement insane. Superman robot (Booster): standing jump 2m (ludzki rekord 1.8m), 12.7 m/s. Robot Olympics becoming real. Emad: superhuman robots będą banned from streets.",
+        "body_en": "World Humanoid Games in China — Tien Gong robot finished 100m in 9.39 seconds, beating Usain Bolt's 2009 record of 9.58s. Honor robot also fast. Chinese humanoid robots speed improvement insane. Superman robot (Booster): standing jump 2m (human record 1.8m), 12.7 m/s. Robot Olympics becoming real. Emad: superhuman robots will be banned from streets.",
+        "quotes": []
+      },
+      {
+        "title_pl": "💰 NVIDIA $96.2B quarter + OpenAI Jalapeno chip",
+        "title_en": "💰 NVIDIA $96.2B quarter + OpenAI Jalapeno chip",
+        "body_pl": "NVIDIA $96.2B quarter revenue — rekord. AI circular economy: GPUs reused, resold. OpenAI Jalapeno chip: 700W vs GB300 1400W — half power, 1.5x peak token rate per kW. OpenAI no longer just NVIDIA customer — becoming chip designer. Inference moving off NVIDIA. '100x performance gain — first 2x of 100x'. Anthropic silicon team dla custom Claude chips. Xiaomi AI Cube (3 X-ring chips, 120B+3B local).",
+        "body_en": "NVIDIA $96.2B quarter revenue — record. AI circular economy: GPUs reused, resold. OpenAI Jalapeno chip: 700W vs GB300 1400W — half power, 1.5x peak token rate per kW. OpenAI no longer just NVIDIA customer — becoming chip designer. Inference moving off NVIDIA. '100x performance gain — first 2x of 100x'. Anthropic silicon team for custom Claude chips. Xiaomi AI Cube (3 X-ring chips, 120B+3B local).",
+        "quotes": []
+      },
+      {
+        "title_pl": "🤖 DeepSeek harness 180K stars + NVIDIA AVO 100% ARC AGI 3",
+        "title_en": "🤖 DeepSeek harness 180K stars + NVIDIA AVO 100% ARC AGI 3",
+        "body_pl": "DeepSeek harness: 180K GitHub stars w tydzień (rekord). 52 open harnesses compiled by Lev. OpenAI open-sourced Codex harness. NVIDIA AVO agent improves Claude Opus 5 na ARC AGI 3 from 30% to 100%. Harness/scaffolding breakthrough — bez fine-tuning weights. Harness engineering = nowa dyscyplina.",
+        "body_en": "DeepSeek harness: 180K GitHub stars in a week (record). 52 open harnesses compiled by Lev. OpenAI open-sourced Codex harness. NVIDIA AVO agent improves Claude Opus 5 on ARC AGI 3 from 30% to 100%. Harness/scaffolding breakthrough — without fine-tuning weights. Harness engineering = new discipline.",
+        "quotes": []
+      },
+      {
+        "title_pl": "📊 Sam Altman singularity slow-down + Anthropic $2T IPO",
+        "title_en": "📊 Sam Altman singularity slow-down + Anthropic $2T IPO",
+        "body_pl": "Sam Altman tweet: singularity może slow down. Ale Google, NVIDIA, Waymo nadal accelerate. Anthropic $2T IPO — PolyMarket 89% says happens this year. Super voting class dla Dario. $100B revenue catching up z Google. 200K fake accounts manipulating AI data center debate. Only 4% companies expect AI job cuts — AI augments tasks > replaces jobs.",
+        "body_en": "Sam Altman tweet: singularity may slow down. But Google, NVIDIA, Waymo still accelerating. Anthropic $2T IPO — PolyMarket 89% says happens this year. Super voting class for Dario. $100B revenue catching up with Google. 200K fake accounts manipulating AI data center debate. Only 4% companies expect AI job cuts — AI augments tasks > replaces jobs.",
+        "quotes": []
+      },
+      {
+        "title_pl": "🧬 Pancreatic cancer survival doubled + tooth enamel regen",
+        "title_en": "🧬 Pancreatic cancer survival doubled + tooth enamel regen",
+        "body_pl": "FDA approved Duracaenrasib — first RAS inhibitor for metastatic pancreatic cancer. Survival 6.7 → 13.2 months (doubled). Response rates 11% → 32% (tripled). Nature Communications: University of Nottingham developed biomimetic gel regenerating tooth enamel. Pulls calcium + phosphate. Alternative to synthetic fillings. AI w medicine accelerating.",
+        "body_en": "FDA approved Duracaenrasib — first RAS inhibitor for metastatic pancreatic cancer. Survival 6.7 → 13.2 months (doubled). Response rates 11% → 32% (tripled). Nature Communications: University of Nottingham developed biomimetic gel regenerating tooth enamel. Pulls calcium + phosphate. Alternative to synthetic fillings. AI in medicine accelerating.",
+        "quotes": []
+      },
+      {
+        "title_pl": "🎨 Nowe modele — Hy4, Qwen 3.8 Flash Next, FastH3, Block 3D",
+        "title_en": "🎨 New models — Hy4, Qwen 3.8 Flash Next, FastH3, Block 3D",
+        "body_pl": "Hy4 — 10-cent model at frontier, 49B active MoE. Qwen 3.8 Flash Next — preview Qwen 4 architecture, 6B active. FastH3 — Minimax 14x faster na B200 GPUs. Block 3D — parallel block shape tokens. One Video One World — video → 3D scene. Code World Model — world model z rules + consequences. Google PPE — AI data scientist dla Earth. 9 new models (228 total).",
+        "body_en": "Hy4 — 10-cent model at frontier, 49B active MoE. Qwen 3.8 Flash Next — preview Qwen 4 architecture, 6B active. FastH3 — Minimax 14x faster on B200 GPUs. Block 3D — parallel block shape tokens. One Video One World — video → 3D scene. Code World Model — world model with rules + consequences. Google PPE — AI data scientist for Earth. 9 new models (228 total).",
+        "quotes": []
+      },
+      {
+        "title_pl": "🚀 Waymo 83% cost cut + Rainmaker drones + lunar economy",
+        "title_en": "🚀 Waymo 83% cost cut + Rainmaker drones + lunar economy",
+        "body_pl": "Waymo O-high vehicle — 83% hardware cost reduction. Tesla robotaxis: 79 Model Y w Texas, ~$100B ride share revenue. Rainmaker drones: 10 drones, 19M gallons rainfall w 3 hours over Alaska. Trillion-dollar lunar economy — Elon: 100TW orbital compute. Nuclear + solar AI energy race. Uranium enrichment 5x purity (Actonide).",
+        "body_en": "Waymo O-high vehicle — 83% hardware cost reduction. Tesla robotaxis: 79 Model Y in Texas, ~$100B ride share revenue. Rainmaker drones: 10 drones, 19M gallons rainfall in 3 hours over Alaska. Trillion-dollar lunar economy — Elon: 100TW orbital compute. Nuclear + solar AI energy race. Uranium enrichment 5x purity (Actonide).",
+        "quotes": []
+      },
+      {
+        "title_pl": "📡 Podsumowanie tygodnia — 228 modeli, 15 epizodów",
+        "title_en": "📡 Week summary — 228 models, 15 episodes",
+        "body_pl": "Tydzień 24-30 sierpnia 2026: 4 materiały przetworzone (Lev 28.08, Diamandis #283, #284, AI Search ##35-1). 9 nowych modeli (228 total). Kluczowe: Ox Alpha = GLM Flash, Tien Gong beats Usain Bolt, NVIDIA $96.2B, OpenAI Jalapeno chip, 200K fake accounts, pancreatic cancer doubled, Model L intimacy robot. Emad runs 18 Grokbots. AI companions physical form.",
+        "body_en": "Week of August 24-30, 2026: 4 materials processed (Lev 28.08, Diamandis #283, #284, AI Search ##35-1). 9 new models (228 total). Key: Ox Alpha = GLM Flash, Tien Gong beats Usain Bolt, NVIDIA $96.2B, OpenAI Jalapeno chip, 200K fake accounts, pancreatic cancer doubled, Model L intimacy robot. Emad runs 18 Grokbots. AI companions physical form.",
+        "quotes": []
+      }
+    ],
+    "sources": [
+      "Lev Selector (D5qeklkQqRg) — 28.08.2026",
+      "Diamandis Moonshots (0mOXQ4_kY04) — 27.08.2026 (#283)",
+      "Diamandis Moonshots (tfBEWh9ibfU) — 29.08.2026 (#284)",
+      "AI Search (rQ4yX5qNYdY) — 30.08.2026 (##35-1)"
+    ]
+  },
+  {
     "num": 34,
     "date": "2026-08-23",
     "collapsed": true,
