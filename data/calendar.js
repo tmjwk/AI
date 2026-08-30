@@ -2,7 +2,7 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-29 19:41:03 UTC
+// Generated: 2026-08-30 03:49:59 UTC
 
 const CALENDAR = [
   {
@@ -14,6 +14,216 @@ const CALENDAR = [
     "meta_pl": "14 tematów",
     "meta_en": "14 topics",
     "num": "#284"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "Block 3D — 3D object generation z block shape tokens — Open-source",
+    "title_en": "Block 3D — 3D object generation z block shape tokens — Open-source",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "3D Generation",
+    "meta_en": "3D Generation",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "One Video One World — video → pełna animowana scena 3D — Open-source",
+    "title_en": "One Video One World — video → pełna animowana scena 3D — Open-source",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "World Models",
+    "meta_en": "World Models",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "FixAnything — naprawia degraded 3D renders używając video model — Open-source",
+    "title_en": "FixAnything — naprawia degraded 3D renders używając video model — Open-source",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "3D Generation",
+    "meta_en": "3D Generation",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "Google PPE — Planetary Prediction Engine, AI data scientist dla Earth — Google",
+    "title_en": "Google PPE — Planetary Prediction Engine, AI data scientist dla Earth — Google",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "AI Science Agents",
+    "meta_en": "AI Science Agents",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "Code World Model — video world model z underlying rules + consequences — Open-source",
+    "title_en": "Code World Model — video world model z underlying rules + consequences — Open-source",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "World Models",
+    "meta_en": "World Models",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "VoiceMem — AI memory z left brain (facts) + right brain (preferences) — Open-source",
+    "title_en": "VoiceMem — AI memory z left brain (facts) + right brain (preferences) — Open-source",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "AI Research",
+    "meta_en": "AI Research",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "FastH3 — Minimax video 14x faster na B200 GPUs — How AI Lab",
+    "title_en": "FastH3 — Minimax video 14x faster na B200 GPUs — How AI Lab",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "H3 Max — Minimax H3 z realtime, paid closed API — MiniMax",
+    "title_en": "H3 Max — Minimax H3 z realtime, paid closed API — MiniMax",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "Luma AI — creative agent + Luma Skills (reusable AI workflows) — Luma AI",
+    "title_en": "Luma AI — creative agent + Luma Skills (reusable AI workflows) — Luma AI",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "Ox Alpha reveal = GLM Flash — 320B MoE, vision, open weights — Z.AI / Zhipu",
+    "title_en": "Ox Alpha reveal = GLM Flash — 320B MoE, vision, open weights — Z.AI / Zhipu",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "GLM 5.3 — most intelligent open-source model, tied z frontier — Z.AI / Zhipu",
+    "title_en": "GLM 5.3 — most intelligent open-source model, tied z frontier — Z.AI / Zhipu",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "Qwen 3.8 Flash Next — preview Qwen 4 architecture, 6B active — Alibaba",
+    "title_en": "Qwen 3.8 Flash Next — preview Qwen 4 architecture, 6B active — Alibaba",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "Hy4 — 10-cent model at frontier, 49B active MoE — Hy4 (open-source)",
+    "title_en": "Hy4 — 10-cent model at frontier, 49B active MoE — Hy4 (open-source)",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "World Humanoid Games — Tien Gong robot 100m w 9.39s (beats Usain Bolt) — Various",
+    "title_en": "World Humanoid Games — Tien Gong robot 100m w 9.39s (beats Usain Bolt) — Various",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "Gemini 3.5 Transcribe — smart transcription, multi-speaker, multilingual — Google",
+    "title_en": "Gemini 3.5 Transcribe — smart transcription, multi-speaker, multilingual — Google",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "TTS",
+    "meta_en": "TTS",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "Omni 1.1 Flash — video extension z 10s previous footage, 360p draft 60x faster — Open-source",
+    "title_en": "Omni 1.1 Flash — video extension z 10s previous footage, 360p draft 60x faster — Open-source",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "Orbit — 360° video dataset dla 3D reconstruction + robotics — Open-source",
+    "title_en": "Orbit — 360° video dataset dla 3D reconstruction + robotics — Open-source",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "3D Generation",
+    "meta_en": "3D Generation",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "Xiaomi AI Cube — 3 X-ring chips, 120B + 3B model lokalnie — Xiaomi",
+    "title_en": "Xiaomi AI Cube — 3 X-ring chips, 120B + 3B model lokalnie — Xiaomi",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "Hardware",
+    "meta_en": "Hardware",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "DiffusionOPSD — direct step-level rewards dla image generation — Open-source",
+    "title_en": "DiffusionOPSD — direct step-level rewards dla image generation — Open-source",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "Fibo 1.5 — multi-attribute image generation (description, location, size, shape, color, texture) — Open-source",
+    "title_en": "Fibo 1.5 — multi-attribute image generation (description, location, size, shape, color, texture) — Open-source",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##35-1"
+  },
+  {
+    "date": "2026-08-29",
+    "type": "ai_search",
+    "title_pl": "S1 — robot uczy się task z jednego video, bez dodatkowego treningu — Open-source",
+    "title_en": "S1 — robot uczy się task z jednego video, bez dodatkowego treningu — Open-source",
+    "link": "ai-releases.html###35-1",
+    "meta_pl": "Humanoid Robots",
+    "meta_en": "Humanoid Robots",
+    "num": "##35-1"
   },
   {
     "date": "2026-08-28",

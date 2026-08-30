@@ -1,22 +1,22 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-08-29 19:41:03 UTC
-// Total events: 426, months: 3
+// Generated: 2026-08-30 03:49:59 UTC
+// Total events: 447, months: 3
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-08-29 19:41:03 UTC",
-    "total_events": 426,
+    "generated": "2026-08-30 03:49:59 UTC",
+    "total_events": 447,
     "total_months": 3
   },
   "months": [
     {
       "month": "2026-08",
-      "total": 214,
+      "total": 235,
       "by_type": {
         "diamandis": 7,
+        "ai_search": 97,
         "lev": 127,
-        "weekly": 4,
-        "ai_search": 76
+        "weekly": 4
       },
       "top_vendors": [
         [
@@ -29,11 +29,15 @@ const TRENDS = {
         ],
         [
           "Google",
-          14
+          16
         ],
         [
           "Alibaba",
-          12
+          14
+        ],
+        [
+          "MiniMax",
+          8
         ],
         [
           "NVIDIA",
@@ -52,22 +56,26 @@ const TRENDS = {
           7
         ],
         [
-          "MiniMax",
-          6
-        ],
-        [
-          "ByteDance",
-          4
+          "Z.AI",
+          5
         ]
       ],
       "top_models": [
         [
           "Qwen 3",
-          7
+          8
         ],
         [
           "Claude Code",
           6
+        ],
+        [
+          "GLM 5",
+          4
+        ],
+        [
+          "Gemini 3",
+          4
         ],
         [
           "Grok 4",
@@ -82,19 +90,11 @@ const TRENDS = {
           3
         ],
         [
-          "GLM 5",
-          3
-        ],
-        [
           "GPT-5",
           3
         ],
         [
           "GPT-5.6",
-          3
-        ],
-        [
-          "Gemini 3",
           3
         ],
         [
@@ -211,11 +211,11 @@ const TRENDS = {
           3
         ],
         [
-          "Alibaba",
+          "OpenAI",
           2
         ],
         [
-          "OpenAI",
+          "Alibaba",
           2
         ],
         [
@@ -357,11 +357,11 @@ const TRENDS = {
       ],
       [
         "Google",
-        30
+        32
       ],
       [
         "Alibaba",
-        24
+        26
       ],
       [
         "Meta",
@@ -384,6 +384,14 @@ const TRENDS = {
         10
       ],
       [
+        "MiniMax",
+        8
+      ],
+      [
+        "Z.AI",
+        8
+      ],
+      [
         "Tencent",
         7
       ],
@@ -392,19 +400,11 @@ const TRENDS = {
         6
       ],
       [
-        "Z.AI",
-        6
-      ],
-      [
-        "MIT",
-        6
-      ],
-      [
         "Nous Research",
         6
       ],
       [
-        "MiniMax",
+        "MIT",
         6
       ]
     ],
@@ -419,7 +419,7 @@ const TRENDS = {
       ],
       [
         "Qwen 3",
-        9
+        10
       ],
       [
         "Opus 5",
@@ -442,16 +442,20 @@ const TRENDS = {
         7
       ],
       [
+        "GLM 5",
+        6
+      ],
+      [
+        "Gemini 3",
+        6
+      ],
+      [
         "Grok 4",
         6
       ],
       [
         "Muse Spark",
         6
-      ],
-      [
-        "GLM 5",
-        5
       ],
       [
         "GPT-5",
@@ -462,19 +466,15 @@ const TRENDS = {
         5
       ],
       [
-        "Gemini 3",
-        5
-      ],
-      [
         "Claude Opus",
         4
       ]
     ],
     "by_type": {
       "diamandis": 15,
+      "ai_search": 158,
       "lev": 266,
-      "weekly": 8,
-      "ai_search": 137
+      "weekly": 8
     }
   }
 };
