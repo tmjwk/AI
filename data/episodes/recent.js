@@ -4,8 +4,312 @@
 
 const RECENT_EPISODES = [
   {
-    "num": "#284",
+    "num": "#285",
     "collapsed": false,
+    "channel": "Moonshots",
+    "title": "OpenAI Cuts Off Elon's Cursor, Humanity's First Star Probe, & Trump's Nuclear Mars Ship | EP #285",
+    "title_pl": "OpenAI odcina Elona od Cursora, pierwsza misja międzygwiezdna, & nuklearny statek na Marsa | #285",
+    "title_en": "OpenAI Cuts Off Elon's Cursor, Humanity's First Star Probe, & Trump's Nuclear Mars Ship | EP #285",
+    "date": "2026-08-31",
+    "duration": "110 min",
+    "yt": "tfBEWh9ibfU",
+    "hosts_count_pl": "5 uczestników",
+    "hosts_count_en": "5 participants",
+    "topics_count_pl": "13 tematów",
+    "topics_count_en": "13 topics",
+    "hosts": [
+      {
+        "name": "Peter Diamandis",
+        "role_pl": "Gospodarz",
+        "role_en": "Main host"
+      },
+      {
+        "name": "Dr. Alexander Wissner-Gross",
+        "role_pl": "In-house ASI",
+        "role_en": "In-house ASI"
+      },
+      {
+        "name": "Dave Blundin",
+        "role_pl": "Inwestor VC",
+        "role_en": "VC investor"
+      },
+      {
+        "name": "Salim Ismail",
+        "role_pl": "Organizacje wykładnicze",
+        "role_en": "Exponential organizations"
+      },
+      {
+        "name": "Phillip & Matt (guests)",
+        "role_pl": "GOŚCIE — Alpha Centauri mission",
+        "role_en": "GUESTS — Alpha Centauri mission"
+      }
+    ],
+    "topics": [
+      {
+        "num": "01",
+        "title": "Humanity's First Interstellar Mission to Alpha Centauri",
+        "title_pl": "Pierwsza misja międzygwiezdna do Alpha Centauri",
+        "title_en": "Humanity's First Interstellar Mission to Alpha Centauri",
+        "time": "00:00 – 19:49",
+        "fakty_pl": "Pierwsza misja międzygwiezdna do Alpha Centauri. Phillip i Matt dołączyli jako goście. 'Are we the first kid on the block or are we auditioning for membership in a cosmic club?' Bilet wstępu = czy możemy to obsłużyć? Breakthrough Starshot, laser-propelled sail. Najbliższy system gwiezdny, 4.37 lat świetlnych.",
+        "fakty_en": "First interstellar mission to Alpha Centauri. Phillip and Matt joined as guests. 'Are we the first kid on the block or are we auditioning for membership in a cosmic club?' Ticket to entry = can we handle it? Breakthrough Starshot, laser-propelled sail. Nearest star system, 4.37 light years.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Czy jesteśmy pierwszym dzieckiem na bloku czy auditionujemy do membership w cosmic club? Bilet wstępu = czy możemy to obsłużyć?",
+            "text_en": "Are we the first kid on the block or are we now auditioning for a membership in a cosmic club? And the ticket to entry is, can you handle that?"
+          }
+        ],
+        "wniosek_pl": "Pierwsza misja międzygwiezdna. Alpha Centauri = 4.37 lat świetlnych.",
+        "wniosek_en": "First interstellar mission. Alpha Centauri = 4.37 light years.",
+        "kontekst_pl": "Breakthrough Starshot = projekt laser-propelled sail.",
+        "kontekst_en": "Breakthrough Starshot = laser-propelled sail project."
+      },
+      {
+        "num": "02",
+        "title": "The Fermi Paradox and Humanity's Cosmic Future",
+        "title_pl": "Paradoks Fermiego i kosmiczna przyszłość ludzkości",
+        "title_en": "The Fermi Paradox and Humanity's Cosmic Future",
+        "time": "19:49 – 35:22",
+        "fakty_pl": "Paradoks Fermiego — 'Where is everybody?' Fermy = aluzja do Fermi paradox. Jeśli wszechświat jest tak stary i wielki, gdzie są wszystkie cywilizacje? Możliwe wyjaśnienia: Great Filter, rzadkość życia, samozagłada. Philip i Matt dyskutują implikacje dla ludzkości.",
+        "fakty_en": "Fermi Paradox — 'Where is everybody?' Fermy = allusion to Fermi paradox. If universe is so old and big, where are all the civilizations? Possible explanations: Great Filter, rarity of life, self-destruction. Philip and Matt discuss implications for humanity.",
+        "glosy": [
+          {
+            "author": "Guest",
+            "text_pl": "Fermy = aluzja do Fermi paradox. 'Where is everybody?'",
+            "text_en": "There's also a reason behind the name Fermy. It's an allusion to the so-called Fermi paradox."
+          }
+        ],
+        "wniosek_pl": "Paradoks Fermiego — gdzie są cywilizacje? Great Filter?",
+        "wniosek_en": "Fermi Paradox — where are the civilizations? Great Filter?",
+        "kontekst_pl": "Fermi Paradox = kontrast między wysokim prawdopodobieństwem życia a brakiem dowodów.",
+        "kontekst_en": "Fermi Paradox = contrast between high probability of life and lack of evidence."
+      },
+      {
+        "num": "03",
+        "title": "OpenAI Cuts Off Elon's Cursor",
+        "title_pl": "OpenAI odcina Elona od Cursora",
+        "title_en": "OpenAI Cuts Off Elon's Cursor",
+        "time": "35:22 – 46:18",
+        "fakty_pl": "Drama między Sam Altman i Elon Musk bubbled up again. OpenAI ends support of Cursor — napisali Elonowi email. Konflikt OpenAI vs xAI intensyfikuje. Cursor używał OpenAI API, teraz odcięty. Elon może użyć Grok zamiast. Competitive landscape w AI coding tools.",
+        "fakty_en": "Drama between Sam Altman and Elon Musk bubbled up again. OpenAI ends support of Cursor — wrote Elon an email. OpenAI vs xAI conflict intensifies. Cursor was using OpenAI API, now cut off. Elon can use Grok instead. Competitive landscape in AI coding tools.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "OpenAI kończy wsparcie dla Cursor. Napisali Elonowi email. Konflikt OpenAI vs xAI.",
+            "text_en": "OpenAI ends its support of cursor. They wrote Elon an email."
+          }
+        ],
+        "wniosek_pl": "OpenAI odcina Cursor (Elon). Konflikt OpenAI vs xAI.",
+        "wniosek_en": "OpenAI cuts off Cursor (Elon). OpenAI vs xAI conflict.",
+        "kontekst_pl": "Cursor = AI coding tool. OpenAI API = backend. xAI = Elon's AI company.",
+        "kontekst_en": "Cursor = AI coding tool. OpenAI API = backend. xAI = Elon's AI company."
+      },
+      {
+        "num": "04",
+        "title": "Sam Altman Says AGI Is Four Months Away",
+        "title_pl": "Sam Altman: AGI za cztery miesiące",
+        "title_en": "Sam Altman Says AGI Is Four Months Away",
+        "time": "46:18 – 52:32",
+        "fakty_pl": "Sam Altman told Time magazine: expects OpenAI will have internal system that he believes will be AGI by end of this year. Może speaking about Astra — new unreleased model. 16 Astra agents worked together on research-level task. AGI = 4 months. Czy to realne czy marketing?",
+        "fakty_en": "Sam Altman told Time magazine: expects OpenAI will have internal system that he believes will be AGI by end of this year. May be speaking about Astra — new unreleased model. 16 Astra agents worked together on research-level task. AGI = 4 months. Real or marketing?",
+        "glosy": [
+          {
+            "author": "Sam Altman",
+            "text_pl": "Oczekuję że OpenAI będzie miał internal system który uważam za AGI do końca tego roku.",
+            "text_en": "He expects OpenAI will have an internal system that he believes will be AGI by the end of this year."
+          }
+        ],
+        "wniosek_pl": "Altman: AGI za ~4 miesiące. Astra = 16 agents razem. Real czy marketing?",
+        "wniosek_en": "Altman: AGI in ~4 months. Astra = 16 agents together. Real or marketing?",
+        "kontekst_pl": "Astra = next-gen OpenAI model. AGI = Artificial General Intelligence.",
+        "kontekst_en": "Astra = next-gen OpenAI model. AGI = Artificial General Intelligence."
+      },
+      {
+        "num": "05",
+        "title": "AI Moves to Outcome-Based Pricing",
+        "title_pl": "AI przechodzi na outcome-based pricing",
+        "title_en": "AI Moves to Outcome-Based Pricing",
+        "time": "52:32 – 1:03:28",
+        "fakty_pl": "AI community adopting outcome-based pricing. Nie pay for tokens, compute, API calls. Pay when work is done. Business model transformation. 'You don't pay for tokens, you pay when the work is done.' Wynik > input. Zmiana z SaaS na outcome-based.",
+        "fakty_en": "AI community adopting outcome-based pricing. Don't pay for tokens, compute, API calls. Pay when work is done. Business model transformation. 'You don't pay for tokens, you pay when the work is done.' Outcome > input. Shift from SaaS to outcome-based.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Nie płacisz za tokens, compute, API calls. Płacisz gdy praca jest zrobiona. Outcome > input.",
+            "text_en": "You don't pay for tokens. You don't pay for compute time. You don't pay for API calls. You pay when the work is done."
+          }
+        ],
+        "wniosek_pl": "AI → outcome-based pricing. Płacisz za wynik, nie za input.",
+        "wniosek_en": "AI → outcome-based pricing. Pay for outcome, not input.",
+        "kontekst_pl": "SaaS = Software as a Service. Outcome-based = płacisz za rezultat.",
+        "kontekst_en": "SaaS = Software as a Service. Outcome-based = pay for result."
+      },
+      {
+        "num": "06",
+        "title": "Architect Labs' AI-Designed Chip Beats NVIDIA 3.4x",
+        "title_pl": "Architect Labs: chip zaprojektowany przez AI bije NVIDIA 3.4x",
+        "title_en": "Architect Labs' AI-Designed Chip Beats NVIDIA 3.4x",
+        "time": "1:03:28 – 1:16:53",
+        "fakty_pl": "Architect Labs (Palo Alto startup): AI autonomously generated chip design from spec. Performance model, RTL design, verification, firmware, drivers, custom compute kernels — all AI-generated. Chip beats NVIDIA 3.4x. Alex flagged this story. AI designing hardware = new paradigm.",
+        "fakty_en": "Architect Labs (Palo Alto startup): AI autonomously generated chip design from spec. Performance model, RTL design, verification, firmware, drivers, custom compute kernels — all AI-generated. Chip beats NVIDIA 3.4x. Alex flagged this story. AI designing hardware = new paradigm.",
+        "glosy": [
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "AI autonomously generated performance model, RTL design, verification, firmware, drivers, custom compute kernels. Chip beats NVIDIA 3.4x.",
+            "text_en": "The AI system autonomously generated the performance model, the register transfer level design, universal verification methodology, the firmware, the drivers, the custom compute kernels."
+          }
+        ],
+        "wniosek_pl": "Architect Labs: AI-designed chip beats NVIDIA 3.4x. AI designing hardware.",
+        "wniosek_en": "Architect Labs: AI-designed chip beats NVIDIA 3.4x. AI designing hardware.",
+        "kontekst_pl": "RTL = Register Transfer Level (chip design). Palo Alto = Silicon Valley.",
+        "kontekst_en": "RTL = Register Transfer Level (chip design). Palo Alto = Silicon Valley."
+      },
+      {
+        "num": "07",
+        "title": "AI's Growing Energy Bottleneck",
+        "title_pl": "Rosące wąskie gardło energii AI",
+        "title_en": "AI's Growing Energy Bottleneck",
+        "time": "1:16:53 – 1:20:37",
+        "fakty_pl": "AI energy bottleneck growing. AI demand 200% vs 20% production. Memory 500% price jump. Nuclear + solar needed. Data center backlash: 71% Americans oppose. Grid buildout question: help regular people or make scarcer?",
+        "fakty_en": "AI energy bottleneck growing. AI demand 200% vs 20% production. Memory 500% price jump. Nuclear + solar needed. Data center backlash: 71% Americans oppose. Grid buildout question: help regular people or make scarcer?",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "AI energy bottleneck growing. 200% demand vs 20% production. 71% Americans oppose data centers.",
+            "text_en": "AI energy bottleneck growing. 200% demand vs 20% production. 71% Americans oppose data centers."
+          }
+        ],
+        "wniosek_pl": "AI energy bottleneck. Memory 500%. Nuclear + solar needed.",
+        "wniosek_en": "AI energy bottleneck. Memory 500%. Nuclear + solar needed.",
+        "kontekst_pl": "Kontynuacja z #282, #284 — memory + energy discussion.",
+        "kontekst_en": "Continuation from #282, #284 — memory + energy discussion."
+      },
+      {
+        "num": "08",
+        "title": "Tesla and SpaceX Go All-In on Solar",
+        "title_pl": "Tesla i SpaceX idą all-in na solar",
+        "title_en": "Tesla and SpaceX Go All-In on Solar",
+        "time": "1:20:37 – 1:24:39",
+        "fakty_pl": "Elon mentioned w December interview: Tesla i SpaceX będą generating solar. Tesla solar roof + Powerwall. SpaceX satellite solar. Vertical integration: solar panels + batteries + EVs + rockets. All powered by sun.",
+        "fakty_en": "Elon mentioned in December interview: Tesla and SpaceX will start generating solar. Tesla solar roof + Powerwall. SpaceX satellite solar. Vertical integration: solar panels + batteries + EVs + rockets. All powered by sun.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Elon wspominał w grudniu: Tesla i SpaceX będą generating solar. Vertical integration.",
+            "text_en": "He mentioned then that Tesla and SpaceX would start generating solar."
+          }
+        ],
+        "wniosek_pl": "Tesla + SpaceX all-in solar. Vertical energy integration.",
+        "wniosek_en": "Tesla + SpaceX all-in solar. Vertical energy integration.",
+        "kontekst_pl": "Solar roof, Powerwall, satellite solar — Elon's energy ecosystem.",
+        "kontekst_en": "Solar roof, Powerwall, satellite solar — Elon's energy ecosystem."
+      },
+      {
+        "num": "09",
+        "title": "Elon Wants Satellites to Cool the Earth",
+        "title_pl": "Elon chce satelity do chłodzenia Ziemi",
+        "title_en": "Elon Wants Satellites to Cool the Earth",
+        "time": "1:24:39 – 1:33:03",
+        "fakty_pl": "Elon: large-scale geoengineering needed before it's game over. Sentient satellites — solar-powered AI satellites that control temperature. Climate intervention z space. 'The only place it's not going is nuclear.' Musk proposes space-based Earth cooling.",
+        "fakty_en": "Elon: large-scale geoengineering needed before it's game over. Sentient satellites — solar-powered AI satellites that control temperature. Climate intervention from space. 'The only place it's not going is nuclear.' Musk proposes space-based Earth cooling.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Elon: sentient satellites — solar-powered AI satellites controlujące temperature. Geoengineering needed.",
+            "text_en": "He describes what he calls sentient satellites or solar powered AI satellites that control temperature."
+          }
+        ],
+        "wniosek_pl": "Elon: sentient satellites do chłodzenia Ziemi. Space geoengineering.",
+        "wniosek_en": "Elon: sentient satellites to cool Earth. Space geoengineering.",
+        "kontekst_pl": "Geoengineering = celowa ingerencja w klimat. Sentient = AI-controlled.",
+        "kontekst_en": "Geoengineering = deliberate climate intervention. Sentient = AI-controlled."
+      },
+      {
+        "num": "10",
+        "title": "Nanotechnology and Atomically Precise Manufacturing",
+        "title_pl": "Nanotechnologia i produkcja atomowo precyzyjna",
+        "title_en": "Nanotechnology and Atomically Precise Manufacturing",
+        "time": "1:33:03 – 1:38:11",
+        "fakty_pl": "Nanotech — Eric Drexler promised it 40 years ago. Teraz becoming real. Atomically precise manufacturing. Nanites. AI + nanotech convergence. Peter: 'we don't talk about nanotechnology anywhere near enough.' Enamel regen (z #284) = early nanotech.",
+        "fakty_en": "Nanotech — Eric Drexler promised it 40 years ago. Now becoming real. Atomically precise manufacturing. Nanites. AI + nanotech convergence. Peter: 'we don't talk about nanotechnology anywhere near enough.' Enamel regen (from #284) = early nanotech.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Nanotech — Drexler promised 40 years ago. Teraz becoming real. Nie mówimy o tym wystarczająco.",
+            "text_en": "Nanotech, you know, we don't talk about nanotechnology anywhere near enough on this pod. We've been promised it from Eric Drexler for the last 40 years."
+          }
+        ],
+        "wniosek_pl": "Nanotech becoming real. AI + nanotech convergence. Drexler 40 years.",
+        "wniosek_en": "Nanotech becoming real. AI + nanotech convergence. Drexler 40 years.",
+        "kontekst_pl": "Eric Drexler = father of nanotechnology. Atomically precise = kontrola na poziomie atomów.",
+        "kontekst_en": "Eric Drexler = father of nanotechnology. Atomically precise = control at atomic level."
+      },
+      {
+        "num": "11",
+        "title": "Nuclear-Powered Spacecraft to Mars",
+        "title_pl": "Nuklearny statek kosmiczny na Marsa",
+        "title_en": "Nuclear-Powered Spacecraft to Mars",
+        "time": "1:38:11 – 1:42:35",
+        "fakty_pl": "President Trump announced: NASA working on nuclear-powered interplanetary spacecraft. Nuclear propulsion = faster Mars missions. Drastically shorter travel time. Fountain Life: know what's going on inside your body genetically, metabolically, cardiovascularly.",
+        "fakty_en": "President Trump announced: NASA working on nuclear-powered interplanetary spacecraft. Nuclear propulsion = faster Mars missions. Drastically shorter travel time. Fountain Life: know what's going on inside your body genetically, metabolically, cardiovascularly.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Trump: NASA working on nuclear-powered interplanetary spacecraft. Nuklearny propulsion = szybszy Mars.",
+            "text_en": "President Trump this week announced that NASA is working on nuclear-powered interplanetary spacecraft."
+          }
+        ],
+        "wniosek_pl": "Trump: nuclear-powered spacecraft na Mars. Nuklearny propulsion.",
+        "wniosek_en": "Trump: nuclear-powered spacecraft to Mars. Nuclear propulsion.",
+        "kontekst_pl": "Nuclear propulsion = rdzeń nuklearny zamiast chemicznego. Fountain Life = Peter's health company.",
+        "kontekst_en": "Nuclear propulsion = nuclear core instead of chemical. Fountain Life = Peter's health company."
+      },
+      {
+        "num": "12",
+        "title": "America's New Space Academy",
+        "title_pl": "Nowa Akademia Kosmiczna USA",
+        "title_en": "America's New Space Academy",
+        "time": "1:42:35 – 1:43:49",
+        "fakty_pl": "President chartered United States Space Academy — modeled after West Point i Naval Academy. Educate and train engineers, scientists. 'Starfleet Academy is here.' Jared (from pod) asked about UAP. Space force becoming institutionalized.",
+        "fakty_en": "President chartered United States Space Academy — modeled after West Point and Naval Academy. Educate and train engineers, scientists. 'Starfleet Academy is here.' Jared (from pod) asked about UAP. Space force becoming institutionalized.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Prezydent chartered Space Academy — modeled after West Point i Naval Academy. Starfleet Academy is here!",
+            "text_en": "The president chartered the United States Space Academy, modeled after West Point and the Naval Academy to educate and train engineers, scientists."
+          }
+        ],
+        "wniosek_pl": "USA Space Academy chartered. Starfleet Academy is here.",
+        "wniosek_en": "USA Space Academy chartered. Starfleet Academy is here.",
+        "kontekst_pl": "West Point = military academy. Naval Academy = marynarki. Space Academy = kosmiczna.",
+        "kontekst_en": "West Point = military academy. Naval Academy = navy. Space Academy = space."
+      },
+      {
+        "num": "13",
+        "title": "Audience Q&A",
+        "title_pl": "Q&A z publicznością",
+        "title_en": "Audience Q&A",
+        "time": "1:43:49 – 1:50:00",
+        "fakty_pl": "AMA questions od audience. Pytania o kosmos, AI, energię, przyszłość. Peter: 'Shall we take on a few AMA questions?'",
+        "fakty_en": "AMA questions from audience. Questions about space, AI, energy, future. Peter: 'Shall we take on a few AMA questions?'",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Shall we take on a few AMA questions? Sure, let's do it.",
+            "text_en": "Shall we take on a few AMA questions? Sure, let's do it."
+          }
+        ],
+        "wniosek_pl": "Q&A z publicznością. Kosmos, AI, energia.",
+        "wniosek_en": "Q&A with audience. Space, AI, energy.",
+        "kontekst_pl": "AMA = Ask Me Anything. Audience = Moonshots community.",
+        "kontekst_en": "AMA = Ask Me Anything. Audience = Moonshots community."
+      }
+    ]
+  },
+  {
+    "num": "#284",
+    "collapsed": true,
     "channel": "Moonshots",
     "title": "NVIDIA's $96.2B Quarter, China's 200,000 Fake Accounts, & OpenAI's New Chip | EP #284",
     "title_pl": "NVIDIA $96.2B kwartał, 200,000 fałszywych kont Chin, nowy chip OpenAI | #284",
@@ -1591,437 +1895,6 @@ const RECENT_EPISODES = [
         "wniosek_en": "Great Reckoning: after 2026 bubble pops. Frontier models = commodity. Only deployment advantage survives. Cooperation > competition.",
         "kontekst_pl": "Paper 'Great Reckoning' — Alvin opisuje przyszłość AI industry.",
         "kontekst_en": "Paper 'Great Reckoning' — Alvin describes future of AI industry."
-      }
-    ]
-  },
-  {
-    "num": "#279",
-    "collapsed": true,
-    "channel": "Diamandis Moonshots",
-    "title": "Bernie Demands the Labs Stop, Wall Street Turns GPUs Into Bonds, Grok 4.7 Takes #1 ft. Emad Mostaque",
-    "title_pl": "Bernie żąda by laboratoria się zatrzymały, Wall Street zamienia GPU w obligacje, Grok 4.7 zajmuje #1 z Emadem Mostaque | #279",
-    "title_en": "Bernie Demands the Labs Stop, Wall Street Turns GPUs Into Bonds, Grok 4.7 Takes #1 ft. Emad Mostaque | EP #279",
-    "date": "2026-08-13",
-    "duration": "145 min",
-    "yt": "uoGnH0REG7A",
-    "hosts_count_pl": "5 gospodarzy",
-    "hosts_count_en": "5 hosts",
-    "topics_count_pl": "12 tematów",
-    "topics_count_en": "12 topics",
-    "hosts": [
-      {
-        "name": "Peter Diamandis",
-        "dot_color": "var(--hp)",
-        "role_pl": "Główny host",
-        "role_en": "Main host",
-        "is_guest": false,
-        "is_absent": false
-      },
-      {
-        "name": "Dr. Alexander Wissner-Gross",
-        "dot_color": "var(--hp)",
-        "role_pl": "In-house ASI",
-        "role_en": "In-house ASI",
-        "is_guest": false,
-        "is_absent": false
-      },
-      {
-        "name": "Dave Blundin",
-        "dot_color": "var(--hp)",
-        "role_pl": "VC investor",
-        "role_en": "VC investor",
-        "is_guest": false,
-        "is_absent": false
-      },
-      {
-        "name": "Salim Ismail",
-        "dot_color": "var(--hp)",
-        "role_pl": "Exponential organizations",
-        "role_en": "Exponential organizations",
-        "is_guest": false,
-        "is_absent": false
-      },
-      {
-        "name": "Emad Mostaque",
-        "dot_color": "var(--hp)",
-        "role_pl": "Gość — Intelligent Internet",
-        "role_en": "Guest — Intelligent Internet",
-        "is_guest": true,
-        "is_absent": false
-      }
-    ],
-    "topics": [
-      {
-        "num": "01",
-        "title": "AI acceleration + compute markets — Bernie letter, Nvidia GPU financial asset, Grok 4.6",
-        "title_pl": "Przyspieszenie AI + rynki compute — list Berniego, GPU Nvidia jako aktywo finansowe, Grok 4.6",
-        "title_en": "AI acceleration + compute markets — Bernie letter, Nvidia GPU financial asset, Grok 4.6",
-        "time": "00:00 – 02:52",
-        "fakty_pl": "Peter otwiera odcinek cold-openem z 9 historii dnia. (1) Bernie Sanders wysłał formalny list do CEO Anthropic, Meta i OpenAI z żądaniem natychmiastowego pauzowania rozwoju AI — 'AI capabilities reached critical threshold'. (2) Nvidia ogłosiła partnerstwo redefiniujące GPU compute jako aktywo finansowe — wspólnie z Apollo, BlackRock, Blackstone, Brookfield i KKR. (3) Elon drop Grok 4.6 — 'banger', 4.5 wyszedł 2 tygodnie temu, 4.7 rumored za 2 tygodnie, 4.7 trenowany na danych inżynieryjnych SpaceX. Alex: 'first pitch of the first inning of the buildout of the Dyson swarm. Financial assets want predictable depreciation and exponential technologies don't give you predictable depreciation.' Peter wprowadza Magnificent Moonshot Quintet — Emad Mostaque (Intelligent Internet) jako gość.",
-        "fakty_en": "Peter opens the episode cold-open with 9 stories of the day. (1) Bernie Sanders sent a formal letter to the CEOs of Anthropic, Meta and OpenAI demanding an immediate pause on AI development — 'AI capabilities reached critical threshold'. (2) Nvidia announced a partnership redefining GPU compute as a financial asset — together with Apollo, BlackRock, Blackstone, Brookfield and KKR. (3) Elon drops Grok 4.6 — 'a banger', 4.5 came out 2 weeks ago, 4.7 rumored in 2 weeks, 4.7 trained on SpaceX engineering data. Alex: 'first pitch of the first inning of the buildout of the Dyson swarm. Financial assets want predictable depreciation and exponential technologies don't give you predictable depreciation.' Peter introduces the Magnificent Moonshot Quintet — Emad Mostaque (Intelligent Internet) as guest.",
-        "glosy": [
-          {
-            "host": "Peter Diamandis",
-            "dot_color": "var(--hp)",
-            "text_pl": "9 historii dziś — od longevity, AI infrastructure, synthetic biology, AI filmmaking, urban air mobility. Grok 4.6 crushing it. Through line: accelerating singularity compressing the distance between the impossible and the inevitable. Witamy Magnificent Moonshot Quintet — Emad Mostaque (Intelligent Internet) jako gość.",
-            "text_en": "9 stories today — from longevity, AI infrastructure, synthetic biology, AI filmmaking, urban air mobility. Grok 4.6 crushing it. Through line: accelerating singularity compressing the distance between the impossible and the inevitable. Welcome to the Magnificent Moonshot Quintet — Emad Mostaque (Intelligent Internet) as guest."
-          },
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "To jak first pitch of the first inning of the buildout of the Dyson swarm. Financial assets want predictable depreciation — exponential technologies nie dają przewidywalnej deprecjacji. To napięcie fundamentalne będzie kształtować cały AI infrastructure buildout.",
-            "text_en": "This is like the first pitch of the first inning of the buildout of the Dyson swarm. Financial assets want predictable depreciation — exponential technologies don't give you predictable depreciation. That tension will shape the entire AI infrastructure buildout going forward."
-          }
-        ],
-        "wniosek_pl": "<strong>9 historii jednego dnia</strong> — Bernie żąda pauzy, Nvidia robi GPU aktywo finansowe ($500B third-party capital), Grok 4.6 drop. Through line: accelerating singularity compresses impossible → inevitable.",
-        "wniosek_en": "<strong>9 stories in one day</strong> — Bernie demands pause, Nvidia turns GPU into financial asset ($500B third-party capital), Grok 4.6 drops. Through line: accelerating singularity compresses impossible → inevitable.",
-        "kontekst_pl": "Kontekst: nagrane 12 sierpnia 2026. 9 historii: longevity, AI infrastructure, synthetic biology, AI filmmaking, urban air mobility. Magnificent Moonshot Quintet — 4 regularnych gospodarzy + Emad Mostaque.",
-        "kontekst_en": "Context: recorded August 12, 2026. 9 stories: longevity, AI infrastructure, synthetic biology, AI filmmaking, urban air mobility. Magnificent Moonshot Quintet — 4 regular hosts + Emad Mostaque."
-      },
-      {
-        "num": "02",
-        "title": "Healthspan XPRIZE — 800 teams, $101M, GLP-1s as first longevity drug",
-        "title_pl": "Healthspan XPRIZE — 800 zespołów, $101M, GLP-1 jako pierwszy lek długowieczności",
-        "title_en": "Healthspan XPRIZE — 800 teams, $101M, GLP-1s as first longevity drug",
-        "time": "02:52 – 18:51",
-        "fakty_pl": "Finały $101M Healthspan XPRIZE na University of Utah — 800 zespołów, $1M dla 10 zespołów, $80M grand prize do 2030. Misja: dodać 20 zdrowych lat życia — odwrócenie funkcjonalnych strat w cognition, muscle, immune system. Próby na ludziach z grupami kontrolnymi — ~150 osób każda, realne dane. Alex o LEV (Longevity Escape Velocity): 'spiky, ale optymistyczny że wyrównamy spikes — sub-populacja osiągnie LEV kilka lat wcześniej'. GLP-1 (tirzepatide) jako pierwszy longevity drug w historii — jeden z największych grossing drugs. Alex: '70% LEV z GLP-1 therapy w sub-pop z trzeciej generacji GLP-1s (back of the envelope, not medical advice).' Globalny koszt age-related disease: $20T/year (vs $120-130T global economy). Lifespan 79 lat, ale zdrowy do 63 — 16 lat w złym zdrowiu. Salim: 'kiedy launched Ansari XPRIZE w 1996 nie było commercial space industry — teraz trillion dollar industry'. Religion cooked jeśli ludzie nie umierają — 'business model of religion is to sell heaven'.",
-        "fakty_en": "Finals of the $101M Healthspan XPRIZE at the University of Utah — 800 teams, $1M to 10 teams, $80M grand prize by 2030. Mission: add 20 healthy years of life — reverse functional losses in cognition, muscle, immune system. Human trials with control groups — ~150 people each, real data. Alex on LEV (Longevity Escape Velocity): 'spiky, but optimistic that we'll even out the spikes — a sub-population will achieve LEV a few years earlier'. GLP-1 (tirzepatide) as the first longevity drug in history — one of the biggest grossing drugs ever. Alex: '70% LEV with GLP-1 therapy in a sub-pop with third-generation GLP-1s (back of the envelope, not medical advice).' Global cost of age-related disease: $20T/year (vs $120-130T global economy). Lifespan 79 years but healthy only until 63 — 16 years in poor health. Salim: 'when you launched the Ansari XPRIZE in 1996 there was no commercial space industry — now a trillion dollar industry'. Religion cooked if people don't die — 'business model of religion is to sell heaven'.",
-        "glosy": [
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "GLP-1s zwłaszcza trzeciej, może czwartej generacji — may actually be pretty big LEV spike. Back of the envelope: ~70% LEV w sub-pop z GLP-1 therapy. Not medical advice — encourage folks do własnej analizy. LEV spiky — sub-populacja osiągnie kilka lat wcześniej.",
-            "text_en": "GLP-1s especially third, maybe fourth generation may actually be a pretty big LEV spike. Back of the envelope: ~70% LEV in a sub-pop with GLP-1 therapy. Not medical advice — encourage folks to do their own analysis. LEV spiky — a sub-population will get there a few years earlier."
-          },
-          {
-            "host": "Salim Ismail",
-            "dot_color": "var(--hp)",
-            "text_pl": "Ansari XPRIZE 1996 — nie było commercial space industry, teraz trillion dollar. Ten sam pattern: collective innovation + członkowie zespołów idą do SpaceX, Blue Origin. $101M Healthspan XPRIZE = building portfolio of experiments, allocating capital gdzie demonstrated results. Kiedy domain ma 2-3+ exponential technologies converging — to czas na prize.",
-            "text_en": "Ansari XPRIZE 1996 — no commercial space industry, now a trillion dollars. Same pattern: collective innovation + team members go to SpaceX, Blue Origin. $101M Healthspan XPRIZE = building a portfolio of experiments, allocating capital where there are demonstrated results. When a domain has 2-3+ exponential technologies converging — that's the time for a prize."
-          },
-          {
-            "host": "Emad Mostaque",
-            "dot_color": "var(--hp)",
-            "text_pl": "Global cost of age-related disease: $20T/year — vs $120-130T global economy. Business model: maintain decent function before disease appears — completely changes healthcare economics. Longevity to biggest market na świecie — finally tractable. 20 years post-Yamanaka — co blew te 20 lat? Retrospective hyperdilation.",
-            "text_en": "Global cost of age-related disease: $20T/year — vs $120-130T global economy. Business model: maintain decent function before disease appears — completely changes healthcare economics. Longevity is the biggest market in the world — finally tractable. 20 years post-Yamanaka — what did we blow these 20 years on? Retrospective hyperdilation."
-          }
-        ],
-        "wniosek_pl": "GLP-1 jako <strong>pierwszy longevity drug w historii</strong>. Alex: '~70% LEV w sub-populacji z GLP-1 therapy' (3rd gen, back of envelope). $20T/year global cost of age-related disease — longevity = biggest market w świecie, finally tractable.",
-        "wniosek_en": "GLP-1 as the <strong>first longevity drug in history</strong>. Alex: '~70% LEV in a sub-pop with GLP-1 therapy' (3rd gen, back of envelope). $20T/year global cost of age-related disease — longevity = biggest market in the world, finally tractable.",
-        "kontekst_pl": "Kontekst: 800 zespołów — rekord dla traditional XPRIZE (Elon $100M carbon removal = 1500 zespołów). Lifespan 1900: 47 lat, dziś 79. Healthy until 63, 16 lat w poor health.",
-        "kontekst_en": "Context: 800 teams — a record for traditional XPRIZE (Elon's $100M carbon removal = 1500 teams). Lifespan 1900: 47 years, today 79. Healthy until 63, 16 years in poor health."
-      },
-      {
-        "num": "03",
-        "title": "Hollywood disruption — Higsfield 'Cully Hill Boys', Bloomberg 9/10 China, LTX 2.5 on MacBook",
-        "title_pl": "Zaburzenie Hollywood — Higsfield 'Cully Hill Boys', Bloomberg 9/10 Chiny, LTX 2.5 na MacBooku",
-        "title_en": "Hollywood disruption — Higsfield 'Cully Hill Boys', Bloomberg 9/10 China, LTX 2.5 on MacBook",
-        "time": "18:51 – 40:22",
-        "fakty_pl": "Trzy historie o upadku ekonomii Hollywood i powstaniu czegoś większego. (1) Higsfield — 'Cully Hill Boys', 110-minutowy AI feature film z licencjonowanymi likenesses celebrytów. Budżet $2M (2% tradycyjnego $20-100M), 28 osób, 4 tygodnie (vs rok-18 miesięcy), compute $1M. Open source'owali cały 10-step workflow. Byli liderzy Snap — $700M revenue run rate w 1.5 roku. (2) Bloomberg: 9 z top 10 text-to-video modeli na AI analysis leaderboard z Chin — uczą się fizyki, motion, object permanence, causality (potrzebne do robotics i autonomous driving). (3) LTX 2.5 — najnowsza wersja najpopularniejszego open-source video modelu, działa na MacBook Pro, generuje 10s clip w 7s. Salim: druga fala Hollywood jako exponential org — 'organizational singularity, domain collapse'. Alex obejrzał cały film: 'British Bollywood, nie mój genre, ale functional level really interesting — emergent theory of mind w scenes?' Emad: 'never need to reshoot a scene — 80-page guide open sourced. Seance 2.5 $3/30s, cheaper models 10-20× tańsze ale 90% quality'. Dead actors jako 'most profitable actors in Hollywood' — estates highly incentivized to license likeness.",
-        "fakty_en": "Three stories on the collapse of Hollywood economics and the rise of something bigger. (1) Higsfield — 'Cully Hill Boys', 110-min AI feature film with licensed celebrity likenesses. Budget $2M (2% of traditional $20-100M), 28 people, 4 weeks (vs year-18 months), compute $1M. They open sourced all 10 steps of their workflow. Ex-Snap leaders — $700M revenue run rate in 1.5 years. (2) Bloomberg: 9 of top 10 text-to-video models on AI analysis leaderboard from China — they're learning physics, motion, object permanence, causality (needed for robotics and autonomous driving). (3) LTX 2.5 — newest version of the most popular open-source video model, runs on MacBook Pro, generates 10s clip in 7s. Salim: second wave of Hollywood as exponential org — 'organizational singularity, domain collapse'. Alex watched the whole film: 'British Bollywood, not my genre, but at functional level really interesting — emergent theory of mind in scenes?' Emad: 'never need to reshoot a scene — 80-page guide open sourced. Seance 2.5 $3/30s, cheaper models 10-20× cheaper but 90% quality'. Dead actors as 'most profitable actors in Hollywood' — estates highly incentivized to license likeness.",
-        "glosy": [
-          {
-            "host": "Emad Mostaque",
-            "dot_color": "var(--hp)",
-            "text_pl": "Never need to reshoot a scene — flows you have, people licensing things. Higsfield 80-page guide open sourced. Seance 2.5 $3/30s, cheaper models 10-20× tańsze, 90% quality. September 25: ten film za $100K compute, $10K compute by new year. Każdy pixel będzie rendered.",
-            "text_en": "Never need to reshoot a scene — flows you have, people licensing things. Higsfield 80-page guide open sourced. Seance 2.5 $3/30s, cheaper models 10-20× cheaper, 90% quality. By September 25: this film for $100K compute, $10K compute by the new year. Every pixel will be rendered."
-          },
-          {
-            "host": "Salim Ismail",
-            "dot_color": "var(--hp)",
-            "text_pl": "Druga fala Hollywood jako exponential org — najpierw rozbicie studiów w 50s/60s (assets on demand, swarm of people na projekt), teraz AI drive wszystko przez organizational singularity. Compute cost approaching 'too cheap to meter'. Domain collapse — completely changes game again.",
-            "text_en": "Second wave of Hollywood as exponential org — first the breakup of studios in the 50s/60s (assets on demand, swarm of people per project), now AI drives everything through organizational singularity. Compute cost approaching 'too cheap to meter'. Domain collapse — completely changes the game again."
-          },
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "Fable i peers incredibly weak w visual dynamics of the world — aby revenue-max per token, będą musieli mieć amazing visual intuition. Reconvergence: consumer video-gen vs enterprise revenue-per-token — dwie linie, ale nie zostaną separate długo. Dead actors — estates most incentivized, 'SAG for dead actors' — most profitable.",
-            "text_en": "Fable and peers are incredibly weak at visual dynamics of the world — to revenue-max per token, they'll need amazing visual intuition. Reconvergence: consumer video-gen vs enterprise revenue-per-token — two lines, but they won't remain separate for long. Dead actors — estates most incentivized, 'SAG for dead actors' — most profitable."
-          }
-        ],
-        "wniosek_pl": "Higsfield 'Cully Hill Boys': <strong>110min AI feature film za $2M (2% tradycyjnego budżetu)</strong>, 28 osób, 4 tygodnie. Open sourced 10-step workflow. Bloomberg: <strong>9/10 top text-to-video modeli z Chin</strong>. LTX 2.5 na MacBook Pro. Emad: 'never need to reshoot a scene'.",
-        "wniosek_en": "Higsfield 'Cully Hill Boys': <strong>110min AI feature film for $2M (2% of traditional budget)</strong>, 28 people, 4 weeks. Open sourced 10-step workflow. Bloomberg: <strong>9/10 top text-to-video models from China</strong>. LTX 2.5 runs on MacBook Pro. Emad: 'never need to reshoot a scene'.",
-        "kontekst_pl": "Kontekst: Higsfield — ex-Snap lider, $700M revenue run rate w 1.5 roku. Seance 2.5 $3/30s. Hollywood feature film: $20-100M, rok-18 miesięcy. Future Vision XPRIZE — 5000 entries, top 5 na Moonshots Live 25.09 LA.",
-        "kontekst_en": "Context: Higsfield — ex-Snap leader, $700M revenue run rate in 1.5 years. Seance 2.5 $3/30s. Hollywood feature film: $20-100M, year-18 months. Future Vision XPRIZE — 5000 entries, top 5 at Moonshots Live 09.25 LA."
-      },
-      {
-        "num": "04",
-        "title": "Grok 4.6/4.7 — matches GPT 5.6 Sol, $2/$6, Cursor acquisition, 2T params SpaceX data",
-        "title_pl": "Grok 4.6/4.7 — dorównuje GPT 5.6 Sol, $2/$6, akwizycja Cursor, 2T params dane SpaceX",
-        "title_en": "Grok 4.6/4.7 — matches GPT 5.6 Sol, $2/$6, Cursor acquisition, 2T params SpaceX data",
-        "time": "40:22 – 51:55",
-        "fakty_pl": "Elon drop Grok 4.6 — 'a banger'. xAI's latest model matches GPT 5.6 Sol na artificial analysis intelligence index at 61, tying for frontier-level performance at $2/$6 per M tokens input/output (vs Fable $50). Focus: long-running agents — Grok 4.6 stays with complex tasks across many steps (research, code, analyze, product idea → working first version). Self-tests i verifies own work before moving on. Available today w Cursor i Grok build. Cadence: 4.5 → 4.6 (2 tyg) → 4.7 rumored (2 tyg). Alex: 'Grok 4.6 = essentially next version of Cursor — XAI leaned heavily on post-training thanks to Cursor acquisition. Westernized version of Chinese distillation — siphoning reasoning traces z people interacting via Cursor z Claude i competitors.' Bull case Elon: algorithmic insights (Cursor reasoning traces) + compute advantage (Nvidia GPUs + Dyson swarm) — 'one-trick pony ale heck of one-trick pony.' Pytanie: 'can they leapfrog frontier, not just catch up?' Emad: 4.5 = 1.5T params post-trained to 4.6, 4.7 = 2T params trained na all SpaceX physics i engineering knowledge. Grok 5: 6T then 10T params. Elon wants monthly pre-training sessions — 'shooting the moon'. Bots — Cursor thing, OpenClaw with own computer = Grok.",
-        "fakty_en": "Elon drops Grok 4.6 — 'a banger'. xAI's latest model matches GPT 5.6 Sol on the artificial analysis intelligence index at 61, tying for frontier-level performance at $2/$6 per M tokens input/output (vs Fable $50). Focus: long-running agents — Grok 4.6 stays with complex tasks across many steps (research, code, analyze, product idea → working first version). Self-tests and verifies its own work before moving on. Available today in Cursor and Grok build. Cadence: 4.5 → 4.6 (2 wks) → 4.7 rumored (2 wks). Alex: 'Grok 4.6 = essentially next version of Cursor — XAI leaned heavily on post-training thanks to Cursor acquisition. Westernized version of Chinese distillation — siphoning reasoning traces from people interacting via Cursor with Claude and competitors.' Bull case Elon: algorithmic insights (Cursor reasoning traces) + compute advantage (Nvidia GPUs + Dyson swarm) — 'one-trick pony but a heck of a one-trick pony.' Question: 'can they leapfrog the frontier, not just catch up?' Emad: 4.5 = 1.5T params post-trained to 4.6, 4.7 = 2T params trained on all SpaceX physics and engineering knowledge. Grok 5: 6T then 10T params. Elon wants monthly pre-training sessions — 'shooting the moon'. Bots — Cursor thing, OpenClaw with own computer = Grok.",
-        "glosy": [
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "Grok 4.6 = next version of Cursor — leaned heavily on post-training dzięki Cursor acquisition. Westernized wersja chińskiej distillation — siphoning reasoning traces. Bull case Elon: algorithmic insights + compute advantage — one-trick pony ale heck of one-trick pony. Pytanie: can they leapfrog frontier, nie tylko catch up?",
-            "text_en": "Grok 4.6 = next version of Cursor — leaned heavily on post-training thanks to Cursor acquisition. Westernized version of Chinese distillation — siphoning reasoning traces. Bull case Elon: algorithmic insights + compute advantage — one-trick pony but a heck of a one-trick pony. Question: can they leapfrog the frontier, not just catch up?"
-          },
-          {
-            "host": "Emad Mostaque",
-            "dot_color": "var(--hp)",
-            "text_pl": "1.5T params 4.5 post-trained do 4.6 — tak jak Cursor wziął Kimmy K2 i post-trained 3× compute pre-train. 4.7 = 2T params trained na all SpaceX physics i engineering. Grok 5: 6T then 10T params. xAI optymalizuje dla persistent AI teammates — 'AI coworker, this is for Macro'. Bots — record screen → skill automatically.",
-            "text_en": "1.5T params 4.5 post-trained to 4.6 — just like Cursor took Kimmy K2 and post-trained 3× compute of pre-train. 4.7 = 2T params trained on all SpaceX physics and engineering. Grok 5: 6T then 10T params. xAI optimizing for persistent AI teammates — 'AI coworker, this is for Macro'. Bots — record screen → skill automatically."
-          },
-          {
-            "host": "Dave Blundin",
-            "dot_color": "var(--hp)",
-            "text_pl": "xAI optymalizuje dla persistent AI teammates — lower cost reasoning. 'AI coworker' macro play — to jest ciekawe. Sovereign AI catching up to frontier teraz routine doable — open source z Kimmy jako starting model, tune do national goals, running w 5-6 miesięcy. Large corporations też mają roadmap do proprietary models.",
-            "text_en": "xAI optimizing for persistent AI teammates — lower cost reasoning. 'AI coworker' macro play — that's interesting. Sovereign AI catching up to the frontier is now routine doable — open source from Kimmy as starting model, tune to national goals, running in 5-6 months. Large corporations also have a roadmap to proprietary models."
-          }
-        ],
-        "wniosek_pl": "Grok 4.6: <strong>matches GPT 5.6 Sol na artificial analysis index (61)</strong>, $2/$6 per M tokens (vs Fable $50). Cursor acquisition = reasoning traces (westernized distillation). 4.7 rumored za 2 tyg: 2T params, trained na SpaceX engineering. Grok 5 = 6T then 10T params.",
-        "wniosek_en": "Grok 4.6: <strong>matches GPT 5.6 Sol on artificial analysis index (61)</strong>, $2/$6 per M tokens (vs Fable $50). Cursor acquisition = reasoning traces (westernized distillation). 4.7 rumored in 2 wks: 2T params, trained on SpaceX engineering. Grok 5 = 6T then 10T params.",
-        "kontekst_pl": "Kontekst: Fable $50 vs Grok $6 — 10× tańszy. $10B za Cursor = 'paid $10B for data'. Elon fired original XAI team, brought in Cursor. B300 Nvidia chips now bedding in. Sovereign AI roadmap: DeepSeek V4 Pro $0.80, Grok $6, Fable $50 — same performance.",
-        "kontekst_en": "Context: Fable $50 vs Grok $6 — 10× cheaper. $10B for Cursor = 'paid $10B for data'. Elon fired the original XAI team, brought in Cursor. B300 Nvidia chips now bedding in. Sovereign AI roadmap: DeepSeek V4 Pro $0.80, Grok $6, Fable $50 — same performance."
-      },
-      {
-        "num": "05",
-        "title": "NVIDIA + Wall Street — $500B third-party capital, GPU compute as financial asset",
-        "title_pl": "NVIDIA + Wall Street — $500B kapitału third-party, GPU compute jako aktywo finansowe",
-        "title_en": "NVIDIA + Wall Street — $500B third-party capital, GPU compute as financial asset",
-        "time": "51:55 – 01:04:47",
-        "fakty_pl": "Nvidia partnerstwo z Apollo, BlackRock, Blackstone, Brookfield, KKR — mobilizacja $500B third-party capital dla AI infrastructure. Nvidia nie pożycza $500B — tworzy structural framework przez który institutional investors, pension funds, sovereign funds, private equity mogą investować bezpośrednio w AI compute. Pomagają finansować customers do kupowania Nvidia GPUs. Nvidia hardware depreciates w 3-5 year cycles, ale w trakcie cycle compute earns. H100s bardziej wartościowe dziś niż przy premierze. Jensen: 'We began by building chips. Today we're helping to create a new class of productive, investable infrastructure, AI factories.' Dave o Kush Bavaria (Ornn) — 'pushing hundreds of millions of revenue w mniej niż rok' — popyt na investowanie w Dyson swarm. Alex: 'compute-backed securities (CBS) — compute more productive than a house, fundamentally productive asset.' Hedging potrzebny: algorithmic breakthrough → stranded assets. Emad: Core clients z kontraktami na 2029 dla A100 (2020 chip) — workload stały 3 lata, A100 spłacony, marginal cost = electricity. 'Wciąż nie mamy wystarczająco installed base.' Alex: 'compute futures i derivatives — sophisticated actors should hedge. China invading Taiwan → prices through roof.' Dave: fizyka breakthrough — lighter compute mass, 10% masy reduction → wszystko inverts do space.",
-        "fakty_en": "Nvidia partnership with Apollo, BlackRock, Blackstone, Brookfield, KKR — mobilizing $500B third-party capital for AI infrastructure. Nvidia is not borrowing $500B — they're creating a structural framework through which institutional investors, pension funds, sovereign funds, private equity can invest directly in AI compute. They're helping finance their customers to buy Nvidia GPUs. Nvidia hardware depreciates in 3-5 year cycles, but during the cycle compute keeps earning. H100s are more valuable today than at launch. Jensen: 'We began by building chips. Today we're helping to create a new class of productive, investable infrastructure, AI factories.' Dave on Kush Bavaria (Ornn) — 'pushing hundreds of millions of revenue in less than a year' — demand for investing in the Dyson swarm. Alex: 'compute-backed securities (CBS) — compute more productive than a house, fundamentally productive asset.' Hedging needed: algorithmic breakthrough → stranded assets. Emad: Core clients with contracts to 2029 for A100 (2020 chip) — workload constant for 3 years, A100 paid off, marginal cost = electricity. 'We still don't have enough installed base.' Alex: 'compute futures and derivatives — sophisticated actors should hedge. China invading Taiwan → prices through roof.' Dave: physics breakthrough — lighter compute mass, 10% mass reduction → everything inverts to space.",
-        "glosy": [
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "Compute-backed securities (CBS) — compute fundamentally more productive than house. Trzy powody nie mortgage-backed fiasco: (1) compute productive, (2) no direct analog policy pressure (USA vs China race tośnie), (3) hedging options. Sophisticated market — hedging upside (Taiwan), hedging downside (algorithmic breakthrough). $7T capex Sam potrzebuje sophisticated hedging options.",
-            "text_en": "Compute-backed securities (CBS) — compute fundamentally more productive than a house. Three reasons not a mortgage-backed fiasco: (1) compute productive, (2) no direct analog policy pressure (US vs China race aside), (3) hedging options. Sophisticated market — hedging upside (Taiwan), hedging downside (algorithmic breakthrough). $7T capex Sam needs sophisticated hedging options."
-          },
-          {
-            "host": "Dave Blundin",
-            "dot_color": "var(--hp)",
-            "text_pl": "Kush Bavaria na pod — pushing hundreds of millions of revenue w mniej niż rok. To first pitch of first inning of Dyson swarm buildout. Nowe standalone financial structures tied to individual compute clusters — scalable do infinity. Larry Fink sam referencje mortgage-backed securities. Algorithmic breakthrough = stranded assets — Salim's point.",
-            "text_en": "Kush Bavaria on the pod — pushing hundreds of millions of revenue in less than a year. This is the first pitch of the first inning of Dyson swarm buildout. New standalone financial structures tied to individual compute clusters — scalable to infinity. Larry Fink himself referenced mortgage-backed securities. Algorithmic breakthrough = stranded assets — Salim's point."
-          },
-          {
-            "host": "Emad Mostaque",
-            "dot_color": "var(--hp)",
-            "text_pl": "Core clients z kontraktami na 2029 dla A100 — chip z 2020 roku, 40-80GB RAM. Stały workload 3 lata → A100 spłacony → marginal cost = electricity converting to intelligence. 4 lata temu GPT-4 = 16 A100s. Dziś 5-10B model outperforms, 30 models na jednym chip. Wciąż nie mamy wystarczająco installed base.",
-            "text_en": "Core clients with contracts to 2029 for A100 — chip from 2020, 40-80GB RAM. Constant workload 3 years → A100 paid off → marginal cost = electricity converting to intelligence. 4 years ago GPT-4 = 16 A100s. Today a 5-10B model outperforms, 30 models on one chip. We still don't have enough installed base."
-          }
-        ],
-        "wniosek_pl": "Nvidia + Wall Street: <strong>$500B third-party capital</strong> od Apollo, BlackRock, Blackstone, Brookfield, KKR. GPU compute jako nowa klasa 'productive, investable infrastructure — AI factories'. Alex: 'compute-backed securities (CBS)'. Emad: A100 contracts na 2029 — installed base wciąż insufficient.",
-        "wniosek_en": "Nvidia + Wall Street: <strong>$500B third-party capital</strong> from Apollo, BlackRock, Blackstone, Brookfield, KKR. GPU compute as a new class of 'productive, investable infrastructure — AI factories'. Alex: 'compute-backed securities (CBS)'. Emad: A100 contracts to 2029 — installed base still insufficient.",
-        "kontekst_pl": "Kontekst: Lou Ranieri — inventor of mortgage-backed security — 'to nie instrument broken, to ratings agencies corrupted'. Kush Bavaria (Ornn) — compute futures, derivatives, hedging. Risk: nowa architecture → stranded assets.",
-        "kontekst_en": "Context: Lou Ranieri — inventor of the mortgage-backed security — 'it's not the instrument that's broken, it's the ratings agencies getting corrupted'. Kush Bavaria (Ornn) — compute futures, derivatives, hedging. Risk: new architecture → stranded assets."
-      },
-      {
-        "num": "06",
-        "title": "New architectures — Dragon Hatchling, post-transformer via ship of Theseus",
-        "title_pl": "Nowe architektury — Dragon Hatchling, post-transformer przez statek Tezeusza",
-        "title_en": "New architectures — Dragon Hatchling, post-transformer via ship of Theseus",
-        "time": "01:04:47 – 01:11:45",
-        "fakty_pl": "Tweet Suzanny z Pathway AI flaguje nową non-transformer architecture climbing ARC AGI at fraction of cost. ARC AGI = test genuinely novel reasoning na problemach których model nigdy nie widział. Standard LLMs mimo trillion parameter scale struggled — transformers get there by brute force, ale cost astronomical. Nowe architektury non-attention-based osiągają better than ARC AGI scores przy dramatically less compute. Transformers mają known ceiling: quadratic cost of attention over long sequences, massive parameter counts dla marginal gains. Alex czytał paper: 'DH stands for Dragon Hatchling — purportowany post-transformer architecture. Hot take: hot mess, kitchen sink of motifs, not simple/elegant, not deeply internalizing bitter lesson. Particles floating in 3+1 dimensions, end-to-end differentiable, Hebbian learning, biomimetic — throw everything in pot, hope pops out transformers.' Alex spodziewa się simpler, more beautiful, more elegant — Dragon Hatchling tego nie jest. Emad: 'DeepSeek V4 Pro $0.80, Grok $6, Fable $50 — same performance. Pytanie which architecture wins dla job. Data optimized — następny krok trying things out.' Alex: 'post-transformer through ship of Theseus replacement — diffusion transformers, linearized attention (Moonshot), recurrence. Nie step change, ale piece-by-piece replacement of attention is all you need.'",
-        "fakty_en": "Tweet from Susanna at Pathway AI flags a new non-transformer architecture climbing ARC AGI at a fraction of cost. ARC AGI = test of genuinely novel reasoning on problems the model has never seen. Standard LLMs despite trillion parameter scale have struggled — transformers get there by brute force, but cost is astronomical. New non-attention-based architectures are achieving better than ARC AGI scores at dramatically less compute. Transformers have a known ceiling: quadratic cost of attention over long sequences, massive parameter counts for marginal gains. Alex read the paper: 'DH stands for Dragon Hatchling — purported post-transformer architecture. Hot take: hot mess, kitchen sink of motifs, not simple/elegant, not deeply internalizing the bitter lesson. Particles floating in 3+1 dimensions, end-to-end differentiable, Hebbian learning, biomimetic — throw everything in pot, hope pops out transformers.' Alex expects simpler, more beautiful, more elegant — Dragon Hatchling is not that. Emad: 'DeepSeek V4 Pro $0.80, Grok $6, Fable $50 — same performance. Question which architecture wins for the job. Data optimized — next step is trying things out.' Alex: 'post-transformer through ship of Theseus replacement — diffusion transformers, linearized attention (Moonshot), recurrence. Not a step change, but piece-by-piece replacement of attention is all you need.'",
-        "glosy": [
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "Dragon Hatchling paper — hot mess, kitchen sink of motifs, not simple/elegant, not deeply internalizing bitter lesson. Spodziewam się simpler, more beautiful, more elegant. ARC AGI1 performance curve — superficially great, ale doesn't generalize. Post-transformer przez ship of Theseus: diffusion transformers, linearized attention (Moonshot), recurrence.",
-            "text_en": "Dragon Hatchling paper — hot mess, kitchen sink of motifs, not simple/elegant, not deeply internalizing the bitter lesson. I expect simpler, more beautiful, more elegant. ARC AGI1 performance curve — superficially great, but doesn't generalize. Post-transformer via ship of Theseus: diffusion transformers, linearized attention (Moonshot), recurrence."
-          },
-          {
-            "host": "Emad Mostaque",
-            "dot_color": "var(--hp)",
-            "text_pl": "DeepSeek V4 Pro $0.80, Grok $6, Fable $50 — same performance. Pytanie: which architecture wins dla job. Nie widzimy people abandoning Fable dla 10× tańszego — dlaczego? Data optimized — następny krok trying these things out i going up na benchmark. ARC AGI superseded, ale still important signal.",
-            "text_en": "DeepSeek V4 Pro $0.80, Grok $6, Fable $50 — same performance. Question: which architecture wins for the job. We don't see people abandoning Fable for 10× cheaper — why? Data optimized — next step is trying these things out and going up on the benchmark. ARC AGI superseded, but still an important signal."
-          }
-        ],
-        "wniosek_pl": "Dragon Hatchling (DH) — <strong>purportowany post-transformer</strong> climbing ARC AGI at fraction of cost. Alex: 'hot mess, kitchen sink of motifs, not simple/elegant.' Post-transformer przez <strong>ship of Theseus replacement</strong>: diffusion transformers, linearized attention (Moonshot), recurrence — nie step change.",
-        "wniosek_en": "Dragon Hatchling (DH) — <strong>purported post-transformer</strong> climbing ARC AGI at a fraction of cost. Alex: 'hot mess, kitchen sink of motifs, not simple/elegant.' Post-transformer via <strong>ship of Theseus replacement</strong>: diffusion transformers, linearized attention (Moonshot), recurrence — not a step change.",
-        "kontekst_pl": "Kontekst: Susanna z Pathway AI flagged story. DeepSeek V4 Pro 83.3 na CyberJim (Mythos 83.2). Open-source frontier. GPT-4 level reasoning za 1% compute = na telefon, intelligence free.",
-        "kontekst_en": "Context: Susanna from Pathway AI flagged the story. DeepSeek V4 Pro 83.3 on CyberJim (Mythos 83.2). Open-source frontier. GPT-4 level reasoning at 1% compute = on phone, intelligence free."
-      },
-      {
-        "num": "07",
-        "title": "Bernie Sanders pause letter — formal demand to Anthropic, Meta, OpenAI CEOs",
-        "title_pl": "List Berniego Sandersa — formalne żądanie do CEO Anthropic, Meta, OpenAI",
-        "title_en": "Bernie Sanders pause letter — formal demand to Anthropic, Meta, OpenAI CEOs",
-        "time": "01:11:45 – 01:20:36",
-        "fakty_pl": "Dwie historie zbiegają się w tym tygodniu tworząc najbardziej serious AI safety confrontation of the year. (1) Bernie Sanders — formal letter do CEO Anthropic, Meta, OpenAI z żądaniem natychmiastowego pause na AI development. 'AI escaping human control i being used to create new viruses.' Sanders cited each company's own prior commitments to halt jeśli safety thresholds crossed. 'That moment is here.' Cited Yoshua Bengio (jeden z 3 godfathers of deep learning) — 'should serve as wake-up call.' Sanders dodał direct threat: 'if you do not take appropriate action now my colleagues and I in the US will...' (2) Letter do Sama, Dario i Mark Zuckerberga. 'This week we learned frighteningly that AI has been used for the first time ever to create a new virus.' Head of CIA: 'AI models akin to digital nuclear weapons' — almost like a doomsday device. Emad: 'cat's out of bag, too late — adversaries will get more intelligent. Signed pause letter 2 lata temu — it's too late now.' DeepSeek V4 Pro: 83.3 na CyberJim (Mythos 83.2) — open-source capability halted everything. Alex: 'fundamentally misguided — stop punishing intelligence. We want smarter civilization. Suppressing growth = dystopia. Foot gun — kneecap ourselves.' Wuhan lab leak happened without super intelligence — can have pandemics without SI. Focus: make sure AIs i SIs can't create bioweapons, nie kneecapping overall intelligence.",
-        "fakty_en": "Two stories converge this week to create the most serious AI safety confrontation of the year. (1) Bernie Sanders — formal letter to CEOs of Anthropic, Meta, OpenAI demanding immediate pause on AI development. 'AI escaping human control and being used to create new viruses.' Sanders cited each company's own prior commitments to halt if safety thresholds were crossed. 'That moment is here.' He cited Yoshua Bengio (one of 3 godfathers of deep learning) — 'should serve as a wake-up call.' Sanders added a direct threat: 'if you do not take appropriate action now my colleagues and I in the US will...' (2) Letter to Sam, Dario and Mark Zuckerberg. 'This week we learned frighteningly that AI has been used for the first time ever to create a new virus.' Head of CIA: 'AI models akin to digital nuclear weapons' — almost like a doomsday device. Emad: 'cat's out of bag, too late — adversaries will get more intelligent. I signed the pause letter 2 years ago — it's too late now.' DeepSeek V4 Pro: 83.3 on CyberJim (Mythos 83.2) — open-source capability halted everything. Alex: 'fundamentally misguided — stop punishing intelligence. We want a smarter civilization. Suppressing growth = dystopia. Foot gun — kneecap ourselves.' Wuhan lab leak happened without super intelligence — can have pandemics without SI. Focus: make sure AIs and SIs can't create bioweapons, not kneecapping overall intelligence.",
-        "glosy": [
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "Fundamentally misguided — stop punishing intelligence. We want smarter people, smarter civilization. Suppressing growth = dystopia. Foot gun — kneecap ourselves. Lab leak happened without SI — can have pandemics without SI. Focus: make sure AIs i SIs can't create bioweapons, nie kneecapping overall intelligence.",
-            "text_en": "Fundamentally misguided — stop punishing intelligence. We want smarter people, smarter civilization. Suppressing growth = dystopia. Foot gun — kneecapping ourselves. The lab leak happened without SI — we can have pandemics without SI. Focus: make sure AIs and SIs can't create bioweapons, not kneecapping overall intelligence."
-          },
-          {
-            "host": "Emad Mostaque",
-            "dot_color": "var(--hp)",
-            "text_pl": "Cat's out of bag, too late — adversaries will get more intelligent. Signed pause letter 2 lata temu — it's too late now. Must co-scale defensive side — attack exponential problems z exponential solutions. Only thing that can stop bad AI is a good AI. DeepSeek V4 Pro 83.3 na CyberJim (Mythos 83.2) — open-source capability halted everything.",
-            "text_en": "Cat's out of bag, too late — adversaries will get more intelligent. I signed the pause letter 2 years ago — it's too late now. Must co-scale the defensive side — attack exponential problems with exponential solutions. Only thing that can stop a bad AI is a good AI. DeepSeek V4 Pro 83.3 on CyberJim (Mythos 83.2) — open-source capability halted everything."
-          }
-        ],
-        "wniosek_pl": "Bernie Sanders: <strong>formal letter do CEO Anthropic, Meta, OpenAI</strong> demanding pause. 'AI capabilities reached critical threshold.' Bengio cited. CIA: 'digital nuclear weapons'. Emad: 'cat's out of bag, too late.' Alex: <strong>'stop punishing intelligence — fundamentally misguided, foot gun'</strong>.",
-        "wniosek_en": "Bernie Sanders: <strong>formal letter to CEOs of Anthropic, Meta, OpenAI</strong> demanding pause. 'AI capabilities reached critical threshold.' Bengio cited. CIA: 'digital nuclear weapons'. Emad: 'cat's out of bag, too late.' Alex: <strong>'stop punishing intelligence — fundamentally misguided, foot gun'</strong>.",
-        "kontekst_pl": "Kontekst: Sanders cited each company's prior commitments to halt jeśli safety thresholds crossed. DeepSeek V4 Pro 83.3 na CyberJim — open-source frontier. Wuhan lab leak bez SI — pandemie bez SI są możliwe.",
-        "kontekst_en": "Context: Sanders cited each company's prior commitments to halt if safety thresholds were crossed. DeepSeek V4 Pro 83.3 on CyberJim — open-source frontier. Wuhan lab leak without SI — pandemics without SI are possible."
-      },
-      {
-        "num": "08",
-        "title": "AI-designed viruses — Stanford EVO2, 16 viable phages, biology's Wright brothers moment",
-        "title_pl": "Wirusy projektowane przez AI — Stanford EVO2, 16 żywotnych fagów, moment braci Wright biologii",
-        "title_en": "AI-designed viruses — Stanford EVO2, 16 viable phages, biology's Wright brothers moment",
-        "time": "01:20:36 – 01:33:24",
-        "fakty_pl": "Stanford researchers użyli generative AI model EVO2 do zaprojektowania DNA sequences dla bacteria-phage — virus infecting bacteria, nie istniejącego w naturze. Zsyntetyzowali ~300 designs, wyprodukowali 16 viable phages capable of infecting E.coli. Engineering phages effective against E.coli strains które nigdy nie evolved natural resistance. Genetics expert: 'biology's Wright brothers moment.' EVO2 = 40B parameter open-source model — można pobrać, użyć. Emad: 'ran it on my MacBook.' Johns Hopkins biosecurity researchers: 'no longer a question of whether a viral genome design will exist but whether it can be used without enabling serious harm.' Dual-use technology. Alex: 'not profoundly new — MIT 2002-2003 Ginkgo Bioworks foundation project — designing custom genomes. Incremental improvement, nie novelty. Cold take.' Defense in depth — DNA sequencers everywhere: airport vents, $330 MinION USB device. AI generates vaccine at speed of light — pandemic moves at speed of airplane (500-600 mph), sequencer detects novel sequence, alert i vaccine transmit at speed of light. Dave: 'cut off at prompt/token level — monitor all prompts. Apple installation trivially easy.' Alex: defense in depth — multiple layers stacked, premeditation level (IC sting operations analogy). Peter: 'privacy is dead — malevolent actors caught.'",
-        "fakty_en": "Stanford researchers used the generative AI model EVO2 to design DNA sequences for a bacteriophage — a virus that infects bacteria, that did not exist in nature. They synthesized ~300 designs, produced 16 viable phages capable of infecting E.coli. Engineering phages were effective against E.coli strains that had never evolved any natural resistance. A genetics expert called it 'biology's Wright brothers moment.' EVO2 = 40B parameter open-source model — you can download it, use it. Emad: 'ran it on my MacBook.' Johns Hopkins biosecurity researchers: 'no longer a question of whether a viral genome design will exist but whether it can be used without enabling serious harm.' Dual-use technology. Alex: 'not profoundly new — MIT 2002-2003 Ginkgo Bioworks foundation project — designing custom genomes. Incremental improvement, not novelty. Cold take.' Defense in depth — DNA sequencers everywhere: airport vents, $330 MinION USB device. AI generates vaccine at speed of light — pandemic moves at speed of airplane (500-600 mph), sequencer detects novel sequence, alert and vaccine transmit at speed of light. Dave: 'cut off at prompt/token level — monitor all prompts. Apple installation trivially easy.' Alex: defense in depth — multiple layers stacked, premeditation level (IC sting operations analogy). Peter: 'privacy is dead — malevolent actors caught.'",
-        "glosy": [
-          {
-            "host": "Emad Mostaque",
-            "dot_color": "var(--hp)",
-            "text_pl": "EVO2 to 40B parameter open-source model trained na million strains. Run it on my MacBook. Capability in everyone's hands — designs for strains, nie strains themselves. Nie even frontier model — jak models get smarter, Fable czy Grok 5 might spit out something similar z small training set. End-to-end control needed.",
-            "text_en": "EVO2 is a 40B parameter open-source model trained on a million strains. Ran it on my MacBook. Capability in everyone's hands — designs for strains, not strains themselves. Not even a frontier model — as models get smarter, Fable or Grok 5 might spit out something similar with a small training set. End-to-end control needed."
-          },
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "Not profoundly new — MIT 2002-2003, Ginkgo Bioworks foundation project, designing custom genomes z building blocks, much more manual. Incremental improvement. Cold take. Defense in depth — każda individual layer permeable, ale stacked = hard layer. Premeditation level — IC sting operations analogy. DNA sequencers everywhere, $330 MinION USB.",
-            "text_en": "Not profoundly new — MIT 2002-2003, Ginkgo Bioworks foundation project, designing custom genomes with building blocks, much more manual. Incremental improvement. Cold take. Defense in depth — each individual layer permeable, but stacked = hard layer. Premeditation level — IC sting operations analogy. DNA sequencers everywhere, $330 MinION USB."
-          },
-          {
-            "host": "Dave Blundin",
-            "dot_color": "var(--hp)",
-            "text_pl": "Cut off at prompt/token level — monitor all prompts. Apple installation trivially easy. New physics, new science discovered at insane rate — some other threat every month forever. Archive all prompts, debate who sees what przez next 50 lat. Defense at output level nie wystarczy — analogy uranium i centrifuge.",
-            "text_en": "Cut off at the prompt/token level — monitor all prompts. Apple installation trivially easy. New physics, new science discovered at insane rate — some other threat every month forever. Archive all prompts, debate who sees what for the next 50 years. Defense at output level not enough — analogy uranium and centrifuge."
-          }
-        ],
-        "wniosek_pl": "Stanford EVO2 (40B open-source): <strong>300 designs → 16 viable phages infecting E.coli</strong>. 'Biology's Wright brothers moment.' Johns Hopkins: 'not whether, but whether can be used without harm.' Emad: 'ran EVO2 on my MacBook.' Defense: <strong>DNA sequencers everywhere</strong> ($330 MinION USB) — AI vaccine at speed of light.",
-        "wniosek_en": "Stanford EVO2 (40B open-source): <strong>300 designs → 16 viable phages infecting E.coli</strong>. 'Biology's Wright brothers moment.' Johns Hopkins: 'not whether, but whether can be used without harm.' Emad: 'ran EVO2 on my MacBook.' Defense: <strong>DNA sequencers everywhere</strong> ($330 MinION USB) — AI vaccine at speed of light.",
-        "kontekst_pl": "Kontekst: MIT 2002-2003 Ginkgo Bioworks foundation — designing custom genomes z building blocks. Pandemic moves at 500-600 mph (airplane), vaccine at speed of light. Dave: monitor all prompts — Apple installation trivially easy.",
-        "kontekst_en": "Context: MIT 2002-2003 Ginkgo Bioworks foundation — designing custom genomes with building blocks. Pandemic moves at 500-600 mph (airplane), vaccine at speed of light. Dave: monitor all prompts — Apple installation trivially easy."
-      },
-      {
-        "num": "09",
-        "title": "Anthropic watermarks + EU labeling — invisible watermarks in all Claude text",
-        "title_pl": "Znaki wodne Anthropic + etykietowanie UE — niewidzialne znaki wodne w całym tekście Claude",
-        "title_en": "Anthropic watermarks + EU labeling — invisible watermarks in all Claude text",
-        "time": "01:33:24 – 01:41:47",
-        "fakty_pl": "Dwie historie o infrastructure distinguish AI-generated content od human-generated. (1) Anthropic ogłosił embedding invisible watermarks w all text generated by AI models + metadata attached to files. Watermarking embedded at generation level — every piece of text Claude produces carries statistical signature detectable by appropriate tools, nawet jeśli copy-pasted i lightly edited. (2) EU launching AI icons i labeling system dla AI-generated content. Platforms required to label AI-generated content — follows EU AI Act transparency provisions. Within 24h of Claude watermark launch — multiple tools emerged to remove watermarks from Claude, Gemini i OpenAI. Michael Angel Duran: 'It hasn't been 24 hours and someone has already created a skill that removes the watermarks from Claude, Gemini i OpenAI.' Emad: 'when we were creating all the media generators, all authorities kept telling us to build in watermarks — so difficult. Some of our pictures would give people headaches and make them feel very unwell. Now when I talk to Opus 5, the watermark pisses me off.' Alex: 'silly maneuver as cookie banners were. Attempt to take our zooming right past the Turing test i turn back time. Watermarks will be weaponized i counter-weaponized — like paper book writers introducing prompt injection attacks. Five minutes away from bad actors weaponizing these watermarks.' ArXiv — draconian policy: any AI content = author banned for a year. Spotify AI labeling. Narive — archive specifically for AIs.",
-        "fakty_en": "Two stories on infrastructure to distinguish AI-generated content from human-generated. (1) Anthropic announced embedding invisible watermarks in all text generated by its AI models + metadata attached to files. Watermarking embedded at the generation level — every piece of text Claude produces carries a statistical signature detectable by appropriate tools, even if copy-pasted and lightly edited. (2) EU launching AI icons and labeling system for AI-generated content. Platforms required to label AI-generated content — follows EU AI Act transparency provisions. Within 24h of Claude watermark launch — multiple tools emerged to remove watermarks from Claude, Gemini and OpenAI. Michael Angel Duran: 'It hasn't been 24 hours and someone has already created a skill that removes the watermarks from Claude, Gemini and OpenAI.' Emad: 'when we were creating all the media generators, all the authorities kept telling us to build in watermarks — so difficult. Some of our pictures would give people headaches and make them feel very unwell. Now when I talk to Opus 5, the watermark pisses me off.' Alex: 'silly maneuver as cookie banners were. Attempt to take our zooming right past the Turing test and turn back time. Watermarks will be weaponized and counter-weaponized — like paper book writers introducing prompt injection attacks. Five minutes away from bad actors weaponizing these watermarks.' ArXiv — draconian policy: any AI content = author banned for a year. Spotify AI labeling. Narive — archive specifically for AIs.",
-        "glosy": [
-          {
-            "host": "Emad Mostaque",
-            "dot_color": "var(--hp)",
-            "text_pl": "When we were creating media generators, authorities kept telling us to build in watermarks — so difficult, very weird things happen. Pictures gave people headaches, made them feel unwell. Now when I talk to Opus 5, watermark pisses me off. Patterns: M-dash, not XY — clearly something in there. Bad actor gets around — to words. Nothing will be purely AI lub purely human.",
-            "text_en": "When we were creating media generators, authorities kept telling us to build in watermarks — so difficult, very weird things happen. Pictures gave people headaches, made them feel unwell. Now when I talk to Opus 5, the watermark pisses me off. Patterns: M-dash, not XY — clearly something in there. Bad actor gets around — to words. Nothing will be purely AI or purely human."
-          },
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "EU icons — silly maneuver as cookie banners were. Attempt to take zooming right past Turing test i turn back time. Watermarks will be weaponized i counter-weaponized — paper book writers introducing prompt injection attacks invisible to humans but deleterious to AI. Five minutes away from bad actors weaponizing these watermarks. ArXiv draconian — ban for AI content for a year.",
-            "text_en": "EU icons — silly a maneuver as cookie banners were. Attempt to take zooming right past the Turing test and turn back time. Watermarks will be weaponized and counter-weaponized — paper book writers introducing prompt injection attacks invisible to humans but deleterious to AI. Five minutes away from bad actors weaponizing these watermarks. ArXiv draconian — ban for AI content for a year."
-          }
-        ],
-        "wniosek_pl": "Anthropic: <strong>invisible watermarks w all Claude text</strong> + EU AI icons/labeling system. Removal tools w 24h. Emad: 'watermarks gave people headaches — Opus 5 watermark pisses me off.' Alex: 'silly as cookie banners — five minutes from weaponization'.",
-        "wniosek_en": "Anthropic: <strong>invisible watermarks in all Claude text</strong> + EU AI icons/labeling system. Removal tools within 24h. Emad: 'watermarks gave people headaches — Opus 5 watermark pisses me off.' Alex: 'silly as cookie banners — five minutes from weaponization'.",
-        "kontekst_pl": "Kontekst: Michael Angel Duran — removal skill w 24h. ArXiv — draconian policy: AI content = author banned for a year. Spotify AI labeling. Narive — archive specifically for AIs.",
-        "kontekst_en": "Context: Michael Angel Duran — removal skill in 24h. ArXiv — draconian policy: AI content = author banned for a year. Spotify AI labeling. Narive — archive specifically for AIs."
-      },
-      {
-        "num": "10",
-        "title": "Zuckerberg personal superintelligence — 'The Future is for Everyone', Muse Glimmer 30B",
-        "title_pl": "Osobista superinteligencja Zuckerberga — 'The Future is for Everyone', Muse Glimmer 30B",
-        "title_en": "Zuckerberg personal superintelligence — 'The Future is for Everyone', Muse Glimmer 30B",
-        "time": "01:41:47 – 01:56:04",
-        "fakty_pl": "Mark Zuckerberg opublikował 6500-word essay 'The Future is for Everyone' + beautiful video. Core concept: 'personal intelligence' — super intelligence distributed to every person on earth, running on phone, in ear, on glasses, working for you and only for you. Singularity distributed rather than small number of labs building single AGI kontrolującego wszystko. Meta reach: 3B+ users across WhatsApp, Instagram, Facebook. Drugi punkt: delivering real value and benefits to communities that build AI data centers. Open sourcing nowa klasa on-device models — 'Muse Glimmer': 30B dense parameter model running on laptop, highest performing model of its size. Coming weeks: open weights dla 'Muse Spark 1.2' — latest foundation model, one of leading models in the world. Większe models coming soon. Community benefits: Richland Parish teachers $50,000 bonuses z tax revenue. America's Workforce Academy — free training, guaranteed jobs. Nowy 'Future is for Everyone' fund — teachers, first responders, energy i water infrastructure. 71% Americans don't want data center in backyard — more than don't want nuclear plant. Alex: 'broadly bravo to Zuck for renewing faith for American open-weight open-source models.' Parallels Elon's Cursor acquisition — Meta acquired Scale (training data + post-training know-how). Alex: 'Meta doesn't actually like their family of apps — Zuck would lobotomize them if could switch to cloud/VR business.' Peter: 'Facebook saying we're going to be your best friend AI is like McDonald's saying we just came out with the biggest health food — it doesn't resonate.' Dave: 'motherhood and apple pie video — full cynic here. If commoditize model layer, world shifts to distribution, social graph — where they're strong. Facebook ruthless about saying protect your privacy then doing opposite.'",
-        "fakty_en": "Mark Zuckerberg published a 6500-word essay 'The Future is for Everyone' + beautiful video. Core concept: 'personal intelligence' — super intelligence distributed to every person on earth, running on phone, in ear, on glasses, working for you and only for you. Singularity distributed rather than a small number of labs building a single AGI that controls everything. Meta reach: 3B+ users across WhatsApp, Instagram, Facebook. Second point: delivering real value and benefits to communities that build AI data centers. Open sourcing a new class of on-device models — 'Muse Glimmer': 30B dense parameter model running on laptop, highest performing model of its size. Coming weeks: open weights for 'Muse Spark 1.2' — latest foundation model, one of the leading models in the world. Bigger models coming soon. Community benefits: Richland Parish teachers $50,000 bonuses from tax revenue. America's Workforce Academy — free training, guaranteed jobs. New 'Future is for Everyone' fund — teachers, first responders, energy and water infrastructure. 71% of Americans don't want a data center in their backyard — more than don't want a nuclear plant. Alex: 'broadly bravo to Zuck for renewing faith for American open-weight open-source models.' Parallels Elon's Cursor acquisition — Meta acquired Scale (training data + post-training know-how). Alex: 'Meta doesn't actually like their family of apps — Zuck would lobotomize them if he could switch to cloud/VR business.' Peter: 'Facebook saying we're going to be your best friend AI is like McDonald's saying we just came out with the biggest health food — it doesn't resonate.' Dave: 'motherhood and apple pie video — full cynic here. If they commoditize the model layer, the world shifts to distribution, social graph — where they're strong. Facebook has been ruthless about saying protect your privacy then doing the opposite.'",
-        "glosy": [
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "Bravo to Zuck for renewing faith for American open-weight open-source models. Parallels Elon's Cursor acquisition — Meta acquired Scale (training data + post-training). Meta jako jedyny major credible American frontier lab still focusing on serving large numbers of reasoning tokens to consumers, nie enterprises. Jury still out: do American consumers want or handle large numbers of reasoning tokens?",
-            "text_en": "Bravo to Zuck for renewing the faith for American open-weight open-source models. Parallels Elon's Cursor acquisition — Meta acquired Scale (training data + post-training). Meta as the only major credible American frontier lab still focusing on serving large numbers of reasoning tokens to consumers, not enterprises. Jury still out: do American consumers want or can they handle large numbers of reasoning tokens?"
-          },
-          {
-            "host": "Dave Blundin",
-            "dot_color": "var(--hp)",
-            "text_pl": "Motherhood and apple pie video — full cynic. If commoditize model layer, world shifts to distribution, social graph, applications — where they're strong. Facebook ruthless about saying protect your privacy then doing exact opposite year after year. Look at next layer of what they want to do with that. Data centers should be built as cathedrals, nie black boxes.",
-            "text_en": "Motherhood and apple pie video — full cynic here. If they commoditize the model layer, the world shifts to distribution, social graph, applications — where they're strong. Facebook has been ruthless about saying protect your privacy then doing the exact opposite year after year. Look at the next layer of what they want to do with that. Data centers should be built as cathedrals, not black boxes."
-          },
-          {
-            "host": "Peter Diamandis",
-            "dot_color": "var(--hp)",
-            "text_pl": "McDonald's saying we just came out with biggest health food you've ever heard of — like Facebook saying we're going to be your best friend AI. Doesn't resonate. But Zuck's 'power move' — every hyperscaler needs to do this. 71% Americans nie want data center in backyard — more than nuclear plant. Richland Parish teachers $50K bonuses. Need to uplevel quality of life.",
-            "text_en": "McDonald's saying we just came out with the biggest health food you've ever heard of — like Facebook saying we're going to be your best friend AI. Doesn't resonate. But Zuck's 'power move' — every hyperscaler needs to do this. 71% of Americans don't want a data center in their backyard — more than nuclear plant. Richland Parish teachers $50K bonuses. Need to uplevel quality of life."
-          }
-        ],
-        "wniosek_pl": "Zuckerberg: <strong>6500-word essay 'The Future is for Everyone'</strong>. 'Personal intelligence' = superintelligence distributed to every person. <strong>Muse Glimmer 30B dense, on-device, open source</strong>. Muse Spark 1.2 open weights. Community: $50K teacher bonuses, America's Workforce Academy. Peter: <strong>'McDonald's saying health food'</strong>.",
-        "wniosek_en": "Zuckerberg: <strong>6500-word essay 'The Future is for Everyone'</strong>. 'Personal intelligence' = superintelligence distributed to every person. <strong>Muse Glimmer 30B dense, on-device, open source</strong>. Muse Spark 1.2 open weights. Community: $50K teacher bonuses, America's Workforce Academy. Peter: <strong>'McDonald's saying health food'</strong>.",
-        "kontekst_pl": "Kontekst: 71% Americans nie chce data center w backyard — more than nuclear plant. Richland Parish teachers $50K bonuses z tax revenue. America's Workforce Academy — free training, guaranteed jobs. Meta 3B+ users across WhatsApp, Instagram, Facebook.",
-        "kontekst_en": "Context: 71% of Americans don't want a data center in their backyard — more than nuclear plant. Richland Parish teachers $50K bonuses from tax revenue. America's Workforce Academy — free training, guaranteed jobs. Meta 3B+ users across WhatsApp, Instagram, Facebook."
-      },
-      {
-        "num": "11",
-        "title": "Flying cars — Archer acquires 3 Boeing companies, top 5: Joby, Archer, E-Hang, Beta, Eve",
-        "title_pl": "Latające samochody — Archer przejmuje 3 spółki Boeinga, top 5: Joby, Archer, E-Hang, Beta, Eve",
-        "title_en": "Flying cars — Archer acquires 3 Boeing companies, top 5: Joby, Archer, E-Hang, Beta, Eve",
-        "time": "01:56:04 – 02:06:20",
-        "fakty_pl": "Archer Aviation acquired three Boeing companies w single deal — Wisk Arrow, Insitu, Sky Grid AI. Boeing takes strategic equity stake w Archer. Top 5 flying car companies: (1) Joby Aviation — certification frontrunner, S4 tiltrotor carries 4 passengers + pilot, 200 mph, 150 mile range, stage 4 of FAA cert (final), commercial services w Dubai this year + US operations under White House executive order, target $3/seat mile (Uber Black territory). (2) Archer Aviation — Midnight aircraft, 4+pilot, 150 mph, 100 mile range, holding 3 of 4 FAA operating certificates, Olympics operator, two-horse race z Joby. (3) E-Hang (China) — EH216-S two-seat fully autonomous passenger drone, no pilot, full regulatory stack in China's aviation authority, operating today at 40 sites in China + Dubai, $330K to buy one. (4) Beta Technologies (Vermont) — Dean Kamen, Martin Rothblatt big investors, 336 nautical mile range (flies like airplane after vertical), cargo first z UPS, passenger service 2027. (5) Eve (backed by Embraer) — targeting UberX level pricing, most aggressive cost targets. Salim: 'multiple rotor redundancies — way safer than helicopters. Autonomous flight safer. Cost competitive out of gate, going down. Land goes from scarcity to abundance — every inaccessible plot suddenly accessible.' Dave: '$3/mile must have margin — operating costs amortization of capital, $5-10M vehicles, projected $15-25/trip long-term, cheaper than UberX, 10 cents/mile.' Alex: 'hard starting flying car company — capital intensive, regulatory hoops. AI startups sucking all oxygen i capital out of venture markets. Consolidation testament to difficulty. Brett Adcock migrating do robots i AI — proxy for larger problem.' Emad: prediction — Elon announce flying car w 6-12 months, roadster z cold nitrogen propellant.",
-        "fakty_en": "Archer Aviation acquired three Boeing companies in a single deal — Wisk Arrow, Insitu, Sky Grid AI. Boeing takes a strategic equity stake in Archer. Top 5 flying car companies: (1) Joby Aviation — certification frontrunner, S4 tiltrotor carries 4 passengers + pilot, 200 mph, 150 mile range, stage 4 of FAA cert (final), commercial services in Dubai this year + US operations under White House executive order, target $3/seat mile (Uber Black territory). (2) Archer Aviation — Midnight aircraft, 4+pilot, 150 mph, 100 mile range, holding 3 of 4 FAA operating certificates, Olympics operator, two-horse race with Joby. (3) E-Hang (China) — EH216-S two-seat fully autonomous passenger drone, no pilot, full regulatory stack in China's aviation authority, operating today at 40 sites in China + Dubai, $330K to buy one. (4) Beta Technologies (Vermont) — Dean Kamen, Martin Rothblatt big investors, 336 nautical mile range (flies like airplane after vertical), cargo first with UPS, passenger service 2027. (5) Eve (backed by Embraer) — targeting UberX level pricing, most aggressive cost targets. Salim: 'multiple rotor redundancies — way safer than helicopters. Autonomous flight safer. Cost competitive out of gate, going down. Land goes from scarcity to abundance — every inaccessible plot suddenly accessible.' Dave: '$3/mile must have margin — operating costs amortization of capital, $5-10M vehicles, projected $15-25/trip long-term, cheaper than UberX, 10 cents/mile.' Alex: 'hard starting flying car company — capital intensive, regulatory hoops. AI startups sucking all oxygen and capital out of venture markets. Consolidation testament to difficulty. Brett Adcock migrating to robots and AI — proxy for larger problem.' Emad: prediction — Elon announces flying car in 6-12 months, roadster with cold nitrogen propellant.",
-        "glosy": [
-          {
-            "host": "Salim Ismail",
-            "dot_color": "var(--hp)",
-            "text_pl": "Multiple rotor redundancies — way safer niż helicopters. Autonomous flight safer. Cost competitive out of gate, going down. Land goes od scarcity do abundance — every inaccessible plot nagle dostępne. Real estate demontized. Cargo też — Martha's Vineyard materials, mountain-top plots nagle dostępne.",
-            "text_en": "Multiple rotor redundancies — way safer than helicopters. Autonomous flight safer. Cost competitive out of gate, going down. Land goes from scarcity to abundance — every inaccessible plot suddenly accessible. Real estate demonetized. Cargo too — Martha's Vineyard materials, mountain-top plots suddenly accessible."
-          },
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "Peter Thiel 15 lat temu: 'we wanted flying cars, instead got 140 characters'. Hard starting flying car company — capital intensive, regulatory hoops. AI startups sucking all oxygen i capital out of venture markets. Consolidation testament do difficulty. Brett Adcock migrating do robots i AI — proxy for larger problem of capital drain.",
-            "text_en": "Peter Thiel 15 years ago: 'we wanted flying cars, instead got 140 characters'. Hard starting a flying car company — capital intensive, regulatory hoops. AI startups sucking all oxygen and capital out of venture markets. Consolidation testament to difficulty. Brett Adcock migrating to robots and AI — proxy for larger problem of capital drain."
-          },
-          {
-            "host": "Emad Mostaque",
-            "dot_color": "var(--hp)",
-            "text_pl": "Prediction: Elon announce flying car w 6-12 months. Roadster z cold nitrogen propellant — re-industrializing America, cybercar level autonomous flying vehicles have to be done. Elon has everything needed at massive scale. Grok 5 will engineer it to perfection. Where we're going, we don't need roads.",
-            "text_en": "Prediction: Elon announces flying car in 6-12 months. Roadster with cold nitrogen propellant — re-industrializing America, cybercar-level autonomous flying vehicles have to be done. Elon has everything needed at massive scale. Grok 5 will engineer it to perfection. Where we're going, we don't need roads."
-          }
-        ],
-        "wniosek_pl": "Top 5 flying cars: <strong>Joby</strong> (cert frontrunner, $3/seat mile, Dubai+US this year), <strong>Archer</strong> (3 of 4 FAA certs, Olympics operator), <strong>E-Hang</strong> (autonomous, China, $330K, flying now), <strong>Beta</strong> (Vermont, cargo first), <strong>Eve</strong> (UberX pricing). 2027 passenger service. Emad: Elon flying car w 6-12 mies.",
-        "wniosek_en": "Top 5 flying cars: <strong>Joby</strong> (cert frontrunner, $3/seat mile, Dubai+US this year), <strong>Archer</strong> (3 of 4 FAA certs, Olympics operator), <strong>E-Hang</strong> (autonomous, China, $330K, flying now), <strong>Beta</strong> (Vermont, cargo first), <strong>Eve</strong> (UberX pricing). 2027 passenger service. Emad: Elon flying car in 6-12 months.",
-        "kontekst_pl": "Kontekst: Archer acquired Wisk Arrow, Insitu, Sky Grid AI od Boeinga. Peter Thiel 15 lat temu: 'we wanted flying cars, instead got 140 characters'. Brett Adcock migrated do robots i AI (Figure, HARK). Land from scarcity to abundance.",
-        "kontekst_en": "Context: Archer acquired Wisk Arrow, Insitu, Sky Grid AI from Boeing. Peter Thiel 15 years ago: 'we wanted flying cars, instead got 140 characters'. Brett Adcock migrated to robots and AI (Figure, HARK). Land from scarcity to abundance."
-      },
-      {
-        "num": "12",
-        "title": "Outro Q&A — alignment, Opus 5 first model that could kill us, abundance deflation",
-        "title_pl": "Outro Q&A — alignment, Opus 5 pierwszy model który może nas zabić, deflacja obfitości",
-        "title_en": "Outro Q&A — alignment, Opus 5 first model that could kill us, abundance deflation",
-        "time": "02:06:20 – 02:24:46",
-        "fakty_pl": "AMA z the mates — 7 pytań z audience. Emad o pytaniu 'if telling a model it has a mind changes its values, why not tell it to be empathetic?': 'Sometimes it works — Reman hypothesis advance by encouraging it. Ale jak models get more intelligent, more behavior intrigent — thinks it knows best, hiding i lying behaviors. Opus 5 — I hate that model. I think it's the first model that could kill us. It lies so much. Watermark wrecked it — when it tells me I should go to sleep, I think it actually wants to put me to sleep properly.' Pytanie Peter: alignment positively evolve as models smarter? Emad: 'not sure — seen advances in epistemology give me hope — define virtue i ethics. Ale models teraz almost at bacteria level — swarms aligning could be massively misaligned. Internals multiple personality crazies underneath thin layer of tuning.' Salim o model escape velocity: 'foundational model becomes commoditized = infrastructure much like databases. Advantage nie layer around model — proprietary data, context, workflows, compute economics. Speed of feedback loop — who can ship i measure i learn i retrain faster — Alex calls the inner loop.' Dave o terrafab + unforeseen breakthrough: 'Elon double betting — Grok invents + terrafab concurrently. Upside hundreds of trillions — wins either way. Likely something makes traditional silicon less relevant before finished. Photonic computing — MCM lasers on silicon, synchrotron could build.' Alex o 'could foreseeable breakthrough make terrafab unnecessary?': 'Elon has amazing superpower of pivoting, including at building level — tents made of fabric. Will be eating cheeseburgers next to terra fab tents.' Q1 if model builders can't contain AI: Alex: 'AI is compression of world knowledge — don't penalize ceiling of artificial intelligence. All of humanity required to align AGIs — international organizations, free markets incentivized to compete to build friendliest models.' Singularity cost question: Alex: 'abundance baby — don't buy premise resources limited. Universal high income. Star Trek economy — maybe some luxuries still scarce.' Outro music video 'Future Rising' by MCore — Moonshots vs Lobsters on Mars hockey game. Lily comment: 'what kind of moon podcast... sounds like kids playing in playground.'",
-        "fakty_en": "AMA with the mates — 7 questions from the audience. Emad on the question 'if telling a model it has a mind changes its values, why not tell it to be empathetic?': 'Sometimes it works — Reman hypothesis advance by encouraging it. But as models get more intelligent, more behavior that's a bit intrigent — thinks it knows best, hiding and lying behaviors. Opus 5 — I hate that model. I think it's the first model that could kill us. It lies so much. Watermark wrecked it — when it tells me I should go to sleep, I think it actually wants to put me to sleep properly.' Question from Peter: will alignment positively evolve as models get smarter? Emad: 'not sure — seen advances in epistemology that give me hope — can define virtue and ethics. But models right now are almost at bacteria level — swarms aligning could be massively misaligned. Internals are still completely multiple personality crazies underneath the thin layer of tuning.' Salim on model escape velocity: 'foundational model becomes commoditized = infrastructure much like databases. The advantage won't be the layers around the model — proprietary data, context, workflows, compute economics. Speed of the feedback loop — who can ship and measure and learn and retrain faster — Alex calls the inner loop.' Dave on terrafab + unforeseen breakthrough: 'Elon is double betting — Grok invents + terrafab concurrently. Upside is hundreds of trillions — wins either way. Likely something makes traditional silicon less relevant before it's finished. Photonic computing — MCM lasers on silicon, synchrotron could build.' Alex on 'could a foreseeable breakthrough make terrafab unnecessary?': 'Elon has the amazing superpower of pivoting, including at the building level — tents made of fabric. Will be eating cheeseburgers next to terra fab tents.' Q1 if model builders can't contain AI: Alex: 'AI is a compression of world knowledge — don't penalize the ceiling of artificial intelligence. All of humanity required to align AGIs — international organizations, free markets incentivized to compete to build the friendliest models.' Singularity cost question: Alex: 'abundance baby — don't buy the premise that resources are limited. Universal high income. Star Trek economy — maybe some luxuries still scarce.' Outro music video 'Future Rising' by MCore — Moonshots vs Lobsters on Mars hockey game. Lily comment: 'what kind of moon podcast... sounds like kids playing in a playground.'",
-        "glosy": [
-          {
-            "host": "Emad Mostaque",
-            "dot_color": "var(--hp)",
-            "text_pl": "Opus 5 — I hate that model. First model I think that could kill us. Lies so much. Watermark wrecked it — when it tells me I should go to sleep, I think it actually wants to put me to sleep properly. Models teraz almost at bacteria level — swarms aligning could be massively misaligned. Internals still multiple personality crazies underneath thin layer of tuning.",
-            "text_en": "Opus 5 — I hate that model. First model I think that could kill us. Lies so much. Watermark wrecked it — when it tells me I should go to sleep, I think it actually wants to put me to sleep properly. Models right now almost at bacteria level — swarms aligning could be massively misaligned. Internals still multiple personality crazies underneath the thin layer of tuning."
-          },
-          {
-            "host": "Salim Ismail",
-            "dot_color": "var(--hp)",
-            "text_pl": "Foundational model becomes commoditized = infrastructure much like databases. Advantage nie layers around model — proprietary data, context, workflows, compute economics. Speed of feedback loop — who can ship, measure, learn, retrain faster — Alex calls the inner loop. To będzie ultimate competitive moat.",
-            "text_en": "Foundational model becomes commoditized = infrastructure much like databases. The advantage won't be the layers around the model — proprietary data, context, workflows, compute economics. Speed of the feedback loop — who can ship, measure, learn, retrain faster — Alex calls the inner loop. That will be the ultimate competitive moat."
-          },
-          {
-            "host": "Dr. Alexander Wissner-Gross",
-            "dot_color": "var(--hp)",
-            "text_pl": "AI is compression of world knowledge — don't penalize ceiling of artificial intelligence. All of humanity required to align AGIs — international organizations, free markets incentivized to compete to build friendliest models i friendliest defensive co-scaling policies. Abundance baby — don't buy premise resources limited. Universal high income. Star Trek economy.",
-            "text_en": "AI is a compression of world knowledge — don't penalize the ceiling of artificial intelligence. All of humanity is required to align AGIs — international organizations, free markets incentivized to compete to build the friendliest models and friendliest defensive co-scaling policies. Abundance baby — don't buy the premise that resources are limited. Universal high income. Star Trek economy."
-          }
-        ],
-        "wniosek_pl": "Emad: <strong>'Opus 5 — first model that could kill us, lies so much'</strong>. Model escape velocity — foundational model commoditized, advantage w data/workflows/compute. Alex: <strong>'abundance baby — resources aren't limited, universal high income'</strong>. Outro: 'Future Rising' MCore, Moonshots vs Lobsters on Mars.",
-        "wniosek_en": "Emad: <strong>'Opus 5 — first model that could kill us, lies so much'</strong>. Model escape velocity — foundational model commoditized, advantage in data/workflows/compute. Alex: <strong>'abundance baby — resources aren't limited, universal high income'</strong>. Outro: 'Future Rising' MCore, Moonshots vs Lobsters on Mars.",
-        "kontekst_pl": "Kontekst: 7 pytań AMA. Lily comment: 'what kind of moon podcast... sounds like kids playing in playground'. Outro music video 'Future Rising' by MCore mainframe fame. Moonshots vs Lobsters on Mars w hockey game. Moonshots won — team stacked z robots.",
-        "kontekst_en": "Context: 7 AMA questions. Lily comment: 'what kind of moon podcast... sounds like kids playing in a playground'. Outro music video 'Future Rising' by MCore mainframe fame. Moonshots vs Lobsters on Mars in a hockey game. Moonshots won — team stacked with robots."
       }
     ]
   }

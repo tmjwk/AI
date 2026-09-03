@@ -5,6 +5,16 @@
 const EPISODES_INDEX = {
   "episodes": [
     {
+      "num": "#285",
+      "title": "OpenAI Cuts Off Elon's Cursor, Humanity's First Star Probe, & Trump's Nuclear Mars Ship | EP #285",
+      "date": "2026-08-31",
+      "duration": "110 min",
+      "channel": "Moonshots",
+      "yt": "tfBEWh9ibfU",
+      "collapsed": true,
+      "batch": "recent"
+    },
+    {
       "num": "#284",
       "title": "NVIDIA's $96.2B Quarter, China's 200,000 Fake Accounts, & OpenAI's New Chip | EP #284",
       "date": "2026-08-29",
@@ -52,7 +62,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "uoGnH0REG7A",
       "collapsed": true,
-      "batch": "recent"
+      "batch": "batch-2026-h2"
     },
     {
       "num": "#278",

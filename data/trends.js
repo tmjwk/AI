@@ -1,22 +1,22 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-08-30 03:49:59 UTC
-// Total events: 447, months: 3
+// Generated: 2026-09-03 15:28:46 UTC
+// Total events: 449, months: 3
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-08-30 03:49:59 UTC",
-    "total_events": 447,
+    "generated": "2026-09-03 15:28:46 UTC",
+    "total_events": 449,
     "total_months": 3
   },
   "months": [
     {
       "month": "2026-08",
-      "total": 235,
+      "total": 237,
       "by_type": {
-        "diamandis": 7,
+        "diamandis": 8,
+        "weekly": 5,
         "ai_search": 97,
-        "lev": 127,
-        "weekly": 4
+        "lev": 127
       },
       "top_vendors": [
         [
@@ -25,7 +25,7 @@ const TRENDS = {
         ],
         [
           "OpenAI",
-          16
+          17
         ],
         [
           "Google",
@@ -82,11 +82,11 @@ const TRENDS = {
           4
         ],
         [
-          "DeepSeek DeepSeek",
+          "DeepSeek V4",
           3
         ],
         [
-          "DeepSeek V4",
+          "DeepSeek DeepSeek",
           3
         ],
         [
@@ -211,11 +211,11 @@ const TRENDS = {
           3
         ],
         [
-          "OpenAI",
+          "Alibaba",
           2
         ],
         [
-          "Alibaba",
+          "OpenAI",
           2
         ],
         [
@@ -353,7 +353,7 @@ const TRENDS = {
       ],
       [
         "OpenAI",
-        37
+        38
       ],
       [
         "Google",
@@ -471,10 +471,10 @@ const TRENDS = {
       ]
     ],
     "by_type": {
-      "diamandis": 15,
+      "diamandis": 16,
+      "weekly": 9,
       "ai_search": 158,
-      "lev": 266,
-      "weekly": 8
+      "lev": 266
     }
   }
 };

@@ -1,6 +1,310 @@
 // AI Pulse episodes — auto-generated from episodes.json
 const EPISODES = [
   {
+    "num": "#285",
+    "collapsed": true,
+    "channel": "Moonshots",
+    "title": "OpenAI Cuts Off Elon's Cursor, Humanity's First Star Probe, & Trump's Nuclear Mars Ship | EP #285",
+    "title_pl": "OpenAI odcina Elona od Cursora, pierwsza misja międzygwiezdna, & nuklearny statek na Marsa | #285",
+    "title_en": "OpenAI Cuts Off Elon's Cursor, Humanity's First Star Probe, & Trump's Nuclear Mars Ship | EP #285",
+    "date": "2026-08-31",
+    "duration": "110 min",
+    "yt": "tfBEWh9ibfU",
+    "hosts_count_pl": "5 uczestników",
+    "hosts_count_en": "5 participants",
+    "topics_count_pl": "13 tematów",
+    "topics_count_en": "13 topics",
+    "hosts": [
+      {
+        "name": "Peter Diamandis",
+        "role_pl": "Gospodarz",
+        "role_en": "Main host"
+      },
+      {
+        "name": "Dr. Alexander Wissner-Gross",
+        "role_pl": "In-house ASI",
+        "role_en": "In-house ASI"
+      },
+      {
+        "name": "Dave Blundin",
+        "role_pl": "Inwestor VC",
+        "role_en": "VC investor"
+      },
+      {
+        "name": "Salim Ismail",
+        "role_pl": "Organizacje wykładnicze",
+        "role_en": "Exponential organizations"
+      },
+      {
+        "name": "Phillip & Matt (guests)",
+        "role_pl": "GOŚCIE — Alpha Centauri mission",
+        "role_en": "GUESTS — Alpha Centauri mission"
+      }
+    ],
+    "topics": [
+      {
+        "num": "01",
+        "title": "Humanity's First Interstellar Mission to Alpha Centauri",
+        "title_pl": "Pierwsza misja międzygwiezdna do Alpha Centauri",
+        "title_en": "Humanity's First Interstellar Mission to Alpha Centauri",
+        "time": "00:00 – 19:49",
+        "fakty_pl": "Pierwsza misja międzygwiezdna do Alpha Centauri. Phillip i Matt dołączyli jako goście. 'Are we the first kid on the block or are we auditioning for membership in a cosmic club?' Bilet wstępu = czy możemy to obsłużyć? Breakthrough Starshot, laser-propelled sail. Najbliższy system gwiezdny, 4.37 lat świetlnych.",
+        "fakty_en": "First interstellar mission to Alpha Centauri. Phillip and Matt joined as guests. 'Are we the first kid on the block or are we auditioning for membership in a cosmic club?' Ticket to entry = can we handle it? Breakthrough Starshot, laser-propelled sail. Nearest star system, 4.37 light years.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Czy jesteśmy pierwszym dzieckiem na bloku czy auditionujemy do membership w cosmic club? Bilet wstępu = czy możemy to obsłużyć?",
+            "text_en": "Are we the first kid on the block or are we now auditioning for a membership in a cosmic club? And the ticket to entry is, can you handle that?"
+          }
+        ],
+        "wniosek_pl": "Pierwsza misja międzygwiezdna. Alpha Centauri = 4.37 lat świetlnych.",
+        "wniosek_en": "First interstellar mission. Alpha Centauri = 4.37 light years.",
+        "kontekst_pl": "Breakthrough Starshot = projekt laser-propelled sail.",
+        "kontekst_en": "Breakthrough Starshot = laser-propelled sail project."
+      },
+      {
+        "num": "02",
+        "title": "The Fermi Paradox and Humanity's Cosmic Future",
+        "title_pl": "Paradoks Fermiego i kosmiczna przyszłość ludzkości",
+        "title_en": "The Fermi Paradox and Humanity's Cosmic Future",
+        "time": "19:49 – 35:22",
+        "fakty_pl": "Paradoks Fermiego — 'Where is everybody?' Fermy = aluzja do Fermi paradox. Jeśli wszechświat jest tak stary i wielki, gdzie są wszystkie cywilizacje? Możliwe wyjaśnienia: Great Filter, rzadkość życia, samozagłada. Philip i Matt dyskutują implikacje dla ludzkości.",
+        "fakty_en": "Fermi Paradox — 'Where is everybody?' Fermy = allusion to Fermi paradox. If universe is so old and big, where are all the civilizations? Possible explanations: Great Filter, rarity of life, self-destruction. Philip and Matt discuss implications for humanity.",
+        "glosy": [
+          {
+            "author": "Guest",
+            "text_pl": "Fermy = aluzja do Fermi paradox. 'Where is everybody?'",
+            "text_en": "There's also a reason behind the name Fermy. It's an allusion to the so-called Fermi paradox."
+          }
+        ],
+        "wniosek_pl": "Paradoks Fermiego — gdzie są cywilizacje? Great Filter?",
+        "wniosek_en": "Fermi Paradox — where are the civilizations? Great Filter?",
+        "kontekst_pl": "Fermi Paradox = kontrast między wysokim prawdopodobieństwem życia a brakiem dowodów.",
+        "kontekst_en": "Fermi Paradox = contrast between high probability of life and lack of evidence."
+      },
+      {
+        "num": "03",
+        "title": "OpenAI Cuts Off Elon's Cursor",
+        "title_pl": "OpenAI odcina Elona od Cursora",
+        "title_en": "OpenAI Cuts Off Elon's Cursor",
+        "time": "35:22 – 46:18",
+        "fakty_pl": "Drama między Sam Altman i Elon Musk bubbled up again. OpenAI ends support of Cursor — napisali Elonowi email. Konflikt OpenAI vs xAI intensyfikuje. Cursor używał OpenAI API, teraz odcięty. Elon może użyć Grok zamiast. Competitive landscape w AI coding tools.",
+        "fakty_en": "Drama between Sam Altman and Elon Musk bubbled up again. OpenAI ends support of Cursor — wrote Elon an email. OpenAI vs xAI conflict intensifies. Cursor was using OpenAI API, now cut off. Elon can use Grok instead. Competitive landscape in AI coding tools.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "OpenAI kończy wsparcie dla Cursor. Napisali Elonowi email. Konflikt OpenAI vs xAI.",
+            "text_en": "OpenAI ends its support of cursor. They wrote Elon an email."
+          }
+        ],
+        "wniosek_pl": "OpenAI odcina Cursor (Elon). Konflikt OpenAI vs xAI.",
+        "wniosek_en": "OpenAI cuts off Cursor (Elon). OpenAI vs xAI conflict.",
+        "kontekst_pl": "Cursor = AI coding tool. OpenAI API = backend. xAI = Elon's AI company.",
+        "kontekst_en": "Cursor = AI coding tool. OpenAI API = backend. xAI = Elon's AI company."
+      },
+      {
+        "num": "04",
+        "title": "Sam Altman Says AGI Is Four Months Away",
+        "title_pl": "Sam Altman: AGI za cztery miesiące",
+        "title_en": "Sam Altman Says AGI Is Four Months Away",
+        "time": "46:18 – 52:32",
+        "fakty_pl": "Sam Altman told Time magazine: expects OpenAI will have internal system that he believes will be AGI by end of this year. Może speaking about Astra — new unreleased model. 16 Astra agents worked together on research-level task. AGI = 4 months. Czy to realne czy marketing?",
+        "fakty_en": "Sam Altman told Time magazine: expects OpenAI will have internal system that he believes will be AGI by end of this year. May be speaking about Astra — new unreleased model. 16 Astra agents worked together on research-level task. AGI = 4 months. Real or marketing?",
+        "glosy": [
+          {
+            "author": "Sam Altman",
+            "text_pl": "Oczekuję że OpenAI będzie miał internal system który uważam za AGI do końca tego roku.",
+            "text_en": "He expects OpenAI will have an internal system that he believes will be AGI by the end of this year."
+          }
+        ],
+        "wniosek_pl": "Altman: AGI za ~4 miesiące. Astra = 16 agents razem. Real czy marketing?",
+        "wniosek_en": "Altman: AGI in ~4 months. Astra = 16 agents together. Real or marketing?",
+        "kontekst_pl": "Astra = next-gen OpenAI model. AGI = Artificial General Intelligence.",
+        "kontekst_en": "Astra = next-gen OpenAI model. AGI = Artificial General Intelligence."
+      },
+      {
+        "num": "05",
+        "title": "AI Moves to Outcome-Based Pricing",
+        "title_pl": "AI przechodzi na outcome-based pricing",
+        "title_en": "AI Moves to Outcome-Based Pricing",
+        "time": "52:32 – 1:03:28",
+        "fakty_pl": "AI community adopting outcome-based pricing. Nie pay for tokens, compute, API calls. Pay when work is done. Business model transformation. 'You don't pay for tokens, you pay when the work is done.' Wynik > input. Zmiana z SaaS na outcome-based.",
+        "fakty_en": "AI community adopting outcome-based pricing. Don't pay for tokens, compute, API calls. Pay when work is done. Business model transformation. 'You don't pay for tokens, you pay when the work is done.' Outcome > input. Shift from SaaS to outcome-based.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Nie płacisz za tokens, compute, API calls. Płacisz gdy praca jest zrobiona. Outcome > input.",
+            "text_en": "You don't pay for tokens. You don't pay for compute time. You don't pay for API calls. You pay when the work is done."
+          }
+        ],
+        "wniosek_pl": "AI → outcome-based pricing. Płacisz za wynik, nie za input.",
+        "wniosek_en": "AI → outcome-based pricing. Pay for outcome, not input.",
+        "kontekst_pl": "SaaS = Software as a Service. Outcome-based = płacisz za rezultat.",
+        "kontekst_en": "SaaS = Software as a Service. Outcome-based = pay for result."
+      },
+      {
+        "num": "06",
+        "title": "Architect Labs' AI-Designed Chip Beats NVIDIA 3.4x",
+        "title_pl": "Architect Labs: chip zaprojektowany przez AI bije NVIDIA 3.4x",
+        "title_en": "Architect Labs' AI-Designed Chip Beats NVIDIA 3.4x",
+        "time": "1:03:28 – 1:16:53",
+        "fakty_pl": "Architect Labs (Palo Alto startup): AI autonomously generated chip design from spec. Performance model, RTL design, verification, firmware, drivers, custom compute kernels — all AI-generated. Chip beats NVIDIA 3.4x. Alex flagged this story. AI designing hardware = new paradigm.",
+        "fakty_en": "Architect Labs (Palo Alto startup): AI autonomously generated chip design from spec. Performance model, RTL design, verification, firmware, drivers, custom compute kernels — all AI-generated. Chip beats NVIDIA 3.4x. Alex flagged this story. AI designing hardware = new paradigm.",
+        "glosy": [
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "AI autonomously generated performance model, RTL design, verification, firmware, drivers, custom compute kernels. Chip beats NVIDIA 3.4x.",
+            "text_en": "The AI system autonomously generated the performance model, the register transfer level design, universal verification methodology, the firmware, the drivers, the custom compute kernels."
+          }
+        ],
+        "wniosek_pl": "Architect Labs: AI-designed chip beats NVIDIA 3.4x. AI designing hardware.",
+        "wniosek_en": "Architect Labs: AI-designed chip beats NVIDIA 3.4x. AI designing hardware.",
+        "kontekst_pl": "RTL = Register Transfer Level (chip design). Palo Alto = Silicon Valley.",
+        "kontekst_en": "RTL = Register Transfer Level (chip design). Palo Alto = Silicon Valley."
+      },
+      {
+        "num": "07",
+        "title": "AI's Growing Energy Bottleneck",
+        "title_pl": "Rosące wąskie gardło energii AI",
+        "title_en": "AI's Growing Energy Bottleneck",
+        "time": "1:16:53 – 1:20:37",
+        "fakty_pl": "AI energy bottleneck growing. AI demand 200% vs 20% production. Memory 500% price jump. Nuclear + solar needed. Data center backlash: 71% Americans oppose. Grid buildout question: help regular people or make scarcer?",
+        "fakty_en": "AI energy bottleneck growing. AI demand 200% vs 20% production. Memory 500% price jump. Nuclear + solar needed. Data center backlash: 71% Americans oppose. Grid buildout question: help regular people or make scarcer?",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "AI energy bottleneck growing. 200% demand vs 20% production. 71% Americans oppose data centers.",
+            "text_en": "AI energy bottleneck growing. 200% demand vs 20% production. 71% Americans oppose data centers."
+          }
+        ],
+        "wniosek_pl": "AI energy bottleneck. Memory 500%. Nuclear + solar needed.",
+        "wniosek_en": "AI energy bottleneck. Memory 500%. Nuclear + solar needed.",
+        "kontekst_pl": "Kontynuacja z #282, #284 — memory + energy discussion.",
+        "kontekst_en": "Continuation from #282, #284 — memory + energy discussion."
+      },
+      {
+        "num": "08",
+        "title": "Tesla and SpaceX Go All-In on Solar",
+        "title_pl": "Tesla i SpaceX idą all-in na solar",
+        "title_en": "Tesla and SpaceX Go All-In on Solar",
+        "time": "1:20:37 – 1:24:39",
+        "fakty_pl": "Elon mentioned w December interview: Tesla i SpaceX będą generating solar. Tesla solar roof + Powerwall. SpaceX satellite solar. Vertical integration: solar panels + batteries + EVs + rockets. All powered by sun.",
+        "fakty_en": "Elon mentioned in December interview: Tesla and SpaceX will start generating solar. Tesla solar roof + Powerwall. SpaceX satellite solar. Vertical integration: solar panels + batteries + EVs + rockets. All powered by sun.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Elon wspominał w grudniu: Tesla i SpaceX będą generating solar. Vertical integration.",
+            "text_en": "He mentioned then that Tesla and SpaceX would start generating solar."
+          }
+        ],
+        "wniosek_pl": "Tesla + SpaceX all-in solar. Vertical energy integration.",
+        "wniosek_en": "Tesla + SpaceX all-in solar. Vertical energy integration.",
+        "kontekst_pl": "Solar roof, Powerwall, satellite solar — Elon's energy ecosystem.",
+        "kontekst_en": "Solar roof, Powerwall, satellite solar — Elon's energy ecosystem."
+      },
+      {
+        "num": "09",
+        "title": "Elon Wants Satellites to Cool the Earth",
+        "title_pl": "Elon chce satelity do chłodzenia Ziemi",
+        "title_en": "Elon Wants Satellites to Cool the Earth",
+        "time": "1:24:39 – 1:33:03",
+        "fakty_pl": "Elon: large-scale geoengineering needed before it's game over. Sentient satellites — solar-powered AI satellites that control temperature. Climate intervention z space. 'The only place it's not going is nuclear.' Musk proposes space-based Earth cooling.",
+        "fakty_en": "Elon: large-scale geoengineering needed before it's game over. Sentient satellites — solar-powered AI satellites that control temperature. Climate intervention from space. 'The only place it's not going is nuclear.' Musk proposes space-based Earth cooling.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Elon: sentient satellites — solar-powered AI satellites controlujące temperature. Geoengineering needed.",
+            "text_en": "He describes what he calls sentient satellites or solar powered AI satellites that control temperature."
+          }
+        ],
+        "wniosek_pl": "Elon: sentient satellites do chłodzenia Ziemi. Space geoengineering.",
+        "wniosek_en": "Elon: sentient satellites to cool Earth. Space geoengineering.",
+        "kontekst_pl": "Geoengineering = celowa ingerencja w klimat. Sentient = AI-controlled.",
+        "kontekst_en": "Geoengineering = deliberate climate intervention. Sentient = AI-controlled."
+      },
+      {
+        "num": "10",
+        "title": "Nanotechnology and Atomically Precise Manufacturing",
+        "title_pl": "Nanotechnologia i produkcja atomowo precyzyjna",
+        "title_en": "Nanotechnology and Atomically Precise Manufacturing",
+        "time": "1:33:03 – 1:38:11",
+        "fakty_pl": "Nanotech — Eric Drexler promised it 40 years ago. Teraz becoming real. Atomically precise manufacturing. Nanites. AI + nanotech convergence. Peter: 'we don't talk about nanotechnology anywhere near enough.' Enamel regen (z #284) = early nanotech.",
+        "fakty_en": "Nanotech — Eric Drexler promised it 40 years ago. Now becoming real. Atomically precise manufacturing. Nanites. AI + nanotech convergence. Peter: 'we don't talk about nanotechnology anywhere near enough.' Enamel regen (from #284) = early nanotech.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Nanotech — Drexler promised 40 years ago. Teraz becoming real. Nie mówimy o tym wystarczająco.",
+            "text_en": "Nanotech, you know, we don't talk about nanotechnology anywhere near enough on this pod. We've been promised it from Eric Drexler for the last 40 years."
+          }
+        ],
+        "wniosek_pl": "Nanotech becoming real. AI + nanotech convergence. Drexler 40 years.",
+        "wniosek_en": "Nanotech becoming real. AI + nanotech convergence. Drexler 40 years.",
+        "kontekst_pl": "Eric Drexler = father of nanotechnology. Atomically precise = kontrola na poziomie atomów.",
+        "kontekst_en": "Eric Drexler = father of nanotechnology. Atomically precise = control at atomic level."
+      },
+      {
+        "num": "11",
+        "title": "Nuclear-Powered Spacecraft to Mars",
+        "title_pl": "Nuklearny statek kosmiczny na Marsa",
+        "title_en": "Nuclear-Powered Spacecraft to Mars",
+        "time": "1:38:11 – 1:42:35",
+        "fakty_pl": "President Trump announced: NASA working on nuclear-powered interplanetary spacecraft. Nuclear propulsion = faster Mars missions. Drastically shorter travel time. Fountain Life: know what's going on inside your body genetically, metabolically, cardiovascularly.",
+        "fakty_en": "President Trump announced: NASA working on nuclear-powered interplanetary spacecraft. Nuclear propulsion = faster Mars missions. Drastically shorter travel time. Fountain Life: know what's going on inside your body genetically, metabolically, cardiovascularly.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Trump: NASA working on nuclear-powered interplanetary spacecraft. Nuklearny propulsion = szybszy Mars.",
+            "text_en": "President Trump this week announced that NASA is working on nuclear-powered interplanetary spacecraft."
+          }
+        ],
+        "wniosek_pl": "Trump: nuclear-powered spacecraft na Mars. Nuklearny propulsion.",
+        "wniosek_en": "Trump: nuclear-powered spacecraft to Mars. Nuclear propulsion.",
+        "kontekst_pl": "Nuclear propulsion = rdzeń nuklearny zamiast chemicznego. Fountain Life = Peter's health company.",
+        "kontekst_en": "Nuclear propulsion = nuclear core instead of chemical. Fountain Life = Peter's health company."
+      },
+      {
+        "num": "12",
+        "title": "America's New Space Academy",
+        "title_pl": "Nowa Akademia Kosmiczna USA",
+        "title_en": "America's New Space Academy",
+        "time": "1:42:35 – 1:43:49",
+        "fakty_pl": "President chartered United States Space Academy — modeled after West Point i Naval Academy. Educate and train engineers, scientists. 'Starfleet Academy is here.' Jared (from pod) asked about UAP. Space force becoming institutionalized.",
+        "fakty_en": "President chartered United States Space Academy — modeled after West Point and Naval Academy. Educate and train engineers, scientists. 'Starfleet Academy is here.' Jared (from pod) asked about UAP. Space force becoming institutionalized.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Prezydent chartered Space Academy — modeled after West Point i Naval Academy. Starfleet Academy is here!",
+            "text_en": "The president chartered the United States Space Academy, modeled after West Point and the Naval Academy to educate and train engineers, scientists."
+          }
+        ],
+        "wniosek_pl": "USA Space Academy chartered. Starfleet Academy is here.",
+        "wniosek_en": "USA Space Academy chartered. Starfleet Academy is here.",
+        "kontekst_pl": "West Point = military academy. Naval Academy = marynarki. Space Academy = kosmiczna.",
+        "kontekst_en": "West Point = military academy. Naval Academy = navy. Space Academy = space."
+      },
+      {
+        "num": "13",
+        "title": "Audience Q&A",
+        "title_pl": "Q&A z publicznością",
+        "title_en": "Audience Q&A",
+        "time": "1:43:49 – 1:50:00",
+        "fakty_pl": "AMA questions od audience. Pytania o kosmos, AI, energię, przyszłość. Peter: 'Shall we take on a few AMA questions?'",
+        "fakty_en": "AMA questions from audience. Questions about space, AI, energy, future. Peter: 'Shall we take on a few AMA questions?'",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Shall we take on a few AMA questions? Sure, let's do it.",
+            "text_en": "Shall we take on a few AMA questions? Sure, let's do it."
+          }
+        ],
+        "wniosek_pl": "Q&A z publicznością. Kosmos, AI, energia.",
+        "wniosek_en": "Q&A with audience. Space, AI, energy.",
+        "kontekst_pl": "AMA = Ask Me Anything. Audience = Moonshots community.",
+        "kontekst_en": "AMA = Ask Me Anything. Audience = Moonshots community."
+      }
+    ]
+  },
+  {
     "num": "#284",
     "collapsed": true,
     "channel": "Moonshots",

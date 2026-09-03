@@ -2,9 +2,19 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-08-30 03:54:12 UTC
+// Generated: 2026-09-03 15:28:46 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-08-31",
+    "type": "diamandis",
+    "title_pl": "Podcast #285 — OpenAI odcina Elona od Cursora, pierwsza misja międzygwiezdna, & nuklearny statek na Marsa | #285",
+    "title_en": "Podcast #285 — OpenAI Cuts Off Elon's Cursor, Humanity's First Star Probe, & Trump's Nuclear Mars Ship | EP #285",
+    "link": "ai-pulse.html#285",
+    "meta_pl": "13 tematów",
+    "meta_en": "13 topics",
+    "num": "#285"
+  },
   {
     "date": "2026-08-30",
     "type": "weekly",
