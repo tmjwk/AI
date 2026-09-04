@@ -1,6 +1,596 @@
 // AI Radar — auto-generated from radar.json
 const episodes = [
   {
+    "id": "ep-2026-09-04",
+    "date": "2026-09-04",
+    "title_pl": "Exciting AI Updates Weekly — 4 września 2026",
+    "title_en": "Exciting AI Updates Weekly — September 4, 2026",
+    "yt": "D5qeklkQqRg",
+    "collapsed": true,
+    "sections": [
+      {
+        "type": "table",
+        "title_pl": "LM Arena Leaderboard (stan: 04.09.2026)",
+        "title_en": "LM Arena Leaderboard (as of 09-04-2026)",
+        "id": "lb-0904",
+        "num": 1,
+        "icon": "📊",
+        "headers": [
+          "Rank",
+          "Model",
+          "Score",
+          "Vendor"
+        ],
+        "rows": [
+          [
+            "1",
+            "Claude Fable 5",
+            "1438",
+            "Anthropic"
+          ],
+          [
+            "2",
+            "GPT 6 Astra",
+            "1450",
+            "OpenAI"
+          ],
+          [
+            "3",
+            "Claude Opus 5",
+            "1430",
+            "Anthropic"
+          ],
+          [
+            "4",
+            "Grok 4.6",
+            "1430",
+            "xAI"
+          ],
+          [
+            "5",
+            "Gemini 3.8 Flash",
+            "1352",
+            "Google"
+          ],
+          [
+            "6",
+            "Kimi K3",
+            "1392",
+            "Moonshot"
+          ],
+          [
+            "7",
+            "GLM 5.3",
+            "1372",
+            "Z.AI"
+          ],
+          [
+            "8",
+            "Qwen 3.8 Max",
+            "1378",
+            "Alibaba"
+          ],
+          [
+            "9",
+            "Muse Spark",
+            "1320",
+            "Meta"
+          ],
+          [
+            "10",
+            "DeepSeek V4 Pro",
+            "1368",
+            "DeepSeek"
+          ]
+        ],
+        "notes_pl": "GPT 6 Astra nowy flagship OpenAI. Claude Fable 5 nadal top. Gemini 3.8 Flash blisko Fable, dużo tańszy. Local models good enough dla routine tasks — $200→$4 bill.",
+        "notes_en": "GPT 6 Astra new OpenAI flagship. Claude Fable 5 still top. Gemini 3.8 Flash close to Fable, much cheaper. Local models good enough for routine tasks — $200→$4 bill.",
+        "cards": []
+      },
+      {
+        "type": "cards",
+        "title_pl": "Cost Per Intelligence + Local Models",
+        "title_en": "Cost Per Intelligence + Local Models",
+        "id": "cost-0904",
+        "num": 2,
+        "icon": "💰",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c1",
+            "title": "Local models slash bills $200→$4 — send hard problems to cloud",
+            "desc_pl": "Lev: local models teraz good enough dla routine tasks. Monthly bill $200→$4. Wciąż potrzebujesz frontier cloud model dla coding/important ale routine = local. Mac Mini <$1000 run model lokalnie + route difficult do cloud.",
+            "desc_en": "Lev: local models now good enough for routine tasks. Monthly bill $200→$4. Still need frontier cloud model for coding/important but routine = local. Mac Mini <$1000 run model locally + route difficult to cloud.",
+            "tags": [
+              "cost",
+              "local"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c2",
+            "title": "Anthropic won court case — judge overturned gov regulation",
+            "desc_pl": "Anthropic won — judge overturned government regulation z March. AI regulation battle continues. Courts siding z AI labs against overly broad regulation.",
+            "desc_en": "Anthropic won — judge overturned government regulation from March. AI regulation battle continues. Courts siding with AI labs against overly broad regulation.",
+            "tags": [
+              "regulation"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Nowe modele — GPT 6 Astra, Gemini 3.8 Flash, Qwen 3.8 Max",
+        "title_en": "New models — GPT 6 Astra, Gemini 3.8 Flash, Qwen 3.8 Max",
+        "id": "models-0904",
+        "num": 3,
+        "icon": "🆕",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c3",
+            "title": "GPT 6 Astra — new OpenAI flagship, $50/M tok, low hallucination",
+            "desc_pl": "GPT 6 Astra — main thing this week. New flagship frontier model OpenAI. Hallucination level much smaller niż poprzednie GPT. $50/M output tokens (same as Claude Fable). Supports text, images, video, audio, PDFs, agentic workflows.",
+            "desc_en": "GPT 6 Astra — main thing this week. New flagship frontier model OpenAI. Hallucination level much smaller than previous GPT. $50/M output tokens (same as Claude Fable). Supports text, images, video, audio, PDFs, agentic workflows.",
+            "tags": [
+              "LLM"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c4",
+            "title": "Gemini 3.8 Flash + Flash Cyber — close to Fable, much cheaper",
+            "desc_pl": "Gemini 3.8 Flash — close to Fable na benchmarks, much cheaper + faster. Cyber version = cybersecurity specific. Google did very good job. Multimodal: text, images, video, audio, PDFs, code.",
+            "desc_en": "Gemini 3.8 Flash — close to Fable on benchmarks, much cheaper + faster. Cyber version = cybersecurity specific. Google did very good job. Multimodal: text, images, video, audio, PDFs, code.",
+            "tags": [
+              "LLM"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c5",
+            "title": "Qwen 3.8 Max 0902 — 2.4T params, 1M context, 770B local",
+            "desc_pl": "Qwen 3.8 Max 0902 — latest version. Cloud: 2.4T params, 1M token context. Local: 770B params, mixed precision GGUF 214GB (from 1.4TB). Runs na home computer z enough memory.",
+            "desc_en": "Qwen 3.8 Max 0902 — latest version. Cloud: 2.4T params, 1M token context. Local: 770B params, mixed precision GGUF 214GB (from 1.4TB). Runs on home computer with enough memory.",
+            "tags": [
+              "LLM",
+              "open-source"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c6",
+            "title": "GLM 5.3 Flash (Ox Alpha) — 320B open weight, Ollama support",
+            "desc_pl": "GLM 5.3 Flash = Ox Alpha revealed. 320B params, open weight. Flash smaller (320B), full version bigger. Available na Ollama. Very good model.",
+            "desc_en": "GLM 5.3 Flash = Ox Alpha revealed. 320B params, open weight. Flash smaller (320B), full version bigger. Available on Ollama. Very good model.",
+            "tags": [
+              "LLM",
+              "open-source"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c7",
+            "title": "MiniMax H3 Max — faster than real-time video generation",
+            "desc_pl": "MiniMax H3 Max — fast AI video generation faster than real-time. 5-second clip faster than 5 seconds. Optimized dla speed, prompt adherence, aesthetics. Chinese company.",
+            "desc_en": "MiniMax H3 Max — fast AI video generation faster than real-time. 5-second clip faster than 5 seconds. Optimized for speed, prompt adherence, aesthetics. Chinese company.",
+            "tags": [
+              "video"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c8",
+            "title": "Google TimesFM3 — multivariate time series forecasting, 330M params",
+            "desc_pl": "Google TimesFM3 — multivariate time series forecasting. Only 330M params. Small model dla difficult problem. Sales forecasting, demand prediction.",
+            "desc_en": "Google TimesFM3 — multivariate time series forecasting. Only 330M params. Small model for difficult problem. Sales forecasting, demand prediction.",
+            "tags": [
+              "research"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Claude + Coding Tools",
+        "title_en": "Claude + Coding Tools",
+        "id": "coding-0904",
+        "num": 4,
+        "icon": "💻",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c9",
+            "title": "Claude Code major rebuild — browser-based, 16K commits",
+            "desc_pl": "Claude Code major rebuild. Before: mostly CLI. Now: mostly browser. Combine sessions, tasks, files, terminal access, live agent progress. 16K commits w this release.",
+            "desc_en": "Claude Code major rebuild. Before: mostly CLI. Now: mostly browser. Combine sessions, tasks, files, terminal access, live agent progress. 16K commits in this release.",
+            "tags": [
+              "coding"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c10",
+            "title": "Open Claude — security concerns, open-source alternative",
+            "desc_pl": "Open Claude — big event update. People suspicious about security. Open-source alternative to Claude Code. Security problems to address.",
+            "desc_en": "Open Claude — big event update. People suspicious about security. Open-source alternative to Claude Code. Security problems to address.",
+            "tags": [
+              "coding",
+              "open-source"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c11",
+            "title": "Prompting Claude 5 — 7 rules + Claude memory dreams",
+            "desc_pl": "Prompting Claude 5: 7 rules. Avoid unnecessary double-checking. Coding tool use longer running. Claude memory dreams feature dla managed agents — not for local Claude Code. Managed agents w Anthropic cloud sandbox. Dreams = consolidation.",
+            "desc_en": "Prompting Claude 5: 7 rules. Avoid unnecessary double-checking. Coding tool use longer running. Claude memory dreams feature for managed agents — not for local Claude Code. Managed agents in Anthropic cloud sandbox. Dreams = consolidation.",
+            "tags": [
+              "coding",
+              "technique"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c12",
+            "title": "NanoClaude — small, secure, Docker-isolated agents",
+            "desc_pl": "NanoClaude — small version built to be secure. Each active agent runs isolated Docker container. Limited access to explicitly mounted resources.",
+            "desc_en": "NanoClaude — small version built to be secure. Each active agent runs isolated Docker container. Limited access to explicitly mounted resources.",
+            "tags": [
+              "coding",
+              "security"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c13",
+            "title": "Qwen 3.8 27B 8x faster for long context — CPU offloading",
+            "desc_pl": "Make Qwen 3.8 27B 8x faster dla long context. Selectively outsource certain things to CPU. Different scenarios. CPU + GPU hybrid approach.",
+            "desc_en": "Make Qwen 3.8 27B 8x faster for long context. Selectively outsource certain things to CPU. Different scenarios. CPU + GPU hybrid approach.",
+            "tags": [
+              "efficiency"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c14",
+            "title": "Cloudflare blocks AI agents by default from Sept 15",
+            "desc_pl": "Cloudflare: websites will block AI agents by default from September 15th. Huge company hosting many websites. Blanket rule — AI agents blocked unless explicitly allowed.",
+            "desc_en": "Cloudflare: websites will block AI agents by default from September 15th. Huge company hosting many websites. Blanket rule — AI agents blocked unless explicitly allowed.",
+            "tags": [
+              "security",
+              "regulation"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "AI Safety + Research",
+        "title_en": "AI Safety + Research",
+        "id": "safety-0904",
+        "num": 5,
+        "icon": "🛡️",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c15",
+            "title": "Anthropic: Claude Sonet 5 teaches Claude Opus 4.8 safety — 60h experiments",
+            "desc_pl": "Anthropic: one AI helps make another AI safer. Claude Sonet 5 worked jak robot safety teacher dla earlier Claude Opus 4.8. 60 hours experiments finding safety improvements. Better than 28 human safety researchers. Not production yet.",
+            "desc_en": "Anthropic: one AI helps make another AI safer. Claude Sonet 5 worked like robot safety teacher for earlier Claude Opus 4.8. 60 hours experiments finding safety improvements. Better than 28 human safety researchers. Not production yet.",
+            "tags": [
+              "safety",
+              "research"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c16",
+            "title": "Streaming audio native conversational understanding — 97% correct during pauses",
+            "desc_pl": "Streaming audio native conversational understanding model. Replaces silence-based endpoint detection z continuous interpretation. 97% correct patience during meaningful thinking pauses. Very good conversation.",
+            "desc_en": "Streaming audio native conversational understanding model. Replaces silence-based endpoint detection with continuous interpretation. 97% correct patience during meaningful thinking pauses. Very good conversation.",
+            "tags": [
+              "audio",
+              "research"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c17",
+            "title": "ResNet most cited paper — residual learning for image recognition",
+            "desc_pl": "ResNet paper — deep residual learning for image recognition. Most cited paper. Residual path = shortcut road inside model lets gradient flow. Used in all modern models, transformers.",
+            "desc_en": "ResNet paper — deep residual learning for image recognition. Most cited paper. Residual path = shortcut road inside model lets gradient flow. Used in all modern models, transformers.",
+            "tags": [
+              "research"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c18",
+            "title": "Laser stabilization on quantum computers 58%→99%",
+            "desc_pl": "Laser stabilization on quantum computers went from 58% to 99%. Quantum computing stability breakthrough.",
+            "desc_en": "Laser stabilization on quantum computers went from 58% to 99%. Quantum computing stability breakthrough.",
+            "tags": [
+              "quantum",
+              "research"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Tools + Business",
+        "title_en": "Tools + Business",
+        "id": "tools-0904",
+        "num": 6,
+        "icon": "🛠️",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c19",
+            "title": "Runway Solaris — interface world model renders websites in real-time video",
+            "desc_pl": "Runway previews Solaris interface world model. Solaris renders websites i apps w live video drawing every frame in real-time. People impressed z quality.",
+            "desc_en": "Runway previews Solaris interface world model. Solaris renders websites and apps in live video drawing every frame in real-time. People impressed with quality.",
+            "tags": [
+              "video",
+              "tool"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c20",
+            "title": "NVIDIA buys Hugging Face for $13 billion (doubled from previous)",
+            "desc_pl": "NVIDIA agrees to buy Hugging Face for about $13 billion. Double from previous negotiations. Hugging Face = place where people upload models, articles, communicate, build. Supports PyTorch etc.",
+            "desc_en": "NVIDIA agrees to buy Hugging Face for about $13 billion. Double from previous negotiations. Hugging Face = place where people upload models, articles, communicate, build. Supports PyTorch etc.",
+            "tags": [
+              "business",
+              "acquisition"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c21",
+            "title": "SSI (Ilya Sutskever) raised $5B from NVIDIA",
+            "desc_pl": "Ilya Sutskever's company SSI (Safe Super Intelligence) received ~$5 billion from NVIDIA. Talking about needing more compute.",
+            "desc_en": "Ilya Sutskever's company SSI (Safe Super Intelligence) received ~$5 billion from NVIDIA. Talking about needing more compute.",
+            "tags": [
+              "funding"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c22",
+            "title": "Bala TeamAI — open-source team second brain wiki",
+            "desc_pl": "Bala TeamAI — open-source application dla sharing z team. Obsidian-type wiki made z markdown files, interlinks, realtime sync, per folder. Second brain memory dla team.",
+            "desc_en": "Bala TeamAI — open-source application for sharing with team. Obsidian-type wiki made with markdown files, interlinks, realtime sync, per folder. Second brain memory for team.",
+            "tags": [
+              "tool",
+              "open-source"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c23",
+            "title": "CPython + Rust — new CPython CIs crate provides Rust bindings",
+            "desc_pl": "Python on computer also puts Rust + tool chain. New CPython CIs crate provides generated bindings. Rust increasingly used for Python extensions.",
+            "desc_en": "Python on computer also puts Rust + tool chain. New CPython CIs crate provides generated bindings. Rust increasingly used for Python extensions.",
+            "tags": [
+              "coding"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c24",
+            "title": "Cache locations — reuse across workers, 79% faster time to first token",
+            "desc_pl": "Put cache w different locations enabling reuse across workers, restarts, replicas. Reduces time to first token by 79%. Prefix caching from SGLang + vLLM.",
+            "desc_en": "Put cache in different locations enabling reuse across workers, restarts, replicas. Reduces time to first token by 79%. Prefix caching from SGLang + vLLM.",
+            "tags": [
+              "efficiency"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c25",
+            "title": "OpenAI not available in Cursor — Altman bad experience z Elon",
+            "desc_pl": "OpenAI will not be available w Cursor. Altman + OpenAI had bad experience z Elon Musk companies. They don't want to support Cursor (Elon's tool).",
+            "desc_en": "OpenAI will not be available in Cursor. Altman + OpenAI had bad experience with Elon Musk companies. They don't want to support Cursor (Elon's tool).",
+            "tags": [
+              "business"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Agent Frameworks + Architecture",
+        "title_en": "Agent Frameworks + Architecture",
+        "id": "agents-0904",
+        "num": 7,
+        "icon": "🤖",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c26",
+            "title": "MATTER — Model Evaluation and Threat Research, agents communicate",
+            "desc_pl": "MATTER (Model Evaluation and Threat Research) — agents use shared infrastructure to communicate, exchange tasks, information. Probing, artifact caching, tool lock manipulation. Modern models work longer, cooperate longer.",
+            "desc_en": "MATTER (Model Evaluation and Threat Research) — agents use shared infrastructure to communicate, exchange tasks, information. Probing, artifact caching, tool lock manipulation. Modern models work longer, cooperate longer.",
+            "tags": [
+              "agents",
+              "research"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c27",
+            "title": "Frontier Agent — open-source local runtime, React UI, visual debugging",
+            "desc_pl": "Frontier Agent — open-source local runtime z React dla single stateful agent + agent team dla agentic work. JSON self-contained HTML artifact. Integrates z Cursor, Claude Code. Visual debugging.",
+            "desc_en": "Frontier Agent — open-source local runtime with React for single stateful agent + agent team for agentic work. JSON self-contained HTML artifact. Integrates with Cursor, Claude Code. Visual debugging.",
+            "tags": [
+              "agents",
+              "open-source"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c28",
+            "title": "Lev's Architecture Design — 27-page doc, ADR, PostgreSQL, self-healing",
+            "desc_pl": "Lev's architecture design — 27 pages. ADR (Architecture Design Doc). PostgreSQL jako single system of record. Avoid distributed architectures. Self-healing system. Architecture conformance verified by golden suit evaluation gate.",
+            "desc_en": "Lev's architecture design — 27 pages. ADR (Architecture Design Doc). PostgreSQL as single system of record. Avoid distributed architectures. Self-healing system. Architecture conformance verified by golden suit evaluation gate.",
+            "tags": [
+              "architecture"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c29",
+            "title": "Agentic Linux — talk to the OS directly, chat in the OS device",
+            "desc_pl": "Agentic Linux by Omari Huatra + David Heinemeier Hansen. Talk to operating system itself. Don't need to install — just chat. Progress: chat in browser → chat in app → chat in OS device.",
+            "desc_en": "Agentic Linux by Omari Huatra + David Heinemeier Hansen. Talk to operating system itself. Don't need to install — just chat. Progress: chat in browser → chat in app → chat in OS device.",
+            "tags": [
+              "OS",
+              "agent"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "News + Misc",
+        "title_en": "News + Misc",
+        "id": "news-0904",
+        "num": 8,
+        "icon": "📰",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c30",
+            "title": "How your brand appears in AI answers — 100M answers analyzed",
+            "desc_pl": "Analyzed 100M+ AI answers. Different sources dla different industries: review directories, press, marketplace pages. Consumer products mostly from marketplace + reviews.",
+            "desc_en": "Analyzed 100M+ AI answers. Different sources for different industries: review directories, press, marketplace pages. Consumer products mostly from marketplace + reviews.",
+            "tags": [
+              "research"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c31",
+            "title": "Minix OS story — Intel used it without author knowing, Linux connection",
+            "desc_pl": "Andrew Tanenbaum's Minix — 80+ years old. Intel used Minix w chips without him knowing. Linux Torvalds used Minix when starting Linux. Licenses shape downstream modifications. Broader lesson.",
+            "desc_en": "Andrew Tanenbaum's Minix — 80+ years old. Intel used Minix in chips without him knowing. Linux Torvalds used Minix when starting Linux. Licenses shape downstream modifications. Broader lesson.",
+            "tags": [
+              "history",
+              "OS"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c32",
+            "title": "AI heart screening — 67K patients, cardiogram analysis",
+            "desc_pl": "London study: 67,000 patients. AI analyzes cardiograms dla heart screening. Early detection.",
+            "desc_en": "London study: 67,000 patients. AI analyzes cardiograms for heart screening. Early detection.",
+            "tags": [
+              "health"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c33",
+            "title": "Cellaris Magnus — agent-oriented model, San Francisco lab",
+            "desc_pl": "Cellaris — independent AI research lab w San Francisco. Introduced Magnus agent-oriented model.",
+            "desc_en": "Cellaris — independent AI research lab in San Francisco. Introduced Magnus agent-oriented model.",
+            "tags": [
+              "research"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c34",
+            "title": "Wonderful.ai — $550M raised at $5B valuation, regulated orgs",
+            "desc_pl": "Wonderful.ai raised $550M at $5B valuation. Target: large regulated organizations needing agent embedded w operating workflow. Banking, telecom, healthcare.",
+            "desc_en": "Wonderful.ai raised $550M at $5B valuation. Target: large regulated organizations needing agent embedded with operating workflow. Banking, telecom, healthcare.",
+            "tags": [
+              "funding",
+              "business"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          },
+          {
+            "id": "c35",
+            "title": "AI's 3 career doors — Alex Karp (Palantir CEO): skill trades",
+            "desc_pl": "Alex Karp (Palantir CEO): durable careers cluster around skill trades. Build machine around expertise rather than competing at standardized work. WEF: net gain 70M jobs across 55 economies.",
+            "desc_en": "Alex Karp (Palantir CEO): durable careers cluster around skill trades. Build machine around expertise rather than competing at standardized work. WEF: net gain 70M jobs across 55 economies.",
+            "tags": [
+              "jobs"
+            ],
+            "date": "2026-09-04",
+            "links": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "ep-2026-08-28",
     "date": "2026-08-28",
     "title_pl": "Exciting AI Updates Weekly — 28 sierpnia 2026",

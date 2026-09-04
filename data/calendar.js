@@ -2,9 +2,359 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-09-03 15:28:46 UTC
+// Generated: 2026-09-04 20:47:49 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Local models slash bills $200→$4 — send hard problems to cloud",
+    "title_en": "Local models slash bills $200→$4 — send hard problems to cloud",
+    "link": "ai-radar.html#card-c1",
+    "meta_pl": "Cost Per Intelligence + Local ",
+    "meta_en": "Cost Per Intelligence + Local ",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Anthropic won court case — judge overturned gov regulation",
+    "title_en": "Anthropic won court case — judge overturned gov regulation",
+    "link": "ai-radar.html#card-c2",
+    "meta_pl": "Cost Per Intelligence + Local ",
+    "meta_en": "Cost Per Intelligence + Local ",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "GPT 6 Astra — new OpenAI flagship, $50/M tok, low hallucination",
+    "title_en": "GPT 6 Astra — new OpenAI flagship, $50/M tok, low hallucination",
+    "link": "ai-radar.html#card-c3",
+    "meta_pl": "Nowe modele — GPT 6 Astra, Gem",
+    "meta_en": "Nowe modele — GPT 6 Astra, Gem",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Gemini 3.8 Flash + Flash Cyber — close to Fable, much cheaper",
+    "title_en": "Gemini 3.8 Flash + Flash Cyber — close to Fable, much cheaper",
+    "link": "ai-radar.html#card-c4",
+    "meta_pl": "Nowe modele — GPT 6 Astra, Gem",
+    "meta_en": "Nowe modele — GPT 6 Astra, Gem",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Qwen 3.8 Max 0902 — 2.4T params, 1M context, 770B local",
+    "title_en": "Qwen 3.8 Max 0902 — 2.4T params, 1M context, 770B local",
+    "link": "ai-radar.html#card-c5",
+    "meta_pl": "Nowe modele — GPT 6 Astra, Gem",
+    "meta_en": "Nowe modele — GPT 6 Astra, Gem",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "GLM 5.3 Flash (Ox Alpha) — 320B open weight, Ollama support",
+    "title_en": "GLM 5.3 Flash (Ox Alpha) — 320B open weight, Ollama support",
+    "link": "ai-radar.html#card-c6",
+    "meta_pl": "Nowe modele — GPT 6 Astra, Gem",
+    "meta_en": "Nowe modele — GPT 6 Astra, Gem",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "MiniMax H3 Max — faster than real-time video generation",
+    "title_en": "MiniMax H3 Max — faster than real-time video generation",
+    "link": "ai-radar.html#card-c7",
+    "meta_pl": "Nowe modele — GPT 6 Astra, Gem",
+    "meta_en": "Nowe modele — GPT 6 Astra, Gem",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Google TimesFM3 — multivariate time series forecasting, 330M params",
+    "title_en": "Google TimesFM3 — multivariate time series forecasting, 330M params",
+    "link": "ai-radar.html#card-c8",
+    "meta_pl": "Nowe modele — GPT 6 Astra, Gem",
+    "meta_en": "Nowe modele — GPT 6 Astra, Gem",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Claude Code major rebuild — browser-based, 16K commits",
+    "title_en": "Claude Code major rebuild — browser-based, 16K commits",
+    "link": "ai-radar.html#card-c9",
+    "meta_pl": "Claude + Coding Tools",
+    "meta_en": "Claude + Coding Tools",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Open Claude — security concerns, open-source alternative",
+    "title_en": "Open Claude — security concerns, open-source alternative",
+    "link": "ai-radar.html#card-c10",
+    "meta_pl": "Claude + Coding Tools",
+    "meta_en": "Claude + Coding Tools",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Prompting Claude 5 — 7 rules + Claude memory dreams",
+    "title_en": "Prompting Claude 5 — 7 rules + Claude memory dreams",
+    "link": "ai-radar.html#card-c11",
+    "meta_pl": "Claude + Coding Tools",
+    "meta_en": "Claude + Coding Tools",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "NanoClaude — small, secure, Docker-isolated agents",
+    "title_en": "NanoClaude — small, secure, Docker-isolated agents",
+    "link": "ai-radar.html#card-c12",
+    "meta_pl": "Claude + Coding Tools",
+    "meta_en": "Claude + Coding Tools",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Qwen 3.8 27B 8x faster for long context — CPU offloading",
+    "title_en": "Qwen 3.8 27B 8x faster for long context — CPU offloading",
+    "link": "ai-radar.html#card-c13",
+    "meta_pl": "Claude + Coding Tools",
+    "meta_en": "Claude + Coding Tools",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Cloudflare blocks AI agents by default from Sept 15",
+    "title_en": "Cloudflare blocks AI agents by default from Sept 15",
+    "link": "ai-radar.html#card-c14",
+    "meta_pl": "Claude + Coding Tools",
+    "meta_en": "Claude + Coding Tools",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Anthropic: Claude Sonet 5 teaches Claude Opus 4.8 safety — 60h experiments",
+    "title_en": "Anthropic: Claude Sonet 5 teaches Claude Opus 4.8 safety — 60h experiments",
+    "link": "ai-radar.html#card-c15",
+    "meta_pl": "AI Safety + Research",
+    "meta_en": "AI Safety + Research",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Streaming audio native conversational understanding — 97% correct during pauses",
+    "title_en": "Streaming audio native conversational understanding — 97% correct during pauses",
+    "link": "ai-radar.html#card-c16",
+    "meta_pl": "AI Safety + Research",
+    "meta_en": "AI Safety + Research",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "ResNet most cited paper — residual learning for image recognition",
+    "title_en": "ResNet most cited paper — residual learning for image recognition",
+    "link": "ai-radar.html#card-c17",
+    "meta_pl": "AI Safety + Research",
+    "meta_en": "AI Safety + Research",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Laser stabilization on quantum computers 58%→99%",
+    "title_en": "Laser stabilization on quantum computers 58%→99%",
+    "link": "ai-radar.html#card-c18",
+    "meta_pl": "AI Safety + Research",
+    "meta_en": "AI Safety + Research",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Runway Solaris — interface world model renders websites in real-time video",
+    "title_en": "Runway Solaris — interface world model renders websites in real-time video",
+    "link": "ai-radar.html#card-c19",
+    "meta_pl": "Tools + Business",
+    "meta_en": "Tools + Business",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "NVIDIA buys Hugging Face for $13 billion (doubled from previous)",
+    "title_en": "NVIDIA buys Hugging Face for $13 billion (doubled from previous)",
+    "link": "ai-radar.html#card-c20",
+    "meta_pl": "Tools + Business",
+    "meta_en": "Tools + Business",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "SSI (Ilya Sutskever) raised $5B from NVIDIA",
+    "title_en": "SSI (Ilya Sutskever) raised $5B from NVIDIA",
+    "link": "ai-radar.html#card-c21",
+    "meta_pl": "Tools + Business",
+    "meta_en": "Tools + Business",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Bala TeamAI — open-source team second brain wiki",
+    "title_en": "Bala TeamAI — open-source team second brain wiki",
+    "link": "ai-radar.html#card-c22",
+    "meta_pl": "Tools + Business",
+    "meta_en": "Tools + Business",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "CPython + Rust — new CPython CIs crate provides Rust bindings",
+    "title_en": "CPython + Rust — new CPython CIs crate provides Rust bindings",
+    "link": "ai-radar.html#card-c23",
+    "meta_pl": "Tools + Business",
+    "meta_en": "Tools + Business",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Cache locations — reuse across workers, 79% faster time to first token",
+    "title_en": "Cache locations — reuse across workers, 79% faster time to first token",
+    "link": "ai-radar.html#card-c24",
+    "meta_pl": "Tools + Business",
+    "meta_en": "Tools + Business",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "OpenAI not available in Cursor — Altman bad experience z Elon",
+    "title_en": "OpenAI not available in Cursor — Altman bad experience z Elon",
+    "link": "ai-radar.html#card-c25",
+    "meta_pl": "Tools + Business",
+    "meta_en": "Tools + Business",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "MATTER — Model Evaluation and Threat Research, agents communicate",
+    "title_en": "MATTER — Model Evaluation and Threat Research, agents communicate",
+    "link": "ai-radar.html#card-c26",
+    "meta_pl": "Agent Frameworks + Architectur",
+    "meta_en": "Agent Frameworks + Architectur",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Frontier Agent — open-source local runtime, React UI, visual debugging",
+    "title_en": "Frontier Agent — open-source local runtime, React UI, visual debugging",
+    "link": "ai-radar.html#card-c27",
+    "meta_pl": "Agent Frameworks + Architectur",
+    "meta_en": "Agent Frameworks + Architectur",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Lev's Architecture Design — 27-page doc, ADR, PostgreSQL, self-healing",
+    "title_en": "Lev's Architecture Design — 27-page doc, ADR, PostgreSQL, self-healing",
+    "link": "ai-radar.html#card-c28",
+    "meta_pl": "Agent Frameworks + Architectur",
+    "meta_en": "Agent Frameworks + Architectur",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Agentic Linux — talk to the OS directly, chat in the OS device",
+    "title_en": "Agentic Linux — talk to the OS directly, chat in the OS device",
+    "link": "ai-radar.html#card-c29",
+    "meta_pl": "Agent Frameworks + Architectur",
+    "meta_en": "Agent Frameworks + Architectur",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "How your brand appears in AI answers — 100M answers analyzed",
+    "title_en": "How your brand appears in AI answers — 100M answers analyzed",
+    "link": "ai-radar.html#card-c30",
+    "meta_pl": "News + Misc",
+    "meta_en": "News + Misc",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Minix OS story — Intel used it without author knowing, Linux connection",
+    "title_en": "Minix OS story — Intel used it without author knowing, Linux connection",
+    "link": "ai-radar.html#card-c31",
+    "meta_pl": "News + Misc",
+    "meta_en": "News + Misc",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "AI heart screening — 67K patients, cardiogram analysis",
+    "title_en": "AI heart screening — 67K patients, cardiogram analysis",
+    "link": "ai-radar.html#card-c32",
+    "meta_pl": "News + Misc",
+    "meta_en": "News + Misc",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Cellaris Magnus — agent-oriented model, San Francisco lab",
+    "title_en": "Cellaris Magnus — agent-oriented model, San Francisco lab",
+    "link": "ai-radar.html#card-c33",
+    "meta_pl": "News + Misc",
+    "meta_en": "News + Misc",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "Wonderful.ai — $550M raised at $5B valuation, regulated orgs",
+    "title_en": "Wonderful.ai — $550M raised at $5B valuation, regulated orgs",
+    "link": "ai-radar.html#card-c34",
+    "meta_pl": "News + Misc",
+    "meta_en": "News + Misc",
+    "num": "ep-2026-09-04"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "lev",
+    "title_pl": "AI's 3 career doors — Alex Karp (Palantir CEO): skill trades",
+    "title_en": "AI's 3 career doors — Alex Karp (Palantir CEO): skill trades",
+    "link": "ai-radar.html#card-c35",
+    "meta_pl": "News + Misc",
+    "meta_en": "News + Misc",
+    "num": "ep-2026-09-04"
+  },
   {
     "date": "2026-08-31",
     "type": "diamandis",
