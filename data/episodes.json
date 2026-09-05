@@ -1,6 +1,310 @@
 {
   "EPISODES": [
     {
+      "num": "#286",
+      "collapsed": true,
+      "channel": "Moonshots",
+      "title": "GPT-6 Astra Saturates ARC-AGI-3, Tesla Cybercab Hits Austin, Anthropic Proves Fermat's Last Theorem | EP #286",
+      "title_pl": "GPT-6 Astra nasycza ARC-AGI-3, Tesla Cybercab w Austin, Anthropic dowodzi twierdzenie Fermata | #286",
+      "title_en": "GPT-6 Astra Saturates ARC-AGI-3, Tesla Cybercab Hits Austin, Anthropic Proves Fermat's Last Theorem | EP #286",
+      "date": "2026-09-05",
+      "duration": "70 min",
+      "yt": "1DB_QDiviH4",
+      "hosts_count_pl": "4 uczestników",
+      "hosts_count_en": "4 participants",
+      "topics_count_pl": "13 tematów",
+      "topics_count_en": "13 topics",
+      "hosts": [
+        {
+          "name": "Peter Diamandis",
+          "role_pl": "Gospodarz",
+          "role_en": "Main host"
+        },
+        {
+          "name": "Dr. Alexander Wissner-Gross",
+          "role_pl": "In-house ASI",
+          "role_en": "In-house ASI"
+        },
+        {
+          "name": "Dave Blundin",
+          "role_pl": "Inwestor VC",
+          "role_en": "VC investor"
+        },
+        {
+          "name": "Salim Ismail",
+          "role_pl": "Organizacje wykładnicze",
+          "role_en": "Exponential organizations"
+        }
+      ],
+      "topics": [
+        {
+          "num": "01",
+          "title": "Introduction — GPT-6 Astra saturates ARC-AGI-3, Tesla Cybercab $30K",
+          "title_pl": "Wprowadzenie — GPT-6 Astra nasycza ARC-AGI-3, Tesla Cybercab $30K",
+          "title_en": "Introduction — GPT-6 Astra saturates ARC-AGI-3, Tesla Cybercab $30K",
+          "time": "00:00 – 02:01",
+          "fakty_pl": "GPT-6 Astra brings together years of research. Next generation Frontier model designed with CUA from ground up. Saturates benchmarks like ARC-AGI-3. Elon wants to sell Cybercabs at $30,000 each — buy 10, put on streets, earn revenue.",
+          "fakty_en": "GPT-6 Astra brings together years of research. Next generation Frontier model designed with CUA from ground up. Saturates benchmarks like ARC-AGI-3. Elon wants to sell Cybercabs at $30,000 each — buy 10, put on streets, earn revenue.",
+          "glosy": [
+            {
+              "author": "Alex Wissner-Gross",
+              "text_pl": "GPT-6 Astra to next generation Frontier model zaprojektowany z CUA od podstaw. Saturates ARC-AGI-3.",
+              "text_en": "GPT6 Astra brings together years of research. This seems like a next generation Frontier model designed with CUA from the ground up on certain benchmarks like ARC-AGI 3 which it saturates."
+            },
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "Elon chce sprzedawać Cybercabs po $30,000. Kup 10, postaw na ulicach, zarabiaj.",
+              "text_en": "Elon wants to sell these at 30,000 each so you can buy 10 of them and put them on the streets in your local town, have them earn revenue for you."
+            }
+          ],
+          "wniosek_pl": "GPT-6 Astra saturates ARC-AGI-3. Cybercab $30K = revenue machine.",
+          "wniosek_en": "GPT-6 Astra saturates ARC-AGI-3. Cybercab $30K = revenue machine.",
+          "kontekst_pl": "CUA = Computer Use Agent. ARC-AGI-3 = abstraction and reasoning benchmark.",
+          "kontekst_en": "CUA = Computer Use Agent. ARC-AGI-3 = abstraction and reasoning benchmark."
+        },
+        {
+          "num": "02",
+          "title": "AI, Health, and Longevity",
+          "title_pl": "AI, zdrowie i długowieczność",
+          "title_en": "AI, Health, and Longevity",
+          "time": "02:01 – 07:22",
+          "fakty_pl": "Peter był z suite jednej z większych firm olejowych w Houston. Surreal experience — oil company discussing AI. Health i longevity jako key theme. Fountain Life: know what's going on inside your body.",
+          "fakty_en": "Peter was with suite of one of the bigger oil companies in Houston. Surreal experience — oil company discussing AI. Health and longevity as key theme. Fountain Life: know what's going on inside your body.",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "Byłem z suite jednej z większych firm olejowych w Houston. Surreal — oil company discussing AI.",
+              "text_en": "I was with the suite of one of the bigger oil companies in the world in Houston and it was kind of a really surreal experience."
+            }
+          ],
+          "wniosek_pl": "Oil companies discussing AI. Health + longevity = key theme.",
+          "wniosek_en": "Oil companies discussing AI. Health + longevity = key theme.",
+          "kontekst_pl": "Houston = oil capital USA. Fountain Life = Peter's health company.",
+          "kontekst_en": "Houston = oil capital USA. Fountain Life = Peter's health company."
+        },
+        {
+          "num": "03",
+          "title": "GPT-6 Astra Capabilities and Benchmarks",
+          "title_pl": "Możliwości i benchmarki GPT-6 Astra",
+          "title_en": "GPT-6 Astra Capabilities and Benchmarks",
+          "time": "07:22 – 11:21",
+          "fakty_pl": "GPT-6 Astra: state-of-the-art na computer use, browsing, software engineering. Brings together years of research across pre-training, RL, alignment. Astra story = about efficiency, not just raw intelligence. Defines new Pareto frontier dla intelligence index vs output token cost. Hallucination rate fell significantly. $50/M output tokens.",
+          "fakty_en": "GPT-6 Astra: state-of-the-art on computer use, browsing, software engineering. Brings together years of research across pre-training, RL, alignment. Astra story = about efficiency, not just raw intelligence. Defines new Pareto frontier for intelligence index vs output token cost. Hallucination rate fell significantly. $50/M output tokens.",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "GPT-6 Astra łączy lata researchu. State-of-the-art na computer use, browsing, software engineering. Historia Astry = o efektywności, nie tylko inteligencji.",
+              "text_en": "GPT6 Astra brings together years of research and big bets across pre-training, reinforcement learning, and alignment. Astra is a state-of-the-art on computer use, browsing, software engineering. Astra's story is really about efficiency, not just raw intelligence."
+            }
+          ],
+          "wniosek_pl": "GPT-6 Astra = new Pareto frontier (efficiency). Low hallucination. SOTA na computer use.",
+          "wniosek_en": "GPT-6 Astra = new Pareto frontier (efficiency). Low hallucination. SOTA on computer use.",
+          "kontekst_pl": "Pareto frontier = optimal trade-off between cost + intelligence. $50/M = same as Claude Fable.",
+          "kontekst_en": "Pareto frontier = optimal trade-off between cost + intelligence. $50/M = same as Claude Fable."
+        },
+        {
+          "num": "04",
+          "title": "AI Safety, Cybersecurity, and Guardrails",
+          "title_pl": "Bezpieczeństwo AI, cyberbezpieczeństwo i guardrails",
+          "title_en": "AI Safety, Cybersecurity, and Guardrails",
+          "time": "11:21 – 20:42",
+          "fakty_pl": "OpenAI spent time on safety + security alignment of Astra. 'Worth the wait' ale safety was priority. Guardrails, alignment, security — all addressed before release. Trend: AI labs increasingly prioritize safety before deployment.",
+          "fakty_en": "OpenAI spent time on safety + security alignment of Astra. 'Worth the wait' but safety was priority. Guardrails, alignment, security — all addressed before release. Trend: AI labs increasingly prioritize safety before deployment.",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "Warto było czekać, ale naprawdę chcieliśmy spędzić czas na bezpieczeństwie i alignment tego modelu.",
+              "text_en": "I think it'll be worth the wait, but we really wanted to spend the time on the safety and security alignment of this model."
+            }
+          ],
+          "wniosek_pl": "Astra safety-first release. Guardrails + alignment priority.",
+          "wniosek_en": "Astra safety-first release. Guardrails + alignment priority.",
+          "kontekst_pl": "OpenAI delayed Astra dla safety alignment. Trend: safety before speed.",
+          "kontekst_en": "OpenAI delayed Astra for safety alignment. Trend: safety before speed."
+        },
+        {
+          "num": "05",
+          "title": "Cybercabs, Robotaxis, and the Future of Mobility",
+          "title_pl": "Cybercabs, robotaxis i przyszłość mobilności",
+          "title_en": "Cybercabs, Robotaxis, and the Future of Mobility",
+          "time": "20:42 – 24:46",
+          "fakty_pl": "Tesla Cybercabs hitting Austin. $30,000 each. Buy 10, put on streets, earn revenue. Accelerating learning loop between batches. Real exponential = not one batch, it's the learning loop. Robotaxi economics improving.",
+          "fakty_en": "Tesla Cybercabs hitting Austin. $30,000 each. Buy 10, put on streets, earn revenue. Accelerating learning loop between batches. Real exponential = not one batch, it's the learning loop. Robotaxi economics improving.",
+          "glosy": [
+            {
+              "author": "Alex Wissner-Gross",
+              "text_pl": "Prawdziwa eksponencjalna to nie jedna partia, to przyspieszająca pętla uczenia się między wszystkimi partiami.",
+              "text_en": "The real exponential is not one batch or one recipe. It's like the accelerating learning loop between all the batches."
+            }
+          ],
+          "wniosek_pl": "Cybercab $30K w Austin. Learning loop = real exponential.",
+          "wniosek_en": "Cybercab $30K in Austin. Learning loop = real exponential.",
+          "kontekst_pl": "Austin = Tesla robotaxi launch city. $30K < średnia cena samochodu w USA.",
+          "kontekst_en": "Austin = Tesla robotaxi launch city. $30K < average car price in US."
+        },
+        {
+          "num": "06",
+          "title": "AI Efficiency, Cost, and Real-Time Learning",
+          "title_pl": "Efektywność AI, koszt i uczenie w czasie rzeczywistym",
+          "title_en": "AI Efficiency, Cost, and Real-Time Learning",
+          "time": "24:46 – 30:31",
+          "fakty_pl": "GPT-6 may not be at capability frontier ale at cost frontier. AI vs cost per task. GPT-6 Astra at max reasoning just below Claude Opus 5. Chinese models cheaper. Pareto frontier = intelligence vs cost. Efficiency > raw power.",
+          "fakty_en": "GPT-6 may not be at capability frontier but at cost frontier. AI vs cost per task. GPT-6 Astra at max reasoning just below Claude Opus 5. Chinese models cheaper. Pareto frontier = intelligence vs cost. Efficiency > raw power.",
+          "glosy": [
+            {
+              "author": "Alex Wissner-Gross",
+              "text_pl": "GPT-6 może nie być na capability frontier ale at cost frontier. AI vs cost per task.",
+              "text_en": "Depending on how you measure GPT6 may not actually be at the capability frontier or it may be a cost frontier. So the ability — this is again AI versus cost per task."
+            }
+          ],
+          "wniosek_pl": "GPT-6 = cost frontier, nie capability. Pareto: intelligence vs cost.",
+          "wniosek_en": "GPT-6 = cost frontier, not capability. Pareto: intelligence vs cost.",
+          "kontekst_pl": "Pareto frontier = optymalny trade-off. Chińskie modele tańsze ale blisko.",
+          "kontekst_en": "Pareto frontier = optimal trade-off. Chinese models cheaper but close."
+        },
+        {
+          "num": "07",
+          "title": "The Limits of Current AI Benchmarks",
+          "title_pl": "Limity obecnych benchmarków AI",
+          "title_en": "The Limits of Current AI Benchmarks",
+          "time": "30:31 – 33:44",
+          "fakty_pl": "Current AI benchmarks have limits. ARC-AGI-3 saturated by Astra. Benchmarks becoming too easy. Need new harder benchmarks. 3D printing example — AI generating files for 3D printer. Real-world tasks > synthetic benchmarks.",
+          "fakty_en": "Current AI benchmarks have limits. ARC-AGI-3 saturated by Astra. Benchmarks becoming too easy. Need new harder benchmarks. 3D printing example — AI generating files for 3D printer. Real-world tasks > synthetic benchmarks.",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "Obecne benchmarki mają limity. ARC-AGI-3 saturated. Potrzeba trudniejszych benchmarków. Zadania realnego świata > syntetyczne benchmarki.",
+              "text_en": "Current AI benchmarks have limits. ARC-AGI-3 saturated. Need harder benchmarks. Real-world tasks > synthetic benchmarks."
+            }
+          ],
+          "wniosek_pl": "Benchmarki za łatwe. ARC-AGI-3 saturated. Potrzeba trudniejszych.",
+          "wniosek_en": "Benchmarks too easy. ARC-AGI-3 saturated. Need harder ones.",
+          "kontekst_pl": "ARC-AGI-3 = Abstraction and Reasoning Corpus. Saturated = AI osiąga max score.",
+          "kontekst_en": "ARC-AGI-3 = Abstraction and Reasoning Corpus. Saturated = AI achieves max score."
+        },
+        {
+          "num": "08",
+          "title": "Mathematics, Formal Proofs, and Scientific Discovery",
+          "title_pl": "Matematyka, formalne dowody i odkrycia naukowe",
+          "title_en": "Mathematics, Formal Proofs, and Scientific Discovery",
+          "time": "33:44 – 35:17",
+          "fakty_pl": "Anthropic proved Fermat's Last Theorem. 13 million lines of code to formalize. Fermat wrote in margins 'left as exercise to reader.' AI doing formal mathematical proofs. Math = canary in coal mine — if you can solve math, you can solve everything.",
+          "fakty_en": "Anthropic proved Fermat's Last Theorem. 13 million lines of code to formalize. Fermat wrote in margins 'left as exercise to reader.' AI doing formal mathematical proofs. Math = canary in coal mine — if you can solve math, you can solve everything.",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "13 milionów linii kodu do sformalizowania twierdzenia Fermata. Fermat napisał na marginesie 'zostawione jako ćwiczenie dla czytelnika'.",
+              "text_en": "It took 13 million lines of code to formalize Fermat's last theorem. While Fermat wrote in the margins of his book — left as an exercise to the reader."
+            }
+          ],
+          "wniosek_pl": "Anthropic: Fermat's Last Theorem formalized (13M lines). Math = canary w coal mine.",
+          "wniosek_en": "Anthropic: Fermat's Last Theorem formalized (13M lines). Math = canary in coal mine.",
+          "kontekst_pl": "Fermat's Last Theorem = 1637, proven by Andrew Wiles 1994. AI formal proof = new era.",
+          "kontekst_en": "Fermat's Last Theorem = 1637, proven by Andrew Wiles 1994. AI formal proof = new era."
+        },
+        {
+          "num": "09",
+          "title": "Digital Twins, World Models, and AI Operating Systems",
+          "title_pl": "Cyfrowe bliźniaki, world models i systemy operacyjne AI",
+          "title_en": "Digital Twins, World Models, and AI Operating Systems",
+          "time": "35:17 – 43:19",
+          "fakty_pl": "Math fundamental across all sciences. If you can solve math, you can solve everything else. Digital twins + world models + AI operating systems converging. AI becoming infrastructure layer. Anthropic nie releasing top models — using internally for recursive self-improvement.",
+          "fakty_en": "Math fundamental across all sciences. If you can solve math, you can solve everything else. Digital twins + world models + AI operating systems converging. AI becoming infrastructure layer. Anthropic not releasing top models — using internally for recursive self-improvement.",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "Matematyka jest fundamentalna dla wszystkich nauk. Jeśli możesz rozwiązać matematykę, możesz rozwiązać wszystko inne.",
+              "text_en": "Math is fundamental across all other sciences and it's the canary in the coal mine. If you can solve math, you can solve everything else."
+            }
+          ],
+          "wniosek_pl": "Math = canary. Digital twins + world models + AI OS converging. Anthropic internal models.",
+          "wniosek_en": "Math = canary. Digital twins + world models + AI OS converging. Anthropic internal models.",
+          "kontekst_pl": "Digital twin = cyfrowa kopia obiektu. World model = AI rozumiejący fizykę.",
+          "kontekst_en": "Digital twin = digital copy of object. World model = AI understanding physics."
+        },
+        {
+          "num": "10",
+          "title": "Cybersecurity Risks and Rapid Model Proliferation",
+          "title_pl": "Ryzyka cyberbezpieczeństwa i szybka proliferacja modeli",
+          "title_en": "Cybersecurity Risks and Rapid Model Proliferation",
+          "time": "43:19 – 45:46",
+          "fakty_pl": "Tokens readable by humans + AI — can police. Ale if model reasons internally during single forward pass — harder to align, harder safeguards. Risk vs transparency trade-off. Alex: doesn't buy that danger increases with internal reasoning long term.",
+          "fakty_en": "Tokens readable by humans + AI — can police. But if model reasons internally during single forward pass — harder to align, harder safeguards. Risk vs transparency trade-off. Alex: doesn't buy that danger increases with internal reasoning long term.",
+          "glosy": [
+            {
+              "author": "Alex Wissner-Gross",
+              "text_pl": "Człowiek może czytać tokens, inna AI może czytać tokens, można policować. Ale jeśli model rozumuje wewnętrznie — trudniej alignować.",
+              "text_en": "A human can read the tokens, another AI can read the tokens, and you can police the tokens. Whereas if a model is doing the majority of its reasoning internally during a single forward pass — harder to align."
+            }
+          ],
+          "wniosek_pl": "Internal reasoning vs transparency. Risk trade-off debata.",
+          "wniosek_en": "Internal reasoning vs transparency. Risk trade-off debate.",
+          "kontekst_pl": "Forward pass = pojedyncze przejście przez model. Internal reasoning = ukryte myślenie.",
+          "kontekst_en": "Forward pass = single pass through model. Internal reasoning = hidden thinking."
+        },
+        {
+          "num": "11",
+          "title": "Regulation and the Global AI Race",
+          "title_pl": "Regulacja i globalny wyścig AI",
+          "title_en": "Regulation and the Global AI Race",
+          "time": "45:46 – 54:00",
+          "fakty_pl": "Ilya Sutskever tweeted — SSI release due any day now. Regulation + global AI race. Both companies (OpenAI, Anthropic) trying to lock up business partnerships, real estate, generators, chips, entire states. Speed of vertical partnerships accelerating.",
+          "fakty_en": "Ilya Sutskever tweeted — SSI release due any day now. Regulation + global AI race. Both companies (OpenAI, Anthropic) trying to lock up business partnerships, real estate, generators, chips, entire states. Speed of vertical partnerships accelerating.",
+          "glosy": [
+            {
+              "author": "Salim Ismail",
+              "text_pl": "Obie firmy próbują zablokować partnerstwa biznesowe, nieruchomości, generatory, chipy, całe stany.",
+              "text_en": "Both companies are going to try to lock up business partnerships, real estate, generators, chips, entire states."
+            }
+          ],
+          "wniosek_pl": "AI race = lock up resources. SSI Ilya release incoming. Vertical partnerships.",
+          "wniosek_en": "AI race = lock up resources. SSI Ilya release incoming. Vertical partnerships.",
+          "kontekst_pl": "SSI = Safe Super Intelligence (Ilya Sutskever). Vertical = branżowe partnerstwa.",
+          "kontekst_en": "SSI = Safe Super Intelligence (Ilya Sutskever). Vertical = industry partnerships."
+        },
+        {
+          "num": "12",
+          "title": "Infinite Context Windows and Future AI Capabilities",
+          "title_pl": "Nieskończone okna kontekstowe i przyszłe możliwości AI",
+          "title_en": "Infinite Context Windows and Future AI Capabilities",
+          "time": "54:00 – 1:02:04",
+          "fakty_pl": "Sam knows how to turn partnerships into locking things up. Both companies making partnerships w various verticals as fast as possible. If you're in that vertical, you're locked in. Infinite context windows coming — future AI capabilities expanding.",
+          "fakty_en": "Sam knows how to turn partnerships into locking things up. Both companies making partnerships in various verticals as fast as possible. If you're in that vertical, you're locked in. Infinite context windows coming — future AI capabilities expanding.",
+          "glosy": [
+            {
+              "author": "Salim Ismail",
+              "text_pl": "To co robą to zawierają partnerstwa w różnych branżach tak szybko jak mogą. Jeśli jesteś w tej branży, jesteś zablokowany.",
+              "text_en": "What they're doing is they're making partnerships in various verticals as fast as they can. And if you're in that vertical, you're locked in."
+            }
+          ],
+          "wniosek_pl": "Vertical lock-in accelerating. Infinite context windows coming.",
+          "wniosek_en": "Vertical lock-in accelerating. Infinite context windows coming.",
+          "kontekst_pl": "Vertical lock-in = ekskluzywne partnerstwa branżowe. Infinite context = AI pamiętająca wszystko.",
+          "kontekst_en": "Vertical lock-in = exclusive industry partnerships. Infinite context = AI remembering everything."
+        },
+        {
+          "num": "13",
+          "title": "AI Governance, Bans, and the Future of Development",
+          "title_pl": "Zarządzanie AI, zakazy i przyszłość rozwoju",
+          "title_en": "AI Governance, Bans, and the Future of Development",
+          "time": "1:02:04 – 1:10:00",
+          "fakty_pl": "13M lines to formalize Fermat's Last Theorem. AI governance, bans, future of development. Regulation debate continues. Anthropic + OpenAI locking up verticals. Ilya SSI release imminent. AI governance = global coordination challenge.",
+          "fakty_en": "13M lines to formalize Fermat's Last Theorem. AI governance, bans, future of development. Regulation debate continues. Anthropic + OpenAI locking up verticals. Ilya SSI release imminent. AI governance = global coordination challenge.",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "13 milionów linii kodu do sformalizowania twierdzenia Fermata. AI governance = globalne wyzwanie koordynacji.",
+              "text_en": "13 million lines of code to formalize Fermats last theorem. AI governance = global coordination challenge."
+            }
+          ],
+          "wniosek_pl": "AI governance = global challenge. Vertical lock-in. SSI release imminent.",
+          "wniosek_en": "AI governance = global challenge. Vertical lock-in. SSI release imminent.",
+          "kontekst_pl": "Fermat = 13M lines formal proof. Governance = koordynacja globalna.",
+          "kontekst_en": "Fermat = 13M lines formal proof. Governance = global coordination."
+        }
+      ]
+    },
+    {
       "num": "#285",
       "collapsed": true,
       "channel": "Moonshots",

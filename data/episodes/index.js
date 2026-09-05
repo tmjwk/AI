@@ -5,6 +5,16 @@
 const EPISODES_INDEX = {
   "episodes": [
     {
+      "num": "#286",
+      "title": "GPT-6 Astra Saturates ARC-AGI-3, Tesla Cybercab Hits Austin, Anthropic Proves Fermat's Last Theorem | EP #286",
+      "date": "2026-09-05",
+      "duration": "70 min",
+      "channel": "Moonshots",
+      "yt": "1DB_QDiviH4",
+      "collapsed": true,
+      "batch": "recent"
+    },
+    {
       "num": "#285",
       "title": "OpenAI Cuts Off Elon's Cursor, Humanity's First Star Probe, & Trump's Nuclear Mars Ship | EP #285",
       "date": "2026-08-31",
@@ -52,7 +62,7 @@ const EPISODES_INDEX = {
       "channel": "Moonshots",
       "yt": "Slle5_AxBzs",
       "collapsed": true,
-      "batch": "recent"
+      "batch": "batch-2026-h2-1"
     },
     {
       "num": "#279",
@@ -62,7 +72,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "uoGnH0REG7A",
       "collapsed": true,
-      "batch": "batch-2026-h2"
+      "batch": "batch-2026-h2-1"
     },
     {
       "num": "#278",
@@ -72,7 +82,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "Q6PTLG71NGc",
       "collapsed": true,
-      "batch": "batch-2026-h2"
+      "batch": "batch-2026-h2-1"
     },
     {
       "num": "#276",
@@ -82,7 +92,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "Jku8b2YKuy0",
       "collapsed": true,
-      "batch": "batch-2026-h2"
+      "batch": "batch-2026-h2-1"
     },
     {
       "num": "#275",
@@ -92,7 +102,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "O70Ff5xBnYo",
       "collapsed": true,
-      "batch": "batch-2026-h2"
+      "batch": "batch-2026-h2-1"
     },
     {
       "num": "#273",
@@ -102,7 +112,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "qPMhduk1qUs",
       "collapsed": true,
-      "batch": "batch-2026-h2"
+      "batch": "batch-2026-h2-1"
     },
     {
       "num": "#272",
@@ -112,7 +122,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "pSUyLfirP8Y",
       "collapsed": true,
-      "batch": "batch-2026-h2"
+      "batch": "batch-2026-h2-1"
     },
     {
       "num": "#271",
@@ -122,7 +132,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "bAoXVyibE6Q",
       "collapsed": true,
-      "batch": "batch-2026-h2"
+      "batch": "batch-2026-h2-1"
     },
     {
       "num": "#270",
@@ -132,7 +142,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "CsRx7kFN4bo",
       "collapsed": true,
-      "batch": "batch-2026-h2"
+      "batch": "batch-2026-h2-1"
     },
     {
       "num": "#269",
@@ -142,7 +152,7 @@ const EPISODES_INDEX = {
       "channel": "Diamandis Moonshots",
       "yt": "XCunMF6frio",
       "collapsed": true,
-      "batch": "batch-2026-h2"
+      "batch": "batch-2026-h2-1"
     },
     {
       "num": "#268",
@@ -152,7 +162,7 @@ const EPISODES_INDEX = {
       "channel": "Peter Diamandis · Moonshots & Millionaires",
       "yt": "https://www.youtube.com/watch?v=XjOLz--C_nQ",
       "collapsed": true,
-      "batch": "batch-2026-h2"
+      "batch": "batch-2026-h2-2"
     },
     {
       "num": "#267",
@@ -167,7 +177,8 @@ const EPISODES_INDEX = {
   ],
   "recent_count": 5,
   "archive_batches": [
-    "batch-2026-h2",
+    "batch-2026-h2-1",
+    "batch-2026-h2-2",
     "batch-2026-h1"
   ]
 };
