@@ -8,12 +8,12 @@
       "title_pl": "GPT-6 Astra nasycza ARC-AGI-3, Tesla Cybercab w Austin, Anthropic dowodzi twierdzenie Fermata | #286",
       "title_en": "GPT-6 Astra Saturates ARC-AGI-3, Tesla Cybercab Hits Austin, Anthropic Proves Fermat's Last Theorem | EP #286",
       "date": "2026-09-05",
-      "duration": "70 min",
+      "duration": "140 min",
       "yt": "1DB_QDiviH4",
       "hosts_count_pl": "4 uczestników",
       "hosts_count_en": "4 participants",
-      "topics_count_pl": "13 tematów",
-      "topics_count_en": "13 topics",
+      "topics_count_pl": "18 tematów",
+      "topics_count_en": "18 topics",
       "hosts": [
         {
           "name": "Peter Diamandis",
@@ -287,7 +287,7 @@
           "title": "AI Governance, Bans, and the Future of Development",
           "title_pl": "Zarządzanie AI, zakazy i przyszłość rozwoju",
           "title_en": "AI Governance, Bans, and the Future of Development",
-          "time": "1:02:04 – 1:10:00",
+          "time": "1:02:04 – 1:14:56",
           "fakty_pl": "13M lines to formalize Fermat's Last Theorem. AI governance, bans, future of development. Regulation debate continues. Anthropic + OpenAI locking up verticals. Ilya SSI release imminent. AI governance = global coordination challenge.",
           "fakty_en": "13M lines to formalize Fermat's Last Theorem. AI governance, bans, future of development. Regulation debate continues. Anthropic + OpenAI locking up verticals. Ilya SSI release imminent. AI governance = global coordination challenge.",
           "glosy": [
@@ -301,6 +301,121 @@
           "wniosek_en": "AI governance = global challenge. Vertical lock-in. SSI release imminent.",
           "kontekst_pl": "Fermat = 13M lines formal proof. Governance = koordynacja globalna.",
           "kontekst_en": "Fermat = 13M lines formal proof. Governance = global coordination."
+        },
+        {
+          "num": "14",
+          "title": "Atlas by World Labs (Fei-Fei Li) — first multimodal world model",
+          "title_pl": "Atlas od World Labs (Fei-Fei Li) — pierwszy multimodalny world model",
+          "title_en": "Atlas by World Labs (Fei-Fei Li) — first multimodal world model",
+          "time": "1:14:56 – 1:28:08",
+          "fakty_pl": "Dr. Fei-Fei Li (CEO World Labs) released Atlas — world's first multimodal world model. Generates image and video frames with pixel-perfect camera controls, reconstructs w 3D. 'Best camera conditioned world model ever.' Multimodal autoregression diffusion transformer. 3D Gaussian splats as first-class training modality alongside pixels and tokens. Fei-Fei Li coming na Moonshots w couple weeks. One photo reconstructs entire home. 360° camera control. Holiday experience w 4K here today.",
+          "fakty_en": "Dr. Fei-Fei Li (CEO World Labs) released Atlas — world's first multimodal world model. Generates image and video frames with pixel-perfect camera controls, reconstructs in 3D. 'Best camera conditioned world model ever.' Multimodal autoregression diffusion transformer. 3D Gaussian splats as first-class training modality alongside pixels and tokens. Fei-Fei Li coming on Moonshots in couple weeks. One photo reconstructs entire home. 360° camera control. Holiday experience in 4K here today.",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "Dr. Fei-Fei Li, CEO World Labs, wydał Atlas — pierwszy na świecie multimodalny world model. Generuje obrazy i klatki wideo z pixel-perfect camera control, rekonstruuje w 3D.",
+              "text_en": "Dr. Fei-Fei Li, CEO of World Labs, just released Atlas, the world's first multimodal world model that generates image and video frames with pixel perfect camera controls and reconstructs them in 3D."
+            },
+            {
+              "author": "Alex Wissner-Gross",
+              "text_pl": "Główny pomysł Atlas to diffusion transformer + 3D Gaussian splats jako first-class training modality obok pikseli i tokenów.",
+              "text_en": "The core idea with Atlas is to take a diffusion transformer and treat 3D Gaussian splats as a first class training modality alongside pixels from images and tokens from text."
+            }
+          ],
+          "wniosek_pl": "Atlas = first multimodal world model. 3D Gaussian splats first-class. Fei-Fei Li na Moonshots soon.",
+          "wniosek_en": "Atlas = first multimodal world model. 3D Gaussian splats first-class. Fei-Fei Li on Moonshots soon.",
+          "kontekst_pl": "Fei-Fei Li = creator of ImageNet, Stanford AI Lab. World Labs = her new company.",
+          "kontekst_en": "Fei-Fei Li = creator of ImageNet, Stanford AI Lab. World Labs = her new company."
+        },
+        {
+          "num": "15",
+          "title": "Commonwealth — last economy, personhood law, political economy",
+          "title_pl": "Commonwealth — ostatnia ekonomia, prawo personhood, ekonomia polityczna",
+          "title_en": "Commonwealth — last economy, personhood law, political economy",
+          "time": "1:28:08 – 1:37:39",
+          "fakty_pl": "Emad's Commonwealth project — last economy, personhood law, political economy. Cost of intelligence drops to zero, value goes to last mile. AI into enterprise. One per state (US) due to data boundaries. Acts like British Gas example — utility model for AI.",
+          "fakty_en": "Emad's Commonwealth project — last economy, personhood law, political economy. Cost of intelligence drops to zero, value goes to last mile. AI into enterprise. One per state (US) due to data boundaries. Acts like British Gas example — utility model for AI.",
+          "glosy": [
+            {
+              "author": "Emad Mostaque",
+              "text_pl": "Koszt inteligencji spadnie do zera, wartość przejdzie do ostatniej mili. AI jako utility.",
+              "text_en": "For every single jurisdiction, the cost of intelligence will drop to zero and the value will go to the last mile."
+            }
+          ],
+          "wniosek_pl": "Commonwealth: cost of intelligence → zero, value → last mile. AI jako utility.",
+          "wniosek_en": "Commonwealth: cost of intelligence → zero, value → last mile. AI as utility.",
+          "kontekst_pl": "Emad Mostaque = founder Intelligent Internet. Commonwealth = jego nowy projekt.",
+          "kontekst_en": "Emad Mostaque = founder Intelligent Internet. Commonwealth = his new project."
+        },
+        {
+          "num": "16",
+          "title": "Cybercab Austin — 50% cheaper than Uber, smoother rides",
+          "title_pl": "Cybercab Austin — 50% tańszy niż Uber, płynniejsze przejazdy",
+          "title_en": "Cybercab Austin — 50% cheaper than Uber, smoother rides",
+          "time": "1:37:39 – 1:47:40",
+          "fakty_pl": "Early rider w Austin reports Cybercab ~50% cheaper niż Uber dla comparable trips. Rides described as smoother. Car dealers freaked out — no maintenance needed. Yellow cabs w NY — 80% of traffic. Small towns replacing transit z Uber — hyper efficient. Cybercab experience night and day better.",
+          "fakty_en": "Early rider in Austin reports Cybercab ~50% cheaper than Uber for comparable trips. Rides described as smoother. Car dealers freaked out — no maintenance needed. Yellow cabs in NY — 80% of traffic. Small towns replacing transit with Uber — hyper efficient. Cybercab experience night and day better.",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "Wczesny kierowca w Austin: Cybercab około 50% tańszy niż Uber. Przejazdy opisane jako płynniejsze.",
+              "text_en": "An early rider in Austin reporting that Cyber Cab is running about 50% cheaper than Uber for comparable trips with rides being designed and described as smoother."
+            }
+          ],
+          "wniosek_pl": "Cybercab 50% cheaper than Uber. Smoother. Car dealers freaked.",
+          "wniosek_en": "Cybercab 50% cheaper than Uber. Smoother. Car dealers freaked.",
+          "kontekst_pl": "Austin = Tesla robotaxi launch. Car dealers = threatened by no-maintenance EVs.",
+          "kontekst_en": "Austin = Tesla robotaxi launch. Car dealers = threatened by no-maintenance EVs."
+        },
+        {
+          "num": "17",
+          "title": "Superluminal travel + cancer treatments + AI maturity",
+          "title_pl": "Podróż nadświetlna + leczenie raka + dojrzałość AI",
+          "title_en": "Superluminal travel + cancer treatments + AI maturity",
+          "time": "1:47:40 – 2:10:00",
+          "fakty_pl": "Superluminal travel — textbook physics says wrong physics. Galactic center dangerous place. Cancer treatments: mRNA more general, range of treatments gives hope. AI maturity: when we can say here's the risk, here's confidence, here's reversible next step — rather than just saying no. Need to get comfortable with reversible steps.",
+          "fakty_en": "Superluminal travel — textbook physics says wrong physics. Galactic center dangerous place. Cancer treatments: mRNA more general, range of treatments gives hope. AI maturity: when we can say here's the risk, here's confidence, here's reversible next step — rather than just saying no. Need to get comfortable with reversible steps.",
+          "glosy": [
+            {
+              "author": "Guest",
+              "text_pl": "Podręcznikowa fizyka mówi teraz że podróż nadświetlna — mamy złą fizykę.",
+              "text_en": "The textbook physics right now says that super luminal travel — then we have the wrong physics."
+            },
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "Dojrzałość AI: kiedy możemy powiedzieć — oto ryzyko, oto moje przekonanie, oto odwracalny następny krok.",
+              "text_en": "We'll get AI maturity when we can say here's the risk, here's the confidence I have in this and here's the reversible next step."
+            }
+          ],
+          "wniosek_pl": "Superluminal = zła fizyka? Cancer mRNA nadzieja. AI maturity = reversible steps.",
+          "wniosek_en": "Superluminal = wrong physics? Cancer mRNA hope. AI maturity = reversible steps.",
+          "kontekst_pl": "Superluminal = szybciej niż światło. mRNA = Moderna platform.",
+          "kontekst_en": "Superluminal = faster than light. mRNA = Moderna platform."
+        },
+        {
+          "num": "18",
+          "title": "Quantum diamonds, SMRs, Alpha Centauri update",
+          "title_pl": "Kwadrantowe diamenty, SMR, aktualizacja Alpha Centauri",
+          "title_en": "Quantum diamonds, SMRs, Alpha Centauri update",
+          "time": "2:10:00 – 2:20:00",
+          "fakty_pl": "Nitrogen vacancies (NV centers) in diamonds — exquisitely sensitive quantum sensors. SMRs: 2-3 years dla initial wave, 5-7 years dla big buildout. AI doing for nuclear what internet did for telecom. Fermi explorer update: Alpha Centauri ~4 light years. Precision ~4/1000ths of lightyear. Breakthrough Starshot progress.",
+          "fakty_en": "Nitrogen vacancies (NV centers) in diamonds — exquisitely sensitive quantum sensors. SMRs: 2-3 years for initial wave, 5-7 years for big buildout. AI doing for nuclear what internet did for telecom. Fermi explorer update: Alpha Centauri ~4 light years. Precision ~4/1000ths of lightyear. Breakthrough Starshot progress.",
+          "glosy": [
+            {
+              "author": "Guest",
+              "text_pl": "Centra azotowe w diamentach — niezwykle czułe czujniki kwantowe.",
+              "text_en": "You can put nitrogen vacancies or NV centers into diamonds and suddenly you get an exquisitely sensitive quantum sensor."
+            },
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "SMR: 2-3 lata na pierwszą falę, 5-7 lat na dużą rozbudowę. AI zrobi dla nuklearnej to co internet dla telecom.",
+              "text_en": "Two three years for the initial wave of SMRs and then five to seven years for the big buildout. AI is going to do for nuclear what internet did for telecom."
+            }
+          ],
+          "wniosek_pl": "Quantum diamonds, SMRs 2-3y, AI = nuclear revolution. Alpha Centauri update.",
+          "wniosek_en": "Quantum diamonds, SMRs 2-3y, AI = nuclear revolution. Alpha Centauri update.",
+          "kontekst_pl": "NV centers = nitrogen vacancy w diamentach. SMR = Small Modular Reactor.",
+          "kontekst_en": "NV centers = nitrogen vacancy in diamonds. SMR = Small Modular Reactor."
         }
       ]
     },

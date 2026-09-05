@@ -8,7 +8,7 @@ const EPISODES_INDEX = {
       "num": "#286",
       "title": "GPT-6 Astra Saturates ARC-AGI-3, Tesla Cybercab Hits Austin, Anthropic Proves Fermat's Last Theorem | EP #286",
       "date": "2026-09-05",
-      "duration": "70 min",
+      "duration": "140 min",
       "channel": "Moonshots",
       "yt": "1DB_QDiviH4",
       "collapsed": true,
