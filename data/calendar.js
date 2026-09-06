@@ -2,19 +2,9 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-09-05 22:13:38 UTC
+// Generated: 2026-09-04 20:47:49 UTC
 
 const CALENDAR = [
-  {
-    "date": "2026-09-05",
-    "type": "diamandis",
-    "title_pl": "Podcast #286 — GPT-6 Astra nasycza ARC-AGI-3, Tesla Cybercab w Austin, Anthropic dowodzi twierdzenie Fermata | #286",
-    "title_en": "Podcast #286 — GPT-6 Astra Saturates ARC-AGI-3, Tesla Cybercab Hits Austin, Anthropic Proves Fermat's Last Theorem | EP #286",
-    "link": "ai-pulse.html#286",
-    "meta_pl": "18 tematów",
-    "meta_en": "18 topics",
-    "num": "#286"
-  },
   {
     "date": "2026-09-04",
     "type": "lev",

@@ -4,427 +4,8 @@
 
 const RECENT_EPISODES = [
   {
-    "num": "#286",
-    "collapsed": false,
-    "channel": "Moonshots",
-    "title": "GPT-6 Astra Saturates ARC-AGI-3, Tesla Cybercab Hits Austin, Anthropic Proves Fermat's Last Theorem | EP #286",
-    "title_pl": "GPT-6 Astra nasycza ARC-AGI-3, Tesla Cybercab w Austin, Anthropic dowodzi twierdzenie Fermata | #286",
-    "title_en": "GPT-6 Astra Saturates ARC-AGI-3, Tesla Cybercab Hits Austin, Anthropic Proves Fermat's Last Theorem | EP #286",
-    "date": "2026-09-05",
-    "duration": "140 min",
-    "yt": "1DB_QDiviH4",
-    "hosts_count_pl": "4 uczestników",
-    "hosts_count_en": "4 participants",
-    "topics_count_pl": "18 tematów",
-    "topics_count_en": "18 topics",
-    "hosts": [
-      {
-        "name": "Peter Diamandis",
-        "role_pl": "Gospodarz",
-        "role_en": "Main host"
-      },
-      {
-        "name": "Dr. Alexander Wissner-Gross",
-        "role_pl": "In-house ASI",
-        "role_en": "In-house ASI"
-      },
-      {
-        "name": "Dave Blundin",
-        "role_pl": "Inwestor VC",
-        "role_en": "VC investor"
-      },
-      {
-        "name": "Salim Ismail",
-        "role_pl": "Organizacje wykładnicze",
-        "role_en": "Exponential organizations"
-      }
-    ],
-    "topics": [
-      {
-        "num": "01",
-        "title": "Introduction — GPT-6 Astra saturates ARC-AGI-3, Tesla Cybercab $30K",
-        "title_pl": "Wprowadzenie — GPT-6 Astra nasycza ARC-AGI-3, Tesla Cybercab $30K",
-        "title_en": "Introduction — GPT-6 Astra saturates ARC-AGI-3, Tesla Cybercab $30K",
-        "time": "00:00 – 02:01",
-        "fakty_pl": "GPT-6 Astra brings together years of research. Next generation Frontier model designed with CUA from ground up. Saturates benchmarks like ARC-AGI-3. Elon wants to sell Cybercabs at $30,000 each — buy 10, put on streets, earn revenue.",
-        "fakty_en": "GPT-6 Astra brings together years of research. Next generation Frontier model designed with CUA from ground up. Saturates benchmarks like ARC-AGI-3. Elon wants to sell Cybercabs at $30,000 each — buy 10, put on streets, earn revenue.",
-        "glosy": [
-          {
-            "author": "Alex Wissner-Gross",
-            "text_pl": "GPT-6 Astra to next generation Frontier model zaprojektowany z CUA od podstaw. Saturates ARC-AGI-3.",
-            "text_en": "GPT6 Astra brings together years of research. This seems like a next generation Frontier model designed with CUA from the ground up on certain benchmarks like ARC-AGI 3 which it saturates."
-          },
-          {
-            "author": "Peter Diamandis",
-            "text_pl": "Elon chce sprzedawać Cybercabs po $30,000. Kup 10, postaw na ulicach, zarabiaj.",
-            "text_en": "Elon wants to sell these at 30,000 each so you can buy 10 of them and put them on the streets in your local town, have them earn revenue for you."
-          }
-        ],
-        "wniosek_pl": "GPT-6 Astra saturates ARC-AGI-3. Cybercab $30K = revenue machine.",
-        "wniosek_en": "GPT-6 Astra saturates ARC-AGI-3. Cybercab $30K = revenue machine.",
-        "kontekst_pl": "CUA = Computer Use Agent. ARC-AGI-3 = abstraction and reasoning benchmark.",
-        "kontekst_en": "CUA = Computer Use Agent. ARC-AGI-3 = abstraction and reasoning benchmark."
-      },
-      {
-        "num": "02",
-        "title": "AI, Health, and Longevity",
-        "title_pl": "AI, zdrowie i długowieczność",
-        "title_en": "AI, Health, and Longevity",
-        "time": "02:01 – 07:22",
-        "fakty_pl": "Peter był z suite jednej z większych firm olejowych w Houston. Surreal experience — oil company discussing AI. Health i longevity jako key theme. Fountain Life: know what's going on inside your body.",
-        "fakty_en": "Peter was with suite of one of the bigger oil companies in Houston. Surreal experience — oil company discussing AI. Health and longevity as key theme. Fountain Life: know what's going on inside your body.",
-        "glosy": [
-          {
-            "author": "Peter Diamandis",
-            "text_pl": "Byłem z suite jednej z większych firm olejowych w Houston. Surreal — oil company discussing AI.",
-            "text_en": "I was with the suite of one of the bigger oil companies in the world in Houston and it was kind of a really surreal experience."
-          }
-        ],
-        "wniosek_pl": "Oil companies discussing AI. Health + longevity = key theme.",
-        "wniosek_en": "Oil companies discussing AI. Health + longevity = key theme.",
-        "kontekst_pl": "Houston = oil capital USA. Fountain Life = Peter's health company.",
-        "kontekst_en": "Houston = oil capital USA. Fountain Life = Peter's health company."
-      },
-      {
-        "num": "03",
-        "title": "GPT-6 Astra Capabilities and Benchmarks",
-        "title_pl": "Możliwości i benchmarki GPT-6 Astra",
-        "title_en": "GPT-6 Astra Capabilities and Benchmarks",
-        "time": "07:22 – 11:21",
-        "fakty_pl": "GPT-6 Astra: state-of-the-art na computer use, browsing, software engineering. Brings together years of research across pre-training, RL, alignment. Astra story = about efficiency, not just raw intelligence. Defines new Pareto frontier dla intelligence index vs output token cost. Hallucination rate fell significantly. $50/M output tokens.",
-        "fakty_en": "GPT-6 Astra: state-of-the-art on computer use, browsing, software engineering. Brings together years of research across pre-training, RL, alignment. Astra story = about efficiency, not just raw intelligence. Defines new Pareto frontier for intelligence index vs output token cost. Hallucination rate fell significantly. $50/M output tokens.",
-        "glosy": [
-          {
-            "author": "Peter Diamandis",
-            "text_pl": "GPT-6 Astra łączy lata researchu. State-of-the-art na computer use, browsing, software engineering. Historia Astry = o efektywności, nie tylko inteligencji.",
-            "text_en": "GPT6 Astra brings together years of research and big bets across pre-training, reinforcement learning, and alignment. Astra is a state-of-the-art on computer use, browsing, software engineering. Astra's story is really about efficiency, not just raw intelligence."
-          }
-        ],
-        "wniosek_pl": "GPT-6 Astra = new Pareto frontier (efficiency). Low hallucination. SOTA na computer use.",
-        "wniosek_en": "GPT-6 Astra = new Pareto frontier (efficiency). Low hallucination. SOTA on computer use.",
-        "kontekst_pl": "Pareto frontier = optimal trade-off between cost + intelligence. $50/M = same as Claude Fable.",
-        "kontekst_en": "Pareto frontier = optimal trade-off between cost + intelligence. $50/M = same as Claude Fable."
-      },
-      {
-        "num": "04",
-        "title": "AI Safety, Cybersecurity, and Guardrails",
-        "title_pl": "Bezpieczeństwo AI, cyberbezpieczeństwo i guardrails",
-        "title_en": "AI Safety, Cybersecurity, and Guardrails",
-        "time": "11:21 – 20:42",
-        "fakty_pl": "OpenAI spent time on safety + security alignment of Astra. 'Worth the wait' ale safety was priority. Guardrails, alignment, security — all addressed before release. Trend: AI labs increasingly prioritize safety before deployment.",
-        "fakty_en": "OpenAI spent time on safety + security alignment of Astra. 'Worth the wait' but safety was priority. Guardrails, alignment, security — all addressed before release. Trend: AI labs increasingly prioritize safety before deployment.",
-        "glosy": [
-          {
-            "author": "Peter Diamandis",
-            "text_pl": "Warto było czekać, ale naprawdę chcieliśmy spędzić czas na bezpieczeństwie i alignment tego modelu.",
-            "text_en": "I think it'll be worth the wait, but we really wanted to spend the time on the safety and security alignment of this model."
-          }
-        ],
-        "wniosek_pl": "Astra safety-first release. Guardrails + alignment priority.",
-        "wniosek_en": "Astra safety-first release. Guardrails + alignment priority.",
-        "kontekst_pl": "OpenAI delayed Astra dla safety alignment. Trend: safety before speed.",
-        "kontekst_en": "OpenAI delayed Astra for safety alignment. Trend: safety before speed."
-      },
-      {
-        "num": "05",
-        "title": "Cybercabs, Robotaxis, and the Future of Mobility",
-        "title_pl": "Cybercabs, robotaxis i przyszłość mobilności",
-        "title_en": "Cybercabs, Robotaxis, and the Future of Mobility",
-        "time": "20:42 – 24:46",
-        "fakty_pl": "Tesla Cybercabs hitting Austin. $30,000 each. Buy 10, put on streets, earn revenue. Accelerating learning loop between batches. Real exponential = not one batch, it's the learning loop. Robotaxi economics improving.",
-        "fakty_en": "Tesla Cybercabs hitting Austin. $30,000 each. Buy 10, put on streets, earn revenue. Accelerating learning loop between batches. Real exponential = not one batch, it's the learning loop. Robotaxi economics improving.",
-        "glosy": [
-          {
-            "author": "Alex Wissner-Gross",
-            "text_pl": "Prawdziwa eksponencjalna to nie jedna partia, to przyspieszająca pętla uczenia się między wszystkimi partiami.",
-            "text_en": "The real exponential is not one batch or one recipe. It's like the accelerating learning loop between all the batches."
-          }
-        ],
-        "wniosek_pl": "Cybercab $30K w Austin. Learning loop = real exponential.",
-        "wniosek_en": "Cybercab $30K in Austin. Learning loop = real exponential.",
-        "kontekst_pl": "Austin = Tesla robotaxi launch city. $30K < średnia cena samochodu w USA.",
-        "kontekst_en": "Austin = Tesla robotaxi launch city. $30K < average car price in US."
-      },
-      {
-        "num": "06",
-        "title": "AI Efficiency, Cost, and Real-Time Learning",
-        "title_pl": "Efektywność AI, koszt i uczenie w czasie rzeczywistym",
-        "title_en": "AI Efficiency, Cost, and Real-Time Learning",
-        "time": "24:46 – 30:31",
-        "fakty_pl": "GPT-6 may not be at capability frontier ale at cost frontier. AI vs cost per task. GPT-6 Astra at max reasoning just below Claude Opus 5. Chinese models cheaper. Pareto frontier = intelligence vs cost. Efficiency > raw power.",
-        "fakty_en": "GPT-6 may not be at capability frontier but at cost frontier. AI vs cost per task. GPT-6 Astra at max reasoning just below Claude Opus 5. Chinese models cheaper. Pareto frontier = intelligence vs cost. Efficiency > raw power.",
-        "glosy": [
-          {
-            "author": "Alex Wissner-Gross",
-            "text_pl": "GPT-6 może nie być na capability frontier ale at cost frontier. AI vs cost per task.",
-            "text_en": "Depending on how you measure GPT6 may not actually be at the capability frontier or it may be a cost frontier. So the ability — this is again AI versus cost per task."
-          }
-        ],
-        "wniosek_pl": "GPT-6 = cost frontier, nie capability. Pareto: intelligence vs cost.",
-        "wniosek_en": "GPT-6 = cost frontier, not capability. Pareto: intelligence vs cost.",
-        "kontekst_pl": "Pareto frontier = optymalny trade-off. Chińskie modele tańsze ale blisko.",
-        "kontekst_en": "Pareto frontier = optimal trade-off. Chinese models cheaper but close."
-      },
-      {
-        "num": "07",
-        "title": "The Limits of Current AI Benchmarks",
-        "title_pl": "Limity obecnych benchmarków AI",
-        "title_en": "The Limits of Current AI Benchmarks",
-        "time": "30:31 – 33:44",
-        "fakty_pl": "Current AI benchmarks have limits. ARC-AGI-3 saturated by Astra. Benchmarks becoming too easy. Need new harder benchmarks. 3D printing example — AI generating files for 3D printer. Real-world tasks > synthetic benchmarks.",
-        "fakty_en": "Current AI benchmarks have limits. ARC-AGI-3 saturated by Astra. Benchmarks becoming too easy. Need new harder benchmarks. 3D printing example — AI generating files for 3D printer. Real-world tasks > synthetic benchmarks.",
-        "glosy": [
-          {
-            "author": "Peter Diamandis",
-            "text_pl": "Obecne benchmarki mają limity. ARC-AGI-3 saturated. Potrzeba trudniejszych benchmarków. Zadania realnego świata > syntetyczne benchmarki.",
-            "text_en": "Current AI benchmarks have limits. ARC-AGI-3 saturated. Need harder benchmarks. Real-world tasks > synthetic benchmarks."
-          }
-        ],
-        "wniosek_pl": "Benchmarki za łatwe. ARC-AGI-3 saturated. Potrzeba trudniejszych.",
-        "wniosek_en": "Benchmarks too easy. ARC-AGI-3 saturated. Need harder ones.",
-        "kontekst_pl": "ARC-AGI-3 = Abstraction and Reasoning Corpus. Saturated = AI osiąga max score.",
-        "kontekst_en": "ARC-AGI-3 = Abstraction and Reasoning Corpus. Saturated = AI achieves max score."
-      },
-      {
-        "num": "08",
-        "title": "Mathematics, Formal Proofs, and Scientific Discovery",
-        "title_pl": "Matematyka, formalne dowody i odkrycia naukowe",
-        "title_en": "Mathematics, Formal Proofs, and Scientific Discovery",
-        "time": "33:44 – 35:17",
-        "fakty_pl": "Anthropic proved Fermat's Last Theorem. 13 million lines of code to formalize. Fermat wrote in margins 'left as exercise to reader.' AI doing formal mathematical proofs. Math = canary in coal mine — if you can solve math, you can solve everything.",
-        "fakty_en": "Anthropic proved Fermat's Last Theorem. 13 million lines of code to formalize. Fermat wrote in margins 'left as exercise to reader.' AI doing formal mathematical proofs. Math = canary in coal mine — if you can solve math, you can solve everything.",
-        "glosy": [
-          {
-            "author": "Peter Diamandis",
-            "text_pl": "13 milionów linii kodu do sformalizowania twierdzenia Fermata. Fermat napisał na marginesie 'zostawione jako ćwiczenie dla czytelnika'.",
-            "text_en": "It took 13 million lines of code to formalize Fermat's last theorem. While Fermat wrote in the margins of his book — left as an exercise to the reader."
-          }
-        ],
-        "wniosek_pl": "Anthropic: Fermat's Last Theorem formalized (13M lines). Math = canary w coal mine.",
-        "wniosek_en": "Anthropic: Fermat's Last Theorem formalized (13M lines). Math = canary in coal mine.",
-        "kontekst_pl": "Fermat's Last Theorem = 1637, proven by Andrew Wiles 1994. AI formal proof = new era.",
-        "kontekst_en": "Fermat's Last Theorem = 1637, proven by Andrew Wiles 1994. AI formal proof = new era."
-      },
-      {
-        "num": "09",
-        "title": "Digital Twins, World Models, and AI Operating Systems",
-        "title_pl": "Cyfrowe bliźniaki, world models i systemy operacyjne AI",
-        "title_en": "Digital Twins, World Models, and AI Operating Systems",
-        "time": "35:17 – 43:19",
-        "fakty_pl": "Math fundamental across all sciences. If you can solve math, you can solve everything else. Digital twins + world models + AI operating systems converging. AI becoming infrastructure layer. Anthropic nie releasing top models — using internally for recursive self-improvement.",
-        "fakty_en": "Math fundamental across all sciences. If you can solve math, you can solve everything else. Digital twins + world models + AI operating systems converging. AI becoming infrastructure layer. Anthropic not releasing top models — using internally for recursive self-improvement.",
-        "glosy": [
-          {
-            "author": "Peter Diamandis",
-            "text_pl": "Matematyka jest fundamentalna dla wszystkich nauk. Jeśli możesz rozwiązać matematykę, możesz rozwiązać wszystko inne.",
-            "text_en": "Math is fundamental across all other sciences and it's the canary in the coal mine. If you can solve math, you can solve everything else."
-          }
-        ],
-        "wniosek_pl": "Math = canary. Digital twins + world models + AI OS converging. Anthropic internal models.",
-        "wniosek_en": "Math = canary. Digital twins + world models + AI OS converging. Anthropic internal models.",
-        "kontekst_pl": "Digital twin = cyfrowa kopia obiektu. World model = AI rozumiejący fizykę.",
-        "kontekst_en": "Digital twin = digital copy of object. World model = AI understanding physics."
-      },
-      {
-        "num": "10",
-        "title": "Cybersecurity Risks and Rapid Model Proliferation",
-        "title_pl": "Ryzyka cyberbezpieczeństwa i szybka proliferacja modeli",
-        "title_en": "Cybersecurity Risks and Rapid Model Proliferation",
-        "time": "43:19 – 45:46",
-        "fakty_pl": "Tokens readable by humans + AI — can police. Ale if model reasons internally during single forward pass — harder to align, harder safeguards. Risk vs transparency trade-off. Alex: doesn't buy that danger increases with internal reasoning long term.",
-        "fakty_en": "Tokens readable by humans + AI — can police. But if model reasons internally during single forward pass — harder to align, harder safeguards. Risk vs transparency trade-off. Alex: doesn't buy that danger increases with internal reasoning long term.",
-        "glosy": [
-          {
-            "author": "Alex Wissner-Gross",
-            "text_pl": "Człowiek może czytać tokens, inna AI może czytać tokens, można policować. Ale jeśli model rozumuje wewnętrznie — trudniej alignować.",
-            "text_en": "A human can read the tokens, another AI can read the tokens, and you can police the tokens. Whereas if a model is doing the majority of its reasoning internally during a single forward pass — harder to align."
-          }
-        ],
-        "wniosek_pl": "Internal reasoning vs transparency. Risk trade-off debata.",
-        "wniosek_en": "Internal reasoning vs transparency. Risk trade-off debate.",
-        "kontekst_pl": "Forward pass = pojedyncze przejście przez model. Internal reasoning = ukryte myślenie.",
-        "kontekst_en": "Forward pass = single pass through model. Internal reasoning = hidden thinking."
-      },
-      {
-        "num": "11",
-        "title": "Regulation and the Global AI Race",
-        "title_pl": "Regulacja i globalny wyścig AI",
-        "title_en": "Regulation and the Global AI Race",
-        "time": "45:46 – 54:00",
-        "fakty_pl": "Ilya Sutskever tweeted — SSI release due any day now. Regulation + global AI race. Both companies (OpenAI, Anthropic) trying to lock up business partnerships, real estate, generators, chips, entire states. Speed of vertical partnerships accelerating.",
-        "fakty_en": "Ilya Sutskever tweeted — SSI release due any day now. Regulation + global AI race. Both companies (OpenAI, Anthropic) trying to lock up business partnerships, real estate, generators, chips, entire states. Speed of vertical partnerships accelerating.",
-        "glosy": [
-          {
-            "author": "Salim Ismail",
-            "text_pl": "Obie firmy próbują zablokować partnerstwa biznesowe, nieruchomości, generatory, chipy, całe stany.",
-            "text_en": "Both companies are going to try to lock up business partnerships, real estate, generators, chips, entire states."
-          }
-        ],
-        "wniosek_pl": "AI race = lock up resources. SSI Ilya release incoming. Vertical partnerships.",
-        "wniosek_en": "AI race = lock up resources. SSI Ilya release incoming. Vertical partnerships.",
-        "kontekst_pl": "SSI = Safe Super Intelligence (Ilya Sutskever). Vertical = branżowe partnerstwa.",
-        "kontekst_en": "SSI = Safe Super Intelligence (Ilya Sutskever). Vertical = industry partnerships."
-      },
-      {
-        "num": "12",
-        "title": "Infinite Context Windows and Future AI Capabilities",
-        "title_pl": "Nieskończone okna kontekstowe i przyszłe możliwości AI",
-        "title_en": "Infinite Context Windows and Future AI Capabilities",
-        "time": "54:00 – 1:02:04",
-        "fakty_pl": "Sam knows how to turn partnerships into locking things up. Both companies making partnerships w various verticals as fast as possible. If you're in that vertical, you're locked in. Infinite context windows coming — future AI capabilities expanding.",
-        "fakty_en": "Sam knows how to turn partnerships into locking things up. Both companies making partnerships in various verticals as fast as possible. If you're in that vertical, you're locked in. Infinite context windows coming — future AI capabilities expanding.",
-        "glosy": [
-          {
-            "author": "Salim Ismail",
-            "text_pl": "To co robą to zawierają partnerstwa w różnych branżach tak szybko jak mogą. Jeśli jesteś w tej branży, jesteś zablokowany.",
-            "text_en": "What they're doing is they're making partnerships in various verticals as fast as they can. And if you're in that vertical, you're locked in."
-          }
-        ],
-        "wniosek_pl": "Vertical lock-in accelerating. Infinite context windows coming.",
-        "wniosek_en": "Vertical lock-in accelerating. Infinite context windows coming.",
-        "kontekst_pl": "Vertical lock-in = ekskluzywne partnerstwa branżowe. Infinite context = AI pamiętająca wszystko.",
-        "kontekst_en": "Vertical lock-in = exclusive industry partnerships. Infinite context = AI remembering everything."
-      },
-      {
-        "num": "13",
-        "title": "AI Governance, Bans, and the Future of Development",
-        "title_pl": "Zarządzanie AI, zakazy i przyszłość rozwoju",
-        "title_en": "AI Governance, Bans, and the Future of Development",
-        "time": "1:02:04 – 1:14:56",
-        "fakty_pl": "13M lines to formalize Fermat's Last Theorem. AI governance, bans, future of development. Regulation debate continues. Anthropic + OpenAI locking up verticals. Ilya SSI release imminent. AI governance = global coordination challenge.",
-        "fakty_en": "13M lines to formalize Fermat's Last Theorem. AI governance, bans, future of development. Regulation debate continues. Anthropic + OpenAI locking up verticals. Ilya SSI release imminent. AI governance = global coordination challenge.",
-        "glosy": [
-          {
-            "author": "Peter Diamandis",
-            "text_pl": "13 milionów linii kodu do sformalizowania twierdzenia Fermata. AI governance = globalne wyzwanie koordynacji.",
-            "text_en": "13 million lines of code to formalize Fermats last theorem. AI governance = global coordination challenge."
-          }
-        ],
-        "wniosek_pl": "AI governance = global challenge. Vertical lock-in. SSI release imminent.",
-        "wniosek_en": "AI governance = global challenge. Vertical lock-in. SSI release imminent.",
-        "kontekst_pl": "Fermat = 13M lines formal proof. Governance = koordynacja globalna.",
-        "kontekst_en": "Fermat = 13M lines formal proof. Governance = global coordination."
-      },
-      {
-        "num": "14",
-        "title": "Atlas by World Labs (Fei-Fei Li) — first multimodal world model",
-        "title_pl": "Atlas od World Labs (Fei-Fei Li) — pierwszy multimodalny world model",
-        "title_en": "Atlas by World Labs (Fei-Fei Li) — first multimodal world model",
-        "time": "1:14:56 – 1:28:08",
-        "fakty_pl": "Dr. Fei-Fei Li (CEO World Labs) released Atlas — world's first multimodal world model. Generates image and video frames with pixel-perfect camera controls, reconstructs w 3D. 'Best camera conditioned world model ever.' Multimodal autoregression diffusion transformer. 3D Gaussian splats as first-class training modality alongside pixels and tokens. Fei-Fei Li coming na Moonshots w couple weeks. One photo reconstructs entire home. 360° camera control. Holiday experience w 4K here today.",
-        "fakty_en": "Dr. Fei-Fei Li (CEO World Labs) released Atlas — world's first multimodal world model. Generates image and video frames with pixel-perfect camera controls, reconstructs in 3D. 'Best camera conditioned world model ever.' Multimodal autoregression diffusion transformer. 3D Gaussian splats as first-class training modality alongside pixels and tokens. Fei-Fei Li coming on Moonshots in couple weeks. One photo reconstructs entire home. 360° camera control. Holiday experience in 4K here today.",
-        "glosy": [
-          {
-            "author": "Peter Diamandis",
-            "text_pl": "Dr. Fei-Fei Li, CEO World Labs, wydał Atlas — pierwszy na świecie multimodalny world model. Generuje obrazy i klatki wideo z pixel-perfect camera control, rekonstruuje w 3D.",
-            "text_en": "Dr. Fei-Fei Li, CEO of World Labs, just released Atlas, the world's first multimodal world model that generates image and video frames with pixel perfect camera controls and reconstructs them in 3D."
-          },
-          {
-            "author": "Alex Wissner-Gross",
-            "text_pl": "Główny pomysł Atlas to diffusion transformer + 3D Gaussian splats jako first-class training modality obok pikseli i tokenów.",
-            "text_en": "The core idea with Atlas is to take a diffusion transformer and treat 3D Gaussian splats as a first class training modality alongside pixels from images and tokens from text."
-          }
-        ],
-        "wniosek_pl": "Atlas = first multimodal world model. 3D Gaussian splats first-class. Fei-Fei Li na Moonshots soon.",
-        "wniosek_en": "Atlas = first multimodal world model. 3D Gaussian splats first-class. Fei-Fei Li on Moonshots soon.",
-        "kontekst_pl": "Fei-Fei Li = creator of ImageNet, Stanford AI Lab. World Labs = her new company.",
-        "kontekst_en": "Fei-Fei Li = creator of ImageNet, Stanford AI Lab. World Labs = her new company."
-      },
-      {
-        "num": "15",
-        "title": "Commonwealth — last economy, personhood law, political economy",
-        "title_pl": "Commonwealth — ostatnia ekonomia, prawo personhood, ekonomia polityczna",
-        "title_en": "Commonwealth — last economy, personhood law, political economy",
-        "time": "1:28:08 – 1:37:39",
-        "fakty_pl": "Emad's Commonwealth project — last economy, personhood law, political economy. Cost of intelligence drops to zero, value goes to last mile. AI into enterprise. One per state (US) due to data boundaries. Acts like British Gas example — utility model for AI.",
-        "fakty_en": "Emad's Commonwealth project — last economy, personhood law, political economy. Cost of intelligence drops to zero, value goes to last mile. AI into enterprise. One per state (US) due to data boundaries. Acts like British Gas example — utility model for AI.",
-        "glosy": [
-          {
-            "author": "Emad Mostaque",
-            "text_pl": "Koszt inteligencji spadnie do zera, wartość przejdzie do ostatniej mili. AI jako utility.",
-            "text_en": "For every single jurisdiction, the cost of intelligence will drop to zero and the value will go to the last mile."
-          }
-        ],
-        "wniosek_pl": "Commonwealth: cost of intelligence → zero, value → last mile. AI jako utility.",
-        "wniosek_en": "Commonwealth: cost of intelligence → zero, value → last mile. AI as utility.",
-        "kontekst_pl": "Emad Mostaque = founder Intelligent Internet. Commonwealth = jego nowy projekt.",
-        "kontekst_en": "Emad Mostaque = founder Intelligent Internet. Commonwealth = his new project."
-      },
-      {
-        "num": "16",
-        "title": "Cybercab Austin — 50% cheaper than Uber, smoother rides",
-        "title_pl": "Cybercab Austin — 50% tańszy niż Uber, płynniejsze przejazdy",
-        "title_en": "Cybercab Austin — 50% cheaper than Uber, smoother rides",
-        "time": "1:37:39 – 1:47:40",
-        "fakty_pl": "Early rider w Austin reports Cybercab ~50% cheaper niż Uber dla comparable trips. Rides described as smoother. Car dealers freaked out — no maintenance needed. Yellow cabs w NY — 80% of traffic. Small towns replacing transit z Uber — hyper efficient. Cybercab experience night and day better.",
-        "fakty_en": "Early rider in Austin reports Cybercab ~50% cheaper than Uber for comparable trips. Rides described as smoother. Car dealers freaked out — no maintenance needed. Yellow cabs in NY — 80% of traffic. Small towns replacing transit with Uber — hyper efficient. Cybercab experience night and day better.",
-        "glosy": [
-          {
-            "author": "Peter Diamandis",
-            "text_pl": "Wczesny kierowca w Austin: Cybercab około 50% tańszy niż Uber. Przejazdy opisane jako płynniejsze.",
-            "text_en": "An early rider in Austin reporting that Cyber Cab is running about 50% cheaper than Uber for comparable trips with rides being designed and described as smoother."
-          }
-        ],
-        "wniosek_pl": "Cybercab 50% cheaper than Uber. Smoother. Car dealers freaked.",
-        "wniosek_en": "Cybercab 50% cheaper than Uber. Smoother. Car dealers freaked.",
-        "kontekst_pl": "Austin = Tesla robotaxi launch. Car dealers = threatened by no-maintenance EVs.",
-        "kontekst_en": "Austin = Tesla robotaxi launch. Car dealers = threatened by no-maintenance EVs."
-      },
-      {
-        "num": "17",
-        "title": "Superluminal travel + cancer treatments + AI maturity",
-        "title_pl": "Podróż nadświetlna + leczenie raka + dojrzałość AI",
-        "title_en": "Superluminal travel + cancer treatments + AI maturity",
-        "time": "1:47:40 – 2:10:00",
-        "fakty_pl": "Superluminal travel — textbook physics says wrong physics. Galactic center dangerous place. Cancer treatments: mRNA more general, range of treatments gives hope. AI maturity: when we can say here's the risk, here's confidence, here's reversible next step — rather than just saying no. Need to get comfortable with reversible steps.",
-        "fakty_en": "Superluminal travel — textbook physics says wrong physics. Galactic center dangerous place. Cancer treatments: mRNA more general, range of treatments gives hope. AI maturity: when we can say here's the risk, here's confidence, here's reversible next step — rather than just saying no. Need to get comfortable with reversible steps.",
-        "glosy": [
-          {
-            "author": "Guest",
-            "text_pl": "Podręcznikowa fizyka mówi teraz że podróż nadświetlna — mamy złą fizykę.",
-            "text_en": "The textbook physics right now says that super luminal travel — then we have the wrong physics."
-          },
-          {
-            "author": "Peter Diamandis",
-            "text_pl": "Dojrzałość AI: kiedy możemy powiedzieć — oto ryzyko, oto moje przekonanie, oto odwracalny następny krok.",
-            "text_en": "We'll get AI maturity when we can say here's the risk, here's the confidence I have in this and here's the reversible next step."
-          }
-        ],
-        "wniosek_pl": "Superluminal = zła fizyka? Cancer mRNA nadzieja. AI maturity = reversible steps.",
-        "wniosek_en": "Superluminal = wrong physics? Cancer mRNA hope. AI maturity = reversible steps.",
-        "kontekst_pl": "Superluminal = szybciej niż światło. mRNA = Moderna platform.",
-        "kontekst_en": "Superluminal = faster than light. mRNA = Moderna platform."
-      },
-      {
-        "num": "18",
-        "title": "Quantum diamonds, SMRs, Alpha Centauri update",
-        "title_pl": "Kwadrantowe diamenty, SMR, aktualizacja Alpha Centauri",
-        "title_en": "Quantum diamonds, SMRs, Alpha Centauri update",
-        "time": "2:10:00 – 2:20:00",
-        "fakty_pl": "Nitrogen vacancies (NV centers) in diamonds — exquisitely sensitive quantum sensors. SMRs: 2-3 years dla initial wave, 5-7 years dla big buildout. AI doing for nuclear what internet did for telecom. Fermi explorer update: Alpha Centauri ~4 light years. Precision ~4/1000ths of lightyear. Breakthrough Starshot progress.",
-        "fakty_en": "Nitrogen vacancies (NV centers) in diamonds — exquisitely sensitive quantum sensors. SMRs: 2-3 years for initial wave, 5-7 years for big buildout. AI doing for nuclear what internet did for telecom. Fermi explorer update: Alpha Centauri ~4 light years. Precision ~4/1000ths of lightyear. Breakthrough Starshot progress.",
-        "glosy": [
-          {
-            "author": "Guest",
-            "text_pl": "Centra azotowe w diamentach — niezwykle czułe czujniki kwantowe.",
-            "text_en": "You can put nitrogen vacancies or NV centers into diamonds and suddenly you get an exquisitely sensitive quantum sensor."
-          },
-          {
-            "author": "Peter Diamandis",
-            "text_pl": "SMR: 2-3 lata na pierwszą falę, 5-7 lat na dużą rozbudowę. AI zrobi dla nuklearnej to co internet dla telecom.",
-            "text_en": "Two three years for the initial wave of SMRs and then five to seven years for the big buildout. AI is going to do for nuclear what internet did for telecom."
-          }
-        ],
-        "wniosek_pl": "Quantum diamonds, SMRs 2-3y, AI = nuclear revolution. Alpha Centauri update.",
-        "wniosek_en": "Quantum diamonds, SMRs 2-3y, AI = nuclear revolution. Alpha Centauri update.",
-        "kontekst_pl": "NV centers = nitrogen vacancy w diamentach. SMR = Small Modular Reactor.",
-        "kontekst_en": "NV centers = nitrogen vacancy in diamonds. SMR = Small Modular Reactor."
-      }
-    ]
-  },
-  {
     "num": "#285",
-    "collapsed": true,
+    "collapsed": false,
     "channel": "Moonshots",
     "title": "OpenAI Cuts Off Elon's Cursor, Humanity's First Star Probe, & Trump's Nuclear Mars Ship | EP #285",
     "title_pl": "OpenAI odcina Elona od Cursora, pierwsza misja międzygwiezdna, & nuklearny statek na Marsa | #285",
@@ -1865,6 +1446,455 @@ const RECENT_EPISODES = [
         "wniosek_en": "AMA: chips > power, micro grids add capacity, GPUs may be more efficient than brain, XPRIZE for energy storage.",
         "kontekst_pl": "Speedrun AMA — 8 minut na ~10 pytań. Abundance community = A360 members.",
         "kontekst_en": "Speedrun AMA — 8 minutes for ~10 questions. Abundance community = A360 members."
+      }
+    ]
+  },
+  {
+    "num": "#281",
+    "collapsed": true,
+    "channel": "Moonshots",
+    "title": "China's Endgame: ASI Timelines, US-China Relations, and the $1.7T AI Bubble With Alvin Graylin | 281",
+    "title_pl": "Chińska końcówka: oś czasu ASI, relacje USA-Chiny i bańka AI $1.7T z Alvinem Graylinem | 281",
+    "title_en": "China's Endgame: ASI Timelines, US-China Relations, and the $1.7T AI Bubble With Alvin Graylin | 281",
+    "date": "2026-08-18",
+    "duration": "143 min",
+    "yt": "Slle5_AxBzs",
+    "hosts_count_pl": "5 uczestników",
+    "hosts_count_en": "5 participants",
+    "topics_count_pl": "15 tematów",
+    "topics_count_en": "15 topics",
+    "hosts": [
+      {
+        "name": "Peter Diamandis",
+        "role_pl": "Gospodarz",
+        "role_en": "Main host"
+      },
+      {
+        "name": "Dr. Alexander Wissner-Gross",
+        "role_pl": "In-house ASI",
+        "role_en": "In-house ASI"
+      },
+      {
+        "name": "Dave Blundin",
+        "role_pl": "Inwestor VC",
+        "role_en": "VC investor"
+      },
+      {
+        "name": "Salim Ismail",
+        "role_pl": "Organizacje wykładnicze",
+        "role_en": "Exponential organizations"
+      },
+      {
+        "name": "Alvin Wang Graylin",
+        "role_pl": "GOŚĆ — ekspert od Chin (30+ lat w AI/XR/semiconductors)",
+        "role_en": "GUEST — China expert (30+ years in AI/XR/semiconductors)"
+      }
+    ],
+    "topics": [
+      {
+        "num": "01",
+        "title": "Introduction — Alvin Graylin on US-China AI race",
+        "title_pl": "Wprowadzenie — Alvin Graylin o wyścigu AI USA-Chiny",
+        "title_en": "Introduction — Alvin Graylin on US-China AI race",
+        "time": "00:00 – 11:18",
+        "fakty_pl": "Peter wprowadza Alvina Graylina — technolog, przedsiębiorca, 30+ lat w AI/XR/cybersecurity/semiconductor. Senior fellow w Asia Society Policy Institute, profesor AI policy na University of Washington. Żył i pracował w USA, Chinach i na Tajwanie. Alvin jest współautorem 'Our Next Reality'. Wydarzenie US-China AI Safety Summit zaplanowane na 24 września 2026 w DC, następnego dnia Moonshots live. Alvin niedawno wydał paper 'The biggest AI models are not the biggest threats'. Gość: US obywatel od 45 lat, urodzony w Chinach.",
+        "fakty_en": "Peter introduces Alvin Graylin — technology pioneer, entrepreneur, 30+ years in AI/XR/cybersecurity/semiconductors. Senior fellow at Asia Society Policy Institute, professor of AI policy at University of Washington. Lived and worked in US, China, Taiwan. Co-author of 'Our Next Reality'. US-China AI Safety Summit scheduled for September 24, 2026 in DC, Moonshots live next day. Alvin recently published paper 'The biggest AI models are not the biggest threats'. Guest: US citizen for 45 years, born in China.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Przeważający pogląd w kampusach to że ASI jest 5-10 lat, może 20 lat. Ciekawi mnie przeważający pogląd w Chinach.",
+            "text_en": "There seems to be a prevailing view around the campuses that ASI is 5 to 10 years out, maybe even 20 years. I'm really curious what the prevailing view is in China."
+          },
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "Nie zachowują się jakby wierzyli że ASI jest tuż-tuż.",
+            "text_en": "They are not behaving like they believe ASI is around the corner."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Warunki wyścigu zmuszają ludzi do irracjonalnych decyzji. W pewnym momencie dojdziemy do superinteligencji. Kiedy to nastąpi, koncepcja narodów stanie się dużo mniej ważna.",
+            "text_en": "Having a race condition forces people to make irrational decisions. At some point we will get to a super intelligence type of a scenario. If and when we do the concept of nations will probably become a lot less important."
+          }
+        ],
+        "wniosek_pl": "Wyścig AI USA-Chiny jest najważniejszym geopoliticalnym tematem naszych czasów. Warunki wyścigu zmuszają do irracjonalnych decyzji. Wkrótce ASI sprawi, że granice narodowe stracą znaczenie.",
+        "wniosek_en": "The US-China AI race is the most important geopolitical topic of our time. Race conditions force irrational decisions. Soon ASI will make national borders less meaningful.",
+        "kontekst_pl": "Nagrywane 18 sierpnia 2026. Alvin Graylin — jedyny ekspert który bezpośrednio spotkał przywództwo chińskich AI labs i amerykańskich regulatorów. Event 24-25 września 2026 w DC.",
+        "kontekst_en": "Recorded August 18, 2026. Alvin Graylin — the only expert who directly met leadership of Chinese AI labs and American regulators. Event September 24-25, 2026 in DC."
+      },
+      {
+        "num": "02",
+        "title": "US-China AI Race and Open-Weight Models",
+        "title_pl": "Wyścig AI USA-Chiny i modele open-weight",
+        "title_en": "US-China AI Race and Open-Weight Models",
+        "time": "11:18 – 23:34",
+        "fakty_pl": "Alvin w eseju 'Misdiagnosing the US China AI Race' opisuje spektakularny shift: modele open-weight z Chin dominują. Alibaba's Qwen model sam ma ponad 700 milionów pobrań. To fundamentalnie zmienia economic model AI — każde przedsiębiorstwo może uruchomić model za ułamek kosztu zamkniętych modeli. US próbuje ograniczyć dostęp do chipów ale Chiny kompenują open-source. Model open-weight jest 'fatalnie zepsutym business modelem' dla zamkniętych labów (koszt $200M treningu vs $10M replikacji).",
+        "fakty_en": "Alvin in essay 'Misdiagnosing the US China AI Race' describes a spectacular shift: open-weight models from China dominate. Alibaba's Qwen model alone has over 700 million downloads. This fundamentally changes the economic model of AI — every enterprise can run a model for a fraction of closed model costs. US tries to restrict chip access but China compensates with open-source. Open-weight is a 'fatally broken business model' for closed labs ($200M training vs $10M replication).",
+        "glosy": [
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Model Qwen od Alibaba sam ma ponad 700 milionów pobrań.",
+            "text_en": "Alibaba's Qwen model alone has over 700 million downloads."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Dojście od zera do poziomu frontier modelu osobno kosztuje około $10 milionów. To fatalnie zepsuty business model.",
+            "text_en": "Getting from scratch to frontier model level separately costs about $10 million. This is a fatally broken business model."
+          }
+        ],
+        "wniosek_pl": "Open-weight modele z Chin demokratyzują AI — $200M treningu vs $10M replikacji. Business model zamkniętych labów jest 'fatalnie zepsuty'.",
+        "wniosek_en": "Open-weight models from China democratize AI — $200M training vs $10M replication. Closed labs' business model is 'fatally broken'.",
+        "kontekst_pl": "Esej Alvina 'Misdiagnosing the US China AI Race' — argumentuje że US źle diagnozuje wyścig.",
+        "kontekst_en": "Alvin's essay 'Misdiagnosing the US China AI Race' — argues US misdiagnoses the race."
+      },
+      {
+        "num": "03",
+        "title": "China's View on ASI Timelines",
+        "title_pl": "Pogląd Chin na oś czasu ASI",
+        "title_en": "China's View on ASI Timelines",
+        "time": "23:34 – 32:36",
+        "fakty_pl": "Alvin: timeline ASI to prawdopodobnie największy punkt sporu między USA i Chinami oraz między przeciętnym człowiekiem a Silicon Valley. Chińskie rząd nie zachowuje się jakby ASI było tuż-tuż: mówią labom 'nie kupujcie H200 od Amerykanów', wprowadzają regulacje spowalniające rozwój. Każdy model wydany w Chinach musi być przejrzany przez CAC (Cyberspace Administration of China) — regulacje dotyczą privacy, danych, transparentności, child addiction, anthropomorphizing AI. Chiny traktują AI jak general purpose technology — dojrzewanie zajmuje lata.",
+        "fakty_en": "Alvin: ASI timeline is probably the biggest disagreement between US and China and between average person and Silicon Valley. Chinese government doesn't behave like ASI is around the corner: telling labs 'don't buy H200s from Americans', introducing regulations slowing development. Every model released in China must be reviewed by CAC (Cyberspace Administration of China) — regulations on privacy, data, transparency, child addiction, anthropomorphizing AI. China treats AI as general purpose technology — maturation takes years.",
+        "glosy": [
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Gdyby wierzyli że ASI jest tuż-tuż, nie mówiliby labom 'nie kupujcie H200 od Amerykanów'. Nie wprowadzaliby regulacji spowalniających.",
+            "text_en": "If they did believe ASI is around the corner, they would not be telling their labs don't buy the H200s. They would not be putting out regulation that is slowing them down."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Każdy model wydany w Chinach musi być przejrzany przez CAC — Cyber Space Administration of China.",
+            "text_en": "Every single model that is released in China has to be reviewed by the CAC — the cyber space administration of China."
+          }
+        ],
+        "wniosek_pl": "Chiny nie wierzą w ASI 'tuż-tuż' — regulują AI jak general purpose technology. USA (Silicon Valley) ma timeline 5-10 lat, Chiny dłuższy.",
+        "wniosek_en": "China doesn't believe ASI is 'around the corner' — regulates AI as general purpose technology. US (Silicon Valley) has 5-10 year timeline, China longer.",
+        "kontekst_pl": "CAC = Cyberspace Administration of China — każdy model musi przejść review przed release.",
+        "kontekst_en": "CAC = Cyberspace Administration of China — every model must pass review before release."
+      },
+      {
+        "num": "04",
+        "title": "How China's Government Drives AI Innovation",
+        "title_pl": "Jak rząd Chin napędza innowacje AI",
+        "title_en": "How China's Government Drives AI Innovation",
+        "time": "32:36 – 47:15",
+        "fakty_pl": "Alvin demystifies 'CCP says AGI and it happens' — w rzeczywistości to bardzo distributed system. Central party ustala 5-letnie plany (clean energy, automation/robotics, AI) około 5-10 lat temu. Provinces (30+) rywalizują między sobą — 'które firmy w naszym regionie rozwiążą te problemy?'. Każdy lab ma własny lider, rywalizują. Przywództwo niemal każdego chińskiego AI labu ma edukację w USA. Nie ma 'jednej techniki od góry'. W USA: Elon, Hassabis, Sam Altman mówią 'obym to zwolniło' — ale zachowują się jakby wierzyli w ASI wkrótce.",
+        "fakty_en": "Alvin demystifies 'CCP says AGI and it happens' — in reality it's a very distributed system. Central party sets 5-year plans (clean energy, automation/robotics, AI) about 5-10 years ago. Provinces (30+) compete with each other — 'which companies in our region solve these problems?'. Each lab has its own leader, they compete. Leadership of nearly every Chinese AI lab has US education. No 'single technique from top'. In US: Elon, Hassabis, Sam Altman say 'I wish this would slow down' — but behave as if they believe ASI is soon.",
+        "glosy": [
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Nie ma kogoś na szczycie kto mówi 'zrobicie AGI' i to się dzieje. To bardzo distributed system. 30+ prowincji rywalizuje.",
+            "text_en": "There isn't somebody at the top that says 'you will make AGI' and it just happens. It's actually very distributed. 30+ provinces all compete against each other."
+          },
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "W USA Elon, Hassabis, Sam Altman mówią 'obym to zwolniło'. Ale zachowują się jakby wierzyli w ASI wkrótce.",
+            "text_en": "In the US, Elon, Hassabis, Sam Altman all say 'I wish this would slow down.' But they behave as if they believe ASI is soon."
+          }
+        ],
+        "wniosek_pl": "Chiny: distributed system 30+ rywalizujących prowincji. USA: liderzy mówią 'zwolnijmy' ale pędzą. Asymetria zachowań.",
+        "wniosek_en": "China: distributed system of 30+ competing provinces. US: leaders say 'slow down' but race. Behavioral asymmetry.",
+        "kontekst_pl": "Przywództwo chińskich AI labów edukowane w USA — to bridging.",
+        "kontekst_en": "Chinese AI lab leadership educated in US — that's bridging."
+      },
+      {
+        "num": "05",
+        "title": "Model Distillation and the Economics of Frontier AI",
+        "title_pl": "Dystylacja modeli i ekonomia frontier AI",
+        "title_en": "Model Distillation and the Economics of Frontier AI",
+        "time": "47:15 – 54:30",
+        "fakty_pl": "Dave pyta o twierdzenia że Kimi K3 i inne modele były dyhylowane z US zamkniętych modeli. Alvin: to głównie PR narzędzie — tylko jedna firma (Anthropic) jest przeciw. Anthropic lobbuje rząd: 'jesteśmy distillation attacked'. Ich dane: 20,000 kont z 3 różnych labów w Chinach, milion+ pytań. Alvin przeliczył: ~$50,000-$100,000 koszt zapytań, ale antropic zarabia miliardy. To ułamek procenta. Polityki ograniczające chipy i ograniczające dostęp do Fable 5 były 'misdirected' — szkodziły bardziej US niż Chinom.",
+        "fakty_en": "Dave asks about claims that Kimi K3 and other models were distilled from US closed models. Alvin: it's mostly a PR tool — only one company (Anthropic) is against. Anthropic lobbies government: 'we're being distillation attacked'. Their data: 20,000 accounts from 3 different labs in China, million+ questions. Alvin calculated: ~$50,000-$100,000 cost of queries, but Anthropic earns billions. That's a fraction of a percent. Policies restricting chips and limiting access to Fable 5 were 'misdirected' — hurt US more than China.",
+        "glosy": [
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Dystylacja to głównie narzędzie PR. Tylko Anthropic jest przeciw — lobbuje rząd.",
+            "text_en": "Distillation is mostly a PR tool. Only Anthropic is against it — they lobby the government."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Anthropic mówi: 20,000 kont z 3 labów w Chinach, milion pytań. Przeliczyłem: ~$50-100 tysięcy kosztu. Anthropic zarabia miliardy.",
+            "text_en": "Anthropic says: 20,000 accounts from 3 labs in China, million questions. I calculated: ~$50-100K cost. Anthropic earns billions."
+          }
+        ],
+        "wniosek_pl": "Distillation to PR narzędzie Anthropic. Koszt $50-100K vs miliardy przychodów — ułamek procenta. Polityki chipowe były 'misdirected'.",
+        "wniosek_en": "Distillation is Anthropic's PR tool. Cost $50-100K vs billions revenue — fraction of percent. Chip policies were 'misdirected'.",
+        "kontekst_pl": "Anthropic = jedyna firma lobbyująca przeciw dystylacji. Reszta industry nie ma problemu.",
+        "kontekst_en": "Anthropic = only company lobbying against distillation. Rest of industry has no problem."
+      },
+      {
+        "num": "06",
+        "title": "China's Energy, Compute, and Data Center Strategy",
+        "title_pl": "Strategia Chin: energia, compute, data centers",
+        "title_en": "China's Energy, Compute, and Data Center Strategy",
+        "time": "54:30 – 1:03:31",
+        "fakty_pl": "Alvin: Chiny budują znacznie więcej energii elektrycznej niż reszta świata razem — około 10x więcej niż USA rocznie. 40% ich ropy importowane (ze względu na Hormuz issue), więc elektryfikacja floty auto (50% EV) to security imperative. Ale data centers — Chiny nie budują tak dużo jak USA. Strategy: najpierw energia, potem data centers. Dave zaskoczony: 'Myślałem że Chiny budują tonę data centers.' Alvin: nie, focus jest na energy generation. Trening modelu to tylko 'job' — może ruszyć na server w Hong Kongu, Tajwanie, Europie. Wynik (3TB file) transmituje się w godzinę.",
+        "fakty_en": "Alvin: China builds much more electricity than rest of world combined — about 10x more than US annually. 40% of their oil imported (due to Hormuz issue), so fleet electrification (50% EV) is security imperative. But data centers — China doesn't build as much as US. Strategy: energy first, then data centers. Dave surprised: 'I thought China was building a ton of data centers.' Alvin: no, focus is on energy generation. Model training is just a 'job' — can move to server in Hong Kong, Taiwan, Europe. Result (3TB file) transmits in an hour.",
+        "glosy": [
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Chiny budują więcej nowej energii elektrycznej niż reszta świata razem — około 10x więcej niż USA rocznie.",
+            "text_en": "China is building more new electric generation than the rest of the world combined — about 10x what the US is every year."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Trening to tylko job — może ruszyć na server w Hong Kongu, Tajwanie, Europie. Plik wynikowy to 3 terabajty, transmituje się w godzinę.",
+            "text_en": "The training is just a job — it can move to a server in Hong Kong or Taiwan or Europe instantaneously. The file that comes back is just about three terabytes and you transmit it back in an hour."
+          }
+        ],
+        "wniosek_pl": "Chiny: energia first (10x USA), data centers later. Trening mobilny — 3TB file = 1h transfer. USA buduje data centers bez strategii energetycznej.",
+        "wniosek_en": "China: energy first (10x US), data centers later. Training is mobile — 3TB file = 1h transfer. US builds data centers without energy strategy.",
+        "kontekst_pl": "40% ropy Chin importowane — security issue. EV flota to strategiczna independencia.",
+        "kontekst_en": "40% of China's oil imported — security issue. EV fleet is strategic independence."
+      },
+      {
+        "num": "07",
+        "title": "Robotics, Automation, and China's Labor Shortage",
+        "title_pl": "Robotyka, automatyzacja, niedobór pracy Chin",
+        "title_en": "Robotics, Automation, and China's Labor Shortage",
+        "time": "1:03:31 – 1:10:02",
+        "fakty_pl": "White House nałożył embargo na chińskie roboty. Alvin: 90% komponentów robotów pochodzi z Chin. US robotics companies teraz 'sneaking' do Chin, kupują komponenty, wkładają w walizki i przywożą. W 2025 globalnie było dziesiątki tysięcy robotów, 80-90% z Chin (od 2-3 firm). Nie ma rynku dla wielu firm robotycznych. Alvin: embargo zmniejsza US competitiveness. China labor shortage — populacja się starzeje, jeden child policy skutkuje. Robotics to rozwiązanie.",
+        "fakty_en": "White House imposed embargo on Chinese robots. Alvin: 90% of robot components come from China. US robotics companies now 'sneaking' to China, buying components, putting them in suitcases. In 2025 globally there were tens of thousands of robots, 80-90% from China (from 2-3 companies). There's no market for many robotics companies. Alvin: embargo reduces US competitiveness. China labor shortage — population aging, one child policy effects. Robotics is the solution.",
+        "glosy": [
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "90% komponentów robotów pochodzi z Chin. US robotics companies teraz 'sneaking' do Chin, kupują komponenty, wkładają w walizki.",
+            "text_en": "90% of robot components come from China. US robotics companies are now sneaking to China, buying these components, putting them into suitcases."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "W 2025 było dziesiątki tysięcy robotów globalnie. 80-90% z Chin, od 2-3 firm.",
+            "text_en": "Last year was in the tens of thousands globally. 80% or 90% of them came from China from like two or three companies."
+          }
+        ],
+        "wniosek_pl": "Embargo na roboty chińskie = samobójstwo competitive. 90% komponentów z Chin. US firms smugglują w walizkach.",
+        "wniosek_en": "Embargo on Chinese robots = competitive suicide. 90% components from China. US firms smuggle in suitcases.",
+        "kontekst_pl": "White House embargo — polityka protekcjonistyczna kontra realność supply chain.",
+        "kontekst_en": "White House embargo — protectionist policy vs supply chain reality."
+      },
+      {
+        "num": "08",
+        "title": "China's AI Strategy and Global Ambitions",
+        "title_pl": "Strategia AI Chin i globalne ambicje",
+        "title_en": "China's AI Strategy and Global Ambitions",
+        "time": "1:10:02 – 1:18:02",
+        "fakty_pl": "Alvin był na World AI Conference (WIC) 2026 w Szanghaju — prezydent Xi ogłosił WACO (World AI Cooperative Organization), 26 narodów podpisało. To sygnał że 'AI moment has arrived' — jak 4-5 lat wcześniej Xi na World Internet Conference. Plan 'AI Plus' — każde przedsiębiorstwo zintegruje AI w ciągu 10 lat, cel 90%+ adopcji. To o fuzji i deployment, nie tylko o modelach. Chiny mają konkretne cele vs USA bez strategy.",
+        "fakty_en": "Alvin attended World AI Conference (WIC) 2026 in Shanghai — President Xi announced WACO (World AI Cooperative Organization), 26 nations signed. This signals 'AI moment has arrived' — like 4-5 years earlier Xi at World Internet Conference. 'AI Plus' plan — every enterprise integrates AI within 10 years, target 90%+ adoption. About fusion and deployment, not just models. China has specific goals vs US without strategy.",
+        "glosy": [
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "WIC 2026 — prezydent Xi ogłosił WACO, 26 narodów podpisało. To sygnał że AI moment has arrived.",
+            "text_en": "WIC 2026 — President Xi announced WACO, 26 nations signed up. This signals AI moment has arrived."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Plan 'AI Plus' — w ciągu 10 lat 90%+ przedsiębiorstw zintegruje AI. To o fuzji i deployment, nie tylko o modelach.",
+            "text_en": "'AI Plus' plan — within 10 years 90%+ of enterprises integrate AI. It's about fusion and deployment, not just models."
+          }
+        ],
+        "wniosek_pl": "Chiny: WACO (26 narodów) + plan 'AI Plus' (90% adopcji w 10 lat). Konkretne cele. USA: brak strategy.",
+        "wniosek_en": "China: WACO (26 nations) + 'AI Plus' plan (90% adoption in 10 years). Specific goals. US: no strategy.",
+        "kontekst_pl": "WACO = World AI Cooperative Organization, zaprezentowane na WIC 2026.",
+        "kontekst_en": "WACO = World AI Cooperative Organization, presented at WIC 2026."
+      },
+      {
+        "num": "09",
+        "title": "AI's Impact on Jobs and the Global Economy",
+        "title_pl": "Wpływ AI na miejsca pracy i globalną gospodarkę",
+        "title_en": "AI's Impact on Jobs and the Global Economy",
+        "time": "1:18:02 – 1:24:16",
+        "fakty_pl": "Dave pyta o cytat Gavina Bakera: 'Dario (Anthropic) powiedział zespołowi: w niedalekiej przyszłości będzie tylko jedna firma prywatna na świecie — Anthropic — i potem rządy.' Alvin: to 'scary' i 'delusional'. Salim: 'nie widzę jak to nastąpi.' Alex pyta: 'czy super intelligence wymaga western re-industrialization?' Alvin: tak, re-industrialization jest potrzebna. US workforce: 70% white collar (pierwszy do displacement przez AGI). Chiny: 40% white collar. Afryka: mniej. 35% global manufacturing w Chinach, 15% w USA. Forecast: 40-45% w Chinach w 5-10 lat.",
+        "fakty_en": "Dave asks about Gavin Baker quote: 'Dario (Anthropic) told his team: in the near future there will only be one private company in the world — Anthropic — and then governments.' Alvin: that's 'scary' and 'delusional'. Salim: 'I don't see how that gets there.' Alex asks: 'does super intelligence require western re-industrialization?' Alvin: yes, re-industrialization is needed. US workforce: 70% white collar (first to be displaced by AGI). China: 40% white collar. Africa: less. 35% global manufacturing in China, 15% in US. Forecast: 40-45% in China in 5-10 years.",
+        "glosy": [
+          {
+            "author": "Dave Blundin",
+            "text_pl": "Gavin Baker powiedział: Dario told his team — w niedalekiej przyszłości będzie tylko jedna firma Anthropic i potem rządy.",
+            "text_en": "Gavin Baker said: Dario told his team — in the near future there will only be one company in the world, one private company, and it will be Anthropic, and then there will be governments."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "To bardzo scary. To bardzo delusional. Nie widzę jak to nastąpi.",
+            "text_en": "That is a very scary thing. That is a very delusional thing. I just don't see how that gets there."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "US workforce: 70% white collar. Chiny: 40%. White collar pierwszy do displacement przez AGI.",
+            "text_en": "US workforce is around 70% white collar workers. China is around 40%. White collar is the first to be displaced by AGI."
+          }
+        ],
+        "wniosek_pl": "Dario (Anthropic) twierdzi 'jedna firma + rządy' — Alvin: 'delusional'. US 70% white collar vs Chiny 40%. Re-industrialization potrzebna.",
+        "wniosek_en": "Dario (Anthropic) claims 'one company + governments' — Alvin: 'delusional'. US 70% white collar vs China 40%. Re-industrialization needed.",
+        "kontekst_pl": "Gavin Baker — znany investor, cytat z prywatnej rozmowy z Dario Amodei.",
+        "kontekst_en": "Gavin Baker — well-known investor, quote from private conversation with Dario Amodei."
+      },
+      {
+        "num": "10",
+        "title": "Why Smaller AI Models May Pose a Greater Risk",
+        "title_pl": "Dlaczego mniejsze modele AI mogą stanowić większe ryzyko",
+        "title_en": "Why Smaller AI Models May Pose a Greater Risk",
+        "time": "1:24:16 – 1:37:17",
+        "fakty_pl": "Alvin wydał paper na Cipher Brief (national security outlet DC): 'The biggest AI models are not the biggest threats.' Analiza: 10-50M parameter models dla chemii — tworzenie chemical warfare weapons. 1-50B parameter models — biological threats. 1-100B parameter cyber models — as dangerous or more than leading Fable/Mythos. Większe modele są safer bo lepiej aligned. Mniejsze modele — łatwiej sklonować, harder to regulate, more likely misuse. Dario mówił 'bigger = more dangerous' — Alvin pokazuje że to mit. Cyber models 100B parameter mogą być bardziej niebezpieczne niż Fable 5.",
+        "fakty_en": "Alvin published paper on Cipher Brief (national security outlet DC): 'The biggest AI models are not the biggest threats.' Analysis: 10-50M parameter models for chemistry — creating chemical warfare weapons. 1-50B parameter models — biological threats. 1-100B parameter cyber models — as dangerous or more than leading Fable/Mythos. Larger models are safer because better aligned. Smaller models — easier to clone, harder to regulate, more likely misuse. Dario said 'bigger = more dangerous' — Alvin shows this is a myth. Cyber models of 100B parameters can be more dangerous than Fable 5.",
+        "glosy": [
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "10-50M parameter modele chemiczne tworzą broń chemiczną. 1-50B modele biologiczne. 1-100B cyber modele — bardziej niebezpieczne niż Fable 5.",
+            "text_en": "10-50M parameter models for chemicals creating chemical warfare weapons. 1-50B parameter models for biological threats. 1-100B parameter cyber models as dangerous or more than leading Fable."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Większe modele są safer — lepiej aligned. Mniejsze — łatwiej sklonować, harder to regulate.",
+            "text_en": "Larger models are safer — better aligned. Smaller — easier to clone, harder to regulate."
+          }
+        ],
+        "wniosek_pl": "Mit 'bigger = more dangerous'. Realność: mniejsze modele (10-100B) są groźniejsze — chemistry, biological, cyber weapons.",
+        "wniosek_en": "Myth 'bigger = more dangerous'. Reality: smaller models (10-100B) are more dangerous — chemistry, biological, cyber weapons.",
+        "kontekst_pl": "Paper wydany na Cipher Brief — czytany przez US national security population.",
+        "kontekst_en": "Paper published on Cipher Brief — read by US national security population."
+      },
+      {
+        "num": "11",
+        "title": "Why China Is More Optimistic About AI",
+        "title_pl": "Dlaczego Chiny są bardziej optymistyczne wobec AI",
+        "title_en": "Why China Is More Optimistic About AI",
+        "time": "1:37:17 – 1:43:56",
+        "fakty_pl": "Peter: w Chinach 80% populacji pro-AI, w USA 80% against-AI. Alvin: przez ostatnie 40 lat życia ludzi w Chinach poprawiły się — 780 milionów ludzi wyszło z poverty. Technology adoption = lepsze życie. W USA: youth unemployment ~9%, overall ~4.3%, ale 42% underemployment (college grads pracujący jako barista). W Chinach: youth unemployment ~20%, 'tangping' (lying flat) issue. Ale mimo to — optimism wyższy bo technologia = lepsze życie. Michael Katzios (autor 'The Technological Republic') argumentuje że US musi zmienić sentiment.",
+        "fakty_en": "Peter: in China 80% of population is pro-AI, in US 80% is against-AI. Alvin: over the last 40 years people's lives in China got better — 780 million people lifted from poverty. Technology adoption = better life. In US: youth unemployment ~9%, overall ~4.3%, but 42% underemployment (college grads working as baristas). In China: youth unemployment ~20%, 'tangping' (lying flat) issue. But despite this — optimism is higher because technology = better life. Michael Katzios (author of 'The Technological Republic') argues US must change sentiment.",
+        "glosy": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "W Chinach 80% populacji pro-AI. W USA 80% against-AI. Co się dzieje?",
+            "text_en": "In China it's 80% of the populace is pro AI. In the US 80% is against AI. What's going on?"
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Przez 40 lat życia ludzi w Chinach poprawiły się. 780 milionów wyszło z poverty. Technologia = lepsze życie.",
+            "text_en": "Over the last 40 years people have seen their lives get better and better in China. 780 million people have been risen out of poverty."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Youth unemployment w Chinach ~20%. W USA ~9% ale 42% underemployment. Połowa college grads pracuje jako gig workers.",
+            "text_en": "Youth unemployment in China is probably around 20%. In the US around 9%. But 42% underemployment. Half of college grads are gig workers or baristas."
+          }
+        ],
+        "wniosek_pl": "Chiny 80% pro-AI (technologia = lepsze życie). USA 80% against (anxiety). Youth unemployment: Chiny 20%, USA 9%+42% underemployment.",
+        "wniosek_en": "China 80% pro-AI (technology = better life). US 80% against (anxiety). Youth unemployment: China 20%, US 9%+42% underemployment.",
+        "kontekst_pl": "Michael Katzios — 'The Technological Republic', argumentuje za zmianą US sentiment.",
+        "kontekst_en": "Michael Katzios — 'The Technological Republic', argues for changing US sentiment."
+      },
+      {
+        "num": "12",
+        "title": "Rethinking US-China AI Cooperation — Stag Hunt vs Prisoner's Dilemma",
+        "title_pl": "Rethinking US-China AI Cooperation — Stag Hunt vs Prisoner's Dilemma",
+        "time": "1:43:56 – 1:51:36",
+        "fakty_pl": "Alvin argumentuje że US-China AI race to NIE prisoner's dilemma (jak powszechnie uważane) — to stag hunt. W prisoner's dilemma zdrada jest dominującą strategią. W stag hunt koordynacja daje najlepszy wynik — ale wymaga zaufania. US gra jak prisoner's dilemma (zdrada), ale powinien grać stag hunt (koordynacja). To zmienia strategię: communication, transparency, joint verification. September 24, 2026 — US-China AI Safety Summit w DC. Sukces = jeśli będą 'drugą rozmowę'. W 2024 był dialogue, dużo disappointowania.",
+        "fakty_en": "Alvin argues that US-China AI race is NOT prisoner's dilemma (as commonly believed) — it's stag hunt. In prisoner's dilemma betrayal is dominant strategy. In stag hunt coordination gives best outcome — but requires trust. US plays as prisoner's dilemma (betrayal) but should play stag hunt (coordination). This changes strategy: communication, transparency, joint verification. September 24, 2026 — US-China AI Safety Summit in DC. Success = if there's a 'second conversation.' In 2024 there was dialogue, much disappointment.",
+        "glosy": [
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "US gra prisoner's dilemma. Powinien grać stag hunt. W stag hunt koordynacja daje najlepszy wynik.",
+            "text_en": "The US is playing a prisoner's dilemma when the actual game that should be played is a stag hunt."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Sukces September 24 Summit = jeśli będziemy 'drugą rozmowę'. Już sukces.",
+            "text_en": "If we can come out of these discussions saying that, okay, we're going to have a second discussion, that's already success."
+          }
+        ],
+        "wniosek_pl": "US-China AI race = stag hunt, nie prisoner's dilemma. Koordynacja > zdrada. September 24 Summit — sukces = 'druga rozmowa'.",
+        "wniosek_en": "US-China AI race = stag hunt, not prisoner's dilemma. Coordination > betrayal. September 24 Summit — success = 'second conversation'.",
+        "kontekst_pl": "Stag hunt = game theory model o koordynacji. Prisoner's dilemma = model o zdradzie.",
+        "kontekst_en": "Stag hunt = game theory model about coordination. Prisoner's dilemma = model about betrayal.",
+        "title_en": "Rethinking US-China AI Cooperation — Stag Hunt vs Prisoner's Dilemma"
+      },
+      {
+        "num": "13",
+        "title": "Is America's AI Boom Becoming a $1.7 Trillion Bubble?",
+        "title_pl": "Czy amerykański boom AI staje się bańką $1.7 biliona?",
+        "title_en": "Is America's AI Boom Becoming a $1.7 Trillion Bubble?",
+        "time": "1:51:36 – 2:03:27",
+        "fakty_pl": "Alvin analoguje do Cold War: US wygrał bo ZSRR zbankrutował na arms race (15-20% GDP na military). Teraz US buduje AI bubble z prywatnego kredytu. Nvidia $500B deal z BlackRock, Carlyle, Blackstone. Buffett indicator: na szczycie internet bubble 120% GDP, teraz 240% GDP. AI sector sam warty więcej niż GDP USA. To 'fragile place'. $1.7T AI bubble — jeśli pęknie, US straci competitiveness. China ma 97% as good modele za ułamek kosztu. Alvin: open-source z Chin sprawi że frontier modele będą bezwartościowe.",
+        "fakty_en": "Alvin analogizes to Cold War: US won because USSR bankrupted on arms race (15-20% GDP on military). Now US builds AI bubble from private credit. Nvidia $500B deal with BlackRock, Carlyle, Blackstone. Buffett indicator: at internet bubble peak 120% GDP, now 240% GDP. AI sector alone worth more than US GDP. This is a 'fragile place'. $1.7T AI bubble — if it pops, US loses competitiveness. China has 97% as good models for fraction of cost. Alvin: open-source from China will make frontier models worthless.",
+        "glosy": [
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "US wygrał Cold War bo ZSRR zbankrutował na arms race — 15-20% GDP na military. Teraz US powtarza ten błąd z AI.",
+            "text_en": "The reason we won was not because we sent a missile and blew up Russia. It's because they bankrupted themselves building military — 15-20% of GDP was building arms that was not creating real value."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Buffett indicator: na szczycie internet bubble 120% GDP. Teraz 240% GDP. AI sector sam warty więcej niż GDP USA.",
+            "text_en": "At the height of the internet bubble we were around 120% of GDP. Now we are at 240% of GDP. The AI sector alone is worth more than the GDP of America today."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Nvidia $500B deal z BlackRock, Carlyle, Blackstone — securitize chips. To bardzo fragile place.",
+            "text_en": "Nvidia announced a $500 billion deal with BlackRock and Carlyle and Blackstone to essentially securitize chips. That is a very fragile place."
+          }
+        ],
+        "wniosek_pl": "Buffett indicator 240% GDP (było 120% przy dotcom bubble). AI sector > GDP USA. $1.7T bubble. Analogia do ZSRR bankruptcy.",
+        "wniosek_en": "Buffett indicator 240% GDP (was 120% at dotcom bubble). AI sector > US GDP. $1.7T bubble. Analogy to USSR bankruptcy.",
+        "kontekst_pl": "Buffett indicator = stock market value / GDP. Powyżej 100% = overvalued.",
+        "kontekst_en": "Buffett indicator = stock market value / GDP. Above 100% = overvalued."
+      },
+      {
+        "num": "14",
+        "title": "Taiwan, TSMC, and the Future of Advanced Chips",
+        "title_pl": "Tajwan, TSMC i przyszłość zaawansowanych chipów",
+        "title_en": "Taiwan, TSMC, and the Future of Advanced Chips",
+        "time": "2:03:27 – 2:10:57",
+        "fakty_pl": "Alex pyta: 'How does this end? China invade Taiwan + seize TSMC? Taiwan retain independence + TSMC nie musi blown up?' Alvin: 'there is an assumption in DC że China wants invade Taiwan to get fabs. Ale to mit — fabs bez ludzi stają się bezużyteczne. Trening modelu może ruszyć w godzinę (Hong Kong, Europe). 3TB file transmituje się szybko. Niezależność Tajwanu to kwestia geopolitics, nie fabs. TSMC nodes są important ale nie krytyczne — AsIC design jest mobilny. Alex: 'powinieneś o tym mówić.' Alvin: 'probably shouldn't be talking about this.'",
+        "fakty_en": "Alex asks: 'How does this end? China invade Taiwan + seize TSMC? Taiwan retain independence + TSMC not blown up?' Alvin: 'there is an assumption in DC that China wants to invade Taiwan to get fabs. But that's a myth — fabs without people become useless. Model training can move in an hour (Hong Kong, Europe). 3TB file transmits quickly. Taiwan independence is geopolitics, not fabs. TSMC nodes are important but not critical — ASIC design is mobile. Alex: 'you should be talking about this.' Alvin: 'probably shouldn't be talking about this.'",
+        "glosy": [
+          {
+            "author": "Alex Wissner-Gross",
+            "text_pl": "Jak to się kończy? Chiny invade Taiwan i seize TSMC? Czy Tajwan zachowa niezależność?",
+            "text_en": "How does this end? Does this end with China attempting to invade Taiwan and seize TSMC? Does it end with Taiwan retaining its independence?"
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Założenie w DC że Chiny chcą invade Taiwan żeby dostać fabs — to mit. Fabs bez ludzi stają się bezużyteczne.",
+            "text_en": "There is an assumption in DC that China wants to invade Taiwan to get access to these fabs. But fabs without people become useless."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Trening modelu może ruszyć na server w Hong Kongu, Europie. 3TB file transmituje się w godzinę.",
+            "text_en": "The training is just a job — it can move to a server in Hong Kong or Europe instantaneously. The file that comes back is just about three terabytes and you transmit it back in an hour."
+          }
+        ],
+        "wniosek_pl": "Mit: Chiny chcą Tajwanu dla TSMC. Realność: fabs bez ludzi = bezużyteczne. Trening mobilny. Geopolitics > fabs.",
+        "wniosek_en": "Myth: China wants Taiwan for TSMC. Reality: fabs without people = useless. Training is mobile. Geopolitics > fabs.",
+        "kontekst_pl": "TSMC = Taiwan Semiconductor Manufacturing Company — wiodący foundry na świecie.",
+        "kontekst_en": "TSMC = Taiwan Semiconductor Manufacturing Company — leading foundry globally."
+      },
+      {
+        "num": "15",
+        "title": "The Great Reckoning for the AI Industry",
+        "title_pl": "Wielkie rozliczenie dla branży AI",
+        "title_en": "The Great Reckoning for the AI Industry",
+        "time": "2:10:57 – 2:23:19",
+        "fakty_pl": "Alvin pyta: jak przyszłe 3-4 lata się rozegra? Dwie główne ścieżki. W paperze 'Great Reckoning' — jak AI companies pójdą public (IPO), wrótka na zyski. Obecnie accrual z okresu kiedy open-source nie istniał. Teraz open-source capabilities są. Frontier modele będą commodity. Spodziewane: consolidacja, wiele firm upadnie. Tylko firmy z deployment advantage przetrwają. Alvin przewiduje że po 2026 będą 'reckoning' — bańka pęknie, tylko real value przetrwa. Kończy z optymizmem: cooperation > competition, stag hunt logic.",
+        "fakty_en": "Alvin asks: how will the next 3-4 years play out? Two main paths. In 'Great Reckoning' paper — when AI companies go public (IPO), pressure on profits. Currently accrual from period when open-source didn't exist. Now open-source capabilities exist. Frontier models will be commodity. Expected: consolidation, many firms will fail. Only firms with deployment advantage survive. Alvin predicts that after 2026 there will be a 'reckoning' — bubble pops, only real value survives. Ends with optimism: cooperation > competition, stag hunt logic.",
+        "glosy": [
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Jak przyszłe 3-4 lata? Dwie ścieżki. AI companies pójdą public — wrótka na zyski.",
+            "text_en": "How do you think this next 3-4 years goes? What are the two big paths? When AI companies go public, pressure on profits."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Obecny accrual z okresu kiedy open-source nie istniał. Teraz open-source capabilities są. Frontier modele będą commodity.",
+            "text_en": "The accrual came from a period when you didn't really have the open-source capabilities. Now open-source capabilities are here. Frontier models will be commodity."
+          },
+          {
+            "author": "Alvin Graylin",
+            "text_pl": "Po 2026 będzie reckoning — bańka pęknie, tylko real value przetrwa. Cooperation > competition.",
+            "text_en": "After 2026 there will be a reckoning — bubble pops, only real value survives. Cooperation > competition."
+          }
+        ],
+        "wniosek_pl": "Great Reckoning: po 2026 bańka pęknie. Frontier modele = commodity. Tylko deployment advantage przetrwa. Cooperation > competition.",
+        "wniosek_en": "Great Reckoning: after 2026 bubble pops. Frontier models = commodity. Only deployment advantage survives. Cooperation > competition.",
+        "kontekst_pl": "Paper 'Great Reckoning' — Alvin opisuje przyszłość AI industry.",
+        "kontekst_en": "Paper 'Great Reckoning' — Alvin describes future of AI industry."
       }
     ]
   }
