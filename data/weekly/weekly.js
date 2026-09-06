@@ -1,6 +1,64 @@
 // AI Weekly Summaries — auto-generated from weekly.json
 const WEEKLY = [
   {
+    "num": 36,
+    "date": "2026-09-06",
+    "collapsed": true,
+    "title_pl": "AI Tydzień #36 | 31/08-06/09/2026",
+    "title_en": "AI Week #36 | August 31 - September 6, 2026",
+    "headline_pl": "Tydzień saturacji: GPT-6 Astra saturates ARC-AGI-3 + 100% exploit gym, Claude Fable 5.1 (najdroższy 3.7x), Gemini 3.8 Flash (348 tok/s, best price-perf), Qwen 3.8 Max 0904 (>Opus 5 na some), Atlas (Fei-Fei Li, 1min 1440p), Minimax faster than real-time, FlyWire fruit fly brain map (166K neurons), OmniRoute free AI models.",
+    "headline_en": "Week of saturation: GPT-6 Astra saturates ARC-AGI-3 + 100% exploit gym, Claude Fable 5.1 (most expensive 3.7x), Gemini 3.8 Flash (348 tok/s, best price-perf), Qwen 3.8 Max 0904 (>Opus 5 on some), Atlas (Fei-Fei Li, 1min 1440p), Minimax faster than real-time, FlyWire fruit fly brain map (166K neurons), OmniRoute free AI models.",
+    "sections": [
+      {
+        "title_pl": "🚀 GPT-6 Astra — saturates benchmarks, 100% exploit gym, destroys all",
+        "title_en": "🚀 GPT-6 Astra — saturates benchmarks, 100% exploit gym, destroys all",
+        "body_pl": "GPT-6 Astra — nowy flagship OpenAI. SOTA na computer use, browsing, SE. 100% na exploit gym (completely destroying benchmark). 60%+ na game environment (vs <10% dla other frontier). Z adapter/harness → close to 100%. Frontier Math: Astra High. Music transcription. Cheaper niż Fable. Saturates ARC-AGI-3 — benchmarki za łatwe, need harder.",
+        "body_en": "GPT-6 Astra — new OpenAI flagship. SOTA on computer use, browsing, SE. 100% on exploit gym (completely destroying benchmark). 60%+ on game environment (vs <10% for other frontier). With adapter/harness → close to 100%. Frontier Math: Astra High. Music transcription. Cheaper than Fable. Saturates ARC-AGI-3 — benchmarks too easy, need harder.",
+        "quotes": []
+      },
+      {
+        "title_pl": "💰 Claude Fable 5.1 vs Gemini 3.8 Flash — expensive vs price-performance",
+        "title_en": "💰 Claude Fable 5.1 vs Gemini 3.8 Flash — expensive vs price-performance",
+        "body_pl": "Claude Fable 5.1 — najdroższy model (3.7x GPT 5.6 Max). Despite claims dla scientific research, deep research + medical rozczarowujące. Gemini 3.8 Flash — #8 na leaderboard, 348 tok/s (far higher), SOTA w scientific figures, Deep Suite long-horizon, reasonable cost. Best price-performance. Qwen 3.8 Max 0904 — beats old, some >Opus 5 + GPT 5.6 Sol. DeepSeek V4 Flash Vision — matches Opus 4.8.",
+        "body_en": "Claude Fable 5.1 — most expensive (3.7x GPT 5.6 Max). Despite scientific research claims, deep research + medical disappointing. Gemini 3.8 Flash — #8 on leaderboard, 348 tok/s (far higher), SOTA in scientific figures, Deep Suite long-horizon, reasonable cost. Best price-performance. Qwen 3.8 Max 0904 — beats old, some >Opus 5 + GPT 5.6 Sol. DeepSeek V4 Flash Vision — matches Opus 4.8.",
+        "quotes": []
+      },
+      {
+        "title_pl": "🌍 World models — Atlas, GameGenX, autoregressive diffusion",
+        "title_en": "🌍 World models — Atlas, GameGenX, autoregressive diffusion",
+        "body_pl": "Atlas (World Labs/Fei-Fei Li) — input video + camera path → 1min 1440p coherent video. Explicit 3D geometry (point clouds, gaussian splats). GameGenX — video models → real-time interactive worlds. Code released. Autoregressive diffusion world model — no max duration, video+audio. Minimax faster than real-time (Video Deltaet, 14s clip w 11s na 8x B200).",
+        "body_en": "Atlas (World Labs/Fei-Fei Li) — input video + camera path → 1min 1440p coherent video. Explicit 3D geometry (point clouds, gaussian splats). GameGenX — video models → real-time interactive worlds. Code released. Autoregressive diffusion world model — no max duration, video+audio. Minimax faster than real-time (Video Deltaet, 14s clip in 11s on 8x B200).",
+        "quotes": []
+      },
+      {
+        "title_pl": "🎨 Nowe modele i narzędzia — 18 items, 3 new models (231 total)",
+        "title_en": "🎨 New models and tools — 18 items, 3 new models (231 total)",
+        "body_pl": "AI Search ##36-1: 18 items. Nowe modele: Claude Fable 5.1, Lada Image (6B open-source, 6.7GB FP8), Vigle Animate (character swap). Narzędzia: Lucida (3D room reconstruction), Video Deltaet (Minimax optimization), Higsfield (AI creation platform + Cinema Studio), Intern Lumina U2 (diffusion LLM, multimodal understanding), Google WeatherNext 3 (observation-based, 5x sharper), Google TimesFM3 (330M, time series #1), Google cyber model (2.6x patches).",
+        "body_en": "AI Search ##36-1: 18 items. New models: Claude Fable 5.1, Lada Image (6B open-source, 6.7GB FP8), Vigle Animate (character swap). Tools: Lucida (3D room reconstruction), Video Deltaet (Minimax optimization), Higsfield (AI creation platform + Cinema Studio), Intern Lumina U2 (diffusion LLM, multimodal understanding), Google WeatherNext 3 (observation-based, 5x sharper), Google TimesFM3 (330M, time series #1), Google cyber model (2.6x patches).",
+        "quotes": []
+      },
+      {
+        "title_pl": "🧬 FlyWire — fruit fly brain map, 166K neurons, 125M synapses",
+        "title_en": "🧬 FlyWire — fruit fly brain map, 166K neurons, 125M synapses",
+        "body_pl": "FlyWire — largest nervous system reconstruction. Fruit fly: 166K neurons, 125M synapses. Human = 86B neurons (can't map yet). Neuroscience understanding of brain circuits + behavior. Might also help w AI architecture inspiration.",
+        "body_en": "FlyWire — largest nervous system reconstruction. Fruit fly: 166K neurons, 125M synapses. Human = 86B neurons (can't map yet). Neuroscience understanding of brain circuits + behavior. Might also help in AI architecture inspiration.",
+        "quotes": []
+      },
+      {
+        "title_pl": "📡 Podsumowanie tygodnia — 231 modeli, 17 epizodów Diamandis",
+        "title_en": "📡 Week summary — 231 models, 17 Diamandis episodes",
+        "body_pl": "Tydzień 31/08-06/09/2026: 3 materiały (Diamandis #285 Alpha Centauri, Lev 04.09, AI Search ##36-1). 3 nowe modele (231 total). Kluczowe: GPT-6 Astra saturates benchmarks, Fable 5.1 najdroższy, Gemini 3.8 Flash best price-perf, Atlas (Fei-Fei Li), Minimax faster than real-time, FlyWire brain map. OmniRoute zainstalowany — 7 darmowych modeli. Multi-model delegation działa.",
+        "body_en": "Week of Aug 31 - Sep 6, 2026: 3 materials (Diamandis #285 Alpha Centauri, Lev 04.09, AI Search ##36-1). 3 new models (231 total). Key: GPT-6 Astra saturates benchmarks, Fable 5.1 most expensive, Gemini 3.8 Flash best price-perf, Atlas (Fei-Fei Li), Minimax faster than real-time, FlyWire brain map. OmniRoute installed — 7 free models. Multi-model delegation works.",
+        "quotes": []
+      }
+    ],
+    "sources": [
+      "Diamandis Moonshots (1DB_QDiviH4) — 05.09.2026 (#286)",
+      "Lev Selector (D5qeklkQqRg) — 04.09.2026",
+      "AI Search (rQ4yX5qNYdY) — 06.09.2026 (##36-1)"
+    ]
+  },
+  {
     "num": 35,
     "date": "2026-08-30",
     "collapsed": true,
