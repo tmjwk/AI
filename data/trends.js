@@ -1,35 +1,44 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-09-04 20:47:49 UTC
-// Total events: 484, months: 4
+// Generated: 2026-09-06 04:18:04 UTC
+// Total events: 502, months: 4
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-09-04 20:47:49 UTC",
-    "total_events": 484,
+    "generated": "2026-09-06 04:18:04 UTC",
+    "total_events": 502,
     "total_months": 4
   },
   "months": [
     {
       "month": "2026-09",
-      "total": 35,
+      "total": 53,
       "by_type": {
+        "ai_search": 18,
         "lev": 35
       },
       "top_vendors": [
         [
           "Anthropic",
-          7
+          10
         ],
         [
           "OpenAI",
-          4
+          7
         ],
         [
           "Google",
-          2
+          6
         ],
         [
           "Alibaba",
+          3
+        ],
+        [
+          "MIT",
+          2
+        ],
+        [
+          "MiniMax",
           2
         ],
         [
@@ -37,61 +46,57 @@ const TRENDS = {
           2
         ],
         [
+          "DeepSeek",
+          1
+        ],
+        [
+          "Boston Dynamics",
+          1
+        ],
+        [
           "Z.AI",
-          1
-        ],
-        [
-          "Meta",
-          1
-        ],
-        [
-          "MiniMax",
-          1
-        ],
-        [
-          "MIT",
           1
         ]
       ],
       "top_models": [
         [
           "Qwen 3",
-          2
-        ],
-        [
-          "GPT 6",
-          1
-        ],
-        [
-          "Gemini 3",
-          1
-        ],
-        [
-          "GLM 5",
-          1
-        ],
-        [
-          "Claude Code",
-          1
-        ],
-        [
-          "Claude 5",
-          1
-        ],
-        [
-          "Claude memory",
-          1
-        ],
-        [
-          "Claude Sonet",
-          1
-        ],
-        [
-          "Claude Opus",
-          1
+          3
         ],
         [
           "Opus 4",
+          2
+        ],
+        [
+          "GPT 5",
+          2
+        ],
+        [
+          "GPT 5.6",
+          2
+        ],
+        [
+          "Gemini 3",
+          2
+        ],
+        [
+          "Lucida",
+          1
+        ],
+        [
+          "DeepSeek V4",
+          1
+        ],
+        [
+          "DeepSeek DeepSeek",
+          1
+        ],
+        [
+          "Opus 5",
+          1
+        ],
+        [
+          "Fable 5",
           1
         ]
       ]
@@ -298,11 +303,11 @@ const TRENDS = {
           3
         ],
         [
-          "OpenAI",
+          "Alibaba",
           2
         ],
         [
-          "Alibaba",
+          "OpenAI",
           2
         ],
         [
@@ -436,19 +441,19 @@ const TRENDS = {
     "top_vendors": [
       [
         "Anthropic",
-        68
+        71
       ],
       [
         "OpenAI",
-        42
+        45
       ],
       [
         "Google",
-        34
+        38
       ],
       [
         "Alibaba",
-        28
+        29
       ],
       [
         "Meta",
@@ -456,11 +461,15 @@ const TRENDS = {
       ],
       [
         "DeepSeek",
-        15
+        16
       ],
       [
         "NVIDIA",
         13
+      ],
+      [
+        "MiniMax",
+        10
       ],
       [
         "Moonshot AI",
@@ -475,12 +484,8 @@ const TRENDS = {
         9
       ],
       [
-        "MiniMax",
-        9
-      ],
-      [
         "MIT",
-        7
+        8
       ],
       [
         "Tencent",
@@ -498,38 +503,38 @@ const TRENDS = {
     "top_models": [
       [
         "Qwen 3",
-        12
+        13
+      ],
+      [
+        "Fable 5",
+        13
       ],
       [
         "Claude Code",
         12
       ],
       [
-        "Fable 5",
-        12
-      ],
-      [
-        "Gemini 3",
-        7
-      ],
-      [
-        "GLM 5",
-        7
-      ],
-      [
-        "Opus 5",
-        7
-      ],
-      [
-        "DeepSeek V4",
-        7
-      ],
-      [
         "GPT 5",
-        7
+        9
       ],
       [
         "GPT 5.6",
+        9
+      ],
+      [
+        "DeepSeek V4",
+        8
+      ],
+      [
+        "Opus 5",
+        8
+      ],
+      [
+        "Gemini 3",
+        8
+      ],
+      [
+        "GLM 5",
         7
       ],
       [
@@ -545,23 +550,23 @@ const TRENDS = {
         6
       ],
       [
+        "DeepSeek DeepSeek",
+        5
+      ],
+      [
+        "Claude Fable",
+        5
+      ],
+      [
         "Claude Opus",
-        5
-      ],
-      [
-        "GPT-5.6",
-        5
-      ],
-      [
-        "GPT-5",
         5
       ]
     ],
     "by_type": {
+      "ai_search": 176,
       "lev": 301,
       "diamandis": 16,
-      "weekly": 9,
-      "ai_search": 158
+      "weekly": 9
     }
   }
 };

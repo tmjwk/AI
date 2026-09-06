@@ -2,7 +2,7 @@
 // Schema: {r, n, v, d, o, c, desc_pl, desc_en, b_pl, b_en}
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
-const TODAY = "2026-08-29";
+const TODAY = "2026-09-06";
 const NEW_DAYS = 14;
 
 const M = [
@@ -1905,7 +1905,7 @@ const M = [
     "tier": "S",
     "tier_override": "S",
     "tier_override_reason": "najpotężniejszy model wideo na rynku (upgrade z #1 HappyHorse-1.0)",
-    "tier_override_date": "2026-08-30"
+    "tier_override_date": "2026-09-06"
   },
   {
     "r": 5,
@@ -1945,7 +1945,7 @@ const M = [
     "score_date": "2026-08-16",
     "tier": "S",
     "tier_override_reason": "#1 na Artificial Analysis leaderboard (video generation)",
-    "tier_override_date": "2026-08-30",
+    "tier_override_date": "2026-09-06",
     "tier_override": "S"
   },
   {
@@ -3740,7 +3740,7 @@ const M = [
     "tier": "S",
     "tier_override": "S",
     "tier_override_reason": "#1 Frontend Code Arena (1679 pkt)",
-    "tier_override_date": "2026-08-30"
+    "tier_override_date": "2026-09-06"
   },
   {
     "n": "Bonsai 27B",
@@ -3942,7 +3942,7 @@ const M = [
     "tier": "S",
     "tier_override": "S",
     "tier_override_reason": "#1 na Artificial Analysis Image Arena (ELO 1375)",
-    "tier_override_date": "2026-08-30"
+    "tier_override_date": "2026-09-06"
   },
   {
     "r": 55,
@@ -4398,6 +4398,63 @@ const M = [
     "score": null,
     "score_source": "manual",
     "score_date": "2026-08-30",
+    "tier": "B"
+  },
+  {
+    "r": 61,
+    "n": "Claude Fable 5.1",
+    "v": "Anthropic",
+    "d": "2026-09-05",
+    "o": 0,
+    "c": "LLM",
+    "desc_pl": "Claude Fable 5.1 — najnowszy model Anthropic. Szczególnie dobry w agentic. Najdroższy model — 3.7x droższy niż GPT 5.6 Max. Mimo twierdzeń o scientific research, deep research + medical prompts rozczarowujące.",
+    "desc_en": "Claude Fable 5.1 — latest Anthropic model. Especially good in agentic. Most expensive — 3.7x more than GPT 5.6 Max. Despite scientific research claims, deep research + medical prompts disappointing.",
+    "b_pl": "Agentic coding, long-horizon tasks",
+    "b_en": "Agentic coding, long-horizon tasks",
+    "tags": [],
+    "url": "",
+    "yt": "rQ4yX5qNYdY",
+    "score": null,
+    "score_source": "manual",
+    "score_date": "2026-09-06",
+    "tier": "A"
+  },
+  {
+    "r": 27,
+    "n": "Lada Image",
+    "v": "Open-source",
+    "d": "2026-09-05",
+    "o": 1,
+    "c": "Image Generation",
+    "desc_pl": "Lada Image — open-source image generator + editor. 6B params, Turbo FP8 = 6.7GB. Realistic photos, posters, infographics. Edit text, colorize. Fits na consumer devices.",
+    "desc_en": "Lada Image — open-source image generator + editor. 6B params, Turbo FP8 = 6.7GB. Realistic photos, posters, infographics. Edit text, colorize. Fits on consumer devices.",
+    "b_pl": "6B params, FP8 6.7GB, image editing",
+    "b_en": "6B params, FP8 6.7GB, image editing",
+    "tags": [],
+    "url": "",
+    "yt": "rQ4yX5qNYdY",
+    "score": null,
+    "score_source": "manual",
+    "score_date": "2026-09-06",
+    "tier": "B"
+  },
+  {
+    "r": 26,
+    "n": "Vigle Animate",
+    "v": "Open-source",
+    "d": "2026-09-05",
+    "o": 1,
+    "c": "Video Generation",
+    "desc_pl": "Vigle Animate — swaps character w video clip using one edited frame. Full Minimax fine-tune 66GB. Models released. Automatically applies original motion onto new character.",
+    "desc_en": "Vigle Animate — swaps character in video clip using one edited frame. Full Minimax fine-tune 66GB. Models released. Automatically applies original motion onto new character.",
+    "b_pl": "Character swap, one frame, Minimax fine-tune",
+    "b_en": "Character swap, one frame, Minimax fine-tune",
+    "tags": [],
+    "url": "",
+    "yt": "rQ4yX5qNYdY",
+    "score": null,
+    "score_source": "manual",
+    "score_date": "2026-09-06",
     "tier": "B"
   }
 ];

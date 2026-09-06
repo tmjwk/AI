@@ -2,9 +2,189 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-09-04 20:47:49 UTC
+// Generated: 2026-09-06 04:18:04 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "GameGenX — video model → real-time interactive worlds — Open-source",
+    "title_en": "GameGenX — video model → real-time interactive worlds — Open-source",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "World Models",
+    "meta_en": "World Models",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "Google TimesFM3 — 330M params, time series forecasting, #1 — Google",
+    "title_en": "Google TimesFM3 — 330M params, time series forecasting, #1 — Google",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "AI Science Agents",
+    "meta_en": "AI Science Agents",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "Lucida — 3D room reconstruction z images, object-level — Open-source",
+    "title_en": "Lucida — 3D room reconstruction z images, object-level — Open-source",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "3D Generation",
+    "meta_en": "3D Generation",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "Video Deltaet — Minimax H3 faster than real-time (14s clip in 11s) — Open-source",
+    "title_en": "Video Deltaet — Minimax H3 faster than real-time (14s clip in 11s) — Open-source",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "Lada Image — open-source image generator+editor, 6B params, 6.7GB FP8 — Open-source",
+    "title_en": "Lada Image — open-source image generator+editor, 6B params, 6.7GB FP8 — Open-source",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "DeepSeek V4 Flash Vision — matches Opus 4.8, even beats non-vision V4 Flash — DeepSeek",
+    "title_en": "DeepSeek V4 Flash Vision — matches Opus 4.8, even beats non-vision V4 Flash — DeepSeek",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "Qwen 3.8 Max 0904 — beats old version, some benchmarks >Opus 5 and GPT 5.6 Sol — Alibaba",
+    "title_en": "Qwen 3.8 Max 0904 — beats old version, some benchmarks >Opus 5 and GPT 5.6 Sol — Alibaba",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "Claude Fable 5.1 — Anthropic's latest, agentic but most expensive (3.7x GPT 5.6 Max) — Anthropic",
+    "title_en": "Claude Fable 5.1 — Anthropic's latest, agentic but most expensive (3.7x GPT 5.6 Max) — Anthropic",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "Gemini 3.8 Flash — #8 na leaderboard, 348 tok/s, best price-performance — Google",
+    "title_en": "Gemini 3.8 Flash — #8 na leaderboard, 348 tok/s, best price-performance — Google",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "Cyber model — 2.6x more correct patches to Chrome vulnerabilities — Google",
+    "title_en": "Cyber model — 2.6x more correct patches to Chrome vulnerabilities — Google",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "Security",
+    "meta_en": "Security",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "GPT-6 Astra — state-of-the-art, 100% on exploit gym, saturates benchmarks — OpenAI",
+    "title_en": "GPT-6 Astra — state-of-the-art, 100% on exploit gym, saturates benchmarks — OpenAI",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "Google WeatherNext 3 — observation-based, 5x sharper, renewable energy — Google",
+    "title_en": "Google WeatherNext 3 — observation-based, 5x sharper, renewable energy — Google",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "AI Science Agents",
+    "meta_en": "AI Science Agents",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "FlyWire — fruit fly brain map: 166K neurons, 125M synapses — Research",
+    "title_en": "FlyWire — fruit fly brain map: 166K neurons, 125M synapses — Research",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "AI Research",
+    "meta_en": "AI Research",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "Atlas by World Labs (Fei-Fei Li) — 1min 1440p video, 3D geometry — World Labs",
+    "title_en": "Atlas by World Labs (Fei-Fei Li) — 1min 1440p video, 3D geometry — World Labs",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "World Models",
+    "meta_en": "World Models",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "Intern Lumina U2 — diffusion LLM, multimodal understanding, ER diagrams — Open-source",
+    "title_en": "Intern Lumina U2 — diffusion LLM, multimodal understanding, ER diagrams — Open-source",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "Multimodal",
+    "meta_en": "Multimodal",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "Vigle Animate — character swap w video z one edited frame — Open-source",
+    "title_en": "Vigle Animate — character swap w video z one edited frame — Open-source",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "Autoregressive diffusion world model — no max duration, video+audio — Open-source",
+    "title_en": "Autoregressive diffusion world model — no max duration, video+audio — Open-source",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "World Models",
+    "meta_en": "World Models",
+    "num": "##36-1"
+  },
+  {
+    "date": "2026-09-05",
+    "type": "ai_search",
+    "title_pl": "Higsfield — all-in-one AI creation platform, Cinema Studio — Higsfield",
+    "title_en": "Higsfield — all-in-one AI creation platform, Cinema Studio — Higsfield",
+    "link": "ai-releases.html###36-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##36-1"
+  },
   {
     "date": "2026-09-04",
     "type": "lev",
