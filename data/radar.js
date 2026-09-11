@@ -1,6 +1,609 @@
 // AI Radar — auto-generated from radar.json
 const episodes = [
   {
+    "id": "ep-2026-09-11",
+    "date": "2026-09-11",
+    "title_pl": "Exciting AI Updates Weekly — 11 września 2026",
+    "title_en": "Exciting AI Updates Weekly — September 11, 2026",
+    "yt": "g7awNqJoRjE",
+    "collapsed": true,
+    "sections": [
+      {
+        "type": "table",
+        "title_pl": "LM Arena Leaderboard (9 dni bez aktualizacji)",
+        "title_en": "LM Arena Leaderboard (9 days without update)",
+        "id": "lb-0911",
+        "num": 1,
+        "icon": "📊",
+        "headers": [
+          "Rank",
+          "Model",
+          "Score",
+          "Vendor"
+        ],
+        "rows": [
+          [
+            "1",
+            "Claude Fable 5.1",
+            "1450+",
+            "Anthropic"
+          ],
+          [
+            "2",
+            "GPT-6 Astra",
+            "1450",
+            "OpenAI"
+          ],
+          [
+            "3",
+            "Claude Opus 5",
+            "1430",
+            "Anthropic"
+          ],
+          [
+            "4",
+            "Grok 4.6",
+            "1430",
+            "xAI"
+          ],
+          [
+            "5",
+            "Kimi K3",
+            "1392",
+            "Moonshot"
+          ],
+          [
+            "6",
+            "Qwen 3.8 Max",
+            "1378",
+            "Alibaba"
+          ],
+          [
+            "7",
+            "GLM 5.3",
+            "1372",
+            "Z.AI"
+          ],
+          [
+            "8",
+            "DeepSeek V4 Pro",
+            "1368",
+            "DeepSeek"
+          ],
+          [
+            "9",
+            "Gemini 3.8 Flash",
+            "1352",
+            "Google"
+          ],
+          [
+            "10",
+            "Muse Spark",
+            "1320",
+            "Meta"
+          ]
+        ],
+        "notes_pl": "LM Arena leaderboard niestety nie aktualizowany przez 9 dni (do czasu nagrywania 11.09). Powyższy stan = ostatni snapshot. Cost per Intelligence: top = Claude/Fable ($9/task), dół = chińskie modele (~$0.06/task) = 100x różnica. Firmy agresywnie switch na chińskie modele — AT&T od 20% → 40% w miesiącach.",
+        "notes_en": "LM Arena leaderboard unfortunately not updated for 9 days (as of recording Sep 11). Above state = last snapshot. Cost per Intelligence: top = Claude/Fable ($9/task), bottom = Chinese models (~$0.06/task) = 100x difference. Companies aggressively switching to Chinese models — AT&T from 20% → 40% in months.",
+        "cards": []
+      },
+      {
+        "type": "cards",
+        "title_pl": "Cost Per Intelligence + Przełączanie na chińskie modele",
+        "title_en": "Cost Per Intelligence + Switch to Chinese models",
+        "id": "cost-0911",
+        "num": 2,
+        "icon": "💰",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c1",
+            "title": "GPT-6 Astra $50/M tokens — Claude Fable-level ceny, ale bardzo drogi",
+            "desc_pl": "GPT-6 Astra: bardzo dobry model, ale drogi. $50 per million output tokens (Claude Fable-level). Claude lepszy dla software architecture, Astra lepszy dla operational work. Artificial Analysis Intelligence Index: Astra 61 vs Fable 66 (Fable nadal lepszy dla thoughtful tasks).",
+            "desc_en": "GPT-6 Astra: very good model but expensive. $50 per million output tokens (Claude Fable-level). Claude better for software architecture, Astra better for operational work. Artificial Analysis Intelligence Index: Astra 61 vs Fable 66 (Fable still better for thoughtful tasks).",
+            "tags": [
+              "cost",
+              "LLM"
+            ],
+            "date": "2026-09-10",
+            "links": []
+          },
+          {
+            "id": "c2",
+            "title": "AT&T switch na chińskie modele — 20%→40%→60%, 80% oszczędności",
+            "desc_pl": "AT&T: przełącz z Amerykań models na chińskie open weight modele. W May chińskie modele = 20%, teraz 40%, wkrótce 60%. 80% oszczędności na kosztach AI. Trend cross-US: open modele od 10% → 60% w roku.",
+            "desc_en": "AT&T: switched from American models to Chinese open weight models. In May Chinese models = 20%, now 40%, soon 60%. 80% savings on AI costs. Trend cross-US: open models from 10% → 60% in a year.",
+            "tags": [
+              "cost",
+              "open-source"
+            ],
+            "date": "2026-09-10",
+            "links": []
+          },
+          {
+            "id": "c3",
+            "title": "NVIDIA kupuje HuggingFace za $13 miliardów — strategic pivot",
+            "desc_pl": "NVIDIA kupuje HuggingFace za $13B. HF = 3 mln modeli, 500K datasetów, 1M aplikacji, międzynarodowy hub dla developerów. NVIDIA pivot — bo Meta/OpenAI/Microsoft/Amazon budują własne chipy, więc NVIDIA idzie po developerów + chińskie modele via HF. NVIDIA becomes center of all this.",
+            "desc_en": "NVIDIA buys HuggingFace for $13B. HF = 3M models, 500K datasets, 1M applications, international hub for developers. NVIDIA pivot — because Meta/OpenAI/Microsoft/Amazon are building their own chips, so NVIDIA goes after developers + Chinese models via HF. NVIDIA becomes center of all this.",
+            "tags": [
+              "M&A",
+              "business"
+            ],
+            "date": "2026-09-10",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Nowe modele — DeepSeek V4.1, Spark x2.5, Quazar, K2 Horizon, Aram Studio v4",
+        "title_en": "New models — DeepSeek V4.1, Spark x2.5, Quazar, K2 Horizon, Aram Studio v4",
+        "id": "models-0911",
+        "num": 3,
+        "icon": "🆕",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c4",
+            "title": "DeepSeek V4.1 (Sep 10) — fast, cheap, high quality",
+            "desc_pl": "DeepSeek V4.1 — najnowszy release 10 września. High performance, lower cost, faster responses, shorter task completion. Cached token price bardzo mały (unbelievably small). Fast + cheap + good quality. Często używany jako cheaper alternative do GPT-6 Astra.",
+            "desc_en": "DeepSeek V4.1 — latest release September 10. High performance, lower cost, faster responses, shorter task completion. Cached token price unbelievably small. Fast + cheap + good quality. Often used as cheaper alternative to GPT-6 Astra.",
+            "tags": [
+              "LLM"
+            ],
+            "date": "2026-09-10",
+            "links": []
+          },
+          {
+            "id": "c5",
+            "title": "Spark x2.5 — 4B params, edge model, hybrid attention",
+            "desc_pl": "Spark x2.5 — chiński small model 4B params. Edge deployment. GitHub + HuggingFace + Ollama. 1M token context window, multiple languages, coding, tool use, agentic workflow. Hybrid attention. Very small + capable.",
+            "desc_en": "Spark x2.5 — Chinese small model 4B params. Edge deployment. GitHub + HuggingFace + Ollama. 1M token context window, multiple languages, coding, tool use, agentic workflow. Hybrid attention. Very small + capable.",
+            "tags": [
+              "LLM",
+              "open-source",
+              "edge"
+            ],
+            "date": "2026-09-10",
+            "links": []
+          },
+          {
+            "id": "c6",
+            "title": "Quazar 438B — hiszpański model, 1M context, EN+ES",
+            "desc_pl": "Quazar — model z Hiszpanii. 438B params, 1M token context window. Działa po angielsku i hiszpańsku. Przykład europejskiego modelu poza USA/China.",
+            "desc_en": "Quazar — model from Spain. 438B params, 1M token context window. Works in English and Spanish. Example of European model outside US/China.",
+            "tags": [
+              "LLM",
+              "open-source"
+            ],
+            "date": "2026-09-10",
+            "links": []
+          },
+          {
+            "id": "c7",
+            "title": "K2 Horizon — arabski model z Abu Dhabi, 1B-375B",
+            "desc_pl": "K2 Horizon — seria modeli z Abu Dhabi Institute of Foundation Models. Różne rozmiary od 1B do 375B params. Różne modele dla różnych celów. Arabska alternatywa.",
+            "desc_en": "K2 Horizon — series of models from Abu Dhabi Institute of Foundation Models. Different sizes from 1B to 375B params. Different models for different purposes. Arabian alternative.",
+            "tags": [
+              "LLM",
+              "open-source"
+            ],
+            "date": "2026-09-10",
+            "links": []
+          },
+          {
+            "id": "c8",
+            "title": "Aram Studio v4 — transformer w Rust, projekt zakończony",
+            "desc_pl": "Aram Studio v4 — transformer napisany w całości w Rust (zamiast PyTorch). Po 6 mies., 4 major versions, 54 phrases. Complete multimodal safety-bound LLM system. Autor: 'ostatnia wersja, projekt kończę bo osiągnąłem cel.'",
+            "desc_en": "Aram Studio v4 — transformer written entirely in Rust (instead of PyTorch). After 6 months, 4 major versions, 54 phrases. Complete multimodal safety-bound LLM system. Author: 'last version, ending project because I achieved the goal.'",
+            "tags": [
+              "LLM",
+              "open-source",
+              "Rust"
+            ],
+            "date": "2026-09-10",
+            "links": []
+          },
+          {
+            "id": "c9",
+            "title": "ChatGPT Images 2.5 — 50% lower latency, flare + sunburst modes",
+            "desc_pl": "ChatGPT Images 2.5 — najnowsza wersja. 50% lower latency. Dwa modele: Flare (fast default) i Sunburst (tighter editing precision). Sketch feature. Templates. Już używany w ChatGPT browser. Wydany over several days.",
+            "desc_en": "ChatGPT Images 2.5 — latest version. 50% lower latency. Two models: Flare (fast default) and Sunburst (tighter editing precision). Sketch feature. Templates. Already used in ChatGPT browser. Released over several days.",
+            "tags": [
+              "image"
+            ],
+            "date": "2026-09-10",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Apple Event (Sep 9) — AFM, iPhone Fold, Apple Watch, Apple Intelligence",
+        "title_en": "Apple Event (Sep 9) — AFM, iPhone Fold, Apple Watch, Apple Intelligence",
+        "id": "apple-0911",
+        "num": 4,
+        "icon": "🍎",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c10",
+            "title": "Apple Event Sep 9 — iPhone Fold, Apple Watch, Apple Intelligence",
+            "desc_pl": "Apple Event Sep 9. Nowy CEO John Turnis (Tim Cook odszedł). Produkty: iPhone Foldable, Apple Watch, Apple Intelligence. Wszystko about AI — własny Apple Foundation Model (AFM).",
+            "desc_en": "Apple Event Sep 9. New CEO John Turnis (Tim Cook stepped down). Products: iPhone Foldable, Apple Watch, Apple Intelligence. All about AI — own Apple Foundation Model (AFM).",
+            "tags": [
+              "hardware"
+            ],
+            "date": "2026-09-09",
+            "links": []
+          },
+          {
+            "id": "c11",
+            "title": "AFM — Apple Foundation Model, kolaboracja z Google Gemini?",
+            "desc_pl": "AFM (Apple Foundation Model) — więcej niż jeden model dla różnych case-ów. Apple mówi o kolaboracji z Google i Gemini models. Nie wiadomo czy to rebranded Gemini czy osobny model. Privacy-first —尽可能 run locally, tylko complex cases idą do chmury.",
+            "desc_en": "AFM (Apple Foundation Model) — more than one model for different cases. Apple mentions collaboration with Google and Gemini models. Unclear if rebranded Gemini or separate model. Privacy-first —尽可能 run locally, only complex cases go to cloud.",
+            "tags": [
+              "LLM",
+              "edge"
+            ],
+            "date": "2026-09-09",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "OpenAI Navier–Stokes + GPT-6 Astra 99.9% ARC AGI 3",
+        "title_en": "OpenAI Navier–Stokes + GPT-6 Astra 99.9% ARC AGI 3",
+        "id": "openai-0911",
+        "num": 5,
+        "icon": "🏆",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c12",
+            "title": "OpenAI Navier–Stokes — 10K agents, 88h, $2M+ inference, nie claimują prize",
+            "desc_pl": "OpenAI Navier–Stokes — Clay Millennium Prize problem solved (kontynuacja EP #286). 10,000 coordinating agents przez 88h. API cost 10M-40M tokens (~$2M+ w API). OpenAI nie claimuje Millennium Prize. Attribution debate: czy to ich praca czy kontynuacja poprzednich researcherów (ULA blowup).",
+            "desc_en": "OpenAI Navier–Stokes — Clay Millennium Prize problem solved (continuation of EP #286). 10,000 coordinating agents over 88h. API cost 10M-40M tokens (~$2M+ in API). OpenAI does not claim Millennium Prize. Attribution debate: their work or continuation of prior researchers' work (ULA blowup).",
+            "tags": [
+              "math",
+              "research"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c13",
+            "title": "GPT-6 Astra 99.9% ARC AGI 3 — harness is the king",
+            "desc_pl": "GPT-6 Astra twierdzi 99.9% na ARC AGI 3 (interactive computer game test). Standard harness = 62-63%. Własny harness Astra = 99.9%. Ten sam model = kompletnie różne wyniki w zależności od harnessu. 'Harness is the king.'",
+            "desc_en": "GPT-6 Astra claims 99.9% on ARC AGI 3 (interactive computer game test). Standard harness = 62-63%. Astra's own harness = 99.9%. Same model = completely different results depending on harness. 'Harness is the king.'",
+            "tags": [
+              "benchmark",
+              "LLM"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c14",
+            "title": "Can you run GPT-6 Astra locally? — No, just rent",
+            "desc_pl": "Analiza: czy warto kupić własne GPU żeby run GPT-6 Astra lokalnie? Wynik: nie warto. Potrzebne wiele komputerów + GPU + prąd. Koszty ogromne. Lepiej rent z cloud. Tylko dla very specific use cases.",
+            "desc_en": "Analysis: is it worth buying own GPU to run GPT-6 Astra locally? Result: not worth it. Many computers + GPU + electricity needed. Costs enormous. Better to rent from cloud. Only for very specific use cases.",
+            "tags": [
+              "cost",
+              "hardware"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c15",
+            "title": "Anthropic open sources Claude Commerce Agents",
+            "desc_pl": "Anthropic open-source 'Claude Commerce Agents' — several agents do selling on the website. Open source — dostępne dla wszystkich.",
+            "desc_en": "Anthropic open-sources 'Claude Commerce Agents' — several agents that do selling on the website. Open source — available to all.",
+            "tags": [
+              "agents",
+              "open-source"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "AI Safety + Embodied AI (Chiny) + Security",
+        "title_en": "AI Safety + Embodied AI (China) + Security",
+        "id": "safety-0911",
+        "num": 6,
+        "icon": "🛡️",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c16",
+            "title": "Jakub Pachocki 'no lab has solved alignment' — quote of the week",
+            "desc_pl": "Jakub Pachocki (chief scientist OpenAI): 'no lab has solved alignment and monitoring to a sufficient degree to continue responsibly scaling at maximum speed for much longer.' Lev: wszyscy główni vendors mają ten sam concern. Modele stają się dużo lepsze + self-evolving.",
+            "desc_en": "Jakub Pachocki (OpenAI chief scientist): 'no lab has solved alignment and monitoring to a sufficient degree to continue responsibly scaling at maximum speed for much longer.' Lev: all major vendors have same concern. Models becoming much better + self-evolving.",
+            "tags": [
+              "safety"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c17",
+            "title": "AI Safety — 'enforceable cross-lab pacing agreements' proposed",
+            "desc_pl": "AI Safety: 'success of model design may accelerate beyond human oversight. No tools which can reliably even monitor what the model is doing.' Possible solution: enforceable cross-lab international pacing agreements, strong evaluations, containment, demonstrated alignment before capability scaling. Lev: 'wishful thinking — pomoże trochę ale nie rozwiąże.'",
+            "desc_en": "AI Safety: 'success of model design may accelerate beyond human oversight. No tools which can reliably even monitor what the model is doing.' Possible solution: enforceable cross-lab international pacing agreements, strong evaluations, containment, demonstrated alignment before capability scaling. Lev: 'wishful thinking — will help a bit but won't solve.'",
+            "tags": [
+              "safety",
+              "regulation"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c18",
+            "title": "China embodied AI — from prototype to factory scale",
+            "desc_pl": "Chiny embodied AI: shift z prototype → factory deployment. Ballet sector shifted to production lines. Robot makers + manufacturers + local governments target factories + services. XBank (chińska firma) zaczął 80% automated production line dla humanoid robots. Unitree (słynny robot) open-source'ował 6B humanoid foundation model. Maven Robotics emerged from stealth z $100M Series A.",
+            "desc_en": "China embodied AI: shift from prototype → factory deployment. Ballet sector shifted to production lines. Robot makers + manufacturers + local governments target factories + services. XBank (Chinese company) started 80% automated production line for humanoid robots. Unitree (famous robot) open-sourced 6B humanoid foundation model. Maven Robotics emerged from stealth with $100M Series A.",
+            "tags": [
+              "robotics",
+              "China"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c19",
+            "title": "Unitree G1 exploit chain — unauthenticated root access",
+            "desc_pl": "Unitree G1 (humanoid robot) — security exploit chain reportly enables unauthenticated root access. Bezpieczeństwo robotów staje się urgent. Im więcej robotów w fabrykach, tym większe ryzyko.",
+            "desc_en": "Unitree G1 (humanoid robot) — security exploit chain reportedly enables unauthenticated root access. Robot security becomes urgent. More robots in factories = bigger risk.",
+            "tags": [
+              "security",
+              "robotics"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c20",
+            "title": "Sanders + Caesar: 'if we cannot control AI, ban it' — new legislation",
+            "desc_pl": "Sanders i Caesar chcą nowego legislation: 'jeśli nie możemy kontrolować AI, nie powinniśmy go release. Banujemy.' Ludzie should not use AI which is not controllable/reliable. Wiele osób object. Dyskusja ongoing.",
+            "desc_en": "Sanders and Caesar want new legislation: 'if we cannot control AI, we should not release it. Ban it.' People should not use AI which is not controllable/reliable. Many object. Discussion ongoing.",
+            "tags": [
+              "regulation"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c21",
+            "title": "US data center capacity shortage — Trump ban na chińskie optical transceiver",
+            "desc_pl": "US data center capacity może mieć major shortages. Trump w August executive order: restrictions na foreign-made bulk power equipment. Ban na new Chinese optical transceiver imports. Problem: zachodni manufacturers need 1-2 years to replace Chinese capacity. Data centers budowane masowo, ale brakuje części.",
+            "desc_en": "US data center capacity may have major shortages. Trump in August executive order: restrictions on foreign-made bulk power equipment. Ban on new Chinese optical transceiver imports. Problem: Western manufacturers need 1-2 years to replace Chinese capacity. Data centers built massively, but parts missing.",
+            "tags": [
+              "regulation",
+              "hardware"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "Coding + Agents + Architecture (Claude.md, Dev vs Prod, SQL, ChatGPT Work)",
+        "title_en": "Coding + Agents + Architecture (Claude.md, Dev vs Prod, SQL, ChatGPT Work)",
+        "id": "coding-0911",
+        "num": 7,
+        "icon": "💻",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c22",
+            "title": "Separating dev vs prod — Claude.md, different skills, Docker isolation",
+            "desc_pl": "Architektura: separating dev vs prod. Claude Code + cloud.md + .claude/ (rules, skills, MCP). Scenario 1: biznes user → business skills (accounting, audit). Scenario 2: developer → software development skills. Powinny mieć different claude.md, different rules, different skills, different MCP servers, different everything. Solution: Docker file copies only relevant dirs — runtime nie widzi dev rules.",
+            "desc_en": "Architecture: separating dev vs prod. Claude Code + cloud.md + .claude/ (rules, skills, MCP). Scenario 1: business user → business skills (accounting, audit). Scenario 2: developer → software development skills. Should have different claude.md, different rules, different skills, different MCP servers, different everything. Solution: Docker file copies only relevant dirs — runtime doesn't see dev rules.",
+            "tags": [
+              "architecture",
+              "coding"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c23",
+            "title": "Harness of Harnesses — Shanghai AI Lab, multi-day supervisory",
+            "desc_pl": "Harness of Harnesses (Shanghai Artificial Intelligence Lab) — wraps existing coding agent harness (Codex) z outer supervisory runtime. Repeatedly plans, develops, independently tests changes across multi-day cloud/local runs. Regular agent = short-term agentic work. HoH = supervisory longer-term strategic planning. Supervisor + worker structure.",
+            "desc_en": "Harness of Harnesses (Shanghai Artificial Intelligence Lab) — wraps existing coding agent harness (Codex) with outer supervisory runtime. Repeatedly plans, develops, independently tests changes across multi-day cloud/local runs. Regular agent = short-term agentic work. HoH = supervisory longer-term strategic planning. Supervisor + worker structure.",
+            "tags": [
+              "coding",
+              "agent"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c24",
+            "title": "SQL for Agents safely — Conductor + Y Combinator + Planet Scale",
+            "desc_pl": "SQL for Agents safely. Agents stają się effective gdy business data transcripts mirror SQL interface. Formuluj query w language → create SQL. Conductor + Y Combinator + Planet Scale + YouTube video explain how to use this system to generate SQL safely.",
+            "desc_en": "SQL for Agents safely. Agents become effective when business data transcripts mirror SQL interface. Formulate query in language → create SQL. Conductor + Y Combinator + Planet Scale + YouTube video explain how to use this system to generate SQL safely.",
+            "tags": [
+              "agent",
+              "data"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c25",
+            "title": "ChatGPT Work cloud browser — works after you close laptop",
+            "desc_pl": "ChatGPT Work: now 'cloud browser' — works in the cloud. Idzie na authenticated websites + robi lots of work even after you close laptop. ChatGPT Work can use its computer and browser on the cloud to sign into websites — on web + mobile, without ChatGPT ever seeing your username and password. Once signed in, stays signed in.",
+            "desc_en": "ChatGPT Work: now 'cloud browser' — works in the cloud. Goes to authenticated websites + does lots of work even after you close laptop. ChatGPT Work can use its computer and browser on the cloud to sign into websites — on web + mobile, without ChatGPT ever seeing your username and password. Once signed in, stays signed in.",
+            "tags": [
+              "agent",
+              "product"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c26",
+            "title": "Vercel: AI authored 25-35% of merged PRs, closes 70-80% of issues",
+            "desc_pl": "Open-source projects under attack: ludzie wokół świata find same bug, report 100 times. Maintainers nie mogą handle avalanche. Solution: ignorują outsider reports, używają własnego AI agenta do verify + find + fix bugs. Vercel: 4 weeks of factory authored 25-35% of merged PRs, closes 70-80% of issues.",
+            "desc_en": "Open-source projects under attack: people around the world find same bug, report 100 times. Maintainers can't handle avalanche. Solution: ignore outsider reports, use own AI agent to verify + find + fix bugs. Vercel: 4 weeks of factory authored 25-35% of merged PRs, closes 70-80% of issues.",
+            "tags": [
+              "coding",
+              "open-source"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c27",
+            "title": "Claude solved cryptogram from 1653 — Sir Thomas Urquhart",
+            "desc_pl": "Claude solved cryptogram z 1653. AI figured out that text can be used as key to decipher cryptogram. Hidden message: 'God uphold King Charles II and make him the supreme ruler of the land.' Scottish writer Sir Thomas Urquhart created this. Nie rozwiązane przez many years. Teraz Claude to solved.",
+            "desc_en": "Claude solved cryptogram from 1653. AI figured out that text can be used as key to decipher cryptogram. Hidden message: 'God uphold King Charles II and make him the supreme ruler of the land.' Scottish writer Sir Thomas Urquhart created this. Not solved for many years. Now Claude solved it.",
+            "tags": [
+              "research",
+              "history"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title_pl": "News + Funding + Tools + Misc",
+        "title_en": "News + Funding + Tools + Misc",
+        "id": "news-0911",
+        "num": 8,
+        "icon": "📰",
+        "headers": [],
+        "rows": [],
+        "notes_pl": "",
+        "notes_en": "",
+        "cards": [
+          {
+            "id": "c28",
+            "title": "Transcription price drop — through the basement floor",
+            "desc_pl": "Transcription price drop. Microsoft i Meta released latest transcription frameworks. Faster + bidirectional + cost 'through the basement floor.' Audio → text: fast + high quality + cheap. Modele using AI.",
+            "desc_en": "Transcription price drop. Microsoft and Meta released latest transcription frameworks. Faster + bidirectional + cost 'through the basement floor.' Audio → text: fast + high quality + cheap. Models using AI.",
+            "tags": [
+              "audio",
+              "cost"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c29",
+            "title": "Crusor $3B at $30B valuation — ex-crypto miner pivots to AI",
+            "desc_pl": "Crusor raises $3B at $30B valuation. Infrastructure hardware company. Started jako crypto miner, pivoted to AI infrastructure, teraz thinking about IPO. Launches self-hosted cloud agents — install w bank's own data center behind firewall. Secure + private.",
+            "desc_en": "Crusor raises $3B at $30B valuation. Infrastructure hardware company. Started as crypto miner, pivoted to AI infrastructure, now thinking about IPO. Launches self-hosted cloud agents — install in bank's own data center behind firewall. Secure + private.",
+            "tags": [
+              "funding",
+              "business"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c30",
+            "title": "Cognition $1B at $48B — Relay unicorn in 48h, $100M",
+            "desc_pl": "Cognition closing $1B funding at $48B valuation. Receiving $900M annually, burning $800M on data centers — net small. Relay went from opening to unicorn status in 48h z $100M after query. Lots of money moving around.",
+            "desc_en": "Cognition closing $1B funding at $48B valuation. Receiving $900M annually, burning $800M on data centers — net small. Relay went from opening to unicorn status in 48h with $100M after query. Lots of money moving around.",
+            "tags": [
+              "funding",
+              "business"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c31",
+            "title": "Gen 1.5 — physical prompting, learn from one 3-12s video",
+            "desc_pl": "Gen 1.5 robotics generalist AI — physical prompting. Off-the-shelf robot arm manipulation. Robot używa short 3-12s video jako sense + remote demonstration + learns from it. Conventional robot policies need extensive tongue-specific data + retraining. Physical prompting = operator teach behavior by showing it once. 59.1% one-shot success across 10 short tasks. Dream scenario.",
+            "desc_en": "Gen 1.5 robotics generalist AI — physical prompting. Off-the-shelf robot arm manipulation. Robot uses short 3-12s video as sense + remote demonstration + learns from it. Conventional robot policies need extensive tongue-specific data + retraining. Physical prompting = operator teach behavior by showing it once. 59.1% one-shot success across 10 short tasks. Dream scenario.",
+            "tags": [
+              "robotics",
+              "research"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c32",
+            "title": "Gen AR — forecasting model for trading, graph interpolation",
+            "desc_pl": "Gen AR — end-to-end multivariate time series forecasting model dla trading. Neural network z graph interpolation attention recursive network. Forecast several related time series together (prices, volumes, technical indicators). Bardzo interesting system.",
+            "desc_en": "Gen AR — end-to-end multivariate time series forecasting model for trading. Neural network with graph interpolation attention recursive network. Forecast several related time series together (prices, volumes, technical indicators). Very interesting system.",
+            "tags": [
+              "research",
+              "finance"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c33",
+            "title": "Everything Claude Code — 200 skills, 64 sub-agents",
+            "desc_pl": "Everything Claude Code — platform z ~200 skills i 64 sub-agents. Może robić dużo stuff. Ciekawy projekt.",
+            "desc_en": "Everything Claude Code — platform with ~200 skills and 64 sub-agents. Can do lots of stuff. Interesting project.",
+            "tags": [
+              "coding",
+              "agent"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c34",
+            "title": "Google preferred sources button — loyalty tool, not ranking boost",
+            "desc_pl": "Google Search: nowy 'preferred sources' button. User klika → system uczy się co user lubi. Loyalty tool, nie universal ranking boost. Google also announced natural language discover feed controls.",
+            "desc_en": "Google Search: new 'preferred sources' button. User clicks → system learns what user likes. Loyalty tool, not universal ranking boost. Google also announced natural language discover feed controls.",
+            "tags": [
+              "search"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          },
+          {
+            "id": "c35",
+            "title": "Uber layoffs w September + Jakob Pachocki quote — outro",
+            "desc_pl": "September layoffs: Uber masowo. Jakob Pachocki (OpenAI chief sci) quote otwiera i zamyka odcinek — 'no lab has solved alignment.' AI 4 lata od ChatGPT release (Nov 30, 2022). Lev poprosił o feedback + answer w commentach.",
+            "desc_en": "September layoffs: Uber massively. Jakob Pachocki (OpenAI chief sci) quote opens and closes the episode — 'no lab has solved alignment.' AI 4 years since ChatGPT release (Nov 30, 2022). Lev asked for feedback + answer in comments.",
+            "tags": [
+              "news",
+              "safety"
+            ],
+            "date": "2026-09-08",
+            "links": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "ep-2026-09-04",
     "date": "2026-09-04",
     "title_pl": "Exciting AI Updates Weekly — 4 września 2026",
@@ -6199,57 +6802,69 @@ const sticky = [
     "items": [
       {
         "dot_color": "green",
-        "html_pl": "<strong>open-source od alibaba</strong> — buduje wirtualny świat wewnątrz ai do symulacji środowiska agentowego.",
-        "html_en": "<strong>open-source from alibaba</strong> — builds virtual world inside ai to simulate agentic environment.",
-        "episode_id": "ep-2026-07-03"
+        "html_pl": "<strong>nvidia kupuje huggingface za $13b</strong> — bo meta/openai/microsoft/amazon budują własne chipy, więc nvidia idzie po developerów + chińskie modele via hf. nvidia b",
+        "html_en": "<strong>nvidia buys huggingface for $13b</strong> — because meta/openai/microsoft/amazon are building their own chips, so nvidia goes after developers + chinese models via ",
+        "episode_id": "ep-2026-09-11"
       },
       {
         "dot_color": "green",
-        "html_pl": "otwartoźródłowy, agentowy model moe do kodowania (9b-397b), obudowa (harness) wbudowana w wagi modelu. pokonuje najnowocześniejsze modele komercyjne. ",
-        "html_en": "open-source agentic coding moe (9b-397b), harness trained into model weights. beats frontier models. $100m funding, santa clara.",
-        "episode_id": "ep-2026-07-03"
+        "html_pl": "<strong>spark x2</strong> — chiński small model 4b params. edge deployment. github + huggingface + ollama. 1m token context window, multiple languag",
+        "html_en": "<strong>spark x2</strong> — chinese small model 4b params. edge deployment. github + huggingface + ollama. 1m token context window, multiple languag",
+        "episode_id": "ep-2026-09-11"
       },
       {
         "dot_color": "green",
-        "html_pl": "<strong>25,000 oszustów bombardsowali modele anthropic, zbierając q&a pary do treningu chińskich modeli</strong> — id wymagane dla darmowych kont. nie wdrożone jeszcze.",
-        "html_en": "<strong>25,000 fraudsters bombarded anthropic models, collecting q&a pairs for training chinese models</strong> — id required for free accounts. not implemented yet.",
-        "episode_id": "ep-2026-07-03"
+        "html_pl": "<strong>aram studio v4</strong> — transformer napisany w całości w rust (zamiast pytorch). po 6 mies., 4 major versions, 54 phrases. complete multimodal s",
+        "html_en": "<strong>aram studio v4</strong> — transformer written entirely in rust (instead of pytorch). after 6 months, 4 major versions, 54 phrases. complete multim",
+        "episode_id": "ep-2026-09-11"
       },
       {
         "dot_color": "green",
-        "html_pl": "<strong>rząd i duże firmy mają dostęp do najnowszych modeli (gpt 5</strong> — najlepsze modele w open-source.",
-        "html_en": "<strong>government and big companies have access to latest models (gpt 5</strong> — best models in open-source.",
-        "episode_id": "ep-2026-07-03"
+        "html_pl": "<strong>afm (apple foundation model)</strong> — więcej niż jeden model dla różnych case-ów. apple mówi o kolaboracji z google i gemini models. nie wiadomo czy to rebran",
+        "html_en": "<strong>afm (apple foundation model)</strong> — more than one model for different cases. apple mentions collaboration with google and gemini models. unclear if rebrande",
+        "episode_id": "ep-2026-09-11"
       },
       {
         "dot_color": "green",
-        "html_pl": "1. uruchom podagenty 2. napisz mi specyfikację wdrożeniową 3. przeprowadź ze mną wywiad na temat projektu 4. zweryfikuj, zanim zbudujesz 5. zbuduj mi ",
-        "html_en": "1. launch sub agents  2. write me an implementation spec  3. interview me about the project  4. verify before you build  5. build me a skill  6. autom",
-        "episode_id": "ep-2026-07-03"
+        "html_pl": "<strong>openai navier–stokes</strong> — clay millennium prize problem solved (kontynuacja ep #286). 10,000 coordinating agents przez 88h. api cost 10m-40m token",
+        "html_en": "<strong>openai navier–stokes</strong> — clay millennium prize problem solved (continuation of ep #286). 10,000 coordinating agents over 88h. api cost 10m-40m to",
+        "episode_id": "ep-2026-09-11"
       },
       {
         "dot_color": "green",
-        "html_pl": "<strong>langchain: over-abstraction (8 poziomów), docs nie matchują kodu, breaking changes</strong> — agent harness z planowaniem i sub-agentami.",
-        "html_en": "<strong>langchain: over-abstraction (8 levels), docs don't match code, breaking changes</strong> — agent harness with planning and sub-agents.",
-        "episode_id": "ep-2026-07-03"
+        "html_pl": "analiza: czy warto kupić własne gpu żeby run gpt-6 astra lokalnie? wynik: nie warto. potrzebne wiele komputerów + gpu + prąd. koszty ogromne. lepiej r",
+        "html_en": "analysis: is it worth buying own gpu to run gpt-6 astra locally? result: not worth it. many computers + gpu + electricity needed. costs enormous. bett",
+        "episode_id": "ep-2026-09-11"
       },
       {
         "dot_color": "green",
-        "html_pl": "<strong>open-source alternatywa dla claude tag</strong> — działa ze slack, whatsapp i dowolnym modelem (nie tylko claude). własny copilot.",
-        "html_en": "<strong>open-source alternative to claude tag</strong> — works with slack, whatsapp and any model (not just claude). own copilot.",
-        "episode_id": "ep-2026-07-03"
+        "html_pl": "<strong>anthropic open-source 'claude commerce agents'</strong> — several agents do selling on the website. open source",
+        "html_en": "<strong>anthropic open-sources 'claude commerce agents'</strong> — several agents that do selling on the website. open source",
+        "episode_id": "ep-2026-09-11"
       },
       {
         "dot_color": "green",
-        "html_pl": "<strong>open-source narzędzie deepseek</strong> — draft model przewiduje bloki tokenów naraz. do 85% szybciej dla deepseek v4, działa z qwen i gemma.",
-        "html_en": "<strong>open-source tool from deepseek</strong> — draft model predicts a block of tokens at once. up to 85% faster for deepseek v4, works with qwen and gemma.",
-        "episode_id": "ep-2026-07-03"
+        "html_pl": "<strong>ai safety: 'success of model design may accelerate beyond human oversight</strong> — pomoże trochę ale nie rozwiąże.'",
+        "html_en": "<strong>ai safety: 'success of model design may accelerate beyond human oversight</strong> — will help a bit but won't solve.'",
+        "episode_id": "ep-2026-09-11"
       },
       {
         "dot_color": "green",
-        "html_pl": "x wydał serwer mcp (model context protocol) do zapytań o dane z twittera. oprogramowanie jest darmowe, ale dostęp do danych jest płatny.",
-        "html_en": "x released mcp server for querying twitter data. software free, but data access paid.",
-        "episode_id": "ep-2026-07-03"
+        "html_pl": "<strong>architektura: separating dev vs prod</strong> — runtime nie widzi dev rules.",
+        "html_en": "<strong>architecture: separating dev vs prod</strong> — runtime doesn't see dev rules.",
+        "episode_id": "ep-2026-09-11"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "open-source projects under attack: ludzie wokół świata find same bug, report 100 times. maintainers nie mogą handle avalanche. solution: ignorują outs",
+        "html_en": "open-source projects under attack: people around the world find same bug, report 100 times. maintainers can't handle avalanche. solution: ignore outsi",
+        "episode_id": "ep-2026-09-11"
+      },
+      {
+        "dot_color": "green",
+        "html_pl": "<strong>gen 1</strong> — physical prompting. off-the-shelf robot arm manipulation. robot używa short 3-12s video jako sense + remote demonstratio",
+        "html_en": "<strong>gen 1</strong> — physical prompting. off-the-shelf robot arm manipulation. robot uses short 3-12s video as sense + remote demonstration +",
+        "episode_id": "ep-2026-09-11"
       }
     ],
     "title_pl": "CO JEST OBECNIE MOŻLIWE",

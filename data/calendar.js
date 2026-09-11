@@ -2,9 +2,379 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-09-06 04:18:04 UTC
+// Generated: 2026-09-11 20:59:34 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-09-11",
+    "type": "diamandis",
+    "title_pl": "Podcast #287 — Badacz odchodzi: \"Hazard z naszymi życiami,\" Altman wzywa do spowolnienia i wyścig laboratoriów | #287",
+    "title_en": "Podcast #287 — Researcher Quits: \"Gambling With Our Lives,\" Altman Calls for Slowdown, and Labs Race | EP #287",
+    "link": "ai-pulse.html#287",
+    "meta_pl": "15 tematów",
+    "meta_en": "15 topics",
+    "num": "#287"
+  },
+  {
+    "date": "2026-09-10",
+    "type": "lev",
+    "title_pl": "GPT-6 Astra $50/M tokens — Claude Fable-level ceny, ale bardzo drogi",
+    "title_en": "GPT-6 Astra $50/M tokens — Claude Fable-level ceny, ale bardzo drogi",
+    "link": "ai-radar.html#card-c1",
+    "meta_pl": "Cost Per Intelligence + Przełą",
+    "meta_en": "Cost Per Intelligence + Przełą",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-10",
+    "type": "lev",
+    "title_pl": "AT&T switch na chińskie modele — 20%→40%→60%, 80% oszczędności",
+    "title_en": "AT&T switch na chińskie modele — 20%→40%→60%, 80% oszczędności",
+    "link": "ai-radar.html#card-c2",
+    "meta_pl": "Cost Per Intelligence + Przełą",
+    "meta_en": "Cost Per Intelligence + Przełą",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-10",
+    "type": "lev",
+    "title_pl": "NVIDIA kupuje HuggingFace za $13 miliardów — strategic pivot",
+    "title_en": "NVIDIA kupuje HuggingFace za $13 miliardów — strategic pivot",
+    "link": "ai-radar.html#card-c3",
+    "meta_pl": "Cost Per Intelligence + Przełą",
+    "meta_en": "Cost Per Intelligence + Przełą",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-10",
+    "type": "lev",
+    "title_pl": "DeepSeek V4.1 (Sep 10) — fast, cheap, high quality",
+    "title_en": "DeepSeek V4.1 (Sep 10) — fast, cheap, high quality",
+    "link": "ai-radar.html#card-c4",
+    "meta_pl": "Nowe modele — DeepSeek V4.1, S",
+    "meta_en": "Nowe modele — DeepSeek V4.1, S",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-10",
+    "type": "lev",
+    "title_pl": "Spark x2.5 — 4B params, edge model, hybrid attention",
+    "title_en": "Spark x2.5 — 4B params, edge model, hybrid attention",
+    "link": "ai-radar.html#card-c5",
+    "meta_pl": "Nowe modele — DeepSeek V4.1, S",
+    "meta_en": "Nowe modele — DeepSeek V4.1, S",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-10",
+    "type": "lev",
+    "title_pl": "Quazar 438B — hiszpański model, 1M context, EN+ES",
+    "title_en": "Quazar 438B — hiszpański model, 1M context, EN+ES",
+    "link": "ai-radar.html#card-c6",
+    "meta_pl": "Nowe modele — DeepSeek V4.1, S",
+    "meta_en": "Nowe modele — DeepSeek V4.1, S",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-10",
+    "type": "lev",
+    "title_pl": "K2 Horizon — arabski model z Abu Dhabi, 1B-375B",
+    "title_en": "K2 Horizon — arabski model z Abu Dhabi, 1B-375B",
+    "link": "ai-radar.html#card-c7",
+    "meta_pl": "Nowe modele — DeepSeek V4.1, S",
+    "meta_en": "Nowe modele — DeepSeek V4.1, S",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-10",
+    "type": "lev",
+    "title_pl": "Aram Studio v4 — transformer w Rust, projekt zakończony",
+    "title_en": "Aram Studio v4 — transformer w Rust, projekt zakończony",
+    "link": "ai-radar.html#card-c8",
+    "meta_pl": "Nowe modele — DeepSeek V4.1, S",
+    "meta_en": "Nowe modele — DeepSeek V4.1, S",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-10",
+    "type": "lev",
+    "title_pl": "ChatGPT Images 2.5 — 50% lower latency, flare + sunburst modes",
+    "title_en": "ChatGPT Images 2.5 — 50% lower latency, flare + sunburst modes",
+    "link": "ai-radar.html#card-c9",
+    "meta_pl": "Nowe modele — DeepSeek V4.1, S",
+    "meta_en": "Nowe modele — DeepSeek V4.1, S",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "diamandis",
+    "title_pl": "Podcast #286 — Jensen: \"AGI nadeszło,\" agenty OpenAI przejmują niemiecką wiki, & OpenAI rozwiązuje Naviera–Stokesa | #286",
+    "title_en": "Podcast #286 — Jensen Says \"AGI Has Arrived,\" OpenAI Agents Hijack a German Website, & OpenAI Solves Navier-Stokes | EP #286",
+    "link": "ai-pulse.html#286",
+    "meta_pl": "14 tematów",
+    "meta_en": "14 topics",
+    "num": "#286"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "lev",
+    "title_pl": "Apple Event Sep 9 — iPhone Fold, Apple Watch, Apple Intelligence",
+    "title_en": "Apple Event Sep 9 — iPhone Fold, Apple Watch, Apple Intelligence",
+    "link": "ai-radar.html#card-c10",
+    "meta_pl": "Apple Event (Sep 9) — AFM, iPh",
+    "meta_en": "Apple Event (Sep 9) — AFM, iPh",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "lev",
+    "title_pl": "AFM — Apple Foundation Model, kolaboracja z Google Gemini?",
+    "title_en": "AFM — Apple Foundation Model, kolaboracja z Google Gemini?",
+    "link": "ai-radar.html#card-c11",
+    "meta_pl": "Apple Event (Sep 9) — AFM, iPh",
+    "meta_en": "Apple Event (Sep 9) — AFM, iPh",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "OpenAI Navier–Stokes — 10K agents, 88h, $2M+ inference, nie claimują prize",
+    "title_en": "OpenAI Navier–Stokes — 10K agents, 88h, $2M+ inference, nie claimują prize",
+    "link": "ai-radar.html#card-c12",
+    "meta_pl": "OpenAI Navier–Stokes + GPT-6 A",
+    "meta_en": "OpenAI Navier–Stokes + GPT-6 A",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "GPT-6 Astra 99.9% ARC AGI 3 — harness is the king",
+    "title_en": "GPT-6 Astra 99.9% ARC AGI 3 — harness is the king",
+    "link": "ai-radar.html#card-c13",
+    "meta_pl": "OpenAI Navier–Stokes + GPT-6 A",
+    "meta_en": "OpenAI Navier–Stokes + GPT-6 A",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Can you run GPT-6 Astra locally? — No, just rent",
+    "title_en": "Can you run GPT-6 Astra locally? — No, just rent",
+    "link": "ai-radar.html#card-c14",
+    "meta_pl": "OpenAI Navier–Stokes + GPT-6 A",
+    "meta_en": "OpenAI Navier–Stokes + GPT-6 A",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Anthropic open sources Claude Commerce Agents",
+    "title_en": "Anthropic open sources Claude Commerce Agents",
+    "link": "ai-radar.html#card-c15",
+    "meta_pl": "OpenAI Navier–Stokes + GPT-6 A",
+    "meta_en": "OpenAI Navier–Stokes + GPT-6 A",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Jakub Pachocki 'no lab has solved alignment' — quote of the week",
+    "title_en": "Jakub Pachocki 'no lab has solved alignment' — quote of the week",
+    "link": "ai-radar.html#card-c16",
+    "meta_pl": "AI Safety + Embodied AI (Chiny",
+    "meta_en": "AI Safety + Embodied AI (Chiny",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "AI Safety — 'enforceable cross-lab pacing agreements' proposed",
+    "title_en": "AI Safety — 'enforceable cross-lab pacing agreements' proposed",
+    "link": "ai-radar.html#card-c17",
+    "meta_pl": "AI Safety + Embodied AI (Chiny",
+    "meta_en": "AI Safety + Embodied AI (Chiny",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "China embodied AI — from prototype to factory scale",
+    "title_en": "China embodied AI — from prototype to factory scale",
+    "link": "ai-radar.html#card-c18",
+    "meta_pl": "AI Safety + Embodied AI (Chiny",
+    "meta_en": "AI Safety + Embodied AI (Chiny",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Unitree G1 exploit chain — unauthenticated root access",
+    "title_en": "Unitree G1 exploit chain — unauthenticated root access",
+    "link": "ai-radar.html#card-c19",
+    "meta_pl": "AI Safety + Embodied AI (Chiny",
+    "meta_en": "AI Safety + Embodied AI (Chiny",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Sanders + Caesar: 'if we cannot control AI, ban it' — new legislation",
+    "title_en": "Sanders + Caesar: 'if we cannot control AI, ban it' — new legislation",
+    "link": "ai-radar.html#card-c20",
+    "meta_pl": "AI Safety + Embodied AI (Chiny",
+    "meta_en": "AI Safety + Embodied AI (Chiny",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "US data center capacity shortage — Trump ban na chińskie optical transceiver",
+    "title_en": "US data center capacity shortage — Trump ban na chińskie optical transceiver",
+    "link": "ai-radar.html#card-c21",
+    "meta_pl": "AI Safety + Embodied AI (Chiny",
+    "meta_en": "AI Safety + Embodied AI (Chiny",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Separating dev vs prod — Claude.md, different skills, Docker isolation",
+    "title_en": "Separating dev vs prod — Claude.md, different skills, Docker isolation",
+    "link": "ai-radar.html#card-c22",
+    "meta_pl": "Coding + Agents + Architecture",
+    "meta_en": "Coding + Agents + Architecture",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Harness of Harnesses — Shanghai AI Lab, multi-day supervisory",
+    "title_en": "Harness of Harnesses — Shanghai AI Lab, multi-day supervisory",
+    "link": "ai-radar.html#card-c23",
+    "meta_pl": "Coding + Agents + Architecture",
+    "meta_en": "Coding + Agents + Architecture",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "SQL for Agents safely — Conductor + Y Combinator + Planet Scale",
+    "title_en": "SQL for Agents safely — Conductor + Y Combinator + Planet Scale",
+    "link": "ai-radar.html#card-c24",
+    "meta_pl": "Coding + Agents + Architecture",
+    "meta_en": "Coding + Agents + Architecture",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "ChatGPT Work cloud browser — works after you close laptop",
+    "title_en": "ChatGPT Work cloud browser — works after you close laptop",
+    "link": "ai-radar.html#card-c25",
+    "meta_pl": "Coding + Agents + Architecture",
+    "meta_en": "Coding + Agents + Architecture",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Vercel: AI authored 25-35% of merged PRs, closes 70-80% of issues",
+    "title_en": "Vercel: AI authored 25-35% of merged PRs, closes 70-80% of issues",
+    "link": "ai-radar.html#card-c26",
+    "meta_pl": "Coding + Agents + Architecture",
+    "meta_en": "Coding + Agents + Architecture",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Claude solved cryptogram from 1653 — Sir Thomas Urquhart",
+    "title_en": "Claude solved cryptogram from 1653 — Sir Thomas Urquhart",
+    "link": "ai-radar.html#card-c27",
+    "meta_pl": "Coding + Agents + Architecture",
+    "meta_en": "Coding + Agents + Architecture",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Transcription price drop — through the basement floor",
+    "title_en": "Transcription price drop — through the basement floor",
+    "link": "ai-radar.html#card-c28",
+    "meta_pl": "News + Funding + Tools + Misc",
+    "meta_en": "News + Funding + Tools + Misc",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Crusor $3B at $30B valuation — ex-crypto miner pivots to AI",
+    "title_en": "Crusor $3B at $30B valuation — ex-crypto miner pivots to AI",
+    "link": "ai-radar.html#card-c29",
+    "meta_pl": "News + Funding + Tools + Misc",
+    "meta_en": "News + Funding + Tools + Misc",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Cognition $1B at $48B — Relay unicorn in 48h, $100M",
+    "title_en": "Cognition $1B at $48B — Relay unicorn in 48h, $100M",
+    "link": "ai-radar.html#card-c30",
+    "meta_pl": "News + Funding + Tools + Misc",
+    "meta_en": "News + Funding + Tools + Misc",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Gen 1.5 — physical prompting, learn from one 3-12s video",
+    "title_en": "Gen 1.5 — physical prompting, learn from one 3-12s video",
+    "link": "ai-radar.html#card-c31",
+    "meta_pl": "News + Funding + Tools + Misc",
+    "meta_en": "News + Funding + Tools + Misc",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Gen AR — forecasting model for trading, graph interpolation",
+    "title_en": "Gen AR — forecasting model for trading, graph interpolation",
+    "link": "ai-radar.html#card-c32",
+    "meta_pl": "News + Funding + Tools + Misc",
+    "meta_en": "News + Funding + Tools + Misc",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Everything Claude Code — 200 skills, 64 sub-agents",
+    "title_en": "Everything Claude Code — 200 skills, 64 sub-agents",
+    "link": "ai-radar.html#card-c33",
+    "meta_pl": "News + Funding + Tools + Misc",
+    "meta_en": "News + Funding + Tools + Misc",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Google preferred sources button — loyalty tool, not ranking boost",
+    "title_en": "Google preferred sources button — loyalty tool, not ranking boost",
+    "link": "ai-radar.html#card-c34",
+    "meta_pl": "News + Funding + Tools + Misc",
+    "meta_en": "News + Funding + Tools + Misc",
+    "num": "ep-2026-09-11"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "lev",
+    "title_pl": "Uber layoffs w September + Jakob Pachocki quote — outro",
+    "title_en": "Uber layoffs w September + Jakob Pachocki quote — outro",
+    "link": "ai-radar.html#card-c35",
+    "meta_pl": "News + Funding + Tools + Misc",
+    "meta_en": "News + Funding + Tools + Misc",
+    "num": "ep-2026-09-11"
+  },
   {
     "date": "2026-09-05",
     "type": "ai_search",
