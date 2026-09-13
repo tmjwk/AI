@@ -2,9 +2,229 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-09-11 20:59:34 UTC
+// Generated: 2026-09-13 16:37:03 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "Marigold v2 — depth i surface normals z obrazu, pixel-level — Huawei",
+    "title_en": "Marigold v2 — depth i surface normals z obrazu, pixel-level — Huawei",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "Unimate — animuje dowolny 3D skeleton (Garfield, dragon, satellite) — Open-source",
+    "title_en": "Unimate — animuje dowolny 3D skeleton (Garfield, dragon, satellite) — Open-source",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "Animation",
+    "meta_en": "Animation",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "AlphaGenome Atlas — 9 mld mutacji przewidzianych, 1 petabajt — Google DeepMind",
+    "title_en": "AlphaGenome Atlas — 9 mld mutacji przewidzianych, 1 petabajt — Google DeepMind",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "AI Research",
+    "meta_en": "AI Research",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "Lingbot World 2 — real-time interactive world, 720p@60fps, NPCs — Open-source",
+    "title_en": "Lingbot World 2 — real-time interactive world, 720p@60fps, NPCs — Open-source",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "World Models",
+    "meta_en": "World Models",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "Isaac 0.5 — robot foundation model, 36B sparse, 35 robot systems — Perceptron",
+    "title_en": "Isaac 0.5 — robot foundation model, 36B sparse, 35 robot systems — Perceptron",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "Robotics",
+    "meta_en": "Robotics",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "World Sculpt — scene → individual 3D objects, edytowalne — Alaya Lab",
+    "title_en": "World Sculpt — scene → individual 3D objects, edytowalne — Alaya Lab",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "3D Generation",
+    "meta_en": "3D Generation",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "Fire3D — photos/video → 3D scene z osobnymi obiektami, <1 min — Open-source",
+    "title_en": "Fire3D — photos/video → 3D scene z osobnymi obiektami, <1 min — Open-source",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "3D Generation",
+    "meta_en": "3D Generation",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "AuK — Nano Banana dla speech, microedit, zero-shot clone, 6.12 GB — Tencent",
+    "title_en": "AuK — Nano Banana dla speech, microedit, zero-shot clone, 6.12 GB — Tencent",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "Audio",
+    "meta_en": "Audio",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "DeepSeek V4.1 Flash — 552B MoE, encoder+decoder, #1 Deep Suite — DeepSeek",
+    "title_en": "DeepSeek V4.1 Flash — 552B MoE, encoder+decoder, #1 Deep Suite — DeepSeek",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "OpenAI Navier-Stokes rozwiązany — 10K agents, 88h, internal model — OpenAI",
+    "title_en": "OpenAI Navier-Stokes rozwiązany — 10K agents, 88h, internal model — OpenAI",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "AI Research",
+    "meta_en": "AI Research",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "Show Harness — VLM jako robot controller, 100% success — Show Lab",
+    "title_en": "Show Harness — VLM jako robot controller, 100% success — Show Lab",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "Robotics",
+    "meta_en": "Robotics",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "Edge0 — MoE on low-memory devices, Qwen 35B w 2.9GB RAM — Edge0 AI",
+    "title_en": "Edge0 — MoE on low-memory devices, Qwen 35B w 2.9GB RAM — Edge0 AI",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "RealSWE — benchmark real software engineering, Fable 5.1 #1 38.8% — Specific",
+    "title_en": "RealSWE — benchmark real software engineering, Fable 5.1 #1 38.8% — Specific",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "Benchmark",
+    "meta_en": "Benchmark",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "Suno V6 — music generation + microediting, V6/Wild/Mini — Suno",
+    "title_en": "Suno V6 — music generation + microediting, V6/Wild/Mini — Suno",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "Audio",
+    "meta_en": "Audio",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "YuE2 — open-source music gen z musical plan first, 7.3GB — Open-source",
+    "title_en": "YuE2 — open-source music gen z musical plan first, 7.3GB — Open-source",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "Audio",
+    "meta_en": "Audio",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "ChatGPT for Financial Services — Astra + financial data, sales-only — OpenAI",
+    "title_en": "ChatGPT for Financial Services — Astra + financial data, sales-only — OpenAI",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "UMR — Unified Motion Retargeting, human motion → robot — Open-source",
+    "title_en": "UMR — Unified Motion Retargeting, human motion → robot — Open-source",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "Robotics",
+    "meta_en": "Robotics",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "UnifoLM WLA — 6B params robot model, 64 tasks, 9GB — Open-source",
+    "title_en": "UnifoLM WLA — 6B params robot model, 64 tasks, 9GB — Open-source",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "Robotics",
+    "meta_en": "Robotics",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "MiniCPM5 2B — tiny 2B dense model, SOTA dla small size, 5GB — OpenBMB",
+    "title_en": "MiniCPM5 2B — tiny 2B dense model, SOTA dla small size, 5GB — OpenBMB",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "LLM",
+    "meta_en": "LLM",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "Higgsfield — all-in-one AI creative platform + GPT-6 Astra + After Effects — Higgsfield",
+    "title_en": "Higgsfield — all-in-one AI creative platform + GPT-6 Astra + After Effects — Higgsfield",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "Video Generation",
+    "meta_en": "Video Generation",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "Lingbot World 2 14B / 1.3B — Alibaba 1 2.2 + chunk streaming — Open-source",
+    "title_en": "Lingbot World 2 14B / 1.3B — Alibaba 1 2.2 + chunk streaming — Open-source",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "World Models",
+    "meta_en": "World Models",
+    "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "ai_search",
+    "title_pl": "Marigold v2 benchmarks — #1 vs Moji 3, Infinidepth — Huawei",
+    "title_en": "Marigold v2 benchmarks — #1 vs Moji 3, Infinidepth — Huawei",
+    "link": "ai-releases.html###37-1",
+    "meta_pl": "Image Generation",
+    "meta_en": "Image Generation",
+    "num": "##37-1"
+  },
   {
     "date": "2026-09-11",
     "type": "diamandis",
