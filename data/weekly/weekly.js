@@ -1,61 +1,106 @@
 // AI Weekly Summaries — auto-generated from weekly.json
 const WEEKLY = [
   {
-    "num": 36,
-    "date": "2026-09-06",
+    "num": 37,
+    "date": "2026-09-13",
     "collapsed": true,
-    "title_pl": "AI Tydzień #36 | 31/08-06/09/2026",
-    "title_en": "AI Week #36 | August 31 - September 6, 2026",
-    "headline_pl": "Tydzień saturacji: GPT-6 Astra saturates ARC-AGI-3 + 100% exploit gym, Claude Fable 5.1 (najdroższy 3.7x), Gemini 3.8 Flash (348 tok/s, best price-perf), Qwen 3.8 Max 0904 (>Opus 5 na some), Atlas (Fei-Fei Li, 1min 1440p), Minimax faster than real-time, FlyWire fruit fly brain map (166K neurons), OmniRoute free AI models.",
-    "headline_en": "Week of saturation: GPT-6 Astra saturates ARC-AGI-3 + 100% exploit gym, Claude Fable 5.1 (most expensive 3.7x), Gemini 3.8 Flash (348 tok/s, best price-perf), Qwen 3.8 Max 0904 (>Opus 5 on some), Atlas (Fei-Fei Li, 1min 1440p), Minimax faster than real-time, FlyWire fruit fly brain map (166K neurons), OmniRoute free AI models.",
+    "title_pl": "AI Tydzień #37 | 07-13/09/2026",
+    "title_en": "AI Week #37 | September 7-13, 2026",
+    "headline_pl": "Tydzień AGI: Jensen oficjalnie ogłasza 'AGI has arrived', OpenAI rozwiązuje Navier-Stokes (10K agentów, 88h, $6.5M), researcher quits 'gambling with our lives', Altman wzywa do slowdown, NVIDIA kupuje HuggingFace za $13B, DeepSeek V4.1 Flash #1 Deep Suite (beats Astra), AlphaGenome Atlas mapuje 9 mld mutacji genomu, Rentoeratib — pierwszy AI-designed longevity drug w phase 3, Vesmark→Investnet $2T→$10T merger, China embodied AI shift prototype→factory.",
+    "headline_en": "Week of AGI: Jensen officially declares 'AGI has arrived', OpenAI solves Navier-Stokes (10K agents, 88h, $6.5M), researcher quits 'gambling with our lives', Altman calls for slowdown, NVIDIA buys HuggingFace for $13B, DeepSeek V4.1 Flash #1 Deep Suite (beats Astra), AlphaGenome Atlas maps 9 billion genome mutations, Rentoeratib — first AI-designed longevity drug in phase 3, Vesmark→Investnet $2T→$10T merger, China embodied AI shift prototype→factory.",
     "sections": [
       {
-        "title_pl": "🚀 GPT-6 Astra — saturates benchmarks, 100% exploit gym, destroys all",
-        "title_en": "🚀 GPT-6 Astra — saturates benchmarks, 100% exploit gym, destroys all",
-        "body_pl": "GPT-6 Astra — nowy flagship OpenAI. SOTA na computer use, browsing, SE. 100% na exploit gym (completely destroying benchmark). 60%+ na game environment (vs <10% dla other frontier). Z adapter/harness → close to 100%. Frontier Math: Astra High. Music transcription. Cheaper niż Fable. Saturates ARC-AGI-3 — benchmarki za łatwe, need harder.",
-        "body_en": "GPT-6 Astra — new OpenAI flagship. SOTA on computer use, browsing, SE. 100% on exploit gym (completely destroying benchmark). 60%+ on game environment (vs <10% for other frontier). With adapter/harness → close to 100%. Frontier Math: Astra High. Music transcription. Cheaper than Fable. Saturates ARC-AGI-3 — benchmarks too easy, need harder.",
+        "title_pl": "🏆 AGI oficjalnie nadeszło — Jensen, Altman, Pachocki, Coxin (4 sygnały z labs w tydzień)",
+        "title_en": "🏆 AGI officially arrived — Jensen, Altman, Pachocki, Coxin (4 signals from labs in a week)",
+        "body_pl": "Jensen Huang (NVIDIA CEO) post na X: 'AGI has arrived.' GPT-6 Astra trenowany na 100K Grace Blackwell GPU (~$1B, 2 mies.), następny training = 400K Vera Rubin GPU (10x compute). Jakub Pachocki (chief scientist OpenAI) esej 'An alien mind' wzywając do slowdown. Sam Altman tweet: 'strongest evidence yet for urgency to slow down.' Jacob Coxin (3 lata pre-training w OpenAI + Anthropic) resignation — 'gambling with our lives' tweet 138M views. Evan Hubbinger (Anthropic alignment lead): '>10% chance AI kills all humans within decade.' Dave Blundin: 'Poom 10% = Russian roulette odds.' Salim: 0.1%. Emad: 50→20%. Capitol Hill firestorm w 2 tygodnie, 12 dni przed Xi Jinping arrives w US.",
+        "body_en": "Jensen Huang (NVIDIA CEO) X post: 'AGI has arrived.' GPT-6 Astra trained on 100K Grace Blackwell GPUs (~$1B, 2 months), next training = 400K Vera Rubin GPUs (10x compute). Jakub Pachocki (OpenAI chief scientist) essay 'An alien mind' calling for slowdown. Sam Altman tweet: 'strongest evidence yet for urgency to slow down.' Jacob Coxin (3 years pre-training at OpenAI + Anthropic) resignation — 'gambling with our lives' tweet 138M views. Evan Hubbinger (Anthropic alignment lead): '>10% chance AI kills all humans within decade.' Dave Blundin: 'Poom 10% = Russian roulette odds.' Salim: 0.1%. Emad: 50→20%. Capitol Hill firestorm in 2 weeks, 12 days before Xi Jinping arrives in US.",
+        "quotes": [
+          {
+            "author": "Jensen Huang",
+            "text_pl": "AGI has arrived.",
+            "text_en": "AGI has arrived."
+          },
+          {
+            "author": "Jacob Coxin",
+            "text_pl": "Żadna firma nie zachowuje się odpowiedzialnie w wyścigu ku self-improving super intelligence. Hazard z naszymi życiami.",
+            "text_en": "Neither company is acting responsibly in the race toward self-improving super intelligence. Gambling with our lives."
+          }
+        ]
+      },
+      {
+        "title_pl": "🧮 Navier-Stokes rozwiązany — pierwszy Clay Millennium Prize przez AI",
+        "title_en": "🧮 Navier-Stokes solved — first Clay Millennium Prize by AI",
+        "body_pl": "OpenAI rozwiązał Navier-Stokes (kontynuacja z #286). 10K concurrent agents, 88h, 130B tokenów, ~$6.5M inference cost. Internal model (significantly better niż GPT-6 Astra). Whirlpool z specific conditions → vortex stretching into infinity = singularity (blowup). Forced non-Euler problem (z viscosity, trudniejszy niż Euler). Nie rozwiązano unforced problem. 90 lat unsolved by humans. Attribution debate: Anthropic guy + NY professor mieli ULA blowup solution (slightly easier). Nome Brown: '$500K → $20 = 25,000x cost collapse w 2 lata. Millennium Prize = cup of coffee late 2027.' Rumor: OpenAI + Anthropic siedzą na Hodge conjecture + Birch and Swinnerton-Dyer solutions. Alex: 'math cooked, science next.'",
+        "body_en": "OpenAI solved Navier-Stokes (continuation from #286). 10K concurrent agents, 88h, 130B tokens, ~$6.5M inference cost. Internal model (significantly better than GPT-6 Astra). Whirlpool with specific conditions → vortex stretching into infinity = singularity (blowup). Forced non-Euler problem (with viscosity, harder than Euler). Unforced problem still unsolved. 90 years unsolved by humans. Attribution debate: Anthropic guy + NY professor had ULA blowup solution (slightly easier). Nome Brown: '$500K → $20 = 25,000x cost collapse in 2 years. Millennium Prize = cup of coffee late 2027.' Rumor: OpenAI + Anthropic sitting on Hodge conjecture + Birch and Swinnerton-Dyer solutions. Alex: 'math cooked, science next.'",
+        "quotes": [
+          {
+            "author": "Nome Brown",
+            "text_pl": "Gdy OpenAI ogłosiło o3, koszt $500K żeby score 87.5% na ARC AGI 1. Dzisiaj Astra scores higher za $20. 25,000x cost collapse w 2 lata.",
+            "text_en": "When OpenAI announced the 03 model, it cost about 500,000 to score 87.5% on ARC AGI1. Today, Astra scores higher for 20 bucks."
+          }
+        ]
+      },
+      {
+        "title_pl": "💸 Big M&A — NVIDIA $13B HuggingFace, Vesmark $2T→$10T, AT&T switch to Chinese models",
+        "title_en": "💸 Big M&A — NVIDIA $13B HuggingFace, Vesmark $2T→$10T, AT&T switch to Chinese models",
+        "body_pl": "NVIDIA kupuje HuggingFace za $13B — 3M modeli, 500K datasetów, 1M aplikacji, międzynarodowy hub developerów. NVIDIA pivot: Meta/OpenAI/Microsoft/Amazon budują własne chipy, więc NVIDIA idzie po developerów + chińskie modele via HF. Dave Blundin: Vesmark ($2T AUM, 5M kont, 20M LOC) acquired przez Investnet (backed by Bane Capital) — thesis: $10T AUM i AI-entire tech stack. AT&T: switch na chińskie open weight modele — May 20%→40%, wkrótce 60%. 80% oszczędności na kosztach AI. Trend cross-US: open modele od 10% → 60% w roku.",
+        "body_en": "NVIDIA buys HuggingFace for $13B — 3M models, 500K datasets, 1M applications, international hub for developers. NVIDIA pivot: Meta/OpenAI/Microsoft/Amazon building own chips, so NVIDIA goes after developers + Chinese models via HF. Dave Blundin: Vesmark ($2T AUM, 5M accounts, 20M LOC) acquired by Investnet (backed by Bane Capital) — thesis: $10T AUM and AI-entire tech stack. AT&T: switch to Chinese open weight models — May 20%→40%, soon 60%. 80% savings on AI costs. Trend cross-US: open models from 10% → 60% in a year.",
         "quotes": []
       },
       {
-        "title_pl": "💰 Claude Fable 5.1 vs Gemini 3.8 Flash — expensive vs price-performance",
-        "title_en": "💰 Claude Fable 5.1 vs Gemini 3.8 Flash — expensive vs price-performance",
-        "body_pl": "Claude Fable 5.1 — najdroższy model (3.7x GPT 5.6 Max). Despite claims dla scientific research, deep research + medical rozczarowujące. Gemini 3.8 Flash — #8 na leaderboard, 348 tok/s (far higher), SOTA w scientific figures, Deep Suite long-horizon, reasonable cost. Best price-performance. Qwen 3.8 Max 0904 — beats old, some >Opus 5 + GPT 5.6 Sol. DeepSeek V4 Flash Vision — matches Opus 4.8.",
-        "body_en": "Claude Fable 5.1 — most expensive (3.7x GPT 5.6 Max). Despite scientific research claims, deep research + medical disappointing. Gemini 3.8 Flash — #8 on leaderboard, 348 tok/s (far higher), SOTA in scientific figures, Deep Suite long-horizon, reasonable cost. Best price-performance. Qwen 3.8 Max 0904 — beats old, some >Opus 5 + GPT 5.6 Sol. DeepSeek V4 Flash Vision — matches Opus 4.8.",
+        "title_pl": "🧬 AI w biotechnologii — Rentoeratib (first AI longevity drug phase 3) + AlphaGenome Atlas (9B mutacji)",
+        "title_en": "🧬 AI in biotechnology — Rentoeratib (first AI longevity drug phase 3) + AlphaGenome Atlas (9B mutations)",
+        "body_pl": "Insilico Medicine's Rentoeratib — first AI-designed longevity drug. Phase 3 trials w idiopathic pulmonary fibrosis + age-related lung disease. Phase 3 = last step before approval. First AI-designed drug ever gotten to this stage. Phase 2a: 6 protein-based aging clocks shifted 3-6 lat młodsze. 4 tyg input → 3-4 lata output = longevity escape velocity on the margin. Insilico + Harvard + Broad + Stanford. Google DeepMind Alpha Genome Atlas — 9 mld possible mutations precomputed, 1 petabyte dataset (30x AlphaFold DB). Genomic equivalent of periodic table. 22% more genetic associations in UK Biobank. Helped solve unsolved rare disease. Arthur C. Clarke 'The 9 Billion Names of God' — ironic truth imitating sci-fi.",
+        "body_en": "Insilico Medicine's Rentoeratib — first AI-designed longevity drug. Phase 3 trials in idiopathic pulmonary fibrosis + age-related lung disease. Phase 3 = last step before approval. First AI-designed drug ever gotten to this stage. Phase 2a: 6 protein-based aging clocks shifted 3-6 years younger. 4 weeks input → 3-4 years output = longevity escape velocity on the margin. Insilico + Harvard + Broad + Stanford. Google DeepMind Alpha Genome Atlas — 9 billion possible mutations precomputed, 1 petabyte dataset (30x AlphaFold DB). Genomic equivalent of periodic table. 22% more genetic associations in UK Biobank. Helped solve unsolved rare disease. Arthur C. Clarke 'The 9 Billion Names of God' — ironic truth imitating sci-fi.",
+        "quotes": [
+          {
+            "author": "Peter Diamandis",
+            "text_pl": "4 tyg input → 3-4 lata output. To jest longevity escape velocity on the margin.",
+            "text_en": "4 weeks of input 3 to 4 years of output. That is on the margin longevity escape velocity."
+          }
+        ]
+      },
+      {
+        "title_pl": "🚀 Nowe modele — DeepSeek V4.1 Flash #1 Deep Suite (beats Astra) + DeepSeek Flash 20x cheaper than Opus",
+        "title_en": "🚀 New models — DeepSeek V4.1 Flash #1 Deep Suite (beats Astra) + DeepSeek Flash 20x cheaper than Opus",
+        "body_pl": "DeepSeek V4.1 Flash (Sep 10, Lev 11.09 + AI Search ##37-1) — 552B MoE (8-16B active). Nowa architecture: encoder+decoder (większość LLM ma tylko decoder). Engram feature, sliding window attention, CSA 2 attention. #1 Deep Suite 1.1 (74.2, beats GPT-6 Astra). 217 tok/s przez API (3x GLM, 7x Kimi K3). Najtańszy frontier model. Open source 510GB, GGUF Q1 = 106GB. DeepSeek Flash 500GB (z Diamandis #287) — beats Opus + GPT Soul na Open Design benchmark, 20x faster + 20x cheaper. Encoder-decoder 8B+16B. Crazy architecture — nightmare dla western inference providers.",
+        "body_en": "DeepSeek V4.1 Flash (Sep 10, Lev 11.09 + AI Search ##37-1) — 552B MoE (8-16B active). New architecture: encoder+decoder (most LLMs have only decoder). Engram feature, sliding window attention, CSA 2 attention. #1 Deep Suite 1.1 (74.2, beats GPT-6 Astra). 217 tok/s via API (3x GLM, 7x Kimi K3). Cheapest frontier model. Open source 510GB, GGUF Q1 = 106GB. DeepSeek Flash 500GB (from Diamandis #287) — beats Opus + GPT Soul on Open Design benchmark, 20x faster + 20x cheaper. Encoder-decoder 8B+16B. Crazy architecture — nightmare for western inference providers.",
         "quotes": []
       },
       {
-        "title_pl": "🌍 World models — Atlas, GameGenX, autoregressive diffusion",
-        "title_en": "🌍 World models — Atlas, GameGenX, autoregressive diffusion",
-        "body_pl": "Atlas (World Labs/Fei-Fei Li) — input video + camera path → 1min 1440p coherent video. Explicit 3D geometry (point clouds, gaussian splats). GameGenX — video models → real-time interactive worlds. Code released. Autoregressive diffusion world model — no max duration, video+audio. Minimax faster than real-time (Video Deltaet, 14s clip w 11s na 8x B200).",
-        "body_en": "Atlas (World Labs/Fei-Fei Li) — input video + camera path → 1min 1440p coherent video. Explicit 3D geometry (point clouds, gaussian splats). GameGenX — video models → real-time interactive worlds. Code released. Autoregressive diffusion world model — no max duration, video+audio. Minimax faster than real-time (Video Deltaet, 14s clip in 11s on 8x B200).",
+        "title_pl": "🎵 Audio + speech — AuK (Nano Banana dla speech), Suno V6, YuE2 (open-source better niż Suno)",
+        "title_en": "🎵 Audio + speech — AuK (Nano Banana for speech), Suno V6, YuE2 (open-source better than Suno)",
+        "body_pl": "AuK (Tencent) — Nano Banana dla speech. TTS z voice description. Zero-shot voice clone. Microedit: add/delete words seamless. Noise removal, voice enhancement, resolution increase. Emotion change (sad/angry). Timbre change (male→female). Whisper mode. 6.12GB — fits na consumer GPUs. Suno V6 — music generation + microediting. Change single lyric bez reszty piosenki. V6/Wild/Mini variants. Closed source, recent restrictions. YuE2 — open-source music generator. Composes musical plan FIRST (melody, rhythm, chords, structure), potem full song z vocals + accompaniment. 7.3GB. Better niż Suno V6 w benchmarks (their claim). Beats Minimax Music 3, AEP 1.5.",
+        "body_en": "AuK (Tencent) — Nano Banana for speech. TTS with voice description. Zero-shot voice clone. Microedit: add/delete words seamlessly. Noise removal, voice enhancement, resolution increase. Emotion change (sad/angry). Timbre change (male→female). Whisper mode. 6.12GB — fits on consumer GPUs. Suno V6 — music generation + microediting. Change single lyric without affecting rest of song. V6/Wild/Mini variants. Closed source, recent restrictions. YuE2 — open-source music generator. Composes musical plan FIRST (melody, rhythm, chords, structure), then full song with vocals + accompaniment. 7.3GB. Better than Suno V6 on benchmarks (their claim). Beats Minimax Music 3, AEP 1.5.",
         "quotes": []
       },
       {
-        "title_pl": "🎨 Nowe modele i narzędzia — 18 items, 3 new models (231 total)",
-        "title_en": "🎨 New models and tools — 18 items, 3 new models (231 total)",
-        "body_pl": "AI Search ##36-1: 18 items. Nowe modele: Claude Fable 5.1, Lada Image (6B open-source, 6.7GB FP8), Vigle Animate (character swap). Narzędzia: Lucida (3D room reconstruction), Video Deltaet (Minimax optimization), Higsfield (AI creation platform + Cinema Studio), Intern Lumina U2 (diffusion LLM, multimodal understanding), Google WeatherNext 3 (observation-based, 5x sharper), Google TimesFM3 (330M, time series #1), Google cyber model (2.6x patches).",
-        "body_en": "AI Search ##36-1: 18 items. New models: Claude Fable 5.1, Lada Image (6B open-source, 6.7GB FP8), Vigle Animate (character swap). Tools: Lucida (3D room reconstruction), Video Deltaet (Minimax optimization), Higsfield (AI creation platform + Cinema Studio), Intern Lumina U2 (diffusion LLM, multimodal understanding), Google WeatherNext 3 (observation-based, 5x sharper), Google TimesFM3 (330M, time series #1), Google cyber model (2.6x patches).",
+        "title_pl": "🤖 Robotics + embodied AI — Isaac 0.5, UnifoLM WLA, Unitree 6B, Maven Robotics, China shift prototype→factory",
+        "title_en": "🤖 Robotics + embodied AI — Isaac 0.5, UnifoLM WLA, Unitree 6B, Maven Robotics, China shift prototype→factory",
+        "body_pl": "Isaac 0.5 — robot foundation model. 36B sparse params. 35+ robot systems. 100K godzin robot experience + 1M godzin general video. Video understanding + spatial reasoning + future state prediction + physical actions w 1 backbone. Open source. UnifoLM WLA — 6B params, 64 tasks (54 tabletop + 10 whole body coordination), <9GB offline. Unitree 6B humanoid foundation model open-source (z Lev). Maven Robotics emerged from stealth z $100M Series A. China embodied AI: shift z prototype → factory deployment. XBank (chińska firma) zaczął 80% automated production line dla humanoid robots. Unitree G1 security exploit chain (unauthenticated root access). Tesla CyberCab $30K — Uber+Airbnb model.",
+        "body_en": "Isaac 0.5 — robot foundation model. 36B sparse params. 35+ robot systems. 100K hours robot experience + 1M hours general video. Video understanding + spatial reasoning + future state prediction + physical actions in 1 backbone. Open source. UnifoLM WLA — 6B params, 64 tasks (54 tabletop + 10 whole body coordination), <9GB offline. Unitree 6B humanoid foundation model open-source (from Lev). Maven Robotics emerged from stealth with $100M Series A. China embodied AI: shift from prototype → factory deployment. XBank (Chinese company) started 80% automated production line for humanoid robots. Unitree G1 security exploit chain (unauthenticated root access). Tesla CyberCab $30K — Uber+Airbnb model.",
         "quotes": []
       },
       {
-        "title_pl": "🧬 FlyWire — fruit fly brain map, 166K neurons, 125M synapses",
-        "title_en": "🧬 FlyWire — fruit fly brain map, 166K neurons, 125M synapses",
-        "body_pl": "FlyWire — largest nervous system reconstruction. Fruit fly: 166K neurons, 125M synapses. Human = 86B neurons (can't map yet). Neuroscience understanding of brain circuits + behavior. Might also help w AI architecture inspiration.",
-        "body_en": "FlyWire — largest nervous system reconstruction. Fruit fly: 166K neurons, 125M synapses. Human = 86B neurons (can't map yet). Neuroscience understanding of brain circuits + behavior. Might also help in AI architecture inspiration.",
+        "title_pl": "🍎 Apple Event Sep 9 + inne — nowy CEO John Turnis, AFM, iPhone Fold, Sanders+Caesar ban AI, Trump optical transceiver ban",
+        "title_en": "🍎 Apple Event Sep 9 + others — new CEO John Turnis, AFM, iPhone Fold, Sanders+Caesar ban AI, Trump optical transceiver ban",
+        "body_pl": "Apple Event Sep 9 — nowy CEO John Turnis (Tim Cook odszedł). iPhone Foldable, Apple Watch, Apple Intelligence. Własny Apple Foundation Model (AFM) — kolaboracja z Google Gemini (unclear czy rebranded). Privacy-first — run lokalnie gdy możliwe. Sanders + Caesar chcą legislation: 'jeśli nie możemy kontrolować AI, ban it.' Trump executive order: ban na Chinese optical transceiver imports. Problem: zachodni manufacturers need 1-2 lata na replace Chinese capacity. Data center capacity threat. Claude solved 1653 cryptogram (Sir Thomas Urquhart — 'God uphold King Charles II'). Cognition $1B at $48B (burn $800M/rok). Crusor $3B at $30B (ex-crypto miner→AI). Relay unicorn w 48h z $100M.",
+        "body_en": "Apple Event Sep 9 — new CEO John Turnis (Tim Cook stepped down). iPhone Foldable, Apple Watch, Apple Intelligence. Own Apple Foundation Model (AFM) — collaboration with Google Gemini (unclear if rebranded). Privacy-first — run locally when possible. Sanders + Caesar want legislation: 'if we cannot control AI, ban it.' Trump executive order: ban on Chinese optical transceiver imports. Problem: Western manufacturers need 1-2 years to replace Chinese capacity. Data center capacity threat. Claude solved 1653 cryptogram (Sir Thomas Urquhart — 'God uphold King Charles II'). Cognition $1B at $48B (burn $800M/year). Crusor $3B at $30B (ex-crypto miner→AI). Relay unicorn in 48h with $100M.",
         "quotes": []
       },
       {
-        "title_pl": "📡 Podsumowanie tygodnia — 231 modeli, 17 epizodów Diamandis",
-        "title_en": "📡 Week summary — 231 models, 17 Diamandis episodes",
-        "body_pl": "Tydzień 31/08-06/09/2026: 3 materiały (Diamandis #285 Alpha Centauri, Lev 04.09, AI Search ##36-1). 3 nowe modele (231 total). Kluczowe: GPT-6 Astra saturates benchmarks, Fable 5.1 najdroższy, Gemini 3.8 Flash best price-perf, Atlas (Fei-Fei Li), Minimax faster than real-time, FlyWire brain map. OmniRoute zainstalowany — 7 darmowych modeli. Multi-model delegation działa.",
-        "body_en": "Week of Aug 31 - Sep 6, 2026: 3 materials (Diamandis #285 Alpha Centauri, Lev 04.09, AI Search ##36-1). 3 new models (231 total). Key: GPT-6 Astra saturates benchmarks, Fable 5.1 most expensive, Gemini 3.8 Flash best price-perf, Atlas (Fei-Fei Li), Minimax faster than real-time, FlyWire brain map. OmniRoute installed — 7 free models. Multi-model delegation works.",
+        "title_pl": "📡 Podsumowanie tygodnia — 264 modeli, 18 epizodów Diamandis, AGI declared",
+        "title_en": "📡 Week summary — 264 models, 18 Diamandis episodes, AGI declared",
+        "body_pl": "Tydzień 07-13/09/2026: 4 materiały (Diamandis #286 + Lev 11.09 + Diamandis #287 + AI Search ##37-1). 33 nowych modeli (264 total). Kluczowe: AGI oficjalnie declared przez Jensena, Navier-Stokes rozwiązany, DeepSeek V4.1 Flash #1 Deep Suite (beats Astra), NVIDIA $13B HuggingFace, AlphaGenome Atlas 9B mutacji, Rentoeratib first AI longevity drug phase 3, Vesmark→Investnet $10T merger, AuK Nano Banana dla speech, China embodied AI shift prototype→factory. 25,000x cost collapse (o3→Astra) → Millennium Prize = cup of coffee late 2027. Petrov Day Sep 26 — context dla AI alignment debaty. Inbox obsidian: clean po archiwizacji. Tokens persistent w 5 lokalizacjach (nowa: /home/z/.secrets/ai-tokens.json).",
+        "body_en": "Week of Sep 7-13, 2026: 4 materials (Diamandis #286 + Lev 11.09 + Diamandis #287 + AI Search ##37-1). 33 new models (264 total). Key: AGI officially declared by Jensen, Navier-Stokes solved, DeepSeek V4.1 Flash #1 Deep Suite (beats Astra), NVIDIA $13B HuggingFace, AlphaGenome Atlas 9B mutations, Rentoeratib first AI longevity drug phase 3, Vesmark→Investnet $10T merger, AuK Nano Banana for speech, China embodied AI shift prototype→factory. 25,000x cost collapse (o3→Astra) → Millennium Prize = cup of coffee late 2027. Petrov Day Sep 26 — context for AI alignment debate. Obsidian inbox: clean after archive. Tokens persistent in 5 locations (new: /home/z/.secrets/ai-tokens.json).",
         "quotes": []
       }
     ],
     "sources": [
-      "Diamandis Moonshots (1DB_QDiviH4) — 05.09.2026 (#286)",
-      "Lev Selector (D5qeklkQqRg) — 04.09.2026",
-      "AI Search (rQ4yX5qNYdY) — 06.09.2026 (##36-1)"
+      "Diamandis Moonshots (vAgEf4jX_1o) — 09.09.2026 (#286)",
+      "Lev Selector (g7awNqJoRjE) — 11.09.2026",
+      "Diamandis Moonshots (AxzcWOxzkiw) — 11.09.2026 (#287)",
+      "AI Search (nZYJdwM-_nI) — 13.09.2026 (##37-1)"
     ]
   },
   {
