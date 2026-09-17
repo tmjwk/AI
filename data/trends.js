@@ -1,30 +1,31 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-09-13 16:37:03 UTC
-// Total events: 561, months: 4
+// Generated: 2026-09-17 21:28:18 UTC
+// Total events: 563, months: 4
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-09-13 16:37:03 UTC",
-    "total_events": 561,
+    "generated": "2026-09-17 21:28:18 UTC",
+    "total_events": 563,
     "total_months": 4
   },
   "months": [
     {
       "month": "2026-09",
-      "total": 112,
+      "total": 114,
       "by_type": {
+        "diamandis": 3,
+        "weekly": 1,
         "ai_search": 40,
-        "diamandis": 2,
         "lev": 70
       },
       "top_vendors": [
         [
           "OpenAI",
-          20
+          21
         ],
         [
           "Anthropic",
-          16
+          17
         ],
         [
           "Google",
@@ -32,7 +33,7 @@ const TRENDS = {
         ],
         [
           "Alibaba",
-          5
+          6
         ],
         [
           "DeepSeek",
@@ -93,11 +94,11 @@ const TRENDS = {
           2
         ],
         [
-          "GPT 5.6",
+          "GPT 5",
           2
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           2
         ]
       ]
@@ -183,11 +184,11 @@ const TRENDS = {
           3
         ],
         [
-          "GPT-5.6",
+          "GPT-5",
           3
         ],
         [
-          "GPT-5",
+          "GPT-5.6",
           3
         ],
         [
@@ -265,11 +266,11 @@ const TRENDS = {
           5
         ],
         [
-          "GPT 5.6",
+          "GPT 5",
           5
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           5
         ],
         [
@@ -342,19 +343,19 @@ const TRENDS = {
       ],
       "top_models": [
         [
-          "GPT-5.6",
-          1
-        ],
-        [
           "GPT-5",
           1
         ],
         [
-          "GPT 5.6",
+          "GPT-5.6",
           1
         ],
         [
           "GPT 5",
+          1
+        ],
+        [
+          "GPT 5.6",
           1
         ],
         [
@@ -442,11 +443,11 @@ const TRENDS = {
     "top_vendors": [
       [
         "Anthropic",
-        77
+        78
       ],
       [
         "OpenAI",
-        58
+        59
       ],
       [
         "Google",
@@ -454,7 +455,7 @@ const TRENDS = {
       ],
       [
         "Alibaba",
-        31
+        32
       ],
       [
         "DeepSeek",
@@ -519,11 +520,11 @@ const TRENDS = {
         10
       ],
       [
-        "GPT 5.6",
+        "GPT 5",
         9
       ],
       [
-        "GPT 5",
+        "GPT 5.6",
         9
       ],
       [
@@ -564,10 +565,10 @@ const TRENDS = {
       ]
     ],
     "by_type": {
+      "diamandis": 19,
+      "weekly": 10,
       "ai_search": 198,
-      "diamandis": 18,
-      "lev": 336,
-      "weekly": 9
+      "lev": 336
     }
   }
 };

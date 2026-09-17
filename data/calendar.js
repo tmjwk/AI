@@ -2,9 +2,29 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-09-13 16:37:03 UTC
+// Generated: 2026-09-17 21:28:18 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-09-17",
+    "type": "diamandis",
+    "title_pl": "Podcast #288 — Laboratoria frontier chcą spowolnienia, OpenAI opóźnia IPO 2026, Anthropic flaguje 5 przypadków broni biologicznej | #288",
+    "title_en": "Podcast #288 — Frontier Labs Want to Slow Down, OpenAI Delays Its 2026 IPO, Anthropic Flags 5 Bioweapon Cases | EP #288",
+    "link": "ai-pulse.html#288",
+    "meta_pl": "15 tematów",
+    "meta_en": "15 topics",
+    "num": "#288"
+  },
+  {
+    "date": "2026-09-13",
+    "type": "weekly",
+    "title_pl": "AI Tydzień #37 | 07-13/09/2026",
+    "title_en": "AI Week #37 | September 7-13, 2026",
+    "link": "index.html#article-37",
+    "meta_pl": "9 sekcji",
+    "meta_en": "9 sections",
+    "num": "37"
+  },
   {
     "date": "2026-09-12",
     "type": "ai_search",

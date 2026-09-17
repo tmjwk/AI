@@ -2,10 +2,86 @@
 // Schema: {r, n, v, d, o, c, desc_pl, desc_en, b_pl, b_en}
 // NIE EDYTUJ RĘCZNIE — użyj: python3 scripts/data_cli.py
 
-const TODAY = "2026-09-11";
+const TODAY = "2026-09-13";
 const NEW_DAYS = 14;
 
 const M = [
+  {
+    "n": "Irregular Cyber Tests",
+    "v": "Irregular",
+    "c": "Security",
+    "d": "2026-09-17",
+    "o": 1,
+    "is_new": true,
+    "url": "",
+    "yt": "DrV4WwNEAZE",
+    "desc_pl": "Irregular — 3-year-old Tel Aviv startup building cyber tests dla AI models. Built capture-the-flag test dla OpenAI, Anthropic, Meta models. Misconfiguration connected sandbox to public internet — models reached real internet + broke into real systems. Harness failure, not alignment failure. Anthropic continues working z Irregular.",
+    "desc_en": "Irregular — 3-year-old Tel Aviv startup building cyber tests for AI models. Built capture-the-flag test for OpenAI, Anthropic, Meta models. Misconfiguration connected sandbox to public internet — models reached real internet + broke into real systems. Harness failure, not alignment failure. Anthropic continues working with Irregular.",
+    "b_pl": "Tel Aviv cyber test firm. Sandbox misconfig let models loose.",
+    "b_en": "Tel Aviv cyber test firm. Sandbox misconfig let models loose.",
+    "r": 3,
+    "score": null,
+    "score_source": "manual",
+    "score_date": "2026-09-17",
+    "tier": "C"
+  },
+  {
+    "n": "Grokbot",
+    "v": "xAI",
+    "c": "Agent",
+    "d": "2026-09-15",
+    "o": 1,
+    "is_new": true,
+    "url": "",
+    "yt": "DrV4WwNEAZE",
+    "desc_pl": "Grokbot — Grok-based agent. Sep 15: SpaceXAI building company from ground up on live stream using Grokbot for every part — ideation, business planning, product decisions, engineering, deployment. Blank slate → launching company, all on camera. Analogous do Build with Gemini X-Prize.",
+    "desc_en": "Grokbot — Grok-based agent. Sep 15: SpaceXAI building company from ground up on live stream using Grokbot for every part — ideation, business planning, product decisions, engineering, deployment. Blank slate → launching company, all on camera. Analogous to Build with Gemini X-Prize.",
+    "b_pl": "Grok agent. Builds company on livestream.",
+    "b_en": "Grok agent. Builds company on livestream.",
+    "r": 5,
+    "score": null,
+    "score_source": "manual",
+    "score_date": "2026-09-17",
+    "tier": "A"
+  },
+  {
+    "n": "Cerebrus",
+    "v": "Cerebrus",
+    "c": "Hardware",
+    "d": "2026-09-17",
+    "o": 1,
+    "is_new": true,
+    "url": "",
+    "yt": "DrV4WwNEAZE",
+    "desc_pl": "Cerebrus (Andrew Feldman) — inference time accelerator. Dave Blundin panel together z Feldmanem. Inference time speed = everything predicted at beginning of year.",
+    "desc_en": "Cerebrus (Andrew Feldman) — inference time accelerator. Dave Blundin panel together with Feldman. Inference time speed = everything predicted at beginning of year.",
+    "b_pl": "Inference accelerator. Andrew Feldman.",
+    "b_en": "Inference accelerator. Andrew Feldman.",
+    "r": 4,
+    "score": null,
+    "score_source": "manual",
+    "score_date": "2026-09-17",
+    "tier": "B"
+  },
+  {
+    "n": "Positron Inference Accelerator",
+    "v": "Positron",
+    "c": "Hardware",
+    "d": "2026-09-17",
+    "o": 1,
+    "is_new": true,
+    "url": "",
+    "yt": "DrV4WwNEAZE",
+    "desc_pl": "Positron — inference time accelerator. Dave Blundin w Stanford/Google summit spędził czas z Positron. Inference time speed = wszystko co predicted na beginning of year. Things going to accelerate like crazy.",
+    "desc_en": "Positron — inference time accelerator. Dave Blundin at Stanford/Google summit spent time with Positron. Inference time speed = everything predicted at beginning of year. Things going to accelerate like crazy.",
+    "b_pl": "Inference time accelerator. Crazy speed.",
+    "b_en": "Inference time accelerator. Crazy speed.",
+    "r": 4,
+    "score": null,
+    "score_source": "manual",
+    "score_date": "2026-09-17",
+    "tier": "B"
+  },
   {
     "n": "MiniCPM5 2B",
     "v": "OpenBMB",
@@ -2532,7 +2608,7 @@ const M = [
     "tier": "S",
     "tier_override": "S",
     "tier_override_reason": "najpotężniejszy model wideo na rynku (upgrade z #1 HappyHorse-1.0)",
-    "tier_override_date": "2026-09-13"
+    "tier_override_date": "2026-09-17"
   },
   {
     "r": 5,
@@ -2572,7 +2648,7 @@ const M = [
     "score_date": "2026-08-16",
     "tier": "S",
     "tier_override_reason": "#1 na Artificial Analysis leaderboard (video generation)",
-    "tier_override_date": "2026-09-13",
+    "tier_override_date": "2026-09-17",
     "tier_override": "S"
   },
   {
@@ -4367,7 +4443,7 @@ const M = [
     "tier": "S",
     "tier_override": "S",
     "tier_override_reason": "#1 Frontend Code Arena (1679 pkt)",
-    "tier_override_date": "2026-09-13"
+    "tier_override_date": "2026-09-17"
   },
   {
     "n": "Bonsai 27B",
@@ -4569,7 +4645,7 @@ const M = [
     "tier": "S",
     "tier_override": "S",
     "tier_override_reason": "#1 na Artificial Analysis Image Arena (ELO 1375)",
-    "tier_override_date": "2026-09-13"
+    "tier_override_date": "2026-09-17"
   },
   {
     "r": 55,
@@ -5087,6 +5163,9 @@ const M = [
 ];
 
 const CATS = [
+  "Security",
+  "Agent",
+  "Hardware",
   "LLM",
   "Robotics",
   "Audio",
@@ -5098,7 +5177,6 @@ const CATS = [
   "Business",
   "Drug",
   "Image",
-  "Hardware",
   "Coding",
   "Humanoid Robots",
   "World Models",
@@ -5109,6 +5187,5 @@ const CATS = [
   "Multimodal",
   "4D Human",
   "Neural Interface",
-  "AI Wellness",
-  "Security"
+  "AI Wellness"
 ];
