@@ -2,19 +2,9 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-09-17 21:28:18 UTC
+// Generated: 2026-09-19 16:23:36 UTC
 
 const CALENDAR = [
-  {
-    "date": "2026-09-17",
-    "type": "diamandis",
-    "title_pl": "Podcast #288 — Laboratoria frontier chcą spowolnienia, OpenAI opóźnia IPO 2026, Anthropic flaguje 5 przypadków broni biologicznej | #288",
-    "title_en": "Podcast #288 — Frontier Labs Want to Slow Down, OpenAI Delays Its 2026 IPO, Anthropic Flags 5 Bioweapon Cases | EP #288",
-    "link": "ai-pulse.html#288",
-    "meta_pl": "15 tematów",
-    "meta_en": "15 topics",
-    "num": "#288"
-  },
   {
     "date": "2026-09-13",
     "type": "weekly",
@@ -244,6 +234,406 @@ const CALENDAR = [
     "meta_pl": "Image Generation",
     "meta_en": "Image Generation",
     "num": "##37-1"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Meta Muse Agent — agent z własnym cloud computer i browser",
+    "title_en": "Meta Muse Agent — agent z własnym cloud computer i browser",
+    "link": "ai-radar.html#card-c1",
+    "meta_pl": "Muse Agent + Claude Fermat + K",
+    "meta_en": "Muse Agent + Claude Fermat + K",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Claude formalized Fermat's Last Theorem w 11 dni — 13M lines of Lean",
+    "title_en": "Claude formalized Fermat's Last Theorem w 11 dni — 13M lines of Lean",
+    "link": "ai-radar.html#card-c2",
+    "meta_pl": "Muse Agent + Claude Fermat + K",
+    "meta_en": "Muse Agent + Claude Fermat + K",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Andrej Karpathy workflow — audio → speech to text → local wiki website",
+    "title_en": "Andrej Karpathy workflow — audio → speech to text → local wiki website",
+    "link": "ai-radar.html#card-c3",
+    "meta_pl": "Muse Agent + Claude Fermat + K",
+    "meta_en": "Muse Agent + Claude Fermat + K",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "OpenAI Astra w Blender 3D — explosion of YouTube videos incoming",
+    "title_en": "OpenAI Astra w Blender 3D — explosion of YouTube videos incoming",
+    "link": "ai-radar.html#card-c4",
+    "meta_pl": "Muse Agent + Claude Fermat + K",
+    "meta_en": "Muse Agent + Claude Fermat + K",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Self-tuning agent harnesses — Sakana AI + collaborators",
+    "title_en": "Self-tuning agent harnesses — Sakana AI + collaborators",
+    "link": "ai-radar.html#card-c5",
+    "meta_pl": "RSI (Recursive Self-Improvemen",
+    "meta_en": "RSI (Recursive Self-Improvemen",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "RSI = main focus OpenAI + all big companies — reports Sep",
+    "title_en": "RSI = main focus OpenAI + all big companies — reports Sep",
+    "link": "ai-radar.html#card-c6",
+    "meta_pl": "RSI (Recursive Self-Improvemen",
+    "meta_en": "RSI (Recursive Self-Improvemen",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Dream RSI + Science Body — harness improvements + RL alternation",
+    "title_en": "Dream RSI + Science Body — harness improvements + RL alternation",
+    "link": "ai-radar.html#card-c7",
+    "meta_pl": "RSI (Recursive Self-Improvemen",
+    "meta_en": "RSI (Recursive Self-Improvemen",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Customers expect apps to be smart — agents with memory like secretary",
+    "title_en": "Customers expect apps to be smart — agents with memory like secretary",
+    "link": "ai-radar.html#card-c8",
+    "meta_pl": "RSI (Recursive Self-Improvemen",
+    "meta_en": "RSI (Recursive Self-Improvemen",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Jacob Coxin resignation → extinction debate (kontynuacja #287)",
+    "title_en": "Jacob Coxin resignation → extinction debate (kontynuacja #287)",
+    "link": "ai-radar.html#card-c9",
+    "meta_pl": "Anthropic resignation → extinc",
+    "meta_en": "Anthropic resignation → extinc",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Mistral growing nicely — France, $3B valuation",
+    "title_en": "Mistral growing nicely — France, $3B valuation",
+    "link": "ai-radar.html#card-c10",
+    "meta_pl": "Anthropic resignation → extinc",
+    "meta_en": "Anthropic resignation → extinc",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Google Agentic Video — 88% fewer tokens, 66% cost reduction",
+    "title_en": "Google Agentic Video — 88% fewer tokens, 66% cost reduction",
+    "link": "ai-radar.html#card-c11",
+    "meta_pl": "Anthropic resignation → extinc",
+    "meta_en": "Anthropic resignation → extinc",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Suno Warner Music + BMG — artists licensed, royalties",
+    "title_en": "Suno Warner Music + BMG — artists licensed, royalties",
+    "link": "ai-radar.html#card-c12",
+    "meta_pl": "Anthropic resignation → extinc",
+    "meta_en": "Anthropic resignation → extinc",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Apple iOS new Siri = Google Gemini — multi-step, context-aware",
+    "title_en": "Apple iOS new Siri = Google Gemini — multi-step, context-aware",
+    "link": "ai-radar.html#card-c13",
+    "meta_pl": "Anthropic resignation → extinc",
+    "meta_en": "Anthropic resignation → extinc",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "AIUC certifies AI agents — 5000 tests, 100-page report",
+    "title_en": "AIUC certifies AI agents — 5000 tests, 100-page report",
+    "link": "ai-radar.html#card-c14",
+    "meta_pl": "Anthropic resignation → extinc",
+    "meta_en": "Anthropic resignation → extinc",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Amodei 'We must pace the frontier' + OpenAI shelves IPO",
+    "title_en": "Amodei 'We must pace the frontier' + OpenAI shelves IPO",
+    "link": "ai-radar.html#card-c15",
+    "meta_pl": "Anthropic resignation → extinc",
+    "meta_en": "Anthropic resignation → extinc",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "DeepSeek V4.1 Flash — 552B MoE, smaller KV cache, encoder+decoder",
+    "title_en": "DeepSeek V4.1 Flash — 552B MoE, smaller KV cache, encoder+decoder",
+    "link": "ai-radar.html#card-c16",
+    "meta_pl": "DeepSeek V4.1 Flash + OpenAI F",
+    "meta_en": "DeepSeek V4.1 Flash + OpenAI F",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Cognition agent — matches Fable 5.1 na coding, 64% less cost",
+    "title_en": "Cognition agent — matches Fable 5.1 na coding, 64% less cost",
+    "link": "ai-radar.html#card-c17",
+    "meta_pl": "DeepSeek V4.1 Flash + OpenAI F",
+    "meta_en": "DeepSeek V4.1 Flash + OpenAI F",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "OpenAI Financial Services — Astra + Morgan Stanley, Evercore",
+    "title_en": "OpenAI Financial Services — Astra + Morgan Stanley, Evercore",
+    "link": "ai-radar.html#card-c18",
+    "meta_pl": "DeepSeek V4.1 Flash + OpenAI F",
+    "meta_en": "DeepSeek V4.1 Flash + OpenAI F",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "OpenAI buys Glass Imaging (camera startup) za $300M",
+    "title_en": "OpenAI buys Glass Imaging (camera startup) za $300M",
+    "link": "ai-radar.html#card-c19",
+    "meta_pl": "DeepSeek V4.1 Flash + OpenAI F",
+    "meta_en": "DeepSeek V4.1 Flash + OpenAI F",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Killed By AI website — 123 products graveyard, layoffs, funding",
+    "title_en": "Killed By AI website — 123 products graveyard, layoffs, funding",
+    "link": "ai-radar.html#card-c20",
+    "meta_pl": "DeepSeek V4.1 Flash + OpenAI F",
+    "meta_en": "DeepSeek V4.1 Flash + OpenAI F",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "TopView MCP AI ad workflow — Claude + market research w 1 connector",
+    "title_en": "TopView MCP AI ad workflow — Claude + market research w 1 connector",
+    "link": "ai-radar.html#card-c21",
+    "meta_pl": "Tools + Workflow — TopView MCP",
+    "meta_en": "Tools + Workflow — TopView MCP",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Claude Code + OpenAI Codex — model routing within 2 harnesses",
+    "title_en": "Claude Code + OpenAI Codex — model routing within 2 harnesses",
+    "link": "ai-radar.html#card-c22",
+    "meta_pl": "Tools + Workflow — TopView MCP",
+    "meta_en": "Tools + Workflow — TopView MCP",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Pix — targeted image edits bez destroying original (unlike Nano Banana)",
+    "title_en": "Pix — targeted image edits bez destroying original (unlike Nano Banana)",
+    "link": "ai-radar.html#card-c23",
+    "meta_pl": "Tools + Workflow — TopView MCP",
+    "meta_en": "Tools + Workflow — TopView MCP",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Self-tuning harness (China) — 1.8x faster training, 19% higher reasoning",
+    "title_en": "Self-tuning harness (China) — 1.8x faster training, 19% higher reasoning",
+    "link": "ai-radar.html#card-c24",
+    "meta_pl": "Tools + Workflow — TopView MCP",
+    "meta_en": "Tools + Workflow — TopView MCP",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Korea Agent — creative AI workflow, multi-step image/video editing",
+    "title_en": "Korea Agent — creative AI workflow, multi-step image/video editing",
+    "link": "ai-radar.html#card-c25",
+    "meta_pl": "Tools + Workflow — TopView MCP",
+    "meta_en": "Tools + Workflow — TopView MCP",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "AI Creative Suite 3.1 Pro — text to speech, 44kHz, real-time",
+    "title_en": "AI Creative Suite 3.1 Pro — text to speech, 44kHz, real-time",
+    "link": "ai-radar.html#card-c26",
+    "meta_pl": "Tools + Workflow — TopView MCP",
+    "meta_en": "Tools + Workflow — TopView MCP",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "2.5 free agent models from China — 400B + 1.6T, via OpenRouter",
+    "title_en": "2.5 free agent models from China — 400B + 1.6T, via OpenRouter",
+    "link": "ai-radar.html#card-c27",
+    "meta_pl": "Free Agent Models (China) + Ti",
+    "meta_en": "Free Agent Models (China) + Ti",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "200x faster + 445x cheaper than regular agents — decision model",
+    "title_en": "200x faster + 445x cheaper than regular agents — decision model",
+    "link": "ai-radar.html#card-c28",
+    "meta_pl": "Free Agent Models (China) + Ti",
+    "meta_en": "Free Agent Models (China) + Ti",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Cactus Needle 3 — tiny automation AI, works on Raspberry Pi",
+    "title_en": "Cactus Needle 3 — tiny automation AI, works on Raspberry Pi",
+    "link": "ai-radar.html#card-c29",
+    "meta_pl": "Free Agent Models (China) + Ti",
+    "meta_en": "Free Agent Models (China) + Ti",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Periodic Labs NeonModel — beats Astra + Fable on lab data analysis",
+    "title_en": "Periodic Labs NeonModel — beats Astra + Fable on lab data analysis",
+    "link": "ai-radar.html#card-c30",
+    "meta_pl": "Free Agent Models (China) + Ti",
+    "meta_en": "Free Agent Models (China) + Ti",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Gemini 3.8 Live — voice model that thinks while talking",
+    "title_en": "Gemini 3.8 Live — voice model that thinks while talking",
+    "link": "ai-radar.html#card-c31",
+    "meta_pl": "News + Funding + Business — Ge",
+    "meta_en": "News + Funding + Business — Ge",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Salesforce Koa CRM reasoning — on Nvidia NeMoTron, 3x fewer errors",
+    "title_en": "Salesforce Koa CRM reasoning — on Nvidia NeMoTron, 3x fewer errors",
+    "link": "ai-radar.html#card-c32",
+    "meta_pl": "News + Funding + Business — Ge",
+    "meta_en": "News + Funding + Business — Ge",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Nous Hermes refactored — 1400 agents, $19K, 34% smaller codebase",
+    "title_en": "Nous Hermes refactored — 1400 agents, $19K, 34% smaller codebase",
+    "link": "ai-radar.html#card-c33",
+    "meta_pl": "News + Funding + Business — Ge",
+    "meta_en": "News + Funding + Business — Ge",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Z.ai (GLM maker) raises $5B — 6% na next-gen GLM",
+    "title_en": "Z.ai (GLM maker) raises $5B — 6% na next-gen GLM",
+    "link": "ai-radar.html#card-c34",
+    "meta_pl": "News + Funding + Business — Ge",
+    "meta_en": "News + Funding + Business — Ge",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Odyssey 3 world model — diffusion, robot arms/humanoids/cars/drones",
+    "title_en": "Odyssey 3 world model — diffusion, robot arms/humanoids/cars/drones",
+    "link": "ai-radar.html#card-c35",
+    "meta_pl": "News + Funding + Business — Ge",
+    "meta_en": "News + Funding + Business — Ge",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "MCP dla home devices — AI controls thermostats, cameras",
+    "title_en": "MCP dla home devices — AI controls thermostats, cameras",
+    "link": "ai-radar.html#card-c36",
+    "meta_pl": "News + Funding + Business — Ge",
+    "meta_en": "News + Funding + Business — Ge",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Scientific research system — $4.65B at $5B valuation",
+    "title_en": "Scientific research system — $4.65B at $5B valuation",
+    "link": "ai-radar.html#card-c37",
+    "meta_pl": "News + Funding + Business — Ge",
+    "meta_en": "News + Funding + Business — Ge",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Databricks offers Astra to 3000+ engineers + Claude Code Projects",
+    "title_en": "Databricks offers Astra to 3000+ engineers + Claude Code Projects",
+    "link": "ai-radar.html#card-c38",
+    "meta_pl": "News + Funding + Business — Ge",
+    "meta_en": "News + Funding + Business — Ge",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "ChatGPT ads — click → talk to brand agent + Snap Specs AR $2K",
+    "title_en": "ChatGPT ads — click → talk to brand agent + Snap Specs AR $2K",
+    "link": "ai-radar.html#card-c39",
+    "meta_pl": "News + Funding + Business — Ge",
+    "meta_en": "News + Funding + Business — Ge",
+    "num": "ep-2026-09-18"
+  },
+  {
+    "date": "2026-09-12",
+    "type": "lev",
+    "title_pl": "Uber layoffs continue — jobs page auto-generated",
+    "title_en": "Uber layoffs continue — jobs page auto-generated",
+    "link": "ai-radar.html#card-c40",
+    "meta_pl": "News + Funding + Business — Ge",
+    "meta_en": "News + Funding + Business — Ge",
+    "num": "ep-2026-09-18"
   },
   {
     "date": "2026-09-11",

@@ -1,46 +1,50 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-09-17 21:28:18 UTC
-// Total events: 563, months: 4
+// Generated: 2026-09-19 16:23:36 UTC
+// Total events: 602, months: 4
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-09-17 21:28:18 UTC",
-    "total_events": 563,
+    "generated": "2026-09-19 16:23:36 UTC",
+    "total_events": 602,
     "total_months": 4
   },
   "months": [
     {
       "month": "2026-09",
-      "total": 114,
+      "total": 153,
       "by_type": {
-        "diamandis": 3,
         "weekly": 1,
         "ai_search": 40,
-        "lev": 70
+        "lev": 110,
+        "diamandis": 2
       },
       "top_vendors": [
         [
           "OpenAI",
-          21
+          27
         ],
         [
           "Anthropic",
-          17
+          22
         ],
         [
           "Google",
-          10
+          14
         ],
         [
           "Alibaba",
-          6
+          5
         ],
         [
           "DeepSeek",
-          3
+          4
         ],
         [
           "NVIDIA",
+          4
+        ],
+        [
+          "Apple",
           3
         ],
         [
@@ -48,15 +52,11 @@ const TRENDS = {
           2
         ],
         [
-          "Apple",
+          "Suno",
           2
         ],
         [
-          "MIT",
-          2
-        ],
-        [
-          "MiniMax",
+          "Meta",
           2
         ]
       ],
@@ -66,11 +66,23 @@ const TRENDS = {
           5
         ],
         [
+          "DeepSeek V4",
+          4
+        ],
+        [
           "Qwen 3",
           4
         ],
         [
-          "DeepSeek V4",
+          "Claude Code",
+          4
+        ],
+        [
+          "Fable 5",
+          3
+        ],
+        [
+          "Gemini 3",
           3
         ],
         [
@@ -78,15 +90,7 @@ const TRENDS = {
           2
         ],
         [
-          "Fable 5",
-          2
-        ],
-        [
           "Claude Fable",
-          2
-        ],
-        [
-          "Claude Code",
           2
         ],
         [
@@ -95,10 +99,6 @@ const TRENDS = {
         ],
         [
           "GPT 5",
-          2
-        ],
-        [
-          "GPT 5.6",
           2
         ]
       ]
@@ -176,11 +176,11 @@ const TRENDS = {
           4
         ],
         [
-          "DeepSeek V4",
+          "DeepSeek DeepSeek",
           3
         ],
         [
-          "DeepSeek DeepSeek",
+          "DeepSeek V4",
           3
         ],
         [
@@ -443,31 +443,35 @@ const TRENDS = {
     "top_vendors": [
       [
         "Anthropic",
-        78
+        83
       ],
       [
         "OpenAI",
-        59
+        65
       ],
       [
         "Google",
-        42
+        46
       ],
       [
         "Alibaba",
-        32
+        31
       ],
       [
         "DeepSeek",
-        18
+        19
       ],
       [
         "Meta",
-        18
+        19
       ],
       [
         "NVIDIA",
-        14
+        15
+      ],
+      [
+        "Z.AI",
+        10
       ],
       [
         "MiniMax",
@@ -482,10 +486,6 @@ const TRENDS = {
         10
       ],
       [
-        "Z.AI",
-        9
-      ],
-      [
         "Tencent",
         8
       ],
@@ -495,29 +495,33 @@ const TRENDS = {
       ],
       [
         "Apple",
-        6
+        7
       ],
       [
-        "ByteDance",
-        6
+        "Nous Research",
+        7
       ]
     ],
     "top_models": [
+      [
+        "Fable 5",
+        15
+      ],
+      [
+        "Claude Code",
+        15
+      ],
       [
         "Qwen 3",
         14
       ],
       [
-        "Fable 5",
-        14
-      ],
-      [
-        "Claude Code",
-        13
-      ],
-      [
         "DeepSeek V4",
-        10
+        11
+      ],
+      [
+        "Gemini 3",
+        9
       ],
       [
         "GPT 5",
@@ -529,10 +533,6 @@ const TRENDS = {
       ],
       [
         "Opus 5",
-        8
-      ],
-      [
-        "Gemini 3",
         8
       ],
       [
@@ -565,10 +565,10 @@ const TRENDS = {
       ]
     ],
     "by_type": {
-      "diamandis": 19,
       "weekly": 10,
       "ai_search": 198,
-      "lev": 336
+      "lev": 376,
+      "diamandis": 18
     }
   }
 };

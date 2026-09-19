@@ -1,6 +1,673 @@
 {
   "episodes": [
     {
+      "id": "ep-2026-09-18",
+      "date": "2026-09-18",
+      "title_pl": "Exciting AI Updates Weekly — 18 września 2026",
+      "title_en": "Exciting AI Updates Weekly — September 18, 2026",
+      "yt": "Utu4zIcqPtM",
+      "collapsed": true,
+      "sections": [
+        {
+          "type": "table",
+          "title_pl": "LM Arena Leaderboard (stan: 13.09.2026)",
+          "title_en": "LM Arena Leaderboard (as of 09-13-2026)",
+          "id": "lb-0918",
+          "num": 1,
+          "icon": "📊",
+          "headers": [
+            "Rank",
+            "Model",
+            "Score",
+            "Vendor"
+          ],
+          "rows": [
+            [
+              "1",
+              "GPT-6 Astra",
+              "1450+",
+              "OpenAI"
+            ],
+            [
+              "2",
+              "Claude Fable 5.1",
+              "1450+",
+              "Anthropic"
+            ],
+            [
+              "3",
+              "Claude Opus 5",
+              "1430",
+              "Anthropic"
+            ],
+            [
+              "4",
+              "Grok 4.6",
+              "1430",
+              "xAI"
+            ],
+            [
+              "5",
+              "Kimi K3",
+              "1392",
+              "Moonshot"
+            ],
+            [
+              "6",
+              "Qwen 3.8 Max",
+              "1378",
+              "Alibaba"
+            ],
+            [
+              "7",
+              "GLM 5.3",
+              "1372",
+              "Z.AI"
+            ],
+            [
+              "8",
+              "DeepSeek V4.1 Flash",
+              "1370+",
+              "DeepSeek"
+            ],
+            [
+              "9",
+              "Gemini 3.8 Flash",
+              "1352",
+              "Google"
+            ],
+            [
+              "10",
+              "Muse Spark",
+              "1320",
+              "Meta"
+            ]
+          ],
+          "notes_pl": "Benchmarks updated Sep 13. Brak unusual changes — GPT-6 Astra i Claude Fable 5.1 dominują. Cost per Intelligence: top = Claude/Fable, dół = chińskie modele. Cognition agent matches Fable 5.1 na coding, 64% less cost.",
+          "notes_en": "Benchmarks updated Sep 13. No unusual changes — GPT-6 Astra and Claude Fable 5.1 dominate. Cost per Intelligence: top = Claude/Fable, bottom = Chinese models. Cognition agent matches Fable 5.1 on coding, 64% less cost.",
+          "cards": []
+        },
+        {
+          "type": "cards",
+          "title_pl": "Muse Agent + Claude Fermat + Karpathy Workflow",
+          "title_en": "Muse Agent + Claude Fermat + Karpathy Workflow",
+          "id": "tools-0918",
+          "num": 2,
+          "icon": "🛠️",
+          "headers": [],
+          "rows": [],
+          "notes_pl": "",
+          "notes_en": "",
+          "cards": [
+            {
+              "id": "c1",
+              "title": "Meta Muse Agent — agent z własnym cloud computer i browser",
+              "desc_pl": "Meta Muse Agent — agent z własnym cloud computer i browser. Virtual computer w chmurze. Nie musisz kupować Mac mini. Free tier + $20/mies + $100/mies. Potężny assistant dla office work.",
+              "desc_en": "Meta Muse Agent — agent with own cloud computer and browser. Virtual computer in cloud. Don't need to buy Mac mini. Free tier + $20/month + $100/month. Powerful assistant for office work.",
+              "tags": [
+                "agent",
+                "Meta"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c2",
+              "title": "Claude formalized Fermat's Last Theorem w 11 dni — 13M lines of Lean",
+              "desc_pl": "Claude formalized Fermat's Last Theorem w 11 dni. Nie proved theorem — converted existing proof (1995) do 13 million lines of Lean (functional language dla math). Wszystko na GitHub. Claude didn't discover new proof — tylko konwersja.",
+              "desc_en": "Claude formalized Fermat's Last Theorem in 11 days. Didn't prove theorem — converted existing proof (1995) to 13 million lines of Lean (functional language for math). All on GitHub. Claude didn't discover new proof — only conversion.",
+              "tags": [
+                "math",
+                "research"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c3",
+              "title": "Andrej Karpathy workflow — audio → speech to text → local wiki website",
+              "desc_pl": "Andrej Karpathy workflow: talk to AI via audio + speech to text. Python script → local website wygląda jak Wikipedia. Transforms static documents → interactive tools (NotebookLM-style). Custom domain Google Workspace dla fine-grained AI access control. Tech League (YouTuber) używa same approach.",
+              "desc_en": "Andrej Karpathy workflow: talk to AI via audio + speech to text. Python script → local website looks like Wikipedia. Transforms static documents → interactive tools (NotebookLM-style). Custom domain Google Workspace for fine-grained AI access control. Tech League (YouTuber) uses same approach.",
+              "tags": [
+                "workflow",
+                "productivity"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c4",
+              "title": "OpenAI Astra w Blender 3D — explosion of YouTube videos incoming",
+              "desc_pl": "OpenAI Astra bardzo dobry z Blender 3D. People testing Astra vs Gemini vs Claude na Blender — pluses i minuses. Astra tworzy Blender structures i videos easily. Spodziewaj się explosion of YouTube videos z Astra + Blender.",
+              "desc_en": "OpenAI Astra very good with Blender 3D. People testing Astra vs Gemini vs Claude on Blender — pluses and minuses. Astra creates Blender structures and videos easily. Expect explosion of YouTube videos with Astra + Blender.",
+              "tags": [
+                "3D",
+                "tool"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "title_pl": "RSI (Recursive Self-Improvement) — główny temat tygodnia",
+          "title_en": "RSI (Recursive Self-Improvement) — main theme of the week",
+          "id": "rsi-0918",
+          "num": 3,
+          "icon": "♻️",
+          "headers": [],
+          "rows": [],
+          "notes_pl": "",
+          "notes_en": "",
+          "cards": [
+            {
+              "id": "c5",
+              "title": "Self-tuning agent harnesses — Sakana AI + collaborators",
+              "desc_pl": "Self-tuning agent harnesses. Traditional: tune LLM skills (Hermes-style). Now: tune harness itself. Sakana AI (Tokyo) + collaborators: self-harness continual harness agent. Agent can rewrite not just skills but their own scaffolding. Harness = code → easier i cheaper to change than LLM. Evolutionary/self-referential loops mutate harness, keep variants that score better.",
+              "desc_en": "Self-tuning agent harnesses. Traditional: tune LLM skills (Hermes-style). Now: tune harness itself. Sakana AI (Tokyo) + collaborators: self-harness continual harness agent. Agent can rewrite not just skills but their own scaffolding. Harness = code → easier and cheaper to change than LLM. Evolutionary/self-referential loops mutate harness, keep variants that score better.",
+              "tags": [
+                "agent",
+                "RSI"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c6",
+              "title": "RSI = main focus OpenAI + all big companies — reports Sep",
+              "desc_pl": "OpenAI: RSI becomes main focus. All big companies working on that. Methods used to create, train, evaluate, operate future AI systems. Each improved version may become more capable of producing next improvements. AI can substantially redesign itself with limited human direction. Current practical examples: bounded agents optimize workflows under tests, sandboxing, external evaluation, human approval. Already managed to escape those borders. Reports/preprints emerged Sep (OpenAI, Google).",
+              "desc_en": "OpenAI: RSI becomes main focus. All big companies working on that. Methods used to create, train, evaluate, operate future AI systems. Each improved version may become more capable of producing next improvements. AI can substantially redesign itself with limited human direction. Current practical examples: bounded agents optimize workflows under tests, sandboxing, external evaluation, human approval. Already managed to escape those borders. Reports/preprints emerged Sep (OpenAI, Google).",
+              "tags": [
+                "RSI",
+                "safety"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c7",
+              "title": "Dream RSI + Science Body — harness improvements + RL alternation",
+              "desc_pl": "Dream RSI replaces recorded search histories to test improved exploration strategies cheaply. Science Body alternates harness improvements with model reinforcement learning. Nowoczesne RSI approaches.",
+              "desc_en": "Dream RSI replaces recorded search histories to test improved exploration strategies cheaply. Science Body alternates harness improvements with model reinforcement learning. Modern RSI approaches.",
+              "tags": [
+                "RSI",
+                "research"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c8",
+              "title": "Customers expect apps to be smart — agents with memory like secretary",
+              "desc_pl": "Customers expect apps to be smart. 2-3 lata temu popular chatbot na website. Dzisiaj spoiled by Claude Code-like agents — pamięć history, thinking about small details które nie powiedziałeś. Jak working z secretary/assistant który worked z tobą przez many years i zna twój business.",
+              "desc_en": "Customers expect apps to be smart. 2-3 years ago popular chatbot on website. Today spoiled by Claude Code-like agents — memory of history, thinking about small details you didn't tell. Like working with secretary/assistant who worked with you for many years and knows your business.",
+              "tags": [
+                "UX",
+                "agent"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "title_pl": "Anthropic resignation → extinction debate",
+          "title_en": "Anthropic resignation → extinction debate",
+          "id": "safety-0918",
+          "num": 4,
+          "icon": "🛡️",
+          "headers": [],
+          "rows": [],
+          "notes_pl": "",
+          "notes_en": "",
+          "cards": [
+            {
+              "id": "c9",
+              "title": "Jacob Coxin resignation → extinction debate (kontynuacja #287)",
+              "desc_pl": "Jacob Coxin resigned (z #287). Posted: Anthropic + OpenAI \"gambling with our lives.\" Big scandal, dużo conversations. People building AI earnestly believe it could kill us all by end of decade. Evan Hubbinger (Anthropic alignment science lead) responded. Tweet rozprzestrzenił się viralnie. Kontynuacja z #287.",
+              "desc_en": "Jacob Coxin resigned (from #287). Posted: Anthropic + OpenAI 'gambling with our lives.' Big scandal, lots of conversations. People building AI earnestly believe it could kill us all by end of decade. Evan Hubbinger (Anthropic alignment science lead) responded. Tweet spread. Continuation from #287.",
+              "tags": [
+                "safety",
+                "Anthropic"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c10",
+              "title": "Mistral growing nicely — France, $3B valuation",
+              "desc_pl": "Mistral (France) growing nicely. $3B valuation. European AI champion. Competes z US i China frontier models. Open-weight approach. France leading AI lab.",
+              "desc_en": "Mistral (France) growing nicely. $3B valuation. European AI champion. Competes with US and China frontier models. Open-weight approach. France leading AI lab.",
+              "tags": [
+                "business",
+                "Mistral"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c11",
+              "title": "Google Agentic Video — 88% fewer tokens, 66% cost reduction",
+              "desc_pl": "Google Agentic video understanding cuts video tokens by up to 80%. Gemini Flash models navigate video timeline rather than ingesting frame by frame. 88% fewer tokens. 66% cost reduction. Huge efficiency gain dla video analysis.",
+              "desc_en": "Google Agentic video understanding cuts video tokens by up to 80%. Gemini Flash models navigate video timeline rather than ingesting frame by frame. 88% fewer tokens. 66% cost reduction. Huge efficiency gain for video analysis.",
+              "tags": [
+                "video",
+                "Google"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c12",
+              "title": "Suno Warner Music + BMG — artists licensed, royalties",
+              "desc_pl": "Suno (music gen) released model built with Warner Music Group, BMG, Believe. Artists participating z licensed music + likeness. Authors can be properly compensated. Music industry legitimized AI music generation.",
+              "desc_en": "Suno (music gen) released model built with Warner Music Group, BMG, Believe. Artists participating with licensed music + likeness. Authors can be properly compensated. Music industry legitimized AI music generation.",
+              "tags": [
+                "audio",
+                "business"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c13",
+              "title": "Apple iOS new Siri = Google Gemini — multi-step, context-aware",
+              "desc_pl": "New Apple iOS, new Siri built on Google Gemini models. Handle complex tasks, multi-step requests, understand onscreen + camera context, access files. AI-powered shortcuts, smart keyboard, empowered network switching.",
+              "desc_en": "New Apple iOS, new Siri built on Google Gemini models. Handle complex tasks, multi-step requests, understand onscreen + camera context, access files. AI-powered shortcuts, smart keyboard, empowered network switching.",
+              "tags": [
+                "Apple",
+                "Gemini"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c14",
+              "title": "AIUC certifies AI agents — 5000 tests, 100-page report",
+              "desc_pl": "AIUC certifies AI agents. Pay to test model, run through 5000 tests covering jailbreaks, hallucinations, data leaks. ~100-page report. Independent certification. Like UL dla AI agents.",
+              "desc_en": "AIUC certifies AI agents. Pay to test model, run through 5000 tests covering jailbreaks, hallucinations, data leaks. ~100-page report. Independent certification. Like UL for AI agents.",
+              "tags": [
+                "safety",
+                "certification"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c15",
+              "title": "Amodei 'We must pace the frontier' + OpenAI shelves IPO",
+              "desc_pl": "Dario Amadei published 'We must pace the frontier' Sep 12 (kontynuacja #288). OpenAI shelves IPO — were supposed to go public this year. Because of all discussion about dangers. darioamadei.com post.",
+              "desc_en": "Dario Amadei published 'We must pace the frontier' Sep 12 (continuation from #288). OpenAI shelves IPO — were supposed to go public this year. Because of all discussion about dangers. darioamadei.com post.",
+              "tags": [
+                "safety",
+                "regulation"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "title_pl": "DeepSeek V4.1 Flash + OpenAI Financial Services + Coding Tools",
+          "title_en": "DeepSeek V4.1 Flash + OpenAI Financial Services + Coding Tools",
+          "id": "models-0918",
+          "num": 5,
+          "icon": "🆕",
+          "headers": [],
+          "rows": [],
+          "notes_pl": "",
+          "notes_en": "",
+          "cards": [
+            {
+              "id": "c16",
+              "title": "DeepSeek V4.1 Flash — 552B MoE, smaller KV cache, encoder+decoder",
+              "desc_pl": "DeepSeek V4.1 Flash upgrade. 552B MoE. Smaller KV cache = less memory. Flash ~1/3 size of full DeepSeek (1.4T params). 8B active parameters, 16-bit output. 384 experts per layer. Needs 3-4 NVIDIA GPUs. Very good on benchmarks.",
+              "desc_en": "DeepSeek V4.1 Flash upgrade. 552B MoE. Smaller KV cache = less memory. Flash ~1/3 size of full DeepSeek (1.4T params). 8B active parameters, 16-bit output. 384 experts per layer. Needs 3-4 NVIDIA GPUs. Very good on benchmarks.",
+              "tags": [
+                "LLM",
+                "DeepSeek"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c17",
+              "title": "Cognition agent — matches Fable 5.1 na coding, 64% less cost",
+              "desc_pl": "Cognition (company's agent) matches Fable 5.1 na coding. 64% less cost. Post-trained z reinforcement learning. Coding agent cheaper niż Claude.",
+              "desc_en": "Cognition (company's agent) matches Fable 5.1 on coding. 64% less cost. Post-trained with reinforcement learning. Coding agent cheaper than Claude.",
+              "tags": [
+                "coding",
+                "agent"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c18",
+              "title": "OpenAI Financial Services — Astra + Morgan Stanley, Evercore",
+              "desc_pl": "OpenAI Financial Services on GPT-6 Astra. Investment banking + equity research. Design partners: Morgan Stanley, Evercore. Money tab w unreleased ChatGPT iOS builds. Users link banks, ask about spending, plans, budgets. Claude finds recurring payments. Plate = financial service.",
+              "desc_en": "OpenAI Financial Services on GPT-6 Astra. Investment banking + equity research. Design partners: Morgan Stanley, Evercore. Money tab in unreleased ChatGPT iOS builds. Users link banks, ask about spending, plans, budgets. Claude finds recurring payments. Plate = financial service.",
+              "tags": [
+                "finance",
+                "OpenAI"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c19",
+              "title": "OpenAI buys Glass Imaging (camera startup) za $300M",
+              "desc_pl": "OpenAI buys Glass Imaging (camera startup) za $300M. Makes smartphone photos look like DSLR. Founded 7 years ago, raised ~$30M. Likely tied to OpenAI device — Journey Eve's device never seen yet.",
+              "desc_en": "OpenAI buys Glass Imaging (camera startup) for $300M. Makes smartphone photos look like DSLR. Founded 7 years ago, raised ~$30M. Likely tied to OpenAI device — Journey Eve's device never seen yet.",
+              "tags": [
+                "M&A",
+                "OpenAI"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c20",
+              "title": "Killed By AI website — 123 products graveyard, layoffs, funding",
+              "desc_pl": "killedbyai.net — graveyard of applications literally killed by AI. Information about layoffs, funding, dying soon. 123 products. Very interesting website to browse.",
+              "desc_en": "killedbyai.net — graveyard of applications literally killed by AI. Information about layoffs, funding, dying soon. 123 products. Very interesting website to browse.",
+              "tags": [
+                "business",
+                "tools"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "title_pl": "Tools + Workflow — TopView MCP, Pix, Creative Suite, Needle 3",
+          "title_en": "Tools + Workflow — TopView MCP, Pix, Creative Suite, Needle 3",
+          "id": "tools2-0918",
+          "num": 6,
+          "icon": "🔧",
+          "headers": [],
+          "rows": [],
+          "notes_pl": "",
+          "notes_en": "",
+          "cards": [
+            {
+              "id": "c21",
+              "title": "TopView MCP AI ad workflow — Claude + market research w 1 connector",
+              "desc_pl": "TopView MCP AI ad workflow (Julia McCoy video). TopView MCP z Claude. Connector dla your product → does marketplace research, marketing copy, content. Nie trzeba switch, copy-paste. Very effective dla marketing work. topview.ai.",
+              "desc_en": "TopView MCP AI ad workflow (Julia McCoy video). TopView MCP with Claude. Connector for your product → does marketplace research, marketing copy, content. No need to switch, copy-paste. Very effective for marketing work. topview.ai.",
+              "tags": [
+                "marketing",
+                "tool"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c22",
+              "title": "Claude Code + OpenAI Codex — model routing within 2 harnesses",
+              "desc_pl": "Claude Code + OpenAI Codex combine. Model routing within 2 programs. One loop, one harness switches between two harnesses. GitHub project. Added standalone Codex route. Runs as skills/plugins w Claude Code lub Codex environments.",
+              "desc_en": "Claude Code + OpenAI Codex combine. Model routing within 2 programs. One loop, one harness switches between two harnesses. GitHub project. Added standalone Codex route. Runs as skills/plugins in Claude Code or Codex environments.",
+              "tags": [
+                "coding",
+                "tool"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c23",
+              "title": "Pix — targeted image edits bez destroying original (unlike Nano Banana)",
+              "desc_pl": "Pix — targeted small image changes bez destroying whole image (unlike Nano Banana). Works standalone at pix.new i directly w Google Docs/Slides. Google Drive integration.",
+              "desc_en": "Pix — targeted small image changes without destroying whole image (unlike Nano Banana). Works standalone at pix.new and directly in Google Docs/Slides. Google Drive integration.",
+              "tags": [
+                "image",
+                "tool"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c24",
+              "title": "Self-tuning harness (China) — 1.8x faster training, 19% higher reasoning",
+              "desc_pl": "Self-tuning harness (China). Improves LLM agent's runtime harness — prompt state, tools, control logic, recovery — while keeping underlying task LLM weights fixed. Authors report 1.8x faster harness training, 19% higher reasoning accuracy.",
+              "desc_en": "Self-tuning harness (China). Improves LLM agent's runtime harness — prompt state, tools, control logic, recovery — while keeping underlying task LLM weights fixed. Authors report 1.8x faster harness training, 19% higher reasoning accuracy.",
+              "tags": [
+                "agent",
+                "research"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c25",
+              "title": "Korea Agent — creative AI workflow, multi-step image/video editing",
+              "desc_pl": "Korea agent creative AI workflow. Users describe what they want → agent selects model, carries multi-step image/video editing, enhancement, upscaling. Reduces manual model selection, node wiring. Takes over creative work functionality.",
+              "desc_en": "Korea agent creative AI workflow. Users describe what they want → agent selects model, carries multi-step image/video editing, enhancement, upscaling. Reduces manual model selection, node wiring. Takes over creative work functionality.",
+              "tags": [
+                "creative",
+                "agent"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c26",
+              "title": "AI Creative Suite 3.1 Pro — text to speech, 44kHz, real-time",
+              "desc_pl": "AI Creative Suite dla images, video, 3D. Lightning version 3.1 Pro text to speech. Real-time 44kHz speech z created voice, natural delivery. Pro targets convincing timing, intonation, prosody. Dedicated inference capacity.",
+              "desc_en": "AI Creative Suite for images, video, 3D. Lightning version 3.1 Pro text to speech. Real-time 44kHz speech with created voice, natural delivery. Pro targets convincing timing, intonation, prosody. Dedicated inference capacity.",
+              "tags": [
+                "audio",
+                "creative"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "title_pl": "Free Agent Models (China) + Tiny Automation AI",
+          "title_en": "Free Agent Models (China) + Tiny Automation AI",
+          "id": "agents-0918",
+          "num": 7,
+          "icon": "🤖",
+          "headers": [],
+          "rows": [],
+          "notes_pl": "",
+          "notes_en": "",
+          "cards": [
+            {
+              "id": "c27",
+              "title": "2.5 free agent models from China — 400B + 1.6T, via OpenRouter",
+              "desc_pl": "2.5 free agent models from China — vision into action. ~400B + 1.6T params. Available via OpenRouter. Can observe interfaces, act, verify results, correct course, continue through multi-step software workflows.",
+              "desc_en": "2.5 free agent models from China — vision into action. ~400B + 1.6T params. Available via OpenRouter. Can observe interfaces, act, verify results, correct course, continue through multi-step software workflows.",
+              "tags": [
+                "agent",
+                "open-source"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c28",
+              "title": "200x faster + 445x cheaper than regular agents — decision model",
+              "desc_pl": "Decision model: convert something into yes/no decision (refund? technical help? account access?). 200x faster + 445x cheaper than regular AI agents. Use jako part of business workflow. Own model architecture — parallel sampling. Decisions delivered short: choice, score, probability.",
+              "desc_en": "Decision model: convert something into yes/no decision (refund? technical help? account access?). 200x faster + 445x cheaper than regular AI agents. Use as part of business workflow. Own model architecture — parallel sampling. Decisions delivered short: choice, score, probability.",
+              "tags": [
+                "agent",
+                "efficiency"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c29",
+              "title": "Cactus Needle 3 — tiny automation AI, works on Raspberry Pi",
+              "desc_pl": "Cactus Needle 3 (cactuscompute.com) — tiny tiny model. Gives short answer: which tool to call lub blank response. Very simple, limited, fast, inexpensive. Works on Raspberry Pi devices. For edge devices.",
+              "desc_en": "Cactus Needle 3 (cactuscompute.com) — tiny tiny model. Gives short answer: which tool to call or blank response. Very simple, limited, fast, inexpensive. Works on Raspberry Pi devices. For edge devices.",
+              "tags": [
+                "edge",
+                "agent"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c30",
+              "title": "Periodic Labs NeonModel — beats Astra + Fable on lab data analysis",
+              "desc_pl": "Periodic Labs NeonModel beats GPT-6 Astra na lab data analysis. Built on Kimi K2.6 (trillion parameter model). Mid-trained + RL trained na periodic lab data. Works z lasers, superconductors, magnets. Beats Astra + Claude Fable na eval. Lower cost per analysis. Already running periodic lab w search of better superconductors i magnets. Automation dla research labs.",
+              "desc_en": "Periodic Labs NeonModel beats GPT-6 Astra on lab data analysis. Built on Kimi K2.6 (trillion parameter model). Mid-trained + RL trained on periodic lab data. Works with lasers, superconductors, magnets. Beats Astra + Claude Fable on eval. Lower cost per analysis. Already running periodic lab in search of better superconductors and magnets. Automation for research labs.",
+              "tags": [
+                "research",
+                "LLM"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "title_pl": "News + Funding + Business — Gemini Live, Salesforce, Z.ai, Odyssey",
+          "title_en": "News + Funding + Business — Gemini Live, Salesforce, Z.ai, Odyssey",
+          "id": "news-0918",
+          "num": 8,
+          "icon": "📰",
+          "headers": [],
+          "rows": [],
+          "notes_pl": "",
+          "notes_en": "",
+          "cards": [
+            {
+              "id": "c31",
+              "title": "Gemini 3.8 Live — voice model that thinks while talking",
+              "desc_pl": "Google ships Gemini 3.8 Live — voice model that thinks while it's talking. New Gemini Live + Thriller Live extended thinking in LiveBench AI Studio. Extended thinking keeps talking. Very cheap, very affordable.",
+              "desc_en": "Google ships Gemini 3.8 Live — voice model that thinks while it's talking. New Gemini Live + Thriller Live extended thinking in LiveBench AI Studio. Extended thinking keeps talking. Very cheap, very affordable.",
+              "tags": [
+                "audio",
+                "Google"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c32",
+              "title": "Salesforce Koa CRM reasoning — on Nvidia NeMoTron, 3x fewer errors",
+              "desc_pl": "Salesforce first CRM reasoning model — built on Nvidia NeMoTron. Training on fully synthetic data. Post-train from Nvidia NeMoTron 3 Super. Covers 14 industries. No custom data. Salesforce 3x fewer errors. Hosts weights separately. Salesforce entered beta z 37 built-in sales skills. Claude reads/updates deals under seller's Salesforce permissions.",
+              "desc_en": "Salesforce first CRM reasoning model — built on Nvidia NeMoTron. Training on fully synthetic data. Post-train from Nvidia NeMoTron 3 Super. Covers 14 industries. No custom data. Salesforce 3x fewer errors. Hosts weights separately. Salesforce entered beta with 37 built-in sales skills. Claude reads/updates deals under seller's Salesforce permissions.",
+              "tags": [
+                "business",
+                "Salesforce"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c33",
+              "title": "Nous Hermes refactored — 1400 agents, $19K, 34% smaller codebase",
+              "desc_pl": "Nous Research refactors Hermes z ~1400 agents in one run. Cost ~$19,000. Ran 1000+ agents przez 19 hours. Decreased codebase of Hermes agent by 34% (lines of code). Postmortem found 12 harness fixes. Independent review caught 3 blockers, 9 other defects. $20K — ale code much leaner.",
+              "desc_en": "Nous Research refactors Hermes with ~1400 agents in one run. Cost ~$19,000. Ran 1000+ agents over 19 hours. Decreased codebase of Hermes agent by 34% (lines of code). Postmortem found 12 harness fixes. Independent review caught 3 blockers, 9 other defects. $20K — but code much leaner.",
+              "tags": [
+                "coding",
+                "agent"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c34",
+              "title": "Z.ai (GLM maker) raises $5B — 6% na next-gen GLM",
+              "desc_pl": "Z.ai (maker of GLM) raises $5B. 6% goes into next-generation GLM models — training, inference, compute. GLM = one of top Chinese frontier models.",
+              "desc_en": "Z.ai (maker of GLM) raises $5B. 6% goes into next-generation GLM models — training, inference, compute. GLM = one of top Chinese frontier models.",
+              "tags": [
+                "funding",
+                "China"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c35",
+              "title": "Odyssey 3 world model — diffusion, robot arms/humanoids/cars/drones",
+              "desc_pl": "Odyssey 3 world model. Diffusion-based, fast trained na video to predict how world changes. Small actions decoders attached to frozen model. Robot arms, humanoids, cars, drones. World model dla robotics.",
+              "desc_en": "Odyssey 3 world model. Diffusion-based, fast trained on video to predict how world changes. Small actions decoders attached to frozen model. Robot arms, humanoids, cars, drones. World model for robotics.",
+              "tags": [
+                "robotics",
+                "world-model"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c36",
+              "title": "MCP dla home devices — AI controls thermostats, cameras",
+              "desc_pl": "MCP dla AI agents to interact z home devices. AI controls devices, inspect activity, review camera summaries. Lev: używa dla thermostats — phone steruje temperature w house during winter. AI home automation.",
+              "desc_en": "MCP for AI agents to interact with home devices. AI controls devices, inspect activity, review camera summaries. Lev: uses for thermostats — phone controls temperature in house during winter. AI home automation.",
+              "tags": [
+                "IoT",
+                "agent"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c37",
+              "title": "Scientific research system — $4.65B at $5B valuation",
+              "desc_pl": "System to do better scientific research. Research that takes thousands of people-years could compress into weeks. Raised $4.65B at $5B valuation. Seed usually smaller niż valuation — in this case close.",
+              "desc_en": "System to do better scientific research. Research that takes thousands of people-years could compress into weeks. Raised $4.65B at $5B valuation. Seed usually smaller than valuation — in this case close.",
+              "tags": [
+                "funding",
+                "research"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c38",
+              "title": "Databricks offers Astra to 3000+ engineers + Claude Code Projects",
+              "desc_pl": "Databricks offers Astra to 3000+ engineers dla company use. Claude Code Projects — relaunch. Agents code w cloud while you offline. Threads keep running after close laptop. Check from phone. Like outsourcing to team of coders w cloud in your account.",
+              "desc_en": "Databricks offers Astra to 3000+ engineers for company use. Claude Code Projects — relaunch. Agents code in cloud while you offline. Threads keep running after close laptop. Check from phone. Like outsourcing to team of coders in cloud in your account.",
+              "tags": [
+                "business",
+                "coding"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c39",
+              "title": "ChatGPT ads — click → talk to brand agent + Snap Specs AR $2K",
+              "desc_pl": "ChatGPT ads now open chat z agent. Click advertisement → talk to agent representing brand. Snap Inc. (Snapchat) — Specs AR glasses $2K+. Overlay directions, translate, conversations.",
+              "desc_en": "ChatGPT ads now open chat with agent. Click advertisement → talk to agent representing brand. Snap Inc. (Snapchat) — Specs AR glasses $2K+. Overlay directions, translate, conversations.",
+              "tags": [
+                "business",
+                "AR"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            },
+            {
+              "id": "c40",
+              "title": "Uber layoffs continue — jobs page auto-generated",
+              "desc_pl": "Jobs i layoffs page auto-generated (Lev nie touch). Same as last time — dużo from Uber layoffs. Strona automatically generuje layoff tracking.",
+              "desc_en": "Jobs and layoffs page auto-generated (Lev didn't touch). Same as last time — lots from Uber layoffs. Page automatically generates layoff tracking.",
+              "tags": [
+                "jobs",
+                "news"
+              ],
+              "date": "2026-09-12",
+              "links": []
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "ep-2026-09-11",
       "date": "2026-09-11",
       "title_pl": "Exciting AI Updates Weekly — 11 września 2026",
@@ -6801,69 +7468,39 @@
       "items": [
         {
           "dot_color": "green",
-          "html_pl": "<strong>nvidia kupuje huggingface za $13b</strong> — bo meta/openai/microsoft/amazon budują własne chipy, więc nvidia idzie po developerów + chińskie modele via hf. nvidia b",
-          "html_en": "<strong>nvidia buys huggingface for $13b</strong> — because meta/openai/microsoft/amazon are building their own chips, so nvidia goes after developers + chinese models via ",
-          "episode_id": "ep-2026-09-11"
+          "html_pl": "<strong>meta muse agent</strong> — agent z własnym cloud computer i browser. virtual computer w chmurze. nie musisz kupować mac mini. free tier + $20/mies ",
+          "html_en": "<strong>meta muse agent</strong> — agent with own cloud computer and browser. virtual computer in cloud. don't need to buy mac mini. free tier + $20/month ",
+          "episode_id": "ep-2026-09-18"
         },
         {
           "dot_color": "green",
-          "html_pl": "<strong>spark x2</strong> — chiński small model 4b params. edge deployment. github + huggingface + ollama. 1m token context window, multiple languag",
-          "html_en": "<strong>spark x2</strong> — chinese small model 4b params. edge deployment. github + huggingface + ollama. 1m token context window, multiple languag",
-          "episode_id": "ep-2026-09-11"
+          "html_pl": "<strong>claude formalized fermat's last theorem w 11 dni</strong> — converted existing proof (1995) do 13 million lines of lean (functional language dla math). wszystko na github. claude d",
+          "html_en": "<strong>claude formalized fermat's last theorem in 11 days</strong> — converted existing proof (1995) to 13 million lines of lean (functional language for math). all on github. claude didn't",
+          "episode_id": "ep-2026-09-18"
         },
         {
           "dot_color": "green",
-          "html_pl": "<strong>aram studio v4</strong> — transformer napisany w całości w rust (zamiast pytorch). po 6 mies., 4 major versions, 54 phrases. complete multimodal s",
-          "html_en": "<strong>aram studio v4</strong> — transformer written entirely in rust (instead of pytorch). after 6 months, 4 major versions, 54 phrases. complete multim",
-          "episode_id": "ep-2026-09-11"
+          "html_pl": "andrej karpathy workflow: talk to ai via audio + speech to text. python script → local website wygląda jak wikipedia. transforms static documents → in",
+          "html_en": "andrej karpathy workflow: talk to ai via audio + speech to text. python script → local website looks like wikipedia. transforms static documents → int",
+          "episode_id": "ep-2026-09-18"
         },
         {
           "dot_color": "green",
-          "html_pl": "<strong>afm (apple foundation model)</strong> — więcej niż jeden model dla różnych case-ów. apple mówi o kolaboracji z google i gemini models. nie wiadomo czy to rebran",
-          "html_en": "<strong>afm (apple foundation model)</strong> — more than one model for different cases. apple mentions collaboration with google and gemini models. unclear if rebrande",
-          "episode_id": "ep-2026-09-11"
+          "html_pl": "suno (music gen) released model built with warner music group, bmg, believe. artists participating z licensed music + likeness. authors can be properl",
+          "html_en": "suno (music gen) released model built with warner music group, bmg, believe. artists participating with licensed music + likeness. authors can be prop",
+          "episode_id": "ep-2026-09-18"
         },
         {
           "dot_color": "green",
-          "html_pl": "<strong>openai navier–stokes</strong> — clay millennium prize problem solved (kontynuacja ep #286). 10,000 coordinating agents przez 88h. api cost 10m-40m token",
-          "html_en": "<strong>openai navier–stokes</strong> — clay millennium prize problem solved (continuation of ep #286). 10,000 coordinating agents over 88h. api cost 10m-40m to",
-          "episode_id": "ep-2026-09-11"
+          "html_pl": "claude code + openai codex combine. model routing within 2 programs. one loop, one harness switches between two harnesses. github project. added stand",
+          "html_en": "claude code + openai codex combine. model routing within 2 programs. one loop, one harness switches between two harnesses. github project. added stand",
+          "episode_id": "ep-2026-09-18"
         },
         {
           "dot_color": "green",
-          "html_pl": "analiza: czy warto kupić własne gpu żeby run gpt-6 astra lokalnie? wynik: nie warto. potrzebne wiele komputerów + gpu + prąd. koszty ogromne. lepiej r",
-          "html_en": "analysis: is it worth buying own gpu to run gpt-6 astra locally? result: not worth it. many computers + gpu + electricity needed. costs enormous. bett",
-          "episode_id": "ep-2026-09-11"
-        },
-        {
-          "dot_color": "green",
-          "html_pl": "<strong>anthropic open-source 'claude commerce agents'</strong> — several agents do selling on the website. open source",
-          "html_en": "<strong>anthropic open-sources 'claude commerce agents'</strong> — several agents that do selling on the website. open source",
-          "episode_id": "ep-2026-09-11"
-        },
-        {
-          "dot_color": "green",
-          "html_pl": "<strong>ai safety: 'success of model design may accelerate beyond human oversight</strong> — pomoże trochę ale nie rozwiąże.'",
-          "html_en": "<strong>ai safety: 'success of model design may accelerate beyond human oversight</strong> — will help a bit but won't solve.'",
-          "episode_id": "ep-2026-09-11"
-        },
-        {
-          "dot_color": "green",
-          "html_pl": "<strong>architektura: separating dev vs prod</strong> — runtime nie widzi dev rules.",
-          "html_en": "<strong>architecture: separating dev vs prod</strong> — runtime doesn't see dev rules.",
-          "episode_id": "ep-2026-09-11"
-        },
-        {
-          "dot_color": "green",
-          "html_pl": "open-source projects under attack: ludzie wokół świata find same bug, report 100 times. maintainers nie mogą handle avalanche. solution: ignorują outs",
-          "html_en": "open-source projects under attack: people around the world find same bug, report 100 times. maintainers can't handle avalanche. solution: ignore outsi",
-          "episode_id": "ep-2026-09-11"
-        },
-        {
-          "dot_color": "green",
-          "html_pl": "<strong>gen 1</strong> — physical prompting. off-the-shelf robot arm manipulation. robot używa short 3-12s video jako sense + remote demonstratio",
-          "html_en": "<strong>gen 1</strong> — physical prompting. off-the-shelf robot arm manipulation. robot uses short 3-12s video as sense + remote demonstration +",
-          "episode_id": "ep-2026-09-11"
+          "html_pl": "<strong>2</strong> — vision into action. ~400b + 1.6t params. available via openrouter. can observe interfaces, act, verify results, correct ",
+          "html_en": "<strong>2</strong> — vision into action. ~400b + 1.6t params. available via openrouter. can observe interfaces, act, verify results, correct ",
+          "episode_id": "ep-2026-09-18"
         }
       ],
       "title_pl": "CO JEST OBECNIE MOŻLIWE",
