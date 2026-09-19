@@ -1,27 +1,27 @@
 // AI Trends — auto-generated from calendar.js by build_trends.py
-// Generated: 2026-09-19 16:23:36 UTC
-// Total events: 602, months: 4
+// Generated: 2026-09-19 23:20:54 UTC
+// Total events: 603, months: 4
 
 const TRENDS = {
   "meta": {
-    "generated": "2026-09-19 16:23:36 UTC",
-    "total_events": 602,
+    "generated": "2026-09-19 23:20:54 UTC",
+    "total_events": 603,
     "total_months": 4
   },
   "months": [
     {
       "month": "2026-09",
-      "total": 153,
+      "total": 154,
       "by_type": {
+        "diamandis": 3,
         "weekly": 1,
         "ai_search": 40,
-        "lev": 110,
-        "diamandis": 2
+        "lev": 110
       },
       "top_vendors": [
         [
           "OpenAI",
-          27
+          28
         ],
         [
           "Anthropic",
@@ -98,7 +98,7 @@ const TRENDS = {
           2
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           2
         ]
       ]
@@ -176,11 +176,11 @@ const TRENDS = {
           4
         ],
         [
-          "DeepSeek DeepSeek",
+          "DeepSeek V4",
           3
         ],
         [
-          "DeepSeek V4",
+          "DeepSeek DeepSeek",
           3
         ],
         [
@@ -266,11 +266,11 @@ const TRENDS = {
           5
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           5
         ],
         [
-          "GPT 5.6",
+          "GPT 5",
           5
         ],
         [
@@ -351,11 +351,11 @@ const TRENDS = {
           1
         ],
         [
-          "GPT 5",
+          "GPT 5.6",
           1
         ],
         [
-          "GPT 5.6",
+          "GPT 5",
           1
         ],
         [
@@ -447,7 +447,7 @@ const TRENDS = {
       ],
       [
         "OpenAI",
-        65
+        66
       ],
       [
         "Google",
@@ -524,11 +524,11 @@ const TRENDS = {
         9
       ],
       [
-        "GPT 5",
+        "GPT 5.6",
         9
       ],
       [
-        "GPT 5.6",
+        "GPT 5",
         9
       ],
       [
@@ -565,10 +565,10 @@ const TRENDS = {
       ]
     ],
     "by_type": {
+      "diamandis": 19,
       "weekly": 10,
       "ai_search": 198,
-      "lev": 376,
-      "diamandis": 18
+      "lev": 376
     }
   }
 };

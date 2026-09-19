@@ -2,9 +2,19 @@
 // Each event = INDIVIDUAL product/card on its ACTUAL date (not episode date)
 // Types: ai_search (product), lev (radar card), diamandis (podcast), weekly
 // Sort: DESC by date (newest first)
-// Generated: 2026-09-19 16:23:36 UTC
+// Generated: 2026-09-19 23:20:54 UTC
 
 const CALENDAR = [
+  {
+    "date": "2026-09-19",
+    "type": "diamandis",
+    "title_pl": "Podcast #289 — Vlad Tenev (Robinhood) o tokenizacji wszystkiego, 6 raportów OpenAI o misalignment, robot Figure | #289",
+    "title_en": "Podcast #289 — Robinhood's Vlad Tenev on Tokenizing Everything, OpenAI's 6 Misalignment Reports, Figure's Robot | EP #289",
+    "link": "ai-pulse.html#289",
+    "meta_pl": "14 tematów",
+    "meta_en": "14 topics",
+    "num": "#289"
+  },
   {
     "date": "2026-09-13",
     "type": "weekly",

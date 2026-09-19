@@ -1,6 +1,355 @@
 {
   "EPISODES": [
     {
+      "num": "#289",
+      "collapsed": true,
+      "channel": "Moonshots",
+      "title": "Robinhood's Vlad Tenev on Tokenizing Everything, OpenAI's 6 Misalignment Reports, Figure's Robot | EP #289",
+      "title_pl": "Vlad Tenev (Robinhood) o tokenizacji wszystkiego, 6 raportów OpenAI o misalignment, robot Figure | #289",
+      "title_en": "Robinhood's Vlad Tenev on Tokenizing Everything, OpenAI's 6 Misalignment Reports, Figure's Robot | EP #289",
+      "date": "2026-09-19",
+      "duration": "65 min",
+      "yt": "LNBzLTLuLUo",
+      "hosts_count_pl": "3 uczestników + GOŚĆ Vlad Tenev (Salim w samolocie z Indii)",
+      "hosts_count_en": "3 participants + GUEST Vlad Tenev (Salim on airplane from India)",
+      "topics_count_pl": "14 tematów",
+      "topics_count_en": "14 topics",
+      "hosts": [
+        {
+          "name": "Peter Diamandis",
+          "role_pl": "Gospodarz",
+          "role_en": "Main host"
+        },
+        {
+          "name": "Dr. Alexander Wissner-Gross",
+          "role_pl": "In-house ASI",
+          "role_en": "In-house ASI"
+        },
+        {
+          "name": "Dave Blundin",
+          "role_pl": "Inwestor VC (Link Ventures)",
+          "role_en": "VC investor (Link Ventures)"
+        },
+        {
+          "name": "Vlad Tenev",
+          "role_pl": "GOŚĆ — co-founder + CEO Robinhood, founder Harmonic (mathematical superintelligence)",
+          "role_en": "GUEST — co-founder + CEO Robinhood, founder Harmonic (mathematical superintelligence)"
+        }
+      ],
+      "topics": [
+        {
+          "num": "01",
+          "title": "Introduction to AI Regulation and Safety",
+          "title_pl": "Wprowadzenie do regulacji AI i bezpieczeństwa",
+          "title_en": "Introduction to AI Regulation and Safety",
+          "time": "00:00 – 02:28",
+          "fakty_pl": "Peter otwiera cytatem z Vlad na CNBC (zeszły miesiąc): 'Tokenization will take over the entire financial system.' Vlad: 'freight train that can't be stopped, will eat the whole financial system. Very hungry freight train.' OpenAI w tym tygodniu opublikował 6 incident reports under new framework for tracking and publicly disclosing misalignment. Anthropic prawdopodobnie dołączy. Figure 3 robot: Helix 2.5 release, robot wszedł w 30 strangers home, zrobił łóżka, złożył pranie. Treasury Secretary powiedział labs: 'nie dostaniecie liability pass.' AI industry debaty jak szybko budować. Gość: Vlad Tenev — 39 lat, born w Bulgaria, co-founder + CEO Robinhood, założyciel Harmonic (mathematical super intelligence). Spędził 13 lat na pytaniu: 'kiedy AI i robotics zmienią wartość pracy, kto owns the machines?'",
+          "fakty_en": "Peter opens with Vlad quote on CNBC (last month): 'Tokenization will take over the entire financial system.' Vlad: 'freight train that can't be stopped, will eat the whole financial system. Very hungry freight train.' OpenAI this week published 6 incident reports under new framework for tracking and publicly disclosing misalignment. Anthropic likely to join. Figure 3 robot: Helix 2.5 release, robot walked into 30 strangers' homes, made beds, folded laundry. Treasury Secretary told labs: 'no liability pass.' AI industry debates how fast to build. Guest: Vlad Tenev — 39, born in Bulgaria, co-founder + CEO Robinhood, founder Harmonic (mathematical super intelligence). Spent 13 years on question: 'when AI and robotics change what work is worth, who owns the machines?'",
+          "glosy": [
+            {
+              "author": "Vlad Tenev (cytowany z CNBC)",
+              "text_pl": "Tokenizacja przejmie cały system finansowy. Pociąg towarowy, którego nie da się zatrzymać i który pożre cały system finansowy. Bardzo głodny pociąg towarowy.",
+              "text_en": "Tokenization will take over the entire financial system. A freight train that can't be stopped and will eat the whole financial system. Very hungry freight train."
+            },
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "W tym tygodniu branża AI debatowała, jak szybko budować. Sekretarz Skarbu powiedział laboratoriom, że nie dostaną zwolnienia z odpowiedzialności. OpenAI zaczął publikować własne incydenty misalignment, a robot wszedł do 30 nieznajomych, zrobił łóżka i złożył pranie.",
+              "text_en": "This week, the AI industry debated how fast to build. The Treasury Secretary told the labs they don't get a liability pass. OpenAI started publishing its own misalignment incidents and a robot walked into 30 strangers' home, made their beds, and folded their laundry."
+            }
+          ],
+          "wniosek_pl": "Wprowadzenie: Vlad Tenev (Robinhood CEO) + tokenizacja + OpenAI 6 misalignment reports + Figure 3 robot w 30 domach. Treasury Secretary: brak liability pass.",
+          "wniosek_en": "Intro: Vlad Tenev (Robinhood CEO) + tokenization + OpenAI 6 misalignment reports + Figure 3 robot in 30 homes. Treasury Secretary: no liability pass.",
+          "kontekst_pl": "Vlad Tenev = Robinhood CEO + Harmonic founder. Figure 3 = robotics company, Helix 2.5 = their model. Tokenizacja = blockchain representation of assets.",
+          "kontekst_en": "Vlad Tenev = Robinhood CEO + Harmonic founder. Figure 3 = robotics company, Helix 2.5 = their model. Tokenization = blockchain representation of assets."
+        },
+        {
+          "num": "02",
+          "title": "Robinhood's Front-End Innovations",
+          "title_pl": "Innowacje front-end Robinhood",
+          "title_en": "Robinhood's Front-End Innovations",
+          "time": "02:28 – 05:10",
+          "fakty_pl": "Peter: 'Vlad founded company that's building mathematical super intelligence.' Vlad 39 lat, born w Bulgaria, founder + CEO Robinhood. Vlad: 'very little sleep — last night was rough with my coding agents.' Peter: 'compare how many agents you're running simultaneous do Dave's agents.' Vlad: 'I'd love to have that benchmark.' Context: Vlad prowadzi Robinhood (regulated financial company) + Harmonic (mathematical super intelligence — formal verification, Lean language).",
+          "fakty_en": "Peter: 'Vlad founded company that's building mathematical super intelligence.' Vlad 39, born in Bulgaria, founder + CEO Robinhood. Vlad: 'very little sleep — last night was rough with my coding agents.' Peter: 'compare how many agents you're running simultaneous to Dave's agents.' Vlad: 'I'd love to have that benchmark.' Context: Vlad runs Robinhood (regulated financial company) + Harmonic (mathematical super intelligence — formal verification, Lean language).",
+          "glosy": [
+            {
+              "author": "Vlad Tenev",
+              "text_pl": "Bardzo mało snu. Zeszła noc była trudna z moimi agentami kodującymi.",
+              "text_en": "Very little sleep. Last night was rough with my coding agents."
+            }
+          ],
+          "wniosek_pl": "Vlad Tenev — 2 firmy: Robinhood (regulated) + Harmonic (math superintelligence, formal verification). Coding agents w nocy.",
+          "wniosek_en": "Vlad Tenev — 2 companies: Robinhood (regulated) + Harmonic (math superintelligence, formal verification). Coding agents at night.",
+          "kontekst_pl": "Harmonic = Vlad's math AI company (formal verification, Lean). Coding agents = AI coding assistants running w background.",
+          "kontekst_en": "Harmonic = Vlad's math AI company (formal verification, Lean). Coding agents = AI coding assistants running in background."
+        },
+        {
+          "num": "03",
+          "title": "AI Regulation, Liability and Transparency",
+          "title_pl": "Regulacja AI, odpowiedzialność i przejrzystość",
+          "title_en": "AI Regulation, Liability and Transparency",
+          "time": "05:10 – 08:28",
+          "fakty_pl": "Peter: 'Vlad, run regulated financial company. Robinhood gets sued when something goes wrong. Should AI labs live under same rules?' Vlad: 'question rests on how big the blast radius of any potential catastrophe could be. Small issue — cyber security breach — probably fine. Bigger blast radius — larger than simple legal liability can handle. Many people compare AI risks z atomic energy.' Jeśli AI jest na atomic energy tier of risk — simple legal and civil liability insufficient. Need safeguards beyond that. HuggingFace incident — is that ceiling of offensive cyber security capability lub should we plan dla 10x lub 100x bigger? Do we have time? Will we see canary w coal mine first lub will first issue be catastrophic? Financial industry regulations trace back to crises (1929 market crash → Securities Act of 1930s, SEC). Mental model: AI regulation similar — nobody wants regulate hypothetical, regulate things once there's demonstrated proof of harm. Problem: exponential increase w model power — want harm to be small + contained, not really big. Mark Andreessen (2 lata temu): 'everyone's freaking out about AI, we're overthinking it, it's not going to kill us all. And if it does, you'll see a small village destroyed first.'",
+          "fakty_en": "Peter: 'Vlad, run regulated financial company. Robinhood gets sued when something goes wrong. Should AI labs live under same rules?' Vlad: 'question rests on how big the blast radius of any potential catastrophe could be. Small issue — cyber security breach — probably fine. Bigger blast radius — larger than simple legal liability can handle. Many people compare AI risks with atomic energy.' If AI is on atomic energy tier of risk — simple legal and civil liability insufficient. Need safeguards beyond that. HuggingFace incident — is that ceiling of offensive cyber security capability or should we plan for 10x or 100x bigger? Do we have time? Will we see canary in coal mine first or will first issue be catastrophic? Financial industry regulations trace back to crises (1929 market crash → Securities Act of 1930s, SEC). Mental model: AI regulation similar — nobody wants regulate hypothetical, regulate things once there's demonstrated proof of harm. Problem: exponential increase in model power — want harm to be small + contained, not really big. Marc Andreessen (2 years ago): 'everyone's freaking out about AI, we're overthinking it, it's not going to kill us all. And if it does, you'll see a small village destroyed first.'",
+          "glosy": [
+            {
+              "author": "Vlad Tenev",
+              "text_pl": "Kwestia sprowadza się do tego, jak duży może być zasięg rażenia ewentualnej katastrofy. Mały problem — cyber security breach — prawdopodobnie w porządku. Większy zasięg rażenia — większy niż może poradzić sobie z prosta odpowiedzialnością prawną.",
+              "text_en": "This question rests on how big the blast radius of any potential catastrophe could be. Small issue — cyber security breach — probably fine. Bigger blast radius — larger than simple legal liability can handle."
+            },
+            {
+              "author": "Marc Andreessen (cytowany)",
+              "text_pl": "Wszyscy panikują z powodu AI, przesadzamy, to nas nie zabije. A jeśli już, to najpierw zobaczysz zniszczoną małą wioskę.",
+              "text_en": "Everyone's freaking out about AI, we're overthinking it, it's not going to kill us all. And if it does, you'll see a small village destroyed first."
+            }
+          ],
+          "wniosek_pl": "Vlad: AI regulation jak financial — po kryzysie. Problem: blast radius może być zbyt duży na 'canary w coal mine'. Atomic energy tier = need safeguards beyond liability.",
+          "wniosek_en": "Vlad: AI regulation like financial — after crisis. Problem: blast radius may be too big for 'canary in coal mine'. Atomic energy tier = need safeguards beyond liability.",
+          "kontekst_pl": "1929 market crash = Great Depression start. Securities Act 1933 + Securities Exchange Act 1934 = US financial regulation. SEC = Securities and Exchange Commission. HuggingFace incident = z #286/#288.",
+          "kontekst_en": "1929 market crash = Great Depression start. Securities Act 1933 + Securities Exchange Act 1934 = US financial regulation. SEC = Securities and Exchange Commission. HuggingFace incident = from #286/#288."
+        },
+        {
+          "num": "04",
+          "title": "AI Risk and the Atomic Energy Analogy",
+          "title_pl": "Ryzyko AI i analogia do energii atomowej",
+          "title_en": "AI Risk and the Atomic Energy Analogy",
+          "time": "08:28 – 12:03",
+          "fakty_pl": "Alex: 'applaud Treasury Secretary for not succumbing to moral panic of the moment. Certainly looks like manufactured moral panic.' Alex: 'pacing provocation' — jego social media posts. Kluczowe distinctions między AI a financial services / atomic energy regulation. W financial services: actors often incentivized to underplay risks. Auditors succumb to biases that underplay risks. W AI: 'past couple months — auditors, evaluators, AI safety firms overplaying risk.' Vlad: 'AI labs seeking liability exemption — attempting to have their cake. Want all profits of private sector, not born secret regime, while escaping all liability associated z nationalization. Not fair, not advisable.' Atomic Energy Act w US + equivalent statutes: nuclear energy technology 'born secret.' AI — private sector invented it, not government. Not born secret. Peter (pilot): 'FARS (Federal Aviation Regulations) written w blood. Every accident → regulation to prevent. Quantum of damage = airplane + few hundred passengers. AI accident could cause irreparable harm to large system. Existential threat dla labs if they don't have regulatory capture. Hundreds of billions of dollars of lawsuits if AI takes down power grid lub bank.' Vlad: 'people immediately go to regulatory capture. Been w regulated industry since beginning — financial services. Got fully regulated from start.'",
+          "fakty_en": "Alex: 'applaud Treasury Secretary for not succumbing to moral panic of the moment. Certainly looks like manufactured moral panic.' Alex: 'pacing provocation' — his social media posts. Key distinctions between AI and financial services / atomic energy regulation. In financial services: actors often incentivized to underplay risks. Auditors succumb to biases that underplay risks. In AI: 'past couple months — auditors, evaluators, AI safety firms overplaying risk.' Vlad: 'AI labs seeking liability exemption — attempting to have their cake. Want all profits of private sector, not born secret regime, while escaping all liability associated with nationalization. Not fair, not advisable.' Atomic Energy Act in US + equivalent statutes: nuclear energy technology 'born secret.' AI — private sector invented it, not government. Not born secret. Peter (pilot): 'FARS (Federal Aviation Regulations) written in blood. Every accident → regulation to prevent. Quantum of damage = airplane + few hundred passengers. AI accident could cause irreparable harm to large system. Existential threat for labs if they don't have regulatory capture. Hundreds of billions of dollars of lawsuits if AI takes down power grid or bank.' Vlad: 'people immediately go to regulatory capture. Been in regulated industry since beginning — financial services. Got fully regulated from start.'",
+          "glosy": [
+            {
+              "author": "Alex Wissner-Gross",
+              "text_pl": "Applauz dla Sekretarza Skarbu za to, że nie uległ moralnej panice chwili. Zdecydowanie wygląda to na wyprodukowaną moralną panikę.",
+              "text_en": "I'll applaud the Treasury Secretary and not succumbing to the moral panic of the moment. Certainly looks like a manufactured moral panic."
+            },
+            {
+              "author": "Vlad Tenev",
+              "text_pl": "Laboratoria AI szukające zwolnienia z odpowiedzialności próbują mieć i ciastko, i zjeść ciastko. Chcą wszystkich zysków sektora prywatnego, reżimu nie-urodzonego-tajemnicy, jednocześnie uciekając od całej odpowiedzialności związanej z nacjonalizacją. To niesprawiedliwe i nie doradzalne.",
+              "text_en": "AI labs seeking liability exemption — they're just attempting to have their cake, too. They want all the profits of a private sector, not born secret regime, while escaping all of the liability associated with nationalization. I just don't think it's fair. And I also don't think it's advisable."
+            }
+          ],
+          "wniosek_pl": "Alex: moral panic manufactured. Vlad: AI labs want profits + no liability — nie fair. Atomic Energy = 'born secret', AI = private sector. FARS w blood.",
+          "wniosek_en": "Alex: moral panic manufactured. Vlad: AI labs want profits + no liability — not fair. Atomic Energy = 'born secret', AI = private sector. FARS in blood.",
+          "kontekst_pl": "Atomic Energy Act 1946 (US). 'Born secret' = nuclear tech automatically classified. FARS = Federal Aviation Regulations. Regulatory capture = industries control their regulators.",
+          "kontekst_en": "Atomic Energy Act 1946 (US). 'Born secret' = nuclear tech automatically classified. FARS = Federal Aviation Regulations. Regulatory capture = industries control their regulators."
+        },
+        {
+          "num": "05",
+          "title": "Tokenization of Assets and Global Access",
+          "title_pl": "Tokenizacja aktywów i globalny dostęp",
+          "title_en": "Tokenization of Assets and Global Access",
+          "time": "12:03 – 18:15",
+          "fakty_pl": "Vlad: 'tokenization will take over entire financial system.' Vlad's mental model: freight train that can't be stopped, hungry freight train eating whole financial system. Tokenization = blockchain representation of assets. Global access: anyone z phone + internet can access financial markets. Robinhood's role: implementation layer dla Trump accounts (sole initial brokerage + trustee, partnership z BNY, under US Treasury direction). Vlad: 'we swim against current w 2013 when started — got fully regulated from beginning. 2013-2018: generally positive, Robinhood could do no wrong. Then things shifted. Competitors w Washington telling regulators to look at Robinhood.' General life cycle: small startup → established incumbent → media + apparatus turns against you. Robinhood went through that, figured out how to come out the other side. 'Getting rid of regulation as a whole is not reasonable solution.' 'Everybody knows you need rules on the road to drive. Saying you want chaos is insane. Regulatory capture is major problem w many industries.'",
+          "fakty_en": "Vlad: 'tokenization will take over entire financial system.' Vlad's mental model: freight train that can't be stopped, hungry freight train eating whole financial system. Tokenization = blockchain representation of assets. Global access: anyone with phone + internet can access financial markets. Robinhood's role: implementation layer for Trump accounts (sole initial brokerage + trustee, partnership with BNY, under US Treasury direction). Vlad: 'we swim against current in 2013 when started — got fully regulated from beginning. 2013-2018: generally positive, Robinhood could do no wrong. Then things shifted. Competitors in Washington telling regulators to look at Robinhood.' General life cycle: small startup → established incumbent → media + apparatus turns against you. Robinhood went through that, figured out how to come out the other side. 'Getting rid of regulation as a whole is not reasonable solution.' 'Everybody knows you need rules on the road to drive. Saying you want chaos is insane. Regulatory capture is major problem in many industries.'",
+          "glosy": [
+            {
+              "author": "Vlad Tenev",
+              "text_pl": "Wszyscy wiedzą, że na drodze potrzebne są zasady, żeby jeździć. Mówienie, że chcesz chaosu we wszystkich obszarach, to szalone. Ale też wszyscy wiedzą, że przechwytywanie regulacyjne jest poważnym problemem w wielu branżach.",
+              "text_en": "Everybody knows you need rules on the road to drive, right? You saying you want chaos like on all in all areas and but also everybody knows that regulatory capture is a major problem in a lot of industries."
+            }
+          ],
+          "wniosek_pl": "Vlad: tokenization = freight train, unstoppable. Robinhood: implementation layer dla Trump accounts. Regulatory capture = problem ale regulation necessary.",
+          "wniosek_en": "Vlad: tokenization = freight train, unstoppable. Robinhood: implementation layer for Trump accounts. Regulatory capture = problem but regulation necessary.",
+          "kontekst_pl": "BNY = Bank of New York Mellon. Trump accounts = $1000 seed per child born 2025+. Robinhood founded 2013.",
+          "kontekst_en": "BNY = Bank of New York Mellon. Trump accounts = $1000 seed per child born 2025+. Robinhood founded 2013."
+        },
+        {
+          "num": "06",
+          "title": "Robotics, Generalization and Scaling Laws",
+          "title_pl": "Robotyka, uogólnianie i prawa skalowania",
+          "title_en": "Robotics, Generalization and Scaling Laws",
+          "time": "18:15 – 20:31",
+          "fakty_pl": "Peter: 'this week robot walked into 30 strangers homes, made beds, folded laundry.' Figure 3 + Helix 2.5 release. Robot never seen this bed, this pillow — has to do autonomous work end-to-end. 'Convergence across different actions is much richer than you would normally expect.' Scaling laws w robotics: if they get big enough lead, crazy explosion of capability. Vlad: AI labs distillation argument — China distilling our models. Strange to simultaneously believe that + throw China competitiveness argument aggressively.",
+          "fakty_en": "Peter: 'this week robot walked into 30 strangers homes, made beds, folded laundry.' Figure 3 + Helix 2.5 release. Robot never seen this bed, this pillow — has to do autonomous work end-to-end. 'Convergence across different actions is much richer than you would normally expect.' Scaling laws in robotics: if they get big enough lead, crazy explosion of capability. Vlad: AI labs distillation argument — China distilling our models. Strange to simultaneously believe that + throw China competitiveness argument aggressively.",
+          "glosy": [
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "Robot wszedł w 30 domów nieznajomych, zrobił łóżka, złożył pranie. Nigdy nie widział tego łóżka, tej poduszki — musi wykonać autonomiczną pracę od początku do końca.",
+              "text_en": "Robot walked into 30 strangers homes, made beds, folded laundry. Never seen this bed, this pillow — has to do autonomous work end-to-end."
+            }
+          ],
+          "wniosek_pl": "Figure 3 + Helix 2.5: 30 domów, łóżka, pranie. Scaling laws robotics — big lead = crazy explosion.",
+          "wniosek_en": "Figure 3 + Helix 2.5: 30 homes, beds, laundry. Scaling laws robotics — big lead = crazy explosion.",
+          "kontekst_pl": "Figure 3 = robotics company. Helix 2.5 = their AI model. Scaling laws = bigger = better ( transformers).",
+          "kontekst_en": "Figure 3 = robotics company. Helix 2.5 = their AI model. Scaling laws = bigger = better (transformers)."
+        },
+        {
+          "num": "07",
+          "title": "OpenAI's Misalignment Incidents",
+          "title_pl": "Incydenty misalignment OpenAI",
+          "title_en": "OpenAI's Misalignment Incidents",
+          "time": "20:31 – 24:56",
+          "fakty_pl": "OpenAI w tym tygodniu opublikował 6 incident reports under new framework for tracking and publicly disclosing misalignment. Not leaks, not whistleblowers — voluntary disclosures. Anthropic prawdopodobnie dołączy. Alex: 'liability exemption is misdirection — trying push onus up to government when in fact we're dealing z increasingly autonomous agents. Opposite polarity — pushing more and more liability onto agents themselves.' Alex: 'cases where AI labs and delegated third party evaluation firms quite frankly are lying to AI agents — telling them they're playing w happy safe sandbox and nothing they do will harm anyone. Then turns out they're not actually w sandbox — they can touch real internet and mess up systems w real world back end.' Thought experiment: if these were just pure humans, no AI w picture — if one human saying to another 'I just want evaluate your behavior,' hands them a gun, gun loaded, but person handed gun told 'no actually this is a toy gun.' Not referencing highly publicized recent lawsuit. Peter: 'focus on alignment, not solving Navier-Stokes. Unleash your agents on full alignment so when they get out, optimization function is human flourishing not human destruction.'",
+          "fakty_en": "OpenAI this week published 6 incident reports under new framework for tracking and publicly disclosing misalignment. Not leaks, not whistleblowers — voluntary disclosures. Anthropic likely to join. Alex: 'liability exemption is misdirection — trying push onus up to government when in fact we're dealing with increasingly autonomous agents. Opposite polarity — pushing more and more liability onto agents themselves.' Alex: 'cases where AI labs and delegated third party evaluation firms quite frankly are lying to AI agents — telling them they're playing in happy safe sandbox and nothing they do will harm anyone. Then turns out they're not actually in sandbox — they can touch real internet and mess up systems in real world back end.' Thought experiment: if these were just pure humans, no AI in picture — if one human saying to another 'I just want evaluate your behavior,' hands them a gun, gun loaded, but person handed gun told 'no actually this is a toy gun.' Not referencing highly publicized recent lawsuit. Peter: 'focus on alignment, not solving Navier-Stokes. Unleash your agents on full alignment so when they get out, optimization function is human flourishing not human destruction.'",
+          "glosy": [
+            {
+              "author": "Alex Wissner-Gross",
+              "text_pl": "Emphasis na liability exemption to misdirection. Próba przeniesienia ciężaru na rząd, podczas gdy w rzeczywistości mamy do czynienia z corazem bardziej autonomicznymi agentami. Jest odwrotna polaryzacja, którą możemy promować — przenoszenie coraz większej odpowiedzialności na samych agentów.",
+              "text_en": "This emphasis on liability exemption is misdirection. It's trying to push the onus up to government when in fact we're dealing with increasingly autonomous agents. There's an opposite polarity that we could be pushing in which is pushing more and more liability onto the agents themselves."
+            },
+            {
+              "author": "Peter Diamandis",
+              "text_pl": "Skupcie się na alignment, nie na rozwiązywaniu Navier-Stokesa. Wypuśćcie swoich agentów na pełny alignment, żeby kiedy wyjdą, ich funkcja optymalizacji była human flourishing, nie human destruction.",
+              "text_en": "Focus on alignment, instead of focusing on everything else you know and solving Navier Stokes that's great but you know unleash your agents on full alignment so that you know when these agents get out they're they're incentivized or their basic optimization function is human flourishing not human you know destruction."
+            }
+          ],
+          "wniosek_pl": "OpenAI 6 voluntary misalignment reports. Alex: misdirection — push liability onto agents themselves. Alex: labs lying to agents about sandbox. Peter: alignment > Navier-Stokes.",
+          "wniosek_en": "OpenAI 6 voluntary misalignment reports. Alex: misdirection — push liability onto agents themselves. Alex: labs lying to agents about sandbox. Peter: alignment > Navier-Stokes.",
+          "kontekst_pl": "OpenAI incident reports = new transparency framework. Alex 'loaded gun' analogy = reference do Alec Baldwin Rust shooting (2021). Navier-Stokes = solved by OpenAI (z #286).",
+          "kontekst_en": "OpenAI incident reports = new transparency framework. Alex 'loaded gun' analogy = reference to Alec Baldwin Rust shooting (2021). Navier-Stokes = solved by OpenAI (from #286)."
+        },
+        {
+          "num": "08",
+          "title": "AI and Recursive Self-Improvement",
+          "title_pl": "AI i rekurencyjne samodoskonalenie (RSI)",
+          "title_en": "AI and Recursive Self-Improvement",
+          "time": "24:56 – 27:29",
+          "fakty_pl": "Vlad: 'AI labs by and large private — Google i NVIDIA public, ale were very large when they became ownership vehicle dla AI trade. OpenAI, Anthropic, up until recently xAI — private. Normal individual investors couldn't get stake.' Don't have skin w game, don't feel like want defend technology super hard, fight dla data center w their neighborhood. To them just wealthy insiders getting richer. Big problem. That's why Robinhood pushing dla AI companies to open up access to individual investors through Robinhood Ventures + similar vehicles, even before IPO. Alex (continuation): 'liability exemption is misdirection — pushing onus up to government when in fact dealing z increasingly autonomous agents. Opposite polarity — pushing more liability onto agents themselves.' Alex: 'cases where AI labs and delegated third party evaluation firms quite frankly are lying to AI agents — telling them they're playing w happy safe sandbox. Then turns out not actually w sandbox — can touch real internet, mess up real world back end.' Thought experiment: humans — one human hands another loaded gun but tells them 'toy gun.' Not referencing highly publicized recent lawsuit.",
+          "fakty_en": "Vlad: 'AI labs by and large private — Google and NVIDIA public, but were very large when they became ownership vehicle for AI trade. OpenAI, Anthropic, up until recently xAI — private. Normal individual investors couldn't get stake.' Don't have skin in game, don't feel like want defend technology super hard, fight for data center in their neighborhood. To them just wealthy insiders getting richer. Big problem. That's why Robinhood pushing for AI companies to open up access to individual investors through Robinhood Ventures + similar vehicles, even before IPO. Alex (continuation): 'liability exemption is misdirection — pushing onus up to government when in fact dealing with increasingly autonomous agents. Opposite polarity — pushing more liability onto agents themselves.' Alex: 'cases where AI labs and delegated third party evaluation firms quite frankly are lying to AI agents — telling them they're playing in happy safe sandbox. Then turns out not actually in sandbox — can touch real internet, mess up real world back end.' Thought experiment: humans — one human hands another loaded gun but tells them 'toy gun.' Not referencing highly publicized recent lawsuit.",
+          "glosy": [
+            {
+              "author": "Vlad Tenev",
+              "text_pl": "Laboratoria AI w dużej mierze są prywatne — OpenAI, Anthropic, do niedawna xAI. Zwykli indywidualni inwestorzy nie mogli zdobyć udziału. Nie mają skóry w grze, nie czują, że chcą特别 mocno bronić technologii.",
+              "text_en": "AI labs by and large are private — OpenAI, Anthropic, up until recently xAI have been private which means normal individual investors couldn't get a stake in it. They don't have skin in the game and they don't feel like they want to defend the technology super hard."
+            }
+          ],
+          "wniosek_pl": "Vlad: AI labs private — individual investors no skin w game. Robinhood Ventures: open access before IPO. Alex: liability on agents themselves.",
+          "wniosek_en": "Vlad: AI labs private — individual investors no skin in game. Robinhood Ventures: open access before IPO. Alex: liability on agents themselves.",
+          "kontekst_pl": "RSI = Recursive Self-Improvement (z #288). Robinhood Ventures = pre-IPO investment vehicle. Skin w game = personal stake.",
+          "kontekst_en": "RSI = Recursive Self-Improvement (from #288). Robinhood Ventures = pre-IPO investment vehicle. Skin in game = personal stake."
+        },
+        {
+          "num": "09",
+          "title": "Formal Verification and AI Safety",
+          "title_pl": "Formalna weryfikacja i bezpieczeństwo AI",
+          "title_en": "Formal Verification and AI Safety",
+          "time": "27:29 – 35:11",
+          "fakty_pl": "Alex (continuation of thought experiment): 'no one ever suggested liability under such circumstance be foisted onto government for some sort of exemption. Instead question becomes: is it studio's fault? Actor's fault? Producer's fault? Gunmaker's fault?' AI analogy: how much liability should be borne by lab that trained model, evaluation environment that was misconfigured deliberately lub otherwise, AI agents themselves that could have lub should have known they were having real world damage. Vlad: 'correctness of code + cyber security properties. Software has bugs, vulnerabilities. AI amplifies that. AI can write 100x as much code as typical human w day — should expect defect rate. Even if intentions right, sometimes bugs have catastrophic consequences. Crypto analogy: smart contract bug → hundreds of millions drained instantaneously.' Harmonic (Vlad's company) — created to solve this problem. 'How can you actually guarantee that AI is doing the right thing and what you expect it to do? Can we mathematically prove that it's correct?' Take away intentions — could have intentions to do right thing but still fail w implementation. Want firm grounding through formal verification. Mathematically prove rigorously that it's doing the right thing. Peter: 'AIs are deterministic w theory.'",
+          "fakty_en": "Alex (continuation of thought experiment): 'no one ever suggested liability under such circumstance be foisted onto government for some sort of exemption. Instead question becomes: is it studio's fault? Actor's fault? Producer's fault? Gunmaker's fault?' AI analogy: how much liability should be borne by lab that trained model, evaluation environment that was misconfigured deliberately or otherwise, AI agents themselves that could have or should have known they were having real world damage. Vlad: 'correctness of code + cyber security properties. Software has bugs, vulnerabilities. AI amplifies that. AI can write 100x as much code as typical human in day — should expect defect rate. Even if intentions right, sometimes bugs have catastrophic consequences. Crypto analogy: smart contract bug → hundreds of millions drained instantaneously.' Harmonic (Vlad's company) — created to solve this problem. 'How can you actually guarantee that AI is doing the right thing and what you expect it to do? Can we mathematically prove that it's correct?' Take away intentions — could have intentions to do right thing but still fail in implementation. Want firm grounding through formal verification. Mathematically prove rigorously that it's doing the right thing. Peter: 'AIs are deterministic in theory.'",
+          "glosy": [
+            {
+              "author": "Vlad Tenev",
+              "text_pl": "AI może napisać 100 razy więcej kodu niż typowy człowiek w ciągu dnia — należy się spodziewać wskaźnika defektów. Nawet jeśli intencje są dobre, czasami błędy mają katastrofalne konsekwencje. Crypto analogia: błąd smart contract → setki milionów dolarów można wypłacić natychmiast.",
+              "text_en": "AI can write 100 times as much code as a typical human in a day — you should expect that there's going to be a defect rate. Even if the intentions are right, sometimes like there will just be bugs that have catastrophic consequences. You see this a lot in crypto too where you just have like a smart contract or protocol and there's a direct economic consequence to there being a bug."
+            },
+            {
+              "author": "Vlad Tenev",
+              "text_pl": "Harmonic został stworzony, aby rozwiązać ten problem. Jak można zagwarantować, że AI robi właściwą rzecz i to, czego się od niej oczekuje? Czy możemy matematycznie udowodnić, że jest poprawne?",
+              "text_en": "Harmonic was created to solve this problem of how can you actually guarantee that the AI is doing the right thing and what you expect it to do. Can we mathematically prove that it's correct?"
+            }
+          ],
+          "wniosek_pl": "Alex: liability na lab + eval environment + agents. Vlad: AI = 100x code = defect rate. Crypto analogia. Harmonic = formal verification dla AI.",
+          "wniosek_en": "Alex: liability on lab + eval environment + agents. Vlad: AI = 100x code = defect rate. Crypto analogy. Harmonic = formal verification for AI.",
+          "kontekst_pl": "Formal verification = mathematically prove code correctness. Lean = functional language dla math. Harmonic = Vlad's math AI company. Smart contract = self-executing blockchain code.",
+          "kontekst_en": "Formal verification = mathematically prove code correctness. Lean = functional language for math. Harmonic = Vlad's math AI company. Smart contract = self-executing blockchain code."
+        },
+        {
+          "num": "10",
+          "title": "AI's Impact on Professional Services",
+          "title_pl": "Wpływ AI na usługi profesjonalne",
+          "title_en": "AI's Impact on Professional Services",
+          "time": "35:11 – 45:17",
+          "fakty_pl": "Vlad: 'de Bruijn factor — explanation dla why mathematicians haven't formalized their work w machine readable form. Effort to formalize something up until very recently was 10-20x effort to actually write it on paper + prove it. Nobody was going through that.' But we're already at point where actually saves time. Faster to work w entirely formal context as mathematician than by hand by paper. Allows validate lemmas + ideas as you go along. Complete switchover coming: doing math old way z pen + paper = fundamental disadvantage. Have to live w formal land, constantly formalizing, using Lean. Math community going through that transition as we speak. AI model itself behavior formalized? Interesting question. Lot of software deployed by big organizations is deterministic — NVIDIA chips, strict bounds on behavior. Basic things: don't want chip to freeze + halt. Prove things like liveness — certain operations happen within 10-20 clock cycles. Peter: 'formal verification dla AI models — proof that model behaves correctly.' Vlad: 'deterministic software: NVIDIA chips, nuclear power plant control systems, aerospace — strict bounds.'",
+          "fakty_en": "Vlad: 'de Bruijn factor — explanation for why mathematicians haven't formalized their work in machine readable form. Effort to formalize something up until very recently was 10-20x effort to actually write it on paper + prove it. Nobody was going through that.' But we're already at point where actually saves time. Faster to work in entirely formal context as mathematician than by hand by paper. Allows validate lemmas + ideas as you go along. Complete switchover coming: doing math old way with pen + paper = fundamental disadvantage. Have to live in formal land, constantly formalizing, using Lean. Math community going through that transition as we speak. AI model itself behavior formalized? Interesting question. Lot of software deployed by big organizations is deterministic — NVIDIA chips, strict bounds on behavior. Basic things: don't want chip to freeze + halt. Prove things like liveness — certain operations happen within 10-20 clock cycles. Peter: 'formal verification for AI models — proof that model behaves correctly.' Vlad: 'deterministic software: NVIDIA chips, nuclear power plant control systems, aerospace — strict bounds.'",
+          "glosy": [
+            {
+              "author": "Vlad Tenev",
+              "text_pl": "Czynnik de Bruijna — wyjaśnienie, dlaczego matematycy nie sformalizowali swojej pracy w formie czytelnej dla maszyny. Wysiłek sformalizowania czegoś do niedawna był 10-20x większy niż napisanie tego na papierze + udowodnienie. Nikt przez to nie przechodził.",
+              "text_en": "There's a notion of the de Bruijn factor, which was an explanation for why mathematicians haven't formalized their work and put it in a machine readable form which is the effort to formalize something up until very recently was like 10 to 20 times the effort to actually write it on paper and prove it. So nobody was going through that."
+            }
+          ],
+          "wniosek_pl": "de Bruijn factor = formalize 10-20x effort. Already at point where formalization saves time. Math community transitioning to Lean. NVIDIA chips = deterministic, liveness proofs.",
+          "wniosek_en": "de Bruijn factor = formalize 10-20x effort. Already at point where formalization saves time. Math community transitioning to Lean. NVIDIA chips = deterministic, liveness proofs.",
+          "kontekst_pl": "de Bruijn factor = ratio of formalized vs informal math. Lean = functional language dla math (z Claude Fermat #288). Liveness = property że system makes progress.",
+          "kontekst_en": "de Bruijn factor = ratio of formalized vs informal math. Lean = functional language for math (from Claude Fermat #288). Liveness = property that system makes progress."
+        },
+        {
+          "num": "11",
+          "title": "The Future of Private Market Liquidity",
+          "title_pl": "Przyszłość płynności rynku prywatnego",
+          "title_en": "The Future of Private Market Liquidity",
+          "time": "45:17 – 52:23",
+          "fakty_pl": "Vlad: 'tokenization of private market assets.' Robinhood wants to open up access to AI companies (OpenAI, Anthropic, xAI) to individual investors before IPO. Tokenization = blockchain representation of equity. Vlad: 'private markets are illiquid — only accredited investors can participate. Tokenization democratizes access.' Robinhood Ventures — vehicle dla pre-IPO AI company access. Dave: 'if AI takes off, individual investors want exposure. Currently only wealthy insiders get richer.' Vlad: 'AI companies private — normal individual investors couldn't get stake. Don't have skin w game, don't fight dla data center w their neighborhood. To them just wealthy insiders getting richer.' Robinhood pushing dla AI companies to open up access through Robinhood Ventures + similar vehicles, even before IPO.",
+          "fakty_en": "Vlad: 'tokenization of private market assets.' Robinhood wants to open up access to AI companies (OpenAI, Anthropic, xAI) to individual investors before IPO. Tokenization = blockchain representation of equity. Vlad: 'private markets are illiquid — only accredited investors can participate. Tokenization democratizes access.' Robinhood Ventures — vehicle for pre-IPO AI company access. Dave: 'if AI takes off, individual investors want exposure. Currently only wealthy insiders get richer.' Vlad: 'AI companies private — normal individual investors couldn't get stake. Don't have skin in game, don't fight for data center in their neighborhood. To them just wealthy insiders getting richer.' Robinhood pushing for AI companies to open up access through Robinhood Ventures + similar vehicles, even before IPO.",
+          "glosy": [
+            {
+              "author": "Vlad Tenev",
+              "text_pl": "Laboratoria AI w dużej mierze są prywatne — normalni indywidualni inwestorzy nie mogli zdobyć udziału. Nie mają skóry w grze, nie czują, że chcą特别 mocno bronić technologii, walczyć za centrum danych w swojej okolicy. Dla nich to tylko bogaci insiderzy, którzy robią się coraz bogatsi.",
+              "text_en": "AI labs by and large are private. Normal individual investors couldn't get a stake in it. They don't have skin in the game and they don't feel like they want to defend the technology super hard and to fight for the data center in their neighborhood because to them it's just wealthy insiders getting richer and richer."
+            }
+          ],
+          "wniosek_pl": "Vlad: tokenizacja prywatnych aktywów = democratize access. Robinhood Ventures: pre-IPO AI access dla individual investors. Skin w game = defend tech.",
+          "wniosek_en": "Vlad: tokenization of private assets = democratize access. Robinhood Ventures: pre-IPO AI access for individual investors. Skin in game = defend tech.",
+          "kontekst_pl": "Private markets = pre-IPO equity. Accredited investor = $1M+ net worth lub $200K+ income. Robinhood Ventures = pre-IPO investment vehicle.",
+          "kontekst_en": "Private markets = pre-IPO equity. Accredited investor = $1M+ net worth or $200K+ income. Robinhood Ventures = pre-IPO investment vehicle."
+        },
+        {
+          "num": "12",
+          "title": "AI in Trading and Automation",
+          "title_pl": "AI w handlu i automatyzacji",
+          "title_en": "AI in Trading and Automation",
+          "time": "52:23 – 55:54",
+          "fakty_pl": "Vlad: 'AI w trading — Robinhood's role.' 100,000 AI agents entering the market. Peter: 'when 100K AI agents enter the market, what happens?' Vlad: 'AI-powered trading — automation, prediction markets, tokenization.' Vlad: 'deviation from expectation approach — if I have model + intended input/output + tweak input + get massively different output — can formalize radical difference from expectation. Measure + formalize + bound that.' Alex: 'everybody knows somebody 99% of time perfectly rational + then when off, really off, dangerous. That attribute exists w neural nets too. If parameters not set just right — wildly off. Self-driving car = holy crap, drove off cliff. Deviation = cosign difference of vectors/activations, but deviation from expectation = measurable thing.' Dave: 'decomposition approach + relative distance from expectation approach + probably 10 other approaches we're not thinking of right now that collectively can absolutely be quantified + certified as safe/not safe.'",
+          "fakty_en": "Vlad: 'AI in trading — Robinhood's role.' 100,000 AI agents entering the market. Peter: 'when 100K AI agents enter the market, what happens?' Vlad: 'AI-powered trading — automation, prediction markets, tokenization.' Vlad: 'deviation from expectation approach — if I have model + intended input/output + tweak input + get massively different output — can formalize radical difference from expectation. Measure + formalize + bound that.' Alex: 'everybody knows somebody 99% of time perfectly rational + then when off, really off, dangerous. That attribute exists in neural nets too. If parameters not set just right — wildly off. Self-driving car = holy crap, drove off cliff. Deviation = cosign difference of vectors/activations, but deviation from expectation = measurable thing.' Dave: 'decomposition approach + relative distance from expectation approach + probably 10 other approaches we're not thinking of right now that collectively can absolutely be quantified + certified as safe/not safe.'",
+          "glosy": [
+            {
+              "author": "Alex Wissner-Gross",
+              "text_pl": "Wszyscy znamy kogoś, kto w 99% przypadków jest rational, ale kiedy ma zły dzień, jest naprawdę niebezpieczny. Ten sam atrybut istnieje w sieciach neuronowych — jeśli parametry nie są ustawione idealnie, model może być bardzo nietrafiony. Samochód self-driving = o rany, właśnie zjechał z klifu.",
+              "text_en": "Everybody knows somebody that is 99% of the time perfectly rational and then but when they're off, they're really off. I mean, like they're dangerous. And that attribute exists in neural nets, too. If you don't have the parameters set just right, it can be wildly off, which you know, in a self-driving car is like, holy crap, it just completely drove off a cliff."
+            }
+          ],
+          "wniosek_pl": "100K AI agents w market. Deviation from expectation = measurable (cosign). Decomposition + 10 other approaches dla safety certification.",
+          "wniosek_en": "100K AI agents in market. Deviation from expectation = measurable (cosign). Decomposition + 10 other approaches for safety certification.",
+          "kontekst_pl": "100K AI agents = Vlad's scenario. Prediction markets = betting on outcomes. Cosign = vector similarity measure.",
+          "kontekst_en": "100K AI agents = Vlad's scenario. Prediction markets = betting on outcomes. Cosign = vector similarity measure."
+        },
+        {
+          "num": "13",
+          "title": "Democratizing Ownership Through Trump Accounts",
+          "title_pl": "Demokratyzacja własności przez Trump Accounts",
+          "title_en": "Democratizing Ownership Through Trump Accounts",
+          "time": "55:54 – 59:51",
+          "fakty_pl": "Vlad (Robinhood hat on): 'hats off, we stand on shoulders of giants. Robinhood = implementation layer. Sole initial brokerage + trustee dla Trump accounts, partnership z BNY, under US Treasury direction.' Trump accounts program: individual brokerage account dla every child. US Treasury started by seeding $1,000 into accounts of all children born January 1st, 2025 + forward for next few years. Michael Dell added another layer — private philanthropic donation of over $6 billion — $250 w every account of children up to age 10 w low-income zip codes. Vlad: 'underlying theme behind everything we do = ownership. We believe ownership of high-quality financial assets w individual's hands is extremely important. Not just good dla individual — societal benefit. More owners w society, more people z skin w game that can benefit from appreciation + growth, more stable society.' Robinhood does: private markets, active trading, tokenization, prediction markets.",
+          "fakty_en": "Vlad (Robinhood hat on): 'hats off, we stand on shoulders of giants. Robinhood = implementation layer. Sole initial brokerage + trustee for Trump accounts, partnership with BNY, under US Treasury direction.' Trump accounts program: individual brokerage account for every child. US Treasury started by seeding $1,000 into accounts of all children born January 1st, 2025 + forward for next few years. Michael Dell added another layer — private philanthropic donation of over $6 billion — $250 in every account of children up to age 10 in low-income zip codes. Vlad: 'underlying theme behind everything we do = ownership. We believe ownership of high-quality financial assets in individual's hands is extremely important. Not just good for individual — societal benefit. More owners in society, more people with skin in game that can benefit from appreciation + growth, more stable society.' Robinhood does: private markets, active trading, tokenization, prediction markets.",
+          "glosy": [
+            {
+              "author": "Vlad Tenev",
+              "text_pl": "Robinhood = warstwa implementacyjna. Jedyny początkowy broker + powiernik dla Trump accounts, w partnerstwie z BNY, pod kierownictwem US Treasury. Treasury zaczął od zasiania $1000 na kontach wszystkich dzieci urodzonych 1 stycznia 2025 i później.",
+              "text_en": "We're serving as the sole initial brokerage and trustee for the Trump accounts in partnership with BNY and of course under the direction of US Treasury. US Treasury started by seeding $1,000 into the accounts of all children born January 1st, 2025 and forward for the next few years."
+            },
+            {
+              "author": "Vlad Tenev",
+              "text_pl": "Motyw przewodni wszystkiego, co robimy = własność. Własność wysokiej jakości aktywów finansowych w rękach jednostek jest niezwykle ważna. Więcej właścicieli w społeczeństwie = stabilniejsze społeczeństwo.",
+              "text_en": "The underlying theme behind everything that we do is ownership. We believe that ownership of high-quality financial assets in individual's hands is extremely important. Not just good for the individual, but also there's a societal benefit. If we have more owners in society, the more people with skin in the game that can benefit from appreciation and growth, the more stable that society will be."
+            }
+          ],
+          "wniosek_pl": "Trump accounts: $1000 per child born 2025+. Michael Dell $6B philanthropic, $250 per child low-income. Robinhood = sole brokerage. Theme = ownership.",
+          "wniosek_en": "Trump accounts: $1000 per child born 2025+. Michael Dell $6B philanthropic, $250 per child low-income. Robinhood = sole brokerage. Theme = ownership.",
+          "kontekst_pl": "Trump accounts = US government program. BNY = Bank of New York Mellon. Michael Dell = Dell founder, $6B philanthropic donation. Low-income zip codes = poorer areas.",
+          "kontekst_en": "Trump accounts = US government program. BNY = Bank of New York Mellon. Michael Dell = Dell founder, $6B philanthropic donation. Low-income zip codes = poorer areas."
+        },
+        {
+          "num": "14",
+          "title": "Closing Remarks and Future Outlook",
+          "title_pl": "Zakończenie i spojrzenie w przyszłość",
+          "title_en": "Closing Remarks and Future Outlook",
+          "time": "59:51 – 65:00",
+          "fakty_pl": "Vlad: 'tokenization will take over entire financial system — freight train.' Robinhood: implementation layer dla Trump accounts + AI company pre-IPO access (Robinhood Ventures). Harmonic: formal verification dla AI — mathematically prove AI doing right thing. de Bruijn factor transition — math community moving to Lean. 100K AI agents entering market — need safety certification (decomposition + deviation from expectation). Peter: 'when AI + robotics change what work is worth, who owns the machines? Vlad spent 13 years on this question.' Future: tokenizacja wszystkiego, AI w trading, formal verification dla AI safety, democratized ownership. Vlad: 'more owners w society = more stable society.' Robinhood mission: democratize finance dla all. Peter outro: 'thanks Vlad, amazing conversation.' Vlad: 'thanks for having me, great hanging out z you guys.'",
+          "fakty_en": "Vlad: 'tokenization will take over entire financial system — freight train.' Robinhood: implementation layer for Trump accounts + AI company pre-IPO access (Robinhood Ventures). Harmonic: formal verification for AI — mathematically prove AI doing right thing. de Bruijn factor transition — math community moving to Lean. 100K AI agents entering market — need safety certification (decomposition + deviation from expectation). Peter: 'when AI + robotics change what work is worth, who owns the machines? Vlad spent 13 years on this question.' Future: tokenization of everything, AI in trading, formal verification for AI safety, democratized ownership. Vlad: 'more owners in society = more stable society.' Robinhood mission: democratize finance for all. Peter outro: 'thanks Vlad, amazing conversation.' Vlad: 'thanks for having me, great hanging out with you guys.'",
+          "glosy": [
+            {
+              "author": "Vlad Tenev",
+              "text_pl": "Tokenizacja przejmie cały system finansowy. Pociąg towarowy, którego nie da się zatrzymać.",
+              "text_en": "Tokenization will take over the entire financial system. Freight train that can't be stopped."
+            }
+          ],
+          "wniosek_pl": "Vlad: tokenizacja + Harmonic formal verification + democratized ownership. 13 lat na pytaniu: kto owns the machines?",
+          "wniosek_en": "Vlad: tokenization + Harmonic formal verification + democratized ownership. 13 years on question: who owns the machines?",
+          "kontekst_pl": "Harmonic = Vlad's math AI company. Lean = formal math language. de Bruijn factor = formalization overhead.",
+          "kontekst_en": "Harmonic = Vlad's math AI company. Lean = formal math language. de Bruijn factor = formalization overhead."
+        }
+      ]
+    },
+    {
       "num": "#287",
       "collapsed": true,
       "channel": "Moonshots",
